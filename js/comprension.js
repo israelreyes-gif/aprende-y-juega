@@ -1,0 +1,210 @@
+/* =============================================
+   COMPRENSION.JS — Historias dinámicas desde JSON
+   150 historias: 50 fácil, 50 medio, 50 avanzado
+   ============================================= */
+
+var HISTORIAS_DB = { facil: [], medio: [], avanzado: [] };
+var historiaIdx  = { facil: 0, medio: 0, avanzado: 0 };
+var currentHistoria = null;
+
+// Cargar historias desde JSON
+fetch('data/historias.json')
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    HISTORIAS_DB = data;
+    Object.keys(HISTORIAS_DB).forEach(function(k) {
+      HISTORIAS_DB[k] = shuffleArr(HISTORIAS_DB[k]);
+    });
+  })
+  .catch(function(e) { console.warn('No se cargó historias.json:', e); });
+
+function shuffleArr(arr) {
+  var a = arr.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+function compDiff() { return diffLabel(ST.compStreak); }
+
+/* ---- Cargar nueva historia ---- */
+function cargarNuevaHistoria() {
+  var dl    = compDiff();
+  var nivel = dl.txt === 'Fácil' ? 'facil' : dl.txt === 'Medio' ? 'medio' : 'avanzado';
+  var banco = HISTORIAS_DB[nivel];
+
+  if (!banco || banco.length === 0) {
+    currentHistoria = {
+      titulo: 'La tortuga y las estrellas', emoji: '📖',
+      texto: 'Había una vez una tortuga llamada Luna que vivía cerca de un lago azul. Soñaba con volar hasta las estrellas. Un día, una cigüeña llamada Viento la ayudó a llegar muy alto y Luna pudo tocar una estrella brillante. Desde ese día, nunca se sintió pequeña.',
+      preguntas: [
+        {pregunta:'¿Cómo se llama la tortuga?', keywords:['luna','tortuga'], ok:'✓ La tortuga se llama Luna.', bad:'✗ La tortuga se llama Luna.'},
+        {pregunta:'¿Dónde vivía?', keywords:['lago','azul'], ok:'✓ Vivía cerca de un lago azul.', bad:'✗ Vivía cerca de un lago azul.'},
+        {pregunta:'¿Cuál era su sueño?', keywords:['volar','estrellas'], ok:'✓ Soñaba con volar.', bad:'✗ Soñaba con volar hasta las estrellas.'},
+        {pregunta:'¿Quién la ayudó?', keywords:['viento','cigüeña'], ok:'✓ La cigüeña Viento.', bad:'✗ La ayudó la cigüeña Viento.'},
+        {pregunta:'¿Cómo se sintió al final?', keywords:['pequeña','feliz'], ok:'✓ Dejó de sentirse pequeña.', bad:'✗ Dejó de sentirse pequeña.'}
+      ]
+    };
+  } else {
+    if (historiaIdx[nivel] >= banco.length) {
+      HISTORIAS_DB[nivel] = shuffleArr(banco);
+      historiaIdx[nivel] = 0;
+    }
+    currentHistoria = banco[historiaIdx[nivel]];
+    historiaIdx[nivel]++;
+  }
+
+  // Actualizar UI
+  var storyCard = document.querySelector('.story-card');
+  if (storyCard) {
+    storyCard.querySelector('.story-title').textContent =
+      (currentHistoria.emoji || '📖') + ' ' + currentHistoria.titulo;
+    storyCard.querySelector('.story-body').textContent = currentHistoria.texto;
+  }
+
+  // Actualizar preguntas
+  for (var i = 0; i < 5; i++) {
+    var qblock = document.querySelectorAll('.q-block')[i];
+    if (qblock && currentHistoria.preguntas[i]) {
+      qblock.querySelector('.q-text').textContent = currentHistoria.preguntas[i].pregunta;
+    }
+    var ta = document.getElementById('q' + (i+1)); if (ta) ta.value = '';
+    var qr = document.getElementById('qr' + (i+1));
+    if (qr) { qr.className = 'q-res'; qr.style.display = 'none'; qr.textContent = ''; }
+  }
+
+  // Actualizar badge de dificultad
+  var diffEl = document.getElementById('comp-diff');
+  if (diffEl) { diffEl.className = 'ex-badge ' + dl.cls; diffEl.textContent = dl.txt; }
+
+  var submitBtn = document.getElementById('comp-submit');
+  if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Enviar todas las respuestas ✓'; }
+
+  var loading = document.getElementById('comp-loading'); if (loading) loading.style.display = 'none';
+  var result  = document.getElementById('comp-result');  if (result)  result.style.display  = 'none';
+  var ortho   = document.getElementById('comp-ortho');   if (ortho)   ortho.style.display   = 'none';
+}
+
+/* ---- Evaluar respuestas ---- */
+function evaluateAnswers() {
+  if (!currentHistoria) return;
+
+  // Validar que al menos 3 preguntas tengan respuesta
+  var filledCount = 0;
+  for (var i = 1; i <= 5; i++) {
+    var ta = document.getElementById('q' + i);
+    if (ta && ta.value.trim().length > 2) filledCount++;
+  }
+  if (filledCount < 3) {
+    showToast('✏️ Responde al menos 3 preguntas antes de enviar');
+    return;
+  }
+
+  var btn     = document.getElementById('comp-submit');
+  var loading = document.getElementById('comp-loading');
+  btn.disabled = true; loading.style.display = 'block';
+
+  var answers = [];
+  for (var i = 1; i <= 5; i++) answers.push(document.getElementById('q' + i).value.trim());
+
+  var dl    = compDiff();
+  var level = dl.txt === 'Fácil' ? 0 : dl.txt === 'Medio' ? 1 : 2;
+
+  // Ortografía
+  var orthoTypes = {};
+  answers.forEach(function(a) {
+    checkOrtho(a, level).forEach(function(issue) { orthoTypes[issue.type] = issue.msg; });
+  });
+  var orthoMsgs = Object.values(orthoTypes);
+
+  setTimeout(function() {
+    loading.style.display = 'none';
+
+    var orthoEl = document.getElementById('comp-ortho');
+    if (orthoMsgs.length > 0) {
+      orthoEl.textContent = (level === 0 ? '💡 Recuerda: ' : '⚠️ ') + orthoMsgs.join(' ');
+      orthoEl.style.display = 'block';
+    } else { orthoEl.style.display = 'none'; }
+
+    var score = 0;
+    for (var i = 0; i < 5; i++) {
+      var res   = document.getElementById('qr' + (i+1));
+      var ans   = answers[i].toLowerCase();
+      var q     = currentHistoria.preguntas[i];
+      var kw    = q.keywords || [];
+      var hits  = kw.filter(function(k) { return ans.includes(k.toLowerCase()); }).length;
+      var ok    = hits >= 1 && ans.length > 3;
+      if (ok) { score++; res.className = 'q-res ok'; res.textContent = q.ok; }
+      else    { res.className = 'q-res bad'; res.textContent = q.bad; }
+    }
+
+    var penalty    = level >= 1 ? orthoMsgs.length : 0;
+    var finalScore = Math.max(0, score - penalty);
+    var pts        = finalScore * 5;
+    awardPts(pts, 'lengua');
+    recordResult('lengua', 'comp', score >= 3);
+    if (score >= 4) ST.compStreak++; else ST.compStreak = Math.max(0, ST.compStreak - 1);
+    saveState();
+
+    var orthoNote = orthoMsgs.length > 0
+      ? (level >= 1 ? ' (−' + penalty + ' pts ortografía)' : ' (la próxima vez penalizará)')
+      : '';
+
+    var re = document.getElementById('comp-result');
+    re.style.display = 'block';
+    if (score >= 4) {
+      // ── BUENA PUNTUACIÓN ──
+      re.className = 'comp-result ok';
+      re.innerHTML = '<div class="comp-result-title">¡Lectora increíble! ' + score + '/5 🌟 +' + pts + ' pts' + orthoNote + '</div>' +
+                     '<div class="comp-result-sub">¡Has entendido el cuento genial!</div>';
+      addNextBtn(re, 's-comprension', 'Siguiente historia →', true);
+    } else if (score >= 2) {
+      // ── RESULTADO MEDIO: ofrecer reintento (2 intentos) ──
+      if (!currentHistoria._intentos) currentHistoria._intentos = 0;
+      currentHistoria._intentos++;
+      if (currentHistoria._intentos < 2) {
+        re.className = 'comp-result bad';
+        re.innerHTML = '<div class="comp-result-title">' + score + '/5 💪 +' + pts + ' pts' + orthoNote + '</div>' +
+                       '<div class="comp-result-sub">Casi lo tienes. Lee el texto otra vez y fíjate en las respuestas marcadas en rojo.</div>';
+        addNextBtn(re, 's-comprension', 'Volver a intentarlo', false);
+      } else {
+        currentHistoria._intentos = 0;
+        re.className = 'comp-result ok';
+        re.innerHTML = '<div class="comp-result-title">¡Bien! ' + score + '/5 📖 +' + pts + ' pts' + orthoNote + '</div>' +
+                       '<div class="comp-result-sub">Mira las respuestas correctas marcadas arriba.</div>';
+        addNextBtn(re, 's-comprension', 'Siguiente historia →', true);
+      }
+    } else {
+      // ── PUNTUACIÓN BAJA: reintento obligatorio ──
+      if (!currentHistoria._intentos) currentHistoria._intentos = 0;
+      currentHistoria._intentos++;
+      if (currentHistoria._intentos < 2) {
+        re.className = 'comp-result bad';
+        re.innerHTML = '<div class="comp-result-title">' + score + '/5 🤗 +' + pts + ' pts' + orthoNote + '</div>' +
+                       '<div class="comp-result-sub">Lee el cuento muy despacio y vuelve a responder.</div>';
+        addNextBtn(re, 's-comprension', 'Leer de nuevo e intentarlo', false);
+      } else {
+        currentHistoria._intentos = 0;
+        re.className = 'comp-result bad';
+        re.innerHTML = '<div class="comp-result-title">' + score + '/5 📖 +' + pts + ' pts' + orthoNote + '</div>' +
+                       '<div class="comp-result-sub">Mira las respuestas correctas marcadas arriba. ¡La próxima vez lo harás mejor!</div>';
+        addNextBtn(re, 's-comprension', 'Siguiente historia →', true);
+      }
+    }
+    updateSubjectUI('lengua');
+  }, 1400);
+}
+
+function addNextBtn(container, dest, label, newStory) {
+  var nb = document.createElement('button');
+  nb.className = 'next-btn bg-pink';
+  nb.style.marginTop = '12px';
+  nb.textContent = label;
+  nb.onclick = function() {
+    if (newStory) cargarNuevaHistoria();
+    go(dest);
+  };
+  container.appendChild(nb);
+}

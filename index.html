@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Aprende y Juega">
+  <meta name="theme-color" content="#7C3AED">
+  <meta name="description" content="App educativa para niños de primaria: Matemáticas, Lengua, Sciences y más. Aprende jugando con ejercicios adaptados a tu nivel.">
+  <link rel="manifest" href="manifest.json">
+  <title>Aprende y Juega 🎒</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/screens.css">
+</head>
+<body>
+<div id="app"></div>
+<div id="toast"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/medals.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/mates.js"></script>
+<script src="js/lengua.js"></script>
+<script src="js/comprension.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(function(reg) {
+        console.log('Service Worker registrado correctamente:', reg.scope);
+      })
+      .catch(function(err) {
+        console.warn('Service Worker no se pudo registrar — modo offline desactivado:', err);
+        // No mostramos toast al usuario: es transparente para él
+        // pero queda registrado en consola para el desarrollador
+      });
+  }
+</script>
+</body>
+</html>
