@@ -1,11 +1,11 @@
 /* =============================================
    APP.JS — Inicialización y carga de pantallas
-   Arranque: s-cursos → seleccionar curso → s-home
+   Arranque: HTML → datos → init → s-cursos
    ============================================= */
 
 function loadScreens(callback) {
   var files = [
-    'screens/cursos.html',   // NUEVA: pantalla de selección de curso
+    'screens/cursos.html',
     'screens/home.html',
     'screens/mates.html',
     'screens/lengua.html',
@@ -74,28 +74,35 @@ function loadData(callback) {
 }
 
 function initApp() {
-  // Arrancar siempre en la pantalla de selección de curso
+  checkDayReset();
+  updateMedalUI();
+  updateStreakUI();
+  updateHomeUI();
+  updateSubjectUI('mates');
+  updateSubjectUI('lengua');
   setGramTab('bv');
+
+  // Precargar ejercicios DESPUÉS de que los datos estén listos
   cargarNuevaSuma();
   cargarNuevaMulti();
   cargarNuevoProblema();
   cargarNuevaMezcla();
   cargarNuevaHistoria();
 
-  // Primera pantalla: selección de curso
+  // Override de go() aquí dentro — garantiza que los datos ya están cargados
+  var _goOriginal = go;
+  go = function(screenId) {
+    _goOriginal(screenId);
+    if (screenId === 's-sumas')       cargarNuevaSuma();
+    if (screenId === 's-multi')       cargarNuevaMulti();
+    if (screenId === 's-prob')        cargarNuevoProblema();
+    if (screenId === 's-mix')         cargarNuevaMezcla();
+    if (screenId === 's-comprension') cargarNuevaHistoria();
+  };
+
+  // Primera pantalla
   go('s-cursos');
 }
-
-// Interceptar navegación para recargar ejercicios al entrar
-var _goOriginal = go;
-go = function(screenId) {
-  _goOriginal(screenId);
-  if (screenId === 's-sumas')       cargarNuevaSuma();
-  if (screenId === 's-multi')       cargarNuevaMulti();
-  if (screenId === 's-prob')        cargarNuevoProblema();
-  if (screenId === 's-mix')         cargarNuevaMezcla();
-  if (screenId === 's-comprension') cargarNuevaHistoria();
-};
 
 // Arranque: HTML → datos → init
 loadScreens(function() {
