@@ -34,13 +34,13 @@
       "enunciado": "🍎 Ana tiene 21 cromos. Le regalan 15 más. ¿Cuántos tiene ahora?",
       "resultado": 36,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "cromos"
     },
     {
       "enunciado": "🍪 Una caja tiene 25 galletas. Los niños comen 11. ¿Cuántas galletas quedan?",
       "resultado": 14,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "🚲 En 8 garajes hay 9 bicis cada uno. ¿Cuántas bicis hay en total?",
@@ -52,7 +52,7 @@
       "enunciado": "🍪 Una caja tiene 50 galletas. Los niños comen 12. ¿Cuántas galletas quedan?",
       "resultado": 38,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "🐔 Una granja tiene 77 gallinas. El zorro se lleva 13. ¿Cuántas gallinas quedan?",
@@ -94,7 +94,7 @@
       "enunciado": "🍬 Mía tiene 58 caramelos y da 9 a sus amigos. ¿Cuántos le quedan?",
       "resultado": 49,
       "dificultad": "facil",
-      "unidad": "le"
+      "unidad": "caramelos"
     },
     {
       "enunciado": "🐰 Una granja tiene 4 conejeras con 8 conejos cada una. ¿Cuántos conejos hay?",
@@ -118,19 +118,19 @@
       "enunciado": "🍪 Una caja tiene 42 galletas. Los niños comen 16. ¿Cuántas galletas quedan?",
       "resultado": 26,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "⚽ En un campo juegan 26 niños. Se van a casa 6. ¿Cuántos quedan jugando?",
       "resultado": 20,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "niños"
     },
     {
       "enunciado": "🍎 Luis tiene 47 manzanas. Le regalan 15 más. ¿Cuántos tiene ahora?",
       "resultado": 62,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "manzanas"
     },
     {
       "enunciado": "🌻 Un jardín tiene 3 filas de flores con 8 flores cada fila. ¿Cuántas flores hay?",
@@ -154,7 +154,7 @@
       "enunciado": "🍬 Mía tiene 33 caramelos y da 15 a sus amigos. ¿Cuántos le quedan?",
       "resultado": 18,
       "dificultad": "facil",
-      "unidad": "le"
+      "unidad": "caramelos"
     },
     {
       "enunciado": "🌸 En un jardín hay 64 flores. Florecen 39 más. ¿Cuántas flores hay ahora?",
@@ -172,13 +172,13 @@
       "enunciado": "⚽ En un campo juegan 40 niños. Se van a casa 7. ¿Cuántos quedan jugando?",
       "resultado": 33,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "niños"
     },
     {
       "enunciado": "🍪 Una caja tiene 39 galletas. Los niños comen 10. ¿Cuántas galletas quedan?",
       "resultado": 29,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "🐔 Una granja tiene 64 gallinas. El zorro se lleva 13. ¿Cuántas gallinas quedan?",
@@ -196,7 +196,7 @@
       "enunciado": "🍪 Una caja tiene 38 galletas. Los niños comen 15. ¿Cuántas galletas quedan?",
       "resultado": 23,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "🌻 Un jardín tiene 3 filas de flores con 6 flores cada fila. ¿Cuántas flores hay?",
@@ -262,7 +262,7 @@
       "enunciado": "🍬 Pedro tiene 28 caramelos y da 13 a sus amigos. ¿Cuántos le quedan?",
       "resultado": 15,
       "dificultad": "facil",
-      "unidad": "le"
+      "unidad": "caramelos"
     },
     {
       "enunciado": "🐔 Una granja tiene 45 gallinas. El zorro se lleva 6. ¿Cuántas gallinas quedan?",
@@ -286,7 +286,7 @@
       "enunciado": "⚽ En un campo juegan 22 niños. Se van a casa 11. ¿Cuántos quedan jugando?",
       "resultado": 11,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "niños"
     },
     {
       "enunciado": "🎈 Hay 68 globos en la fiesta. Se escapan 19 volando. ¿Cuántos globos quedan?",
@@ -298,7 +298,7 @@
       "enunciado": "🍪 Una caja tiene 40 galletas. Los niños comen 5. ¿Cuántas galletas quedan?",
       "resultado": 35,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "🍫 Hay 8 cajas con 5 chocolatinas cada una. ¿Cuántas chocolatinas hay en total?",
@@ -340,7 +340,7 @@
       "enunciado": "🍪 Una caja tiene 35 galletas. Los niños comen 8. ¿Cuántas galletas quedan?",
       "resultado": 27,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "🌻 Un jardín tiene 5 filas de flores con 10 flores cada fila. ¿Cuántas flores hay?",
@@ -352,13 +352,13 @@
       "enunciado": "🍪 Una caja tiene 36 galletas. Los niños comen 9. ¿Cuántas galletas quedan?",
       "resultado": 27,
       "dificultad": "facil",
-      "unidad": "galletas"
+      "unidad": "niños"
     },
     {
       "enunciado": "🍬 Pedro tiene 54 caramelos y da 13 a sus amigos. ¿Cuántos le quedan?",
       "resultado": 41,
       "dificultad": "facil",
-      "unidad": "le"
+      "unidad": "caramelos"
     },
     {
       "enunciado": "📦 Hay 4 cajas con 10 naranjas cada una. ¿Cuántas naranjas hay en total?",
@@ -370,7 +370,7 @@
       "enunciado": "🍬 Diego tiene 21 caramelos y da 6 a sus amigos. ¿Cuántos le quedan?",
       "resultado": 15,
       "dificultad": "facil",
-      "unidad": "le"
+      "unidad": "caramelos"
     },
     {
       "enunciado": "📦 Hay 6 cajas con 12 naranjas cada una. ¿Cuántas naranjas hay en total?",
@@ -388,7 +388,7 @@
       "enunciado": "🍎 Luis tiene 82 manzanas. Le regalan 6 más. ¿Cuántos tiene ahora?",
       "resultado": 88,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "manzanas"
     },
     {
       "enunciado": "🚲 En 6 garajes hay 10 bicis cada uno. ¿Cuántas bicis hay en total?",
@@ -466,13 +466,13 @@
       "enunciado": "⚽ En un campo juegan 37 niños. Se van a casa 8. ¿Cuántos quedan jugando?",
       "resultado": 29,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "niños"
     },
     {
       "enunciado": "⚽ En un campo juegan 27 niños. Se van a casa 5. ¿Cuántos quedan jugando?",
       "resultado": 22,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "niños"
     },
     {
       "enunciado": "🚗 En un aparcamiento hay 65 coches. Llegan 25 más. ¿Cuántos coches hay en total?",
@@ -484,7 +484,7 @@
       "enunciado": "🍎 Luis tiene 18 manzanas. Le regalan 22 más. ¿Cuántos tiene ahora?",
       "resultado": 40,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "manzanas"
     },
     {
       "enunciado": "🚗 En un aparcamiento hay 52 coches. Llegan 12 más. ¿Cuántos coches hay en total?",
@@ -550,7 +550,7 @@
       "enunciado": "🍎 Tomás tiene 53 manzanas. Le regalan 16 más. ¿Cuántos tiene ahora?",
       "resultado": 69,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "manzanas"
     },
     {
       "enunciado": "🐠 En una pecera hay 16 peces. Añaden 19 peces más. ¿Cuántos peces hay en total?",
@@ -586,7 +586,7 @@
       "enunciado": "🍎 Eva tiene 11 manzanas. Le regalan 49 más. ¿Cuántos tiene ahora?",
       "resultado": 60,
       "dificultad": "facil",
-      "unidad": "unidades"
+      "unidad": "manzanas"
     },
     {
       "enunciado": "🌻 Un jardín tiene 4 filas de flores con 6 flores cada fila. ¿Cuántas flores hay?",
@@ -636,7 +636,7 @@
       "enunciado": "🚂 Un tren tiene 8 vagones con 44 asientos cada uno. ¿Cuántos asientos tiene el tren?",
       "resultado": 352,
       "dificultad": "medio",
-      "unidad": "asientos"
+      "unidad": "vagones"
     },
     {
       "enunciado": "📖 Un libro tiene 175 páginas. Elena lleva leídas 53 páginas. ¿Cuántas páginas le faltan?",
@@ -666,7 +666,7 @@
       "enunciado": "🍕 Cada pizza se corta en 10 trozos. Si hay 8 pizzas, ¿cuántos trozos hay en total?",
       "resultado": 80,
       "dificultad": "medio",
-      "unidad": "trozos"
+      "unidad": "pizzas"
     },
     {
       "enunciado": "🌊 En la playa hay 164 personas por la mañana y llegan 115 más por la tarde. ¿Cuántas personas hay en total?",
@@ -696,19 +696,19 @@
       "enunciado": "🧩 Cada caja de puzle tiene 88 piezas. Si compras 3 cajas, ¿cuántas piezas tienes?",
       "resultado": 264,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "🧩 Cada caja de puzle tiene 55 piezas. Si compras 6 cajas, ¿cuántas piezas tienes?",
       "resultado": 330,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "💰 Lola ahorra 14 euros a la semana. Después de 10 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 140,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🏫 En un colegio hay 6 clases con 24 alumnos cada una. ¿Cuántos alumnos hay en el colegio?",
@@ -726,13 +726,13 @@
       "enunciado": "💰 Lola ahorra 15 euros a la semana. Después de 8 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 120,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🍕 Cada pizza se corta en 8 trozos. Si hay 4 pizzas, ¿cuántos trozos hay en total?",
       "resultado": 32,
       "dificultad": "medio",
-      "unidad": "trozos"
+      "unidad": "pizzas"
     },
     {
       "enunciado": "🏪 Una tienda vendió 217 productos el lunes y 259 el martes. ¿Cuántos productos vendió en total?",
@@ -744,7 +744,7 @@
       "enunciado": "🧩 Cada caja de puzle tiene 56 piezas. Si compras 3 cajas, ¿cuántas piezas tienes?",
       "resultado": 168,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "🏫 En un colegio hay 5 clases con 28 alumnos cada una. ¿Cuántos alumnos hay en el colegio?",
@@ -774,7 +774,7 @@
       "enunciado": "🧩 Cada caja de puzle tiene 91 piezas. Si compras 7 cajas, ¿cuántas piezas tienes?",
       "resultado": 637,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "🏪 Una tienda vendió 270 productos el lunes y 241 el martes. ¿Cuántos productos vendió en total?",
@@ -804,13 +804,13 @@
       "enunciado": "💰 Lola ahorra 15 euros a la semana. Después de 12 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 180,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "💰 Lola ahorra 11 euros a la semana. Después de 12 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 132,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🏋️ En un gimnasio hay 178 socios. Se dan de baja 24 y se apuntan 70 nuevos. ¿Cuántos socios hay ahora?",
@@ -870,7 +870,7 @@
       "enunciado": "💰 Lola ahorra 8 euros a la semana. Después de 11 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 88,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🚌 Un autobús lleva 31 personas. En la primera parada suben 18 y en la segunda 11. ¿Cuántas personas hay ahora?",
@@ -882,7 +882,7 @@
       "enunciado": "🧩 Cada caja de puzle tiene 97 piezas. Si compras 4 cajas, ¿cuántas piezas tienes?",
       "resultado": 388,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "📬 Un cartero reparte 55 cartas cada mañana. Si trabaja 4 días a la semana, ¿cuántas cartas reparte en total?",
@@ -906,7 +906,7 @@
       "enunciado": "🚂 Un tren tiene 7 vagones con 53 asientos cada uno. ¿Cuántos asientos tiene el tren?",
       "resultado": 371,
       "dificultad": "medio",
-      "unidad": "asientos"
+      "unidad": "vagones"
     },
     {
       "enunciado": "🍦 Una heladería vendió 291 helados el sábado y 190 el domingo. ¿Cuántos helados vendió ese fin de semana?",
@@ -918,7 +918,7 @@
       "enunciado": "🚂 Un tren tiene 6 vagones con 48 asientos cada uno. ¿Cuántos asientos tiene el tren?",
       "resultado": 288,
       "dificultad": "medio",
-      "unidad": "asientos"
+      "unidad": "vagones"
     },
     {
       "enunciado": "🌊 En la playa hay 351 personas por la mañana y llegan 139 más por la tarde. ¿Cuántas personas hay en total?",
@@ -972,7 +972,7 @@
       "enunciado": "💰 Lola ahorra 13 euros a la semana. Después de 8 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 104,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🏪 Una tienda vendió 129 productos el lunes y 166 el martes. ¿Cuántos productos vendió en total?",
@@ -1008,7 +1008,7 @@
       "enunciado": "🧩 Cada caja de puzle tiene 82 piezas. Si compras 3 cajas, ¿cuántas piezas tienes?",
       "resultado": 246,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "🎡 Una atracción de feria da 8 vueltas cada vez que entra un grupo. Si entran 7 grupos al día, ¿cuántas vueltas da en total?",
@@ -1026,7 +1026,7 @@
       "enunciado": "💰 Lola ahorra 15 euros a la semana. Después de 7 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 105,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🏋️ En un gimnasio hay 135 socios. Se dan de baja 22 y se apuntan 72 nuevos. ¿Cuántos socios hay ahora?",
@@ -1050,7 +1050,7 @@
       "enunciado": "🚂 Un tren tiene 7 vagones con 56 asientos cada uno. ¿Cuántos asientos tiene el tren?",
       "resultado": 392,
       "dificultad": "medio",
-      "unidad": "asientos"
+      "unidad": "vagones"
     },
     {
       "enunciado": "🏋️ En un gimnasio hay 131 socios. Se dan de baja 42 y se apuntan 48 nuevos. ¿Cuántos socios hay ahora?",
@@ -1074,13 +1074,13 @@
       "enunciado": "🚂 Un tren tiene 6 vagones con 59 asientos cada uno. ¿Cuántos asientos tiene el tren?",
       "resultado": 354,
       "dificultad": "medio",
-      "unidad": "asientos"
+      "unidad": "vagones"
     },
     {
       "enunciado": "🧩 Cada caja de puzle tiene 69 piezas. Si compras 6 cajas, ¿cuántas piezas tienes?",
       "resultado": 414,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "🏫 En un colegio hay 4 clases con 24 alumnos cada una. ¿Cuántos alumnos hay en el colegio?",
@@ -1098,13 +1098,13 @@
       "enunciado": "💰 Lola ahorra 10 euros a la semana. Después de 9 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 90,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🍕 Cada pizza se corta en 9 trozos. Si hay 9 pizzas, ¿cuántos trozos hay en total?",
       "resultado": 81,
       "dificultad": "medio",
-      "unidad": "trozos"
+      "unidad": "pizzas"
     },
     {
       "enunciado": "📖 Un libro tiene 230 páginas. Elena lleva leídas 70 páginas. ¿Cuántas páginas le faltan?",
@@ -1128,7 +1128,7 @@
       "enunciado": "💰 Lola ahorra 14 euros a la semana. Después de 8 semanas, ¿cuánto dinero habrá ahorrado?",
       "resultado": 112,
       "dificultad": "medio",
-      "unidad": "dinero"
+      "unidad": "euros"
     },
     {
       "enunciado": "🚌 Un autobús lleva 27 personas. En la primera parada suben 20 y en la segunda 9. ¿Cuántas personas hay ahora?",
@@ -1152,25 +1152,25 @@
       "enunciado": "🍕 Cada pizza se corta en 10 trozos. Si hay 4 pizzas, ¿cuántos trozos hay en total?",
       "resultado": 40,
       "dificultad": "medio",
-      "unidad": "trozos"
+      "unidad": "pizzas"
     },
     {
       "enunciado": "🍕 Cada pizza se corta en 9 trozos. Si hay 9 pizzas, ¿cuántos trozos hay en total?",
       "resultado": 81,
       "dificultad": "medio",
-      "unidad": "trozos"
+      "unidad": "pizzas"
     },
     {
       "enunciado": "🧩 Cada caja de puzle tiene 62 piezas. Si compras 6 cajas, ¿cuántas piezas tienes?",
       "resultado": 372,
       "dificultad": "medio",
-      "unidad": "piezas"
+      "unidad": "cajas"
     },
     {
       "enunciado": "🍕 Cada pizza se corta en 9 trozos. Si hay 5 pizzas, ¿cuántos trozos hay en total?",
       "resultado": 45,
       "dificultad": "medio",
-      "unidad": "trozos"
+      "unidad": "pizzas"
     },
     {
       "enunciado": "🌊 En la playa hay 317 personas por la mañana y llegan 138 más por la tarde. ¿Cuántas personas hay en total?",
@@ -1200,7 +1200,7 @@
       "enunciado": "🚂 Un tren tiene 9 vagones con 54 asientos cada uno. ¿Cuántos asientos tiene el tren?",
       "resultado": 486,
       "dificultad": "medio",
-      "unidad": "asientos"
+      "unidad": "vagones"
     }
   ],
   "avanzado": [
@@ -1214,13 +1214,13 @@
       "enunciado": "🏆 En un torneo participan 9 equipos con 18 jugadores cada uno. Si 24 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 138,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🚀 Un cohete puede llevar 8 astronautas. Se planean 11 misiones este año. Si ya han ido 31 astronautas, ¿cuántos quedan por ir?",
       "resultado": 57,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "💻 Una empresa tiene 9 departamentos. Cada departamento tiene 13 empleados. Si se contratan 50 empleados nuevos repartidos por igual, ¿cuántos empleados hay en total?",
@@ -1232,7 +1232,7 @@
       "enunciado": "🚀 Un cohete puede llevar 8 astronautas. Se planean 10 misiones este año. Si ya han ido 31 astronautas, ¿cuántos quedan por ir?",
       "resultado": 49,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "🌍 Un avión lleva 170 pasajeros. En Madrid suben 34 y bajan 15. En París suben 53 y bajan 35. ¿Cuántos pasajeros llegan a Londres?",
@@ -1250,7 +1250,7 @@
       "enunciado": "🏆 En un torneo participan 12 equipos con 18 jugadores cada uno. Si 40 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 176,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🏊 En una piscina caben 270 bañistas. Por la mañana entran 136, al mediodía entran 64 más y salen 85. ¿Cuántos bañistas hay?",
@@ -1268,13 +1268,13 @@
       "enunciado": "🌾 Un agricultor recoge 318 naranjas al día durante 7 días. Vende 378 naranjas. ¿Cuántas le quedan?",
       "resultado": 1848,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "naranjas"
     },
     {
       "enunciado": "🍫 Una chocolatería produce 254 bombones al día. Trabaja 5 días a la semana. Si ya vendió 512 bombones esta semana, ¿cuántos le quedan?",
       "resultado": 758,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "bombones"
     },
     {
       "enunciado": "🌍 Un avión lleva 142 pasajeros. En Madrid suben 37 y bajan 24. En París suben 43 y bajan 21. ¿Cuántos pasajeros llegan a Londres?",
@@ -1304,7 +1304,7 @@
       "enunciado": "🚀 Un cohete puede llevar 8 astronautas. Se planean 12 misiones este año. Si ya han ido 28 astronautas, ¿cuántos quedan por ir?",
       "resultado": 68,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "💻 Una empresa tiene 10 departamentos. Cada departamento tiene 19 empleados. Si se contratan 37 empleados nuevos repartidos por igual, ¿cuántos empleados hay en total?",
@@ -1316,7 +1316,7 @@
       "enunciado": "🚀 Un cohete puede llevar 9 astronautas. Se planean 7 misiones este año. Si ya han ido 30 astronautas, ¿cuántos quedan por ir?",
       "resultado": 33,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "🏊 En una piscina caben 269 bañistas. Por la mañana entran 135, al mediodía entran 91 más y salen 41. ¿Cuántos bañistas hay?",
@@ -1334,7 +1334,7 @@
       "enunciado": "🏆 En un torneo participan 15 equipos con 13 jugadores cada uno. Si 39 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 156,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "💻 Una empresa tiene 5 departamentos. Cada departamento tiene 14 empleados. Si se contratan 38 empleados nuevos repartidos por igual, ¿cuántos empleados hay en total?",
@@ -1376,13 +1376,13 @@
       "enunciado": "🏆 En un torneo participan 9 equipos con 18 jugadores cada uno. Si 20 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 142,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🍫 Una chocolatería produce 338 bombones al día. Trabaja 5 días a la semana. Si ya vendió 479 bombones esta semana, ¿cuántos le quedan?",
       "resultado": 1211,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "bombones"
     },
     {
       "enunciado": "🏊 En una piscina caben 366 bañistas. Por la mañana entran 88, al mediodía entran 109 más y salen 81. ¿Cuántos bañistas hay?",
@@ -1448,7 +1448,7 @@
       "enunciado": "🏆 En un torneo participan 9 equipos con 11 jugadores cada uno. Si 31 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 68,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "💻 Una empresa tiene 8 departamentos. Cada departamento tiene 18 empleados. Si se contratan 31 empleados nuevos repartidos por igual, ¿cuántos empleados hay en total?",
@@ -1466,31 +1466,31 @@
       "enunciado": "🏆 En un torneo participan 15 equipos con 12 jugadores cada uno. Si 33 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 147,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🌾 Un agricultor recoge 467 naranjas al día durante 6 días. Vende 575 naranjas. ¿Cuántas le quedan?",
       "resultado": 2227,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "naranjas"
     },
     {
       "enunciado": "🚀 Un cohete puede llevar 8 astronautas. Se planean 9 misiones este año. Si ya han ido 28 astronautas, ¿cuántos quedan por ir?",
       "resultado": 44,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "🏆 En un torneo participan 12 equipos con 16 jugadores cada uno. Si 27 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 165,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🏆 En un torneo participan 9 equipos con 15 jugadores cada uno. Si 34 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 101,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🏊 En una piscina caben 392 bañistas. Por la mañana entran 139, al mediodía entran 96 más y salen 79. ¿Cuántos bañistas hay?",
@@ -1538,7 +1538,7 @@
       "enunciado": "🚀 Un cohete puede llevar 6 astronautas. Se planean 11 misiones este año. Si ya han ido 30 astronautas, ¿cuántos quedan por ir?",
       "resultado": 36,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "🎓 En un instituto hay 6 cursos con 4 clases cada uno y 32 alumnos por clase. ¿Cuántos alumnos hay en el instituto?",
@@ -1550,7 +1550,7 @@
       "enunciado": "🚀 Un cohete puede llevar 5 astronautas. Se planean 6 misiones este año. Si ya han ido 24 astronautas, ¿cuántos quedan por ir?",
       "resultado": 6,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "🏊 En una piscina caben 303 bañistas. Por la mañana entran 111, al mediodía entran 79 más y salen 82. ¿Cuántos bañistas hay?",
@@ -1592,7 +1592,7 @@
       "enunciado": "🍫 Una chocolatería produce 337 bombones al día. Trabaja 7 días a la semana. Si ya vendió 394 bombones esta semana, ¿cuántos le quedan?",
       "resultado": 1965,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "bombones"
     },
     {
       "enunciado": "🏊 En una piscina caben 255 bañistas. Por la mañana entran 141, al mediodía entran 77 más y salen 86. ¿Cuántos bañistas hay?",
@@ -1610,13 +1610,13 @@
       "enunciado": "🏆 En un torneo participan 11 equipos con 15 jugadores cada uno. Si 27 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 138,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🍫 Una chocolatería produce 336 bombones al día. Trabaja 5 días a la semana. Si ya vendió 440 bombones esta semana, ¿cuántos le quedan?",
       "resultado": 1240,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "bombones"
     },
     {
       "enunciado": "🏪 Una tienda tiene 798 productos. Vende 113 el lunes y recibe 291 el martes. ¿Cuántos productos tiene ahora?",
@@ -1634,7 +1634,7 @@
       "enunciado": "🏆 En un torneo participan 15 equipos con 12 jugadores cada uno. Si 20 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 160,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🌊 Un barco pesquero pesca 116 kg de pescado cada vez que sale al mar. Sale 6 veces a la semana durante 3 semanas. ¿Cuántos kg de pescado ha recogido?",
@@ -1664,7 +1664,7 @@
       "enunciado": "🌾 Un agricultor recoge 276 naranjas al día durante 6 días. Vende 343 naranjas. ¿Cuántas le quedan?",
       "resultado": 1313,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "naranjas"
     },
     {
       "enunciado": "🏊 En una piscina caben 230 bañistas. Por la mañana entran 133, al mediodía entran 98 más y salen 78. ¿Cuántos bañistas hay?",
@@ -1676,7 +1676,7 @@
       "enunciado": "🚀 Un cohete puede llevar 9 astronautas. Se planean 7 misiones este año. Si ya han ido 31 astronautas, ¿cuántos quedan por ir?",
       "resultado": 32,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "🌍 Un avión lleva 157 pasajeros. En Madrid suben 49 y bajan 24. En París suben 39 y bajan 38. ¿Cuántos pasajeros llegan a Londres?",
@@ -1694,7 +1694,7 @@
       "enunciado": "🍫 Una chocolatería produce 225 bombones al día. Trabaja 5 días a la semana. Si ya vendió 408 bombones esta semana, ¿cuántos le quedan?",
       "resultado": 717,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "bombones"
     },
     {
       "enunciado": "📦 Una fábrica produce 92 cajas al día durante 5 días. Ya tenía 140 cajas en el almacén. ¿Cuántas cajas tiene en total?",
@@ -1748,13 +1748,13 @@
       "enunciado": "🏆 En un torneo participan 10 equipos con 12 jugadores cada uno. Si 21 jugadores son internacionales, ¿cuántos son locales?",
       "resultado": 99,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "jugadores"
     },
     {
       "enunciado": "🌾 Un agricultor recoge 357 naranjas al día durante 6 días. Vende 524 naranjas. ¿Cuántas le quedan?",
       "resultado": 1618,
       "dificultad": "avanzado",
-      "unidad": "le"
+      "unidad": "naranjas"
     },
     {
       "enunciado": "🚌 Un autobús sale con 54 pasajeros. En la primera parada bajan 9 y suben 19. En la segunda bajan 16 y suben 9. ¿Cuántos pasajeros hay al final?",
@@ -1790,7 +1790,7 @@
       "enunciado": "🚀 Un cohete puede llevar 10 astronautas. Se planean 12 misiones este año. Si ya han ido 23 astronautas, ¿cuántos quedan por ir?",
       "resultado": 97,
       "dificultad": "avanzado",
-      "unidad": "unidades"
+      "unidad": "astronautas"
     },
     {
       "enunciado": "🌊 Un barco pesquero pesca 85 kg de pescado cada vez que sale al mar. Sale 4 veces a la semana durante 3 semanas. ¿Cuántos kg de pescado ha recogido?",
