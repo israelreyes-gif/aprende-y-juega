@@ -1,7 +1,7 @@
 {
   "name": "Aprende y Juega",
   "short_name": "Aprende y Juega",
-  "description": "App educativa para niños: Matemáticas, Lengua y más.",
+  "description": "App educativa para niños: Matemáticas, Lengua y más",
   "start_url": "/aprende-y-juega/",
   "scope": "/aprende-y-juega/",
   "display": "standalone",
