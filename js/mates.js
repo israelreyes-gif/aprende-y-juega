@@ -260,6 +260,8 @@ function cargarNuevoProblema() {
   }
   var body = document.getElementById('prob-card-body');
   if (body) body.innerHTML = currentProb.enunciado;
+  var unidad = document.getElementById('prob-unidad');
+  if (unidad) unidad.textContent = currentProb.unidad || 'unidades';
   var ansBox = document.getElementById('prob-ans');
   if (ansBox) { ansBox.textContent = '?'; ansBox.style.cssText = ''; }
   probVal = '';
