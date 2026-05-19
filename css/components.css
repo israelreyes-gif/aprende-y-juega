@@ -80,8 +80,8 @@
   box-shadow: var(--sh-sm); transition: transform .1s; border: none;
 }
 .nk:active { transform: scale(.92); background: var(--gray-100); }
-.nk-del { font-size: 18px; color: var(--gray-400); background: var(--gray-100); }
-.nk-ok  { font-size: 20px; color: white; }
+.nk-del { font-size: 20px; color: var(--red); background: var(--red-light); font-weight: 900; }
+.nk-ok  { font-size: 18px; color: white; font-weight: 900; letter-spacing: .5px; }
 
 /* OPERATION BOX (vertical) */
 .op-wrap { display: flex; justify-content: center; padding: 0 0 16px; }
