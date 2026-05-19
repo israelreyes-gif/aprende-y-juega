@@ -1,0 +1,14 @@
+{
+  "name": "Aprende y Juega",
+  "short_name": "AprenderJugar",
+  "description": "App educativa para niños: Matemáticas, Lengua y más",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#7C3AED",
+  "theme_color": "#7C3AED",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
