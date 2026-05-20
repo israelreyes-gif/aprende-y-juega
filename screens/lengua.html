@@ -54,6 +54,19 @@
     <div class="word-card">
       <div class="word-qtxt">¿Con qué letra se escribe esta palabra?</div>
       <div class="word-big" id="gram-word">a<span class="word-gap">_</span>eja</div>
+      <!-- Botón definición -->
+      <div style="margin-top:12px;text-align:center">
+        <button id="def-toggle-btn" onclick="toggleDefinicion()" style="display:none;background:#FEF3C7;border:1.5px solid #FCD34D;color:#D97706;font-size:12px;font-weight:800;padding:7px 14px;border-radius:20px;font-family:var(--f);cursor:pointer">
+          💡 ¿Qué significa esta palabra? ▼
+        </button>
+      </div>
+      <!-- Caja definición -->
+      <div id="def-box" style="display:none;background:#FFFBEB;border-radius:14px;padding:14px;margin-top:10px;border:1.5px solid #FCD34D;text-align:left">
+        <div id="def-nombre" style="font-size:15px;font-weight:900;color:#92400E;margin-bottom:2px"></div>
+        <div id="def-tipo" style="font-size:10px;font-weight:800;color:#B45309;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px"></div>
+        <div id="def-texto" style="font-size:13px;color:#78350F;font-weight:600;line-height:1.6"></div>
+        <div id="def-ejemplo" style="font-size:12px;color:#B45309;font-style:italic;margin-top:8px;padding-top:8px;border-top:1px solid #FDE68A;line-height:1.5"></div>
+      </div>
     </div>
     <div class="word-opts" id="gram-opts"></div>
     <div class="feedback" id="gram-fb" style="display:none"></div>
