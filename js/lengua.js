@@ -50,6 +50,19 @@ function shuffle(arr) {
 /* ---- Dificultad ---- */
 function gramDiff() { return diffLabel(ST.gramStreak); }
 
+/* ---- Toggle definición ---- */
+var defAbierta = false;
+
+function toggleDefinicion() {
+  defAbierta = !defAbierta;
+  var box = document.getElementById('def-box');
+  var btn = document.getElementById('def-toggle-btn');
+  if (box) box.style.display = defAbierta ? 'block' : 'none';
+  if (btn) btn.textContent = defAbierta
+    ? '💡 Ocultar definición ▲'
+    : '💡 ¿Qué significa esta palabra? ▼';
+}
+
 /* ---- Cambiar pestaña ---- */
 function setGramTab(tab) {
   gramTab = tab;
@@ -97,9 +110,42 @@ function renderGramQ() {
 
   var badge = document.getElementById('gram-badge');
   if (badge) badge.textContent = 'Pregunta ' + (gramIdx + 1) + ' de ' + data.length;
-  
+
   var prog = document.getElementById('gram-prog');
   if (prog) prog.style.width = Math.round((gramIdx / data.length) * 100) + '%';
+
+  // Mostrar definición si existe
+  defAbierta = false;
+  var defBtn  = document.getElementById('def-toggle-btn');
+  var defBox  = document.getElementById('def-box');
+  var defNom  = document.getElementById('def-nombre');
+  var defTipo = document.getElementById('def-tipo');
+  var defTxt  = document.getElementById('def-texto');
+  var defEj   = document.getElementById('def-ejemplo');
+
+  if (q.definicion && defBtn) {
+    // Mostrar botón
+    defBtn.style.display = 'inline-flex';
+    defBtn.textContent   = '💡 ¿Qué significa esta palabra? ▼';
+    // Ocultar caja
+    if (defBox) defBox.style.display = 'none';
+    // Rellenar datos — nombre con la letra oculta igual que la palabra
+    var nombreOculto = q.f.replace(new RegExp(q.c, 'i'), '_');
+    if (defNom)  defNom.innerHTML  = nombreOculto.charAt(0) === '_'
+      ? '<span style="color:#EC4899;border-bottom:2px solid #EC4899">_</span>' + nombreOculto.slice(1)
+      : nombreOculto;
+    if (defTipo) defTipo.textContent = q.definicion.tipo || '';
+    if (defTxt)  defTxt.textContent  = q.definicion.texto || '';
+    // Ejemplo: resaltar el guión
+    if (defEj) {
+      var ejTexto = q.definicion.ejemplo || '';
+      defEj.innerHTML = '✏️ ' + ejTexto.replace(/_/g,
+        '<span style="color:#EC4899;border-bottom:2px solid #EC4899;display:inline-block;min-width:10px">_</span>');
+    }
+  } else if (defBtn) {
+    defBtn.style.display = 'none';
+    if (defBox) defBox.style.display = 'none';
+  }
 }
 
 /* ---- Intentos por palabra ---- */
@@ -164,6 +210,7 @@ function pickWord(chosen, correct, full) {
 /* ---- Siguiente palabra ---- */
 function nextGram() {
   gramIdx++;
+  gramIntentos = 0;
   renderGramQ();
   ['gram-fb','gram-next','gram-ortho'].forEach(function(id) {
     var el = document.getElementById(id); if (el) el.style.display = 'none';
