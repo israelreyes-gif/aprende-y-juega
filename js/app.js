@@ -45,7 +45,7 @@ function loadData(callback) {
     }
   }
 
-  fetch('data/ejercicios-mates.json')
+  fetch('data/curso' + cursoActual + '/ejercicios-mates.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
       PROBLEMAS_DB = data;
@@ -59,7 +59,7 @@ function loadData(callback) {
       done('mates');
     });
 
-  fetch('data/historias.json')
+  fetch('data/curso' + cursoActual + '/historias.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
       HISTORIAS_DB = data;
