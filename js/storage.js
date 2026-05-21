@@ -49,6 +49,19 @@ function saveState() {
 /* Estado global — se recarga al cambiar de curso */
 var ST = loadState(3);
 
+/* ---- Nombre de la usuaria ---- */
+function getNombre() {
+  return localStorage.getItem('aprendeyjuega_nombre') || '';
+}
+
+function setNombre(nombre) {
+  localStorage.setItem('aprendeyjuega_nombre', nombre.trim());
+}
+
+function tieneNombre() {
+  return getNombre().length > 0;
+}
+
 /* ---- Cambiar de curso ---- */
 function setCurso(num) {
   cursoActual = num;
