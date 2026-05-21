@@ -195,7 +195,26 @@ function evaluateAnswers() {
         re.className = 'comp-result bad';
         re.innerHTML = '<div class="comp-result-title">' + score + '/5 💪' + orthoNote + '</div>' +
                        '<div class="comp-result-sub">Lee el texto otra vez y fíjate en las respuestas en rojo.</div>';
-        addNextBtn(re, 'Volver a intentarlo', false);
+        // Botón reintento: NO carga nueva historia, solo resetea los campos
+        var nb = document.createElement('button');
+        nb.className = 'next-btn bg-pink';
+        nb.style.cssText = 'margin-top:12px;background:#F59E0B';
+        nb.textContent = 'Volver a intentarlo';
+        nb.onclick = function() {
+          // Limpiar textareas y resultados para reintento
+          for (var j = 1; j <= 5; j++) {
+            var ta2 = document.getElementById('q' + j);
+            if (ta2) ta2.value = '';
+            var qr2 = document.getElementById('qr' + j);
+            if (qr2) { qr2.className = 'q-res'; qr2.textContent = ''; }
+          }
+          re.style.display = 'none';
+          var ortho2 = document.getElementById('comp-ortho');
+          if (ortho2) ortho2.style.display = 'none';
+          var submitBtn2 = document.getElementById('comp-submit');
+          if (submitBtn2) { submitBtn2.disabled = false; }
+        };
+        re.appendChild(nb);
       } else {
         // ── SEGUNDO FALLO: mostrar respuestas correctas + botón siguiente ──
         mostrarRespuestasCorrectas();
@@ -221,8 +240,6 @@ function addNextBtn(container, label, newStory) {
   nb.textContent = label;
   nb.onclick = function() {
     if (newStory) cargarNuevaHistoria();
-    // Botón explícito: NO navega automáticamente, solo recarga la historia
-    // Si quiere salir usa el botón ← de la topbar
   };
   container.appendChild(nb);
 }
