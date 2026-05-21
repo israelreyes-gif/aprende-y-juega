@@ -8,7 +8,7 @@ var HISTORIAS_DB = { facil: [], medio: [], avanzado: [] };
 var historiaIdx  = { facil: 0, medio: 0, avanzado: 0 };
 var currentHistoria = null;
 
-fetch('data/historias.json')
+fetch('data/curso' + cursoActual + '/historias.json')
   .then(function(r) { return r.json(); })
   .then(function(data) {
     HISTORIAS_DB = data;
