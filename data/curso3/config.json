@@ -1,0 +1,26 @@
+{
+  "curso": 3,
+  "nombre": "3º de Primaria",
+  "asignaturas": [
+    {
+      "id": "mates",
+      "nombre": "Matemáticas",
+      "icono": "🔢",
+      "data": {
+        "problemas": "data/curso3/ejercicios-mates.json",
+        "gram": null,
+        "historias": null
+      }
+    },
+    {
+      "id": "lengua",
+      "nombre": "Lengua",
+      "icono": "📚",
+      "data": {
+        "problemas": null,
+        "gram": "data/curso3/ejercicios-gram.json",
+        "historias": "data/curso3/historias.json"
+      }
+    }
+  ]
+}
