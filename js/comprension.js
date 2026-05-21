@@ -1,13 +1,13 @@
 /* =============================================
    COMPRENSION.JS — Historias dinámicas desde JSON
-   150 historias: 50 fácil, 50 medio, 50 avanzado
+   - Botón "Siguiente" explícito (no automático)
+   - Segundo fallo muestra respuestas correctas bajo cada pregunta fallida
    ============================================= */
 
 var HISTORIAS_DB = { facil: [], medio: [], avanzado: [] };
 var historiaIdx  = { facil: 0, medio: 0, avanzado: 0 };
 var currentHistoria = null;
 
-// Cargar historias desde JSON
 fetch('data/historias.json')
   .then(function(r) { return r.json(); })
   .then(function(data) {
@@ -56,7 +56,6 @@ function cargarNuevaHistoria() {
     historiaIdx[nivel]++;
   }
 
-  // Actualizar UI
   var storyCard = document.querySelector('.story-card');
   if (storyCard) {
     storyCard.querySelector('.story-title').textContent =
@@ -64,18 +63,19 @@ function cargarNuevaHistoria() {
     storyCard.querySelector('.story-body').textContent = currentHistoria.texto;
   }
 
-  // Actualizar preguntas
   for (var i = 0; i < 5; i++) {
     var qblock = document.querySelectorAll('.q-block')[i];
     if (qblock && currentHistoria.preguntas[i]) {
       qblock.querySelector('.q-text').textContent = currentHistoria.preguntas[i].pregunta;
+      // Limpiar respuesta correcta del intento anterior
+      var correctBox = qblock.querySelector('.q-correct-box');
+      if (correctBox) correctBox.style.display = 'none';
     }
     var ta = document.getElementById('q' + (i+1)); if (ta) ta.value = '';
     var qr = document.getElementById('qr' + (i+1));
     if (qr) { qr.className = 'q-res'; qr.style.display = 'none'; qr.textContent = ''; }
   }
 
-  // Actualizar badge de dificultad
   var diffEl = document.getElementById('comp-diff');
   if (diffEl) { diffEl.className = 'ex-badge ' + dl.cls; diffEl.textContent = dl.txt; }
 
@@ -87,11 +87,35 @@ function cargarNuevaHistoria() {
   var ortho   = document.getElementById('comp-ortho');   if (ortho)   ortho.style.display   = 'none';
 }
 
+/* ---- Mostrar respuestas correctas bajo cada pregunta fallida ---- */
+function mostrarRespuestasCorrectas() {
+  for (var i = 0; i < 5; i++) {
+    var qr = document.getElementById('qr' + (i+1));
+    if (!qr || qr.className.indexOf('bad') === -1) continue; // solo las fallidas
+
+    var q = currentHistoria.preguntas[i];
+    var qblock = document.querySelectorAll('.q-block')[i];
+    if (!qblock) continue;
+
+    // Crear o actualizar caja de respuesta correcta
+    var correctBox = qblock.querySelector('.q-correct-box');
+    if (!correctBox) {
+      correctBox = document.createElement('div');
+      correctBox.className = 'q-correct-box';
+      correctBox.style.cssText = 'margin-top:6px;background:#EDE9FE;border-radius:8px;padding:8px 10px;border-left:3px solid #7C3AED';
+      qblock.appendChild(correctBox);
+    }
+    correctBox.innerHTML =
+      '<div style="font-size:9px;font-weight:700;color:#7C3AED;text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px">Respuesta correcta</div>' +
+      '<div style="font-size:12px;color:#4C1D95;font-weight:600">' + q.bad.replace('✗ ','') + '</div>';
+    correctBox.style.display = 'block';
+  }
+}
+
 /* ---- Evaluar respuestas ---- */
 function evaluateAnswers() {
   if (!currentHistoria) return;
 
-  // Validar que al menos 3 preguntas tengan respuesta
   var filledCount = 0;
   for (var i = 1; i <= 5; i++) {
     var ta = document.getElementById('q' + i);
@@ -112,7 +136,6 @@ function evaluateAnswers() {
   var dl    = compDiff();
   var level = dl.txt === 'Fácil' ? 0 : dl.txt === 'Medio' ? 1 : 2;
 
-  // Ortografía
   var orthoTypes = {};
   answers.forEach(function(a) {
     checkOrtho(a, level).forEach(function(issue) { orthoTypes[issue.type] = issue.msg; });
@@ -130,81 +153,76 @@ function evaluateAnswers() {
 
     var score = 0;
     for (var i = 0; i < 5; i++) {
-      var res   = document.getElementById('qr' + (i+1));
-      var ans   = answers[i].toLowerCase();
-      var q     = currentHistoria.preguntas[i];
-      var kw    = q.keywords || [];
-      var hits  = kw.filter(function(k) { return ans.includes(k.toLowerCase()); }).length;
-      var ok    = hits >= 1 && ans.length > 3;
+      var res = document.getElementById('qr' + (i+1));
+      var ans = answers[i].toLowerCase();
+      var q   = currentHistoria.preguntas[i];
+      var kw  = q.keywords || [];
+      var hits = kw.filter(function(k) { return ans.includes(k.toLowerCase()); }).length;
+      var ok  = hits >= 1 && ans.length > 3;
       if (ok) { score++; res.className = 'q-res ok'; res.textContent = q.ok; }
       else    { res.className = 'q-res bad'; res.textContent = q.bad; }
+      res.style.display = 'block';
     }
 
     var penalty    = level >= 1 ? orthoMsgs.length : 0;
     var finalScore = Math.max(0, score - penalty);
     var pts        = finalScore * 5;
-    awardPts(pts, 'lengua');
-    recordResult('lengua', 'comp', score >= 3);
-    if (score >= 4) ST.compStreak++; else ST.compStreak = Math.max(0, ST.compStreak - 1);
-    saveState();
-
-    var orthoNote = orthoMsgs.length > 0
+    var orthoNote  = orthoMsgs.length > 0
       ? (level >= 1 ? ' (−' + penalty + ' pts ortografía)' : ' (la próxima vez penalizará)')
       : '';
 
     var re = document.getElementById('comp-result');
     re.style.display = 'block';
+
+    if (!currentHistoria._intentos) currentHistoria._intentos = 0;
+
     if (score >= 4) {
-      // ── BUENA PUNTUACIÓN ──
+      // ── BUENA PUNTUACIÓN: guardar y mostrar botón siguiente ──
+      awardPts(pts, 'lengua');
+      recordResult('lengua', 'comp', true);
+      ST.compStreak++;
+      saveState();
       re.className = 'comp-result ok';
-      re.innerHTML = '<div class="comp-result-title">¡Lectora increíble! ' + score + '/5 🌟 +' + pts + ' pts' + orthoNote + '</div>' +
+      re.innerHTML = '<div class="comp-result-title">¡' + (getNombre()||'Lectora') + ', increíble! ' + score + '/5 🌟 +' + pts + ' pts' + orthoNote + '</div>' +
                      '<div class="comp-result-sub">¡Has entendido el cuento genial!</div>';
-      addNextBtn(re, 's-comprension', 'Siguiente historia →', true);
-    } else if (score >= 2) {
-      // ── RESULTADO MEDIO: ofrecer reintento (2 intentos) ──
-      if (!currentHistoria._intentos) currentHistoria._intentos = 0;
-      currentHistoria._intentos++;
-      if (currentHistoria._intentos < 2) {
-        re.className = 'comp-result bad';
-        re.innerHTML = '<div class="comp-result-title">' + score + '/5 💪 +' + pts + ' pts' + orthoNote + '</div>' +
-                       '<div class="comp-result-sub">Casi lo tienes. Lee el texto otra vez y fíjate en las respuestas marcadas en rojo.</div>';
-        addNextBtn(re, 's-comprension', 'Volver a intentarlo', false);
-      } else {
-        currentHistoria._intentos = 0;
-        re.className = 'comp-result ok';
-        re.innerHTML = '<div class="comp-result-title">¡Bien! ' + score + '/5 📖 +' + pts + ' pts' + orthoNote + '</div>' +
-                       '<div class="comp-result-sub">Mira las respuestas correctas marcadas arriba.</div>';
-        addNextBtn(re, 's-comprension', 'Siguiente historia →', true);
-      }
+      addNextBtn(re, 'Siguiente historia →', true);
+
     } else {
-      // ── PUNTUACIÓN BAJA: reintento obligatorio ──
-      if (!currentHistoria._intentos) currentHistoria._intentos = 0;
       currentHistoria._intentos++;
+
       if (currentHistoria._intentos < 2) {
+        // ── PRIMER FALLO: reintento, no puntuar aún ──
         re.className = 'comp-result bad';
-        re.innerHTML = '<div class="comp-result-title">' + score + '/5 🤗 +' + pts + ' pts' + orthoNote + '</div>' +
-                       '<div class="comp-result-sub">Lee el cuento muy despacio y vuelve a responder.</div>';
-        addNextBtn(re, 's-comprension', 'Leer de nuevo e intentarlo', false);
+        re.innerHTML = '<div class="comp-result-title">' + score + '/5 💪' + orthoNote + '</div>' +
+                       '<div class="comp-result-sub">Lee el texto otra vez y fíjate en las respuestas en rojo.</div>';
+        addNextBtn(re, 'Volver a intentarlo', false);
       } else {
+        // ── SEGUNDO FALLO: mostrar respuestas correctas + botón siguiente ──
+        mostrarRespuestasCorrectas();
+        awardPts(pts, 'lengua');
+        recordResult('lengua', 'comp', false);
+        ST.compStreak = Math.max(0, ST.compStreak - 1);
+        saveState();
         currentHistoria._intentos = 0;
         re.className = 'comp-result bad';
         re.innerHTML = '<div class="comp-result-title">' + score + '/5 📖 +' + pts + ' pts' + orthoNote + '</div>' +
-                       '<div class="comp-result-sub">Mira las respuestas correctas marcadas arriba. ¡La próxima vez lo harás mejor!</div>';
-        addNextBtn(re, 's-comprension', 'Siguiente historia →', true);
+                       '<div class="comp-result-sub">Mira las respuestas correctas en morado. ¡La próxima vez lo harás mejor!</div>';
+        addNextBtn(re, 'Siguiente historia →', true);
       }
     }
     updateSubjectUI('lengua');
   }, 1400);
 }
 
-function addNextBtn(container, dest, label, newStory) {
+function addNextBtn(container, label, newStory) {
   var nb = document.createElement('button');
   nb.className = 'next-btn bg-pink';
   nb.style.marginTop = '12px';
   nb.textContent = label;
   nb.onclick = function() {
     if (newStory) cargarNuevaHistoria();
-    go(dest);
+    // Botón explícito: NO navega automáticamente, solo recarga la historia
+    // Si quiere salir usa el botón ← de la topbar
   };
   container.appendChild(nb);
 }
