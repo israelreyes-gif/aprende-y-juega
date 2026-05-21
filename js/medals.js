@@ -36,6 +36,8 @@ function awardPts(n, subject) {
 }
 
 function updateMedalUI() {
+  if (typeof refreshAllAvatars === "function") refreshAllAvatars();
+  if (typeof checkNewUnlocks === "function") checkNewUnlocks();
   var m = getMedal(ST.totalPts);
   var el;
   if ((el = document.getElementById('home-pts-pill')))  el.textContent = '⭐ ' + ST.totalPts + ' pts';
