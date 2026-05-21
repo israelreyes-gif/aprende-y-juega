@@ -1,0 +1,49 @@
+<!-- PANTALLA EDITOR DE AVATAR -->
+<div class="screen" id="s-avatar">
+  <div class="topbar bg-purple">
+    <button class="back-btn" onclick="go('s-home')" id="avatar-back-btn">←</button>
+    <h1>Mi avatar</h1>
+    <span id="avatar-pts-badge" style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px">⭐ 0 pts</span>
+  </div>
+  <div class="sa">
+
+    <!-- Preview del avatar -->
+    <div style="display:flex;justify-content:center;margin:16px 0 8px">
+      <div style="position:relative;width:110px;height:110px;border-radius:50%;background:#EDE9FE;border:3px solid #7C3AED;display:flex;align-items:center;justify-content:center">
+        <svg id="avatar-editor-svg" data-avatar width="90" height="90" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div id="avatar-medal-badge" style="position:absolute;bottom:4px;right:4px;background:#7C3AED;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:16px;border:2px solid white">🎖️</div>
+      </div>
+    </div>
+
+    <!-- Tono de piel -->
+    <div style="margin:0 16px 14px">
+      <div class="slbl">Tono de piel</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap" id="av-skin-row"></div>
+    </div>
+
+    <!-- Color de pelo -->
+    <div style="margin:0 16px 14px">
+      <div class="slbl">Color de pelo</div>
+      <div style="font-size:11px;color:var(--gray-400);font-weight:600;margin-bottom:6px">Naturales</div>
+      <div style="display:flex;gap:8px;margin-bottom:8px" id="av-hair-natural-row"></div>
+      <div style="font-size:11px;color:var(--gray-400);font-weight:600;margin-bottom:6px">Fantásticos — se desbloquean jugando 🔒</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap" id="av-hair-fancy-row"></div>
+    </div>
+
+    <!-- Peinado -->
+    <div style="margin:0 16px 14px">
+      <div class="slbl">Peinado</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap" id="av-hair-style-row"></div>
+    </div>
+
+    <!-- Accesorio -->
+    <div style="margin:0 16px 14px">
+      <div class="slbl">Accesorio</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap" id="av-acc-row"></div>
+    </div>
+
+    <div style="margin:0 16px 20px">
+      <button class="next-btn bg-purple" onclick="guardarAvatar()">Guardar cambios ✓</button>
+    </div>
+  </div>
+</div>
