@@ -137,7 +137,7 @@ function checkSuma() {
     // ── ACIERTO ──
     box.className = 'dbox correct';
     fb.className  = 'feedback ok';
-    fb.innerHTML  = '<div class="fbt">¡Perfecto! +10 pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
+    fb.innerHTML  = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +10 pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
     awardPts(10, 'mates');
     recordResult('mates', key, true);
     setTimeout(function() { cargarNuevaSuma(); }, 1200);
@@ -215,8 +215,7 @@ function pickMult(el, val) {
     document.querySelectorAll('.mopt').forEach(function(m) { m.className = 'mopt'; });
     el.className = 'mopt mok';
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Genial! ' + currentMulti.a + '×' +
-      currentMulti.b + '=' + currentMulti.resultado + ' 🌟 +10 pts</div>';
+    fb.innerHTML = '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + currentMulti.a + '×' + currentMulti.b + '=' + currentMulti.resultado + ' 🌟 +10 pts</div>';
     awardPts(10, 'mates');
     recordResult('mates', 'multi', true);
     setTimeout(function() { cargarNuevaMulti(); }, 1200);
@@ -290,7 +289,7 @@ function checkProb() {
     box.style.borderColor = 'var(--green)';
     box.style.color       = 'var(--green)';
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Correcto! ' + currentProb.resultado + ' 🎉 +15 pts</div>';
+    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! ' + currentProb.resultado + ' 🎉 +15 pts</div>';
     awardPts(15, 'mates');
     recordResult('mates', 'prob', true);
     document.getElementById('prob-next').style.display = 'block';
@@ -371,8 +370,7 @@ function checkMix() {
     // ── ACIERTO ──
     box.className = 'dbox correct';
     fb.className  = 'feedback ok';
-    fb.innerHTML  = '<div class="fbt">¡Increíble! ' + currentMix.a + sign + currentMix.b +
-      '=' + currentMix.resultado + ' 🚀 +10 pts</div>';
+    fb.innerHTML  = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + currentMix.a + sign + currentMix.b + '=' + currentMix.resultado + ' 🚀 +10 pts</div>';
     awardPts(10, 'mates');
     recordResult('mates', 'mix', true);
     setTimeout(function() { cargarNuevaMezcla(); }, 1200);
