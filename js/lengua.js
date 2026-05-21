@@ -16,7 +16,7 @@ fetch('data/ejercicios-gram.json')
     ['bv','gj','czq','lly','rr'].forEach(function(cat) {
       if (data[cat]) {
         GDATA[cat] = shuffle(data[cat].map(function(item) {
-          return { w: item.p || item.palabra, c: item.l || item.letra, f: item.c || item.completa };
+          return { w: item.p || item.palabra, c: item.l || item.letra, f: item.c || item.completa, definicion: item.definicion || null };
         }));
       }
     });
