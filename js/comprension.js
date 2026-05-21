@@ -74,6 +74,8 @@ function cargarNuevaHistoria() {
     var ta = document.getElementById('q' + (i+1)); if (ta) ta.value = '';
     var qr = document.getElementById('qr' + (i+1));
     if (qr) { qr.className = 'q-res'; qr.style.display = 'none'; qr.textContent = ''; }
+    // Limpiar cajas de respuesta correcta de historias anteriores
+    document.querySelectorAll('.q-correct-box').forEach(function(b) { b.style.display = 'none'; });
   }
 
   var diffEl = document.getElementById('comp-diff');
@@ -201,13 +203,15 @@ function evaluateAnswers() {
         nb.style.cssText = 'margin-top:12px;background:#F59E0B';
         nb.textContent = 'Volver a intentarlo';
         nb.onclick = function() {
-          // Limpiar textareas y resultados para reintento
+          // Limpiar textareas, resultados y cajas de respuesta correcta
           for (var j = 1; j <= 5; j++) {
             var ta2 = document.getElementById('q' + j);
             if (ta2) ta2.value = '';
             var qr2 = document.getElementById('qr' + j);
-            if (qr2) { qr2.className = 'q-res'; qr2.textContent = ''; }
+            if (qr2) { qr2.className = 'q-res'; qr2.textContent = ''; qr2.style.display = 'none'; }
           }
+          // Ocultar cajas de respuesta correcta si las hubiera
+          document.querySelectorAll('.q-correct-box').forEach(function(b) { b.style.display = 'none'; });
           re.style.display = 'none';
           var ortho2 = document.getElementById('comp-ortho');
           if (ortho2) ortho2.style.display = 'none';
