@@ -119,7 +119,7 @@ function checkNewUnlocks() {
     }
   });
   AVATAR_ACCS.forEach(function(a) {
-    if (a.req > 0 && _lastUnlockPts < h.req && currentPts >= a.req) {
+    if (a.req > 0 && _lastUnlockPts < a.req && currentPts >= a.req) {
       newItems.push('¡Nuevo accesorio: ' + a.icon + ' ' + a.label + '! ✨');
     }
   });
