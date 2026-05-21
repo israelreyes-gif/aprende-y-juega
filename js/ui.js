@@ -43,7 +43,8 @@ function updateStreakUI() {
 /* ---- Home: barras de progreso por asignatura ---- */
 function updateHomeUI() {
   var h = new Date().getHours();
-  var greet = h < 13 ? '¡Buenos días, campeona!' : h < 20 ? '¡Buenas tardes, campeona!' : '¡Buenas noches, campeona!';
+  var nombre = getNombre() ? getNombre() + '!' : 'campeona!';
+  var greet = h < 13 ? '¡Buenos días, ' + nombre : h < 20 ? '¡Buenas tardes, ' + nombre : '¡Buenas noches, ' + nombre;
   setEl('home-greeting', greet);
 
   // Mates
