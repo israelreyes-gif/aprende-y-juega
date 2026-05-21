@@ -199,8 +199,11 @@ function renderAvatarEditor() {
       var locked = pts < h.req;
       var d = document.createElement('div');
       d.style.cssText = 'width:32px;height:32px;border-radius:50%;background:'+h.color+';cursor:'+(locked?'not-allowed':'pointer')+';border:'+(globalIdx===AV_TEMP.hairColor?'3px solid #1F2937':'2px solid transparent')+';opacity:'+(locked?'0.3':'1')+';filter:'+(locked?'grayscale(1)':'none');
-      d.title = locked ? 'Se desbloquea con '+h.req+' pts' : '';
-      if (!locked) d.onclick = function(){ AV_TEMP.hairColor=globalIdx; renderAvatarEditor(); };
+      if (!locked) {
+        d.onclick = function(){ AV_TEMP.hairColor=globalIdx; renderAvatarEditor(); };
+      } else {
+        d.onclick = function(){ showToast('🔒 Se desbloquea con '+h.req+' pts'); };
+      }
       fancyRow.appendChild(d);
     });
   }
@@ -214,7 +217,11 @@ function renderAvatarEditor() {
       var btn = document.createElement('button');
       btn.textContent = locked ? '🔒 '+h.label : h.label;
       btn.style.cssText = 'padding:6px 12px;border-radius:20px;border:'+(i===AV_TEMP.hair?'2px solid #7C3AED':'1.5px solid #E5E7EB')+';background:'+(i===AV_TEMP.hair?'#EDE9FE':'white')+';color:'+(i===AV_TEMP.hair?'#4C1D95':'#374151')+';font-size:12px;font-weight:700;cursor:'+(locked?'not-allowed':'pointer')+';opacity:'+(locked?'0.35':'1');
-      if (!locked) btn.onclick = function(){ AV_TEMP.hair=i; renderAvatarEditor(); };
+      if (!locked) {
+        btn.onclick = function(){ AV_TEMP.hair=i; renderAvatarEditor(); };
+      } else {
+        btn.onclick = function(){ showToast('🔒 Se desbloquea con '+h.req+' pts'); };
+      }
       hairRow.appendChild(btn);
     });
   }
@@ -228,7 +235,11 @@ function renderAvatarEditor() {
       var btn = document.createElement('button');
       btn.textContent = locked ? '🔒 '+a.label : (a.icon?a.icon+' ':'')+a.label;
       btn.style.cssText = 'padding:6px 12px;border-radius:20px;border:'+(i===AV_TEMP.acc?'2px solid #7C3AED':'1.5px solid #E5E7EB')+';background:'+(i===AV_TEMP.acc?'#EDE9FE':'white')+';color:'+(i===AV_TEMP.acc?'#4C1D95':'#374151')+';font-size:12px;font-weight:700;cursor:'+(locked?'not-allowed':'pointer')+';opacity:'+(locked?'0.35':'1');
-      if (!locked) btn.onclick = function(){ AV_TEMP.acc=i; renderAvatarEditor(); };
+      if (!locked) {
+        btn.onclick = function(){ AV_TEMP.acc=i; renderAvatarEditor(); };
+      } else {
+        btn.onclick = function(){ showToast('🔒 Se desbloquea con '+a.req+' pts'); };
+      }
       accRow.appendChild(btn);
     });
   }
@@ -270,7 +281,7 @@ function renderCrearAvatar() {
     AVATAR_HAIR_COLORS.slice(3,6).forEach(function(h){
       var d = document.createElement('div');
       d.style.cssText = 'width:32px;height:32px;border-radius:50%;background:'+h.color+';opacity:.25;filter:grayscale(1);border:2px solid transparent';
-      d.title = 'Se desbloquea con '+h.req+' pts';
+      d.onclick = function(){ showToast('🔒 Se desbloquea con '+h.req+' pts jugando'); };
       hairRow.appendChild(d);
     });
   }
@@ -288,7 +299,8 @@ function renderCrearAvatar() {
     AVATAR_HAIRS.slice(3).forEach(function(h){
       var btn = document.createElement('button');
       btn.textContent = '🔒 '+h.label;
-      btn.style.cssText = 'padding:6px 12px;border-radius:20px;border:1.5px solid #E5E7EB;background:white;color:#9CA3AF;font-size:12px;font-weight:700;cursor:not-allowed;opacity:.4';
+      btn.style.cssText = 'padding:6px 12px;border-radius:20px;border:1.5px solid #E5E7EB;background:white;color:#9CA3AF;font-size:12px;font-weight:700;cursor:pointer;opacity:.4';
+      btn.onclick = (function(hh){ return function(){ showToast('🔒 Se desbloquea con '+hh.req+' pts'); }; })(h);
       styleRow.appendChild(btn);
     });
   }
