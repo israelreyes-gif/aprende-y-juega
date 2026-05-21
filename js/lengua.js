@@ -9,7 +9,7 @@ var GDATA   = { bv: [], gj: [], czq: [], lly: [], rr: [] };
 var GOPTS   = { bv: ['B','V'], gj: ['G','J'], czq: ['C','Z','Q'], lly: ['LL','Y'], rr: ['R','RR'] };
 
 // Cargar palabras desde JSON
-fetch('data/ejercicios-gram.json')
+fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
   .then(function(r) { return r.json(); })
   .then(function(data) {
     // Mapear formato JSON -> formato interno
