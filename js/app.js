@@ -100,8 +100,12 @@ function initApp() {
     if (screenId === 's-comprension') cargarNuevaHistoria();
   };
 
-  // Primera pantalla
-  go('s-cursos');
+  // Primera pantalla: si no tiene nombre, pedir primero
+  if (!tieneNombre()) {
+    go('s-bienvenida');
+  } else {
+    go('s-cursos');
+  }
 }
 
 // Arranque: HTML → datos → init
