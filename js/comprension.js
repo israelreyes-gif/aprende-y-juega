@@ -208,12 +208,18 @@ function evaluateAnswers() {
         nb.style.cssText = 'margin-top:12px;background:#F59E0B';
         nb.textContent = 'Volver a intentarlo';
         nb.onclick = function() {
-          // Limpiar textareas, resultados y cajas de respuesta correcta
+          // Solo limpiar las respuestas INCORRECTAS — las correctas se quedan
           for (var j = 1; j <= 5; j++) {
-            var ta2 = document.getElementById('q' + j);
-            if (ta2) ta2.value = '';
             var qr2 = document.getElementById('qr' + j);
-            if (qr2) { qr2.className = 'q-res'; qr2.textContent = ''; qr2.style.display = 'none'; }
+            if (qr2 && qr2.className.indexOf('bad') !== -1) {
+              // Era incorrecta: limpiar textarea y resultado
+              var ta2 = document.getElementById('q' + j);
+              if (ta2) ta2.value = '';
+              qr2.className = 'q-res';
+              qr2.textContent = '';
+              qr2.style.display = 'none';
+            }
+            // Si era correcta (ok): no tocar el textarea ni el resultado verde
           }
           // Ocultar cajas de respuesta correcta si las hubiera
           document.querySelectorAll('.q-correct-box').forEach(function(b) { b.style.display = 'none'; });
