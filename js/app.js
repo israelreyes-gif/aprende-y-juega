@@ -6,6 +6,7 @@
 function loadScreens(callback) {
   var files = [
     'screens/cursos.html',
+    'screens/avatar.html',
     'screens/home.html',
     'screens/mates.html',
     'screens/lengua.html',
@@ -99,6 +100,11 @@ function initApp() {
     if (screenId === 's-mix')         cargarNuevaMezcla();
     if (screenId === 's-comprension') cargarNuevaHistoria();
   };
+
+  // Dibujar avatar en todas las pantallas
+  refreshAllAvatars();
+  // Comprobar desbloqueos nuevos
+  checkNewUnlocks();
 
   // Primera pantalla: si no tiene nombre, pedir primero
   if (!tieneNombre()) {
