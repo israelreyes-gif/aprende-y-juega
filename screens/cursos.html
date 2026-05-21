@@ -1,3 +1,40 @@
+
+<!-- PANTALLA CREAR AVATAR — paso 2 de la bienvenida -->
+<div class="screen" id="s-crear-avatar">
+  <div class="topbar bg-purple" style="padding-bottom:16px;flex-direction:column;align-items:center;gap:6px">
+    <div style="color:white;font-size:16px;font-weight:800">Crea tu avatar</div>
+    <div style="color:rgba(255,255,255,.7);font-size:11px;font-weight:600">Paso 2 de 2 — puedes cambiarlo después</div>
+  </div>
+  <div class="sa">
+    <div style="display:flex;justify-content:center;margin:12px 0 8px">
+      <div style="position:relative;width:100px;height:100px;border-radius:50%;background:#EDE9FE;border:3px solid #7C3AED;display:flex;align-items:center;justify-content:center">
+        <svg id="crear-avatar-svg" data-avatar width="82" height="82" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+    </div>
+
+    <div style="margin:0 16px 12px">
+      <div class="slbl">Tono de piel</div>
+      <div style="display:flex;gap:8px" id="ca-skin-row"></div>
+    </div>
+
+    <div style="margin:0 16px 12px">
+      <div class="slbl">Color de pelo</div>
+      <div style="display:flex;gap:8px;margin-bottom:6px" id="ca-hair-row"></div>
+      <div style="font-size:10px;color:var(--gray-400);font-weight:600">🔒 Los colores fantásticos se desbloquean jugando</div>
+    </div>
+
+    <div style="margin:0 16px 12px">
+      <div class="slbl">Peinado</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap" id="ca-style-row"></div>
+    </div>
+
+    <div style="margin:0 16px 20px;display:flex;flex-direction:column;gap:8px">
+      <button class="next-btn bg-purple" onclick="confirmarCrearAvatar()">¡Listo, empezamos! 🚀</button>
+      <button onclick="confirmarCrearAvatar()" style="background:transparent;border:1.5px solid var(--gray-200);border-radius:12px;padding:10px;font-size:12px;font-weight:600;color:var(--gray-400);cursor:pointer;font-family:var(--f)">Ahora no, ya lo cambio después</button>
+    </div>
+  </div>
+</div>
+
 <!-- PANTALLA DE BIENVENIDA — solo la primera vez -->
 <div class="screen" id="s-bienvenida">
   <div class="topbar bg-purple" style="padding-bottom:28px;flex-direction:column;align-items:center;gap:10px">
