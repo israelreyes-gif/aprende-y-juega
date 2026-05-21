@@ -10,6 +10,14 @@ function showToast(msg) {
   setTimeout(function() { t.classList.remove('show'); }, 2800);
 }
 
+/* ---- Guardar nombre y empezar ---- */
+function guardarNombreYEmpezar() {
+  var input = document.getElementById('input-nombre');
+  if (!input || input.value.trim().length < 2) return;
+  setNombre(input.value.trim());
+  go('s-cursos');
+}
+
 /* ---- Selección de curso ---- */
 function seleccionarCurso(num) {
   if (num !== 3) {
