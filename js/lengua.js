@@ -169,7 +169,7 @@ function pickWord(chosen, correct, full) {
     awardPts(10, 'lengua');
     recordResult('lengua', key, true);
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Correcto! Con ' + correct + ': "' + full + '" 🎉 +10 pts</div>';
+    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! Con ' + correct + ': "' + full + '" 🎉 +10 pts</div>';
     document.getElementById('gram-next').style.display = 'block';
   } else {
     gramIntentos++;
