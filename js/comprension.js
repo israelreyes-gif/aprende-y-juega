@@ -162,7 +162,12 @@ function evaluateAnswers() {
       var hits = kw.filter(function(k) { return ans.includes(k.toLowerCase()); }).length;
       var ok  = hits >= 1 && ans.length > 3;
       if (ok) { score++; res.className = 'q-res ok'; res.textContent = q.ok; }
-      else    { res.className = 'q-res bad'; res.textContent = q.bad; }
+      else {
+        res.className = 'q-res bad';
+        // Primer intento: solo avisar que es incorrecto, sin revelar la respuesta
+        var intentos = currentHistoria._intentos || 0;
+        res.textContent = intentos >= 1 ? q.bad : '✗ No es correcto, vuelve a intentarlo.';
+      }
       res.style.display = 'block';
     }
 
