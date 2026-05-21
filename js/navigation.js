@@ -15,6 +15,25 @@ function guardarNombreYEmpezar() {
   var input = document.getElementById('input-nombre');
   if (!input || input.value.trim().length < 2) return;
   setNombre(input.value.trim());
+  // Ir a crear avatar antes de los cursos
+  initCrearAvatar();
+  go('s-crear-avatar');
+}
+
+function initCrearAvatar() {
+  // Inicializar editor de avatar de bienvenida
+  if (typeof AV_TEMP !== 'undefined') {
+    AV_TEMP = JSON.parse(JSON.stringify(AV));
+  }
+  if (typeof renderCrearAvatar === 'function') renderCrearAvatar();
+}
+
+function confirmarCrearAvatar() {
+  // Guardar avatar temporal si existe
+  if (typeof AV_TEMP !== 'undefined' && typeof saveAvatar === 'function') {
+    AV = JSON.parse(JSON.stringify(AV_TEMP));
+    saveAvatar(AV);
+  }
   go('s-cursos');
 }
 
