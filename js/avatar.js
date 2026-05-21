@@ -100,29 +100,32 @@ function refreshAllAvatars() {
 
 /* ---- Comprobar si hay desbloqueos nuevos ---- */
 var LAST_UNLOCK_KEY = 'aprendeyjuega_last_unlock_pts';
+// Se carga una vez al iniciar — referencia de puntos de la sesión anterior
+var _lastUnlockPts = parseInt(localStorage.getItem(LAST_UNLOCK_KEY) || '0');
 
 function checkNewUnlocks() {
-  var lastPts = parseInt(localStorage.getItem(LAST_UNLOCK_KEY) || '0');
   var currentPts = ST.totalPts;
-  if (currentPts <= lastPts) return;
+  if (currentPts <= _lastUnlockPts) return;
 
   var newItems = [];
   AVATAR_HAIR_COLORS.forEach(function(h) {
-    if (h.req > 0 && lastPts < h.req && currentPts >= h.req) {
-      newItems.push('¡Nuevo color de pelo desbloqueado!');
+    if (h.req > 0 && _lastUnlockPts < h.req && currentPts >= h.req) {
+      newItems.push('¡Nuevo color de pelo desbloqueado! ✨');
     }
   });
   AVATAR_HAIRS.forEach(function(h) {
-    if (h.req > 0 && lastPts < h.req && currentPts >= h.req) {
-      newItems.push('¡Nuevo peinado desbloqueado: ' + h.label + '!');
+    if (h.req > 0 && _lastUnlockPts < h.req && currentPts >= h.req) {
+      newItems.push('¡Nuevo peinado desbloqueado: ' + h.label + '! ✨');
     }
   });
   AVATAR_ACCS.forEach(function(a) {
-    if (a.req > 0 && lastPts < a.req && currentPts >= a.req) {
-      newItems.push('¡Nuevo accesorio desbloqueado: ' + a.icon + ' ' + a.label + '!');
+    if (a.req > 0 && _lastUnlockPts < h.req && currentPts >= a.req) {
+      newItems.push('¡Nuevo accesorio: ' + a.icon + ' ' + a.label + '! ✨');
     }
   });
 
+  // Actualizar referencia en memoria y localStorage
+  _lastUnlockPts = currentPts;
   localStorage.setItem(LAST_UNLOCK_KEY, currentPts);
 
   if (newItems.length > 0) {
