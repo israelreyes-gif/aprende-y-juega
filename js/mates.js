@@ -21,7 +21,7 @@ var currentSuma  = null;
 var currentMulti = null;
 var currentMix   = null;
 
-fetch('data/ejercicios-mates.json')
+fetch('data/curso' + cursoActual + '/ejercicios-mates.json')
   .then(function(r) { return r.json(); })
   .then(function(data) {
     PROBLEMAS_DB = data;
