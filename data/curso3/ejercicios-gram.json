@@ -1909,6 +1909,1016 @@
         "texto": "Fenómenos relacionados con los volcanes.",
         "ejemplo": "\"El _ulcanismo da lugar a erupciones.\""
       }
+    },
+    {
+      "p": "ca_allo",
+      "l": "B",
+      "c": "caballo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Animal grande de cuatro patas que se usa para montar.",
+        "ejemplo": "\"El caballo galopaba veloz por la llanura.\""
+      }
+    },
+    {
+      "p": "ca_eza",
+      "l": "B",
+      "c": "cabeza",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Parte del cuerpo donde están el cerebro y los ojos.",
+        "ejemplo": "\"Me duele la cabeza después de estudiar tanto.\""
+      }
+    },
+    {
+      "p": "ar_ol",
+      "l": "B",
+      "c": "árbol",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Planta grande con tronco de madera y ramas con hojas.",
+        "ejemplo": "\"El árbol daba mucha sombra en el jardín.\""
+      }
+    },
+    {
+      "p": "nu_e",
+      "l": "B",
+      "c": "nube",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Masa de vapor de agua que flota en el cielo.",
+        "ejemplo": "\"Una nube tapó el sol de repente.\""
+      }
+    },
+    {
+      "p": "pue_lo",
+      "l": "B",
+      "c": "pueblo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Localidad pequeña con pocos habitantes.",
+        "ejemplo": "\"En verano voy al pueblo de mis abuelos.\""
+      }
+    },
+    {
+      "p": "sa_er",
+      "l": "B",
+      "c": "saber",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Tener conocimiento o información sobre algo.",
+        "ejemplo": "\"¿Sabes cuánto es dos más dos?\""
+      }
+    },
+    {
+      "p": "su_ir",
+      "l": "B",
+      "c": "subir",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Moverse hacia arriba.",
+        "ejemplo": "\"Tuve que subir las escaleras corriendo.\""
+      }
+    },
+    {
+      "p": "tu_o",
+      "l": "B",
+      "c": "tubo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Cilindro hueco por el que puede pasar agua.",
+        "ejemplo": "\"El agua corría por el tubo de la ducha.\""
+      }
+    },
+    {
+      "p": "la_io",
+      "l": "B",
+      "c": "labio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Cada uno de los bordes carnosos que rodean la boca.",
+        "ejemplo": "\"Se mordió el labio de los nervios.\""
+      }
+    },
+    {
+      "p": "no_ela",
+      "l": "B",
+      "c": "novela",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Libro largo con una historia inventada.",
+        "ejemplo": "\"Me leí toda la novela en un fin de semana.\""
+      }
+    },
+    {
+      "p": "a_eja",
+      "l": "B",
+      "c": "abeja",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Insecto que produce miel y vive en colmenas.",
+        "ejemplo": "\"La abeja volaba de flor en flor.\""
+      }
+    },
+    {
+      "p": "reci_ir",
+      "l": "B",
+      "c": "recibir",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Coger o aceptar algo que te dan.",
+        "ejemplo": "\"Fui a recibir el paquete a la puerta.\""
+      }
+    },
+    {
+      "p": "escri_ir",
+      "l": "B",
+      "c": "escribir",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Representar palabras con letras.",
+        "ejemplo": "\"Me gusta escribir cuentos en mi cuaderno.\""
+      }
+    },
+    {
+      "p": "pro_ar",
+      "l": "B",
+      "c": "probar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Intentar algo o catar un alimento.",
+        "ejemplo": "\"¿Quieres probar este pastel de chocolate?\""
+      }
+    },
+    {
+      "p": "de_er",
+      "l": "B",
+      "c": "deber",
+      "definicion": {
+        "tipo": "Verbo/sustantivo",
+        "texto": "Tener obligación de hacer algo.",
+        "ejemplo": "\"Tengo que hacer el deber de matemáticas.\""
+      }
+    },
+    {
+      "p": "o_eja",
+      "l": "B",
+      "c": "oveja",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Animal con lana que vive en rebaños.",
+        "ejemplo": "\"El pastor contó las ovejas antes de cerrar el corral.\""
+      }
+    },
+    {
+      "p": "ca_erna",
+      "l": "B",
+      "c": "caverna",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Cueva grande y profunda en una montaña.",
+        "ejemplo": "\"Los hombres prehistóricos vivían en cavernas.\""
+      }
+    },
+    {
+      "p": "co_arde",
+      "l": "B",
+      "c": "cobarde",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que tiene miedo y no se atreve ante las dificultades.",
+        "ejemplo": "\"El villano era un cobarde que huía siempre.\""
+      }
+    },
+    {
+      "p": "ro_ot",
+      "l": "B",
+      "c": "robot",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Máquina programada para hacer tareas automáticamente.",
+        "ejemplo": "\"El robot de la fábrica montaba los coches solo.\""
+      }
+    },
+    {
+      "p": "u_re",
+      "l": "B",
+      "c": "ubre",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Órgano de la vaca del que sale la leche.",
+        "ejemplo": "\"El ternero mamaba de la ubre de su madre.\""
+      }
+    },
+    {
+      "p": "a_ierto",
+      "l": "B",
+      "c": "abierto",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que no está cerrado.",
+        "ejemplo": "\"La puerta estaba abierta de par en par.\""
+      }
+    },
+    {
+      "p": "a_rigo",
+      "l": "B",
+      "c": "abrigo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Prenda de ropa larga y gruesa para el frío.",
+        "ejemplo": "\"Me puse el abrigo porque hacía mucho frío.\""
+      }
+    },
+    {
+      "p": "a_razar",
+      "l": "B",
+      "c": "abrazar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Rodear a alguien con los brazos en señal de cariño.",
+        "ejemplo": "\"Me abrazó fuerte al despedirse.\""
+      }
+    },
+    {
+      "p": "a_uela",
+      "l": "B",
+      "c": "abuela",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Madre del padre o de la madre.",
+        "ejemplo": "\"Mi abuela hace las mejores galletas del mundo.\""
+      }
+    },
+    {
+      "p": "a_uelo",
+      "l": "B",
+      "c": "abuelo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Padre del padre o de la madre.",
+        "ejemplo": "\"Mi abuelo me enseñó a jugar al ajedrez.\""
+      }
+    },
+    {
+      "p": "a_eja",
+      "l": "B",
+      "c": "abeja",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Insecto con rayas amarillas que produce miel.",
+        "ejemplo": "\"La abeja picó al niño en el brazo.\""
+      }
+    },
+    {
+      "p": "ca_ina",
+      "l": "B",
+      "c": "cabina",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Espacio pequeño y cerrado para una persona.",
+        "ejemplo": "\"La piloto entró en la cabina del avión.\""
+      }
+    },
+    {
+      "p": "ca_ra",
+      "l": "B",
+      "c": "cabra",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Animal de granja con cuernos que da leche.",
+        "ejemplo": "\"La cabra trepó por las rocas con agilidad.\""
+      }
+    },
+    {
+      "p": "co_ija",
+      "l": "B",
+      "c": "cobija",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Manta o cobertor para abrigarse en la cama.",
+        "ejemplo": "\"Se tapó con la cobija porque tenía frío.\""
+      }
+    },
+    {
+      "p": "cu_o",
+      "l": "B",
+      "c": "cubo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Recipiente cilíndrico con asa para llevar agua.",
+        "ejemplo": "\"Llenó el cubo de agua para fregar.\""
+      }
+    },
+    {
+      "p": "de_il",
+      "l": "B",
+      "c": "débil",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que no tiene mucha fuerza o energía.",
+        "ejemplo": "\"Estaba débil después de la enfermedad.\""
+      }
+    },
+    {
+      "p": "du_le",
+      "l": "B",
+      "c": "duble",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Persona que sustituye a un actor en escenas peligrosas.",
+        "ejemplo": "\"El duble saltó desde el edificio en llamas.\""
+      }
+    },
+    {
+      "p": "ga_ardina",
+      "l": "B",
+      "c": "gabardina",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Abrigo impermeable para la lluvia.",
+        "ejemplo": "\"Cogió la gabardina porque amenazaba lluvia.\""
+      }
+    },
+    {
+      "p": "go_ierno",
+      "l": "B",
+      "c": "gobierno",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Conjunto de personas que dirigen un país.",
+        "ejemplo": "\"El gobierno aprobó una nueva ley.\""
+      }
+    },
+    {
+      "p": "ha_lar",
+      "l": "B",
+      "c": "hablar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Expresar pensamientos con palabras.",
+        "ejemplo": "\"Saber hablar en público es muy útil.\""
+      }
+    },
+    {
+      "p": "ha_itar",
+      "l": "B",
+      "c": "habitar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Vivir o residir en un lugar.",
+        "ejemplo": "\"Muchos animales habitan en el bosque.\""
+      }
+    },
+    {
+      "p": "ha_itual",
+      "l": "B",
+      "c": "habitual",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que se hace con frecuencia y regularidad.",
+        "ejemplo": "\"Es habitual que llueva en noviembre.\""
+      }
+    },
+    {
+      "p": "hu_o",
+      "l": "B",
+      "c": "hubo",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Pasado del verbo haber.",
+        "ejemplo": "\"Hubo una tormenta muy fuerte anoche.\""
+      }
+    },
+    {
+      "p": "la_or",
+      "l": "B",
+      "c": "labor",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Trabajo o tarea que se realiza.",
+        "ejemplo": "\"La labor del maestro es muy importante.\""
+      }
+    },
+    {
+      "p": "li_ro",
+      "l": "B",
+      "c": "libro",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Conjunto de páginas encuadernadas con texto.",
+        "ejemplo": "\"Me regalaron un libro de aventuras.\""
+      }
+    },
+    {
+      "p": "lo_o",
+      "l": "B",
+      "c": "lobo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Animal salvaje parecido al perro que vive en manadas.",
+        "ejemplo": "\"El lobo aullaba a la luna llena.\""
+      }
+    },
+    {
+      "p": "na_egar",
+      "l": "B",
+      "c": "navegar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Viajar por el agua en un barco.",
+        "ejemplo": "\"Soñaba con navegar los siete mares.\""
+      }
+    },
+    {
+      "p": "ni_el",
+      "l": "B",
+      "c": "nivel",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Altura o grado de algo en relación a otra cosa.",
+        "ejemplo": "\"El nivel del agua subió con la lluvia.\""
+      }
+    },
+    {
+      "p": "no_io",
+      "l": "B",
+      "c": "novio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Persona con quien se tiene una relación amorosa.",
+        "ejemplo": "\"El novio le regaló flores rojas.\""
+      }
+    },
+    {
+      "p": "nu_e",
+      "l": "B",
+      "c": "nube",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Masa de vapor que flota en el cielo.",
+        "ejemplo": "\"Las nubes taparon el sol por la tarde.\""
+      }
+    },
+    {
+      "p": "o_ra",
+      "l": "B",
+      "c": "obra",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Trabajo artístico o construcción.",
+        "ejemplo": "\"La obra de teatro fue muy divertida.\""
+      }
+    },
+    {
+      "p": "pa_o",
+      "l": "B",
+      "c": "pavo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Ave grande con cola en abanico de colores.",
+        "ejemplo": "\"El pavo real abrió su cola de colores.\""
+      }
+    },
+    {
+      "p": "pa_imento",
+      "l": "B",
+      "c": "pavimento",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Superficie dura del suelo de una calle.",
+        "ejemplo": "\"El pavimento estaba mojado tras la lluvia.\""
+      }
+    },
+    {
+      "p": "pro_ar",
+      "l": "B",
+      "c": "probar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Intentar algo o catar un alimento.",
+        "ejemplo": "\"Prueba este helado de fresa.\""
+      }
+    },
+    {
+      "p": "pro_lema",
+      "l": "B",
+      "c": "problema",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Situación difícil que hay que resolver.",
+        "ejemplo": "\"El problema de matemáticas era muy difícil.\""
+      }
+    },
+    {
+      "p": "prue_a",
+      "l": "B",
+      "c": "prueba",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Examen o demostración de algo.",
+        "ejemplo": "\"Aprobé la prueba de lengua con buena nota.\""
+      }
+    },
+    {
+      "p": "re_el",
+      "l": "B",
+      "c": "rebel",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que no obedece las normas o la autoridad.",
+        "ejemplo": "\"Era un chico rebelde que no hacía caso.\""
+      }
+    },
+    {
+      "p": "re_elde",
+      "l": "B",
+      "c": "rebelde",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que no obedece y actúa por su cuenta.",
+        "ejemplo": "\"El caballo rebelde no quería llevar jinete.\""
+      }
+    },
+    {
+      "p": "ro_ar",
+      "l": "B",
+      "c": "robar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Tomar algo ajeno sin permiso.",
+        "ejemplo": "\"El ladrón intentó robar el museo.\""
+      }
+    },
+    {
+      "p": "sa_ina",
+      "l": "B",
+      "c": "sabina",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Árbol de hoja perenne con frutos azulados.",
+        "ejemplo": "\"La sabina vivía más de mil años.\""
+      }
+    },
+    {
+      "p": "sa_or",
+      "l": "B",
+      "c": "sabor",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Sensación que produce un alimento en la boca.",
+        "ejemplo": "\"El sabor de la fresa es dulce y ácido.\""
+      }
+    },
+    {
+      "p": "so_re",
+      "l": "B",
+      "c": "sobre",
+      "definicion": {
+        "tipo": "Preposición/sustantivo",
+        "texto": "Encima de algo, o bolsa de papel para cartas.",
+        "ejemplo": "\"Dejé el libro sobre la mesa.\""
+      }
+    },
+    {
+      "p": "so_rina",
+      "l": "B",
+      "c": "sobrina",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Hija del hermano o la hermana.",
+        "ejemplo": "\"Mi sobrina tiene tres años y es muy graciosa.\""
+      }
+    },
+    {
+      "p": "ta_erna",
+      "l": "B",
+      "c": "taberna",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Bar o local donde se sirven bebidas.",
+        "ejemplo": "\"Los pescadores se reunían en la taberna del puerto.\""
+      }
+    },
+    {
+      "p": "ta_lero",
+      "l": "B",
+      "c": "tablero",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Superficie plana para jugar o escribir.",
+        "ejemplo": "\"Movió la pieza en el tablero de ajedrez.\""
+      }
+    },
+    {
+      "p": "te_er",
+      "l": "B",
+      "c": "teber",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Antiguo verbo que significa tener miedo.",
+        "ejemplo": "\"Debemos teber respeto a la naturaleza.\""
+      }
+    },
+    {
+      "p": "tri_u",
+      "l": "B",
+      "c": "tribu",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Grupo de personas con cultura y tradiciones comunes.",
+        "ejemplo": "\"La tribu celebró la cosecha con una fiesta.\""
+      }
+    },
+    {
+      "p": "tu_ería",
+      "l": "B",
+      "c": "tubería",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Conjunto de tubos por donde circula el agua.",
+        "ejemplo": "\"La tubería se rompió e inundó el baño.\""
+      }
+    },
+    {
+      "p": "u_icar",
+      "l": "B",
+      "c": "ubicar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Encontrar o situar algo en un lugar.",
+        "ejemplo": "\"¿Puedes ubicar España en el mapa?\""
+      }
+    },
+    {
+      "p": "u_re",
+      "l": "B",
+      "c": "ubre",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Órgano de la vaca que produce leche.",
+        "ejemplo": "\"El ternero se acercó a la ubre de su madre.\""
+      }
+    },
+    {
+      "p": "a_iso",
+      "l": "B",
+      "c": "aviso",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Mensaje o señal que informa de algo.",
+        "ejemplo": "\"Pusieron un aviso en la puerta del colegio.\""
+      }
+    },
+    {
+      "p": "a_entura",
+      "l": "B",
+      "c": "aventura",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Situación emocionante y arriesgada.",
+        "ejemplo": "\"La aventura en la selva fue increíble.\""
+      }
+    },
+    {
+      "p": "lla_e",
+      "l": "V",
+      "c": "llave",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Instrumento para abrir y cerrar cerraduras.",
+        "ejemplo": "\"Busqué la llave en todos mis bolsillos.\""
+      }
+    },
+    {
+      "p": "nue_o",
+      "l": "V",
+      "c": "nuevo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que existe hace poco tiempo o que no se ha usado.",
+        "ejemplo": "\"Estrené un nuevo par de zapatillas.\""
+      }
+    },
+    {
+      "p": "nue_e",
+      "l": "V",
+      "c": "nueve",
+      "definicion": {
+        "tipo": "Numeral",
+        "texto": "El número que va después del ocho.",
+        "ejemplo": "\"Tengo nueve cromos en mi colección.\""
+      }
+    },
+    {
+      "p": "li_ro",
+      "l": "V",
+      "c": "libro",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Conjunto de páginas encuadernadas con texto.",
+        "ejemplo": "\"Me regalaron un libro de aventuras.\""
+      }
+    },
+    {
+      "p": "e_itar",
+      "l": "V",
+      "c": "evitar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Hacer lo posible para que algo malo no ocurra.",
+        "ejemplo": "\"Hay que evitar cruzar la calle sin mirar.\""
+      }
+    },
+    {
+      "p": "mo_er",
+      "l": "V",
+      "c": "mover",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Cambiar algo de posición o lugar.",
+        "ejemplo": "\"Mover el sofá entre dos es más fácil.\""
+      }
+    },
+    {
+      "p": "ner_ioso",
+      "l": "V",
+      "c": "nervioso",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que está inquieto por la emoción o el miedo.",
+        "ejemplo": "\"Estaba nervioso antes del examen.\""
+      }
+    },
+    {
+      "p": "re_isar",
+      "l": "V",
+      "c": "revisar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Examinar con cuidado para comprobar que está bien.",
+        "ejemplo": "\"Revisa los deberes antes de entregarlos.\""
+      }
+    },
+    {
+      "p": "sal_aje",
+      "l": "V",
+      "c": "salvaje",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que vive en la naturaleza sin domesticar.",
+        "ejemplo": "\"El toro salvaje corría sin control.\""
+      }
+    },
+    {
+      "p": "tele_isión",
+      "l": "V",
+      "c": "televisión",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Aparato que emite imágenes y sonido.",
+        "ejemplo": "\"Vimos la película en la televisión.\""
+      }
+    },
+    {
+      "p": "_elocidad",
+      "l": "V",
+      "c": "velocidad",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Rapidez con la que algo se mueve.",
+        "ejemplo": "\"El tren alcanzó gran velocidad.\""
+      }
+    },
+    {
+      "p": "de_olver",
+      "l": "V",
+      "c": "devolver",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Dar algo de vuelta a quien te lo prestó.",
+        "ejemplo": "\"Tengo que devolver el libro a la biblioteca.\""
+      }
+    },
+    {
+      "p": "mo_imiento",
+      "l": "V",
+      "c": "movimiento",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Acción de moverse o cambiar de posición.",
+        "ejemplo": "\"El movimiento del péndulo era hipnótico.\""
+      }
+    },
+    {
+      "p": "es_uelto",
+      "l": "V",
+      "c": "envuelto",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que está cubierto o rodeado de algo.",
+        "ejemplo": "\"El regalo estaba envuelto en papel de colores.\""
+      }
+    },
+    {
+      "p": "en_olver",
+      "l": "V",
+      "c": "envolver",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Cubrir algo por todos los lados.",
+        "ejemplo": "\"Ayudé a envolver los regalos de Navidad.\""
+      }
+    },
+    {
+      "p": "re_olver",
+      "l": "V",
+      "c": "revolver",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Mezclar o desordenar algo.",
+        "ejemplo": "\"No revuelvas mis cosas.\""
+      }
+    },
+    {
+      "p": "con_encer",
+      "l": "V",
+      "c": "convencer",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Hacer que alguien cambie de opinión.",
+        "ejemplo": "\"No pudo convencerme de que fuera.\""
+      }
+    },
+    {
+      "p": "in_ierno",
+      "l": "V",
+      "c": "invierno",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Estación más fría del año.",
+        "ejemplo": "\"En invierno nieva en la montaña.\""
+      }
+    },
+    {
+      "p": "pri_avera",
+      "l": "V",
+      "c": "primavera",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Estación entre el invierno y el verano.",
+        "ejemplo": "\"En primavera florecen todas las plantas.\""
+      }
+    },
+    {
+      "p": "pro_incia",
+      "l": "V",
+      "c": "provincia",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "División administrativa de un país.",
+        "ejemplo": "\"Madrid es la provincia más poblada de España.\""
+      }
+    },
+    {
+      "p": "uni_ersidad",
+      "l": "V",
+      "c": "universidad",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Centro de estudios superiores.",
+        "ejemplo": "\"Quiero estudiar medicina en la universidad.\""
+      }
+    },
+    {
+      "p": "a_entura",
+      "l": "V",
+      "c": "aventura",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Situación emocionante y arriesgada.",
+        "ejemplo": "\"La aventura en la selva fue increíble.\""
+      }
+    },
+    {
+      "p": "obser_ar",
+      "l": "V",
+      "c": "observar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Mirar algo con atención y detalle.",
+        "ejemplo": "\"Observar las estrellas de noche es precioso.\""
+      }
+    },
+    {
+      "p": "reser_ar",
+      "l": "V",
+      "c": "reservar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Guardar algo para usarlo más tarde.",
+        "ejemplo": "\"Reservé una mesa para cenar.\""
+      }
+    },
+    {
+      "p": "conser_ar",
+      "l": "V",
+      "c": "conservar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Mantener algo en buen estado.",
+        "ejemplo": "\"Hay que conservar la naturaleza.\""
+      }
+    },
+    {
+      "p": "descu_rir",
+      "l": "V",
+      "c": "descubrir",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Encontrar algo que estaba oculto.",
+        "ejemplo": "\"Colón descubrió América en 1492.\""
+      }
+    },
+    {
+      "p": "li_iano",
+      "l": "V",
+      "c": "liviano",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que pesa muy poco.",
+        "ejemplo": "\"La pluma es liviana como el aire.\""
+      }
+    },
+    {
+      "p": "pri_ado",
+      "l": "V",
+      "c": "privado",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que es personal y no es para todo el mundo.",
+        "ejemplo": "\"Este es un jardín privado.\""
+      }
+    },
+    {
+      "p": "ele_ado",
+      "l": "V",
+      "c": "elevado",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que está en un lugar alto.",
+        "ejemplo": "\"El castillo estaba en un lugar elevado.\""
+      }
+    },
+    {
+      "p": "equi_ocarse",
+      "l": "V",
+      "c": "equivocarse",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Cometer un error.",
+        "ejemplo": "\"Me equivoqué en la última pregunta.\""
+      }
+    },
+    {
+      "p": "acti_o",
+      "l": "V",
+      "c": "activo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que se mueve mucho y hace muchas cosas.",
+        "ejemplo": "\"Es un niño muy activo que no para.\""
+      }
+    },
+    {
+      "p": "positi_o",
+      "l": "V",
+      "c": "positivo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que es bueno y optimista.",
+        "ejemplo": "\"Tengo una actitud positiva ante los problemas.\""
+      }
+    },
+    {
+      "p": "negati_o",
+      "l": "V",
+      "c": "negativo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que no es bueno o que dice que no.",
+        "ejemplo": "\"Recibió una respuesta negativa.\""
+      }
+    },
+    {
+      "p": "crea_tivo",
+      "l": "V",
+      "c": "creativo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que tiene mucha imaginación.",
+        "ejemplo": "\"El artista era muy creativo.\""
+      }
     }
   ],
   "gj": [
@@ -2980,6 +3990,456 @@
         "tipo": "Sustantivo masculino",
         "texto": "Jefe o gobernante de comunidades árabes.",
         "ejemplo": "\"El _eque recibió a sus invitados en su palacio.\""
+      }
+    },
+    {
+      "p": "a_ua",
+      "l": "G",
+      "c": "agua",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Líquido transparente e incoloro esencial para la vida.",
+        "ejemplo": "\"Bebe agua, que hace mucho calor.\""
+      }
+    },
+    {
+      "p": "ami_o",
+      "l": "G",
+      "c": "amigo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Persona con quien se tiene una relación de amistad.",
+        "ejemplo": "\"Mi mejor amigo y yo somos inseparables.\""
+      }
+    },
+    {
+      "p": "lue_o",
+      "l": "G",
+      "c": "luego",
+      "definicion": {
+        "tipo": "Adverbio",
+        "texto": "Después de este momento.",
+        "ejemplo": "\"Primero haz los deberes, luego puedes jugar.\""
+      }
+    },
+    {
+      "p": "jue_o",
+      "l": "G",
+      "c": "juego",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Actividad divertida que se hace para entretenerse.",
+        "ejemplo": "\"Mi juego favorito es el escondite.\""
+      }
+    },
+    {
+      "p": "lar_o",
+      "l": "G",
+      "c": "largo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que tiene mucha longitud.",
+        "ejemplo": "\"El camino era muy largo y cansado.\""
+      }
+    },
+    {
+      "p": "lle_ar",
+      "l": "G",
+      "c": "llegar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Alcanzar el final de un recorrido.",
+        "ejemplo": "\"Llegamos tarde al colegio por el tráfico.\""
+      }
+    },
+    {
+      "p": "pa_ar",
+      "l": "G",
+      "c": "pagar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Dar dinero a cambio de algo.",
+        "ejemplo": "\"Fui a pagar la compra en la caja.\""
+      }
+    },
+    {
+      "p": "ju_ar",
+      "l": "G",
+      "c": "jugar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Hacer algo divertido para entretenerse.",
+        "ejemplo": "\"Me encanta jugar al fútbol con mis amigos.\""
+      }
+    },
+    {
+      "p": "lle_ar",
+      "l": "G",
+      "c": "llegar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Alcanzar un lugar al que se iba.",
+        "ejemplo": "\"¿Cuándo llegaremos a la playa?\""
+      }
+    },
+    {
+      "p": "ne_ocio",
+      "l": "G",
+      "c": "negocio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Actividad comercial que produce dinero.",
+        "ejemplo": "\"Mi padre tiene un negocio de zapatos.\""
+      }
+    },
+    {
+      "p": "si_lo",
+      "l": "G",
+      "c": "siglo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Período de cien años.",
+        "ejemplo": "\"Vivimos en el siglo veintiuno.\""
+      }
+    },
+    {
+      "p": "re_alo",
+      "l": "G",
+      "c": "regalo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Cosa que se da a alguen para hacerle feliz.",
+        "ejemplo": "\"Le hice un regalo sorpresa por su cumpleaños.\""
+      }
+    },
+    {
+      "p": "al_uien",
+      "l": "G",
+      "c": "alguien",
+      "definicion": {
+        "tipo": "Pronombre",
+        "texto": "Una persona indeterminada.",
+        "ejemplo": "\"Alguien ha llamado a la puerta.\""
+      }
+    },
+    {
+      "p": "nin_uno",
+      "l": "G",
+      "c": "ninguno",
+      "definicion": {
+        "tipo": "Pronombre",
+        "texto": "Ni uno solo.",
+        "ejemplo": "\"Ninguno de mis amigos vino a la fiesta.\""
+      }
+    },
+    {
+      "p": "al_o",
+      "l": "G",
+      "c": "algo",
+      "definicion": {
+        "tipo": "Pronombre",
+        "texto": "Una cosa indeterminada.",
+        "ejemplo": "\"Hay algo extraño en este cuarto.\""
+      }
+    },
+    {
+      "p": "si_uiente",
+      "l": "G",
+      "c": "siguiente",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que va inmediatamente después.",
+        "ejemplo": "\"El siguiente ejercicio es más difícil.\""
+      }
+    },
+    {
+      "p": "le_umbre",
+      "l": "G",
+      "c": "legumbre",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Planta comestible como las lentejas o los garbanzos.",
+        "ejemplo": "\"Las legumbres son muy nutritivas.\""
+      }
+    },
+    {
+      "p": "fi_ura",
+      "l": "G",
+      "c": "figura",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Forma exterior de un cuerpo o personaje.",
+        "ejemplo": "\"La figura del héroe era imponente.\""
+      }
+    },
+    {
+      "p": "ti_re",
+      "l": "G",
+      "c": "tigre",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Animal felino con rayas negras y naranjas muy peligroso.",
+        "ejemplo": "\"El tigre cazó al antílope en la jungla.\""
+      }
+    },
+    {
+      "p": "dra_ón",
+      "l": "G",
+      "c": "dragón",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Animal fantástico de los cuentos que escupe fuego.",
+        "ejemplo": "\"El dragón guardaba el tesoro en la montaña.\""
+      }
+    },
+    {
+      "p": "ele_ante",
+      "l": "G",
+      "c": "elegante",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que viste bien y tiene buen gusto.",
+        "ejemplo": "\"Iba muy elegante con su traje negro.\""
+      }
+    },
+    {
+      "p": "ima_en",
+      "l": "G",
+      "c": "imagen",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Representación visual como una foto o dibujo.",
+        "ejemplo": "\"La imagen del cuadro era muy bonita.\""
+      }
+    },
+    {
+      "p": "inte_rar",
+      "l": "G",
+      "c": "integrar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Incluir algo como parte de un todo.",
+        "ejemplo": "\"Hay que integrar a todos en el equipo.\""
+      }
+    },
+    {
+      "p": "ile_al",
+      "l": "G",
+      "c": "ilegal",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que va en contra de la ley.",
+        "ejemplo": "\"Aparcar aquí es ilegal.\""
+      }
+    },
+    {
+      "p": "ori_en",
+      "l": "G",
+      "c": "origen",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Principio o causa de algo.",
+        "ejemplo": "\"El origen de la vida es un misterio.\""
+      }
+    },
+    {
+      "p": "_énero",
+      "l": "G",
+      "c": "género",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Tipo o clase de algo.",
+        "ejemplo": "\"El género musical que más me gusta es el pop.\""
+      }
+    },
+    {
+      "p": "or_anizar",
+      "l": "G",
+      "c": "organizar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Poner algo en orden para que funcione bien.",
+        "ejemplo": "\"Organizamos una fiesta sorpresa.\""
+      }
+    },
+    {
+      "p": "ba_o",
+      "l": "J",
+      "c": "bajo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que tiene poca altura.",
+        "ejemplo": "\"La mesa era demasiado baja para mí.\""
+      }
+    },
+    {
+      "p": "di_o",
+      "l": "J",
+      "c": "dijo",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Pasado del verbo decir.",
+        "ejemplo": "\"Me dijo que vendría a las cinco.\""
+      }
+    },
+    {
+      "p": "le_ía",
+      "l": "J",
+      "c": "lejía",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Líquido con cloro para limpiar y desinfectar.",
+        "ejemplo": "\"Echó lejía para desinfectar el baño.\""
+      }
+    },
+    {
+      "p": "ma_o",
+      "l": "J",
+      "c": "majo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Persona simpática y agradable.",
+        "ejemplo": "\"Tu amigo es muy majo y siempre ayuda.\""
+      }
+    },
+    {
+      "p": "fle_a",
+      "l": "J",
+      "c": "flecha",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Vara con punta que se lanza con arco.",
+        "ejemplo": "\"El arquero disparó la flecha al blanco.\""
+      }
+    },
+    {
+      "p": "co_in",
+      "l": "J",
+      "c": "cojín",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Almohadón pequeño para sentarse o decorar.",
+        "ejemplo": "\"Me senté sobre el cojín del sofá.\""
+      }
+    },
+    {
+      "p": "pa_aro",
+      "l": "J",
+      "c": "pájaro",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Animal con alas y plumas que puede volar.",
+        "ejemplo": "\"Un pájaro amarillo cantaba en la rama.\""
+      }
+    },
+    {
+      "p": "tara_ea",
+      "l": "J",
+      "c": "tarea",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Trabajo que hay que hacer, especialmente escolar.",
+        "ejemplo": "\"Tengo mucha tarea esta tarde.\""
+      }
+    },
+    {
+      "p": "vie_o",
+      "l": "J",
+      "c": "viejo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que tiene muchos años.",
+        "ejemplo": "\"El castillo viejo tenía quinientos años.\""
+      }
+    },
+    {
+      "p": "o_os",
+      "l": "J",
+      "c": "ojos",
+      "definicion": {
+        "tipo": "Sustantivo masculino plural",
+        "texto": "Órganos de la vista.",
+        "ejemplo": "\"Tiene los ojos azules como el mar.\""
+      }
+    },
+    {
+      "p": "hi_o",
+      "l": "J",
+      "c": "hijo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Persona respecto a sus padres.",
+        "ejemplo": "\"El hijo mayor ayudó a su madre.\""
+      }
+    },
+    {
+      "p": "ho_a",
+      "l": "J",
+      "c": "hoja",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Parte verde de las plantas, o página de un libro.",
+        "ejemplo": "\"Las hojas se volvieron amarillas en otoño.\""
+      }
+    },
+    {
+      "p": "me_illa",
+      "l": "J",
+      "c": "mejilla",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Parte de la cara a los lados de la nariz.",
+        "ejemplo": "\"Le dio un beso en la mejilla.\""
+      }
+    },
+    {
+      "p": "ro_o",
+      "l": "J",
+      "c": "rojo",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Color de la sangre y los tomates maduros.",
+        "ejemplo": "\"El semáforo se puso en rojo.\""
+      }
+    },
+    {
+      "p": "tra_e",
+      "l": "J",
+      "c": "traje",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Conjunto de ropa elegante.",
+        "ejemplo": "\"Se puso el traje nuevo para la boda.\""
+      }
+    },
+    {
+      "p": "e_emplo",
+      "l": "J",
+      "c": "ejemplo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Caso que sirve para explicar algo.",
+        "ejemplo": "\"El profesor puso un ejemplo en la pizarra.\""
+      }
+    },
+    {
+      "p": "e_ercicio",
+      "l": "J",
+      "c": "ejercicio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Tarea que se hace para aprender.",
+        "ejemplo": "\"Hice todos los ejercicios de mates.\""
+      }
+    },
+    {
+      "p": "ca_a",
+      "l": "J",
+      "c": "caja",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Recipiente con tapa para guardar cosas.",
+        "ejemplo": "\"Metí los juguetes en una caja.\""
       }
     }
   ],
@@ -4152,6 +5612,436 @@
         "tipo": "Sustantivo femenino",
         "texto": "Lugar muy lejano e imaginario.",
         "ejemplo": "\"Vive en las quimbambas, tardamos horas en llegar.\""
+      }
+    },
+    {
+      "p": "bo_ina",
+      "l": "C",
+      "c": "bocina",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Instrumento para producir un sonido fuerte de aviso.",
+        "ejemplo": "\"El conductor tocó la bocina para avisar.\""
+      }
+    },
+    {
+      "p": "co_ina",
+      "l": "C",
+      "c": "cocina",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Habitación donde se prepara la comida.",
+        "ejemplo": "\"El olor de la cocina llenaba la casa.\""
+      }
+    },
+    {
+      "p": "co_he",
+      "l": "C",
+      "c": "coche",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Vehículo con motor de cuatro ruedas.",
+        "ejemplo": "\"Fuimos al campo en el coche de mi padre.\""
+      }
+    },
+    {
+      "p": "le_he",
+      "l": "C",
+      "c": "leche",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Líquido blanco nutritivo que producen las hembras de los mamíferos.",
+        "ejemplo": "\"Me tomo un vaso de leche cada mañana.\""
+      }
+    },
+    {
+      "p": "no_he",
+      "l": "C",
+      "c": "noche",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Período de oscuridad entre atardecer y amanecer.",
+        "ejemplo": "\"Las estrellas brillan en la noche despejada.\""
+      }
+    },
+    {
+      "p": "pa_iente",
+      "l": "C",
+      "c": "paciente",
+      "definicion": {
+        "tipo": "Sustantivo/adjetivo",
+        "texto": "Persona que recibe atención médica.",
+        "ejemplo": "\"El paciente esperó su turno sin quejarse.\""
+      }
+    },
+    {
+      "p": "pie_a",
+      "l": "C",
+      "c": "pieza",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Cada parte de un conjunto.",
+        "ejemplo": "\"Me falta una pieza del puzle.\""
+      }
+    },
+    {
+      "p": "pre_io",
+      "l": "C",
+      "c": "precio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Cantidad de dinero que cuesta algo.",
+        "ejemplo": "\"El precio de las entradas era alto.\""
+      }
+    },
+    {
+      "p": "pro_eso",
+      "l": "C",
+      "c": "proceso",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Conjunto de pasos para conseguir algo.",
+        "ejemplo": "\"El proceso de fabricar papel lleva días.\""
+      }
+    },
+    {
+      "p": "re_eta",
+      "l": "C",
+      "c": "receta",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Instrucciones para preparar un plato.",
+        "ejemplo": "\"Siguió la receta de su abuela.\""
+      }
+    },
+    {
+      "p": "solu_ión",
+      "l": "C",
+      "c": "solución",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Forma de resolver un problema.",
+        "ejemplo": "\"Encontramos la solución fácilmente.\""
+      }
+    },
+    {
+      "p": "ter_io",
+      "l": "C",
+      "c": "tercio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Cada una de las tres partes iguales.",
+        "ejemplo": "\"Bebió un tercio de la botella.\""
+      }
+    },
+    {
+      "p": "tro_o",
+      "l": "C",
+      "c": "trozo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Parte separada de algo mayor.",
+        "ejemplo": "\"Comí un trozo de tarta de chocolate.\""
+      }
+    },
+    {
+      "p": "ha_er",
+      "l": "C",
+      "c": "hacer",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Realizar o crear algo.",
+        "ejemplo": "\"Tengo que hacer los deberes.\""
+      }
+    },
+    {
+      "p": "lu_ero",
+      "l": "C",
+      "c": "lucero",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Estrella brillante, especialmente Venus.",
+        "ejemplo": "\"Veía el lucero del alba desde su ventana.\""
+      }
+    },
+    {
+      "p": "mez_la",
+      "l": "C",
+      "c": "mezcla",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Resultado de juntar cosas diferentes.",
+        "ejemplo": "\"La mezcla de colores dio un tono bonito.\""
+      }
+    },
+    {
+      "p": "na_imiento",
+      "l": "C",
+      "c": "nacimiento",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Momento en que un ser viene al mundo.",
+        "ejemplo": "\"El nacimiento del bebé llenó de alegría a todos.\""
+      }
+    },
+    {
+      "p": "ele_ción",
+      "l": "C",
+      "c": "elección",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Acto de elegir entre opciones.",
+        "ejemplo": "\"La elección del delegado fue muy reñida.\""
+      }
+    },
+    {
+      "p": "espa_io",
+      "l": "C",
+      "c": "espacio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Lugar que ocupa algo o el universo exterior.",
+        "ejemplo": "\"El cohete viajó al espacio.\""
+      }
+    },
+    {
+      "p": "feli_idad",
+      "l": "C",
+      "c": "felicidad",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Estado de bienestar y alegría.",
+        "ejemplo": "\"La felicidad de su cara era contagiosa.\""
+      }
+    },
+    {
+      "p": "de_ir",
+      "l": "C",
+      "c": "decir",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Expresar con palabras algo que se piensa.",
+        "ejemplo": "\"Tengo algo importante que decir.\""
+      }
+    },
+    {
+      "p": "cer_eza",
+      "l": "C",
+      "c": "cerveza",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Bebida refrescante de cebada fermentada.",
+        "ejemplo": "\"Los adultos tomaron cerveza fría.\""
+      }
+    },
+    {
+      "p": "ca_a",
+      "l": "Z",
+      "c": "caza",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Actividad de perseguir animales salvajes.",
+        "ejemplo": "\"Salió de caza con su perro por el bosque.\""
+      }
+    },
+    {
+      "p": "pie_a",
+      "l": "Z",
+      "c": "pieza",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Parte de un conjunto.",
+        "ejemplo": "\"Perdí una pieza del puzle.\""
+      }
+    },
+    {
+      "p": "ma_orka",
+      "l": "Z",
+      "c": "mazorca",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Espiga del maíz con los granos apretados.",
+        "ejemplo": "\"Comí una mazorca de maíz asada.\""
+      }
+    },
+    {
+      "p": "pe_uño",
+      "l": "Z",
+      "c": "pequeño",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que tiene poco tamaño.",
+        "ejemplo": "\"Mi hermano es muy pequeño para su edad.\""
+      }
+    },
+    {
+      "p": "em_e",
+      "l": "Z",
+      "c": "empiece",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Que comience o inicie algo.",
+        "ejemplo": "\"Espero que empiece pronto la película.\""
+      }
+    },
+    {
+      "p": "ca_uela",
+      "l": "Z",
+      "c": "cazuela",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Recipiente hondo para cocinar guisos.",
+        "ejemplo": "\"El cocido burbujeaba en la cazuela.\""
+      }
+    },
+    {
+      "p": "ha_aña",
+      "l": "Z",
+      "c": "hazaña",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Acción valiente o heroica muy difícil.",
+        "ejemplo": "\"Cruzar el desierto solo fue una hazaña.\""
+      }
+    },
+    {
+      "p": "ama_ona",
+      "l": "Z",
+      "c": "amazona",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Mujer guerrera de la mitología o que monta a caballo.",
+        "ejemplo": "\"La amazona cabalgaba veloz por la llanura.\""
+      }
+    },
+    {
+      "p": "ho_izo",
+      "l": "Z",
+      "c": "horizo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Embutido típico español hecho de carne de cerdo.",
+        "ejemplo": "\"El horizo de la comarca tenía mucha fama.\""
+      }
+    },
+    {
+      "p": "a_uí",
+      "l": "Q",
+      "c": "aquí",
+      "definicion": {
+        "tipo": "Adverbio",
+        "texto": "En este lugar.",
+        "ejemplo": "\"Ven aquí, que te quiero ver.\""
+      }
+    },
+    {
+      "p": "por_ue",
+      "l": "Q",
+      "c": "porque",
+      "definicion": {
+        "tipo": "Conjunción",
+        "texto": "A causa de o con el motivo de.",
+        "ejemplo": "\"No fui porque estaba enfermo.\""
+      }
+    },
+    {
+      "p": "con_uistar",
+      "l": "Q",
+      "c": "conquistar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Ganar un territorio o el corazón de alguien.",
+        "ejemplo": "\"Los romanos conquistaron muchos pueblos.\""
+      }
+    },
+    {
+      "p": "blo_uear",
+      "l": "Q",
+      "c": "bloquear",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Impedir el paso o el funcionamiento de algo.",
+        "ejemplo": "\"El árbol caído bloqueó la carretera.\""
+      }
+    },
+    {
+      "p": "e_uipo",
+      "l": "Q",
+      "c": "equipo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Grupo de personas que trabajan juntas hacia un mismo objetivo.",
+        "ejemplo": "\"Mi equipo ganó el partido de fútbol.\""
+      }
+    },
+    {
+      "p": "e_uivocar",
+      "l": "Q",
+      "c": "equivocar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Cometer un error.",
+        "ejemplo": "\"Me equivoqué en la última pregunta.\""
+      }
+    },
+    {
+      "p": "pe_ueño",
+      "l": "Q",
+      "c": "pequeño",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que tiene poco tamaño.",
+        "ejemplo": "\"El pequeño gato cabía en la palma de la mano.\""
+      }
+    },
+    {
+      "p": "ar_ueólogo",
+      "l": "Q",
+      "c": "arqueólogo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Persona que estudia restos del pasado.",
+        "ejemplo": "\"El arqueólogo encontró una vasija antigua.\""
+      }
+    },
+    {
+      "p": "ban_uete",
+      "l": "Q",
+      "c": "banquete",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Comida formal y abundante en una celebración.",
+        "ejemplo": "\"El banquete de bodas duró toda la tarde.\""
+      }
+    },
+    {
+      "p": "blo_ue",
+      "l": "Q",
+      "c": "bloque",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Trozo grande y sólido de material.",
+        "ejemplo": "\"Construyeron la pared con bloques de piedra.\""
+      }
+    },
+    {
+      "p": "bou_uet",
+      "l": "Q",
+      "c": "bouquet",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Ramo de flores.",
+        "ejemplo": "\"La novia llevaba un bouquet de rosas blancas.\""
+      }
+    },
+    {
+      "p": "bus_ue",
+      "l": "Q",
+      "c": "busque",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Que intente encontrar algo.",
+        "ejemplo": "\"Busque el libro en la estantería.\""
       }
     }
   ],
