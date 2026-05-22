@@ -1,0 +1,55 @@
+<!-- PANTALLA ÁREA PARA PADRES -->
+<div class="screen" id="s-padres">
+  <div class="topbar bg-purple">
+    <button class="back-btn" onclick="go('s-cursos')">←</button>
+    <h1>Área para padres</h1>
+  </div>
+  <div class="sa">
+
+    <!-- Resumen general -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 16px 16px">
+      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Puntos totales</div>
+        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-pts">0</div>
+        <div style="font-size:10px;color:var(--gray-400);margin-top:2px" id="p-medal">—</div>
+      </div>
+      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Racha actual</div>
+        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-streak">0</div>
+        <div style="font-size:10px;color:var(--gray-400);margin-top:2px">días seguidos</div>
+      </div>
+      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Ejercicios hoy</div>
+        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-hoy">0</div>
+        <div style="font-size:10px;color:var(--gray-400);margin-top:2px" id="p-hoy-ok">0 correctos</div>
+      </div>
+      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">% acierto global</div>
+        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-pct">—</div>
+        <div style="font-size:10px;color:var(--gray-400);margin-top:2px">total acumulado</div>
+      </div>
+    </div>
+
+    <!-- Actividad semanal -->
+    <div style="margin:0 16px 16px">
+      <div class="slbl">Actividad esta semana</div>
+      <div style="background:var(--gray-100);border-radius:12px;padding:12px">
+        <div style="display:flex;align-items:flex-end;gap:4px;height:60px;margin-bottom:6px" id="p-week-bars"></div>
+        <div style="display:flex;gap:4px" id="p-week-labels"></div>
+      </div>
+    </div>
+
+    <!-- Progreso por asignatura -->
+    <div style="margin:0 16px 16px">
+      <div class="slbl">Progreso por asignatura</div>
+      <div id="p-subjects"></div>
+    </div>
+
+    <!-- Áreas a reforzar -->
+    <div style="margin:0 16px 20px">
+      <div class="slbl">Áreas a reforzar — menos del 75%</div>
+      <div id="p-refuerzo"></div>
+    </div>
+
+  </div>
+</div>
