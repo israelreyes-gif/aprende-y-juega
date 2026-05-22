@@ -7,6 +7,7 @@ function loadScreens(callback) {
   var files = [
     'screens/cursos.html',
     'screens/avatar.html',
+    'screens/padres.html',
     'screens/home.html',
     'screens/mates.html',
     'screens/lengua.html',
