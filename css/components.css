@@ -162,7 +162,7 @@
 /* GRAMMAR */
 .gram-tabs { display: flex; gap: 6px; padding: 0 16px 14px; flex-wrap: wrap; }
 .gram-tab  { padding: 7px 14px; border-radius: 20px; font-family: var(--f); font-size: 12px; font-weight: 800; cursor: pointer; transition: all .15s; background: var(--gray-100); color: var(--gray-500); border: none; }
-.gram-tab.active { color: white; }
+.gram-tab.active { background: #EC4899; color: white; }
 .word-card { margin: 0 16px 16px; border-radius: var(--r-xl); padding: 28px 20px 24px; text-align: center; background: white; box-shadow: var(--sh-md); }
 .word-qtxt { font-size: 14px; color: var(--gray-400); font-weight: 700; margin-bottom: 14px; }
 .word-big  { font-family: var(--f); font-size: 40px; font-weight: 900; color: var(--gray-800); letter-spacing: 3px; }
