@@ -3,6 +3,16 @@
    Estadísticas e informe de progreso
    ============================================= */
 
+function resetearEstadisticas() {
+  if (!confirm('¿Seguro que quieres borrar todas las estadísticas? Se mantendrán los puntos y el avatar.')) return;
+  ST.mates.hoy=0; ST.mates.hoyOk=0; ST.mates.total=0; ST.mates.totalOk=0; ST.mates.errors={};
+  ST.lengua.hoy=0; ST.lengua.hoyOk=0; ST.lengua.total=0; ST.lengua.totalOk=0; ST.lengua.errors={};
+  ST.matesStreak=0; ST.gramStreak=0; ST.compStreak=0;
+  saveState();
+  renderPadres();
+  showToast('✅ Estadísticas reseteadas');
+}
+
 function renderPadres() {
   var medals = [
     {icon:'🎖️',name:'Recién llegada',req:0},
