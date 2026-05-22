@@ -180,6 +180,8 @@ function evaluateAnswers() {
 
     var re = document.getElementById('comp-result');
     re.style.display = 'block';
+    // Limpiar botones anteriores para evitar acumulación
+    re.innerHTML = '';
 
     if (!currentHistoria._intentos) currentHistoria._intentos = 0;
 
