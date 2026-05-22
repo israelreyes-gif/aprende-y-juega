@@ -108,14 +108,18 @@ function recordResult(subject, exerciseKey, correct) {
   s.hoy++; s.total++;
   if (correct) {
     s.hoyOk++; s.totalOk++;
+    // Guardar aciertos por subtipo para estadísticas de padres
+    s.errors[exerciseKey + '_ok'] = (s.errors[exerciseKey + '_ok'] || 0) + 1;
     if (s.errors[exerciseKey] && s.errors[exerciseKey] > 0) {
       s.errors[exerciseKey]--;
       if (s.errors[exerciseKey] === 0) delete s.errors[exerciseKey];
     }
     if (subject === 'mates') ST.matesStreak++;
+    if (subject === 'lengua') ST.gramStreak++;
   } else {
     s.errors[exerciseKey] = (s.errors[exerciseKey] || 0) + 1;
     if (subject === 'mates') ST.matesStreak = Math.max(0, ST.matesStreak - 1);
+    if (subject === 'lengua') ST.gramStreak = Math.max(0, ST.gramStreak - 1);
   }
   saveState();
 }
