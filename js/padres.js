@@ -86,39 +86,68 @@ function renderSubjects() {
   var el = document.getElementById('p-subjects');
   if (!el) return;
 
+  var errors = ST.mates.errors || {};
+
+  function mateStats(key) {
+    var fallos = errors[key] || 0;
+    var ok     = errors[key+'_ok'] || 0;
+    return { total: fallos + ok, ok: ok };
+  }
+
+  var gramErrors  = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
+  var gramTotal   = 0; var gramOk = 0;
+  ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'].forEach(function(k){
+    gramTotal += (gramErrors[k]||0) + (gramErrors[k+'_ok']||0);
+    gramOk    += (gramErrors[k+'_ok']||0);
+  });
+  // Fallback: usar totales globales de lengua si no hay desglose
+  if (gramTotal === 0) {
+    var compT = (gramErrors['comp']||0) + (gramErrors['comp_ok']||0);
+    gramTotal = Math.max(0, (ST.lengua.total||0) - compT);
+    gramOk    = Math.max(0, (ST.lengua.totalOk||0) - (gramErrors['comp_ok']||0));
+  }
+
+  var compT  = (gramErrors['comp']||0) + (gramErrors['comp_ok']||0);
+  var compOk = gramErrors['comp_ok'] || 0;
+  if (compT === 0) {
+    compT  = ST.lengua ? Math.round((ST.lengua.total||0) * 0.3) : 0;
+    compOk = ST.lengua ? Math.round((ST.lengua.totalOk||0) * 0.3) : 0;
+  }
+
+  var sr     = mateStats('suma_resta');
+  var multi  = mateStats('multi');
+  var prob   = mateStats('prob');
+  var mix    = mateStats('mix');
+  // Fallback sumas/restas desde total global si no hay desglose
+  if (sr.total === 0 && multi.total === 0 && prob.total === 0) {
+    var t = ST.mates.total || 0; var ok = ST.mates.totalOk || 0;
+    sr    = { total: Math.round(t*0.4), ok: Math.round(ok*0.4) };
+    multi = { total: Math.round(t*0.3), ok: Math.round(ok*0.3) };
+    prob  = { total: Math.round(t*0.2), ok: Math.round(ok*0.2) };
+    mix   = { total: Math.round(t*0.1), ok: Math.round(ok*0.1) };
+  }
+
   var subjects = [
-    {
-      name: '🔢 Matemáticas',
-      total: ST.mates.total || 0,
-      ok:    ST.mates.totalOk || 0,
-      color: '#7C3AED'
-    },
-    {
-      name: '📝 Gramática',
-      total: calcGramTotal(),
-      ok:    calcGramOk(),
-      color: '#EC4899'
-    },
-    {
-      name: '📖 Comprensión',
-      total: calcCompTotal(),
-      ok:    calcCompOk(),
-      color: '#F59E0B'
-    }
+    { name:'➕ Sumas y restas',     total:sr.total,    ok:sr.ok,    color:'#7C3AED' },
+    { name:'✖️ Multiplicaciones',   total:multi.total, ok:multi.ok, color:'#6D28D9' },
+    { name:'📝 Problemas',          total:prob.total,  ok:prob.ok,  color:'#5B21B6' },
+    { name:'🔀 Mezcla',             total:mix.total,   ok:mix.ok,   color:'#4C1D95' },
+    { name:'📚 Gramática',          total:gramTotal,   ok:gramOk,   color:'#EC4899' },
+    { name:'📖 Comprensión',        total:compT,       ok:compOk,   color:'#F59E0B' },
   ];
 
   el.innerHTML = '';
   subjects.forEach(function(s) {
-    var pct = s.total > 0 ? Math.round(s.ok / s.total * 100) : 0;
+    var pct = s.total > 0 ? Math.round(s.ok / s.total * 100) : -1;
     var div = document.createElement('div');
     div.style.marginBottom = '10px';
     div.innerHTML =
       '<div style="display:flex;justify-content:space-between;margin-bottom:4px">' +
         '<span style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">' + s.name + '</span>' +
-        '<span style="font-size:12px;font-weight:800;color:' + s.color + '">' + (s.total>0?pct+'%':'Sin datos') + '</span>' +
+        '<span style="font-size:12px;font-weight:800;color:' + (pct>=0?s.color:'var(--gray-300)') + '">' + (pct>=0?pct+'%':'Sin datos') + '</span>' +
       '</div>' +
       '<div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden">' +
-        '<div style="height:100%;border-radius:4px;background:' + s.color + ';width:' + pct + '%"></div>' +
+        '<div style="height:100%;border-radius:4px;background:' + s.color + ';width:' + (pct>=0?pct:0) + '%"></div>' +
       '</div>';
     el.appendChild(div);
   });
