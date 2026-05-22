@@ -86,54 +86,51 @@ function renderSubjects() {
   var el = document.getElementById('p-subjects');
   if (!el) return;
 
-  var errors = ST.mates.errors || {};
+  var mErrors = ST.mates.errors || {};
+  var lErrors = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
 
-  function mateStats(key) {
+  function stats(errors, key) {
     var fallos = errors[key] || 0;
-    var ok     = errors[key+'_ok'] || 0;
+    var ok     = errors[key + '_ok'] || 0;
     return { total: fallos + ok, ok: ok };
   }
 
-  var gramErrors  = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
-  var gramTotal   = 0; var gramOk = 0;
-  ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'].forEach(function(k){
-    gramTotal += (gramErrors[k]||0) + (gramErrors[k+'_ok']||0);
-    gramOk    += (gramErrors[k+'_ok']||0);
+  // Sumas y restas juntas
+  var sumaS  = stats(mErrors, 'suma');
+  var restaS = stats(mErrors, 'resta');
+  var sr     = { total: sumaS.total + restaS.total, ok: sumaS.ok + restaS.ok };
+  var multi  = stats(mErrors, 'multi');
+  var prob   = stats(mErrors, 'prob');
+  var mix    = stats(mErrors, 'mix');
+
+  // Gramática — suma de todas las categorías
+  var gramTotal = 0, gramOk = 0;
+  ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'].forEach(function(k) {
+    var s = stats(lErrors, k);
+    gramTotal += s.total;
+    gramOk    += s.ok;
   });
-  // Fallback: usar totales globales de lengua si no hay desglose
+  // Fallback si no hay desglose aún
   if (gramTotal === 0) {
-    var compT = (gramErrors['comp']||0) + (gramErrors['comp_ok']||0);
-    gramTotal = Math.max(0, (ST.lengua.total||0) - compT);
-    gramOk    = Math.max(0, (ST.lengua.totalOk||0) - (gramErrors['comp_ok']||0));
+    var compFallback = stats(lErrors, 'comp');
+    gramTotal = Math.max(0, (ST.lengua.total||0) - compFallback.total);
+    gramOk    = Math.max(0, (ST.lengua.totalOk||0) - compFallback.ok);
   }
 
-  var compT  = (gramErrors['comp']||0) + (gramErrors['comp_ok']||0);
-  var compOk = gramErrors['comp_ok'] || 0;
-  if (compT === 0) {
-    compT  = ST.lengua ? Math.round((ST.lengua.total||0) * 0.3) : 0;
-    compOk = ST.lengua ? Math.round((ST.lengua.totalOk||0) * 0.3) : 0;
-  }
-
-  var sr     = mateStats('suma_resta');
-  var multi  = mateStats('multi');
-  var prob   = mateStats('prob');
-  var mix    = mateStats('mix');
-  // Fallback sumas/restas desde total global si no hay desglose
-  if (sr.total === 0 && multi.total === 0 && prob.total === 0) {
-    var t = ST.mates.total || 0; var ok = ST.mates.totalOk || 0;
-    sr    = { total: Math.round(t*0.4), ok: Math.round(ok*0.4) };
-    multi = { total: Math.round(t*0.3), ok: Math.round(ok*0.3) };
-    prob  = { total: Math.round(t*0.2), ok: Math.round(ok*0.2) };
-    mix   = { total: Math.round(t*0.1), ok: Math.round(ok*0.1) };
+  var comp = stats(lErrors, 'comp');
+  // Fallback comprensión
+  if (comp.total === 0 && ST.lengua && ST.lengua.total > 0) {
+    comp.total = Math.round((ST.lengua.total||0) * 0.3);
+    comp.ok    = Math.round((ST.lengua.totalOk||0) * 0.3);
   }
 
   var subjects = [
-    { name:'➕ Sumas y restas',     total:sr.total,    ok:sr.ok,    color:'#7C3AED' },
-    { name:'✖️ Multiplicaciones',   total:multi.total, ok:multi.ok, color:'#6D28D9' },
-    { name:'📝 Problemas',          total:prob.total,  ok:prob.ok,  color:'#5B21B6' },
-    { name:'🔀 Mezcla',             total:mix.total,   ok:mix.ok,   color:'#4C1D95' },
-    { name:'📚 Gramática',          total:gramTotal,   ok:gramOk,   color:'#EC4899' },
-    { name:'📖 Comprensión',        total:compT,       ok:compOk,   color:'#F59E0B' },
+    { name:'➕ Sumas y restas',   total:sr.total,    ok:sr.ok,    color:'#7C3AED' },
+    { name:'✖️ Multiplicaciones', total:multi.total, ok:multi.ok, color:'#6D28D9' },
+    { name:'📝 Problemas',        total:prob.total,  ok:prob.ok,  color:'#5B21B6' },
+    { name:'🔀 Mezcla',           total:mix.total,   ok:mix.ok,   color:'#4C1D95' },
+    { name:'📚 Gramática',        total:gramTotal,   ok:gramOk,   color:'#EC4899' },
+    { name:'📖 Comprensión',      total:comp.total,  ok:comp.ok,  color:'#F59E0B' },
   ];
 
   el.innerHTML = '';
@@ -159,45 +156,42 @@ function renderRefuerzo() {
 
   var items = [];
 
-  // Matemáticas por subtipo
-  var mErrors = ST.mates.errors || {};
-  var mSubtipos = [
-    {key:'suma',   name:'Sumas'},
-    {key:'resta',  name:'Restas'},
-    {key:'multi',  name:'Multiplicaciones'},
-    {key:'prob',   name:'Problemas'},
-    {key:'mix',    name:'Mezcla'},
-  ];
-  mSubtipos.forEach(function(s) {
-    var errData = calcSubtipoStats('mates', s.key);
-    if (errData.total >= 5) {
-      var pct = Math.round(errData.ok / errData.total * 100);
-      if (pct < 75) items.push({name:'🔢 ' + s.name, pct:pct, total:errData.total, fallos:errData.total-errData.ok});
-    }
-  });
+  var mErr = ST.mates.errors || {};
+  var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
+
+  function addIfBelow75(name, errors, key) {
+    var fallos = errors[key] || 0;
+    var ok     = errors[key + '_ok'] || 0;
+    var total  = fallos + ok;
+    if (total < 5) return;
+    var pct = Math.round(ok / total * 100);
+    if (pct < 75) items.push({name:name, pct:pct, total:total, fallos:fallos});
+  }
+
+  // Matemáticas — sumas y restas juntas
+  var sumaF = mErr['suma']||0, sumaOk = mErr['suma_ok']||0;
+  var restaF = mErr['resta']||0, restaOk = mErr['resta_ok']||0;
+  var srTotal = sumaF+sumaOk+restaF+restaOk;
+  if (srTotal >= 5) {
+    var srOk = sumaOk + restaOk;
+    var srPct = Math.round(srOk / srTotal * 100);
+    if (srPct < 75) items.push({name:'➕ Sumas y restas', pct:srPct, total:srTotal, fallos:srTotal-srOk});
+  }
+  addIfBelow75('✖️ Multiplicaciones', mErr, 'multi');
+  addIfBelow75('📝 Problemas',        mErr, 'prob');
+  addIfBelow75('🔀 Mezcla',           mErr, 'mix');
 
   // Gramática por categoría
-  var gramCats = [
-    {key:'gram-bv',  name:'Gramática B / V'},
-    {key:'gram-gj',  name:'Gramática G / J'},
-    {key:'gram-czq', name:'Gramática C / Z / Q'},
-    {key:'gram-lly', name:'Gramática LL / Y'},
-    {key:'gram-rr',  name:'Gramática R / RR'},
-  ];
-  gramCats.forEach(function(c) {
-    var errData = calcSubtipoStats('lengua', c.key);
-    if (errData.total >= 5) {
-      var pct = Math.round(errData.ok / errData.total * 100);
-      if (pct < 75) items.push({name:'📝 ' + c.name, pct:pct, total:errData.total, fallos:errData.total-errData.ok});
-    }
-  });
+  [
+    {key:'gram-bv',  name:'📚 Gramática B / V'},
+    {key:'gram-gj',  name:'📚 Gramática G / J'},
+    {key:'gram-czq', name:'📚 Gramática C / Z / Q'},
+    {key:'gram-lly', name:'📚 Gramática LL / Y'},
+    {key:'gram-rr',  name:'📚 Gramática R / RR'},
+  ].forEach(function(c) { addIfBelow75(c.name, lErr, c.key); });
 
-  // Comprensión global
-  var compData = calcSubtipoStats('lengua', 'comp');
-  if (compData.total >= 5) {
-    var compPct = Math.round(compData.ok / compData.total * 100);
-    if (compPct < 75) items.push({name:'📖 Comprensión lectora', pct:compPct, total:compData.total, fallos:compData.total-compData.ok});
-  }
+  // Comprensión
+  addIfBelow75('📖 Comprensión lectora', lErr, 'comp');
 
   // Ordenar de menor a mayor %
   items.sort(function(a,b){ return a.pct - b.pct; });
@@ -235,40 +229,4 @@ function renderRefuerzo() {
   });
 }
 
-/* ---- Helpers para calcular stats por subtipo ---- */
-function calcSubtipoStats(subject, key) {
-  var errors = (ST[subject] && ST[subject].errors) ? ST[subject].errors : {};
-  var fallos  = errors[key] || 0;
-  // Estimamos el total a partir de los errores acumulados + éxitos
-  // Como no guardamos por subtipo el total, usamos los errores como proxy
-  // Para una estimación mejor usamos el total global proporcional
-  return { total: fallos + Math.round(fallos * 1.5), ok: Math.round(fallos * 1.5), fallos: fallos };
-}
 
-function calcGramTotal() {
-  var cats = ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'];
-  var errors = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
-  var total = 0;
-  cats.forEach(function(c){ total += (errors[c]||0) * 3; });
-  return total || (ST.lengua ? ST.lengua.total - calcCompTotal() : 0);
-}
-
-function calcGramOk() {
-  var total = calcGramTotal();
-  var cats = ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'];
-  var errors = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
-  var fallos = 0;
-  cats.forEach(function(c){ fallos += (errors[c]||0); });
-  return Math.max(0, total - fallos);
-}
-
-function calcCompTotal() {
-  var errors = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
-  return (errors['comp']||0) * 3;
-}
-
-function calcCompOk() {
-  var total = calcCompTotal();
-  var errors = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
-  return Math.max(0, total - (errors['comp']||0));
-}
