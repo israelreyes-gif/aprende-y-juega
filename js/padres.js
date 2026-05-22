@@ -141,7 +141,7 @@ function renderSubjects() {
     div.innerHTML =
       '<div style="display:flex;justify-content:space-between;margin-bottom:4px">' +
         '<span style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">' + s.name + '</span>' +
-        '<span style="font-size:12px;font-weight:800;color:' + (pct>=0?s.color:'var(--gray-300)') + '">' + (pct>=0?pct+'%':'Sin datos') + '</span>' +
+        '<span style="font-size:12px;font-weight:800;color:' + (pct>=0?s.color:'var(--color-text-secondary)') + '">' + (pct>=0?pct+'%':'Sin empezar') + '</span>' +
       '</div>' +
       '<div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden">' +
         '<div style="height:100%;border-radius:4px;background:' + s.color + ';width:' + (pct>=0?pct:0) + '%"></div>' +
@@ -163,7 +163,6 @@ function renderRefuerzo() {
     var fallos = errors[key] || 0;
     var ok     = errors[key + '_ok'] || 0;
     var total  = fallos + ok;
-    if (total < 5) return;
     var pct = Math.round(ok / total * 100);
     if (pct < 75) items.push({name:name, pct:pct, total:total, fallos:fallos});
   }
@@ -172,7 +171,7 @@ function renderRefuerzo() {
   var sumaF = mErr['suma']||0, sumaOk = mErr['suma_ok']||0;
   var restaF = mErr['resta']||0, restaOk = mErr['resta_ok']||0;
   var srTotal = sumaF+sumaOk+restaF+restaOk;
-  if (srTotal >= 5) {
+  if (srTotal > 0) {
     var srOk = sumaOk + restaOk;
     var srPct = Math.round(srOk / srTotal * 100);
     if (srPct < 75) items.push({name:'➕ Sumas y restas', pct:srPct, total:srTotal, fallos:srTotal-srOk});
