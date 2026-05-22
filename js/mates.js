@@ -87,11 +87,9 @@ function setOpType(t) {
 function cargarNuevaSuma() {
   sumaIntentos = 0;
   currentSuma  = opType === 'sum' ? generarSuma(getNivel()) : generarResta(getNivel());
+  currentSuma.respuestaUsuario = '';
   var sign = opType === 'sum' ? '+' : '−';
   var res  = currentSuma.resultado.toString();
-  var pos  = Math.floor(Math.random() * res.length);
-  currentSuma.posOculta    = pos;
-  currentSuma.digitoOculto = parseInt(res[pos]);
 
   var opBox = document.querySelector('#s-sumas .op-box');
   if (!opBox) return;
@@ -99,17 +97,22 @@ function cargarNuevaSuma() {
   var row1 = '', row2 = '', rowRes = '';
   currentSuma.a.toString().split('').forEach(function(d) { row1 += '<span>' + d + '</span>'; });
   currentSuma.b.toString().split('').forEach(function(d) { row2 += '<span>' + d + '</span>'; });
+  // Mostrar todos los dígitos como ? — el activo es el de más a la derecha primero
   res.split('').forEach(function(d, i) {
-    rowRes += i === pos
-      ? '<div class="dbox active" id="mid-box">?</div>'
-      : '<div class="dbox correct">' + d + '</div>';
+    rowRes += '<div class="dbox" id="res-box-' + i + '">?</div>';
   });
+  // Empezar desde la derecha (último dígito)
+  currentSuma.posActual = res.length - 1;
 
   opBox.innerHTML =
     '<div class="op-row">' + row1 + '</div>' +
     '<div class="op-row"><span class="op-sign" id="suma-sign">' + sign + '</span>' + row2 + '</div>' +
     '<div class="op-line"></div>' +
-    '<div style="display:flex;justify-content:flex-end;gap:8px">' + rowRes + '</div>';
+    '<div style="display:flex;justify-content:flex-end;gap:8px" id="res-row">' + rowRes + '</div>';
+
+  // Activar el dígito más a la derecha primero
+  var firstBox = document.getElementById('res-box-' + (res.length - 1));
+  if (firstBox) firstBox.className = 'dbox active';
 
   document.getElementById('suma-qlbl').textContent = opType === 'sum' ? '¿Cuánto es esta suma?' : '¿Cuánto es esta resta?';
   document.getElementById('suma-fb').style.display   = 'none';
@@ -117,45 +120,97 @@ function cargarNuevaSuma() {
 }
 
 function pickDigit(d) {
-  var box = document.getElementById('mid-box');
-  if (!box) return;
-  if (d === null) { box.textContent = '?'; box.className = 'dbox active'; return; }
-  box.textContent = d;
+  if (!currentSuma) return;
+  var res = currentSuma.resultado.toString();
+  var pos = currentSuma.posActual; // pos va de derecha (res.length-1) a izquierda (0)
+
+  if (d === null) {
+    // Borrar último dígito introducido — el más a la derecha ya rellenado
+    var ultimoRelleno = pos + 1; // pos apunta al siguiente a rellenar (izquierda), el último rellenado es pos+1
+    if (ultimoRelleno <= res.length - 1) {
+      // Quitar el dígito relleno más a la derecha
+      var borrar = document.getElementById('res-box-' + ultimoRelleno);
+      if (borrar) { borrar.textContent = '?'; borrar.className = 'dbox active'; }
+      // Desactivar el que estaba activo
+      var activo = document.getElementById('res-box-' + pos);
+      if (activo) activo.className = 'dbox';
+      currentSuma.posActual = ultimoRelleno;
+      currentSuma.respuestaUsuario = currentSuma.respuestaUsuario.slice(1); // quitar el primero (más a la derecha se añadió al principio)
+    }
+    return;
+  }
+
+  if (pos < 0) return; // ya completo
+
+  var box = document.getElementById('res-box-' + pos);
+  if (box) { box.textContent = d; box.className = 'dbox'; }
+
+  // Guardar dígito — se añade al principio porque vamos de derecha a izquierda
+  currentSuma.respuestaUsuario = d.toString() + currentSuma.respuestaUsuario;
+  currentSuma.posActual--;
+
+  // Activar siguiente dígito hacia la izquierda
+  if (currentSuma.posActual >= 0) {
+    var nextBox = document.getElementById('res-box-' + currentSuma.posActual);
+    if (nextBox) nextBox.className = 'dbox active';
+  }
 }
 
 function checkSuma() {
-  var box     = document.getElementById('mid-box');
-  if (!box || !currentSuma) return;
-  var val     = parseInt(box.textContent);
+  if (!currentSuma) return;
+  var res = currentSuma.resultado.toString();
+  if (currentSuma.respuestaUsuario.length < res.length) {
+    showToast('✏️ Escribe todos los dígitos del resultado');
+    return;
+  }
   var fb      = document.getElementById('suma-fb');
-  var correct = currentSuma.digitoOculto;
+  var correct = currentSuma.resultado.toString();
+  var usuario = currentSuma.respuestaUsuario;
   var key     = opType === 'sum' ? 'suma' : 'resta';
   var eq      = currentSuma.a + (opType === 'sum' ? '+' : '−') + currentSuma.b + '=' + currentSuma.resultado;
   fb.style.display = 'block';
 
-  if (val === correct) {
-    // ── ACIERTO ──
-    box.className = 'dbox correct';
-    fb.className  = 'feedback ok';
-    fb.innerHTML  = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +10 pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
+  if (usuario === correct) {
+    // ── ACIERTO: marcar todos en verde ──
+    correct.split('').forEach(function(d, i) {
+      var b = document.getElementById('res-box-' + i);
+      if (b) b.className = 'dbox correct';
+    });
+    fb.className = 'feedback ok';
+    fb.innerHTML = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +10 pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
     awardPts(10, 'mates');
     recordResult('mates', key, true);
     setTimeout(function() { cargarNuevaSuma(); }, 1200);
   } else {
     sumaIntentos++;
-    box.className = 'dbox wrong';
+    // Marcar dígitos correctos e incorrectos
+    var todosCorrectos = true;
+    usuario.split('').forEach(function(d, i) {
+      var b = document.getElementById('res-box-' + i);
+      if (b) b.className = d === correct[i] ? 'dbox correct' : 'dbox wrong';
+    });
+
     if (sumaIntentos < 2) {
-      // ── PRIMER FALLO: reintento ──
       fb.className = 'feedback bad';
-      fb.innerHTML = '<div class="fbt">No es correcto... ¡inténtalo de nuevo! 💪</div><div class="fbs">Revisa columna a columna.</div>';
+      fb.innerHTML = '<div class="fbt">No es correcto... ¡inténtalo de nuevo! 💪</div><div class="fbs">Fíjate en los dígitos en rojo.</div>';
       setTimeout(function() {
-        box.textContent = '?'; box.className = 'dbox active';
+        // Resetear para reintento — activar dígito más a la derecha
+        currentSuma.respuestaUsuario = '';
+        currentSuma.posActual = correct.length - 1;
+        correct.split('').forEach(function(d, i) {
+          var b = document.getElementById('res-box-' + i);
+          if (b) { b.textContent = '?'; b.className = i === correct.length - 1 ? 'dbox active' : 'dbox'; }
+        });
         fb.style.display = 'none';
       }, 1500);
     } else {
-      // ── SEGUNDO FALLO: revelar y continuar ──
+      // ── SEGUNDO FALLO: revelar resultado ──
+      correct.split('').forEach(function(d, i) {
+        var b = document.getElementById('res-box-' + i);
+        if (b) { b.textContent = d; b.className = 'dbox correct'; }
+      });
       fb.className = 'feedback bad';
-      fb.innerHTML = '<div class="fbt">La cifra correcta era <strong>' + correct + '</strong> 📖</div><div class="fbs">' + eq + '</div>';
+      fb.innerHTML = '<div class="fbt">El resultado correcto era <strong>' + correct + '</strong> 📖</div><div class="fbs">' + eq + '</div>';
       recordResult('mates', key, false);
       setTimeout(function() { cargarNuevaSuma(); }, 2200);
     }
