@@ -4247,16 +4247,6 @@
       }
     },
     {
-      "p": "bo_i",
-      "l": "LL",
-      "c": "boli",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Bolígrafo, instrumento para escribir.",
-        "ejemplo": "\"Préstame el boli para apuntar los deberes.\""
-      }
-    },
-    {
       "p": "ca_ada",
       "l": "LL",
       "c": "callada",
@@ -4327,16 +4317,6 @@
       }
     },
     {
-      "p": "ci_indro",
-      "l": "LL",
-      "c": "cilindro",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Cuerpo geométrico con forma de tubo.",
-        "ejemplo": "\"El ci_indro tiene dos bases circulares.\""
-      }
-    },
-    {
       "p": "co_ar",
       "l": "LL",
       "c": "collar",
@@ -4347,16 +4327,6 @@
       }
     },
     {
-      "p": "co_ega",
-      "l": "LL",
-      "c": "colega",
-      "definicion": {
-        "tipo": "Sustantivo",
-        "texto": "Compañero de trabajo o amigo de confianza.",
-        "ejemplo": "\"Mi co_ega del trabajo me ayudó.\""
-      }
-    },
-    {
       "p": "desti_o",
       "l": "LL",
       "c": "destillo",
@@ -4364,16 +4334,6 @@
         "tipo": "Sustantivo masculino",
         "texto": "Producto que sale de destilar un líquido.",
         "ejemplo": "\"El destillo del alambique olía muy fuerte.\""
-      }
-    },
-    {
-      "p": "esti_o",
-      "l": "LL",
-      "c": "estilo",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Forma particular de hacer o expresar algo.",
-        "ejemplo": "\"El pintor tenía un estilo muy reconocible.\""
       }
     },
     {
@@ -4407,16 +4367,6 @@
       }
     },
     {
-      "p": "gori_a",
-      "l": "LL",
-      "c": "gorila",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Animal grande y fuerte parecido al mono, el más grande de los primates.",
-        "ejemplo": "\"El _orila del zoo golpeaba su pecho con los puños.\""
-      }
-    },
-    {
       "p": "gri_o",
       "l": "LL",
       "c": "grillo",
@@ -4424,26 +4374,6 @@
         "tipo": "Sustantivo masculino",
         "texto": "Insecto que produce un sonido chirriante frotando sus alas.",
         "ejemplo": "\"Por la noche se oía el canto del gri_o.\""
-      }
-    },
-    {
-      "p": "gui_a",
-      "l": "LL",
-      "c": "guija",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Piedra pequeña y redondeada por el agua.",
-        "ejemplo": "\"Lanzó una guija al estanque.\""
-      }
-    },
-    {
-      "p": "hi_era",
-      "l": "LL",
-      "c": "hilera",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Fila de personas o cosas en línea.",
-        "ejemplo": "\"Los soldados formaban una larga hi_era.\""
       }
     },
     {
@@ -4564,16 +4494,6 @@
         "tipo": "Sustantivo masculino",
         "texto": "Bola de hilo o lana enrollada.",
         "ejemplo": "\"El gato jugaba con el o_i_o de lana.\""
-      }
-    },
-    {
-      "p": "pa_eto",
-      "l": "LL",
-      "c": "paleto",
-      "definicion": {
-        "tipo": "Adjetivo/sustantivo",
-        "texto": "Persona de pueblo o que parece poco sofisticada.",
-        "ejemplo": "\"Le llamaban paleto porque no conocía la ciudad.\""
       }
     },
     {
@@ -4794,16 +4714,6 @@
         "tipo": "Sustantivo femenino",
         "texto": "Tortilla pequeña.",
         "ejemplo": "\"Se comió una torilla de patata de merienda.\""
-      }
-    },
-    {
-      "p": "tor_ija",
-      "l": "LL",
-      "c": "torrija",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Pan empapado en leche y huevo que se fríe, típico de Semana Santa.",
-        "ejemplo": "\"Las torrijas de mi abuela son las mejores.\""
       }
     },
     {
@@ -5044,16 +4954,6 @@
         "tipo": "Adjetivo",
         "texto": "Que tiene más edad, tamaño o importancia que otro.",
         "ejemplo": "\"Mi hermano ma_or tiene quince años.\""
-      }
-    },
-    {
-      "p": "me_or",
-      "l": "Y",
-      "c": "menor",
-      "definicion": {
-        "tipo": "Adjetivo",
-        "texto": "Que tiene menos edad, tamaño o importancia que otro.",
-        "ejemplo": "\"Mi hermana menor tiene ocho años.\""
       }
     },
     {
