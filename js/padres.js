@@ -90,9 +90,9 @@ function renderSubjects() {
   var lErrors = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
 
   function stats(errors, key) {
-    var fallos = errors[key] || 0;
-    var ok     = errors[key + '_ok'] || 0;
-    return { total: fallos + ok, ok: ok };
+    var ok     = errors[key + '_ok']   || 0;
+    var fallos = errors[key + '_fail'] || 0;
+    return { total: ok + fallos, ok: ok };
   }
 
   // Sumas y restas juntas
@@ -160,17 +160,17 @@ function renderRefuerzo() {
   var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
 
   function addIfBelow75(name, errors, key) {
-    var fallos = errors[key] || 0;
-    var ok     = errors[key + '_ok'] || 0;
-    var total  = fallos + ok;
+    var ok     = errors[key + '_ok']   || 0;
+    var fallos = errors[key + '_fail'] || 0;
+    var total  = ok + fallos;
     var pct = Math.round(ok / total * 100);
     if (pct < 75) items.push({name:name, pct:pct, total:total, fallos:fallos});
   }
 
   // Matemáticas — sumas y restas juntas
-  var sumaF = mErr['suma']||0, sumaOk = mErr['suma_ok']||0;
-  var restaF = mErr['resta']||0, restaOk = mErr['resta_ok']||0;
-  var srTotal = sumaF+sumaOk+restaF+restaOk;
+  var sumaOk  = mErr['suma_ok']||0,  sumaF  = mErr['suma_fail']||0;
+  var restaOk = mErr['resta_ok']||0, restaF = mErr['resta_fail']||0;
+  var srTotal = sumaOk+sumaF+restaOk+restaF;
   if (srTotal > 0) {
     var srOk = sumaOk + restaOk;
     var srPct = Math.round(srOk / srTotal * 100);
