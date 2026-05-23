@@ -95,8 +95,8 @@ function updateSubjectUI(subject) {
 
 /* ---- Panel de errores frecuentes ---- */
 var ERROR_LABELS = {
-  'suma':     'Sumas con llevadas',
-  'resta':    'Restas con llevadas',
+  'suma':     'Sumas y restas',
+  'resta':    'Sumas y restas',
   'multi':    'Multiplicaciones',
   'prob':     'Problemas',
   'mix':      'Ejercicio mezcla',
@@ -113,12 +113,14 @@ function updateErrorsPanel() {
   var panel = document.getElementById('errors-panel');
   if (!panel) return;
 
-  // Combinar fallos de todas las asignaturas (solo keys _fail)
+  // Combinar fallos (solo keys _fail), agrupando suma+resta
   var allErrors = {};
   [ST.mates.errors, ST.lengua.errors].forEach(function(errors) {
     Object.keys(errors).forEach(function(k) {
       if (k.indexOf('_fail') !== -1) {
         var baseKey = k.replace('_fail', '');
+        // Agrupar suma y resta juntas
+        if (baseKey === 'resta') baseKey = 'suma';
         allErrors[baseKey] = (allErrors[baseKey] || 0) + errors[k];
       }
     });
