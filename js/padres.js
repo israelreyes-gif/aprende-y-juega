@@ -167,79 +167,96 @@ function renderRefuerzo() {
   var el = document.getElementById('p-refuerzo');
   if (!el) return;
 
-  var items = [];
-
   var mErr = ST.mates.errors || {};
   var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
 
-  function addIfBelow75(name, errors, key) {
-    var ok     = errors[key + '_ok']   || 0;
-    var fallos = errors[key + '_fail'] || 0;
-    var total  = ok + fallos;
-    var pct = Math.round(ok / total * 100);
-    if (pct < 75) items.push({name:name, pct:pct, total:total, fallos:fallos});
+  function getStats(errors, key) {
+    var ok = errors[key+'_ok']||0, fallos = errors[key+'_fail']||0, total = ok+fallos;
+    if (!total) return null;
+    var pct = Math.round(ok/total*100);
+    return pct < 75 ? {pct:pct, total:total, fallos:fallos} : null;
   }
 
-  // Matemáticas — sumas y restas juntas
-  var sumaOk  = mErr['suma_ok']||0,  sumaF  = mErr['suma_fail']||0;
-  var restaOk = mErr['resta_ok']||0, restaF = mErr['resta_fail']||0;
-  var srTotal = sumaOk+sumaF+restaOk+restaF;
-  if (srTotal > 0) {
-    var srOk = sumaOk + restaOk;
-    var srPct = Math.round(srOk / srTotal * 100);
-    if (srPct < 75) items.push({name:'➕ Sumas y restas', pct:srPct, total:srTotal, fallos:srTotal-srOk});
+  function urg(pct) {
+    if (pct < 50) return {circleBg:'#FCA5A5',pctColor:'#991B1B',badgeBg:'#FEE2E2',badgeColor:'#DC2626',badge:'Prioritario',level:3};
+    if (pct < 65) return {circleBg:'#FDE68A',pctColor:'#92400E',badgeBg:'#FEF3C7',badgeColor:'#D97706',badge:'A mejorar',level:2};
+    return {circleBg:'#C4B5FD',pctColor:'#4C1D95',badgeBg:'#EDE9FE',badgeColor:'#6D28D9',badge:'Cerca del 75%',level:1};
   }
-  addIfBelow75('✖️ Multiplicaciones', mErr, 'multi');
-  addIfBelow75('📝 Problemas',        mErr, 'prob');
-  addIfBelow75('🔀 Mezcla',           mErr, 'mix');
 
-  // Gramática por categoría
-  [
-    {key:'gram-bv',  name:'📚 Gramática B / V'},
-    {key:'gram-gj',  name:'📚 Gramática G / J'},
-    {key:'gram-czq', name:'📚 Gramática C / Z / Q'},
-    {key:'gram-lly', name:'📚 Gramática LL / Y'},
-    {key:'gram-rr',  name:'📚 Gramática R / RR'},
-  ].forEach(function(c) { addIfBelow75(c.name, lErr, c.key); });
+  var srOk = (mErr['suma_ok']||0)+(mErr['resta_ok']||0);
+  var srF  = (mErr['suma_fail']||0)+(mErr['resta_fail']||0);
+  var srSt = srOk+srF > 0 ? (Math.round(srOk/(srOk+srF)*100) < 75 ? {pct:Math.round(srOk/(srOk+srF)*100),total:srOk+srF,fallos:srF} : null) : null;
 
-  // Comprensión
-  addIfBelow75('📖 Comprensión lectora', lErr, 'comp');
-  // Descripciones
-  addIfBelow75('✍️ Descripciones', lErr, 'desc');
+  var grupos = [
+    { nombre:'Matemáticas', icono:'🔢', pill:'mates',
+      items: [
+        {nombre:'Sumas y restas',   stats:srSt},
+        {nombre:'Multiplicaciones', stats:getStats(mErr,'multi')},
+        {nombre:'Problemas',        stats:getStats(mErr,'prob')},
+        {nombre:'Mezcla',           stats:getStats(mErr,'mix')},
+      ]
+    },
+    { nombre:'Lengua', icono:'📚', pill:'lengua',
+      items: [
+        {nombre:'Gramática B / V',  stats:getStats(lErr,'gram-bv')},
+        {nombre:'Gramática G / J',  stats:getStats(lErr,'gram-gj')},
+        {nombre:'Gramática C/Z/Q',  stats:getStats(lErr,'gram-czq')},
+        {nombre:'Gramática LL / Y', stats:getStats(lErr,'gram-lly')},
+        {nombre:'Gramática R / RR', stats:getStats(lErr,'gram-rr')},
+        {nombre:'Comprensión',      stats:getStats(lErr,'comp')},
+        {nombre:'Descripciones',    stats:getStats(lErr,'desc')},
+      ]
+    }
+  ];
 
-  // Ordenar de menor a mayor %
-  items.sort(function(a,b){ return a.pct - b.pct; });
+  grupos.forEach(function(g){ g.items = g.items.filter(function(i){ return i.stats; }); });
+  var activos = grupos.filter(function(g){ return g.items.length > 0; });
 
-  el.innerHTML = '';
+  var maxLevel = 0;
+  activos.forEach(function(g){ g.items.forEach(function(i){ maxLevel = Math.max(maxLevel, urg(i.stats.pct).level); }); });
 
-  if (items.length === 0) {
-    el.innerHTML =
-      '<div style="background:#DCFCE7;border-radius:14px;padding:20px 16px;text-align:center">' +
-        '<div style="font-size:32px;margin-bottom:8px">🌟</div>' +
-        '<div style="font-size:14px;font-weight:800;color:#166534;font-family:var(--f);margin-bottom:4px">¡Todo por encima del 75%!</div>' +
-        '<div style="font-size:11px;color:#16A34A;font-family:var(--f);line-height:1.5">Está dominando todos los contenidos. Sigue practicando para mantener el nivel.</div>' +
+  var banners = [
+    {bg:'#DCFCE7',border:'#16A34A',icon:'🌟',tc:'#166534',sc:'#16A34A',title:'¡Todo por encima del 75%!',sub:'Está dominando todos los contenidos. Sigue practicando para mantener el nivel.'},
+    {bg:'#EDE9FE',border:'#7C3AED',icon:'💪',tc:'#4C1D95',sc:'#6D28D9',title:'¡Casi lo tiene todo!',sub:'Está cerca del 75% en algunas áreas. Un poco más de práctica y lo conseguirá.'},
+    {bg:'#FEF3C7',border:'#F59E0B',icon:'📖',tc:'#92400E',sc:'#B45309',title:'Hay cosas que reforzar',sub:'Algunas áreas necesitan más práctica. Mira los detalles abajo para saber por dónde empezar.'},
+    {bg:'#FEE2E2',border:'#DC2626',icon:'⚠️',tc:'#991B1B',sc:'#B91C1C',title:'Hay áreas prioritarias',sub:'Hay contenidos con muchos fallos. Es importante practicarlos pronto para no quedarse atrás.'}
+  ];
+
+  var b = banners[maxLevel];
+  el.innerHTML =
+    '<div style="background:'+b.bg+';border:0.5px solid '+b.border+';border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px;margin-bottom:12px">' +
+      '<div style="font-size:24px;flex-shrink:0">'+b.icon+'</div>' +
+      '<div><div style="font-size:13px;font-weight:800;color:'+b.tc+';font-family:var(--f);margin-bottom:3px">'+b.title+'</div>' +
+      '<div style="font-size:11px;color:'+b.sc+';font-family:var(--f);line-height:1.5">'+b.sub+'</div></div>' +
+    '</div>';
+
+  activos.forEach(function(g) {
+    var pillStyle = g.pill==='mates' ? 'background:#EDE9FE;color:#4C1D95' : 'background:#FDF2F8;color:#9D174D';
+    var card = document.createElement('div');
+    card.style.cssText = 'background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;margin-bottom:8px';
+    var html = '<div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-tertiary)">' +
+      '<span style="font-size:16px">'+g.icono+'</span>' +
+      '<span style="font-size:13px;font-weight:800;color:var(--gray-800);font-family:var(--f);flex:1">'+g.nombre+'</span>' +
+      '<span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;'+pillStyle+'">'+g.items.length+' área'+(g.items.length>1?'s':'')+'</span>' +
+    '</div><div style="padding:4px 12px">';
+    g.items.sort(function(a,b){ return a.stats.pct-b.stats.pct; });
+    g.items.forEach(function(item,idx) {
+      var u = urg(item.stats.pct);
+      var sep = idx<g.items.length-1 ? 'border-bottom:0.5px solid var(--color-border-tertiary)' : '';
+      html += '<div style="display:flex;align-items:center;gap:10px;padding:8px 0;'+sep+'">' +
+        '<div style="width:36px;height:36px;border-radius:50%;background:'+u.circleBg+';display:flex;align-items:center;justify-content:center;flex-shrink:0">' +
+          '<span style="font-size:10px;font-weight:800;color:'+u.pctColor+';font-family:var(--f)">'+item.stats.pct+'%</span>' +
+        '</div>' +
+        '<div style="flex:1">' +
+          '<div style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">'+item.nombre+'</div>' +
+          '<div style="font-size:10px;color:var(--gray-400);margin-top:1px">'+item.stats.total+' ejercicios · '+item.stats.fallos+' fallos</div>' +
+        '</div>' +
+        '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:'+u.badgeBg+';color:'+u.badgeColor+';white-space:nowrap">'+u.badge+'</span>' +
       '</div>';
-    return;
-  }
-
-  items.forEach(function(item) {
-    var urgencia, badgeText;
-    if (item.pct < 50)      { urgencia = {bg:'#FEE2E2', circleBg:'#FCA5A5', pctColor:'#991B1B', badgeBg:'#FEE2E2', badgeColor:'#DC2626'}; badgeText = 'Prioritario'; }
-    else if (item.pct < 65) { urgencia = {bg:'#FEF3C7', circleBg:'#FDE68A', pctColor:'#92400E', badgeBg:'#FEF3C7', badgeColor:'#D97706'}; badgeText = 'A mejorar'; }
-    else                    { urgencia = {bg:'#EDE9FE', circleBg:'#C4B5FD', pctColor:'#4C1D95', badgeBg:'#EDE9FE', badgeColor:'#6D28D9'}; badgeText = 'Cerca del 75%'; }
-
-    var row = document.createElement('div');
-    row.style.cssText = 'display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;margin-bottom:6px;background:' + urgencia.bg;
-    row.innerHTML =
-      '<div style="width:40px;height:40px;border-radius:50%;background:' + urgencia.circleBg + ';display:flex;align-items:center;justify-content:center;flex-shrink:0">' +
-        '<span style="font-size:11px;font-weight:800;color:' + urgencia.pctColor + ';font-family:var(--f)">' + item.pct + '%</span>' +
-      '</div>' +
-      '<div style="flex:1">' +
-        '<div style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">' + item.name + '</div>' +
-        '<div style="font-size:10px;color:var(--gray-400);margin-top:1px">' + item.total + ' ejercicios · ' + item.fallos + ' fallos</div>' +
-      '</div>' +
-      '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:' + urgencia.badgeBg + ';color:' + urgencia.badgeColor + ';white-space:nowrap">' + badgeText + '</span>';
-    el.appendChild(row);
+    });
+    html += '</div>';
+    card.innerHTML = html;
+    el.appendChild(card);
   });
 }
 
