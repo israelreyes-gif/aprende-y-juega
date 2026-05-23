@@ -134,6 +134,8 @@ function renderSubjects() {
     comp.ok    = Math.round((ST.lengua.totalOk||0) * 0.3);
   }
 
+  var desc = stats(lErrors, 'desc');
+
   var subjects = [
     { name:'➕ Sumas y restas',   total:sr.total,    ok:sr.ok,    color:'#7C3AED' },
     { name:'✖️ Multiplicaciones', total:multi.total, ok:multi.ok, color:'#6D28D9' },
@@ -141,6 +143,7 @@ function renderSubjects() {
     { name:'🔀 Mezcla',           total:mix.total,   ok:mix.ok,   color:'#4C1D95' },
     { name:'📚 Gramática',        total:gramTotal,   ok:gramOk,   color:'#EC4899' },
     { name:'📖 Comprensión',      total:comp.total,  ok:comp.ok,  color:'#F59E0B' },
+    { name:'✍️ Descripciones',    total:desc.total,  ok:desc.ok,  color:'#0EA5E9' },
   ];
 
   el.innerHTML = '';
@@ -201,6 +204,8 @@ function renderRefuerzo() {
 
   // Comprensión
   addIfBelow75('📖 Comprensión lectora', lErr, 'comp');
+  // Descripciones
+  addIfBelow75('✍️ Descripciones', lErr, 'desc');
 
   // Ordenar de menor a mayor %
   items.sort(function(a,b){ return a.pct - b.pct; });
