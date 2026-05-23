@@ -8,6 +8,7 @@ function loadScreens(callback) {
     'screens/cursos.html',
     'screens/avatar.html',
     'screens/padres.html',
+    'screens/descripciones.html',
     'screens/home.html',
     'screens/mates.html',
     'screens/lengua.html',
