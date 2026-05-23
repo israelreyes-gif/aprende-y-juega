@@ -229,31 +229,6 @@ function renderSubjects() {
     el.appendChild(card);
   });
 }
-
-  // Sumas y restas juntas
-  var sumaS  = stats(mErrors, 'suma');
-  var restaS = stats(mErrors, 'resta');
-  var sr     = { total: sumaS.total + restaS.total, ok: sumaS.ok + restaS.ok };
-  var multi  = stats(mErrors, 'multi');
-  var prob   = stats(mErrors, 'prob');
-  var mix    = stats(mErrors, 'mix');
-
-  // Gramática — suma de todas las categorías
-  var gramTotal = 0, gramOk = 0;
-  ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'].forEach(function(k) {
-    var s = stats(lErrors, k);
-    gramTotal += s.total;
-    gramOk    += s.ok;
-  });
-  // Fallback si no hay desglose aún
-  if (gramTotal === 0) {
-    var compFallback = stats(lErrors, 'comp');
-    gramTotal = Math.max(0, (ST.lengua.total||0) - compFallback.total);
-    gramOk    = Math.max(0, (ST.lengua.totalOk||0) - compFallback.ok);
-  }
-
-
-
 function renderRefuerzo() {
   var el = document.getElementById('p-refuerzo');
   if (!el) return;
