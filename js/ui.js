@@ -134,11 +134,34 @@ function updateErrorsPanel() {
     return;
   }
 
+  // Agrupar por asignatura
+  var matesKeys = ['suma','resta','multi','prob','mix'];
+  var lenguaKeys = ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr','comp','desc'];
+
+  function buildGroup(nombre, icono, pillStyle, keys) {
+    var items = sorted.filter(function(e){ return keys.indexOf(e[0]) !== -1; });
+    if (!items.length) return '';
+    var html = '<div style="background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;margin-bottom:8px">';
+    html += '<div style="display:flex;align-items:center;gap:8px;padding:7px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-tertiary)">';
+    html += '<span style="font-size:14px">'+icono+'</span>';
+    html += '<span style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f);flex:1">'+nombre+'</span>';
+    html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;'+pillStyle+'">'+items.length+' área'+(items.length>1?'s':'')+'</span>';
+    html += '</div><div style="padding:2px 12px">';
+    items.forEach(function(e, idx) {
+      var label = ERROR_LABELS[e[0]] || e[0];
+      var sep = idx < items.length-1 ? 'border-bottom:0.5px solid var(--color-border-tertiary)' : '';
+      html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;'+sep+'">';
+      html += '<span style="font-size:11px;font-weight:600;color:var(--gray-700);font-family:var(--f)">'+label+'</span>';
+      html += '<span style="font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:#FEE2E2;color:#DC2626">'+e[1]+' fallos</span>';
+      html += '</div>';
+    });
+    html += '</div></div>';
+    return html;
+  }
+
   var html = '<div class="errors-card"><div class="errors-title">🔁 Hay que repasar...</div>';
-  sorted.forEach(function(e) {
-    var label = ERROR_LABELS[e[0]] || e[0];
-    html += '<div class="error-item"><span>' + label + '</span><span class="error-count">' + e[1] + ' fallos</span></div>';
-  });
+  html += buildGroup('Matemáticas','🔢','background:#EDE9FE;color:#4C1D95', matesKeys);
+  html += buildGroup('Lengua','📚','background:#FDF2F8;color:#9D174D', lenguaKeys);
   html += '</div>';
   panel.innerHTML = html;
 }
