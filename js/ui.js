@@ -105,7 +105,8 @@ var ERROR_LABELS = {
   'gram-czq': 'Gramática C / Z / Q',
   'gram-lly': 'Gramática LL / Y',
   'gram-rr':  'Gramática R / RR',
-  'comp':     'Comprensión lectora'
+  'comp':     'Comprensión lectora',
+  'desc':      'Descripciones'
 };
 
 function updateErrorsPanel() {
