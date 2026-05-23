@@ -1,0 +1,244 @@
+{
+  "descripciones": [
+    {
+      "id": 1,
+      "titulo": "Puerto con barcos",
+      "imagen": "data/imagenes/desc_01.jpg",
+      "keywords": ["barco","barca","embarcación","puerto","mar","agua","montaña","pueblo","casas","cielo","nubes"],
+      "keywords_bonus": ["rojo","azul","blanco","primer plano","fondo","tranquilo","reflejo","mástil","vela"],
+      "total_keywords": 11
+    },
+    {
+      "id": 2,
+      "titulo": "Mercado de pueblo",
+      "imagen": "data/imagenes/desc_02.jpg",
+      "keywords": ["puesto","mercado","verdura","fruta","gente","personas","calle","tenderete","colores","vendedor"],
+      "keywords_bonus": ["tomate","naranja","lechuga","sombra","multitud","animado","bullicioso"],
+      "total_keywords": 10
+    },
+    {
+      "id": 3,
+      "titulo": "Parque con niños",
+      "imagen": "data/imagenes/desc_03.jpg",
+      "keywords": ["niño","niña","parque","columpio","tobogán","árbol","césped","juego","banco","hierba"],
+      "keywords_bonus": ["corriendo","riendo","alegre","verde","soleado","familia","pelota"],
+      "total_keywords": 10
+    },
+    {
+      "id": 4,
+      "titulo": "Calle de ciudad",
+      "imagen": "data/imagenes/desc_04.jpg",
+      "keywords": ["calle","edificio","coche","semáforo","acera","tienda","gente","ciudad","farola","paso"],
+      "keywords_bonus": ["tráfico","escaparate","moderno","concurrida","asfalto","señal"],
+      "total_keywords": 10
+    },
+    {
+      "id": 5,
+      "titulo": "Bosque en otoño",
+      "imagen": "data/imagenes/desc_05.jpg",
+      "keywords": ["árbol","bosque","hojas","otoño","camino","sendero","marrón","naranja","amarillo","luz"],
+      "keywords_bonus": ["tranquilo","silencio","caída","setas","musgo","tronco","ramas"],
+      "total_keywords": 10
+    },
+    {
+      "id": 6,
+      "titulo": "Playa de verano",
+      "imagen": "data/imagenes/desc_06.jpg",
+      "keywords": ["playa","arena","mar","ola","sol","sombrilla","bañador","gente","agua","cielo"],
+      "keywords_bonus": ["calor","verano","azul","horizonte","castillo","arena","chiringuito"],
+      "total_keywords": 10
+    },
+    {
+      "id": 7,
+      "titulo": "Granja con animales",
+      "imagen": "data/imagenes/desc_07.jpg",
+      "keywords": ["vaca","caballo","gallina","granja","granero","campo","hierba","cerca","animal","agricultor"],
+      "keywords_bonus": ["rural","tranquilo","marrón","blanco","establo","tractor","heno"],
+      "total_keywords": 10
+    },
+    {
+      "id": 8,
+      "titulo": "Montaña nevada",
+      "imagen": "data/imagenes/desc_08.jpg",
+      "keywords": ["montaña","nieve","pico","cielo","árbol","blanco","frío","cumbre","ladera","bosque"],
+      "keywords_bonus": ["alpino","silencio","ventisca","glaciar","majestuoso","rocas","abeto"],
+      "total_keywords": 10
+    },
+    {
+      "id": 9,
+      "titulo": "Cocina familiar",
+      "imagen": "data/imagenes/desc_09.jpg",
+      "keywords": ["cocina","fuego","olla","sartén","mesa","silla","ventana","armario","luz","persona"],
+      "keywords_bonus": ["vapor","aroma","cocinando","madera","azulejo","familia","calor"],
+      "total_keywords": 10
+    },
+    {
+      "id": 10,
+      "titulo": "Aula de colegio",
+      "imagen": "data/imagenes/desc_10.jpg",
+      "keywords": ["clase","pizarra","mesa","silla","niño","libro","profesor","ventana","mochila","lápiz"],
+      "keywords_bonus": ["aprendiendo","silencio","cuaderno","ordenador","mapa","estantería"],
+      "total_keywords": 10
+    },
+    {
+      "id": 11,
+      "titulo": "Plaza mayor",
+      "imagen": "data/imagenes/desc_11.jpg",
+      "keywords": ["plaza","fuente","banco","paloma","edificio","gente","adoquín","estatua","árbol","café"],
+      "keywords_bonus": ["histórico","turista","sombra","antiguo","arco","columnata","animado"],
+      "total_keywords": 10
+    },
+    {
+      "id": 12,
+      "titulo": "Jardín con flores",
+      "imagen": "data/imagenes/desc_12.jpg",
+      "keywords": ["flor","rosa","jardín","color","verde","hoja","camino","pétalos","mariposa","perfume"],
+      "keywords_bonus": ["primavera","abeja","rojo","amarillo","morado","seto","fuente"],
+      "total_keywords": 10
+    },
+    {
+      "id": 13,
+      "titulo": "Mercadillo navideño",
+      "imagen": "data/imagenes/desc_13.jpg",
+      "keywords": ["navidad","luces","puesto","árbol","gente","noche","decoración","regalo","mercado","invierno"],
+      "keywords_bonus": ["brillante","colorido","frío","estrella","villancico","abrigo","bufanda"],
+      "total_keywords": 10
+    },
+    {
+      "id": 14,
+      "titulo": "Lago de montaña",
+      "imagen": "data/imagenes/desc_14.jpg",
+      "keywords": ["lago","agua","montaña","reflejo","árbol","barca","pato","cielo","calma","verde"],
+      "keywords_bonus": ["tranquilo","espejo","cristalino","pino","orilla","niebla","amanecer"],
+      "total_keywords": 10
+    },
+    {
+      "id": 15,
+      "titulo": "Aeropuerto",
+      "imagen": "data/imagenes/desc_15.jpg",
+      "keywords": ["avión","aeropuerto","pista","gente","maleta","terminal","vuelo","ventana","mostrador","viajero"],
+      "keywords_bonus": ["moderno","pantalla","cola","equipaje","uniforme","pasajero","despegue"],
+      "total_keywords": 10
+    },
+    {
+      "id": 16,
+      "titulo": "Partido de fútbol",
+      "imagen": "data/imagenes/desc_16.jpg",
+      "keywords": ["fútbol","estadio","jugador","pelota","portería","aficionado","césped","gol","árbitro","equipo"],
+      "keywords_bonus": ["camiseta","graderío","celebración","falta","córner","público","emoción"],
+      "total_keywords": 10
+    },
+    {
+      "id": 17,
+      "titulo": "Biblioteca",
+      "imagen": "data/imagenes/desc_17.jpg",
+      "keywords": ["libro","estantería","biblioteca","mesa","silla","silencio","persona","lámpara","leer","ventana"],
+      "keywords_bonus": ["concentrado","tranquilo","ordenado","alto","largo","madera","escalera"],
+      "total_keywords": 10
+    },
+    {
+      "id": 18,
+      "titulo": "Río con puente",
+      "imagen": "data/imagenes/desc_18.jpg",
+      "keywords": ["río","puente","agua","orilla","árbol","piedra","corriente","barca","ciudad","reflejo"],
+      "keywords_bonus": ["medieval","arco","verde","tranquilo","pez","musgo","corriente"],
+      "total_keywords": 10
+    },
+    {
+      "id": 19,
+      "titulo": "Desierto",
+      "imagen": "data/imagenes/desc_19.jpg",
+      "keywords": ["desierto","arena","duna","sol","calor","cielo","camello","seco","amarillo","horizonte"],
+      "keywords_bonus": ["silencio","olas","viento","sombra","oasis","palmera","infinito"],
+      "total_keywords": 10
+    },
+    {
+      "id": 20,
+      "titulo": "Cocido o paella",
+      "imagen": "data/imagenes/desc_20.jpg",
+      "keywords": ["plato","comida","mesa","olla","vapor","ingrediente","color","cuchara","arroz","familia"],
+      "keywords_bonus": ["apetitoso","caliente","casero","aroma","cuchara","servilleta","pan"],
+      "total_keywords": 10
+    },
+    {
+      "id": 21,
+      "titulo": "Tren en estación",
+      "imagen": "data/imagenes/desc_21.jpg",
+      "keywords": ["tren","estación","vía","andén","gente","maleta","vagón","reloj","viajero","puerta"],
+      "keywords_bonus": ["moderno","largo","espera","aviso","pantalla","uniforme","llegada"],
+      "total_keywords": 10
+    },
+    {
+      "id": 22,
+      "titulo": "Supermercado",
+      "imagen": "data/imagenes/desc_22.jpg",
+      "keywords": ["supermercado","estantería","carrito","producto","gente","caja","pasillo","precio","compra","luz"],
+      "keywords_bonus": ["ordenado","lleno","etiqueta","oferta","cajera","bolsa","colorido"],
+      "total_keywords": 10
+    },
+    {
+      "id": 23,
+      "titulo": "Castillo medieval",
+      "imagen": "data/imagenes/desc_23.jpg",
+      "keywords": ["castillo","torre","muralla","piedra","bandera","foso","puerta","almena","histórico","colina"],
+      "keywords_bonus": ["medieval","antiguo","imponente","gris","vegetación","puente","levadizo"],
+      "total_keywords": 10
+    },
+    {
+      "id": 24,
+      "titulo": "Parque de atracciones",
+      "imagen": "data/imagenes/desc_24.jpg",
+      "keywords": ["noria","montaña","rusa","atracción","gente","niño","color","fiesta","cola","diversión"],
+      "keywords_bonus": ["emoción","gritos","luces","música","algodón","palomitas","alegría"],
+      "total_keywords": 10
+    },
+    {
+      "id": 25,
+      "titulo": "Nevería o heladería",
+      "imagen": "data/imagenes/desc_25.jpg",
+      "keywords": ["helado","heladería","sabor","cono","color","mostrador","niño","verano","cucurucho","crema"],
+      "keywords_bonus": ["fresa","chocolate","vainilla","cola","escaparate","frío","golosina"],
+      "total_keywords": 10
+    },
+    {
+      "id": 26,
+      "titulo": "Amanecer en el campo",
+      "imagen": "data/imagenes/desc_26.jpg",
+      "keywords": ["amanecer","sol","campo","cielo","naranja","rosa","luz","horizonte","niebla","árbol"],
+      "keywords_bonus": ["silencio","rocío","pájaro","tranquilo","dorado","bruma","madrugada"],
+      "total_keywords": 10
+    },
+    {
+      "id": 27,
+      "titulo": "Clase de música",
+      "imagen": "data/imagenes/desc_27.jpg",
+      "keywords": ["música","instrumento","guitarra","piano","niño","nota","partitura","profesor","aula","ensayo"],
+      "keywords_bonus": ["melodía","concentrado","flauta","batería","violín","micrófono","acorde"],
+      "total_keywords": 10
+    },
+    {
+      "id": 28,
+      "titulo": "Zoológico",
+      "imagen": "data/imagenes/desc_28.jpg",
+      "keywords": ["animal","jaula","recinto","visitante","niño","jirafa","elefante","león","familia","zoo"],
+      "keywords_bonus": ["salvaje","Africa","naturaleza","fotografia","cartel","información","tropical"],
+      "total_keywords": 10
+    },
+    {
+      "id": 29,
+      "titulo": "Iglesia o catedral",
+      "imagen": "data/imagenes/desc_29.jpg",
+      "keywords": ["iglesia","torre","campana","piedra","puerta","vitral","fachada","cruz","plaza","antiguo"],
+      "keywords_bonus": ["gótico","románico","alto","imponente","turista","arco","rosetón"],
+      "total_keywords": 10
+    },
+    {
+      "id": 30,
+      "titulo": "Tarde de lluvia",
+      "imagen": "data/imagenes/desc_30.jpg",
+      "keywords": ["lluvia","paraguas","charco","gris","calle","mojado","nube","impermeable","gotea","ventana"],
+      "keywords_bonus": ["tristeza","frío","otoño","reflejo","niebla","callejón","acerado"],
+      "total_keywords": 10
+    }
+  ]
+}
