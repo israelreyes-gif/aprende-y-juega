@@ -137,6 +137,69 @@ function renderSubjects() {
     var gTotal=0, gOk=0;
     g.items.forEach(function(i){ gTotal+=i.s.total; gOk+=i.s.ok; });
     var gPct = gTotal>0 ? Math.round(gOk/gTotal*100) : -1;
+    var pctColor = gPct<0 ? 'var(--color-text-secondary)' : gPct<75 ? '#F59E0B' : '#16A34A';
+
+    var card = document.createElement('div');
+    card.style.cssText = 'background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;margin-bottom:8px';
+
+    var html = '<div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-tertiary)">' +
+      '<span style="font-size:15px">'+g.icono+'</span>' +
+      '<span style="font-size:13px;font-weight:700;color:var(--gray-800);font-family:var(--f);flex:1">'+g.nombre+'</span>' +
+      '<span style="font-size:12px;font-weight:800;color:'+pctColor+';font-family:var(--f)">'+(gPct>=0?gPct+'%':'Sin empezar')+'</span>' +
+    '</div><div style="padding:4px 12px">';
+
+    g.items.forEach(function(item, idx) {
+      var pct = item.s.total>0 ? Math.round(item.s.ok/item.s.total*100) : -1;
+      var pc  = pct<0 ? 'var(--color-text-secondary)' : pct<75 ? '#F59E0B' : g.color;
+      var sep = idx<g.items.length-1 ? 'border-bottom:0.5px solid var(--color-border-tertiary)' : '';
+      html += '<div style="display:flex;align-items:center;gap:8px;padding:6px 0 6px 20px;'+sep+'">' +
+        '<span style="font-size:11px;color:var(--color-text-secondary);font-family:var(--f);flex:1">'+item.nombre+'</span>';
+      if (pct >= 0) {
+        html += '<div style="width:55px;height:5px;background:var(--gray-100);border-radius:3px;overflow:hidden;flex-shrink:0">' +
+          '<div style="height:100%;border-radius:3px;background:'+g.color+';width:'+pct+'%"></div></div>';
+      }
+      html += '<span style="font-size:10px;font-weight:500;color:'+pc+';font-family:var(--f);min-width:48px;text-align:right">'+(pct>=0?pct+'%':'Sin empezar')+'</span></div>';
+    });
+
+    html += '</div>';
+    card.innerHTML = html;
+    el.appendChild(card);
+  });
+}
+
+  var sumaOk = (mErr['suma_ok']||0)+(mErr['resta_ok']||0);
+  var sumaF  = (mErr['suma_fail']||0)+(mErr['resta_fail']||0);
+  var sr = { total:sumaOk+sumaF, ok:sumaOk };
+
+  var gramTotal=0, gramOk=0;
+  ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'].forEach(function(k){
+    var s=st(lErr,k); gramTotal+=s.total; gramOk+=s.ok;
+  });
+
+  var grupos = [
+    { nombre:'Matemáticas', icono:'🔢', color:'#7C3AED',
+      items:[
+        {nombre:'Sumas y restas',   s:sr},
+        {nombre:'Multiplicaciones', s:st(mErr,'multi')},
+        {nombre:'Problemas',        s:st(mErr,'prob')},
+        {nombre:'Mezcla',           s:st(mErr,'mix')},
+      ]
+    },
+    { nombre:'Lengua', icono:'📚', color:'#EC4899',
+      items:[
+        {nombre:'Gramática',        s:{total:gramTotal,ok:gramOk}},
+        {nombre:'Comprensión',      s:st(lErr,'comp')},
+        {nombre:'Descripciones',    s:st(lErr,'desc')},
+      ]
+    }
+  ];
+
+  el.innerHTML = '';
+
+  grupos.forEach(function(g) {
+    var gTotal=0, gOk=0;
+    g.items.forEach(function(i){ gTotal+=i.s.total; gOk+=i.s.ok; });
+    var gPct = gTotal>0 ? Math.round(gOk/gTotal*100) : -1;
     var pctColor = gPct<0 ? 'var(--color-text-secondary)' : gPct<75 ? '#F59E0B' : g.color;
 
     var card = document.createElement('div');
