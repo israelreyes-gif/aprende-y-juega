@@ -421,7 +421,7 @@
       }
     },
     {
-      "p": "_om_ero",
+      "p": "_ombero",
       "l": "B",
       "c": "bombero",
       "definicion": {
@@ -521,7 +521,7 @@
       }
     },
     {
-      "p": "_arco_e_vela",
+      "p": "_arco de vela",
       "l": "B",
       "c": "barco de vela",
       "definicion": {
@@ -861,7 +861,7 @@
       }
     },
     {
-      "p": "_ordenador",
+      "p": "_orde",
       "l": "B",
       "c": "borde",
       "definicion": {
@@ -911,7 +911,7 @@
       }
     },
     {
-      "p": "_oveda",
+      "p": "_óveda",
       "l": "B",
       "c": "bóveda",
       "definicion": {
@@ -951,7 +951,7 @@
       }
     },
     {
-      "p": "_razada",
+      "p": "_rizna",
       "l": "B",
       "c": "brizna",
       "definicion": {
@@ -1008,16 +1008,6 @@
         "tipo": "Expresión",
         "texto": "De bruces significa boca abajo o de frente.",
         "ejemplo": "\"Se cayó de _ruces al tropezar con la piedra.\""
-      }
-    },
-    {
-      "p": "a_eja",
-      "l": "V",
-      "c": "abeja",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Insecto con rayas amarillas y negras que produce miel y vive en colmenas.",
-        "ejemplo": "\"La _eja volaba de flor en flor recogiendo néctar.\""
       }
     },
     {
@@ -1421,7 +1411,7 @@
       }
     },
     {
-      "p": "_ellocino",
+      "p": "_ellócino",
       "l": "V",
       "c": "vellócino",
       "definicion": {
@@ -1457,7 +1447,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Galería o porche exterior de una casa, cubierto y abierto.",
-        "ejemplo": "\"Tomamos el té en la veranda viendo el jardín.\""
+        "ejemplo": "\"Tomamos el té en la _eranda viendo el jardín.\""
       }
     },
     {
@@ -1477,7 +1467,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Moto pequeña y ligera muy popular en las ciudades.",
-        "ejemplo": "\"Mi tío va al trabajo en vespa.\""
+        "ejemplo": "\"Mi tío va al trabajo en _espa.\""
       }
     },
     {
@@ -1551,7 +1541,7 @@
       }
     },
     {
-      "p": "_olivia",
+      "p": "_oltereta",
       "l": "V",
       "c": "voltereta",
       "definicion": {
@@ -1657,7 +1647,7 @@
       "definicion": {
         "tipo": "Sustantivo propio",
         "texto": "Nombre del periódico oficial soviético, significa \"verdad\" en ruso.",
-        "ejemplo": "\"El Pravda era el diario más leído en la Unión Soviética.\""
+        "ejemplo": "\"El pra_da era el diario más leído en la Unión Soviética.\""
       }
     },
     {
@@ -1717,11 +1707,11 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Guerrera de la mitología nórdica que acompañaba a los héroes.",
-        "ejemplo": "\"La valquiria cabalgaba sobre las nubes de batalla.\""
+        "ejemplo": "\"La _alquiria cabalgaba sobre las nubes de batalla.\""
       }
     },
     {
-      "p": "_andalo",
+      "p": "_ándalo",
       "l": "V",
       "c": "vándalo",
       "definicion": {
@@ -1787,7 +1777,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Bebida aperitivo con sabor amargo y dulce.",
-        "ejemplo": "\"Los adultos tomaron vermut antes de comer.\""
+        "ejemplo": "\"Los adultos tomaron _ermut antes de comer.\""
       }
     },
     {
@@ -1807,7 +1797,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Conjunto de vigas que forman la estructura de un techo.",
-        "ejemplo": "\"La viguería de madera del techo era muy antigua.\""
+        "ejemplo": "\"La _iguería de madera del techo era muy antigua.\""
       }
     },
     {
@@ -1821,13 +1811,13 @@
       }
     },
     {
-      "p": "_ingambas",
+      "p": "_inyambas",
       "l": "V",
       "c": "vinyambas",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Lugar muy lejano e imaginario.",
-        "ejemplo": "\"Vive en las vinyambas, tardamos horas en llegar.\""
+        "ejemplo": "\"Vive en las _inyambas, tardamos horas en llegar.\""
       }
     },
     {
@@ -1861,16 +1851,6 @@
       }
     },
     {
-      "p": "_olandés",
-      "l": "V",
-      "c": "holandés",
-      "definicion": {
-        "tipo": "Adjetivo/sustantivo",
-        "texto": "Persona o cosa de Holanda, país de los Países Bajos.",
-        "ejemplo": "\"El pintor _olandés fue famoso por sus paisajes.\""
-      }
-    },
-    {
       "p": "_olutina",
       "l": "V",
       "c": "volutina",
@@ -1891,7 +1871,7 @@
       }
     },
     {
-      "p": "_ortex",
+      "p": "_órtex",
       "l": "V",
       "c": "vórtex",
       "definicion": {
@@ -1917,7 +1897,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal grande de cuatro patas que se usa para montar.",
-        "ejemplo": "\"El caballo galopaba veloz por la llanura.\""
+        "ejemplo": "\"El ca_allo galopaba veloz por la llanura.\""
       }
     },
     {
@@ -1927,17 +1907,17 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Parte del cuerpo donde están el cerebro y los ojos.",
-        "ejemplo": "\"Me duele la cabeza después de estudiar tanto.\""
+        "ejemplo": "\"Me duele la ca_eza después de estudiar tanto.\""
       }
     },
     {
-      "p": "ar_ol",
+      "p": "ár_ol",
       "l": "B",
       "c": "árbol",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Planta grande con tronco de madera y ramas con hojas.",
-        "ejemplo": "\"El árbol daba mucha sombra en el jardín.\""
+        "ejemplo": "\"El ár_ol daba mucha sombra en el jardín.\""
       }
     },
     {
@@ -1947,7 +1927,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Masa de vapor de agua que flota en el cielo.",
-        "ejemplo": "\"Una nube tapó el sol de repente.\""
+        "ejemplo": "\"Una nu_e tapó el sol de repente.\""
       }
     },
     {
@@ -1957,7 +1937,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Localidad pequeña con pocos habitantes.",
-        "ejemplo": "\"En verano voy al pueblo de mis abuelos.\""
+        "ejemplo": "\"En verano voy al pue_lo de mis abuelos.\""
       }
     },
     {
@@ -1977,7 +1957,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Moverse hacia arriba.",
-        "ejemplo": "\"Tuve que subir las escaleras corriendo.\""
+        "ejemplo": "\"Tuve que su_ir las escaleras corriendo.\""
       }
     },
     {
@@ -1987,7 +1967,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Cilindro hueco por el que puede pasar agua.",
-        "ejemplo": "\"El agua corría por el tubo de la ducha.\""
+        "ejemplo": "\"El agua corría por el tu_o de la ducha.\""
       }
     },
     {
@@ -1997,17 +1977,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Cada uno de los bordes carnosos que rodean la boca.",
-        "ejemplo": "\"Se mordió el labio de los nervios.\""
-      }
-    },
-    {
-      "p": "no_ela",
-      "l": "B",
-      "c": "novela",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Libro largo con una historia inventada.",
-        "ejemplo": "\"Me leí toda la novela en un fin de semana.\""
+        "ejemplo": "\"Se mordió el la_io de los nervios.\""
       }
     },
     {
@@ -2017,7 +1987,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Insecto que produce miel y vive en colmenas.",
-        "ejemplo": "\"La abeja volaba de flor en flor.\""
+        "ejemplo": "\"La a_eja volaba de flor en flor.\""
       }
     },
     {
@@ -2027,7 +1997,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Coger o aceptar algo que te dan.",
-        "ejemplo": "\"Fui a recibir el paquete a la puerta.\""
+        "ejemplo": "\"Fui a reci_ir el paquete a la puerta.\""
       }
     },
     {
@@ -2037,7 +2007,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Representar palabras con letras.",
-        "ejemplo": "\"Me gusta escribir cuentos en mi cuaderno.\""
+        "ejemplo": "\"Me gusta escri_ir cuentos en mi cuaderno.\""
       }
     },
     {
@@ -2047,7 +2017,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Intentar algo o catar un alimento.",
-        "ejemplo": "\"¿Quieres probar este pastel de chocolate?\""
+        "ejemplo": "\"¿Quieres pro_ar este pastel de chocolate?\""
       }
     },
     {
@@ -2057,27 +2027,7 @@
       "definicion": {
         "tipo": "Verbo/sustantivo",
         "texto": "Tener obligación de hacer algo.",
-        "ejemplo": "\"Tengo que hacer el deber de matemáticas.\""
-      }
-    },
-    {
-      "p": "o_eja",
-      "l": "B",
-      "c": "oveja",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Animal con lana que vive en rebaños.",
-        "ejemplo": "\"El pastor contó las ovejas antes de cerrar el corral.\""
-      }
-    },
-    {
-      "p": "ca_erna",
-      "l": "B",
-      "c": "caverna",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Cueva grande y profunda en una montaña.",
-        "ejemplo": "\"Los hombres prehistóricos vivían en cavernas.\""
+        "ejemplo": "\"Tengo que hacer el de_er de matemáticas.\""
       }
     },
     {
@@ -2087,7 +2037,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que tiene miedo y no se atreve ante las dificultades.",
-        "ejemplo": "\"El villano era un cobarde que huía siempre.\""
+        "ejemplo": "\"El villano era un co_arde que huía siempre.\""
       }
     },
     {
@@ -2097,7 +2047,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Máquina programada para hacer tareas automáticamente.",
-        "ejemplo": "\"El robot de la fábrica montaba los coches solo.\""
+        "ejemplo": "\"El ro_ot de la fábrica montaba los coches solo.\""
       }
     },
     {
@@ -2107,7 +2057,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Órgano de la vaca del que sale la leche.",
-        "ejemplo": "\"El ternero mamaba de la ubre de su madre.\""
+        "ejemplo": "\"El ternero mamaba de la u_re de su madre.\""
       }
     },
     {
@@ -2127,7 +2077,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Prenda de ropa larga y gruesa para el frío.",
-        "ejemplo": "\"Me puse el abrigo porque hacía mucho frío.\""
+        "ejemplo": "\"Me puse el a_rigo porque hacía mucho frío.\""
       }
     },
     {
@@ -2147,7 +2097,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Madre del padre o de la madre.",
-        "ejemplo": "\"Mi abuela hace las mejores galletas del mundo.\""
+        "ejemplo": "\"Mi a_uela hace las mejores galletas del mundo.\""
       }
     },
     {
@@ -2157,7 +2107,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Padre del padre o de la madre.",
-        "ejemplo": "\"Mi abuelo me enseñó a jugar al ajedrez.\""
+        "ejemplo": "\"Mi a_uelo me enseñó a jugar al ajedrez.\""
       }
     },
     {
@@ -2167,7 +2117,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Insecto con rayas amarillas que produce miel.",
-        "ejemplo": "\"La abeja picó al niño en el brazo.\""
+        "ejemplo": "\"La a_eja picó al niño en el brazo.\""
       }
     },
     {
@@ -2177,7 +2127,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Espacio pequeño y cerrado para una persona.",
-        "ejemplo": "\"La piloto entró en la cabina del avión.\""
+        "ejemplo": "\"La piloto entró en la ca_ina del avión.\""
       }
     },
     {
@@ -2187,7 +2137,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Animal de granja con cuernos que da leche.",
-        "ejemplo": "\"La cabra trepó por las rocas con agilidad.\""
+        "ejemplo": "\"La ca_ra trepó por las rocas con agilidad.\""
       }
     },
     {
@@ -2197,7 +2147,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Manta o cobertor para abrigarse en la cama.",
-        "ejemplo": "\"Se tapó con la cobija porque tenía frío.\""
+        "ejemplo": "\"Se tapó con la co_ija porque tenía frío.\""
       }
     },
     {
@@ -2207,17 +2157,17 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Recipiente cilíndrico con asa para llevar agua.",
-        "ejemplo": "\"Llenó el cubo de agua para fregar.\""
+        "ejemplo": "\"Llenó el cu_o de agua para fregar.\""
       }
     },
     {
-      "p": "de_il",
+      "p": "dé_il",
       "l": "B",
       "c": "débil",
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que no tiene mucha fuerza o energía.",
-        "ejemplo": "\"Estaba débil después de la enfermedad.\""
+        "ejemplo": "\"Estaba dé_il después de la enfermedad.\""
       }
     },
     {
@@ -2227,7 +2177,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Persona que sustituye a un actor en escenas peligrosas.",
-        "ejemplo": "\"El duble saltó desde el edificio en llamas.\""
+        "ejemplo": "\"El du_le saltó desde el edificio en llamas.\""
       }
     },
     {
@@ -2237,7 +2187,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Abrigo impermeable para la lluvia.",
-        "ejemplo": "\"Cogió la gabardina porque amenazaba lluvia.\""
+        "ejemplo": "\"Cogió la ga_ardina porque amenazaba lluvia.\""
       }
     },
     {
@@ -2247,7 +2197,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Conjunto de personas que dirigen un país.",
-        "ejemplo": "\"El gobierno aprobó una nueva ley.\""
+        "ejemplo": "\"El go_ierno aprobó una nueva ley.\""
       }
     },
     {
@@ -2257,7 +2207,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Expresar pensamientos con palabras.",
-        "ejemplo": "\"Saber hablar en público es muy útil.\""
+        "ejemplo": "\"Saber ha_lar en público es muy útil.\""
       }
     },
     {
@@ -2277,7 +2227,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que se hace con frecuencia y regularidad.",
-        "ejemplo": "\"Es habitual que llueva en noviembre.\""
+        "ejemplo": "\"Es ha_itual que llueva en noviembre.\""
       }
     },
     {
@@ -2287,7 +2237,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Pasado del verbo haber.",
-        "ejemplo": "\"Hubo una tormenta muy fuerte anoche.\""
+        "ejemplo": "\"hu_o una tormenta muy fuerte anoche.\""
       }
     },
     {
@@ -2297,7 +2247,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Trabajo o tarea que se realiza.",
-        "ejemplo": "\"La labor del maestro es muy importante.\""
+        "ejemplo": "\"La la_or del maestro es muy importante.\""
       }
     },
     {
@@ -2307,7 +2257,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Conjunto de páginas encuadernadas con texto.",
-        "ejemplo": "\"Me regalaron un libro de aventuras.\""
+        "ejemplo": "\"Me regalaron un li_ro de aventuras.\""
       }
     },
     {
@@ -2317,37 +2267,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal salvaje parecido al perro que vive en manadas.",
-        "ejemplo": "\"El lobo aullaba a la luna llena.\""
-      }
-    },
-    {
-      "p": "na_egar",
-      "l": "B",
-      "c": "navegar",
-      "definicion": {
-        "tipo": "Verbo",
-        "texto": "Viajar por el agua en un barco.",
-        "ejemplo": "\"Soñaba con navegar los siete mares.\""
-      }
-    },
-    {
-      "p": "ni_el",
-      "l": "B",
-      "c": "nivel",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Altura o grado de algo en relación a otra cosa.",
-        "ejemplo": "\"El nivel del agua subió con la lluvia.\""
-      }
-    },
-    {
-      "p": "no_io",
-      "l": "B",
-      "c": "novio",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Persona con quien se tiene una relación amorosa.",
-        "ejemplo": "\"El novio le regaló flores rojas.\""
+        "ejemplo": "\"El lo_o aullaba a la luna llena.\""
       }
     },
     {
@@ -2357,7 +2277,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Masa de vapor que flota en el cielo.",
-        "ejemplo": "\"Las nubes taparon el sol por la tarde.\""
+        "ejemplo": "\"Las nu_es taparon el sol por la tarde.\""
       }
     },
     {
@@ -2367,27 +2287,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Trabajo artístico o construcción.",
-        "ejemplo": "\"La obra de teatro fue muy divertida.\""
-      }
-    },
-    {
-      "p": "pa_o",
-      "l": "B",
-      "c": "pavo",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Ave grande con cola en abanico de colores.",
-        "ejemplo": "\"El pavo real abrió su cola de colores.\""
-      }
-    },
-    {
-      "p": "pa_imento",
-      "l": "B",
-      "c": "pavimento",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Superficie dura del suelo de una calle.",
-        "ejemplo": "\"El pavimento estaba mojado tras la lluvia.\""
+        "ejemplo": "\"La o_ra de teatro fue muy divertida.\""
       }
     },
     {
@@ -2407,7 +2307,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Situación difícil que hay que resolver.",
-        "ejemplo": "\"El problema de matemáticas era muy difícil.\""
+        "ejemplo": "\"El pro_lema de matemáticas era muy difícil.\""
       }
     },
     {
@@ -2417,7 +2317,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Examen o demostración de algo.",
-        "ejemplo": "\"Aprobé la prueba de lengua con buena nota.\""
+        "ejemplo": "\"Aprobé la prue_a de lengua con buena nota.\""
       }
     },
     {
@@ -2427,7 +2327,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que no obedece las normas o la autoridad.",
-        "ejemplo": "\"Era un chico rebelde que no hacía caso.\""
+        "ejemplo": "\"Era un chico re_elde que no hacía caso.\""
       }
     },
     {
@@ -2437,7 +2337,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que no obedece y actúa por su cuenta.",
-        "ejemplo": "\"El caballo rebelde no quería llevar jinete.\""
+        "ejemplo": "\"El caballo re_elde no quería llevar jinete.\""
       }
     },
     {
@@ -2447,7 +2347,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Tomar algo ajeno sin permiso.",
-        "ejemplo": "\"El ladrón intentó robar el museo.\""
+        "ejemplo": "\"El ladrón intentó ro_ar el museo.\""
       }
     },
     {
@@ -2457,7 +2357,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Árbol de hoja perenne con frutos azulados.",
-        "ejemplo": "\"La sabina vivía más de mil años.\""
+        "ejemplo": "\"La sa_ina vivía más de mil años.\""
       }
     },
     {
@@ -2467,7 +2367,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Sensación que produce un alimento en la boca.",
-        "ejemplo": "\"El sabor de la fresa es dulce y ácido.\""
+        "ejemplo": "\"El sa_or de la fresa es dulce y ácido.\""
       }
     },
     {
@@ -2477,7 +2377,7 @@
       "definicion": {
         "tipo": "Preposición/sustantivo",
         "texto": "Encima de algo, o bolsa de papel para cartas.",
-        "ejemplo": "\"Dejé el libro sobre la mesa.\""
+        "ejemplo": "\"Dejé el libro so_re la mesa.\""
       }
     },
     {
@@ -2487,7 +2387,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Hija del hermano o la hermana.",
-        "ejemplo": "\"Mi sobrina tiene tres años y es muy graciosa.\""
+        "ejemplo": "\"Mi so_rina tiene tres años y es muy graciosa.\""
       }
     },
     {
@@ -2497,7 +2397,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Bar o local donde se sirven bebidas.",
-        "ejemplo": "\"Los pescadores se reunían en la taberna del puerto.\""
+        "ejemplo": "\"Los pescadores se reunían en la ta_erna del puerto.\""
       }
     },
     {
@@ -2507,7 +2407,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Superficie plana para jugar o escribir.",
-        "ejemplo": "\"Movió la pieza en el tablero de ajedrez.\""
+        "ejemplo": "\"Movió la pieza en el ta_lero de ajedrez.\""
       }
     },
     {
@@ -2517,7 +2417,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Antiguo verbo que significa tener miedo.",
-        "ejemplo": "\"Debemos teber respeto a la naturaleza.\""
+        "ejemplo": "\"Debemos te_er respeto a la naturaleza.\""
       }
     },
     {
@@ -2527,7 +2427,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Grupo de personas con cultura y tradiciones comunes.",
-        "ejemplo": "\"La tribu celebró la cosecha con una fiesta.\""
+        "ejemplo": "\"La tri_u celebró la cosecha con una fiesta.\""
       }
     },
     {
@@ -2537,7 +2437,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Conjunto de tubos por donde circula el agua.",
-        "ejemplo": "\"La tubería se rompió e inundó el baño.\""
+        "ejemplo": "\"La tu_ería se rompió e inundó el baño.\""
       }
     },
     {
@@ -2547,7 +2447,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Encontrar o situar algo en un lugar.",
-        "ejemplo": "\"¿Puedes ubicar España en el mapa?\""
+        "ejemplo": "\"¿Puedes u_icar España en el mapa?\""
       }
     },
     {
@@ -2557,27 +2457,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Órgano de la vaca que produce leche.",
-        "ejemplo": "\"El ternero se acercó a la ubre de su madre.\""
-      }
-    },
-    {
-      "p": "a_iso",
-      "l": "B",
-      "c": "aviso",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Mensaje o señal que informa de algo.",
-        "ejemplo": "\"Pusieron un aviso en la puerta del colegio.\""
-      }
-    },
-    {
-      "p": "a_entura",
-      "l": "B",
-      "c": "aventura",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Situación emocionante y arriesgada.",
-        "ejemplo": "\"La aventura en la selva fue increíble.\""
+        "ejemplo": "\"El ternero se acercó a la u_re de su madre.\""
       }
     },
     {
@@ -2587,7 +2467,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Instrumento para abrir y cerrar cerraduras.",
-        "ejemplo": "\"Busqué la llave en todos mis bolsillos.\""
+        "ejemplo": "\"Busqué la lla_e en todos mis bolsillos.\""
       }
     },
     {
@@ -2597,7 +2477,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que existe hace poco tiempo o que no se ha usado.",
-        "ejemplo": "\"Estrené un nuevo par de zapatillas.\""
+        "ejemplo": "\"Estrené un nue_o par de zapatillas.\""
       }
     },
     {
@@ -2607,17 +2487,7 @@
       "definicion": {
         "tipo": "Numeral",
         "texto": "El número que va después del ocho.",
-        "ejemplo": "\"Tengo nueve cromos en mi colección.\""
-      }
-    },
-    {
-      "p": "li_ro",
-      "l": "V",
-      "c": "libro",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Conjunto de páginas encuadernadas con texto.",
-        "ejemplo": "\"Me regalaron un libro de aventuras.\""
+        "ejemplo": "\"Tengo nue_e cromos en mi colección.\""
       }
     },
     {
@@ -2627,7 +2497,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Hacer lo posible para que algo malo no ocurra.",
-        "ejemplo": "\"Hay que evitar cruzar la calle sin mirar.\""
+        "ejemplo": "\"Hay que e_itar cruzar la calle sin mirar.\""
       }
     },
     {
@@ -2637,7 +2507,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Cambiar algo de posición o lugar.",
-        "ejemplo": "\"Mover el sofá entre dos es más fácil.\""
+        "ejemplo": "\"mo_er el sofá entre dos es más fácil.\""
       }
     },
     {
@@ -2647,7 +2517,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que está inquieto por la emoción o el miedo.",
-        "ejemplo": "\"Estaba nervioso antes del examen.\""
+        "ejemplo": "\"Estaba ner_ioso antes del examen.\""
       }
     },
     {
@@ -2667,7 +2537,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que vive en la naturaleza sin domesticar.",
-        "ejemplo": "\"El toro salvaje corría sin control.\""
+        "ejemplo": "\"El toro sal_aje corría sin control.\""
       }
     },
     {
@@ -2677,7 +2547,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Aparato que emite imágenes y sonido.",
-        "ejemplo": "\"Vimos la película en la televisión.\""
+        "ejemplo": "\"Vimos la película en la tele_isión.\""
       }
     },
     {
@@ -2687,7 +2557,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Rapidez con la que algo se mueve.",
-        "ejemplo": "\"El tren alcanzó gran velocidad.\""
+        "ejemplo": "\"El tren alcanzó gran _elocidad.\""
       }
     },
     {
@@ -2697,7 +2567,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Dar algo de vuelta a quien te lo prestó.",
-        "ejemplo": "\"Tengo que devolver el libro a la biblioteca.\""
+        "ejemplo": "\"Tengo que de_olver el libro a la biblioteca.\""
       }
     },
     {
@@ -2707,17 +2577,17 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Acción de moverse o cambiar de posición.",
-        "ejemplo": "\"El movimiento del péndulo era hipnótico.\""
+        "ejemplo": "\"El mo_imiento del péndulo era hipnótico.\""
       }
     },
     {
-      "p": "es_uelto",
+      "p": "en_uelto",
       "l": "V",
       "c": "envuelto",
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que está cubierto o rodeado de algo.",
-        "ejemplo": "\"El regalo estaba envuelto en papel de colores.\""
+        "ejemplo": "\"El regalo estaba en_uelto en papel de colores.\""
       }
     },
     {
@@ -2727,7 +2597,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Cubrir algo por todos los lados.",
-        "ejemplo": "\"Ayudé a envolver los regalos de Navidad.\""
+        "ejemplo": "\"Ayudé a en_olver los regalos de Navidad.\""
       }
     },
     {
@@ -2747,7 +2617,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Hacer que alguien cambie de opinión.",
-        "ejemplo": "\"No pudo convencerme de que fuera.\""
+        "ejemplo": "\"No pudo con_encerme de que fuera.\""
       }
     },
     {
@@ -2757,17 +2627,17 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Estación más fría del año.",
-        "ejemplo": "\"En invierno nieva en la montaña.\""
+        "ejemplo": "\"En in_ierno nieva en la montaña.\""
       }
     },
     {
-      "p": "pri_avera",
+      "p": "prima_era",
       "l": "V",
       "c": "primavera",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Estación entre el invierno y el verano.",
-        "ejemplo": "\"En primavera florecen todas las plantas.\""
+        "ejemplo": "\"En prima_era florecen todas las plantas.\""
       }
     },
     {
@@ -2777,7 +2647,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "División administrativa de un país.",
-        "ejemplo": "\"Madrid es la provincia más poblada de España.\""
+        "ejemplo": "\"Madrid es la pro_incia más poblada de España.\""
       }
     },
     {
@@ -2787,7 +2657,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Centro de estudios superiores.",
-        "ejemplo": "\"Quiero estudiar medicina en la universidad.\""
+        "ejemplo": "\"Quiero estudiar medicina en la uni_ersidad.\""
       }
     },
     {
@@ -2797,7 +2667,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Situación emocionante y arriesgada.",
-        "ejemplo": "\"La aventura en la selva fue increíble.\""
+        "ejemplo": "\"La a_entura en la selva fue increíble.\""
       }
     },
     {
@@ -2807,7 +2677,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Mirar algo con atención y detalle.",
-        "ejemplo": "\"Observar las estrellas de noche es precioso.\""
+        "ejemplo": "\"obser_ar las estrellas de noche es precioso.\""
       }
     },
     {
@@ -2827,17 +2697,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Mantener algo en buen estado.",
-        "ejemplo": "\"Hay que conservar la naturaleza.\""
-      }
-    },
-    {
-      "p": "descu_rir",
-      "l": "V",
-      "c": "descubrir",
-      "definicion": {
-        "tipo": "Verbo",
-        "texto": "Encontrar algo que estaba oculto.",
-        "ejemplo": "\"Colón descubrió América en 1492.\""
+        "ejemplo": "\"Hay que conser_ar la naturaleza.\""
       }
     },
     {
@@ -2857,7 +2717,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que es personal y no es para todo el mundo.",
-        "ejemplo": "\"Este es un jardín privado.\""
+        "ejemplo": "\"Este es un jardín pri_ado.\""
       }
     },
     {
@@ -2867,7 +2727,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que está en un lugar alto.",
-        "ejemplo": "\"El castillo estaba en un lugar elevado.\""
+        "ejemplo": "\"El castillo estaba en un lugar ele_ado.\""
       }
     },
     {
@@ -2887,7 +2747,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que se mueve mucho y hace muchas cosas.",
-        "ejemplo": "\"Es un niño muy activo que no para.\""
+        "ejemplo": "\"Es un niño muy acti_o que no para.\""
       }
     },
     {
@@ -2911,13 +2771,13 @@
       }
     },
     {
-      "p": "crea_tivo",
+      "p": "creati_o",
       "l": "V",
       "c": "creativo",
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que tiene mucha imaginación.",
-        "ejemplo": "\"El artista era muy creativo.\""
+        "ejemplo": "\"El artista era muy creati_o.\""
       }
     }
   ],
@@ -3019,7 +2879,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Planta que crece en lugares húmedos con tallos largos y finos.",
-        "ejemplo": "\"Las ranas se escondían entre los juncos del estanque.\""
+        "ejemplo": "\"Las ranas se escondían entre los _uncos del estanque.\""
       }
     },
     {
@@ -3063,7 +2923,7 @@
       }
     },
     {
-      "p": "_rasol",
+      "p": "_irasol",
       "l": "G",
       "c": "girasol",
       "definicion": {
@@ -3253,13 +3113,13 @@
       }
     },
     {
-      "p": "_reco",
+      "p": "_riego",
       "l": "G",
       "c": "griego",
       "definicion": {
         "tipo": "Adjetivo/sustantivo",
         "texto": "Persona o cosa de Grecia, país del sur de Europa.",
-        "ejemplo": "\"Los griegos inventaron los Juegos Olímpicos.\""
+        "ejemplo": "\"Los _riegos inventaron los Juegos Olímpicos.\""
       }
     },
     {
@@ -3529,7 +3389,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Árbol tropical de raíces aéreas muy llamativas.",
-        "ejemplo": "\"El jaguey tenía raíces que bajaban del tronco al suelo.\""
+        "ejemplo": "\"El _aguey tenía raíces que bajaban del tronco al suelo.\""
       }
     },
     {
@@ -3583,7 +3443,7 @@
       }
     },
     {
-      "p": "_azmin",
+      "p": "_azmín",
       "l": "J",
       "c": "jazmín",
       "definicion": {
@@ -3749,7 +3609,7 @@
       "definicion": {
         "tipo": "Sustantivo propio",
         "texto": "Nombre masculino español.",
-        "ejemplo": "\"Julián llegó el primero a la meta.\""
+        "ejemplo": "\"_ulián llegó el primero a la meta.\""
       }
     },
     {
@@ -3779,7 +3639,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Relacionado con las leyes y el derecho.",
-        "ejemplo": "\"El problema tenía un aspecto jurídico complicado.\""
+        "ejemplo": "\"El problema tenía un aspecto _urídico complicado.\""
       }
     },
     {
@@ -3863,16 +3723,6 @@
       }
     },
     {
-      "p": "fle_a",
-      "l": "J",
-      "c": "flecha",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Vara con punta que se lanza con arco.",
-        "ejemplo": "\"El arquero disparó la fle_a al blanco.\""
-      }
-    },
-    {
       "p": "hi_o",
       "l": "J",
       "c": "hijo",
@@ -3933,23 +3783,13 @@
       }
     },
     {
-      "p": "pa_aro",
+      "p": "pá_aro",
       "l": "J",
       "c": "pájaro",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal con alas y plumas que puede volar y pone huevos.",
         "ejemplo": "\"Un _á_aro amarillo cantaba en la rama.\""
-      }
-    },
-    {
-      "p": "plu_a",
-      "l": "J",
-      "c": "pluma",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Cada una de las piezas que cubren el cuerpo de los pájaros, o instrumento para escribir.",
-        "ejemplo": "\"El pájaro perdió una pluma mientras volaba.\""
       }
     },
     {
@@ -3999,7 +3839,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Líquido transparente e incoloro esencial para la vida.",
-        "ejemplo": "\"Bebe agua, que hace mucho calor.\""
+        "ejemplo": "\"Bebe a_ua, que hace mucho calor.\""
       }
     },
     {
@@ -4009,7 +3849,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Persona con quien se tiene una relación de amistad.",
-        "ejemplo": "\"Mi mejor amigo y yo somos inseparables.\""
+        "ejemplo": "\"Mi mejor ami_o y yo somos inseparables.\""
       }
     },
     {
@@ -4019,7 +3859,7 @@
       "definicion": {
         "tipo": "Adverbio",
         "texto": "Después de este momento.",
-        "ejemplo": "\"Primero haz los deberes, luego puedes jugar.\""
+        "ejemplo": "\"Primero haz los deberes, lue_o puedes jugar.\""
       }
     },
     {
@@ -4029,7 +3869,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Actividad divertida que se hace para entretenerse.",
-        "ejemplo": "\"Mi juego favorito es el escondite.\""
+        "ejemplo": "\"Mi jue_o favorito es el escondite.\""
       }
     },
     {
@@ -4039,7 +3879,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que tiene mucha longitud.",
-        "ejemplo": "\"El camino era muy largo y cansado.\""
+        "ejemplo": "\"El camino era muy lar_o y cansado.\""
       }
     },
     {
@@ -4059,7 +3899,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Dar dinero a cambio de algo.",
-        "ejemplo": "\"Fui a pagar la compra en la caja.\""
+        "ejemplo": "\"Fui a pa_ar la compra en la caja.\""
       }
     },
     {
@@ -4069,7 +3909,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Hacer algo divertido para entretenerse.",
-        "ejemplo": "\"Me encanta jugar al fútbol con mis amigos.\""
+        "ejemplo": "\"Me encanta ju_ar al fútbol con mis amigos.\""
       }
     },
     {
@@ -4079,7 +3919,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Alcanzar un lugar al que se iba.",
-        "ejemplo": "\"¿Cuándo llegaremos a la playa?\""
+        "ejemplo": "\"¿Cuándo lle_aremos a la playa?\""
       }
     },
     {
@@ -4089,7 +3929,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Actividad comercial que produce dinero.",
-        "ejemplo": "\"Mi padre tiene un negocio de zapatos.\""
+        "ejemplo": "\"Mi padre tiene un ne_ocio de zapatos.\""
       }
     },
     {
@@ -4099,7 +3939,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Período de cien años.",
-        "ejemplo": "\"Vivimos en el siglo veintiuno.\""
+        "ejemplo": "\"Vivimos en el si_lo veintiuno.\""
       }
     },
     {
@@ -4109,7 +3949,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Cosa que se da a alguen para hacerle feliz.",
-        "ejemplo": "\"Le hice un regalo sorpresa por su cumpleaños.\""
+        "ejemplo": "\"Le hice un re_alo sorpresa por su cumpleaños.\""
       }
     },
     {
@@ -4119,7 +3959,7 @@
       "definicion": {
         "tipo": "Pronombre",
         "texto": "Una persona indeterminada.",
-        "ejemplo": "\"Alguien ha llamado a la puerta.\""
+        "ejemplo": "\"al_uien ha llamado a la puerta.\""
       }
     },
     {
@@ -4129,7 +3969,7 @@
       "definicion": {
         "tipo": "Pronombre",
         "texto": "Ni uno solo.",
-        "ejemplo": "\"Ninguno de mis amigos vino a la fiesta.\""
+        "ejemplo": "\"nin_uno de mis amigos vino a la fiesta.\""
       }
     },
     {
@@ -4139,7 +3979,7 @@
       "definicion": {
         "tipo": "Pronombre",
         "texto": "Una cosa indeterminada.",
-        "ejemplo": "\"Hay algo extraño en este cuarto.\""
+        "ejemplo": "\"Hay al_o extraño en este cuarto.\""
       }
     },
     {
@@ -4149,7 +3989,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que va inmediatamente después.",
-        "ejemplo": "\"El siguiente ejercicio es más difícil.\""
+        "ejemplo": "\"El si_uiente ejercicio es más difícil.\""
       }
     },
     {
@@ -4159,7 +3999,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Planta comestible como las lentejas o los garbanzos.",
-        "ejemplo": "\"Las legumbres son muy nutritivas.\""
+        "ejemplo": "\"Las le_umbres son muy nutritivas.\""
       }
     },
     {
@@ -4169,7 +4009,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Forma exterior de un cuerpo o personaje.",
-        "ejemplo": "\"La figura del héroe era imponente.\""
+        "ejemplo": "\"La fi_ura del héroe era imponente.\""
       }
     },
     {
@@ -4179,7 +4019,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal felino con rayas negras y naranjas muy peligroso.",
-        "ejemplo": "\"El tigre cazó al antílope en la jungla.\""
+        "ejemplo": "\"El ti_re cazó al antílope en la jungla.\""
       }
     },
     {
@@ -4189,7 +4029,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal fantástico de los cuentos que escupe fuego.",
-        "ejemplo": "\"El dragón guardaba el tesoro en la montaña.\""
+        "ejemplo": "\"El dra_ón guardaba el tesoro en la montaña.\""
       }
     },
     {
@@ -4199,7 +4039,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que viste bien y tiene buen gusto.",
-        "ejemplo": "\"Iba muy elegante con su traje negro.\""
+        "ejemplo": "\"Iba muy ele_ante con su traje negro.\""
       }
     },
     {
@@ -4209,7 +4049,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Representación visual como una foto o dibujo.",
-        "ejemplo": "\"La imagen del cuadro era muy bonita.\""
+        "ejemplo": "\"La ima_en del cuadro era muy bonita.\""
       }
     },
     {
@@ -4219,7 +4059,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Incluir algo como parte de un todo.",
-        "ejemplo": "\"Hay que integrar a todos en el equipo.\""
+        "ejemplo": "\"Hay que inte_rar a todos en el equipo.\""
       }
     },
     {
@@ -4229,7 +4069,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que va en contra de la ley.",
-        "ejemplo": "\"Aparcar aquí es ilegal.\""
+        "ejemplo": "\"Aparcar aquí es ile_al.\""
       }
     },
     {
@@ -4239,7 +4079,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Principio o causa de algo.",
-        "ejemplo": "\"El origen de la vida es un misterio.\""
+        "ejemplo": "\"El ori_en de la vida es un misterio.\""
       }
     },
     {
@@ -4249,7 +4089,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Tipo o clase de algo.",
-        "ejemplo": "\"El género musical que más me gusta es el pop.\""
+        "ejemplo": "\"El _énero musical que más me gusta es el pop.\""
       }
     },
     {
@@ -4279,7 +4119,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Pasado del verbo decir.",
-        "ejemplo": "\"Me dijo que vendría a las cinco.\""
+        "ejemplo": "\"Me di_o que vendría a las cinco.\""
       }
     },
     {
@@ -4289,7 +4129,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Líquido con cloro para limpiar y desinfectar.",
-        "ejemplo": "\"Echó lejía para desinfectar el baño.\""
+        "ejemplo": "\"Echó le_ía para desinfectar el baño.\""
       }
     },
     {
@@ -4299,47 +4139,27 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Persona simpática y agradable.",
-        "ejemplo": "\"Tu amigo es muy majo y siempre ayuda.\""
+        "ejemplo": "\"Tu amigo es muy ma_o y siempre ayuda.\""
       }
     },
     {
-      "p": "fle_a",
-      "l": "J",
-      "c": "flecha",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Vara con punta que se lanza con arco.",
-        "ejemplo": "\"El arquero disparó la flecha al blanco.\""
-      }
-    },
-    {
-      "p": "co_in",
+      "p": "co_ín",
       "l": "J",
       "c": "cojín",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Almohadón pequeño para sentarse o decorar.",
-        "ejemplo": "\"Me senté sobre el cojín del sofá.\""
+        "ejemplo": "\"Me senté sobre el co_ín del sofá.\""
       }
     },
     {
-      "p": "pa_aro",
+      "p": "pá_aro",
       "l": "J",
       "c": "pájaro",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal con alas y plumas que puede volar.",
-        "ejemplo": "\"Un pájaro amarillo cantaba en la rama.\""
-      }
-    },
-    {
-      "p": "tara_ea",
-      "l": "J",
-      "c": "tarea",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Trabajo que hay que hacer, especialmente escolar.",
-        "ejemplo": "\"Tengo mucha tarea esta tarde.\""
+        "ejemplo": "\"Un pá_aro amarillo cantaba en la rama.\""
       }
     },
     {
@@ -4349,7 +4169,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que tiene muchos años.",
-        "ejemplo": "\"El castillo viejo tenía quinientos años.\""
+        "ejemplo": "\"El castillo vie_o tenía quinientos años.\""
       }
     },
     {
@@ -4359,7 +4179,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino plural",
         "texto": "Órganos de la vista.",
-        "ejemplo": "\"Tiene los ojos azules como el mar.\""
+        "ejemplo": "\"Tiene los o_os azules como el mar.\""
       }
     },
     {
@@ -4369,7 +4189,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Persona respecto a sus padres.",
-        "ejemplo": "\"El hijo mayor ayudó a su madre.\""
+        "ejemplo": "\"El hi_o mayor ayudó a su madre.\""
       }
     },
     {
@@ -4379,7 +4199,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Parte verde de las plantas, o página de un libro.",
-        "ejemplo": "\"Las hojas se volvieron amarillas en otoño.\""
+        "ejemplo": "\"Las ho_as se volvieron amarillas en otoño.\""
       }
     },
     {
@@ -4389,7 +4209,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Parte de la cara a los lados de la nariz.",
-        "ejemplo": "\"Le dio un beso en la mejilla.\""
+        "ejemplo": "\"Le dio un beso en la me_illa.\""
       }
     },
     {
@@ -4399,7 +4219,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Color de la sangre y los tomates maduros.",
-        "ejemplo": "\"El semáforo se puso en rojo.\""
+        "ejemplo": "\"El semáforo se puso en ro_o.\""
       }
     },
     {
@@ -4409,7 +4229,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Conjunto de ropa elegante.",
-        "ejemplo": "\"Se puso el traje nuevo para la boda.\""
+        "ejemplo": "\"Se puso el tra_e nuevo para la boda.\""
       }
     },
     {
@@ -4419,7 +4239,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Caso que sirve para explicar algo.",
-        "ejemplo": "\"El profesor puso un ejemplo en la pizarra.\""
+        "ejemplo": "\"El profesor puso un e_emplo en la pizarra.\""
       }
     },
     {
@@ -4429,7 +4249,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Tarea que se hace para aprender.",
-        "ejemplo": "\"Hice todos los ejercicios de mates.\""
+        "ejemplo": "\"Hice todos los e_ercicios de mates.\""
       }
     },
     {
@@ -4439,7 +4259,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Recipiente con tapa para guardar cosas.",
-        "ejemplo": "\"Metí los juguetes en una caja.\""
+        "ejemplo": "\"Metí los juguetes en una ca_a.\""
       }
     }
   ],
@@ -4465,7 +4285,7 @@
       }
     },
     {
-      "p": "_eso",
+      "p": "_ueso",
       "l": "Q",
       "c": "queso",
       "definicion": {
@@ -4531,7 +4351,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Trozo pequeño de queso, especialmente en porciones individuales.",
-        "ejemplo": "\"Metí un quesito en el bocadillo del recreo.\""
+        "ejemplo": "\"Metí un _uesito en el bocadillo del recreo.\""
       }
     },
     {
@@ -4541,11 +4361,11 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Punto más alto de una montaña.",
-        "ejemplo": "\"El alpinista llegó a la cima después de muchas horas.\""
+        "ejemplo": "\"El alpinista llegó a la _ima después de muchas horas.\""
       }
     },
     {
-      "p": "_ombido",
+      "p": "_umbido",
       "l": "Z",
       "c": "zumbido",
       "definicion": {
@@ -4561,7 +4381,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Punto más alto de una montaña, o reunión importante de líderes.",
-        "ejemplo": "\"Llegaron a la cumbre nevada al mediodía.\""
+        "ejemplo": "\"Llegaron a la _umbre nevada al mediodía.\""
       }
     },
     {
@@ -4591,7 +4411,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Historia corta con personajes inventados, real o fantástica.",
-        "ejemplo": "\"Mi abuela me leía un cuento cada noche.\""
+        "ejemplo": "\"Mi abuela me leía un _uento cada noche.\""
       }
     },
     {
@@ -4605,13 +4425,13 @@
       }
     },
     {
-      "p": "_imia",
+      "p": "_uímica",
       "l": "Q",
       "c": "química",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Ciencia que estudia la composición y propiedades de los materiales.",
-        "ejemplo": "\"En química aprendimos qué es una reacción.\""
+        "ejemplo": "\"En _uímica aprendimos qué es una reacción.\""
       }
     },
     {
@@ -4651,7 +4471,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Torre escalonada de las antiguas civilizaciones de Mesopotamia.",
-        "ejemplo": "\"El zigueal de Babilonia era una construcción enorme.\""
+        "ejemplo": "\"El _igueal de Babilonia era una construcción enorme.\""
       }
     },
     {
@@ -4671,7 +4491,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal pequeño que despide un olor muy fuerte para defenderse.",
-        "ejemplo": "\"El zorrillo asustó a todos con su olor.\""
+        "ejemplo": "\"El _orrillo asustó a todos con su olor.\""
       }
     },
     {
@@ -4681,7 +4501,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Terreno inclinado que sube o baja.",
-        "ejemplo": "\"Subir la cuesta en bici me cansó mucho.\""
+        "ejemplo": "\"Subir la _uesta en bici me cansó mucho.\""
       }
     },
     {
@@ -4691,7 +4511,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Cada uno de los dos huesos de la cara donde están los dientes.",
-        "ejemplo": "\"Le dolía la quijada después de estar en el dentista.\""
+        "ejemplo": "\"Le dolía la _uijada después de estar en el dentista.\""
       }
     },
     {
@@ -4711,7 +4531,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Lugar donde crecen muchos zumeros o plantas similares.",
-        "ejemplo": "\"Paseamos por la zumareda disfrutando del paisaje.\""
+        "ejemplo": "\"Paseamos por la _umareda disfrutando del paisaje.\""
       }
     },
     {
@@ -4735,7 +4555,7 @@
       }
     },
     {
-      "p": "_angano",
+      "p": "_ángano",
       "l": "Z",
       "c": "zángano",
       "definicion": {
@@ -4781,7 +4601,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Tela de algodón ligera con estampados de flores.",
-        "ejemplo": "\"El vestido de zaraza tenía flores rojas y azules.\""
+        "ejemplo": "\"El vestido de _araza tenía flores rojas y azules.\""
       }
     },
     {
@@ -4801,7 +4621,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Variedad de jacinto de color rojizo.",
-        "ejemplo": "\"El zargón brillaba entre las demás piedras.\""
+        "ejemplo": "\"El _argón brillaba entre las demás piedras.\""
       }
     },
     {
@@ -4901,7 +4721,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Lugar donde abundan las zarzas y arbustos espinosos.",
-        "ejemplo": "\"El camino atravesaba un zorral muy espeso.\""
+        "ejemplo": "\"El camino atravesaba un _orral muy espeso.\""
       }
     },
     {
@@ -4965,23 +4785,13 @@
       }
     },
     {
-      "p": "_arago_a",
+      "p": "_aragoza",
       "l": "Z",
       "c": "Zaragoza",
       "definicion": {
         "tipo": "Sustantivo propio",
         "texto": "Ciudad española capital de Aragón.",
         "ejemplo": "\"Visitamos _arago_a en las fiestas del Pilar.\""
-      }
-    },
-    {
-      "p": "abe_a",
-      "l": "C",
-      "c": "abeja",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Insecto con rayas amarillas y negras que produce miel y vive en colmenas.",
-        "ejemplo": "\"La _eja volaba de flor en flor recogiendo néctar.\""
       }
     },
     {
@@ -4995,7 +4805,7 @@
       }
     },
     {
-      "p": "cer_eza",
+      "p": "_erveza",
       "l": "C",
       "c": "cerveza",
       "definicion": {
@@ -5005,7 +4815,7 @@
       }
     },
     {
-      "p": "co_ina",
+      "p": "_ocina",
       "l": "C",
       "c": "cocina",
       "definicion": {
@@ -5015,7 +4825,7 @@
       }
     },
     {
-      "p": "co_he",
+      "p": "_oche",
       "l": "C",
       "c": "coche",
       "definicion": {
@@ -5055,7 +4865,7 @@
       }
     },
     {
-      "p": "fa_il",
+      "p": "fá_il",
       "l": "C",
       "c": "fácil",
       "definicion": {
@@ -5075,23 +4885,13 @@
       }
     },
     {
-      "p": "for_a",
-      "l": "C",
-      "c": "fuerza",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Energía o poder para mover o resistir algo.",
-        "ejemplo": "\"Necesitas mucha fuerza para mover ese armario.\""
-      }
-    },
-    {
       "p": "go_e",
       "l": "C",
       "c": "goce",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Placer y disfrute que se siente al hacer algo agradable.",
-        "ejemplo": "\"El goce de leer un buen libro no tiene precio.\""
+        "ejemplo": "\"El go_e de leer un buen libro no tiene precio.\""
       }
     },
     {
@@ -5105,16 +4905,6 @@
       }
     },
     {
-      "p": "ju_io",
-      "l": "C",
-      "c": "julio",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Séptimo mes del año, uno de los más calurosos.",
-        "ejemplo": "\"En julio siempre nos vamos de vacaciones a la playa.\""
-      }
-    },
-    {
       "p": "lu_ero",
       "l": "C",
       "c": "lucero",
@@ -5125,7 +4915,7 @@
       }
     },
     {
-      "p": "me_cla",
+      "p": "mez_la",
       "l": "C",
       "c": "mezcla",
       "definicion": {
@@ -5165,16 +4955,6 @@
       }
     },
     {
-      "p": "pie_a",
-      "l": "C",
-      "c": "pieza",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Cada parte de un conjunto.",
-        "ejemplo": "\"Me falta una pie_a del puzle.\""
-      }
-    },
-    {
       "p": "pre_io",
       "l": "C",
       "c": "precio",
@@ -5205,33 +4985,23 @@
       }
     },
     {
-      "p": "ser_a",
+      "p": "_erca",
       "l": "C",
       "c": "cerca",
       "definicion": {
         "tipo": "Sustantivo femenino / adverbio",
         "texto": "Valla que rodea un terreno, o que está a poca distancia.",
-        "ejemplo": "\"La granja tiene una cerca de madera alrededor.\""
+        "ejemplo": "\"La granja tiene una _erca de madera alrededor.\""
       }
     },
     {
-      "p": "sol_ión",
+      "p": "solu_ión",
       "l": "C",
       "c": "solución",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Forma de resolver un problema.",
         "ejemplo": "\"Encontramos la solu_ión fácilmente.\""
-      }
-    },
-    {
-      "p": "sur_ir",
-      "l": "C",
-      "c": "surgir",
-      "definicion": {
-        "tipo": "Verbo",
-        "texto": "Aparecer algo de repente o salir hacia arriba.",
-        "ejemplo": "\"De repente surgió una idea brillante.\""
       }
     },
     {
@@ -5245,37 +5015,17 @@
       }
     },
     {
-      "p": "toser_a",
+      "p": "tos_a",
       "l": "C",
       "c": "tosca",
       "definicion": {
         "tipo": "Adjetivo femenino",
         "texto": "Que es basta, sin acabado fino, o poco refinada.",
-        "ejemplo": "\"La piedra tosca fue tallada hasta convertirse en estatua.\""
+        "ejemplo": "\"La piedra tos_a fue tallada hasta convertirse en estatua.\""
       }
     },
     {
-      "p": "tra_o",
-      "l": "C",
-      "c": "trazo",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Línea hecha con lápiz o pincel.",
-        "ejemplo": "\"El tra_o del pincel era muy fino.\""
-      }
-    },
-    {
-      "p": "tro_o",
-      "l": "C",
-      "c": "trozo",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Parte separada de algo mayor.",
-        "ejemplo": "\"Comí un tro_o de tarta de chocolate.\""
-      }
-    },
-    {
-      "p": "ul_era",
+      "p": "úl_era",
       "l": "C",
       "c": "úlcera",
       "definicion": {
@@ -5295,23 +5045,13 @@
       }
     },
     {
-      "p": "ur_ir",
-      "l": "C",
-      "c": "urgir",
-      "definicion": {
-        "tipo": "Verbo",
-        "texto": "Ser algo muy necesario y urgente que no puede esperar.",
-        "ejemplo": "\"Urge resolver el problema antes de que empeore.\""
-      }
-    },
-    {
       "p": "ur_o",
       "l": "C",
       "c": "urco",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal mítico andino parecido a una llama con poderes mágicos.",
-        "ejemplo": "\"El urco aparecía en las leyendas de los Andes.\""
+        "ejemplo": "\"El ur_o aparecía en las leyendas de los Andes.\""
       }
     },
     {
@@ -5325,16 +5065,6 @@
       }
     },
     {
-      "p": "ve_ez",
-      "l": "C",
-      "c": "vejez",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Última etapa de la vida, cuando se es muy mayor.",
-        "ejemplo": "\"En la vejez, mi abuelo disfrutaba leyendo en el jardín.\""
-      }
-    },
-    {
       "p": "vo_ero",
       "l": "C",
       "c": "vocero",
@@ -5345,7 +5075,7 @@
       }
     },
     {
-      "p": "_ui_e",
+      "p": "_uince",
       "l": "Q",
       "c": "quince",
       "definicion": {
@@ -5355,23 +5085,23 @@
       }
     },
     {
-      "p": "_ui_oso",
+      "p": "_uimoso",
       "l": "Q",
       "c": "quimoso",
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Relativo al quimo, mezcla de alimentos en el estómago.",
-        "ejemplo": "\"El proceso quimoso ocurre durante la digestión.\""
+        "ejemplo": "\"El proceso _uimoso ocurre durante la digestión.\""
       }
     },
     {
-      "p": "_ui_ado",
+      "p": "_uizado",
       "l": "Q",
       "c": "quizado",
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Adornado con bordados o encajes.",
-        "ejemplo": "\"El traje regional tenía un diseño quizado muy elaborado.\""
+        "ejemplo": "\"El traje regional tenía un diseño _uizado muy elaborado.\""
       }
     },
     {
@@ -5381,7 +5111,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Nombre abreviado o familiar.",
-        "ejemplo": "\"Le llamaban Quín de toda la vida.\""
+        "ejemplo": "\"Le llamaban _uín de toda la vida.\""
       }
     },
     {
@@ -5481,7 +5211,7 @@
       "definicion": {
         "tipo": "Adjetivo femenino",
         "texto": "Persona a quien se quiere mucho.",
-        "ejemplo": "\"Querida abuela, te escribo esta carta con mucho cariño.\""
+        "ejemplo": "\"_uerida abuela, te escribo esta carta con mucho cariño.\""
       }
     },
     {
@@ -5491,7 +5221,7 @@
       "definicion": {
         "tipo": "Adjetivo masculino",
         "texto": "Persona a quien se quiere mucho.",
-        "ejemplo": "\"Querido abuelo, te echamos mucho de menos.\""
+        "ejemplo": "\"_uerido abuelo, te echamos mucho de menos.\""
       }
     },
     {
@@ -5521,7 +5251,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Juego de apuestas sobre resultados de partidos de fútbol.",
-        "ejemplo": "\"Mi abuelo rellenaba la quiniela cada fin de semana.\""
+        "ejemplo": "\"Mi abuelo rellenaba la _uiniela cada fin de semana.\""
       }
     },
     {
@@ -5531,7 +5261,7 @@
       "definicion": {
         "tipo": "Numeral",
         "texto": "El que ocupa el lugar número cinco en una serie.",
-        "ejemplo": "\"Llegué en quinto lugar en la carrera.\""
+        "ejemplo": "\"Llegué en _uinto lugar en la carrera.\""
       }
     },
     {
@@ -5561,7 +5291,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Árbol sudamericano con madera muy dura y resistente.",
-        "ejemplo": "\"El quebracho es uno de los árboles más duros del mundo.\""
+        "ejemplo": "\"El _uebracho es uno de los árboles más duros del mundo.\""
       }
     },
     {
@@ -5571,7 +5301,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Reunión informal de personas que quedan para verse.",
-        "ejemplo": "\"Organizamos una quedada en el parque el sábado.\""
+        "ejemplo": "\"Organizamos una _uedada en el parque el sábado.\""
       }
     },
     {
@@ -5581,37 +5311,37 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal reptil con caparazón, como las tortugas.",
-        "ejemplo": "\"La tortuga es el quelonio más conocido.\""
+        "ejemplo": "\"La tortuga es el _uelonio más conocido.\""
       }
     },
     {
-      "p": "_erubín",
+      "p": "_uerubín",
       "l": "Q",
       "c": "querubín",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Ángel con cara de niño que aparece en pinturas religiosas.",
-        "ejemplo": "\"La pintura mostraba un querubín con alitas doradas.\""
+        "ejemplo": "\"La pintura mostraba un _uerubín con alitas doradas.\""
       }
     },
     {
-      "p": "_esada",
+      "p": "_uesada",
       "l": "Q",
       "c": "quesada",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Pastel dulce típico de Cantabria hecho con requesón.",
-        "ejemplo": "\"De postre tomamos quesada pasiega.\""
+        "ejemplo": "\"De postre tomamos _uesada pasiega.\""
       }
     },
     {
-      "p": "_imbamba",
+      "p": "_uimbamba",
       "l": "Q",
       "c": "quimbamba",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Lugar muy lejano e imaginario.",
-        "ejemplo": "\"Vive en las quimbambas, tardamos horas en llegar.\""
+        "ejemplo": "\"Vive en las _uimbambas, tardamos horas en llegar.\""
       }
     },
     {
@@ -5621,27 +5351,27 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Instrumento para producir un sonido fuerte de aviso.",
-        "ejemplo": "\"El conductor tocó la bocina para avisar.\""
+        "ejemplo": "\"El conductor tocó la bo_ina para avisar.\""
       }
     },
     {
-      "p": "co_ina",
+      "p": "_ocina",
       "l": "C",
       "c": "cocina",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Habitación donde se prepara la comida.",
-        "ejemplo": "\"El olor de la cocina llenaba la casa.\""
+        "ejemplo": "\"El olor de la _ocina llenaba la casa.\""
       }
     },
     {
-      "p": "co_he",
+      "p": "_oche",
       "l": "C",
       "c": "coche",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Vehículo con motor de cuatro ruedas.",
-        "ejemplo": "\"Fuimos al campo en el coche de mi padre.\""
+        "ejemplo": "\"Fuimos al campo en el _oche de mi padre.\""
       }
     },
     {
@@ -5651,7 +5381,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Líquido blanco nutritivo que producen las hembras de los mamíferos.",
-        "ejemplo": "\"Me tomo un vaso de leche cada mañana.\""
+        "ejemplo": "\"Me tomo un vaso de le_he cada mañana.\""
       }
     },
     {
@@ -5661,7 +5391,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Período de oscuridad entre atardecer y amanecer.",
-        "ejemplo": "\"Las estrellas brillan en la noche despejada.\""
+        "ejemplo": "\"Las estrellas brillan en la no_he despejada.\""
       }
     },
     {
@@ -5671,17 +5401,7 @@
       "definicion": {
         "tipo": "Sustantivo/adjetivo",
         "texto": "Persona que recibe atención médica.",
-        "ejemplo": "\"El paciente esperó su turno sin quejarse.\""
-      }
-    },
-    {
-      "p": "pie_a",
-      "l": "C",
-      "c": "pieza",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Cada parte de un conjunto.",
-        "ejemplo": "\"Me falta una pieza del puzle.\""
+        "ejemplo": "\"El pa_iente esperó su turno sin quejarse.\""
       }
     },
     {
@@ -5691,7 +5411,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Cantidad de dinero que cuesta algo.",
-        "ejemplo": "\"El precio de las entradas era alto.\""
+        "ejemplo": "\"El pre_io de las entradas era alto.\""
       }
     },
     {
@@ -5701,7 +5421,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Conjunto de pasos para conseguir algo.",
-        "ejemplo": "\"El proceso de fabricar papel lleva días.\""
+        "ejemplo": "\"El pro_eso de fabricar papel lleva días.\""
       }
     },
     {
@@ -5711,7 +5431,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Instrucciones para preparar un plato.",
-        "ejemplo": "\"Siguió la receta de su abuela.\""
+        "ejemplo": "\"Siguió la re_eta de su abuela.\""
       }
     },
     {
@@ -5721,7 +5441,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Forma de resolver un problema.",
-        "ejemplo": "\"Encontramos la solución fácilmente.\""
+        "ejemplo": "\"Encontramos la solu_ión fácilmente.\""
       }
     },
     {
@@ -5731,17 +5451,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Cada una de las tres partes iguales.",
-        "ejemplo": "\"Bebió un tercio de la botella.\""
-      }
-    },
-    {
-      "p": "tro_o",
-      "l": "C",
-      "c": "trozo",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Parte separada de algo mayor.",
-        "ejemplo": "\"Comí un trozo de tarta de chocolate.\""
+        "ejemplo": "\"Bebió un ter_io de la botella.\""
       }
     },
     {
@@ -5751,7 +5461,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Realizar o crear algo.",
-        "ejemplo": "\"Tengo que hacer los deberes.\""
+        "ejemplo": "\"Tengo que ha_er los deberes.\""
       }
     },
     {
@@ -5761,7 +5471,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Estrella brillante, especialmente Venus.",
-        "ejemplo": "\"Veía el lucero del alba desde su ventana.\""
+        "ejemplo": "\"Veía el lu_ero del alba desde su ventana.\""
       }
     },
     {
@@ -5771,7 +5481,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Resultado de juntar cosas diferentes.",
-        "ejemplo": "\"La mezcla de colores dio un tono bonito.\""
+        "ejemplo": "\"La mez_la de colores dio un tono bonito.\""
       }
     },
     {
@@ -5781,7 +5491,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Momento en que un ser viene al mundo.",
-        "ejemplo": "\"El nacimiento del bebé llenó de alegría a todos.\""
+        "ejemplo": "\"El na_imiento del bebé llenó de alegría a todos.\""
       }
     },
     {
@@ -5791,7 +5501,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Acto de elegir entre opciones.",
-        "ejemplo": "\"La elección del delegado fue muy reñida.\""
+        "ejemplo": "\"La ele_ción del delegado fue muy reñida.\""
       }
     },
     {
@@ -5801,7 +5511,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Lugar que ocupa algo o el universo exterior.",
-        "ejemplo": "\"El cohete viajó al espacio.\""
+        "ejemplo": "\"El cohete viajó al espa_io.\""
       }
     },
     {
@@ -5811,7 +5521,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Estado de bienestar y alegría.",
-        "ejemplo": "\"La felicidad de su cara era contagiosa.\""
+        "ejemplo": "\"La feli_idad de su cara era contagiosa.\""
       }
     },
     {
@@ -5821,17 +5531,17 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Expresar con palabras algo que se piensa.",
-        "ejemplo": "\"Tengo algo importante que decir.\""
+        "ejemplo": "\"Tengo algo importante que de_ir.\""
       }
     },
     {
-      "p": "cer_eza",
+      "p": "_erveza",
       "l": "C",
       "c": "cerveza",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Bebida refrescante de cebada fermentada.",
-        "ejemplo": "\"Los adultos tomaron cerveza fría.\""
+        "ejemplo": "\"Los adultos tomaron _erveza fría.\""
       }
     },
     {
@@ -5841,7 +5551,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Actividad de perseguir animales salvajes.",
-        "ejemplo": "\"Salió de caza con su perro por el bosque.\""
+        "ejemplo": "\"Salió de ca_a con su perro por el bosque.\""
       }
     },
     {
@@ -5851,37 +5561,17 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Parte de un conjunto.",
-        "ejemplo": "\"Perdí una pieza del puzle.\""
+        "ejemplo": "\"Perdí una pie_a del puzle.\""
       }
     },
     {
-      "p": "ma_orka",
+      "p": "ma_orca",
       "l": "Z",
       "c": "mazorca",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Espiga del maíz con los granos apretados.",
-        "ejemplo": "\"Comí una mazorca de maíz asada.\""
-      }
-    },
-    {
-      "p": "pe_uño",
-      "l": "Z",
-      "c": "pequeño",
-      "definicion": {
-        "tipo": "Adjetivo",
-        "texto": "Que tiene poco tamaño.",
-        "ejemplo": "\"Mi hermano es muy pequeño para su edad.\""
-      }
-    },
-    {
-      "p": "em_e",
-      "l": "Z",
-      "c": "empiece",
-      "definicion": {
-        "tipo": "Verbo",
-        "texto": "Que comience o inicie algo.",
-        "ejemplo": "\"Espero que empiece pronto la película.\""
+        "ejemplo": "\"Comí una ma_orca de maíz asada.\""
       }
     },
     {
@@ -5891,7 +5581,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Recipiente hondo para cocinar guisos.",
-        "ejemplo": "\"El cocido burbujeaba en la cazuela.\""
+        "ejemplo": "\"El cocido burbujeaba en la ca_uela.\""
       }
     },
     {
@@ -5901,7 +5591,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Acción valiente o heroica muy difícil.",
-        "ejemplo": "\"Cruzar el desierto solo fue una hazaña.\""
+        "ejemplo": "\"Cruzar el desierto solo fue una ha_aña.\""
       }
     },
     {
@@ -5911,17 +5601,17 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Mujer guerrera de la mitología o que monta a caballo.",
-        "ejemplo": "\"La amazona cabalgaba veloz por la llanura.\""
+        "ejemplo": "\"La ama_ona cabalgaba veloz por la llanura.\""
       }
     },
     {
-      "p": "ho_izo",
+      "p": "hori_o",
       "l": "Z",
       "c": "horizo",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Embutido típico español hecho de carne de cerdo.",
-        "ejemplo": "\"El horizo de la comarca tenía mucha fama.\""
+        "ejemplo": "\"El hori_o de la comarca tenía mucha fama.\""
       }
     },
     {
@@ -5931,7 +5621,7 @@
       "definicion": {
         "tipo": "Adverbio",
         "texto": "En este lugar.",
-        "ejemplo": "\"Ven aquí, que te quiero ver.\""
+        "ejemplo": "\"Ven a_uí, que te quiero ver.\""
       }
     },
     {
@@ -5941,7 +5631,7 @@
       "definicion": {
         "tipo": "Conjunción",
         "texto": "A causa de o con el motivo de.",
-        "ejemplo": "\"No fui porque estaba enfermo.\""
+        "ejemplo": "\"No fui por_ue estaba enfermo.\""
       }
     },
     {
@@ -5951,7 +5641,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Ganar un territorio o el corazón de alguien.",
-        "ejemplo": "\"Los romanos conquistaron muchos pueblos.\""
+        "ejemplo": "\"Los romanos con_uistaron muchos pueblos.\""
       }
     },
     {
@@ -5971,7 +5661,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Grupo de personas que trabajan juntas hacia un mismo objetivo.",
-        "ejemplo": "\"Mi equipo ganó el partido de fútbol.\""
+        "ejemplo": "\"Mi e_uipo ganó el partido de fútbol.\""
       }
     },
     {
@@ -5991,7 +5681,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que tiene poco tamaño.",
-        "ejemplo": "\"El pequeño gato cabía en la palma de la mano.\""
+        "ejemplo": "\"El pe_ueño gato cabía en la palma de la mano.\""
       }
     },
     {
@@ -6001,7 +5691,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Persona que estudia restos del pasado.",
-        "ejemplo": "\"El arqueólogo encontró una vasija antigua.\""
+        "ejemplo": "\"El ar_ueólogo encontró una vasija antigua.\""
       }
     },
     {
@@ -6011,7 +5701,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Comida formal y abundante en una celebración.",
-        "ejemplo": "\"El banquete de bodas duró toda la tarde.\""
+        "ejemplo": "\"El ban_uete de bodas duró toda la tarde.\""
       }
     },
     {
@@ -6021,7 +5711,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Trozo grande y sólido de material.",
-        "ejemplo": "\"Construyeron la pared con bloques de piedra.\""
+        "ejemplo": "\"Construyeron la pared con blo_ues de piedra.\""
       }
     },
     {
@@ -6031,7 +5721,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Ramo de flores.",
-        "ejemplo": "\"La novia llevaba un bouquet de rosas blancas.\""
+        "ejemplo": "\"La novia llevaba un bou_uet de rosas blancas.\""
       }
     },
     {
@@ -6041,7 +5731,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Que intente encontrar algo.",
-        "ejemplo": "\"Busque el libro en la estantería.\""
+        "ejemplo": "\"bus_ue el libro en la estantería.\""
       }
     }
   ],
@@ -6097,7 +5787,7 @@
       }
     },
     {
-      "p": "sil_a",
+      "p": "si_a",
       "l": "LL",
       "c": "silla",
       "definicion": {
@@ -6117,7 +5807,7 @@
       }
     },
     {
-      "p": "to_a",
+      "p": "toa_a",
       "l": "LL",
       "c": "toalla",
       "definicion": {
@@ -6167,7 +5857,7 @@
       }
     },
     {
-      "p": "ca_e_ón",
+      "p": "ca_ejón",
       "l": "LL",
       "c": "callejón",
       "definicion": {
@@ -6183,7 +5873,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Calle pequeña y estrecha.",
-        "ejemplo": "\"Entramos por una calleta para llegar antes.\""
+        "ejemplo": "\"Entramos por una ca_eta para llegar antes.\""
       }
     },
     {
@@ -6223,7 +5913,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Producto que sale de destilar un líquido.",
-        "ejemplo": "\"El destillo del alambique olía muy fuerte.\""
+        "ejemplo": "\"El desti_o del alambique olía muy fuerte.\""
       }
     },
     {
@@ -6293,7 +5983,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Sufijo que forma diminutivos en algunos dialectos.",
-        "ejemplo": "\"La illa es una terminación muy usada en el español antiguo.\""
+        "ejemplo": "\"La i_a es una terminación muy usada en el español antiguo.\""
       }
     },
     {
@@ -6313,7 +6003,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Palo pequeño o mástil de un barco.",
-        "ejemplo": "\"El mastillo del velero se rompió con la tormenta.\""
+        "ejemplo": "\"El masti_o del velero se rompió con la tormenta.\""
       }
     },
     {
@@ -6323,7 +6013,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Pieza pequeña de medición usada en joyería.",
-        "ejemplo": "\"El joyero pesó el oro con la medilla.\""
+        "ejemplo": "\"El joyero pesó el oro con la medi_a.\""
       }
     },
     {
@@ -6353,7 +6043,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Bollo pequeño y esponjoso típico de algunas regiones.",
-        "ejemplo": "\"Compramos mojilletes en la panadería del barrio.\""
+        "ejemplo": "\"Compramos moji_etes en la panadería del barrio.\""
       }
     },
     {
@@ -6363,7 +6053,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Muro pequeño o pared baja.",
-        "ejemplo": "\"La murilla del jardín separaba las dos fincas.\""
+        "ejemplo": "\"La muri_a del jardín separaba las dos fincas.\""
       }
     },
     {
@@ -6387,7 +6077,7 @@
       }
     },
     {
-      "p": "pa_illo",
+      "p": "pali_o",
       "l": "LL",
       "c": "palillo",
       "definicion": {
@@ -6413,7 +6103,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Medida antigua de aceite usada en el sur de España.",
-        "ejemplo": "\"Compraba el aceite por panillas en el mercado.\""
+        "ejemplo": "\"Compraba el aceite por pani_as en el mercado.\""
       }
     },
     {
@@ -6433,7 +6123,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Pájaro pequeño de color pardo, o persona ingenua.",
-        "ejemplo": "\"El pardillo cantaba en las ramas del jardín.\""
+        "ejemplo": "\"El pardi_o cantaba en las ramas del jardín.\""
       }
     },
     {
@@ -6453,7 +6143,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Pelo que crece delante de la oreja, o parte lateral de las gafas.",
-        "ejemplo": "\"Llevaba una patilla muy larga a cada lado de la cara.\""
+        "ejemplo": "\"Llevaba una pati_a muy larga a cada lado de la cara.\""
       }
     },
     {
@@ -6463,7 +6153,7 @@
       "definicion": {
         "tipo": "Verbo",
         "texto": "Tercera persona del verbo pillar, atrapar.",
-        "ejemplo": "\"Si te pilla haciendo trampa, perderás.\""
+        "ejemplo": "\"Si te pi_a haciendo trampa, perderás.\""
       }
     },
     {
@@ -6503,7 +6193,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Pozo pequeño o depósito de agua.",
-        "ejemplo": "\"Sacaban agua del pucillo cada mañana.\""
+        "ejemplo": "\"Sacaban agua del puci_o cada mañana.\""
       }
     },
     {
@@ -6513,7 +6203,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Pueblo pequeño en algunos dialectos.",
-        "ejemplo": "\"Vivía en un puello perdido entre montañas.\""
+        "ejemplo": "\"Vivía en un pue_o perdido entre montañas.\""
       }
     },
     {
@@ -6523,7 +6213,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Utensilio con agujeros para rallar alimentos.",
-        "ejemplo": "\"Usé el rallo para rallar el queso sobre la pasta.\""
+        "ejemplo": "\"Usé el ra_o para rallar el queso sobre la pasta.\""
       }
     },
     {
@@ -6553,7 +6243,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Planta aromática pequeña parecida al romero.",
-        "ejemplo": "\"El campo olía a tomillo y romilla.\""
+        "ejemplo": "\"El campo olía a tomillo y romi_a.\""
       }
     },
     {
@@ -6583,7 +6273,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Cubierta de madera de una embarcación pequeña.",
-        "ejemplo": "\"El marinero descansaba sobre la tilla del barco.\""
+        "ejemplo": "\"El marinero descansaba sobre la ti_a del barco.\""
       }
     },
     {
@@ -6593,17 +6283,17 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Árbol de hoja caduca con flores olorosas.",
-        "ejemplo": "\"El tillo daba sombra en la plaza del pueblo.\""
+        "ejemplo": "\"El ti_o daba sombra en la plaza del pueblo.\""
       }
     },
     {
-      "p": "tor_a",
+      "p": "tori_a",
       "l": "LL",
       "c": "torilla",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Tortilla pequeña.",
-        "ejemplo": "\"Se comió una torilla de patata de merienda.\""
+        "ejemplo": "\"Se comió una tori_a de patata de merienda.\""
       }
     },
     {
@@ -6623,7 +6313,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Vehículo eléctrico que circula por raíles o con pértiga.",
-        "ejemplo": "\"El trolle eléctrico recorría el centro de la ciudad.\""
+        "ejemplo": "\"El tro_e eléctrico recorría el centro de la ciudad.\""
       }
     },
     {
@@ -6633,7 +6323,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Depósito o recipiente para guardar cereales.",
-        "ejemplo": "\"Llenaron la tulla de trigo después de la cosecha.\""
+        "ejemplo": "\"Llenaron la tu_a de trigo después de la cosecha.\""
       }
     },
     {
@@ -6663,7 +6353,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Población pequeña con cierta importancia.",
-        "ejemplo": "\"La villeta tenía su propio mercado semanal.\""
+        "ejemplo": "\"La vi_eta tenía su propio mercado semanal.\""
       }
     },
     {
@@ -6673,7 +6363,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Municipio del País Vasco español.",
-        "ejemplo": "\"La zalla es un bonito pueblo de Vizcaya.\""
+        "ejemplo": "\"La za_a es un bonito pueblo de Vizcaya.\""
       }
     },
     {
@@ -6693,7 +6383,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Planta trepadora de hojas verdes que cubre muros y árboles.",
-        "ejemplo": "\"La yedra cubría toda la pared del castillo.\""
+        "ejemplo": "\"La _edra cubría toda la pared del castillo.\""
       }
     },
     {
@@ -6703,7 +6393,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Marido de la hija respecto a los padres de ella.",
-        "ejemplo": "\"El yerno de mi abuela es muy simpático.\""
+        "ejemplo": "\"El _erno de mi abuela es muy simpático.\""
       }
     },
     {
@@ -6713,7 +6403,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Sustancia blanca que endurece al secarse, usada en construcción.",
-        "ejemplo": "\"El médico le puso yeso en el brazo roto.\""
+        "ejemplo": "\"El médico le puso _eso en el brazo roto.\""
       }
     },
     {
@@ -6763,7 +6453,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Planta silvestre que crece sin que nadie la siembre.",
-        "ejemplo": "\"El jardín estaba lleno de yuyos sin regar.\""
+        "ejemplo": "\"El jardín estaba lleno de _uyos sin regar.\""
       }
     },
     {
@@ -6813,7 +6503,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Árbol de bosque con hojas ovaladas y corteza gris.",
-        "ejemplo": "\"El bosque de hayas era precioso en otoño.\""
+        "ejemplo": "\"El bosque de ha_as era precioso en otoño.\""
       }
     },
     {
@@ -6823,7 +6513,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Terreno con varios hoyos o depresiones.",
-        "ejemplo": "\"El campo era una hoyada llena de charcos.\""
+        "ejemplo": "\"El campo era una ho_ada llena de charcos.\""
       }
     },
     {
@@ -6943,7 +6633,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Bañera con chorros de agua a presión para relajarse.",
-        "ejemplo": "\"El hotel tenía un yacuzzi en el spa.\""
+        "ejemplo": "\"El hotel tenía un _acuzzi en el spa.\""
       }
     },
     {
@@ -7069,7 +6759,7 @@
       }
     },
     {
-      "p": "_obótico",
+      "p": "_obot",
       "l": "R",
       "c": "robot",
       "definicion": {
@@ -7175,7 +6865,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Ave que caza a otros animales, como el águila o el halcón.",
-        "ejemplo": "\"El halcón es un ave rapaz muy veloz.\""
+        "ejemplo": "\"El halcón es un ave _apaz muy veloz.\""
       }
     },
     {
@@ -7205,7 +6895,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que es poco común o extraño.",
-        "ejemplo": "\"Qué raro, hoy no ha venido nadie a clase.\""
+        "ejemplo": "\"Qué _aro, hoy no ha venido nadie a clase.\""
       }
     },
     {
@@ -7335,7 +7025,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Muelle o pieza elástica que vuelve a su posición al soltarla.",
-        "ejemplo": "\"El resorte del colchón estaba roto.\""
+        "ejemplo": "\"El _esorte del colchón estaba roto.\""
       }
     },
     {
@@ -7349,13 +7039,13 @@
       }
     },
     {
-      "p": "_évolver",
+      "p": "_evólver",
       "l": "R",
       "c": "revólver",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Pistola con cilindro giratorio que contiene las balas.",
-        "ejemplo": "\"El vaquero llevaba un revólver en el cinturón.\""
+        "ejemplo": "\"El vaquero llevaba un _evólver en el cinturón.\""
       }
     },
     {
@@ -7395,7 +7085,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Animal africano muy grande con uno o dos cuernos en el hocico.",
-        "ejemplo": "\"El rinoceronte es uno de los animales más grandes de África.\""
+        "ejemplo": "\"El _inoceronte es uno de los animales más grandes de África.\""
       }
     },
     {
@@ -7415,7 +7105,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Plato italiano hecho con arroz cocinado con caldo.",
-        "ejemplo": "\"De primero comimos un risotto de setas.\""
+        "ejemplo": "\"De primero comimos un _isotto de setas.\""
       }
     },
     {
@@ -7545,7 +7235,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Conductor de taxi en algunos países de América.",
-        "ejemplo": "\"El ruletero nos llevó al aeropuerto a tiempo.\""
+        "ejemplo": "\"El _uletero nos llevó al aeropuerto a tiempo.\""
       }
     },
     {
@@ -7589,13 +7279,13 @@
       }
     },
     {
-      "p": "a_o_a",
+      "p": "a_ora",
       "l": "R",
       "c": "arora",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Nombre propio o variante poética de aurora.",
-        "ejemplo": "\"Arora era el nombre de la protagonista del cuento.\""
+        "ejemplo": "\"a_ora era el nombre de la protagonista del cuento.\""
       }
     },
     {
@@ -7639,13 +7329,13 @@
       }
     },
     {
-      "p": "es_ella",
+      "p": "est_ella",
       "l": "R",
       "c": "estrella",
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Cuerpo celeste que brilla en el cielo de noche, o forma con puntas.",
-        "ejemplo": "\"La estrella más brillante del cielo es Sirio.\""
+        "ejemplo": "\"La est_ella más brillante del cielo es Sirio.\""
       }
     },
     {
@@ -7715,7 +7405,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Variedad de uva de color morado oscuro.",
-        "ejemplo": "\"El moradillo es una uva típica de algunas regiones.\""
+        "ejemplo": "\"El mo_adillo es una uva típica de algunas regiones.\""
       }
     },
     {
@@ -7759,7 +7449,7 @@
       }
     },
     {
-      "p": "pi_áta",
+      "p": "pi_ata",
       "l": "R",
       "c": "pirata",
       "definicion": {
@@ -7789,13 +7479,13 @@
       }
     },
     {
-      "p": "te_azo",
+      "p": "te_razo",
       "l": "R",
       "c": "terrazo",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Tipo de suelo de cemento con trozos de mármol.",
-        "ejemplo": "\"El suelo de la cocina era de terrazo blanco.\""
+        "ejemplo": "\"El suelo de la cocina era de te_razo blanco.\""
       }
     },
     {
@@ -7885,7 +7575,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Cilindro donde se enrolla hilo, cuerda o película.",
-        "ejemplo": "\"Se acabó el hilo del carrete.\""
+        "ejemplo": "\"Se acabó el hilo del ca_ete.\""
       }
     },
     {
@@ -7895,7 +7585,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Planta de hojas dentadas o mecanismo que cierra una puerta.",
-        "ejemplo": "\"La cerraja de la puerta necesitaba aceite.\""
+        "ejemplo": "\"La ce_aja de la puerta necesitaba aceite.\""
       }
     },
     {
@@ -7905,7 +7595,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Nube blanca y fina en forma de filamento a gran altura.",
-        "ejemplo": "\"Los cirros en el cielo anuncian cambio de tiempo.\""
+        "ejemplo": "\"Los ci_os en el cielo anuncian cambio de tiempo.\""
       }
     },
     {
@@ -7945,7 +7635,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Hierro pequeño para marcar o grabar.",
-        "ejemplo": "\"El artesano usó el ferrete para marcar la pieza.\""
+        "ejemplo": "\"El artesano usó el fe_ete para marcar la pieza.\""
       }
     },
     {
@@ -7975,7 +7665,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Pelea o riña en lenguaje coloquial de algunas zonas.",
-        "ejemplo": "\"Se armó una gurra en el recreo.\""
+        "ejemplo": "\"Se armó una gu_a en el recreo.\""
       }
     },
     {
@@ -8019,23 +7709,13 @@
       }
     },
     {
-      "p": "mu_ullo",
-      "l": "RR",
-      "c": "murmullo",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Ruido suave y continuo de voces o agua.",
-        "ejemplo": "\"El murmullo del río me ayudaba a dormir.\""
-      }
-    },
-    {
       "p": "na_ador",
       "l": "RR",
       "c": "narrador",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Persona que cuenta una historia o la voz que relata en un libro.",
-        "ejemplo": "\"El narrador del cuento tenía una voz muy bonita.\""
+        "ejemplo": "\"El na_ador del cuento tenía una voz muy bonita.\""
       }
     },
     {
@@ -8055,7 +7735,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Forma coloquial de pirata, persona que roba o copia sin permiso.",
-        "ejemplo": "\"Ese pirrata vendía copias falsas del juego.\""
+        "ejemplo": "\"Ese pi_ata vendía copias falsas del juego.\""
       }
     },
     {
@@ -8065,27 +7745,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Recipiente de vidrio con pitorro largo para beber sin tocar los labios.",
-        "ejemplo": "\"En la fiesta pasaban el porrón de vino.\""
-      }
-    },
-    {
-      "p": "pu_o",
-      "l": "RR",
-      "c": "puro",
-      "definicion": {
-        "tipo": "Adjetivo/sustantivo",
-        "texto": "Que no tiene mezcla o es limpio, o cigarro grueso enrollado a mano.",
-        "ejemplo": "\"El agua de la montaña es pura y cristalina.\""
-      }
-    },
-    {
-      "p": "ta_ea",
-      "l": "RR",
-      "c": "tarea",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Trabajo que hay que hacer, especialmente en el colegio.",
-        "ejemplo": "\"Tengo mucha tarea esta tarde.\""
+        "ejemplo": "\"En la fiesta pasaban el po_ón de vino.\""
       }
     },
     {
@@ -8105,7 +7765,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Tiria, tela de lino muy fina.",
-        "ejemplo": "\"El pañuelo estaba bordado en tirra.\""
+        "ejemplo": "\"El pañuelo estaba bordado en ti_a.\""
       }
     },
     {
@@ -8145,7 +7805,7 @@
       "definicion": {
         "tipo": "Adjetivo",
         "texto": "Que es tosco o mal hecho en algunos dialectos.",
-        "ejemplo": "\"El trabajo quedó zarro y sin terminar bien.\""
+        "ejemplo": "\"El trabajo quedó za_o y sin terminar bien.\""
       }
     },
     {
@@ -8255,7 +7915,7 @@
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Dulce pequeño de azúcar con sabores.",
-        "ejemplo": "\"Me dio un carramelo de fresa en el recreo.\""
+        "ejemplo": "\"Me dio un ca_amelo de fresa en el recreo.\""
       }
     },
     {
@@ -8289,23 +7949,13 @@
       }
     },
     {
-      "p": "de_ambe",
+      "p": "de_umbe",
       "l": "RR",
       "c": "derrumbe",
       "definicion": {
         "tipo": "Sustantivo masculino",
         "texto": "Caída o hundimiento de una estructura.",
         "ejemplo": "\"El de_umbe dañó varios coches.\""
-      }
-    },
-    {
-      "p": "en_ocar",
-      "l": "RR",
-      "c": "enrocar",
-      "definicion": {
-        "tipo": "Verbo",
-        "texto": "Mover el rey y la torre a la vez en ajedrez.",
-        "ejemplo": "\"En_ocó para proteger al rey.\""
       }
     },
     {
@@ -8339,16 +7989,6 @@
       }
     },
     {
-      "p": "gu_umete",
-      "l": "RR",
-      "c": "grumete",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Aprendiz de marinero en un barco.",
-        "ejemplo": "\"El g_umete aprendía a izar las velas.\""
-      }
-    },
-    {
       "p": "hie_o",
       "l": "RR",
       "c": "hierro",
@@ -8356,36 +7996,6 @@
         "tipo": "Sustantivo masculino",
         "texto": "Metal resistente y gris muy usado en construcción y fabricación.",
         "ejemplo": "\"La verja del jardín estaba hecha de hie_o forjado.\""
-      }
-    },
-    {
-      "p": "ma_avilla",
-      "l": "RR",
-      "c": "maravilla",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Cosa extraordinaria que causa admiración.",
-        "ejemplo": "\"El amanecer en la montaña era una ma_avilla.\""
-      }
-    },
-    {
-      "p": "pa_afina",
-      "l": "RR",
-      "c": "parafina",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Sustancia cerosa para hacer velas.",
-        "ejemplo": "\"Las velas de pa_afina iluminaban la estancia.\""
-      }
-    },
-    {
-      "p": "pe_ece",
-      "l": "RR",
-      "c": "perece",
-      "definicion": {
-        "tipo": "Verbo",
-        "texto": "Tercera persona del verbo perecer: morir o acabarse.",
-        "ejemplo": "\"Sin agua, la planta perece en pocos días.\""
       }
     },
     {
@@ -8405,27 +8015,7 @@
       "definicion": {
         "tipo": "Sustantivo femenino",
         "texto": "Pirueta pequeña o movimiento gracioso.",
-        "ejemplo": "\"La bailarina hizo una pirruela al final.\""
-      }
-    },
-    {
-      "p": "so_isa",
-      "l": "RR",
-      "c": "sonrisa",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Gesto de felicidad que se hace con la boca.",
-        "ejemplo": "\"Su so_risa iluminó la habitación.\""
-      }
-    },
-    {
-      "p": "ta_ta",
-      "l": "RR",
-      "c": "tarta",
-      "definicion": {
-        "tipo": "Sustantivo femenino",
-        "texto": "Pastel grande, redondo y plano, con capas y decoración.",
-        "ejemplo": "\"Soplé las velas de la tarta de cumpleaños.\""
+        "ejemplo": "\"La bailarina hizo una pi_uela al final.\""
       }
     },
     {
