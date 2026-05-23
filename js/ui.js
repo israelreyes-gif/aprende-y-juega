@@ -98,7 +98,7 @@ var ERROR_LABELS = {
   'suma':     'Sumas con llevadas',
   'resta':    'Restas con llevadas',
   'multi':    'Multiplicaciones',
-  'prob':     'Problemas de texto',
+  'prob':     'Problemas',
   'mix':      'Ejercicio mezcla',
   'gram-bv':  'Gramática B / V',
   'gram-gj':  'Gramática G / J',
@@ -134,34 +134,32 @@ function updateErrorsPanel() {
     return;
   }
 
-  // Agrupar por asignatura
-  var matesKeys = ['suma','resta','multi','prob','mix'];
-  var lenguaKeys = ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr','comp','desc'];
-
-  function buildGroup(nombre, icono, pillStyle, keys) {
-    var items = sorted.filter(function(e){ return keys.indexOf(e[0]) !== -1; });
-    if (!items.length) return '';
-    var html = '<div style="background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;margin-bottom:8px">';
-    html += '<div style="display:flex;align-items:center;gap:8px;padding:7px 12px;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-tertiary)">';
-    html += '<span style="font-size:14px">'+icono+'</span>';
-    html += '<span style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f);flex:1">'+nombre+'</span>';
-    html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;'+pillStyle+'">'+items.length+' área'+(items.length>1?'s':'')+'</span>';
-    html += '</div><div style="padding:2px 12px">';
-    items.forEach(function(e, idx) {
-      var label = ERROR_LABELS[e[0]] || e[0];
-      var sep = idx < items.length-1 ? 'border-bottom:0.5px solid var(--color-border-tertiary)' : '';
-      html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;'+sep+'">';
-      html += '<span style="font-size:11px;font-weight:600;color:var(--gray-700);font-family:var(--f)">'+label+'</span>';
-      html += '<span style="font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:#FEE2E2;color:#DC2626">'+e[1]+' fallos</span>';
-      html += '</div>';
-    });
-    html += '</div></div>';
-    return html;
-  }
+  // Agrupar por asignatura con sangría
+  var grupos = [
+    { nombre:'Matemáticas', icono:'🔢', pill:'background:#EDE9FE;color:#4C1D95',
+      keys:['suma','resta','multi','prob','mix'] },
+    { nombre:'Lengua', icono:'📚', pill:'background:#FDF2F8;color:#9D174D',
+      keys:['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr','comp','desc'] }
+  ];
 
   var html = '<div class="errors-card"><div class="errors-title">🔁 Hay que repasar...</div>';
-  html += buildGroup('Matemáticas','🔢','background:#EDE9FE;color:#4C1D95', matesKeys);
-  html += buildGroup('Lengua','📚','background:#FDF2F8;color:#9D174D', lenguaKeys);
+  grupos.forEach(function(g) {
+    var items = sorted.filter(function(e){ return g.keys.indexOf(e[0]) !== -1; });
+    if (!items.length) return;
+    html += '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">';
+    html += '<div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">';
+    html += '<span style="font-size:14px">'+g.icono+'</span>'+g.nombre+'</div>';
+    html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;'+g.pill+'">'+items.length+' área'+(items.length>1?'s':'')+'</span>';
+    html += '</div>';
+    items.forEach(function(e, idx) {
+      var label = ERROR_LABELS[e[0]] || e[0];
+      var isLast = idx === items.length-1;
+      html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:3px 0 3px 22px;border-bottom:'+(isLast?'none':'0.5px solid var(--color-border-tertiary)')+';'+(isLast?'margin-bottom:6px':'')+'">';
+      html += '<span style="font-size:11px;color:var(--gray-500);font-family:var(--f)">'+label+'</span>';
+      html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:#FEE2E2;color:#DC2626">'+e[1]+' fallos</span>';
+      html += '</div>';
+    });
+  });
   html += '</div>';
   panel.innerHTML = html;
 }
