@@ -37,6 +37,12 @@ function confirmarCrearAvatar() {
   go('s-cursos');
 }
 
+/* ---- Descripciones ---- */
+function irADescripciones() {
+  initDescripciones();
+  go('s-descripciones');
+}
+
 /* ---- Área para padres ---- */
 function irAPadres() {
   if (typeof renderPadres === 'function') renderPadres();
