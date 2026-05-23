@@ -46,18 +46,66 @@ function getNivel() {
 }
 
 /* ---- Generadores ---- */
+function tieneCarry(a, b) {
+  // Detecta si una suma tiene llevada en alguna columna
+  var aS = a.toString(), bS = b.toString();
+  var maxLen = Math.max(aS.length, bS.length);
+  while (aS.length < maxLen) aS = '0' + aS;
+  while (bS.length < maxLen) bS = '0' + bS;
+  var carry = 0;
+  for (var i = maxLen - 1; i >= 0; i--) {
+    var s = parseInt(aS[i]) + parseInt(bS[i]) + carry;
+    carry = s >= 10 ? 1 : 0;
+  }
+  // Tiene llevada si en alguna columna la suma supera 9
+  carry = 0;
+  for (var i = maxLen - 1; i >= 0; i--) {
+    var s = parseInt(aS[i]) + parseInt(bS[i]) + carry;
+    if (s >= 10) return true;
+    carry = 0;
+  }
+  return false;
+}
+
+function tienePrestamo(a, b) {
+  // Detecta si una resta tiene préstamo en alguna columna
+  var aS = a.toString(), bS = b.toString();
+  var maxLen = Math.max(aS.length, bS.length);
+  while (aS.length < maxLen) aS = '0' + aS;
+  while (bS.length < maxLen) bS = '0' + bS;
+  for (var i = maxLen - 1; i >= 0; i--) {
+    if (parseInt(aS[i]) < parseInt(bS[i])) return true;
+  }
+  return false;
+}
+
 function generarSuma(nivel) {
   var max = nivel === 'facil' ? 99 : nivel === 'medio' ? 499 : 999;
-  var a = Math.floor(Math.random() * max) + 10;
-  var b = Math.floor(Math.random() * (max / 2)) + 5;
+  var conLlevada = Math.random() < 0.75; // 75% con llevada
+  var a, b;
+  var intentos = 0;
+  do {
+    a = Math.floor(Math.random() * max) + 10;
+    b = Math.floor(Math.random() * (max / 2)) + 5;
+    intentos++;
+    if (intentos > 50) break; // evitar bucle infinito
+  } while (tieneCarry(a, b) !== conLlevada);
   return { a: a, b: b, resultado: a + b };
 }
 
 function generarResta(nivel) {
   var max = nivel === 'facil' ? 99 : nivel === 'medio' ? 499 : 999;
-  var res = Math.floor(Math.random() * (max / 2)) + 10;
-  var b   = Math.floor(Math.random() * res) + 1;
-  return { a: res + b, b: b, resultado: res };
+  var conPrestamo = Math.random() < 0.75; // 75% con préstamo
+  var a, b, res;
+  var intentos = 0;
+  do {
+    res = Math.floor(Math.random() * (max / 2)) + 10;
+    b   = Math.floor(Math.random() * res) + 1;
+    a   = res + b;
+    intentos++;
+    if (intentos > 50) break;
+  } while (tienePrestamo(a, b) !== conPrestamo);
+  return { a: a, b: b, resultado: res };
 }
 
 function generarMulti(nivel) {
