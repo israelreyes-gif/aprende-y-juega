@@ -189,41 +189,7 @@ function renderSubjects() {
     gramOk    = Math.max(0, (ST.lengua.totalOk||0) - compFallback.ok);
   }
 
-  var comp = stats(lErrors, 'comp');
-  // Fallback comprensión
-  if (comp.total === 0 && ST.lengua && ST.lengua.total > 0) {
-    comp.total = Math.round((ST.lengua.total||0) * 0.3);
-    comp.ok    = Math.round((ST.lengua.totalOk||0) * 0.3);
-  }
 
-  var desc = stats(lErrors, 'desc');
-
-  var subjects = [
-    { name:'➕ Sumas y restas',   total:sr.total,    ok:sr.ok,    color:'#7C3AED' },
-    { name:'✖️ Multiplicaciones', total:multi.total, ok:multi.ok, color:'#6D28D9' },
-    { name:'📝 Problemas',        total:prob.total,  ok:prob.ok,  color:'#5B21B6' },
-    { name:'🔀 Mezcla',           total:mix.total,   ok:mix.ok,   color:'#4C1D95' },
-    { name:'📚 Gramática',        total:gramTotal,   ok:gramOk,   color:'#EC4899' },
-    { name:'📖 Comprensión',      total:comp.total,  ok:comp.ok,  color:'#F59E0B' },
-    { name:'✍️ Descripciones',    total:desc.total,  ok:desc.ok,  color:'#0EA5E9' },
-  ];
-
-  el.innerHTML = '';
-  subjects.forEach(function(s) {
-    var pct = s.total > 0 ? Math.round(s.ok / s.total * 100) : -1;
-    var div = document.createElement('div');
-    div.style.marginBottom = '10px';
-    div.innerHTML =
-      '<div style="display:flex;justify-content:space-between;margin-bottom:4px">' +
-        '<span style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">' + s.name + '</span>' +
-        '<span style="font-size:12px;font-weight:800;color:' + (pct>=0?s.color:'var(--color-text-secondary)') + '">' + (pct>=0?pct+'%':'Sin empezar') + '</span>' +
-      '</div>' +
-      '<div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden">' +
-        '<div style="height:100%;border-radius:4px;background:' + s.color + ';width:' + (pct>=0?pct:0) + '%"></div>' +
-      '</div>';
-    el.appendChild(div);
-  });
-}
 
 function renderRefuerzo() {
   var el = document.getElementById('p-refuerzo');
