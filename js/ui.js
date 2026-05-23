@@ -104,6 +104,7 @@ var ERROR_LABELS = {
   'gram-gj':  'Gramática G / J',
   'gram-czq': 'Gramática C / Z / Q',
   'gram-lly': 'Gramática LL / Y',
+  'gram-rr':  'Gramática R / RR',
   'comp':     'Comprensión lectora'
 };
 
@@ -111,11 +112,14 @@ function updateErrorsPanel() {
   var panel = document.getElementById('errors-panel');
   if (!panel) return;
 
-  // Combinar errores de todas las asignaturas
+  // Combinar fallos de todas las asignaturas (solo keys _fail)
   var allErrors = {};
   [ST.mates.errors, ST.lengua.errors].forEach(function(errors) {
     Object.keys(errors).forEach(function(k) {
-      allErrors[k] = (allErrors[k] || 0) + errors[k];
+      if (k.indexOf('_fail') !== -1) {
+        var baseKey = k.replace('_fail', '');
+        allErrors[baseKey] = (allErrors[baseKey] || 0) + errors[k];
+      }
     });
   });
 
