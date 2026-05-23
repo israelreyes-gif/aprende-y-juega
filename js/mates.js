@@ -80,30 +80,60 @@ function tienePrestamo(a, b) {
 }
 
 function generarSuma(nivel) {
-  var max = nivel === 'facil' ? 99 : nivel === 'medio' ? 499 : 999;
+  // Fácil: 3 dígitos, Medio: 3-4 dígitos, Difícil: 4 dígitos
   var conLlevada = Math.random() < 0.75; // 75% con llevada
   var a, b;
   var intentos = 0;
   do {
-    a = Math.floor(Math.random() * max) + 10;
-    b = Math.floor(Math.random() * (max / 2)) + 5;
+    if (nivel === 'facil') {
+      a = Math.floor(Math.random() * 900) + 100;  // 100-999
+      b = Math.floor(Math.random() * 900) + 100;
+    } else if (nivel === 'medio') {
+      // Mezcla 3 y 4 dígitos
+      if (Math.random() < 0.5) {
+        a = Math.floor(Math.random() * 900) + 100;
+        b = Math.floor(Math.random() * 900) + 100;
+      } else {
+        a = Math.floor(Math.random() * 9000) + 1000;
+        b = Math.floor(Math.random() * 4000) + 1000;
+      }
+    } else {
+      a = Math.floor(Math.random() * 9000) + 1000; // 1000-9999
+      b = Math.floor(Math.random() * 4000) + 1000;
+    }
     intentos++;
-    if (intentos > 50) break; // evitar bucle infinito
+    if (intentos > 100) break;
   } while (tieneCarry(a, b) !== conLlevada);
   return { a: a, b: b, resultado: a + b };
 }
 
 function generarResta(nivel) {
-  var max = nivel === 'facil' ? 99 : nivel === 'medio' ? 499 : 999;
+  // Fácil: 3 dígitos, Medio: 3-4 dígitos, Difícil: 4 dígitos
   var conPrestamo = Math.random() < 0.75; // 75% con préstamo
   var a, b, res;
   var intentos = 0;
   do {
-    res = Math.floor(Math.random() * (max / 2)) + 10;
-    b   = Math.floor(Math.random() * res) + 1;
-    a   = res + b;
+    if (nivel === 'facil') {
+      b   = Math.floor(Math.random() * 800) + 100; // 100-899
+      res = Math.floor(Math.random() * (999 - b - 100)) + 100; // resultado mínimo 100
+      a   = res + b;
+    } else if (nivel === 'medio') {
+      if (Math.random() < 0.5) {
+        b   = Math.floor(Math.random() * 800) + 100;
+        res = Math.floor(Math.random() * (999 - b)) + 1;
+        a   = res + b;
+      } else {
+        b   = Math.floor(Math.random() * 3000) + 1000;
+        res = Math.floor(Math.random() * 3000) + 500;
+        a   = res + b;
+      }
+    } else {
+      b   = Math.floor(Math.random() * 4000) + 1000;
+      res = Math.floor(Math.random() * 4000) + 1000;
+      a   = res + b;
+    }
     intentos++;
-    if (intentos > 50) break;
+    if (intentos > 100) break;
   } while (tienePrestamo(a, b) !== conPrestamo);
   return { a: a, b: b, resultado: res };
 }
