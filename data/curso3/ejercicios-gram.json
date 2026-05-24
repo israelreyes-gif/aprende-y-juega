@@ -2779,6 +2779,136 @@
         "texto": "Que tiene mucha imaginación.",
         "ejemplo": "\"El artista era muy creati_o.\""
       }
+    },
+    {
+      "p": "cu_ierto",
+      "l": "B",
+      "c": "cubierto",
+      "definicion": {
+        "tipo": "Adjetivo",
+        "texto": "Que está tapado o protegido.",
+        "ejemplo": "\"El cielo estaba cu_ierto de nubes.\""
+      }
+    },
+    {
+      "p": "sa_emos",
+      "l": "B",
+      "c": "sabemos",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Primera persona plural de saber.",
+        "ejemplo": "\"Sa_emos que mañana hay examen.\""
+      }
+    },
+    {
+      "p": "co_ra",
+      "l": "B",
+      "c": "cobra",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Serpiente venenosa de gran tamaño.",
+        "ejemplo": "\"La co_ra extendió su capucha.\""
+      }
+    },
+    {
+      "p": "ham_re",
+      "l": "B",
+      "c": "hambre",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Necesidad de comer.",
+        "ejemplo": "\"Tenía mucha ham_re después del partido.\""
+      }
+    },
+    {
+      "p": "hom_re",
+      "l": "B",
+      "c": "hombre",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Persona adulta del sexo masculino.",
+        "ejemplo": "\"El hom_re cruzó la calle corriendo.\""
+      }
+    },
+    {
+      "p": "som_ra",
+      "l": "B",
+      "c": "sombra",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Zona sin luz detrás de un cuerpo.",
+        "ejemplo": "\"Descansamos a la som_ra del árbol.\""
+      }
+    },
+    {
+      "p": "nom_re",
+      "l": "B",
+      "c": "nombre",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Palabra con que se llama a alguien.",
+        "ejemplo": "\"¿Cuál es tu nom_re?\""
+      }
+    },
+    {
+      "p": "num_ro",
+      "l": "B",
+      "c": "número",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Símbolo que representa una cantidad.",
+        "ejemplo": "\"El num_ro favorito de Alexandra es el siete.\""
+      }
+    },
+    {
+      "p": "trom_a",
+      "l": "B",
+      "c": "tromba",
+      "definicion": {
+        "tipo": "Sustantivo femenino",
+        "texto": "Lluvia muy intensa y repentina.",
+        "ejemplo": "\"Una trom_a de agua inundó la calle.\""
+      }
+    },
+    {
+      "p": "cam_io",
+      "l": "B",
+      "c": "cambio",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Acción de cambiar algo.",
+        "ejemplo": "\"El cam_io de tiempo fue repentino.\""
+      }
+    },
+    {
+      "p": "des_ujar",
+      "l": "B",
+      "c": "dibujar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Representar algo con líneas y formas.",
+        "ejemplo": "\"Le gusta des_ujar paisajes.\""
+      }
+    },
+    {
+      "p": "na_egar",
+      "l": "B",
+      "c": "navegar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Viajar por el agua.",
+        "ejemplo": "\"Soñaba con na_egar los mares.\""
+      }
+    },
+    {
+      "p": "gra_ar",
+      "l": "B",
+      "c": "grabar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Registrar sonido o imagen.",
+        "ejemplo": "\"Van a gra_ar un vídeo.\""
+      }
     }
   ],
   "gj": [
@@ -5732,6 +5862,46 @@
         "tipo": "Verbo",
         "texto": "Que intente encontrar algo.",
         "ejemplo": "\"bus_ue el libro en la estantería.\""
+      }
+    },
+    {
+      "p": "tro_o",
+      "l": "C",
+      "c": "trozo",
+      "definicion": {
+        "tipo": "Sustantivo masculino",
+        "texto": "Parte separada de algo mayor.",
+        "ejemplo": "\"Comí un tro_o de tarta.\""
+      }
+    },
+    {
+      "p": "na_er",
+      "l": "C",
+      "c": "nacer",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Venir al mundo.",
+        "ejemplo": "\"Los pollitos van a na_er hoy.\""
+      }
+    },
+    {
+      "p": "ha_ia",
+      "l": "C",
+      "c": "hacia",
+      "definicion": {
+        "tipo": "Preposición",
+        "texto": "En dirección a un lugar.",
+        "ejemplo": "\"Caminamos ha_ia la playa.\""
+      }
+    },
+    {
+      "p": "pe_ar",
+      "l": "Z",
+      "c": "pezar",
+      "definicion": {
+        "tipo": "Verbo",
+        "texto": "Pesar con una balanza.",
+        "ejemplo": "\"Hay que pe_ar los ingredientes.\""
       }
     }
   ],
