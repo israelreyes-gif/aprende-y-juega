@@ -64,12 +64,37 @@ function drawAvatarSVG(svgEl, av, pts) {
   var accIdx = av.acc || 0;
   var acc = AVATAR_ACCS[accIdx] || AVATAR_ACCS[0];
 
-  var hairPaths = [
-    '<ellipse cx="65" cy="42" rx="28" ry="20" fill="'+hair+'"/>',
-    '<ellipse cx="65" cy="42" rx="28" ry="22" fill="'+hair+'"/><path d="M37 55 Q30 90 35 110" stroke="'+hair+'" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M93 55 Q100 90 95 110" stroke="'+hair+'" stroke-width="8" fill="none" stroke-linecap="round"/>',
-    '<path d="M37 50 Q40 20 65 22 Q90 20 93 50" fill="'+hair+'"/><circle cx="50" cy="52" r="8" fill="'+hair+'"/><circle cx="65" cy="50" r="8" fill="'+hair+'"/><circle cx="80" cy="52" r="8" fill="'+hair+'"/>',
-    '<path d="M37 50 Q40 22 65 22 Q90 22 93 50" fill="'+hair+'"/><path d="M40 52 Q42 80 38 105" stroke="'+hair+'" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M90 52 Q88 80 92 105" stroke="'+hair+'" stroke-width="7" fill="none" stroke-linecap="round"/>',
-    '<ellipse cx="65" cy="40" rx="28" ry="20" fill="'+hair+'"/><ellipse cx="65" cy="28" rx="12" ry="16" fill="'+hair+'"/>',
+  var hd = hair; // color pelo
+  var hs = hairDark(hair); // tono oscuro para sombras
+
+  // Cada peinado: [pelo_trasero, pelo_delantero]
+  // Orden de dibujo: pelo_trasero → cara+orejas → pelo_delantero → ojos+boca
+  var hairParts = [
+    // 0: Liso corto
+    [
+      '<path d="M39 70 Q38 44 52 32 Q65 20 78 32 Q92 44 91 70 Q88 58 65 56 Q42 58 39 70Z" fill="'+hd+'"/>',
+      '<path d="M39 70 Q38 48 52 36 Q65 26 78 36 Q92 48 91 70 Q88 58 65 56 Q42 58 39 70Z" fill="'+hd+'"/>'
+    ],
+    // 1: Liso largo
+    [
+      '<path d="M39 70 Q37 44 52 32 Q65 20 78 32 Q93 44 91 70 Q93 100 90 130 Q88 148 86 155 Q78 162 65 162 Q52 162 44 155 Q42 148 40 130 Q37 100 39 70Z" fill="'+hd+'"/><path d="M39 70 Q36 82 37 100 Q38 116 41 128" stroke="'+hd+'" stroke-width="11" fill="none" stroke-linecap="round"/><path d="M91 70 Q94 82 93 100 Q92 116 89 128" stroke="'+hd+'" stroke-width="11" fill="none" stroke-linecap="round"/>',
+      '<path d="M39 70 Q38 48 52 36 Q65 26 78 36 Q92 48 91 70 Q88 58 65 56 Q42 58 39 70Z" fill="'+hd+'"/>'
+    ],
+    // 2: Rizado largo
+    [
+      '<path d="M36 70 Q34 46 50 32 Q65 20 80 32 Q96 46 94 70 Q98 96 94 124 Q90 150 86 164 Q76 174 65 174 Q54 174 44 164 Q40 150 36 124 Q32 96 36 70Z" fill="'+hd+'"/><path d="M35 80 Q22 93 26 109 Q30 125 20 141 Q14 153 24 163" stroke="'+hd+'" stroke-width="13" fill="none" stroke-linecap="round"/><path d="M35 80 Q48 93 44 109 Q40 125 50 141 Q56 153 46 163" stroke="'+hs+'" stroke-width="3.5" fill="none" stroke-linecap="round" opacity=".45"/><path d="M95 80 Q108 93 104 109 Q100 125 110 141 Q116 153 106 163" stroke="'+hd+'" stroke-width="13" fill="none" stroke-linecap="round"/><path d="M95 80 Q82 93 86 109 Q90 125 80 141 Q74 153 84 163" stroke="'+hs+'" stroke-width="3.5" fill="none" stroke-linecap="round" opacity=".45"/>',
+      '<path d="M36 70 Q34 50 50 38 Q65 27 80 38 Q96 50 94 70 Q90 58 65 56 Q40 58 36 70Z" fill="'+hd+'"/><path d="M44 44 Q40 36 46 32 Q52 30 54 38" fill="none" stroke="'+hs+'" stroke-width="2.5" stroke-linecap="round" opacity=".55"/><path d="M76 44 Q80 36 74 32 Q68 30 66 38" fill="none" stroke="'+hs+'" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>'
+    ],
+    // 3: Trenzas
+    [
+      '<path d="M39 70 Q38 44 52 32 Q65 20 78 32 Q92 44 91 70 Q88 58 65 56 Q42 58 39 70Z" fill="'+hd+'"/><path d="M39 80 Q32 92 38 104 Q44 116 38 128 Q32 140 38 152" stroke="'+hd+'" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 80 Q46 92 40 104 Q34 116 40 128 Q46 140 40 152" stroke="'+hs+'" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/><circle cx="39" cy="153" r="5" fill="'+hs+'"/><path d="M91 80 Q98 92 92 104 Q86 116 92 128 Q98 140 92 152" stroke="'+hd+'" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M91 80 Q84 92 90 104 Q96 116 90 128 Q84 140 90 152" stroke="'+hs+'" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/><circle cx="91" cy="153" r="5" fill="'+hs+'"/>',
+      '<path d="M39 70 Q38 48 52 36 Q65 26 78 36 Q92 48 91 70 Q88 58 65 56 Q42 58 39 70Z" fill="'+hd+'"/>'
+    ],
+    // 4: Cola alta
+    [
+      '<path d="M39 70 Q38 44 52 32 Q65 20 78 32 Q92 44 91 70 Q88 58 65 56 Q42 58 39 70Z" fill="'+hd+'"/><path d="M65 28 Q72 20 76 16 Q80 12 81 18 Q82 26 78 38 Q74 52 72 66 Q70 80 70 94 Q70 106 68 116" stroke="'+hd+'" stroke-width="11" fill="none" stroke-linecap="round"/><path d="M65 28 Q68 22 72 22 Q74 26 72 36 Q69 50 67 64 Q65 78 65 94 Q65 106 64 116" stroke="'+hs+'" stroke-width="3" fill="none" stroke-linecap="round" opacity=".4"/><circle cx="68" cy="27" r="6" fill="'+hs+'"/>',
+      '<path d="M39 70 Q38 48 52 36 Q65 26 78 36 Q92 48 91 70 Q88 58 65 56 Q42 58 39 70Z" fill="'+hd+'"/>'
+    ],
   ];
 
   var accSvg = '';
@@ -79,16 +104,36 @@ function drawAvatarSVG(svgEl, av, pts) {
   if (acc.label==='Orejas gatito') accSvg='<polygon points="38,42 44,20 54,36" fill="'+hair+'"/><polygon points="76,42 86,20 92,36" fill="'+hair+'"/><polygon points="41,40 45,24 52,36" fill="#F9A8D4"/><polygon points="78,40 85,24 89,36" fill="#F9A8D4"/>';
   if (acc.label==='Arco iris')     accSvg='<path d="M30 45 Q65 5 100 45" fill="none" stroke="#EF4444" stroke-width="4" opacity=".8"/><path d="M34 48 Q65 12 96 48" fill="none" stroke="#F59E0B" stroke-width="3" opacity=".8"/><path d="M38 51 Q65 18 92 51" fill="none" stroke="#10B981" stroke-width="3" opacity=".8"/><path d="M42 54 Q65 24 88 54" fill="none" stroke="#3B82F6" stroke-width="3" opacity=".8"/>';
 
+  var parts = hairParts[hairStyle] || hairParts[0];
   svgEl.innerHTML =
-    (hairPaths[hairStyle] || hairPaths[0]) +
-    '<ellipse cx="65" cy="72" rx="26" ry="30" fill="'+skin+'"/>'+
-    '<ellipse cx="55" cy="68" rx="5" ry="6" fill="white"/><ellipse cx="75" cy="68" rx="5" ry="6" fill="white"/>'+
-    '<circle cx="55" cy="69" r="3" fill="#1F2937"/><circle cx="75" cy="69" r="3" fill="#1F2937"/>'+
-    '<circle cx="56" cy="68" r="1" fill="white"/><circle cx="76" cy="68" r="1" fill="white"/>'+
-    '<ellipse cx="65" cy="82" rx="4" ry="2.5" fill="#C4737A" opacity=".6"/>'+
-    '<path d="M57 88 Q65 94 73 88" fill="none" stroke="#C4737A" stroke-width="2" stroke-linecap="round"/>'+
-    '<ellipse cx="51" cy="76" rx="4" ry="3" fill="'+skin+'" opacity=".6"/><ellipse cx="79" cy="76" rx="4" ry="3" fill="'+skin+'" opacity=".6"/>'+
-    accSvg;
+    // capa 1: pelo trasero
+    parts[0] +
+    // capa 2: orejas + cara
+    '<ellipse cx="39" cy="85" rx="5" ry="6" fill="'+skin+'"/>'+
+    '<ellipse cx="91" cy="85" rx="5" ry="6" fill="'+skin+'"/>'+
+    '<ellipse cx="65" cy="85" rx="26" ry="30" fill="'+skin+'"/>'+
+    // capa 3: pelo delantero
+    parts[1] +
+    // accesorios (van encima del pelo delantero)
+    accSvg +
+    // capa 4: ojos, nariz, boca, mejillas
+    '<ellipse cx="55" cy="80" rx="5" ry="6" fill="white"/><ellipse cx="75" cy="80" rx="5" ry="6" fill="white"/>'+
+    '<circle cx="55" cy="81" r="3" fill="#1F2937"/><circle cx="75" cy="81" r="3" fill="#1F2937"/>'+
+    '<circle cx="56" cy="80" r="1.2" fill="white"/><circle cx="76" cy="80" r="1.2" fill="white"/>'+
+    '<ellipse cx="65" cy="92" rx="4" ry="2.5" fill="#C4737A" opacity=".55"/>'+
+    '<path d="M58 99 Q65 105 72 99" fill="none" stroke="#C4737A" stroke-width="2" stroke-linecap="round"/>'+
+    '<ellipse cx="50" cy="88" rx="5" ry="3.5" fill="#E8967A" opacity=".3"/><ellipse cx="80" cy="88" rx="5" ry="3.5" fill="#E8967A" opacity=".3"/>';
+}
+
+/* ---- Devuelve un tono más oscuro del color de pelo para sombras ---- */
+function hairDark(hex) {
+  var r = parseInt(hex.slice(1,3),16);
+  var g = parseInt(hex.slice(3,5),16);
+  var b = parseInt(hex.slice(5,7),16);
+  r = Math.max(0, Math.floor(r*0.65));
+  g = Math.max(0, Math.floor(g*0.65));
+  b = Math.max(0, Math.floor(b*0.65));
+  return '#'+r.toString(16).padStart(2,'0')+g.toString(16).padStart(2,'0')+b.toString(16).padStart(2,'0');
 }
 
 /* ---- Refrescar todos los avatares en pantalla ---- */
