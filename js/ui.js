@@ -144,7 +144,7 @@ function updateErrorsPanel() {
       keys:['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr','comp','desc'] }
   ];
 
-  var html = '<div class="errors-card"><div class="errors-title">🔁 Hay que repasar...</div>';
+  var html = '<div class="errors-card">';
   grupos.forEach(function(g) {
     var items = sorted.filter(function(e){ return g.keys.indexOf(e[0]) !== -1; });
     if (!items.length) return;
