@@ -13,8 +13,8 @@
             "kiko",
             "tortuga"
           ],
-          "ok": "✓ Es Kiko, un tortuga.",
-          "bad": "✗ El personaje es Kiko, un tortuga."
+          "ok": "✓ Es Kiko, una tortuga.",
+          "bad": "✗ El personaje es Kiko, una tortuga."
         },
         {
           "pregunta": "¿Dónde vivía Kiko?",
@@ -22,8 +22,8 @@
             "volcán",
             "dormido"
           ],
-          "ok": "✓ Vivía en volcán dormido.",
-          "bad": "✗ Vivía en volcán dormido."
+          "ok": "✓ vivía en el volcán dormido.",
+          "bad": "✗ vivía en el volcán dormido."
         },
         {
           "pregunta": "¿Cuál era el problema de Kiko?",
@@ -78,8 +78,8 @@
             "montaña",
             "nevada"
           ],
-          "ok": "✓ Vivía en montaña nevada.",
-          "bad": "✗ Vivía en montaña nevada."
+          "ok": "✓ Vivía en la montaña nevada.",
+          "bad": "✗ Vivía en la montaña nevada."
         },
         {
           "pregunta": "¿Cuál era el problema de Luna?",
@@ -190,8 +190,8 @@
             "isla",
             "mágica"
           ],
-          "ok": "✓ Vivía en isla mágica.",
-          "bad": "✗ Vivía en isla mágica."
+          "ok": "✓ vivía en la isla mágica.",
+          "bad": "✗ vivía en la isla mágica."
         },
         {
           "pregunta": "¿Cuál era el problema de Tina?",
@@ -237,8 +237,8 @@
             "jade",
             "lechuza"
           ],
-          "ok": "✓ Es Jade, un lechuza.",
-          "bad": "✗ El personaje es Jade, un lechuza."
+          "ok": "✓ Es Jade, una lechuza.",
+          "bad": "✗ El personaje es Jade, una lechuza."
         },
         {
           "pregunta": "¿Dónde vivía Jade?",
@@ -246,8 +246,8 @@
             "isla",
             "mágica"
           ],
-          "ok": "✓ Vivía en isla mágica.",
-          "bad": "✗ Vivía en isla mágica."
+          "ok": "✓ vivía en la isla mágica.",
+          "bad": "✗ vivía en la isla mágica."
         },
         {
           "pregunta": "¿Cuál era el problema de Jade?",
@@ -302,8 +302,8 @@
             "desierto",
             "dorado"
           ],
-          "ok": "✓ Vivía en desierto dorado.",
-          "bad": "✗ Vivía en desierto dorado."
+          "ok": "✓ Vivía en el desierto dorado.",
+          "bad": "✗ Vivía en el desierto dorado."
         },
         {
           "pregunta": "¿Cuál era el problema de Zara?",
@@ -349,8 +349,8 @@
             "jade",
             "rana"
           ],
-          "ok": "✓ Es Jade, un rana.",
-          "bad": "✗ El personaje es Jade, un rana."
+          "ok": "✓ Es Jade, una rana.",
+          "bad": "✗ El personaje es Jade, una rana."
         },
         {
           "pregunta": "¿Dónde vivía Jade?",
@@ -414,8 +414,8 @@
             "cueva",
             "brillante"
           ],
-          "ok": "✓ Vivía en cueva brillante.",
-          "bad": "✗ Vivía en cueva brillante."
+          "ok": "✓ Vivía en la cueva brillante.",
+          "bad": "✗ Vivía en la cueva brillante."
         },
         {
           "pregunta": "¿Cuál era el problema de Blas?",
@@ -470,8 +470,8 @@
             "jardín",
             "secreto"
           ],
-          "ok": "✓ Vivía en jardín secreto.",
-          "bad": "✗ Vivía en jardín secreto."
+          "ok": "✓ Vivía en el jardín secreto.",
+          "bad": "✗ Vivía en el jardín secreto."
         },
         {
           "pregunta": "¿Cuál era el problema de Pipo?",
@@ -517,8 +517,8 @@
             "max",
             "mariposa"
           ],
-          "ok": "✓ Es Max, un mariposa.",
-          "bad": "✗ El personaje es Max, un mariposa."
+          "ok": "✓ Es Max, una mariposa.",
+          "bad": "✗ El personaje es Max, una mariposa."
         },
         {
           "pregunta": "¿Dónde vivía Max?",
@@ -526,8 +526,8 @@
             "playa",
             "de"
           ],
-          "ok": "✓ Vivía en playa de cristal.",
-          "bad": "✗ Vivía en playa de cristal."
+          "ok": "✓ Vivía en la playa de cristal.",
+          "bad": "✗ Vivía en la playa de cristal."
         },
         {
           "pregunta": "¿Cuál era el problema de Max?",
@@ -573,8 +573,8 @@
             "bruno",
             "lechuza"
           ],
-          "ok": "✓ Es Bruno, un lechuza.",
-          "bad": "✗ El personaje es Bruno, un lechuza."
+          "ok": "✓ Es Bruno, una lechuza.",
+          "bad": "✗ El personaje es Bruno, una lechuza."
         },
         {
           "pregunta": "¿Dónde vivía Bruno?",
@@ -638,8 +638,8 @@
             "isla",
             "mágica"
           ],
-          "ok": "✓ Vivía en isla mágica.",
-          "bad": "✗ Vivía en isla mágica."
+          "ok": "✓ vivía en la isla mágica.",
+          "bad": "✗ vivía en la isla mágica."
         },
         {
           "pregunta": "¿Cuál era el problema de Lea?",
@@ -694,8 +694,8 @@
             "cueva",
             "brillante"
           ],
-          "ok": "✓ Vivía en cueva brillante.",
-          "bad": "✗ Vivía en cueva brillante."
+          "ok": "✓ Vivía en la cueva brillante.",
+          "bad": "✗ Vivía en la cueva brillante."
         },
         {
           "pregunta": "¿Cuál era el problema de Hana?",
@@ -797,8 +797,8 @@
             "kiko",
             "ardilla"
           ],
-          "ok": "✓ Es Kiko, un ardilla.",
-          "bad": "✗ El personaje es Kiko, un ardilla."
+          "ok": "✓ Es Kiko, una ardilla.",
+          "bad": "✗ El personaje es Kiko, una ardilla."
         },
         {
           "pregunta": "¿Dónde vivía Kiko?",
@@ -806,8 +806,8 @@
             "mercado",
             "de"
           ],
-          "ok": "✓ Vivía en mercado de colores.",
-          "bad": "✗ Vivía en mercado de colores."
+          "ok": "✓ Vivía en el mercado de colores.",
+          "bad": "✗ Vivía en el mercado de colores."
         },
         {
           "pregunta": "¿Cuál era el problema de Kiko?",
@@ -853,8 +853,8 @@
             "lea",
             "tortuga"
           ],
-          "ok": "✓ Es Lea, un tortuga.",
-          "bad": "✗ El personaje es Lea, un tortuga."
+          "ok": "✓ Es Lea, una tortuga.",
+          "bad": "✗ El personaje es Lea, una tortuga."
         },
         {
           "pregunta": "¿Dónde vivía Lea?",
@@ -862,8 +862,8 @@
             "lago",
             "azul"
           ],
-          "ok": "✓ Vivía en lago azul.",
-          "bad": "✗ Vivía en lago azul."
+          "ok": "✓ Vivía en el lago azul.",
+          "bad": "✗ Vivía en el lago azul."
         },
         {
           "pregunta": "¿Cuál era el problema de Lea?",
@@ -918,8 +918,8 @@
             "isla",
             "mágica"
           ],
-          "ok": "✓ Vivía en isla mágica.",
-          "bad": "✗ Vivía en isla mágica."
+          "ok": "✓ vivía en la isla mágica.",
+          "bad": "✗ vivía en la isla mágica."
         },
         {
           "pregunta": "¿Cuál era el problema de Blas?",
@@ -965,8 +965,8 @@
             "max",
             "lechuza"
           ],
-          "ok": "✓ Es Max, un lechuza.",
-          "bad": "✗ El personaje es Max, un lechuza."
+          "ok": "✓ Es Max, una lechuza.",
+          "bad": "✗ El personaje es Max, una lechuza."
         },
         {
           "pregunta": "¿Dónde vivía Max?",
@@ -1030,8 +1030,8 @@
             "playa",
             "de"
           ],
-          "ok": "✓ Vivía en playa de cristal.",
-          "bad": "✗ Vivía en playa de cristal."
+          "ok": "✓ Vivía en la playa de cristal.",
+          "bad": "✗ Vivía en la playa de cristal."
         },
         {
           "pregunta": "¿Cuál era el problema de Gus?",
@@ -1077,8 +1077,8 @@
             "mia",
             "lechuza"
           ],
-          "ok": "✓ Es Mia, un lechuza.",
-          "bad": "✗ El personaje es Mia, un lechuza."
+          "ok": "✓ Es Mia, una lechuza.",
+          "bad": "✗ El personaje es Mia, una lechuza."
         },
         {
           "pregunta": "¿Dónde vivía Mia?",
@@ -1086,8 +1086,8 @@
             "montaña",
             "nevada"
           ],
-          "ok": "✓ Vivía en montaña nevada.",
-          "bad": "✗ Vivía en montaña nevada."
+          "ok": "✓ Vivía en la montaña nevada.",
+          "bad": "✗ Vivía en la montaña nevada."
         },
         {
           "pregunta": "¿Cuál era el problema de Mia?",
@@ -1142,8 +1142,8 @@
             "isla",
             "mágica"
           ],
-          "ok": "✓ Vivía en isla mágica.",
-          "bad": "✗ Vivía en isla mágica."
+          "ok": "✓ vivía en la isla mágica.",
+          "bad": "✗ vivía en la isla mágica."
         },
         {
           "pregunta": "¿Cuál era el problema de Pipo?",
@@ -1198,8 +1198,8 @@
             "cueva",
             "brillante"
           ],
-          "ok": "✓ Vivía en cueva brillante.",
-          "bad": "✗ Vivía en cueva brillante."
+          "ok": "✓ Vivía en la cueva brillante.",
+          "bad": "✗ Vivía en la cueva brillante."
         },
         {
           "pregunta": "¿Cuál era el problema de Mia?",
@@ -1254,8 +1254,8 @@
             "cueva",
             "brillante"
           ],
-          "ok": "✓ Vivía en cueva brillante.",
-          "bad": "✗ Vivía en cueva brillante."
+          "ok": "✓ Vivía en la cueva brillante.",
+          "bad": "✗ Vivía en la cueva brillante."
         },
         {
           "pregunta": "¿Cuál era el problema de Ivo?",
@@ -1310,8 +1310,8 @@
             "montaña",
             "nevada"
           ],
-          "ok": "✓ Vivía en montaña nevada.",
-          "bad": "✗ Vivía en montaña nevada."
+          "ok": "✓ Vivía en la montaña nevada.",
+          "bad": "✗ Vivía en la montaña nevada."
         },
         {
           "pregunta": "¿Cuál era el problema de Fifi?",
@@ -1366,8 +1366,8 @@
             "mercado",
             "de"
           ],
-          "ok": "✓ Vivía en mercado de colores.",
-          "bad": "✗ Vivía en mercado de colores."
+          "ok": "✓ Vivía en el mercado de colores.",
+          "bad": "✗ Vivía en el mercado de colores."
         },
         {
           "pregunta": "¿Cuál era el problema de Jade?",
@@ -1413,8 +1413,8 @@
             "bruno",
             "tortuga"
           ],
-          "ok": "✓ Es Bruno, un tortuga.",
-          "bad": "✗ El personaje es Bruno, un tortuga."
+          "ok": "✓ Es Bruno, una tortuga.",
+          "bad": "✗ El personaje es Bruno, una tortuga."
         },
         {
           "pregunta": "¿Dónde vivía Bruno?",
@@ -1422,8 +1422,8 @@
             "isla",
             "mágica"
           ],
-          "ok": "✓ Vivía en isla mágica.",
-          "bad": "✗ Vivía en isla mágica."
+          "ok": "✓ vivía en la isla mágica.",
+          "bad": "✗ vivía en la isla mágica."
         },
         {
           "pregunta": "¿Cuál era el problema de Bruno?",
@@ -1478,8 +1478,8 @@
             "jardín",
             "secreto"
           ],
-          "ok": "✓ Vivía en jardín secreto.",
-          "bad": "✗ Vivía en jardín secreto."
+          "ok": "✓ Vivía en el jardín secreto.",
+          "bad": "✗ Vivía en el jardín secreto."
         },
         {
           "pregunta": "¿Cuál era el problema de Pipo?",
@@ -1590,8 +1590,8 @@
             "cueva",
             "brillante"
           ],
-          "ok": "✓ Vivía en cueva brillante.",
-          "bad": "✗ Vivía en cueva brillante."
+          "ok": "✓ Vivía en la cueva brillante.",
+          "bad": "✗ Vivía en la cueva brillante."
         },
         {
           "pregunta": "¿Cuál era el problema de Pipo?",
@@ -1646,8 +1646,8 @@
             "desierto",
             "dorado"
           ],
-          "ok": "✓ Vivía en desierto dorado.",
-          "bad": "✗ Vivía en desierto dorado."
+          "ok": "✓ Vivía en el desierto dorado.",
+          "bad": "✗ Vivía en el desierto dorado."
         },
         {
           "pregunta": "¿Cuál era el problema de Tobi?",
@@ -1702,8 +1702,8 @@
             "desierto",
             "dorado"
           ],
-          "ok": "✓ Vivía en desierto dorado.",
-          "bad": "✗ Vivía en desierto dorado."
+          "ok": "✓ Vivía en el desierto dorado.",
+          "bad": "✗ Vivía en el desierto dorado."
         },
         {
           "pregunta": "¿Cuál era el problema de Zara?",
@@ -1749,8 +1749,8 @@
             "cleo",
             "mariposa"
           ],
-          "ok": "✓ Es Cleo, un mariposa.",
-          "bad": "✗ El personaje es Cleo, un mariposa."
+          "ok": "✓ Es Cleo, una mariposa.",
+          "bad": "✗ El personaje es Cleo, una mariposa."
         },
         {
           "pregunta": "¿Dónde vivía Cleo?",
@@ -1814,8 +1814,8 @@
             "isla",
             "mágica"
           ],
-          "ok": "✓ Vivía en isla mágica.",
-          "bad": "✗ Vivía en isla mágica."
+          "ok": "✓ vivía en la isla mágica.",
+          "bad": "✗ vivía en la isla mágica."
         },
         {
           "pregunta": "¿Cuál era el problema de Tobi?",
@@ -1861,8 +1861,8 @@
             "blas",
             "rana"
           ],
-          "ok": "✓ Es Blas, un rana.",
-          "bad": "✗ El personaje es Blas, un rana."
+          "ok": "✓ Es Blas, una rana.",
+          "bad": "✗ El personaje es Blas, una rana."
         },
         {
           "pregunta": "¿Dónde vivía Blas?",
@@ -1982,8 +1982,8 @@
             "montaña",
             "nevada"
           ],
-          "ok": "✓ Vivía en montaña nevada.",
-          "bad": "✗ Vivía en montaña nevada."
+          "ok": "✓ Vivía en la montaña nevada.",
+          "bad": "✗ Vivía en la montaña nevada."
         },
         {
           "pregunta": "¿Cuál era el problema de Tina?",
@@ -2038,8 +2038,8 @@
             "bosque",
             "encantado"
           ],
-          "ok": "✓ Vivía en bosque encantado.",
-          "bad": "✗ Vivía en bosque encantado."
+          "ok": "✓ Vivía en el bosque encantado.",
+          "bad": "✗ Vivía en el bosque encantado."
         },
         {
           "pregunta": "¿Cuál era el problema de Ivo?",
@@ -2085,8 +2085,8 @@
             "ivo",
             "lechuza"
           ],
-          "ok": "✓ Es Ivo, un lechuza.",
-          "bad": "✗ El personaje es Ivo, un lechuza."
+          "ok": "✓ Es Ivo, una lechuza.",
+          "bad": "✗ El personaje es Ivo, una lechuza."
         },
         {
           "pregunta": "¿Dónde vivía Ivo?",
@@ -2094,8 +2094,8 @@
             "bosque",
             "encantado"
           ],
-          "ok": "✓ Vivía en bosque encantado.",
-          "bad": "✗ Vivía en bosque encantado."
+          "ok": "✓ Vivía en el bosque encantado.",
+          "bad": "✗ Vivía en el bosque encantado."
         },
         {
           "pregunta": "¿Cuál era el problema de Ivo?",
@@ -2206,8 +2206,8 @@
             "volcán",
             "dormido"
           ],
-          "ok": "✓ Vivía en volcán dormido.",
-          "bad": "✗ Vivía en volcán dormido."
+          "ok": "✓ vivía en el volcán dormido.",
+          "bad": "✗ vivía en el volcán dormido."
         },
         {
           "pregunta": "¿Cuál era el problema de Ivo?",
@@ -2318,8 +2318,8 @@
             "montaña",
             "nevada"
           ],
-          "ok": "✓ Vivía en montaña nevada.",
-          "bad": "✗ Vivía en montaña nevada."
+          "ok": "✓ Vivía en la montaña nevada.",
+          "bad": "✗ Vivía en la montaña nevada."
         },
         {
           "pregunta": "¿Cuál era el problema de Max?",
@@ -2365,8 +2365,8 @@
             "tina",
             "mariposa"
           ],
-          "ok": "✓ Es Tina, un mariposa.",
-          "bad": "✗ El personaje es Tina, un mariposa."
+          "ok": "✓ Es Tina, una mariposa.",
+          "bad": "✗ El personaje es Tina, una mariposa."
         },
         {
           "pregunta": "¿Dónde vivía Tina?",
@@ -2486,8 +2486,8 @@
             "lago",
             "azul"
           ],
-          "ok": "✓ Vivía en lago azul.",
-          "bad": "✗ Vivía en lago azul."
+          "ok": "✓ Vivía en el lago azul.",
+          "bad": "✗ Vivía en el lago azul."
         },
         {
           "pregunta": "¿Cuál era el problema de Fifi?",
@@ -2533,8 +2533,8 @@
             "ivo",
             "tortuga"
           ],
-          "ok": "✓ Es Ivo, un tortuga.",
-          "bad": "✗ El personaje es Ivo, un tortuga."
+          "ok": "✓ Es Ivo, una tortuga.",
+          "bad": "✗ El personaje es Ivo, una tortuga."
         },
         {
           "pregunta": "¿Dónde vivía Ivo?",
@@ -2645,8 +2645,8 @@
             "hana",
             "ardilla"
           ],
-          "ok": "✓ Es Hana, un ardilla.",
-          "bad": "✗ El personaje es Hana, un ardilla."
+          "ok": "✓ Es Hana, una ardilla.",
+          "bad": "✗ El personaje es Hana, una ardilla."
         },
         {
           "pregunta": "¿Dónde vivía Hana?",
@@ -2701,8 +2701,8 @@
             "bruno",
             "tortuga"
           ],
-          "ok": "✓ Es Bruno, un tortuga.",
-          "bad": "✗ El personaje es Bruno, un tortuga."
+          "ok": "✓ Es Bruno, una tortuga.",
+          "bad": "✗ El personaje es Bruno, una tortuga."
         },
         {
           "pregunta": "¿Dónde vivía Bruno?",
@@ -2766,8 +2766,8 @@
             "cueva",
             "brillante"
           ],
-          "ok": "✓ Vivía en cueva brillante.",
-          "bad": "✗ Vivía en cueva brillante."
+          "ok": "✓ Vivía en la cueva brillante.",
+          "bad": "✗ Vivía en la cueva brillante."
         },
         {
           "pregunta": "¿Cuál era el problema de Tina?",
