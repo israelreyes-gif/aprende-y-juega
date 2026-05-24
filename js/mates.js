@@ -455,15 +455,19 @@ function checkProb() {
    MEZCLA — 2 intentos
    ============================================================ */
 function cargarNuevaMezcla() {
-  mixIntentos  = 0;
-  var nivel    = getNivel();
-  var tipo     = ['suma','resta','multi'][Math.floor(Math.random() * 3)];
-  if (tipo === 'suma')       currentMix = Object.assign({ tipo: 'suma'  }, generarSuma(nivel));
-  else if (tipo === 'resta') currentMix = Object.assign({ tipo: 'resta' }, generarResta(nivel));
-  else                       currentMix = Object.assign({ tipo: 'multi' }, generarMulti(nivel));
+  mixIntentos = 0;
+  var nivel   = getNivel();
+  var tipo    = ['suma','resta','multi'][Math.floor(Math.random() * 3)];
+  if (tipo === 'suma')       currentMix = Object.assign({ tipo:'suma'  }, generarSuma(nivel));
+  else if (tipo === 'resta') currentMix = Object.assign({ tipo:'resta' }, generarResta(nivel));
+  else                       currentMix = Object.assign({ tipo:'multi' }, generarMulti(nivel));
+
+  currentMix.respuestaUsuario = '';
+  var res = currentMix.resultado.toString();
 
   var opBox = document.querySelector('#s-mix .op-box');
   if (!opBox) return;
+
   var html = '';
   if (currentMix.tipo === 'multi') {
     html = '<div class="op-row"><span>' + currentMix.a +
@@ -477,53 +481,102 @@ function cargarNuevaMezcla() {
     currentMix.b.toString().split('').forEach(function(d) { html += '<span>' + d + '</span>'; });
     html += '</div>';
   }
-  html += '<div class="op-line"></div><div style="display:flex;justify-content:flex-end">' +
-    '<div class="dbox active" id="mix-box" style="width:90px">?</div></div>';
+
+  // Dígitos del resultado como ?
+  var rowRes = '';
+  res.split('').forEach(function(d, i) {
+    rowRes += '<div class="dbox" id="mix-box-' + i + '">?</div>';
+  });
+  currentMix.posActual = res.length - 1; // empezar por la derecha
+
+  html += '<div class="op-line"></div><div style="display:flex;justify-content:flex-end;gap:8px">' + rowRes + '</div>';
   opBox.innerHTML = html;
-  mixVal = '';
+
+  // Activar primer dígito (más a la derecha)
+  var firstBox = document.getElementById('mix-box-' + (res.length - 1));
+  if (firstBox) firstBox.className = 'dbox active';
+
   document.getElementById('mix-fb').style.display   = 'none';
   document.getElementById('mix-next').style.display = 'none';
 }
 
 function typeMix(k) {
-  var box = document.getElementById('mix-box');
-  if (k === 'del') { mixVal = mixVal.slice(0, -1); }
-  else { if (mixVal.length < 5) mixVal += k; }
-  if (box) box.textContent = mixVal || '?';
+  if (!currentMix) return;
+  var res = currentMix.resultado.toString();
+  var pos = currentMix.posActual;
+
+  if (k === 'del') {
+    var ultimoRelleno = pos + 1;
+    if (ultimoRelleno <= res.length - 1) {
+      var borrar = document.getElementById('mix-box-' + ultimoRelleno);
+      if (borrar) { borrar.textContent = '?'; borrar.className = 'dbox active'; }
+      var activo = document.getElementById('mix-box-' + pos);
+      if (activo) activo.className = 'dbox';
+      currentMix.posActual = ultimoRelleno;
+      currentMix.respuestaUsuario = currentMix.respuestaUsuario.slice(1);
+    }
+    return;
+  }
+
+  if (pos < 0) return;
+  var box = document.getElementById('mix-box-' + pos);
+  if (box) { box.textContent = k; box.className = 'dbox'; }
+  currentMix.respuestaUsuario = k.toString() + currentMix.respuestaUsuario;
+  currentMix.posActual--;
+  if (currentMix.posActual >= 0) {
+    var nextBox = document.getElementById('mix-box-' + currentMix.posActual);
+    if (nextBox) nextBox.className = 'dbox active';
+  }
 }
 
 function checkMix() {
   if (!currentMix) return;
-  var box  = document.getElementById('mix-box');
+  var res  = currentMix.resultado.toString();
+  if (currentMix.respuestaUsuario.length < res.length) {
+    showToast('✏️ Escribe todos los dígitos del resultado');
+    return;
+  }
   var fb   = document.getElementById('mix-fb');
   var sign = currentMix.tipo === 'multi' ? '×' : currentMix.tipo === 'suma' ? '+' : '−';
+  var eq   = currentMix.a + sign + currentMix.b + '=' + currentMix.resultado;
   fb.style.display = 'block';
 
-  if (parseInt(mixVal) === currentMix.resultado) {
-    // ── ACIERTO ──
-    box.className = 'dbox correct';
-    fb.className  = 'feedback ok';
-    fb.innerHTML  = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + currentMix.a + sign + currentMix.b + '=' + currentMix.resultado + ' 🚀 +10 pts</div>';
+  if (currentMix.respuestaUsuario === res) {
+    // ── ACIERTO: marcar todos en verde ──
+    res.split('').forEach(function(d, i) {
+      var b = document.getElementById('mix-box-' + i);
+      if (b) b.className = 'dbox correct';
+    });
+    fb.className = 'feedback ok';
+    fb.innerHTML = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + eq + ' 🚀 +10 pts</div>';
     awardPts(10, 'mates');
     recordResult('mates', 'mix', true);
     setTimeout(function() { cargarNuevaMezcla(); }, 1200);
   } else {
     mixIntentos++;
-    box.className = 'dbox wrong';
+    currentMix.respuestaUsuario.split('').forEach(function(d, i) {
+      var b = document.getElementById('mix-box-' + i);
+      if (b) b.className = d === res[i] ? 'dbox correct' : 'dbox wrong';
+    });
     if (mixIntentos < 2) {
-      // ── PRIMER FALLO: reintento ──
       fb.className = 'feedback bad';
-      fb.innerHTML = '<div class="fbt">No es correcto... ¡prueba otra vez! 💪</div>';
+      fb.innerHTML = '<div class="fbt">No es correcto... ¡prueba otra vez! 💪</div><div class="fbs">Fíjate en los dígitos en rojo.</div>';
       setTimeout(function() {
-        mixVal = ''; box.textContent = '?'; box.className = 'dbox active';
+        currentMix.respuestaUsuario = '';
+        currentMix.posActual = res.length - 1;
+        res.split('').forEach(function(d, i) {
+          var b = document.getElementById('mix-box-' + i);
+          if (b) { b.textContent = '?'; b.className = i === res.length-1 ? 'dbox active' : 'dbox'; }
+        });
         fb.style.display = 'none';
       }, 1500);
     } else {
-      // ── SEGUNDO FALLO: revelar y continuar ──
-      box.className = 'dbox wrong';
-      fb.className  = 'feedback bad';
-      fb.innerHTML  = '<div class="fbt">La respuesta era <strong>' + currentMix.resultado +
-        '</strong> (' + currentMix.a + sign + currentMix.b + ') 📖</div>';
+      res.split('').forEach(function(d, i) {
+        var b = document.getElementById('mix-box-' + i);
+        if (b) { b.textContent = d; b.className = 'dbox correct'; }
+      });
+      fb.className = 'feedback bad';
+      fb.innerHTML = '<div class="fbt">La respuesta era <strong>' + res + '</strong> (' + eq + ') 📖</div>';
       recordResult('mates', 'mix', false);
       setTimeout(function() { cargarNuevaMezcla(); }, 2200);
     }
