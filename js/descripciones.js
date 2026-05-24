@@ -11,13 +11,7 @@ var descIdx          = 0;
 var descOrden        = [];
 var currentDesc      = null;
 
-fetch('data/curso' + cursoActual + '/descripciones.json')
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
-    DESCRIPCIONES_DB = data.descripciones || [];
-    descOrden        = shuffleDescArr(DESCRIPCIONES_DB.map(function(_,i){ return i; }));
-  })
-  .catch(function(e) { console.warn('No se cargó descripciones.json:', e); });
+// El JSON se carga al iniciar el ejercicio (ver initDescripciones)
 
 function shuffleDescArr(arr) {
   var a = arr.slice();
@@ -31,7 +25,19 @@ function shuffleDescArr(arr) {
 /* ---- Iniciar ejercicio de descripciones ---- */
 function initDescripciones() {
   descIdx = 0;
-  cargarDescripcion();
+  // Cargar JSON del curso actual si no está cargado o cambió de curso
+  if (DESCRIPCIONES_DB.length === 0) {
+    fetch('data/curso' + cursoActual + '/descripciones.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        DESCRIPCIONES_DB = data.descripciones || [];
+        descOrden = shuffleDescArr(DESCRIPCIONES_DB.map(function(_,i){ return i; }));
+        cargarDescripcion();
+      })
+      .catch(function(e) { console.warn('No se cargó descripciones.json:', e); });
+  } else {
+    cargarDescripcion();
+  }
 }
 
 function cargarDescripcion() {
