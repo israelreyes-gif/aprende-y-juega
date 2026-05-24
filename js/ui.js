@@ -113,23 +113,36 @@ function updateErrorsPanel() {
   var panel = document.getElementById('errors-panel');
   if (!panel) return;
 
-  // Combinar fallos (solo keys _fail), agrupando suma+resta
-  var allErrors = {};
-  [ST.mates.errors, ST.lengua.errors].forEach(function(errors) {
-    Object.keys(errors).forEach(function(k) {
-      if (k.indexOf('_fail') !== -1) {
-        var baseKey = k.replace('_fail', '');
-        // Agrupar suma y resta juntas
-        if (baseKey === 'resta') baseKey = 'suma';
-        allErrors[baseKey] = (allErrors[baseKey] || 0) + errors[k];
-      }
-    });
+  // Calcular % por subtipo y filtrar los que estén por debajo del 75%
+  var mErr = ST.mates.errors || {};
+  var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
+
+  function getPct(errors, key) {
+    var ok = errors[key+'_ok']||0, fail = errors[key+'_fail']||0;
+    var total = ok + fail;
+    if (!total) return null;
+    return { pct: Math.round(ok/total*100), fail: fail };
+  }
+
+  // Sumas y restas juntas
+  var srOk = (mErr['suma_ok']||0)+(mErr['resta_ok']||0);
+  var srFail = (mErr['suma_fail']||0)+(mErr['resta_fail']||0);
+  var srTotal = srOk + srFail;
+
+  var allErrors = [];
+  if (srTotal > 0 && Math.round(srOk/srTotal*100) < 75) {
+    allErrors.push(['suma', srFail]);
+  }
+  [
+    {k:'multi', e:mErr}, {k:'prob', e:mErr}, {k:'mix', e:mErr},
+    {k:'gram-bv', e:lErr}, {k:'gram-gj', e:lErr}, {k:'gram-czq', e:lErr},
+    {k:'gram-lly', e:lErr}, {k:'gram-rr', e:lErr}, {k:'comp', e:lErr}, {k:'desc', e:lErr}
+  ].forEach(function(item) {
+    var r = getPct(item.e, item.k);
+    if (r && r.pct < 75) allErrors.push([item.k, r.fail]);
   });
 
-  var sorted = Object.entries(allErrors)
-    .filter(function(e) { return e[1] > 0; })
-    .sort(function(a, b) { return b[1] - a[1]; })
-    .slice(0, 5);
+  var sorted = allErrors.sort(function(a,b){ return b[1]-a[1]; }).slice(0,6);
 
   if (sorted.length === 0) {
     panel.innerHTML = '<div style="font-size:13px;color:var(--gray-400);font-weight:600;text-align:center;padding:12px 16px">¡Sin errores acumulados! Sigue así 🌟</div>';
