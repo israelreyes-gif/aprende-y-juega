@@ -8,6 +8,12 @@ var STORE_KEY_PREFIX = 'aprendeyjuega_curso';
 var cursoActual = 3;
 var perfilActivoId = null; // se establece al seleccionar perfil
 
+// Restaurar perfil activo si ya había uno
+try {
+  var _pa = localStorage.getItem('aprendeyjuega_perfil_activo');
+  if (_pa) perfilActivoId = JSON.parse(_pa).id || null;
+} catch(e) {}
+
 function defaultState() {
   return {
     totalPts:    0,
@@ -48,8 +54,6 @@ function loadState(curso) {
 function saveState() {
   try {
     localStorage.setItem(getStoreKey(), JSON.stringify(ST));
-    // Guardar en la nube de forma asíncrona (sin bloquear)
-    if (perfilActivoId) syncProgresoToCloud();
   } catch(e) { console.warn('No se pudo guardar el progreso:', e); }
 }
 
@@ -73,33 +77,6 @@ function syncProgresoToCloud() {
   }).catch(function(e) { console.warn('No se pudo sincronizar progreso:', e); });
 }
 
-function loadProgresoFromCloud(perfilId, curso, callback) {
-  fetch(API_URL + '/progreso/' + perfilId + '/' + (curso || 3))
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      if (data) {
-        var s = mergeState({
-          totalPts:    data.total_pts,
-          lastDate:    data.last_date,
-          streak:      data.streak,
-          weekDays:    data.week_days || [],
-          mates:       data.mates || defaultState().mates,
-          lengua:      data.lengua || defaultState().lengua,
-          matesStreak: data.mates_streak,
-          gramStreak:  data.gram_streak,
-          compStreak:  data.comp_streak
-        });
-        // Guardar en local también
-        localStorage.setItem(getStoreKey(curso), JSON.stringify(s));
-        ST = s;
-      }
-      if (callback) callback();
-    })
-    .catch(function() {
-      // Sin conexión — usar localStorage
-      if (callback) callback();
-    });
-}
 
 /* Estado global */
 var ST = loadState(3);
