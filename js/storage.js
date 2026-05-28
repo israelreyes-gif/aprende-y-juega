@@ -1,11 +1,12 @@
 /* =============================================
-   STORAGE.JS — Persistencia con localStorage
-   El progreso se guarda POR CURSO de forma independiente.
-   Clave: 'aprendeyjuega_curso3', 'aprendeyjuega_curso4', etc.
+   STORAGE.JS — Persistencia con localStorage + Cloudflare D1
+   El progreso se guarda localmente Y en la nube por perfil.
    ============================================= */
 
+var API_URL = 'https://aprende-y-juega-api.israel-reyes.workers.dev';
 var STORE_KEY_PREFIX = 'aprendeyjuega_curso';
-var cursoActual = 3; // se actualiza al seleccionar curso
+var cursoActual = 3;
+var perfilActivoId = null; // se establece al seleccionar perfil
 
 function defaultState() {
   return {
@@ -22,50 +23,102 @@ function defaultState() {
 }
 
 function getStoreKey(curso) {
-  return STORE_KEY_PREFIX + (curso || cursoActual);
+  var pid = perfilActivoId || 'default';
+  return STORE_KEY_PREFIX + (curso || cursoActual) + '_' + pid;
+}
+
+function mergeState(s) {
+  var def = defaultState();
+  Object.keys(def).forEach(function(k) { if (s[k] === undefined) s[k] = def[k]; });
+  ['mates','lengua'].forEach(function(sub) {
+    if (!s[sub]) s[sub] = def[sub];
+    Object.keys(def[sub]).forEach(function(k) { if (s[sub][k] === undefined) s[sub][k] = def[sub][k]; });
+  });
+  return s;
 }
 
 function loadState(curso) {
   try {
     var raw = localStorage.getItem(getStoreKey(curso));
     if (!raw) return defaultState();
-    var s   = JSON.parse(raw);
-    var def = defaultState();
-    // Merge: añade claves nuevas sin borrar las existentes
-    Object.keys(def).forEach(function(k) { if (s[k] === undefined) s[k] = def[k]; });
-    ['mates','lengua'].forEach(function(sub) {
-      Object.keys(def[sub]).forEach(function(k) { if (s[sub][k] === undefined) s[sub][k] = def[sub][k]; });
-    });
-    return s;
+    return mergeState(JSON.parse(raw));
   } catch(e) { return defaultState(); }
 }
 
 function saveState() {
   try {
     localStorage.setItem(getStoreKey(), JSON.stringify(ST));
+    // Guardar en la nube de forma asíncrona (sin bloquear)
+    if (perfilActivoId) syncProgresoToCloud();
   } catch(e) { console.warn('No se pudo guardar el progreso:', e); }
 }
 
-/* Estado global — se recarga al cambiar de curso */
+/* ---- Sincronización con la nube ---- */
+function syncProgresoToCloud() {
+  if (!perfilActivoId) return;
+  fetch(API_URL + '/progreso/' + perfilActivoId + '/' + cursoActual, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      totalPts:    ST.totalPts,
+      lastDate:    ST.lastDate,
+      streak:      ST.streak,
+      weekDays:    ST.weekDays,
+      mates:       ST.mates,
+      lengua:      ST.lengua,
+      matesStreak: ST.matesStreak,
+      gramStreak:  ST.gramStreak,
+      compStreak:  ST.compStreak
+    })
+  }).catch(function(e) { console.warn('No se pudo sincronizar progreso:', e); });
+}
+
+function loadProgresoFromCloud(perfilId, curso, callback) {
+  fetch(API_URL + '/progreso/' + perfilId + '/' + (curso || 3))
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data) {
+        var s = mergeState({
+          totalPts:    data.total_pts,
+          lastDate:    data.last_date,
+          streak:      data.streak,
+          weekDays:    data.week_days || [],
+          mates:       data.mates || defaultState().mates,
+          lengua:      data.lengua || defaultState().lengua,
+          matesStreak: data.mates_streak,
+          gramStreak:  data.gram_streak,
+          compStreak:  data.comp_streak
+        });
+        // Guardar en local también
+        localStorage.setItem(getStoreKey(curso), JSON.stringify(s));
+        ST = s;
+      }
+      if (callback) callback();
+    })
+    .catch(function() {
+      // Sin conexión — usar localStorage
+      if (callback) callback();
+    });
+}
+
+/* Estado global */
 var ST = loadState(3);
 
-/* ---- Nombre de la usuaria ---- */
-function getNombre() {
-  return localStorage.getItem('aprendeyjuega_nombre') || '';
-}
-
-function setNombre(nombre) {
-  localStorage.setItem('aprendeyjuega_nombre', nombre.trim());
-}
-
-function tieneNombre() {
-  return getNombre().length > 0;
-}
+/* ---- Nombre ---- */
+function getNombre() { return localStorage.getItem('aprendeyjuega_nombre') || ''; }
+function setNombre(n) { localStorage.setItem('aprendeyjuega_nombre', n.trim()); }
+function tieneNombre() { return getNombre().length > 0; }
 
 /* ---- Cambiar de curso ---- */
 function setCurso(num) {
   cursoActual = num;
   ST = loadState(num);
+}
+
+/* ---- Cambiar de perfil ---- */
+function setPerfilActivoId(id) {
+  perfilActivoId = id;
+  ST = loadState(cursoActual);
 }
 
 /* ---- Reseteo diario ---- */
@@ -106,15 +159,14 @@ function checkDayReset() {
 function recordResult(subject, exerciseKey, correct) {
   var s = ST[subject];
   s.hoy++; s.total++;
-  // Contadores acumulados por subtipo (nunca se decrementan)
   if (correct) {
     s.hoyOk++; s.totalOk++;
-    s.errors[exerciseKey + '_ok']   = (s.errors[exerciseKey + '_ok']   || 0) + 1;
-    if (subject === 'mates') ST.matesStreak++;
+    s.errors[exerciseKey + '_ok'] = (s.errors[exerciseKey + '_ok'] || 0) + 1;
+    if (subject === 'mates')  ST.matesStreak++;
     if (subject === 'lengua') ST.gramStreak++;
   } else {
     s.errors[exerciseKey + '_fail'] = (s.errors[exerciseKey + '_fail'] || 0) + 1;
-    if (subject === 'mates') ST.matesStreak = Math.max(0, ST.matesStreak - 1);
+    if (subject === 'mates')  ST.matesStreak = Math.max(0, ST.matesStreak - 1);
     if (subject === 'lengua') ST.gramStreak  = Math.max(0, ST.gramStreak  - 1);
   }
   saveState();
