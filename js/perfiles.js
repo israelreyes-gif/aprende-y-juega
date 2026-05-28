@@ -116,15 +116,15 @@ function seleccionarPerfil(perfil) {
   saveAvatar(AV);
   setNombre(perfil.nombre);
   setCurso(3);
+  checkDayReset();
 
-  // Cargar progreso desde la nube, luego entrar
-  loadProgresoFromCloud(perfil.id, 3, function() {
-    checkDayReset();
-    updateHomeUI(); updateStreakUI(); updateMedalUI();
-    updateSubjectUI('mates'); updateSubjectUI('lengua');
-    refreshAllAvatars();
-    go('s-cursos');
-  });
+  // Subir progreso local a D1 (1 escritura por sesión) y luego entrar
+  syncProgresoToCloud();
+
+  updateHomeUI(); updateStreakUI(); updateMedalUI();
+  updateSubjectUI('mates'); updateSubjectUI('lengua');
+  refreshAllAvatars();
+  go('s-cursos');
 }
 
 /* ---- Modal nuevo/editar ---- */
