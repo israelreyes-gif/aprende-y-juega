@@ -5,6 +5,7 @@
 
 function loadScreens(callback) {
   var files = [
+    'screens/perfiles.html',
     'screens/cursos.html',
     'screens/avatar.html',
     'screens/padres.html',
@@ -108,12 +109,9 @@ function initApp() {
   // Comprobar desbloqueos nuevos
   checkNewUnlocks();
 
-  // Primera pantalla: si no tiene nombre, pedir primero
-  if (!tieneNombre()) {
-    go('s-bienvenida');
-  } else {
-    go('s-cursos');
-  }
+  // Primera pantalla: siempre selección de perfiles
+  renderPerfiles();
+  go('s-perfiles');
 }
 
 // Arranque: HTML → datos → init
