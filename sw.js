@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v1';
+var CACHE = 'aprende-v2';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -14,12 +14,14 @@ var PRECACHE = [
   '/js/navigation.js',
   '/js/medals.js',
   '/js/avatar.js',
+  '/js/perfiles.js',
   '/js/padres.js',
   '/js/descripciones.js',
   '/js/mates.js',
   '/js/lengua.js',
   '/js/comprension.js',
   '/js/app.js',
+  '/screens/perfiles.html',
   '/screens/cursos.html',
   '/screens/home.html',
   '/screens/mates.html',
