@@ -1,0 +1,78 @@
+<!-- =============================================
+     PERFILES.HTML — Selección de perfil (estilo Netflix)
+     ============================================= -->
+<div class="screen" id="s-perfiles">
+  <div id="perfiles-root" style="min-height:100vh;background:linear-gradient(160deg,#0f0c29 0%,#302b63 50%,#24243e 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:24px 16px;box-sizing:border-box">
+
+    <!-- Estrellas de fondo -->
+    <div id="perfiles-stars"></div>
+
+    <!-- Título -->
+    <div style="text-align:center;margin-bottom:44px;position:relative;z-index:1">
+      <div style="font-size:32px;margin-bottom:8px">🌟</div>
+      <div style="font-family:var(--f);font-weight:900;font-size:22px;color:white;letter-spacing:-.5px">¿Quién está aprendiendo hoy?</div>
+    </div>
+
+    <!-- Grid de perfiles -->
+    <div id="perfiles-grid" style="display:flex;gap:28px;flex-wrap:wrap;justify-content:center;align-items:flex-start;position:relative;z-index:1;max-width:400px"></div>
+
+    <!-- Zona de padres -->
+    <button onclick="abrirZonaPadresDesdePerfiles()" style="margin-top:48px;padding:10px 24px;border-radius:20px;border:1.5px solid rgba(255,255,255,.2);background:transparent;color:rgba(255,255,255,.45);font-family:var(--f);font-weight:700;font-size:13px;cursor:pointer;position:relative;z-index:1">
+      🔒 Zona de padres
+    </button>
+  </div>
+
+  <!-- MODAL CREAR/EDITAR PERFIL -->
+  <div id="modal-perfil" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:200;align-items:center;justify-content:center;backdrop-filter:blur(8px)">
+    <div style="background:linear-gradient(160deg,#1a1a2e,#16213e);border-radius:24px;padding:28px 24px;width:calc(100% - 48px);max-width:320px;border:1px solid rgba(255,255,255,.1);box-shadow:0 32px 64px rgba(0,0,0,.6)">
+      <div style="font-family:var(--f);font-weight:900;font-size:20px;color:white;text-align:center;margin-bottom:20px" id="modal-perfil-titulo">Nuevo perfil ✨</div>
+
+      <!-- Preview avatar -->
+      <div style="display:flex;justify-content:center;margin-bottom:20px">
+        <div style="width:90px;height:90px;border-radius:50%;border:3px solid #FF6B9D;overflow:hidden;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px rgba(255,107,157,.3)">
+          <svg id="modal-avatar-svg" data-avatar width="78" height="78" viewBox="0 0 130 180" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+      </div>
+
+      <!-- Nombre -->
+      <input id="modal-nombre" type="text" placeholder="Nombre del niño/a" maxlength="20"
+        style="width:100%;padding:10px 14px;border-radius:12px;border:1.5px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);color:white;font-family:var(--f);font-size:14px;font-weight:700;outline:none;margin-bottom:16px;box-sizing:border-box"
+        oninput="renderModalPreview()"/>
+
+      <!-- Piel -->
+      <div style="font-family:var(--f);font-size:11px;font-weight:800;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Tono de piel</div>
+      <div id="modal-skin-row" style="display:flex;gap:8px;margin-bottom:16px"></div>
+
+      <!-- Pelo -->
+      <div style="font-family:var(--f);font-size:11px;font-weight:800;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Color de pelo</div>
+      <div id="modal-hair-row" style="display:flex;gap:8px;margin-bottom:16px"></div>
+
+      <!-- Peinado -->
+      <div style="font-family:var(--f);font-size:11px;font-weight:800;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Peinado</div>
+      <div id="modal-style-row" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px"></div>
+
+      <!-- Botones -->
+      <div style="display:flex;gap:10px">
+        <button onclick="cerrarModalPerfil()" style="flex:1;padding:11px;border-radius:12px;border:1.5px solid rgba(255,255,255,.15);background:transparent;color:rgba(255,255,255,.5);font-family:var(--f);font-weight:700;font-size:13px;cursor:pointer">Cancelar</button>
+        <button id="modal-guardar-btn" onclick="guardarPerfil()" style="flex:2;padding:11px;border-radius:12px;border:none;background:linear-gradient(135deg,#FF6B9D,#FF8E53);color:white;font-family:var(--f);font-weight:800;font-size:14px;cursor:pointer">Guardar ✓</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CONTRASEÑA PADRES -->
+  <div id="modal-padres-pin" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:200;align-items:center;justify-content:center;backdrop-filter:blur(8px)">
+    <div style="background:linear-gradient(160deg,#1a1a2e,#16213e);border-radius:24px;padding:28px 24px;width:calc(100% - 48px);max-width:300px;border:1px solid rgba(255,255,255,.1);text-align:center">
+      <div style="font-size:32px;margin-bottom:12px">🔒</div>
+      <div style="font-family:var(--f);font-weight:900;font-size:18px;color:white;margin-bottom:6px">Zona de padres</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.5);margin-bottom:20px">Introduce la contraseña</div>
+      <input id="padres-pin-input" type="password" placeholder="Contraseña"
+        style="width:100%;padding:12px 16px;border-radius:12px;border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:white;font-family:var(--f);font-size:16px;font-weight:700;outline:none;text-align:center;box-sizing:border-box;margin-bottom:16px"
+        onkeydown="if(event.key==='Enter') verificarPinPadres()"/>
+      <div id="padres-pin-error" style="display:none;font-size:12px;color:#FF6B9D;font-weight:700;margin-bottom:12px">Contraseña incorrecta</div>
+      <div style="display:flex;gap:10px">
+        <button onclick="cerrarModalPin()" style="flex:1;padding:11px;border-radius:12px;border:1.5px solid rgba(255,255,255,.15);background:transparent;color:rgba(255,255,255,.5);font-family:var(--f);font-weight:700;font-size:13px;cursor:pointer">Cancelar</button>
+        <button onclick="verificarPinPadres()" style="flex:2;padding:11px;border-radius:12px;border:none;background:linear-gradient(135deg,#7C3AED,#5B21B6);color:white;font-family:var(--f);font-weight:800;font-size:14px;cursor:pointer">Entrar →</button>
+      </div>
+    </div>
+  </div>
+</div>
