@@ -1,23 +1,49 @@
 /* =============================================
    PERFILES.JS — Selección y gestión de perfiles
+   Usa Cloudflare D1 como fuente principal con localStorage como caché
    ============================================= */
 
-var PERFILES_KEY = 'aprendeyjuega_perfiles';
+var PERFILES_KEY  = 'aprendeyjuega_perfiles';
 var PADRES_PIN_KEY = 'aprendeyjuega_padres_pin';
 var perfilEditandoId = null;
 var HAIR_NAMES = ['Liso corto','Liso largo','Rizado','Trenzas','Cola alta'];
 var modalAV = { skin: 0, hairColor: 1, hair: 0 };
 
-/* ---- Storage ---- */
-function loadPerfiles() {
-  try { var raw = localStorage.getItem(PERFILES_KEY); return raw ? JSON.parse(raw) : []; }
+/* ---- Storage local de perfiles ---- */
+function loadPerfilesLocal() {
+  try { var r = localStorage.getItem(PERFILES_KEY); return r ? JSON.parse(r) : []; }
   catch(e) { return []; }
 }
-function savePerfiles(p) { localStorage.setItem(PERFILES_KEY, JSON.stringify(p)); }
-function setPerfilActivo(p) { localStorage.setItem('aprendeyjuega_perfil_activo', JSON.stringify(p)); }
+function savePerfilesLocal(p) { localStorage.setItem(PERFILES_KEY, JSON.stringify(p)); }
+function setPerfilActivo(p)   { localStorage.setItem('aprendeyjuega_perfil_activo', JSON.stringify(p)); }
 
 function perfilToAV(p) {
-  return { skin: p.skin, hairColor: p.hairColor, hair: p.hair, acc: 0, unlocked: p.unlocked || [] };
+  return { skin: p.skin, hairColor: p.hair_color !== undefined ? p.hair_color : p.hairColor, hair: p.hair, acc: 0, unlocked: p.unlocked || [] };
+}
+
+/* ---- Cargar perfiles desde la nube ---- */
+function cargarPerfiles(callback) {
+  fetch(API_URL + '/perfiles')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      // Normalizar campo hair_color → hairColor
+      var perfiles = data.map(function(p) {
+        return {
+          id:        p.id,
+          nombre:    p.nombre,
+          skin:      p.skin,
+          hairColor: p.hair_color,
+          hair:      p.hair,
+          unlocked:  typeof p.unlocked === 'string' ? JSON.parse(p.unlocked) : (p.unlocked || [])
+        };
+      });
+      savePerfilesLocal(perfiles);
+      if (callback) callback(perfiles);
+    })
+    .catch(function() {
+      // Sin conexión — usar caché local
+      if (callback) callback(loadPerfilesLocal());
+    });
 }
 
 /* ---- Renderizar pantalla ---- */
@@ -30,7 +56,12 @@ function renderPerfiles() {
       starsEl.appendChild(star);
     }
   }
-  var perfiles = loadPerfiles();
+  // Mostrar local primero, luego actualizar desde la nube
+  pintarPerfiles(loadPerfilesLocal());
+  cargarPerfiles(function(perfiles) { pintarPerfiles(perfiles); });
+}
+
+function pintarPerfiles(perfiles) {
   var grid = document.getElementById('perfiles-grid');
   if (!grid) return;
   grid.innerHTML = '';
@@ -80,15 +111,20 @@ function renderPerfiles() {
 /* ---- Seleccionar perfil ---- */
 function seleccionarPerfil(perfil) {
   setPerfilActivo(perfil);
+  setPerfilActivoId(perfil.id);
   AV = perfilToAV(perfil);
   saveAvatar(AV);
   setNombre(perfil.nombre);
   setCurso(3);
-  checkDayReset();
-  updateHomeUI(); updateStreakUI(); updateMedalUI();
-  updateSubjectUI('mates'); updateSubjectUI('lengua');
-  refreshAllAvatars();
-  go('s-cursos');
+
+  // Cargar progreso desde la nube, luego entrar
+  loadProgresoFromCloud(perfil.id, 3, function() {
+    checkDayReset();
+    updateHomeUI(); updateStreakUI(); updateMedalUI();
+    updateSubjectUI('mates'); updateSubjectUI('lengua');
+    refreshAllAvatars();
+    go('s-cursos');
+  });
 }
 
 /* ---- Modal nuevo/editar ---- */
@@ -119,7 +155,6 @@ function cerrarModalPerfil() {
 }
 
 function renderModalOpciones() {
-  // Piel — usa AVATAR_SKINS de avatar.js
   var skinRow = document.getElementById('modal-skin-row');
   skinRow.innerHTML = '';
   AVATAR_SKINS.forEach(function(c, i) {
@@ -129,7 +164,6 @@ function renderModalOpciones() {
     skinRow.appendChild(btn);
   });
 
-  // Pelo — usa AVATAR_HAIR_COLORS de avatar.js (solo los 3 básicos)
   var hairRow = document.getElementById('modal-hair-row');
   hairRow.innerHTML = '';
   AVATAR_HAIR_COLORS.slice(0, 3).forEach(function(h, i) {
@@ -139,7 +173,6 @@ function renderModalOpciones() {
     hairRow.appendChild(btn);
   });
 
-  // Peinado
   var styleRow = document.getElementById('modal-style-row');
   styleRow.innerHTML = '';
   HAIR_NAMES.forEach(function(n, i) {
@@ -159,17 +192,42 @@ function renderModalPreview() {
 function guardarPerfil() {
   var nombre = document.getElementById('modal-nombre').value.trim();
   if (nombre.length < 2) { document.getElementById('modal-nombre').style.borderColor = '#FF6B9D'; return; }
-  var perfiles = loadPerfiles();
+
+  var datos = {
+    nombre:     nombre,
+    skin:       modalAV.skin,
+    hair_color: modalAV.hairColor,
+    hair:       modalAV.hair,
+    unlocked:   []
+  };
+
   if (perfilEditandoId) {
-    perfiles = perfiles.map(function(p) {
-      return p.id === perfilEditandoId ? { id: p.id, nombre: nombre, skin: modalAV.skin, hairColor: modalAV.hairColor, hair: modalAV.hair, unlocked: p.unlocked || [] } : p;
+    // Editar en la nube
+    fetch(API_URL + '/perfiles/' + perfilEditandoId, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(datos)
+    }).then(function() {
+      cerrarModalPerfil();
+      renderPerfiles();
+    }).catch(function() {
+      cerrarModalPerfil();
+      renderPerfiles();
     });
   } else {
-    perfiles.push({ id: Date.now(), nombre: nombre, skin: modalAV.skin, hairColor: modalAV.hairColor, hair: modalAV.hair, unlocked: [] });
+    // Crear en la nube
+    datos.id = Date.now().toString();
+    fetch(API_URL + '/perfiles', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(datos)
+    }).then(function() {
+      cerrarModalPerfil();
+      cargarPerfiles(function(perfiles) { pintarPerfiles(perfiles); });
+    }).catch(function() {
+      cerrarModalPerfil();
+    });
   }
-  savePerfiles(perfiles);
-  cerrarModalPerfil();
-  renderPerfiles();
 }
 
 /* ---- Zona de padres ---- */
@@ -184,7 +242,7 @@ function abrirZonaPadresDesdePerfiles() {
 function cerrarModalPin() { document.getElementById('modal-padres-pin').style.display = 'none'; }
 
 function verificarPinPadres() {
-  var pin = localStorage.getItem(PADRES_PIN_KEY);
+  var pin   = localStorage.getItem(PADRES_PIN_KEY);
   var input = document.getElementById('padres-pin-input').value;
   if (!pin || input === pin) { cerrarModalPin(); irAPadres(); }
   else { document.getElementById('padres-pin-error').style.display = 'block'; document.getElementById('padres-pin-input').value = ''; }
