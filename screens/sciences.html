@@ -8,22 +8,16 @@
   <div class="hprog bg-teal"><div class="hprog-lbl"><span>Today</span><span id="sciences-hprog-lbl">0 / 10</span></div><div class="hprog-track"><div class="hprog-fill" id="sciences-hprog-fill" style="width:0%"></div></div></div>
   <div class="sa">
     <div class="slbl">Choose a section</div>
-    <div style="font-family:var(--f);font-size:13px;font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.5px;padding:0 16px 10px">Unit 1 · Invertebrates</div>
     <div class="mode-grid">
       <div class="mode-card" style="border-color:var(--teal);background:#F0FDFA" onclick="go('s-sciences-study')">
         <div class="mode-emoji">📖</div>
         <div class="mode-name" style="color:var(--teal)">Study</div>
         <div class="mode-sub">Learn the definitions</div>
       </div>
-      <div class="mode-card" onclick="startSciencesExercises()">
+      <div class="mode-card" onclick="go('s-sciences-exercises')">
         <div class="mode-emoji">✏️</div>
         <div class="mode-name">Exercises</div>
         <div class="mode-sub">Practice by topic</div>
-      </div>
-      <div class="mode-card" onclick="startSciencesMix()">
-        <div class="mode-emoji">🔀</div>
-        <div class="mode-name">Mix</div>
-        <div class="mode-sub">All topics mixed</div>
       </div>
     </div>
     <div class="slbl">My progress in Sciences</div>
@@ -39,19 +33,57 @@
   </div>
 </div>
 
-<!-- STUDY -->
+<!-- STUDY MENU -->
 <div class="screen" id="s-sciences-study">
   <div class="topbar bg-teal"><button class="back-btn" onclick="go('s-sciences')">←</button><h1>Study</h1><span class="top-badge">📖 Read</span></div>
   <div class="sa">
-    <div class="slbl" style="margin-bottom:4px">Unit 1 · Invertebrates</div>
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--teal);background:#F0FDFA" onclick="go('s-sciences-study-invertebrates')">
+        <div class="mode-emoji">🐛</div>
+        <div class="mode-name" style="color:var(--teal)">Invertebrates</div>
+        <div class="mode-sub">6 groups to learn</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDY · INVERTEBRATES -->
+<div class="screen" id="s-sciences-study-invertebrates">
+  <div class="topbar bg-teal"><button class="back-btn" onclick="go('s-sciences-study')">←</button><h1>Invertebrates</h1><span class="top-badge">📖 Read</span></div>
+  <div class="sa">
     <div style="font-size:12px;color:var(--gray-400);font-weight:600;padding:0 16px 14px">Tap each group to expand the definition</div>
     <div id="sciences-study-container"></div>
   </div>
 </div>
 
-<!-- EXERCISES -->
-<div class="screen" id="s-sciences-ex">
+<!-- EXERCISES MENU -->
+<div class="screen" id="s-sciences-exercises">
   <div class="topbar bg-teal"><button class="back-btn" onclick="go('s-sciences')">←</button><h1>Exercises</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--teal);background:#F0FDFA" onclick="startSciencesExercises()">
+        <div class="mode-emoji">🐛</div>
+        <div class="mode-name" style="color:var(--teal)">Invertebrates</div>
+        <div class="mode-sub">10 questions</div>
+      </div>
+    </div>
+    <!-- Mix siempre al final -->
+    <div class="slbl">All topics</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="startSciencesMix()">
+        <div class="mode-emoji">🔀</div>
+        <div class="mode-name">Mix</div>
+        <div class="mode-sub">All topics mixed</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXERCISES · PREGUNTAS -->
+<div class="screen" id="s-sciences-ex">
+  <div class="topbar bg-teal"><button class="back-btn" onclick="go('s-sciences-exercises')">←</button><h1>Invertebrates</h1><span class="top-badge">⭐ +10</span></div>
   <div class="ex-top">
     <span class="ex-badge" style="background:#F0FDFA;color:var(--teal)" id="sc-ex-badge">Question 1</span>
     <span class="ex-badge diff-easy" id="sc-ex-diff">Easy</span>
@@ -67,9 +99,9 @@
   </div>
 </div>
 
-<!-- MIX -->
+<!-- MIX · PREGUNTAS -->
 <div class="screen" id="s-sciences-mix">
-  <div class="topbar bg-teal"><button class="back-btn" onclick="go('s-sciences')">←</button><h1>Mix</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="topbar bg-teal"><button class="back-btn" onclick="go('s-sciences-exercises')">←</button><h1>Mix</h1><span class="top-badge">⭐ +10</span></div>
   <div class="ex-top">
     <span class="ex-badge" style="background:#F0FDFA;color:var(--teal)" id="sc-mix-badge">Question 1</span>
     <span class="ex-badge diff-easy" id="sc-mix-diff">Easy</span>
