@@ -5,6 +5,7 @@
 
 function loadScreens(callback) {
   var files = [
+    'screens/sciences.html',
     'screens/perfiles.html',
     'screens/cursos.html',
     'screens/avatar.html',
@@ -83,7 +84,7 @@ function initApp() {
   updateStreakUI();
   updateHomeUI();
   updateSubjectUI('mates');
-  updateSubjectUI('lengua');
+  updateSubjectUI('sciences');
   setGramTab('bv');
 
   // Precargar ejercicios DESPUÉS de que los datos estén listos
