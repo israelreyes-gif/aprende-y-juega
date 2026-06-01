@@ -43,6 +43,7 @@ function renderSciencesStudy() {
         '<span style="font-size:16px;color:var(--gray-300);transition:transform .2s" class="study-arrow">▼</span>';
 
       var body = document.createElement('div');
+      body.className = 'study-body';
       body.style.cssText = 'display:none;padding:0 16px 16px;border-top:1px solid #F0FDFA';
       body.innerHTML =
         '<div style="font-size:14px;color:#134E4A;line-height:1.7;font-weight:600;margin-top:12px">' + topic.definition + '</div>' +
@@ -50,12 +51,24 @@ function renderSciencesStudy() {
 
       var open = false;
       header.addEventListener('click', function() {
+        // Cerrar todos los demás
+        container.querySelectorAll('.study-body').forEach(function(b) { b.style.display = 'none'; });
+        container.querySelectorAll('.study-arrow').forEach(function(a) { a.style.transform = ''; });
+        container.querySelectorAll('.study-card').forEach(function(c) { c.style.boxShadow = ''; c.style.borderColor = '#99F6E4'; });
+
         open = !open;
+        // Si el pulsado ya estaba abierto, queda cerrado; si no, se abre
         body.style.display = open ? 'block' : 'none';
         header.querySelector('.study-arrow').style.transform = open ? 'rotate(180deg)' : '';
         card.style.boxShadow = open ? '0 4px 16px rgba(20,184,166,.15)' : '';
         card.style.borderColor = open ? 'var(--teal)' : '#99F6E4';
+
+        // Resetear el estado de los demás
+        container.querySelectorAll('.study-open').forEach(function(el) {
+          if (el !== card) el._open = false;
+        });
       });
+      card.classList.add('study-card');
 
       card.appendChild(header);
       card.appendChild(body);
