@@ -37,7 +37,7 @@ var PRECACHE = [
   '/data/curso3/ejercicios-mates.json',
   '/data/curso3/historias.json',
   '/data/curso3/descripciones.json',
-  '/data/sciences.json',
+  '/data/curso3/sciences.json',
   '/icon-192.png',
   '/icon-512.png',
   '/apple-touch-icon.png'
