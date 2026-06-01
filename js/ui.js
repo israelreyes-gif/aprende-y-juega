@@ -67,6 +67,17 @@ function updateHomeUI() {
   setBar('pl-acc-bar', laPct);
   setEl('pl-acc-val', pct(l.totalOk, l.total) + ' aciertos');
 
+  // Sciences
+  if (ST.sciences) {
+    var sc = ST.sciences;
+    setEl('psc-pts', '⭐ ' + sc.pts + ' pts');
+    setBar('psc-hoy-bar', Math.min(100, Math.round(sc.hoy / 10 * 100)));
+    setEl('psc-hoy-val', sc.hoy + ' exerc.');
+    var scaPct = sc.total > 0 ? Math.min(100, Math.round(sc.totalOk / sc.total * 100)) : 0;
+    setBar('psc-acc-bar', scaPct);
+    setEl('psc-acc-val', pct(sc.totalOk, sc.total) + ' correct');
+  }
+
   updateErrorsPanel();
 }
 
@@ -81,6 +92,16 @@ function updateSubjectUI(subject) {
     var prog = Math.min(100, Math.round(m.hoy / 20 * 100));
     setBar('mates-hprog-fill', prog);
     setEl('mates-hprog-lbl', m.hoy + ' / 20');
+  } else if (subject === 'sciences') {
+    if (!ST.sciences) return;
+    var sc = ST.sciences;
+    setEl('sc-hoy',       sc.hoy);
+    setEl('sc-hoy-pct',   pct(sc.hoyOk, sc.hoy));
+    setEl('sc-total',     sc.total);
+    setEl('sc-total-pct', pct(sc.totalOk, sc.total));
+    var progSc = Math.min(100, Math.round(sc.hoy / 10 * 100));
+    setBar('sciences-hprog-fill', progSc);
+    setEl('sciences-hprog-lbl', sc.hoy + ' / 10');
   } else {
     var l = ST.lengua;
     setEl('ls-hoy',       l.hoy);
