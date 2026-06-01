@@ -108,35 +108,81 @@ function showSciencesEx() {
   document.getElementById('sc-ex-fb').style.display = 'none';
   document.getElementById('sc-ex-next').style.display = 'none';
 
-  var opts = document.getElementById('sc-ex-opts');
+  renderSciencesOpts('sc-ex-opts', ex, 1, 'ex');
+}
+
+function renderSciencesOpts(containerId, ex, attempt, mode) {
+  var opts = document.getElementById(containerId);
   opts.innerHTML = '';
   ex.options.slice().sort(function() { return Math.random() - .5; }).forEach(function(opt) {
     var btn = document.createElement('button');
-    btn.className = 'opt-btn';
+    btn.className = 'wopt-btn';
     btn.textContent = opt;
-    btn.addEventListener('click', function() { checkSciencesAnswer(opt, ex.answer, 'ex'); });
+    btn.addEventListener('click', function() { checkSciencesAnswer(opt, ex, attempt, mode); });
     opts.appendChild(btn);
   });
 }
 
-function checkSciencesAnswer(selected, correct, mode) {
+function checkSciencesAnswer(selected, ex, attempt, mode) {
+  var correct  = ex.answer;
   var isCorrect = selected === correct;
-  recordSciencesResult(isCorrect, mode);
+  var fbEl     = document.getElementById('sc-' + mode + '-fb');
+  var opts     = document.getElementById('sc-' + mode + '-opts');
+  var nextBtn  = document.getElementById('sc-' + mode + '-next');
 
-  var fbEl    = document.getElementById('sc-' + mode + '-fb');
-  var opts    = document.getElementById('sc-' + mode + '-opts');
-  var nextBtn = document.getElementById('sc-' + mode + '-next');
+  if (isCorrect) {
+    // Correcto: marcar verde y mostrar siguiente
+    Array.from(opts.children).forEach(function(btn) {
+      btn.disabled = true;
+      if (btn.textContent === correct) btn.className = 'wopt-btn wok';
+    });
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-ok';
+    fbEl.textContent = '✅ Correct!';
+    nextBtn.style.display = 'block';
+    recordSciencesResult(true, attempt === 1);
 
-  Array.from(opts.children).forEach(function(btn) {
-    btn.disabled = true;
-    if (btn.textContent === correct) btn.classList.add('opt-correct');
-    else if (btn.textContent === selected && !isCorrect) btn.classList.add('opt-wrong');
-  });
+  } else if (attempt === 1) {
+    // Primer fallo: marcar rojo, dejar intentar de nuevo
+    Array.from(opts.children).forEach(function(btn) {
+      if (btn.textContent === selected) btn.className = 'wopt-btn wbad';
+    });
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Try again!';
+    // Reactivar los otros botones para segundo intento
+    Array.from(opts.children).forEach(function(btn) {
+      if (btn.textContent !== selected) {
+        btn.disabled = false;
+        var newBtn = btn.cloneNode(true);
+        newBtn.addEventListener('click', function() { checkSciencesAnswer(newBtn.textContent, ex, 2, mode); });
+        btn.parentNode.replaceChild(newBtn, btn);
+      } else {
+        btn.disabled = true;
+      }
+    });
 
-  fbEl.style.display = 'block';
-  fbEl.className = 'feedback ' + (isCorrect ? 'fb-ok' : 'fb-err');
-  fbEl.textContent = isCorrect ? '✅ Correct!' : '❌ The answer is: ' + correct;
-  nextBtn.style.display = 'block';
+  } else {
+    // Segundo fallo: marcar todo, mostrar respuesta correcta y explicación
+    Array.from(opts.children).forEach(function(btn) {
+      btn.disabled = true;
+      if (btn.textContent === correct) btn.className = 'wopt-btn wok';
+      else if (btn.textContent === selected) btn.className = 'wopt-btn wbad';
+    });
+    // Buscar la explicación del topic correcto
+    var explanation = '';
+    if (SC_DATA) {
+      SC_DATA.units[0].topics.forEach(function(t) {
+        if (t.name === correct) explanation = t.definition.replace(/<[^>]+>/g, '') + ' ' + t.extra.replace(/<[^>]+>/g, '');
+      });
+    }
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.innerHTML = '❌ The answer is <strong>' + correct + '</strong>' +
+      (explanation ? '<div style="margin-top:8px;font-size:12px;font-weight:600;opacity:.85;line-height:1.5">' + explanation + '</div>' : '');
+    nextBtn.style.display = 'block';
+    recordSciencesResult(false, false);
+  }
 }
 
 function nextSciencesEx() {
@@ -181,15 +227,7 @@ function showSciencesMix() {
   document.getElementById('sc-mix-fb').style.display = 'none';
   document.getElementById('sc-mix-next').style.display = 'none';
 
-  var opts = document.getElementById('sc-mix-opts');
-  opts.innerHTML = '';
-  ex.options.slice().sort(function() { return Math.random() - .5; }).forEach(function(opt) {
-    var btn = document.createElement('button');
-    btn.className = 'opt-btn';
-    btn.textContent = opt;
-    btn.addEventListener('click', function() { checkSciencesAnswer(opt, ex.answer, 'mix'); });
-    opts.appendChild(btn);
-  });
+  renderSciencesOpts('sc-mix-opts', ex, 1, 'mix');
 }
 
 function nextSciencesMix() {
@@ -203,15 +241,16 @@ function nextSciencesMix() {
 }
 
 /* ---- Registrar resultado ---- */
-function recordSciencesResult(correct, mode) {
+function recordSciencesResult(correct, firstAttempt) {
   if (!ST.sciences) ST.sciences = { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} };
   var s = ST.sciences;
+  // Solo contar el ejercicio una vez (en el primer intento correcto o en el segundo fallo)
   s.hoy++; s.total++;
   if (correct) {
     s.hoyOk++; s.totalOk++;
-    s.pts += 10;
+    s.pts += firstAttempt ? 10 : 5; // 10 pts al primer intento, 5 al segundo
     s.streak++;
-    ST.totalPts += 10;
+    ST.totalPts += firstAttempt ? 10 : 5;
   } else {
     s.streak = Math.max(0, s.streak - 1);
   }
