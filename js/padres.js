@@ -119,6 +119,23 @@ function renderSubjects() {
         {nombre:'Comprensión',   s:st(lErr,'comp')},
         {nombre:'Descripciones', s:st(lErr,'desc')}
       ]
+    },
+    { nombre:'Sciences', icono:'🔬', color:'#14B8A6',
+      items:(function() {
+        var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
+        function st2(errors, key) {
+          var ok = errors[key+'_ok']||0, f = errors[key+'_fail']||0;
+          return { total:ok+f, ok:ok };
+        }
+        var invTotal=0, invOk=0;
+        ['ex1','ex2','ex3','ex4','ex5','ex6','ex7','ex8','ex9','ex10'].forEach(function(k){
+          var s=st2(scErr,k); invTotal+=s.total; invOk+=s.ok;
+        });
+        return [
+          {nombre:'Invertebrates', s:{total:invTotal,ok:invOk}},
+          {nombre:'Mix',           s:st2(scErr,'mix')}
+        ];
+      })()
     }
   ];
 
