@@ -1,0 +1,131 @@
+{
+  "units": [
+    {
+      "id": "invertebrates",
+      "title": "Invertebrates",
+      "emoji": "🐛",
+      "topics": [
+        {
+          "id": "arthropods",
+          "name": "Arthropods",
+          "emoji": "🦗",
+          "definition": "They have an <strong>EXOSKELETON</strong>, a <strong>SEGMENTED BODY</strong>, and legs.",
+          "extra": "There are 4 groups: <em>insects</em>, <em>arachnids</em>, <em>crustaceans</em>, <em>myriapods</em>.",
+          "keyWords": ["EXOSKELETON", "SEGMENTED BODY"]
+        },
+        {
+          "id": "molluscs",
+          "name": "Molluscs",
+          "emoji": "🐌",
+          "definition": "They have a <strong>SOFT BODY</strong>. They can live on <strong>LAND</strong> or in <strong>WATER</strong>. They usually have a <strong>SHELL</strong>.",
+          "extra": "There are 3 groups: <em>gastropods</em> (snails), <em>cephalopods</em> (octopus), <em>bivalves</em> (oysters, mussels).",
+          "keyWords": ["SOFT BODY", "LAND", "WATER", "SHELL"]
+        },
+        {
+          "id": "annelids",
+          "name": "Annelids",
+          "emoji": "🪱",
+          "definition": "They have a <strong>LONG SOFT BODY</strong> with <strong>RINGS</strong>. They can live on <strong>LAND</strong> or in <strong>WATER</strong>.",
+          "extra": "Examples: <em>earthworms</em>, <em>leeches</em>.",
+          "keyWords": ["LONG SOFT BODY", "RINGS", "LAND", "WATER"]
+        },
+        {
+          "id": "echinoderms",
+          "name": "Echinoderms",
+          "emoji": "⭐",
+          "definition": "They have a <strong>HARD SKIN</strong> or <strong>SPINES</strong>. They live in <strong>WATER</strong>. They have <strong>RADIAL SYMMETRY</strong>.",
+          "extra": "Examples: <em>sea urchin</em>, <em>starfish</em>.",
+          "keyWords": ["HARD SKIN", "SPINES", "WATER", "RADIAL SYMMETRY"]
+        },
+        {
+          "id": "cnidarians",
+          "name": "Cnidarians",
+          "emoji": "🪼",
+          "definition": "They have <strong>JELLY-LIKE BODIES</strong> that look like umbrellas. They live in <strong>WATER</strong> and move about in sea currents. They have <strong>POISONOUS TENTACLES</strong>.",
+          "extra": "Examples: <em>anemones</em>, <em>jellyfish</em>.",
+          "keyWords": ["JELLY-LIKE BODIES", "WATER", "POISONOUS TENTACLES"]
+        },
+        {
+          "id": "poriferans",
+          "name": "Poriferans",
+          "emoji": "🧽",
+          "definition": "They are <strong>VERY SIMPLE</strong>. They are aquatic and live <strong>ATTACHED TO ROCKS</strong>. They <strong>CANNOT MOVE</strong>.",
+          "extra": "There are many different shapes and colours.",
+          "keyWords": ["VERY SIMPLE", "ATTACHED TO ROCKS", "CANNOT MOVE"]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "multiChoice",
+          "question": "Which invertebrate group has an EXOSKELETON and a SEGMENTED BODY?",
+          "options": ["Molluscs", "Arthropods", "Annelids", "Poriferans"],
+          "answer": "Arthropods"
+        },
+        {
+          "id": "ex2",
+          "type": "multiChoice",
+          "question": "Snails, octopus and mussels belong to which group?",
+          "options": ["Annelids", "Echinoderms", "Molluscs", "Cnidarians"],
+          "answer": "Molluscs"
+        },
+        {
+          "id": "ex3",
+          "type": "multiChoice",
+          "question": "Which group has JELLY-LIKE BODIES and POISONOUS TENTACLES?",
+          "options": ["Poriferans", "Echinoderms", "Molluscs", "Cnidarians"],
+          "answer": "Cnidarians"
+        },
+        {
+          "id": "ex4",
+          "type": "multiChoice",
+          "question": "Earthworms and leeches belong to which group?",
+          "options": ["Arthropods", "Annelids", "Echinoderms", "Poriferans"],
+          "answer": "Annelids"
+        },
+        {
+          "id": "ex5",
+          "type": "multiChoice",
+          "question": "Which group lives ATTACHED TO ROCKS and CANNOT MOVE?",
+          "options": ["Cnidarians", "Echinoderms", "Molluscs", "Poriferans"],
+          "answer": "Poriferans"
+        },
+        {
+          "id": "ex6",
+          "type": "multiChoice",
+          "question": "Sea urchins and starfish belong to which group?",
+          "options": ["Cnidarians", "Arthropods", "Echinoderms", "Annelids"],
+          "answer": "Echinoderms"
+        },
+        {
+          "id": "ex7",
+          "type": "multiChoice",
+          "question": "Which group has RADIAL SYMMETRY?",
+          "options": ["Molluscs", "Arthropods", "Poriferans", "Echinoderms"],
+          "answer": "Echinoderms"
+        },
+        {
+          "id": "ex8",
+          "type": "multiChoice",
+          "question": "How many groups do Arthropods have?",
+          "options": ["2", "3", "4", "5"],
+          "answer": "4"
+        },
+        {
+          "id": "ex9",
+          "type": "multiChoice",
+          "question": "Which group can live on LAND or in WATER and has RINGS?",
+          "options": ["Echinoderms", "Molluscs", "Annelids", "Cnidarians"],
+          "answer": "Annelids"
+        },
+        {
+          "id": "ex10",
+          "type": "multiChoice",
+          "question": "Jellyfish and anemones belong to which group?",
+          "options": ["Poriferans", "Cnidarians", "Molluscs", "Arthropods"],
+          "answer": "Cnidarians"
+        }
+      ]
+    }
+  ]
+}
