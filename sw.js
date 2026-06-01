@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v2';
+var CACHE = 'aprende-v3';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -15,12 +15,14 @@ var PRECACHE = [
   '/js/medals.js',
   '/js/avatar.js',
   '/js/perfiles.js',
+  '/js/sciences.js',
   '/js/padres.js',
   '/js/descripciones.js',
   '/js/mates.js',
   '/js/lengua.js',
   '/js/comprension.js',
   '/js/app.js',
+  '/screens/sciences.html',
   '/screens/perfiles.html',
   '/screens/cursos.html',
   '/screens/home.html',
@@ -35,6 +37,7 @@ var PRECACHE = [
   '/data/curso3/ejercicios-mates.json',
   '/data/curso3/historias.json',
   '/data/curso3/descripciones.json',
+  '/data/sciences.json',
   '/icon-192.png',
   '/icon-512.png',
   '/apple-touch-icon.png'
