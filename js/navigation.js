@@ -80,6 +80,9 @@ function go(screenId) {
   if (screenId === 's-home')             { updateHomeUI(); updateStreakUI(); updateMedalUI(); }
   if (screenId === 's-mates')            { updateSubjectUI('mates'); }
   if (screenId === 's-lengua')           { updateSubjectUI('lengua'); }
+  if (screenId === 's-english')         { updateSubjectUI('english'); renderEnglishStudyMenu(); renderEnglishExercisesMenu(); }
+  if (screenId === 's-english-study')   { renderEnglishStudyMenu(); }
+  if (screenId === 's-english-exercises') { renderEnglishExercisesMenu(); }
   if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); }
   if (screenId === 's-sciences-study-invertebrates') { renderSciencesStudy(); }
 }
