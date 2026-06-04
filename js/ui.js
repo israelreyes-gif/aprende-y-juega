@@ -112,7 +112,7 @@ function updateSubjectUI(subject) {
     var progEn = Math.min(100, Math.round(en.hoy / 10 * 100));
     setBar('english-hprog-fill', progEn);
     setEl('english-hprog-lbl', en.hoy + ' / 10');
-  } else {
+  } else if (subject === 'sciences') {
     if (!ST.sciences) return;
     var sc = ST.sciences;
     setEl('sc-hoy',       sc.hoy);
