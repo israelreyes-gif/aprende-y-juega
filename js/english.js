@@ -42,6 +42,7 @@ function renderEnglishExercisesMenu() {
     if (!grid) return;
     grid.innerHTML = '';
     EN_DATA.units.forEach(function(unit) {
+      if (!unit.exercises || unit.exercises.length === 0) return;
       var card = document.createElement('div');
       card.className = 'mode-card';
       card.innerHTML =
@@ -66,43 +67,85 @@ function renderEnglishStudy(unit) {
   if (!container) return;
   container.innerHTML = '';
 
+  // Estilos por badgeColor
+  var colorMap = {
+    info:    { bg: 'var(--color-background-info,#EFF6FF)',    border: 'var(--color-border-info,#93C5FD)',    text: 'var(--color-text-info,#1D4ED8)',    cardBorder: '#BFDBFE' },
+    success: { bg: 'var(--color-background-success,#F0FDF4)', border: 'var(--color-border-success,#86EFAC)', text: 'var(--color-text-success,#15803D)',  cardBorder: '#BBF7D0' },
+    warning: { bg: 'var(--color-background-warning,#FFFBEB)', border: 'var(--color-border-warning,#FCD34D)', text: 'var(--color-text-warning,#B45309)',  cardBorder: '#FDE68A' },
+    danger:  { bg: 'var(--color-background-danger,#FEF2F2)',  border: 'var(--color-border-danger,#FCA5A5)',  text: 'var(--color-text-danger,#B91C1C)',   cardBorder: '#FECACA' }
+  };
+
   unit.topics.forEach(function(topic) {
+    var c = colorMap[topic.badgeColor] || colorMap.info;
+
     var card = document.createElement('div');
     card.className = 'study-card';
-    card.style.cssText = 'margin:0 16px 10px;border-radius:16px;border:1.5px solid #BFDBFE;background:white;overflow:hidden;cursor:pointer;transition:box-shadow .2s';
+    card.style.cssText = 'margin:0 16px 10px;border-radius:16px;border:1.5px solid '+c.cardBorder+';background:white;overflow:hidden;cursor:pointer;transition:box-shadow .2s';
 
+    // Header
     var header = document.createElement('div');
     header.style.cssText = 'display:flex;align-items:center;gap:12px;padding:14px 16px';
     header.innerHTML =
-      '<span style="font-size:26px">' + (topic.emoji || '📝') + '</span>' +
+      '<div style="width:36px;height:36px;border-radius:10px;background:'+c.bg+';display:flex;align-items:center;justify-content:center;flex-shrink:0">' +
+        '<i class="ti '+topic.icon+'" style="font-size:18px;color:'+c.text+'" aria-hidden="true"></i>' +
+      '</div>' +
       '<div style="flex:1">' +
         '<div style="font-family:var(--f);font-weight:900;font-size:15px;color:#1E3A5F">' + topic.name + '</div>' +
-        (topic.keyWords && topic.keyWords.length ?
-          '<div style="font-size:11px;color:var(--gray-400);font-weight:600;margin-top:2px">' +
-            topic.keyWords.map(function(k) {
-              return '<span style="background:#EFF6FF;color:var(--blue);padding:1px 6px;border-radius:6px;font-weight:800;font-size:10px">' + k + '</span>';
-            }).join(' ') +
-          '</div>' : '') +
+        '<div style="font-size:11px;margin-top:3px">' +
+          topic.keyWords.map(function(k) {
+            return '<span style="background:'+c.bg+';color:'+c.text+';padding:1px 7px;border-radius:6px;font-weight:800;font-size:10px;margin-right:4px">' + k + '</span>';
+          }).join('') +
+        '</div>' +
       '</div>' +
-      '<span style="font-size:16px;color:var(--gray-300);transition:transform .2s" class="study-arrow">▼</span>';
+      '<span style="font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;background:'+c.bg+';color:'+c.text+'">' + topic.badge + '</span>' +
+      '<span style="font-size:14px;color:#9CA3AF;margin-left:6px;transition:transform .2s" class="study-arrow">▼</span>';
 
+    // Body
     var body = document.createElement('div');
     body.className = 'study-body';
-    body.style.cssText = 'display:none;padding:0 16px 16px;border-top:1px solid #EFF6FF';
-    body.innerHTML =
-      '<div style="font-size:14px;color:#1E3A5F;line-height:1.7;font-weight:600;margin-top:12px">' + topic.definition + '</div>' +
-      (topic.extra ? '<div style="font-size:13px;color:var(--gray-400);line-height:1.6;margin-top:8px">' + topic.extra + '</div>' : '');
+    body.style.cssText = 'display:none;border-top:1px solid '+c.cardBorder;
 
+    // Cuándo se usa
+    var useBox = '<div style="margin:12px 16px;padding:10px 14px;background:'+c.bg+';border-left:3px solid '+c.border+'">' +
+      '<div style="font-size:13px;font-weight:700;color:'+c.text+'">When do we use it?</div>' +
+      '<div style="font-size:13px;color:'+c.text+';margin-top:2px">' + topic.when_en + '</div>' +
+      '<div style="font-size:12px;color:#6B7280;margin-top:4px;font-style:italic">' + topic.when_es + '</div>' +
+    '</div>';
+
+    // Tabla conjugación
+    var tableRows = '';
+    // Afirmativa
+    tableRows += '<div style="grid-column:1/-1;padding:6px 12px;font-size:11px;font-weight:700;color:#6B7280;background:#F9FAFB;border-bottom:0.5px solid #E5E7EB;text-transform:uppercase;letter-spacing:.5px">Affirmative</div>';
+    topic.affirmative.forEach(function(row) {
+      tableRows += '<div style="padding:8px 12px;font-size:13px;color:#6B7280;font-weight:600;border-right:0.5px solid #E5E7EB;border-bottom:0.5px solid #E5E7EB;background:#F9FAFB">' + row.subject + '</div>' +
+        '<div style="padding:8px 12px;font-size:13px;color:#111827;border-bottom:0.5px solid #E5E7EB"><span style="font-weight:700;color:#1D4ED8">' + row.verb + '</span> ' + row.example + '</div>';
+    });
+    // Negativa
+    tableRows += '<div style="grid-column:1/-1;padding:6px 12px;font-size:11px;font-weight:700;color:#6B7280;background:#F9FAFB;border-bottom:0.5px solid #E5E7EB;border-top:0.5px solid #E5E7EB;text-transform:uppercase;letter-spacing:.5px">Negative</div>';
+    topic.negative.forEach(function(row, i) {
+      var isLast = i === topic.negative.length - 1;
+      tableRows += '<div style="padding:8px 12px;font-size:13px;color:#6B7280;font-weight:600;border-right:0.5px solid #E5E7EB;' + (isLast?'':'border-bottom:0.5px solid #E5E7EB;') + 'background:#F9FAFB">' + row.subject + '</div>' +
+        '<div style="padding:8px 12px;font-size:13px;color:#111827;' + (isLast?'':'border-bottom:0.5px solid #E5E7EB;') + '"><span style="font-weight:700;color:#B91C1C">' + row.verb + '</span> ' + row.example + '</div>';
+    });
+
+    var table = '<div style="display:grid;grid-template-columns:1fr 1fr;margin:0 16px 12px;border:0.5px solid #E5E7EB;border-radius:12px;overflow:hidden">' + tableRows + '</div>';
+
+    // Extra
+    var extra = topic.extra ? '<div style="margin:0 16px 16px;font-size:12px;color:#6B7280;line-height:1.6">' + topic.extra + '</div>' : '';
+
+    body.innerHTML = useBox + table + extra;
+
+    // Toggle accordion
     var open = false;
     header.addEventListener('click', function() {
       container.querySelectorAll('.study-body').forEach(function(b) { b.style.display = 'none'; });
       container.querySelectorAll('.study-arrow').forEach(function(a) { a.style.transform = ''; });
-      container.querySelectorAll('.study-card').forEach(function(c) { c.style.boxShadow = ''; c.style.borderColor = '#BFDBFE'; });
+      container.querySelectorAll('.study-card').forEach(function(c2) { c2.style.boxShadow = ''; c2.style.borderColor = c.cardBorder; });
       open = !open;
       body.style.display = open ? 'block' : 'none';
       header.querySelector('.study-arrow').style.transform = open ? 'rotate(180deg)' : '';
       card.style.boxShadow = open ? '0 4px 16px rgba(59,130,246,.15)' : '';
-      card.style.borderColor = open ? 'var(--blue)' : '#BFDBFE';
+      card.style.borderColor = open ? c.border : c.cardBorder;
     });
 
     card.appendChild(header);
@@ -131,14 +174,11 @@ function showEnglishEx() {
   var ex = enExQueue[enExIdx];
   if (!ex) return;
   var total = enExQueue.length;
-
   setEl('en-ex-badge', 'Question ' + (enExIdx + 1) + ' of ' + total);
   setBar('en-ex-prog', Math.round(enExIdx / total * 100));
-
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var diffEl = document.getElementById('en-ex-diff');
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
-
   document.getElementById('en-ex-question').textContent = ex.question;
   document.getElementById('en-ex-fb').style.display = 'none';
   document.getElementById('en-ex-next').style.display = 'none';
@@ -174,7 +214,6 @@ function checkEnglishAnswer(selected, ex, attempt, mode) {
     fbEl.textContent = '✅ Correct!';
     nextBtn.style.display = 'block';
     recordEnglishResult(true, attempt === 1);
-
   } else if (attempt === 1) {
     Array.from(opts.children).forEach(function(btn) {
       if (btn.textContent === selected) {
@@ -189,7 +228,6 @@ function checkEnglishAnswer(selected, ex, attempt, mode) {
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ Try again!';
-
   } else {
     var explanation = ex.explanation || '';
     Array.from(opts.children).forEach(function(btn) {
@@ -216,7 +254,8 @@ function nextEnglishEx() {
 function startEnglishMix() {
   loadEnglishData(function() {
     var all = [];
-    EN_DATA.units.forEach(function(u) { all = all.concat(u.exercises); });
+    EN_DATA.units.forEach(function(u) { all = all.concat(u.exercises || []); });
+    if (all.length === 0) return;
     for (var i = all.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var tmp = all[i]; all[i] = all[j]; all[j] = tmp;
@@ -232,14 +271,11 @@ function showEnglishMix() {
   var ex = enMixQueue[enMixIdx];
   if (!ex) return;
   var total = enMixQueue.length;
-
   setEl('en-mix-badge', 'Question ' + (enMixIdx + 1) + ' of ' + total);
   setBar('en-mix-prog', Math.round(enMixIdx / total * 100));
-
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var diffEl = document.getElementById('en-mix-diff');
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
-
   document.getElementById('en-mix-question').textContent = ex.question;
   document.getElementById('en-mix-fb').style.display = 'none';
   document.getElementById('en-mix-next').style.display = 'none';
@@ -260,8 +296,7 @@ function recordEnglishResult(correct, firstAttempt) {
   if (correct) {
     e.hoyOk++; e.totalOk++;
     var pts = firstAttempt ? 10 : 5;
-    e.pts += pts;
-    e.streak++;
+    e.pts += pts; e.streak++;
     ST.totalPts += pts;
   } else {
     e.streak = Math.max(0, e.streak - 1);
