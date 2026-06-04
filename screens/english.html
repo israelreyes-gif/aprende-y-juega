@@ -1,0 +1,110 @@
+<!-- =============================================
+     ENGLISH.HTML — English (menu + study + exercises)
+     ============================================= -->
+
+<!-- MENU ENGLISH -->
+<div class="screen" id="s-english">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-home')">←</button><h1>🇬🇧 English</h1><span class="top-badge" id="english-medal">🎖️ —</span></div>
+  <div class="hprog bg-blue"><div class="hprog-lbl"><span>Today</span><span id="english-hprog-lbl">0 / 10</span></div><div class="hprog-track"><div class="hprog-fill" id="english-hprog-fill" style="width:0%"></div></div></div>
+  <div class="sa">
+    <div class="slbl">Choose a section</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-study')">
+        <div class="mode-emoji">📖</div>
+        <div class="mode-name" style="color:var(--blue)">Study</div>
+        <div class="mode-sub">Learn vocabulary</div>
+      </div>
+      <div class="mode-card" onclick="go('s-english-exercises')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name">Exercises</div>
+        <div class="mode-sub">Practice by topic</div>
+      </div>
+    </div>
+    <div class="slbl">My progress in English</div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num" style="color:var(--blue)" id="en-hoy">0</div><div class="stat-lbl">Exercises today</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--blue)" id="en-hoy-pct">--</div><div class="stat-lbl">Correct today</div></div>
+    </div>
+    <div style="height:10px"></div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num" style="color:var(--blue)" id="en-total">0</div><div class="stat-lbl">Total exerc.</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--blue)" id="en-total-pct">--</div><div class="stat-lbl">Total correct</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDY MENU -->
+<div class="screen" id="s-english-study">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english')">←</button><h1>Study</h1><span class="top-badge">📖 Read</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid" id="english-study-topics">
+      <!-- Se rellenará dinámicamente con los temas disponibles -->
+    </div>
+  </div>
+</div>
+
+<!-- EXERCISES MENU -->
+<div class="screen" id="s-english-exercises">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english')">←</button><h1>Exercises</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid" id="english-exercise-topics">
+      <!-- Se rellenará dinámicamente con los temas disponibles -->
+    </div>
+    <!-- Mix siempre al final -->
+    <div class="slbl">All topics</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="startEnglishMix()">
+        <div class="mode-emoji">🔀</div>
+        <div class="mode-name">Mix</div>
+        <div class="mode-sub">All topics mixed</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDY · CONTENIDO (se rellena dinámicamente) -->
+<div class="screen" id="s-english-study-detail">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-study')">←</button><h1 id="english-study-detail-title">Topic</h1><span class="top-badge">📖 Read</span></div>
+  <div class="sa">
+    <div style="font-size:12px;color:var(--gray-400);font-weight:600;padding:0 16px 14px">Tap each item to expand</div>
+    <div id="english-study-container"></div>
+  </div>
+</div>
+
+<!-- EXERCISES · PREGUNTAS -->
+<div class="screen" id="s-english-ex">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-exercises')">←</button><h1 id="english-ex-title">Topic</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="en-ex-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="en-ex-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="en-ex-prog"></div></div></div>
+  <div class="sa">
+    <div class="word-card">
+      <div class="word-qtxt" id="en-ex-question">Question</div>
+    </div>
+    <div class="word-opts" id="en-ex-opts"></div>
+    <div class="feedback" id="en-ex-fb" style="display:none"></div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="en-ex-next" onclick="nextEnglishEx()">Next question →</button>
+  </div>
+</div>
+
+<!-- MIX · PREGUNTAS -->
+<div class="screen" id="s-english-mix">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-exercises')">←</button><h1>Mix</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="en-mix-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="en-mix-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="en-mix-prog"></div></div></div>
+  <div class="sa">
+    <div class="word-card">
+      <div class="word-qtxt" id="en-mix-question">Question</div>
+    </div>
+    <div class="word-opts" id="en-mix-opts"></div>
+    <div class="feedback" id="en-mix-fb" style="display:none"></div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="en-mix-next" onclick="nextEnglishMix()">Next question →</button>
+  </div>
+</div>
