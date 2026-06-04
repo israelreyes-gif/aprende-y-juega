@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v4';
+var CACHE = 'aprende-v5';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -40,6 +40,7 @@ var PRECACHE = [
   '/data/curso3/historias.json',
   '/data/curso3/descripciones.json',
   '/data/curso3/sciences.json',
+  '/data/curso3/english.json',
   '/icon-192.png',
   '/icon-512.png',
   '/apple-touch-icon.png'
