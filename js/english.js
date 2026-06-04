@@ -43,20 +43,30 @@ function renderEnglishExercisesMenu() {
     grid.innerHTML = '';
 
     var typeInfo = {
-      'A': { emoji: '✏️', label: 'Complete the sentence', sub: 'Fill in the blank' },
-      'B': { emoji: '🔄', label: 'Make it negative', sub: 'Transform the sentence' },
-      'C': { emoji: '🔍', label: 'Identify the tense', sub: 'What tense is it?' },
-      'D': { emoji: '💬', label: 'Choose the right form', sub: 'Given a situation' }
+      'A': { emoji: '✏️', label: 'Complete the sentence' },
+      'B': { emoji: '🔄', label: 'Make it negative' },
+      'C': { emoji: '🔍', label: 'Identify the tense' },
+      'D': { emoji: '💬', label: 'Choose the right form' }
     };
 
     EN_DATA.units.forEach(function(unit) {
       if (!unit.exercises || unit.exercises.length === 0) return;
 
-      // Título de la unidad
-      var lbl = document.createElement('div');
-      lbl.style.cssText = 'font-family:var(--f);font-size:13px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.5px;padding:0 16px 8px;margin-top:4px';
-      lbl.textContent = unit.emoji + ' ' + unit.title;
-      grid.appendChild(lbl);
+      // Bloque contenedor de la unidad
+      var block = document.createElement('div');
+      block.style.cssText = 'margin:0 16px 20px;border-radius:16px;border:1.5px solid #E5E7EB;overflow:hidden;background:white';
+
+      // Cabecera de la unidad
+      var unitHeader = document.createElement('div');
+      unitHeader.style.cssText = 'padding:12px 16px;background:#EFF6FF;border-bottom:1px solid #BFDBFE;display:flex;align-items:center;gap:8px';
+      unitHeader.innerHTML =
+        '<span style="font-size:20px">' + unit.emoji + '</span>' +
+        '<span style="font-family:var(--f);font-size:13px;font-weight:900;color:#1D4ED8;text-transform:uppercase;letter-spacing:.5px">' + unit.title + '</span>';
+      block.appendChild(unitHeader);
+
+      // Grid de tipos
+      var typeGrid = document.createElement('div');
+      typeGrid.style.cssText = 'display:grid;grid-template-columns:1fr 1fr;';
 
       // Agrupar por tipo
       var byType = {};
@@ -65,19 +75,33 @@ function renderEnglishExercisesMenu() {
         byType[ex.type].push(ex);
       });
 
-      Object.keys(byType).sort().forEach(function(type) {
-        var info = typeInfo[type] || { emoji: '📝', label: 'Exercises', sub: byType[type].length + ' questions' };
-        var card = document.createElement('div');
-        card.className = 'mode-card';
-        card.innerHTML =
-          '<div class="mode-emoji">' + info.emoji + '</div>' +
-          '<div class="mode-name">' + info.label + '</div>' +
-          '<div class="mode-sub">' + byType[type].length + ' questions</div>';
-        card.addEventListener('click', (function(u, t, exs) {
+      var types = Object.keys(byType).sort();
+      types.forEach(function(type, idx) {
+        var info = typeInfo[type] || { emoji: '📝', label: 'Exercises' };
+        var isLastRow = idx >= types.length - (types.length % 2 === 0 ? 2 : 1);
+        var isRight = idx % 2 === 1;
+
+        var cell = document.createElement('div');
+        cell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;' +
+          'border-right:' + (isRight ? 'none' : '0.5px solid #E5E7EB') + ';' +
+          'border-bottom:' + (isLastRow ? 'none' : '0.5px solid #E5E7EB') + ';';
+
+        cell.innerHTML =
+          '<div style="font-size:26px;margin-bottom:8px">' + info.emoji + '</div>' +
+          '<div style="font-family:var(--f);font-weight:800;font-size:14px;color:#111827">' + info.label + '</div>' +
+          '<div style="font-size:12px;color:#6B7280;margin-top:3px">' + byType[type].length + ' questions</div>';
+
+        cell.addEventListener('mouseenter', function() { cell.style.background = '#F9FAFB'; });
+        cell.addEventListener('mouseleave', function() { cell.style.background = ''; });
+        cell.addEventListener('click', (function(u, t, exs) {
           return function() { startEnglishExercisesByType(u, t, exs); };
         })(unit, type, byType[type]));
-        grid.appendChild(card);
+
+        typeGrid.appendChild(cell);
       });
+
+      block.appendChild(typeGrid);
+      grid.appendChild(block);
     });
   });
 }
