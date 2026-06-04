@@ -85,8 +85,9 @@ function renderEnglishExercisesMenu() {
 /* ---- STUDY ---- */
 function openEnglishStudyUnit(unit) {
   setEl('english-study-detail-title', unit.title);
-  renderEnglishStudy(unit);
   go('s-english-study-detail');
+  // Renderizar después de que la pantalla esté activa
+  setTimeout(function() { renderEnglishStudy(unit); }, 0);
 }
 
 function renderEnglishStudy(unit) {
