@@ -22,7 +22,7 @@ function defaultState() {
     weekDays:    [],
     mates:       { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, errors: {} },
     lengua:      { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, errors: {} },
-    sciences:    { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
+    english:     { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
     gramStreak:  0,
     compStreak:  0
   };
@@ -36,7 +36,7 @@ function getStoreKey(curso) {
 function mergeState(s) {
   var def = defaultState();
   Object.keys(def).forEach(function(k) { if (s[k] === undefined) s[k] = def[k]; });
-  ['mates','lengua','sciences'].forEach(function(sub) {
+  ['mates','lengua','sciences','english'].forEach(function(sub) {
     if (!s[sub]) s[sub] = def[sub];
     Object.keys(def[sub]).forEach(function(k) { if (s[sub][k] === undefined) s[sub][k] = def[sub][k]; });
   });
@@ -71,6 +71,7 @@ function syncProgresoToCloud() {
       mates:       ST.mates,
       lengua:      ST.lengua,
       sciences:    ST.sciences,
+      english:     ST.english,
       matesStreak: ST.matesStreak,
       gramStreak:  ST.gramStreak,
       compStreak:  ST.compStreak
