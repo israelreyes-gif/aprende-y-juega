@@ -120,7 +120,7 @@ function renderSubjects() {
         {nombre:'Descripciones', s:st(lErr,'desc')}
       ]
     },
-    { nombre:'English', icono:'🇬🇧', color:'#3B82F6',
+    { nombre:'English', icono:'<svg width="20" height="13" viewBox="0 0 60 40" style="border-radius:2px;vertical-align:middle"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>', color:'#3B82F6',
       items:(function() {
         var eErr = (ST.english && ST.english.errors) ? ST.english.errors : {};
         function ste(errors, key) { var ok=errors[key+'_ok']||0, f=errors[key+'_fail']||0; return {total:ok+f,ok:ok}; }
