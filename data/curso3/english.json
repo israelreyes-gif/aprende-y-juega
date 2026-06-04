@@ -4943,105 +4943,105 @@
         {
           "id": "tobe_d_93",
           "type": "D",
-          "question": "You want to say it was very cold last winter.\nQuieres decir que hizo mucho frío el invierno pasado.",
+          "question": "You want to say your cousin is very tall.\nQuieres decir que tu primo/a es muy alto/a.",
           "options": [
-            "It is very cold.",
-            "It were very cold.",
-            "It was very cold.",
-            "It is being very cold."
+            "My cousin is very tall.",
+            "My cousin was very tall.",
+            "My cousin is being very tall.",
+            "My cousin are very tall."
           ],
-          "answer": "It was very cold.",
+          "answer": "My cousin is very tall.",
           "hasTranslation": true
         },
         {
           "id": "tobe_d_94",
           "type": "D",
-          "question": "You want to say that your parents are watching TV at this moment.\nQuieres decir que tus padres están viendo la tele en este momento.",
+          "question": "You want to say the children were playing when the teacher arrived.\nQuieres decir que los niños estaban jugando cuando llegó el/la profesor/a.",
           "options": [
-            "They watched TV.",
-            "They are watching TV.",
-            "They were watching TV.",
-            "They watch TV."
+            "The children were playing.",
+            "The children is playing.",
+            "The children was playing.",
+            "The children are playing."
           ],
-          "answer": "They are watching TV.",
+          "answer": "The children were playing.",
           "hasTranslation": true
         },
         {
           "id": "tobe_d_95",
           "type": "D",
-          "question": "You want to say that your friend is 10 years old RIGHT NOW.\n¿Quieres decir que tu amigo tiene 10 años AHORA MISMO.",
+          "question": "You want to say you are writing a story right now.\nQuieres decir que estás escribiendo una historia ahora mismo.",
           "options": [
-            "She are ten years old.",
-            "She is ten years old.",
-            "She is being ten years old.",
-            "She was ten years old."
+            "I was writing a story.",
+            "I write a story.",
+            "I wrote a story.",
+            "I am writing a story."
           ],
-          "answer": "She is ten years old.",
+          "answer": "I am writing a story.",
           "hasTranslation": true
         },
         {
           "id": "tobe_d_96",
           "type": "D",
-          "question": "You want to say your neighbours were very noisy last night.\nQuieres decir que tus vecinos estaban muy ruidosos anoche.",
+          "question": "You want to say the museum was very interesting last weekend.\nQuieres decir que el museo fue muy interesante el fin de semana pasado.",
           "options": [
-            "My neighbours were very noisy.",
-            "My neighbours is very noisy.",
-            "My neighbours are very noisy.",
-            "My neighbours was very noisy."
+            "The museum was very interesting.",
+            "The museum were very interesting.",
+            "The museum is very interesting.",
+            "The museum is being very interesting."
           ],
-          "answer": "My neighbours were very noisy.",
+          "answer": "The museum was very interesting.",
           "hasTranslation": true
         },
         {
           "id": "tobe_d_97",
           "type": "D",
-          "question": "You want to say the film was very good last night.\nQuieres decir que la película fue muy buena anoche.",
+          "question": "You want to say your sister is learning to ride a bike right now.\nQuieres decir que tu hermana está aprendiendo a montar en bici ahora mismo.",
           "options": [
-            "It were very good.",
-            "It is very good.",
-            "It is being very good.",
-            "It was very good."
+            "My sister learns to ride a bike.",
+            "My sister is learning to ride a bike.",
+            "My sister learned to ride a bike.",
+            "My sister was learning to ride a bike."
           ],
-          "answer": "It was very good.",
+          "answer": "My sister is learning to ride a bike.",
           "hasTranslation": true
         },
         {
           "id": "tobe_d_98",
           "type": "D",
-          "question": "You want to say your class was very quiet yesterday.\nQuieres decir que tu clase estaba muy tranquila ayer.",
+          "question": "You want to say your grandparents are very healthy.\nQuieres decir que tus abuelos están muy sanos.",
           "options": [
-            "The class is very quiet.",
-            "The class were very quiet.",
-            "The class is being very quiet.",
-            "The class was very quiet."
+            "My grandparents is very healthy.",
+            "My grandparents are very healthy.",
+            "My grandparents was very healthy.",
+            "My grandparents were very healthy."
           ],
-          "answer": "The class was very quiet.",
+          "answer": "My grandparents are very healthy.",
           "hasTranslation": true
         },
         {
           "id": "tobe_d_99",
           "type": "D",
-          "question": "You want to say the cinema was closed last Sunday.\nQuieres decir que el cine estaba cerrado el domingo pasado.",
+          "question": "You want to say you were very happy at the party last night.\nQuieres decir que estabas muy feliz en la fiesta anoche.",
           "options": [
-            "The cinema were closed.",
-            "The cinema is closed.",
-            "The cinema is being closed.",
-            "The cinema was closed."
+            "I is very happy at the party.",
+            "I were very happy at the party.",
+            "I was very happy at the party.",
+            "I am very happy at the party."
           ],
-          "answer": "The cinema was closed.",
+          "answer": "I was very happy at the party.",
           "hasTranslation": true
         },
         {
           "id": "tobe_d_100",
           "type": "D",
-          "question": "You want to say you are happy today.\nQuieres decir que estás feliz hoy.",
+          "question": "You want to say your dog is chasing a ball right now.\nQuieres decir que tu perro está persiguiendo una pelota ahora mismo.",
           "options": [
-            "I am happy.",
-            "I is happy.",
-            "I were happy.",
-            "I was happy."
+            "My dog chases a ball.",
+            "My dog chased a ball.",
+            "My dog is chasing a ball.",
+            "My dog was chasing a ball."
           ],
-          "answer": "I am happy.",
+          "answer": "My dog is chasing a ball.",
           "hasTranslation": true
         }
       ]
@@ -5849,7 +5849,7 @@
         {
           "id": "modal_b_54",
           "type": "B",
-          "question": "Make this sentence negative: \"He must not cheat in the exam.\"",
+          "question": "Make this sentence affirmative: \"He must not cheat in the exam.\"",
           "options": [
             "He does not have to cheat in the exam.",
             "He do not must cheat in the exam.",
@@ -6245,7 +6245,7 @@
         {
           "id": "modal_b_87",
           "type": "B",
-          "question": "Make this sentence negative: \"He must not run inside.\"",
+          "question": "Make this sentence affirmative: \"He must not run inside.\"",
           "options": [
             "He must run inside.",
             "He do not must run inside.",
