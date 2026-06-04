@@ -199,19 +199,6 @@ function startEnglishExercisesByType(unit, type, exercises) {
 function startEnglishExercises(unit) {
   startEnglishExercisesByType(unit, 'ALL', unit.exercises);
 }
-  loadEnglishData(function() {
-    var exs = unit.exercises.slice();
-    for (var i = exs.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var tmp = exs[i]; exs[i] = exs[j]; exs[j] = tmp;
-    }
-    enExQueue = exs;
-    enExIdx   = 0;
-    setEl('english-ex-title', unit.title);
-    go('s-english-ex');
-    showEnglishEx();
-  });
-}
 
 function showEnglishEx() {
   var ex = enExQueue[enExIdx];
