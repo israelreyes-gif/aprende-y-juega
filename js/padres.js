@@ -132,7 +132,8 @@ function renderSubjects() {
         enTotal += enOk;
         return [ {nombre:'All exercises', s:{total:enTotal, ok:enOk}} ];
       })()
-    }
+    },
+    { nombre:'Sciences', icono:'🔬', color:'#14B8A6',
       items:(function() {
         var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
         function st2(errors, key) {
