@@ -5,6 +5,7 @@
 
 function loadScreens(callback) {
   var files = [
+    'screens/english.html',
     'screens/sciences.html',
     'screens/perfiles.html',
     'screens/cursos.html',
@@ -84,6 +85,7 @@ function initApp() {
   updateStreakUI();
   updateHomeUI();
   updateSubjectUI('mates');
+  updateSubjectUI('english');
   updateSubjectUI('sciences');
   setGramTab('bv');
 
