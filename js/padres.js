@@ -120,7 +120,19 @@ function renderSubjects() {
         {nombre:'Descripciones', s:st(lErr,'desc')}
       ]
     },
-    { nombre:'Sciences', icono:'🔬', color:'#14B8A6',
+    { nombre:'English', icono:'🇬🇧', color:'#3B82F6',
+      items:(function() {
+        var eErr = (ST.english && ST.english.errors) ? ST.english.errors : {};
+        function ste(errors, key) { var ok=errors[key+'_ok']||0, f=errors[key+'_fail']||0; return {total:ok+f,ok:ok}; }
+        var enTotal=0, enOk=0;
+        Object.keys(eErr).forEach(function(k) {
+          if (k.endsWith('_ok')) enOk += eErr[k];
+          if (k.endsWith('_fail')) enTotal += eErr[k];
+        });
+        enTotal += enOk;
+        return [ {nombre:'All exercises', s:{total:enTotal, ok:enOk}} ];
+      })()
+    }
       items:(function() {
         var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
         function st2(errors, key) {
