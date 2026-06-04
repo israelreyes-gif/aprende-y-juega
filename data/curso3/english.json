@@ -1,0 +1,160 @@
+{
+  "units": [
+    {
+      "id": "to-be",
+      "title": "To Be",
+      "emoji": "🔵",
+      "topics": [
+        {
+          "id": "present-simple",
+          "name": "Present simple",
+          "emoji": "☀️",
+          "badge": "Present",
+          "badgeColor": "info",
+          "icon": "ti-sun",
+          "when_en": "To describe who or what something IS right now. States, identities, feelings.",
+          "when_es": "Para describir cómo es algo en este momento: estados, identidades, sentimientos.",
+          "keyWords": ["am", "is", "are"],
+          "affirmative": [
+            { "subject": "I", "verb": "am", "example": "happy" },
+            { "subject": "You", "verb": "are", "example": "tall" },
+            { "subject": "He / She / It", "verb": "is", "example": "a teacher" },
+            { "subject": "We", "verb": "are", "example": "friends" },
+            { "subject": "You (plural)", "verb": "are", "example": "students" },
+            { "subject": "They", "verb": "are", "example": "at school" }
+          ],
+          "negative": [
+            { "subject": "I", "verb": "am not", "example": "tired" },
+            { "subject": "You", "verb": "are not", "example": "late" },
+            { "subject": "He / She / It", "verb": "is not", "example": "cold" },
+            { "subject": "We", "verb": "are not", "example": "ready" },
+            { "subject": "You (plural)", "verb": "are not", "example": "wrong" },
+            { "subject": "They", "verb": "are not", "example": "here" }
+          ],
+          "extra": "Contractions: I am → I'm · He is → He's · They are → They're · is not → isn't · are not → aren't"
+        },
+        {
+          "id": "present-continuous",
+          "name": "Present continuous",
+          "emoji": "▶️",
+          "badge": "Present",
+          "badgeColor": "success",
+          "icon": "ti-player-play",
+          "when_en": "To describe something happening RIGHT NOW, at this moment.",
+          "when_es": "Para describir algo que está pasando AHORA MISMO, en este momento.",
+          "keyWords": ["am/is/are + verb -ing"],
+          "affirmative": [
+            { "subject": "I", "verb": "am", "example": "eating" },
+            { "subject": "You", "verb": "are", "example": "reading" },
+            { "subject": "He / She / It", "verb": "is", "example": "playing" },
+            { "subject": "We", "verb": "are", "example": "working" },
+            { "subject": "You (plural)", "verb": "are", "example": "studying" },
+            { "subject": "They", "verb": "are", "example": "running" }
+          ],
+          "negative": [
+            { "subject": "I", "verb": "am not", "example": "sleeping" },
+            { "subject": "You", "verb": "are not", "example": "listening" },
+            { "subject": "He / She / It", "verb": "is not", "example": "coming" },
+            { "subject": "We", "verb": "are not", "example": "waiting" },
+            { "subject": "You (plural)", "verb": "are not", "example": "paying" },
+            { "subject": "They", "verb": "are not", "example": "watching" }
+          ],
+          "extra": "Structure: Subject + am/is/are + verb-ing · Negative: Subject + am/is/are not + verb-ing"
+        },
+        {
+          "id": "past-simple",
+          "name": "Past simple",
+          "emoji": "⏰",
+          "badge": "Past",
+          "badgeColor": "warning",
+          "icon": "ti-clock",
+          "when_en": "To describe how something WAS in the past. A finished state or situation.",
+          "when_es": "Para describir cómo era algo en el pasado. Un estado o situación ya terminado.",
+          "keyWords": ["was", "were"],
+          "affirmative": [
+            { "subject": "I", "verb": "was", "example": "tired" },
+            { "subject": "You", "verb": "were", "example": "right" },
+            { "subject": "He / She / It", "verb": "was", "example": "at home" },
+            { "subject": "We", "verb": "were", "example": "happy" },
+            { "subject": "You (plural)", "verb": "were", "example": "late" },
+            { "subject": "They", "verb": "were", "example": "busy" }
+          ],
+          "negative": [
+            { "subject": "I", "verb": "was not", "example": "ready" },
+            { "subject": "You", "verb": "were not", "example": "there" },
+            { "subject": "He / She / It", "verb": "was not", "example": "easy" },
+            { "subject": "We", "verb": "were not", "example": "wrong" },
+            { "subject": "You (plural)", "verb": "were not", "example": "listening" },
+            { "subject": "They", "verb": "were not", "example": "at school" }
+          ],
+          "extra": "Contractions: was not → wasn't · were not → weren't"
+        }
+      ],
+      "exercises": []
+    },
+    {
+      "id": "modal-verbs",
+      "title": "Modal Verbs",
+      "emoji": "💪",
+      "topics": [
+        {
+          "id": "have-to",
+          "name": "Have to",
+          "emoji": "📋",
+          "badge": "Obligation",
+          "badgeColor": "info",
+          "icon": "ti-list-check",
+          "when_en": "To express EXTERNAL obligation — rules, duties or requirements that come from outside.",
+          "when_es": "Para expresar obligación EXTERNA — reglas, deberes o requisitos que vienen de fuera.",
+          "keyWords": ["have to", "has to"],
+          "affirmative": [
+            { "subject": "I", "verb": "have to", "example": "study every day" },
+            { "subject": "You", "verb": "have to", "example": "wear a uniform" },
+            { "subject": "He / She / It", "verb": "has to", "example": "go to bed early" },
+            { "subject": "We", "verb": "have to", "example": "do our homework" },
+            { "subject": "You (plural)", "verb": "have to", "example": "be quiet" },
+            { "subject": "They", "verb": "have to", "example": "follow the rules" }
+          ],
+          "negative": [
+            { "subject": "I", "verb": "do not have to", "example": "work on Sundays" },
+            { "subject": "You", "verb": "do not have to", "example": "come early" },
+            { "subject": "He / She / It", "verb": "does not have to", "example": "wear a tie" },
+            { "subject": "We", "verb": "do not have to", "example": "pay now" },
+            { "subject": "You (plural)", "verb": "do not have to", "example": "hurry" },
+            { "subject": "They", "verb": "do not have to", "example": "leave yet" }
+          ],
+          "extra": "Contractions: do not → don't · does not → doesn't · Negative means NO OBLIGATION — it is not necessary, but it is allowed."
+        },
+        {
+          "id": "must",
+          "name": "Must",
+          "emoji": "❗",
+          "badge": "Strong obligation",
+          "badgeColor": "danger",
+          "icon": "ti-alert-circle",
+          "when_en": "To express INTERNAL obligation or strong necessity — something the speaker believes is very important.",
+          "when_es": "Para expresar obligación INTERNA o necesidad fuerte — algo que el hablante considera muy importante.",
+          "keyWords": ["must"],
+          "affirmative": [
+            { "subject": "I", "verb": "must", "example": "remember this" },
+            { "subject": "You", "verb": "must", "example": "be careful" },
+            { "subject": "He / She / It", "verb": "must", "example": "see a doctor" },
+            { "subject": "We", "verb": "must", "example": "work together" },
+            { "subject": "You (plural)", "verb": "must", "example": "listen carefully" },
+            { "subject": "They", "verb": "must", "example": "stop now" }
+          ],
+          "negative": [
+            { "subject": "I", "verb": "must not", "example": "be late" },
+            { "subject": "You", "verb": "must not", "example": "touch that" },
+            { "subject": "He / She / It", "verb": "must not", "example": "run inside" },
+            { "subject": "We", "verb": "must not", "example": "forget" },
+            { "subject": "You (plural)", "verb": "must not", "example": "cheat" },
+            { "subject": "They", "verb": "must not", "example": "be noisy" }
+          ],
+          "extra": "Contraction: must not → mustn't · IMPORTANT: must not = PROHIBITION (it is forbidden), very different from do not have to (not necessary)."
+        }
+      ],
+      "exercises": []
+    }
+  ]
+}
