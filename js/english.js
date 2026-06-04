@@ -41,16 +41,43 @@ function renderEnglishExercisesMenu() {
     var grid = document.getElementById('english-exercise-topics');
     if (!grid) return;
     grid.innerHTML = '';
+
+    var typeInfo = {
+      'A': { emoji: '✏️', label: 'Complete the sentence', sub: 'Fill in the blank' },
+      'B': { emoji: '🔄', label: 'Make it negative', sub: 'Transform the sentence' },
+      'C': { emoji: '🔍', label: 'Identify the tense', sub: 'What tense is it?' },
+      'D': { emoji: '💬', label: 'Choose the right form', sub: 'Given a situation' }
+    };
+
     EN_DATA.units.forEach(function(unit) {
       if (!unit.exercises || unit.exercises.length === 0) return;
-      var card = document.createElement('div');
-      card.className = 'mode-card';
-      card.innerHTML =
-        '<div class="mode-emoji">' + unit.emoji + '</div>' +
-        '<div class="mode-name">' + unit.title + '</div>' +
-        '<div class="mode-sub">' + unit.exercises.length + ' questions</div>';
-      card.addEventListener('click', function() { startEnglishExercises(unit); });
-      grid.appendChild(card);
+
+      // Título de la unidad
+      var lbl = document.createElement('div');
+      lbl.style.cssText = 'font-family:var(--f);font-size:13px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.5px;padding:0 16px 8px;margin-top:4px';
+      lbl.textContent = unit.emoji + ' ' + unit.title;
+      grid.appendChild(lbl);
+
+      // Agrupar por tipo
+      var byType = {};
+      unit.exercises.forEach(function(ex) {
+        if (!byType[ex.type]) byType[ex.type] = [];
+        byType[ex.type].push(ex);
+      });
+
+      Object.keys(byType).sort().forEach(function(type) {
+        var info = typeInfo[type] || { emoji: '📝', label: 'Exercises', sub: byType[type].length + ' questions' };
+        var card = document.createElement('div');
+        card.className = 'mode-card';
+        card.innerHTML =
+          '<div class="mode-emoji">' + info.emoji + '</div>' +
+          '<div class="mode-name">' + info.label + '</div>' +
+          '<div class="mode-sub">' + byType[type].length + ' questions</div>';
+        card.addEventListener('click', (function(u, t, exs) {
+          return function() { startEnglishExercisesByType(u, t, exs); };
+        })(unit, type, byType[type]));
+        grid.appendChild(card);
+      });
     });
   });
 }
@@ -155,7 +182,23 @@ function renderEnglishStudy(unit) {
 }
 
 /* ---- EXERCISES ---- */
+function startEnglishExercisesByType(unit, type, exercises) {
+  var exs = exercises.slice();
+  for (var i = exs.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = exs[i]; exs[i] = exs[j]; exs[j] = tmp;
+  }
+  enExQueue = exs;
+  enExIdx   = 0;
+  var typeLabels = { 'A': 'Complete the sentence', 'B': 'Make it negative', 'C': 'Identify the tense', 'D': 'Choose the right form' };
+  setEl('english-ex-title', unit.title + ' — ' + (typeLabels[type] || type));
+  go('s-english-ex');
+  showEnglishEx();
+}
+
 function startEnglishExercises(unit) {
+  startEnglishExercisesByType(unit, 'ALL', unit.exercises);
+}
   loadEnglishData(function() {
     var exs = unit.exercises.slice();
     for (var i = exs.length - 1; i > 0; i--) {
@@ -179,7 +222,16 @@ function showEnglishEx() {
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var diffEl = document.getElementById('en-ex-diff');
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
-  document.getElementById('en-ex-question').textContent = ex.question;
+
+  // Mostrar pregunta — si tiene traducción, separar líneas
+  var qEl = document.getElementById('en-ex-question');
+  if (ex.hasTranslation && ex.question.indexOf('\n') > -1) {
+    var parts = ex.question.split('\n');
+    qEl.innerHTML = '<span>' + parts[0] + '</span><br><span style="font-size:12px;color:#6B7280;font-style:italic">' + parts[1] + '</span>';
+  } else {
+    qEl.textContent = ex.question;
+  }
+
   document.getElementById('en-ex-fb').style.display = 'none';
   document.getElementById('en-ex-next').style.display = 'none';
   renderEnglishOpts('en-ex-opts', ex, 1, 'ex');
@@ -276,7 +328,13 @@ function showEnglishMix() {
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var diffEl = document.getElementById('en-mix-diff');
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
-  document.getElementById('en-mix-question').textContent = ex.question;
+  var qElM = document.getElementById('en-mix-question');
+  if (ex.hasTranslation && ex.question.indexOf('\n') > -1) {
+    var partsM = ex.question.split('\n');
+    qElM.innerHTML = '<span>' + partsM[0] + '</span><br><span style="font-size:12px;color:#6B7280;font-style:italic">' + partsM[1] + '</span>';
+  } else {
+    qElM.textContent = ex.question;
+  }
   document.getElementById('en-mix-fb').style.display = 'none';
   document.getElementById('en-mix-next').style.display = 'none';
   renderEnglishOpts('en-mix-opts', ex, 1, 'mix');
