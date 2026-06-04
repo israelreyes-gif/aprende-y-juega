@@ -78,6 +78,16 @@ function updateHomeUI() {
     setEl('psc-acc-val', pct(sc.totalOk, sc.total) + ' correct');
   }
 
+  // English
+  if (ST.english) {
+    var en = ST.english;
+    setEl('pen-pts', '⭐ ' + en.pts + ' pts');
+    setBar('pen-hoy-bar', Math.min(100, Math.round(en.hoy / 10 * 100)));
+    setEl('pen-hoy-val', en.hoy + ' exerc.');
+    setBar('pen-acc-bar', en.total > 0 ? Math.min(100, Math.round(en.totalOk / en.total * 100)) : 0);
+    setEl('pen-acc-val', pct(en.totalOk, en.total) + ' correct');
+  }
+
   updateErrorsPanel();
 }
 
@@ -92,7 +102,17 @@ function updateSubjectUI(subject) {
     var prog = Math.min(100, Math.round(m.hoy / 20 * 100));
     setBar('mates-hprog-fill', prog);
     setEl('mates-hprog-lbl', m.hoy + ' / 20');
-  } else if (subject === 'sciences') {
+  } else if (subject === 'english') {
+    if (!ST.english) return;
+    var en = ST.english;
+    setEl('en-hoy',       en.hoy);
+    setEl('en-hoy-pct',   pct(en.hoyOk, en.hoy));
+    setEl('en-total',     en.total);
+    setEl('en-total-pct', pct(en.totalOk, en.total));
+    var progEn = Math.min(100, Math.round(en.hoy / 10 * 100));
+    setBar('english-hprog-fill', progEn);
+    setEl('english-hprog-lbl', en.hoy + ' / 10');
+  } else {
     if (!ST.sciences) return;
     var sc = ST.sciences;
     setEl('sc-hoy',       sc.hoy);
