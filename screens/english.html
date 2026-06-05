@@ -11,6 +11,19 @@
     <div class="mode-grid">
       <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-study')">
         <div class="mode-emoji">📖</div>
+        <!-- =============================================
+     ENGLISH.HTML — English (menu + study + exercises)
+     ============================================= -->
+
+<!-- MENU ENGLISH -->
+<div class="screen" id="s-english">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-home')">←</button><h1><svg width="24" height="16" viewBox="0 0 60 40" style="border-radius:3px;vertical-align:middle;margin-right:6px"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>English</h1><span class="top-badge" id="english-medal">🎖️ —</span></div>
+  <div class="hprog bg-blue"><div class="hprog-lbl"><span>Today</span><span id="english-hprog-lbl">0 / 10</span></div><div class="hprog-track"><div class="hprog-fill" id="english-hprog-fill" style="width:0%"></div></div></div>
+  <div class="sa">
+    <div class="slbl">Choose a section</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-study')">
+        <div class="mode-emoji">📖</div>
         <div class="mode-name" style="color:var(--blue)">Study</div>
         <div class="mode-sub">Learn vocabulary</div>
       </div>
@@ -49,7 +62,7 @@
   <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english')">←</button><h1>Exercises</h1><span class="top-badge">⭐ +10</span></div>
   <div class="sa">
     <div id="english-exercise-topics"></div>
-    <div class="slbl">All topics</div>
+    <div style="font-family:var(--f);font-size:13px;font-weight:900;color:#1D4ED8;text-transform:uppercase;letter-spacing:.5px;padding:4px 16px 8px">All topics</div>
     <div class="mode-grid">
       <div class="mode-card" onclick="startEnglishMix()">
         <div class="mode-emoji">🔀</div>
