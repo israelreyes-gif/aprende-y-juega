@@ -46,7 +46,8 @@ function renderEnglishExercisesMenu() {
       'A': { emoji: '✏️', label: 'Complete the sentence' },
       'B': { emoji: '🔄', label: 'Make it negative' },
       'C': { emoji: '🔍', label: 'Identify the tense' },
-      'D': { emoji: '💬', label: 'Choose the right form' }
+      'D': { emoji: '💬', label: 'Choose the right form' },
+      'E': { emoji: '🔀', label: 'Word order' }
     };
 
     EN_DATA.units.forEach(function(unit) {
@@ -99,6 +100,23 @@ function renderEnglishExercisesMenu() {
 
         typeGrid.appendChild(cell);
       });
+
+      // Añadir siempre Word Order como último tipo
+      var woCell = document.createElement('div');
+      var woIsOdd = types.length % 2 !== 0;
+      woCell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;' +
+        'border-right:none;border-bottom:none;' +
+        (woIsOdd ? 'grid-column:1/-1;border-top:0.5px solid #E5E7EB;' : 'border-top:0.5px solid #E5E7EB;border-left:0.5px solid #E5E7EB;');
+      woCell.innerHTML =
+        '<div style="font-size:26px;margin-bottom:8px">🔀</div>' +
+        '<div style="font-family:var(--f);font-weight:800;font-size:14px;color:#111827">Word order</div>' +
+        '<div style="font-size:12px;color:#6B7280;margin-top:3px">Put words in order</div>';
+      woCell.addEventListener('mouseenter', function() { woCell.style.background = '#F9FAFB'; });
+      woCell.addEventListener('mouseleave', function() { woCell.style.background = ''; });
+      woCell.addEventListener('click', (function(u) {
+        return function() { startWordOrder(u); };
+      })(unit));
+      typeGrid.appendChild(woCell);
 
       block.appendChild(typeGrid);
       grid.appendChild(block);
@@ -206,8 +224,230 @@ function renderEnglishStudy(unit) {
   });
 }
 
+/* ---- WORD ORDER ---- */
+var woQueue   = [];
+var woIdx     = 0;
+var woSlots   = [];
+var woBank    = [];
+var woAttempt = 1;
+var woChecked = false;
+
+function extractSentences(unit) {
+  var seen = {};
+  var result = [];
+  unit.exercises.forEach(function(ex) {
+    var ans = ex.answer;
+    var words = ans.split(' ');
+    if (words.length >= 3 && words.length <= 10 && ans.indexOf('"') === -1) {
+      if (!seen[ans]) { seen[ans] = true; result.push(ans); }
+    }
+  });
+  return result;
+}
+
+function shuffleArr(arr) {
+  var a = arr.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+  }
+  return a;
+}
+
+function startWordOrder(unit) {
+  loadEnglishData(function() {
+    var sentences = extractSentences(unit);
+    sentences = shuffleArr(sentences).slice(0, 15); // 15 frases por sesión
+    woQueue = sentences;
+    woIdx   = 0;
+    setEl('en-wo-title', unit.title + ' — Word Order');
+    go('s-english-wordorder');
+    loadWordOrderQuestion();
+  });
+}
+
+function loadWordOrderQuestion() {
+  var sentence = woQueue[woIdx];
+  var total    = woQueue.length;
+  woAttempt    = 1;
+  woChecked    = false;
+
+  setEl('en-wo-badge', 'Question ' + (woIdx + 1) + ' of ' + total);
+  setBar('en-wo-prog', Math.round(woIdx / total * 100));
+
+  var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
+  var diffEl = document.getElementById('en-wo-diff');
+  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
+
+  // Crear objetos palabra con IDs únicos
+  var words = sentence.replace(/[.!?]$/, '').split(' ');
+  woSlots = Array(words.length).fill(null);
+  woBank  = shuffleArr(words.map(function(w, i) { return { id: i, word: w }; }));
+
+  document.getElementById('en-wo-fb').style.display = 'none';
+  document.getElementById('en-wo-next').style.display = 'none';
+  document.getElementById('en-wo-reset').style.display = '';
+
+  updateSlotsBorder('#BFDBFE', 'dashed');
+  renderWoSlots();
+  renderWoBank();
+  updateCheckBtn();
+}
+
+function renderWoSlots() {
+  var el = document.getElementById('en-wo-slots');
+  if (!el) return;
+  el.innerHTML = '';
+  woSlots.forEach(function(slot, i) {
+    var btn = document.createElement('button');
+    btn.style.cssText = 'min-width:48px;padding:6px 12px;border-radius:10px;font-family:var(--f);font-weight:800;font-size:15px;cursor:' + (slot && !woChecked ? 'pointer' : 'default') + ';transition:all .15s;' +
+      'border:1.5px solid ' + (slot ? (woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#22C55E' : '#EF4444') : '#3B82F6') : '#CBD5E1') + ';' +
+      'background:' + (slot ? (woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#F0FDF4' : '#FEF2F2') : 'white') : 'transparent') + ';' +
+      'color:' + (slot ? (woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#15803D' : '#B91C1C') : '#1D4ED8') : 'transparent') + ';' +
+      'box-shadow:' + (slot ? '0 1px 4px rgba(0,0,0,.08)' : 'none') + ';';
+    btn.textContent = slot ? slot.word : '·';
+    if (slot && !woChecked) {
+      (function(idx) {
+        btn.addEventListener('click', function() { removeFromSlot(idx); });
+      })(i);
+    }
+    el.appendChild(btn);
+  });
+}
+
+function renderWoBank() {
+  var el = document.getElementById('en-wo-bank');
+  if (!el) return;
+  el.innerHTML = '';
+  woBank.forEach(function(wordObj) {
+    var btn = document.createElement('button');
+    btn.style.cssText = 'padding:8px 14px;border-radius:10px;border:1.5px solid #E2E8F0;background:white;color:#1E293B;font-family:var(--f);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,.08);transition:transform .1s';
+    btn.textContent = wordObj.word;
+    btn.addEventListener('mousedown', function() { btn.style.transform = 'scale(.95)'; });
+    btn.addEventListener('mouseup',   function() { btn.style.transform = ''; });
+    (function(wo) {
+      btn.addEventListener('click', function() { placeWord(wo); });
+    })(wordObj);
+    el.appendChild(btn);
+  });
+}
+
+function placeWord(wordObj) {
+  if (woChecked) return;
+  var idx = woSlots.indexOf(null);
+  if (idx === -1) return;
+  woSlots[idx] = wordObj;
+  woBank = woBank.filter(function(w) { return w.id !== wordObj.id; });
+  renderWoSlots();
+  renderWoBank();
+  updateCheckBtn();
+}
+
+function removeFromSlot(idx) {
+  if (woChecked) return;
+  var word = woSlots[idx];
+  if (!word) return;
+  woSlots[idx] = null;
+  woBank.push(word);
+  renderWoSlots();
+  renderWoBank();
+  updateCheckBtn();
+}
+
+function resetWordOrder() {
+  var sentence = woQueue[woIdx];
+  var words = sentence.replace(/[.!?]$/, '').split(' ');
+  woSlots   = Array(words.length).fill(null);
+  woBank    = shuffleArr(words.map(function(w, i) { return { id: i, word: w }; }));
+  woAttempt = 1;
+  woChecked = false;
+  document.getElementById('en-wo-fb').style.display = 'none';
+  document.getElementById('en-wo-next').style.display = 'none';
+  document.getElementById('en-wo-slots').dataset.correct = '';
+  updateSlotsBorder('#BFDBFE', 'dashed');
+  renderWoSlots();
+  renderWoBank();
+  updateCheckBtn();
+}
+
+function updateCheckBtn() {
+  var allFilled = woSlots.every(function(s) { return s !== null; });
+  var btn = document.getElementById('en-wo-check');
+  if (!btn) return;
+  btn.style.background    = allFilled ? 'var(--blue)' : 'var(--gray-200)';
+  btn.style.color         = allFilled ? 'white' : 'var(--gray-400)';
+  btn.style.cursor        = allFilled ? 'pointer' : 'default';
+}
+
+function updateSlotsBorder(color, style) {
+  var el = document.getElementById('en-wo-slots');
+  if (el) el.style.borderColor = color;
+}
+
+function checkWordOrder() {
+  if (!woSlots.every(function(s) { return s !== null; })) return;
+  var sentence = woQueue[woIdx];
+  var cleanSentence = sentence.replace(/[.!?]$/, '');
+  var answer = woSlots.map(function(s) { return s.word; }).join(' ');
+  var isCorrect = answer === cleanSentence;
+  var slotsEl = document.getElementById('en-wo-slots');
+  var fbEl    = document.getElementById('en-wo-fb');
+  var nextBtn = document.getElementById('en-wo-next');
+  var resetBtn = document.getElementById('en-wo-reset');
+
+  if (isCorrect) {
+    woChecked = true;
+    slotsEl.dataset.correct = '1';
+    slotsEl.style.borderStyle  = 'solid';
+    slotsEl.style.borderColor  = '#22C55E';
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-ok';
+    fbEl.textContent = '✅ Correct!';
+    nextBtn.style.display = 'block';
+    resetBtn.style.display = 'none';
+    document.getElementById('en-wo-check').style.display = 'none';
+    recordEnglishResult(true, woAttempt === 1);
+
+  } else if (woAttempt === 1) {
+    woAttempt = 2;
+    slotsEl.style.borderColor = '#EF4444';
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Not quite — try again!';
+    // Animación shake
+    slotsEl.style.animation = 'shake .4s ease';
+    setTimeout(function() { slotsEl.style.animation = ''; }, 500);
+
+  } else {
+    woChecked = true;
+    slotsEl.dataset.correct = '0';
+    slotsEl.style.borderStyle = 'solid';
+    slotsEl.style.borderColor = '#EF4444';
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.innerHTML = '❌ The correct order is: <strong>' + sentence + '</strong>';
+    nextBtn.style.display = 'block';
+    resetBtn.style.display = 'none';
+    document.getElementById('en-wo-check').style.display = 'none';
+    recordEnglishResult(false, false);
+  }
+
+  renderWoSlots();
+}
+
+function nextWordOrder() {
+  woIdx++;
+  if (woIdx >= woQueue.length) {
+    go('s-english-exercises');
+    updateSubjectUI('english');
+    return;
+  }
+  loadWordOrderQuestion();
+}
+
 /* ---- EXERCISES ---- */
 function startEnglishExercisesByType(unit, type, exercises) {
+  if (type === 'E') { startWordOrder(unit); return; }
   var exs = exercises.slice();
   for (var i = exs.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
