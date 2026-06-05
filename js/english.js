@@ -101,16 +101,17 @@ function renderEnglishExercisesMenu() {
         typeGrid.appendChild(cell);
       });
 
-      // Añadir siempre Word Order como último tipo
+      // Word Order siempre fila completa al final
       var woCell = document.createElement('div');
-      var woIsOdd = types.length % 2 !== 0;
-      woCell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;' +
-        'border-right:none;border-bottom:none;' +
-        (woIsOdd ? 'grid-column:1/-1;border-top:0.5px solid #E5E7EB;' : 'border-top:0.5px solid #E5E7EB;border-left:0.5px solid #E5E7EB;');
+      woCell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;grid-column:1/-1;border-top:0.5px solid #E5E7EB;';
       woCell.innerHTML =
-        '<div style="font-size:26px;margin-bottom:8px">🔀</div>' +
-        '<div style="font-family:var(--f);font-weight:800;font-size:14px;color:#111827">Word order</div>' +
-        '<div style="font-size:12px;color:#6B7280;margin-top:3px">Put words in order</div>';
+        '<div style="display:flex;align-items:center;gap:12px">' +
+          '<div style="font-size:26px">🔀</div>' +
+          '<div>' +
+            '<div style="font-family:var(--f);font-weight:800;font-size:14px;color:#111827">Word order</div>' +
+            '<div style="font-size:12px;color:#6B7280;margin-top:2px">Put words in order</div>' +
+          '</div>' +
+        '</div>';
       woCell.addEventListener('mouseenter', function() { woCell.style.background = '#F9FAFB'; });
       woCell.addEventListener('mouseleave', function() { woCell.style.background = ''; });
       woCell.addEventListener('click', (function(u) {
