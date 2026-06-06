@@ -846,6 +846,8 @@ function startVocabExercise(type) {
 }
 
 /* ---- WORD TO IMAGE ---- */
+var vocabExCurrentOpts = []; // opciones fijas para la pregunta actual
+
 function loadW2IQuestion() {
   var word  = vocabExQueue[vocabExIdx];
   var total = vocabExQueue.length;
@@ -862,20 +864,21 @@ function loadW2IQuestion() {
   setEl('w2i-word', word.word);
   document.getElementById('w2i-fb').style.display   = 'none';
   document.getElementById('w2i-next').style.display = 'none';
-  renderW2IOpts(word, false);
-}
 
-function renderW2IOpts(word, showCorrect) {
-  // Obtener distractores
+  // Generar opciones UNA SOLA VEZ y guardarlas
   var allWords = [];
   VOCAB_DATA.units.forEach(function(u) { allWords = allWords.concat(u.words); });
   var distractors = shuffleArr2(allWords.filter(function(w) { return w.word !== word.word; })).slice(0, 2);
-  var options = shuffleArr2([word].concat(distractors));
+  vocabExCurrentOpts = shuffleArr2([word].concat(distractors));
 
+  renderW2IOpts(word);
+}
+
+function renderW2IOpts(word) {
   var container = document.getElementById('w2i-opts');
   container.innerHTML = '';
 
-  options.forEach(function(opt) {
+  vocabExCurrentOpts.forEach(function(opt) {
     var btn = document.createElement('button');
     var isWrong   = vocabExWrong === opt.word;
     var isCorrect = opt.word === word.word;
@@ -917,7 +920,7 @@ function pickW2I(opt, word) {
     fbEl.className = 'feedback fb-ok';
     fbEl.textContent = '✅ Correct!';
     nextBtn.style.display = 'block';
-    renderW2IOpts(word, true);
+    renderW2IOpts(word);
     recordEnglishResult(true, vocabExAttempt === 1);
   } else if (vocabExAttempt === 1) {
     vocabExAttempt = 2;
@@ -925,7 +928,7 @@ function pickW2I(opt, word) {
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ Not quite — try again!';
-    renderW2IOpts(word, false);
+    renderW2IOpts(word);
   } else {
     vocabExDone  = true;
     vocabExWrong = opt.word;
@@ -933,7 +936,7 @@ function pickW2I(opt, word) {
     fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ The answer is: ' + word.emoji + ' ' + word.word;
     nextBtn.style.display = 'block';
-    renderW2IOpts(word, true);
+    renderW2IOpts(word);
     recordEnglishResult(false, false);
   }
 }
@@ -962,6 +965,10 @@ function loadI2WQuestion() {
   inp.style.borderColor = 'var(--gray-200)';
   inp.style.background  = 'white';
   inp.style.color       = 'var(--gray-800)';
+  inp.oninput = function() {
+    this.value = this.value.toUpperCase();
+    updateI2WCheckBtn();
+  };
   updateI2WCheckBtn();
 }
 
@@ -976,10 +983,6 @@ function updateI2WCheckBtn() {
 }
 
 // Escuchar cambios en el input para activar el botón
-document.addEventListener('DOMContentLoaded', function() {
-  var inp = document.getElementById('i2w-input');
-  if (inp) inp.addEventListener('input', updateI2WCheckBtn);
-});
 
 function checkVocabI2W() {
   var word  = vocabExQueue[vocabExIdx];
