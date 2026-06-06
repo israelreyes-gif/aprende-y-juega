@@ -244,7 +244,9 @@ function extractSentences(unit) {
   unit.exercises.forEach(function(ex) {
     var ans = ex.answer;
     var words = ans.split(' ');
-    if (words.length >= 3 && words.length <= 10 && ans.indexOf('"') === -1) {
+    // Excluir frases con comas, comillas, paréntesis o apóstrofes internos
+    var hasSpecial = /[,;()"']/.test(ans);
+    if (words.length >= 3 && words.length <= 10 && !hasSpecial) {
       if (!seen[ans]) { seen[ans] = true; result.push(ans); }
     }
   });
