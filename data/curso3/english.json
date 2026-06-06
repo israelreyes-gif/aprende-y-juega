@@ -247,7 +247,7 @@
         {
           "id": "tobe_a_1",
           "type": "A",
-          "question": "He ___ a good student.",
+          "question": "He ___ a good student today.",
           "options": [
             "am",
             "were",
@@ -259,7 +259,7 @@
         {
           "id": "tobe_a_2",
           "type": "A",
-          "question": "The teacher ___ tired.",
+          "question": "The teacher ___ tired two days ago.",
           "options": [
             "are",
             "am",
@@ -271,7 +271,7 @@
         {
           "id": "tobe_a_3",
           "type": "A",
-          "question": "Our cat ___ helping.",
+          "question": "Our cat ___ helping at the moment.",
           "options": [
             "are",
             "is",
@@ -283,7 +283,7 @@
         {
           "id": "tobe_a_4",
           "type": "A",
-          "question": "The children ___ a doctor.",
+          "question": "The children ___ doctors.",
           "options": [
             "were",
             "am",
@@ -295,7 +295,7 @@
         {
           "id": "tobe_a_5",
           "type": "A",
-          "question": "He ___ climbing.",
+          "question": "He ___ climbing at this moment.",
           "options": [
             "am",
             "is",
@@ -307,7 +307,7 @@
         {
           "id": "tobe_a_6",
           "type": "A",
-          "question": "My brother ___ really excited.",
+          "question": "My brother ___ really excited last Monday.",
           "options": [
             "were",
             "was",
@@ -319,7 +319,7 @@
         {
           "id": "tobe_a_7",
           "type": "A",
-          "question": "Our cat ___ in the garden.",
+          "question": "Our cat ___ in the garden last night.",
           "options": [
             "am",
             "are",
@@ -331,7 +331,7 @@
         {
           "id": "tobe_a_8",
           "type": "A",
-          "question": "The students ___ at school.",
+          "question": "The students ___ at school today.",
           "options": [
             "is",
             "was",
@@ -343,7 +343,7 @@
         {
           "id": "tobe_a_9",
           "type": "A",
-          "question": "We ___ riding a bike.",
+          "question": "We ___ riding a bike at this moment.",
           "options": [
             "are",
             "am",
@@ -355,7 +355,7 @@
         {
           "id": "tobe_a_10",
           "type": "A",
-          "question": "You ___ in the kitchen.",
+          "question": "You ___ in the kitchen today.",
           "options": [
             "am",
             "are",
@@ -367,7 +367,7 @@
         {
           "id": "tobe_a_11",
           "type": "A",
-          "question": "The children ___ on the bus.",
+          "question": "The children ___ on the bus today.",
           "options": [
             "was",
             "is",
@@ -379,7 +379,7 @@
         {
           "id": "tobe_a_12",
           "type": "A",
-          "question": "Our cat ___ very young.",
+          "question": "Our cat ___ very young this morning.",
           "options": [
             "are",
             "was",
@@ -391,7 +391,7 @@
         {
           "id": "tobe_a_13",
           "type": "A",
-          "question": "It ___ riding a bike.",
+          "question": "It ___ riding a bike right now.",
           "options": [
             "is",
             "are",
@@ -403,7 +403,7 @@
         {
           "id": "tobe_a_14",
           "type": "A",
-          "question": "The children ___ eating.",
+          "question": "The children ___ eating currently.",
           "options": [
             "am",
             "were",
@@ -415,7 +415,7 @@
         {
           "id": "tobe_a_15",
           "type": "A",
-          "question": "My brother ___ hungry.",
+          "question": "My brother ___ hungry today.",
           "options": [
             "am",
             "were",
@@ -427,7 +427,7 @@
         {
           "id": "tobe_a_16",
           "type": "A",
-          "question": "It ___ jumping.",
+          "question": "It ___ jumping at this moment.",
           "options": [
             "am",
             "is",
@@ -439,7 +439,7 @@
         {
           "id": "tobe_a_17",
           "type": "A",
-          "question": "The dog ___ doing homework.",
+          "question": "The dog ___ doing homework now.",
           "options": [
             "are",
             "is",
@@ -451,7 +451,7 @@
         {
           "id": "tobe_a_18",
           "type": "A",
-          "question": "You ___ watching TV.",
+          "question": "You ___ watching TV now.",
           "options": [
             "was",
             "is",
@@ -463,7 +463,7 @@
         {
           "id": "tobe_a_19",
           "type": "A",
-          "question": "My friends ___ a nurse.",
+          "question": "My friends ___ nurses.",
           "options": [
             "am",
             "were",
@@ -475,7 +475,7 @@
         {
           "id": "tobe_a_20",
           "type": "A",
-          "question": "I ___ in the garden.",
+          "question": "I ___ in the garden today.",
           "options": [
             "are",
             "am",
@@ -499,7 +499,7 @@
         {
           "id": "tobe_a_22",
           "type": "A",
-          "question": "My brother ___ eating.",
+          "question": "My brother ___ eating at this moment.",
           "options": [
             "are",
             "is",
@@ -511,7 +511,7 @@
         {
           "id": "tobe_a_23",
           "type": "A",
-          "question": "The teacher ___ on the bus.",
+          "question": "The teacher ___ on the bus an hour ago.",
           "options": [
             "am",
             "is",
@@ -523,7 +523,7 @@
         {
           "id": "tobe_a_24",
           "type": "A",
-          "question": "My brother ___ sleeping.",
+          "question": "My brother ___ sleeping currently.",
           "options": [
             "am",
             "are",
@@ -535,7 +535,7 @@
         {
           "id": "tobe_a_25",
           "type": "A",
-          "question": "We ___ angry.",
+          "question": "We ___ angry last night.",
           "options": [
             "were",
             "am",
@@ -547,7 +547,7 @@
         {
           "id": "tobe_a_26",
           "type": "A",
-          "question": "You ___ very funny.",
+          "question": "You ___ very funny last night.",
           "options": [
             "are",
             "were",
@@ -559,7 +559,7 @@
         {
           "id": "tobe_a_27",
           "type": "A",
-          "question": "The children ___ a footballer.",
+          "question": "The children ___ footballers.",
           "options": [
             "was",
             "were",
@@ -571,7 +571,7 @@
         {
           "id": "tobe_a_28",
           "type": "A",
-          "question": "He ___ playing football.",
+          "question": "He ___ playing football currently.",
           "options": [
             "was",
             "is",
@@ -595,7 +595,7 @@
         {
           "id": "tobe_a_30",
           "type": "A",
-          "question": "We ___ talking.",
+          "question": "We ___ talking currently.",
           "options": [
             "are",
             "am",
@@ -619,7 +619,7 @@
         {
           "id": "tobe_a_32",
           "type": "A",
-          "question": "It ___ cooking.",
+          "question": "It ___ cooking at this moment.",
           "options": [
             "were",
             "are",
@@ -631,7 +631,7 @@
         {
           "id": "tobe_a_33",
           "type": "A",
-          "question": "The teacher ___ with her mum.",
+          "question": "The teacher ___ with her mum today.",
           "options": [
             "am",
             "is",
@@ -643,7 +643,7 @@
         {
           "id": "tobe_a_34",
           "type": "A",
-          "question": "My friends ___ waiting.",
+          "question": "My friends ___ waiting currently.",
           "options": [
             "is",
             "am",
@@ -655,7 +655,7 @@
         {
           "id": "tobe_a_35",
           "type": "A",
-          "question": "It ___ drawing.",
+          "question": "It ___ drawing right now.",
           "options": [
             "is",
             "are",
@@ -667,7 +667,7 @@
         {
           "id": "tobe_a_36",
           "type": "A",
-          "question": "It ___ outside.",
+          "question": "It ___ outside this morning.",
           "options": [
             "are",
             "is",
@@ -679,7 +679,7 @@
         {
           "id": "tobe_a_37",
           "type": "A",
-          "question": "My friends ___ in the park.",
+          "question": "My friends ___ in the park this morning.",
           "options": [
             "were",
             "is",
@@ -691,7 +691,7 @@
         {
           "id": "tobe_a_38",
           "type": "A",
-          "question": "The students ___ a footballer.",
+          "question": "The students ___ footballers last year.",
           "options": [
             "was",
             "were",
@@ -703,7 +703,7 @@
         {
           "id": "tobe_a_39",
           "type": "A",
-          "question": "He ___ reading.",
+          "question": "He ___ reading at this moment.",
           "options": [
             "is",
             "was",
@@ -715,7 +715,7 @@
         {
           "id": "tobe_a_40",
           "type": "A",
-          "question": "The teacher ___ very young.",
+          "question": "The teacher ___ very young two days ago.",
           "options": [
             "was",
             "am",
@@ -727,7 +727,7 @@
         {
           "id": "tobe_a_41",
           "type": "A",
-          "question": "She ___ drawing.",
+          "question": "She ___ drawing currently.",
           "options": [
             "was",
             "were",
@@ -739,7 +739,7 @@
         {
           "id": "tobe_a_42",
           "type": "A",
-          "question": "I ___ hungry.",
+          "question": "I ___ hungry last summer.",
           "options": [
             "are",
             "is",
@@ -751,7 +751,7 @@
         {
           "id": "tobe_a_43",
           "type": "A",
-          "question": "The children ___ talking.",
+          "question": "The children ___ talking currently.",
           "options": [
             "am",
             "is",
@@ -763,7 +763,7 @@
         {
           "id": "tobe_a_44",
           "type": "A",
-          "question": "Her sister ___ bored.",
+          "question": "Her sister ___ bored last year.",
           "options": [
             "were",
             "was",
@@ -775,7 +775,7 @@
         {
           "id": "tobe_a_45",
           "type": "A",
-          "question": "He ___ drawing.",
+          "question": "He ___ drawing right now.",
           "options": [
             "was",
             "were",
@@ -787,7 +787,7 @@
         {
           "id": "tobe_a_46",
           "type": "A",
-          "question": "I ___ angry.",
+          "question": "I ___ angry this morning.",
           "options": [
             "are",
             "were",
@@ -799,7 +799,7 @@
         {
           "id": "tobe_a_47",
           "type": "A",
-          "question": "We ___ cooking.",
+          "question": "We ___ cooking at this moment.",
           "options": [
             "are",
             "were",
@@ -811,7 +811,7 @@
         {
           "id": "tobe_a_48",
           "type": "A",
-          "question": "You ___ really excited.",
+          "question": "You ___ really excited last Monday.",
           "options": [
             "were",
             "are",
@@ -823,7 +823,7 @@
         {
           "id": "tobe_a_49",
           "type": "A",
-          "question": "The students ___ really excited.",
+          "question": "The students ___ really excited today.",
           "options": [
             "am",
             "are",
@@ -835,7 +835,7 @@
         {
           "id": "tobe_a_50",
           "type": "A",
-          "question": "My friends ___ sleeping.",
+          "question": "My friends ___ sleeping now.",
           "options": [
             "are",
             "were",
@@ -847,7 +847,7 @@
         {
           "id": "tobe_a_51",
           "type": "A",
-          "question": "The dog ___ running.",
+          "question": "The dog ___ running at this moment.",
           "options": [
             "is",
             "am",
@@ -859,7 +859,7 @@
         {
           "id": "tobe_a_52",
           "type": "A",
-          "question": "My friends ___ a good student.",
+          "question": "My friends ___ good students last summer.",
           "options": [
             "was",
             "is",
@@ -871,7 +871,7 @@
         {
           "id": "tobe_a_53",
           "type": "A",
-          "question": "It ___ really excited.",
+          "question": "It ___ really excited last year.",
           "options": [
             "were",
             "was",
@@ -883,7 +883,7 @@
         {
           "id": "tobe_a_54",
           "type": "A",
-          "question": "I ___ dancing.",
+          "question": "I ___ dancing at the moment.",
           "options": [
             "was",
             "is",
@@ -895,7 +895,7 @@
         {
           "id": "tobe_a_55",
           "type": "A",
-          "question": "The dog ___ hungry.",
+          "question": "The dog ___ hungry last week.",
           "options": [
             "is",
             "was",
@@ -907,7 +907,7 @@
         {
           "id": "tobe_a_56",
           "type": "A",
-          "question": "They ___ outside.",
+          "question": "They ___ outside last summer.",
           "options": [
             "is",
             "are",
@@ -919,7 +919,7 @@
         {
           "id": "tobe_a_57",
           "type": "A",
-          "question": "We ___ ready.",
+          "question": "We ___ ready today.",
           "options": [
             "are",
             "was",
@@ -931,7 +931,7 @@
         {
           "id": "tobe_a_58",
           "type": "A",
-          "question": "I ___ reading.",
+          "question": "I ___ reading at the moment.",
           "options": [
             "is",
             "was",
@@ -943,7 +943,7 @@
         {
           "id": "tobe_a_59",
           "type": "A",
-          "question": "He ___ dancing.",
+          "question": "He ___ dancing right now.",
           "options": [
             "am",
             "is",
@@ -955,7 +955,7 @@
         {
           "id": "tobe_a_60",
           "type": "A",
-          "question": "She ___ with her mum.",
+          "question": "She ___ with her mum two days ago.",
           "options": [
             "is",
             "was",
@@ -967,7 +967,7 @@
         {
           "id": "tobe_a_61",
           "type": "A",
-          "question": "He ___ ready.",
+          "question": "He ___ ready last week.",
           "options": [
             "is",
             "was",
@@ -979,7 +979,7 @@
         {
           "id": "tobe_a_62",
           "type": "A",
-          "question": "Her sister ___ hungry.",
+          "question": "Her sister ___ hungry today.",
           "options": [
             "is",
             "am",
@@ -991,7 +991,7 @@
         {
           "id": "tobe_a_63",
           "type": "A",
-          "question": "The students ___ outside.",
+          "question": "The students ___ outside last summer.",
           "options": [
             "am",
             "are",
@@ -1003,7 +1003,7 @@
         {
           "id": "tobe_a_64",
           "type": "A",
-          "question": "He ___ on the bus.",
+          "question": "He ___ on the bus today.",
           "options": [
             "are",
             "am",
@@ -1015,7 +1015,7 @@
         {
           "id": "tobe_a_65",
           "type": "A",
-          "question": "The dog ___ late.",
+          "question": "The dog ___ late today.",
           "options": [
             "is",
             "am",
@@ -1027,7 +1027,7 @@
         {
           "id": "tobe_a_66",
           "type": "A",
-          "question": "The children ___ in the garden.",
+          "question": "The children ___ in the garden today.",
           "options": [
             "am",
             "is",
@@ -1039,7 +1039,7 @@
         {
           "id": "tobe_a_67",
           "type": "A",
-          "question": "The dog ___ bored.",
+          "question": "The dog ___ bored last summer.",
           "options": [
             "were",
             "is",
@@ -1051,7 +1051,7 @@
         {
           "id": "tobe_a_68",
           "type": "A",
-          "question": "My brother ___ swimming.",
+          "question": "My brother ___ swimming at the moment.",
           "options": [
             "am",
             "is",
@@ -1063,7 +1063,7 @@
         {
           "id": "tobe_a_69",
           "type": "A",
-          "question": "The children ___ helping.",
+          "question": "The children ___ helping now.",
           "options": [
             "were",
             "are",
@@ -1075,7 +1075,7 @@
         {
           "id": "tobe_a_70",
           "type": "A",
-          "question": "He ___ in the classroom.",
+          "question": "He ___ in the classroom today.",
           "options": [
             "am",
             "was",
@@ -1087,7 +1087,7 @@
         {
           "id": "tobe_a_71",
           "type": "A",
-          "question": "Her sister ___ at home.",
+          "question": "Her sister ___ at home today.",
           "options": [
             "is",
             "are",
@@ -1099,7 +1099,7 @@
         {
           "id": "tobe_a_72",
           "type": "A",
-          "question": "The students ___ in the kitchen.",
+          "question": "The students ___ in the kitchen this morning.",
           "options": [
             "was",
             "were",
@@ -1111,7 +1111,7 @@
         {
           "id": "tobe_a_73",
           "type": "A",
-          "question": "The children ___ tired.",
+          "question": "The children ___ tired last night.",
           "options": [
             "is",
             "are",
@@ -1123,7 +1123,7 @@
         {
           "id": "tobe_a_74",
           "type": "A",
-          "question": "She ___ bored.",
+          "question": "She ___ bored last summer.",
           "options": [
             "is",
             "are",
@@ -1135,7 +1135,7 @@
         {
           "id": "tobe_a_75",
           "type": "A",
-          "question": "The students ___ tired.",
+          "question": "The students ___ tired today.",
           "options": [
             "was",
             "were",
@@ -1147,7 +1147,7 @@
         {
           "id": "tobe_a_76",
           "type": "A",
-          "question": "It ___ laughing.",
+          "question": "It ___ laughing at the moment.",
           "options": [
             "is",
             "were",
@@ -1159,7 +1159,7 @@
         {
           "id": "tobe_a_77",
           "type": "A",
-          "question": "My brother ___ cooking.",
+          "question": "My brother ___ cooking right now.",
           "options": [
             "were",
             "is",
@@ -1171,7 +1171,7 @@
         {
           "id": "tobe_a_78",
           "type": "A",
-          "question": "The children ___ studying.",
+          "question": "The children ___ studying now.",
           "options": [
             "are",
             "were",
@@ -1183,7 +1183,7 @@
         {
           "id": "tobe_a_79",
           "type": "A",
-          "question": "The teacher ___ ready.",
+          "question": "The teacher ___ ready two days ago.",
           "options": [
             "are",
             "was",
@@ -1195,7 +1195,7 @@
         {
           "id": "tobe_a_80",
           "type": "A",
-          "question": "The teacher ___ lost.",
+          "question": "The teacher ___ lost two days ago.",
           "options": [
             "are",
             "is",
@@ -1207,7 +1207,7 @@
         {
           "id": "tobe_a_81",
           "type": "A",
-          "question": "He ___ angry.",
+          "question": "He ___ angry today.",
           "options": [
             "is",
             "was",
@@ -1219,7 +1219,7 @@
         {
           "id": "tobe_a_82",
           "type": "A",
-          "question": "She ___ jumping.",
+          "question": "She ___ jumping at the moment.",
           "options": [
             "are",
             "is",
@@ -1231,7 +1231,7 @@
         {
           "id": "tobe_a_83",
           "type": "A",
-          "question": "The students ___ in the garden.",
+          "question": "The students ___ in the garden today.",
           "options": [
             "were",
             "was",
@@ -1243,7 +1243,7 @@
         {
           "id": "tobe_a_84",
           "type": "A",
-          "question": "Our cat ___ really excited.",
+          "question": "Our cat ___ really excited today.",
           "options": [
             "am",
             "was",
@@ -1255,7 +1255,7 @@
         {
           "id": "tobe_a_85",
           "type": "A",
-          "question": "My friends ___ at home.",
+          "question": "My friends ___ at home yesterday.",
           "options": [
             "is",
             "was",
@@ -1267,7 +1267,7 @@
         {
           "id": "tobe_a_86",
           "type": "A",
-          "question": "The teacher ___ very happy.",
+          "question": "The teacher ___ very happy last summer.",
           "options": [
             "is",
             "are",
@@ -1291,7 +1291,7 @@
         {
           "id": "tobe_a_88",
           "type": "A",
-          "question": "She ___ very kind.",
+          "question": "She ___ very kind today.",
           "options": [
             "were",
             "am",
@@ -1303,7 +1303,7 @@
         {
           "id": "tobe_a_89",
           "type": "A",
-          "question": "Our cat ___ running.",
+          "question": "Our cat ___ running now.",
           "options": [
             "are",
             "were",
@@ -1327,7 +1327,7 @@
         {
           "id": "tobe_a_91",
           "type": "A",
-          "question": "The dog ___ happy.",
+          "question": "The dog ___ happy today.",
           "options": [
             "is",
             "was",
@@ -1339,7 +1339,7 @@
         {
           "id": "tobe_a_92",
           "type": "A",
-          "question": "The children ___ angry.",
+          "question": "The children ___ angry last week.",
           "options": [
             "am",
             "were",
@@ -1351,7 +1351,7 @@
         {
           "id": "tobe_a_93",
           "type": "A",
-          "question": "Our cat ___ bored.",
+          "question": "Our cat ___ bored today.",
           "options": [
             "was",
             "is",
@@ -1363,7 +1363,7 @@
         {
           "id": "tobe_a_94",
           "type": "A",
-          "question": "The dog ___ eating.",
+          "question": "The dog ___ eating at the moment.",
           "options": [
             "am",
             "was",
@@ -1375,7 +1375,7 @@
         {
           "id": "tobe_a_95",
           "type": "A",
-          "question": "My brother ___ watching TV.",
+          "question": "My brother ___ watching TV right now.",
           "options": [
             "were",
             "am",
@@ -1387,7 +1387,7 @@
         {
           "id": "tobe_a_96",
           "type": "A",
-          "question": "Our cat ___ eating lunch.",
+          "question": "Our cat ___ eating lunch at the moment.",
           "options": [
             "were",
             "is",
@@ -1399,7 +1399,7 @@
         {
           "id": "tobe_a_97",
           "type": "A",
-          "question": "We ___ happy.",
+          "question": "We ___ happy today.",
           "options": [
             "were",
             "are",
@@ -1411,7 +1411,7 @@
         {
           "id": "tobe_a_98",
           "type": "A",
-          "question": "The teacher ___ sleeping.",
+          "question": "The teacher ___ sleeping now.",
           "options": [
             "were",
             "is",
@@ -1423,7 +1423,7 @@
         {
           "id": "tobe_a_99",
           "type": "A",
-          "question": "The teacher ___ in the park.",
+          "question": "The teacher ___ in the park two days ago.",
           "options": [
             "is",
             "are",
