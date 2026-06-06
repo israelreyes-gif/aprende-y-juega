@@ -107,12 +107,11 @@
     <div id="en-wo-bank" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 16px 16px;min-height:44px"></div>
     <!-- Feedback -->
     <div class="feedback" id="en-wo-fb" style="display:none"></div>
-    <!-- Botones fijos abajo -->
-    <div style="position:fixed;bottom:0;left:0;right:0;padding:12px 16px 24px;background:white;border-top:1px solid var(--gray-200);display:flex;flex-direction:column;gap:8px;z-index:10">
+    <!-- Botones -->
+    <div style="display:flex;flex-direction:column;gap:8px;padding:0 16px 20px">
       <button id="en-wo-check" onclick="checkWordOrder()" style="width:100%;padding:13px 16px;border-radius:12px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default;transition:all .2s">Check ✓</button>
       <button id="en-wo-reset" onclick="resetWordOrder()" style="width:100%;padding:10px 16px;border-radius:12px;border:1.5px solid var(--gray-200);background:white;color:var(--gray-400);font-family:var(--f);font-weight:700;font-size:13px;cursor:pointer">🔄 Reset</button>
     </div>
-    <div style="height:120px"></div><!-- Espacio para que el contenido no quede tapado -->
     <button class="next-btn" style="background:var(--blue);display:none" id="en-wo-next" onclick="nextWordOrder()">Next question →</button>
   </div>
 </div>
