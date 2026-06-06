@@ -296,6 +296,7 @@ function loadWordOrderQuestion() {
   document.getElementById('en-wo-fb').style.display = 'none';
   document.getElementById('en-wo-next').style.display = 'none';
   document.getElementById('en-wo-reset').style.display = '';
+  document.getElementById('en-wo-check').style.display = '';
 
   updateSlotsBorder('#BFDBFE', 'dashed');
   renderWoSlots();
@@ -373,6 +374,8 @@ function resetWordOrder() {
   woChecked = false;
   document.getElementById('en-wo-fb').style.display = 'none';
   document.getElementById('en-wo-next').style.display = 'none';
+  document.getElementById('en-wo-reset').style.display = '';
+  document.getElementById('en-wo-check').style.display = '';
   document.getElementById('en-wo-slots').dataset.correct = '';
   updateSlotsBorder('#BFDBFE', 'dashed');
   renderWoSlots();
