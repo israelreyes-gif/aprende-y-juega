@@ -287,10 +287,11 @@ function loadWordOrderQuestion() {
   var diffEl = document.getElementById('en-wo-diff');
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
 
-  // Crear objetos palabra con IDs únicos
+  // Crear objetos palabra con IDs únicos — reset completo
   var words = sentence.replace(/[.!?]$/, '').split(' ');
-  woSlots = Array(words.length).fill(null);
-  woBank  = shuffleArr(words.map(function(w, i) { return { id: i, word: w }; }));
+  woSlots = [];
+  for (var wi = 0; wi < words.length; wi++) { woSlots.push(null); }
+  woBank  = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
 
   document.getElementById('en-wo-fb').style.display = 'none';
   document.getElementById('en-wo-next').style.display = 'none';
@@ -365,8 +366,9 @@ function removeFromSlot(idx) {
 function resetWordOrder() {
   var sentence = woQueue[woIdx];
   var words = sentence.replace(/[.!?]$/, '').split(' ');
-  woSlots   = Array(words.length).fill(null);
-  woBank    = shuffleArr(words.map(function(w, i) { return { id: i, word: w }; }));
+  woSlots = [];
+  for (var ri = 0; ri < words.length; ri++) { woSlots.push(null); }
+  woBank    = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
   woAttempt = 1;
   woChecked = false;
   document.getElementById('en-wo-fb').style.display = 'none';
