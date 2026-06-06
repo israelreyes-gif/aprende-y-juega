@@ -42,61 +42,41 @@ function renderEnglishExercisesMenu() {
     if (!container) return;
     container.innerHTML = '';
 
-    var typeInfo = {
-      'A': { emoji: '✏️', label: 'Complete the sentence' },
-      'B': { emoji: '🔄', label: 'Make it negative' },
-      'C': { emoji: '🔍', label: 'Identify the tense' },
-      'D': { emoji: '💬', label: 'Choose the right form' }
-    };
+    // Grid de 4 tarjetas principales
+    var grid = document.createElement('div');
+    grid.className = 'mode-grid';
 
-    EN_DATA.units.forEach(function(unit) {
-      if (!unit.exercises || unit.exercises.length === 0) return;
+    // To Be
+    var toBeUnit = EN_DATA.units.find(function(u) { return u.id === 'to-be'; });
+    var toBeCard = document.createElement('div');
+    toBeCard.className = 'mode-card';
+    toBeCard.innerHTML = '<div class="mode-emoji">🔵</div><div class="mode-name">To Be</div><div class="mode-sub">400 questions</div>';
+    toBeCard.addEventListener('click', function() { go('s-english-ex-tobe'); renderExTypeMenu('to-be'); });
+    grid.appendChild(toBeCard);
 
-      // Etiqueta de sección (igual que .slbl)
-      var lbl = document.createElement('div');
-      lbl.className = 'slbl';
-      lbl.textContent = unit.emoji + ' ' + unit.title;
-      container.appendChild(lbl);
+    // Modal Verbs
+    var modalUnit = EN_DATA.units.find(function(u) { return u.id === 'modal-verbs'; });
+    var modalCard = document.createElement('div');
+    modalCard.className = 'mode-card';
+    modalCard.innerHTML = '<div class="mode-emoji">💪</div><div class="mode-name">Modal Verbs</div><div class="mode-sub">200 questions</div>';
+    modalCard.addEventListener('click', function() { go('s-english-ex-modals'); renderExTypeMenu('modal-verbs'); });
+    grid.appendChild(modalCard);
 
-      // Grid de tarjetas igual que mode-grid
-      var grid = document.createElement('div');
-      grid.className = 'mode-grid';
+    // Vocabulary (próximamente)
+    var vocabCard = document.createElement('div');
+    vocabCard.className = 'mode-card';
+    vocabCard.innerHTML = '<div class="mode-emoji">🔤</div><div class="mode-name">Vocabulary</div><div class="mode-sub">Coming soon</div>';
+    vocabCard.style.opacity = '0.5';
+    grid.appendChild(vocabCard);
 
-      // Agrupar por tipo
-      var byType = {};
-      unit.exercises.forEach(function(ex) {
-        if (!byType[ex.type]) byType[ex.type] = [];
-        byType[ex.type].push(ex);
-      });
+    // Mix
+    var mixCard = document.createElement('div');
+    mixCard.className = 'mode-card';
+    mixCard.innerHTML = '<div class="mode-emoji">🔀</div><div class="mode-name">Mix</div><div class="mode-sub">All topics</div>';
+    mixCard.addEventListener('click', function() { startEnglishMix(); });
+    grid.appendChild(mixCard);
 
-      Object.keys(byType).sort().forEach(function(type) {
-        var info = typeInfo[type] || { emoji: '📝', label: 'Exercises' };
-        var card = document.createElement('div');
-        card.className = 'mode-card';
-        card.innerHTML =
-          '<div class="mode-emoji">' + info.emoji + '</div>' +
-          '<div class="mode-name">' + info.label + '</div>' +
-          '<div class="mode-sub">' + byType[type].length + ' questions</div>';
-        card.addEventListener('click', (function(u, t, exs) {
-          return function() { startEnglishExercisesByType(u, t, exs); };
-        })(unit, type, byType[type]));
-        grid.appendChild(card);
-      });
-
-      // Word Order como tarjeta más al final de cada unidad
-      var woCard = document.createElement('div');
-      woCard.className = 'mode-card';
-      woCard.innerHTML =
-        '<div class="mode-emoji">🔀</div>' +
-        '<div class="mode-name">Word order</div>' +
-        '<div class="mode-sub">Put words in order</div>';
-      woCard.addEventListener('click', (function(u) {
-        return function() { startWordOrder(u); };
-      })(unit));
-      grid.appendChild(woCard);
-
-      container.appendChild(grid);
-    });
+    container.appendChild(grid);
   });
 }
 
@@ -200,7 +180,52 @@ function renderEnglishStudy(unit) {
   });
 }
 
-/* ---- WORD ORDER ---- */
+function renderExTypeMenu(unitId) {
+  loadEnglishData(function() {
+    var unit = EN_DATA.units.find(function(u) { return u.id === unitId; });
+    if (!unit) return;
+    var gridId = unitId === 'to-be' ? 'ex-type-grid-tobe' : 'ex-type-grid-modals';
+    var grid = document.getElementById(gridId);
+    if (!grid) return;
+    grid.innerHTML = '';
+
+    var typeInfo = {
+      'A': { emoji: '✏️', label: 'Complete the sentence' },
+      'B': { emoji: '🔄', label: 'Make it negative' },
+      'C': { emoji: '🔍', label: 'Identify the tense' },
+      'D': { emoji: '💬', label: 'Choose the right form' }
+    };
+
+    var byType = {};
+    unit.exercises.forEach(function(ex) {
+      if (!byType[ex.type]) byType[ex.type] = [];
+      byType[ex.type].push(ex);
+    });
+
+    Object.keys(byType).sort().forEach(function(type) {
+      var info = typeInfo[type] || { emoji: '📝', label: 'Exercises' };
+      var card = document.createElement('div');
+      card.className = 'mode-card';
+      card.innerHTML =
+        '<div class="mode-emoji">' + info.emoji + '</div>' +
+        '<div class="mode-name">' + info.label + '</div>' +
+        '<div class="mode-sub">' + byType[type].length + ' questions</div>';
+      card.addEventListener('click', (function(u, t, exs) {
+        return function() { startEnglishExercisesByType(u, t, exs); };
+      })(unit, type, byType[type]));
+      grid.appendChild(card);
+    });
+
+    // Word Order al final
+    var woCard = document.createElement('div');
+    woCard.className = 'mode-card';
+    woCard.innerHTML = '<div class="mode-emoji">🔀</div><div class="mode-name">Word order</div><div class="mode-sub">Put words in order</div>';
+    woCard.addEventListener('click', (function(u) { return function() { startWordOrder(u); }; })(unit));
+    grid.appendChild(woCard);
+  });
+}
+
+
 var woQueue   = [];
 var woIdx     = 0;
 var woSlots   = [];
