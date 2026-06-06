@@ -83,6 +83,7 @@ function go(screenId) {
   if (screenId === 's-english')               { updateSubjectUI('english'); }
   if (screenId === 's-english-study')         { renderEnglishStudyMenu(); }
   if (screenId === 's-english-exercises')     { renderEnglishExercisesMenu(); }
+  if (screenId === 's-english-vocab')         { renderVocabMenu(); }
   if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); }
   if (screenId === 's-sciences-study-invertebrates') { renderSciencesStudy(); }
 }
