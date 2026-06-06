@@ -1279,7 +1279,7 @@
         {
           "id": "tobe_a_87",
           "type": "A",
-          "question": "My friends ___ outside.",
+          "question": "My friends ___ outside right now.",
           "options": [
             "is",
             "were",
@@ -1315,7 +1315,7 @@
         {
           "id": "tobe_a_90",
           "type": "A",
-          "question": "My friends ___ at school.",
+          "question": "My friends ___ at school at the moment.",
           "options": [
             "is",
             "are",
