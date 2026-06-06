@@ -408,8 +408,8 @@ function checkWordOrder() {
   if (isCorrect) {
     woChecked = true;
     slotsEl.dataset.correct = '1';
-    slotsEl.style.borderStyle  = 'solid';
-    slotsEl.style.borderColor  = '#22C55E';
+    slotsEl.style.borderStyle = 'solid';
+    slotsEl.style.borderColor = '#22C55E';
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
     fbEl.textContent = '✅ Correct!';
@@ -424,7 +424,6 @@ function checkWordOrder() {
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ Not quite — try again!';
-    // Animación shake
     slotsEl.style.animation = 'shake .4s ease';
     setTimeout(function() { slotsEl.style.animation = ''; }, 500);
 
