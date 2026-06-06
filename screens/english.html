@@ -56,15 +56,8 @@
 <div class="screen" id="s-english-exercises">
   <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english')">←</button><h1>Exercises</h1><span class="top-badge">⭐ +10</span></div>
   <div class="sa">
+    <div class="slbl">Choose a topic</div>
     <div id="english-exercise-topics"></div>
-    <div style="font-family:var(--f);font-size:13px;font-weight:900;color:#1D4ED8;text-transform:uppercase;letter-spacing:.5px;padding:4px 16px 8px;margin-top:4px">All topics</div>
-    <div class="mode-grid">
-      <div class="mode-card" onclick="startEnglishMix()">
-        <div class="mode-emoji">🔀</div>
-        <div class="mode-name">Mix</div>
-        <div class="mode-sub">All topics mixed</div>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -113,6 +106,24 @@
       <button id="vocab-flip-all-btn" onclick="vocabToggleAll()" style="padding:5px 12px;border-radius:20px;border:1.5px solid #BFDBFE;background:#EFF6FF;color:var(--blue);font-family:var(--f);font-weight:700;font-size:12px;cursor:pointer">Show all hints</button>
     </div>
     <div id="vocab-cards-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:0 16px 24px"></div>
+  </div>
+</div>
+
+<!-- EXERCISES SUBMENU TO BE -->
+<div class="screen" id="s-english-ex-tobe">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-exercises')">←</button><h1>To Be</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a type</div>
+    <div class="mode-grid" id="ex-type-grid-tobe"></div>
+  </div>
+</div>
+
+<!-- EXERCISES SUBMENU MODAL VERBS -->
+<div class="screen" id="s-english-ex-modals">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-exercises')">←</button><h1>Modal Verbs</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a type</div>
+    <div class="mode-grid" id="ex-type-grid-modals"></div>
   </div>
 </div>
 
