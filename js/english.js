@@ -101,9 +101,9 @@ function renderEnglishExercisesMenu() {
         typeGrid.appendChild(cell);
       });
 
-      // Word Order siempre fila completa al final
+      // Word Order: izquierda + celda vacía con fondo gris a la derecha
       var woCell = document.createElement('div');
-      woCell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;grid-column:1/-1;border-top:0.5px solid #E5E7EB;';
+      woCell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;border-top:0.5px solid #E5E7EB;border-right:0.5px solid #E5E7EB;';
       woCell.innerHTML =
         '<div style="display:flex;align-items:center;gap:12px">' +
           '<div style="font-size:26px">🔀</div>' +
@@ -118,6 +118,11 @@ function renderEnglishExercisesMenu() {
         return function() { startWordOrder(u); };
       })(unit));
       typeGrid.appendChild(woCell);
+
+      // Celda vacía del lado derecho con fondo gris
+      var emptyCell = document.createElement('div');
+      emptyCell.style.cssText = 'background:#F9FAFB;border-top:0.5px solid #E5E7EB;';
+      typeGrid.appendChild(emptyCell);
 
       block.appendChild(typeGrid);
       grid.appendChild(block);
