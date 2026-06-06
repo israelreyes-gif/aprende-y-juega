@@ -171,3 +171,76 @@
     <button class="next-btn" style="background:var(--blue);display:none" id="en-mix-next" onclick="nextEnglishMix()">Next question →</button>
   </div>
 </div>
+
+<!-- VOCAB EXERCISES MENU -->
+<div class="screen" id="s-english-vocab-ex">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-exercises')">←</button><h1>Vocabulary</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a type</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="startVocabExercise('word-to-image')">
+        <div class="mode-emoji">🔤</div>
+        <div class="mode-name">Word → Image</div>
+        <div class="mode-sub">Pick the right image</div>
+      </div>
+      <div class="mode-card" onclick="startVocabExercise('image-to-word')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name">Image → Word</div>
+        <div class="mode-sub">Write the word</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VOCAB EXERCISE: WORD TO IMAGE -->
+<div class="screen" id="s-vocab-ex-w2i">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-vocab-ex')">←</button><h1>Word → Image</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="w2i-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="w2i-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="w2i-prog"></div></div></div>
+  <div class="sa">
+    <!-- Palabra -->
+    <div style="margin:0 16px 20px;padding:20px;background:#EFF6FF;border-radius:16px;text-align:center;border:1.5px solid #BFDBFE">
+      <div id="w2i-word" style="font-family:var(--f);font-weight:900;font-size:28px;color:var(--blue);letter-spacing:1px">WORD</div>
+      <div style="font-size:12px;color:var(--gray-400);margin-top:6px">Which image matches this word?</div>
+    </div>
+    <!-- Imágenes -->
+    <div id="w2i-opts" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:0 16px 16px"></div>
+    <!-- Feedback -->
+    <div class="feedback" id="w2i-fb" style="display:none"></div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="w2i-next" onclick="nextVocabEx('w2i')">Next question →</button>
+  </div>
+</div>
+
+<!-- VOCAB EXERCISE: IMAGE TO WORD -->
+<div class="screen" id="s-vocab-ex-i2w">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-vocab-ex')">←</button><h1>Image → Word</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="i2w-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="i2w-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="i2w-prog"></div></div></div>
+  <div class="sa">
+    <!-- Imagen -->
+    <div style="margin:0 16px 20px;display:flex;flex-direction:column;align-items:center;padding:24px;background:#FFF7ED;border-radius:16px;border:1.5px solid #FED7AA">
+      <div id="i2w-emoji" style="font-size:80px;line-height:1;margin-bottom:8px">🍲</div>
+      <div style="font-size:12px;color:var(--gray-400);font-weight:600">What is this called in English?</div>
+    </div>
+    <!-- Input -->
+    <div style="padding:0 16px 12px">
+      <input id="i2w-input" type="text" placeholder="Type the word..."
+        oninput="this.value=this.value.toUpperCase()"
+        onkeydown="if(event.key==='Enter') checkVocabI2W()"
+        autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false"
+        style="width:100%;padding:14px 16px;border-radius:14px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-weight:900;font-size:20px;text-align:center;letter-spacing:2px;color:var(--gray-800);outline:none;box-sizing:border-box;transition:border-color .2s"/>
+    </div>
+    <!-- Feedback -->
+    <div class="feedback" id="i2w-fb" style="display:none"></div>
+    <div style="padding:0 16px">
+      <button id="i2w-check" onclick="checkVocabI2W()" style="width:100%;padding:13px 16px;border-radius:12px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default;transition:all .2s">Check ✓</button>
+    </div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="i2w-next" onclick="nextVocabEx('i2w')">Next question →</button>
+  </div>
+</div>
