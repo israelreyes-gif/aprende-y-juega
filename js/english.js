@@ -695,6 +695,17 @@ function openVocabUnit(unit) {
 }
 
 /* ---- Renderizar tarjetas ---- */
+function speakWord(word, e) {
+  e.stopPropagation();
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  var utter = new SpeechSynthesisUtterance(word);
+  utter.lang  = 'en-GB';
+  utter.rate  = 0.85;
+  utter.pitch = 1;
+  window.speechSynthesis.speak(utter);
+}
+
 function renderVocabCards() {
   var grid = document.getElementById('vocab-cards-grid');
   if (!grid || !vocabUnit) return;
@@ -704,19 +715,17 @@ function renderVocabCards() {
   vocabUnit.words.forEach(function(w, i) {
     var flipped = vocabFlipped[i];
     var card = document.createElement('div');
-    card.style.cssText = 'cursor:pointer;perspective:600px;height:130px';
+    card.style.cssText = 'cursor:pointer;perspective:600px;height:130px;position:relative';
 
     var inner = document.createElement('div');
     inner.style.cssText = 'position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .4s ease;transform:'+( flipped ? 'rotateY(180deg)' : 'rotateY(0deg)');
 
-    // Front
     var front = document.createElement('div');
     front.style.cssText = 'position:absolute;inset:0;backface-visibility:hidden;background:'+c.bg+';border:1.5px solid '+c.border+';border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:8px';
     front.innerHTML =
       '<div style="font-size:40px;line-height:1">'+w.emoji+'</div>'+
       '<div style="font-family:var(--f);font-weight:900;font-size:10px;color:'+c.color+';text-align:center;letter-spacing:.3px">'+w.word+'</div>';
 
-    // Back
     var back = document.createElement('div');
     back.style.cssText = 'position:absolute;inset:0;backface-visibility:hidden;transform:rotateY(180deg);background:'+c.color+';border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px;gap:3px';
     back.innerHTML =
@@ -725,9 +734,20 @@ function renderVocabCards() {
       '<div style="font-family:var(--f);font-weight:600;font-size:9px;color:rgba(255,255,255,.95);text-align:center;line-height:1.3">'+w.hint+'</div>'+
       '<div style="font-family:var(--f);font-weight:600;font-size:9px;color:rgba(255,255,255,.7);text-align:center;line-height:1.3;font-style:italic">'+w.es+'</div>';
 
+    var speakBtn = document.createElement('button');
+    speakBtn.textContent = '\uD83D\uDD0A';
+    speakBtn.title = 'Listen to pronunciation';
+    speakBtn.style.cssText = 'position:absolute;top:4px;right:4px;z-index:10;width:22px;height:22px;border-radius:50%;border:none;background:'+c.color+';color:white;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;opacity:.85;transition:opacity .15s';
+    speakBtn.addEventListener('mouseenter', function() { speakBtn.style.opacity = '1'; });
+    speakBtn.addEventListener('mouseleave', function() { speakBtn.style.opacity = '.85'; });
+    (function(word) {
+      speakBtn.addEventListener('click', function(e) { speakWord(word, e); });
+    })(w.word);
+
     inner.appendChild(front);
     inner.appendChild(back);
     card.appendChild(inner);
+    card.appendChild(speakBtn);
 
     (function(idx) {
       card.addEventListener('click', function() { vocabFlipCard(idx); });
