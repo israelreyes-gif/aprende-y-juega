@@ -1,0 +1,39 @@
+{
+  "units": [
+    {
+      "id": "lets-cook",
+      "title": "Let's Cook!",
+      "emoji": "🍳",
+      "color": "orange",
+      "words": [
+        { "word": "SOUP",       "emoji": "🍲", "hint": "A warm liquid food",             "es": "Un alimento líquido caliente" },
+        { "word": "VEGETABLES", "emoji": "🥦", "hint": "Healthy plants we eat",           "es": "Plantas saludables que comemos" },
+        { "word": "SANDWICH",   "emoji": "🥪", "hint": "Bread with filling inside",       "es": "Pan con relleno dentro" },
+        { "word": "CHEESE",     "emoji": "🧀", "hint": "Made from milk",                  "es": "Hecho con leche" },
+        { "word": "BOTTLE",     "emoji": "🍶", "hint": "A container for drinks",          "es": "Un recipiente para bebidas" },
+        { "word": "GLASS",      "emoji": "🥛", "hint": "You drink from it",               "es": "Bebes de él" },
+        { "word": "CUP",        "emoji": "☕", "hint": "For hot drinks",                  "es": "Para bebidas calientes" },
+        { "word": "PLATE",      "emoji": "🍽️", "hint": "You put food on it",              "es": "Pones la comida encima" },
+        { "word": "BOWL",       "emoji": "🥣", "hint": "Deep dish for cereal or soup",    "es": "Plato hondo para cereales o sopa" }
+      ]
+    },
+    {
+      "id": "around-town",
+      "title": "Around Town",
+      "emoji": "🏙️",
+      "color": "blue",
+      "words": [
+        { "word": "MAP",         "emoji": "🗺️", "hint": "Shows streets and places",       "es": "Muestra calles y lugares" },
+        { "word": "CITY CENTRE", "emoji": "🏙️", "hint": "The middle of the city",         "es": "El centro de la ciudad" },
+        { "word": "STATION",     "emoji": "🚉", "hint": "Where trains stop",               "es": "Donde paran los trenes" },
+        { "word": "CAR PARK",    "emoji": "🅿️", "hint": "Where you leave your car",       "es": "Donde aparcar el coche" },
+        { "word": "ROAD",        "emoji": "🛣️", "hint": "Cars drive on it",               "es": "Los coches circulan por ella" },
+        { "word": "SQUARE",      "emoji": "⛲", "hint": "An open space in town",           "es": "Un espacio abierto en la ciudad" },
+        { "word": "MARKET",      "emoji": "🛒", "hint": "A place to buy food",             "es": "Un lugar para comprar comida" },
+        { "word": "CINEMA",      "emoji": "🎬", "hint": "Watch films here",                "es": "Aquí ves películas" },
+        { "word": "HOSPITAL",    "emoji": "🏥", "hint": "You go here when ill",            "es": "Vas aquí cuando estás enfermo" },
+        { "word": "LIBRARY",     "emoji": "📚", "hint": "Borrow books here",               "es": "Aquí puedes coger libros prestados" }
+      ]
+    }
+  ]
+}
