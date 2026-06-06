@@ -38,36 +38,29 @@ function renderEnglishStudyMenu() {
 
 function renderEnglishExercisesMenu() {
   loadEnglishData(function() {
-    var grid = document.getElementById('english-exercise-topics');
-    if (!grid) return;
-    grid.innerHTML = '';
+    var container = document.getElementById('english-exercise-topics');
+    if (!container) return;
+    container.innerHTML = '';
 
     var typeInfo = {
       'A': { emoji: '✏️', label: 'Complete the sentence' },
       'B': { emoji: '🔄', label: 'Make it negative' },
       'C': { emoji: '🔍', label: 'Identify the tense' },
-      'D': { emoji: '💬', label: 'Choose the right form' },
-      'E': { emoji: '🔀', label: 'Word order' }
+      'D': { emoji: '💬', label: 'Choose the right form' }
     };
 
     EN_DATA.units.forEach(function(unit) {
       if (!unit.exercises || unit.exercises.length === 0) return;
 
-      // Bloque contenedor de la unidad
-      var block = document.createElement('div');
-      block.style.cssText = 'margin:0 16px 20px;border-radius:16px;border:1.5px solid #E5E7EB;overflow:hidden;background:white';
+      // Etiqueta de sección (igual que .slbl)
+      var lbl = document.createElement('div');
+      lbl.className = 'slbl';
+      lbl.textContent = unit.emoji + ' ' + unit.title;
+      container.appendChild(lbl);
 
-      // Cabecera de la unidad
-      var unitHeader = document.createElement('div');
-      unitHeader.style.cssText = 'padding:12px 16px;background:#EFF6FF;border-bottom:1px solid #BFDBFE;display:flex;align-items:center;gap:8px';
-      unitHeader.innerHTML =
-        '<span style="font-size:20px">' + unit.emoji + '</span>' +
-        '<span style="font-family:var(--f);font-size:13px;font-weight:900;color:#1D4ED8;text-transform:uppercase;letter-spacing:.5px">' + unit.title + '</span>';
-      block.appendChild(unitHeader);
-
-      // Grid de tipos
-      var typeGrid = document.createElement('div');
-      typeGrid.style.cssText = 'display:grid;grid-template-columns:1fr 1fr;';
+      // Grid de tarjetas igual que mode-grid
+      var grid = document.createElement('div');
+      grid.className = 'mode-grid';
 
       // Agrupar por tipo
       var byType = {};
@@ -76,56 +69,33 @@ function renderEnglishExercisesMenu() {
         byType[ex.type].push(ex);
       });
 
-      var types = Object.keys(byType).sort();
-      types.forEach(function(type, idx) {
+      Object.keys(byType).sort().forEach(function(type) {
         var info = typeInfo[type] || { emoji: '📝', label: 'Exercises' };
-        var isLastRow = idx >= types.length - (types.length % 2 === 0 ? 2 : 1);
-        var isRight = idx % 2 === 1;
-
-        var cell = document.createElement('div');
-        cell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;' +
-          'border-right:' + (isRight ? 'none' : '0.5px solid #E5E7EB') + ';' +
-          'border-bottom:' + (isLastRow ? 'none' : '0.5px solid #E5E7EB') + ';';
-
-        cell.innerHTML =
-          '<div style="font-size:26px;margin-bottom:8px">' + info.emoji + '</div>' +
-          '<div style="font-family:var(--f);font-weight:800;font-size:14px;color:#111827">' + info.label + '</div>' +
-          '<div style="font-size:12px;color:#6B7280;margin-top:3px">' + byType[type].length + ' questions</div>';
-
-        cell.addEventListener('mouseenter', function() { cell.style.background = '#F9FAFB'; });
-        cell.addEventListener('mouseleave', function() { cell.style.background = ''; });
-        cell.addEventListener('click', (function(u, t, exs) {
+        var card = document.createElement('div');
+        card.className = 'mode-card';
+        card.innerHTML =
+          '<div class="mode-emoji">' + info.emoji + '</div>' +
+          '<div class="mode-name">' + info.label + '</div>' +
+          '<div class="mode-sub">' + byType[type].length + ' questions</div>';
+        card.addEventListener('click', (function(u, t, exs) {
           return function() { startEnglishExercisesByType(u, t, exs); };
         })(unit, type, byType[type]));
-
-        typeGrid.appendChild(cell);
+        grid.appendChild(card);
       });
 
-      // Word Order: izquierda + celda vacía con fondo gris a la derecha
-      var woCell = document.createElement('div');
-      woCell.style.cssText = 'padding:16px;cursor:pointer;transition:background .15s;border-top:0.5px solid #E5E7EB;border-right:0.5px solid #E5E7EB;';
-      woCell.innerHTML =
-        '<div style="display:flex;align-items:center;gap:12px">' +
-          '<div style="font-size:26px">🔀</div>' +
-          '<div>' +
-            '<div style="font-family:var(--f);font-weight:800;font-size:14px;color:#111827">Word order</div>' +
-            '<div style="font-size:12px;color:#6B7280;margin-top:2px">Put words in order</div>' +
-          '</div>' +
-        '</div>';
-      woCell.addEventListener('mouseenter', function() { woCell.style.background = '#F9FAFB'; });
-      woCell.addEventListener('mouseleave', function() { woCell.style.background = ''; });
-      woCell.addEventListener('click', (function(u) {
+      // Word Order como tarjeta más al final de cada unidad
+      var woCard = document.createElement('div');
+      woCard.className = 'mode-card';
+      woCard.innerHTML =
+        '<div class="mode-emoji">🔀</div>' +
+        '<div class="mode-name">Word order</div>' +
+        '<div class="mode-sub">Put words in order</div>';
+      woCard.addEventListener('click', (function(u) {
         return function() { startWordOrder(u); };
       })(unit));
-      typeGrid.appendChild(woCell);
+      grid.appendChild(woCard);
 
-      // Celda vacía del lado derecho con fondo gris
-      var emptyCell = document.createElement('div');
-      emptyCell.style.cssText = 'background:#F9FAFB;border-top:0.5px solid #E5E7EB;';
-      typeGrid.appendChild(emptyCell);
-
-      block.appendChild(typeGrid);
-      grid.appendChild(block);
+      container.appendChild(grid);
     });
   });
 }
