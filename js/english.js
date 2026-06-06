@@ -70,11 +70,11 @@ function renderEnglishExercisesMenu() {
     modalCard.addEventListener('click', function() { go('s-english-ex-modals'); renderExTypeMenu('modal-verbs'); });
     grid.appendChild(modalCard);
 
-    // Vocabulary (próximamente)
+    // Vocabulary
     var vocabCard = document.createElement('div');
     vocabCard.className = 'mode-card';
-    vocabCard.innerHTML = '<div class="mode-emoji">🔤</div><div class="mode-name">Vocabulary</div><div class="mode-sub">Coming soon</div>';
-    vocabCard.style.opacity = '0.5';
+    vocabCard.innerHTML = '<div class="mode-emoji">🔤</div><div class="mode-name">Vocabulary</div><div class="mode-sub">Let\'s Cook &amp; Around Town</div>';
+    vocabCard.addEventListener('click', function() { go('s-english-vocab-ex'); });
     grid.appendChild(vocabCard);
 
     // Mix
@@ -805,4 +805,243 @@ function updateVocabFlipBtn() {
   if (!btn) return;
   var allFlipped = vocabFlipped.every(function(v) { return v; });
   btn.textContent = allFlipped ? 'Show words' : 'Show all hints';
+}
+
+/* =============================================
+   VOCABULARY EXERCISES
+   ============================================= */
+
+var vocabExQueue   = [];
+var vocabExIdx     = 0;
+var vocabExType    = 'word-to-image';
+var vocabExAttempt = 1;
+var vocabExDone    = false;
+var vocabExWrong   = null; // palabra del opción incorrecta elegida
+
+function shuffleArr2(arr) {
+  var a = arr.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+  }
+  return a;
+}
+
+function startVocabExercise(type) {
+  loadVocabData(function() {
+    // Mezclar todas las palabras de todas las unidades
+    var allWords = [];
+    VOCAB_DATA.units.forEach(function(u) { allWords = allWords.concat(u.words); });
+    vocabExQueue   = shuffleArr2(allWords);
+    vocabExIdx     = 0;
+    vocabExType    = type;
+    if (type === 'word-to-image') {
+      go('s-vocab-ex-w2i');
+      loadW2IQuestion();
+    } else {
+      go('s-vocab-ex-i2w');
+      loadI2WQuestion();
+    }
+  });
+}
+
+/* ---- WORD TO IMAGE ---- */
+function loadW2IQuestion() {
+  var word  = vocabExQueue[vocabExIdx];
+  var total = vocabExQueue.length;
+  vocabExAttempt = 1;
+  vocabExDone    = false;
+  vocabExWrong   = null;
+
+  setEl('w2i-badge', 'Question ' + (vocabExIdx + 1) + ' of ' + total);
+  setBar('w2i-prog', Math.round(vocabExIdx / total * 100));
+  var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
+  var de = document.getElementById('w2i-diff');
+  if (de) { de.textContent = diff.txt; de.className = 'ex-badge ' + diff.cls; }
+
+  setEl('w2i-word', word.word);
+  document.getElementById('w2i-fb').style.display   = 'none';
+  document.getElementById('w2i-next').style.display = 'none';
+  renderW2IOpts(word, false);
+}
+
+function renderW2IOpts(word, showCorrect) {
+  // Obtener distractores
+  var allWords = [];
+  VOCAB_DATA.units.forEach(function(u) { allWords = allWords.concat(u.words); });
+  var distractors = shuffleArr2(allWords.filter(function(w) { return w.word !== word.word; })).slice(0, 2);
+  var options = shuffleArr2([word].concat(distractors));
+
+  var container = document.getElementById('w2i-opts');
+  container.innerHTML = '';
+
+  options.forEach(function(opt) {
+    var btn = document.createElement('button');
+    var isWrong   = vocabExWrong === opt.word;
+    var isCorrect = opt.word === word.word;
+
+    var border = '#E5E7EB';
+    var bg     = 'white';
+    var opacity = '1';
+
+    if (vocabExDone) {
+      if (isCorrect)           { border = '#22C55E'; bg = '#F0FDF4'; }
+      else if (isWrong)        { border = '#EF4444'; bg = '#FEF2F2'; }
+    } else if (vocabExWrong) {
+      // Primer fallo mostrado: solo marcar el incorrecto, NO el correcto
+      if (isWrong)  { border = '#EF4444'; bg = '#FEF2F2'; opacity = '0.5'; }
+    }
+
+    btn.style.cssText = 'padding:16px 8px;border-radius:14px;border:2px solid '+border+';background:'+bg+';cursor:'+(vocabExDone || isWrong ? 'default' : 'pointer')+';display:flex;flex-direction:column;align-items:center;gap:8px;transition:all .15s;opacity:'+opacity;
+    btn.innerHTML = '<span style="font-size:44px">'+opt.emoji+'</span>';
+    btn.disabled = vocabExDone || isWrong;
+
+    if (!btn.disabled) {
+      (function(o) {
+        btn.addEventListener('click', function() { pickW2I(o, word); });
+      })(opt);
+    }
+    container.appendChild(btn);
+  });
+}
+
+function pickW2I(opt, word) {
+  if (vocabExDone) return;
+  var isCorrect = opt.word === word.word;
+  var fbEl   = document.getElementById('w2i-fb');
+  var nextBtn = document.getElementById('w2i-next');
+
+  if (isCorrect) {
+    vocabExDone = true;
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-ok';
+    fbEl.textContent = '✅ Correct!';
+    nextBtn.style.display = 'block';
+    renderW2IOpts(word, true);
+    recordEnglishResult(true, vocabExAttempt === 1);
+  } else if (vocabExAttempt === 1) {
+    vocabExAttempt = 2;
+    vocabExWrong   = opt.word;
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Not quite — try again!';
+    renderW2IOpts(word, false);
+  } else {
+    vocabExDone  = true;
+    vocabExWrong = opt.word;
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ The answer is: ' + word.emoji + ' ' + word.word;
+    nextBtn.style.display = 'block';
+    renderW2IOpts(word, true);
+    recordEnglishResult(false, false);
+  }
+}
+
+/* ---- IMAGE TO WORD ---- */
+function loadI2WQuestion() {
+  var word  = vocabExQueue[vocabExIdx];
+  var total = vocabExQueue.length;
+  vocabExAttempt = 1;
+  vocabExDone    = false;
+
+  setEl('i2w-badge', 'Question ' + (vocabExIdx + 1) + ' of ' + total);
+  setBar('i2w-prog', Math.round(vocabExIdx / total * 100));
+  var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
+  var de = document.getElementById('i2w-diff');
+  if (de) { de.textContent = diff.txt; de.className = 'ex-badge ' + diff.cls; }
+
+  setEl('i2w-emoji', word.emoji);
+  document.getElementById('i2w-fb').style.display    = 'none';
+  document.getElementById('i2w-next').style.display  = 'none';
+  document.getElementById('i2w-check').style.display = '';
+
+  var inp = document.getElementById('i2w-input');
+  inp.value = '';
+  inp.disabled = false;
+  inp.style.borderColor = 'var(--gray-200)';
+  inp.style.background  = 'white';
+  inp.style.color       = 'var(--gray-800)';
+  updateI2WCheckBtn();
+}
+
+function updateI2WCheckBtn() {
+  var inp = document.getElementById('i2w-input');
+  var btn = document.getElementById('i2w-check');
+  if (!inp || !btn) return;
+  var filled = inp.value.trim().length > 0;
+  btn.style.background = filled ? 'var(--blue)' : 'var(--gray-200)';
+  btn.style.color      = filled ? 'white' : 'var(--gray-400)';
+  btn.style.cursor     = filled ? 'pointer' : 'default';
+}
+
+// Escuchar cambios en el input para activar el botón
+document.addEventListener('DOMContentLoaded', function() {
+  var inp = document.getElementById('i2w-input');
+  if (inp) inp.addEventListener('input', updateI2WCheckBtn);
+});
+
+function checkVocabI2W() {
+  var word  = vocabExQueue[vocabExIdx];
+  var inp   = document.getElementById('i2w-input');
+  var fbEl  = document.getElementById('i2w-fb');
+  var nextBtn = document.getElementById('i2w-next');
+  var checkBtn = document.getElementById('i2w-check');
+
+  if (!inp.value.trim()) return;
+  var isCorrect = inp.value.trim().toUpperCase() === word.word.toUpperCase();
+
+  if (isCorrect) {
+    vocabExDone = true;
+    inp.style.borderColor = '#22C55E';
+    inp.style.background  = '#F0FDF4';
+    inp.style.color       = '#15803D';
+    inp.disabled = true;
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-ok';
+    fbEl.textContent = '✅ Correct!';
+    nextBtn.style.display  = 'block';
+    checkBtn.style.display = 'none';
+    recordEnglishResult(true, vocabExAttempt === 1);
+
+  } else if (vocabExAttempt === 1) {
+    vocabExAttempt = 2;
+    inp.style.borderColor = '#EF4444';
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Not quite — try again!';
+    // Shake y borrar
+    inp.style.animation = 'shake .4s ease';
+    setTimeout(function() {
+      inp.style.animation   = '';
+      inp.style.borderColor = '#FED7AA';
+      inp.value = '';
+      updateI2WCheckBtn();
+    }, 420);
+
+  } else {
+    vocabExDone = true;
+    inp.value = word.word;
+    inp.style.borderColor = '#EF4444';
+    inp.style.background  = '#FEF2F2';
+    inp.style.color       = '#B91C1C';
+    inp.disabled = true;
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ The correct word is: ' + word.word;
+    nextBtn.style.display  = 'block';
+    checkBtn.style.display = 'none';
+    recordEnglishResult(false, false);
+  }
+}
+
+function nextVocabEx(mode) {
+  vocabExIdx++;
+  if (vocabExIdx >= vocabExQueue.length) {
+    go('s-english-vocab-ex');
+    updateSubjectUI('english');
+    return;
+  }
+  if (mode === 'w2i') loadW2IQuestion();
+  else loadI2WQuestion();
 }
