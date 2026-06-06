@@ -8,6 +8,14 @@ var enExIdx    = 0;
 var enMixQueue = [];
 var enMixIdx   = 0;
 
+// Precargar voces del sintetizador al arrancar
+if (window.speechSynthesis) {
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.addEventListener('voiceschanged', function() {
+    window.speechSynthesis.getVoices(); // fuerza la carga
+  });
+}
+
 function loadEnglishData(callback) {
   if (EN_DATA) { callback(); return; }
   fetch('data/curso3/english.json')
@@ -703,6 +711,27 @@ function speakWord(word, e) {
   utter.lang  = 'en-GB';
   utter.rate  = 0.85;
   utter.pitch = 1;
+
+  var voices = window.speechSynthesis.getVoices();
+  var preferred = [
+    'Microsoft Libby',
+    'Google UK English Female',
+    'Samantha', 'Karen', 'Moira', 'Tessa', 'Fiona', 'Victoria'
+  ];
+  var voice = null;
+  for (var p = 0; p < preferred.length; p++) {
+    voice = voices.find(function(v) { return v.name.includes(preferred[p]); });
+    if (voice) break;
+  }
+  if (!voice) {
+    voice = voices.find(function(v) {
+      return v.lang.startsWith('en') && (
+        v.name.toLowerCase().includes('female') ||
+        v.name.toLowerCase().includes('woman')
+      );
+    });
+  }
+  if (voice) utter.voice = voice;
   window.speechSynthesis.speak(utter);
 }
 
