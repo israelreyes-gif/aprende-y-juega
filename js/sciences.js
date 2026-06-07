@@ -10,7 +10,7 @@ var scMixIdx   = 0;
 
 function loadSciencesData(callback) {
   if (SC_DATA) { callback(); return; }
-  fetch('data/curso3/sciences.json')
+  fetch('data/curso' + cursoActual + '/sciences.json')
     .then(function(r) { return r.json(); })
     .then(function(d) { SC_DATA = d; callback(); })
     .catch(function(e) { console.error('Error loading sciences.json', e); });
