@@ -80,7 +80,6 @@ function loadData(callback) {
 }
 
 function initApp() {
-  checkDayReset();
   updateMedalUI();
   updateStreakUI();
   updateHomeUI();
