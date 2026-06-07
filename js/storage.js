@@ -44,8 +44,11 @@ function loadStateFromCloud(callback) {
   fetch(API_URL + '/progreso/' + perfilActivoId + '/' + cursoActual)
     .then(function(r) { return r.json(); })
     .then(function(data) {
+      console.log('D1 cargado para perfil', perfilActivoId, '- totalPts:', data ? data.total_pts : 'null');
       ST = data ? mergeState(data) : defaultState();
+      console.log('ST después de merge - totalPts:', ST.totalPts);
       checkDayReset();
+      console.log('ST después de checkDayReset - totalPts:', ST.totalPts);
       if (callback) callback();
     })
     .catch(function(e) {
