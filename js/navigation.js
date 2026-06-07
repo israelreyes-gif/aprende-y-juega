@@ -88,6 +88,7 @@ function go(screenId) {
   if (screenId === 's-vocab-ex-i2w')          { loadI2WQuestion(); }
   if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); }
   if (screenId === 's-sciences-study-invertebrates') { renderSciencesStudy(); }
+  if (screenId === 's-padres')                      { renderPadres(); }
 }
 
 /* ---- Limpiar estado visual de ejercicios ---- */
