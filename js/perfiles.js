@@ -111,20 +111,18 @@ function pintarPerfiles(perfiles) {
 /* ---- Seleccionar perfil ---- */
 function seleccionarPerfil(perfil) {
   setPerfilActivo(perfil);
-  setPerfilActivoId(perfil.id);
   AV = perfilToAV(perfil);
   saveAvatar(AV);
-  setNombre(perfil.nombre);
   setCurso(3);
-  checkDayReset();
 
-  // Subir progreso local a D1 (1 escritura por sesión) y luego entrar
-  syncProgresoToCloud();
-
-  updateHomeUI(); updateStreakUI(); updateMedalUI();
-  updateSubjectUI('mates'); updateSubjectUI('lengua');
-  refreshAllAvatars();
-  go('s-cursos');
+  // Cargar progreso desde D1 y luego entrar
+  setPerfilActivoId(perfil.id, function() {
+    updateHomeUI(); updateStreakUI(); updateMedalUI();
+    updateSubjectUI('mates'); updateSubjectUI('lengua');
+    updateSubjectUI('sciences'); updateSubjectUI('english');
+    refreshAllAvatars();
+    go('s-cursos');
+  });
 }
 
 /* ---- Modal nuevo/editar ---- */
