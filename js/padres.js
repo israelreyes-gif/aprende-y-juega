@@ -124,13 +124,11 @@ function renderSubjects() {
       items:(function() {
         var eErr = (ST.english && ST.english.errors) ? ST.english.errors : {};
         function ste(errors, key) { var ok=errors[key+'_ok']||0, f=errors[key+'_fail']||0; return {total:ok+f,ok:ok}; }
-        var enTotal=0, enOk=0;
-        Object.keys(eErr).forEach(function(k) {
-          if (k.endsWith('_ok')) enOk += eErr[k];
-          if (k.endsWith('_fail')) enTotal += eErr[k];
-        });
-        enTotal += enOk;
-        return [ {nombre:'All exercises', s:{total:enTotal, ok:enOk}} ];
+        return [
+          {nombre:'To Be',       s:ste(eErr,'tobe')},
+          {nombre:'Modal Verbs', s:ste(eErr,'modals')},
+          {nombre:'Vocabulary',  s:ste(eErr,'vocab')}
+        ];
       })()
     },
     { nombre:'Sciences', icono:'🔬', color:'#14B8A6',
