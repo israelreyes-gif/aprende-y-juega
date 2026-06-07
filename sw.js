@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v10';
+var CACHE = 'aprende-v11';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -47,11 +47,18 @@ var PRECACHE = [
   '/apple-touch-icon.png'
 ];
 
-// Instalar — cachear todos los ficheros principales
+// Instalar — cachear ficheros principales (tolerante a errores)
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(CACHE).then(function(cache) {
-      return cache.addAll(PRECACHE);
+      // Cachear uno a uno para que un fallo no bloquee toda la instalación
+      return Promise.all(
+        PRECACHE.map(function(url) {
+          return cache.add(url).catch(function(err) {
+            console.warn('SW: no se pudo cachear ' + url, err);
+          });
+        })
+      );
     }).then(function() {
       return self.skipWaiting();
     })
