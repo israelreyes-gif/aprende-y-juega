@@ -92,6 +92,10 @@ function tieneNombre() { return getNombre().length > 0; }
 function setCurso(num) {
   cursoActual = num;
   ST = loadState(num);
+  // Resetear cachés de datos en memoria para que recarguen del curso correcto
+  if (typeof EN_DATA    !== 'undefined') EN_DATA    = null;
+  if (typeof VOCAB_DATA !== 'undefined') VOCAB_DATA = null;
+  if (typeof SC_DATA    !== 'undefined') SC_DATA    = null;
 }
 
 /* ---- Cambiar de perfil ---- */
