@@ -637,6 +637,7 @@ function recordEnglishResult(correct, firstAttempt, area) {
   }
   saveState();
   updateSubjectUI('english');
+  if (typeof updateHomeUI === 'function') updateHomeUI();
   setEl('home-pts-pill', '⭐ ' + ST.totalPts + ' pts');
 }
 
