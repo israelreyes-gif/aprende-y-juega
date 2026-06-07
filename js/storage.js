@@ -1,6 +1,7 @@
 /* =============================================
    STORAGE.JS — Persistencia exclusiva con Cloudflare D1
    Sin localStorage. D1 es la única fuente de verdad.
+   Estructura limpia: cada asignatura tiene su JSON completo.
    ============================================= */
 
 var API_URL = 'https://aprende-y-juega-api.israel-reyes.workers.dev';
@@ -12,16 +13,14 @@ var ST = defaultState();
 
 function defaultState() {
   return {
-    totalPts:    0,
-    lastDate:    '',
-    streak:      0,
-    weekDays:    [],
-    mates:       { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, errors: {} },
-    lengua:      { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, errors: {} },
-    sciences:    { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
-    english:     { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
-    gramStreak:  0,
-    compStreak:  0
+    totalPts:  0,
+    lastDate:  '',
+    streak:    0,
+    weekDays:  [],
+    mates:     { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
+    lengua:    { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
+    sciences:  { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
+    english:   { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} }
   };
 }
 
@@ -30,7 +29,11 @@ function mergeState(s) {
   Object.keys(def).forEach(function(k) { if (s[k] === undefined) s[k] = def[k]; });
   ['mates','lengua','sciences','english'].forEach(function(sub) {
     if (!s[sub]) s[sub] = def[sub];
-    if (def[sub]) { Object.keys(def[sub]).forEach(function(k) { if (s[sub][k] === undefined) s[sub][k] = def[sub][k]; }); }
+    if (def[sub]) {
+      Object.keys(def[sub]).forEach(function(k) {
+        if (s[sub][k] === undefined) s[sub][k] = def[sub][k];
+      });
+    }
   });
   return s;
 }
@@ -41,11 +44,7 @@ function loadStateFromCloud(callback) {
   fetch(API_URL + '/progreso/' + perfilActivoId + '/' + cursoActual)
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      if (data && data.totalPts !== undefined) {
-        ST = mergeState(data);
-      } else {
-        ST = defaultState();
-      }
+      ST = data ? mergeState(data) : defaultState();
       checkDayReset();
       if (callback) callback();
     })
@@ -63,17 +62,14 @@ function saveState() {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      totalPts:    ST.totalPts,
-      lastDate:    ST.lastDate,
-      streak:      ST.streak,
-      weekDays:    ST.weekDays,
-      mates:       ST.mates,
-      lengua:      ST.lengua,
-      sciences:    ST.sciences,
-      english:     ST.english,
-      matesStreak: ST.matesStreak || 0,
-      gramStreak:  ST.gramStreak  || 0,
-      compStreak:  ST.compStreak  || 0
+      totalPts:  ST.totalPts,
+      lastDate:  ST.lastDate,
+      streak:    ST.streak,
+      weekDays:  ST.weekDays,
+      mates:     ST.mates,
+      lengua:    ST.lengua,
+      sciences:  ST.sciences,
+      english:   ST.english
     })
   }).catch(function(e) { console.warn('No se pudo guardar progreso:', e); });
 }
@@ -107,10 +103,10 @@ function checkDayReset() {
   var today = todayStr();
   if (ST.lastDate === today) return;
 
-  ST.mates.hoy   = 0; ST.mates.hoyOk   = 0;
-  ST.lengua.hoy  = 0; ST.lengua.hoyOk  = 0;
-  if (ST.sciences) { ST.sciences.hoy = 0; ST.sciences.hoyOk = 0; }
-  if (ST.english)  { ST.english.hoy  = 0; ST.english.hoyOk  = 0; }
+  // Resetear contadores diarios de todas las asignaturas
+  ['mates','lengua','sciences','english'].forEach(function(sub) {
+    if (ST[sub]) { ST[sub].hoy = 0; ST[sub].hoyOk = 0; }
+  });
 
   if (ST.lastDate) {
     var prev = new Date(ST.lastDate), now = new Date(today);
@@ -134,16 +130,15 @@ function checkDayReset() {
 /* ---- Registrar resultado ---- */
 function recordResult(subject, exerciseKey, correct) {
   var s = ST[subject];
+  if (!s) return;
   s.hoy++; s.total++;
   if (correct) {
     s.hoyOk++; s.totalOk++;
     s.errors[exerciseKey + '_ok'] = (s.errors[exerciseKey + '_ok'] || 0) + 1;
-    if (subject === 'mates')  ST.matesStreak = (ST.matesStreak || 0) + 1;
-    if (subject === 'lengua') ST.gramStreak  = (ST.gramStreak  || 0) + 1;
+    s.streak = (s.streak || 0) + 1;
   } else {
     s.errors[exerciseKey + '_fail'] = (s.errors[exerciseKey + '_fail'] || 0) + 1;
-    if (subject === 'mates')  ST.matesStreak = Math.max(0, (ST.matesStreak || 0) - 1);
-    if (subject === 'lengua') ST.gramStreak  = Math.max(0, (ST.gramStreak  || 0) - 1);
+    s.streak = Math.max(0, (s.streak || 0) - 1);
   }
   saveState();
 }
@@ -151,16 +146,16 @@ function recordResult(subject, exerciseKey, correct) {
 /* ---- Añadir puntos ---- */
 function addPts(n, subject) {
   ST.totalPts += n;
-  ST[subject].pts += n;
+  if (ST[subject]) ST[subject].pts += n;
   saveState();
 }
 
-/* ---- Helpers ---- */
+/* ---- Helper porcentaje ---- */
 function pct(ok, total) {
   return total > 0 ? Math.round(ok / total * 100) + '%' : '—';
 }
 
-// Compatibilidad: estas funciones ya no usan localStorage
+// Compatibilidad
 function getNombre() { return ''; }
 function setNombre(n) {}
 function tieneNombre() { return false; }
