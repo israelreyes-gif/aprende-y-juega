@@ -1,50 +1,10 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v11';
+var CACHE = 'aprende-v12';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/css/base.css',
-  '/css/components.css',
-  '/css/screens.css',
-  '/js/storage.js',
-  '/js/ui.js',
-  '/js/navigation.js',
-  '/js/medals.js',
-  '/js/avatar.js',
-  '/js/perfiles.js',
-  '/js/sciences.js',
-  '/js/english.js',
-  '/js/padres.js',
-  '/js/descripciones.js',
-  '/js/mates.js',
-  '/js/lengua.js',
-  '/js/comprension.js',
-  '/js/app.js',
-  '/screens/english.html',
-  '/screens/sciences.html',
-  '/screens/perfiles.html',
-  '/screens/cursos.html',
-  '/screens/home.html',
-  '/screens/mates.html',
-  '/screens/lengua.html',
-  '/screens/avatar.html',
-  '/screens/padres.html',
-  '/screens/descripciones.html',
-  '/screens/wip.html',
-  '/data/curso3/config.json',
-  '/data/curso3/ejercicios-gram.json',
-  '/data/curso3/ejercicios-mates.json',
-  '/data/curso3/historias.json',
-  '/data/curso3/descripciones.json',
-  '/data/curso3/sciences.json',
-  '/data/curso3/english.json',
-  '/data/curso3/english-vocab.json',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/apple-touch-icon.png'
+  // El SW cachea automáticamente al navegar (network first)
+  // No precacheamos para evitar errores de instalación
 ];
 
 // Instalar — cachear ficheros principales (tolerante a errores)
