@@ -64,8 +64,11 @@ function drawAvatarSVG(svgEl, av, pts) {
   var accIdx = av.acc || 0;
   var acc = AVATAR_ACCS[accIdx] || AVATAR_ACCS[0];
 
-  var hd = hair; // color pelo
-  var hs = hairDark(hair); // tono oscuro para sombras
+  var hd = hair;
+  var hs = hairDark(hair);
+
+  // Tono de sombra para la piel
+  var skinDark = hairDark(skin);
 
   // Cada peinado: [pelo_trasero, pelo_delantero]
   // Orden de dibujo: pelo_trasero → cara+orejas → pelo_delantero → ojos+boca
@@ -116,13 +119,29 @@ function drawAvatarSVG(svgEl, av, pts) {
     parts[1] +
     // accesorios (van encima del pelo delantero)
     accSvg +
-    // capa 4: ojos, nariz, boca, mejillas
-    '<ellipse cx="55" cy="80" rx="5" ry="6" fill="white"/><ellipse cx="75" cy="80" rx="5" ry="6" fill="white"/>'+
-    '<circle cx="55" cy="81" r="3" fill="#1F2937"/><circle cx="75" cy="81" r="3" fill="#1F2937"/>'+
-    '<circle cx="56" cy="80" r="1.2" fill="white"/><circle cx="76" cy="80" r="1.2" fill="white"/>'+
-    '<ellipse cx="65" cy="92" rx="4" ry="2.5" fill="#C4737A" opacity=".55"/>'+
-    '<path d="M58 99 Q65 105 72 99" fill="none" stroke="#C4737A" stroke-width="2" stroke-linecap="round"/>'+
-    '<ellipse cx="50" cy="88" rx="5" ry="3.5" fill="#E8967A" opacity=".3"/><ellipse cx="80" cy="88" rx="5" ry="3.5" fill="#E8967A" opacity=".3"/>';
+    // capa 4: cejas, ojos con brillo, nariz, boca, mejillas
+    // Cejas
+    '<path d="M48 73 Q53 70 58 72" stroke="'+hs+'" stroke-width="2" fill="none" stroke-linecap="round"/>'+
+    '<path d="M72 73 Q77 70 82 72" stroke="'+hs+'" stroke-width="2" fill="none" stroke-linecap="round"/>'+
+    // Ojos blancos
+    '<ellipse cx="53" cy="80" rx="6" ry="6.5" fill="white"/>'+
+    '<ellipse cx="77" cy="80" rx="6" ry="6.5" fill="white"/>'+
+    // Iris
+    '<circle cx="54" cy="81" r="4" fill="#3D2B1F"/>'+
+    '<circle cx="78" cy="81" r="4" fill="#3D2B1F"/>'+
+    // Brillo ojos
+    '<circle cx="56" cy="79" r="1.5" fill="white"/>'+
+    '<circle cx="80" cy="79" r="1.5" fill="white"/>'+
+    '<circle cx="53" cy="83" r="0.8" fill="white" opacity=".6"/>'+
+    '<circle cx="77" cy="83" r="0.8" fill="white" opacity=".6"/>'+
+    // Nariz
+    '<ellipse cx="65" cy="92" rx="3" ry="2" fill="'+skinDark+'" opacity=".4"/>'+
+    // Boca
+    '<path d="M57 99 Q65 107 73 99" fill="none" stroke="#C4737A" stroke-width="2.5" stroke-linecap="round"/>'+
+    '<ellipse cx="65" cy="100" rx="5" ry="2" fill="#E8967A" opacity=".25"/>'+
+    // Mejillas
+    '<ellipse cx="46" cy="89" rx="7" ry="4" fill="#FFB3B3" opacity=".45"/>'+
+    '<ellipse cx="84" cy="89" rx="7" ry="4" fill="#FFB3B3" opacity=".45"/>';
 }
 
 /* ---- Devuelve un tono más oscuro del color de pelo para sombras ---- */
