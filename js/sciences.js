@@ -244,17 +244,16 @@ function nextSciencesMix() {
 function recordSciencesResult(correct, firstAttempt) {
   if (!ST.sciences) ST.sciences = { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} };
   var s = ST.sciences;
-  // Solo contar el ejercicio una vez (en el primer intento correcto o en el segundo fallo)
   s.hoy++; s.total++;
   if (correct) {
     s.hoyOk++; s.totalOk++;
-    s.pts += firstAttempt ? 10 : 5; // 10 pts al primer intento, 5 al segundo
     s.streak++;
-    ST.totalPts += firstAttempt ? 10 : 5;
+    var pts = firstAttempt ? 10 : 5;
+    awardPts(pts, 'sciences');
   } else {
     s.streak = Math.max(0, s.streak - 1);
+    saveState();
   }
-  saveState();
   updateSubjectUI('sciences');
   setEl('home-pts-pill', '⭐ ' + ST.totalPts + ' pts');
 }
