@@ -13,6 +13,13 @@ function resetearEstadisticas() {
 }
 
 function renderPadres() {
+  // Recargar desde D1 para asegurar datos del perfil activo
+  loadStateFromCloud(function() {
+    _renderPadresUI();
+  });
+}
+
+function _renderPadresUI() {
   var medals = [
     {icon:'🎖️',name:'Recién llegada',req:0},
     {icon:'🥉',name:'Soldado',req:50},
@@ -29,12 +36,12 @@ function renderPadres() {
   setEl('p-pts', ST.totalPts);
   setEl('p-medal', curMedal.icon + ' ' + curMedal.name);
   setEl('p-streak', ST.streak || 0);
-  var hoy = (ST.mates.hoy||0) + (ST.lengua.hoy||0);
-  var hoyOk = (ST.mates.hoyOk||0) + (ST.lengua.hoyOk||0);
+  var hoy = (ST.mates.hoy||0) + (ST.lengua.hoy||0) + (ST.sciences&&ST.sciences.hoy||0) + (ST.english&&ST.english.hoy||0);
+  var hoyOk = (ST.mates.hoyOk||0) + (ST.lengua.hoyOk||0) + (ST.sciences&&ST.sciences.hoyOk||0) + (ST.english&&ST.english.hoyOk||0);
   setEl('p-hoy', hoy);
   setEl('p-hoy-ok', hoyOk + ' correctos');
-  var total = (ST.mates.total||0) + (ST.lengua.total||0);
-  var totalOk = (ST.mates.totalOk||0) + (ST.lengua.totalOk||0);
+  var total = (ST.mates.total||0) + (ST.lengua.total||0) + (ST.sciences&&ST.sciences.total||0) + (ST.english&&ST.english.total||0);
+  var totalOk = (ST.mates.totalOk||0) + (ST.lengua.totalOk||0) + (ST.sciences&&ST.sciences.totalOk||0) + (ST.english&&ST.english.totalOk||0);
   setEl('p-pct', total > 0 ? Math.round(totalOk/total*100) + '%' : '—');
 
   renderWeekBars();
