@@ -44,23 +44,13 @@ function loadStateFromCloud(callback) {
   fetch(API_URL + '/progreso/' + perfilActivoId + '/' + cursoActual)
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      console.log('D1 cargado para perfil', perfilActivoId, '- totalPts:', data ? data.total_pts : 'null');
       if (data) {
-        // El Worker devuelve total_pts (snake_case), mapeamos a totalPts (camelCase)
-        if (data.total_pts !== undefined && data.totalPts === undefined) {
-          data.totalPts = data.total_pts;
-        }
-        if (data.last_date !== undefined && data.lastDate === undefined) {
-          data.lastDate = data.last_date;
-        }
-        if (data.week_days !== undefined && data.weekDays === undefined) {
-          data.weekDays = data.week_days;
-        }
+        if (data.total_pts !== undefined && data.totalPts === undefined) data.totalPts = data.total_pts;
+        if (data.last_date !== undefined && data.lastDate === undefined) data.lastDate = data.last_date;
+        if (data.week_days !== undefined && data.weekDays === undefined) data.weekDays = data.week_days;
       }
       ST = data ? mergeState(data) : defaultState();
-      console.log('ST después de merge - totalPts:', ST.totalPts);
       checkDayReset();
-      console.log('ST después de checkDayReset - totalPts:', ST.totalPts);
       if (callback) callback();
     })
     .catch(function(e) {
