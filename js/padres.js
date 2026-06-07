@@ -200,6 +200,8 @@ function renderRefuerzo() {
 
   var mErr = ST.mates.errors || {};
   var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
+  var eErr = (ST.english && ST.english.errors) ? ST.english.errors : {};
+  var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
 
   function getStats(errors, key) {
     var ok = errors[key+'_ok']||0, fallos = errors[key+'_fail']||0, total = ok+fallos;
@@ -238,6 +240,27 @@ function renderRefuerzo() {
         {nombre:'Gramática R / RR', stats:getStats(lErr,'gram-rr')},
         {nombre:'Comprensión',      stats:getStats(lErr,'comp')},
         {nombre:'Descripciones',    stats:getStats(lErr,'desc')}
+      ]
+    },
+    { nombre:'English', icono:'🇬🇧', pill:'background:#EFF6FF;color:#1D4ED8',
+      items:[
+        {nombre:'To Be',       stats:getStats(eErr,'tobe')},
+        {nombre:'Modal Verbs', stats:getStats(eErr,'modals')},
+        {nombre:'Vocabulary',  stats:getStats(eErr,'vocab')}
+      ]
+    },
+    { nombre:'Sciences', icono:'🔬', pill:'background:#F0FDFA;color:#0F766E',
+      items:[
+        {nombre:'Invertebrates', stats:(function(){
+          var ok=0,f=0;
+          ['ex1','ex2','ex3','ex4','ex5','ex6','ex7','ex8','ex9','ex10'].forEach(function(k){
+            ok+=scErr[k+'_ok']||0; f+=scErr[k+'_fail']||0;
+          });
+          var total=ok+f; if(!total) return null;
+          var pct=Math.round(ok/total*100);
+          return pct<75?{pct:pct,total:total,fallos:f}:null;
+        })()},
+        {nombre:'Mix', stats:getStats(scErr,'mix')}
       ]
     }
   ];
