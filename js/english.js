@@ -5,6 +5,7 @@
 var EN_DATA    = null;
 var enExQueue  = [];
 var enExIdx    = 0;
+var enExArea   = 'tobe';   // área activa para estadísticas
 var enMixQueue = [];
 var enMixIdx   = 0;
 
@@ -18,7 +19,7 @@ if (window.speechSynthesis) {
 
 function loadEnglishData(callback) {
   if (EN_DATA) { callback(); return; }
-  fetch('data/curso3/english.json')
+  fetch('data/curso' + cursoActual + '/english.json')
     .then(function(r) { return r.json(); })
     .then(function(d) { EN_DATA = d; callback(); })
     .catch(function(e) { console.error('Error loading english.json', e); });
@@ -266,6 +267,7 @@ function shuffleArr(arr) {
 }
 
 function startWordOrder(unit) {
+  enExArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
   loadEnglishData(function() {
     var sentences = extractSentences(unit);
     sentences = shuffleArr(sentences).slice(0, 15); // 15 frases por sesión
@@ -422,7 +424,7 @@ function checkWordOrder() {
     nextBtn.style.display = 'block';
     resetBtn.style.display = 'none';
     document.getElementById('en-wo-check').style.display = 'none';
-    recordEnglishResult(true, woAttempt === 1);
+    recordEnglishResult(true, woAttempt === 1, enExArea);
 
   } else if (woAttempt === 1) {
     woAttempt = 2;
@@ -444,7 +446,7 @@ function checkWordOrder() {
     nextBtn.style.display = 'block';
     resetBtn.style.display = 'none';
     document.getElementById('en-wo-check').style.display = 'none';
-    recordEnglishResult(false, false);
+    recordEnglishResult(false, false, enExArea);
   }
 
   renderWoSlots();
@@ -462,6 +464,7 @@ function nextWordOrder() {
 
 /* ---- EXERCISES ---- */
 function startEnglishExercisesByType(unit, type, exercises) {
+  enExArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
   if (type === 'E') { startWordOrder(unit); return; }
   var exs = exercises.slice();
   for (var i = exs.length - 1; i > 0; i--) {
@@ -532,7 +535,7 @@ function checkEnglishAnswer(selected, ex, attempt, mode) {
     fbEl.className = 'feedback fb-ok';
     fbEl.textContent = '✅ Correct!';
     nextBtn.style.display = 'block';
-    recordEnglishResult(true, attempt === 1);
+    recordEnglishResult(true, attempt === 1, enExArea);
   } else if (attempt === 1) {
     Array.from(opts.children).forEach(function(btn) {
       if (btn.textContent === selected) {
@@ -559,7 +562,7 @@ function checkEnglishAnswer(selected, ex, attempt, mode) {
     fbEl.innerHTML = '❌ The answer is <strong>' + correct + '</strong>' +
       (explanation ? '<div style="margin-top:8px;font-size:12px;font-weight:600;opacity:.85;line-height:1.5">' + explanation + '</div>' : '');
     nextBtn.style.display = 'block';
-    recordEnglishResult(false, false);
+    recordEnglishResult(false, false, enExArea);
   }
 }
 
@@ -614,7 +617,7 @@ function nextEnglishMix() {
 }
 
 /* ---- Registrar resultado ---- */
-function recordEnglishResult(correct, firstAttempt) {
+function recordEnglishResult(correct, firstAttempt, area) {
   if (!ST.english) ST.english = { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} };
   var e = ST.english;
   e.hoy++; e.total++;
@@ -625,6 +628,12 @@ function recordEnglishResult(correct, firstAttempt) {
     ST.totalPts += pts;
   } else {
     e.streak = Math.max(0, e.streak - 1);
+  }
+  // Guardar estadística por área (tobe, modals, vocab)
+  if (area) {
+    if (!e.errors) e.errors = {};
+    var key = correct ? area + '_ok' : area + '_fail';
+    e.errors[key] = (e.errors[key] || 0) + 1;
   }
   saveState();
   updateSubjectUI('english');
@@ -646,7 +655,7 @@ var VOCAB_COLORS = {
 
 function loadVocabData(callback) {
   if (VOCAB_DATA) { callback(); return; }
-  fetch('data/curso3/english-vocab.json')
+  fetch('data/curso' + cursoActual + '/english-vocab.json')
     .then(function(r) { return r.json(); })
     .then(function(d) { VOCAB_DATA = d; callback(); })
     .catch(function(e) { console.error('Error loading english-vocab.json', e); });
@@ -921,7 +930,7 @@ function pickW2I(opt, word) {
     fbEl.textContent = '✅ Correct!';
     nextBtn.style.display = 'block';
     renderW2IOpts(word);
-    recordEnglishResult(true, vocabExAttempt === 1);
+    recordEnglishResult(true, vocabExAttempt === 1, 'vocab');
   } else if (vocabExAttempt === 1) {
     vocabExAttempt = 2;
     vocabExWrong   = opt.word;
@@ -937,7 +946,7 @@ function pickW2I(opt, word) {
     fbEl.textContent = '❌ The answer is: ' + word.emoji + ' ' + word.word;
     nextBtn.style.display = 'block';
     renderW2IOpts(word);
-    recordEnglishResult(false, false);
+    recordEnglishResult(false, false, 'vocab');
   }
 }
 
@@ -1005,7 +1014,7 @@ function checkVocabI2W() {
     fbEl.textContent = '✅ Correct!';
     nextBtn.style.display  = 'block';
     checkBtn.style.display = 'none';
-    recordEnglishResult(true, vocabExAttempt === 1);
+    recordEnglishResult(true, vocabExAttempt === 1, 'vocab');
 
   } else if (vocabExAttempt === 1) {
     vocabExAttempt = 2;
@@ -1034,7 +1043,7 @@ function checkVocabI2W() {
     fbEl.textContent = '❌ The correct word is: ' + word.word;
     nextBtn.style.display  = 'block';
     checkBtn.style.display = 'none';
-    recordEnglishResult(false, false);
+    recordEnglishResult(false, false, 'vocab');
   }
 }
 
