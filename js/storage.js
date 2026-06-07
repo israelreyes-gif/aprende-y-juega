@@ -84,8 +84,7 @@ function setPerfilActivoId(id, callback) {
 /* ---- Cambiar de curso ---- */
 function setCurso(num) {
   cursoActual = num;
-  ST = defaultState();
-  loadStateFromCloud();
+  // No cargamos aquí — setPerfilActivoId lo hará con el perfil correcto
   if (typeof EN_DATA    !== 'undefined') EN_DATA    = null;
   if (typeof VOCAB_DATA !== 'undefined') VOCAB_DATA = null;
   if (typeof SC_DATA    !== 'undefined') SC_DATA    = null;
