@@ -93,6 +93,7 @@ function go(screenId) {
   if (screenId === 's-sociales')               { renderMiniCalendario('cal-sociales', 'sociales', '#0F6E56'); }
   if (screenId === 's-sociales-study')         { renderSocialesMenu(); }
   if (screenId === 's-sociales-study-unit')    { renderSocialesUnit(); }
+  if (screenId === 's-sociales-ex')            { loadSocEx(); }
   if (screenId === 's-padres')                      { renderPadres(); }
   if (screenId === 's-calendario')                  { renderCalendarioHome(); }
 }
