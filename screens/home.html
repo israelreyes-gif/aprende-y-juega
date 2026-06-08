@@ -1,7 +1,6 @@
-<!-- =============================================
-     HOME.HTML — Pantalla de inicio
-     ============================================= -->
+<!-- HOME.HTML -->
 <div class="screen" id="s-home">
+  <!-- 1. ZONA MORADA -->
   <div class="topbar bg-purple" style="padding-bottom:18px">
     <button class="back-btn" onclick="go('s-cursos')" style="flex-shrink:0" title="Cambiar curso">←</button>
     <div style="flex:1">
@@ -16,9 +15,8 @@
   </div>
 
   <div class="sa">
-    <!-- MEDALLA CON AVATAR -->
+    <!-- 2. PERFIL + INSIGNIA -->
     <div class="medal-banner" style="align-items:center">
-      <!-- Avatar con botón editar -->
       <div style="position:relative;flex-shrink:0" onclick="abrirEditorAvatar('s-home')" title="Editar avatar">
         <div style="width:64px;height:64px;border-radius:50%;background:#EDE9FE;border:3px solid #7C3AED;display:flex;align-items:center;justify-content:center;cursor:pointer">
           <svg data-avatar width="52" height="52" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -32,25 +30,14 @@
       </div>
     </div>
 
-    <!-- Toast de desbloqueo de avatar -->
+    <!-- Toast de desbloqueo -->
     <div id="unlock-toast" style="display:none;background:#EDE9FE;border:1.5px solid #7C3AED;border-radius:14px;padding:10px 14px;margin:0 0 10px;align-items:center;gap:10px">
       <div style="font-size:24px;flex-shrink:0">🎉</div>
       <div style="flex:1;font-size:12px;font-weight:700;color:#4C1D95;line-height:1.5" id="unlock-toast-msg"></div>
       <button onclick="abrirEditorAvatar('s-home')" style="background:#7C3AED;color:white;border:none;border-radius:8px;padding:6px 12px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap">¡Ver!</button>
     </div>
 
-    <!-- RACHA SEMANAL -->
-    <!-- ACCESO CALENDARIO -->
-    <div onclick="go('s-calendario')" style="margin:0 0 8px;padding:12px 16px;background:linear-gradient(135deg,#7F77DD,#533AB7);border-radius:14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;box-shadow:0 2px 8px rgba(127,119,221,.3)">
-      <div style="display:flex;align-items:center;gap:10px">
-        <span style="font-size:24px">📅</span>
-        <div>
-          <div style="font-family:var(--f);font-size:14px;font-weight:900;color:white">Mi calendario de estudio</div>
-          <div style="font-family:var(--f);font-size:11px;color:rgba(255,255,255,.8)" id="cal-home-lbl">Ver objetivos y progreso del mes</div>
-        </div>
-      </div>
-      <span style="color:white;font-size:20px;opacity:.8">›</span>
-    </div>
+    <!-- 3. RACHA SEMANAL -->
     <div class="slbl">Racha semanal</div>
     <div class="streak-card">
       <div style="flex:1">
@@ -63,7 +50,7 @@
       </div>
     </div>
 
-    <!-- ASIGNATURAS -->
+    <!-- 4. ASIGNATURAS -->
     <div class="slbl">Asignaturas</div>
     <div class="subj-grid">
       <div class="subj-card" onclick="go('s-mates')">
@@ -82,7 +69,7 @@
         <span class="subj-icon">🔬</span>
         <div class="subj-name">Sciences</div>
         <div class="subj-desc">Naturaleza, experimentos</div>
-        <span class="subj-pill pill-ok">Disponible</span>
+        <span class="subj-pill pill-ok">Available</span>
       </div>
       <div class="subj-card" onclick="go('s-wip-sociales')">
         <span class="subj-icon">🌍</span>
@@ -104,62 +91,58 @@
       </div>
     </div>
 
-    <!-- PROGRESO -->
-    <div class="slbl">Mi progreso</div>
+    <!-- 5. CALENDARIO DESPLEGADO -->
+    <div class="slbl">Mi calendario</div>
+    <div style="border:0.5px solid var(--gray-100);border-radius:16px;overflow:hidden;background:white;margin-bottom:4px">
+      <!-- Tabs -->
+      <div style="display:flex;gap:6px;padding:12px 14px 0">
+        <button class="cal-tab-btn" data-tab="mes" onclick="calSetTab('mes')" style="padding:5px 12px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500)">Mes</button>
+        <button class="cal-tab-btn" data-tab="objetivos" onclick="calSetTab('objetivos')" style="padding:5px 12px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:default;color:var(--gray-300);opacity:.5">Objetivos 🔒</button>
+        <button class="cal-tab-btn" data-tab="eventos" onclick="calSetTab('eventos')" style="padding:5px 12px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:default;color:var(--gray-300);opacity:.5">Eventos 🔒</button>
+      </div>
 
-    <div class="prog-block">
-      <div class="prog-hdr"><span class="prog-name">🔢 Matemáticas</span><span style="font-size:11px;color:var(--gray-400);font-weight:700" id="pm-pts">⭐ 0 pts</span></div>
-      <div class="prog-2col">
-        <div><div class="prog-ilbl">Hoy</div><div class="prog-track"><div class="prog-fill" id="pm-hoy-bar" style="background:var(--purple);width:0%"></div></div><div class="prog-val" style="color:var(--purple)" id="pm-hoy-val">0 ejerc.</div></div>
-        <div><div class="prog-ilbl">Acumulado</div><div class="prog-track"><div class="prog-fill" id="pm-acc-bar" style="background:#A78BFA;width:0%"></div></div><div class="prog-val" style="color:var(--purple)" id="pm-acc-val">—</div></div>
+      <!-- TAB MES -->
+      <div id="cal-tab-mes" style="padding:12px 14px 14px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)" id="cal-mes-lbl">—</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:10px;color:var(--gray-400);font-family:var(--f)">
+            <div style="display:flex;align-items:center;gap:2px"><div style="width:8px;height:8px;border-radius:2px;background:#EAF3DE;border:0.5px solid #639922"></div>Completo</div>
+            <div style="display:flex;align-items:center;gap:2px"><div style="width:8px;height:8px;border-radius:2px;background:#EEEDFE;border:0.5px solid #7F77DD"></div>Hoy</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:3px">
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">L</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">M</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">X</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">J</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">V</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">S</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">D</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:10px" id="cal-mes-grid"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+          <div class="stat-card"><div class="stat-num" style="color:#639922" id="cal-stat-dias">—</div><div class="stat-lbl">días</div></div>
+          <div class="stat-card"><div class="stat-num" style="color:#7F77DD" id="cal-stat-racha">—</div><div class="stat-lbl">racha</div></div>
+          <div class="stat-card"><div class="stat-num" style="color:#BA7517" id="cal-stat-mejor">—</div><div class="stat-lbl">mejor</div></div>
+        </div>
+      </div>
+
+      <!-- TAB OBJETIVOS (bloqueado) -->
+      <div id="cal-tab-objetivos" style="display:none;padding:24px 14px;text-align:center">
+        <div style="font-size:32px;margin-bottom:8px">🔒</div>
+        <div style="font-family:var(--f);font-size:14px;font-weight:700;color:var(--gray-600)">Próximamente</div>
+        <div style="font-family:var(--f);font-size:12px;color:var(--gray-400);margin-top:4px">Los objetivos semanales estarán disponibles pronto</div>
+      </div>
+
+      <!-- TAB EVENTOS (bloqueado) -->
+      <div id="cal-tab-eventos" style="display:none;padding:24px 14px;text-align:center">
+        <div style="font-size:32px;margin-bottom:8px">🔒</div>
+        <div style="font-family:var(--f);font-size:14px;font-weight:700;color:var(--gray-600)">Próximamente</div>
+        <div style="font-family:var(--f);font-size:12px;color:var(--gray-400);margin-top:4px">Los eventos especiales estarán disponibles pronto</div>
       </div>
     </div>
 
-    <div class="prog-block">
-      <div class="prog-hdr"><span class="prog-name">📚 Lengua</span><span style="font-size:11px;color:var(--gray-400);font-weight:700" id="pl-pts">⭐ 0 pts</span></div>
-      <div class="prog-2col">
-        <div><div class="prog-ilbl">Hoy</div><div class="prog-track"><div class="prog-fill" id="pl-hoy-bar" style="background:var(--pink);width:0%"></div></div><div class="prog-val" style="color:var(--pink)" id="pl-hoy-val">0 ejerc.</div></div>
-        <div><div class="prog-ilbl">Acumulado</div><div class="prog-track"><div class="prog-fill" id="pl-acc-bar" style="background:#F9A8D4;width:0%"></div></div><div class="prog-val" style="color:var(--pink)" id="pl-acc-val">—</div></div>
-      </div>
-    </div>
-
-    <div class="prog-block">
-      <div class="prog-hdr"><span class="prog-name">🔬 Sciences</span><span style="font-size:11px;color:var(--gray-400);font-weight:700" id="psc-pts">⭐ 0 pts</span></div>
-      <div class="prog-2col">
-        <div><div class="prog-ilbl">Today</div><div class="prog-track"><div class="prog-fill" id="psc-hoy-bar" style="background:var(--teal);width:0%"></div></div><div class="prog-val" style="color:var(--teal)" id="psc-hoy-val">0 exerc.</div></div>
-        <div><div class="prog-ilbl">Accumulated</div><div class="prog-track"><div class="prog-fill" id="psc-acc-bar" style="background:#5EEAD4;width:0%"></div></div><div class="prog-val" style="color:var(--teal)" id="psc-acc-val">--</div></div>
-      </div>
-    </div>
-
-    <div class="prog-block">
-      <div class="prog-hdr"><span class="prog-name">🌍 Sociales</span><span style="font-size:11px;color:var(--gray-400);font-weight:700">Sin empezar</span></div>
-      <div class="prog-2col">
-        <div><div class="prog-ilbl">Hoy</div><div class="prog-track"><div class="prog-fill" style="background:var(--orange);width:0%"></div></div><div class="prog-val" style="color:var(--orange)">0 ejerc.</div></div>
-        <div><div class="prog-ilbl">Acumulado</div><div class="prog-track"><div class="prog-fill" style="background:#FDBA74;width:0%"></div></div><div class="prog-val" style="color:var(--orange)">—</div></div>
-      </div>
-    </div>
-
-    <div class="prog-block">
-      <div class="prog-hdr">
-        <span class="prog-name">
-          <svg width="22" height="15" viewBox="0 0 60 40" style="border-radius:3px">
-            <rect width="60" height="40" fill="#012169"/>
-            <path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/>
-            <path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/>
-            <path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/>
-            <path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/>
-          </svg>
-          English
-        </span>
-        <span style="font-size:11px;color:var(--gray-400);font-weight:700" id="pen-pts">⭐ 0 pts</span>
-      </div>
-      <div class="prog-2col">
-        <div><div class="prog-ilbl">Today</div><div class="prog-track"><div class="prog-fill" id="pen-hoy-bar" style="background:var(--blue);width:0%"></div></div><div class="prog-val" style="color:var(--blue)" id="pen-hoy-val">0 exerc.</div></div>
-        <div><div class="prog-ilbl">Accumulated</div><div class="prog-track"><div class="prog-fill" id="pen-acc-bar" style="background:#93C5FD;width:0%"></div></div><div class="prog-val" style="color:var(--blue)" id="pen-acc-val">--</div></div>
-      </div>
-    </div>
-
-    <!-- ERRORES A REFORZAR -->
+    <!-- 6. EJERCICIOS A REFORZAR -->
     <div class="slbl">Ejercicios a reforzar</div>
     <div id="errors-panel" style="padding:0 0 4px">
       <div style="font-size:13px;color:var(--gray-400);font-weight:600;text-align:center;padding:12px 16px">¡Empieza a practicar para ver tus estadísticas!</div>
@@ -167,25 +150,18 @@
   </div>
 </div>
 
-<!-- CALENDARIO COMPLETO -->
+<!-- CALENDARIO COMPLETO (pantalla separada — se mantiene para acceso directo si se necesita) -->
 <div class="screen" id="s-calendario">
   <div class="topbar" style="background:#7F77DD"><button class="back-btn" onclick="go('s-home')">←</button><h1>📅 Calendario</h1><span class="top-badge" style="background:rgba(255,255,255,.2);color:white" id="cal-racha-badge">🔥 —</span></div>
   <div class="sa">
-    <!-- Tabs -->
     <div style="display:flex;gap:6px;margin-bottom:14px">
-      <button class="cal-tab-btn" data-tab="mes" onclick="calSetTab('mes')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500);transition:all .15s">Mes</button>
-      <button class="cal-tab-btn" data-tab="objetivos" onclick="calSetTab('objetivos')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500);transition:all .15s">Objetivos</button>
-      <button class="cal-tab-btn" data-tab="eventos" onclick="calSetTab('eventos')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500);transition:all .15s">Eventos</button>
+      <button class="cal-tab-btn" data-tab="mes" onclick="calSetTab('mes')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500)">Mes</button>
+      <button class="cal-tab-btn" data-tab="objetivos" onclick="calSetTab('objetivos')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500)">Objetivos 🔒</button>
+      <button class="cal-tab-btn" data-tab="eventos" onclick="calSetTab('eventos')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500)">Eventos 🔒</button>
     </div>
-
-    <!-- TAB MES -->
     <div id="cal-tab-mes">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
-        <div style="font-family:var(--f);font-size:14px;font-weight:700;color:var(--gray-800)" id="cal-mes-lbl">—</div>
-        <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:var(--gray-400);font-family:var(--f)">
-          <div style="display:flex;align-items:center;gap:3px"><div style="width:10px;height:10px;border-radius:2px;background:#EAF3DE;border:0.5px solid #639922"></div>Completo</div>
-          <div style="display:flex;align-items:center;gap:3px"><div style="width:10px;height:10px;border-radius:2px;background:#EEEDFE;border:0.5px solid #7F77DD"></div>Hoy</div>
-        </div>
+        <div style="font-family:var(--f);font-size:14px;font-weight:700;color:var(--gray-800)" id="cal-mes-lbl2">—</div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:4px">
         <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">L</div>
@@ -196,65 +172,22 @@
         <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">S</div>
         <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">D</div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:14px" id="cal-mes-grid"></div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:14px" id="cal-mes-grid2"></div>
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
-        <div class="stat-card"><div class="stat-num" style="color:#639922" id="cal-stat-dias">—</div><div class="stat-lbl">días estudiados</div></div>
-        <div class="stat-card"><div class="stat-num" style="color:#7F77DD" id="cal-stat-racha">—</div><div class="stat-lbl">racha actual</div></div>
-        <div class="stat-card"><div class="stat-num" style="color:#BA7517" id="cal-stat-mejor">—</div><div class="stat-lbl">mejor racha</div></div>
+        <div class="stat-card"><div class="stat-num" style="color:#639922" id="cal-stat-dias2">—</div><div class="stat-lbl">días estudiados</div></div>
+        <div class="stat-card"><div class="stat-num" style="color:#7F77DD" id="cal-stat-racha2">—</div><div class="stat-lbl">racha actual</div></div>
+        <div class="stat-card"><div class="stat-num" style="color:#BA7517" id="cal-stat-mejor2">—</div><div class="stat-lbl">mejor racha</div></div>
       </div>
     </div>
-
-    <!-- TAB OBJETIVOS -->
-    <div id="cal-tab-objetivos" style="display:none">
-      <div style="font-family:var(--f);font-size:12px;color:var(--gray-400);margin-bottom:10px">Objetivos semanales</div>
-      <div id="cal-obj-list"></div>
-      <div style="margin-top:12px;border:0.5px solid var(--gray-100);border-radius:14px;padding:12px 14px;background:var(--gray-50);display:flex;align-items:center;gap:10px">
-        <span style="font-size:24px">🏆</span>
-        <div style="flex:1">
-          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)">Semana completa</div>
-          <div style="height:5px;border-radius:3px;background:var(--gray-200);overflow:hidden;margin-top:5px">
-            <div id="cal-semana-bar" style="height:100%;border-radius:3px;background:#7F77DD;width:0%;transition:width .4s ease"></div>
-          </div>
-          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400);margin-top:3px" id="cal-semana-lbl">— / 7 días</div>
-        </div>
-      </div>
+    <div id="cal-tab-objetivos" style="display:none;padding:32px;text-align:center">
+      <div style="font-size:40px;margin-bottom:10px">🔒</div>
+      <div style="font-family:var(--f);font-size:15px;font-weight:700;color:var(--gray-600)">Próximamente</div>
+      <div style="font-family:var(--f);font-size:13px;color:var(--gray-400);margin-top:6px">Los objetivos semanales estarán disponibles pronto</div>
     </div>
-
-    <!-- TAB EVENTOS -->
-    <div id="cal-tab-eventos" style="display:none">
-      <div style="font-family:var(--f);font-size:12px;color:var(--gray-400);margin-bottom:10px">Próximos eventos</div>
-      <div style="border:0.5px solid var(--gray-100);border-radius:14px;padding:10px 12px;background:white;display:flex;align-items:center;gap:10px;margin-bottom:8px">
-        <div style="width:38px;height:38px;border-radius:10px;background:#EEEDFE;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0">
-          <div style="font-family:var(--f);font-size:9px;font-weight:700;color:#533AB7">JUN</div>
-          <div style="font-family:var(--f);font-size:15px;font-weight:900;color:#3C3489">13</div>
-        </div>
-        <div style="flex:1">
-          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)">🎯 Reto fin de semana</div>
-          <div style="font-family:var(--f);font-size:11px;color:var(--gray-400)">50 ejercicios · Premio: +100 pts</div>
-        </div>
-      </div>
-      <div style="border:0.5px solid var(--gray-100);border-radius:14px;padding:10px 12px;background:white;display:flex;align-items:center;gap:10px;margin-bottom:16px">
-        <div style="width:38px;height:38px;border-radius:10px;background:#E6F1FB;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0">
-          <div style="font-family:var(--f);font-size:9px;font-weight:700;color:#185FA5">JUN</div>
-          <div style="font-family:var(--f);font-size:15px;font-weight:900;color:#0C447C">20</div>
-        </div>
-        <div style="flex:1">
-          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)">🌟 Semana de English</div>
-          <div style="font-family:var(--f);font-size:11px;color:var(--gray-400)">Doble puntos en English</div>
-        </div>
-      </div>
-      <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-700);margin-bottom:10px">Insignias conseguidas</div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <div style="border:0.5px solid var(--gray-100);border-radius:10px;padding:8px 12px;background:white;text-align:center">
-          <div style="font-size:22px">🔥</div><div style="font-family:var(--f);font-size:9px;color:var(--gray-400);margin-top:2px">7 días</div>
-        </div>
-        <div style="border:0.5px solid var(--gray-100);border-radius:10px;padding:8px 12px;background:white;text-align:center">
-          <div style="font-size:22px">⭐</div><div style="font-family:var(--f);font-size:9px;color:var(--gray-400);margin-top:2px">100 ejerc.</div>
-        </div>
-        <div style="border:0.5px solid var(--gray-100);border-radius:10px;padding:8px 12px;background:white;text-align:center;opacity:.35">
-          <div style="font-size:22px">🏆</div><div style="font-family:var(--f);font-size:9px;color:var(--gray-400);margin-top:2px">Sem. completa</div>
-        </div>
-      </div>
+    <div id="cal-tab-eventos" style="display:none;padding:32px;text-align:center">
+      <div style="font-size:40px;margin-bottom:10px">🔒</div>
+      <div style="font-family:var(--f);font-size:15px;font-weight:700;color:var(--gray-600)">Próximamente</div>
+      <div style="font-family:var(--f);font-size:13px;color:var(--gray-400);margin-top:6px">Los eventos especiales estarán disponibles pronto</div>
     </div>
   </div>
 </div>
