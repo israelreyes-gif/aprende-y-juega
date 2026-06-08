@@ -336,9 +336,9 @@ function socRelClickNew(side, val) {
 
   if (side === 'left') {
     socRelLeft = val;
-    // Resaltar el seleccionado, quitar resaltado de otros no emparejados
+    // Resaltar el seleccionado, quitar resaltado de otros no emparejados (proteger correctos)
     grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
-      if (!b.dataset.colorIdx) {
+      if (!b.dataset.colorIdx && !b.dataset.correct) {
         b.style.borderColor = b.dataset.val === val ? '#0F6E56' : 'var(--gray-200)';
         b.style.background  = b.dataset.val === val ? '#E1F5EE' : 'white';
         b.style.color       = b.dataset.val === val ? '#085041' : 'var(--gray-700)';
@@ -393,9 +393,9 @@ function socRelClickNew(side, val) {
     });
 
     socRelLeft = null;
-    // Quitar resaltado de izquierdos no emparejados
+    // Quitar resaltado de izquierdos no emparejados (proteger los correctos bloqueados)
     grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
-      if (!b.dataset.colorIdx) { b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; b.style.color = 'var(--gray-700)'; }
+      if (!b.dataset.colorIdx && !b.dataset.correct) { b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; b.style.color = 'var(--gray-700)'; }
     });
 
     // Activar botón comprobar si todos emparejados
