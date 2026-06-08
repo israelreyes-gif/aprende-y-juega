@@ -349,24 +349,24 @@ function socRelClickNew(side, val) {
     var c = REL_COLORS[socRelColorIdx % REL_COLORS.length];
     var leftVal = socRelLeft;
 
-    // Si el derecho ya tenía un par asignado, liberar el izquierdo anterior
+    // Si el derecho ya tenía un par asignado, liberar el izquierdo anterior (proteger correctos)
     for (var lv in socRelSelections) {
       if (socRelSelections[lv].rightVal === val) {
         var oldLeft = lv;
         delete socRelSelections[oldLeft];
         grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
-          if (b.dataset.val === oldLeft) {
+          if (b.dataset.val === oldLeft && !b.dataset.correct) {
             delete b.dataset.colorIdx;
             b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; b.style.color = 'var(--gray-700)';
           }
         });
       }
     }
-    // Si el izquierdo ya tenía un derecho, liberar el derecho anterior
+    // Si el izquierdo ya tenía un derecho, liberar el derecho anterior (proteger correctos)
     if (socRelSelections[leftVal]) {
       var oldRight = socRelSelections[leftVal].rightVal;
       grid.querySelectorAll('[data-side="right"]').forEach(function(b) {
-        if (b.dataset.val === oldRight) {
+        if (b.dataset.val === oldRight && !b.dataset.correct) {
           delete b.dataset.colorIdx;
           b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; b.style.color = 'var(--gray-500)';
         }
@@ -378,15 +378,15 @@ function socRelClickNew(side, val) {
     socRelSelections[leftVal] = { rightVal: val, colorIdx: socRelColorIdx % REL_COLORS.length };
     c = REL_COLORS[socRelSelections[leftVal].colorIdx];
 
-    // Pintar par con el color
+    // Pintar par con el color (proteger correctos)
     grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
-      if (b.dataset.val === leftVal) {
+      if (b.dataset.val === leftVal && !b.dataset.correct) {
         b.dataset.colorIdx = socRelSelections[leftVal].colorIdx;
         b.style.borderColor = c.border; b.style.background = c.bg; b.style.color = c.text;
       }
     });
     grid.querySelectorAll('[data-side="right"]').forEach(function(b) {
-      if (b.dataset.val === val) {
+      if (b.dataset.val === val && !b.dataset.correct) {
         b.dataset.colorIdx = socRelSelections[leftVal].colorIdx;
         b.style.borderColor = c.border; b.style.background = c.bg; b.style.color = c.text;
       }
@@ -449,13 +449,14 @@ function checkSocRelacionar() {
         if (b.dataset.val === par.izq || (sel && b.dataset.val === sel.rightVal && b.dataset.side === 'right')) {
           if (isCorrect) {
             b.style.borderColor = '#22C55E'; b.style.background = '#F0FDF4'; b.style.color = '#15803D'; b.disabled = true;
+            b.dataset.correct = '1';
             delete b.dataset.colorIdx;
           } else if (wrongLefts.indexOf(par.izq) >= 0) {
             b.style.borderColor = '#EF4444'; b.style.background = '#FEF2F2'; b.style.color = '#B91C1C';
             delete b.dataset.colorIdx;
-            // Liberar para segundo intento (solo si no fue reasignado)
+            // Liberar para segundo intento (solo si no fue reasignado y no es correcto)
             setTimeout(function(btn) { return function() {
-              if (!btn.dataset.colorIdx) {
+              if (!btn.dataset.colorIdx && !btn.dataset.correct) {
                 btn.style.borderColor = 'var(--gray-200)'; btn.style.background = 'white';
                 btn.style.color = btn.dataset.side === 'left' ? 'var(--gray-700)' : 'var(--gray-500)';
               }
