@@ -274,7 +274,19 @@ function checkSocVF(val, ex) {
 }
 
 /* ---- RELACIONAR ---- */
+var REL_COLORS = [
+  { border: '#7C3AED', bg: '#EDE9FE', text: '#4C1D95' },
+  { border: '#1D4ED8', bg: '#EFF6FF', text: '#1E40AF' },
+  { border: '#0F6E56', bg: '#E1F5EE', text: '#085041' },
+  { border: '#BE185D', bg: '#FDF2F8', text: '#831843' }
+];
+var socRelSelections = {}; // { leftVal: { rightVal, colorIdx } }
+var socRelColorIdx = 0;
+
 function renderSocRelacionar(ex, area) {
+  socRelSelections = {};
+  socRelColorIdx = 0;
+
   var instr = document.createElement('p');
   instr.style.cssText = 'font-family:var(--f);font-size:13px;color:var(--gray-500);margin:0 0 12px;text-align:center';
   instr.textContent = ex.pregunta;
@@ -294,70 +306,191 @@ function renderSocRelacionar(ex, area) {
     lBtn.dataset.val  = txt;
     lBtn.style.cssText = 'padding:10px 8px;border-radius:10px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;font-weight:700;cursor:pointer;transition:all .15s;text-align:center;color:var(--gray-700)';
     lBtn.textContent = txt;
-    lBtn.addEventListener('click', function() { socRelClick('left', txt, lBtn); });
+    lBtn.addEventListener('click', function() { socRelClickNew('left', txt); });
 
     var rBtn = document.createElement('button');
     rBtn.dataset.side = 'right';
     rBtn.dataset.val  = rightItems[i];
     rBtn.style.cssText = 'padding:10px 8px;border-radius:10px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;text-align:center;color:var(--gray-500)';
     rBtn.textContent = rightItems[i];
-    rBtn.addEventListener('click', function() { socRelClick('right', rightItems[i], rBtn); });
+    rBtn.addEventListener('click', function() { socRelClickNew('right', rightItems[i]); });
 
     grid.appendChild(lBtn);
     grid.appendChild(rBtn);
   });
   area.appendChild(grid);
+
+  // Botón comprobar
+  var checkBtn = document.createElement('button');
+  checkBtn.id = 'soc-rel-check';
+  checkBtn.style.cssText = 'width:100%;margin-top:12px;padding:13px 16px;border-radius:14px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default;transition:all .2s';
+  checkBtn.textContent = 'Comprobar ✓';
+  checkBtn.disabled = true;
+  checkBtn.addEventListener('click', checkSocRelacionar);
+  area.appendChild(checkBtn);
 }
 
-function socRelClick(side, val, btn) {
+function socRelClickNew(side, val) {
   if (socExDone) return;
   var grid = document.getElementById('soc-rel-grid');
 
   if (side === 'left') {
-    // Deseleccionar anterior izquierdo
-    grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
-      if (!b.dataset.matched) { b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; }
-    });
     socRelLeft = val;
-    btn.style.borderColor = '#0F6E56';
-    btn.style.background  = '#E1F5EE';
-  } else if (side === 'right' && socRelLeft) {
-    // Comprobar si el par es correcto
-    var correct = socRelPairs.find(function(p) { return p.izq === socRelLeft; });
-    var leftBtn = null;
+    // Resaltar el seleccionado, quitar resaltado de otros no emparejados
     grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
-      if (b.dataset.val === socRelLeft) leftBtn = b;
+      if (!b.dataset.colorIdx) {
+        b.style.borderColor = b.dataset.val === val ? '#0F6E56' : 'var(--gray-200)';
+        b.style.background  = b.dataset.val === val ? '#E1F5EE' : 'white';
+        b.style.color       = b.dataset.val === val ? '#085041' : 'var(--gray-700)';
+      }
+    });
+  } else if (side === 'right' && socRelLeft !== null) {
+    // Asignar color al par
+    var c = REL_COLORS[socRelColorIdx % REL_COLORS.length];
+    var leftVal = socRelLeft;
+
+    // Si el derecho ya tenía un par asignado, liberar el izquierdo anterior
+    for (var lv in socRelSelections) {
+      if (socRelSelections[lv].rightVal === val) {
+        var oldLeft = lv;
+        delete socRelSelections[oldLeft];
+        grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
+          if (b.dataset.val === oldLeft) {
+            delete b.dataset.colorIdx;
+            b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; b.style.color = 'var(--gray-700)';
+          }
+        });
+      }
+    }
+    // Si el izquierdo ya tenía un derecho, liberar el derecho anterior
+    if (socRelSelections[leftVal]) {
+      var oldRight = socRelSelections[leftVal].rightVal;
+      grid.querySelectorAll('[data-side="right"]').forEach(function(b) {
+        if (b.dataset.val === oldRight) {
+          delete b.dataset.colorIdx;
+          b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; b.style.color = 'var(--gray-500)';
+        }
+      });
+    } else {
+      socRelColorIdx++;
+    }
+
+    socRelSelections[leftVal] = { rightVal: val, colorIdx: socRelColorIdx % REL_COLORS.length };
+    c = REL_COLORS[socRelSelections[leftVal].colorIdx];
+
+    // Pintar par con el color
+    grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
+      if (b.dataset.val === leftVal) {
+        b.dataset.colorIdx = socRelSelections[leftVal].colorIdx;
+        b.style.borderColor = c.border; b.style.background = c.bg; b.style.color = c.text;
+      }
+    });
+    grid.querySelectorAll('[data-side="right"]').forEach(function(b) {
+      if (b.dataset.val === val) {
+        b.dataset.colorIdx = socRelSelections[leftVal].colorIdx;
+        b.style.borderColor = c.border; b.style.background = c.bg; b.style.color = c.text;
+      }
     });
 
-    if (correct && correct.der === val) {
-      // Par correcto
-      btn.style.borderColor    = '#22C55E'; btn.style.background = '#F0FDF4'; btn.disabled = true; btn.dataset.matched = '1';
-      if (leftBtn) { leftBtn.style.borderColor = '#22C55E'; leftBtn.style.background = '#F0FDF4'; leftBtn.disabled = true; leftBtn.dataset.matched = '1'; }
-      socRelMatched.push(socRelLeft);
-      socRelLeft = null;
+    socRelLeft = null;
+    // Quitar resaltado de izquierdos no emparejados
+    grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
+      if (!b.dataset.colorIdx) { b.style.borderColor = 'var(--gray-200)'; b.style.background = 'white'; b.style.color = 'var(--gray-700)'; }
+    });
 
-      // ¿Completado?
-      if (socRelMatched.length === socRelPairs.length) {
-        socExDone = true;
-        var fbEl = document.getElementById('soc-ex-fb');
-        fbEl.style.display = 'block';
-        fbEl.className = 'feedback fb-ok';
-        fbEl.textContent = '✅ ¡Todos los pares correctos!';
-        document.getElementById('soc-ex-next').style.display = 'block';
-        recordResult('sociales', 'relacionar', true);
-        awardPts(10, 'sociales');
-        updateSubjectUI('sociales');
-      }
-    } else {
-      // Par incorrecto — flash rojo y resetear
-      btn.style.borderColor = '#EF4444'; btn.style.background = '#FEF2F2';
-      if (leftBtn) { leftBtn.style.borderColor = '#EF4444'; leftBtn.style.background = '#FEF2F2'; }
-      setTimeout(function() {
-        btn.style.borderColor = 'var(--gray-200)'; btn.style.background = 'white';
-        if (leftBtn) { leftBtn.style.borderColor = 'var(--gray-200)'; leftBtn.style.background = 'white'; }
-      }, 600);
-      socRelLeft = null;
+    // Activar botón comprobar si todos emparejados
+    var checkBtn = document.getElementById('soc-rel-check');
+    if (Object.keys(socRelSelections).length === socRelPairs.length) {
+      checkBtn.disabled = false;
+      checkBtn.style.background = '#0F6E56';
+      checkBtn.style.color = 'white';
+      checkBtn.style.cursor = 'pointer';
     }
+  }
+}
+
+function checkSocRelacionar() {
+  if (socExDone) return;
+  var grid = document.getElementById('soc-rel-grid');
+  var allCorrect = true;
+  var wrongLefts = [];
+
+  socRelPairs.forEach(function(par) {
+    var sel = socRelSelections[par.izq];
+    if (!sel || sel.rightVal !== par.der) {
+      allCorrect = false;
+      wrongLefts.push(par.izq);
+    }
+  });
+
+  var fbEl = document.getElementById('soc-ex-fb');
+
+  if (allCorrect) {
+    socExDone = true;
+    // Marcar todos en verde
+    grid.querySelectorAll('button').forEach(function(b) {
+      b.style.borderColor = '#22C55E'; b.style.background = '#F0FDF4'; b.style.color = '#15803D'; b.disabled = true;
+    });
+    document.getElementById('soc-rel-check').style.display = 'none';
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-ok';
+    fbEl.textContent = '✅ ' + (socExAttempt === 1 ? '¡Todos los pares correctos!' : '¡Bien, en el segundo intento!');
+    document.getElementById('soc-ex-next').style.display = 'block';
+    recordResult('sociales', 'relacionar', true);
+    awardPts(socExAttempt === 1 ? 10 : 5, 'sociales');
+    updateSubjectUI('sociales');
+  } else if (socExAttempt === 1) {
+    socExAttempt = 2;
+    // Marcar incorrectos en rojo y bloquearlos, correctos en verde y bloquearlos
+    socRelPairs.forEach(function(par) {
+      var sel = socRelSelections[par.izq];
+      var isCorrect = sel && sel.rightVal === par.der;
+      grid.querySelectorAll('button').forEach(function(b) {
+        if (b.dataset.val === par.izq || (sel && b.dataset.val === sel.rightVal && b.dataset.side === 'right')) {
+          if (isCorrect) {
+            b.style.borderColor = '#22C55E'; b.style.background = '#F0FDF4'; b.style.color = '#15803D'; b.disabled = true;
+            delete b.dataset.colorIdx;
+          } else if (wrongLefts.indexOf(par.izq) >= 0) {
+            b.style.borderColor = '#EF4444'; b.style.background = '#FEF2F2'; b.style.color = '#B91C1C';
+            delete b.dataset.colorIdx;
+            // Liberar para segundo intento
+            setTimeout(function(btn) { return function() {
+              btn.style.borderColor = 'var(--gray-200)'; btn.style.background = 'white';
+              btn.style.color = btn.dataset.side === 'left' ? 'var(--gray-700)' : 'var(--gray-500)';
+            }; }(b), 800);
+          }
+        }
+      });
+    });
+    // Limpiar selecciones incorrectas
+    wrongLefts.forEach(function(lv) { delete socRelSelections[lv]; });
+    socRelColorIdx = Object.keys(socRelSelections).length;
+    socRelLeft = null;
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Algunos pares no son correctos — inténtalo de nuevo con los que quedan';
+    // Desactivar botón comprobar hasta completar de nuevo
+    var checkBtn = document.getElementById('soc-rel-check');
+    checkBtn.disabled = true; checkBtn.style.background = 'var(--gray-200)'; checkBtn.style.color = 'var(--gray-400)'; checkBtn.style.cursor = 'default';
+  } else {
+    // 2º fallo: mostrar correctos
+    socExDone = true;
+    grid.querySelectorAll('button').forEach(function(b) { b.disabled = true; });
+    socRelPairs.forEach(function(par) {
+      grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
+        if (b.dataset.val === par.izq) { b.style.borderColor = '#22C55E'; b.style.background = '#F0FDF4'; b.style.color = '#15803D'; }
+      });
+      grid.querySelectorAll('[data-side="right"]').forEach(function(b) {
+        if (b.dataset.val === par.der) { b.style.borderColor = '#22C55E'; b.style.background = '#F0FDF4'; b.style.color = '#15803D'; }
+      });
+    });
+    document.getElementById('soc-rel-check').style.display = 'none';
+    fbEl.style.display = 'block';
+    fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Aquí están los pares correctos';
+    document.getElementById('soc-ex-next').style.display = 'block';
+    recordResult('sociales', 'relacionar', false);
+    updateSubjectUI('sociales');
   }
 }
 
