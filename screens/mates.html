@@ -7,6 +7,38 @@
   <div class="topbar bg-purple"><button class="back-btn" onclick="go('s-home')">←</button><h1>🔢 Matemáticas</h1><span class="top-badge" id="mates-medal">🎖️ —</span></div>
   <div class="hprog bg-purple"><div class="hprog-lbl"><span>Hoy</span><span id="mates-hprog-lbl">0 / 20</span></div><div class="hprog-track"><div class="hprog-fill" id="mates-hprog-fill" style="width:0%"></div></div></div>
   <div class="sa">
+    <div class="slbl">Elige el apartado</div>
+    <div class="mode-grid">
+      <!-- Study — bloqueado -->
+      <div class="mode-card" style="opacity:0.45;cursor:default" title="Próximamente">
+        <div class="mode-emoji">📖</div>
+        <div class="mode-name">Estudio</div>
+        <div class="mode-sub">Próximamente</div>
+      </div>
+      <!-- Exercises -->
+      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="go('s-mates-exercises')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name" style="color:var(--purple-dark)">Ejercicios</div>
+        <div class="mode-sub">Practica y aprende</div>
+      </div>
+    </div>
+    <div class="slbl">Mi progreso en mates</div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-hoy">0</div><div class="stat-lbl">Ejercicios hoy</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-hoy-pct">—</div><div class="stat-lbl">Aciertos hoy</div></div>
+    </div>
+    <div style="height:10px"></div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-total">0</div><div class="stat-lbl">Total ejerc.</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-total-pct">—</div><div class="stat-lbl">Aciertos totales</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- EXERCISES MATES -->
+<div class="screen" id="s-mates-exercises">
+  <div class="topbar bg-purple"><button class="back-btn" onclick="go('s-mates')">←</button><h1>Ejercicios</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
     <div class="slbl">Elige el ejercicio</div>
     <div class="mode-grid">
       <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="go('s-sumas')">
@@ -29,16 +61,6 @@
         <div class="mode-name">Mezcla</div>
         <div class="mode-sub">Todo mezclado</div>
       </div>
-    </div>
-    <div class="slbl">Mi progreso en mates</div>
-    <div class="stats-grid">
-      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-hoy">0</div><div class="stat-lbl">Ejercicios hoy</div></div>
-      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-hoy-pct">—</div><div class="stat-lbl">Aciertos hoy</div></div>
-    </div>
-    <div style="height:10px"></div>
-    <div class="stats-grid">
-      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-total">0</div><div class="stat-lbl">Total ejerc.</div></div>
-      <div class="stat-card"><div class="stat-num" style="color:var(--purple)" id="ms-total-pct">—</div><div class="stat-lbl">Aciertos totales</div></div>
     </div>
   </div>
 </div>
