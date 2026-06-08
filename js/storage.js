@@ -108,20 +108,11 @@ function todayStr() {
 
 function checkDayReset() {
   var today = todayStr();
-  if (ST.lastDate === today) return;
 
-  // Resetear contadores diarios de todas las asignaturas
-  ['mates','lengua','sciences','english'].forEach(function(sub) {
-    if (ST[sub]) { ST[sub].hoy = 0; ST[sub].hoyOk = 0; }
-  });
-
-  if (ST.lastDate) {
-    var prev = new Date(ST.lastDate), now = new Date(today);
-    var diff = Math.round((now - prev) / 86400000);
-    ST.streak = (diff === 1) ? ST.streak + 1 : 1;
-  } else {
-    ST.streak = 1;
-  }
+  // Registrar el día de hoy siempre (independientemente de si ya entró hoy)
+  var thisMonth = today.substring(0, 7);
+  ST.monthDays = (ST.monthDays || []).filter(function(d) { return d.startsWith(thisMonth); });
+  if (!ST.monthDays.includes(today)) ST.monthDays.push(today);
 
   var dow = new Date().getDay();
   var monday = new Date();
@@ -130,10 +121,22 @@ function checkDayReset() {
   ST.weekDays = (ST.weekDays || []).filter(function(d) { return new Date(d) >= monday; });
   if (!ST.weekDays.includes(today)) ST.weekDays.push(today);
 
-  // monthDays: guardar todos los días del mes actual
-  var thisMonth = today.substring(0, 7); // "YYYY-MM"
-  ST.monthDays = (ST.monthDays || []).filter(function(d) { return d.startsWith(thisMonth); });
-  if (!ST.monthDays.includes(today)) ST.monthDays.push(today);
+  // Si ya entró hoy, solo actualizar días y salir
+  if (ST.lastDate === today) { saveState(); return; }
+
+  // Día nuevo — resetear contadores diarios
+  ['mates','lengua','sciences','english'].forEach(function(sub) {
+    if (ST[sub]) { ST[sub].hoy = 0; ST[sub].hoyOk = 0; }
+  });
+
+  // Calcular racha
+  if (ST.lastDate) {
+    var prev = new Date(ST.lastDate), now = new Date(today);
+    var diff = Math.round((now - prev) / 86400000);
+    ST.streak = (diff === 1) ? ST.streak + 1 : 1;
+  } else {
+    ST.streak = 1;
+  }
 
   ST.lastDate = today;
   saveState();
