@@ -24,14 +24,18 @@ function loadDictData(callback) {
       Object.keys(data).forEach(function(regla) {
         data[regla].forEach(function(item) {
           if (item.definicion && item.definicion.ejemplo) {
-            // Limpiar comillas y el hueco (_) para obtener la frase completa con la palabra correcta
             var ejemplo = item.definicion.ejemplo
-              .replace(/^"|"$/g, '')   // quitar comillas externas
-              .replace(/\\"/g, '')      // quitar comillas escapadas
-              .replace(/^'|'$/g, '');  // quitar comillas simples
+              .replace(/^"|"$/g, '')
+              .replace(/\\"/g, '')
+              .replace(/^'|'$/g, '');
+            // Sustituir el hueco (ej: "_arco") por la palabra completa (ej: "barco")
+            if (item.p && item.c) {
+              ejemplo = ejemplo.replace(item.p, item.c);
+            }
+            // Eliminar cualquier guión bajo restante
+            ejemplo = ejemplo.replace(/_+/g, '');
             frases.push({ frase: ejemplo, regla: reglaLabel(regla) });
-          }
-        });
+          }        });
       });
       DICT_DATA = frases;
       callback();
