@@ -79,6 +79,14 @@ function updateHomeUI() {
   }
 
   // English
+  if (ST.sociales) {
+    var soc = ST.sociales;
+    setEl('psoc-pts', '⭐ ' + soc.pts + ' pts');
+    setBar('psoc-hoy-bar', Math.min(100, Math.round(soc.hoy / 10 * 100)));
+    setEl('psoc-hoy-val', soc.hoy + ' ejerc.');
+    setBar('psoc-acc-bar', soc.total > 0 ? Math.min(100, Math.round(soc.totalOk / soc.total * 100)) : 0);
+    setEl('psoc-acc-val', pct(soc.totalOk, soc.total) + ' aciertos');
+  }
   if (ST.english) {
     var en = ST.english;
     setEl('pen-pts', '⭐ ' + en.pts + ' pts');
@@ -154,7 +162,10 @@ var ERROR_LABELS = {
   'modals':        'Modal Verbs',
   'vocab':         'Vocabulary',
   'invertebrates': 'Invertebrates',
-  'mix-sc':        'Mix'
+  'mix-sc':        'Mix',
+  'vf':            'Verdadero/Falso',
+  'relacionar':    'Relacionar',
+  'completar':     'Completar frase'
 };
 
 function updateErrorsPanel() {
@@ -166,6 +177,7 @@ function updateErrorsPanel() {
   var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
   var eErr = (ST.english && ST.english.errors) ? ST.english.errors : {};
   var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
+  var socErr = (ST.sociales && ST.sociales.errors) ? ST.sociales.errors : {};
 
   function getPct(errors, key) {
     var ok = errors[key+'_ok']||0, fail = errors[key+'_fail']||0;
@@ -210,7 +222,9 @@ function updateErrorsPanel() {
     { nombre:'English', icono:'<svg width="16" height="11" viewBox="0 0 60 40" style="border-radius:2px;vertical-align:middle"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>', pill:'background:#EFF6FF;color:#1D4ED8',
       keys:['tobe','modals','vocab'] },
     { nombre:'Sciences', icono:'🔬', pill:'background:#F0FDFA;color:#0F766E',
-      keys:['invertebrates','mix-sc'] }
+      keys:['invertebrates','mix-sc'] },
+    { nombre:'Sociales', icono:'🌍', pill:'background:#E1F5EE;color:#085041',
+      keys:['vf','relacionar','completar'] }
   ];
 
   var html = '<div class="errors-card">';
