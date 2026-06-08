@@ -9,26 +9,17 @@
   <div class="sa">
     <div class="slbl">Elige el apartado</div>
     <div class="mode-grid">
-      <div class="mode-card" style="border-color:var(--pink);background:var(--pink-light)" onclick="go('s-gramatica')">
-        <div class="mode-emoji">✏️</div>
-        <div class="mode-name" style="color:var(--pink-mid)">Gramática</div>
-        <div class="mode-sub">B/V · G/J · C/Z/Q · LL/Y · R/RR</div>
-      </div>
-      <div class="mode-card" onclick="irADescripciones()">
-        <div class="mode-emoji">✍️</div>
-        <div class="mode-name">Descripciones</div>
-        <div class="mode-sub">Describe lo que ves</div>
-      </div>
-
-      <div class="mode-card" onclick="go('s-comprension')">
+      <!-- Study — bloqueado -->
+      <div class="mode-card" style="opacity:0.45;cursor:default" title="Próximamente">
         <div class="mode-emoji">📖</div>
-        <div class="mode-name">Comprensión</div>
-        <div class="mode-sub">Lee y responde</div>
+        <div class="mode-name">Estudio</div>
+        <div class="mode-sub">Próximamente</div>
       </div>
-      <div class="mode-card" onclick="initDictado()">
-        <div class="mode-emoji">🎙️</div>
-        <div class="mode-name">Dictado</div>
-        <div class="mode-sub">Escucha y escribe</div>
+      <!-- Exercises -->
+      <div class="mode-card" style="border-color:var(--pink);background:var(--pink-light)" onclick="go('s-lengua-exercises')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name" style="color:var(--pink-mid)">Ejercicios</div>
+        <div class="mode-sub">Practica y aprende</div>
       </div>
     </div>
     <div class="slbl">Mi progreso en lengua</div>
@@ -44,7 +35,35 @@
   </div>
 </div>
 
-<!-- GRAMÁTICA -->
+<!-- EXERCISES LENGUA -->
+<div class="screen" id="s-lengua-exercises">
+  <div class="topbar bg-pink"><button class="back-btn" onclick="go('s-lengua')">←</button><h1>Ejercicios</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Elige el ejercicio</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--pink);background:var(--pink-light)" onclick="go('s-gramatica')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name" style="color:var(--pink-mid)">Gramática</div>
+        <div class="mode-sub">B/V · G/J · C/Z/Q · LL/Y · R/RR</div>
+      </div>
+      <div class="mode-card" onclick="irADescripciones()">
+        <div class="mode-emoji">✍️</div>
+        <div class="mode-name">Descripciones</div>
+        <div class="mode-sub">Describe lo que ves</div>
+      </div>
+      <div class="mode-card" onclick="go('s-comprension')">
+        <div class="mode-emoji">📖</div>
+        <div class="mode-name">Comprensión</div>
+        <div class="mode-sub">Lee y responde</div>
+      </div>
+      <div class="mode-card" onclick="initDictado()">
+        <div class="mode-emoji">🎙️</div>
+        <div class="mode-name">Dictado</div>
+        <div class="mode-sub">Escucha y escribe</div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="screen" id="s-gramatica">
   <div class="topbar bg-pink"><button class="back-btn" onclick="go('s-lengua')">←</button><h1>Gramática</h1><span class="top-badge">⭐ +10</span></div>
   <div class="ex-top">
