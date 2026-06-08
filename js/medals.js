@@ -56,7 +56,7 @@ function updateMedalUI() {
   }
   // Badge en las cabeceras de asignaturas
   var short = m.icon + ' ' + m.name.split(' ')[0];
-  ['mates-medal', 'lengua-medal', 'english-medal', 'sciences-medal'].forEach(function(id) {
+  ['mates-medal', 'lengua-medal', 'english-medal', 'sciences-medal', 'sociales-medal'].forEach(function(id) {
     var e = document.getElementById(id); if (e) e.textContent = short;
   });
 }
