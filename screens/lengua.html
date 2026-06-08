@@ -22,15 +22,29 @@
         <div class="mode-sub">Practica y aprende</div>
       </div>
     </div>
-    <div class="slbl">Mi progreso en lengua</div>
-    <div class="stats-grid">
-      <div class="stat-card"><div class="stat-num" style="color:var(--pink)" id="ls-hoy">0</div><div class="stat-lbl">Ejercicios hoy</div></div>
-      <div class="stat-card"><div class="stat-num" style="color:var(--pink)" id="ls-hoy-pct">—</div><div class="stat-lbl">Aciertos hoy</div></div>
-    </div>
-    <div style="height:10px"></div>
-    <div class="stats-grid">
-      <div class="stat-card"><div class="stat-num" style="color:var(--pink)" id="ls-total">0</div><div class="stat-lbl">Total ejerc.</div></div>
-      <div class="stat-card"><div class="stat-num" style="color:var(--pink)" id="ls-total-pct">—</div><div class="stat-lbl">Aciertos totales</div></div>
+    <div style="margin:0 0 4px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-700)">Mi progreso — este mes</div>
+        <div style="display:flex;align-items:center;gap:4px">
+          <span style="font-size:16px">🔥</span>
+          <span style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--pink)" id="cal-lengua-streak">—</span>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:10px" id="cal-lengua"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div style="background:var(--gray-50);border-radius:10px;padding:8px;text-align:center">
+          <div style="font-family:var(--f);font-size:18px;font-weight:800;color:var(--pink)" id="cal-lengua-dias">—</div>
+          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400)">días</div>
+        </div>
+        <div style="background:var(--gray-50);border-radius:10px;padding:8px;text-align:center">
+          <div style="font-family:var(--f);font-size:18px;font-weight:800;color:var(--pink)" id="cal-lengua-pct">—</div>
+          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400)">aciertos</div>
+        </div>
+        <div style="background:var(--gray-50);border-radius:10px;padding:8px;text-align:center">
+          <div style="font-family:var(--f);font-size:16px;font-weight:800;color:var(--pink)" id="cal-lengua-pts">—</div>
+          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400)">pts</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
