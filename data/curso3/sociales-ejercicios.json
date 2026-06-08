@@ -1,0 +1,154 @@
+{
+  "units": [
+    {
+      "id": "los-trabajos",
+      "title": "Los trabajos",
+      "ejercicios": [
+        {
+          "tipo": "vf",
+          "pregunta": "La agricultura de secano necesita mucha agua.",
+          "respuesta": false,
+          "explicacion": "La agricultura de secano necesita POCO agua, como los cereales. La que necesita mucha agua es la de regadío."
+        },
+        {
+          "tipo": "vf",
+          "pregunta": "Con la ganadería se obtienen productos como carne, leche o huevos.",
+          "respuesta": true,
+          "explicacion": "Correcto. La ganadería nos da productos de los animales como carne, leche y huevos."
+        },
+        {
+          "tipo": "vf",
+          "pregunta": "La pesca de altura se hace cerca de la costa con barcos pequeños.",
+          "respuesta": false,
+          "explicacion": "Eso es la pesca de BAJURA. La pesca de altura se hace lejos de la costa con barcos grandes y pasan muchos días en el mar."
+        },
+        {
+          "tipo": "vf",
+          "pregunta": "La ganadería extensiva cría los animales al aire libre.",
+          "respuesta": true,
+          "explicacion": "Correcto. En la ganadería extensiva los animales se crían al aire libre. En la intensiva se crían en granjas."
+        },
+        {
+          "tipo": "vf",
+          "pregunta": "Los médicos y enfermeros pertenecen al sector servicios.",
+          "respuesta": true,
+          "explicacion": "Correcto. La sanidad es un servicio porque ayuda a las personas sin producir objetos."
+        },
+        {
+          "tipo": "vf",
+          "pregunta": "Una fábrica de base produce ropa y material escolar.",
+          "respuesta": false,
+          "explicacion": "Las fábricas de base producen materiales para OTRAS industrias, como plásticos o cemento. Las de consumo producen ropa y material escolar."
+        },
+        {
+          "tipo": "vf",
+          "pregunta": "El riego por goteo es un tipo de agricultura de regadío.",
+          "respuesta": true,
+          "explicacion": "Correcto. Los tipos de regadío son: por surcos, con aspersores y por goteo."
+        },
+        {
+          "tipo": "vf",
+          "pregunta": "La acuicultura captura peces en alta mar.",
+          "respuesta": false,
+          "explicacion": "La acuicultura son cultivos de plantas y animales acuáticos para el consumo, no captura en alta mar."
+        },
+        {
+          "tipo": "relacionar",
+          "pregunta": "Une cada tipo de ganadería con su animal",
+          "pares": [
+            { "izq": "Ovina", "der": "Ovejas y corderos" },
+            { "izq": "Porcina", "der": "Cerdos" },
+            { "izq": "Bovina", "der": "Vacas y toros" },
+            { "izq": "Aviar", "der": "Gallinas y pollos" }
+          ]
+        },
+        {
+          "tipo": "relacionar",
+          "pregunta": "Une cada trabajo con su sector",
+          "pares": [
+            { "izq": "Médico", "der": "Sanidad" },
+            { "izq": "Bombero", "der": "Seguridad" },
+            { "izq": "Conductor de autobús", "der": "Transporte" },
+            { "izq": "Albañil", "der": "Construcción" }
+          ]
+        },
+        {
+          "tipo": "relacionar",
+          "pregunta": "Une cada tipo de pesca con su descripción",
+          "pares": [
+            { "izq": "Bajura", "der": "Cerca de la costa, vuelven el mismo día" },
+            { "izq": "Altura", "der": "Lejos de la costa, muchos días en el mar" },
+            { "izq": "Acuicultura", "der": "Cultivo de animales acuáticos" },
+            { "izq": "Calderos", "der": "Zonas marinas con muchos peces" }
+          ]
+        },
+        {
+          "tipo": "relacionar",
+          "pregunta": "Une cada maquinaria con su uso en agricultura",
+          "pares": [
+            { "izq": "Tractor", "der": "Mueve y arrastra aperos" },
+            { "izq": "Arado", "der": "Remueve la tierra" },
+            { "izq": "Cosechadora", "der": "Recoge la cosecha" },
+            { "izq": "Remolque", "der": "Transporta la carga" }
+          ]
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "La agricultura _____ necesita poco agua, como los cereales.",
+          "opciones": ["de secano", "de regadío", "intensiva"],
+          "respuesta": 0,
+          "explicacion": "La agricultura de secano necesita poca agua. La de regadío necesita mucha."
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "En la ganadería _____, los animales se crían en granjas.",
+          "opciones": ["extensiva", "ovina", "intensiva"],
+          "respuesta": 2,
+          "explicacion": "La ganadería intensiva cría los animales en granjas. La extensiva los cría al aire libre."
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "Las fábricas de _____ producen materiales para otras industrias, como plásticos o cemento.",
+          "opciones": ["consumo", "base", "artesanía"],
+          "respuesta": 1,
+          "explicacion": "Las fábricas de base producen materiales para otras industrias. Las de consumo producen lo que usamos directamente."
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "Por trabajar, se recibe un _____ a cambio.",
+          "opciones": ["contrato", "salario", "horario"],
+          "respuesta": 1,
+          "explicacion": "El salario es el dinero que se recibe a cambio del trabajo realizado."
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "La pesca de _____ se hace cerca de la costa y los barcos vuelven el mismo día.",
+          "opciones": ["altura", "acuicultura", "bajura"],
+          "respuesta": 2,
+          "explicacion": "La pesca de bajura es cerca de la costa con barcos pequeños que vuelven el mismo día."
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "El proceso industrial termina con el _____ y distribución del producto.",
+          "opciones": ["embalaje", "moldeo", "arado"],
+          "respuesta": 0,
+          "explicacion": "El proceso es: materias primas → proceso industrial → moldeo → embalaje y distribución."
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "La ganadería _____ cría los animales al aire libre.",
+          "opciones": ["bovina", "extensiva", "aviar"],
+          "respuesta": 1,
+          "explicacion": "La ganadería extensiva cría los animales al aire libre. La intensiva lo hace en granjas."
+        },
+        {
+          "tipo": "completar",
+          "pregunta": "Los _____ y aspersores son tipos de riego en agricultura.",
+          "opciones": ["surcos", "calderos", "remolques"],
+          "respuesta": 0,
+          "explicacion": "Los tipos de regadío son: por surcos, con aspersores y por goteo."
+        }
+      ]
+    }
+  ]
+}
