@@ -10,10 +10,10 @@
         <div class="mode-name" style="color:#085041">Estudio</div>
         <div class="mode-sub">Aprende los contenidos</div>
       </div>
-      <div class="mode-card" style="opacity:0.45;cursor:default">
+      <div class="mode-card" onclick="initSocialesEjercicios()">
         <div class="mode-emoji">✏️</div>
         <div class="mode-name">Ejercicios</div>
-        <div class="mode-sub">Próximamente</div>
+        <div class="mode-sub">Practica los contenidos</div>
       </div>
     </div>
     <div style="margin:20px 12px 4px;background:var(--gray-50);border-radius:14px;padding:14px 12px">
@@ -58,5 +58,19 @@
   <div class="sa" style="padding-top:4px">
     <div style="display:flex;gap:6px;overflow-x:auto;padding:0 16px 4px;margin-bottom:12px" id="sociales-section-tabs"></div>
     <div id="sociales-unit-content" style="padding:0 16px"></div>
+  </div>
+</div>
+
+<!-- EJERCICIOS SOCIALES -->
+<div class="screen" id="s-sociales-ex">
+  <div class="topbar" style="background:#0F6E56"><button class="back-btn" onclick="go('s-sociales')">←</button><h1>Ejercicios</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#E1F5EE;color:#085041" id="soc-ex-badge">Pregunta 1</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:#0F6E56;width:0%" id="soc-ex-prog"></div></div></div>
+  <div class="sa">
+    <div id="soc-ex-area"></div>
+    <div class="feedback" id="soc-ex-fb" style="display:none"></div>
+    <button class="next-btn" style="background:#0F6E56;display:none" id="soc-ex-next" onclick="socExNext()">Siguiente →</button>
   </div>
 </div>
