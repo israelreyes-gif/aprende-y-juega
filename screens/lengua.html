@@ -25,6 +25,11 @@
         <div class="mode-name">Comprensión</div>
         <div class="mode-sub">Lee y responde</div>
       </div>
+      <div class="mode-card" onclick="initDictado()">
+        <div class="mode-emoji">🎙️</div>
+        <div class="mode-name">Dictado</div>
+        <div class="mode-sub">Escucha y escribe</div>
+      </div>
     </div>
     <div class="slbl">Mi progreso en lengua</div>
     <div class="stats-grid">
@@ -135,5 +140,54 @@
     <button class="submit-btn bg-pink" id="comp-submit" onclick="evaluateAnswers()">Enviar todas las respuestas ✓</button>
     <div class="comp-result" id="comp-result"></div>
     <div style="height:20px"></div>
+  </div>
+</div>
+
+<!-- DICTADO -->
+<div class="screen" id="s-dictado">
+  <div class="topbar bg-pink"><button class="back-btn" onclick="go('s-lengua')">←</button><h1>🎙️ Dictado</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#FDF2F8;color:#9D174D" id="dict-badge">Dictado 1</span>
+    <span class="ex-badge" id="dict-regla" style="background:#FDF2F8;color:#BE185D"></span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--pink);width:0%" id="dict-prog"></div></div></div>
+  <div class="sa">
+    <!-- Botón escuchar -->
+    <div style="margin:8px 16px 12px;padding:20px;background:#FDF2F8;border-radius:16px;border:1.5px solid #FBCFE8;text-align:center">
+      <button id="dict-speak-btn" onclick="dictSpeak()" style="width:72px;height:72px;border-radius:50%;background:white;border:3px solid #FBCFE8;cursor:pointer;font-size:30px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:all .2s">🔊</button>
+      <div style="font-size:13px;color:#9D174D;font-family:var(--f);font-weight:700" id="dict-speak-lbl">Pulsa para escuchar</div>
+      <!-- Indicador escuchas -->
+      <div style="display:flex;align-items:center;gap:6px;justify-content:center;margin-top:8px">
+        <span style="font-size:11px;color:#BE185D;font-family:var(--f);font-weight:700">Escuchas gratuitas:</span>
+        <div id="dict-dot-1" style="width:12px;height:12px;border-radius:50%;background:#FBCFE8;border:2px solid #EC4899;transition:background .2s"></div>
+        <div id="dict-dot-2" style="width:12px;height:12px;border-radius:50%;background:#FBCFE8;border:2px solid #EC4899;transition:background .2s"></div>
+        <span id="dict-extra-lbl" style="font-size:11px;color:#EF4444;font-family:var(--f);font-weight:800;display:none"></span>
+      </div>
+    </div>
+    <!-- Pts en tiempo real -->
+    <div id="dict-pts-preview" style="text-align:right;padding:0 16px 6px;font-size:12px;font-family:var(--f);font-weight:700;color:#16A34A"></div>
+    <!-- Textarea -->
+    <div style="padding:0 16px 12px">
+      <div style="font-size:12px;font-weight:700;color:#6B7280;font-family:var(--f);margin-bottom:6px">Escribe lo que escuchas:</div>
+      <textarea id="dict-input" rows="3" placeholder="Escribe la frase aquí..."
+        oninput="dictUpdateCheck()"
+        style="width:100%;padding:12px 14px;border-radius:14px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-weight:600;font-size:15px;color:var(--gray-800);outline:none;resize:none;box-sizing:border-box;line-height:1.6;transition:border-color .2s"></textarea>
+    </div>
+    <!-- Warning -->
+    <div id="dict-warning" style="display:none;margin:0 16px 10px;padding:8px 12px;background:#FEF2F2;border:1px solid #FECACA;border-radius:10px;font-size:13px;font-family:var(--f);font-weight:700;color:#B91C1C">
+      ⚠️ Escucha extra — se resta 1 punto
+    </div>
+    <!-- Feedback -->
+    <div id="dict-fb" class="feedback" style="display:none"></div>
+    <!-- Frase correcta -->
+    <div id="dict-frase-correcta" style="display:none;margin:0 16px 10px;padding:12px 14px;background:#FEF2F2;border:1px solid #FECACA;border-radius:12px">
+      <div style="font-size:12px;font-weight:700;color:#9CA3AF;font-family:var(--f);margin-bottom:4px">La frase correcta es:</div>
+      <div id="dict-frase-txt" style="font-size:14px;font-weight:700;color:#1E293B;font-family:var(--f);font-style:italic;line-height:1.5"></div>
+    </div>
+    <!-- Botón comprobar -->
+    <div style="padding:0 16px 12px">
+      <button id="dict-check-btn" onclick="dictCheck()" disabled style="width:100%;padding:13px 16px;border-radius:14px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default;transition:all .2s">Comprobar ✓</button>
+    </div>
+    <button class="next-btn" style="background:var(--pink);display:none" id="dict-next" onclick="dictNext()">Siguiente dictado →</button>
   </div>
 </div>
