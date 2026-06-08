@@ -89,6 +89,7 @@ function updateHomeUI() {
   }
 
   updateErrorsPanel();
+  if (typeof renderCalHome === 'function') renderCalHome();
 }
 
 /* ---- Stats dentro de cada asignatura ---- */
