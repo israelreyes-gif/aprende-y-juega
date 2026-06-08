@@ -124,7 +124,8 @@ function renderSubjects() {
       items:[
         {nombre:'Gramática',     s:{total:gramTotal,ok:gramOk}},
         {nombre:'Comprensión',   s:st(lErr,'comp')},
-        {nombre:'Descripciones', s:st(lErr,'desc')}
+        {nombre:'Descripciones', s:st(lErr,'desc')},
+        {nombre:'Dictado',       s:st(lErr,'dict')}
       ]
     },
     { nombre:'English', icono:'<svg width="20" height="13" viewBox="0 0 60 40" style="border-radius:2px;vertical-align:middle"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>', color:'#3B82F6',
@@ -246,7 +247,8 @@ function renderRefuerzo() {
         {nombre:'Gramática LL / Y', stats:getStats(lErr,'gram-lly')},
         {nombre:'Gramática R / RR', stats:getStats(lErr,'gram-rr')},
         {nombre:'Comprensión',      stats:getStats(lErr,'comp')},
-        {nombre:'Descripciones',    stats:getStats(lErr,'desc')}
+        {nombre:'Descripciones',    stats:getStats(lErr,'desc')},
+        {nombre:'Dictado',          stats:getStats(lErr,'dict')}
       ]
     },
     { nombre:'English', icono:'<svg width="16" height="11" viewBox="0 0 60 40" style="border-radius:2px;vertical-align:middle"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>', pill:'background:#EFF6FF;color:#1D4ED8',
