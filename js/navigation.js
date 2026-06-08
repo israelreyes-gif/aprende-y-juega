@@ -90,6 +90,9 @@ function go(screenId) {
   if (screenId === 's-vocab-ex-i2w')          { loadI2WQuestion(); }
   if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); renderMiniCalendario('cal-sciences', 'sciences', '#0D9488'); }
   if (screenId === 's-sciences-study-invertebrates') { renderSciencesStudy(); }
+  if (screenId === 's-sociales')               { renderMiniCalendario('cal-sociales', 'sociales', '#0F6E56'); }
+  if (screenId === 's-sociales-study')         { renderSocialesMenu(); }
+  if (screenId === 's-sociales-study-unit')    { renderSocialesUnit(); }
   if (screenId === 's-padres')                      { renderPadres(); }
   if (screenId === 's-calendario')                  { renderCalendarioHome(); }
 }
