@@ -10,7 +10,7 @@
         <div class="mode-name" style="color:#085041">Estudio</div>
         <div class="mode-sub">Aprende los contenidos</div>
       </div>
-      <div class="mode-card" onclick="initSocialesEjercicios()">
+      <div class="mode-card" onclick="go('s-sociales-ex-menu')">
         <div class="mode-emoji">✏️</div>
         <div class="mode-name">Ejercicios</div>
         <div class="mode-sub">Practica los contenidos</div>
@@ -61,9 +61,34 @@
   </div>
 </div>
 
+<!-- MENÚ EJERCICIOS SOCIALES -->
+<div class="screen" id="s-sociales-ex-menu">
+  <div class="topbar" style="background:#0F6E56"><button class="back-btn" onclick="go('s-sociales')">←</button><h1>Ejercicios</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Elige el tipo de ejercicio</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="initSocialesEjercicios('vf')">
+        <div class="mode-emoji">✅</div>
+        <div class="mode-name">Verdadero o Falso</div>
+        <div class="mode-sub">¿Es correcto o no?</div>
+      </div>
+      <div class="mode-card" onclick="initSocialesEjercicios('relacionar')">
+        <div class="mode-emoji">🔗</div>
+        <div class="mode-name">Relacionar</div>
+        <div class="mode-sub">Une cada par</div>
+      </div>
+      <div class="mode-card" onclick="initSocialesEjercicios('completar')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name">Completar</div>
+        <div class="mode-sub">Elige la palabra</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- EJERCICIOS SOCIALES -->
 <div class="screen" id="s-sociales-ex">
-  <div class="topbar" style="background:#0F6E56"><button class="back-btn" onclick="go('s-sociales')">←</button><h1>Ejercicios</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="topbar" style="background:#0F6E56"><button class="back-btn" onclick="go('s-sociales-ex-menu')">←</button><h1>Ejercicios</h1><span class="top-badge">⭐ +10</span></div>
   <div class="ex-top">
     <span class="ex-badge" style="background:#E1F5EE;color:#085041" id="soc-ex-badge">Pregunta 1</span>
   </div>
