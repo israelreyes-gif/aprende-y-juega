@@ -82,7 +82,7 @@ function renderSocialesUnit() {
 
   // Descripción de la sección
   var intro = document.createElement('p');
-  intro.style.cssText = 'font-family:var(--f);font-size:13px;color:var(--gray-500);margin:0 0 14px;padding:0 2px';
+  intro.style.cssText = 'font-family:var(--f);font-size:13px;color:var(--gray-500);margin:0 0 14px';
   intro.textContent = sec.desc;
   area.appendChild(intro);
 
