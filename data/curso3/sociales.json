@@ -4,7 +4,7 @@
       "id": "los-trabajos",
       "title": "Los trabajos",
       "emoji": "💼",
-      "icon": "ti-briefcase",
+      "icon": "💼",
       "color": "#0F6E56",
       "bg": "#E1F5EE",
       "desc": "Los trabajos se dividen en tres grandes sectores.",
@@ -12,39 +12,71 @@
         {
           "id": "naturaleza",
           "label": "Naturaleza",
-          "icon": "ti-plant-2",
+          "icon": "🌿",
           "desc": "Se obtienen productos directamente de la naturaleza.",
           "items": [
             {
               "id": "agricultura",
-              "icon": "ti-wheat",
+              "icon": "🌾",
               "label": "Agricultura",
               "desc": "Cultiva la tierra para obtener productos vegetales como cereales (trigo) o verduras (brócoli).",
               "subs": [
-                { "icon": "ti-tractor", "label": "Tareas", "text": "Arar, abonar, sembrar o plantar y recoger la cosecha." },
-                { "icon": "ti-tools", "label": "Maquinaria", "text": "Tractor, remolque, arado y cosechadora." },
-                { "icon": "ti-droplet", "label": "Tipos", "text": "Secano (poco agua, como cereales) y regadío (mucha agua, como verduras)." },
-                { "icon": "ti-ripple", "label": "Tipos de regadío", "text": "Por surcos, con aspersores o por goteo." }
+                {
+                  "icon": "🚜",
+                  "label": "Tareas",
+                  "text": "Arar, abonar, sembrar o plantar y recoger la cosecha."
+                },
+                {
+                  "icon": "🔧",
+                  "label": "Maquinaria",
+                  "text": "Tractor, remolque, arado y cosechadora."
+                },
+                {
+                  "icon": "💧",
+                  "label": "Tipos",
+                  "text": "Secano (poco agua, como cereales) y regadío (mucha agua, como verduras)."
+                },
+                {
+                  "icon": "🌊",
+                  "label": "Tipos de regadío",
+                  "text": "Por surcos, con aspersores o por goteo."
+                }
               ]
             },
             {
               "id": "ganaderia",
-              "icon": "ti-paw",
+              "icon": "🐾",
               "label": "Ganadería",
               "desc": "Se obtienen productos de los animales: carne, leche o huevos.",
               "subs": [
-                { "icon": "ti-home", "label": "Tipos", "text": "Extensiva (animales al aire libre) e Intensiva (animales en granjas)." },
-                { "icon": "ti-list", "label": "Ganaderías", "text": "Ovina (ovejas, corderos) · Porcina (cerdos) · Bovina (vacas, toros) · Aviar (gallinas, pollos)." }
+                {
+                  "icon": "🏠",
+                  "label": "Tipos",
+                  "text": "Extensiva (animales al aire libre) e Intensiva (animales en granjas)."
+                },
+                {
+                  "icon": "📋",
+                  "label": "Ganaderías",
+                  "text": "Ovina (ovejas, corderos) · Porcina (cerdos) · Bovina (vacas, toros) · Aviar (gallinas, pollos)."
+                }
               ]
             },
             {
               "id": "pesca",
-              "icon": "ti-fish",
+              "icon": "🐟",
               "label": "Pesca",
               "desc": "Se capturan peces y animales acuáticos en mares, ríos o lagos.",
               "subs": [
-                { "icon": "ti-anchor", "label": "Tipos", "text": "Bajura (cerca de la costa, barcos pequeños, vuelven el mismo día) y Altura (lejos, barcos grandes, muchos días)." },
-                { "icon": "ti-wave-sine", "label": "Otras formas", "text": "Calderos (zonas con muchos peces) y Acuicultura (cultivos de animales acuáticos para consumo)." }
+                {
+                  "icon": "⚓",
+                  "label": "Tipos",
+                  "text": "Bajura (cerca de la costa, barcos pequeños, vuelven el mismo día) y Altura (lejos, barcos grandes, muchos días)."
+                },
+                {
+                  "icon": "🎣",
+                  "label": "Otras formas",
+                  "text": "Calderos (zonas con muchos peces) y Acuicultura (cultivos de animales acuáticos para consumo)."
+                }
               ]
             }
           ]
@@ -52,35 +84,51 @@
         {
           "id": "materias",
           "label": "Materias primas",
-          "icon": "ti-building-factory-2",
+          "icon": "🏭",
           "desc": "Se transforman materias primas en productos elaborados.",
           "items": [
             {
               "id": "fabricas",
-              "icon": "ti-building-factory",
+              "icon": "🏭",
               "label": "Fábricas",
               "desc": "Muchas personas transforman materias primas en productos elaborados.",
               "subs": [
-                { "icon": "ti-arrow-right", "label": "Proceso", "text": "Materias primas → Proceso industrial → Moldeo (se le da forma) → Embalaje y distribución." },
-                { "icon": "ti-category", "label": "Tipos", "text": "De base (plásticos, cemento — para otras industrias) y De consumo (ropa, material escolar — para nosotros)." }
+                {
+                  "icon": "➡️",
+                  "label": "Proceso",
+                  "text": "Materias primas → Proceso industrial → Moldeo (se le da forma) → Embalaje y distribución."
+                },
+                {
+                  "icon": "📦",
+                  "label": "Tipos",
+                  "text": "De base (plásticos, cemento — para otras industrias) y De consumo (ropa, material escolar — para nosotros)."
+                }
               ]
             },
             {
               "id": "artesania",
-              "icon": "ti-scissors",
+              "icon": "✂️",
               "label": "Artesanía",
               "desc": "Productos elaborados a mano por artesanos con técnicas tradicionales.",
               "subs": [
-                { "icon": "ti-palette", "label": "Ejemplos", "text": "Cerámica, tejidos, cestería, joyería artesanal." }
+                {
+                  "icon": "🎨",
+                  "label": "Ejemplos",
+                  "text": "Cerámica, tejidos, cestería, joyería artesanal."
+                }
               ]
             },
             {
               "id": "construccion",
-              "icon": "ti-crane",
+              "icon": "🏗️",
               "label": "Construcción",
               "desc": "Se construyen edificios, puentes, carreteras y otras infraestructuras.",
               "subs": [
-                { "icon": "ti-hard-hat", "label": "Trabajadores", "text": "Arquitectos, albañiles, electricistas, fontaneros." }
+                {
+                  "icon": "👷",
+                  "label": "Trabajadores",
+                  "text": "Arquitectos, albañiles, electricistas, fontaneros."
+                }
               ]
             }
           ]
@@ -88,45 +136,69 @@
         {
           "id": "servicios",
           "label": "Servicios",
-          "icon": "ti-users",
+          "icon": "👥",
           "desc": "No producen objetos, sino que ayudan a las personas.",
           "items": [
             {
               "id": "sanidad",
-              "icon": "ti-stethoscope",
+              "icon": "🩺",
               "label": "Sanidad",
               "desc": "Cuidan la salud de las personas.",
               "subs": [
-                { "icon": "ti-user-heart", "label": "Trabajadores", "text": "Médicos, enfermeros, cirujanos, farmacéuticos." }
+                {
+                  "icon": "👨‍⚕️",
+                  "label": "Trabajadores",
+                  "text": "Médicos, enfermeros, cirujanos, farmacéuticos."
+                }
               ]
             },
             {
               "id": "seguridad",
-              "icon": "ti-flame",
+              "icon": "🚒",
               "label": "Seguridad",
               "desc": "Protegen a las personas y sus bienes.",
               "subs": [
-                { "icon": "ti-shield", "label": "Trabajadores", "text": "Bomberos, policías, guardias civiles, vigilantes." }
+                {
+                  "icon": "🛡️",
+                  "label": "Trabajadores",
+                  "text": "Bomberos, policías, guardias civiles, vigilantes."
+                }
               ]
             },
             {
               "id": "transporte",
-              "icon": "ti-bus",
+              "icon": "🚌",
               "label": "Transporte",
               "desc": "Llevan personas y mercancías de un lugar a otro.",
               "subs": [
-                { "icon": "ti-car", "label": "Tipos", "text": "Autobuses, trenes, aviones, barcos, camiones." }
+                {
+                  "icon": "🚗",
+                  "label": "Tipos",
+                  "text": "Autobuses, trenes, aviones, barcos, camiones."
+                }
               ]
             },
             {
               "id": "como-se-trabaja",
-              "icon": "ti-file-text",
+              "icon": "📄",
               "label": "¿Cómo se trabaja?",
               "desc": "Se firma un contrato con horario fijo. Puede ser en casa o fuera. A cambio se recibe un salario.",
               "subs": [
-                { "icon": "ti-writing", "label": "Contrato", "text": "Documento que fija el horario y las condiciones del trabajo." },
-                { "icon": "ti-home-2", "label": "Lugar", "text": "En casa (teletrabajo) o fuera de casa (oficina, colegio, hospital...)." },
-                { "icon": "ti-coin", "label": "Salario", "text": "El dinero que se recibe a cambio del trabajo realizado." }
+                {
+                  "icon": "✍️",
+                  "label": "Contrato",
+                  "text": "Documento que fija el horario y las condiciones del trabajo."
+                },
+                {
+                  "icon": "🏡",
+                  "label": "Lugar",
+                  "text": "En casa (teletrabajo) o fuera de casa (oficina, colegio, hospital...)."
+                },
+                {
+                  "icon": "💰",
+                  "label": "Salario",
+                  "text": "El dinero que se recibe a cambio del trabajo realizado."
+                }
               ]
             }
           ]
