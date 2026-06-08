@@ -78,8 +78,10 @@ function go(screenId) {
   clearExerciseState();
 
   if (screenId === 's-home')             { updateHomeUI(); updateStreakUI(); updateMedalUI(); }
-  if (screenId === 's-mates')            { updateSubjectUI('mates'); }
-  if (screenId === 's-lengua')           { updateSubjectUI('lengua'); }
+  if (screenId === 's-mates')                    { updateSubjectUI('mates'); }
+  if (screenId === 's-mates-exercises')          { updateSubjectUI('mates'); }
+  if (screenId === 's-lengua')                   { updateSubjectUI('lengua'); }
+  if (screenId === 's-lengua-exercises')         { updateSubjectUI('lengua'); }
   if (screenId === 's-english')               { updateSubjectUI('english'); }
   if (screenId === 's-english-study')         { renderEnglishStudyMenu(); }
   if (screenId === 's-english-exercises')     { renderEnglishExercisesMenu(); }
