@@ -276,9 +276,9 @@ function checkSocVF(val, ex) {
 /* ---- RELACIONAR ---- */
 var REL_COLORS = [
   { border: '#7C3AED', bg: '#EDE9FE', text: '#4C1D95' },  // morado
-  { border: '#1D4ED8', bg: '#EFF6FF', text: '#1E40AF' },  // azul
-  { border: '#16A34A', bg: '#DCFCE7', text: '#14532D' },  // verde
-  { border: '#DB2777', bg: '#FCE7F3', text: '#831843' }   // rosa
+  { border: '#0369A1', bg: '#E0F2FE', text: '#0C4A6E' },  // azul
+  { border: '#B45309', bg: '#FEF3C7', text: '#78350F' },  // naranja/ámbar
+  { border: '#BE123C', bg: '#FFE4E6', text: '#881337' }   // rojo rosa
 ];
 var socRelSelections = {}; // { leftVal: { rightVal, colorIdx } }
 var socRelColorIdx = 0;
