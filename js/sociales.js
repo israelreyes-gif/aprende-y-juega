@@ -26,9 +26,7 @@ function renderSocialesMenu() {
       var card = document.createElement('div');
       card.className = 'mode-card';
       card.innerHTML =
-        '<div class="mode-emoji" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:' + unit.bg + ';margin-bottom:10px">' +
-          '<i class="ti ' + unit.icon + '" style="font-size:26px;color:' + unit.color + '"></i>' +
-        '</div>' +
+        '<div class="mode-emoji">💼</div>' +
         '<div class="mode-name">' + unit.title + '</div>' +
         '<div class="mode-sub">' + unit.sections.length + ' apartados</div>';
       card.addEventListener('click', (function(u) {
