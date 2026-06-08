@@ -90,15 +90,15 @@ function renderSocialesUnit() {
   sec.items.forEach(function(item) {
     var isOpen = socOpenItem === item.id;
     var wrap = document.createElement('div');
-    wrap.style.cssText = 'border:0.5px solid var(--gray-100);border-radius:12px;overflow:hidden;margin-bottom:8px';
+    wrap.style.cssText = 'border:0.5px solid var(--gray-200);border-radius:12px;overflow:hidden;margin-bottom:10px;background:white';
 
     // Botón principal
     var btn = document.createElement('button');
     btn.style.cssText = 'display:flex;align-items:center;justify-content:space-between;width:100%;padding:12px 14px;background:white;border:none;cursor:pointer;text-align:left;transition:background .15s';
     btn.innerHTML =
       '<div style="display:flex;align-items:center;gap:12px">' +
-        '<div style="width:40px;height:40px;border-radius:10px;background:' + socUnit.bg + ';display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid ' + socUnit.color + '22">' +
-          '<i class="ti ' + item.icon + '" style="font-size:20px;color:' + socUnit.color + '"></i>' +
+        '<div style="width:40px;height:40px;border-radius:10px;background:' + socUnit.bg + ';display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px">' +
+          item.icon +
         '</div>' +
         '<div style="flex:1;min-width:0">' +
           '<div style="font-family:var(--f);font-size:14px;font-weight:800;color:var(--gray-800)">' + item.label + '</div>' +
@@ -131,8 +131,8 @@ function renderSocialesUnit() {
         subBtn.style.cssText = 'display:flex;align-items:center;justify-content:space-between;width:100%;padding:9px 12px;background:' + (isSubOpen ? 'var(--gray-50)' : 'white') + ';border:none;cursor:pointer;text-align:left';
         subBtn.innerHTML =
           '<div style="display:flex;align-items:center;gap:8px">' +
-            '<div style="width:28px;height:28px;border-radius:8px;background:white;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:0.5px solid var(--gray-100)">' +
-              '<i class="ti ' + sub.icon + '" style="font-size:14px;color:' + socUnit.color + '"></i>' +
+            '<div style="width:28px;height:28px;border-radius:8px;background:' + socUnit.bg + ';display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px">' +
+              sub.icon +
             '</div>' +
             '<span style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-700)">' + sub.label + '</span>' +
           '</div>' +
