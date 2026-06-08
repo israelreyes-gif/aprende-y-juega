@@ -17,6 +17,7 @@ function defaultState() {
     lastDate:  '',
     streak:    0,
     weekDays:  [],
+    monthDays: [],
     mates:     { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
     lengua:    { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
     sciences:  { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} },
@@ -48,6 +49,7 @@ function loadStateFromCloud(callback) {
         if (data.total_pts !== undefined && data.totalPts === undefined) data.totalPts = data.total_pts;
         if (data.last_date !== undefined && data.lastDate === undefined) data.lastDate = data.last_date;
         if (data.week_days !== undefined && data.weekDays === undefined) data.weekDays = data.week_days;
+        if (data.month_days !== undefined && data.monthDays === undefined) data.monthDays = data.month_days;
       }
       ST = data ? mergeState(data) : defaultState();
       checkDayReset();
@@ -71,6 +73,7 @@ function saveState() {
       lastDate:  ST.lastDate,
       streak:    ST.streak,
       weekDays:  ST.weekDays,
+      monthDays: ST.monthDays,
       mates:     ST.mates,
       lengua:    ST.lengua,
       sciences:  ST.sciences,
@@ -126,6 +129,11 @@ function checkDayReset() {
   monday.setHours(0, 0, 0, 0);
   ST.weekDays = (ST.weekDays || []).filter(function(d) { return new Date(d) >= monday; });
   if (!ST.weekDays.includes(today)) ST.weekDays.push(today);
+
+  // monthDays: guardar todos los días del mes actual
+  var thisMonth = today.substring(0, 7); // "YYYY-MM"
+  ST.monthDays = (ST.monthDays || []).filter(function(d) { return d.startsWith(thisMonth); });
+  if (!ST.monthDays.includes(today)) ST.monthDays.push(today);
 
   ST.lastDate = today;
   saveState();
