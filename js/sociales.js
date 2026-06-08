@@ -191,11 +191,12 @@ function shuffleSoc(arr) {
   return a;
 }
 
-function initSocialesEjercicios() {
+function initSocialesEjercicios(tipo) {
   loadSocialesEjData(function() {
     var unit = SOC_EX_DATA.units[0];
     socExUnit  = unit;
-    socExQueue = shuffleSoc(unit.ejercicios);
+    var todos = tipo ? unit.ejercicios.filter(function(e) { return e.tipo === tipo; }) : unit.ejercicios;
+    socExQueue = shuffleSoc(todos);
     socExIdx   = 0;
     go('s-sociales-ex');
     loadSocEx();
