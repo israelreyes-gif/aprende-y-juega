@@ -275,10 +275,10 @@ function checkSocVF(val, ex) {
 
 /* ---- RELACIONAR ---- */
 var REL_COLORS = [
-  { border: '#7C3AED', bg: '#EDE9FE', text: '#4C1D95' },
-  { border: '#1D4ED8', bg: '#EFF6FF', text: '#1E40AF' },
-  { border: '#0F6E56', bg: '#E1F5EE', text: '#085041' },
-  { border: '#BE185D', bg: '#FDF2F8', text: '#831843' }
+  { border: '#7C3AED', bg: '#EDE9FE', text: '#4C1D95' },  // morado
+  { border: '#1D4ED8', bg: '#EFF6FF', text: '#1E40AF' },  // azul
+  { border: '#16A34A', bg: '#DCFCE7', text: '#14532D' },  // verde
+  { border: '#DB2777', bg: '#FCE7F3', text: '#831843' }   // rosa
 ];
 var socRelSelections = {}; // { leftVal: { rightVal, colorIdx } }
 var socRelColorIdx = 0;
@@ -453,17 +453,27 @@ function checkSocRelacionar() {
           } else if (wrongLefts.indexOf(par.izq) >= 0) {
             b.style.borderColor = '#EF4444'; b.style.background = '#FEF2F2'; b.style.color = '#B91C1C';
             delete b.dataset.colorIdx;
-            // Liberar para segundo intento
+            // Liberar para segundo intento (solo si no fue reasignado)
             setTimeout(function(btn) { return function() {
-              btn.style.borderColor = 'var(--gray-200)'; btn.style.background = 'white';
-              btn.style.color = btn.dataset.side === 'left' ? 'var(--gray-700)' : 'var(--gray-500)';
+              if (!btn.dataset.colorIdx) {
+                btn.style.borderColor = 'var(--gray-200)'; btn.style.background = 'white';
+                btn.style.color = btn.dataset.side === 'left' ? 'var(--gray-700)' : 'var(--gray-500)';
+              }
             }; }(b), 800);
           }
         }
       });
     });
-    // Limpiar selecciones incorrectas
-    wrongLefts.forEach(function(lv) { delete socRelSelections[lv]; });
+    // Limpiar selecciones incorrectas y sus dataset.colorIdx
+    wrongLefts.forEach(function(lv) {
+      var sel = socRelSelections[lv];
+      grid.querySelectorAll('button').forEach(function(b) {
+        if (b.dataset.val === lv || (sel && b.dataset.val === sel.rightVal && b.dataset.side === 'right')) {
+          delete b.dataset.colorIdx;
+        }
+      });
+      delete socRelSelections[lv];
+    });
     socRelColorIdx = Object.keys(socRelSelections).length;
     socRelLeft = null;
     fbEl.style.display = 'block';
