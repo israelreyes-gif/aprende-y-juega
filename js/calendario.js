@@ -63,7 +63,8 @@ function renderMiniCalendario(containerId, subject, color) {
 
   // Días con actividad — usamos weekDays como proxy
   var activeDays = {};
-  (ST.weekDays || []).forEach(function(d) {
+  var _source = (ST.monthDays && ST.monthDays.length > 0) ? ST.monthDays : (ST.weekDays || []);
+  _source.forEach(function(d) {
     var dayNum = parseInt(d.split('-')[2]);
     activeDays[dayNum] = 'done';
   });
@@ -132,7 +133,8 @@ function renderCalMes() {
   setEl('cal-mes-lbl2', mesLabel);
 
   var activeDays = {};
-  (ST.weekDays || []).forEach(function(d) {
+  var _source = (ST.monthDays && ST.monthDays.length > 0) ? ST.monthDays : (ST.weekDays || []);
+  _source.forEach(function(d) {
     var dayNum = parseInt(d.split('-')[2]);
     activeDays[dayNum] = 'done';
   });
@@ -163,7 +165,7 @@ function renderCalMes() {
   fillGrid('cal-mes-grid2', 34);  // pantalla calendario
 
   var streak = ST.streak || 0;
-  var daysStudied = (ST.weekDays || []).length;
+  var daysStudied = (ST.monthDays && ST.monthDays.length > 0) ? ST.monthDays.length : (ST.weekDays || []).length;
   ['cal-stat-dias','cal-stat-dias2'].forEach(function(id){ setEl(id, daysStudied); });
   ['cal-stat-racha','cal-stat-racha2'].forEach(function(id){ setEl(id, '🔥 ' + streak); });
   ['cal-stat-mejor','cal-stat-mejor2'].forEach(function(id){ setEl(id, streak); });
