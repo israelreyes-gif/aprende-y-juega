@@ -36,12 +36,12 @@ function _renderPadresUI() {
   setEl('p-pts', ST.totalPts);
   setEl('p-medal', curMedal.icon + ' ' + curMedal.name);
   setEl('p-streak', ST.streak || 0);
-  var hoy = (ST.mates.hoy||0) + (ST.lengua.hoy||0) + (ST.sciences&&ST.sciences.hoy||0) + (ST.english&&ST.english.hoy||0);
-  var hoyOk = (ST.mates.hoyOk||0) + (ST.lengua.hoyOk||0) + (ST.sciences&&ST.sciences.hoyOk||0) + (ST.english&&ST.english.hoyOk||0);
+  var hoy = (ST.mates.hoy||0) + (ST.lengua.hoy||0) + (ST.sciences&&ST.sciences.hoy||0) + (ST.english&&ST.english.hoy||0) + (ST.sociales&&ST.sociales.hoy||0);
+  var hoyOk = (ST.mates.hoyOk||0) + (ST.lengua.hoyOk||0) + (ST.sciences&&ST.sciences.hoyOk||0) + (ST.english&&ST.english.hoyOk||0) + (ST.sociales&&ST.sociales.hoyOk||0);
   setEl('p-hoy', hoy);
   setEl('p-hoy-ok', hoyOk + ' correctos');
-  var total = (ST.mates.total||0) + (ST.lengua.total||0) + (ST.sciences&&ST.sciences.total||0) + (ST.english&&ST.english.total||0);
-  var totalOk = (ST.mates.totalOk||0) + (ST.lengua.totalOk||0) + (ST.sciences&&ST.sciences.totalOk||0) + (ST.english&&ST.english.totalOk||0);
+  var total = (ST.mates.total||0) + (ST.lengua.total||0) + (ST.sciences&&ST.sciences.total||0) + (ST.english&&ST.english.total||0) + (ST.sociales&&ST.sociales.total||0);
+  var totalOk = (ST.mates.totalOk||0) + (ST.lengua.totalOk||0) + (ST.sciences&&ST.sciences.totalOk||0) + (ST.english&&ST.english.totalOk||0) + (ST.sociales&&ST.sociales.totalOk||0);
   setEl('p-pct', total > 0 ? Math.round(totalOk/total*100) + '%' : '—');
 
   renderWeekBars();
@@ -142,6 +142,7 @@ function renderSubjects() {
     { nombre:'Sciences', icono:'🔬', color:'#14B8A6',
       items:(function() {
         var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
+  var socErr = (ST.sociales && ST.sociales.errors) ? ST.sociales.errors : {};
         function st2(errors, key) {
           var ok = errors[key+'_ok']||0, f = errors[key+'_fail']||0;
           return { total:ok+f, ok:ok };
@@ -153,6 +154,20 @@ function renderSubjects() {
         return [
           {nombre:'Invertebrates', s:{total:invTotal,ok:invOk}},
           {nombre:'Mix',           s:st2(scErr,'mix')}
+        ];
+      })()
+    },
+    { nombre:'Sociales', icono:'🌍', color:'#0F6E56',
+      items:(function() {
+        var socErr2 = (ST.sociales && ST.sociales.errors) ? ST.sociales.errors : {};
+        function st3(errors, key) {
+          var ok = errors[key+'_ok']||0, f = errors[key+'_fail']||0;
+          return { total:ok+f, ok:ok };
+        }
+        return [
+          {nombre:'Verdadero/Falso', s:st3(socErr2,'vf')},
+          {nombre:'Relacionar',      s:st3(socErr2,'relacionar')},
+          {nombre:'Completar',       s:st3(socErr2,'completar')}
         ];
       })()
     }
@@ -210,6 +225,7 @@ function renderRefuerzo() {
   var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
   var eErr = (ST.english && ST.english.errors) ? ST.english.errors : {};
   var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
+  var socErr = (ST.sociales && ST.sociales.errors) ? ST.sociales.errors : {};
 
   function getStats(errors, key) {
     var ok = errors[key+'_ok']||0, fallos = errors[key+'_fail']||0, total = ok+fallos;
@@ -270,6 +286,13 @@ function renderRefuerzo() {
           return pct<75?{pct:pct,total:total,fallos:f}:null;
         })()},
         {nombre:'Mix', stats:getStats(scErr,'mix')}
+      ]
+    },
+    { nombre:'Sociales', icono:'🌍', pill:'background:#E1F5EE;color:#085041',
+      items:[
+        {nombre:'Verdadero/Falso', stats:getStats(socErr,'vf')},
+        {nombre:'Relacionar',      stats:getStats(socErr,'relacionar')},
+        {nombre:'Completar',       stats:getStats(socErr,'completar')}
       ]
     }
   ];
