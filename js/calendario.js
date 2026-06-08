@@ -98,10 +98,14 @@ function renderMiniCalendario(containerId, subject, color) {
 
 /* ---- Render calendario completo (home) ---- */
 function renderCalendarioHome() {
-  calSetTab('mes');
   renderCalMes();
   renderCalObjetivos();
   renderCalEventos();
+}
+
+function renderCalHome() {
+  // Solo el mes — para la home
+  renderCalMes();
 }
 
 function calSetTab(t) {
@@ -115,10 +119,6 @@ function calSetTab(t) {
 }
 
 function renderCalMes() {
-  var el = document.getElementById('cal-mes-grid');
-  if (!el) return;
-  el.innerHTML = '';
-
   var today = new Date();
   var year  = today.getFullYear();
   var month = today.getMonth();
@@ -127,7 +127,9 @@ function renderCalMes() {
   var firstDOW    = calFirstDOW(year, month);
 
   var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-  setEl('cal-mes-lbl', meses[month] + ' ' + year);
+  var mesLabel = meses[month] + ' ' + year;
+  setEl('cal-mes-lbl', mesLabel);
+  setEl('cal-mes-lbl2', mesLabel);
 
   var activeDays = {};
   (ST.weekDays || []).forEach(function(d) {
@@ -135,31 +137,36 @@ function renderCalMes() {
     activeDays[dayNum] = 'done';
   });
 
-  for (var i = 0; i < firstDOW; i++) {
-    el.appendChild(document.createElement('div'));
+  function fillGrid(gridId, cellHeight) {
+    var el = document.getElementById(gridId);
+    if (!el) return;
+    el.innerHTML = '';
+    for (var i = 0; i < firstDOW; i++) {
+      el.appendChild(document.createElement('div'));
+    }
+    for (var d = 1; d <= daysInMonth; d++) {
+      var cell = document.createElement('div');
+      var isToday  = d === todayDay;
+      var isDone   = !isToday && activeDays[d] && d < todayDay;
+      var isFuture = d > todayDay;
+      cell.style.cssText = 'border-radius:5px;display:flex;align-items:center;justify-content:center;height:'+cellHeight+'px;font-size:11px;font-weight:500;';
+      if (isToday)       cell.style.cssText += 'background:#EEEDFE;color:#3C3489;outline:2px solid #7F77DD;font-weight:700';
+      else if (isDone)   cell.style.cssText += 'background:#EAF3DE;color:#27500A';
+      else if (isFuture) cell.style.cssText += 'color:var(--gray-300);opacity:.4';
+      else               cell.style.cssText += 'color:var(--gray-400)';
+      cell.textContent = d;
+      el.appendChild(cell);
+    }
   }
 
-  for (var d = 1; d <= daysInMonth; d++) {
-    var cell = document.createElement('div');
-    var isToday  = d === todayDay;
-    var isDone   = !isToday && activeDays[d] && d < todayDay;
-    var isFuture = d > todayDay;
+  fillGrid('cal-mes-grid', 28);   // home (compacto)
+  fillGrid('cal-mes-grid2', 34);  // pantalla calendario
 
-    cell.style.cssText = 'border-radius:6px;display:flex;align-items:center;justify-content:center;height:34px;font-size:12px;font-weight:500;';
-    if (isToday)       cell.style.cssText += 'background:#EEEDFE;color:#3C3489;outline:2px solid #7F77DD;font-weight:700';
-    else if (isDone)   cell.style.cssText += 'background:#EAF3DE;color:#27500A';
-    else if (isFuture) cell.style.cssText += 'color:var(--gray-300);opacity:.4';
-    else               cell.style.cssText += 'color:var(--gray-400)';
-    cell.textContent = d;
-    el.appendChild(cell);
-  }
-
-  // Stats generales
   var streak = ST.streak || 0;
   var daysStudied = (ST.weekDays || []).length;
-  setEl('cal-stat-dias', daysStudied);
-  setEl('cal-stat-racha', '🔥 ' + streak);
-  setEl('cal-stat-mejor', streak); // simplificado
+  ['cal-stat-dias','cal-stat-dias2'].forEach(function(id){ setEl(id, daysStudied); });
+  ['cal-stat-racha','cal-stat-racha2'].forEach(function(id){ setEl(id, '🔥 ' + streak); });
+  ['cal-stat-mejor','cal-stat-mejor2'].forEach(function(id){ setEl(id, streak); });
 }
 
 function renderCalObjetivos() {
