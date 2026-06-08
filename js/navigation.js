@@ -78,19 +78,20 @@ function go(screenId) {
   clearExerciseState();
 
   if (screenId === 's-home')             { updateHomeUI(); updateStreakUI(); updateMedalUI(); }
-  if (screenId === 's-mates')                    { updateSubjectUI('mates'); }
+  if (screenId === 's-mates')                    { updateSubjectUI('mates'); renderMiniCalendario('cal-mates', 'mates', '#7C3AED'); }
   if (screenId === 's-mates-exercises')          { updateSubjectUI('mates'); }
-  if (screenId === 's-lengua')                   { updateSubjectUI('lengua'); }
+  if (screenId === 's-lengua')                   { updateSubjectUI('lengua'); renderMiniCalendario('cal-lengua', 'lengua', '#EC4899'); }
   if (screenId === 's-lengua-exercises')         { updateSubjectUI('lengua'); }
-  if (screenId === 's-english')               { updateSubjectUI('english'); }
+  if (screenId === 's-english')               { updateSubjectUI('english'); renderMiniCalendario('cal-english', 'english', '#3B82F6'); }
   if (screenId === 's-english-study')         { renderEnglishStudyMenu(); }
   if (screenId === 's-english-exercises')     { renderEnglishExercisesMenu(); }
   if (screenId === 's-english-vocab')         { renderVocabMenu(); }
   if (screenId === 's-vocab-ex-w2i')          { loadW2IQuestion(); }
   if (screenId === 's-vocab-ex-i2w')          { loadI2WQuestion(); }
-  if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); }
+  if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); renderMiniCalendario('cal-sciences', 'sciences', '#0D9488'); }
   if (screenId === 's-sciences-study-invertebrates') { renderSciencesStudy(); }
   if (screenId === 's-padres')                      { renderPadres(); }
+  if (screenId === 's-calendario')                  { renderCalendarioHome(); }
 }
 
 /* ---- Limpiar estado visual de ejercicios ---- */
