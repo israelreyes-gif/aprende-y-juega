@@ -26,7 +26,9 @@ function renderSocialesMenu() {
       var card = document.createElement('div');
       card.className = 'mode-card';
       card.innerHTML =
-        '<div style="font-size:32px;margin-bottom:6px"><i class="ti ' + unit.icon + '" style="font-size:32px;color:' + unit.color + '"></i></div>' +
+        '<div class="mode-emoji" style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:' + unit.bg + ';margin-bottom:10px">' +
+          '<i class="ti ' + unit.icon + '" style="font-size:26px;color:' + unit.color + '"></i>' +
+        '</div>' +
         '<div class="mode-name">' + unit.title + '</div>' +
         '<div class="mode-sub">' + unit.sections.length + ' apartados</div>';
       card.addEventListener('click', (function(u) {
@@ -82,7 +84,7 @@ function renderSocialesUnit() {
 
   // Descripción de la sección
   var intro = document.createElement('p');
-  intro.style.cssText = 'font-family:var(--f);font-size:13px;color:var(--gray-500);margin:0 0 8px';
+  intro.style.cssText = 'font-family:var(--f);font-size:13px;color:var(--gray-500);margin:0 0 12px;padding:0 2px';
   intro.textContent = sec.desc;
   area.appendChild(intro);
 
@@ -96,16 +98,16 @@ function renderSocialesUnit() {
     var btn = document.createElement('button');
     btn.style.cssText = 'display:flex;align-items:center;justify-content:space-between;width:100%;padding:12px 14px;background:white;border:none;cursor:pointer;text-align:left;transition:background .15s';
     btn.innerHTML =
-      '<div style="display:flex;align-items:center;gap:10px">' +
-        '<div style="width:34px;height:34px;border-radius:8px;background:' + socUnit.bg + ';display:flex;align-items:center;justify-content:center;flex-shrink:0">' +
-          '<i class="ti ' + item.icon + '" style="font-size:17px;color:' + socUnit.color + '"></i>' +
+      '<div style="display:flex;align-items:center;gap:12px">' +
+        '<div style="width:40px;height:40px;border-radius:10px;background:' + socUnit.bg + ';display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid ' + socUnit.color + '22">' +
+          '<i class="ti ' + item.icon + '" style="font-size:20px;color:' + socUnit.color + '"></i>' +
         '</div>' +
-        '<div>' +
-          '<div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)">' + item.label + '</div>' +
-          '<div style="font-family:var(--f);font-size:11px;color:var(--gray-400);margin-top:2px;line-height:1.4">' + item.desc + '</div>' +
+        '<div style="flex:1;min-width:0">' +
+          '<div style="font-family:var(--f);font-size:14px;font-weight:800;color:var(--gray-800)">' + item.label + '</div>' +
+          '<div style="font-family:var(--f);font-size:11px;color:var(--gray-500);margin-top:3px;line-height:1.4">' + item.desc + '</div>' +
         '</div>' +
       '</div>' +
-      '<i class="ti ' + (isOpen ? 'ti-chevron-up' : 'ti-chevron-down') + '" style="font-size:16px;color:var(--gray-400);flex-shrink:0"></i>';
+      '<i class="ti ' + (isOpen ? 'ti-chevron-up' : 'ti-chevron-down') + '" style="font-size:18px;color:' + socUnit.color + ';flex-shrink:0;margin-left:8px"></i>';
     btn.addEventListener('click', (function(id) {
       return function() {
         socOpenItem = socOpenItem === id ? null : id;
@@ -118,7 +120,7 @@ function renderSocialesUnit() {
     // Subtemas (si abierto)
     if (isOpen) {
       var inner = document.createElement('div');
-      inner.style.cssText = 'padding:8px 10px;display:flex;flex-direction:column;gap:6px;border-top:0.5px solid var(--gray-100);background:var(--gray-50)';
+      inner.style.cssText = 'padding:10px 12px;display:flex;flex-direction:column;gap:6px;border-top:0.5px solid var(--gray-100);background:var(--gray-50)';
 
       item.subs.forEach(function(sub) {
         var subId = item.id + '-' + sub.label;
@@ -131,10 +133,12 @@ function renderSocialesUnit() {
         subBtn.style.cssText = 'display:flex;align-items:center;justify-content:space-between;width:100%;padding:9px 12px;background:' + (isSubOpen ? 'var(--gray-50)' : 'white') + ';border:none;cursor:pointer;text-align:left';
         subBtn.innerHTML =
           '<div style="display:flex;align-items:center;gap:8px">' +
-            '<i class="ti ' + sub.icon + '" style="font-size:15px;color:' + socUnit.color + '"></i>' +
-            '<span style="font-family:var(--f);font-size:12px;font-weight:700;color:var(--gray-700)">' + sub.label + '</span>' +
+            '<div style="width:28px;height:28px;border-radius:8px;background:white;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:0.5px solid var(--gray-100)">' +
+              '<i class="ti ' + sub.icon + '" style="font-size:14px;color:' + socUnit.color + '"></i>' +
+            '</div>' +
+            '<span style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-700)">' + sub.label + '</span>' +
           '</div>' +
-          '<i class="ti ' + (isSubOpen ? 'ti-chevron-up' : 'ti-chevron-down') + '" style="font-size:13px;color:var(--gray-400)"></i>';
+          '<i class="ti ' + (isSubOpen ? 'ti-chevron-up' : 'ti-chevron-down') + '" style="font-size:14px;color:var(--gray-400)"></i>';
         subBtn.addEventListener('click', (function(sid) {
           return function() {
             socOpenSub = socOpenSub === sid ? null : sid;
@@ -145,7 +149,7 @@ function renderSocialesUnit() {
 
         if (isSubOpen) {
           var subContent = document.createElement('div');
-          subContent.style.cssText = 'padding:8px 12px;font-family:var(--f);font-size:12px;color:var(--gray-600);line-height:1.6;border-top:0.5px solid var(--gray-100)';
+          subContent.style.cssText = 'padding:10px 12px 10px 48px;font-family:var(--f);font-size:13px;color:var(--gray-600);line-height:1.7;border-top:0.5px solid var(--gray-100);background:white';
           subContent.textContent = sub.text;
           subWrap.appendChild(subContent);
         }
