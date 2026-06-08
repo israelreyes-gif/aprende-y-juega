@@ -40,6 +40,17 @@
     </div>
 
     <!-- RACHA SEMANAL -->
+    <!-- ACCESO CALENDARIO -->
+    <div onclick="go('s-calendario')" style="margin:0 0 8px;padding:12px 16px;background:linear-gradient(135deg,#7F77DD,#533AB7);border-radius:14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;box-shadow:0 2px 8px rgba(127,119,221,.3)">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:24px">📅</span>
+        <div>
+          <div style="font-family:var(--f);font-size:14px;font-weight:900;color:white">Mi calendario de estudio</div>
+          <div style="font-family:var(--f);font-size:11px;color:rgba(255,255,255,.8)" id="cal-home-lbl">Ver objetivos y progreso del mes</div>
+        </div>
+      </div>
+      <span style="color:white;font-size:20px;opacity:.8">›</span>
+    </div>
     <div class="slbl">Racha semanal</div>
     <div class="streak-card">
       <div style="flex:1">
@@ -152,6 +163,98 @@
     <div class="slbl">Ejercicios a reforzar</div>
     <div id="errors-panel" style="padding:0 0 4px">
       <div style="font-size:13px;color:var(--gray-400);font-weight:600;text-align:center;padding:12px 16px">¡Empieza a practicar para ver tus estadísticas!</div>
+    </div>
+  </div>
+</div>
+
+<!-- CALENDARIO COMPLETO -->
+<div class="screen" id="s-calendario">
+  <div class="topbar" style="background:#7F77DD"><button class="back-btn" onclick="go('s-home')">←</button><h1>📅 Calendario</h1><span class="top-badge" style="background:rgba(255,255,255,.2);color:white" id="cal-racha-badge">🔥 —</span></div>
+  <div class="sa">
+    <!-- Tabs -->
+    <div style="display:flex;gap:6px;margin-bottom:14px">
+      <button class="cal-tab-btn" data-tab="mes" onclick="calSetTab('mes')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500);transition:all .15s">Mes</button>
+      <button class="cal-tab-btn" data-tab="objetivos" onclick="calSetTab('objetivos')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500);transition:all .15s">Objetivos</button>
+      <button class="cal-tab-btn" data-tab="eventos" onclick="calSetTab('eventos')" style="padding:6px 14px;border-radius:20px;border:0.5px solid var(--gray-200);background:white;font-family:var(--f);font-size:12px;cursor:pointer;color:var(--gray-500);transition:all .15s">Eventos</button>
+    </div>
+
+    <!-- TAB MES -->
+    <div id="cal-tab-mes">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="font-family:var(--f);font-size:14px;font-weight:700;color:var(--gray-800)" id="cal-mes-lbl">—</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:var(--gray-400);font-family:var(--f)">
+          <div style="display:flex;align-items:center;gap:3px"><div style="width:10px;height:10px;border-radius:2px;background:#EAF3DE;border:0.5px solid #639922"></div>Completo</div>
+          <div style="display:flex;align-items:center;gap:3px"><div style="width:10px;height:10px;border-radius:2px;background:#EEEDFE;border:0.5px solid #7F77DD"></div>Hoy</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:4px">
+        <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">L</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">M</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">X</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">J</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">V</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">S</div>
+        <div style="text-align:center;font-size:10px;font-weight:700;color:var(--gray-400);font-family:var(--f)">D</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:14px" id="cal-mes-grid"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div class="stat-card"><div class="stat-num" style="color:#639922" id="cal-stat-dias">—</div><div class="stat-lbl">días estudiados</div></div>
+        <div class="stat-card"><div class="stat-num" style="color:#7F77DD" id="cal-stat-racha">—</div><div class="stat-lbl">racha actual</div></div>
+        <div class="stat-card"><div class="stat-num" style="color:#BA7517" id="cal-stat-mejor">—</div><div class="stat-lbl">mejor racha</div></div>
+      </div>
+    </div>
+
+    <!-- TAB OBJETIVOS -->
+    <div id="cal-tab-objetivos" style="display:none">
+      <div style="font-family:var(--f);font-size:12px;color:var(--gray-400);margin-bottom:10px">Objetivos semanales</div>
+      <div id="cal-obj-list"></div>
+      <div style="margin-top:12px;border:0.5px solid var(--gray-100);border-radius:14px;padding:12px 14px;background:var(--gray-50);display:flex;align-items:center;gap:10px">
+        <span style="font-size:24px">🏆</span>
+        <div style="flex:1">
+          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)">Semana completa</div>
+          <div style="height:5px;border-radius:3px;background:var(--gray-200);overflow:hidden;margin-top:5px">
+            <div id="cal-semana-bar" style="height:100%;border-radius:3px;background:#7F77DD;width:0%;transition:width .4s ease"></div>
+          </div>
+          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400);margin-top:3px" id="cal-semana-lbl">— / 7 días</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB EVENTOS -->
+    <div id="cal-tab-eventos" style="display:none">
+      <div style="font-family:var(--f);font-size:12px;color:var(--gray-400);margin-bottom:10px">Próximos eventos</div>
+      <div style="border:0.5px solid var(--gray-100);border-radius:14px;padding:10px 12px;background:white;display:flex;align-items:center;gap:10px;margin-bottom:8px">
+        <div style="width:38px;height:38px;border-radius:10px;background:#EEEDFE;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0">
+          <div style="font-family:var(--f);font-size:9px;font-weight:700;color:#533AB7">JUN</div>
+          <div style="font-family:var(--f);font-size:15px;font-weight:900;color:#3C3489">13</div>
+        </div>
+        <div style="flex:1">
+          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)">🎯 Reto fin de semana</div>
+          <div style="font-family:var(--f);font-size:11px;color:var(--gray-400)">50 ejercicios · Premio: +100 pts</div>
+        </div>
+      </div>
+      <div style="border:0.5px solid var(--gray-100);border-radius:14px;padding:10px 12px;background:white;display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <div style="width:38px;height:38px;border-radius:10px;background:#E6F1FB;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0">
+          <div style="font-family:var(--f);font-size:9px;font-weight:700;color:#185FA5">JUN</div>
+          <div style="font-family:var(--f);font-size:15px;font-weight:900;color:#0C447C">20</div>
+        </div>
+        <div style="flex:1">
+          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)">🌟 Semana de English</div>
+          <div style="font-family:var(--f);font-size:11px;color:var(--gray-400)">Doble puntos en English</div>
+        </div>
+      </div>
+      <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-700);margin-bottom:10px">Insignias conseguidas</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <div style="border:0.5px solid var(--gray-100);border-radius:10px;padding:8px 12px;background:white;text-align:center">
+          <div style="font-size:22px">🔥</div><div style="font-family:var(--f);font-size:9px;color:var(--gray-400);margin-top:2px">7 días</div>
+        </div>
+        <div style="border:0.5px solid var(--gray-100);border-radius:10px;padding:8px 12px;background:white;text-align:center">
+          <div style="font-size:22px">⭐</div><div style="font-family:var(--f);font-size:9px;color:var(--gray-400);margin-top:2px">100 ejerc.</div>
+        </div>
+        <div style="border:0.5px solid var(--gray-100);border-radius:10px;padding:8px 12px;background:white;text-align:center;opacity:.35">
+          <div style="font-size:22px">🏆</div><div style="font-family:var(--f);font-size:9px;color:var(--gray-400);margin-top:2px">Sem. completa</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
