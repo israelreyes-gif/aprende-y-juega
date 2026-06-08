@@ -1,0 +1,62 @@
+<!-- MENÚ SOCIALES -->
+<div class="screen" id="s-sociales">
+  <div class="topbar" style="background:#0F6E56"><button class="back-btn" onclick="go('s-home')">←</button><h1>🌍 Sociales</h1><span class="top-badge" id="sociales-medal">🎖️ —</span></div>
+  <div class="hprog" style="background:#0F6E56"><div class="hprog-lbl"><span>Hoy</span><span id="sociales-hprog-lbl">0 / 10</span></div><div class="hprog-track"><div class="hprog-fill" id="sociales-hprog-fill" style="background:#5DCAA5;width:0%"></div></div></div>
+  <div class="sa">
+    <div class="slbl">Elige el apartado</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="go('s-sociales-study')">
+        <div class="mode-emoji"><i class="ti ti-book-2" style="font-size:32px;color:#0F6E56"></i></div>
+        <div class="mode-name" style="color:#085041">Estudio</div>
+        <div class="mode-sub">Aprende los contenidos</div>
+      </div>
+      <div class="mode-card" style="opacity:0.45;cursor:default">
+        <div class="mode-emoji"><i class="ti ti-pencil" style="font-size:32px;color:#888780"></i></div>
+        <div class="mode-name">Ejercicios</div>
+        <div class="mode-sub">Próximamente</div>
+      </div>
+    </div>
+    <div style="margin:20px 12px 4px;background:var(--gray-50);border-radius:14px;padding:14px 12px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-700)">Mi progreso — este mes</div>
+        <div style="display:flex;align-items:center;gap:4px">
+          <span style="font-size:16px">🔥</span>
+          <span style="font-family:var(--f);font-size:13px;font-weight:700;color:#0F6E56" id="cal-sociales-streak">—</span>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:10px" id="cal-sociales"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div style="background:white;border-radius:10px;padding:8px;text-align:center">
+          <div style="font-family:var(--f);font-size:18px;font-weight:800;color:#0F6E56" id="cal-sociales-dias">—</div>
+          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400)">días</div>
+        </div>
+        <div style="background:white;border-radius:10px;padding:8px;text-align:center">
+          <div style="font-family:var(--f);font-size:18px;font-weight:800;color:#0F6E56" id="cal-sociales-pct">—</div>
+          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400)">aciertos</div>
+        </div>
+        <div style="background:white;border-radius:10px;padding:8px;text-align:center">
+          <div style="font-family:var(--f);font-size:16px;font-weight:800;color:#0F6E56" id="cal-sociales-pts">—</div>
+          <div style="font-family:var(--f);font-size:10px;color:var(--gray-400)">pts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDY MENU -->
+<div class="screen" id="s-sociales-study">
+  <div class="topbar" style="background:#0F6E56"><button class="back-btn" onclick="go('s-sociales')">←</button><h1>Estudio</h1><span class="top-badge">📖</span></div>
+  <div class="sa">
+    <div class="slbl">Elige una tarjeta</div>
+    <div class="mode-grid" id="sociales-units-grid"></div>
+  </div>
+</div>
+
+<!-- STUDY UNIT -->
+<div class="screen" id="s-sociales-study-unit">
+  <div class="topbar" style="background:#0F6E56"><button class="back-btn" onclick="go('s-sociales-study')">←</button><h1 id="sociales-unit-title">—</h1><span class="top-badge">📖</span></div>
+  <div class="sa">
+    <div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:10px" id="sociales-section-tabs"></div>
+    <div id="sociales-unit-content"></div>
+  </div>
+</div>
