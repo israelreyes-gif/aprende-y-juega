@@ -254,9 +254,10 @@ function checkSuma() {
       var b = document.getElementById('res-box-' + i);
       if (b) b.className = 'dbox correct';
     });
+    var sumaPts = sumaIntentos === 0 ? 10 : 5;
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +10 pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
-    awardPts(10, 'mates');
+    fb.innerHTML = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +' + sumaPts + ' pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
+    awardPts(sumaPts, 'mates');
     recordResult('mates', key, true);
     document.getElementById('suma-next').style.display = 'block';
   } else {
@@ -347,9 +348,10 @@ function pickMult(el, val) {
     // ── ACIERTO: siguiente automático ──
     document.querySelectorAll('.mopt').forEach(function(m) { m.className = 'mopt'; });
     el.className = 'mopt mok';
+    var multiPts = multiIntentos === 0 ? 10 : 5;
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + currentMulti.a + '×' + currentMulti.b + '=' + currentMulti.resultado + ' 🌟 +10 pts</div>';
-    awardPts(10, 'mates');
+    fb.innerHTML = '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + currentMulti.a + '×' + currentMulti.b + '=' + currentMulti.resultado + ' 🌟 +' + multiPts + ' pts</div>';
+    awardPts(multiPts, 'mates');
     recordResult('mates', 'multi', true);
     document.getElementById('multi-next').style.display = 'block';
   } else {
@@ -421,9 +423,10 @@ function checkProb() {
     box.style.background  = 'var(--green-light)';
     box.style.borderColor = 'var(--green)';
     box.style.color       = 'var(--green)';
+    var probPts = probIntentos === 0 ? 15 : 7;
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! ' + currentProb.resultado + ' 🎉 +15 pts</div>';
-    awardPts(15, 'mates');
+    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! ' + currentProb.resultado + ' 🎉 +' + probPts + ' pts</div>';
+    awardPts(probPts, 'mates');
     recordResult('mates', 'prob', true);
     document.getElementById('prob-next').style.display = 'block';
   } else {
@@ -547,9 +550,10 @@ function checkMix() {
       var b = document.getElementById('mix-box-' + i);
       if (b) b.className = 'dbox correct';
     });
+    var mixPts = mixIntentos === 0 ? 10 : 5;
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + eq + ' 🚀 +10 pts</div>';
-    awardPts(10, 'mates');
+    fb.innerHTML = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + eq + ' 🚀 +' + mixPts + ' pts</div>';
+    awardPts(mixPts, 'mates');
     recordResult('mates', 'mix', true);
     document.getElementById('mix-next').style.display = 'block';
   } else {
