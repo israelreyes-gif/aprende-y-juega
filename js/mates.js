@@ -258,7 +258,7 @@ function checkSuma() {
     fb.innerHTML = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +10 pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
     awardPts(10, 'mates');
     recordResult('mates', key, true);
-    setTimeout(function() { cargarNuevaSuma(); }, 1200);
+    document.getElementById('suma-next').style.display = 'block';
   } else {
     sumaIntentos++;
     // Marcar dígitos correctos e incorrectos
@@ -290,7 +290,7 @@ function checkSuma() {
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">El resultado correcto era <strong>' + correct + '</strong> 📖</div><div class="fbs">' + eq + '</div>';
       recordResult('mates', key, false);
-      setTimeout(function() { cargarNuevaSuma(); }, 2200);
+      document.getElementById('suma-next').style.display = 'block';
     }
   }
 }
@@ -351,7 +351,7 @@ function pickMult(el, val) {
     fb.innerHTML = '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + currentMulti.a + '×' + currentMulti.b + '=' + currentMulti.resultado + ' 🌟 +10 pts</div>';
     awardPts(10, 'mates');
     recordResult('mates', 'multi', true);
-    setTimeout(function() { cargarNuevaMulti(); }, 1200);
+    document.getElementById('multi-next').style.display = 'block';
   } else {
     multiIntentos++;
     el.className = 'mopt mbad';
@@ -372,7 +372,7 @@ function pickMult(el, val) {
       fb.innerHTML = '<div class="fbt">La respuesta era <strong>' + currentMulti.resultado +
         '</strong> (' + currentMulti.a + '×' + currentMulti.b + ') 📖</div>';
       recordResult('mates', 'multi', false);
-      setTimeout(function() { cargarNuevaMulti(); }, 2200);
+      document.getElementById('multi-next').style.display = 'block';
     }
   }
 }
@@ -551,7 +551,7 @@ function checkMix() {
     fb.innerHTML = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + eq + ' 🚀 +10 pts</div>';
     awardPts(10, 'mates');
     recordResult('mates', 'mix', true);
-    setTimeout(function() { cargarNuevaMezcla(); }, 1200);
+    document.getElementById('mix-next').style.display = 'block';
   } else {
     mixIntentos++;
     currentMix.respuestaUsuario.split('').forEach(function(d, i) {
@@ -578,7 +578,7 @@ function checkMix() {
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">La respuesta era <strong>' + res + '</strong> (' + eq + ') 📖</div>';
       recordResult('mates', 'mix', false);
-      setTimeout(function() { cargarNuevaMezcla(); }, 2200);
+      document.getElementById('mix-next').style.display = 'block';
     }
   }
 }
