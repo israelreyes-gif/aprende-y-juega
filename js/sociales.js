@@ -254,10 +254,11 @@ function checkSocVF(val, ex) {
   if (isCorrect) {
     socExDone = true;
     fbEl.className = 'feedback fb-ok';
-    fbEl.innerHTML = '✅ ' + (socExAttempt === 1 ? '¡Correcto!' : '¡Bien, en el segundo intento!') + '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
+    var socVfPts = socExAttempt === 1 ? 10 : 5;
+    fbEl.innerHTML = '✅ ' + (socExAttempt === 1 ? '¡Correcto! +' + socVfPts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + socVfPts + ' pts') + '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
     document.getElementById('soc-ex-next').style.display = 'block';
     recordResult('sociales', 'vf', true);
-    awardPts(socExAttempt === 1 ? 10 : 5, 'sociales');
+    awardPts(socVfPts, 'sociales');
     updateSubjectUI('sociales');
   } else if (socExAttempt === 1) {
     socExAttempt = 2;
@@ -434,10 +435,11 @@ function checkSocRelacionar() {
     document.getElementById('soc-rel-check').style.display = 'none';
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ ' + (socExAttempt === 1 ? '¡Todos los pares correctos!' : '¡Bien, en el segundo intento!');
+    var socRelPts = socExAttempt === 1 ? 10 : 5;
+    fbEl.textContent = '✅ ' + (socExAttempt === 1 ? '¡Todos los pares correctos! +' + socRelPts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + socRelPts + ' pts');
     document.getElementById('soc-ex-next').style.display = 'block';
     recordResult('sociales', 'relacionar', true);
-    awardPts(socExAttempt === 1 ? 10 : 5, 'sociales');
+    awardPts(socRelPts, 'sociales');
     updateSubjectUI('sociales');
   } else if (socExAttempt === 1) {
     socExAttempt = 2;
@@ -540,10 +542,11 @@ function checkSocCompletar(idx, ex, btn, opts) {
   if (isCorrect) {
     socExDone = true;
     fbEl.className = 'feedback fb-ok';
-    fbEl.innerHTML = '✅ ' + (socExAttempt === 1 ? '¡Correcto!' : '¡Bien, en el segundo intento!') + '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
+    var socCompPts = socExAttempt === 1 ? 10 : 5;
+    fbEl.innerHTML = '✅ ' + (socExAttempt === 1 ? '¡Correcto! +' + socCompPts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + socCompPts + ' pts') + '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
     document.getElementById('soc-ex-next').style.display = 'block';
     recordResult('sociales', 'completar', true);
-    awardPts(socExAttempt === 1 ? 10 : 5, 'sociales');
+    awardPts(socCompPts, 'sociales');
     updateSubjectUI('sociales');
   } else if (socExAttempt === 1) {
     socExAttempt = 2;
