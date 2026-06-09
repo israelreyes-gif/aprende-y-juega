@@ -163,13 +163,14 @@ function pickWord(chosen, correct, full) {
       o.onclick = null;
       o.className = 'wopt-btn ' + (o.textContent === correct ? 'wok' : '');
     });
+    var gramPts = gramIntentos === 0 ? 10 : 5;
     gramIntentos = 0;
     ST.gramStreak++;
     saveState();
-    awardPts(10, 'lengua');
+    awardPts(gramPts, 'lengua');
     recordResult('lengua', key, true);
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! Con ' + correct + ': "' + full + '" 🎉 +10 pts</div>';
+    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! Con ' + correct + ': "' + full + '" 🎉 +' + gramPts + ' pts</div>';
     document.getElementById('gram-next').style.display = 'block';
   } else {
     gramIntentos++;
