@@ -420,7 +420,7 @@ function checkWordOrder() {
     slotsEl.style.borderColor = '#22C55E';
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct!';
+    fbEl.textContent = '✅ Correct! +' + (woAttempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display = 'block';
     resetBtn.style.display = 'none';
     document.getElementById('en-wo-check').style.display = 'none';
@@ -533,7 +533,7 @@ function checkEnglishAnswer(selected, ex, attempt, mode) {
     });
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct!';
+    fbEl.textContent = '✅ Correct! +' + (attempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display = 'block';
     recordEnglishResult(true, attempt === 1, enExArea);
   } else if (attempt === 1) {
@@ -621,21 +621,21 @@ function recordEnglishResult(correct, firstAttempt, area) {
   if (!ST.english) ST.english = { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} };
   var e = ST.english;
   e.hoy++; e.total++;
-  if (correct) {
-    e.hoyOk++; e.totalOk++;
-    var pts = firstAttempt ? 10 : 5;
-    e.pts += pts; e.streak++;
-    ST.totalPts += pts;
-  } else {
-    e.streak = Math.max(0, e.streak - 1);
-  }
   // Guardar estadística por área (tobe, modals, vocab)
   if (area) {
     if (!e.errors) e.errors = {};
     var key = correct ? area + '_ok' : area + '_fail';
     e.errors[key] = (e.errors[key] || 0) + 1;
   }
-  saveState();
+  if (correct) {
+    e.hoyOk++; e.totalOk++;
+    e.streak++;
+    var pts = firstAttempt ? 10 : 5;
+    awardPts(pts, 'english');
+  } else {
+    e.streak = Math.max(0, e.streak - 1);
+    saveState();
+  }
   updateSubjectUI('english');
   if (typeof updateHomeUI === 'function') updateHomeUI();
   setEl('home-pts-pill', '⭐ ' + ST.totalPts + ' pts');
@@ -928,7 +928,7 @@ function pickW2I(opt, word) {
     vocabExDone = true;
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct!';
+    fbEl.textContent = '✅ Correct! +' + (vocabExAttempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display = 'block';
     renderW2IOpts(word);
     recordEnglishResult(true, vocabExAttempt === 1, 'vocab');
@@ -1012,7 +1012,7 @@ function checkVocabI2W() {
     inp.disabled = true;
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct!';
+    fbEl.textContent = '✅ Correct! +' + (vocabExAttempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display  = 'block';
     checkBtn.style.display = 'none';
     recordEnglishResult(true, vocabExAttempt === 1, 'vocab');
