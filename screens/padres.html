@@ -1,3 +1,37 @@
+<!-- MODAL PIN PADRES -->
+<div id="pin-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:none;align-items:center;justify-content:center">
+  <div style="background:white;border-radius:20px;padding:28px 24px;width:calc(100% - 48px);max-width:320px;box-shadow:0 8px 32px rgba(0,0,0,.18)">
+    <div id="pin-title" style="font-family:var(--f);font-weight:900;font-size:18px;color:#1F2937;text-align:center;margin-bottom:6px">🔒 Zona de padres</div>
+    <div id="pin-subtitle" style="font-size:13px;color:var(--gray-400);text-align:center;margin-bottom:20px">Introduce el PIN para acceder</div>
+
+    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:20px">
+      <div id="pin-dot-0" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
+      <div id="pin-dot-1" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
+      <div id="pin-dot-2" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
+      <div id="pin-dot-3" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
+    </div>
+
+    <div id="pin-error" style="display:none;font-size:12px;color:#DC2626;text-align:center;margin-bottom:10px;font-weight:700">PIN incorrecto</div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px">
+      <button class="pin-key" onclick="pinKey('1')">1</button>
+      <button class="pin-key" onclick="pinKey('2')">2</button>
+      <button class="pin-key" onclick="pinKey('3')">3</button>
+      <button class="pin-key" onclick="pinKey('4')">4</button>
+      <button class="pin-key" onclick="pinKey('5')">5</button>
+      <button class="pin-key" onclick="pinKey('6')">6</button>
+      <button class="pin-key" onclick="pinKey('7')">7</button>
+      <button class="pin-key" onclick="pinKey('8')">8</button>
+      <button class="pin-key" onclick="pinKey('9')">9</button>
+      <div></div>
+      <button class="pin-key" onclick="pinKey('0')">0</button>
+      <button class="pin-key pin-del" onclick="pinDel()">⌫</button>
+    </div>
+
+    <button onclick="pinCancel()" style="width:100%;padding:10px;border:none;background:none;font-size:13px;color:var(--gray-400);font-family:var(--f);font-weight:700;cursor:pointer">Cancelar</button>
+  </div>
+</div>
+
 <!-- PANTALLA ÁREA PARA PADRES -->
 <div class="screen" id="s-padres">
   <div class="topbar bg-purple">
