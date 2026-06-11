@@ -8,16 +8,6 @@ var HISTORIAS_DB = { facil: [], medio: [], avanzado: [] };
 var historiaIdx  = { facil: 0, medio: 0, avanzado: 0 };
 var currentHistoria = null;
 
-fetch('data/curso' + cursoActual + '/historias.json')
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
-    HISTORIAS_DB = data;
-    Object.keys(HISTORIAS_DB).forEach(function(k) {
-      HISTORIAS_DB[k] = shuffleArr(HISTORIAS_DB[k]);
-    });
-  })
-  .catch(function(e) { console.warn('No se cargó historias.json:', e); });
-
 function shuffleArr(arr) {
   var a = arr.slice();
   for (var i = a.length - 1; i > 0; i--) {
