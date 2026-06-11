@@ -2,24 +2,20 @@
    SCIENCES.JS — Study, Exercises & Mix
    ============================================= */
 
-var SC_DATA   = null;
-var scExQueue = [];
-var scExIdx   = 0;
-var scMixQueue = [];
-var scMixIdx   = 0;
+var SC = ExerciseState.sciences; /* alias */
 
 function loadSciencesData(callback) {
-  if (SC_DATA) { callback(); return; }
+  if (SubjectData.sciences) { callback(); return; }
   fetch('data/curso' + cursoActual + '/sciences.json')
     .then(function(r) { return r.json(); })
-    .then(function(d) { SC_DATA = d; callback(); })
+    .then(function(d) { SubjectData.sciences = d; callback(); })
     .catch(function(e) { console.error('Error loading sciences.json', e); });
 }
 
 /* ---- STUDY ---- */
 function renderSciencesStudy() {
   loadSciencesData(function() {
-    var unit = SC_DATA.units[0];
+    var unit = SubjectData.sciences.units[0];
     var container = document.getElementById('sciences-study-container');
     if (!container) return;
     container.innerHTML = '';
@@ -80,25 +76,25 @@ function renderSciencesStudy() {
 /* ---- EXERCISES ---- */
 function startSciencesExercises() {
   loadSciencesData(function() {
-    var exs = SC_DATA.units[0].exercises.slice();
+    var exs = SubjectData.sciences.units[0].exercises.slice();
     for (var i = exs.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var tmp = exs[i]; exs[i] = exs[j]; exs[j] = tmp;
     }
-    scExQueue = exs;
-    scExIdx   = 0;
+    SC.exQueue = exs;
+    SC.exIdx   = 0;
     go('s-sciences-ex');
     showSciencesEx();
   });
 }
 
 function showSciencesEx() {
-  var ex = scExQueue[scExIdx];
+  var ex = SC.exQueue[SC.exIdx];
   if (!ex) return;
-  var total = scExQueue.length;
+  var total = SC.exQueue.length;
 
-  setEl('sc-ex-badge', 'Question ' + (scExIdx + 1) + ' of ' + total);
-  setBar('sc-ex-prog', Math.round(scExIdx / total * 100));
+  setEl('sc-ex-badge', 'Question ' + (SC.exIdx + 1) + ' of ' + total);
+  setBar('sc-ex-prog', Math.round(SC.exIdx / total * 100));
 
   var diff = diffLabel(ST.sciences ? ST.sciences.streak || 0 : 0);
   var diffEl = document.getElementById('sc-ex-diff');
@@ -171,8 +167,8 @@ function checkSciencesAnswer(selected, ex, attempt, mode) {
     });
     // Buscar la explicación del topic correcto
     var explanation = '';
-    if (SC_DATA) {
-      SC_DATA.units[0].topics.forEach(function(t) {
+    if (SubjectData.sciences) {
+      SubjectData.sciences.units[0].topics.forEach(function(t) {
         if (t.name === correct) explanation = t.definition.replace(/<[^>]+>/g, '') + ' ' + t.extra.replace(/<[^>]+>/g, '');
       });
     }
@@ -186,8 +182,8 @@ function checkSciencesAnswer(selected, ex, attempt, mode) {
 }
 
 function nextSciencesEx() {
-  scExIdx++;
-  if (scExIdx >= scExQueue.length) {
+  SC.exIdx++;
+  if (SC.exIdx >= SC.exQueue.length) {
     go('s-sciences');
     updateSubjectUI('sciences');
     return;
@@ -199,25 +195,25 @@ function nextSciencesEx() {
 function startSciencesMix() {
   loadSciencesData(function() {
     var all = [];
-    SC_DATA.units.forEach(function(u) { all = all.concat(u.exercises); });
+    SubjectData.sciences.units.forEach(function(u) { all = all.concat(u.exercises); });
     for (var i = all.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var tmp = all[i]; all[i] = all[j]; all[j] = tmp;
     }
-    scMixQueue = all;
-    scMixIdx   = 0;
+    SC.mixQueue = all;
+    SC.mixIdx   = 0;
     go('s-sciences-mix');
     showSciencesMix();
   });
 }
 
 function showSciencesMix() {
-  var ex = scMixQueue[scMixIdx];
+  var ex = SC.mixQueue[SC.mixIdx];
   if (!ex) return;
-  var total = scMixQueue.length;
+  var total = SC.mixQueue.length;
 
-  setEl('sc-mix-badge', 'Question ' + (scMixIdx + 1) + ' of ' + total);
-  setBar('sc-mix-prog', Math.round(scMixIdx / total * 100));
+  setEl('sc-mix-badge', 'Question ' + (SC.mixIdx + 1) + ' of ' + total);
+  setBar('sc-mix-prog', Math.round(SC.mixIdx / total * 100));
 
   var diff = diffLabel(ST.sciences ? ST.sciences.streak || 0 : 0);
   var diffEl = document.getElementById('sc-mix-diff');
@@ -231,8 +227,8 @@ function showSciencesMix() {
 }
 
 function nextSciencesMix() {
-  scMixIdx++;
-  if (scMixIdx >= scMixQueue.length) {
+  SC.mixIdx++;
+  if (SC.mixIdx >= SC.mixQueue.length) {
     go('s-sciences');
     updateSubjectUI('sciences');
     return;
