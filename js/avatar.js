@@ -210,13 +210,15 @@ var AV_TEMP = {}; // copia temporal mientras edita
 
 function abrirEditorAvatar(backScreen) {
   AV_TEMP = JSON.parse(JSON.stringify(AV));
-  var backBtn = document.getElementById('avatar-back-btn');
-  if (backBtn) backBtn.onclick = function() { go(backScreen || 's-home'); };
   var pts = ST.totalPts;
+  var _backScreen = backScreen || 's-home';
+  go('s-avatar');
+  // El back button y el render se hacen después de que go() cargue la pantalla
+  // navigation.js llama a renderAvatarEditor() al navegar a s-avatar
+  var backBtn = document.getElementById('avatar-back-btn');
+  if (backBtn) backBtn.onclick = function() { go(_backScreen); };
   var pBadge = document.getElementById('avatar-pts-badge');
   if (pBadge) pBadge.textContent = '⭐ ' + pts + ' pts';
-  renderAvatarEditor();
-  go('s-avatar');
 }
 
 function renderAvatarEditor() {
