@@ -13,7 +13,7 @@ function loadSocialesData(callback) {
   fetch('data/curso' + cursoActual + '/sociales.json')
     .then(function(r) { return r.json(); })
     .then(function(data) { SubjectData.sociales = data; callback(); })
-    .catch(function(e) { console.warn('Error cargando sociales:', e); });
+    .catch(function(e) { showError('el estudio de Sociales', e, function(){ loadSocialesData(function(){}); }, 's-sociales'); });
 }
 
 /* ---- Menú principal de sociales ---- */
