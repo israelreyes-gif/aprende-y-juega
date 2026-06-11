@@ -5,17 +5,10 @@
    10 pts (1er intento) / 5 pts (2º intento)
    ============================================= */
 
-var DICT_DATA    = null;
-var dictQueue    = [];
-var dictIdx      = 0;
-var dictAttempt  = 1;    // 1 o 2
-var dictListens  = 0;    // escuchas en este intento
-var dictExtra    = 0;    // escuchas extra acumuladas (penalización)
-var dictDone     = false;
-var dictSpeaking = false;
+var D = ExerciseState.dict; /* alias */
 
 function loadDictData(callback) {
-  if (DICT_DATA) { callback(); return; }
+  if (SubjectData.dict) { callback(); return; }
   fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
@@ -37,7 +30,7 @@ function loadDictData(callback) {
             frases.push({ frase: ejemplo, regla: reglaLabel(regla) });
           }        });
       });
-      DICT_DATA = frases;
+      SubjectData.dict = frases;
       callback();
     })
     .catch(function(e) { console.warn('Error cargando dictado:', e); });
@@ -67,24 +60,24 @@ function normalizeFrase(str) {
 
 function initDictado() {
   loadDictData(function() {
-    dictQueue   = shuffleDict(DICT_DATA);
-    dictIdx     = 0;
+    D.queue   = shuffleDict(SubjectData.dict);
+    D.idx     = 0;
     go('s-dictado');
     loadDictQuestion();
   });
 }
 
 function loadDictQuestion() {
-  var item  = dictQueue[dictIdx];
-  var total = dictQueue.length;
-  dictAttempt = 1;
-  dictListens = 0;
-  dictExtra   = 0;
-  dictDone    = false;
+  var item  = D.queue[D.idx];
+  var total = D.queue.length;
+  D.attempt = 1;
+  D.listens = 0;
+  D.extra   = 0;
+  D.done    = false;
 
-  setEl('dict-badge', 'Dictado ' + (dictIdx + 1) + ' de ' + total);
+  setEl('dict-badge', 'Dictado ' + (D.idx + 1) + ' de ' + total);
   setEl('dict-regla', item.regla);
-  setBar('dict-prog', Math.round(dictIdx / total * 100));
+  setBar('dict-prog', Math.round(D.idx / total * 100));
 
   // Reset UI
   var inp = document.getElementById('dict-input');
@@ -105,37 +98,37 @@ function loadDictQuestion() {
 }
 
 function dictSpeak() {
-  if (!window.speechSynthesis || dictDone) return;
+  if (!window.speechSynthesis || D.done) return;
   window.speechSynthesis.cancel();
 
-  dictListens++;
+  D.listens++;
   // A partir de la 3ª escucha: penalización
-  if (dictListens > 2) {
-    dictExtra++;
+  if (D.listens > 2) {
+    D.extra++;
     var w = document.getElementById('dict-warning');
     if (w) { w.style.display = 'block'; setTimeout(function() { w.style.display = 'none'; }, 2500); }
   }
   dictUpdateDots();
   dictUpdatePtsPreview();
 
-  var item = dictQueue[dictIdx];
+  var item = D.queue[D.idx];
   var u = new SpeechSynthesisUtterance(item.frase);
   u.lang  = 'es-ES';
   u.rate  = 0.82;
   u.pitch = 1;
 
   var btn = document.getElementById('dict-speak-btn');
-  dictSpeaking = true;
+  D.speaking = true;
   if (btn) { btn.innerHTML = '⏸'; btn.style.background = '#EC4899'; btn.style.borderColor = '#DB2777'; }
   setEl('dict-speak-lbl', 'Escuchando...');
 
   u.onend = function() {
-    dictSpeaking = false;
+    D.speaking = false;
     if (btn) { btn.innerHTML = '🔊'; btn.style.background = 'white'; btn.style.borderColor = '#FBCFE8'; }
     setEl('dict-speak-lbl', 'Pulsa para escuchar de nuevo');
   };
   u.onerror = function() {
-    dictSpeaking = false;
+    D.speaking = false;
     if (btn) { btn.innerHTML = '🔊'; btn.style.background = 'white'; }
   };
   window.speechSynthesis.speak(u);
@@ -145,12 +138,12 @@ function dictUpdateDots() {
   var d1 = document.getElementById('dict-dot-1');
   var d2 = document.getElementById('dict-dot-2');
   var el = document.getElementById('dict-extra-lbl');
-  if (d1) d1.style.background = dictListens >= 1 ? '#EC4899' : '#FBCFE8';
-  if (d2) d2.style.background = dictListens >= 2 ? '#EC4899' : '#FBCFE8';
+  if (d1) d1.style.background = D.listens >= 1 ? '#EC4899' : '#FBCFE8';
+  if (d2) d2.style.background = D.listens >= 2 ? '#EC4899' : '#FBCFE8';
   if (el) {
-    if (dictExtra > 0) {
+    if (D.extra > 0) {
       el.style.display = 'inline';
-      el.textContent = '−' + dictExtra + ' pt' + (dictExtra > 1 ? 's' : '');
+      el.textContent = '−' + D.extra + ' pt' + (D.extra > 1 ? 's' : '');
     } else {
       el.style.display = 'none';
     }
@@ -158,10 +151,10 @@ function dictUpdateDots() {
 }
 
 function dictUpdatePtsPreview() {
-  var base = dictAttempt === 1 ? 10 : 5;
-  var current = Math.max(0, base - dictExtra);
+  var base = D.attempt === 1 ? 10 : 5;
+  var current = Math.max(0, base - D.extra);
   var el = document.getElementById('dict-pts-preview');
-  if (!el || dictDone) return;
+  if (!el || D.done) return;
   el.style.color = current >= base ? '#16A34A' : '#EF4444';
   el.textContent = 'Si aciertas ahora: +' + current + ' pts' +
     (current < base ? ' (−' + (base - current) + ' por escuchas extra)' : '');
@@ -179,19 +172,19 @@ function dictUpdateCheck() {
 }
 
 function dictCheck() {
-  if (dictDone) return;
+  if (D.done) return;
   var inp = document.getElementById('dict-input');
   if (!inp || !inp.value.trim()) return;
 
-  var item = dictQueue[dictIdx];
+  var item = D.queue[D.idx];
   var isCorrect = normalizeFrase(inp.value) === normalizeFrase(item.frase);
-  var base = dictAttempt === 1 ? 10 : 5;
-  var earned = Math.max(0, base - dictExtra);
+  var base = D.attempt === 1 ? 10 : 5;
+  var earned = Math.max(0, base - D.extra);
 
   var fbEl = document.getElementById('dict-fb');
 
   if (isCorrect) {
-    dictDone = true;
+    D.done = true;
     inp.disabled = true;
     inp.style.borderColor = '#22C55E';
     inp.style.background = '#F0FDF4';
@@ -208,11 +201,11 @@ function dictCheck() {
     awardPts(earned, 'lengua');
     updateSubjectUI('lengua');
 
-  } else if (dictAttempt === 1) {
+  } else if (D.attempt === 1) {
     // Pasar a 2º intento — NO borrar el input
-    dictAttempt = 2;
-    dictListens = 0;
-    dictExtra   = 0;
+    D.attempt = 2;
+    D.listens = 0;
+    D.extra   = 0;
     dictUpdateDots();
     dictUpdatePtsPreview();
     fbEl.style.display = 'block';
@@ -222,7 +215,7 @@ function dictCheck() {
 
   } else {
     // 2º fallo
-    dictDone = true;
+    D.done = true;
     inp.disabled = true;
     inp.style.borderColor = '#EF4444';
     inp.style.background = '#FEF2F2';
@@ -241,8 +234,8 @@ function dictCheck() {
 }
 
 function dictNext() {
-  dictIdx++;
-  if (dictIdx >= dictQueue.length) {
+  D.idx++;
+  if (D.idx >= D.queue.length) {
     go('s-lengua');
     updateSubjectUI('lengua');
     return;
