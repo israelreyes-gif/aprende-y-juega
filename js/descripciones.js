@@ -31,7 +31,7 @@ function initDescripciones() {
         DE.orden = shuffleDescArr(SubjectData.descripciones.map(function(_,i){ return i; }));
         cargarDescripcion();
       })
-      .catch(function(e) { console.warn('No se cargó descripciones.json:', e); });
+      .catch(function(e) { showError('las imágenes de Descripciones', e, function(){ initDescripciones(); }, 's-lengua-exercises'); });
   } else {
     cargarDescripcion();
   }
