@@ -204,9 +204,9 @@ function setPerfilActivoId(id, callback, skipDayReset) {
 function setCurso(num) {
   cursoActual = num;
   // No cargamos aquí — setPerfilActivoId lo hará con el perfil correcto
-  if (typeof EN_DATA    !== 'undefined') EN_DATA    = null;
-  if (typeof VOCAB_DATA !== 'undefined') VOCAB_DATA = null;
-  if (typeof SC_DATA    !== 'undefined') SC_DATA    = null;
+  SubjectData.english  = null;
+  SubjectData.vocab    = null;
+  SubjectData.sciences = null;
 }
 
 /* ---- Reseteo diario ---- */
