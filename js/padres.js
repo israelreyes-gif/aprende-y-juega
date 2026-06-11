@@ -14,15 +14,13 @@ var UK_FLAG = '<svg width="20" height="13" viewBox="0 0 60 40" style="border-rad
 /* ---- Entrada principal ---- */
 function renderPadres() {
   padresSubjectIdx = null;
-  loadStateFromCloud(function() {
-    fetch(API_URL + '/perfiles')
-      .then(function(r) { return r.json(); })
-      .then(function(perfiles) {
-        padresPerfilesCache = perfiles;
-        renderPadresChips(perfiles);
-        document.getElementById('p-main').style.display = 'none';
-      });
-  });
+  fetch(API_URL + '/perfiles')
+    .then(function(r) { return r.json(); })
+    .then(function(perfiles) {
+      padresPerfilesCache = perfiles;
+      renderPadresChips(perfiles);
+      document.getElementById('p-main').style.display = 'none';
+    });
 }
 
 function renderPadresChips(perfiles) {
@@ -44,23 +42,26 @@ function renderPadresChips(perfiles) {
       padresSelectPerfil(p.id);
     });
     el.appendChild(chip);
+    // Render avatar
+    var svg = chip.querySelector('[data-avatar]');
+    if (svg) {
+      drawAvatarSVG(svg, {
+        skin: parseInt(p.skin) || 0,
+        hairColor: parseInt(p.hair_color) || 1,
+        hair: parseInt(p.hair) || 0,
+        unlocked: []
+      }, 0);
+    }
   });
-  // Render avatars
-  el.querySelectorAll('[data-avatar]').forEach(function(svg) {
-    drawAvatarSVG(svg, {
-      skin: parseInt(svg.dataset.skin) || 0,
-      hairColor: parseInt(svg.dataset.hairColor) || 1,
-      hair: parseInt(svg.dataset.hair) || 0,
-      unlocked: []
-    }, 0);
-  });
-  // Auto-seleccionar perfil activo
-  if (perfilActivoId) padresSelectPerfil(perfilActivoId);
+  // Auto-seleccionar perfil activo si existe
+  if (perfilActivoId) {
+    var found = perfiles.some(function(p) { return p.id === perfilActivoId; });
+    if (found) padresSelectPerfil(perfilActivoId);
+  }
 }
 
 function padresSelectPerfil(id) {
-  setPerfilActivoId(id);
-  loadStateFromCloud(function() {
+  setPerfilActivoId(id, function() {
     renderPadresChips(padresPerfilesCache);
     renderPadresData();
     document.getElementById('p-main').style.display = 'block';
