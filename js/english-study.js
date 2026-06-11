@@ -17,7 +17,7 @@ function loadEnglishData(callback) {
   fetch('data/curso' + cursoActual + '/english.json')
     .then(function(r) { return r.json(); })
     .then(function(d) { SubjectData.english = d; callback(); })
-    .catch(function(e) { console.error('Error loading english.json', e); });
+    .catch(function(e) { showError('English', e, function(){ loadEnglishData(function(){}); }, 's-english'); });
 }
 
 /* ---- Renderizar menús dinámicos ---- */
