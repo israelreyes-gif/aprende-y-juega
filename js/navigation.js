@@ -68,19 +68,23 @@ function abrirPinModal(mode, callback) {
   var err      = document.getElementById('pin-error');
   if (!modal) return;
 
+  if (err) err.style.display = 'none';
+  pinUpdateDots();
+
   if (mode === 'create') {
     title.textContent    = '🔒 Crear PIN';
     subtitle.textContent = 'Elige un PIN de 4 dígitos';
+    modal.style.display  = 'flex';
   } else if (mode === 'confirm') {
     title.textContent    = '🔒 Confirmar PIN';
     subtitle.textContent = 'Repite el PIN para confirmar';
+    modal.style.display  = 'flex';
   } else {
-    // verify: comprobar si hay PIN en D1
+    // verify: esperar fetch antes de mostrar modal
     fetch(API_URL + '/config/pin_padres')
       .then(function(r) { return r.json(); })
       .then(function(d) {
         if (!d || !d.valor || d.valor === '1234') {
-          // PIN por defecto — forzar cambio
           _pinMode = 'create';
           title.textContent    = '🔒 Crear PIN';
           subtitle.textContent = 'Es tu primera vez. Elige un PIN de 4 dígitos';
@@ -88,16 +92,14 @@ function abrirPinModal(mode, callback) {
           title.textContent    = '🔒 Zona de padres';
           subtitle.textContent = 'Introduce el PIN para acceder';
         }
+        modal.style.display = 'flex';
       })
       .catch(function() {
         title.textContent    = '🔒 Zona de padres';
         subtitle.textContent = 'Introduce el PIN para acceder';
+        modal.style.display  = 'flex';
       });
   }
-
-  if (err) err.style.display = 'none';
-  pinUpdateDots();
-  modal.style.display = 'flex';
 }
 
 function pinKey(digit) {
