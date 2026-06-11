@@ -43,10 +43,147 @@ function irADescripciones() {
   go('s-descripciones');
 }
 
-/* ---- Área para padres ---- */
+/* ---- Área para padres (con PIN) ---- */
+var _pinBuffer    = '';
+var _pinMode      = 'verify';   // 'verify' | 'create' | 'confirm'
+var _pinNew       = '';
+var _pinCallback  = null;
+
 function irAPadres() {
-  if (typeof renderPadres === 'function') renderPadres();
-  go('s-padres');
+  abrirPinModal('verify', function() {
+    if (typeof renderPadres === 'function') renderPadres();
+    go('s-padres');
+  });
+}
+
+function abrirPinModal(mode, callback) {
+  _pinBuffer   = '';
+  _pinMode     = mode;
+  _pinNew      = '';
+  _pinCallback = callback;
+
+  var modal    = document.getElementById('pin-modal');
+  var title    = document.getElementById('pin-title');
+  var subtitle = document.getElementById('pin-subtitle');
+  var err      = document.getElementById('pin-error');
+  if (!modal) return;
+
+  if (mode === 'create') {
+    title.textContent    = '🔒 Crear PIN';
+    subtitle.textContent = 'Elige un PIN de 4 dígitos';
+  } else if (mode === 'confirm') {
+    title.textContent    = '🔒 Confirmar PIN';
+    subtitle.textContent = 'Repite el PIN para confirmar';
+  } else {
+    // verify: comprobar si hay PIN en D1
+    fetch(API_URL + '/config/pin_padres')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        if (!d || !d.valor || d.valor === '1234') {
+          // PIN por defecto — forzar cambio
+          _pinMode = 'create';
+          title.textContent    = '🔒 Crear PIN';
+          subtitle.textContent = 'Es tu primera vez. Elige un PIN de 4 dígitos';
+        } else {
+          title.textContent    = '🔒 Zona de padres';
+          subtitle.textContent = 'Introduce el PIN para acceder';
+        }
+      })
+      .catch(function() {
+        title.textContent    = '🔒 Zona de padres';
+        subtitle.textContent = 'Introduce el PIN para acceder';
+      });
+  }
+
+  if (err) err.style.display = 'none';
+  pinUpdateDots();
+  modal.style.display = 'flex';
+}
+
+function pinKey(digit) {
+  if (_pinBuffer.length >= 4) return;
+  _pinBuffer += digit;
+  pinUpdateDots();
+  if (_pinBuffer.length === 4) {
+    setTimeout(pinSubmit, 150);
+  }
+}
+
+function pinDel() {
+  _pinBuffer = _pinBuffer.slice(0, -1);
+  pinUpdateDots();
+  var err = document.getElementById('pin-error');
+  if (err) err.style.display = 'none';
+}
+
+function pinUpdateDots() {
+  for (var i = 0; i < 4; i++) {
+    var dot = document.getElementById('pin-dot-' + i);
+    if (dot) dot.style.background = i < _pinBuffer.length ? '#7C3AED' : '#E5E7EB';
+  }
+}
+
+function pinSubmit() {
+  if (_pinMode === 'create') {
+    _pinNew    = _pinBuffer;
+    _pinBuffer = '';
+    pinUpdateDots();
+    abrirPinModal('confirm', _pinCallback);
+    return;
+  }
+
+  if (_pinMode === 'confirm') {
+    if (_pinBuffer === _pinNew) {
+      // Guardar nuevo PIN en D1
+      fetch(API_URL + '/config/pin_padres', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ valor: _pinBuffer })
+      }).then(function() {
+        pinClose();
+        if (_pinCallback) _pinCallback();
+      });
+    } else {
+      pinError('Los PINs no coinciden');
+    }
+    return;
+  }
+
+  // verify
+  fetch(API_URL + '/config/pin_padres')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      var pinGuardado = d && d.valor ? d.valor : '1234';
+      if (_pinBuffer === pinGuardado) {
+        pinClose();
+        if (_pinCallback) _pinCallback();
+      } else {
+        pinError('PIN incorrecto');
+      }
+    })
+    .catch(function() {
+      pinError('Error de conexión');
+    });
+}
+
+function pinError(msg) {
+  _pinBuffer = '';
+  pinUpdateDots();
+  var err = document.getElementById('pin-error');
+  if (err) { err.textContent = msg; err.style.display = 'block'; }
+  // Vibrar si está disponible
+  if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+}
+
+function pinClose() {
+  var modal = document.getElementById('pin-modal');
+  if (modal) modal.style.display = 'none';
+  _pinBuffer = '';
+  _pinNew    = '';
+}
+
+function pinCancel() {
+  pinClose();
 }
 
 /* ---- Selección de curso ---- */
