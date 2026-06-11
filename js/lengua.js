@@ -3,10 +3,9 @@
    Las palabras se cargan desde data/ejercicios-gram.json
    ============================================= */
 
-var gramTab = 'bv';
-var gramIdx = 0;
-var GDATA   = { bv: [], gj: [], czq: [], lly: [], rr: [] };
-var GOPTS   = { bv: ['B','V'], gj: ['G','J'], czq: ['C','Z','Q'], lly: ['LL','Y'], rr: ['R','RR'] };
+var L = ExerciseState.lengua; /* alias */
+var GDATA = SubjectData.gram;
+var GOPTS = { bv: ['B','V'], gj: ['G','J'], czq: ['C','Z','Q'], lly: ['LL','Y'], rr: ['R','RR'] };
 
 // Cargar palabras desde JSON
 fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
@@ -15,7 +14,7 @@ fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
     // Mapear formato JSON -> formato interno
     ['bv','gj','czq','lly','rr'].forEach(function(cat) {
       if (data[cat]) {
-        GDATA[cat] = shuffle(data[cat].map(function(item) {
+        SubjectData.gram[cat] = shuffle(data[cat].map(function(item) {
           return { w: item.p || item.palabra, c: item.l || item.letra, f: item.c || item.completa, definicion: item.definicion || null };
         }));
       }
@@ -51,22 +50,21 @@ function shuffle(arr) {
 function gramDiff() { return diffLabel(ST.gramStreak); }
 
 /* ---- Toggle definición ---- */
-var defAbierta = false;
 
 function toggleDefinicion() {
-  defAbierta = !defAbierta;
+  L.defAbierta = !L.defAbierta;
   var box = document.getElementById('def-box');
   var btn = document.getElementById('def-toggle-btn');
-  if (box) box.style.display = defAbierta ? 'block' : 'none';
-  if (btn) btn.textContent = defAbierta
+  if (box) box.style.display = L.defAbierta ? 'block' : 'none';
+  if (btn) btn.textContent = L.defAbierta
     ? '💡 Ocultar definición ▲'
     : '💡 ¿Qué significa esta palabra? ▼';
 }
 
 /* ---- Cambiar pestaña ---- */
 function setGramTab(tab) {
-  gramTab = tab;
-  gramIdx = 0;
+  L.gramTab = tab;
+  L.gramIdx = 0;
   document.querySelectorAll('.gram-tab').forEach(function(t) { t.className = 'gram-tab'; });
   var order = ['bv','gj','czq','lly','rr'];
   var tabs  = document.querySelectorAll('.gram-tab');
@@ -79,21 +77,21 @@ function setGramTab(tab) {
 
 /* ---- Renderizar pregunta ---- */
 function renderGramQ() {
-  var data = GDATA[gramTab];
+  var data = GDATA[L.gramTab];
   if (!data || data.length === 0) return;
   
   // Si ha llegado al final, mezclar de nuevo
-  if (gramIdx >= data.length) {
-    GDATA[gramTab] = shuffle(data);
-    gramIdx = 0;
+  if (L.gramIdx >= data.length) {
+    GDATA[L.gramTab] = shuffle(data);
+    L.gramIdx = 0;
   }
   
-  var q     = data[gramIdx];
+  var q     = data[L.gramIdx];
   var parts = q.w.split('_');
   document.getElementById('gram-word').innerHTML =
     parts[0] + '<span class="word-gap">_</span>' + (parts[1] || '');
 
-  var opts = GOPTS[gramTab];
+  var opts = GOPTS[L.gramTab];
   var cont = document.getElementById('gram-opts');
   cont.innerHTML = '';
   cont.style.gridTemplateColumns = opts.length === 3 ? 'repeat(3,1fr)' : 'repeat(2,1fr)';
@@ -109,13 +107,13 @@ function renderGramQ() {
   if (de) { de.className = 'ex-badge ' + dl.cls; de.textContent = dl.txt; }
 
   var badge = document.getElementById('gram-badge');
-  if (badge) badge.textContent = 'Pregunta ' + (gramIdx + 1) + ' de ' + data.length;
+  if (badge) badge.textContent = 'Pregunta ' + (L.gramIdx + 1) + ' de ' + data.length;
 
   var prog = document.getElementById('gram-prog');
-  if (prog) prog.style.width = Math.round((gramIdx / data.length) * 100) + '%';
+  if (prog) prog.style.width = Math.round((L.gramIdx / data.length) * 100) + '%';
 
   // Mostrar definición si existe
-  defAbierta = false;
+  L.defAbierta = false;
   var defBtn  = document.getElementById('def-toggle-btn');
   var defBox  = document.getElementById('def-box');
   var defNom  = document.getElementById('def-nombre');
@@ -149,12 +147,11 @@ function renderGramQ() {
 }
 
 /* ---- Intentos por palabra ---- */
-var gramIntentos = 0;
 
 /* ---- Elegir respuesta ---- */
 function pickWord(chosen, correct, full) {
   var fb  = document.getElementById('gram-fb');
-  var key = 'gram-' + gramTab;
+  var key = 'gram-' + L.gramTab;
   fb.style.display = 'block';
 
   if (chosen === correct) {
@@ -163,8 +160,8 @@ function pickWord(chosen, correct, full) {
       o.onclick = null;
       o.className = 'wopt-btn ' + (o.textContent === correct ? 'wok' : '');
     });
-    var gramPts = gramIntentos === 0 ? 10 : 5;
-    gramIntentos = 0;
+    var gramPts = L.gramIntentos === 0 ? 10 : 5;
+    L.gramIntentos = 0;
     ST.gramStreak++;
     saveState();
     awardPts(gramPts, 'lengua');
@@ -173,13 +170,13 @@ function pickWord(chosen, correct, full) {
     fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! Con ' + correct + ': "' + full + '" 🎉 +' + gramPts + ' pts</div>';
     document.getElementById('gram-next').style.display = 'block';
   } else {
-    gramIntentos++;
+    L.gramIntentos++;
     // Marcar la opción elegida como incorrecta
     document.querySelectorAll('.wopt-btn').forEach(function(o) {
       if (o.textContent === chosen) o.className = 'wopt-btn wbad';
     });
 
-    if (gramIntentos < 2) {
+    if (L.gramIntentos < 2) {
       // ── PRIMER FALLO: reintento ──
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">No es esa... ¡prueba otra vez! 💪</div>';
@@ -196,7 +193,7 @@ function pickWord(chosen, correct, full) {
         o.onclick = null;
         if (o.textContent === correct) o.className = 'wopt-btn wok';
       });
-      gramIntentos = 0;
+      L.gramIntentos = 0;
       ST.gramStreak = Math.max(0, ST.gramStreak - 1);
       saveState();
       recordResult('lengua', key, false);
@@ -210,8 +207,8 @@ function pickWord(chosen, correct, full) {
 
 /* ---- Siguiente palabra ---- */
 function nextGram() {
-  gramIdx++;
-  gramIntentos = 0;
+  L.gramIdx++;
+  L.gramIntentos = 0;
   renderGramQ();
   ['gram-fb','gram-next','gram-ortho'].forEach(function(id) {
     var el = document.getElementById(id); if (el) el.style.display = 'none';
