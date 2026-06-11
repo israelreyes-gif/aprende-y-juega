@@ -19,6 +19,30 @@
 <div id="app"></div>
 <div id="toast"></div>
 
+<!-- PANTALLA DE ERROR -->
+<div id="error-screen" style="display:none;position:fixed;inset:0;background:var(--color-background-primary);z-index:8888;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;text-align:center;gap:20px">
+  <svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="70" cy="80" rx="48" ry="28" fill="#EDE9FE"/>
+    <ellipse cx="50" cy="72" rx="24" ry="20" fill="#EDE9FE"/>
+    <ellipse cx="88" cy="70" rx="20" ry="17" fill="#EDE9FE"/>
+    <ellipse cx="70" cy="62" rx="26" ry="20" fill="#EDE9FE"/>
+    <path d="M56 72 Q59 69 62 72" stroke="#534AB7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M76 72 Q79 69 82 72" stroke="#534AB7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M61 80 Q70 76 79 80" stroke="#534AB7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="58" cy="76" rx="2" ry="3" fill="#AFA9EC"/>
+    <path d="M58 79 Q56 82 58 84" stroke="#AFA9EC" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="100" y="50" font-size="18" text-anchor="middle">⭐</text>
+    <text x="30" y="45" font-size="14" text-anchor="middle">✨</text>
+    <text x="112" y="75" font-size="12" text-anchor="middle">💫</text>
+  </svg>
+  <div>
+    <div style="font-size:18px;font-weight:700;font-family:var(--f);color:#1F2937;margin-bottom:8px">¡Uy, algo salió mal!</div>
+    <div id="error-msg" style="font-size:14px;color:#6B7280;line-height:1.6">No pudimos cargar los ejercicios.<br>¿Tienes conexión a internet?</div>
+  </div>
+  <button id="error-retry-btn" onclick="errorRetry()" style="background:white;border:1.5px solid var(--purple);border-radius:12px;padding:12px 28px;font-size:14px;font-weight:700;color:var(--purple);font-family:var(--f);cursor:pointer">🔄 Intentar de nuevo</button>
+  <button onclick="errorBack()" style="background:none;border:none;font-size:13px;color:#6B7280;font-family:var(--f);font-weight:700;cursor:pointer">← Volver</button>
+</div>
+
 <script src="js/storage.js"></script>
 <script src="js/avatar.js"></script>
 <script src="js/perfiles.js"></script>
