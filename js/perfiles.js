@@ -1,6 +1,6 @@
 /* =============================================
    PERFILES.JS — Selección y gestión de perfiles
-   Usa Cloudflare D1 como fuente principal con localStorage como caché
+   Usa Cloudflare D1 como fuente única de datos
    ============================================= */
 
 var PERFILES_KEY  = 'aprendeyjuega_perfiles';
@@ -10,12 +10,9 @@ var HAIR_NAMES = ['Liso corto','Liso largo','Rizado','Trenzas','Cola alta'];
 var modalAV = { skin: 0, hairColor: 1, hair: 0 };
 
 /* ---- Storage local de perfiles ---- */
-function loadPerfilesLocal() {
-  try { var r = localStorage.getItem(PERFILES_KEY); return r ? JSON.parse(r) : []; }
-  catch(e) { return []; }
-}
-function savePerfilesLocal(p) { localStorage.setItem(PERFILES_KEY, JSON.stringify(p)); }
-function setPerfilActivo(p)   { localStorage.setItem('aprendeyjuega_perfil_activo', JSON.stringify(p)); }
+function loadPerfilesLocal() { return []; }
+function savePerfilesLocal(p) { }
+function setPerfilActivo(p)   { }
 
 function perfilToAV(p) {
   return { skin: p.skin, hairColor: p.hair_color !== undefined ? p.hair_color : p.hairColor, hair: p.hair, acc: 0, unlocked: p.unlocked || [] };
@@ -37,12 +34,10 @@ function cargarPerfiles(callback) {
           unlocked:  typeof p.unlocked === 'string' ? JSON.parse(p.unlocked) : (p.unlocked || [])
         };
       });
-      savePerfilesLocal(perfiles);
       if (callback) callback(perfiles);
     })
     .catch(function() {
-      // Sin conexión — usar caché local
-      if (callback) callback(loadPerfilesLocal());
+      if (callback) callback([]);
     });
 }
 
@@ -56,8 +51,6 @@ function renderPerfiles() {
       starsEl.appendChild(star);
     }
   }
-  // Mostrar local primero, luego actualizar desde la nube
-  pintarPerfiles(loadPerfilesLocal());
   cargarPerfiles(function(perfiles) { pintarPerfiles(perfiles); });
 }
 
@@ -230,20 +223,7 @@ function guardarPerfil() {
 
 /* ---- Zona de padres ---- */
 function abrirZonaPadresDesdePerfiles() {
-  var pin = localStorage.getItem(PADRES_PIN_KEY);
-  if (!pin) { irAPadres(); return; }
-  document.getElementById('padres-pin-input').value = '';
-  document.getElementById('padres-pin-error').style.display = 'none';
-  document.getElementById('modal-padres-pin').style.display = 'flex';
-}
-
-function cerrarModalPin() { document.getElementById('modal-padres-pin').style.display = 'none'; }
-
-function verificarPinPadres() {
-  var pin   = localStorage.getItem(PADRES_PIN_KEY);
-  var input = document.getElementById('padres-pin-input').value;
-  if (!pin || input === pin) { cerrarModalPin(); irAPadres(); }
-  else { document.getElementById('padres-pin-error').style.display = 'block'; document.getElementById('padres-pin-input').value = ''; }
+  irAPadres();
 }
 
 function escapeHtml(str) {
