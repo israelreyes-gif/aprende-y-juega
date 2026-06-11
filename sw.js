@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v13';
+var CACHE = 'aprende-v14';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -53,6 +53,12 @@ self.addEventListener('fetch', function(e) {
         }).catch(function() { return new Response('', {status: 404}); });
       })
     );
+    return;
+  }
+
+  // API del Worker — nunca cachear
+  if (url.indexOf('workers.dev') !== -1) {
+    e.respondWith(fetch(e.request));
     return;
   }
 
