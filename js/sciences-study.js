@@ -13,7 +13,7 @@ function loadSciencesData(callback) {
   fetch('data/curso' + cursoActual + '/sciences.json')
     .then(function(r) { return r.json(); })
     .then(function(d) { SubjectData.sciences = d; callback(); })
-    .catch(function(e) { console.error('Error loading sciences.json', e); });
+    .catch(function(e) { showError('Sciences', e, function(){ loadSciencesData(function(){}); }, 's-sciences'); });
 }
 
 /* ---- STUDY ---- */
