@@ -8,7 +8,7 @@ function loadSocialesEjData(callback) {
   fetch('data/curso' + cursoActual + '/sociales-ejercicios.json')
     .then(function(r) { return r.json(); })
     .then(function(data) { SubjectData.socialesEx = data; callback(); })
-    .catch(function(e) { console.warn('Error cargando ejercicios sociales:', e); });
+    .catch(function(e) { showError('los ejercicios de Sociales', e, function(){ loadSocialesEjData(function(){}); }, 's-sociales'); });
 }
 
 function shuffleSoc(arr) {
