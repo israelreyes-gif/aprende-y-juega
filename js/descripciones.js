@@ -6,10 +6,7 @@
    - Bonus +10 pts si menciona TODAS las palabras clave
    ============================================= */
 
-var DESCRIPCIONES_DB = [];
-var descIdx          = 0;
-var descOrden        = [];
-var currentDesc      = null;
+var DE = ExerciseState.desc; /* alias */
 
 // El JSON se carga al iniciar el ejercicio (ver initDescripciones)
 
@@ -24,14 +21,14 @@ function shuffleDescArr(arr) {
 
 /* ---- Iniciar ejercicio de descripciones ---- */
 function initDescripciones() {
-  descIdx = 0;
+  DE.idx = 0;
   // Cargar JSON del curso actual si no está cargado o cambió de curso
-  if (DESCRIPCIONES_DB.length === 0) {
+  if (SubjectData.descripciones.length === 0) {
     fetch('data/curso' + cursoActual + '/descripciones.json')
       .then(function(r) { return r.json(); })
       .then(function(data) {
-        DESCRIPCIONES_DB = data.descripciones || [];
-        descOrden = shuffleDescArr(DESCRIPCIONES_DB.map(function(_,i){ return i; }));
+        SubjectData.descripciones = data.descripciones || [];
+        DE.orden = shuffleDescArr(SubjectData.descripciones.map(function(_,i){ return i; }));
         cargarDescripcion();
       })
       .catch(function(e) { console.warn('No se cargó descripciones.json:', e); });
@@ -41,23 +38,23 @@ function initDescripciones() {
 }
 
 function cargarDescripcion() {
-  if (DESCRIPCIONES_DB.length === 0) {
+  if (SubjectData.descripciones.length === 0) {
     showToast('⏳ Cargando imágenes...');
     setTimeout(cargarDescripcion, 800);
     return;
   }
 
-  if (descIdx >= descOrden.length) {
-    descIdx = 0;
-    descOrden = shuffleDescArr(DESCRIPCIONES_DB.map(function(_,i){ return i; }));
+  if (DE.idx >= DE.orden.length) {
+    DE.idx = 0;
+    DE.orden = shuffleDescArr(SubjectData.descripciones.map(function(_,i){ return i; }));
   }
 
-  currentDesc = DESCRIPCIONES_DB[descOrden[descIdx]];
+  DE.current = SubjectData.descripciones[DE.orden[DE.idx]];
 
   // Imagen
   var img = document.getElementById('desc-img');
   if (img) {
-    img.src = currentDesc.imagen;
+    img.src = DE.current.imagen;
     img.onerror = function() {
       img.style.display = 'none';
       var wrap = img.parentElement;
@@ -70,8 +67,8 @@ function cargarDescripcion() {
     };
   }
 
-  setEl('desc-img-titulo', currentDesc.titulo);
-  setEl('desc-counter', 'Descripción ' + (descIdx+1) + ' de ' + descOrden.length);
+  setEl('desc-img-titulo', DE.current.titulo);
+  setEl('desc-counter', 'Descripción ' + (DE.idx+1) + ' de ' + DE.orden.length);
 
   // Limpiar
   var ta = document.getElementById('desc-textarea');
@@ -109,7 +106,7 @@ function contarOraciones(texto) {
 /* ---- Evaluar descripción ---- */
 function enviarDescripcion() {
   var ta = document.getElementById('desc-textarea');
-  if (!ta || !currentDesc) return;
+  if (!ta || !DE.current) return;
 
   var texto = ta.value.trim();
 
@@ -129,16 +126,16 @@ function enviarDescripcion() {
   var textoLower = texto.toLowerCase();
 
   // Buscar palabras clave
-  var encontradas = currentDesc.keywords.filter(function(kw) {
+  var encontradas = DE.current.keywords.filter(function(kw) {
     return textoLower.indexOf(kw.toLowerCase()) !== -1;
   });
 
   // Buscar palabras bonus
-  var bonusEncontradas = currentDesc.keywords_bonus.filter(function(kw) {
+  var bonusEncontradas = DE.current.keywords_bonus.filter(function(kw) {
     return textoLower.indexOf(kw.toLowerCase()) !== -1;
   });
 
-  var total = currentDesc.total_keywords;
+  var total = DE.current.total_keywords;
   var pts   = encontradas.length * 2; // 2 pts por palabra clave
   var bonus = (encontradas.length === total) ? 10 : 0; // +10 si todas
   var ptsTotales = pts + bonus;
@@ -148,7 +145,7 @@ function enviarDescripcion() {
   recordResult('lengua', 'desc', encontradas.length >= Math.round(total * 0.6));
 
   // Palabras NO encontradas
-  var noEncontradas = currentDesc.keywords.filter(function(kw) {
+  var noEncontradas = DE.current.keywords.filter(function(kw) {
     return textoLower.indexOf(kw.toLowerCase()) === -1;
   });
 
@@ -214,6 +211,6 @@ function enviarDescripcion() {
 }
 
 function siguienteDescripcion() {
-  descIdx++;
+  DE.idx++;
   cargarDescripcion();
 }
