@@ -6,53 +6,139 @@
   </div>
   <div class="sa">
 
-    <!-- Resumen general -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 16px 16px">
-      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
-        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Puntos totales</div>
-        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-pts">0</div>
-        <div style="font-size:10px;color:var(--gray-400);margin-top:2px" id="p-medal">—</div>
-      </div>
-      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
-        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Racha actual</div>
-        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-streak">0</div>
-        <div style="font-size:10px;color:var(--gray-400);margin-top:2px">días seguidos</div>
-      </div>
-      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
-        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Ejercicios hoy</div>
-        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-hoy">0</div>
-        <div style="font-size:10px;color:var(--gray-400);margin-top:2px" id="p-hoy-ok">0 correctos</div>
-      </div>
-      <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
-        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">% acierto global</div>
-        <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-pct">—</div>
-        <div style="font-size:10px;color:var(--gray-400);margin-top:2px">total acumulado</div>
-      </div>
-    </div>
-
-    <!-- Actividad semanal -->
+    <!-- SELECTOR DE PERFILES -->
     <div style="margin:0 16px 16px">
-      <div class="slbl">Actividad esta semana</div>
-      <div style="background:var(--gray-100);border-radius:12px;padding:12px">
-        <div style="display:flex;align-items:flex-end;gap:4px;height:60px;margin-bottom:6px" id="p-week-bars"></div>
-        <div style="display:flex;gap:4px" id="p-week-labels"></div>
+      <div class="slbl">Selecciona un perfil</div>
+      <div id="p-chips" style="display:flex;gap:10px;flex-wrap:wrap;"></div>
+    </div>
+
+    <!-- CONTENIDO (oculto hasta seleccionar perfil) -->
+    <div id="p-main" style="display:none">
+
+      <!-- RESUMEN -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 16px 16px">
+        <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+          <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Puntos totales</div>
+          <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-pts">0</div>
+          <div style="font-size:10px;color:var(--gray-400);margin-top:2px" id="p-medal">—</div>
+        </div>
+        <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+          <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Racha actual</div>
+          <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-streak">0</div>
+          <div style="font-size:10px;color:var(--gray-400);margin-top:2px">días seguidos</div>
+        </div>
+        <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+          <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">Ejercicios hoy</div>
+          <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-hoy">0</div>
+          <div style="font-size:10px;color:var(--gray-400);margin-top:2px" id="p-hoy-ok">0 correctos</div>
+        </div>
+        <div style="background:var(--gray-100);border-radius:10px;padding:10px 12px">
+          <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-bottom:4px;font-family:var(--f)">% acierto global</div>
+          <div style="font-size:22px;font-weight:900;color:var(--gray-800);font-family:var(--f)" id="p-pct">—</div>
+          <div style="font-size:10px;color:var(--gray-400);margin-top:2px">total acumulado</div>
+        </div>
       </div>
-    </div>
 
-    <!-- Progreso por asignatura -->
-    <div style="margin:0 16px 16px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-        <div class="slbl" style="margin-bottom:0">Progreso por asignatura</div>
-        <button onclick="resetearEstadisticas()" title="Resetear estadísticas" style="background:transparent;border:none;cursor:pointer;font-size:18px;padding:2px 4px;line-height:1">🔄</button>
+      <!-- ACTIVIDAD SEMANAL -->
+      <div style="margin:0 16px 16px">
+        <div class="slbl">Actividad esta semana</div>
+        <div style="background:var(--gray-100);border-radius:12px;padding:12px">
+          <div style="display:flex;align-items:flex-end;gap:4px;height:60px;margin-bottom:6px" id="p-week-bars"></div>
+          <div style="display:flex;gap:4px" id="p-week-labels"></div>
+        </div>
       </div>
-      <div id="p-subjects"></div>
-    </div>
 
-    <!-- Áreas a reforzar -->
-    <div style="margin:0 16px 20px">
-      <div class="slbl">Áreas a reforzar — menos del 75%</div>
-      <div id="p-refuerzo"></div>
-    </div>
+      <!-- PROGRESO POR ASIGNATURA -->
+      <div style="margin:0 16px 16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div class="slbl" style="margin-bottom:0">Progreso por asignatura</div>
+          <div style="display:flex;">
+            <button id="pvb-charts" onclick="setPadresView('charts')" style="padding:5px 10px;border:1.5px solid var(--purple);background:var(--purple);color:white;font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer;border-radius:8px 0 0 8px;border-right:none">📊 Gráficas</button>
+            <button id="pvb-raw" onclick="setPadresView('raw')" style="padding:5px 10px;border:1.5px solid var(--purple);background:white;color:var(--purple);font-family:var(--f);font-size:11px;font-weight:700;cursor:pointer;border-radius:0 8px 8px 0">📋 Datos</button>
+          </div>
+        </div>
 
+        <!-- GRÁFICAS -->
+        <div id="p-view-charts">
+          <!-- Barras -->
+          <div style="background:white;border-radius:12px;border:1px solid var(--gray-200);padding:14px;margin-bottom:12px">
+            <div id="p-bar-back" style="display:none;font-size:12px;font-weight:700;color:var(--purple);cursor:pointer;margin-bottom:10px;display:none;align-items:center;gap:4px" onclick="padresBackToMain()">← Todas las asignaturas</div>
+            <div id="p-bar-title" style="font-size:12px;font-weight:700;color:var(--gray-400);font-family:var(--f);margin-bottom:10px">Todas las asignaturas</div>
+            <canvas id="p-chart-bar" height="210"></canvas>
+          </div>
+          <!-- Radar -->
+          <div style="background:white;border-radius:12px;border:1px solid var(--gray-200);padding:14px;margin-bottom:4px">
+            <div style="font-size:12px;font-weight:700;color:var(--gray-400);font-family:var(--f);margin-bottom:10px">Vista general</div>
+            <canvas id="p-chart-radar" height="240"></canvas>
+          </div>
+        </div>
+
+        <!-- DATOS EN CRUDO -->
+        <div id="p-view-raw" style="display:none">
+          <div style="display:flex;justify-content:flex-end;margin-bottom:8px">
+            <button onclick="resetearEstadisticas()" style="background:transparent;border:none;cursor:pointer;font-size:13px;font-weight:700;color:var(--gray-400);font-family:var(--f);display:flex;align-items:center;gap:4px">🔄 Resetear</button>
+          </div>
+          <div id="p-subjects"></div>
+        </div>
+      </div>
+
+      <!-- ÁREAS A REFORZAR -->
+      <div style="margin:0 16px 16px">
+        <div class="slbl">Áreas a reforzar — menos del 75%</div>
+        <div id="p-refuerzo"></div>
+      </div>
+
+      <!-- ELIMINAR PERFIL -->
+      <div style="margin:0 16px 24px">
+        <div class="slbl">Gestión del perfil</div>
+        <button onclick="padresEliminarPerfil()" style="width:100%;padding:14px 16px;border-radius:12px;border:none;background:linear-gradient(135deg,#E24B4A,#A32D2D);cursor:pointer;font-size:14px;font-weight:700;color:white;font-family:var(--f);display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 4px 12px rgba(226,75,74,.35)">
+          🗑️ Eliminar perfil para siempre
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CONFIRMAR ELIMINAR -->
+<div id="p-modal-confirm" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center">
+  <div style="background:white;border-radius:20px;padding:24px 20px;width:calc(100% - 48px);max-width:320px;box-shadow:0 8px 32px rgba(0,0,0,.2)">
+    <div style="font-size:28px;text-align:center;margin-bottom:10px">🗑️</div>
+    <div style="font-size:16px;font-weight:900;color:var(--gray-800);text-align:center;margin-bottom:6px;font-family:var(--f)">¿Eliminar perfil?</div>
+    <div style="font-size:13px;color:var(--gray-400);text-align:center;margin-bottom:20px;line-height:1.5">Se borrarán todos los datos de <strong id="p-confirm-name"></strong>. Esta acción no se puede deshacer.</div>
+    <div style="display:flex;gap:10px">
+      <button onclick="padresHideConfirm()" style="flex:1;padding:12px;border:1.5px solid var(--gray-200);border-radius:10px;background:var(--gray-100);cursor:pointer;font-size:13px;font-weight:700;color:var(--gray-400);font-family:var(--f)">Cancelar</button>
+      <button onclick="padresGoToPin()" style="flex:1;padding:12px;border:none;border-radius:10px;background:#E24B4A;color:white;cursor:pointer;font-size:13px;font-weight:700;font-family:var(--f)">Sí, eliminar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PIN ELIMINAR -->
+<div id="p-modal-pin" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center">
+  <div style="background:white;border-radius:20px;padding:24px 20px;width:calc(100% - 48px);max-width:320px;box-shadow:0 8px 32px rgba(0,0,0,.2)">
+    <div style="font-size:15px;font-weight:900;color:var(--gray-800);text-align:center;margin-bottom:4px;font-family:var(--f)">🔒 Confirma con tu PIN</div>
+    <div style="font-size:12px;color:var(--gray-400);text-align:center;margin-bottom:16px">Introduce el PIN para eliminar el perfil</div>
+    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:14px">
+      <div id="p-pd0" style="width:13px;height:13px;border-radius:50%;background:#E5E7EB;transition:background .15s"></div>
+      <div id="p-pd1" style="width:13px;height:13px;border-radius:50%;background:#E5E7EB;transition:background .15s"></div>
+      <div id="p-pd2" style="width:13px;height:13px;border-radius:50%;background:#E5E7EB;transition:background .15s"></div>
+      <div id="p-pd3" style="width:13px;height:13px;border-radius:50%;background:#E5E7EB;transition:background .15s"></div>
+    </div>
+    <div id="p-pin-err" style="display:none;font-size:12px;color:#A32D2D;text-align:center;margin-bottom:8px;font-weight:700">PIN incorrecto</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px">
+      <button class="pin-key" onclick="padresPk('1')">1</button>
+      <button class="pin-key" onclick="padresPk('2')">2</button>
+      <button class="pin-key" onclick="padresPk('3')">3</button>
+      <button class="pin-key" onclick="padresPk('4')">4</button>
+      <button class="pin-key" onclick="padresPk('5')">5</button>
+      <button class="pin-key" onclick="padresPk('6')">6</button>
+      <button class="pin-key" onclick="padresPk('7')">7</button>
+      <button class="pin-key" onclick="padresPk('8')">8</button>
+      <button class="pin-key" onclick="padresPk('9')">9</button>
+      <div></div>
+      <button class="pin-key" onclick="padresPk('0')">0</button>
+      <button class="pin-key pin-del" onclick="padresPdel()">⌫</button>
+    </div>
+    <button onclick="padresCancelPin()" style="width:100%;padding:10px;border:none;background:none;font-size:13px;color:var(--gray-400);font-family:var(--f);font-weight:700;cursor:pointer">Cancelar</button>
   </div>
 </div>
