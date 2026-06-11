@@ -417,6 +417,7 @@ function padresUpdateDots() {
   }
 }
 function padresCheckPin() {
+  var idAEliminar = perfilActivoId;
   fetch(API_URL+'/config/pin_padres')
     .then(function(r){return r.json();})
     .then(function(data){
