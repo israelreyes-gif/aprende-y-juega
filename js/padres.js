@@ -53,11 +53,12 @@ function _renderChips(perfiles) {
 /* ---- Seleccionar perfil ---- */
 function padresSelectPerfil(id) {
   setPerfilActivoId(id, function() {
+    console.log('[Padres] Perfil cargado:', id, '| totalPts:', ST.totalPts, '| mates.errors:', JSON.stringify(ST.mates.errors));
     _renderChips(padresPerfilesCache);
     renderPadresData();
     document.getElementById('p-main').style.display = 'block';
     document.getElementById('p-confirm-name').textContent = getNombre() || 'este perfil';
-  });
+  }, true);
 }
 
 /* ---- Renderizar datos del perfil ---- */
