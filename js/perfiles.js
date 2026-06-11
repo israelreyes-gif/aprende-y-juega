@@ -36,7 +36,8 @@ function cargarPerfiles(callback) {
       });
       if (callback) callback(perfiles);
     })
-    .catch(function() {
+    .catch(function(e) {
+      showError('los perfiles', e, function(){ renderPerfiles(); }, 's-perfiles');
       if (callback) callback([]);
     });
 }
