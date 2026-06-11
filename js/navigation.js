@@ -10,6 +10,35 @@ function showToast(msg) {
   setTimeout(function() { t.classList.remove('show'); }, 2800);
 }
 
+var _errorRetryFn  = null;
+var _errorBackScreen = null;
+
+function showError(context, e, retryFn, backScreen) {
+  console.error('[' + context + ']', e);
+  var msg = document.getElementById('error-msg');
+  if (msg) msg.innerHTML = 'No pudimos cargar ' + context + '.<br>¿Tienes conexión a internet?';
+  _errorRetryFn    = retryFn   || null;
+  _errorBackScreen = backScreen || 's-perfiles';
+  var el = document.getElementById('error-screen');
+  if (el) el.style.display = 'flex';
+  var btn = document.getElementById('error-retry-btn');
+  if (btn) btn.textContent = '🔄 Intentar de nuevo';
+}
+
+function errorRetry() {
+  var el = document.getElementById('error-screen');
+  if (el) el.style.display = 'none';
+  var btn = document.getElementById('error-retry-btn');
+  if (btn) btn.textContent = '⏳ Cargando...';
+  if (_errorRetryFn) _errorRetryFn();
+}
+
+function errorBack() {
+  var el = document.getElementById('error-screen');
+  if (el) el.style.display = 'none';
+  go(_errorBackScreen || 's-perfiles');
+}
+
 /* ---- Guardar nombre y empezar ---- */
 function guardarNombreYEmpezar() {
   var input = document.getElementById('input-nombre');
