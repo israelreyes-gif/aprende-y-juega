@@ -166,7 +166,7 @@ function loadStateFromCloud(callback, skipDayReset) {
       if (callback) callback();
     })
     .catch(function(e) {
-      console.warn('No se pudo cargar progreso desde D1:', e);
+      showError('tu progreso', e, null, 's-perfiles');
       ST = defaultState();
       if (callback) callback();
     });
@@ -190,7 +190,7 @@ function saveState() {
       english:   ST.english,
       sociales:  ST.sociales
     })
-  }).catch(function(e) { console.warn('No se pudo guardar progreso:', e); });
+  }).catch(function(e) { console.warn('[storage] No se pudo guardar progreso:', e); });
 }
 
 /* ---- Cambiar de perfil: cargar desde D1 ---- */
