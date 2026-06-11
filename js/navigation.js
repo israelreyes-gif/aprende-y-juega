@@ -39,7 +39,6 @@ function confirmarCrearAvatar() {
 
 /* ---- Descripciones ---- */
 function irADescripciones() {
-  initDescripciones();
   go('s-descripciones');
 }
 
@@ -164,6 +163,8 @@ function go(screenId) {
   if (screenId === 's-sociales-study-unit')    { renderSocialesUnit(); }
   if (screenId === 's-sociales-ex-menu')       { /* menú estático */ }
   if (screenId === 's-sociales-ex')            { loadSocEx(); }
+  if (screenId === 's-avatar')                      { if (typeof renderAvatarEditor === 'function') renderAvatarEditor(); }
+  if (screenId === 's-descripciones')               { if (typeof initDescripciones === 'function') initDescripciones(); }
   if (screenId === 's-padres')                      { renderPadres(); }
   if (screenId === 's-calendario')                  { renderCalendarioHome(); }
 }
