@@ -171,8 +171,7 @@ function go(screenId) {
 
 /* ---- Limpiar estado visual de ejercicios ---- */
 function clearExerciseState() {
-  if (typeof probVal !== 'undefined') probVal = '';
-  if (typeof mixVal  !== 'undefined') mixVal  = '';
+  if (ExerciseState.mates) { ExerciseState.mates.probVal = ''; ExerciseState.mates.mixVal = ''; }
 
   var mb = document.getElementById('mix-box');
   if (mb) { mb.textContent = '?'; mb.className = 'dbox active'; mb.style.width = '90px'; }
