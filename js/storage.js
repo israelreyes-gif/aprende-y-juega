@@ -41,7 +41,7 @@ function mergeState(s) {
 }
 
 /* ---- Cargar progreso desde D1 ---- */
-function loadStateFromCloud(callback) {
+function loadStateFromCloud(callback, skipDayReset) {
   if (!perfilActivoId) { ST = defaultState(); if (callback) callback(); return; }
   fetch(API_URL + '/progreso/' + perfilActivoId + '/' + cursoActual)
     .then(function(r) { return r.json(); })
@@ -53,7 +53,7 @@ function loadStateFromCloud(callback) {
         if (data.month_days !== undefined && data.monthDays === undefined) data.monthDays = data.month_days;
       }
       ST = data ? mergeState(data) : defaultState();
-      checkDayReset();
+      if (!skipDayReset) checkDayReset();
       if (callback) callback();
     })
     .catch(function(e) {
@@ -85,10 +85,10 @@ function saveState() {
 }
 
 /* ---- Cambiar de perfil: cargar desde D1 ---- */
-function setPerfilActivoId(id, callback) {
+function setPerfilActivoId(id, callback, skipDayReset) {
   perfilActivoId = id;
   ST = defaultState();
-  loadStateFromCloud(callback);
+  loadStateFromCloud(callback, skipDayReset);
 }
 
 /* ---- Cambiar de curso ---- */
