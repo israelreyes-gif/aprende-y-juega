@@ -1,5 +1,5 @@
 /* =============================================
-   PADRES.JS — Áwerea para padres
+   PADRES.JS — Área para padres
    ============================================= */
 
 var padresView          = 'charts';
