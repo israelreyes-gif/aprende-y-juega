@@ -33,7 +33,7 @@ function loadDictData(callback) {
       SubjectData.dict = frases;
       callback();
     })
-    .catch(function(e) { console.warn('Error cargando dictado:', e); });
+    .catch(function(e) { showError('el Dictado', e, function(){ loadDictData(function(){}); }, 's-lengua-exercises'); });
 }
 
 function reglaLabel(key) {
