@@ -13,7 +13,7 @@ function loadVocabData(callback) {
   fetch('data/curso' + cursoActual + '/english-vocab.json')
     .then(function(r) { return r.json(); })
     .then(function(d) { SubjectData.vocab = d; callback(); })
-    .catch(function(e) { console.error('Error loading english-vocab.json', e); });
+    .catch(function(e) { showError('el Vocabulario', e, function(){ loadVocabData(function(){}); }, 's-english'); });
 }
 
 /* ---- Menú de temas ---- */
