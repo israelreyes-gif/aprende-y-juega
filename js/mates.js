@@ -4,22 +4,8 @@
    1er fallo → reintento, 2º fallo → revela respuesta
    ============================================= */
 
-var opType  = 'sum';
-var probVal = '';
-var mixVal  = '';
-
-// Contadores de intentos por tipo de ejercicio
-var sumaIntentos  = 0;
-var multiIntentos = 0;
-var probIntentos  = 0;
-var mixIntentos   = 0;
-
-var PROBLEMAS_DB = { facil: [], medio: [], avanzado: [] };
-var probIdx      = { facil: 0, medio: 0, avanzado: 0 };
-var currentProb  = null;
-var currentSuma  = null;
-var currentMulti = null;
-var currentMix   = null;
+/* Variables migradas a ExerciseState.mates y SubjectData.problemas */
+var M = ExerciseState.mates; /* alias corto */
 
 function shuffle(arr) {
   var a = arr.slice();
@@ -146,31 +132,31 @@ function generarMulti(nivel) {
    SUMAS Y RESTAS — 2 intentos
    ============================================================ */
 function setOpType(t) {
-  opType = t;
+  M.opType = t;
   document.getElementById('btn-sum').className = 'op-type-btn' + (t === 'sum' ? ' as' : '');
   document.getElementById('btn-res').className = 'op-type-btn' + (t === 'res' ? ' ar' : '');
   cargarNuevaSuma();
 }
 
 function cargarNuevaSuma() {
-  sumaIntentos = 0;
-  currentSuma  = opType === 'sum' ? generarSuma(getNivel()) : generarResta(getNivel());
-  currentSuma.respuestaUsuario = '';
-  var sign = opType === 'sum' ? '+' : '−';
-  var res  = currentSuma.resultado.toString();
+  M.sumaIntentos = 0;
+  M.currentSuma  = M.opType === 'sum' ? generarSuma(getNivel()) : generarResta(getNivel());
+  M.currentSuma.respuestaUsuario = '';
+  var sign = M.opType === 'sum' ? '+' : '−';
+  var res  = M.currentSuma.resultado.toString();
 
   var opBox = document.querySelector('#s-sumas .op-box');
   if (!opBox) return;
 
   var row1 = '', row2 = '', rowRes = '';
-  currentSuma.a.toString().split('').forEach(function(d) { row1 += '<span>' + d + '</span>'; });
-  currentSuma.b.toString().split('').forEach(function(d) { row2 += '<span>' + d + '</span>'; });
+  M.currentSuma.a.toString().split('').forEach(function(d) { row1 += '<span>' + d + '</span>'; });
+  M.currentSuma.b.toString().split('').forEach(function(d) { row2 += '<span>' + d + '</span>'; });
   // Mostrar todos los dígitos como ? — el activo es el de más a la derecha primero
   res.split('').forEach(function(d, i) {
     rowRes += '<div class="dbox" id="res-box-' + i + '">?</div>';
   });
   // Empezar desde la derecha (último dígito)
-  currentSuma.posActual = res.length - 1;
+  M.currentSuma.posActual = res.length - 1;
 
   opBox.innerHTML =
     '<div class="op-row">' + row1 + '</div>' +
@@ -182,15 +168,15 @@ function cargarNuevaSuma() {
   var firstBox = document.getElementById('res-box-' + (res.length - 1));
   if (firstBox) firstBox.className = 'dbox active';
 
-  document.getElementById('suma-qlbl').textContent = opType === 'sum' ? '¿Cuánto es esta suma?' : '¿Cuánto es esta resta?';
+  document.getElementById('suma-qlbl').textContent = M.opType === 'sum' ? '¿Cuánto es esta suma?' : '¿Cuánto es esta resta?';
   document.getElementById('suma-fb').style.display   = 'none';
   document.getElementById('suma-next').style.display = 'none';
 }
 
 function pickDigit(d) {
-  if (!currentSuma) return;
-  var res = currentSuma.resultado.toString();
-  var pos = currentSuma.posActual; // pos va de derecha (res.length-1) a izquierda (0)
+  if (!M.currentSuma) return;
+  var res = M.currentSuma.resultado.toString();
+  var pos = M.currentSuma.posActual; // pos va de derecha (res.length-1) a izquierda (0)
 
   if (d === null) {
     // Borrar último dígito introducido — el más a la derecha ya rellenado
@@ -202,8 +188,8 @@ function pickDigit(d) {
       // Desactivar el que estaba activo
       var activo = document.getElementById('res-box-' + pos);
       if (activo) activo.className = 'dbox';
-      currentSuma.posActual = ultimoRelleno;
-      currentSuma.respuestaUsuario = currentSuma.respuestaUsuario.slice(1); // quitar el primero (más a la derecha se añadió al principio)
+      M.currentSuma.posActual = ultimoRelleno;
+      M.currentSuma.respuestaUsuario = M.currentSuma.respuestaUsuario.slice(1); // quitar el primero (más a la derecha se añadió al principio)
     }
     return;
   }
@@ -214,28 +200,28 @@ function pickDigit(d) {
   if (box) { box.textContent = d; box.className = 'dbox'; }
 
   // Guardar dígito — se añade al principio porque vamos de derecha a izquierda
-  currentSuma.respuestaUsuario = d.toString() + currentSuma.respuestaUsuario;
-  currentSuma.posActual--;
+  M.currentSuma.respuestaUsuario = d.toString() + M.currentSuma.respuestaUsuario;
+  M.currentSuma.posActual--;
 
   // Activar siguiente dígito hacia la izquierda
-  if (currentSuma.posActual >= 0) {
-    var nextBox = document.getElementById('res-box-' + currentSuma.posActual);
+  if (M.currentSuma.posActual >= 0) {
+    var nextBox = document.getElementById('res-box-' + M.currentSuma.posActual);
     if (nextBox) nextBox.className = 'dbox active';
   }
 }
 
 function checkSuma() {
-  if (!currentSuma) return;
-  var res = currentSuma.resultado.toString();
-  if (currentSuma.respuestaUsuario.length < res.length) {
+  if (!M.currentSuma) return;
+  var res = M.currentSuma.resultado.toString();
+  if (M.currentSuma.respuestaUsuario.length < res.length) {
     showToast('✏️ Escribe todos los dígitos del resultado');
     return;
   }
   var fb      = document.getElementById('suma-fb');
-  var correct = currentSuma.resultado.toString();
-  var usuario = currentSuma.respuestaUsuario;
-  var key     = opType === 'sum' ? 'suma' : 'resta';
-  var eq      = currentSuma.a + (opType === 'sum' ? '+' : '−') + currentSuma.b + '=' + currentSuma.resultado;
+  var correct = M.currentSuma.resultado.toString();
+  var usuario = M.currentSuma.respuestaUsuario;
+  var key     = M.opType === 'sum' ? 'suma' : 'resta';
+  var eq      = M.currentSuma.a + (M.opType === 'sum' ? '+' : '−') + M.currentSuma.b + '=' + M.currentSuma.resultado;
   fb.style.display = 'block';
 
   if (usuario === correct) {
@@ -244,14 +230,14 @@ function checkSuma() {
       var b = document.getElementById('res-box-' + i);
       if (b) b.className = 'dbox correct';
     });
-    var sumaPts = sumaIntentos === 0 ? 10 : 5;
+    var sumaPts = M.sumaIntentos === 0 ? 10 : 5;
     fb.className = 'feedback ok';
     fb.innerHTML = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +' + sumaPts + ' pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
     awardPts(sumaPts, 'mates');
     recordResult('mates', key, true);
     document.getElementById('suma-next').style.display = 'block';
   } else {
-    sumaIntentos++;
+    M.sumaIntentos++;
     // Marcar dígitos correctos e incorrectos
     var todosCorrectos = true;
     usuario.split('').forEach(function(d, i) {
@@ -259,13 +245,13 @@ function checkSuma() {
       if (b) b.className = d === correct[i] ? 'dbox correct' : 'dbox wrong';
     });
 
-    if (sumaIntentos < 2) {
+    if (M.sumaIntentos < 2) {
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">No es correcto... ¡inténtalo de nuevo! 💪</div><div class="fbs">Fíjate en los dígitos en rojo.</div>';
       setTimeout(function() {
         // Resetear para reintento — activar dígito más a la derecha
-        currentSuma.respuestaUsuario = '';
-        currentSuma.posActual = correct.length - 1;
+        M.currentSuma.respuestaUsuario = '';
+        M.currentSuma.posActual = correct.length - 1;
         correct.split('').forEach(function(d, i) {
           var b = document.getElementById('res-box-' + i);
           if (b) { b.textContent = '?'; b.className = i === correct.length - 1 ? 'dbox active' : 'dbox'; }
@@ -290,8 +276,8 @@ function checkSuma() {
    MULTIPLICACIONES — modo continuo + 2 intentos
    ============================================================ */
 function cargarNuevaMulti() {
-  multiIntentos = 0;
-  currentMulti  = generarMulti(getNivel());
+  M.multiIntentos = 0;
+  M.currentMulti  = generarMulti(getNivel());
 
   // Sincronizar triángulo SVG
   var svg = document.querySelector('#s-multi svg');
@@ -299,8 +285,8 @@ function cargarNuevaMulti() {
     var texts = svg.querySelectorAll('text');
     if (texts.length >= 3) {
       texts[0].textContent = '?';
-      texts[1].textContent = currentMulti.a;
-      texts[2].textContent = currentMulti.b;
+      texts[1].textContent = M.currentMulti.a;
+      texts[2].textContent = M.currentMulti.b;
     }
   }
 
@@ -308,7 +294,7 @@ function cargarNuevaMulti() {
   var eqs = document.querySelectorAll('#s-multi p');
   eqs.forEach(function(p) {
     if (p.textContent.indexOf('×') !== -1) {
-      p.innerHTML = currentMulti.a + ' × ' + currentMulti.b +
+      p.innerHTML = M.currentMulti.a + ' × ' + M.currentMulti.b +
         ' = <span style="color:var(--purple-dark);font-weight:900;font-size:22px">?</span>';
     }
   });
@@ -317,7 +303,7 @@ function cargarNuevaMulti() {
   var cont = document.querySelector('#s-multi .multi-opts');
   if (!cont) return;
   cont.innerHTML = '';
-  currentMulti.opciones.forEach(function(v) {
+  M.currentMulti.opciones.forEach(function(v) {
     var d = document.createElement('div');
     d.className = 'mopt';
     d.textContent = v;
@@ -334,20 +320,20 @@ function pickMult(el, val) {
   var fb = document.getElementById('multi-fb');
   fb.style.display = 'block';
 
-  if (val === currentMulti.resultado) {
+  if (val === M.currentMulti.resultado) {
     // ── ACIERTO: siguiente automático ──
     document.querySelectorAll('.mopt').forEach(function(m) { m.className = 'mopt'; });
     el.className = 'mopt mok';
-    var multiPts = multiIntentos === 0 ? 10 : 5;
+    var multiPts = M.multiIntentos === 0 ? 10 : 5;
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + currentMulti.a + '×' + currentMulti.b + '=' + currentMulti.resultado + ' 🌟 +' + multiPts + ' pts</div>';
+    fb.innerHTML = '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + M.currentMulti.a + '×' + M.currentMulti.b + '=' + M.currentMulti.resultado + ' 🌟 +' + multiPts + ' pts</div>';
     awardPts(multiPts, 'mates');
     recordResult('mates', 'multi', true);
     document.getElementById('multi-next').style.display = 'block';
   } else {
-    multiIntentos++;
+    M.multiIntentos++;
     el.className = 'mopt mbad';
-    if (multiIntentos < 2) {
+    if (M.multiIntentos < 2) {
       // ── PRIMER FALLO: reintento ──
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">No es ese... ¡prueba otra vez! 🤔</div>';
@@ -358,11 +344,11 @@ function pickMult(el, val) {
     } else {
       // ── SEGUNDO FALLO: revelar y continuar ──
       document.querySelectorAll('.mopt').forEach(function(m) {
-        if (parseInt(m.textContent) === currentMulti.resultado) m.className = 'mopt mok';
+        if (parseInt(m.textContent) === M.currentMulti.resultado) m.className = 'mopt mok';
       });
       fb.className = 'feedback bad';
-      fb.innerHTML = '<div class="fbt">La respuesta era <strong>' + currentMulti.resultado +
-        '</strong> (' + currentMulti.a + '×' + currentMulti.b + ') 📖</div>';
+      fb.innerHTML = '<div class="fbt">La respuesta era <strong>' + M.currentMulti.resultado +
+        '</strong> (' + M.currentMulti.a + '×' + M.currentMulti.b + ') 📖</div>';
       recordResult('mates', 'multi', false);
       document.getElementById('multi-next').style.display = 'block';
     }
@@ -373,22 +359,22 @@ function pickMult(el, val) {
    PROBLEMAS — 2 intentos
    ============================================================ */
 function cargarNuevoProblema() {
-  probIntentos = 0;
+  M.probIntentos = 0;
   var nivel    = getNivel();
-  var banco    = PROBLEMAS_DB[nivel];
+  var banco    = SubjectData.problemas[nivel];
   if (!banco || banco.length === 0) {
-    currentProb = { enunciado: '🍎 María tiene 346 cromos. Le regala 128. ¿Cuántos le quedan?', resultado: 218 };
+    M.currentProb = { enunciado: '🍎 María tiene 346 cromos. Le regala 128. ¿Cuántos le quedan?', resultado: 218 };
   } else {
-    currentProb = banco[probIdx[nivel] % banco.length];
-    probIdx[nivel]++;
+    M.currentProb = banco[M.probIdx[nivel] % banco.length];
+    M.probIdx[nivel]++;
   }
   var body = document.getElementById('prob-card-body');
-  if (body) body.innerHTML = currentProb.enunciado;
+  if (body) body.innerHTML = M.currentProb.enunciado;
   var unidad = document.getElementById('prob-unidad');
-  if (unidad) unidad.textContent = currentProb.unidad || 'unidades';
+  if (unidad) unidad.textContent = M.currentProb.unidad || 'unidades';
   var ansBox = document.getElementById('prob-ans');
   if (ansBox) { ansBox.textContent = '?'; ansBox.style.cssText = ''; }
-  probVal = '';
+  M.probVal = '';
   var opDisplay = document.querySelector('.prob-op');
   if (opDisplay) opDisplay.style.display = 'none';
   document.getElementById('prob-fb').style.display   = 'none';
@@ -397,39 +383,39 @@ function cargarNuevoProblema() {
 
 function typeProb(k) {
   var box = document.getElementById('prob-ans');
-  if (k === 'del') { probVal = probVal.slice(0, -1); }
-  else { if (probVal.length < 6) probVal += k; }
-  box.textContent = probVal || '?';
+  if (k === 'del') { M.probVal = M.probVal.slice(0, -1); }
+  else { if (M.probVal.length < 6) M.probVal += k; }
+  box.textContent = M.probVal || '?';
 }
 
 function checkProb() {
-  if (!currentProb) return;
+  if (!M.currentProb) return;
   var fb  = document.getElementById('prob-fb');
   var box = document.getElementById('prob-ans');
   fb.style.display = 'block';
 
-  if (parseInt(probVal) === currentProb.resultado) {
+  if (parseInt(M.probVal) === M.currentProb.resultado) {
     // ── ACIERTO ──
     box.style.background  = 'var(--green-light)';
     box.style.borderColor = 'var(--green)';
     box.style.color       = 'var(--green)';
-    var probPts = probIntentos === 0 ? 15 : 7;
+    var probPts = M.probIntentos === 0 ? 15 : 7;
     fb.className = 'feedback ok';
-    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! ' + currentProb.resultado + ' 🎉 +' + probPts + ' pts</div>';
+    fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! ' + M.currentProb.resultado + ' 🎉 +' + probPts + ' pts</div>';
     awardPts(probPts, 'mates');
     recordResult('mates', 'prob', true);
     document.getElementById('prob-next').style.display = 'block';
   } else {
-    probIntentos++;
+    M.probIntentos++;
     box.style.background  = 'var(--red-light)';
     box.style.borderColor = 'var(--red)';
     box.style.color       = 'var(--red)';
-    if (probIntentos < 2) {
+    if (M.probIntentos < 2) {
       // ── PRIMER FALLO: reintento ──
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">No es correcto... ¡léelo otra vez con calma! 💪</div>';
       setTimeout(function() {
-        probVal = '';
+        M.probVal = '';
         box.textContent = '?'; box.style.cssText = '';
         fb.style.display = 'none';
       }, 1500);
@@ -437,7 +423,7 @@ function checkProb() {
       // ── SEGUNDO FALLO: revelar ──
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">La respuesta correcta era <strong>' +
-        currentProb.resultado + '</strong> 📖</div><div class="fbs">Guárdatela para la próxima.</div>';
+        M.currentProb.resultado + '</strong> 📖</div><div class="fbs">Guárdatela para la próxima.</div>';
       recordResult('mates', 'prob', false);
       document.getElementById('prob-next').style.display = 'block';
     }
@@ -448,30 +434,30 @@ function checkProb() {
    MEZCLA — 2 intentos
    ============================================================ */
 function cargarNuevaMezcla() {
-  mixIntentos = 0;
+  M.mixIntentos = 0;
   var nivel   = getNivel();
   var tipo    = ['suma','resta','multi'][Math.floor(Math.random() * 3)];
-  if (tipo === 'suma')       currentMix = Object.assign({ tipo:'suma'  }, generarSuma(nivel));
-  else if (tipo === 'resta') currentMix = Object.assign({ tipo:'resta' }, generarResta(nivel));
-  else                       currentMix = Object.assign({ tipo:'multi' }, generarMulti(nivel));
+  if (tipo === 'suma')       M.currentMix = Object.assign({ tipo:'suma'  }, generarSuma(nivel));
+  else if (tipo === 'resta') M.currentMix = Object.assign({ tipo:'resta' }, generarResta(nivel));
+  else                       M.currentMix = Object.assign({ tipo:'multi' }, generarMulti(nivel));
 
-  currentMix.respuestaUsuario = '';
-  var res = currentMix.resultado.toString();
+  M.currentMix.respuestaUsuario = '';
+  var res = M.currentMix.resultado.toString();
 
   var opBox = document.querySelector('#s-mix .op-box');
   if (!opBox) return;
 
   var html = '';
-  if (currentMix.tipo === 'multi') {
-    html = '<div class="op-row"><span>' + currentMix.a +
+  if (M.currentMix.tipo === 'multi') {
+    html = '<div class="op-row"><span>' + M.currentMix.a +
       '</span><span style="font-size:22px;color:var(--gray-400)">×</span><span>' +
-      currentMix.b + '</span></div>';
+      M.currentMix.b + '</span></div>';
   } else {
-    var sign = currentMix.tipo === 'suma' ? '+' : '−';
+    var sign = M.currentMix.tipo === 'suma' ? '+' : '−';
     html = '<div class="op-row">';
-    currentMix.a.toString().split('').forEach(function(d) { html += '<span>' + d + '</span>'; });
+    M.currentMix.a.toString().split('').forEach(function(d) { html += '<span>' + d + '</span>'; });
     html += '</div><div class="op-row"><span class="op-sign">' + sign + '</span>';
-    currentMix.b.toString().split('').forEach(function(d) { html += '<span>' + d + '</span>'; });
+    M.currentMix.b.toString().split('').forEach(function(d) { html += '<span>' + d + '</span>'; });
     html += '</div>';
   }
 
@@ -480,7 +466,7 @@ function cargarNuevaMezcla() {
   res.split('').forEach(function(d, i) {
     rowRes += '<div class="dbox" id="mix-box-' + i + '">?</div>';
   });
-  currentMix.posActual = res.length - 1; // empezar por la derecha
+  M.currentMix.posActual = res.length - 1; // empezar por la derecha
 
   html += '<div class="op-line"></div><div style="display:flex;justify-content:flex-end;gap:8px">' + rowRes + '</div>';
   opBox.innerHTML = html;
@@ -494,9 +480,9 @@ function cargarNuevaMezcla() {
 }
 
 function typeMix(k) {
-  if (!currentMix) return;
-  var res = currentMix.resultado.toString();
-  var pos = currentMix.posActual;
+  if (!M.currentMix) return;
+  var res = M.currentMix.resultado.toString();
+  var pos = M.currentMix.posActual;
 
   if (k === 'del') {
     var ultimoRelleno = pos + 1;
@@ -505,8 +491,8 @@ function typeMix(k) {
       if (borrar) { borrar.textContent = '?'; borrar.className = 'dbox active'; }
       var activo = document.getElementById('mix-box-' + pos);
       if (activo) activo.className = 'dbox';
-      currentMix.posActual = ultimoRelleno;
-      currentMix.respuestaUsuario = currentMix.respuestaUsuario.slice(1);
+      M.currentMix.posActual = ultimoRelleno;
+      M.currentMix.respuestaUsuario = M.currentMix.respuestaUsuario.slice(1);
     }
     return;
   }
@@ -514,50 +500,50 @@ function typeMix(k) {
   if (pos < 0) return;
   var box = document.getElementById('mix-box-' + pos);
   if (box) { box.textContent = k; box.className = 'dbox'; }
-  currentMix.respuestaUsuario = k.toString() + currentMix.respuestaUsuario;
-  currentMix.posActual--;
-  if (currentMix.posActual >= 0) {
-    var nextBox = document.getElementById('mix-box-' + currentMix.posActual);
+  M.currentMix.respuestaUsuario = k.toString() + M.currentMix.respuestaUsuario;
+  M.currentMix.posActual--;
+  if (M.currentMix.posActual >= 0) {
+    var nextBox = document.getElementById('mix-box-' + M.currentMix.posActual);
     if (nextBox) nextBox.className = 'dbox active';
   }
 }
 
 function checkMix() {
-  if (!currentMix) return;
-  var res  = currentMix.resultado.toString();
-  if (currentMix.respuestaUsuario.length < res.length) {
+  if (!M.currentMix) return;
+  var res  = M.currentMix.resultado.toString();
+  if (M.currentMix.respuestaUsuario.length < res.length) {
     showToast('✏️ Escribe todos los dígitos del resultado');
     return;
   }
   var fb   = document.getElementById('mix-fb');
-  var sign = currentMix.tipo === 'multi' ? '×' : currentMix.tipo === 'suma' ? '+' : '−';
-  var eq   = currentMix.a + sign + currentMix.b + '=' + currentMix.resultado;
+  var sign = M.currentMix.tipo === 'multi' ? '×' : M.currentMix.tipo === 'suma' ? '+' : '−';
+  var eq   = M.currentMix.a + sign + M.currentMix.b + '=' + M.currentMix.resultado;
   fb.style.display = 'block';
 
-  if (currentMix.respuestaUsuario === res) {
+  if (M.currentMix.respuestaUsuario === res) {
     // ── ACIERTO: marcar todos en verde ──
     res.split('').forEach(function(d, i) {
       var b = document.getElementById('mix-box-' + i);
       if (b) b.className = 'dbox correct';
     });
-    var mixPts = mixIntentos === 0 ? 10 : 5;
+    var mixPts = M.mixIntentos === 0 ? 10 : 5;
     fb.className = 'feedback ok';
     fb.innerHTML = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + eq + ' 🚀 +' + mixPts + ' pts</div>';
     awardPts(mixPts, 'mates');
     recordResult('mates', 'mix', true);
     document.getElementById('mix-next').style.display = 'block';
   } else {
-    mixIntentos++;
-    currentMix.respuestaUsuario.split('').forEach(function(d, i) {
+    M.mixIntentos++;
+    M.currentMix.respuestaUsuario.split('').forEach(function(d, i) {
       var b = document.getElementById('mix-box-' + i);
       if (b) b.className = d === res[i] ? 'dbox correct' : 'dbox wrong';
     });
-    if (mixIntentos < 2) {
+    if (M.mixIntentos < 2) {
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">No es correcto... ¡prueba otra vez! 💪</div><div class="fbs">Fíjate en los dígitos en rojo.</div>';
       setTimeout(function() {
-        currentMix.respuestaUsuario = '';
-        currentMix.posActual = res.length - 1;
+        M.currentMix.respuestaUsuario = '';
+        M.currentMix.posActual = res.length - 1;
         res.split('').forEach(function(d, i) {
           var b = document.getElementById('mix-box-' + i);
           if (b) { b.textContent = '?'; b.className = i === res.length-1 ? 'dbox active' : 'dbox'; }
