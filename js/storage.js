@@ -7,6 +7,115 @@
 var API_URL = 'https://aprende-y-juega-api.israel-reyes.workers.dev';
 var cursoActual = 3;
 var perfilActivoId = null;
+/* =============================================
+   NAMESPACES — Estado centralizado
+   ============================================= */
+
+/* Estado de la sesión (usuario, curso, progreso) */
+var AppState = {
+  cursoActual:    3,
+  perfilActivoId: null,
+  st:             null   /* alias de ST — se inicializa en defaultState() */
+};
+
+/* Datos cargados desde JSON */
+var SubjectData = {
+  problemas:    { facil: [], medio: [], avanzado: [] },
+  historias:    { facil: [], medio: [], avanzado: [] },
+  english:      null,
+  vocab:        null,
+  sciences:     null,
+  sociales:     null,
+  socialesEx:   null,
+  dict:         null,
+  descripciones: [],
+  gram:         { bv: [], gj: [], czq: [], lly: [], rr: [] }
+};
+
+/* Estado del ejercicio activo por asignatura */
+var ExerciseState = {
+  mates: {
+    opType:        'sum',
+    probVal:       '',
+    mixVal:        '',
+    sumaIntentos:  0,
+    multiIntentos: 0,
+    probIntentos:  0,
+    mixIntentos:   0,
+    probIdx:       { facil: 0, medio: 0, avanzado: 0 },
+    currentProb:   null,
+    currentSuma:   null,
+    currentMulti:  null,
+    currentMix:    null
+  },
+  lengua: {
+    gramTab:      'bv',
+    gramIdx:      0,
+    gramIntentos: 0,
+    defAbierta:   false,
+    historiaIdx:  { facil: 0, medio: 0, avanzado: 0 },
+    currentHistoria: null
+  },
+  english: {
+    exArea:    'tobe',
+    exIdx:     0,
+    exQueue:   [],
+    mixIdx:    0,
+    mixQueue:  [],
+    woAttempt: 1,
+    woBank:    [],
+    woChecked: false,
+    woIdx:     0,
+    woQueue:   [],
+    woSlots:   [],
+    vocabExAttempt:     1,
+    vocabExCurrentOpts: [],
+    vocabExDone:        false,
+    vocabExIdx:         0,
+    vocabExQueue:       [],
+    vocabExType:        'word-to-image',
+    vocabExWrong:       null,
+    vocabFlipped:       [],
+    vocabUnit:          null
+  },
+  sciences: {
+    exIdx:    0,
+    exQueue:  [],
+    mixIdx:   0,
+    mixQueue: []
+  },
+  sociales: {
+    attempt:      1,
+    done:         false,
+    idx:          0,
+    queue:        [],
+    unit:         null,
+    openItem:     null,
+    openSub:      null,
+    section:      null,
+    relColorIdx:  0,
+    relLeft:      null,
+    relMatched:   [],
+    relPairs:     [],
+    relSelections:{}
+  },
+  dict: {
+    attempt:  1,
+    done:     false,
+    extra:    0,
+    idx:      0,
+    listens:  0,
+    queue:    [],
+    speaking: false
+  },
+  desc: {
+    idx:    0,
+    orden:  [],
+    current: null
+  }
+};
+
+
 
 /* ---- Estado global en memoria ---- */
 var ST = defaultState();
