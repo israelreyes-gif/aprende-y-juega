@@ -40,7 +40,7 @@ function loadScreens(callback) {
         if (loaded === SCREENS_CRITICAL.length) callback();
       })
       .catch(function(e) {
-        console.warn('Error cargando ' + file + ':', e);
+        showError('carga de pantalla ' + file, e);
         loaded++;
         if (loaded === SCREENS_CRITICAL.length) callback();
       });
@@ -103,7 +103,7 @@ function loadScreenLazy(screenId, callback) {
       callback();
     })
     .catch(function(e) {
-      console.warn('Error cargando pantalla lazy ' + file + ':', e);
+      showError('carga lazy ' + file, e);
       callback();
     });
 }
@@ -133,7 +133,7 @@ function loadData(callback) {
       done();
     })
     .catch(function(e) {
-      console.warn('No se cargó ejercicios-mates.json:', e);
+      showError('los ejercicios de Matemáticas', e, function(){ loadData(initApp); }, 's-mates');
       done('mates');
     });
 
@@ -147,7 +147,7 @@ function loadData(callback) {
       done();
     })
     .catch(function(e) {
-      console.warn('No se cargó historias.json:', e);
+      showError('las historias de Comprensión', e, function(){ loadData(initApp); }, 's-comprension');
       done('historias');
     });
 }
