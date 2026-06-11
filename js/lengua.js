@@ -26,7 +26,7 @@ fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
     }
   })
   .catch(function(e) {
-    console.warn('No se cargó ejercicios-gram.json, usando banco local mínimo');
+    showError('la Gramática', e, function(){ setGramTab('bv'); }, 's-lengua-exercises');
     // Banco mínimo de respaldo
     GDATA = {
       bv:  [{w:'a_eja',c:'V',f:'abeja'},{w:'_arco',c:'B',f:'barco'},{w:'_aca',c:'V',f:'vaca'}],
