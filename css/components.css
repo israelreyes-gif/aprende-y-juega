@@ -228,3 +228,26 @@
   60%     { transform: translateX(-4px); }
   80%     { transform: translateX(4px); }
 }
+
+/* ---- PIN Modal ---- */
+.pin-key {
+  background: #F3F4F6;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--f);
+  color: #1F2937;
+  padding: 16px;
+  cursor: pointer;
+  transition: background .15s, transform .1s;
+  -webkit-tap-highlight-color: transparent;
+}
+.pin-key:active {
+  background: #E5E7EB;
+  transform: scale(.94);
+}
+.pin-del {
+  font-size: 16px;
+  color: #6B7280;
+}
