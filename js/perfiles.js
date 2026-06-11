@@ -18,7 +18,7 @@ function perfilToAV(p) {
   return { skin: p.skin, hairColor: p.hair_color !== undefined ? p.hair_color : p.hairColor, hair: p.hair, acc: 0, unlocked: p.unlocked || [] };
 }
 
-/* ---- Cargar perfiles desde la nube ---- */
+/* ---- Cargar perfi2les desde la nube ---- */
 function cargarPerfiles(callback) {
   fetch(API_URL + '/perfiles')
     .then(function(r) { return r.json(); })
