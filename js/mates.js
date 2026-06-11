@@ -21,16 +21,6 @@ var currentSuma  = null;
 var currentMulti = null;
 var currentMix   = null;
 
-fetch('data/curso' + cursoActual + '/ejercicios-mates.json')
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
-    PROBLEMAS_DB = data;
-    Object.keys(PROBLEMAS_DB).forEach(function(k) {
-      PROBLEMAS_DB[k] = shuffle(PROBLEMAS_DB[k]);
-    });
-  })
-  .catch(function(e) { console.warn('No se cargó ejercicios-mates.json:', e); });
-
 function shuffle(arr) {
   var a = arr.slice();
   for (var i = a.length - 1; i > 0; i--) {
