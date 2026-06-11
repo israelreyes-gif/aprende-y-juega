@@ -427,7 +427,8 @@ function padresCheckPin() {
             padresCancelPin();
             setPerfilActivoId(null);
             document.getElementById('p-main').style.display='none';
-            renderPadres();
+            renderPerfiles();
+            go('s-perfiles');
             showToast('✅ Perfil eliminado');
           });
       } else {
