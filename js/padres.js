@@ -47,12 +47,12 @@ function renderPadresChips(perfiles) {
   });
   // Render avatars
   el.querySelectorAll('[data-avatar]').forEach(function(svg) {
-    drawAvatar(svg, {
+    drawAvatarSVG(svg, {
       skin: parseInt(svg.dataset.skin) || 0,
       hairColor: parseInt(svg.dataset.hairColor) || 1,
       hair: parseInt(svg.dataset.hair) || 0,
       unlocked: []
-    });
+    }, 0);
   });
   // Auto-seleccionar perfil activo
   if (perfilActivoId) padresSelectPerfil(perfilActivoId);
