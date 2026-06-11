@@ -421,11 +421,8 @@ function padresCheckPin() {
     .then(function(r){return r.json();})
     .then(function(data){
       if(padresPinBuf===(data&&data.valor?data.valor:'')){
-        var idAEliminar = perfilActivoId;
         fetch(API_URL+'/perfiles/'+idAEliminar,{method:'DELETE'})
           .then(function(){
-            var locales = loadPerfilesLocal().filter(function(p){ return p.id !== idAEliminar; });
-            savePerfilesLocal(locales);
             padresCancelPin();
             setPerfilActivoId(null);
             document.getElementById('p-main').style.display='none';
