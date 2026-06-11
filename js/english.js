@@ -2,12 +2,7 @@
    ENGLISH.JS — Study, Exercises & Mix
    ============================================= */
 
-var EN_DATA    = null;
-var enExQueue  = [];
-var enExIdx    = 0;
-var enExArea   = 'tobe';   // área activa para estadísticas
-var enMixQueue = [];
-var enMixIdx   = 0;
+var EN = ExerciseState.english; /* alias */
 
 // Precargar voces del sintetizador al arrancar
 if (window.speechSynthesis) {
@@ -18,10 +13,10 @@ if (window.speechSynthesis) {
 }
 
 function loadEnglishData(callback) {
-  if (EN_DATA) { callback(); return; }
+  if (SubjectData.english) { callback(); return; }
   fetch('data/curso' + cursoActual + '/english.json')
     .then(function(r) { return r.json(); })
-    .then(function(d) { EN_DATA = d; callback(); })
+    .then(function(d) { SubjectData.english = d; callback(); })
     .catch(function(e) { console.error('Error loading english.json', e); });
 }
 
@@ -31,7 +26,7 @@ function renderEnglishStudyMenu() {
     var grid = document.getElementById('english-study-topics');
     if (!grid) return;
     grid.innerHTML = '';
-    EN_DATA.units.forEach(function(unit) {
+    SubjectData.english.units.forEach(function(unit) {
       var card = document.createElement('div');
       card.className = 'mode-card';
       card.style.cssText = 'border-color:var(--blue);background:#EFF6FF';
@@ -56,7 +51,7 @@ function renderEnglishExercisesMenu() {
     grid.className = 'mode-grid';
 
     // To Be
-    var toBeUnit = EN_DATA.units.find(function(u) { return u.id === 'to-be'; });
+    var toBeUnit = SubjectData.english.units.find(function(u) { return u.id === 'to-be'; });
     var toBeCard = document.createElement('div');
     toBeCard.className = 'mode-card';
     toBeCard.innerHTML = '<div class="mode-emoji">🔵</div><div class="mode-name">To Be</div><div class="mode-sub">400 questions</div>';
@@ -64,7 +59,7 @@ function renderEnglishExercisesMenu() {
     grid.appendChild(toBeCard);
 
     // Modal Verbs
-    var modalUnit = EN_DATA.units.find(function(u) { return u.id === 'modal-verbs'; });
+    var modalUnit = SubjectData.english.units.find(function(u) { return u.id === 'modal-verbs'; });
     var modalCard = document.createElement('div');
     modalCard.className = 'mode-card';
     modalCard.innerHTML = '<div class="mode-emoji">💪</div><div class="mode-name">Modal Verbs</div><div class="mode-sub">200 questions</div>';
@@ -191,7 +186,7 @@ function renderEnglishStudy(unit) {
 
 function renderExTypeMenu(unitId) {
   loadEnglishData(function() {
-    var unit = EN_DATA.units.find(function(u) { return u.id === unitId; });
+    var unit = SubjectData.english.units.find(function(u) { return u.id === unitId; });
     if (!unit) return;
     var gridId = unitId === 'to-be' ? 'ex-type-grid-tobe' : 'ex-type-grid-modals';
     var grid = document.getElementById(gridId);
@@ -235,12 +230,6 @@ function renderExTypeMenu(unitId) {
 }
 
 
-var woQueue   = [];
-var woIdx     = 0;
-var woSlots   = [];
-var woBank    = [];
-var woAttempt = 1;
-var woChecked = false;
 
 function extractSentences(unit) {
   var seen = {};
@@ -267,12 +256,12 @@ function shuffleArr(arr) {
 }
 
 function startWordOrder(unit) {
-  enExArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
+  EN.exArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
   loadEnglishData(function() {
     var sentences = extractSentences(unit);
     sentences = shuffleArr(sentences).slice(0, 15); // 15 frases por sesión
-    woQueue = sentences;
-    woIdx   = 0;
+    EN.woQueue = sentences;
+    EN.woIdx   = 0;
     setEl('en-wo-title', unit.title + ' — Word Order');
     go('s-english-wordorder');
     loadWordOrderQuestion();
@@ -280,13 +269,13 @@ function startWordOrder(unit) {
 }
 
 function loadWordOrderQuestion() {
-  var sentence = woQueue[woIdx];
-  var total    = woQueue.length;
-  woAttempt    = 1;
-  woChecked    = false;
+  var sentence = EN.woQueue[EN.woIdx];
+  var total    = EN.woQueue.length;
+  EN.woAttempt    = 1;
+  EN.woChecked    = false;
 
-  setEl('en-wo-badge', 'Question ' + (woIdx + 1) + ' of ' + total);
-  setBar('en-wo-prog', Math.round(woIdx / total * 100));
+  setEl('en-wo-badge', 'Question ' + (EN.woIdx + 1) + ' of ' + total);
+  setBar('en-wo-prog', Math.round(EN.woIdx / total * 100));
 
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var diffEl = document.getElementById('en-wo-diff');
@@ -294,9 +283,9 @@ function loadWordOrderQuestion() {
 
   // Crear objetos palabra con IDs únicos — reset completo
   var words = sentence.replace(/[.!?]$/, '').split(' ');
-  woSlots = [];
-  for (var wi = 0; wi < words.length; wi++) { woSlots.push(null); }
-  woBank  = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
+  EN.woSlots = [];
+  for (var wi = 0; wi < words.length; wi++) { EN.woSlots.push(null); }
+  EN.woBank  = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
 
   document.getElementById('en-wo-fb').style.display = 'none';
   document.getElementById('en-wo-next').style.display = 'none';
@@ -313,15 +302,15 @@ function renderWoSlots() {
   var el = document.getElementById('en-wo-slots');
   if (!el) return;
   el.innerHTML = '';
-  woSlots.forEach(function(slot, i) {
+  EN.woSlots.forEach(function(slot, i) {
     var btn = document.createElement('button');
-    btn.style.cssText = 'min-width:48px;padding:6px 12px;border-radius:10px;font-family:var(--f);font-weight:800;font-size:15px;cursor:' + (slot && !woChecked ? 'pointer' : 'default') + ';transition:all .15s;' +
-      'border:1.5px solid ' + (slot ? (woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#22C55E' : '#EF4444') : '#3B82F6') : '#CBD5E1') + ';' +
-      'background:' + (slot ? (woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#F0FDF4' : '#FEF2F2') : 'white') : 'transparent') + ';' +
-      'color:' + (slot ? (woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#15803D' : '#B91C1C') : '#1D4ED8') : 'transparent') + ';' +
+    btn.style.cssText = 'min-width:48px;padding:6px 12px;border-radius:10px;font-family:var(--f);font-weight:800;font-size:15px;cursor:' + (slot && !EN.woChecked ? 'pointer' : 'default') + ';transition:all .15s;' +
+      'border:1.5px solid ' + (slot ? (EN.woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#22C55E' : '#EF4444') : '#3B82F6') : '#CBD5E1') + ';' +
+      'background:' + (slot ? (EN.woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#F0FDF4' : '#FEF2F2') : 'white') : 'transparent') + ';' +
+      'color:' + (slot ? (EN.woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#15803D' : '#B91C1C') : '#1D4ED8') : 'transparent') + ';' +
       'box-shadow:' + (slot ? '0 1px 4px rgba(0,0,0,.08)' : 'none') + ';';
     btn.textContent = slot ? slot.word : '·';
-    if (slot && !woChecked) {
+    if (slot && !EN.woChecked) {
       (function(idx) {
         btn.addEventListener('click', function() { removeFromSlot(idx); });
       })(i);
@@ -334,7 +323,7 @@ function renderWoBank() {
   var el = document.getElementById('en-wo-bank');
   if (!el) return;
   el.innerHTML = '';
-  woBank.forEach(function(wordObj) {
+  EN.woBank.forEach(function(wordObj) {
     var btn = document.createElement('button');
     btn.style.cssText = 'padding:8px 14px;border-radius:10px;border:1.5px solid #E2E8F0;background:white;color:#1E293B;font-family:var(--f);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,.08);transition:transform .1s';
     btn.textContent = wordObj.word;
@@ -348,35 +337,35 @@ function renderWoBank() {
 }
 
 function placeWord(wordObj) {
-  if (woChecked) return;
-  var idx = woSlots.indexOf(null);
+  if (EN.woChecked) return;
+  var idx = EN.woSlots.indexOf(null);
   if (idx === -1) return;
-  woSlots[idx] = wordObj;
-  woBank = woBank.filter(function(w) { return w.id !== wordObj.id; });
+  EN.woSlots[idx] = wordObj;
+  EN.woBank = EN.woBank.filter(function(w) { return w.id !== wordObj.id; });
   renderWoSlots();
   renderWoBank();
   updateCheckBtn();
 }
 
 function removeFromSlot(idx) {
-  if (woChecked) return;
-  var word = woSlots[idx];
+  if (EN.woChecked) return;
+  var word = EN.woSlots[idx];
   if (!word) return;
-  woSlots[idx] = null;
-  woBank.push(word);
+  EN.woSlots[idx] = null;
+  EN.woBank.push(word);
   renderWoSlots();
   renderWoBank();
   updateCheckBtn();
 }
 
 function resetWordOrder() {
-  var sentence = woQueue[woIdx];
+  var sentence = EN.woQueue[EN.woIdx];
   var words = sentence.replace(/[.!?]$/, '').split(' ');
-  woSlots = [];
-  for (var ri = 0; ri < words.length; ri++) { woSlots.push(null); }
-  woBank    = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
-  woAttempt = 1;
-  woChecked = false;
+  EN.woSlots = [];
+  for (var ri = 0; ri < words.length; ri++) { EN.woSlots.push(null); }
+  EN.woBank    = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
+  EN.woAttempt = 1;
+  EN.woChecked = false;
   document.getElementById('en-wo-fb').style.display = 'none';
   document.getElementById('en-wo-next').style.display = 'none';
   document.getElementById('en-wo-reset').style.display = '';
@@ -389,7 +378,7 @@ function resetWordOrder() {
 }
 
 function updateCheckBtn() {
-  var allFilled = woSlots.every(function(s) { return s !== null; });
+  var allFilled = EN.woSlots.every(function(s) { return s !== null; });
   var btn = document.getElementById('en-wo-check');
   if (!btn) return;
   btn.style.background    = allFilled ? 'var(--blue)' : 'var(--gray-200)';
@@ -403,10 +392,10 @@ function updateSlotsBorder(color, style) {
 }
 
 function checkWordOrder() {
-  if (!woSlots.every(function(s) { return s !== null; })) return;
-  var sentence = woQueue[woIdx];
+  if (!EN.woSlots.every(function(s) { return s !== null; })) return;
+  var sentence = EN.woQueue[EN.woIdx];
   var cleanSentence = sentence.replace(/[.!?]$/, '');
-  var answer = woSlots.map(function(s) { return s.word; }).join(' ');
+  var answer = EN.woSlots.map(function(s) { return s.word; }).join(' ');
   var isCorrect = answer === cleanSentence;
   var slotsEl = document.getElementById('en-wo-slots');
   var fbEl    = document.getElementById('en-wo-fb');
@@ -414,20 +403,20 @@ function checkWordOrder() {
   var resetBtn = document.getElementById('en-wo-reset');
 
   if (isCorrect) {
-    woChecked = true;
+    EN.woChecked = true;
     slotsEl.dataset.correct = '1';
     slotsEl.style.borderStyle = 'solid';
     slotsEl.style.borderColor = '#22C55E';
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct! +' + (woAttempt === 1 ? 10 : 5) + ' pts 🎉';
+    fbEl.textContent = '✅ Correct! +' + (EN.woAttempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display = 'block';
     resetBtn.style.display = 'none';
     document.getElementById('en-wo-check').style.display = 'none';
-    recordEnglishResult(true, woAttempt === 1, enExArea);
+    recordEnglishResult(true, EN.woAttempt === 1, EN.exArea);
 
-  } else if (woAttempt === 1) {
-    woAttempt = 2;
+  } else if (EN.woAttempt === 1) {
+    EN.woAttempt = 2;
     slotsEl.style.borderColor = '#EF4444';
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-err';
@@ -436,7 +425,7 @@ function checkWordOrder() {
     setTimeout(function() { slotsEl.style.animation = ''; }, 500);
 
   } else {
-    woChecked = true;
+    EN.woChecked = true;
     slotsEl.dataset.correct = '0';
     slotsEl.style.borderStyle = 'solid';
     slotsEl.style.borderColor = '#EF4444';
@@ -446,15 +435,15 @@ function checkWordOrder() {
     nextBtn.style.display = 'block';
     resetBtn.style.display = 'none';
     document.getElementById('en-wo-check').style.display = 'none';
-    recordEnglishResult(false, false, enExArea);
+    recordEnglishResult(false, false, EN.exArea);
   }
 
   renderWoSlots();
 }
 
 function nextWordOrder() {
-  woIdx++;
-  if (woIdx >= woQueue.length) {
+  EN.woIdx++;
+  if (EN.woIdx >= EN.woQueue.length) {
     go('s-english-exercises');
     updateSubjectUI('english');
     return;
@@ -464,15 +453,15 @@ function nextWordOrder() {
 
 /* ---- EXERCISES ---- */
 function startEnglishExercisesByType(unit, type, exercises) {
-  enExArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
+  EN.exArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
   if (type === 'E') { startWordOrder(unit); return; }
   var exs = exercises.slice();
   for (var i = exs.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
     var tmp = exs[i]; exs[i] = exs[j]; exs[j] = tmp;
   }
-  enExQueue = exs;
-  enExIdx   = 0;
+  EN.exQueue = exs;
+  EN.exIdx   = 0;
   var typeLabels = { 'A': 'Complete the sentence', 'B': 'Make it negative', 'C': 'Identify the tense', 'D': 'Choose the right form' };
   setEl('english-ex-title', unit.title + ' — ' + (typeLabels[type] || type));
   go('s-english-ex');
@@ -484,11 +473,11 @@ function startEnglishExercises(unit) {
 }
 
 function showEnglishEx() {
-  var ex = enExQueue[enExIdx];
+  var ex = EN.exQueue[EN.exIdx];
   if (!ex) return;
-  var total = enExQueue.length;
-  setEl('en-ex-badge', 'Question ' + (enExIdx + 1) + ' of ' + total);
-  setBar('en-ex-prog', Math.round(enExIdx / total * 100));
+  var total = EN.exQueue.length;
+  setEl('en-ex-badge', 'Question ' + (EN.exIdx + 1) + ' of ' + total);
+  setBar('en-ex-prog', Math.round(EN.exIdx / total * 100));
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var diffEl = document.getElementById('en-ex-diff');
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
@@ -535,7 +524,7 @@ function checkEnglishAnswer(selected, ex, attempt, mode) {
     fbEl.className = 'feedback fb-ok';
     fbEl.textContent = '✅ Correct! +' + (attempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display = 'block';
-    recordEnglishResult(true, attempt === 1, enExArea);
+    recordEnglishResult(true, attempt === 1, EN.exArea);
   } else if (attempt === 1) {
     Array.from(opts.children).forEach(function(btn) {
       if (btn.textContent === selected) {
@@ -562,13 +551,13 @@ function checkEnglishAnswer(selected, ex, attempt, mode) {
     fbEl.innerHTML = '❌ The answer is <strong>' + correct + '</strong>' +
       (explanation ? '<div style="margin-top:8px;font-size:12px;font-weight:600;opacity:.85;line-height:1.5">' + explanation + '</div>' : '');
     nextBtn.style.display = 'block';
-    recordEnglishResult(false, false, enExArea);
+    recordEnglishResult(false, false, EN.exArea);
   }
 }
 
 function nextEnglishEx() {
-  enExIdx++;
-  if (enExIdx >= enExQueue.length) { go('s-english-exercises'); updateSubjectUI('english'); return; }
+  EN.exIdx++;
+  if (EN.exIdx >= EN.exQueue.length) { go('s-english-exercises'); updateSubjectUI('english'); return; }
   showEnglishEx();
 }
 
@@ -576,25 +565,25 @@ function nextEnglishEx() {
 function startEnglishMix() {
   loadEnglishData(function() {
     var all = [];
-    EN_DATA.units.forEach(function(u) { all = all.concat(u.exercises || []); });
+    SubjectData.english.units.forEach(function(u) { all = all.concat(u.exercises || []); });
     if (all.length === 0) return;
     for (var i = all.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var tmp = all[i]; all[i] = all[j]; all[j] = tmp;
     }
-    enMixQueue = all;
-    enMixIdx   = 0;
+    EN.mixQueue = all;
+    EN.mixIdx   = 0;
     go('s-english-mix');
     showEnglishMix();
   });
 }
 
 function showEnglishMix() {
-  var ex = enMixQueue[enMixIdx];
+  var ex = EN.mixQueue[EN.mixIdx];
   if (!ex) return;
-  var total = enMixQueue.length;
-  setEl('en-mix-badge', 'Question ' + (enMixIdx + 1) + ' of ' + total);
-  setBar('en-mix-prog', Math.round(enMixIdx / total * 100));
+  var total = EN.mixQueue.length;
+  setEl('en-mix-badge', 'Question ' + (EN.mixIdx + 1) + ' of ' + total);
+  setBar('en-mix-prog', Math.round(EN.mixIdx / total * 100));
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var diffEl = document.getElementById('en-mix-diff');
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
@@ -611,8 +600,8 @@ function showEnglishMix() {
 }
 
 function nextEnglishMix() {
-  enMixIdx++;
-  if (enMixIdx >= enMixQueue.length) { go('s-english-exercises'); updateSubjectUI('english'); return; }
+  EN.mixIdx++;
+  if (EN.mixIdx >= EN.mixQueue.length) { go('s-english-exercises'); updateSubjectUI('english'); return; }
   showEnglishMix();
 }
 
@@ -645,9 +634,6 @@ function recordEnglishResult(correct, firstAttempt, area) {
    VOCABULARY — Flashcards con flip
    ============================================= */
 
-var VOCAB_DATA    = null;
-var vocabUnit     = null;   // unidad activa
-var vocabFlipped  = [];     // estado flip por tarjeta
 
 var VOCAB_COLORS = {
   orange: { color: '#F97316', bg: '#FFF7ED', border: '#FED7AA' },
@@ -655,10 +641,10 @@ var VOCAB_COLORS = {
 };
 
 function loadVocabData(callback) {
-  if (VOCAB_DATA) { callback(); return; }
+  if (SubjectData.vocab) { callback(); return; }
   fetch('data/curso' + cursoActual + '/english-vocab.json')
     .then(function(r) { return r.json(); })
-    .then(function(d) { VOCAB_DATA = d; callback(); })
+    .then(function(d) { SubjectData.vocab = d; callback(); })
     .catch(function(e) { console.error('Error loading english-vocab.json', e); });
 }
 
@@ -668,7 +654,7 @@ function renderVocabMenu() {
     var grid = document.getElementById('vocab-topics-grid');
     if (!grid) return;
     grid.innerHTML = '';
-    VOCAB_DATA.units.forEach(function(unit) {
+    SubjectData.vocab.units.forEach(function(unit) {
       var c = VOCAB_COLORS[unit.color] || VOCAB_COLORS.blue;
       var card = document.createElement('div');
       card.style.cssText = 'background:'+c.bg+';border:1.5px solid '+c.border+';border-radius:16px;padding:18px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;margin:0 16px 12px;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:box-shadow .2s';
@@ -689,8 +675,8 @@ function renderVocabMenu() {
 
 /* ---- Abrir unidad ---- */
 function openVocabUnit(unit) {
-  vocabUnit    = unit;
-  vocabFlipped = unit.words.map(function() { return false; });
+  EN.vocabUnit    = unit;
+  EN.vocabFlipped = unit.words.map(function() { return false; });
   var c = VOCAB_COLORS[unit.color] || VOCAB_COLORS.blue;
 
   // Actualizar topbar color
@@ -747,12 +733,12 @@ function speakWord(word, e) {
 
 function renderVocabCards() {
   var grid = document.getElementById('vocab-cards-grid');
-  if (!grid || !vocabUnit) return;
+  if (!grid || !EN.vocabUnit) return;
   grid.innerHTML = '';
-  var c = VOCAB_COLORS[vocabUnit.color] || VOCAB_COLORS.blue;
+  var c = VOCAB_COLORS[EN.vocabUnit.color] || VOCAB_COLORS.blue;
 
-  vocabUnit.words.forEach(function(w, i) {
-    var flipped = vocabFlipped[i];
+  EN.vocabUnit.words.forEach(function(w, i) {
+    var flipped = EN.vocabFlipped[i];
     var card = document.createElement('div');
     card.style.cssText = 'cursor:pointer;perspective:600px;height:130px;position:relative';
 
@@ -797,15 +783,15 @@ function renderVocabCards() {
 }
 
 function vocabFlipCard(i) {
-  vocabFlipped[i] = !vocabFlipped[i];
+  EN.vocabFlipped[i] = !EN.vocabFlipped[i];
   // Actualizar botón si todas están giradas
   updateVocabFlipBtn();
   renderVocabCards();
 }
 
 function vocabToggleAll() {
-  var allFlipped = vocabFlipped.every(function(v) { return v; });
-  vocabFlipped = vocabFlipped.map(function() { return !allFlipped; });
+  var allFlipped = EN.vocabFlipped.every(function(v) { return v; });
+  EN.vocabFlipped = EN.vocabFlipped.map(function() { return !allFlipped; });
   updateVocabFlipBtn();
   renderVocabCards();
 }
@@ -813,7 +799,7 @@ function vocabToggleAll() {
 function updateVocabFlipBtn() {
   var btn = document.getElementById('vocab-flip-all-btn');
   if (!btn) return;
-  var allFlipped = vocabFlipped.every(function(v) { return v; });
+  var allFlipped = EN.vocabFlipped.every(function(v) { return v; });
   btn.textContent = allFlipped ? 'Show words' : 'Show all hints';
 }
 
@@ -821,12 +807,6 @@ function updateVocabFlipBtn() {
    VOCABULARY EXERCISES
    ============================================= */
 
-var vocabExQueue   = [];
-var vocabExIdx     = 0;
-var vocabExType    = 'word-to-image';
-var vocabExAttempt = 1;
-var vocabExDone    = false;
-var vocabExWrong   = null; // palabra del opción incorrecta elegida
 
 function shuffleArr2(arr) {
   var a = arr.slice();
@@ -841,10 +821,10 @@ function startVocabExercise(type) {
   loadVocabData(function() {
     // Mezclar todas las palabras de todas las unidades
     var allWords = [];
-    VOCAB_DATA.units.forEach(function(u) { allWords = allWords.concat(u.words); });
-    vocabExQueue   = shuffleArr2(allWords);
-    vocabExIdx     = 0;
-    vocabExType    = type;
+    SubjectData.vocab.units.forEach(function(u) { allWords = allWords.concat(u.words); });
+    EN.vocabExQueue   = shuffleArr2(allWords);
+    EN.vocabExIdx     = 0;
+    EN.vocabExType    = type;
     if (type === 'word-to-image') {
       go('s-vocab-ex-w2i');
       loadW2IQuestion();
@@ -856,17 +836,16 @@ function startVocabExercise(type) {
 }
 
 /* ---- WORD TO IMAGE ---- */
-var vocabExCurrentOpts = []; // opciones fijas para la pregunta actual
 
 function loadW2IQuestion() {
-  var word  = vocabExQueue[vocabExIdx];
-  var total = vocabExQueue.length;
-  vocabExAttempt = 1;
-  vocabExDone    = false;
-  vocabExWrong   = null;
+  var word  = EN.vocabExQueue[EN.vocabExIdx];
+  var total = EN.vocabExQueue.length;
+  EN.vocabExAttempt = 1;
+  EN.vocabExDone    = false;
+  EN.vocabExWrong   = null;
 
-  setEl('w2i-badge', 'Question ' + (vocabExIdx + 1) + ' of ' + total);
-  setBar('w2i-prog', Math.round(vocabExIdx / total * 100));
+  setEl('w2i-badge', 'Question ' + (EN.vocabExIdx + 1) + ' of ' + total);
+  setBar('w2i-prog', Math.round(EN.vocabExIdx / total * 100));
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var de = document.getElementById('w2i-diff');
   if (de) { de.textContent = diff.txt; de.className = 'ex-badge ' + diff.cls; }
@@ -877,9 +856,9 @@ function loadW2IQuestion() {
 
   // Generar opciones UNA SOLA VEZ y guardarlas
   var allWords = [];
-  VOCAB_DATA.units.forEach(function(u) { allWords = allWords.concat(u.words); });
+  SubjectData.vocab.units.forEach(function(u) { allWords = allWords.concat(u.words); });
   var distractors = shuffleArr2(allWords.filter(function(w) { return w.word !== word.word; })).slice(0, 2);
-  vocabExCurrentOpts = shuffleArr2([word].concat(distractors));
+  EN.vocabExCurrentOpts = shuffleArr2([word].concat(distractors));
 
   renderW2IOpts(word);
 }
@@ -888,26 +867,26 @@ function renderW2IOpts(word) {
   var container = document.getElementById('w2i-opts');
   container.innerHTML = '';
 
-  vocabExCurrentOpts.forEach(function(opt) {
+  EN.vocabExCurrentOpts.forEach(function(opt) {
     var btn = document.createElement('button');
-    var isWrong   = vocabExWrong === opt.word;
+    var isWrong   = EN.vocabExWrong === opt.word;
     var isCorrect = opt.word === word.word;
 
     var border = '#E5E7EB';
     var bg     = 'white';
     var opacity = '1';
 
-    if (vocabExDone) {
+    if (EN.vocabExDone) {
       if (isCorrect)           { border = '#22C55E'; bg = '#F0FDF4'; }
       else if (isWrong)        { border = '#EF4444'; bg = '#FEF2F2'; }
-    } else if (vocabExWrong) {
+    } else if (EN.vocabExWrong) {
       // Primer fallo mostrado: solo marcar el incorrecto, NO el correcto
       if (isWrong)  { border = '#EF4444'; bg = '#FEF2F2'; opacity = '0.5'; }
     }
 
-    btn.style.cssText = 'padding:16px 8px;border-radius:14px;border:2px solid '+border+';background:'+bg+';cursor:'+(vocabExDone || isWrong ? 'default' : 'pointer')+';display:flex;flex-direction:column;align-items:center;gap:8px;transition:all .15s;opacity:'+opacity;
+    btn.style.cssText = 'padding:16px 8px;border-radius:14px;border:2px solid '+border+';background:'+bg+';cursor:'+(EN.vocabExDone || isWrong ? 'default' : 'pointer')+';display:flex;flex-direction:column;align-items:center;gap:8px;transition:all .15s;opacity:'+opacity;
     btn.innerHTML = '<span style="font-size:44px">'+opt.emoji+'</span>';
-    btn.disabled = vocabExDone || isWrong;
+    btn.disabled = EN.vocabExDone || isWrong;
 
     if (!btn.disabled) {
       (function(o) {
@@ -919,29 +898,29 @@ function renderW2IOpts(word) {
 }
 
 function pickW2I(opt, word) {
-  if (vocabExDone) return;
+  if (EN.vocabExDone) return;
   var isCorrect = opt.word === word.word;
   var fbEl   = document.getElementById('w2i-fb');
   var nextBtn = document.getElementById('w2i-next');
 
   if (isCorrect) {
-    vocabExDone = true;
+    EN.vocabExDone = true;
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct! +' + (vocabExAttempt === 1 ? 10 : 5) + ' pts 🎉';
+    fbEl.textContent = '✅ Correct! +' + (EN.vocabExAttempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display = 'block';
     renderW2IOpts(word);
-    recordEnglishResult(true, vocabExAttempt === 1, 'vocab');
-  } else if (vocabExAttempt === 1) {
-    vocabExAttempt = 2;
-    vocabExWrong   = opt.word;
+    recordEnglishResult(true, EN.vocabExAttempt === 1, 'vocab');
+  } else if (EN.vocabExAttempt === 1) {
+    EN.vocabExAttempt = 2;
+    EN.vocabExWrong   = opt.word;
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ Not quite — try again!';
     renderW2IOpts(word);
   } else {
-    vocabExDone  = true;
-    vocabExWrong = opt.word;
+    EN.vocabExDone  = true;
+    EN.vocabExWrong = opt.word;
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ The answer is: ' + word.emoji + ' ' + word.word;
@@ -953,13 +932,13 @@ function pickW2I(opt, word) {
 
 /* ---- IMAGE TO WORD ---- */
 function loadI2WQuestion() {
-  var word  = vocabExQueue[vocabExIdx];
-  var total = vocabExQueue.length;
-  vocabExAttempt = 1;
-  vocabExDone    = false;
+  var word  = EN.vocabExQueue[EN.vocabExIdx];
+  var total = EN.vocabExQueue.length;
+  EN.vocabExAttempt = 1;
+  EN.vocabExDone    = false;
 
-  setEl('i2w-badge', 'Question ' + (vocabExIdx + 1) + ' of ' + total);
-  setBar('i2w-prog', Math.round(vocabExIdx / total * 100));
+  setEl('i2w-badge', 'Question ' + (EN.vocabExIdx + 1) + ' of ' + total);
+  setBar('i2w-prog', Math.round(EN.vocabExIdx / total * 100));
   var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
   var de = document.getElementById('i2w-diff');
   if (de) { de.textContent = diff.txt; de.className = 'ex-badge ' + diff.cls; }
@@ -995,7 +974,7 @@ function updateI2WCheckBtn() {
 // Escuchar cambios en el input para activar el botón
 
 function checkVocabI2W() {
-  var word  = vocabExQueue[vocabExIdx];
+  var word  = EN.vocabExQueue[EN.vocabExIdx];
   var inp   = document.getElementById('i2w-input');
   var fbEl  = document.getElementById('i2w-fb');
   var nextBtn = document.getElementById('i2w-next');
@@ -1005,20 +984,20 @@ function checkVocabI2W() {
   var isCorrect = inp.value.trim().toUpperCase() === word.word.toUpperCase();
 
   if (isCorrect) {
-    vocabExDone = true;
+    EN.vocabExDone = true;
     inp.style.borderColor = '#22C55E';
     inp.style.background  = '#F0FDF4';
     inp.style.color       = '#15803D';
     inp.disabled = true;
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct! +' + (vocabExAttempt === 1 ? 10 : 5) + ' pts 🎉';
+    fbEl.textContent = '✅ Correct! +' + (EN.vocabExAttempt === 1 ? 10 : 5) + ' pts 🎉';
     nextBtn.style.display  = 'block';
     checkBtn.style.display = 'none';
-    recordEnglishResult(true, vocabExAttempt === 1, 'vocab');
+    recordEnglishResult(true, EN.vocabExAttempt === 1, 'vocab');
 
-  } else if (vocabExAttempt === 1) {
-    vocabExAttempt = 2;
+  } else if (EN.vocabExAttempt === 1) {
+    EN.vocabExAttempt = 2;
     inp.style.borderColor = '#EF4444';
     fbEl.style.display = 'block';
     fbEl.className = 'feedback fb-err';
@@ -1033,7 +1012,7 @@ function checkVocabI2W() {
     }, 420);
 
   } else {
-    vocabExDone = true;
+    EN.vocabExDone = true;
     inp.value = word.word;
     inp.style.borderColor = '#EF4444';
     inp.style.background  = '#FEF2F2';
@@ -1049,8 +1028,8 @@ function checkVocabI2W() {
 }
 
 function nextVocabEx(mode) {
-  vocabExIdx++;
-  if (vocabExIdx >= vocabExQueue.length) {
+  EN.vocabExIdx++;
+  if (EN.vocabExIdx >= EN.vocabExQueue.length) {
     go('s-english-vocab-ex');
     updateSubjectUI('english');
     return;
