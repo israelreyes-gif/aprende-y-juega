@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v12';
+var CACHE = 'aprende-v13';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
