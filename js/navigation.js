@@ -44,71 +44,29 @@ function irADescripciones() {
 }
 
 /* ---- Área para padres (con PIN) ---- */
-var _pinBuffer    = '';
-var _pinMode      = 'verify';   // 'verify' | 'create' | 'confirm'
-var _pinNew       = '';
-var _pinCallback  = null;
+var _pinBuffer   = '';
+var _pinCallback = null;
 
 function irAPadres() {
-  abrirPinModal('verify', function() {
+  _pinBuffer   = '';
+  _pinCallback = function() {
     if (typeof renderPadres === 'function') renderPadres();
     go('s-padres');
-  });
-}
-
-function abrirPinModal(mode, callback) {
-  _pinBuffer   = '';
-  _pinMode     = mode;
-  _pinNew      = '';
-  _pinCallback = callback;
+  };
 
   var modal    = document.getElementById('pin-modal');
-  var title    = document.getElementById('pin-title');
-  var subtitle = document.getElementById('pin-subtitle');
   var err      = document.getElementById('pin-error');
   if (!modal) return;
-
   if (err) err.style.display = 'none';
   pinUpdateDots();
-
-  if (mode === 'create') {
-    title.textContent    = '🔒 Crear PIN';
-    subtitle.textContent = 'Elige un PIN de 4 dígitos';
-    modal.style.display  = 'flex';
-  } else if (mode === 'confirm') {
-    title.textContent    = '🔒 Confirmar PIN';
-    subtitle.textContent = 'Repite el PIN para confirmar';
-    modal.style.display  = 'flex';
-  } else {
-    // verify: esperar fetch antes de mostrar modal
-    fetch(API_URL + '/config/pin_padres')
-      .then(function(r) { return r.json(); })
-      .then(function(d) {
-        if (!d || !d.valor || d.valor === '1234') {
-          _pinMode = 'create';
-          title.textContent    = '🔒 Crear PIN';
-          subtitle.textContent = 'Es tu primera vez. Elige un PIN de 4 dígitos';
-        } else {
-          title.textContent    = '🔒 Zona de padres';
-          subtitle.textContent = 'Introduce el PIN para acceder';
-        }
-        modal.style.display = 'flex';
-      })
-      .catch(function() {
-        title.textContent    = '🔒 Zona de padres';
-        subtitle.textContent = 'Introduce el PIN para acceder';
-        modal.style.display  = 'flex';
-      });
-  }
+  modal.style.display = 'flex';
 }
 
 function pinKey(digit) {
   if (_pinBuffer.length >= 4) return;
   _pinBuffer += digit;
   pinUpdateDots();
-  if (_pinBuffer.length === 4) {
-    setTimeout(pinSubmit, 150);
-  }
+  if (_pinBuffer.length === 4) setTimeout(pinSubmit, 150);
 }
 
 function pinDel() {
@@ -126,36 +84,10 @@ function pinUpdateDots() {
 }
 
 function pinSubmit() {
-  if (_pinMode === 'create') {
-    _pinNew    = _pinBuffer;
-    _pinBuffer = '';
-    pinUpdateDots();
-    abrirPinModal('confirm', _pinCallback);
-    return;
-  }
-
-  if (_pinMode === 'confirm') {
-    if (_pinBuffer === _pinNew) {
-      // Guardar nuevo PIN en D1
-      fetch(API_URL + '/config/pin_padres', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ valor: _pinBuffer })
-      }).then(function() {
-        pinClose();
-        if (_pinCallback) _pinCallback();
-      });
-    } else {
-      pinError('Los PINs no coinciden');
-    }
-    return;
-  }
-
-  // verify
   fetch(API_URL + '/config/pin_padres')
     .then(function(r) { return r.json(); })
     .then(function(d) {
-      var pinGuardado = d && d.valor ? d.valor : '1234';
+      var pinGuardado = d && d.valor ? d.valor : '';
       if (_pinBuffer === pinGuardado) {
         pinClose();
         if (_pinCallback) _pinCallback();
@@ -173,7 +105,6 @@ function pinError(msg) {
   pinUpdateDots();
   var err = document.getElementById('pin-error');
   if (err) { err.textContent = msg; err.style.display = 'block'; }
-  // Vibrar si está disponible
   if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
 }
 
@@ -181,7 +112,6 @@ function pinClose() {
   var modal = document.getElementById('pin-modal');
   if (modal) modal.style.display = 'none';
   _pinBuffer = '';
-  _pinNew    = '';
 }
 
 function pinCancel() {
