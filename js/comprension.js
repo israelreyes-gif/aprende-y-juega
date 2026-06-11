@@ -4,9 +4,8 @@
    - Segundo fallo muestra respuestas correctas bajo cada pregunta fallida
    ============================================= */
 
-var HISTORIAS_DB = { facil: [], medio: [], avanzado: [] };
-var historiaIdx  = { facil: 0, medio: 0, avanzado: 0 };
-var currentHistoria = null;
+var HISTORIAS_DB = SubjectData.historias; /* alias */
+var L = ExerciseState.lengua; /* alias */
 
 function shuffleArr(arr) {
   var a = arr.slice();
@@ -26,7 +25,7 @@ function cargarNuevaHistoria() {
   var banco = HISTORIAS_DB[nivel];
 
   if (!banco || banco.length === 0) {
-    currentHistoria = {
+    L.currentHistoria = {
       titulo: 'La tortuga y las estrellas', emoji: '📖',
       texto: 'Había una vez una tortuga llamada Luna que vivía cerca de un lago azul. Soñaba con volar hasta las estrellas. Un día, una cigüeña llamada Viento la ayudó a llegar muy alto y Luna pudo tocar una estrella brillante. Desde ese día, nunca se sintió pequeña.',
       preguntas: [
@@ -38,25 +37,25 @@ function cargarNuevaHistoria() {
       ]
     };
   } else {
-    if (historiaIdx[nivel] >= banco.length) {
+    if (L.historiaIdx[nivel] >= banco.length) {
       HISTORIAS_DB[nivel] = shuffleArr(banco);
-      historiaIdx[nivel] = 0;
+      L.historiaIdx[nivel] = 0;
     }
-    currentHistoria = banco[historiaIdx[nivel]];
-    historiaIdx[nivel]++;
+    L.currentHistoria = banco[L.historiaIdx[nivel]];
+    L.historiaIdx[nivel]++;
   }
 
   var storyCard = document.querySelector('.story-card');
   if (storyCard) {
     storyCard.querySelector('.story-title').textContent =
-      (currentHistoria.emoji || '📖') + ' ' + currentHistoria.titulo;
-    storyCard.querySelector('.story-body').textContent = currentHistoria.texto;
+      (L.currentHistoria.emoji || '📖') + ' ' + L.currentHistoria.titulo;
+    storyCard.querySelector('.story-body').textContent = L.currentHistoria.texto;
   }
 
   for (var i = 0; i < 5; i++) {
     var qblock = document.querySelectorAll('.q-block')[i];
-    if (qblock && currentHistoria.preguntas[i]) {
-      qblock.querySelector('.q-text').textContent = currentHistoria.preguntas[i].pregunta;
+    if (qblock && L.currentHistoria.preguntas[i]) {
+      qblock.querySelector('.q-text').textContent = L.currentHistoria.preguntas[i].pregunta;
       // Limpiar respuesta correcta del intento anterior
       var correctBox = qblock.querySelector('.q-correct-box');
       if (correctBox) correctBox.style.display = 'none';
@@ -85,7 +84,7 @@ function mostrarRespuestasCorrectas() {
     var qr = document.getElementById('qr' + (i+1));
     if (!qr || qr.className.indexOf('bad') === -1) continue; // solo las fallidas
 
-    var q = currentHistoria.preguntas[i];
+    var q = L.currentHistoria.preguntas[i];
     var qblock = document.querySelectorAll('.q-block')[i];
     if (!qblock) continue;
 
@@ -106,7 +105,7 @@ function mostrarRespuestasCorrectas() {
 
 /* ---- Evaluar respuestas ---- */
 function evaluateAnswers() {
-  if (!currentHistoria) return;
+  if (!L.currentHistoria) return;
 
   var filledCount = 0;
   for (var i = 1; i <= 5; i++) {
@@ -147,7 +146,7 @@ function evaluateAnswers() {
     for (var i = 0; i < 5; i++) {
       var res = document.getElementById('qr' + (i+1));
       var ans = answers[i].toLowerCase();
-      var q   = currentHistoria.preguntas[i];
+      var q   = L.currentHistoria.preguntas[i];
       var kw  = q.keywords || [];
       var hits = kw.filter(function(k) { return ans.includes(k.toLowerCase()); }).length;
       var ok  = hits >= 1 && ans.length > 3;
@@ -155,7 +154,7 @@ function evaluateAnswers() {
       else {
         res.className = 'q-res bad';
         // Primer intento: solo avisar que es incorrecto, sin revelar la respuesta
-        var intentos = currentHistoria._intentos || 0;
+        var intentos = L.currentHistoria._intentos || 0;
         res.textContent = intentos >= 1 ? q.bad : '✗ No es correcto, vuelve a intentarlo.';
       }
       res.style.display = 'block';
@@ -173,7 +172,7 @@ function evaluateAnswers() {
     // Limpiar botones anteriores para evitar acumulación
     re.innerHTML = '';
 
-    if (!currentHistoria._intentos) currentHistoria._intentos = 0;
+    if (!L.currentHistoria._intentos) L.currentHistoria._intentos = 0;
 
     if (score >= 4) {
       // ── BUENA PUNTUACIÓN: guardar y mostrar botón siguiente ──
@@ -187,9 +186,9 @@ function evaluateAnswers() {
       addNextBtn(re, 'Siguiente historia →', true);
 
     } else {
-      currentHistoria._intentos++;
+      L.currentHistoria._intentos++;
 
-      if (currentHistoria._intentos < 2) {
+      if (L.currentHistoria._intentos < 2) {
         // ── PRIMER FALLO: reintento, no puntuar aún ──
         re.className = 'comp-result bad';
         re.innerHTML = '<div class="comp-result-title">' + score + '/5 💪' + orthoNote + '</div>' +
@@ -229,7 +228,7 @@ function evaluateAnswers() {
         recordResult('lengua', 'comp', false);
         ST.compStreak = Math.max(0, ST.compStreak - 1);
         saveState();
-        currentHistoria._intentos = 0;
+        L.currentHistoria._intentos = 0;
         re.className = 'comp-result bad';
         re.innerHTML = '<div class="comp-result-title">' + score + '/5 📖 +' + pts + ' pts' + orthoNote + '</div>' +
                        '<div class="comp-result-sub">Mira las respuestas correctas en morado. ¡La próxima vez lo harás mejor!</div>';
