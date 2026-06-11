@@ -126,9 +126,9 @@ function loadData(callback) {
   fetch('data/curso' + cursoActual + '/ejercicios-mates.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      PROBLEMAS_DB = data;
-      Object.keys(PROBLEMAS_DB).forEach(function(k) {
-        PROBLEMAS_DB[k] = shuffle(PROBLEMAS_DB[k]);
+      SubjectData.problemas = data;
+      Object.keys(SubjectData.problemas).forEach(function(k) {
+        SubjectData.problemas[k] = shuffle(SubjectData.problemas[k]);
       });
       done();
     })
@@ -140,9 +140,9 @@ function loadData(callback) {
   fetch('data/curso' + cursoActual + '/historias.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      HISTORIAS_DB = data;
-      Object.keys(HISTORIAS_DB).forEach(function(k) {
-        HISTORIAS_DB[k] = shuffleArr(HISTORIAS_DB[k]);
+      SubjectData.historias = data;
+      Object.keys(SubjectData.historias).forEach(function(k) {
+        SubjectData.historias[k] = shuffleArr(SubjectData.historias[k]);
       });
       done();
     })
