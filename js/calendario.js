@@ -93,7 +93,8 @@ function renderMiniCalendario(containerId, subject, color) {
   // Actualizar stats compactas
   setEl(containerId + '-streak', streak > 0 ? '🔥 ' + streak : '—');
   setEl(containerId + '-dias', (Object.keys(activeDays).length || 0).toString());
-  setEl(containerId + '-pct', total > 0 ? Math.round(totalOk/total*100) + '%' : '—');
+  var statsPct = typeof statsGetSubject === 'function' ? statsGetSubject(subject).pct : null;
+  setEl(containerId + '-pct', statsPct !== null ? statsPct + '%' : (total > 0 ? Math.round(totalOk/total*100) + '%' : '—'));
   setEl(containerId + '-pts', '⭐ ' + pts);
 }
 
