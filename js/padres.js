@@ -135,67 +135,9 @@ function setPadresView(v) {
 
 /* ---- Datos por asignatura ---- */
 function getPadresSubjectData() {
-  var mErr  = (ST.mates  && ST.mates.errors)    || {};
-  var lErr  = (ST.lengua && ST.lengua.errors)   || {};
-  var eErr  = (ST.english && ST.english.errors) || {};
-  var scErr = (ST.sciences && ST.sciences.errors) || {};
-  var soErr = (ST.sociales && ST.sociales.errors) || {};
-
-  var srOk = (mErr['mates-suma_ok']||0)+(mErr['mates-resta_ok']||0);
-  var srF  = (mErr['mates-suma_fail']||0)+(mErr['mates-resta_fail']||0);
-
-  var gramOk=0, gramTotal=0;
-  ['lengua-gram-bv','lengua-gram-gj','lengua-gram-czq','lengua-gram-lly','lengua-gram-rr'].forEach(function(k){
-    gramOk+=(lErr[k+'_ok']||0); gramTotal+=(lErr[k+'_ok']||0)+(lErr[k+'_fail']||0);
-  });
-
-  var invOk    = scErr['sciences-invertebrates_ok']  || 0;
-  var invTotal = (scErr['sciences-invertebrates_ok']||0) + (scErr['sciences-invertebrates_fail']||0);
-
-  return [
-    { name:'Mates', icon:'🔢', color:'#534AB7',
-      total_ok: srOk+(mErr['mates-multi_ok']||0)+(mErr['mates-prob_ok']||0)+(mErr['mates-mix_ok']||0),
-      total_ex: srOk+srF+(mErr['mates-multi_ok']||0)+(mErr['mates-multi_fail']||0)+(mErr['mates-prob_ok']||0)+(mErr['mates-prob_fail']||0)+(mErr['mates-mix_ok']||0)+(mErr['mates-mix_fail']||0),
-      items:[
-        {name:'Sumas y restas', ok:srOk, total:srOk+srF},
-        {name:'Multiplicaciones', ok:mErr['mates-multi_ok']||0, total:(mErr['mates-multi_ok']||0)+(mErr['mates-multi_fail']||0)},
-        {name:'Problemas', ok:mErr['mates-prob_ok']||0, total:(mErr['mates-prob_ok']||0)+(mErr['mates-prob_fail']||0)},
-        {name:'Mezcla', ok:mErr['mates-mix_ok']||0, total:(mErr['mates-mix_ok']||0)+(mErr['mates-mix_fail']||0)}
-      ]},
-    { name:'Lengua', icon:'📚', color:'#D4537E',
-      total_ok: gramOk+(lErr['lengua-comp_ok']||0)+(lErr['lengua-desc_ok']||0)+(lErr['lengua-dict_ok']||0),
-      total_ex: gramTotal+(lErr['lengua-comp_ok']||0)+(lErr['lengua-comp_fail']||0)+(lErr['lengua-desc_ok']||0)+(lErr['lengua-desc_fail']||0)+(lErr['lengua-dict_ok']||0)+(lErr['lengua-dict_fail']||0),
-      items:[
-        {name:'Gramática', ok:gramOk, total:gramTotal},
-        {name:'Comprensión', ok:lErr['lengua-comp_ok']||0, total:(lErr['lengua-comp_ok']||0)+(lErr['lengua-comp_fail']||0)},
-        {name:'Descripciones', ok:lErr['lengua-desc_ok']||0, total:(lErr['lengua-desc_ok']||0)+(lErr['lengua-desc_fail']||0)},
-        {name:'Dictado', ok:lErr['lengua-dict_ok']||0, total:(lErr['lengua-dict_ok']||0)+(lErr['lengua-dict_fail']||0)}
-      ]},
-    { name:'English', icon:'flag', color:'#378ADD',
-      total_ok: (eErr['english-tobe_ok']||0)+(eErr['english-modals_ok']||0)+(eErr['english-vocab_ok']||0),
-      total_ex: (eErr['english-tobe_ok']||0)+(eErr['english-tobe_fail']||0)+(eErr['english-modals_ok']||0)+(eErr['english-modals_fail']||0)+(eErr['english-vocab_ok']||0)+(eErr['english-vocab_fail']||0),
-      items:[
-        {name:'To Be', ok:eErr['english-tobe_ok']||0, total:(eErr['english-tobe_ok']||0)+(eErr['english-tobe_fail']||0)},
-        {name:'Modal Verbs', ok:eErr['english-modals_ok']||0, total:(eErr['english-modals_ok']||0)+(eErr['english-modals_fail']||0)},
-        {name:'Vocabulary', ok:eErr['english-vocab_ok']||0, total:(eErr['english-vocab_ok']||0)+(eErr['english-vocab_fail']||0)}
-      ]},
-    { name:'Sciences', icon:'🔬', color:'#1D9E75',
-      total_ok: invOk+(scErr['sciences-mix_ok']||0),
-      total_ex: invTotal+(scErr['sciences-mix_ok']||0)+(scErr['sciences-mix_fail']||0),
-      items:[
-        {name:'Invertebrates', ok:invOk, total:invTotal},
-        {name:'Mix', ok:scErr['sciences-mix_ok']||0, total:(scErr['sciences-mix_ok']||0)+(scErr['sciences-mix_fail']||0)}
-      ]},
-    { name:'Sociales', icon:'🌍', color:'#0F6E56',
-      total_ok: (soErr['sociales-vf_ok']||0)+(soErr['sociales-relacionar_ok']||0)+(soErr['sociales-completar_ok']||0),
-      total_ex: (soErr['sociales-vf_ok']||0)+(soErr['sociales-vf_fail']||0)+(soErr['sociales-relacionar_ok']||0)+(soErr['sociales-relacionar_fail']||0)+(soErr['sociales-completar_ok']||0)+(soErr['sociales-completar_fail']||0),
-      items:[
-        {name:'Verdadero/Falso', ok:soErr['sociales-vf_ok']||0, total:(soErr['sociales-vf_ok']||0)+(soErr['sociales-vf_fail']||0)},
-        {name:'Relacionar', ok:soErr['sociales-relacionar_ok']||0, total:(soErr['sociales-relacionar_ok']||0)+(soErr['sociales-relacionar_fail']||0)},
-        {name:'Completar', ok:soErr['sociales-completar_ok']||0, total:(soErr['sociales-completar_ok']||0)+(soErr['sociales-completar_fail']||0)}
-      ]}
-  ];
+  return statsGetAll();
 }
+
 
 function _pct(ok,total){ return total>0 ? Math.round(ok/total*100) : 0; }
 function _pctStr(ok,total){ return total===0 ? 'Sin empezar' : _pct(ok,total)+'%'; }
@@ -216,9 +158,9 @@ function renderPadresBarChart() {
     mainColor=s.color; clickable=false;
   } else {
     labels=subs.map(function(s){return s.name;});
-    values=subs.map(function(s){return _pct(s.total_ok,s.total_ex);});
-    totals=subs.map(function(s){return s.total_ex;});
-    colors=subs.map(function(s){return _barColor(_pct(s.total_ok,s.total_ex),s.total_ex,s.color);});
+    values=subs.map(function(s){return _pct(s.ok,s.total);});
+    totals=subs.map(function(s){return s.total;});
+    colors=subs.map(function(s){return _barColor(_pct(s.ok,s.total),s.total,s.color);});
     mainColor='#7C3AED'; clickable=true;
   }
   var ctx=document.getElementById('p-chart-bar');
@@ -278,9 +220,9 @@ function renderPadresRadarChart() {
   if (typeof Chart==='undefined'){ setTimeout(renderPadresRadarChart,300); return; }
   var subs=getPadresSubjectData();
   var labels=subs.map(function(s){return s.name;});
-  var values=subs.map(function(s){return _pct(s.total_ok,s.total_ex);});
-  var totals=subs.map(function(s){return s.total_ex;});
-  var ptColors=subs.map(function(s){return _barColor(_pct(s.total_ok,s.total_ex),s.total_ex,s.color);});
+  var values=subs.map(function(s){return _pct(s.ok,s.total);});
+  var totals=subs.map(function(s){return s.total;});
+  var ptColors=subs.map(function(s){return _barColor(_pct(s.ok,s.total),s.total,s.color);});
   var ctx=document.getElementById('p-chart-radar');
   if (!ctx) return;
   padresRadarChart=new Chart(ctx.getContext('2d'),{
@@ -316,8 +258,8 @@ function renderSubjects() {
   var el=document.getElementById('p-subjects'); if (!el) return;
   var subs=getPadresSubjectData(); el.innerHTML='';
   subs.forEach(function(s){
-    var gPct=_pct(s.total_ok,s.total_ex), gStr=_pctStr(s.total_ok,s.total_ex);
-    var gColor=s.total_ex===0?'var(--gray-400)':gPct<75?'#F59E0B':'#16A34A';
+    var gPct=_pct(s.ok,s.total), gStr=_pctStr(s.ok,s.total);
+    var gColor=s.total===0?'var(--gray-400)':gPct<75?'#F59E0B':'#16A34A';
     var iconHtml=s.icon==='flag'?UK_FLAG:'<span style="font-size:15px">'+s.icon+'</span>';
     var card=document.createElement('div');
     card.style.cssText='background:white;border:0.5px solid var(--gray-200);border-radius:12px;overflow:hidden;margin-bottom:6px';
@@ -326,7 +268,7 @@ function renderSubjects() {
       +'<span style="font-size:13px;font-weight:700;color:var(--gray-800);font-family:var(--f);flex:1">'+s.name+'</span>'
       +'<span style="font-size:12px;font-weight:700;color:'+gColor+';font-family:var(--f)">'+gStr+'</span></div>';
     s.items.forEach(function(item){
-      var p2=_pct(item.ok,item.total), pc=item.total===0?'var(--gray-400)':p2<75?'#F59E0B':'#16A34A';
+      var p2=item.pct, pc=statsColor(item.pct,s.color,'var(--gray-400)');
       html+='<div style="display:flex;align-items:center;gap:8px;padding:7px 12px 7px 28px;border-bottom:0.5px solid var(--gray-100)">'
         +'<span style="font-size:12px;color:var(--gray-400);font-family:var(--f);flex:1">'+item.name+'</span>'
         +'<span style="font-size:12px;font-weight:700;color:'+pc+';font-family:var(--f)">'+_pctStr(item.ok,item.total)+'</span></div>';
@@ -338,20 +280,10 @@ function renderSubjects() {
 /* ---- Áreas a reforzar ---- */
 function renderRefuerzo() {
   var el=document.getElementById('p-refuerzo'); if (!el) return;
-  var subs=getPadresSubjectData(), weak=[];
-  subs.forEach(function(s){
-    s.items.forEach(function(item){
-      if(item.total===0) return;
-      var p2=_pct(item.ok,item.total);
-      if(p2<75) weak.push({name:item.name,subject:s.name,pct:p2});
-    });
-  });
-  weak.sort(function(a,b){return a.pct-b.pct;});
+  var weak=statsGetToReforzar();
+  el.innerHTML='';
   if(weak.length===0){
-    el.innerHTML='<div style="background:#DCFCE7;border:0.5px solid #16A34A;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px">'
-      +'<div style="font-size:24px;flex-shrink:0">🌟</div>'
-      +'<div><div style="font-size:13px;font-weight:800;color:#166534;font-family:var(--f);margin-bottom:3px">¡Todo por encima del 75%!</div>'
-      +'<div style="font-size:11px;color:#16A34A;font-family:var(--f);line-height:1.5">Está dominando todos los contenidos.</div></div></div>';
+    el.innerHTML='<div style="background:#DCFCE7;border:0.5px solid #16A34A;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px"><div style="font-size:24px;flex-shrink:0">🌟</div><div><div style="font-size:13px;font-weight:800;color:#166534;font-family:var(--f);margin-bottom:3px">¡Todo por encima del 75%!</div><div style="font-size:11px;color:#16A34A;font-family:var(--f);line-height:1.5">Está dominando todos los contenidos.</div></div></div>';
     return;
   }
   function urg(p2){
@@ -366,7 +298,7 @@ function renderRefuerzo() {
       +'<div style="width:38px;height:38px;border-radius:50%;background:'+u.bg+';display:flex;align-items:center;justify-content:center;flex-shrink:0">'
       +'<span style="font-size:10px;font-weight:800;color:'+u.tc+';font-family:var(--f)">'+w.pct+'%</span></div>'
       +'<div style="flex:1"><div style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">'+w.name+'</div>'
-      +'<div style="font-size:10px;color:var(--gray-400);margin-top:1px">'+w.subject+'</div></div>'
+      +'<div style="font-size:10px;color:var(--gray-400);margin-top:1px">'+w.subjectName+'</div></div>'
       +'<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:'+u.bb+';color:'+u.bc+'">'+u.badge+'</span></div>';
   });
   html+='</div>'; el.innerHTML=html;
