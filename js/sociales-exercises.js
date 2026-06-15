@@ -37,8 +37,6 @@ function loadSocEx() {
   var total = SO.queue.length;
   SO.attempt = 1;
   SO.done    = false;
-  SO.relLeft    = null;
-  SO.relMatched = [];
 
   setEl('soc-ex-badge', 'Pregunta ' + (SO.idx+1) + ' de ' + total);
   setBar('soc-ex-prog', Math.round(SO.idx/total*100));
@@ -50,77 +48,91 @@ function loadSocEx() {
   document.getElementById('soc-ex-fb').style.display   = 'none';
   document.getElementById('soc-ex-next').style.display = 'none';
 
-  if (ex.tipo === 'vf')               renderSocVF(ex, area);
-  else if (ex.tipo === 'relacionar')  renderSocRelacionar(ex, area);
-  else if (ex.tipo === 'completar')   renderSocCompletar(ex, area);
+  if (ex.tipo === 'vf')              _socStartVF(ex, area);
+  else if (ex.tipo === 'relacionar') _socStartRelacionar(ex, area);
+  else if (ex.tipo === 'completar')  _socStartCompletar(ex, area);
 }
 
-/* ---- VERDADERO / FALSO — usa engine-multiple-choice ---- */
-function renderSocVF(ex, area) {
-  // Renderizado específico de V/F (botones grandes especiales)
+/* ---- Config base compartida ---- */
+function _socBaseConfig(ex) {
+  return {
+    queue:       SO.queue,
+    idx:         SO.idx,
+    prefix:      'soc-ex',
+    subjectKey:  'sociales',
+    ptsFirst:    10,
+    ptsSecond:   5,
+    setIdx:      function(v){ SO.idx = v; },
+    onFinish:    function(){ go('s-sociales'); },
+    onAdvance:   function(){ loadSocEx(); }
+  };
+}
+
+/* ---- VERDADERO / FALSO ---- */
+function _socStartVF(ex, area) {
+  // Tarjeta con la afirmación
   var card = document.createElement('div');
   card.style.cssText = 'background:var(--gray-50);border:0.5px solid var(--gray-100);border-radius:14px;padding:20px 16px;margin-bottom:16px;text-align:center';
   card.innerHTML = '<div style="font-family:var(--f);font-size:15px;font-weight:700;color:var(--gray-800);line-height:1.5">"' + ex.pregunta + '"</div>';
   area.appendChild(card);
 
-  var btns = document.createElement('div');
-  btns.style.cssText = 'display:grid;grid-template-columns:1fr 1fr;gap:10px';
+  // Contenedor de opciones (requerido por el motor)
+  var optsEl = document.createElement('div');
+  optsEl.id = 'soc-ex-opts';
+  area.appendChild(optsEl);
 
-  [true, false].forEach(function(val) {
-    var btn = document.createElement('button');
-    btn.style.cssText = 'padding:16px;border-radius:14px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-size:18px;font-weight:800;cursor:pointer;transition:all .15s';
-    btn.innerHTML = val ? '✅ Verdadero' : '❌ Falso';
-    btn.addEventListener('click', function() {
-      _socVFCheck(val, ex, btns);
+  var config = _socBaseConfig(ex);
+  config.exerciseKey  = 'sociales-vf';
+  config.tryAgainMsg  = '❌ No es correcto — inténtalo de nuevo';
+  config.getExplanation = function(e){ return e.explicacion || ''; };
+
+  // Rendering personalizado: botones grandes V/F
+  config.renderOpts = function(container, e, attempt, onAnswer) {
+    container.style.cssText = 'display:grid;grid-template-columns:1fr 1fr;gap:10px';
+    [true, false].forEach(function(val) {
+      var btn = document.createElement('button');
+      btn.style.cssText = 'padding:16px;border-radius:14px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-size:18px;font-weight:800;cursor:pointer;transition:all .15s';
+      btn.innerHTML = val ? '✅ Verdadero' : '❌ Falso';
+      btn.addEventListener('click', function() {
+        // Deshabilitar todos los botones inmediatamente
+        Array.from(container.children).forEach(function(b){ b.disabled = true; });
+        if (attempt === 2) {
+          // En segundo intento deshabilitar solo el incorrecto
+        }
+        onAnswer(val);
+      });
+      container.appendChild(btn);
     });
-    btns.appendChild(btn);
-  });
-  area.appendChild(btns);
-}
+  };
 
-function _socVFCheck(val, ex, btns) {
-  if (SO.done) return;
-  var isCorrect = val === ex.respuesta;
-  var fbEl  = document.getElementById('soc-ex-fb');
-  var nextEl = document.getElementById('soc-ex-next');
-  fbEl.style.display = 'block';
+  // Cuando falla en primer intento, deshabilitar el botón pulsado
+  config.onWrong = function(selected, e, attempt) {
+    if (attempt === 1) {
+      var container = document.getElementById('soc-ex-opts');
+      if (!container) return;
+      // Re-habilitar el contrario, deshabilitar el pulsado
+      Array.from(container.children).forEach(function(btn) {
+        var isVerdadero = btn.innerHTML.includes('Verdadero');
+        var btnVal = isVerdadero ? true : false;
+        if (btnVal === selected) {
+          btn.disabled = true;
+          btn.style.opacity = '0.4';
+        } else {
+          btn.disabled = false;
+        }
+      });
+    }
+  };
 
-  // Deshabilitar botones
-  btns.querySelectorAll('button').forEach(function(b) { b.disabled = true; });
-
-  if (isCorrect) {
-    SO.done = true;
-    fbEl.className = 'feedback fb-ok';
-    var pts = SO.attempt === 1 ? 10 : 5;
-    fbEl.innerHTML = '✅ ' + (SO.attempt === 1 ? '¡Correcto! +' + pts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + pts + ' pts') +
-      '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
-    nextEl.style.display = 'block';
-    recordResult('sociales', 'sociales-vf', true);
-    awardPts(pts, 'sociales');
-  } else if (SO.attempt === 1) {
-    SO.attempt = 2;
-    fbEl.className = 'feedback fb-err';
-    fbEl.textContent = '❌ No es correcto — inténtalo de nuevo';
-    // Re-habilitar botones para segundo intento
-    btns.querySelectorAll('button').forEach(function(b) {
-      if ((val === true && b.innerHTML.includes('Verdadero')) || (val === false && b.innerHTML.includes('Falso'))) {
-        b.disabled = true; b.style.opacity = '0.4';
-      } else {
-        b.disabled = false;
-      }
-    });
-  } else {
-    SO.done = true;
-    fbEl.className = 'feedback fb-err';
-    fbEl.innerHTML = '❌ La respuesta es ' + (ex.respuesta ? 'Verdadero' : 'Falso') +
-      '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
-    nextEl.style.display = 'block';
-    recordResult('sociales', 'sociales-vf', false);
-  }
+  // Mostrar la pregunta con el motor
+  ex.question  = ex.pregunta;  // normalizar campo
+  ex.answer    = ex.respuesta; // normalizar campo
+  ex.options   = [true, false];
+  mcShowQuestion(config);
 }
 
 /* ---- RELACIONAR — usa engine-matching ---- */
-function renderSocRelacionar(ex, area) {
+function _socStartRelacionar(ex, area) {
   area.id = 'soc-rel-container';
 
   var instr = document.createElement('p');
@@ -128,11 +140,10 @@ function renderSocRelacionar(ex, area) {
   instr.textContent = ex.pregunta;
   area.appendChild(instr);
 
-  // Convertir pares del JSON al formato del motor
-  var pairs = ex.pares.map(function(p) { return { left: p.izq, right: p.der }; });
+  var pairs = shuffleSoc(ex.pares.map(function(p){ return { left: p.izq, right: p.der }; }));
 
   SO.matchState = mcMatchInit({
-    pairs:       shuffleSoc(pairs),
+    pairs:       pairs,
     containerId: 'soc-rel-container',
     prefix:      'soc-ex',
     subjectKey:  'sociales',
@@ -142,8 +153,9 @@ function renderSocRelacionar(ex, area) {
   });
 }
 
-/* ---- COMPLETAR LA FRASE — usa engine-multiple-choice ---- */
-function renderSocCompletar(ex, area) {
+/* ---- COMPLETAR LA FRASE ---- */
+function _socStartCompletar(ex, area) {
+  // Tarjeta con la frase
   var card = document.createElement('div');
   card.style.cssText = 'background:var(--gray-50);border:0.5px solid var(--gray-100);border-radius:14px;padding:20px 16px;margin-bottom:16px;text-align:center';
   var html = ex.pregunta.replace('_____', '<span style="display:inline-block;min-width:80px;border-bottom:2px solid #0F6E56;margin:0 4px;color:#0F6E56;font-weight:800">?</span>');
@@ -151,56 +163,65 @@ function renderSocCompletar(ex, area) {
   area.appendChild(card);
 
   var optsEl = document.createElement('div');
-  optsEl.style.cssText = 'display:flex;flex-direction:column;gap:8px';
-  optsEl.id = 'soc-comp-opts';
-
-  shuffleSoc(ex.opciones.map(function(o, i){ return {text:o, idx:i}; })).forEach(function(opt) {
-    var btn = document.createElement('button');
-    btn.style.cssText = 'padding:14px 16px;border-radius:12px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-size:14px;font-weight:700;cursor:pointer;transition:all .15s;text-align:left;color:var(--gray-700)';
-    btn.textContent = opt.text;
-    btn.addEventListener('click', function() { _socCompCheck(opt.idx, ex, btn, optsEl); });
-    optsEl.appendChild(btn);
-  });
+  optsEl.id = 'soc-ex-opts';
   area.appendChild(optsEl);
-}
 
-function _socCompCheck(idx, ex, btn, optsEl) {
-  if (SO.done) return;
-  var isCorrect = idx === ex.respuesta;
-  var fbEl  = document.getElementById('soc-ex-fb');
-  var nextEl = document.getElementById('soc-ex-next');
-  fbEl.style.display = 'block';
+  var config = _socBaseConfig(ex);
+  config.exerciseKey    = 'sociales-completar';
+  config.tryAgainMsg    = '❌ No es correcto — inténtalo de nuevo';
+  config.getExplanation = function(e){ return e.explicacion || ''; };
 
-  btn.style.borderColor = isCorrect ? '#22C55E' : '#EF4444';
-  btn.style.background  = isCorrect ? '#F0FDF4' : '#FEF2F2';
+  // Rendering personalizado: botones de texto apilados
+  config.renderOpts = function(container, e, attempt, onAnswer) {
+    container.style.cssText = 'display:flex;flex-direction:column;gap:8px';
+    shuffleSoc(e.opciones.map(function(o, i){ return {text:o, idx:i}; })).forEach(function(opt) {
+      var btn = document.createElement('button');
+      btn.style.cssText = 'padding:14px 16px;border-radius:12px;border:2px solid var(--gray-200);background:white;font-family:var(--f);font-size:14px;font-weight:700;cursor:pointer;transition:all .15s;text-align:left;color:var(--gray-700)';
+      btn.textContent = opt.text;
+      btn.dataset.idx = opt.idx;
+      btn.addEventListener('click', function() {
+        btn.style.borderColor = '#7C3AED';
+        btn.style.background  = '#EDE9FE';
+        onAnswer(opt.idx);
+      });
+      container.appendChild(btn);
+    });
+  };
 
-  if (isCorrect) {
-    SO.done = true;
-    fbEl.className = 'feedback fb-ok';
-    var pts = SO.attempt === 1 ? 10 : 5;
-    fbEl.innerHTML = '✅ ' + (SO.attempt === 1 ? '¡Correcto! +' + pts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + pts + ' pts') +
-      '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
-    nextEl.style.display = 'block';
-    recordResult('sociales', 'sociales-completar', true);
-    awardPts(pts, 'sociales');
-  } else if (SO.attempt === 1) {
-    SO.attempt = 2;
-    fbEl.className = 'feedback fb-err';
-    fbEl.textContent = '❌ No es correcto — inténtalo de nuevo';
-    btn.disabled = true; btn.style.opacity = '0.5';
-  } else {
-    SO.done = true;
-    optsEl.querySelectorAll('button').forEach(function(b) {
-      if (b.textContent === ex.opciones[ex.respuesta]) {
-        b.style.borderColor = '#22C55E'; b.style.background = '#F0FDF4';
+  config.onCorrect = function(selected, e, attempt) {
+    var container = document.getElementById('soc-ex-opts');
+    if (!container) return;
+    Array.from(container.children).forEach(function(btn) {
+      btn.disabled = true;
+      if (parseInt(btn.dataset.idx) === e.respuesta) {
+        btn.style.borderColor = '#22C55E'; btn.style.background = '#F0FDF4';
       }
     });
-    fbEl.className = 'feedback fb-err';
-    fbEl.innerHTML = '❌ La respuesta correcta es: <strong>' + ex.opciones[ex.respuesta] + '</strong>' +
-      '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
-    nextEl.style.display = 'block';
-    recordResult('sociales', 'sociales-completar', false);
-  }
+  };
+
+  config.onWrong = function(selected, e, attempt) {
+    var container = document.getElementById('soc-ex-opts');
+    if (!container) return;
+    if (attempt === 1) {
+      Array.from(container.children).forEach(function(btn) {
+        if (parseInt(btn.dataset.idx) === selected) {
+          btn.disabled = true;
+          btn.style.borderColor = '#EF4444';
+          btn.style.background  = '#FEF2F2';
+          btn.style.opacity = '0.5';
+        } else {
+          btn.disabled = false;
+          btn.style.borderColor = 'var(--gray-200)';
+          btn.style.background  = 'white';
+        }
+      });
+    }
+  };
+
+  ex.question = ex.pregunta;
+  ex.answer   = ex.respuesta;
+  ex.options  = ex.opciones;
+  mcShowQuestion(config);
 }
 
 function socExNext() {
