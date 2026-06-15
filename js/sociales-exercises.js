@@ -86,7 +86,7 @@ function checkSocVF(val, ex) {
     var socVfPts = SO.attempt === 1 ? 10 : 5;
     fbEl.innerHTML = '✅ ' + (SO.attempt === 1 ? '¡Correcto! +' + socVfPts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + socVfPts + ' pts') + '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
     document.getElementById('soc-ex-next').style.display = 'block';
-    recordResult('sociales', 'vf', true);
+    recordResult('sociales', 'sociales-vf', true);
     awardPts(socVfPts, 'sociales');
     updateSubjectUI('sociales');
   } else if (SO.attempt === 1) {
@@ -98,7 +98,7 @@ function checkSocVF(val, ex) {
     fbEl.className = 'feedback fb-err';
     fbEl.innerHTML = '❌ La respuesta es ' + (ex.respuesta ? 'Verdadero' : 'Falso') + '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
     document.getElementById('soc-ex-next').style.display = 'block';
-    recordResult('sociales', 'vf', false);
+    recordResult('sociales', 'sociales-vf', false);
     updateSubjectUI('sociales');
   }
 }
@@ -265,7 +265,7 @@ function checkSocRelacionar() {
     var socRelPts = SO.attempt === 1 ? 10 : 5;
     fbEl.textContent = '✅ ' + (SO.attempt === 1 ? '¡Todos los pares correctos! +' + socRelPts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + socRelPts + ' pts');
     document.getElementById('soc-ex-next').style.display = 'block';
-    recordResult('sociales', 'relacionar', true);
+    recordResult('sociales', 'sociales-relacionar', true);
     awardPts(socRelPts, 'sociales');
     updateSubjectUI('sociales');
   } else if (SO.attempt === 1) {
@@ -329,7 +329,7 @@ function checkSocRelacionar() {
     fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ Aquí están los pares correctos';
     document.getElementById('soc-ex-next').style.display = 'block';
-    recordResult('sociales', 'relacionar', false);
+    recordResult('sociales', 'sociales-relacionar', false);
     updateSubjectUI('sociales');
   }
 }
@@ -372,7 +372,7 @@ function checkSocCompletar(idx, ex, btn, opts) {
     var socCompPts = SO.attempt === 1 ? 10 : 5;
     fbEl.innerHTML = '✅ ' + (SO.attempt === 1 ? '¡Correcto! +' + socCompPts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + socCompPts + ' pts') + '<div style="font-size:12px;margin-top:6px;opacity:.8">' + ex.explicacion + '</div>';
     document.getElementById('soc-ex-next').style.display = 'block';
-    recordResult('sociales', 'completar', true);
+    recordResult('sociales', 'sociales-completar', true);
     awardPts(socCompPts, 'sociales');
     updateSubjectUI('sociales');
   } else if (SO.attempt === 1) {
@@ -398,7 +398,7 @@ function checkSocCompletar(idx, ex, btn, opts) {
       }
     });
     document.getElementById('soc-ex-next').style.display = 'block';
-    recordResult('sociales', 'completar', false);
+    recordResult('sociales', 'sociales-completar', false);
     updateSubjectUI('sociales');
   }
 }
