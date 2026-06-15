@@ -149,10 +149,8 @@ function getPadresSubjectData() {
     gramOk+=(lErr[k+'_ok']||0); gramTotal+=(lErr[k+'_ok']||0)+(lErr[k+'_fail']||0);
   });
 
-  var invOk=0, invTotal=0;
-  ['ex1','ex2','ex3','ex4','ex5','ex6','ex7','ex8','ex9','ex10'].forEach(function(k){
-    invOk+=(scErr[k+'_ok']||0); invTotal+=(scErr[k+'_ok']||0)+(scErr[k+'_fail']||0);
-  });
+  var invOk    = scErr['invertebrates_ok']  || 0;
+  var invTotal = (scErr['invertebrates_ok']||0) + (scErr['invertebrates_fail']||0);
 
   return [
     { name:'Mates', icon:'🔢', color:'#534AB7',
