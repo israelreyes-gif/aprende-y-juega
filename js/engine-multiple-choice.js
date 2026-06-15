@@ -117,6 +117,7 @@ function mcRecordResult(config, correct, firstAttempt) {
     awardPts(firstAttempt ? ptsFirst : ptsSecond, key);
   }
   updateSubjectUI(key);
+  updateHomeUI();
   setEl('home-pts-pill', '⭐ ' + ST.totalPts + ' pts');
 }
 
