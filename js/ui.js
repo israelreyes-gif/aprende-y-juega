@@ -187,8 +187,8 @@ function updateErrorsPanel() {
   }
 
   // Sumas y restas juntas
-  var srOk = (mErr['suma_ok']||0)+(mErr['resta_ok']||0);
-  var srFail = (mErr['suma_fail']||0)+(mErr['resta_fail']||0);
+  var srOk = (mErr['mates-suma_ok']||0)+(mErr['mates-resta_ok']||0);
+  var srFail = (mErr['mates-suma_fail']||0)+(mErr['mates-resta_fail']||0);
   var srTotal = srOk + srFail;
 
   var allErrors = [];
@@ -196,12 +196,12 @@ function updateErrorsPanel() {
     allErrors.push(['suma', srFail]);
   }
   [
-    {k:'multi', e:mErr}, {k:'prob', e:mErr}, {k:'mix', e:mErr},
-    {k:'gram-bv', e:lErr}, {k:'gram-gj', e:lErr}, {k:'gram-czq', e:lErr},
-    {k:'gram-lly', e:lErr}, {k:'gram-rr', e:lErr}, {k:'comp', e:lErr}, {k:'desc', e:lErr}, {k:'dict', e:lErr},
-    {k:'tobe', e:eErr}, {k:'modals', e:eErr}, {k:'vocab', e:eErr},
-    {k:'invertebrates', e:scErr}, {k:'mix', e:scErr},
-    {k:'vf', e:socErr}, {k:'relacionar', e:socErr}, {k:'completar', e:socErr}
+    {k:'mates-multi', e:mErr}, {k:'mates-prob', e:mErr}, {k:'mates-mix', e:mErr},
+    {k:'lengua-gram-bv', e:lErr}, {k:'lengua-gram-gj', e:lErr}, {k:'lengua-gram-czq', e:lErr},
+    {k:'lengua-gram-lly', e:lErr}, {k:'lengua-gram-rr', e:lErr}, {k:'lengua-comp', e:lErr}, {k:'lengua-desc', e:lErr}, {k:'lengua-dict', e:lErr},
+    {k:'english-tobe', e:eErr}, {k:'english-modals', e:eErr}, {k:'english-vocab', e:eErr},
+    {k:'sciences-invertebrates', e:scErr}, {k:'sciences-mix', e:scErr},
+    {k:'sociales-vf', e:socErr}, {k:'sociales-relacionar', e:socErr}, {k:'sociales-completar', e:socErr}
   ].forEach(function(item) {
     var r = getPct(item.e, item.k);
     if (r && r.pct < 75) allErrors.push([item.k, r.fail]);
