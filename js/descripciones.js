@@ -142,7 +142,7 @@ function enviarDescripcion() {
 
   // Guardar puntos
   awardPts(ptsTotales, 'lengua');
-  recordResult('lengua', 'desc', encontradas.length >= Math.round(total * 0.6));
+  recordResult('lengua', 'lengua-desc', encontradas.length >= Math.round(total * 0.6));
 
   // Palabras NO encontradas
   var noEncontradas = DE.current.keywords.filter(function(kw) {
