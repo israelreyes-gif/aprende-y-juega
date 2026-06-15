@@ -94,34 +94,41 @@ function updateSubjectUI(subject) {
   var stData = ST[subject] || {};
 
   if (subject === 'mates') {
-    setEl('ms-hoy',       stData.hoy);
-    setEl('ms-hoy-pct',   pct(stData.hoyOk, stData.hoy));
-    setEl('ms-total',     stData.total);
-    setEl('ms-total-pct', statsPctStr(s.pct));
-    var prog = Math.min(100, Math.round(stData.hoy / 20 * 100));
-    setBar('mates-hprog-fill', prog);
-    setEl('mates-hprog-lbl', stData.hoy + ' / 20');
+    var sm = statsGetSubject('mates');
+    var stM = ST.mates || {};
+    setEl('ms-hoy',       stM.hoy || 0);
+    setEl('ms-hoy-pct',   statsPctStr(sm.pct));
+    setEl('ms-total',     stM.total || 0);
+    setEl('ms-total-pct', statsPctStr(sm.pct));
+    setBar('mates-hprog-fill', Math.min(100, Math.round((stM.hoy || 0) / 20 * 100)));
+    setEl('mates-hprog-lbl', (stM.hoy || 0) + ' / 20');
   } else if (subject === 'english') {
-    setEl('en-hoy',       stData.hoy);
-    setEl('en-hoy-pct',   pct(stData.hoyOk, stData.hoy));
-    setEl('en-total',     stData.total);
-    setEl('en-total-pct', statsPctStr(s.pct));
-    setBar('english-hprog-fill', Math.min(100, Math.round(stData.hoy / 10 * 100)));
-    setEl('english-hprog-lbl', stData.hoy + ' / 10');
+    var se = statsGetSubject('english');
+    var stE = ST.english || {};
+    setEl('en-hoy',       stE.hoy || 0);
+    setEl('en-hoy-pct',   statsPctStr(se.pct));
+    setEl('en-total',     stE.total || 0);
+    setEl('en-total-pct', statsPctStr(se.pct));
+    setBar('english-hprog-fill', Math.min(100, Math.round((stE.hoy || 0) / 10 * 100)));
+    setEl('english-hprog-lbl', (stE.hoy || 0) + ' / 10');
   } else if (subject === 'sciences') {
-    setEl('sc-hoy',       stData.hoy);
-    setEl('sc-hoy-pct',   pct(stData.hoyOk, stData.hoy));
-    setEl('sc-total',     stData.total);
-    setEl('sc-total-pct', statsPctStr(s.pct));
-    setBar('sciences-hprog-fill', Math.min(100, Math.round(stData.hoy / 10 * 100)));
-    setEl('sciences-hprog-lbl', stData.hoy + ' / 10');
+    var sc = statsGetSubject('sciences');
+    var stSc = ST.sciences || {};
+    setEl('sc-hoy',       stSc.hoy || 0);
+    setEl('sc-hoy-pct',   statsPctStr(sc.pct));
+    setEl('sc-total',     stSc.total || 0);
+    setEl('sc-total-pct', statsPctStr(sc.pct));
+    setBar('sciences-hprog-fill', Math.min(100, Math.round((stSc.hoy || 0) / 10 * 100)));
+    setEl('sciences-hprog-lbl', (stSc.hoy || 0) + ' / 10');
   } else {
-    setEl('ls-hoy',       stData.hoy);
-    setEl('ls-hoy-pct',   pct(stData.hoyOk, stData.hoy));
-    setEl('ls-total',     stData.total);
-    setEl('ls-total-pct', statsPctStr(s.pct));
-    setBar('lengua-hprog-fill', Math.min(100, Math.round(stData.hoy / 10 * 100)));
-    setEl('lengua-hprog-lbl', stData.hoy + ' / 10');
+    var sl = statsGetSubject('lengua');
+    var stL = ST.lengua || {};
+    setEl('ls-hoy',       stL.hoy || 0);
+    setEl('ls-hoy-pct',   statsPctStr(sl.pct));
+    setEl('ls-total',     stL.total || 0);
+    setEl('ls-total-pct', statsPctStr(sl.pct));
+    setBar('lengua-hprog-fill', Math.min(100, Math.round((stL.hoy || 0) / 10 * 100)));
+    setEl('lengua-hprog-lbl', (stL.hoy || 0) + ' / 10');
   }
 }
 
