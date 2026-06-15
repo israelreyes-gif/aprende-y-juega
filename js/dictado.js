@@ -197,7 +197,7 @@ function dictCheck() {
     document.getElementById('dict-next').style.display = 'block';
 
     // Registrar resultado
-    recordResult('lengua', 'dict', true);
+    recordResult('lengua', 'lengua-dict', true);
     awardPts(earned, 'lengua');
     updateSubjectUI('lengua');
 
@@ -228,7 +228,7 @@ function dictCheck() {
     document.getElementById('dict-check-btn').style.display = 'none';
     document.getElementById('dict-next').style.display = 'block';
 
-    recordResult('lengua', 'dict', false);
+    recordResult('lengua', 'lengua-dict', false);
     updateSubjectUI('lengua');
   }
 }
