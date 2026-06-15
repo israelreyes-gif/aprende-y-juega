@@ -107,19 +107,14 @@ function mcCheckAnswer(config, selected, ex, attempt) {
 }
 
 function mcRecordResult(config, correct, firstAttempt) {
-  var key = config.subjectKey;
-  if (!ST[key]) ST[key] = { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} };
-  var s = ST[key];
-  s.hoy++; s.total++;
+  var key       = config.subjectKey;
+  var exKey     = config.exerciseKey || key;
+  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
+  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+
+  recordResult(key, exKey, correct);
   if (correct) {
-    s.hoyOk++; s.totalOk++;
-    s.streak++;
-    var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-    var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
     awardPts(firstAttempt ? ptsFirst : ptsSecond, key);
-  } else {
-    s.streak = Math.max(0, s.streak - 1);
-    saveState();
   }
   updateSubjectUI(key);
   setEl('home-pts-pill', '⭐ ' + ST.totalPts + ' pts');
