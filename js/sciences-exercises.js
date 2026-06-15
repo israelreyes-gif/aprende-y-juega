@@ -36,7 +36,7 @@ function showSciencesEx() {
     idx: SC.exIdx,
     prefix: 'sc-ex',
     subjectKey: 'sciences',
-    exerciseKey: 'invertebrates',
+    exerciseKey: 'sciences-invertebrates',
     badgeLabel: 'Question',
     getExplanation: _sciencesExplanation
   });
@@ -77,7 +77,7 @@ function showSciencesMix() {
     idx: SC.mixIdx,
     prefix: 'sc-mix',
     subjectKey: 'sciences',
-    exerciseKey: 'mix',
+    exerciseKey: 'sciences-mix',
     badgeLabel: 'Question',
     getExplanation: _sciencesExplanation
   });
