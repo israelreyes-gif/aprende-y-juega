@@ -165,7 +165,7 @@ function pickWord(chosen, correct, full) {
     ST.gramStreak++;
     saveState();
     awardPts(gramPts, 'lengua');
-    recordResult('lengua', key, true);
+    recordResult('lengua', 'lengua-' + key, true);
     fb.className = 'feedback ok';
     fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! Con ' + correct + ': "' + full + '" 🎉 +' + gramPts + ' pts</div>';
     document.getElementById('gram-next').style.display = 'block';
@@ -196,7 +196,7 @@ function pickWord(chosen, correct, full) {
       L.gramIntentos = 0;
       ST.gramStreak = Math.max(0, ST.gramStreak - 1);
       saveState();
-      recordResult('lengua', key, false);
+      recordResult('lengua', 'lengua-' + key, false);
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">Se escribe con <strong>' + correct + '</strong>: "' + full + '" 📖</div>' +
                      '<div class="fbs">Recuerda esta regla para la próxima.</div>';
