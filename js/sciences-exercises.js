@@ -31,12 +31,14 @@ function startSciencesExercises() {
 }
 
 function showSciencesEx() {
+  var ex = SC.exQueue[SC.exIdx];
+  var exKey = 'ex' + (SC.exIdx + 1); // ex1, ex2, ... ex10
   mcShowQuestion({
     queue: SC.exQueue,
     idx: SC.exIdx,
     prefix: 'sc-ex',
     subjectKey: 'sciences',
-    exerciseKey: 'sciences-ex',
+    exerciseKey: exKey,
     badgeLabel: 'Question',
     getExplanation: _sciencesExplanation
   });
@@ -77,7 +79,7 @@ function showSciencesMix() {
     idx: SC.mixIdx,
     prefix: 'sc-mix',
     subjectKey: 'sciences',
-    exerciseKey: 'sciences-mix',
+    exerciseKey: 'mix',
     badgeLabel: 'Question',
     getExplanation: _sciencesExplanation
   });
