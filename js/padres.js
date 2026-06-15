@@ -19,7 +19,8 @@ function renderPadres() {
     .then(function(perfiles) {
       padresPerfilesCache = perfiles;
       _renderChips(perfiles);
-      document.getElementById('p-main').style.display = 'none';
+      var pMain = document.getElementById('p-main');
+      if (pMain) pMain.style.display = 'none';
       // Auto-seleccionar perfil activo
       if (perfilActivoId && perfiles.some(function(p){ return p.id === perfilActivoId; })) {
         padresSelectPerfil(perfilActivoId);
