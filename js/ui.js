@@ -193,7 +193,7 @@ function updateErrorsPanel() {
 
   var allErrors = [];
   if (srTotal > 0 && Math.round(srOk/srTotal*100) < 75) {
-    allErrors.push(['suma', srFail]);
+    allErrors.push(['mates-suma', srFail]);
   }
   [
     {k:'mates-multi', e:mErr}, {k:'mates-prob', e:mErr}, {k:'mates-mix', e:mErr},
