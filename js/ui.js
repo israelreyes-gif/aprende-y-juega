@@ -200,7 +200,7 @@ function updateErrorsPanel() {
     {k:'gram-bv', e:lErr}, {k:'gram-gj', e:lErr}, {k:'gram-czq', e:lErr},
     {k:'gram-lly', e:lErr}, {k:'gram-rr', e:lErr}, {k:'comp', e:lErr}, {k:'desc', e:lErr}, {k:'dict', e:lErr},
     {k:'tobe', e:eErr}, {k:'modals', e:eErr}, {k:'vocab', e:eErr},
-    {k:'invertebrates', e:scErr}, {k:'mix-sc', e:scErr},
+    {k:'invertebrates', e:scErr}, {k:'mix', e:scErr},
     {k:'vf', e:socErr}, {k:'relacionar', e:socErr}, {k:'completar', e:socErr}
   ].forEach(function(item) {
     var r = getPct(item.e, item.k);
