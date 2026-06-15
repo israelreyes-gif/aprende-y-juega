@@ -1,5 +1,6 @@
 /* =============================================
    UI.JS — Actualización del interfaz con datos reales
+   Usa stats.js como fuente única de estadísticas
    ============================================= */
 
 /* ---- Helpers ---- */
@@ -18,7 +19,6 @@ function updateStreakUI() {
   setEl('streak-num', ST.streak);
   setEl('home-streak-pill', '🔥 ' + ST.streak + ' días');
 
-  var today = todayStr();
   var dow = new Date().getDay();
   var monday = new Date();
   monday.setDate(monday.getDate() - (dow === 0 ? 6 : dow - 1));
@@ -47,54 +47,40 @@ function updateHomeUI() {
   var greet = h < 13 ? '¡Buenos días, ' + nombre : h < 20 ? '¡Buenas tardes, ' + nombre : '¡Buenas noches, ' + nombre;
   setEl('home-greeting', greet);
 
-  // Mates
-  var m = ST.mates;
+  var m = statsGetSubject('mates');
   setEl('pm-pts', '⭐ ' + m.pts + ' pts');
-  var mhPct = Math.min(100, Math.round(m.hoy / 20 * 100));
-  setBar('pm-hoy-bar', mhPct);
+  setBar('pm-hoy-bar', Math.min(100, Math.round(m.hoy / 20 * 100)));
   setEl('pm-hoy-val', m.hoy + ' ejerc.');
-  var maPct = m.total > 0 ? Math.min(100, Math.round(m.totalOk / m.total * 100)) : 0;
-  setBar('pm-acc-bar', maPct);
-  setEl('pm-acc-val', pct(m.totalOk, m.total) + ' aciertos');
+  setBar('pm-acc-bar', m.pct !== null ? m.pct : 0);
+  setEl('pm-acc-val', statsPctStr(m.pct) + ' aciertos');
 
-  // Lengua
-  var l = ST.lengua;
+  var l = statsGetSubject('lengua');
   setEl('pl-pts', '⭐ ' + l.pts + ' pts');
-  var lhPct = Math.min(100, Math.round(l.hoy / 10 * 100));
-  setBar('pl-hoy-bar', lhPct);
+  setBar('pl-hoy-bar', Math.min(100, Math.round(l.hoy / 10 * 100)));
   setEl('pl-hoy-val', l.hoy + ' ejerc.');
-  var laPct = l.total > 0 ? Math.min(100, Math.round(l.totalOk / l.total * 100)) : 0;
-  setBar('pl-acc-bar', laPct);
-  setEl('pl-acc-val', pct(l.totalOk, l.total) + ' aciertos');
+  setBar('pl-acc-bar', l.pct !== null ? l.pct : 0);
+  setEl('pl-acc-val', statsPctStr(l.pct) + ' aciertos');
 
-  // Sciences
-  if (ST.sciences) {
-    var sc = ST.sciences;
-    setEl('psc-pts', '⭐ ' + sc.pts + ' pts');
-    setBar('psc-hoy-bar', Math.min(100, Math.round(sc.hoy / 10 * 100)));
-    setEl('psc-hoy-val', sc.hoy + ' exerc.');
-    var scaPct = sc.total > 0 ? Math.min(100, Math.round(sc.totalOk / sc.total * 100)) : 0;
-    setBar('psc-acc-bar', scaPct);
-    setEl('psc-acc-val', pct(sc.totalOk, sc.total) + ' correct');
-  }
+  var sc = statsGetSubject('sciences');
+  setEl('psc-pts', '⭐ ' + sc.pts + ' pts');
+  setBar('psc-hoy-bar', Math.min(100, Math.round(sc.hoy / 10 * 100)));
+  setEl('psc-hoy-val', sc.hoy + ' exerc.');
+  setBar('psc-acc-bar', sc.pct !== null ? sc.pct : 0);
+  setEl('psc-acc-val', statsPctStr(sc.pct) + ' correct');
 
-  // English
-  if (ST.sociales) {
-    var soc = ST.sociales;
-    setEl('psoc-pts', '⭐ ' + soc.pts + ' pts');
-    setBar('psoc-hoy-bar', Math.min(100, Math.round(soc.hoy / 10 * 100)));
-    setEl('psoc-hoy-val', soc.hoy + ' ejerc.');
-    setBar('psoc-acc-bar', soc.total > 0 ? Math.min(100, Math.round(soc.totalOk / soc.total * 100)) : 0);
-    setEl('psoc-acc-val', pct(soc.totalOk, soc.total) + ' aciertos');
-  }
-  if (ST.english) {
-    var en = ST.english;
-    setEl('pen-pts', '⭐ ' + en.pts + ' pts');
-    setBar('pen-hoy-bar', Math.min(100, Math.round(en.hoy / 10 * 100)));
-    setEl('pen-hoy-val', en.hoy + ' exerc.');
-    setBar('pen-acc-bar', en.total > 0 ? Math.min(100, Math.round(en.totalOk / en.total * 100)) : 0);
-    setEl('pen-acc-val', pct(en.totalOk, en.total) + ' correct');
-  }
+  var soc = statsGetSubject('sociales');
+  setEl('psoc-pts', '⭐ ' + soc.pts + ' pts');
+  setBar('psoc-hoy-bar', Math.min(100, Math.round(soc.hoy / 10 * 100)));
+  setEl('psoc-hoy-val', soc.hoy + ' ejerc.');
+  setBar('psoc-acc-bar', soc.pct !== null ? soc.pct : 0);
+  setEl('psoc-acc-val', statsPctStr(soc.pct) + ' aciertos');
+
+  var en = statsGetSubject('english');
+  setEl('pen-pts', '⭐ ' + en.pts + ' pts');
+  setBar('pen-hoy-bar', Math.min(100, Math.round(en.hoy / 10 * 100)));
+  setEl('pen-hoy-val', en.hoy + ' exerc.');
+  setBar('pen-acc-bar', en.pct !== null ? en.pct : 0);
+  setEl('pen-acc-val', statsPctStr(en.pct) + ' correct');
 
   updateErrorsPanel();
   if (typeof renderCalHome === 'function') renderCalHome();
@@ -102,150 +88,76 @@ function updateHomeUI() {
 
 /* ---- Stats dentro de cada asignatura ---- */
 function updateSubjectUI(subject) {
+  var s = statsGetSubject(subject);
+  if (!s) return;
+
+  var stData = ST[subject] || {};
+
   if (subject === 'mates') {
-    var m = ST.mates;
-    setEl('ms-hoy',       m.hoy);
-    setEl('ms-hoy-pct',   pct(m.hoyOk, m.hoy));
-    setEl('ms-total',     m.total);
-    setEl('ms-total-pct', pct(m.totalOk, m.total));
-    var prog = Math.min(100, Math.round(m.hoy / 20 * 100));
+    setEl('ms-hoy',       stData.hoy);
+    setEl('ms-hoy-pct',   pct(stData.hoyOk, stData.hoy));
+    setEl('ms-total',     stData.total);
+    setEl('ms-total-pct', statsPctStr(s.pct));
+    var prog = Math.min(100, Math.round(stData.hoy / 20 * 100));
     setBar('mates-hprog-fill', prog);
-    setEl('mates-hprog-lbl', m.hoy + ' / 20');
+    setEl('mates-hprog-lbl', stData.hoy + ' / 20');
   } else if (subject === 'english') {
-    if (!ST.english) return;
-    var en = ST.english;
-    setEl('en-hoy',       en.hoy);
-    setEl('en-hoy-pct',   pct(en.hoyOk, en.hoy));
-    setEl('en-total',     en.total);
-    setEl('en-total-pct', pct(en.totalOk, en.total));
-    var progEn = Math.min(100, Math.round(en.hoy / 10 * 100));
-    setBar('english-hprog-fill', progEn);
-    setEl('english-hprog-lbl', en.hoy + ' / 10');
+    setEl('en-hoy',       stData.hoy);
+    setEl('en-hoy-pct',   pct(stData.hoyOk, stData.hoy));
+    setEl('en-total',     stData.total);
+    setEl('en-total-pct', statsPctStr(s.pct));
+    setBar('english-hprog-fill', Math.min(100, Math.round(stData.hoy / 10 * 100)));
+    setEl('english-hprog-lbl', stData.hoy + ' / 10');
   } else if (subject === 'sciences') {
-    if (!ST.sciences) return;
-    var sc = ST.sciences;
-    setEl('sc-hoy',       sc.hoy);
-    setEl('sc-hoy-pct',   pct(sc.hoyOk, sc.hoy));
-    setEl('sc-total',     sc.total);
-    setEl('sc-total-pct', pct(sc.totalOk, sc.total));
-    var progSc = Math.min(100, Math.round(sc.hoy / 10 * 100));
-    setBar('sciences-hprog-fill', progSc);
-    setEl('sciences-hprog-lbl', sc.hoy + ' / 10');
+    setEl('sc-hoy',       stData.hoy);
+    setEl('sc-hoy-pct',   pct(stData.hoyOk, stData.hoy));
+    setEl('sc-total',     stData.total);
+    setEl('sc-total-pct', statsPctStr(s.pct));
+    setBar('sciences-hprog-fill', Math.min(100, Math.round(stData.hoy / 10 * 100)));
+    setEl('sciences-hprog-lbl', stData.hoy + ' / 10');
   } else {
-    var l = ST.lengua;
-    setEl('ls-hoy',       l.hoy);
-    setEl('ls-hoy-pct',   pct(l.hoyOk, l.hoy));
-    setEl('ls-total',     l.total);
-    setEl('ls-total-pct', pct(l.totalOk, l.total));
-    var prog2 = Math.min(100, Math.round(l.hoy / 10 * 100));
-    setBar('lengua-hprog-fill', prog2);
-    setEl('lengua-hprog-lbl', l.hoy + ' / 10');
+    setEl('ls-hoy',       stData.hoy);
+    setEl('ls-hoy-pct',   pct(stData.hoyOk, stData.hoy));
+    setEl('ls-total',     stData.total);
+    setEl('ls-total-pct', statsPctStr(s.pct));
+    setBar('lengua-hprog-fill', Math.min(100, Math.round(stData.hoy / 10 * 100)));
+    setEl('lengua-hprog-lbl', stData.hoy + ' / 10');
   }
 }
 
-/* ---- Panel de errores frecuentes ---- */
-var ERROR_LABELS = {
-  'mates-suma':                'Sumas y restas',
-  'mates-resta':               'Sumas y restas',
-  'mates-multi':               'Multiplicaciones',
-  'mates-prob':                'Problemas',
-  'mates-mix':                 'Ejercicio mezcla',
-  'lengua-gram-bv':            'Gramática B / V',
-  'lengua-gram-gj':            'Gramática G / J',
-  'lengua-gram-czq':           'Gramática C / Z / Q',
-  'lengua-gram-lly':           'Gramática LL / Y',
-  'lengua-gram-rr':            'Gramática R / RR',
-  'lengua-comp':               'Comprensión lectora',
-  'lengua-desc':               'Descripciones',
-  'lengua-dict':               'Dictado',
-  'english-tobe':              'To Be',
-  'english-modals':            'Modal Verbs',
-  'english-vocab':             'Vocabulary',
-  'sciences-invertebrates':    'Invertebrates',
-  'sciences-mix':              'Mix',
-  'sociales-vf':               'Verdadero/Falso',
-  'sociales-relacionar':       'Relacionar',
-  'sociales-completar':        'Completar frase'
-};
-
+/* ---- Panel de ejercicios a reforzar ---- */
 function updateErrorsPanel() {
   var panel = document.getElementById('errors-panel');
   if (!panel) return;
 
-  // Calcular % por subtipo y filtrar los que estén por debajo del 75%
-  var mErr = ST.mates.errors || {};
-  var lErr = (ST.lengua && ST.lengua.errors) ? ST.lengua.errors : {};
-  var eErr = (ST.english && ST.english.errors) ? ST.english.errors : {};
-  var scErr = (ST.sciences && ST.sciences.errors) ? ST.sciences.errors : {};
-  var socErr = (ST.sociales && ST.sociales.errors) ? ST.sociales.errors : {};
+  var weak = statsGetToReforzar().slice(0, 6);
 
-  function getPct(errors, key) {
-    var ok = errors[key+'_ok']||0, fail = errors[key+'_fail']||0;
-    var total = ok + fail;
-    if (!total) return null;
-    return { pct: Math.round(ok/total*100), fail: fail };
-  }
-
-  // Sumas y restas juntas
-  var srOk = (mErr['mates-suma_ok']||0)+(mErr['mates-resta_ok']||0);
-  var srFail = (mErr['mates-suma_fail']||0)+(mErr['mates-resta_fail']||0);
-  var srTotal = srOk + srFail;
-
-  var allErrors = [];
-  if (srTotal > 0 && Math.round(srOk/srTotal*100) < 75) {
-    allErrors.push(['mates-suma', srFail]);
-  }
-  [
-    {k:'mates-multi', e:mErr}, {k:'mates-prob', e:mErr}, {k:'mates-mix', e:mErr},
-    {k:'lengua-gram-bv', e:lErr}, {k:'lengua-gram-gj', e:lErr}, {k:'lengua-gram-czq', e:lErr},
-    {k:'lengua-gram-lly', e:lErr}, {k:'lengua-gram-rr', e:lErr}, {k:'lengua-comp', e:lErr}, {k:'lengua-desc', e:lErr}, {k:'lengua-dict', e:lErr},
-    {k:'english-tobe', e:eErr}, {k:'english-modals', e:eErr}, {k:'english-vocab', e:eErr},
-    {k:'sciences-invertebrates', e:scErr}, {k:'sciences-mix', e:scErr},
-    {k:'sociales-vf', e:socErr}, {k:'sociales-relacionar', e:socErr}, {k:'sociales-completar', e:socErr}
-  ].forEach(function(item) {
-    var r = getPct(item.e, item.k);
-    if (r && r.pct < 75) allErrors.push([item.k, r.fail]);
-  });
-
-  var sorted = allErrors.sort(function(a,b){ return b[1]-a[1]; }).slice(0,6);
-
-  if (sorted.length === 0) {
+  if (weak.length === 0) {
     panel.innerHTML = '<div style="font-size:13px;color:var(--gray-400);font-weight:600;text-align:center;padding:12px 16px">¡Sin errores acumulados! Sigue así 🌟</div>';
     return;
   }
 
-  // Agrupar por asignatura con sangría
-  var grupos = [
-    { nombre:'Matemáticas', icono:'🔢', pill:'background:#EDE9FE;color:#4C1D95',
-      keys:['mates-suma','mates-resta','mates-multi','mates-prob','mates-mix'] },
-    { nombre:'Lengua', icono:'📚', pill:'background:#FDF2F8;color:#9D174D',
-      keys:['lengua-gram-bv','lengua-gram-gj','lengua-gram-czq','lengua-gram-lly','lengua-gram-rr','lengua-comp','lengua-desc','lengua-dict'] },
-    { nombre:'English', icono:'<svg width="16" height="11" viewBox="0 0 60 40" style="border-radius:2px;vertical-align:middle"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>', pill:'background:#EFF6FF;color:#1D4ED8',
-      keys:['english-tobe','english-modals','english-vocab'] },
-    { nombre:'Sciences', icono:'🔬', pill:'background:#F0FDFA;color:#0F766E',
-      keys:['sciences-invertebrates','sciences-mix'] },
-    { nombre:'Sociales', icono:'🌍', pill:'background:#E1F5EE;color:#085041',
-      keys:['sociales-vf','sociales-relacionar','sociales-completar'] }
-  ];
-
+  // Agrupar por asignatura
+  var subjects = statsGetAll();
   var html = '<div class="errors-card">';
-  grupos.forEach(function(g) {
-    var items = sorted.filter(function(e){ return g.keys.indexOf(e[0]) !== -1; });
+
+  subjects.forEach(function(subj) {
+    var items = weak.filter(function(w){ return w.subjectName === subj.name; });
     if (!items.length) return;
     html += '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">';
     html += '<div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">';
-    html += '<span style="font-size:14px">'+g.icono+'</span>'+g.nombre+'</div>';
-    html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;'+g.pill+'">'+items.length+' área'+(items.length>1?'s':'')+'</span>';
+    html += '<span style="font-size:14px">' + statsIconHtml(subj.icon) + '</span>' + subj.name + '</div>';
+    html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;' + subj.pill + '">' + items.length + ' área' + (items.length > 1 ? 's' : '') + '</span>';
     html += '</div>';
-    items.forEach(function(e, idx) {
-      var label = ERROR_LABELS[e[0]] || e[0];
-      var isLast = idx === items.length-1;
-      html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:3px 0 3px 22px;border-bottom:'+(isLast?'none':'0.5px solid var(--color-border-tertiary)')+';'+(isLast?'margin-bottom:6px':'')+'">';
-      html += '<span style="font-size:11px;color:var(--gray-500);font-family:var(--f)">'+label+'</span>';
-      html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:#FEE2E2;color:#DC2626">'+e[1]+' fallos</span>';
+    items.forEach(function(item, idx) {
+      var isLast = idx === items.length - 1;
+      html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:3px 0 3px 22px;border-bottom:' + (isLast ? 'none' : '0.5px solid var(--color-border-tertiary)') + ';' + (isLast ? 'margin-bottom:6px' : '') + '">';
+      html += '<span style="font-size:11px;color:var(--gray-500);font-family:var(--f)">' + item.name + '</span>';
+      html += '<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:#FEE2E2;color:#DC2626">' + item.fail + ' fallos</span>';
       html += '</div>';
     });
   });
+
   html += '</div>';
   panel.innerHTML = html;
 }
