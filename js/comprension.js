@@ -177,7 +177,7 @@ function evaluateAnswers() {
     if (score >= 4) {
       // ── BUENA PUNTUACIÓN: guardar y mostrar botón siguiente ──
       awardPts(pts, 'lengua');
-      recordResult('lengua', 'comp', true);
+      recordResult('lengua', 'lengua-comp', true);
       ST.compStreak++;
       saveState();
       re.className = 'comp-result ok';
@@ -225,7 +225,7 @@ function evaluateAnswers() {
         // ── SEGUNDO FALLO: mostrar respuestas correctas + botón siguiente ──
         mostrarRespuestasCorrectas();
         awardPts(pts, 'lengua');
-        recordResult('lengua', 'comp', false);
+        recordResult('lengua', 'lengua-comp', false);
         ST.compStreak = Math.max(0, ST.compStreak - 1);
         saveState();
         L.currentHistoria._intentos = 0;
