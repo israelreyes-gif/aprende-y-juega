@@ -133,12 +133,15 @@ function _socStartVF(ex, area) {
 
 /* ---- RELACIONAR — usa engine-matching ---- */
 function _socStartRelacionar(ex, area) {
-  area.id = 'soc-rel-container';
-
   var instr = document.createElement('p');
   instr.style.cssText = 'font-family:var(--f);font-size:13px;color:var(--gray-500);margin:0 0 12px;text-align:center';
   instr.textContent = ex.pregunta;
   area.appendChild(instr);
+
+  // Contenedor específico para el motor de matching
+  var matchContainer = document.createElement('div');
+  matchContainer.id = 'soc-rel-container';
+  area.appendChild(matchContainer);
 
   var pairs = shuffleSoc(ex.pares.map(function(p){ return { left: p.izq, right: p.der }; }));
 
