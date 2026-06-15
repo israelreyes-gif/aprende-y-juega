@@ -48,6 +48,8 @@ function loadSocEx() {
   document.getElementById('soc-ex-fb').style.display   = 'none';
   document.getElementById('soc-ex-next').style.display = 'none';
 
+  console.log('[Sociales] loadSocEx idx:', SO.idx, 'tipo:', ex.tipo, 'pregunta:', ex.pregunta);
+
   if (ex.tipo === 'vf')              _socStartVF(ex, area);
   else if (ex.tipo === 'relacionar') _socStartRelacionar(ex, area);
   else if (ex.tipo === 'completar')  _socStartCompletar(ex, area);
