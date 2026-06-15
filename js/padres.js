@@ -173,11 +173,14 @@ function renderPadresBarChart() {
       responsive:true,
       onClick:function(e,els){
         if(!clickable||!els.length) return;
-        padresSubjectIdx=els[0].index;
-        var back=document.getElementById('p-bar-back'), title=document.getElementById('p-bar-title');
-        if(back) back.style.cssText='display:flex;font-size:12px;font-weight:700;color:var(--purple);cursor:pointer;margin-bottom:10px;align-items:center;gap:4px';
-        if(title) title.textContent=subs[padresSubjectIdx].name;
-        renderPadresBarChart();
+        var idx=els[0].index;
+        setTimeout(function(){
+          padresSubjectIdx=idx;
+          var back=document.getElementById('p-bar-back'), title=document.getElementById('p-bar-title');
+          if(back) back.style.cssText='display:flex;font-size:12px;font-weight:700;color:var(--purple);cursor:pointer;margin-bottom:10px;align-items:center;gap:4px';
+          if(title) title.textContent=subs[idx].name;
+          renderPadresBarChart();
+        },50);
       },
       plugins:{legend:{display:false},tooltip:{enabled:false}},
       layout:{padding:{top:22}},
