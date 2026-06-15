@@ -36,6 +36,7 @@ function showSciencesEx() {
     idx: SC.exIdx,
     prefix: 'sc-ex',
     subjectKey: 'sciences',
+    exerciseKey: 'sciences-ex',
     badgeLabel: 'Question',
     getExplanation: _sciencesExplanation
   });
@@ -76,6 +77,7 @@ function showSciencesMix() {
     idx: SC.mixIdx,
     prefix: 'sc-mix',
     subjectKey: 'sciences',
+    exerciseKey: 'sciences-mix',
     badgeLabel: 'Question',
     getExplanation: _sciencesExplanation
   });
