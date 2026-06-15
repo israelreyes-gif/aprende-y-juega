@@ -78,7 +78,6 @@ var _pinCallback = null;
 function irAPadres() {
   _pinBuffer   = '';
   _pinCallback = function() {
-    if (typeof renderPadres === 'function') renderPadres();
     go('s-padres');
   };
 
