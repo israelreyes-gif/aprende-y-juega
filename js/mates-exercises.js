@@ -234,7 +234,7 @@ function checkSuma() {
     fb.className = 'feedback ok';
     fb.innerHTML = '<div class="fbt">¡Perfecto, ' + (getNombre()||'campeona') + '! +' + sumaPts + ' pts 🎉</div><div class="fbs">' + eq + ' ✓</div>';
     awardPts(sumaPts, 'mates');
-    recordResult('mates', key, true);
+    recordResult('mates', 'mates-' + key, true);
     document.getElementById('suma-next').style.display = 'block';
   } else {
     M.sumaIntentos++;
@@ -266,7 +266,7 @@ function checkSuma() {
       });
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">El resultado correcto era <strong>' + correct + '</strong> 📖</div><div class="fbs">' + eq + '</div>';
-      recordResult('mates', key, false);
+      recordResult('mates', 'mates-' + key, false);
       document.getElementById('suma-next').style.display = 'block';
     }
   }
@@ -328,7 +328,7 @@ function pickMult(el, val) {
     fb.className = 'feedback ok';
     fb.innerHTML = '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + M.currentMulti.a + '×' + M.currentMulti.b + '=' + M.currentMulti.resultado + ' 🌟 +' + multiPts + ' pts</div>';
     awardPts(multiPts, 'mates');
-    recordResult('mates', 'multi', true);
+    recordResult('mates', 'mates-multi', true);
     document.getElementById('multi-next').style.display = 'block';
   } else {
     M.multiIntentos++;
@@ -349,7 +349,7 @@ function pickMult(el, val) {
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">La respuesta era <strong>' + M.currentMulti.resultado +
         '</strong> (' + M.currentMulti.a + '×' + M.currentMulti.b + ') 📖</div>';
-      recordResult('mates', 'multi', false);
+      recordResult('mates', 'mates-multi', false);
       document.getElementById('multi-next').style.display = 'block';
     }
   }
@@ -403,7 +403,7 @@ function checkProb() {
     fb.className = 'feedback ok';
     fb.innerHTML = '<div class="fbt">¡Correcto, ' + (getNombre()||'campeona') + '! ' + M.currentProb.resultado + ' 🎉 +' + probPts + ' pts</div>';
     awardPts(probPts, 'mates');
-    recordResult('mates', 'prob', true);
+    recordResult('mates', 'mates-prob', true);
     document.getElementById('prob-next').style.display = 'block';
   } else {
     M.probIntentos++;
@@ -424,7 +424,7 @@ function checkProb() {
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">La respuesta correcta era <strong>' +
         M.currentProb.resultado + '</strong> 📖</div><div class="fbs">Guárdatela para la próxima.</div>';
-      recordResult('mates', 'prob', false);
+      recordResult('mates', 'mates-prob', false);
       document.getElementById('prob-next').style.display = 'block';
     }
   }
@@ -530,7 +530,7 @@ function checkMix() {
     fb.className = 'feedback ok';
     fb.innerHTML = '<div class="fbt">¡Increíble, ' + (getNombre()||'campeona') + '! ' + eq + ' 🚀 +' + mixPts + ' pts</div>';
     awardPts(mixPts, 'mates');
-    recordResult('mates', 'mix', true);
+    recordResult('mates', 'mates-mix', true);
     document.getElementById('mix-next').style.display = 'block';
   } else {
     M.mixIntentos++;
@@ -557,7 +557,7 @@ function checkMix() {
       });
       fb.className = 'feedback bad';
       fb.innerHTML = '<div class="fbt">La respuesta era <strong>' + res + '</strong> (' + eq + ') 📖</div>';
-      recordResult('mates', 'mix', false);
+      recordResult('mates', 'mates-mix', false);
       document.getElementById('mix-next').style.display = 'block';
     }
   }
