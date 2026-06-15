@@ -164,7 +164,8 @@ function recordEnglishResult(correct, firstAttempt, area) {
   // Guardar estadística por área (tobe, modals, vocab)
   if (area) {
     if (!e.errors) e.errors = {};
-    var key = correct ? area + '_ok' : area + '_fail';
+    var areaKey = area.startsWith('english-') ? area : 'english-' + area;
+    var key = correct ? areaKey + '_ok' : areaKey + '_fail';
     e.errors[key] = (e.errors[key] || 0) + 1;
   }
   if (correct) {
@@ -176,7 +177,6 @@ function recordEnglishResult(correct, firstAttempt, area) {
     e.streak = Math.max(0, e.streak - 1);
     saveState();
   }
-  updateSubjectUI('english');
-  if (typeof updateHomeUI === 'function') updateHomeUI();
+}
   setEl('home-pts-pill', '⭐ ' + ST.totalPts + ' pts');
 }
