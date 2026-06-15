@@ -141,58 +141,58 @@ function getPadresSubjectData() {
   var scErr = (ST.sciences && ST.sciences.errors) || {};
   var soErr = (ST.sociales && ST.sociales.errors) || {};
 
-  var srOk = (mErr['suma_ok']||0)+(mErr['resta_ok']||0);
-  var srF  = (mErr['suma_fail']||0)+(mErr['resta_fail']||0);
+  var srOk = (mErr['mates-suma_ok']||0)+(mErr['mates-resta_ok']||0);
+  var srF  = (mErr['mates-suma_fail']||0)+(mErr['mates-resta_fail']||0);
 
   var gramOk=0, gramTotal=0;
-  ['gram-bv','gram-gj','gram-czq','gram-lly','gram-rr'].forEach(function(k){
+  ['lengua-gram-bv','lengua-gram-gj','lengua-gram-czq','lengua-gram-lly','lengua-gram-rr'].forEach(function(k){
     gramOk+=(lErr[k+'_ok']||0); gramTotal+=(lErr[k+'_ok']||0)+(lErr[k+'_fail']||0);
   });
 
-  var invOk    = scErr['invertebrates_ok']  || 0;
-  var invTotal = (scErr['invertebrates_ok']||0) + (scErr['invertebrates_fail']||0);
+  var invOk    = scErr['sciences-invertebrates_ok']  || 0;
+  var invTotal = (scErr['sciences-invertebrates_ok']||0) + (scErr['sciences-invertebrates_fail']||0);
 
   return [
     { name:'Mates', icon:'🔢', color:'#534AB7',
-      total_ok: srOk+(mErr['multi_ok']||0)+(mErr['prob_ok']||0)+(mErr['mix_ok']||0),
-      total_ex: srOk+srF+(mErr['multi_ok']||0)+(mErr['multi_fail']||0)+(mErr['prob_ok']||0)+(mErr['prob_fail']||0)+(mErr['mix_ok']||0)+(mErr['mix_fail']||0),
+      total_ok: srOk+(mErr['mates-multi_ok']||0)+(mErr['mates-prob_ok']||0)+(mErr['mates-mix_ok']||0),
+      total_ex: srOk+srF+(mErr['mates-multi_ok']||0)+(mErr['mates-multi_fail']||0)+(mErr['mates-prob_ok']||0)+(mErr['mates-prob_fail']||0)+(mErr['mates-mix_ok']||0)+(mErr['mates-mix_fail']||0),
       items:[
         {name:'Sumas y restas', ok:srOk, total:srOk+srF},
-        {name:'Multiplicaciones', ok:mErr['multi_ok']||0, total:(mErr['multi_ok']||0)+(mErr['multi_fail']||0)},
-        {name:'Problemas', ok:mErr['prob_ok']||0, total:(mErr['prob_ok']||0)+(mErr['prob_fail']||0)},
-        {name:'Mezcla', ok:mErr['mix_ok']||0, total:(mErr['mix_ok']||0)+(mErr['mix_fail']||0)}
+        {name:'Multiplicaciones', ok:mErr['mates-multi_ok']||0, total:(mErr['mates-multi_ok']||0)+(mErr['mates-multi_fail']||0)},
+        {name:'Problemas', ok:mErr['mates-prob_ok']||0, total:(mErr['mates-prob_ok']||0)+(mErr['mates-prob_fail']||0)},
+        {name:'Mezcla', ok:mErr['mates-mix_ok']||0, total:(mErr['mates-mix_ok']||0)+(mErr['mates-mix_fail']||0)}
       ]},
     { name:'Lengua', icon:'📚', color:'#D4537E',
-      total_ok: gramOk+(lErr['comp_ok']||0)+(lErr['desc_ok']||0)+(lErr['dict_ok']||0),
-      total_ex: gramTotal+(lErr['comp_ok']||0)+(lErr['comp_fail']||0)+(lErr['desc_ok']||0)+(lErr['desc_fail']||0)+(lErr['dict_ok']||0)+(lErr['dict_fail']||0),
+      total_ok: gramOk+(lErr['lengua-comp_ok']||0)+(lErr['lengua-desc_ok']||0)+(lErr['lengua-dict_ok']||0),
+      total_ex: gramTotal+(lErr['lengua-comp_ok']||0)+(lErr['lengua-comp_fail']||0)+(lErr['lengua-desc_ok']||0)+(lErr['lengua-desc_fail']||0)+(lErr['lengua-dict_ok']||0)+(lErr['lengua-dict_fail']||0),
       items:[
         {name:'Gramática', ok:gramOk, total:gramTotal},
-        {name:'Comprensión', ok:lErr['comp_ok']||0, total:(lErr['comp_ok']||0)+(lErr['comp_fail']||0)},
-        {name:'Descripciones', ok:lErr['desc_ok']||0, total:(lErr['desc_ok']||0)+(lErr['desc_fail']||0)},
-        {name:'Dictado', ok:lErr['dict_ok']||0, total:(lErr['dict_ok']||0)+(lErr['dict_fail']||0)}
+        {name:'Comprensión', ok:lErr['lengua-comp_ok']||0, total:(lErr['lengua-comp_ok']||0)+(lErr['lengua-comp_fail']||0)},
+        {name:'Descripciones', ok:lErr['lengua-desc_ok']||0, total:(lErr['lengua-desc_ok']||0)+(lErr['lengua-desc_fail']||0)},
+        {name:'Dictado', ok:lErr['lengua-dict_ok']||0, total:(lErr['lengua-dict_ok']||0)+(lErr['lengua-dict_fail']||0)}
       ]},
     { name:'English', icon:'flag', color:'#378ADD',
-      total_ok: (eErr['tobe_ok']||0)+(eErr['modals_ok']||0)+(eErr['vocab_ok']||0),
-      total_ex: (eErr['tobe_ok']||0)+(eErr['tobe_fail']||0)+(eErr['modals_ok']||0)+(eErr['modals_fail']||0)+(eErr['vocab_ok']||0)+(eErr['vocab_fail']||0),
+      total_ok: (eErr['english-tobe_ok']||0)+(eErr['english-modals_ok']||0)+(eErr['english-vocab_ok']||0),
+      total_ex: (eErr['english-tobe_ok']||0)+(eErr['english-tobe_fail']||0)+(eErr['english-modals_ok']||0)+(eErr['english-modals_fail']||0)+(eErr['english-vocab_ok']||0)+(eErr['english-vocab_fail']||0),
       items:[
-        {name:'To Be', ok:eErr['tobe_ok']||0, total:(eErr['tobe_ok']||0)+(eErr['tobe_fail']||0)},
-        {name:'Modal Verbs', ok:eErr['modals_ok']||0, total:(eErr['modals_ok']||0)+(eErr['modals_fail']||0)},
-        {name:'Vocabulary', ok:eErr['vocab_ok']||0, total:(eErr['vocab_ok']||0)+(eErr['vocab_fail']||0)}
+        {name:'To Be', ok:eErr['english-tobe_ok']||0, total:(eErr['english-tobe_ok']||0)+(eErr['english-tobe_fail']||0)},
+        {name:'Modal Verbs', ok:eErr['english-modals_ok']||0, total:(eErr['english-modals_ok']||0)+(eErr['english-modals_fail']||0)},
+        {name:'Vocabulary', ok:eErr['english-vocab_ok']||0, total:(eErr['english-vocab_ok']||0)+(eErr['english-vocab_fail']||0)}
       ]},
     { name:'Sciences', icon:'🔬', color:'#1D9E75',
-      total_ok: invOk+(scErr['mix_ok']||0),
-      total_ex: invTotal+(scErr['mix_ok']||0)+(scErr['mix_fail']||0),
+      total_ok: invOk+(scErr['sciences-mix_ok']||0),
+      total_ex: invTotal+(scErr['sciences-mix_ok']||0)+(scErr['sciences-mix_fail']||0),
       items:[
         {name:'Invertebrates', ok:invOk, total:invTotal},
-        {name:'Mix', ok:scErr['mix_ok']||0, total:(scErr['mix_ok']||0)+(scErr['mix_fail']||0)}
+        {name:'Mix', ok:scErr['sciences-mix_ok']||0, total:(scErr['sciences-mix_ok']||0)+(scErr['sciences-mix_fail']||0)}
       ]},
     { name:'Sociales', icon:'🌍', color:'#0F6E56',
-      total_ok: (soErr['vf_ok']||0)+(soErr['relacionar_ok']||0)+(soErr['completar_ok']||0),
-      total_ex: (soErr['vf_ok']||0)+(soErr['vf_fail']||0)+(soErr['relacionar_ok']||0)+(soErr['relacionar_fail']||0)+(soErr['completar_ok']||0)+(soErr['completar_fail']||0),
+      total_ok: (soErr['sociales-vf_ok']||0)+(soErr['sociales-relacionar_ok']||0)+(soErr['sociales-completar_ok']||0),
+      total_ex: (soErr['sociales-vf_ok']||0)+(soErr['sociales-vf_fail']||0)+(soErr['sociales-relacionar_ok']||0)+(soErr['sociales-relacionar_fail']||0)+(soErr['sociales-completar_ok']||0)+(soErr['sociales-completar_fail']||0),
       items:[
-        {name:'Verdadero/Falso', ok:soErr['vf_ok']||0, total:(soErr['vf_ok']||0)+(soErr['vf_fail']||0)},
-        {name:'Relacionar', ok:soErr['relacionar_ok']||0, total:(soErr['relacionar_ok']||0)+(soErr['relacionar_fail']||0)},
-        {name:'Completar', ok:soErr['completar_ok']||0, total:(soErr['completar_ok']||0)+(soErr['completar_fail']||0)}
+        {name:'Verdadero/Falso', ok:soErr['sociales-vf_ok']||0, total:(soErr['sociales-vf_ok']||0)+(soErr['sociales-vf_fail']||0)},
+        {name:'Relacionar', ok:soErr['sociales-relacionar_ok']||0, total:(soErr['sociales-relacionar_ok']||0)+(soErr['sociales-relacionar_fail']||0)},
+        {name:'Completar', ok:soErr['sociales-completar_ok']||0, total:(soErr['sociales-completar_ok']||0)+(soErr['sociales-completar_fail']||0)}
       ]}
   ];
 }
