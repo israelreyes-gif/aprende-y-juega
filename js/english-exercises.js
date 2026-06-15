@@ -178,5 +178,3 @@ function recordEnglishResult(correct, firstAttempt, area) {
     saveState();
   }
 }
-  setEl('home-pts-pill', '⭐ ' + ST.totalPts + ' pts');
-}
