@@ -259,194 +259,51 @@ function startWordOrder(unit) {
   EN.exArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
   loadEnglishData(function() {
     var sentences = extractSentences(unit);
-    sentences = shuffleArr(sentences).slice(0, 15); // 15 frases por sesión
+    sentences = shuffleArr(sentences).slice(0, 15);
     EN.woQueue = sentences;
     EN.woIdx   = 0;
     setEl('en-wo-title', unit.title + ' — Word Order');
     go('s-english-wordorder');
-    loadWordOrderQuestion();
+    woStart({
+      queue:       EN.woQueue,
+      idx:         EN.woIdx,
+      prefix:      'en-wo',
+      subjectKey:  'english',
+      exerciseKey: 'english-' + EN.exArea,
+      badgeLabel:  'Question',
+      setIdx:      function(v){ EN.woIdx = v; },
+      onFinish:    function(){ go('s-english-exercises'); },
+      onAdvance:   function(){ woStart({
+        queue:       EN.woQueue,
+        idx:         EN.woIdx,
+        prefix:      'en-wo',
+        subjectKey:  'english',
+        exerciseKey: 'english-' + EN.exArea,
+        badgeLabel:  'Question',
+        setIdx:      function(v){ EN.woIdx = v; },
+        onFinish:    function(){ go('s-english-exercises'); },
+        onAdvance:   function(){}
+      }); }
+    });
   });
 }
 
-function loadWordOrderQuestion() {
-  var sentence = EN.woQueue[EN.woIdx];
-  var total    = EN.woQueue.length;
-  EN.woAttempt    = 1;
-  EN.woChecked    = false;
+function loadWordOrderQuestion() { woStart({
+  queue:       EN.woQueue,
+  idx:         EN.woIdx,
+  prefix:      'en-wo',
+  subjectKey:  'english',
+  exerciseKey: 'english-' + EN.exArea,
+  badgeLabel:  'Question',
+  setIdx:      function(v){ EN.woIdx = v; },
+  onFinish:    function(){ go('s-english-exercises'); },
+  onAdvance:   function(){ loadWordOrderQuestion(); }
+}); }
 
-  setEl('en-wo-badge', 'Question ' + (EN.woIdx + 1) + ' of ' + total);
-  setBar('en-wo-prog', Math.round(EN.woIdx / total * 100));
-
-  var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
-  var diffEl = document.getElementById('en-wo-diff');
-  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
-
-  // Crear objetos palabra con IDs únicos — reset completo
-  var words = sentence.replace(/[.!?]$/, '').split(' ');
-  EN.woSlots = [];
-  for (var wi = 0; wi < words.length; wi++) { EN.woSlots.push(null); }
-  EN.woBank  = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
-
-  document.getElementById('en-wo-fb').style.display = 'none';
-  document.getElementById('en-wo-next').style.display = 'none';
-  document.getElementById('en-wo-reset').style.display = '';
-  document.getElementById('en-wo-check').style.display = '';
-
-  updateSlotsBorder('#BFDBFE', 'dashed');
-  renderWoSlots();
-  renderWoBank();
-  updateCheckBtn();
-}
-
-function renderWoSlots() {
-  var el = document.getElementById('en-wo-slots');
-  if (!el) return;
-  el.innerHTML = '';
-  EN.woSlots.forEach(function(slot, i) {
-    var btn = document.createElement('button');
-    btn.style.cssText = 'min-width:48px;padding:6px 12px;border-radius:10px;font-family:var(--f);font-weight:800;font-size:15px;cursor:' + (slot && !EN.woChecked ? 'pointer' : 'default') + ';transition:all .15s;' +
-      'border:1.5px solid ' + (slot ? (EN.woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#22C55E' : '#EF4444') : '#3B82F6') : '#CBD5E1') + ';' +
-      'background:' + (slot ? (EN.woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#F0FDF4' : '#FEF2F2') : 'white') : 'transparent') + ';' +
-      'color:' + (slot ? (EN.woChecked ? (document.getElementById('en-wo-slots').dataset.correct === '1' ? '#15803D' : '#B91C1C') : '#1D4ED8') : 'transparent') + ';' +
-      'box-shadow:' + (slot ? '0 1px 4px rgba(0,0,0,.08)' : 'none') + ';';
-    btn.textContent = slot ? slot.word : '·';
-    if (slot && !EN.woChecked) {
-      (function(idx) {
-        btn.addEventListener('click', function() { removeFromSlot(idx); });
-      })(i);
-    }
-    el.appendChild(btn);
-  });
-}
-
-function renderWoBank() {
-  var el = document.getElementById('en-wo-bank');
-  if (!el) return;
-  el.innerHTML = '';
-  EN.woBank.forEach(function(wordObj) {
-    var btn = document.createElement('button');
-    btn.style.cssText = 'padding:8px 14px;border-radius:10px;border:1.5px solid #E2E8F0;background:white;color:#1E293B;font-family:var(--f);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,.08);transition:transform .1s';
-    btn.textContent = wordObj.word;
-    btn.addEventListener('mousedown', function() { btn.style.transform = 'scale(.95)'; });
-    btn.addEventListener('mouseup',   function() { btn.style.transform = ''; });
-    (function(wo) {
-      btn.addEventListener('click', function() { placeWord(wo); });
-    })(wordObj);
-    el.appendChild(btn);
-  });
-}
-
-function placeWord(wordObj) {
-  if (EN.woChecked) return;
-  var idx = EN.woSlots.indexOf(null);
-  if (idx === -1) return;
-  EN.woSlots[idx] = wordObj;
-  EN.woBank = EN.woBank.filter(function(w) { return w.id !== wordObj.id; });
-  renderWoSlots();
-  renderWoBank();
-  updateCheckBtn();
-}
-
-function removeFromSlot(idx) {
-  if (EN.woChecked) return;
-  var word = EN.woSlots[idx];
-  if (!word) return;
-  EN.woSlots[idx] = null;
-  EN.woBank.push(word);
-  renderWoSlots();
-  renderWoBank();
-  updateCheckBtn();
-}
-
-function resetWordOrder() {
-  var sentence = EN.woQueue[EN.woIdx];
-  var words = sentence.replace(/[.!?]$/, '').split(' ');
-  EN.woSlots = [];
-  for (var ri = 0; ri < words.length; ri++) { EN.woSlots.push(null); }
-  EN.woBank    = shuffleArr(words.map(function(w, i) { return { id: Date.now() + i, word: w }; }));
-  EN.woAttempt = 1;
-  EN.woChecked = false;
-  document.getElementById('en-wo-fb').style.display = 'none';
-  document.getElementById('en-wo-next').style.display = 'none';
-  document.getElementById('en-wo-reset').style.display = '';
-  document.getElementById('en-wo-check').style.display = '';
-  document.getElementById('en-wo-slots').dataset.correct = '';
-  updateSlotsBorder('#BFDBFE', 'dashed');
-  renderWoSlots();
-  renderWoBank();
-  updateCheckBtn();
-}
-
-function updateCheckBtn() {
-  var allFilled = EN.woSlots.every(function(s) { return s !== null; });
-  var btn = document.getElementById('en-wo-check');
-  if (!btn) return;
-  btn.style.background    = allFilled ? 'var(--blue)' : 'var(--gray-200)';
-  btn.style.color         = allFilled ? 'white' : 'var(--gray-400)';
-  btn.style.cursor        = allFilled ? 'pointer' : 'default';
-}
-
-function updateSlotsBorder(color, style) {
-  var el = document.getElementById('en-wo-slots');
-  if (el) el.style.borderColor = color;
-}
-
-function checkWordOrder() {
-  if (!EN.woSlots.every(function(s) { return s !== null; })) return;
-  var sentence = EN.woQueue[EN.woIdx];
-  var cleanSentence = sentence.replace(/[.!?]$/, '');
-  var answer = EN.woSlots.map(function(s) { return s.word; }).join(' ');
-  var isCorrect = answer === cleanSentence;
-  var slotsEl = document.getElementById('en-wo-slots');
-  var fbEl    = document.getElementById('en-wo-fb');
-  var nextBtn = document.getElementById('en-wo-next');
-  var resetBtn = document.getElementById('en-wo-reset');
-
-  if (isCorrect) {
-    EN.woChecked = true;
-    slotsEl.dataset.correct = '1';
-    slotsEl.style.borderStyle = 'solid';
-    slotsEl.style.borderColor = '#22C55E';
-    fbEl.style.display = 'block';
-    fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct! +' + (EN.woAttempt === 1 ? 10 : 5) + ' pts 🎉';
-    nextBtn.style.display = 'block';
-    resetBtn.style.display = 'none';
-    document.getElementById('en-wo-check').style.display = 'none';
-    recordEnglishResult(true, EN.woAttempt === 1, EN.exArea);
-
-  } else if (EN.woAttempt === 1) {
-    EN.woAttempt = 2;
-    slotsEl.style.borderColor = '#EF4444';
-    fbEl.style.display = 'block';
-    fbEl.className = 'feedback fb-err';
-    fbEl.textContent = '❌ Not quite — try again!';
-    slotsEl.style.animation = 'shake .4s ease';
-    setTimeout(function() { slotsEl.style.animation = ''; }, 500);
-
-  } else {
-    EN.woChecked = true;
-    slotsEl.dataset.correct = '0';
-    slotsEl.style.borderStyle = 'solid';
-    slotsEl.style.borderColor = '#EF4444';
-    fbEl.style.display = 'block';
-    fbEl.className = 'feedback fb-err';
-    fbEl.innerHTML = '❌ The correct order is: <strong>' + sentence + '</strong>';
-    nextBtn.style.display = 'block';
-    resetBtn.style.display = 'none';
-    document.getElementById('en-wo-check').style.display = 'none';
-    recordEnglishResult(false, false, EN.exArea);
-  }
-
-  renderWoSlots();
-}
-
-function nextWordOrder() {
-  EN.woIdx++;
-  if (EN.woIdx >= EN.woQueue.length) {
-    go('s-english-exercises');
-    updateSubjectUI('english');
-    return;
-  }
-  loadWordOrderQuestion();
-}
+function checkWordOrder()  { woCheck(); }
+function resetWordOrder()  { woReset(); }
+function nextWordOrder()   { woNext(); }
+function placeWord(wo)     { woPlaceWord(wo); }
+function removeFromSlot(i) { woRemoveFromSlot(i); }
+function renderWoSlots()   { woRenderSlots(); }
+function renderWoBank()    { woRenderBank(); }
