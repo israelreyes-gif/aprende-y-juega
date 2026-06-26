@@ -193,7 +193,7 @@ function _vocabBaseConfig() {
     setIdx:      function(v){ EN.vocabExIdx = v; },
     onFinish:    function(){ go('s-english-vocab-ex'); },
     onAdvance:   function(mode){
-      if (mode === 'word-to-image') loadW2IQuestion();
+      if (mode === 'word-to-image' || mode === 'w2i') loadW2IQuestion();
       else loadI2WQuestion();
     }
   };
