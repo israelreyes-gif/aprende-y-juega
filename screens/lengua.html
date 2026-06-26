@@ -88,7 +88,7 @@
   <div class="sa">
     <!-- Pestañas de tipo de letra -->
     <div class="gram-tabs">
-      <button class="gram-tab active bg-pink" onclick="setGramTab('bv')">B / V</button>
+      <button class="gram-tab" onclick="setGramTab('bv')">B / V</button>
       <button class="gram-tab" onclick="setGramTab('gj')">G / J</button>
       <button class="gram-tab" onclick="setGramTab('czq')">C / Z / Q</button>
       <button class="gram-tab" onclick="setGramTab('lly')">LL / Y</button>
@@ -97,7 +97,7 @@
     <div class="ortho-warn" id="gram-ortho"></div>
     <div class="word-card">
       <div class="word-qtxt">¿Con qué letra se escribe esta palabra?</div>
-      <div class="word-big" id="gram-word">a<span class="word-gap">_</span>eja</div>
+      <div class="word-big" id="gram-word" style="color:var(--gray-300);font-size:20px">Elige una categoría para empezar</div>
       <!-- Botón definición -->
       <div style="margin-top:12px;text-align:center">
         <button id="def-toggle-btn" onclick="toggleDefinicion()" style="display:none;background:#FEF3C7;border:1.5px solid #FCD34D;color:#D97706;font-size:12px;font-weight:800;padding:7px 14px;border-radius:20px;font-family:var(--f);cursor:pointer">
