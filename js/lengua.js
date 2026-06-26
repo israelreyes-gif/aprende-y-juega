@@ -70,11 +70,7 @@ function setGramTab(tab) {
 
 function renderGramQ() {
   var data = SubjectData.gram[L.gramTab];
-  if (!data || data.length === 0) {
-    // Datos aún no cargados — esperar y reintentar
-    setTimeout(renderGramQ, 200);
-    return;
-  }
+  if (!data || data.length === 0) return;
   if (L.gramIdx >= data.length) { SubjectData.gram[L.gramTab] = shuffle(data); L.gramIdx = 0; }
 
   var q     = data[L.gramIdx];
