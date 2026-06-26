@@ -21,6 +21,21 @@
                       rendering de opciones. onAnswer(selected)
                       debe llamarse cuando el usuario elige.
                       Si no se pasa, usa botones de texto por defecto.
+
+     renderQuestion:  fn(qEl, ex)
+                      Opcional. Renderizado personalizado de la pregunta.
+                      Si no se pasa, usa ex.question o ex.pregunta.
+
+     correctMsg:      fn(pts, attempt, ex) → string HTML
+                      Opcional. Mensaje de acierto personalizado.
+
+     tryAgainMsg:     string. Mensaje de primer fallo (def. '❌ No es correcto...')
+
+     showDefinition:  fn(ex). Opcional. Se llama al mostrar la pregunta
+                      para renderizar ayudas/definiciones adicionales.
+
+     onCorrect:       fn(selected, ex, attempt). Hook post-acierto.
+     onWrong:         fn(selected, ex, attempt). Hook post-fallo.
    }
    ============================================= */
 
@@ -39,7 +54,13 @@ function mcShowQuestion(config) {
   if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
 
   var qEl = document.getElementById(p + '-question');
-  if (qEl) qEl.textContent = ex.question || ex.pregunta || '';
+  if (qEl) {
+    if (config.renderQuestion) {
+      config.renderQuestion(qEl, ex);
+    } else {
+      qEl.textContent = ex.question || ex.pregunta || '';
+    }
+  }
 
   var fbEl = document.getElementById(p + '-fb');
   var nextEl = document.getElementById(p + '-next');
@@ -101,8 +122,9 @@ function _mcHandleAnswer(config, selected, ex, attempt, optsEl) {
       fbEl.className = 'feedback fb-ok';
       var pts = attempt === 1 ? ptsFirst : ptsSecond;
       var explanation = config.getExplanation ? config.getExplanation(ex) : '';
-      fbEl.innerHTML = '✅ ' + (attempt === 1 ? '¡Correcto! +' + pts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + pts + ' pts') +
-        (explanation ? '<div style="font-size:12px;margin-top:6px;opacity:.8">' + explanation + '</div>' : '');
+      var msg = config.correctMsg ? config.correctMsg(pts, attempt, ex)
+        : '✅ ' + (attempt === 1 ? '¡Correcto! +' + pts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + pts + ' pts');
+      fbEl.innerHTML = msg + (explanation ? '<div style="font-size:12px;margin-top:6px;opacity:.8">' + explanation + '</div>' : '');
     }
     if (nextEl) nextEl.style.display = 'block';
     mcRecordResult(config, true, attempt === 1);
