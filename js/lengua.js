@@ -69,9 +69,9 @@ function setGramTab(tab) {
 }
 
 function renderGramQ() {
-  var data = GDATA[L.gramTab];
+  var data = SubjectData.gram[L.gramTab];
   if (!data || data.length === 0) return;
-  if (L.gramIdx >= data.length) { GDATA[L.gramTab] = shuffle(data); L.gramIdx = 0; }
+  if (L.gramIdx >= data.length) { SubjectData.gram[L.gramTab] = shuffle(data); L.gramIdx = 0; }
 
   var q     = data[L.gramIdx];
   var parts = q.w.split('_');
