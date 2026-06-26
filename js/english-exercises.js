@@ -1,8 +1,42 @@
 /* =============================================
    ENGLISH-EXERCISES.JS — To Be, Modal Verbs, Mix
+   Usa engine-multiple-choice.js
    ============================================= */
 
-/* ---- EXERCISES ---- */
+/* ---- Helper: renderizar pregunta con traducción opcional ---- */
+function _enRenderQuestion(qEl, ex) {
+  if (ex.hasTranslation && ex.question && ex.question.indexOf('\n') > -1) {
+    var parts = ex.question.split('\n');
+    qEl.innerHTML = '<span>' + parts[0] + '</span><br><span style="font-size:12px;color:#6B7280;font-style:italic">' + parts[1] + '</span>';
+  } else {
+    qEl.textContent = ex.question || '';
+  }
+}
+
+/* ---- Helper: config base para English exercises ---- */
+function _enBaseConfig(queue, idx, prefix, area, setIdx, onFinish, onAdvance) {
+  return {
+    queue:        queue,
+    idx:          idx,
+    prefix:       prefix,
+    subjectKey:   'english',
+    exerciseKey:  'english-' + area,
+    ptsFirst:     10,
+    ptsSecond:    5,
+    badgeLabel:   'Question',
+    renderQuestion: _enRenderQuestion,
+    correctMsg:   function(pts, attempt) {
+      return '✅ Correct! +' + pts + ' pts 🎉';
+    },
+    tryAgainMsg:  '❌ Try again!',
+    getExplanation: function(ex) { return ex.explanation || ''; },
+    setIdx:       setIdx,
+    onFinish:     onFinish,
+    onAdvance:    onAdvance
+  };
+}
+
+/* ---- EXERCISES (To Be / Modal Verbs) ---- */
 function startEnglishExercisesByType(unit, type, exercises) {
   EN.exArea = unit.id === 'modal-verbs' ? 'modals' : 'tobe';
   if (type === 'E') { startWordOrder(unit); return; }
@@ -24,91 +58,17 @@ function startEnglishExercises(unit) {
 }
 
 function showEnglishEx() {
-  var ex = EN.exQueue[EN.exIdx];
-  if (!ex) return;
-  var total = EN.exQueue.length;
-  setEl('en-ex-badge', 'Question ' + (EN.exIdx + 1) + ' of ' + total);
-  setBar('en-ex-prog', Math.round(EN.exIdx / total * 100));
-  var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
-  var diffEl = document.getElementById('en-ex-diff');
-  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
-
-  // Mostrar pregunta — si tiene traducción, separar líneas
-  var qEl = document.getElementById('en-ex-question');
-  if (ex.hasTranslation && ex.question.indexOf('\n') > -1) {
-    var parts = ex.question.split('\n');
-    qEl.innerHTML = '<span>' + parts[0] + '</span><br><span style="font-size:12px;color:#6B7280;font-style:italic">' + parts[1] + '</span>';
-  } else {
-    qEl.textContent = ex.question;
-  }
-
-  document.getElementById('en-ex-fb').style.display = 'none';
-  document.getElementById('en-ex-next').style.display = 'none';
-  renderEnglishOpts('en-ex-opts', ex, 1, 'ex');
-}
-
-function renderEnglishOpts(containerId, ex, attempt, mode) {
-  var opts = document.getElementById(containerId);
-  opts.innerHTML = '';
-  ex.options.slice().sort(function() { return Math.random() - .5; }).forEach(function(opt) {
-    var btn = document.createElement('button');
-    btn.className = 'wopt-btn';
-    btn.textContent = opt;
-    btn.addEventListener('click', function() { checkEnglishAnswer(opt, ex, attempt, mode); });
-    opts.appendChild(btn);
-  });
-}
-
-function checkEnglishAnswer(selected, ex, attempt, mode) {
-  var correct   = ex.answer;
-  var isCorrect = selected === correct;
-  var fbEl      = document.getElementById('en-' + mode + '-fb');
-  var opts      = document.getElementById('en-' + mode + '-opts');
-  var nextBtn   = document.getElementById('en-' + mode + '-next');
-
-  if (isCorrect) {
-    Array.from(opts.children).forEach(function(btn) {
-      btn.disabled = true;
-      if (btn.textContent === correct) btn.className = 'wopt-btn wok';
-    });
-    fbEl.style.display = 'block';
-    fbEl.className = 'feedback fb-ok';
-    fbEl.textContent = '✅ Correct! +' + (attempt === 1 ? 10 : 5) + ' pts 🎉';
-    nextBtn.style.display = 'block';
-    recordEnglishResult(true, attempt === 1, EN.exArea);
-  } else if (attempt === 1) {
-    Array.from(opts.children).forEach(function(btn) {
-      if (btn.textContent === selected) {
-        btn.className = 'wopt-btn wbad';
-        btn.disabled = true;
-      } else {
-        var newBtn = btn.cloneNode(true);
-        newBtn.addEventListener('click', function() { checkEnglishAnswer(newBtn.textContent, ex, 2, mode); });
-        btn.parentNode.replaceChild(newBtn, btn);
-      }
-    });
-    fbEl.style.display = 'block';
-    fbEl.className = 'feedback fb-err';
-    fbEl.textContent = '❌ Try again!';
-  } else {
-    var explanation = ex.explanation || '';
-    Array.from(opts.children).forEach(function(btn) {
-      btn.disabled = true;
-      if (btn.textContent === correct) btn.className = 'wopt-btn wok';
-      else if (btn.textContent === selected) btn.className = 'wopt-btn wbad';
-    });
-    fbEl.style.display = 'block';
-    fbEl.className = 'feedback fb-err';
-    fbEl.innerHTML = '❌ The answer is <strong>' + correct + '</strong>' +
-      (explanation ? '<div style="margin-top:8px;font-size:12px;font-weight:600;opacity:.85;line-height:1.5">' + explanation + '</div>' : '');
-    nextBtn.style.display = 'block';
-    recordEnglishResult(false, false, EN.exArea);
-  }
+  mcShowQuestion(_enBaseConfig(
+    EN.exQueue, EN.exIdx, 'en-ex', EN.exArea,
+    function(v){ EN.exIdx = v; },
+    function(){ go('s-english-exercises'); },
+    function(){ showEnglishEx(); }
+  ));
 }
 
 function nextEnglishEx() {
   EN.exIdx++;
-  if (EN.exIdx >= EN.exQueue.length) { go('s-english-exercises'); updateSubjectUI('english'); return; }
+  if (EN.exIdx >= EN.exQueue.length) { go('s-english-exercises'); return; }
   showEnglishEx();
 }
 
@@ -130,38 +90,25 @@ function startEnglishMix() {
 }
 
 function showEnglishMix() {
-  var ex = EN.mixQueue[EN.mixIdx];
-  if (!ex) return;
-  var total = EN.mixQueue.length;
-  setEl('en-mix-badge', 'Question ' + (EN.mixIdx + 1) + ' of ' + total);
-  setBar('en-mix-prog', Math.round(EN.mixIdx / total * 100));
-  var diff = diffLabel(ST.english ? ST.english.streak || 0 : 0);
-  var diffEl = document.getElementById('en-mix-diff');
-  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
-  var qElM = document.getElementById('en-mix-question');
-  if (ex.hasTranslation && ex.question.indexOf('\n') > -1) {
-    var partsM = ex.question.split('\n');
-    qElM.innerHTML = '<span>' + partsM[0] + '</span><br><span style="font-size:12px;color:#6B7280;font-style:italic">' + partsM[1] + '</span>';
-  } else {
-    qElM.textContent = ex.question;
-  }
-  document.getElementById('en-mix-fb').style.display = 'none';
-  document.getElementById('en-mix-next').style.display = 'none';
-  renderEnglishOpts('en-mix-opts', ex, 1, 'mix');
+  mcShowQuestion(_enBaseConfig(
+    EN.mixQueue, EN.mixIdx, 'en-mix', EN.exArea,
+    function(v){ EN.mixIdx = v; },
+    function(){ go('s-english-exercises'); },
+    function(){ showEnglishMix(); }
+  ));
 }
 
 function nextEnglishMix() {
   EN.mixIdx++;
-  if (EN.mixIdx >= EN.mixQueue.length) { go('s-english-exercises'); updateSubjectUI('english'); return; }
+  if (EN.mixIdx >= EN.mixQueue.length) { go('s-english-exercises'); return; }
   showEnglishMix();
 }
 
-/* ---- Registrar resultado ---- */
+/* ---- Registrar resultado (mantener para compatibilidad con Word Order y Vocab) ---- */
 function recordEnglishResult(correct, firstAttempt, area) {
   if (!ST.english) ST.english = { hoy: 0, hoyOk: 0, total: 0, totalOk: 0, pts: 0, streak: 0, errors: {} };
   var e = ST.english;
   e.hoy++; e.total++;
-  // Guardar estadística por área (tobe, modals, vocab)
   if (area) {
     if (!e.errors) e.errors = {};
     var areaKey = area.startsWith('english-') ? area : 'english-' + area;
