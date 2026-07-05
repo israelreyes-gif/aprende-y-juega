@@ -311,8 +311,9 @@ function renderRefuerzo() {
 /* ---- Resetear ---- */
 function resetearEstadisticas() {
   if (!confirm('¿Seguro que quieres borrar todas las estadísticas? Se mantendrán los puntos y el avatar.')) return;
-  ST.mates.hoy=0; ST.mates.hoyOk=0; ST.mates.total=0; ST.mates.totalOk=0; ST.mates.errors={};
-  ST.lengua.hoy=0; ST.lengua.hoyOk=0; ST.lengua.total=0; ST.lengua.totalOk=0; ST.lengua.errors={};
+  ['mates','lengua','english','sciences','sociales'].forEach(function(subj) {
+    ST[subj].hoy=0; ST[subj].hoyOk=0; ST[subj].total=0; ST[subj].totalOk=0; ST[subj].streak=0; ST[subj].errors={};
+  });
   ST.matesStreak=0; ST.gramStreak=0; ST.compStreak=0;
   saveState(); renderPadresData(); showToast('✅ Estadísticas reseteadas');
 }
