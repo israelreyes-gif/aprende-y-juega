@@ -132,6 +132,7 @@ function _renderSumaOp(ex, container) {
 }
 
 function _renderMultiOp(ex, container) {
+  console.log('[Multi] renderOp called, ex:', ex.a, ex.b);
   // Update SVG triangle
   var svg = document.querySelector('#s-multi svg');
   if (svg) {
