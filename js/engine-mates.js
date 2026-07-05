@@ -46,9 +46,8 @@ function matesStart(config) {
   var screenId = config.screenId || ('s-' + p);
   var opBox = document.querySelector('#' + screenId + ' .op-box') ||
               document.getElementById(p + '-op');
-  if (opBox && config.renderOp) config.renderOp(ex, opBox);
+  if (config.renderOp) config.renderOp(ex, opBox);
 
-  // Renderizar zona de respuesta según tipo
   var res = ex.resultado.toString();
   if (config.inputType === 'digits') {
     _matesRenderDigits(p, res);
