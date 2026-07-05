@@ -42,26 +42,28 @@ function matesStart(config) {
   document.getElementById(p + '-fb').style.display   = 'none';
   document.getElementById(p + '-next').style.display = 'none';
 
-  // Renderizar la operación
+  // Renderizar — setTimeout(0) para asegurar que el DOM está listo
   var screenId = config.screenId || ('s-' + p);
-  var opBox = document.querySelector('#' + screenId + ' .op-box') ||
-              document.getElementById(p + '-op');
-  if (config.renderOp) config.renderOp(ex, opBox);
+  setTimeout(function() {
+    var opBox = document.querySelector('#' + screenId + ' .op-box') ||
+                document.getElementById(p + '-op');
+    if (config.renderOp) config.renderOp(ex, opBox);
 
-  var res = ex.resultado.toString();
-  if (config.inputType === 'digits') {
-    _matesRenderDigits(p, res);
-    _matesState.posActual = res.length - 1;
-    ex.respuestaUsuario = '';
-  } else if (config.inputType === 'options') {
-    _matesRenderOptions(config, ex);
-  } else if (config.inputType === 'free') {
-    var ansBox = document.getElementById(p + '-ans');
-    if (ansBox) { ansBox.textContent = '?'; ansBox.style.cssText = ''; }
-    _matesState.val = '';
-  }
+    var res = ex.resultado.toString();
+    if (config.inputType === 'digits') {
+      _matesRenderDigits(p, res);
+      _matesState.posActual = res.length - 1;
+      ex.respuestaUsuario = '';
+    } else if (config.inputType === 'options') {
+      _matesRenderOptions(config, ex);
+    } else if (config.inputType === 'free') {
+      var ansBox = document.getElementById(p + '-ans');
+      if (ansBox) { ansBox.textContent = '?'; ansBox.style.cssText = ''; }
+      _matesState.val = '';
+    }
 
-  if (config.onLoad) config.onLoad(ex);
+    if (config.onLoad) config.onLoad(ex);
+  }, 0);
 }
 
 /* ---- Input: dígito a dígito ---- */
