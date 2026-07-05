@@ -122,27 +122,43 @@ function _renderSumaOp(ex, container) {
   ex.a.toString().split('').forEach(function(d) { row1 += '<span>' + d + '</span>'; });
   ex.b.toString().split('').forEach(function(d) { row2 += '<span>' + d + '</span>'; });
   res.split('').forEach(function(d, i) {
-    rowRes += '<div class="dbox" id="suma-box-' + i + '">?</div>';
+    rowRes += '<div class="dbox' + (i === res.length-1 ? ' active' : '') + '" id="suma-box-' + i + '">?</div>';
   });
   container.innerHTML =
     '<div class="op-row">' + row1 + '</div>' +
-    '<div class="op-row"><span class="op-sign" id="suma-sign">' + sign + '</span>' + row2 + '</div>' +
+    '<div class="op-row"><span class="op-sign">' + sign + '</span>' + row2 + '</div>' +
     '<div class="op-line"></div>' +
     '<div style="display:flex;justify-content:flex-end;gap:8px" id="suma-res-row">' + rowRes + '</div>';
 }
 
 function _renderMultiOp(ex, container) {
+  // Update SVG triangle
   var svg = document.querySelector('#s-multi svg');
   if (svg) {
     var texts = svg.querySelectorAll('text');
-    if (texts.length >= 3) { texts[0].textContent = '?'; texts[1].textContent = ex.a; texts[2].textContent = ex.b; }
-  }
-  var eqs = document.querySelectorAll('#s-multi p');
-  eqs.forEach(function(p) {
-    if (p.textContent.indexOf('×') !== -1) {
-      p.innerHTML = ex.a + ' × ' + ex.b + ' = <span style="color:var(--purple-dark);font-weight:900;font-size:22px">?</span>';
+    if (texts.length >= 3) {
+      texts[0].textContent = '?';
+      texts[1].textContent = ex.a;
+      texts[2].textContent = ex.b;
     }
-  });
+  }
+  // Update equation text
+  var eq = document.getElementById('multi-eq');
+  if (eq) {
+    eq.innerHTML = ex.a + ' × ' + ex.b + ' = <span style="color:var(--purple-dark);font-weight:900;font-size:22px">?</span>';
+  }
+  // Re-render options
+  var cont = document.querySelector('#s-multi .multi-opts');
+  if (cont) {
+    cont.innerHTML = '';
+    ex.opciones.forEach(function(v) {
+      var d = document.createElement('div');
+      d.className = 'mopt';
+      d.textContent = v;
+      d.onclick = function() { pickMult(d, v); };
+      cont.appendChild(d);
+    });
+  }
 }
 
 function _renderMixOp(ex, container) {
@@ -160,7 +176,7 @@ function _renderMixOp(ex, container) {
   }
   var rowRes = '';
   res.split('').forEach(function(d, i) {
-    rowRes += '<div class="dbox" id="mix-box-' + i + '">?</div>';
+    rowRes += '<div class="dbox' + (i === res.length-1 ? ' active' : '') + '" id="mix-box-' + i + '">?</div>';
   });
   html += '<div class="op-line"></div><div style="display:flex;justify-content:flex-end;gap:8px" id="mix-res-row">' + rowRes + '</div>';
   container.innerHTML = html;
@@ -183,6 +199,7 @@ function cargarNuevaSuma() {
     generate:    function() { return M.opType === 'sum' ? generarSuma(getNivel()) : generarResta(getNivel()); },
     inputType:   'digits',
     prefix:      'suma',
+    screenId:    's-sumas',
     subjectKey:  'mates',
     exerciseKey: 'mates-' + key,
     ptsFirst:    10,
@@ -213,6 +230,7 @@ function cargarNuevaMulti() {
     generate:   function() { return generarMulti(getNivel()); },
     inputType:  'options',
     prefix:     'multi',
+    screenId:   's-multi',
     subjectKey: 'mates',
     exerciseKey:'mates-multi',
     ptsFirst:   10,
@@ -248,6 +266,7 @@ function cargarNuevoProblema() {
     },
     inputType:  'free',
     prefix:     'prob',
+    screenId:   's-prob',
     subjectKey: 'mates',
     exerciseKey:'mates-prob',
     ptsFirst:   15,
@@ -288,6 +307,7 @@ function cargarNuevaMezcla() {
     },
     inputType:  'digits',
     prefix:     'mix',
+    screenId:   's-mix',
     subjectKey: 'mates',
     exerciseKey:'mates-mix',
     ptsFirst:   10,
