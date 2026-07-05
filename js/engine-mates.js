@@ -43,7 +43,8 @@ function matesStart(config) {
   document.getElementById(p + '-next').style.display = 'none';
 
   // Renderizar la operación
-  var opBox = document.querySelector('#s-' + p + ' .op-box') ||
+  var screenId = config.screenId || ('s-' + p);
+  var opBox = document.querySelector('#' + screenId + ' .op-box') ||
               document.getElementById(p + '-op');
   if (opBox && config.renderOp) config.renderOp(ex, opBox);
 
@@ -70,8 +71,11 @@ function _matesRenderDigits(p, res) {
   res.split('').forEach(function(d, i) {
     rowRes += '<div class="dbox" id="' + p + '-box-' + i + '">?</div>';
   });
+  // Try the res-row container first, then the op-box
   var resRow = document.getElementById(p + '-res-row');
-  if (resRow) resRow.innerHTML = rowRes;
+  if (resRow) {
+    resRow.innerHTML = rowRes;
+  }
   // Activar el dígito más a la derecha
   var firstBox = document.getElementById(p + '-box-' + (res.length - 1));
   if (firstBox) firstBox.className = 'dbox active';
@@ -175,9 +179,10 @@ function matesCheckDigits() {
 
 /* ---- Input: opciones múltiples ---- */
 function _matesRenderOptions(config, ex) {
-  var p    = config.prefix;
-  var cont = document.querySelector('#s-' + p + ' .multi-opts') ||
-             document.getElementById(p + '-opts');
+  var p      = config.prefix;
+  var screen = config.screenId || ('s-' + p);
+  var cont   = document.querySelector('#' + screen + ' .multi-opts') ||
+               document.getElementById(p + '-opts');
   if (!cont) return;
   cont.innerHTML = '';
   ex.opciones.forEach(function(v) {
@@ -199,8 +204,9 @@ function matesPickOption(el, val) {
   var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
   fb.style.display = 'block';
 
+  var screen = config.screenId || ('s-' + p);
   if (val === ex.resultado) {
-    document.querySelectorAll('.' + (config.optClass || 'mopt')).forEach(function(m) { m.className = config.optClass || 'mopt'; });
+    document.querySelectorAll('#' + screen + ' .' + (config.optClass || 'mopt')).forEach(function(m) { m.className = config.optClass || 'mopt'; });
     el.className = (config.optClass || 'mopt') + ' mok';
     var pts = s.intentos === 0 ? ptsFirst : ptsSecond;
     fb.className = 'feedback ok';
@@ -217,7 +223,7 @@ function matesPickOption(el, val) {
       fb.innerHTML = '<div class="fbt">No es ese... ¡prueba otra vez! 🤔</div>';
       setTimeout(function() { el.className = config.optClass || 'mopt'; fb.style.display = 'none'; }, 1200);
     } else {
-      document.querySelectorAll('.' + (config.optClass || 'mopt')).forEach(function(m) {
+      document.querySelectorAll('#' + screen + ' .' + (config.optClass || 'mopt')).forEach(function(m) {
         if (parseInt(m.textContent) === ex.resultado) m.className = (config.optClass || 'mopt') + ' mok';
       });
       fb.className = 'feedback bad';
