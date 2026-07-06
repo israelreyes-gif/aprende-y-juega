@@ -192,6 +192,7 @@ function go(screenId) {
   if (screenId === 's-sociales-ex-menu')       { /* menú estático */ }
   if (screenId === 's-sociales-ex')            { loadSocEx(); }
   if (screenId === 's-avatar')                      { if (typeof renderAvatarEditor === 'function') renderAvatarEditor(); }
+  if (screenId === 's-vacaciones')                  { if (typeof renderVacacionesHome === 'function') renderVacacionesHome(); }
   if (screenId === 's-descripciones')               { if (typeof initDescripciones === 'function') initDescripciones(); }
   if (screenId === 's-padres')                      { renderPadres(); }
   if (screenId === 's-calendario')                  { renderCalendarioHome(); }
