@@ -72,6 +72,33 @@ var STATS_SUBJECTS = [
       { key: 'sociales-completar',  name: 'Completar frase' }
     ]
   }
+  ,{
+    key:   'vacaciones',
+    name:  'Vacaciones',
+    icon:  '🏖️',
+    color: '#D97706',
+    pill:  'background:#FFFBEB;color:#92400E',
+    items: [
+      { key: 'vacaciones-mates-suma',             name: 'Sumas y restas' },
+      { key: 'vacaciones-mates-multi',            name: 'Multiplicaciones' },
+      { key: 'vacaciones-mates-prob',             name: 'Problemas' },
+      { key: 'vacaciones-mates-mix',              name: 'Mezcla' },
+      { key: 'vacaciones-lengua-gram-bv',         name: 'Gramática B / V' },
+      { key: 'vacaciones-lengua-gram-gj',         name: 'Gramática G / J' },
+      { key: 'vacaciones-lengua-gram-czq',        name: 'Gramática C / Z / Q' },
+      { key: 'vacaciones-lengua-gram-lly',        name: 'Gramática LL / Y' },
+      { key: 'vacaciones-lengua-gram-rr',         name: 'Gramática R / RR' },
+      { key: 'vacaciones-english-tobe',           name: 'English To Be' },
+      { key: 'vacaciones-english-modals',         name: 'English Modal Verbs' },
+      { key: 'vacaciones-english-vocab',          name: 'English Vocabulary' },
+      { key: 'vacaciones-english-wo',             name: 'English Word Order' },
+      { key: 'vacaciones-sciences-invertebrates', name: 'Sciences Invertebrates' },
+      { key: 'vacaciones-sciences-mix',           name: 'Sciences Mix' },
+      { key: 'vacaciones-sociales-vf',            name: 'Sociales V/F' },
+      { key: 'vacaciones-sociales-relacionar',    name: 'Sociales Relacionar' },
+      { key: 'vacaciones-sociales-completar',     name: 'Sociales Completar' }
+    ]
+  }
 ];
 
 var UK_FLAG_SMALL = '<svg width="16" height="11" viewBox="0 0 60 40" style="border-radius:2px;vertical-align:middle"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>';
