@@ -311,7 +311,7 @@ function renderRefuerzo() {
 /* ---- Resetear ---- */
 function resetearEstadisticas() {
   if (!confirm('¿Seguro que quieres borrar todas las estadísticas? Se mantendrán los puntos y el avatar.')) return;
-  ['mates','lengua','english','sciences','sociales'].forEach(function(subj) {
+  ['mates','lengua','english','sciences','sociales','vacaciones'].forEach(function(subj) {
     ST[subj].hoy=0; ST[subj].hoyOk=0; ST[subj].total=0; ST[subj].totalOk=0; ST[subj].streak=0; ST[subj].errors={};
   });
   ST.matesStreak=0; ST.gramStreak=0; ST.compStreak=0;
