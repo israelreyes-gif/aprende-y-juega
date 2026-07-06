@@ -20,7 +20,8 @@ var SCREENS_LAZY = [
   'screens/sociales.html',
   'screens/padres.html',
   'screens/avatar.html',
-  'screens/descripciones.html'
+  'screens/descripciones.html',
+  'screens/vacaciones.html'
 ];
 
 /* Registro de pantallas ya cargadas */
@@ -84,7 +85,10 @@ function loadScreenLazy(screenId, callback) {
     's-sociales-ex': 'screens/sociales.html',
     's-padres': 'screens/padres.html',
     's-avatar': 'screens/avatar.html',
-    's-crear-avatar': 'screens/avatar.html'
+    's-crear-avatar': 'screens/avatar.html',
+    's-vacaciones':   'screens/vacaciones.html',
+    's-vac-ex':       'screens/vacaciones.html',
+    's-vac-fin':      'screens/vacaciones.html'
   };
 
   var file = fileMap[screenId];
