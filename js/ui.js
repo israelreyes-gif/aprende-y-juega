@@ -1,7 +1,7 @@
 /* =============================================
    UI.JS — Actualización del interfaz con datos reales
    Usa stats.js como fuente única de estadísticas
-   =============================================  */
+   ============================================= */
 
 /* ---- Helpers ---- */
 function setEl(id, val)  { var e = document.getElementById(id); if (e) e.textContent = val; }
