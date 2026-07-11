@@ -511,7 +511,7 @@ function _vacLoadVocabW2I(item) {
   if (!area) return;
   var wordDiv = document.createElement('div');
   wordDiv.style.cssText = 'background:#EFF6FF;border:0.5px solid #BFDBFE;border-radius:14px;padding:20px;text-align:center;margin-bottom:14px';
-  wordDiv.innerHTML = '<div style="font-size:24px;font-weight:800;color:#1D4ED8;font-family:var(--f)">' + item.ex.word + '</div><div style="font-size:13px;color:#3B82F6;margin-top:4px">Which image matches this word?</div>';
+  wordDiv.innerHTML = '<div id="vac-ex-word" style="font-size:24px;font-weight:800;color:#1D4ED8;font-family:var(--f)">' + item.ex.word + '</div><div style="font-size:13px;color:#3B82F6;margin-top:4px">Which image matches this word?</div>';
   var optsDiv = document.createElement('div');
   optsDiv.id = 'vac-ex-opts';
   optsDiv.style.cssText = 'display:grid;grid-template-columns:repeat(3,1fr);gap:10px';
