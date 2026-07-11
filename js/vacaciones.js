@@ -53,9 +53,10 @@ function _vacGetExerciseTypes() {
             subjectName: 'English', icon: UK_FLAG_SMALL, ex: ex, area: unit.id === 'modal-verbs' ? 'modals' : 'tobe' });
         });
       }
-      // Word Order
-      if (unit.sentences) {
-        unit.sentences.forEach(function(s) {
+      // Word Order — las frases se extraen de las respuestas de los ejercicios,
+      // igual que hace la pantalla normal de English (extractSentences)
+      if (typeof extractSentences === 'function') {
+        extractSentences(unit).forEach(function(s) {
           types.push({ type: 'en-wo', subjectKey: 'vacaciones', exerciseKey: 'vacaciones-english-wo',
             subjectName: 'English', icon: UK_FLAG_SMALL, ex: s, area: unit.id === 'modal-verbs' ? 'modals' : 'tobe' });
         });
@@ -107,11 +108,65 @@ function _vacShuffle(arr) {
   return a;
 }
 
+/* ---- Repartir "slots" de forma equilibrada entre grupos ---- */
+function _vacDistribute(totalSlots, numGroups) {
+  var base = Math.floor(totalSlots / numGroups);
+  var extra = totalSlots % numGroups;
+  var slots = [];
+  for (var i = 0; i < numGroups; i++) slots.push(base + (i < extra ? 1 : 0));
+  return _vacShuffle(slots);
+}
+
+/* ---- Coger `slots` elementos de `pool`, repartiendo también entre sus subtipos
+   (item.type) para que dentro de una asignatura no domine el subtipo más numeroso
+   (p.ej. English: que no sean todo "multiple choice" y casi nada de vocabulario) ---- */
+function _vacSampleFromPool(pool, slots) {
+  if (slots <= 0 || !pool.length) return [];
+  var byType = {};
+  pool.forEach(function(item) { (byType[item.type] = byType[item.type] || []).push(item); });
+  var types = Object.keys(byType);
+  if (types.length <= 1) return _vacShuffle(pool).slice(0, slots);
+
+  var typeSlots = _vacDistribute(slots, types.length);
+  var picked = [];
+  _vacShuffle(types).forEach(function(t, idx) {
+    picked = picked.concat(_vacShuffle(byType[t]).slice(0, typeSlots[idx]));
+  });
+  if (picked.length < slots) {
+    var leftover = pool.filter(function(item) { return picked.indexOf(item) === -1; });
+    picked = picked.concat(_vacShuffle(leftover).slice(0, slots - picked.length));
+  }
+  return picked;
+}
+
+/* ---- Muestra equilibrada: reparte los `totalSlots` a partes iguales entre
+   asignaturas (Mates, Lengua, English, Sciences, Sociales), en vez de un shuffle
+   uniforme sobre todo el pool (que favorecía a las asignaturas con más contenido
+   atómico, como Lengua-gramática o English-multiple-choice) ---- */
+function _vacBalancedSample(all, totalSlots) {
+  var bySubject = {};
+  all.forEach(function(item) { (bySubject[item.subjectName] = bySubject[item.subjectName] || []).push(item); });
+  var subjects = Object.keys(bySubject);
+  if (!subjects.length) return [];
+
+  var subjectSlots = _vacDistribute(totalSlots, subjects.length);
+  var result = [];
+  _vacShuffle(subjects).forEach(function(subj, idx) {
+    result = result.concat(_vacSampleFromPool(bySubject[subj], subjectSlots[idx]));
+  });
+
+  if (result.length < totalSlots) {
+    var leftover = all.filter(function(item) { return result.indexOf(item) === -1; });
+    result = result.concat(_vacShuffle(leftover).slice(0, totalSlots - result.length));
+  }
+  return _vacShuffle(result).slice(0, totalSlots);
+}
+
 /* ---- Iniciar sesión ---- */
 function vacStart() {
   loadAllVacData(function() {
     var all = _vacGetExerciseTypes();
-    VAC.queue = _vacShuffle(all).slice(0, 20);
+    VAC.queue = _vacBalancedSample(all, 20);
     VAC.idx   = 0;
     VAC.ok    = 0;
     VAC.pts   = 0;
@@ -240,11 +295,13 @@ function _vacConfig(item) {
   };
 }
 
-function _vacRecord(item, correct, firstAttempt) {
-  recordResult(item.subjectKey, item.exerciseKey, correct);
+/* Solo actualiza el resumen de la sesión de Vacaciones (breakdown, aciertos, puntos
+   de la pastilla superior). NO llama a recordResult/awardPts — se usa cuando el motor
+   genérico (mc, matching, mates, vocab, word-order) ya se ha encargado de eso mediante
+   sus hooks onCorrect/onWrong. */
+function _vacTrackSession(item, correct, firstAttempt) {
   if (correct) {
     var pts = firstAttempt ? 10 : 5;
-    awardPts(pts, item.subjectKey);
     VAC.pts += pts;
     setEl('vac-ex-pts', '⭐ ' + VAC.pts + ' pts');
   }
@@ -253,13 +310,22 @@ function _vacRecord(item, correct, firstAttempt) {
   VAC.breakdown[item.subjectName].total++;
 }
 
+/* Registro completo: usar solo en ejercicios construidos a mano que NO pasan por
+   ninguno de los motores genéricos (Sociales V/F, Sociales Completar, Gramática,
+   Vocab I2W manual), ya que en esos casos nadie más llama a recordResult/awardPts. */
+function _vacRecord(item, correct, firstAttempt) {
+  recordResult(item.subjectKey, item.exerciseKey, correct);
+  if (correct) awardPts(firstAttempt ? 10 : 5, item.subjectKey);
+  _vacTrackSession(item, correct, firstAttempt);
+}
+
 /* ---- Sciences / English MC ---- */
 function _vacLoadMC(item) {
   var config = _vacConfig(item);
   config.badgeLabel = 'Question';
   config.getExplanation = function(ex){ return ex.explanation || ''; };
-  config.onCorrect = function(s,ex,att){ _vacRecord(item, true, att===1); };
-  config.onWrong   = function(s,ex,att){ if(att===2) _vacRecord(item, false, false); };
+  config.onCorrect = function(s,ex,att){ _vacTrackSession(item, true, att===1); };
+  config.onWrong   = function(s,ex,att){ if(att===2) _vacTrackSession(item, false, false); };
   var qcard = document.getElementById('vac-ex-qcard');
   if (qcard) qcard.style.display = 'block';
   // Render question in area
@@ -287,8 +353,8 @@ function _vacLoadEnMC(item) {
   };
   config.correctMsg = function(pts){ return '✅ Correct! +' + pts + ' pts 🎉'; };
   config.tryAgainMsg = '❌ Try again!';
-  config.onCorrect = function(s,ex,att){ _vacRecord(item, true, att===1); };
-  config.onWrong   = function(s,ex,att){ if(att===2) _vacRecord(item, false, false); };
+  config.onCorrect = function(s,ex,att){ _vacTrackSession(item, true, att===1); };
+  config.onWrong   = function(s,ex,att){ if(att===2) _vacTrackSession(item, false, false); };
   var area = document.getElementById('vac-ex-area');
   if (area) { var opts = document.createElement('div'); opts.id = 'vac-ex-opts'; area.appendChild(opts); }
   mcShowQuestion(config);
@@ -350,15 +416,10 @@ function _vacLoadSocRel(item) {
   var pairs = ex.pares.map(function(p){ return { left: p.izq, right: p.der }; });
   mcMatchInit({
     pairs: pairs, containerId: 'vac-rel-container', prefix: 'vac-ex',
-    subjectKey: item.subjectKey, exerciseKey: item.exerciseKey, ptsFirst: 10, ptsSecond: 5
+    subjectKey: item.subjectKey, exerciseKey: item.exerciseKey, ptsFirst: 10, ptsSecond: 5,
+    onCorrect: function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); },
+    onWrong:   function(){ _vacTrackSession(item, false, false); }
   });
-  // Patch recordResult for vacaciones breakdown
-  var origRec = recordResult;
-  var patched = false;
-  var origNext = document.getElementById('vac-ex-next').onclick;
-  document.getElementById('vac-ex-next').onclick = function() {
-    _vacRecord(item, true, true); vacNext();
-  };
 }
 
 /* ---- Sociales Completar ---- */
@@ -433,17 +494,15 @@ function _vacLoadEnWO(item) {
   area.appendChild(resetBtn);
 
   var sentence = typeof item.ex === 'string' ? item.ex : item.ex.sentence || item.ex;
-  var attempt = 1;
 
   woStart({
     queue: [sentence], idx: 0,
     prefix: 'vac-ex', subjectKey: item.subjectKey, exerciseKey: item.exerciseKey,
     badgeLabel: 'Question', setIdx: function(){}, onFinish: function(){},
-    onAdvance: function(){}
+    onAdvance: function(){},
+    onCorrect: function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); },
+    onWrong:   function(){ _vacTrackSession(item, false, false); }
   });
-
-  // Override next for vacaciones
-  document.getElementById('vac-ex-next').onclick = function() { _vacRecord(item, true, attempt===1); vacNext(); };
 }
 
 /* ---- Vocabulario W2I ---- */
@@ -460,8 +519,8 @@ function _vacLoadVocabW2I(item) {
   area.appendChild(optsDiv);
 
   var config = _vacConfig(item);
-  config.onCorrect = function(s,ex,att){ _vacRecord(item, true, att===1); };
-  config.onWrong   = function(s,ex,att){ if(att===2) _vacRecord(item, false, false); };
+  config.onCorrect = function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); };
+  config.onWrong   = function(){ _vacTrackSession(item, false, false); };
   vocabExInit(config, 'word-to-image');
 }
 
@@ -522,7 +581,7 @@ function _vacLoadMates(item) {
 
   matesStart({
     generate: function(){ return tipo === 'sum' ? generarSuma(getNivel()) : generarResta(getNivel()); },
-    inputType: 'digits', prefix: 'vac', screenId: 's-vac-ex',
+    inputType: 'digits', prefix: 'vac-ex', screenId: 's-vac-ex',
     subjectKey: item.subjectKey, exerciseKey: item.exerciseKey, ptsFirst:10, ptsSecond:5,
     renderOp: function(ex, container) {
       var sign = tipo === 'sum' ? '+' : '−';
@@ -530,15 +589,17 @@ function _vacLoadMates(item) {
       var row1='',row2='',rowRes='';
       ex.a.toString().split('').forEach(function(d){row1+='<span style="font-size:22px;font-weight:800;color:#1F2937">'+d+'</span>';});
       ex.b.toString().split('').forEach(function(d){row2+='<span style="font-size:22px;font-weight:800;color:#1F2937">'+d+'</span>';});
-      res.split('').forEach(function(d,i){rowRes+='<div class="dbox'+(i===res.length-1?' active':'')+'" id="vac-box-'+i+'">?</div>';});
+      res.split('').forEach(function(d,i){rowRes+='<div class="dbox'+(i===res.length-1?' active':'')+'" id="vac-ex-box-'+i+'">?</div>';});
       var c = document.getElementById('vac-op-box') || container;
       if(c) c.innerHTML='<div style="display:flex;justify-content:flex-end;gap:6px;margin-bottom:4px">'+row1+'</div>'
         +'<div style="display:flex;justify-content:flex-end;gap:6px;margin-bottom:4px"><span style="font-size:22px;font-weight:800;color:#7C3AED">'+sign+'</span>'+row2+'</div>'
         +'<div style="height:2px;background:#E5E7EB;margin-bottom:8px"></div>'
-        +'<div style="display:flex;justify-content:flex-end;gap:8px" id="vac-res-row">'+rowRes+'</div>';
+        +'<div style="display:flex;justify-content:flex-end;gap:8px" id="vac-ex-res-row">'+rowRes+'</div>';
     },
     correctMsg: function(pts,ex){ return '<div style="font-weight:800">¡Correcto! +'+pts+' pts 🎉</div>'; },
-    onLoad: function(){}
+    onLoad: function(){},
+    onCorrect: function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); },
+    onWrong:   function(){ _vacTrackSession(item, false, false); }
   });
 }
 
@@ -595,17 +656,21 @@ function _vacLoadMatesProb(item) {
   card.style.cssText = 'background:var(--gray-50);border:0.5px solid var(--gray-100);border-radius:14px;padding:16px;margin-bottom:14px';
   card.innerHTML = '<div style="font-size:14px;font-weight:700;color:#1F2937;line-height:1.6;font-family:var(--f)">'+prob.enunciado+'</div>';
   var ansBox = document.createElement('div');
-  ansBox.id = 'vac-ans';
+  ansBox.id = 'vac-ex-ans';
   ansBox.style.cssText = 'width:100%;padding:14px;border:1.5px solid var(--gray-200);border-radius:12px;font-family:var(--f);font-size:20px;font-weight:800;text-align:center;margin-bottom:10px;color:#1F2937';
   ansBox.textContent = '?';
   area.appendChild(card);
   area.appendChild(ansBox);
-  _matesState = { config: { prefix:'vac', subjectKey:item.subjectKey, exerciseKey:item.exerciseKey, ptsFirst:15, ptsSecond:7, correctMsg:function(pts){ return '¡Correcto! +'+pts+' pts 🎉'; } }, ex:prob, intentos:0, val:'' };
+  _matesState = { config: { prefix:'vac-ex', subjectKey:item.subjectKey, exerciseKey:item.exerciseKey, ptsFirst:15, ptsSecond:7,
+    correctMsg:function(pts){ return '¡Correcto! +'+pts+' pts 🎉'; },
+    onCorrect: function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); },
+    onWrong:   function(){ _vacTrackSession(item, false, false); }
+  }, ex:prob, intentos:0, val:'' };
 }
 
 function vacTypeProb(k) {
   var s = _matesState; if(!s) return;
-  var box = document.getElementById('vac-ans');
+  var box = document.getElementById('vac-ex-ans');
   if(k==='del') s.val=s.val.slice(0,-1);
   else if(s.val.length<6) s.val+=k;
   if(box) box.textContent=s.val||'?';
