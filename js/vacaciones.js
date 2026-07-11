@@ -346,13 +346,6 @@ function _vacLoadMC(item) {
   config.onWrong   = function(s,ex,att){ if(att===2) _vacTrackSession(item, false, false); };
   var qcard = document.getElementById('vac-ex-qcard');
   if (qcard) qcard.style.display = 'block';
-  // Render question in area
-  var area = document.getElementById('vac-ex-area');
-  if (area) {
-    var opts = document.createElement('div');
-    opts.id = 'vac-ex-opts';
-    area.appendChild(opts);
-  }
   mcShowQuestion(config);
 }
 
@@ -373,8 +366,6 @@ function _vacLoadEnMC(item) {
   config.tryAgainMsg = '❌ Try again!';
   config.onCorrect = function(s,ex,att){ _vacTrackSession(item, true, att===1); };
   config.onWrong   = function(s,ex,att){ if(att===2) _vacTrackSession(item, false, false); };
-  var area = document.getElementById('vac-ex-area');
-  if (area) { var opts = document.createElement('div'); opts.id = 'vac-ex-opts'; area.appendChild(opts); }
   mcShowQuestion(config);
 }
 
@@ -526,16 +517,10 @@ function _vacLoadEnWO(item) {
 
 /* ---- Vocabulario W2I ---- */
 function _vacLoadVocabW2I(item) {
-  var area = document.getElementById('vac-ex-area');
-  if (!area) return;
-  var wordDiv = document.createElement('div');
-  wordDiv.style.cssText = 'background:#EFF6FF;border:0.5px solid #BFDBFE;border-radius:14px;padding:20px;text-align:center;margin-bottom:14px';
-  wordDiv.innerHTML = '<div id="vac-ex-word" style="font-size:24px;font-weight:800;color:#1D4ED8;font-family:var(--f)">' + item.ex.word + '</div><div style="font-size:13px;color:#3B82F6;margin-top:4px">Which image matches this word?</div>';
-  var optsDiv = document.createElement('div');
-  optsDiv.id = 'vac-ex-opts';
-  optsDiv.style.cssText = 'display:grid;grid-template-columns:repeat(3,1fr);gap:10px';
-  area.appendChild(wordDiv);
-  area.appendChild(optsDiv);
+  var qcard = document.getElementById('vac-ex-qcard');
+  var qEl   = document.getElementById('vac-ex-question');
+  if (qcard) qcard.style.display = 'block';
+  if (qEl) qEl.innerHTML = '<div style="font-size:24px;font-weight:800;color:#1D4ED8;font-family:var(--f)" id="vac-ex-word">' + item.ex.word + '</div><div style="font-size:13px;color:#3B82F6;margin-top:4px">Which image matches this word?</div>';
 
   var config = _vacConfig(item);
   config.getAllWords = _vocabGetAllWords;
