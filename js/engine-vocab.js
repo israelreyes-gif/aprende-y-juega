@@ -17,6 +17,8 @@
      setIdx:       fn(newIdx) para actualizar índice externo
      onFinish:     fn() al acabar la cola
      onAdvance:    fn(mode) al avanzar al siguiente
+     onCorrect:    fn(firstAttempt) — hook post-acierto (opcional)
+     onWrong:      fn() — hook post-fallo final, 2º intento (opcional)
    }
    ============================================= */
 
@@ -139,6 +141,7 @@ function vocabPickW2I(opt) {
     _vocabRenderW2I(word);
     recordResult(config.subjectKey, config.exerciseKey, true);
     awardPts(s.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(s.attempt === 1);
   } else if (s.attempt === 1) {
     s.attempt = 2; s.wrong = opt.word;
     fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err';
@@ -151,6 +154,7 @@ function vocabPickW2I(opt) {
     nextEl.style.display = 'block';
     _vocabRenderW2I(word);
     recordResult(config.subjectKey, config.exerciseKey, false);
+    if (config.onWrong) config.onWrong();
   }
 }
 
@@ -189,6 +193,7 @@ function vocabCheckI2W() {
     nextEl.style.display = 'block'; checkEl.style.display = 'none';
     recordResult(config.subjectKey, config.exerciseKey, true);
     awardPts(s.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(s.attempt === 1);
   } else if (s.attempt === 1) {
     s.attempt = 2;
     inp.style.borderColor = '#EF4444';
@@ -205,6 +210,7 @@ function vocabCheckI2W() {
     fbEl.textContent = '❌ The correct word is: ' + word.word;
     nextEl.style.display = 'block'; checkEl.style.display = 'none';
     recordResult(config.subjectKey, config.exerciseKey, false);
+    if (config.onWrong) config.onWrong();
   }
 }
 
