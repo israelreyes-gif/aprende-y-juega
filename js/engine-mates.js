@@ -143,8 +143,7 @@ function matesCheckDigits() {
     fb.className = 'feedback ok';
     fb.innerHTML = config.correctMsg ? config.correctMsg(pts, ex)
       : '<div class="fbt">¡Correcto! +' + pts + ' pts 🎉</div>';
-    recordResult(config.subjectKey, config.exerciseKey, true);
-    awardPts(pts, config.subjectKey);
+    engineSaveProgress(config, true, s.intentos === 0);
     if (config.onCorrect) config.onCorrect(s.intentos === 0);
     document.getElementById(p + '-next').style.display = 'block';
 
@@ -176,7 +175,7 @@ function matesCheckDigits() {
     fb.className = 'feedback bad';
     fb.innerHTML = config.wrongMsg ? config.wrongMsg(ex)
       : '<div class="fbt">La respuesta correcta era <strong>' + res + '</strong> 📖</div>';
-    recordResult(config.subjectKey, config.exerciseKey, false);
+    engineSaveProgress(config, false, false);
     if (config.onWrong) config.onWrong();
     document.getElementById(p + '-next').style.display = 'block';
   }
@@ -217,8 +216,7 @@ function matesPickOption(el, val) {
     fb.className = 'feedback ok';
     fb.innerHTML = config.correctMsg ? config.correctMsg(pts, ex)
       : '<div class="fbt">¡Correcto! +' + pts + ' pts 🎉</div>';
-    recordResult(config.subjectKey, config.exerciseKey, true);
-    awardPts(pts, config.subjectKey);
+    engineSaveProgress(config, true, s.intentos === 0);
     if (config.onCorrect) config.onCorrect(s.intentos === 0);
     document.getElementById(p + '-next').style.display = 'block';
   } else {
@@ -235,7 +233,7 @@ function matesPickOption(el, val) {
       fb.className = 'feedback bad';
       fb.innerHTML = config.wrongMsg ? config.wrongMsg(ex)
         : '<div class="fbt">La respuesta era <strong>' + ex.resultado + '</strong> 📖</div>';
-      recordResult(config.subjectKey, config.exerciseKey, false);
+      engineSaveProgress(config, false, false);
       if (config.onWrong) config.onWrong();
       document.getElementById(p + '-next').style.display = 'block';
     }
@@ -269,8 +267,7 @@ function matesCheckFree() {
     fb.className = 'feedback ok';
     fb.innerHTML = config.correctMsg ? config.correctMsg(pts, ex)
       : '<div class="fbt">¡Correcto! +' + pts + ' pts 🎉</div>';
-    recordResult(config.subjectKey, config.exerciseKey, true);
-    awardPts(pts, config.subjectKey);
+    engineSaveProgress(config, true, s.intentos === 0);
     if (config.onCorrect) config.onCorrect(s.intentos === 0);
     document.getElementById(p + '-next').style.display = 'block';
   } else {
@@ -288,7 +285,7 @@ function matesCheckFree() {
       fb.className = 'feedback bad';
       fb.innerHTML = config.wrongMsg ? config.wrongMsg(ex)
         : '<div class="fbt">La respuesta correcta era <strong>' + ex.resultado + '</strong> 📖</div>';
-      recordResult(config.subjectKey, config.exerciseKey, false);
+      engineSaveProgress(config, false, false);
       if (config.onWrong) config.onWrong();
       document.getElementById(p + '-next').style.display = 'block';
     }
