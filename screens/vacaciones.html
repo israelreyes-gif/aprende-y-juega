@@ -78,27 +78,19 @@
     <div id="vac-ex-bank" style="display:none"></div>
 
     <!-- Teclado numérico Mates -->
-    <div id="vac-num-kbd" class="num-kbd" style="display:none">
-      <div class="num-row">
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(1)||vacTypeProb&&vacTypeProb('1')">1</button>
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(2)||vacTypeProb&&vacTypeProb('2')">2</button>
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(3)||vacTypeProb&&vacTypeProb('3')">3</button>
-      </div>
-      <div class="num-row">
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(4)||vacTypeProb&&vacTypeProb('4')">4</button>
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(5)||vacTypeProb&&vacTypeProb('5')">5</button>
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(6)||vacTypeProb&&vacTypeProb('6')">6</button>
-      </div>
-      <div class="num-row">
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(7)||vacTypeProb&&vacTypeProb('7')">7</button>
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(8)||vacTypeProb&&vacTypeProb('8')">8</button>
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(9)||vacTypeProb&&vacTypeProb('9')">9</button>
-      </div>
-      <div class="num-row">
-        <button class="num-btn del-btn" onclick="vacPickDigit&&vacPickDigit(null)||vacTypeProb&&vacTypeProb('del')">🗑</button>
-        <button class="num-btn" onclick="vacPickDigit&&vacPickDigit(0)||vacTypeProb&&vacTypeProb('0')">0</button>
-        <button class="num-btn ok-btn" onclick="vacCheckMates&&vacCheckMates()||vacCheckProb&&vacCheckProb()">✅</button>
-      </div>
+    <div id="vac-num-kbd" class="numpad" style="display:none;margin-bottom:14px">
+      <div class="nk" onclick="vacNumKey(1)">1</div>
+      <div class="nk" onclick="vacNumKey(2)">2</div>
+      <div class="nk" onclick="vacNumKey(3)">3</div>
+      <div class="nk" onclick="vacNumKey(4)">4</div>
+      <div class="nk" onclick="vacNumKey(5)">5</div>
+      <div class="nk" onclick="vacNumKey(6)">6</div>
+      <div class="nk" onclick="vacNumKey(7)">7</div>
+      <div class="nk" onclick="vacNumKey(8)">8</div>
+      <div class="nk" onclick="vacNumKey(9)">9</div>
+      <div class="nk nk-del" onclick="vacNumKey('del')">🗑️</div>
+      <div class="nk" onclick="vacNumKey(0)">0</div>
+      <div class="nk nk-ok" style="background:#F59E0B" onclick="vacNumCheck()">✅</div>
     </div>
 
     <div class="feedback" id="vac-ex-fb" style="display:none"></div>
