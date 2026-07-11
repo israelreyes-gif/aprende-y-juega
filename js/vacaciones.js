@@ -480,14 +480,14 @@ function _vacLoadVocabI2W(item) {
   var checkBtn = document.createElement('button');
   checkBtn.id = 'i2w-check'; checkBtn.style.cssText = 'width:100%;padding:13px;border-radius:14px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default';
   checkBtn.textContent = 'Check ✓';
-  checkBtn.onclick = function(){ vacCheckI2W(item); };
+  var attempt = 1;
+  checkBtn.onclick = function(){ vacCheckI2W(item, inp, attempt, function(nextAttempt){ attempt = nextAttempt; }); };
   area.appendChild(emojiDiv);
   area.appendChild(inp);
   area.appendChild(checkBtn);
 }
 
-function vacCheckI2W(item) {
-  var inp = document.getElementById('i2w-input');
+function vacCheckI2W(item, inp, attempt, setAttempt) {
   var fb  = document.getElementById('vac-ex-fb');
   var nxt = document.getElementById('vac-ex-next');
   if (!inp || !inp.value.trim()) return;
@@ -495,13 +495,19 @@ function vacCheckI2W(item) {
   fb.style.display = 'block';
   if (isOk) {
     inp.style.borderColor = '#22C55E'; inp.style.background = '#F0FDF4'; inp.disabled = true;
-    fb.className = 'feedback fb-ok'; fb.textContent = '✅ Correct! +10 pts 🎉';
+    fb.className = 'feedback fb-ok'; fb.textContent = '✅ Correct! +' + (attempt === 1 ? 10 : 5) + ' pts 🎉';
     nxt.style.display = 'block';
-    _vacRecord(item, true, true);
-  } else {
+    _vacRecord(item, true, attempt === 1);
+  } else if (attempt === 1) {
+    setAttempt(2);
     fb.className = 'feedback fb-err'; fb.textContent = '❌ Not quite — try again!';
     inp.style.borderColor = '#EF4444';
     setTimeout(function(){ inp.style.borderColor=''; inp.value=''; fb.style.display='none'; }, 1200);
+  } else {
+    inp.disabled = true; inp.style.borderColor = '#EF4444'; inp.style.background = '#FEF2F2';
+    fb.className = 'feedback fb-err'; fb.innerHTML = '❌ The word was: <strong>' + item.ex.word.toUpperCase() + '</strong>';
+    nxt.style.display = 'block';
+    _vacRecord(item, false, false);
   }
 }
 
