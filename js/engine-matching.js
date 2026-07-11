@@ -198,8 +198,7 @@ function _mcMatchCheck(state, grid, colors, checkBtn) {
       fbEl.textContent = '✅ ' + (state.attempt === 1 ? '¡Todos los pares correctos! +' + pts + ' pts 🎉' : '¡Bien, en el segundo intento! +' + pts + ' pts');
     }
     if (nextBtn) nextBtn.style.display = 'block';
-    recordResult(config.subjectKey, config.exerciseKey, true);
-    awardPts(pts, config.subjectKey);
+    engineSaveProgress(config, true, state.attempt === 1);
     if (config.onCorrect) config.onCorrect(state.attempt === 1);
 
   } else if (state.attempt === 1) {
@@ -253,7 +252,7 @@ function _mcMatchCheck(state, grid, colors, checkBtn) {
     if (checkBtn) checkBtn.style.display = 'none';
     if (fbEl) { fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err'; fbEl.textContent = '❌ Aquí están los pares correctos'; }
     if (nextBtn) nextBtn.style.display = 'block';
-    recordResult(config.subjectKey, config.exerciseKey, false);
+    engineSaveProgress(config, false, false);
     if (config.onWrong) config.onWrong();
   }
 }
