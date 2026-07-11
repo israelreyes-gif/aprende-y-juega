@@ -258,9 +258,9 @@ function _vacLoadEx() {
   var area = document.getElementById(p + '-area');
   if (area) area.innerHTML = '';
   var optsEl = document.getElementById(p + '-opts');
-  if (optsEl) optsEl.innerHTML = '';
+  if (optsEl) { optsEl.innerHTML = ''; optsEl.style.cssText = 'display:flex;flex-direction:column;gap:8px;margin-bottom:8px'; }
   var qcard = document.getElementById(p + '-qcard');
-  if (qcard) qcard.style.display = 'none';
+  if (qcard) { qcard.style.display = 'none'; qcard.style.cssText = 'background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:14px;padding:16px;text-align:center;margin-bottom:14px;display:none'; }
   var numKbd = document.getElementById('vac-num-kbd');
   if (numKbd) numKbd.style.display = 'none';
   document.getElementById(p + '-fb').style.display   = 'none';
@@ -519,8 +519,13 @@ function _vacLoadEnWO(item) {
 function _vacLoadVocabW2I(item) {
   var qcard = document.getElementById('vac-ex-qcard');
   var qEl   = document.getElementById('vac-ex-question');
-  if (qcard) qcard.style.display = 'block';
-  if (qEl) qEl.innerHTML = '<div style="font-size:24px;font-weight:800;color:#1D4ED8;font-family:var(--f)" id="vac-ex-word">' + item.ex.word + '</div><div style="font-size:13px;color:#3B82F6;margin-top:4px">Which image matches this word?</div>';
+  if (qcard) {
+    qcard.style.display = 'block';
+    qcard.style.cssText = 'margin-bottom:20px;padding:20px;background:#EFF6FF;border-radius:16px;text-align:center;border:1.5px solid #BFDBFE';
+  }
+  if (qEl) qEl.innerHTML = '<div id="vac-ex-word" style="font-family:var(--f);font-weight:900;font-size:28px;color:var(--blue);letter-spacing:1px">' + item.ex.word + '</div><div style="font-size:12px;color:var(--gray-400);margin-top:6px">Which image matches this word?</div>';
+  var optsEl = document.getElementById('vac-ex-opts');
+  if (optsEl) optsEl.style.cssText = 'display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px';
 
   var config = _vacConfig(item);
   config.getAllWords = _vocabGetAllWords;
