@@ -8,6 +8,7 @@ var VAC = {
   queue:   [],
   idx:     0,
   ok:      0,
+  pts:     0,
   breakdown: {}
 };
 
@@ -113,7 +114,9 @@ function vacStart() {
     VAC.queue = _vacShuffle(all).slice(0, 20);
     VAC.idx   = 0;
     VAC.ok    = 0;
+    VAC.pts   = 0;
     VAC.breakdown = {};
+    setEl('vac-ex-pts', '⭐ 0 pts');
     go('s-vac-ex');
     _vacLoadEx();
   });
@@ -183,6 +186,8 @@ function _vacLoadEx() {
 
   var area = document.getElementById(p + '-area');
   if (area) area.innerHTML = '';
+  var qcard = document.getElementById(p + '-qcard');
+  if (qcard) qcard.style.display = 'none';
   document.getElementById(p + '-fb').style.display   = 'none';
   document.getElementById(p + '-next').style.display = 'none';
 
@@ -235,7 +240,12 @@ function _vacConfig(item) {
 
 function _vacRecord(item, correct, firstAttempt) {
   recordResult(item.subjectKey, item.exerciseKey, correct);
-  if (correct) awardPts(firstAttempt ? 10 : 5, item.subjectKey);
+  if (correct) {
+    var pts = firstAttempt ? 10 : 5;
+    awardPts(pts, item.subjectKey);
+    VAC.pts += pts;
+    setEl('vac-ex-pts', '⭐ ' + VAC.pts + ' pts');
+  }
   if (!VAC.breakdown[item.subjectName]) VAC.breakdown[item.subjectName] = { ok:0, total:0, icon:item.icon };
   if (correct && firstAttempt) { VAC.breakdown[item.subjectName].ok++; VAC.ok++; }
   VAC.breakdown[item.subjectName].total++;
@@ -248,6 +258,8 @@ function _vacLoadMC(item) {
   config.getExplanation = function(ex){ return ex.explanation || ''; };
   config.onCorrect = function(s,ex,att){ _vacRecord(item, true, att===1); };
   config.onWrong   = function(s,ex,att){ if(att===2) _vacRecord(item, false, false); };
+  var qcard = document.getElementById('vac-ex-qcard');
+  if (qcard) qcard.style.display = 'block';
   // Render question in area
   var area = document.getElementById('vac-ex-area');
   if (area) {
@@ -261,6 +273,8 @@ function _vacLoadMC(item) {
 function _vacLoadEnMC(item) {
   var config = _vacConfig(item);
   config.badgeLabel = 'Question';
+  var qcard = document.getElementById('vac-ex-qcard');
+  if (qcard) qcard.style.display = 'block';
   config.renderQuestion = function(qEl, ex) {
     if (ex.hasTranslation && ex.question && ex.question.indexOf('\n') > -1) {
       var parts = ex.question.split('\n');
