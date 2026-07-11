@@ -45,13 +45,7 @@ function mcShowQuestion(config) {
   var total = config.queue.length;
   var p = config.prefix;
 
-  setEl(p + '-badge', (config.badgeLabel || 'Question') + ' ' + (config.idx + 1) + ' of ' + total);
-  setBar(p + '-prog', Math.round(config.idx / total * 100));
-
-  var streak = (ST[config.subjectKey] && ST[config.subjectKey].streak) || 0;
-  var diff = diffLabel(streak);
-  var diffEl = document.getElementById(p + '-diff');
-  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
+  engineUpdateBadge(p, config, config.idx, total);
 
   var qEl = document.getElementById(p + '-question');
   if (qEl) {
@@ -186,15 +180,7 @@ function _mcHandleAnswer(config, selected, ex, attempt, optsEl) {
 }
 
 function mcRecordResult(config, correct, firstAttempt) {
-  var key       = config.subjectKey;
-  var exKey     = config.exerciseKey || key;
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
-
-  recordResult(key, exKey, correct);
-  if (correct) {
-    awardPts(firstAttempt ? ptsFirst : ptsSecond, key);
-  }
+  engineSaveProgress(config, correct, firstAttempt);
 }
 
 function mcNext(config) {
