@@ -49,14 +49,14 @@ function _vacGetExerciseTypes() {
         unit.exercises.forEach(function(ex) {
           var key = unit.id === 'modal-verbs' ? 'vacaciones-english-modals' : 'vacaciones-english-tobe';
           types.push({ type: 'en-mc', subjectKey: 'vacaciones', exerciseKey: key,
-            subjectName: 'English', icon: '🇬🇧', ex: ex, area: unit.id === 'modal-verbs' ? 'modals' : 'tobe' });
+            subjectName: 'English', icon: UK_FLAG_SMALL, ex: ex, area: unit.id === 'modal-verbs' ? 'modals' : 'tobe' });
         });
       }
       // Word Order
       if (unit.sentences) {
         unit.sentences.forEach(function(s) {
           types.push({ type: 'en-wo', subjectKey: 'vacaciones', exerciseKey: 'vacaciones-english-wo',
-            subjectName: 'English', icon: '🇬🇧', ex: s, area: unit.id === 'modal-verbs' ? 'modals' : 'tobe' });
+            subjectName: 'English', icon: UK_FLAG_SMALL, ex: s, area: unit.id === 'modal-verbs' ? 'modals' : 'tobe' });
         });
       }
     });
@@ -67,9 +67,9 @@ function _vacGetExerciseTypes() {
     SubjectData.vocab.units.forEach(function(unit) {
       unit.words.forEach(function(w) {
         types.push({ type: 'en-vocab-w2i', subjectKey: 'vacaciones', exerciseKey: 'vacaciones-english-vocab',
-          subjectName: 'English', icon: '🇬🇧', ex: w });
+          subjectName: 'English', icon: UK_FLAG_SMALL, ex: w });
         types.push({ type: 'en-vocab-i2w', subjectKey: 'vacaciones', exerciseKey: 'vacaciones-english-vocab',
-          subjectName: 'English', icon: '🇬🇧', ex: w });
+          subjectName: 'English', icon: UK_FLAG_SMALL, ex: w });
       });
     });
   }
@@ -176,7 +176,8 @@ function _vacLoadEx() {
   var total = VAC.queue.length;
   var p = 'vac-ex';
 
-  setEl(p + '-title', item.icon + ' ' + item.subjectName);
+  var titleEl = document.getElementById(p + '-title');
+  if (titleEl) titleEl.innerHTML = item.icon + ' ' + item.subjectName;
   setEl(p + '-counter', (VAC.idx + 1) + ' / ' + total);
   setBar(p + '-prog', Math.round((VAC.idx / total) * 100));
 
@@ -687,7 +688,7 @@ function renderVacacionesHome() {
   var subjects = [
     { name:'Mates',    icon:'🔢', keys:['vacaciones-mates-suma','vacaciones-mates-multi','vacaciones-mates-prob','vacaciones-mates-mix'] },
     { name:'Lengua',   icon:'📚', keys:['vacaciones-lengua-gram-bv','vacaciones-lengua-gram-gj','vacaciones-lengua-gram-czq','vacaciones-lengua-gram-lly','vacaciones-lengua-gram-rr'] },
-    { name:'English',  icon:'🇬🇧', keys:['vacaciones-english-tobe','vacaciones-english-modals','vacaciones-english-vocab','vacaciones-english-wo'] },
+    { name:'English',  icon: UK_FLAG_SMALL, keys:['vacaciones-english-tobe','vacaciones-english-modals','vacaciones-english-vocab','vacaciones-english-wo'] },
     { name:'Sciences', icon:'🔬', keys:['vacaciones-sciences-invertebrates','vacaciones-sciences-mix'] },
     { name:'Sociales', icon:'🌍', keys:['vacaciones-sociales-vf','vacaciones-sociales-relacionar','vacaciones-sociales-completar'] }
   ];
