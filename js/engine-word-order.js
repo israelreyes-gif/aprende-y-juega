@@ -59,13 +59,7 @@ function _woLoad() {
   _woState.attempt = 1;
   _woState.checked = false;
 
-  setEl(p + '-badge', (config.badgeLabel || 'Question') + ' ' + (config.idx + 1) + ' of ' + total);
-  setBar(p + '-prog', Math.round(config.idx / total * 100));
-
-  var streak = (ST[config.subjectKey] && ST[config.subjectKey].streak) || 0;
-  var diff = diffLabel(streak);
-  var diffEl = document.getElementById(p + '-diff');
-  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
+  engineUpdateBadge(p, config, config.idx, total);
 
   var words = _woClean(sentence, config).split(' ');
   _woState.slots = words.map(function(){ return null; });
@@ -207,8 +201,7 @@ function woCheck() {
     if (nextEl)  nextEl.style.display = 'block';
     if (resetEl) resetEl.style.display = 'none';
     if (checkEl) checkEl.style.display = 'none';
-    recordResult(config.subjectKey, config.exerciseKey, true);
-    awardPts(_woState.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    engineSaveProgress(config, true, _woState.attempt === 1);
     if (config.onCorrect) config.onCorrect(_woState.attempt === 1);
 
   } else if (_woState.attempt === 1) {
@@ -223,7 +216,7 @@ function woCheck() {
     if (nextEl)  nextEl.style.display = 'block';
     if (resetEl) resetEl.style.display = 'none';
     if (checkEl) checkEl.style.display = 'none';
-    recordResult(config.subjectKey, config.exerciseKey, false);
+    engineSaveProgress(config, false, false);
     if (config.onWrong) config.onWrong();
   }
 
