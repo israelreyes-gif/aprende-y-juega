@@ -13,6 +13,8 @@
      ptsSecond:  puntos segundo intento (def. 5)
      colors:     array de colores [ {border, bg, text}, ... ]
      onFinish:   función al terminar todos los ejercicios
+     onCorrect:  fn(firstAttempt) — hook post-acierto (opcional)
+     onWrong:    fn() — hook post-fallo final, 2º intento (opcional)
    }
    ============================================= */
 
@@ -198,6 +200,7 @@ function _mcMatchCheck(state, grid, colors, checkBtn) {
     if (nextBtn) nextBtn.style.display = 'block';
     recordResult(config.subjectKey, config.exerciseKey, true);
     awardPts(pts, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(state.attempt === 1);
 
   } else if (state.attempt === 1) {
     state.attempt = 2;
@@ -251,5 +254,6 @@ function _mcMatchCheck(state, grid, colors, checkBtn) {
     if (fbEl) { fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err'; fbEl.textContent = '❌ Aquí están los pares correctos'; }
     if (nextBtn) nextBtn.style.display = 'block';
     recordResult(config.subjectKey, config.exerciseKey, false);
+    if (config.onWrong) config.onWrong();
   }
 }
