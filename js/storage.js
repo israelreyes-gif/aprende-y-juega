@@ -259,6 +259,7 @@ function checkDayReset() {
 function recordResult(subject, exerciseKey, correct) {
   var s = ST[subject];
   if (!s) return;
+  if (!s.errors) s.errors = {};
   s.hoy++; s.total++;
   if (correct) {
     s.hoyOk++; s.totalOk++;
