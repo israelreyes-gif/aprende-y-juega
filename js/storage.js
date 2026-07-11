@@ -161,6 +161,14 @@ function loadStateFromCloud(callback, skipDayReset) {
         if (data.last_date !== undefined && data.lastDate === undefined) data.lastDate = data.last_date;
         if (data.week_days !== undefined && data.weekDays === undefined) data.weekDays = data.week_days;
         if (data.month_days !== undefined && data.monthDays === undefined) data.monthDays = data.month_days;
+        // Blindaje: si la API devuelve algún campo de asignatura como texto JSON
+        // sin convertir (en vez de objeto), lo parseamos aquí antes de fusionar.
+        ['mates','lengua','sciences','english','sociales','vacaciones'].forEach(function(sub) {
+          if (typeof data[sub] === 'string') {
+            try { data[sub] = JSON.parse(data[sub]); }
+            catch (e) { console.warn('[storage] No se pudo parsear ' + sub + ', se usará el valor por defecto', e); data[sub] = undefined; }
+          }
+        });
       }
       ST = data ? mergeState(data) : defaultState();
       if (!skipDayReset) checkDayReset();
