@@ -45,6 +45,14 @@ function _vocabShuffle(arr) {
   return a;
 }
 
+
+/* ---- Prefijo de IDs: usa config.prefix si se especifica (p.ej. Vacaciones),
+   si no cae al valor por defecto según el modo (w2i/i2w) ---- */
+function _vocabPrefix() {
+  var config = _vocabState.config;
+  return (config && config.prefix) || (_vocabState.mode === 'word-to-image' ? 'w2i' : 'i2w');
+}
+
 function _vocabLoad() {
   var config = _vocabState.config;
   var word   = config.queue[config.idx];
@@ -55,7 +63,7 @@ function _vocabLoad() {
   _vocabState.done    = false;
   _vocabState.wrong   = null;
 
-  var prefix = mode === 'word-to-image' ? 'w2i' : 'i2w';
+  var prefix = _vocabPrefix();
 
   setEl(prefix + '-badge', 'Question ' + (config.idx + 1) + ' of ' + total);
   setBar(prefix + '-prog', Math.round(config.idx / total * 100));
@@ -69,16 +77,17 @@ function _vocabLoad() {
   document.getElementById(prefix + '-next').style.display = 'none';
 
   if (mode === 'word-to-image') {
-    setEl('w2i-word', word.word);
+    setEl(prefix + '-word', word.word);
     // Generar opciones una sola vez
     var allWords = config.getAllWords();
     var distractors = _vocabShuffle(allWords.filter(function(w){ return w.word !== word.word; })).slice(0, 2);
     _vocabState.opts = _vocabShuffle([word].concat(distractors));
     _vocabRenderW2I(word);
   } else {
-    setEl('i2w-emoji', word.emoji);
-    document.getElementById('i2w-check').style.display = '';
-    var inp = document.getElementById('i2w-input');
+    setEl(prefix + '-emoji', word.emoji);
+    var checkBtnEl = document.getElementById(prefix + '-check'); if (checkBtnEl) checkBtnEl.style.display = '';
+    var inp = document.getElementById(prefix + '-input');
+    if (!inp) return;
     inp.value = ''; inp.disabled = false;
     inp.style.borderColor = 'var(--gray-200)';
     inp.style.background  = 'white';
@@ -93,7 +102,7 @@ function _vocabLoad() {
 
 /* ---- W2I: renderizar opciones de imagen ---- */
 function _vocabRenderW2I(word) {
-  var container = document.getElementById('w2i-opts');
+  var container = document.getElementById(_vocabPrefix() + '-opts');
   if (!container) return;
   container.innerHTML = '';
   var s = _vocabState;
@@ -128,8 +137,9 @@ function vocabPickW2I(opt) {
   var config = s.config;
   var word   = config.queue[config.idx];
   var isCorrect = opt.word === word.word;
-  var fbEl  = document.getElementById('w2i-fb');
-  var nextEl = document.getElementById('w2i-next');
+  var vp = _vocabPrefix();
+  var fbEl  = document.getElementById(vp + '-fb');
+  var nextEl = document.getElementById(vp + '-next');
   var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
   var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
 
@@ -160,8 +170,9 @@ function vocabPickW2I(opt) {
 
 /* ---- I2W: botón comprobar ---- */
 function _vocabUpdateI2WBtn() {
-  var inp = document.getElementById('i2w-input');
-  var btn = document.getElementById('i2w-check');
+  var vp = _vocabPrefix();
+  var inp = document.getElementById(vp + '-input');
+  var btn = document.getElementById(vp + '-check');
   if (!inp || !btn) return;
   var filled = inp.value.trim().length > 0;
   btn.style.background = filled ? 'var(--blue)' : 'var(--gray-200)';
@@ -175,10 +186,11 @@ function vocabCheckI2W() {
   if (s.done) return;
   var config = s.config;
   var word   = config.queue[config.idx];
-  var inp    = document.getElementById('i2w-input');
-  var fbEl   = document.getElementById('i2w-fb');
-  var nextEl = document.getElementById('i2w-next');
-  var checkEl = document.getElementById('i2w-check');
+  var vp = _vocabPrefix();
+  var inp    = document.getElementById(vp + '-input');
+  var fbEl   = document.getElementById(vp + '-fb');
+  var nextEl = document.getElementById(vp + '-next');
+  var checkEl = document.getElementById(vp + '-check');
   var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
   var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
 
