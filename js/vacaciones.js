@@ -12,6 +12,22 @@ var VAC = {
   breakdown: {}
 };
 
+/* Modo activo del teclado numérico compartido: 'digits' (suma/resta) o 'free' (problemas) */
+var _vacNumMode = 'digits';
+
+function vacNumKey(k) {
+  if (_vacNumMode === 'free') {
+    vacTypeProb(k === 'del' ? 'del' : String(k));
+  } else {
+    vacPickDigit(k === 'del' ? null : k);
+  }
+}
+
+function vacNumCheck() {
+  if (_vacNumMode === 'free') vacCheckProb();
+  else vacCheckMates();
+}
+
 /* ---- Tipos de ejercicio disponibles ---- */
 function _vacGetExerciseTypes() {
   var types = [];
@@ -245,6 +261,8 @@ function _vacLoadEx() {
   if (optsEl) optsEl.innerHTML = '';
   var qcard = document.getElementById(p + '-qcard');
   if (qcard) qcard.style.display = 'none';
+  var numKbd = document.getElementById('vac-num-kbd');
+  if (numKbd) numKbd.style.display = 'none';
   document.getElementById(p + '-fb').style.display   = 'none';
   document.getElementById(p + '-next').style.display = 'none';
 
@@ -481,6 +499,7 @@ function _vacLoadEnWO(item) {
   checkBtn.id = 'vac-ex-check';
   checkBtn.style.cssText = 'width:100%;padding:13px;border-radius:14px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default';
   checkBtn.textContent = 'Comprobar ✓';
+  checkBtn.onclick = function() { woCheck(); };
 
   var resetBtn = document.createElement('button');
   resetBtn.id = 'vac-ex-reset';
@@ -574,6 +593,9 @@ function vacCheckI2W(item, inp, attempt, setAttempt) {
 function _vacLoadMates(item) {
   var area = document.getElementById('vac-ex-area');
   if (!area) return;
+  _vacNumMode = 'digits';
+  var numKbd = document.getElementById('vac-num-kbd');
+  if (numKbd) numKbd.style.display = '';
   var tipo = item.type === 'mates-suma' ? 'sum' : 'res';
   var opBox = document.createElement('div'); opBox.id = 'vac-op-box';
   opBox.style.cssText = 'background:white;border:0.5px solid var(--gray-200);border-radius:14px;padding:16px';
@@ -649,6 +671,9 @@ function _vacLoadMatesMulti(item) {
 function _vacLoadMatesProb(item) {
   var area = document.getElementById('vac-ex-area');
   if (!area) return;
+  _vacNumMode = 'free';
+  var numKbd = document.getElementById('vac-num-kbd');
+  if (numKbd) numKbd.style.display = '';
   var nivel = getNivel();
   var banco = SubjectData.problemas[nivel];
   var prob = banco && banco.length ? banco[Math.floor(Math.random()*banco.length)] : { enunciado:'María tiene 346 cromos. Le da 128. ¿Cuántos le quedan?', resultado:218 };
