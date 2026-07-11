@@ -538,6 +538,7 @@ function _vacLoadVocabW2I(item) {
   area.appendChild(optsDiv);
 
   var config = _vacConfig(item);
+  config.getAllWords = _vocabGetAllWords;
   config.onCorrect = function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); };
   config.onWrong   = function(){ _vacTrackSession(item, false, false); };
   vocabExInit(config, 'word-to-image');
