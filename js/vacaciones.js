@@ -186,6 +186,8 @@ function _vacLoadEx() {
 
   var area = document.getElementById(p + '-area');
   if (area) area.innerHTML = '';
+  var optsEl = document.getElementById(p + '-opts');
+  if (optsEl) optsEl.innerHTML = '';
   var qcard = document.getElementById(p + '-qcard');
   if (qcard) qcard.style.display = 'none';
   document.getElementById(p + '-fb').style.display   = 'none';
