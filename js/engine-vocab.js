@@ -65,13 +65,7 @@ function _vocabLoad() {
 
   var prefix = _vocabPrefix();
 
-  setEl(prefix + '-badge', 'Question ' + (config.idx + 1) + ' of ' + total);
-  setBar(prefix + '-prog', Math.round(config.idx / total * 100));
-
-  var streak = (ST[config.subjectKey] && ST[config.subjectKey].streak) || 0;
-  var diff = diffLabel(streak);
-  var diffEl = document.getElementById(prefix + '-diff');
-  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
+  engineUpdateBadge(prefix, config, config.idx, total);
 
   document.getElementById(prefix + '-fb').style.display   = 'none';
   document.getElementById(prefix + '-next').style.display = 'none';
@@ -149,8 +143,7 @@ function vocabPickW2I(opt) {
     fbEl.textContent = '✅ Correct! +' + (s.attempt === 1 ? ptsFirst : ptsSecond) + ' pts 🎉';
     nextEl.style.display = 'block';
     _vocabRenderW2I(word);
-    recordResult(config.subjectKey, config.exerciseKey, true);
-    awardPts(s.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    engineSaveProgress(config, true, s.attempt === 1);
     if (config.onCorrect) config.onCorrect(s.attempt === 1);
   } else if (s.attempt === 1) {
     s.attempt = 2; s.wrong = opt.word;
@@ -163,7 +156,7 @@ function vocabPickW2I(opt) {
     fbEl.textContent = '❌ The answer is: ' + word.emoji + ' ' + word.word;
     nextEl.style.display = 'block';
     _vocabRenderW2I(word);
-    recordResult(config.subjectKey, config.exerciseKey, false);
+    engineSaveProgress(config, false, false);
     if (config.onWrong) config.onWrong();
   }
 }
@@ -203,8 +196,7 @@ function vocabCheckI2W() {
     fbEl.style.display = 'block'; fbEl.className = 'feedback fb-ok';
     fbEl.textContent = '✅ Correct! +' + (s.attempt === 1 ? ptsFirst : ptsSecond) + ' pts 🎉';
     nextEl.style.display = 'block'; checkEl.style.display = 'none';
-    recordResult(config.subjectKey, config.exerciseKey, true);
-    awardPts(s.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    engineSaveProgress(config, true, s.attempt === 1);
     if (config.onCorrect) config.onCorrect(s.attempt === 1);
   } else if (s.attempt === 1) {
     s.attempt = 2;
@@ -221,7 +213,7 @@ function vocabCheckI2W() {
     fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err';
     fbEl.textContent = '❌ The correct word is: ' + word.word;
     nextEl.style.display = 'block'; checkEl.style.display = 'none';
-    recordResult(config.subjectKey, config.exerciseKey, false);
+    engineSaveProgress(config, false, false);
     if (config.onWrong) config.onWrong();
   }
 }
