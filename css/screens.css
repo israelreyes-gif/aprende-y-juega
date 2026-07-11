@@ -30,6 +30,7 @@
 }
 .screen-body::-webkit-scrollbar { display: none; }
 .screen-body .next-btn { width: 100%; margin-left: 0; margin-right: 0; }
+.screen-body .numpad { padding-left: 0; padding-right: 0; }
 
 /* HEADER PROGRESS */
 .hprog      { padding: 0 18px 16px; flex-shrink: 0; }
