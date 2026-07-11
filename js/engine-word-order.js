@@ -14,6 +14,8 @@
      setIdx:       fn(newIdx) para actualizar índice externo
      onFinish:     fn() al acabar la cola
      onAdvance:    fn() al avanzar al siguiente
+     onCorrect:    fn(firstAttempt) — hook post-acierto (opcional)
+     onWrong:      fn() — hook post-fallo final, 2º intento (opcional)
 
      cleanSentence: fn(sentence) → string sin puntuación
                     Opcional. Por defecto elimina .!? del final.
@@ -207,6 +209,7 @@ function woCheck() {
     if (checkEl) checkEl.style.display = 'none';
     recordResult(config.subjectKey, config.exerciseKey, true);
     awardPts(_woState.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(_woState.attempt === 1);
 
   } else if (_woState.attempt === 1) {
     _woState.attempt = 2;
@@ -221,6 +224,7 @@ function woCheck() {
     if (resetEl) resetEl.style.display = 'none';
     if (checkEl) checkEl.style.display = 'none';
     recordResult(config.subjectKey, config.exerciseKey, false);
+    if (config.onWrong) config.onWrong();
   }
 
   woRenderSlots();
