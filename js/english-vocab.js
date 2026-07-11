@@ -1,223 +1,239 @@
 /* =============================================
-   ENGLISH-VOCAB.JS — Flashcards + Ejercicios W2I/I2W
+   ENGINE-VOCAB.JS — Motor genérico para
+   ejercicios de vocabulario imagen↔palabra.
+
+   Soporta dos modos:
+   - 'word-to-image' (W2I): muestra la palabra, elige la imagen
+   - 'image-to-word' (I2W): muestra la imagen, escribe la palabra
+
+   config = {
+     queue:        array de palabras { word, emoji, hint, es }
+     idx:          índice actual
+     subjectKey:   clave en ST (ej. 'english')
+     exerciseKey:  clave para errors (ej. 'english-vocab')
+     ptsFirst:     puntos primer intento (def. 10)
+     ptsSecond:    puntos segundo intento (def. 5)
+     getAllWords:   fn() → array de todas las palabras (para distractores)
+     setIdx:       fn(newIdx) para actualizar índice externo
+     onFinish:     fn() al acabar la cola
+     onAdvance:    fn(mode) al avanzar al siguiente
+     onCorrect:    fn(firstAttempt) — hook post-acierto (opcional)
+     onWrong:      fn() — hook post-fallo final, 2º intento (opcional)
+   }
    ============================================= */
 
+var _vocabState = {};
 
-var VOCAB_COLORS = {
-  orange: { color: '#F97316', bg: '#FFF7ED', border: '#FED7AA' },
-  blue:   { color: '#3B82F6', bg: '#EFF6FF', border: '#BFDBFE' }
-};
-
-function loadVocabData(callback) {
-  if (SubjectData.vocab) { callback(); return; }
-  fetch('data/curso' + cursoActual + '/english-vocab.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) { SubjectData.vocab = d; callback(); })
-    .catch(function(e) { showError('el Vocabulario', e, function(){ loadVocabData(function(){}); }, 's-english'); });
-}
-
-/* ---- Menú de temas ---- */
-function renderVocabMenu() {
-  loadVocabData(function() {
-    var grid = document.getElementById('vocab-topics-grid');
-    if (!grid) return;
-    grid.innerHTML = '';
-    SubjectData.vocab.units.forEach(function(unit) {
-      var c = VOCAB_COLORS[unit.color] || VOCAB_COLORS.blue;
-      var card = document.createElement('div');
-      card.style.cssText = 'background:'+c.bg+';border:1.5px solid '+c.border+';border-radius:16px;padding:18px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;margin:0 16px 12px;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:box-shadow .2s';
-      card.innerHTML =
-        '<div style="font-size:44px">'+unit.emoji+'</div>'+
-        '<div style="flex:1">'+
-          '<div style="font-family:var(--f);font-weight:900;font-size:16px;color:'+c.color+'">'+unit.title+'</div>'+
-          '<div style="font-size:12px;color:var(--gray-400);margin-top:3px">'+unit.words.length+' words</div>'+
-        '</div>'+
-        '<div style="font-size:20px;color:'+c.border+'">›</div>';
-      card.addEventListener('mouseenter', function() { card.style.boxShadow = '0 4px 16px rgba(0,0,0,.12)'; });
-      card.addEventListener('mouseleave', function() { card.style.boxShadow = '0 2px 8px rgba(0,0,0,.06)'; });
-      card.addEventListener('click', function() { openVocabUnit(unit); });
-      grid.appendChild(card);
-    });
-  });
-}
-
-/* ---- Abrir unidad ---- */
-function openVocabUnit(unit) {
-  EN.vocabUnit    = unit;
-  EN.vocabFlipped = unit.words.map(function() { return false; });
-  var c = VOCAB_COLORS[unit.color] || VOCAB_COLORS.blue;
-
-  // Actualizar topbar color
-  var topbar = document.getElementById('vocab-unit-topbar');
-  if (topbar) topbar.style.background = c.color;
-
-  setEl('vocab-unit-title', unit.title);
-
-  // Botón flip all
-  var btn = document.getElementById('vocab-flip-all-btn');
-  if (btn) {
-    btn.style.background = c.bg;
-    btn.style.color      = c.color;
-    btn.style.borderColor = c.border;
-    btn.textContent = 'Show all hints';
-  }
-
-  go('s-english-vocab-unit');
-  renderVocabCards();
-}
-
-/* ---- Renderizar tarjetas ---- */
-function speakWord(word, e) {
-  e.stopPropagation();
-  if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  var utter = new SpeechSynthesisUtterance(word);
-  utter.lang  = 'en-GB';
-  utter.rate  = 0.85;
-  utter.pitch = 1;
-
-  var voices = window.speechSynthesis.getVoices();
-  var preferred = [
-    'Microsoft Libby',
-    'Google UK English Female',
-    'Samantha', 'Karen', 'Moira', 'Tessa', 'Fiona', 'Victoria'
-  ];
-  var voice = null;
-  for (var p = 0; p < preferred.length; p++) {
-    voice = voices.find(function(v) { return v.name.includes(preferred[p]); });
-    if (voice) break;
-  }
-  if (!voice) {
-    voice = voices.find(function(v) {
-      return v.lang.startsWith('en') && (
-        v.name.toLowerCase().includes('female') ||
-        v.name.toLowerCase().includes('woman')
-      );
-    });
-  }
-  if (voice) utter.voice = voice;
-  window.speechSynthesis.speak(utter);
-}
-
-function renderVocabCards() {
-  var grid = document.getElementById('vocab-cards-grid');
-  if (!grid || !EN.vocabUnit) return;
-  grid.innerHTML = '';
-  var c = VOCAB_COLORS[EN.vocabUnit.color] || VOCAB_COLORS.blue;
-
-  EN.vocabUnit.words.forEach(function(w, i) {
-    var flipped = EN.vocabFlipped[i];
-    var card = document.createElement('div');
-    card.style.cssText = 'cursor:pointer;perspective:600px;height:130px;position:relative';
-
-    var inner = document.createElement('div');
-    inner.style.cssText = 'position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .4s ease;transform:'+( flipped ? 'rotateY(180deg)' : 'rotateY(0deg)');
-
-    var front = document.createElement('div');
-    front.style.cssText = 'position:absolute;inset:0;backface-visibility:hidden;background:'+c.bg+';border:1.5px solid '+c.border+';border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:8px';
-    front.innerHTML =
-      '<div style="font-size:40px;line-height:1">'+w.emoji+'</div>'+
-      '<div style="font-family:var(--f);font-weight:900;font-size:10px;color:'+c.color+';text-align:center;letter-spacing:.3px">'+w.word+'</div>';
-
-    var back = document.createElement('div');
-    back.style.cssText = 'position:absolute;inset:0;backface-visibility:hidden;transform:rotateY(180deg);background:'+c.color+';border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px;gap:3px';
-    back.innerHTML =
-      '<div style="font-size:22px">'+w.emoji+'</div>'+
-      '<div style="font-family:var(--f);font-weight:900;font-size:10px;color:white;text-align:center">'+w.word+'</div>'+
-      '<div style="font-family:var(--f);font-weight:600;font-size:9px;color:rgba(255,255,255,.95);text-align:center;line-height:1.3">'+w.hint+'</div>'+
-      '<div style="font-family:var(--f);font-weight:600;font-size:9px;color:rgba(255,255,255,.7);text-align:center;line-height:1.3;font-style:italic">'+w.es+'</div>';
-
-    var speakBtn = document.createElement('button');
-    speakBtn.textContent = '\uD83D\uDD0A';
-    speakBtn.title = 'Listen to pronunciation';
-    speakBtn.style.cssText = 'position:absolute;top:4px;right:4px;z-index:10;width:22px;height:22px;border-radius:50%;border:none;background:'+c.color+';color:white;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;opacity:.85;transition:opacity .15s';
-    speakBtn.addEventListener('mouseenter', function() { speakBtn.style.opacity = '1'; });
-    speakBtn.addEventListener('mouseleave', function() { speakBtn.style.opacity = '.85'; });
-    (function(word) {
-      speakBtn.addEventListener('click', function(e) { speakWord(word, e); });
-    })(w.word);
-
-    inner.appendChild(front);
-    inner.appendChild(back);
-    card.appendChild(inner);
-    card.appendChild(speakBtn);
-
-    (function(idx) {
-      card.addEventListener('click', function() { vocabFlipCard(idx); });
-    })(i);
-
-    grid.appendChild(card);
-  });
-}
-
-function vocabFlipCard(i) {
-  EN.vocabFlipped[i] = !EN.vocabFlipped[i];
-  // Actualizar botón si todas están giradas
-  updateVocabFlipBtn();
-  renderVocabCards();
-}
-
-function vocabToggleAll() {
-  var allFlipped = EN.vocabFlipped.every(function(v) { return v; });
-  EN.vocabFlipped = EN.vocabFlipped.map(function() { return !allFlipped; });
-  updateVocabFlipBtn();
-  renderVocabCards();
-}
-
-function updateVocabFlipBtn() {
-  var btn = document.getElementById('vocab-flip-all-btn');
-  if (!btn) return;
-  var allFlipped = EN.vocabFlipped.every(function(v) { return v; });
-  btn.textContent = allFlipped ? 'Show words' : 'Show all hints';
-}
-
-/* =============================================
-   VOCABULARY EXERCISES — usa engine-vocab.js
-   ============================================= */
-
-function _vocabGetAllWords() {
-  var all = [];
-  SubjectData.vocab.units.forEach(function(u){ all = all.concat(u.words); });
-  return all;
-}
-
-function _vocabBaseConfig() {
-  return {
-    queue:       EN.vocabExQueue,
-    idx:         EN.vocabExIdx,
-    subjectKey:  'english',
-    exerciseKey: 'english-vocab',
-    ptsFirst:    10,
-    ptsSecond:   5,
-    getAllWords:  _vocabGetAllWords,
-    setIdx:      function(v){ EN.vocabExIdx = v; },
-    onFinish:    function(){ go('s-english-vocab-ex'); },
-    onAdvance:   function(mode){
-      if (mode === 'word-to-image' || mode === 'w2i') loadW2IQuestion();
-      else loadI2WQuestion();
-    }
+function vocabExInit(config, mode) {
+  _vocabState = {
+    config:    config,
+    mode:      mode,
+    attempt:   1,
+    done:      false,
+    wrong:     null,
+    opts:      []
   };
+  _vocabLoad();
 }
 
-function startVocabExercise(type) {
-  loadVocabData(function() {
-    var allWords = _vocabGetAllWords();
-    EN.vocabExQueue = (function(a){ var b=a.slice(); for(var i=b.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=b[i];b[i]=b[j];b[j]=t;} return b; })(allWords);
-    EN.vocabExIdx  = 0;
-    EN.vocabExType = type;
-    if (type === 'word-to-image') { go('s-vocab-ex-w2i'); loadW2IQuestion(); }
-    else { go('s-vocab-ex-i2w'); loadI2WQuestion(); }
+function _vocabShuffle(arr) {
+  var a = arr.slice();
+  for (var i = a.length-1; i > 0; i--) {
+    var j = Math.floor(Math.random()*(i+1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+
+/* ---- Prefijo de IDs: usa config.prefix si se especifica (p.ej. Vacaciones),
+   si no cae al valor por defecto según el modo (w2i/i2w) ---- */
+function _vocabPrefix() {
+  var config = _vocabState.config;
+  return (config && config.prefix) || (_vocabState.mode === 'word-to-image' ? 'w2i' : 'i2w');
+}
+
+function _vocabLoad() {
+  var config = _vocabState.config;
+  var word   = config.queue[config.idx];
+  var total  = config.queue.length;
+  var mode   = _vocabState.mode;
+
+  _vocabState.attempt = 1;
+  _vocabState.done    = false;
+  _vocabState.wrong   = null;
+
+  var prefix = _vocabPrefix();
+
+  setEl(prefix + '-badge', 'Question ' + (config.idx + 1) + ' of ' + total);
+  setBar(prefix + '-prog', Math.round(config.idx / total * 100));
+
+  var streak = (ST[config.subjectKey] && ST[config.subjectKey].streak) || 0;
+  var diff = diffLabel(streak);
+  var diffEl = document.getElementById(prefix + '-diff');
+  if (diffEl) { diffEl.textContent = diff.txt; diffEl.className = 'ex-badge ' + diff.cls; }
+
+  document.getElementById(prefix + '-fb').style.display   = 'none';
+  document.getElementById(prefix + '-next').style.display = 'none';
+
+  if (mode === 'word-to-image') {
+    setEl(prefix + '-word', word.word);
+    // Generar opciones una sola vez
+    var allWords = config.getAllWords();
+    var distractors = _vocabShuffle(allWords.filter(function(w){ return w.word !== word.word; })).slice(0, 2);
+    _vocabState.opts = _vocabShuffle([word].concat(distractors));
+    _vocabRenderW2I(word);
+  } else {
+    setEl(prefix + '-emoji', word.emoji);
+    var checkBtnEl = document.getElementById(prefix + '-check'); if (checkBtnEl) checkBtnEl.style.display = '';
+    var inp = document.getElementById(prefix + '-input');
+    if (!inp) return;
+    inp.value = ''; inp.disabled = false;
+    inp.style.borderColor = 'var(--gray-200)';
+    inp.style.background  = 'white';
+    inp.style.color       = 'var(--gray-800)';
+    inp.oninput = function() {
+      this.value = this.value.toUpperCase();
+      _vocabUpdateI2WBtn();
+    };
+    _vocabUpdateI2WBtn();
+  }
+}
+
+/* ---- W2I: renderizar opciones de imagen ---- */
+function _vocabRenderW2I(word) {
+  var container = document.getElementById(_vocabPrefix() + '-opts');
+  if (!container) return;
+  container.innerHTML = '';
+  var s = _vocabState;
+
+  s.opts.forEach(function(opt) {
+    var btn = document.createElement('button');
+    var isWrong   = s.wrong === opt.word;
+    var isCorrect = opt.word === word.word;
+    var border = '#E5E7EB', bg = 'white', opacity = '1';
+
+    if (s.done) {
+      if (isCorrect)    { border = '#22C55E'; bg = '#F0FDF4'; }
+      else if (isWrong) { border = '#EF4444'; bg = '#FEF2F2'; }
+    } else if (s.wrong) {
+      if (isWrong) { border = '#EF4444'; bg = '#FEF2F2'; opacity = '0.5'; }
+    }
+
+    btn.style.cssText = 'padding:16px 8px;border-radius:14px;border:2px solid '+border+';background:'+bg+';cursor:'+(s.done||isWrong?'default':'pointer')+';display:flex;flex-direction:column;align-items:center;gap:8px;transition:all .15s;opacity:'+opacity;
+    btn.innerHTML = '<span style="font-size:44px">'+opt.emoji+'</span>';
+    btn.disabled = s.done || isWrong;
+    if (!btn.disabled) {
+      (function(o){ btn.addEventListener('click', function(){ vocabPickW2I(o); }); })(opt);
+    }
+    container.appendChild(btn);
   });
 }
 
-function loadW2IQuestion() {
-  vocabExInit(_vocabBaseConfig(), 'word-to-image');
+/* ---- W2I: elegir imagen ---- */
+function vocabPickW2I(opt) {
+  var s      = _vocabState;
+  if (s.done) return;
+  var config = s.config;
+  var word   = config.queue[config.idx];
+  var isCorrect = opt.word === word.word;
+  var vp = _vocabPrefix();
+  var fbEl  = document.getElementById(vp + '-fb');
+  var nextEl = document.getElementById(vp + '-next');
+  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
+  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+
+  if (isCorrect) {
+    s.done = true;
+    fbEl.style.display = 'block'; fbEl.className = 'feedback fb-ok';
+    fbEl.textContent = '✅ Correct! +' + (s.attempt === 1 ? ptsFirst : ptsSecond) + ' pts 🎉';
+    nextEl.style.display = 'block';
+    _vocabRenderW2I(word);
+    recordResult(config.subjectKey, config.exerciseKey, true);
+    awardPts(s.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(s.attempt === 1);
+  } else if (s.attempt === 1) {
+    s.attempt = 2; s.wrong = opt.word;
+    fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Not quite — try again!';
+    _vocabRenderW2I(word);
+  } else {
+    s.done = true; s.wrong = opt.word;
+    fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ The answer is: ' + word.emoji + ' ' + word.word;
+    nextEl.style.display = 'block';
+    _vocabRenderW2I(word);
+    recordResult(config.subjectKey, config.exerciseKey, false);
+    if (config.onWrong) config.onWrong();
+  }
 }
 
-function loadI2WQuestion() {
-  vocabExInit(_vocabBaseConfig(), 'image-to-word');
+/* ---- I2W: botón comprobar ---- */
+function _vocabUpdateI2WBtn() {
+  var vp = _vocabPrefix();
+  var inp = document.getElementById(vp + '-input');
+  var btn = document.getElementById(vp + '-check');
+  if (!inp || !btn) return;
+  var filled = inp.value.trim().length > 0;
+  btn.style.background = filled ? 'var(--blue)' : 'var(--gray-200)';
+  btn.style.color      = filled ? 'white' : 'var(--gray-400)';
+  btn.style.cursor     = filled ? 'pointer' : 'default';
 }
 
-function pickW2I(opt) { vocabPickW2I(opt); }
-function checkVocabI2W() { vocabCheckI2W(); }
-function nextVocabEx(mode) { vocabExNext(mode); }
+/* ---- I2W: comprobar respuesta ---- */
+function vocabCheckI2W() {
+  var s    = _vocabState;
+  if (s.done) return;
+  var config = s.config;
+  var word   = config.queue[config.idx];
+  var vp = _vocabPrefix();
+  var inp    = document.getElementById(vp + '-input');
+  var fbEl   = document.getElementById(vp + '-fb');
+  var nextEl = document.getElementById(vp + '-next');
+  var checkEl = document.getElementById(vp + '-check');
+  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
+  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+
+  if (!inp.value.trim()) return;
+  var isCorrect = inp.value.trim().toUpperCase() === word.word.toUpperCase();
+
+  if (isCorrect) {
+    s.done = true;
+    inp.style.borderColor = '#22C55E'; inp.style.background = '#F0FDF4'; inp.style.color = '#15803D'; inp.disabled = true;
+    fbEl.style.display = 'block'; fbEl.className = 'feedback fb-ok';
+    fbEl.textContent = '✅ Correct! +' + (s.attempt === 1 ? ptsFirst : ptsSecond) + ' pts 🎉';
+    nextEl.style.display = 'block'; checkEl.style.display = 'none';
+    recordResult(config.subjectKey, config.exerciseKey, true);
+    awardPts(s.attempt === 1 ? ptsFirst : ptsSecond, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(s.attempt === 1);
+  } else if (s.attempt === 1) {
+    s.attempt = 2;
+    inp.style.borderColor = '#EF4444';
+    fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ Not quite — try again!';
+    inp.style.animation = 'shake .4s ease';
+    setTimeout(function() {
+      inp.style.animation = ''; inp.style.borderColor = '#FED7AA'; inp.value = ''; _vocabUpdateI2WBtn();
+    }, 420);
+  } else {
+    s.done = true;
+    inp.value = word.word; inp.style.borderColor = '#EF4444'; inp.style.background = '#FEF2F2'; inp.style.color = '#B91C1C'; inp.disabled = true;
+    fbEl.style.display = 'block'; fbEl.className = 'feedback fb-err';
+    fbEl.textContent = '❌ The correct word is: ' + word.word;
+    nextEl.style.display = 'block'; checkEl.style.display = 'none';
+    recordResult(config.subjectKey, config.exerciseKey, false);
+    if (config.onWrong) config.onWrong();
+  }
+}
+
+/* ---- Siguiente ejercicio ---- */
+function vocabExNext(mode) {
+  var config = _vocabState.config;
+  var newIdx = config.idx + 1;
+  if (config.setIdx) config.setIdx(newIdx);
+  if (newIdx >= config.queue.length) {
+    if (config.onFinish) config.onFinish();
+    return;
+  }
+  if (config.onAdvance) config.onAdvance(mode);
+}
