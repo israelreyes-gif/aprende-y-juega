@@ -20,6 +20,8 @@
      wrongMsg:    fn(ex) → string HTML (segundo fallo)
      onLoad:      fn(ex) — hook al cargar ejercicio
      onFinish:    fn() — hook opcional al completar
+     onCorrect:   fn(firstAttempt) — hook post-acierto (opcional)
+     onWrong:     fn() — hook post-fallo final, 2º intento (opcional)
    }
    ============================================= */
 
@@ -143,6 +145,7 @@ function matesCheckDigits() {
       : '<div class="fbt">¡Correcto! +' + pts + ' pts 🎉</div>';
     recordResult(config.subjectKey, config.exerciseKey, true);
     awardPts(pts, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(s.intentos === 0);
     document.getElementById(p + '-next').style.display = 'block';
 
   } else if (s.intentos < 1) {
@@ -174,6 +177,7 @@ function matesCheckDigits() {
     fb.innerHTML = config.wrongMsg ? config.wrongMsg(ex)
       : '<div class="fbt">La respuesta correcta era <strong>' + res + '</strong> 📖</div>';
     recordResult(config.subjectKey, config.exerciseKey, false);
+    if (config.onWrong) config.onWrong();
     document.getElementById(p + '-next').style.display = 'block';
   }
 }
@@ -215,6 +219,7 @@ function matesPickOption(el, val) {
       : '<div class="fbt">¡Correcto! +' + pts + ' pts 🎉</div>';
     recordResult(config.subjectKey, config.exerciseKey, true);
     awardPts(pts, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(s.intentos === 0);
     document.getElementById(p + '-next').style.display = 'block';
   } else {
     s.intentos++;
@@ -231,6 +236,7 @@ function matesPickOption(el, val) {
       fb.innerHTML = config.wrongMsg ? config.wrongMsg(ex)
         : '<div class="fbt">La respuesta era <strong>' + ex.resultado + '</strong> 📖</div>';
       recordResult(config.subjectKey, config.exerciseKey, false);
+      if (config.onWrong) config.onWrong();
       document.getElementById(p + '-next').style.display = 'block';
     }
   }
@@ -265,6 +271,7 @@ function matesCheckFree() {
       : '<div class="fbt">¡Correcto! +' + pts + ' pts 🎉</div>';
     recordResult(config.subjectKey, config.exerciseKey, true);
     awardPts(pts, config.subjectKey);
+    if (config.onCorrect) config.onCorrect(s.intentos === 0);
     document.getElementById(p + '-next').style.display = 'block';
   } else {
     s.intentos++;
@@ -282,6 +289,7 @@ function matesCheckFree() {
       fb.innerHTML = config.wrongMsg ? config.wrongMsg(ex)
         : '<div class="fbt">La respuesta correcta era <strong>' + ex.resultado + '</strong> 📖</div>';
       recordResult(config.subjectKey, config.exerciseKey, false);
+      if (config.onWrong) config.onWrong();
       document.getElementById(p + '-next').style.display = 'block';
     }
   }
