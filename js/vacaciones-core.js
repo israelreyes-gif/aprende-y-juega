@@ -350,7 +350,7 @@ function _vacShowResults() {
     Object.keys(VAC.breakdown).forEach(function(subj) {
       var d = VAC.breakdown[subj];
       var p = d.total > 0 ? Math.round(d.ok / d.total * 100) : 0;
-      var color = p >= 75 ? '#16A34A' : p >= 50 ? '#D97706' : '#EF4444';
+      var color = p >= CONFIG.progreso.umbralRefuerzo ? '#16A34A' : p >= 50 ? '#D97706' : '#EF4444';
       rows.innerHTML += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">'
         + '<span style="font-size:14px;width:20px">' + d.icon + '</span>'
         + '<span style="font-size:12px;font-weight:700;color:var(--gray-800);width:70px">' + subj + '</span>'
@@ -390,7 +390,7 @@ function renderVacacionesHome() {
       total += (errors[k+'_ok']||0) + (errors[k+'_fail']||0);
     });
     var pct  = total > 0 ? Math.round(ok/total*100) : null;
-    var color = pct === null ? '#9CA3AF' : pct >= 75 ? '#16A34A' : pct >= 50 ? '#D97706' : '#EF4444';
+    var color = pct === null ? '#9CA3AF' : pct >= CONFIG.progreso.umbralRefuerzo ? '#16A34A' : pct >= 50 ? '#D97706' : '#EF4444';
     var width = pct !== null ? pct : 0;
     html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">'
       + '<span style="font-size:14px;width:20px">' + subj.icon + '</span>'
