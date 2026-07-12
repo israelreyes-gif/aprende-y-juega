@@ -64,7 +64,7 @@ var STATS_SUBJECTS = [
     key:   'sociales',
     name:  'Sociales',
     icon:  '🌍',
-    color: '#0F6E56',
+    color: 'var(--sociales)',
     pill:  'background:#E1F5EE;color:#085041',
     items: [
       { key: 'sociales-vf',         name: 'Verdadero/Falso' },
@@ -236,6 +236,6 @@ function statsPctStr(pct) {
 /* ---- Color según umbral 75% ---- */
 function statsColor(pct, color, nullColor) {
   if (pct === null) return nullColor || 'var(--gray-400)';
-  if (pct < CONFIG.progreso.umbralRefuerzo) return '#F59E0B';
+  if (pct < CONFIG.progreso.umbralRefuerzo) return 'var(--vacaciones)';
   return color || '#16A34A';
 }
