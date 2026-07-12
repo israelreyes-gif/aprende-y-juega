@@ -284,28 +284,8 @@ function renderSubjects() {
 /* ---- Áreas a reforzar ---- */
 function renderRefuerzo() {
   var el=document.getElementById('p-refuerzo'); if (!el) return;
-  var weak=statsGetToReforzar();
-  el.innerHTML='';
-  if(weak.length===0){
-    el.innerHTML='<div style="background:#DCFCE7;border:0.5px solid #16A34A;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px"><div style="font-size:24px;flex-shrink:0">🌟</div><div><div style="font-size:13px;font-weight:800;color:#166534;font-family:var(--f);margin-bottom:3px">¡Todo por encima del 75%!</div><div style="font-size:11px;color:#16A34A;font-family:var(--f);line-height:1.5">Está dominando todos los contenidos.</div></div></div>';
-    return;
-  }
-  function urg(p2){
-    if(p2<50) return {bg:'#FCA5A5',tc:'#991B1B',bb:'#FEE2E2',bc:'#DC2626',badge:'Prioritario'};
-    if(p2<65) return {bg:'#FDE68A',tc:'#92400E',bb:'#FEF3C7',bc:'#D97706',badge:'A mejorar'};
-    return {bg:'#C4B5FD',tc:'#4C1D95',bb:'#EDE9FE',bc:'#6D28D9',badge:'Cerca del 75%'};
-  }
-  var html='<div style="background:white;border:0.5px solid var(--gray-200);border-radius:12px;overflow:hidden">';
-  weak.forEach(function(w,idx){
-    var u=urg(w.pct), sep=idx<weak.length-1?'border-bottom:0.5px solid var(--gray-100)':'';
-    html+='<div style="display:flex;align-items:center;gap:10px;padding:10px 12px;'+sep+'">'
-      +'<div style="width:38px;height:38px;border-radius:50%;background:'+u.bg+';display:flex;align-items:center;justify-content:center;flex-shrink:0">'
-      +'<span style="font-size:10px;font-weight:800;color:'+u.tc+';font-family:var(--f)">'+w.pct+'%</span></div>'
-      +'<div style="flex:1"><div style="font-size:12px;font-weight:700;color:var(--gray-800);font-family:var(--f)">'+w.name+'</div>'
-      +'<div style="font-size:10px;color:var(--gray-400);margin-top:1px">'+w.subjectName+'</div></div>'
-      +'<span style="font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;background:'+u.bb+';color:'+u.bc+'">'+u.badge+'</span></div>';
-  });
-  html+='</div>'; el.innerHTML=html;
+  setEl('p-refuerzo-lbl', 'Áreas a reforzar — menos del ' + CONFIG.progreso.umbralRefuerzo + '%');
+  el.innerHTML = statsRefuerzoHtml(statsGetToReforzar(), 'Está dominando todos los contenidos.');
 }
 
 /* ---- Resetear ---- */
