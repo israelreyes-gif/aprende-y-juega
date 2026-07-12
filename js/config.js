@@ -85,6 +85,47 @@ var CONFIG = {
       {label:'Orejas gatito',  req:350, icon:'🐱'},
       {label:'Arco iris',      req:500, icon:'🌈'}
     ]
+  },
+
+  /* ---- Puntos por acierto ----
+     porDefecto: puntos para "acierto a la primera" / "acierto al segundo
+     intento", usados por la mayoria de ejercicios (opcion multiple,
+     rellenar huecos, relacionar, teclado numerico...).
+
+     excepciones: anula porDefecto para una clave de ejercicio concreta
+     (la misma clave que usa stats.js, ej. 'mates-prob'). Vacia por ahora
+     -> todos los ejercicios usan el valor por defecto (10/5), incluido
+     Mates Problemas.
+
+     Ejemplo para el dia que se quiera dar mas puntos por Problemas:
+       excepciones: { 'mates-prob': { primero: 15, segundo: 7 } }
+
+     Los ejercicios de Lengua con una formula distinta (Comprension,
+     Descripciones, Dictado) no encajan en el patron "1er/2o intento" y
+     tienen su propia entrada mas abajo. */
+  puntos: {
+    porDefecto: { primero: 10, segundo: 5 },
+    excepciones: {
+      // 'mates-prob': { primero: 15, segundo: 7 }
+    },
+
+    // Comprension lectora: puntos por cada respuesta correcta del test
+    comprension: { porRespuesta: 5 },
+
+    // Descripciones: puntos por cada palabra clave encontrada + bonus si se
+    // encuentran todas
+    descripciones: { porPalabraClave: 2, bonusCompleto: 10 },
+
+    // Dictado: puntos base = porDefecto.primero/segundo (arriba). Aqui solo
+    // la penalizacion por cada vez que se repite el audio de mas.
+    dictado: { penalizacionPorEscuchaExtra: 1 }
   }
 
 };
+
+/* ---- Puntos por acierto/fallo para una clave de ejercicio concreta ----
+   Devuelve {primero, segundo}. Usa la excepcion de esa clave si existe,
+   si no, el valor por defecto (CONFIG.puntos.porDefecto). */
+function configGetPts(exerciseKey) {
+  return CONFIG.puntos.excepciones[exerciseKey] || CONFIG.puntos.porDefecto;
+}
