@@ -8,8 +8,8 @@
      prefix:          prefijo de IDs en el HTML (ej. 'sc-ex')
      subjectKey:      clave en ST (ej. 'sciences')
      exerciseKey:     clave para errors (ej. 'sciences-invertebrates')
-     ptsFirst:        puntos primer intento (def. 10)
-     ptsSecond:       puntos segundo intento (def. 5)
+     (los puntos por acierto se leen de CONFIG.puntos segun exerciseKey,
+     ya no se especifican en el config del motor)
      badgeLabel:      texto del badge (def. 'Question')
      getExplanation:  fn(ex) → string HTML para 2º fallo
      setIdx:          fn(newIdx) para actualizar el índice externo
@@ -97,8 +97,9 @@ function _mcHandleAnswer(config, selected, ex, attempt, optsEl) {
   var isCorrect = selected === correct;
   var fbEl     = document.getElementById(p + '-fb');
   var nextEl   = document.getElementById(p + '-next');
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
 
   if (isCorrect) {
     // Marcar opciones (solo en rendering por defecto)
