@@ -120,14 +120,34 @@
 .feedback.bad .fbt { color: var(--red); }
 .fbs { font-size: 13px; font-weight: 600; margin-top: 4px; color: var(--gray-600); }
 
-/* NEXT BUTTON */
-.next-btn {
+/* NEXT BUTTON — boton primario. .btn-primary es el mismo componente con un
+   nombre mas semantico para codigo nuevo; el color de fondo se sigue
+   pasando en linea segun la asignatura (ej. style="background:var(--teal)") */
+.next-btn, .btn-primary {
   display: block; width: calc(100% - 32px); margin: 12px 16px 0;
   padding: 16px; border-radius: var(--r-md); border: none;
   font-family: var(--f); font-size: 16px; font-weight: 800;
   color: white; cursor: pointer; transition: transform .1s;
 }
-.next-btn:active { transform: scale(.97); }
+.next-btn:active, .btn-primary:active { transform: scale(.97); }
+
+/* BOTON SECUNDARIO — para fondos claros (Reintentar, Volver, Cancelar...) */
+.btn-secondary {
+  width: 100%; padding: 13px; border-radius: var(--r-md); border: 0.5px solid var(--gray-200);
+  background: var(--card-bg); color: var(--gray-500);
+  font-family: var(--f); font-weight: 700; font-size: 14px; cursor: pointer;
+  transition: transform .1s;
+}
+.btn-secondary:active { transform: scale(.97); }
+
+/* BOTON SECUNDARIO — variante para fondos oscuros/de color (ej. perfiles.html) */
+.btn-secondary-dark {
+  width: 100%; padding: 11px; border-radius: 12px; border: 1.5px solid rgba(255,255,255,.15);
+  background: transparent; color: rgba(255,255,255,.5);
+  font-family: var(--f); font-weight: 700; font-size: 13px; cursor: pointer;
+  transition: transform .1s;
+}
+.btn-secondary-dark:active { transform: scale(.97); }
 
 /* TRIANGLE */
 .tri-wrap { display: flex; justify-content: center; padding: 0 0 12px; }
