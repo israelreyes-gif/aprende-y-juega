@@ -8,8 +8,8 @@
      prefix:       prefijo de IDs en el HTML (ej. 'en-wo')
      subjectKey:   clave en ST (ej. 'english')
      exerciseKey:  clave para errors (ej. 'english-tobe')
-     ptsFirst:     puntos primer intento (def. 10)
-     ptsSecond:    puntos segundo intento (def. 5)
+     (los puntos por acierto se leen de CONFIG.puntos segun exerciseKey,
+     ya no se especifican en el config del motor)
      badgeLabel:   texto del badge (def. 'Question')
      setIdx:       fn(newIdx) para actualizar índice externo
      onFinish:     fn() al acabar la cola
@@ -191,8 +191,9 @@ function woCheck() {
   var nextEl        = document.getElementById(p + '-next');
   var resetEl       = document.getElementById(p + '-reset');
   var checkEl       = document.getElementById(p + '-check');
-  var ptsFirst      = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond     = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
 
   if (isCorrect) {
     _woState.checked = true;
