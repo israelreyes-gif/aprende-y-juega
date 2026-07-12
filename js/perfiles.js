@@ -107,7 +107,7 @@ function seleccionarPerfil(perfil) {
   setPerfilActivo(perfil);
   AV = perfilToAV(perfil);
   saveAvatar(AV);
-  setCurso(3);
+  setCurso(CONFIG.curso.porDefecto);
 
   // Cargar progreso desde D1 y luego entrar
   setPerfilActivoId(perfil.id, function() {
