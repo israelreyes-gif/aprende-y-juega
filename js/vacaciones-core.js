@@ -380,7 +380,7 @@ function renderVacacionesHome() {
   setEl('vac-pts-pill',   '⭐ ' + (s.pts || 0) + ' pts');
 
   var subjects = [
-    { name:'Mates',    icon:'🔢', keys:['vacaciones-mates-suma','vacaciones-mates-multi','vacaciones-mates-prob','vacaciones-mates-mix'] },
+    { name:'Mates',    icon:'🔢', keys:['vacaciones-mates-suma','vacaciones-mates-multi','vacaciones-mates-prob'] },
     { name:'Lengua',   icon:'📚', keys:['vacaciones-lengua-gram-bv','vacaciones-lengua-gram-gj','vacaciones-lengua-gram-czq','vacaciones-lengua-gram-lly','vacaciones-lengua-gram-rr'] },
     { name:'English',  icon: UK_FLAG_SMALL, keys:['vacaciones-english-tobe','vacaciones-english-modals','vacaciones-english-vocab','vacaciones-english-wo'] },
     { name:'Sciences', icon:'🔬', keys:['vacaciones-sciences-invertebrates','vacaciones-sciences-mix'] },
