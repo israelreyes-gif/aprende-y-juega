@@ -196,7 +196,7 @@ function evaluateAnswers() {
         // Botón reintento: NO carga nueva historia, solo resetea los campos
         var nb = document.createElement('button');
         nb.className = 'next-btn bg-pink';
-        nb.style.cssText = 'margin-top:12px;background:#F59E0B';
+        nb.style.cssText = 'margin-top:12px;background:var(--vacaciones)';
         nb.textContent = 'Volver a intentarlo';
         nb.onclick = function() {
           // Solo limpiar las respuestas INCORRECTAS — las correctas se quedan
