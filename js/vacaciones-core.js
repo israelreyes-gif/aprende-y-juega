@@ -294,8 +294,6 @@ function _vacConfig(item) {
     prefix:      'vac-ex',
     subjectKey:  item.subjectKey,
     exerciseKey: item.exerciseKey,
-    ptsFirst:    10,
-    ptsSecond:   5,
     setIdx:      function(){},
     onFinish:    function(){},
     onAdvance:   function(){}
@@ -308,7 +306,8 @@ function _vacConfig(item) {
    sus hooks onCorrect/onWrong. */
 function _vacTrackSession(item, correct, firstAttempt) {
   if (correct) {
-    var pts = firstAttempt ? 10 : 5;
+    var p = configGetPts(item.exerciseKey);
+    var pts = firstAttempt ? p.primero : p.segundo;
     VAC.pts += pts;
     setEl('vac-ex-pts', '⭐ ' + VAC.pts + ' pts');
   }
@@ -322,7 +321,10 @@ function _vacTrackSession(item, correct, firstAttempt) {
    Vocab I2W manual), ya que en esos casos nadie más llama a recordResult/awardPts. */
 function _vacRecord(item, correct, firstAttempt) {
   recordResult(item.subjectKey, item.exerciseKey, correct);
-  if (correct) awardPts(firstAttempt ? 10 : 5, item.subjectKey);
+  if (correct) {
+    var p = configGetPts(item.exerciseKey);
+    awardPts(firstAttempt ? p.primero : p.segundo, item.subjectKey);
+  }
   _vacTrackSession(item, correct, firstAttempt);
 }
 
