@@ -1,19 +1,10 @@
 /* =============================================
    MEDALS.JS — Sistema de medallas y ranking
-   Para añadir un nuevo rango: añadir un objeto
-   al array MEDALS con {pts, icon, name, next, nn}
+   Los rangos en si viven en config.js (CONFIG.medallas),
+   para añadir uno nuevo hay que editar alli, no aqui.
    ============================================= */
 
-var MEDALS = [
-  { pts: 0,    icon: '🎖️', name: 'Recién llegada',       next: 50,   nn: 'Soldado valiente' },
-  { pts: 50,   icon: '🥉', name: 'Soldado valiente',     next: 300,  nn: 'Cabo heroico' },
-  { pts: 300,  icon: '🥈', name: 'Cabo heroico',         next: 700,  nn: 'Sargento brillante' },
-  { pts: 700,  icon: '🥇', name: 'Sargento brillante',   next: 1200, nn: 'Capitana estelar' },
-  { pts: 1200, icon: '🏅', name: 'Capitana estelar',     next: 2000, nn: 'Generala suprema' },
-  { pts: 2000, icon: '👑', name: 'Generala suprema',     next: 3500, nn: 'Emperadora galáctica' },
-  { pts: 3500, icon: '🌟', name: 'Emperadora galáctica', next: 6000, nn: 'Reina del universo' },
-  { pts: 6000, icon: '✨', name: 'Reina del universo',   next: null, nn: null }
-];
+var MEDALS = CONFIG.medallas;
 
 function getMedal(pts) {
   var m = MEDALS[0];
