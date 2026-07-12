@@ -100,8 +100,11 @@ dejaron tal cual. Las clases nuevas están listas para:
 - Ir migrando pantallas existentes una a una, cuando quieras, comprobando
   visualmente cada una (igual que hicimos con los colores).
 
-Solo se migró un caso ya comprobado: el botón "← Volver al inicio" de los
-resultados de Vacaciones, que ya coincidía exactamente con `.btn-secondary`.
+No se migró ningún botón existente todavía: se probó con el "← Volver al
+inicio" de los resultados de Vacaciones, pero la clase nueva tenía un
+padding y un margen ligeramente distintos al original, así que se revirtió.
+Antes de migrar un botón real, comprueba que `.btn-secondary` coincide
+exactamente (padding, márgenes, radio) con el estilo que ya tenía.
 
 ---
 
