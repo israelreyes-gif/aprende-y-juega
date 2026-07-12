@@ -202,8 +202,6 @@ function cargarNuevaSuma() {
     screenId:    's-sumas',
     subjectKey:  'mates',
     exerciseKey: 'mates-' + key,
-    ptsFirst:    10,
-    ptsSecond:   5,
     renderOp:    _renderSumaOp,
     correctMsg:  function(pts, ex) {
       var eq = ex.a + sign + ex.b + '=' + ex.resultado;
@@ -233,8 +231,6 @@ function cargarNuevaMulti() {
     screenId:   's-multi',
     subjectKey: 'mates',
     exerciseKey:'mates-multi',
-    ptsFirst:   10,
-    ptsSecond:  5,
     renderOp:   _renderMultiOp,
     correctMsg: function(pts, ex) {
       return '<div class="fbt">¡Genial, ' + (getNombre()||'campeona') + '! ' + ex.a + '×' + ex.b + '=' + ex.resultado + ' 🌟 +' + pts + ' pts</div>';
@@ -269,8 +265,6 @@ function cargarNuevoProblema() {
     screenId:   's-prob',
     subjectKey: 'mates',
     exerciseKey:'mates-prob',
-    ptsFirst:   15,
-    ptsSecond:  7,
     renderOp:   function(ex) {
       var body = document.getElementById('prob-card-body');
       if (body) body.innerHTML = ex.enunciado;
@@ -310,8 +304,6 @@ function cargarNuevaMezcla() {
     screenId:   's-mix',
     subjectKey: 'mates',
     exerciseKey:'mates-mix',
-    ptsFirst:   10,
-    ptsSecond:  5,
     renderOp:   _renderMixOp,
     correctMsg: function(pts, ex) {
       var sign = ex.tipo === 'multi' ? '×' : ex.tipo === 'suma' ? '+' : '−';
