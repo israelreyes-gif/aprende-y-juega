@@ -157,7 +157,7 @@ function _socStartCompletar(ex, area) {
   // Tarjeta con la frase
   var card = document.createElement('div');
   card.style.cssText = 'background:var(--gray-50);border:0.5px solid var(--gray-100);border-radius:14px;padding:20px 16px;margin-bottom:16px;text-align:center';
-  var html = ex.pregunta.replace('_____', '<span style="display:inline-block;min-width:80px;border-bottom:2px solid #0F6E56;margin:0 4px;color:#0F6E56;font-weight:800">?</span>');
+  var html = ex.pregunta.replace('_____', '<span style="display:inline-block;min-width:80px;border-bottom:2px solid var(--sociales);margin:0 4px;color:var(--sociales);font-weight:800">?</span>');
   card.innerHTML = '<div style="font-family:var(--f);font-size:15px;font-weight:700;color:var(--gray-800);line-height:1.7">' + html + '</div>';
   area.appendChild(card);
 
