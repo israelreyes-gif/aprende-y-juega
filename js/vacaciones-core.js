@@ -349,6 +349,17 @@ function _vacShowResults() {
   setEl('vac-fin-pts',  '⭐ +' + VAC.pts + ' pts');
   setEl('vac-fin-desc', 'Has completado los ' + total + ' ejercicios de repaso');
 
+  var umbral = CONFIG.vacaciones.umbralJuegos;
+  var banner = document.getElementById('vac-juegos-banner');
+  if (banner) {
+    if (VAC.ok >= umbral) {
+      banner.style.display = 'block';
+      setEl('vac-juegos-desc', 'Has acertado ' + VAC.ok + ' de ' + total + ' — con ' + umbral + ' o más, puedes jugar una partida antes de irte.');
+    } else {
+      banner.style.display = 'none';
+    }
+  }
+
   var rows = document.getElementById('vac-fin-breakdown');
   if (rows) {
     rows.innerHTML = '';
