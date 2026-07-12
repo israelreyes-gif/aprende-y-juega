@@ -136,7 +136,81 @@
       <div id="vac-fin-breakdown"></div>
     </div>
 
+    <div id="vac-juegos-banner" style="display:none;background:linear-gradient(180deg,#FDF4E3,#FFFBEB);border:2px solid var(--vacaciones);border-radius:20px;padding:18px;text-align:center;margin-bottom:16px">
+      <div style="font-size:42px">🎮</div>
+      <div style="font-family:var(--f);font-size:17px;font-weight:900;color:#92400E;margin:6px 0 4px">¡Desbloqueaste un juego!</div>
+      <div style="font-size:13px;color:#B45309;font-weight:600;line-height:1.4" id="vac-juegos-desc"></div>
+      <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;margin-top:14px" onclick="go('s-vac-juegos')">Elegir juego 🎲</button>
+    </div>
+
     <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;margin-bottom:8px" onclick="vacStart()">Otra sesión 🔄</button>
     <button class="next-btn" style="background:var(--card-bg);color:var(--gray-500);border:0.5px solid var(--gray-200)" onclick="go('s-vacaciones')">← Volver al inicio</button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR JUEGO
+     ============================================= -->
+<div class="screen" id="s-vac-juegos">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-fin')" style="color:white">←</button>
+    <h2 style="color:white">Elige un juego</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Disponible hoy</div>
+    <button class="vac-game-card" onclick="go('s-vac-nivel')">
+      <div class="vac-game-icon" style="background:var(--purple-light)">🧩</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Sudoku</div>
+        <div class="vac-game-desc">Rellena el tablero sin repetir números</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR DIFICULTAD (SUDOKU)
+     ============================================= -->
+<div class="screen" id="s-vac-nivel">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🧩 Sudoku</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás volver a elegir otro juego ni otro nivel.</div>
+
+    <button class="vac-game-card" onclick="vacSudokuStart(4)">
+      <div class="vac-level-dot" style="background:var(--green)">4×4</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Tablero pequeño, ideal para empezar</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSudokuStart(6)">
+      <div class="vac-level-dot" style="background:var(--amber)">6×6</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Un reto un poco mayor</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSudokuStart(9)">
+      <div class="vac-level-dot" style="background:var(--red)">9×9</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">El sudoku clásico completo</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — SUDOKU (sin vuelta atrás)
+     ============================================= -->
+<div class="screen" id="s-vac-sudoku">
+  <div class="screen-header" style="background:var(--purple)">
+    <h2 style="color:white">🧩 Sudoku</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-sudoku-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:14px;text-align:center;font-family:var(--f)"></div>
+    <div class="sudoku-board" id="vac-sudoku-board"></div>
+    <div class="sudoku-numpad" id="vac-sudoku-numpad"></div>
+    <div id="vac-sudoku-win" style="display:none;width:100%"></div>
   </div>
 </div>
