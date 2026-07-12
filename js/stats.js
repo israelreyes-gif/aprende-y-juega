@@ -53,7 +53,7 @@ var STATS_SUBJECTS = [
     key:   'sciences',
     name:  'Sciences',
     icon:  '🔬',
-    color: '#1D9E75',
+    color: 'var(--teal)',
     pill:  'background:#F0FDFA;color:#0F766E',
     items: [
       { key: 'sciences-invertebrates', name: 'Invertebrates' },
@@ -82,7 +82,6 @@ var STATS_SUBJECTS = [
       { key: 'vacaciones-mates-suma',             name: 'Sumas y restas' },
       { key: 'vacaciones-mates-multi',            name: 'Multiplicaciones' },
       { key: 'vacaciones-mates-prob',             name: 'Problemas' },
-      { key: 'vacaciones-mates-mix',              name: 'Mezcla' },
       { key: 'vacaciones-lengua-gram-bv',         name: 'Gramática B / V' },
       { key: 'vacaciones-lengua-gram-gj',         name: 'Gramática G / J' },
       { key: 'vacaciones-lengua-gram-czq',        name: 'Gramática C / Z / Q' },
