@@ -361,7 +361,7 @@ function _vacLoadMatesProb(item) {
   card.innerHTML = '<div style="font-size:14px;font-weight:700;color:#1F2937;line-height:1.6;font-family:var(--f)">'+prob.enunciado+'</div>';
   var ansBox = document.createElement('div');
   ansBox.id = 'vac-ex-ans';
-  ansBox.style.cssText = 'width:100%;padding:14px;border:1.5px solid var(--gray-200);border-radius:12px;font-family:var(--f);font-size:20px;font-weight:800;text-align:center;margin-bottom:10px;color:#1F2937';
+  ansBox.className = 'vac-ans-box';
   ansBox.textContent = '?';
   area.appendChild(card);
   area.appendChild(ansBox);
