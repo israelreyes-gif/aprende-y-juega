@@ -155,7 +155,7 @@ function enviarDescripcion() {
 
   var colorHeader = ptsTotales >= pts * 0.7 ? '#16A34A' : '#D97706';
   var bgHeader    = ptsTotales >= pts * 0.7 ? '#DCFCE7' : '#FEF3C7';
-  var borderHeader= ptsTotales >= pts * 0.7 ? '#16A34A' : '#F59E0B';
+  var borderHeader= ptsTotales >= pts * 0.7 ? '#16A34A' : 'var(--vacaciones)';
 
   var html = '<div style="background:' + bgHeader + ';border-radius:12px;padding:14px;border:1.5px solid ' + borderHeader + ';margin-bottom:10px">';
   html += '<div style="font-size:14px;font-weight:800;color:' + colorHeader + ';font-family:var(--f);margin-bottom:4px">';
