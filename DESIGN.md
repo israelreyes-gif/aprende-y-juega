@@ -21,6 +21,7 @@ pantallas. Todo vive en `css/base.css` (variables) y `css/components.css`
 | `--red` / `--red-light` | `#DC2626` / `#FEE2E2` | Estados de fallo/error |
 | `--amber` / `--amber-light` | `#D97706` / `#FEF3C7` | Avisos, "a mejorar" |
 | `--gray-50` … `--gray-800` | escala de grises | Fondos, texto secundario, bordes |
+| `--card-bg` | `#FFFFFF` | Fondo blanco estándar de tarjeta (usado en Vacaciones) |
 
 Cada color de asignatura tiene su clase utilitaria: `.bg-purple`, `.bg-pink`,
 `.bg-teal`, `.bg-blue`, `.bg-orange`, `.bg-amber`. Se usan en la cabecera
@@ -81,16 +82,26 @@ secundario, `9-11px` / `700-800` para badges/pills.
 | `.slbl` | Etiqueta de sección en mayúsculas (ej. "PROGRESO POR ASIGNATURA") |
 | `.medal-banner` | Banner de medalla/rango en la home |
 
-### Botones: no hay un sistema "primario/secundario" formal
+### Botones: `.btn-primary` / `.btn-secondary`
 
-`.next-btn` funciona como botón primario, pero cada pantalla le da su propio
-color de fondo por `style=""` en vez de una clase con significado (`.btn-primary`).
-Los botones secundarios (Reintentar, Volver...) no tienen ninguna clase
-común — cada uno se estiliza a mano. Esto **funciona bien visualmente** hoy,
-pero si en el futuro quieres tocar el estilo de "todos los botones
-secundarios" a la vez, tendrás que ir pantalla por pantalla. Si esto empieza
-a dar fricción, es buen momento para formalizar `.btn-primary`/`.btn-secondary`
-— no se ha hecho ahora porque implicaría tocar todas las pantallas.
+| Clase | Para qué | Ejemplo |
+|---|---|---|
+| `.next-btn` / `.btn-primary` | Botón de acción principal (mismo componente, dos nombres — `.btn-primary` es el nombre a usar en código nuevo). El color de fondo se sigue pasando en línea según la asignatura | `<button class="btn-primary" style="background:var(--teal)">Comprobar</button>` |
+| `.btn-secondary` | Botón secundario sobre fondo claro (Reintentar, Volver...) | `<button class="btn-secondary">← Volver</button>` |
+| `.btn-secondary-dark` | Botón secundario sobre fondo oscuro/de color (ej. modales sobre `perfiles.html`) | `<button class="btn-secondary-dark">Cancelar</button>` |
+
+⚠️ **No se ha hecho un repaso de todas las pantallas existentes** para
+sustituir sus botones secundarios por estas clases nuevas — varios (en
+`padres.html`, `perfiles.html`) tienen su propio estilo ligeramente distinto
+(padding, radio de borde, color de fondo) y forzarlos a la clase compartida
+habría cambiado su aspecto visual sin que lo pidieras explícitamente. Se
+dejaron tal cual. Las clases nuevas están listas para:
+- Cualquier botón nuevo que crees a partir de ahora.
+- Ir migrando pantallas existentes una a una, cuando quieras, comprobando
+  visualmente cada una (igual que hicimos con los colores).
+
+Solo se migró un caso ya comprobado: el botón "← Volver al inicio" de los
+resultados de Vacaciones, que ya coincidía exactamente con `.btn-secondary`.
 
 ---
 
