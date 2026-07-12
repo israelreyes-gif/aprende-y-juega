@@ -352,3 +352,26 @@
   font-family: var(--f); font-size: 11px; font-weight: 800; padding: 5px 10px; border-radius: 20px;
 }
 .ws-word-chip.found { opacity: .55; }
+
+/* CITY MAP (juego de instrucciones en inglés) */
+.mapa-wrap {
+  background: #E8F5E9; border-radius: 16px; padding: 8px; margin-bottom: 16px; border: 2px solid #C8E6C9;
+}
+.mapa-grid { display: grid; gap: 1px; width: 100%; min-width: 0; }
+.mapa-cell {
+  aspect-ratio: 1; border-radius: 3px; display: flex; align-items: center; justify-content: center;
+  position: relative; background: white; min-width: 0; overflow: hidden;
+}
+.mapa-cell.building { background: #FFE0B2; }
+.mapa-char { display: inline-block; transition: transform .25s ease; }
+.mapa-btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.mapa-instr-btn {
+  padding: 16px 8px; border-radius: 14px; border: none; background: white;
+  font-family: var(--f); font-weight: 800; font-size: 14px; color: var(--gray-800);
+  box-shadow: var(--sh-sm); cursor: pointer; display: flex; flex-direction: column;
+  align-items: center; gap: 4px;
+}
+.mapa-instr-btn:active { transform: scale(.96); }
+.mapa-instr-btn .icon { font-size: 22px; }
+.mapa-instr-btn.ahead { background: var(--purple-light); color: var(--purple-dark); }
+.mapa-instr-btn.back { background: var(--amber-light); color: #92400E; }
