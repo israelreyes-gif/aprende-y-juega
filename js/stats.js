@@ -163,10 +163,13 @@ function statsGetAll() {
   return STATS_SUBJECTS.map(function(s){ return statsGetSubject(s.key); });
 }
 
-/* ---- Ejercicios a reforzar (por debajo de CONFIG.progreso.umbralRefuerzo) ---- */
-function statsGetToReforzar() {
+/* ---- Ejercicios a reforzar (por debajo de CONFIG.progreso.umbralRefuerzo) ----
+   excludeKeys: array opcional de claves de asignatura a excluir (ej. ['vacaciones']) */
+function statsGetToReforzar(excludeKeys) {
+  excludeKeys = excludeKeys || [];
   var weak = [];
   statsGetAll().forEach(function(subject) {
+    if (excludeKeys.indexOf(subject.key) !== -1) return;
     subject.items.forEach(function(item) {
       if (item.total > 0 && item.pct < CONFIG.progreso.umbralRefuerzo) {
         weak.push({
