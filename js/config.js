@@ -31,6 +31,12 @@ var CONFIG = {
     // Cuando se prepare 4o de Primaria, aqui es donde se decidira
     // cual es el curso activo de cada perfil (por ahora siempre 3).
     porDefecto: 3
+  },
+
+  /* ---- Vacaciones ---- */
+  vacaciones: {
+    // Numero de ejercicios que componen cada sesion de repaso de Vacaciones.
+    ejerciciosPorSesion: 20
   }
 
 };
