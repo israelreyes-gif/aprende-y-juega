@@ -28,6 +28,24 @@ function saveAvatar(av) {
   try { localStorage.setItem(AVATAR_KEY, JSON.stringify(av)); } catch(e) {}
 }
 
+/* ---- Subir el avatar personalizado a D1 (además de guardarlo en local) ----
+   Sin esto, personalizar el avatar solo sobrevivía en el navegador actual:
+   si el niño cambiaba de dispositivo o se borraba la caché, se perdía. */
+function syncAvatarToCloud() {
+  if (!perfilActivoId || !perfilActivoNombre) return;
+  fetch(API_URL + '/perfiles/' + perfilActivoId, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      nombre:     perfilActivoNombre,
+      skin:       AV.skin,
+      hair_color: AV.hairColor,
+      hair:       AV.hair,
+      unlocked:   AV.unlocked || []
+    })
+  }).catch(function(e) { console.warn('[avatar] No se pudo sincronizar el avatar con D1:', e); });
+}
+
 var AV = loadAvatar();
 
 /* ---- Dibuja el avatar en un elemento SVG dado ---- */
@@ -293,6 +311,7 @@ function renderAvatarEditor() {
 function guardarAvatar() {
   AV = JSON.parse(JSON.stringify(AV_TEMP));
   saveAvatar(AV);
+  syncAvatarToCloud();
   refreshAllAvatars();
   showToast('¡Avatar guardado! 🎉');
   go('s-home');
