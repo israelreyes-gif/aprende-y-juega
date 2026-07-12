@@ -23,9 +23,8 @@
 
 /* ---- Puntos segun el intento (1er intento vs 2o) ---- */
 function engineCalcPts(config, firstAttempt) {
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
-  return firstAttempt ? ptsFirst : ptsSecond;
+  var p = configGetPts(config.exerciseKey || config.subjectKey);
+  return firstAttempt ? p.primero : p.segundo;
 }
 
 /* ---- Guardar el resultado de un intento ----
