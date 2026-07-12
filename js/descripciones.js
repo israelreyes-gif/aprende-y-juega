@@ -136,8 +136,8 @@ function enviarDescripcion() {
   });
 
   var total = DE.current.total_keywords;
-  var pts   = encontradas.length * 2; // 2 pts por palabra clave
-  var bonus = (encontradas.length === total) ? 10 : 0; // +10 si todas
+  var pts   = encontradas.length * CONFIG.puntos.descripciones.porPalabraClave;
+  var bonus = (encontradas.length === total) ? CONFIG.puntos.descripciones.bonusCompleto : 0; // bonus si todas
   var ptsTotales = pts + bonus;
 
   // Guardar puntos
