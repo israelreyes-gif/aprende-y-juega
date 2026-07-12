@@ -187,8 +187,6 @@ function _vocabBaseConfig() {
     idx:         EN.vocabExIdx,
     subjectKey:  'english',
     exerciseKey: 'english-vocab',
-    ptsFirst:    10,
-    ptsSecond:   5,
     getAllWords:  _vocabGetAllWords,
     setIdx:      function(v){ EN.vocabExIdx = v; },
     onFinish:    function(){ go('s-english-vocab-ex'); },
