@@ -15,6 +15,7 @@ Sciences, English y Sociales — más un modo transversal de repaso, **Vacacione
 index.html          Carga de todos los <script>, en orden de dependencia
 sw.js                Service Worker (cache offline)
 config.js            Configuración central (ver sección 5)
+DESIGN.md            Paleta de colores, tipografía y componentes reutilizables
 
 css/
   base.css           Variables (colores, fuentes) y utilidades
