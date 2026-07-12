@@ -6,32 +6,11 @@
 var AVATAR_KEY = 'aprendeyjuega_avatar';
 
 var AVATAR_SKINS = ['#FDDBB4','#F0C27F','#D4956A','#A0674A','#6B3F2A'];
-var AVATAR_HAIR_COLORS = [
-  {color:'#2C1A0E', req:0},
-  {color:'#8B4513', req:0},
-  {color:'#D4A017', req:0},
-  {color:'#FF6B6B', req:100},
-  {color:'#FF8C00', req:150},
-  {color:'#7C3AED', req:200},
-  {color:'#4A90E2', req:300},
-  {color:'#34D399', req:400},
-  {color:'#EC4899', req:450},
-];
-var AVATAR_HAIRS = [
-  {label:'Liso corto',  req:0},
-  {label:'Liso largo',  req:0},
-  {label:'Rizado',      req:0},
-  {label:'Trenzas',     req:50},
-  {label:'Cola alta',   req:100},
-];
-var AVATAR_ACCS = [
-  {label:'Ninguno',        req:0,   icon:''},
-  {label:'Diadema',        req:0,   icon:'💎'},
-  {label:'Corona',         req:150, icon:'👑'},
-  {label:'Sombrero',       req:250, icon:'🎩'},
-  {label:'Orejas gatito',  req:350, icon:'🐱'},
-  {label:'Arco iris',      req:500, icon:'🌈'},
-];
+// Colores de pelo, peinados y accesorios desbloqueables (con su umbral de
+// puntos "req") viven en config.js — CONFIG.avatar.*
+var AVATAR_HAIR_COLORS = CONFIG.avatar.hairColors;
+var AVATAR_HAIRS       = CONFIG.avatar.hairstyles;
+var AVATAR_ACCS        = CONFIG.avatar.accessories;
 
 function defaultAvatar() {
   return { skin:1, hairColor:1, hair:0, acc:0 };
