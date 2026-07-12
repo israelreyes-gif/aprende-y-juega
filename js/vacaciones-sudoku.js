@@ -3,80 +3,128 @@
    al terminar una sesion de Vacaciones con
    CONFIG.vacaciones.umbralJuegos aciertos o mas.
 
+   Cada partida genera un sudoku nuevo (solucion
+   completa valida + solucion UNICA al quitar
+   casillas), no son tableros fijos.
+
    Una unica partida por sesion: la pantalla del juego
    tiene un boton de atras, pero va directo a la home
    de Vacaciones (s-vacaciones) — nunca a elegir otro
    juego o nivel, para no permitir repetir el intento.
    ============================================= */
 
-var VAC_SUDOKU_PUZZLES = {
-  4: {
-    blockR: 2, blockC: 2,
-    solution: [
-      [1,2,3,4],
-      [3,4,1,2],
-      [2,1,4,3],
-      [4,3,2,1]
-    ],
-    fixed: [
-      [1,0,0,1],
-      [0,1,1,0],
-      [0,1,1,0],
-      [1,0,0,1]
-    ]
-  },
-  6: {
-    blockR: 2, blockC: 3,
-    solution: [
-      [1,2,3,4,5,6],
-      [4,5,6,1,2,3],
-      [2,3,1,6,4,5],
-      [5,6,4,3,1,2],
-      [3,1,2,5,6,4],
-      [6,4,5,2,3,1]
-    ],
-    fixed: [
-      [1,0,0,1,0,0],
-      [0,1,0,0,1,0],
-      [0,0,1,0,0,1],
-      [1,0,0,1,0,0],
-      [0,1,0,0,1,0],
-      [0,0,1,0,0,1]
-    ]
-  },
-  9: {
-    blockR: 3, blockC: 3,
-    solution: [
-      [5,3,4,6,7,8,9,1,2],
-      [6,7,2,1,9,5,3,4,8],
-      [1,9,8,3,4,2,5,6,7],
-      [8,5,9,7,6,1,4,2,3],
-      [4,2,6,8,5,3,7,9,1],
-      [7,1,3,9,2,4,8,5,6],
-      [9,6,1,5,3,7,2,8,4],
-      [2,8,7,4,1,9,6,3,5],
-      [3,4,5,2,8,6,1,7,9]
-    ],
-    fixed: [
-      [1,0,0,0,1,0,0,0,1],
-      [0,1,0,1,0,1,0,1,0],
-      [0,0,1,0,0,0,1,0,0],
-      [1,0,0,1,0,1,0,0,1],
-      [0,1,0,0,1,0,0,1,0],
-      [1,0,0,1,0,1,0,0,1],
-      [0,0,1,0,0,0,1,0,0],
-      [0,1,0,1,0,1,0,1,0],
-      [1,0,0,0,1,0,0,0,1]
-    ]
-  }
+var VAC_SUDOKU_CONFIG = {
+  4: { blockR: 2, blockC: 2, givens: 8  },  // 16 casillas, 50% visibles
+  6: { blockR: 2, blockC: 3, givens: 14 },  // 36 casillas, ~39% visibles
+  9: { blockR: 3, blockC: 3, givens: 30 }   // 81 casillas, ~37% visibles
 };
+
+function _vacSudokuShuffleArr(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+  }
+  return arr;
+}
+
+function _vacSudokuIsValid(grid, size, blockR, blockC, row, col, val) {
+  for (var c = 0; c < size; c++) if (grid[row][c] === val) return false;
+  for (var r = 0; r < size; r++) if (grid[r][col] === val) return false;
+  var br = Math.floor(row / blockR) * blockR, bc = Math.floor(col / blockC) * blockC;
+  for (var r2 = br; r2 < br + blockR; r2++) {
+    for (var c2 = bc; c2 < bc + blockC; c2++) {
+      if (grid[r2][c2] === val) return false;
+    }
+  }
+  return true;
+}
+
+/* ---- Rellenar el tablero entero con una solucion valida (backtracking,
+   candidatos en orden aleatorio para que cada partida salga distinta) ---- */
+function _vacSudokuFill(grid, size, blockR, blockC, pos) {
+  if (pos === size * size) return true;
+  var row = Math.floor(pos / size), col = pos % size;
+  if (grid[row][col] !== 0) return _vacSudokuFill(grid, size, blockR, blockC, pos + 1);
+
+  var nums = [];
+  for (var n = 1; n <= size; n++) nums.push(n);
+  _vacSudokuShuffleArr(nums);
+
+  for (var i = 0; i < nums.length; i++) {
+    var val = nums[i];
+    if (_vacSudokuIsValid(grid, size, blockR, blockC, row, col, val)) {
+      grid[row][col] = val;
+      if (_vacSudokuFill(grid, size, blockR, blockC, pos + 1)) return true;
+      grid[row][col] = 0;
+    }
+  }
+  return false;
+}
+
+/* ---- Contar soluciones posibles (hasta `limit`), para comprobar que al
+   quitar una casilla el puzzle sigue teniendo una unica solucion ---- */
+function _vacSudokuCountSolutions(grid, size, blockR, blockC, limit) {
+  var count = 0;
+  function solve(pos) {
+    if (count >= limit) return;
+    if (pos === size * size) { count++; return; }
+    var row = Math.floor(pos / size), col = pos % size;
+    if (grid[row][col] !== 0) { solve(pos + 1); return; }
+    for (var val = 1; val <= size && count < limit; val++) {
+      if (_vacSudokuIsValid(grid, size, blockR, blockC, row, col, val)) {
+        grid[row][col] = val;
+        solve(pos + 1);
+        grid[row][col] = 0;
+      }
+    }
+  }
+  solve(0);
+  return count;
+}
+
+/* ---- Quitar casillas de la solucion completa hasta llegar a `givens`
+   visibles, comprobando en cada paso que la solucion siga siendo unica ---- */
+function _vacSudokuCarve(solution, size, blockR, blockC, givens) {
+  var puzzle = solution.map(function(row) { return row.slice(); });
+  var cells = [];
+  for (var r = 0; r < size; r++) for (var c = 0; c < size; c++) cells.push([r, c]);
+  _vacSudokuShuffleArr(cells);
+
+  var maxRemovable = size * size - givens;
+  var removed = 0;
+
+  for (var i = 0; i < cells.length && removed < maxRemovable; i++) {
+    var r = cells[i][0], c = cells[i][1];
+    var backup = puzzle[r][c];
+    puzzle[r][c] = 0;
+    var copy = puzzle.map(function(row) { return row.slice(); });
+    var solCount = _vacSudokuCountSolutions(copy, size, blockR, blockC, 2);
+    if (solCount === 1) {
+      removed++;
+    } else {
+      puzzle[r][c] = backup; // no era unica: se deja la casilla visible
+    }
+  }
+  return puzzle;
+}
+
+function _vacSudokuGenerate(size) {
+  var cfg = VAC_SUDOKU_CONFIG[size];
+  var solution = [];
+  for (var i = 0; i < size; i++) solution.push(new Array(size).fill(0));
+  _vacSudokuFill(solution, size, cfg.blockR, cfg.blockC, 0);
+
+  var puzzle = _vacSudokuCarve(solution, size, cfg.blockR, cfg.blockC, cfg.givens);
+  var fixed = puzzle.map(function(row) { return row.map(function(v) { return v !== 0 ? 1 : 0; }); });
+
+  return { blockR: cfg.blockR, blockC: cfg.blockC, solution: solution, fixed: fixed };
+}
 
 var VacSudoku = { size: 0, blockR: 0, blockC: 0, solution: null, fixed: null, board: null, selected: null };
 
 /* ---- Empezar una partida (llamado desde s-vac-nivel) ---- */
 function vacSudokuStart(n) {
-  var p = VAC_SUDOKU_PUZZLES[n];
-  if (!p) return;
+  var p = _vacSudokuGenerate(n);
   VacSudoku.size = n;
   VacSudoku.blockR = p.blockR;
   VacSudoku.blockC = p.blockC;
@@ -92,9 +140,11 @@ function vacSudokuStart(n) {
   var status = document.getElementById('vac-sudoku-status');
   if (status) { status.style.display = 'block'; status.textContent = 'Rellena para que no se repita ningún número en cada fila, columna o cuadrante'; }
 
-  _vacSudokuBuildNumpad();
-  _vacSudokuRenderBoard();
   go('s-vac-sudoku');
+  requestAnimationFrame(function() {
+    _vacSudokuBuildNumpad();
+    _vacSudokuRenderBoard();
+  });
 }
 
 function _vacSudokuBuildNumpad() {
