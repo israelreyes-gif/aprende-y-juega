@@ -147,13 +147,13 @@ function pinCancel() {
 
 /* ---- Selección de curso ---- */
 function seleccionarCurso(num) {
-  if (num !== 3) {
+  if (num !== CONFIG.curso.porDefecto) {
     // Cursos no disponibles → pantalla WIP con mensaje divertido
     go('s-wip-curso-' + num);
     return;
   }
-  // Curso 3 disponible → cargar su progreso y entrar
-  setCurso(3);
+  // Curso disponible → cargar su progreso y entrar
+  setCurso(CONFIG.curso.porDefecto);
   checkDayReset();
   updateMedalUI();
   updateStreakUI();
