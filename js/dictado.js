@@ -151,8 +151,8 @@ function dictUpdateDots() {
 }
 
 function dictUpdatePtsPreview() {
-  var base = D.attempt === 1 ? 10 : 5;
-  var current = Math.max(0, base - D.extra);
+  var base = configGetPts('lengua-dict')[D.attempt === 1 ? 'primero' : 'segundo'];
+  var current = Math.max(0, base - D.extra * CONFIG.puntos.dictado.penalizacionPorEscuchaExtra);
   var el = document.getElementById('dict-pts-preview');
   if (!el || D.done) return;
   el.style.color = current >= base ? '#16A34A' : '#EF4444';
@@ -178,8 +178,8 @@ function dictCheck() {
 
   var item = D.queue[D.idx];
   var isCorrect = normalizeFrase(inp.value) === normalizeFrase(item.frase);
-  var base = D.attempt === 1 ? 10 : 5;
-  var earned = Math.max(0, base - D.extra);
+  var base = configGetPts('lengua-dict')[D.attempt === 1 ? 'primero' : 'segundo'];
+  var earned = Math.max(0, base - D.extra * CONFIG.puntos.dictado.penalizacionPorEscuchaExtra);
 
   var fbEl = document.getElementById('dict-fb');
 
