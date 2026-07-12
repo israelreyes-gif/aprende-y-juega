@@ -10,11 +10,6 @@
    juego o nivel, para no permitir repetir el intento.
    ============================================= */
 
-var VAC_SOPA_WORDS = {
-  facil:   ['GATO','PERRO','LUNA','FLOR','PEZ','ARBOL','LIBRO','CASA','SOL','NUBE'],
-  medio:   ['ELEFANTE','JIRAFA','TORTUGA','DELFIN','COCODRILO','MARIPOSA','HORMIGA','CANGREJO','PINGUINO','CAMALEON','ESCORPION','ARDILLA','MEDUSA'],
-  dificil: ['ELEFANTE','JIRAFA','TORTUGA','DELFIN','COCODRILO','MARIPOSA','HORMIGA','CANGREJO','PINGUINO','CAMALEON','ESCORPION','ARDILLA','MEDUSA','BALLENA','PULPO']
-};
 var VAC_SOPA_SIZES = { facil: 10, medio: 13, dificil: 15 };
 var VAC_SOPA_DIRS = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]];
 var VAC_SOPA_LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -69,11 +64,23 @@ function _vacSopaGenGrid(size, words) {
   return grid;
 }
 
+/* ---- Elegir n palabras al azar, sin repetir, del listado compartido
+   (SubjectData.sopaPalabras, cargado por loadAllVacData en vacaciones-core.js) ---- */
+function _vacSopaPickWords(n) {
+  var pool = (SubjectData.sopaPalabras || []).slice();
+  for (var i = pool.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+  }
+  return pool.slice(0, n);
+}
+
 /* ---- Empezar una partida (llamado desde s-vac-nivel-sopa) ---- */
 function vacSopaStart(nivel) {
   var size = VAC_SOPA_SIZES[nivel];
-  var words = VAC_SOPA_WORDS[nivel];
-  if (!size || !words) return;
+  if (!size) return;
+  var words = _vacSopaPickWords(size);
+  if (!words.length) return;
 
   VacSopa.size = size;
   VacSopa.words = words;
