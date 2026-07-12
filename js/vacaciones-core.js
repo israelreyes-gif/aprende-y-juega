@@ -405,4 +405,31 @@ function renderVacacionesHome() {
 
   var bd = document.getElementById('vac-breakdown-home');
   if (bd) bd.innerHTML = html;
+
+  _vacRenderRefuerzo();
+}
+
+/* ---- Ejercicios a reforzar, solo dentro de Vacaciones ---- */
+function _vacRenderRefuerzo() {
+  var el = document.getElementById('vac-refuerzo-home');
+  if (!el) return;
+
+  var weak = statsGetToReforzar().filter(function(w){ return w.subjectName === 'Vacaciones'; });
+
+  if (weak.length === 0) {
+    el.innerHTML = '';
+    return;
+  }
+
+  var html = '<div style="font-size:11px;font-weight:800;color:var(--gray-400);letter-spacing:.5px;margin-bottom:10px">A REFORZAR</div>'
+    + '<div style="background:white;border:0.5px solid var(--gray-200);border-radius:12px;overflow:hidden">';
+  weak.slice(0, 6).forEach(function(w, idx) {
+    var isLast = idx === Math.min(weak.length, 6) - 1;
+    html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;' + (isLast ? '' : 'border-bottom:0.5px solid var(--gray-100)') + '">'
+      + '<span style="font-size:12px;color:var(--gray-700);font-weight:600;font-family:var(--f)">' + w.name + '</span>'
+      + '<span style="font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;background:#FEE2E2;color:#DC2626">' + w.fail + ' fallos</span>'
+      + '</div>';
+  });
+  html += '</div>';
+  el.innerHTML = html;
 }
