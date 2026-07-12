@@ -137,7 +137,7 @@ function updateErrorsPanel() {
   var panel = document.getElementById('errors-panel');
   if (!panel) return;
 
-  var weak = statsGetToReforzar().slice(0, 6);
+  var weak = statsGetToReforzar(['vacaciones']).slice(0, 6);
 
   if (weak.length === 0) {
     panel.innerHTML = '<div style="font-size:13px;color:var(--gray-400);font-weight:600;text-align:center;padding:12px 16px">¡Sin errores acumulados! Sigue así 🌟</div>';
