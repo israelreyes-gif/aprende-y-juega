@@ -81,10 +81,10 @@ function drawAvatarSVG(svgEl, av, pts) {
 
   var accSvg = '';
   if (acc.label==='Diadema')       accSvg='<path d="M40 62 Q52 48 65 45 Q78 48 90 62" fill="none" stroke="#A855F7" stroke-width="4" stroke-linecap="round"/><circle cx="65" cy="44" r="6" fill="#EC4899"/><circle cx="65" cy="44" r="3" fill="white" opacity=".5"/>';
-  if (acc.label==='Corona')        accSvg='<polygon points="41,32 50,12 65,24 80,12 89,32" fill="#F59E0B"/><circle cx="50" cy="14" r="3.5" fill="#EF4444"/><circle cx="65" cy="26" r="3.5" fill="#3B82F6"/><circle cx="80" cy="14" r="3.5" fill="#10B981"/><rect x="41" y="30" width="48" height="7" rx="2" fill="#D97706"/>';
+  if (acc.label==='Corona')        accSvg='<polygon points="41,32 50,12 65,24 80,12 89,32" fill="var(--vacaciones)"/><circle cx="50" cy="14" r="3.5" fill="#EF4444"/><circle cx="65" cy="26" r="3.5" fill="#3B82F6"/><circle cx="80" cy="14" r="3.5" fill="#10B981"/><rect x="41" y="30" width="48" height="7" rx="2" fill="#D97706"/>';
   if (acc.label==='Sombrero')      accSvg='<rect x="30" y="36" width="70" height="6" rx="3" fill="#1F2937"/><rect x="44" y="10" width="42" height="28" rx="6" fill="#374151"/>';
   if (acc.label==='Orejas gatito') accSvg='<polygon points="38,42 44,20 54,36" fill="'+hair+'"/><polygon points="76,42 86,20 92,36" fill="'+hair+'"/><polygon points="41,40 45,24 52,36" fill="#F9A8D4"/><polygon points="78,40 85,24 89,36" fill="#F9A8D4"/>';
-  if (acc.label==='Arco iris')     accSvg='<path d="M30 45 Q65 5 100 45" fill="none" stroke="#EF4444" stroke-width="4" opacity=".8"/><path d="M34 48 Q65 12 96 48" fill="none" stroke="#F59E0B" stroke-width="3" opacity=".8"/><path d="M38 51 Q65 18 92 51" fill="none" stroke="#10B981" stroke-width="3" opacity=".8"/><path d="M42 54 Q65 24 88 54" fill="none" stroke="#3B82F6" stroke-width="3" opacity=".8"/>';
+  if (acc.label==='Arco iris')     accSvg='<path d="M30 45 Q65 5 100 45" fill="none" stroke="#EF4444" stroke-width="4" opacity=".8"/><path d="M34 48 Q65 12 96 48" fill="none" stroke="var(--vacaciones)" stroke-width="3" opacity=".8"/><path d="M38 51 Q65 18 92 51" fill="none" stroke="#10B981" stroke-width="3" opacity=".8"/><path d="M42 54 Q65 24 88 54" fill="none" stroke="#3B82F6" stroke-width="3" opacity=".8"/>';
 
   var parts = hairParts[hairStyle] || hairParts[0];
   svgEl.innerHTML =
