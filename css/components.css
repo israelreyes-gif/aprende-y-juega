@@ -149,6 +149,15 @@
 }
 .btn-secondary-dark:active { transform: scale(.97); }
 
+/* CAJA DE RESPUESTA — Mates Problemas en Vacaciones. Necesita ser una clase
+   (no solo estilo en linea) porque el motor de Mates hace box.style.cssText='' 
+   al reiniciar el 2o intento, y eso borraria un estilo puesto solo en linea. */
+.vac-ans-box {
+  width: 100%; padding: 14px; border: 1.5px solid var(--gray-200); border-radius: 12px;
+  font-family: var(--f); font-size: 20px; font-weight: 800;
+  text-align: center; margin-bottom: 10px; color: #1F2937;
+}
+
 /* TRIANGLE */
 .tri-wrap { display: flex; justify-content: center; padding: 0 0 12px; }
 
