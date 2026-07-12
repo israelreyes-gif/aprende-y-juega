@@ -60,8 +60,6 @@ function _socBaseConfig(ex) {
     idx:         SO.idx,
     prefix:      'soc-ex',
     subjectKey:  'sociales',
-    ptsFirst:    10,
-    ptsSecond:   5,
     setIdx:      function(v){ SO.idx = v; },
     onFinish:    function(){ go('s-sociales'); },
     onAdvance:   function(){ loadSocEx(); }
@@ -151,8 +149,6 @@ function _socStartRelacionar(ex, area) {
     prefix:      'soc-ex',
     subjectKey:  'sociales',
     exerciseKey: 'sociales-relacionar',
-    ptsFirst:    10,
-    ptsSecond:   5
   });
 }
 
