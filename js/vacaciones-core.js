@@ -170,7 +170,7 @@ function _vacBalancedSample(all, totalSlots) {
 function vacStart() {
   loadAllVacData(function() {
     var all = _vacGetExerciseTypes();
-    VAC.queue = _vacBalancedSample(all, 20);
+    VAC.queue = _vacBalancedSample(all, CONFIG.vacaciones.ejerciciosPorSesion);
     VAC.idx   = 0;
     VAC.ok    = 0;
     VAC.pts   = 0;
@@ -337,12 +337,14 @@ function vacNext() {
 
 /* ---- Pantalla de resultados ---- */
 function _vacShowResults() {
-  var pct = VAC.ok > 0 ? Math.round(VAC.ok / 20 * 100) : 0;
+  var total = CONFIG.vacaciones.ejerciciosPorSesion;
+  var pct = VAC.ok > 0 ? Math.round(VAC.ok / total * 100) : 0;
   setEl('vac-fin-emoji', pct >= 80 ? '🏆' : pct >= 60 ? '🌟' : '💪');
   setEl('vac-fin-title', pct >= 80 ? '¡Excelente!' : pct >= 60 ? '¡Muy bien!' : '¡Sigue practicando!');
   setEl('vac-fin-ok',   VAC.ok);
-  setEl('vac-fin-fail', 20 - VAC.ok);
-  setEl('vac-fin-pts',  '⭐ +' + (VAC.ok * 10) + ' pts');
+  setEl('vac-fin-fail', total - VAC.ok);
+  setEl('vac-fin-pts',  '⭐ +' + VAC.pts + ' pts');
+  setEl('vac-fin-desc', 'Has completado los ' + total + ' ejercicios de repaso');
 
   var rows = document.getElementById('vac-fin-breakdown');
   if (rows) {
@@ -368,6 +370,7 @@ function renderVacacionesHome() {
   var s = statsGetSubject('vacaciones');
   if (!s) return;
 
+  setEl('vac-home-desc', CONFIG.vacaciones.ejerciciosPorSesion + ' ejercicios mezclando todas las asignaturas de 3º. ¿Cuántos aciertas?');
   setEl('vac-stat-total', s.total || 0);
   setEl('vac-stat-pct',   s.pct !== null ? s.pct + '%' : '—');
   setEl('vac-stat-pts',   (s.pts || 0) + ' pts');
