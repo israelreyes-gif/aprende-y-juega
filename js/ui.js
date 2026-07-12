@@ -9,8 +9,8 @@ function setBar(id, pct) { var e = document.getElementById(id); if (e) e.style.w
 
 /* ---- Dificultad según racha ---- */
 function diffLabel(streak) {
-  if (streak >= 10) return { cls: 'diff-hard', txt: 'Difícil' };
-  if (streak >= 5)  return { cls: 'diff-med',  txt: 'Medio' };
+  if (streak >= CONFIG.dificultad.rachaParaDificil) return { cls: 'diff-hard', txt: 'Difícil' };
+  if (streak >= CONFIG.dificultad.rachaParaMedio)   return { cls: 'diff-med',  txt: 'Medio' };
   return { cls: 'diff-easy', txt: 'Fácil' };
 }
 
