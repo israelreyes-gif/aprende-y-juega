@@ -36,7 +36,10 @@ var CONFIG = {
   /* ---- Vacaciones ---- */
   vacaciones: {
     // Numero de ejercicios que componen cada sesion de repaso de Vacaciones.
-    ejerciciosPorSesion: 20
+    ejerciciosPorSesion: 20,
+    // Aciertos minimos (de ejerciciosPorSesion) para desbloquear la seccion
+    // de minijuegos al terminar la sesion.
+    umbralJuegos: 15
   },
 
   /* ---- Medallas ----
