@@ -2,7 +2,7 @@
      VACACIONES HOME
      ============================================= -->
 <div class="screen" id="s-vacaciones">
-  <div class="screen-header" style="background:#F59E0B">
+  <div class="screen-header" style="background:var(--vacaciones)">
     <button class="back-btn" onclick="go('s-cursos')">←</button>
     <h2 style="color:#78350F">🏖️ Vacaciones</h2>
     <div class="pts-pill" id="vac-pts-pill" style="background:rgba(255,255,255,.25);color:#78350F">⭐ 0 pts</div>
@@ -41,7 +41,7 @@
     <!-- A reforzar -->
     <div id="vac-refuerzo-home" style="margin-bottom:16px"></div>
 
-    <button class="next-btn" style="background:#F59E0B;color:#78350F;border:none;margin-bottom:8px" onclick="vacStart()">¡Empezar sesión! 🚀</button>
+    <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;margin-bottom:8px" onclick="vacStart()">¡Empezar sesión! 🚀</button>
   </div>
 </div>
 
@@ -49,7 +49,7 @@
      VACACIONES — EJERCICIO
      ============================================= -->
 <div class="screen" id="s-vac-ex">
-  <div class="screen-header" style="background:#F59E0B">
+  <div class="screen-header" style="background:var(--vacaciones)">
     <button class="back-btn" onclick="go('s-vacaciones')" style="color:#78350F">←</button>
     <h2 id="vac-ex-title" style="color:#78350F">🔬 Sciences</h2>
     <div class="pts-pill" id="vac-ex-pts" style="background:rgba(255,255,255,.25);color:#78350F">1 / 20</div>
@@ -93,11 +93,11 @@
       <div class="nk" onclick="vacNumKey(9)">9</div>
       <div class="nk nk-del" onclick="vacNumKey('del')">🗑️</div>
       <div class="nk" onclick="vacNumKey(0)">0</div>
-      <div class="nk nk-ok" style="background:#F59E0B" onclick="vacNumCheck()">✅</div>
+      <div class="nk nk-ok" style="background:var(--vacaciones)" onclick="vacNumCheck()">✅</div>
     </div>
 
     <div class="feedback" id="vac-ex-fb" style="display:none"></div>
-    <button class="next-btn" style="background:#F59E0B;color:#78350F;border:none;display:none;margin-top:8px" id="vac-ex-next" onclick="vacNext()">Siguiente →</button>
+    <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;display:none;margin-top:8px" id="vac-ex-next" onclick="vacNext()">Siguiente →</button>
   </div>
 </div>
 
@@ -105,7 +105,7 @@
      VACACIONES — RESULTADOS
      ============================================= -->
 <div class="screen" id="s-vac-fin">
-  <div class="screen-header" style="background:#F59E0B">
+  <div class="screen-header" style="background:var(--vacaciones)">
     <button class="back-btn" onclick="go('s-vacaciones')" style="color:#78350F">←</button>
     <h2 style="color:#78350F">Sesión completa</h2>
   </div>
@@ -136,7 +136,7 @@
       <div id="vac-fin-breakdown"></div>
     </div>
 
-    <button class="next-btn" style="background:#F59E0B;color:#78350F;border:none;margin-bottom:8px" onclick="vacStart()">Otra sesión 🔄</button>
+    <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;margin-bottom:8px" onclick="vacStart()">Otra sesión 🔄</button>
     <button class="next-btn" style="background:var(--card-bg);color:var(--gray-500);border:0.5px solid var(--gray-200)" onclick="go('s-vacaciones')">← Volver al inicio</button>
   </div>
 </div>
