@@ -263,7 +263,7 @@ function renderSubjects() {
   var subs=getPadresSubjectData(); el.innerHTML='';
   subs.forEach(function(s){
     var gPct=_pct(s.ok,s.total), gStr=_pctStr(s.ok,s.total);
-    var gColor=s.total===0?'var(--gray-400)':gPct<CONFIG.progreso.umbralRefuerzo?'#F59E0B':'#16A34A';
+    var gColor=s.total===0?'var(--gray-400)':gPct<CONFIG.progreso.umbralRefuerzo?'var(--vacaciones)':'#16A34A';
     var iconHtml=s.icon==='flag'?UK_FLAG:'<span style="font-size:15px">'+s.icon+'</span>';
     var card=document.createElement('div');
     card.style.cssText='background:white;border:0.5px solid var(--gray-200);border-radius:12px;overflow:hidden;margin-bottom:6px';
