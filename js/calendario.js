@@ -153,7 +153,7 @@ function renderCalMes() {
       var isDone   = !isToday && activeDays[d] && d < todayDay;
       var isFuture = d > todayDay;
       cell.style.cssText = 'border-radius:5px;display:flex;align-items:center;justify-content:center;height:'+cellHeight+'px;font-size:11px;font-weight:500;';
-      if (isToday)       cell.style.cssText += 'background:#EEEDFE;color:#3C3489;outline:2px solid #7F77DD;font-weight:700';
+      if (isToday)       cell.style.cssText += 'background:#EEEDFE;color:#3C3489;outline:2px solid var(--calendario);font-weight:700';
       else if (isDone)   cell.style.cssText += 'background:#EAF3DE;color:#27500A';
       else if (isFuture) cell.style.cssText += 'color:var(--gray-300);opacity:.4';
       else               cell.style.cssText += 'color:var(--gray-400)';
@@ -180,8 +180,8 @@ function renderCalObjetivos() {
   var subjects = [
     { key:'lengua',    emoji:'📚', name:'Lengua',        color:'#993556', bg:'#FBEAF0', meta:4 },
     { key:'english',   emoji:'🇬🇧', name:'English',       color:'#185FA5', bg:'#E6F1FB', meta:3 },
-    { key:'mates',     emoji:'🔢', name:'Matemáticas',   color:'#7F77DD', bg:'#EEEDFE', meta:3 },
-    { key:'sciences',  emoji:'🔬', name:'Sciences',      color:'#0F6E56', bg:'#E1F5EE', meta:2 },
+    { key:'mates',     emoji:'🔢', name:'Matemáticas',   color:'var(--calendario)', bg:'#EEEDFE', meta:3 },
+    { key:'sciences',  emoji:'🔬', name:'Sciences',      color:'var(--sociales)', bg:'#E1F5EE', meta:2 },
   ];
 
   var weekDays = (ST.weekDays || []).length;
