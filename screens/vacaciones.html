@@ -167,6 +167,15 @@
       </div>
       <div style="font-size:20px;color:var(--gray-400)">›</div>
     </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-sopa')">
+      <div class="vac-game-icon" style="background:#FDF2F8">🔤</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Sopa de letras</div>
+        <div class="vac-game-desc">Encuentra las palabras escondidas</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
   </div>
 </div>
 
@@ -213,5 +222,51 @@
     <div class="sudoku-board" id="vac-sudoku-board"></div>
     <div class="sudoku-numpad" id="vac-sudoku-numpad"></div>
     <div id="vac-sudoku-win" style="display:none;width:100%"></div>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR DIFICULTAD (SOPA DE LETRAS)
+     ============================================= -->
+<div class="screen" id="s-vac-nivel-sopa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Sopa de letras</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+
+    <button class="vac-game-card" onclick="vacSopaStart('facil')">
+      <div class="vac-level-dot" style="background:var(--green)">10²</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Tablero 10×10 · 10 palabras</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSopaStart('medio')">
+      <div class="vac-level-dot" style="background:var(--amber)">13²</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Tablero 13×13 · 13 palabras</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSopaStart('dificil')">
+      <div class="vac-level-dot" style="background:var(--red)">15²</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">Tablero 15×15 · 15 palabras</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — SOPA DE LETRAS (sin vuelta atrás)
+     ============================================= -->
+<div class="screen" id="s-vac-sopa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Sopa de letras</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-sopa-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div class="ws-scroll"><div class="ws-grid" id="vac-sopa-grid"></div></div>
+    <div class="ws-words" id="vac-sopa-words"></div>
+    <div id="vac-sopa-win" style="display:none;width:100%"></div>
   </div>
 </div>
