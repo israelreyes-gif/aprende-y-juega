@@ -53,7 +53,7 @@ var STATS_SUBJECTS = [
     key:   'sciences',
     name:  'Sciences',
     icon:  '🔬',
-    color: 'var(--teal)',
+    color: '#0D9488',
     pill:  'background:#F0FDFA;color:#0F766E',
     items: [
       { key: 'sciences-invertebrates', name: 'Invertebrates' },
