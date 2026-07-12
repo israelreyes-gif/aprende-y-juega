@@ -9,10 +9,12 @@ var perfilEditandoId = null;
 var HAIR_NAMES = ['Liso corto','Liso largo','Rizado','Trenzas','Cola alta'];
 var modalAV = { skin: 0, hairColor: 1, hair: 0 };
 
+var perfilActivoNombre = null;
+
 /* ---- Storage local de perfiles ---- */
 function loadPerfilesLocal() { return []; }
 function savePerfilesLocal(p) { }
-function setPerfilActivo(p)   { }
+function setPerfilActivo(p)   { perfilActivoNombre = p.nombre; }
 
 function perfilToAV(p) {
   return { skin: p.skin, hairColor: p.hair_color !== undefined ? p.hair_color : p.hairColor, hair: p.hair, acc: 0, unlocked: p.unlocked || [] };
