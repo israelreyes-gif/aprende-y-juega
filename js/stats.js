@@ -163,12 +163,12 @@ function statsGetAll() {
   return STATS_SUBJECTS.map(function(s){ return statsGetSubject(s.key); });
 }
 
-/* ---- Ejercicios a reforzar (< 75%) ---- */
+/* ---- Ejercicios a reforzar (por debajo de CONFIG.progreso.umbralRefuerzo) ---- */
 function statsGetToReforzar() {
   var weak = [];
   statsGetAll().forEach(function(subject) {
     subject.items.forEach(function(item) {
-      if (item.total > 0 && item.pct < 75) {
+      if (item.total > 0 && item.pct < CONFIG.progreso.umbralRefuerzo) {
         weak.push({
           key:         item.key,
           name:        item.name,
@@ -199,6 +199,6 @@ function statsPctStr(pct) {
 /* ---- Color según umbral 75% ---- */
 function statsColor(pct, color, nullColor) {
   if (pct === null) return nullColor || 'var(--gray-400)';
-  if (pct < 75) return '#F59E0B';
+  if (pct < CONFIG.progreso.umbralRefuerzo) return '#F59E0B';
   return color || '#16A34A';
 }
