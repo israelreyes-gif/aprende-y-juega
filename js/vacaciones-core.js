@@ -230,6 +230,18 @@ function loadAllVacData(callback) {
       .catch(function(){ done(); });
   }
 
+  if (!SubjectData.sopaPalabras) { pending++;
+    fetch('data/curso' + cursoActual + '/vacaciones-sopa-palabras.json')
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var todas = [];
+        Object.keys(data).forEach(function(cat){ todas = todas.concat(data[cat]); });
+        SubjectData.sopaPalabras = todas;
+        done();
+      })
+      .catch(function(){ done(); });
+  }
+
   if (pending === 0) callback();
 }
 
