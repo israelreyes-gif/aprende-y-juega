@@ -137,7 +137,8 @@ function pickWord(chosen, correct, full) {
       o.onclick = null;
       o.className = 'wopt-btn ' + (o.textContent === correct ? 'wok' : '');
     });
-    var gramPts = L.gramIntentos === 0 ? 10 : 5;
+    var pGram = configGetPts('lengua-' + key);
+    var gramPts = L.gramIntentos === 0 ? pGram.primero : pGram.segundo;
     L.gramIntentos = 0;
     ST.gramStreak++;
     saveState();
