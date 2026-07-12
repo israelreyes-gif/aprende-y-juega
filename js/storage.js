@@ -11,13 +11,6 @@ var perfilActivoId = null;
    NAMESPACES — Estado centralizado
    ============================================= */
 
-/* Estado de la sesión (usuario, curso, progreso) */
-var AppState = {
-  cursoActual:    3,
-  perfilActivoId: null,
-  st:             null   /* alias de ST — se inicializa en defaultState() */
-};
-
 /* Datos cargados desde JSON */
 var SubjectData = {
   problemas:    { facil: [], medio: [], avanzado: [] },
@@ -114,8 +107,6 @@ var ExerciseState = {
     current: null
   }
 };
-
-
 
 /* ---- Estado global en memoria ---- */
 var ST = defaultState();
@@ -285,11 +276,6 @@ function addPts(n, subject) {
   ST.totalPts += n;
   if (ST[subject]) ST[subject].pts += n;
   saveState();
-}
-
-/* ---- Helper porcentaje ---- */
-function pct(ok, total) {
-  return total > 0 ? Math.round(ok / total * 100) + '%' : '—';
 }
 
 // Compatibilidad
