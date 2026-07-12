@@ -176,6 +176,15 @@
       </div>
       <div style="font-size:20px;color:var(--gray-400)">›</div>
     </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-mapa')">
+      <div class="vac-game-icon" style="background:#E8F5E9">🗺️</div>
+      <div style="flex:1">
+        <div class="vac-game-title">City Map</div>
+        <div class="vac-game-desc">Sigue las instrucciones en inglés para llegar al destino</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
   </div>
 </div>
 
@@ -268,5 +277,61 @@
     <div class="ws-scroll"><div class="ws-grid" id="vac-sopa-grid"></div></div>
     <div class="ws-words" id="vac-sopa-words"></div>
     <div id="vac-sopa-win" style="display:none;width:100%"></div>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR DIFICULTAD (CITY MAP)
+     ============================================= -->
+<div class="screen" id="s-vac-nivel-mapa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🗺️ City Map</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+
+    <button class="vac-game-card" onclick="vacMapaStart(6)">
+      <div class="vac-level-dot" style="background:var(--green)">6×6</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Ciudad pequeña</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMapaStart(10)">
+      <div class="vac-level-dot" style="background:var(--amber)">10×10</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Un poco más grande</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMapaStart(15)">
+      <div class="vac-level-dot" style="background:var(--red)">15×15</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">La ciudad entera</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — CITY MAP (sin vuelta atrás)
+     ============================================= -->
+<div class="screen" id="s-vac-mapa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🗺️ City Map</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-mapa-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-mapa-blocked" style="display:none;background:var(--red-light);color:var(--red);font-family:var(--f);font-weight:700;font-size:12px;text-align:center;padding:8px;border-radius:10px;margin-bottom:10px">🚫 You can't go that way!</div>
+    <div class="mapa-wrap">
+      <div class="mapa-grid" id="vac-mapa-grid"></div>
+    </div>
+    <div class="mapa-btn-row">
+      <button class="mapa-instr-btn ahead" onclick="vacMapaMove('ahead')"><span class="icon">⬆️</span>Go ahead</button>
+      <button class="mapa-instr-btn back" onclick="vacMapaMove('back')"><span class="icon">⬇️</span>Go back</button>
+    </div>
+    <div class="mapa-btn-row">
+      <button class="mapa-instr-btn" onclick="vacMapaTurn('left')"><span class="icon">↩️</span>Turn left</button>
+      <button class="mapa-instr-btn" onclick="vacMapaTurn('right')"><span class="icon">↪️</span>Turn right</button>
+    </div>
+    <div id="vac-mapa-win" style="display:none;width:100%"></div>
   </div>
 </div>
