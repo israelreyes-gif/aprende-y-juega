@@ -90,9 +90,15 @@ function vacSopaStart(nivel) {
   var status = document.getElementById('vac-sopa-status');
   if (status) { status.style.display = 'block'; status.textContent = 'Toca la primera letra y luego la última de cada palabra'; }
 
-  _vacSopaRenderGrid();
-  _vacSopaRenderWords();
+  // Importante: hacer visible la pantalla ANTES de pintar el tablero.
+  // Si se pinta con la pantalla aun oculta, el contenedor mide 0px de
+  // ancho y el calculo de tamaño de letra sale mal (se ve minusculo/raro
+  // hasta que se repinta con cualquier interaccion).
   go('s-vac-sopa');
+  requestAnimationFrame(function() {
+    _vacSopaRenderGrid();
+    _vacSopaRenderWords();
+  });
 }
 
 function _vacSopaRenderGrid() {
