@@ -13,8 +13,8 @@
      prefix:      prefijo de IDs en el HTML (ej. 'suma')
      subjectKey:  clave en ST (ej. 'mates')
      exerciseKey: clave para errors (ej. 'mates-suma')
-     ptsFirst:    puntos primer intento (def. 10)
-     ptsSecond:   puntos segundo intento (def. 5)
+     (los puntos por acierto se leen de CONFIG.puntos segun exerciseKey,
+     ya no se especifican en el config del motor)
      renderOp:    fn(ex, container) — dibuja la operación
      correctMsg:  fn(pts, ex) → string HTML
      wrongMsg:    fn(ex) → string HTML (segundo fallo)
@@ -123,8 +123,9 @@ function matesCheckDigits() {
   var p      = config.prefix;
   var res    = ex.resultado.toString();
   var fb     = document.getElementById(p + '-fb');
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
 
   if (ex.respuestaUsuario.length < res.length) {
     showToast('✏️ Escribe todos los dígitos del resultado');
@@ -204,8 +205,9 @@ function matesPickOption(el, val) {
   var ex     = s.ex;
   var p      = config.prefix;
   var fb     = document.getElementById(p + '-fb');
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
   fb.style.display = 'block';
 
   var screen = config.screenId || ('s-' + p);
@@ -257,8 +259,9 @@ function matesCheckFree() {
   var p      = config.prefix;
   var fb     = document.getElementById(p + '-fb');
   var box    = document.getElementById(p + '-ans');
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
   fb.style.display = 'block';
 
   if (parseInt(s.val) === ex.resultado) {
