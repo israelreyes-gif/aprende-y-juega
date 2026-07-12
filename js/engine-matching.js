@@ -98,7 +98,7 @@ function _mcMatchClick(state, grid, colors, side, val) {
     state.left = val;
     grid.querySelectorAll('[data-side="left"]').forEach(function(b) {
       if (!b.dataset.colorIdx && !b.dataset.correct) {
-        b.style.borderColor = b.dataset.val === val ? '#0F6E56' : 'var(--gray-200)';
+        b.style.borderColor = b.dataset.val === val ? 'var(--sociales)' : 'var(--gray-200)';
         b.style.background  = b.dataset.val === val ? '#E1F5EE' : 'white';
         b.style.color       = b.dataset.val === val ? '#085041' : 'var(--gray-700)';
       }
@@ -159,7 +159,7 @@ function _mcMatchClick(state, grid, colors, side, val) {
 
     if (checkBtn && Object.keys(state.selections).length === state.config.pairs.length) {
       checkBtn.disabled = false;
-      checkBtn.style.background = '#0F6E56';
+      checkBtn.style.background = 'var(--sociales)';
       checkBtn.style.color = 'white';
       checkBtn.style.cursor = 'pointer';
     }
