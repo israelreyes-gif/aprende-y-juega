@@ -93,7 +93,9 @@ function loadScreenLazy(screenId, callback) {
     's-vac-nivel':    'screens/vacaciones.html',
     's-vac-sudoku':   'screens/vacaciones.html',
     's-vac-nivel-sopa': 'screens/vacaciones.html',
-    's-vac-sopa':       'screens/vacaciones.html'
+    's-vac-sopa':       'screens/vacaciones.html',
+    's-vac-nivel-mapa': 'screens/vacaciones.html',
+    's-vac-mapa':       'screens/vacaciones.html'
   };
 
   var file = fileMap[screenId];
