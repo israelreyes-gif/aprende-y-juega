@@ -11,8 +11,8 @@
      idx:          índice actual
      subjectKey:   clave en ST (ej. 'english')
      exerciseKey:  clave para errors (ej. 'english-vocab')
-     ptsFirst:     puntos primer intento (def. 10)
-     ptsSecond:    puntos segundo intento (def. 5)
+     (los puntos por acierto se leen de CONFIG.puntos segun exerciseKey,
+     ya no se especifican en el config del motor)
      getAllWords:   fn() → array de todas las palabras (para distractores)
      setIdx:       fn(newIdx) para actualizar índice externo
      onFinish:     fn() al acabar la cola
@@ -134,8 +134,9 @@ function vocabPickW2I(opt) {
   var vp = _vocabPrefix();
   var fbEl  = document.getElementById(vp + '-fb');
   var nextEl = document.getElementById(vp + '-next');
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
 
   if (isCorrect) {
     s.done = true;
@@ -184,8 +185,9 @@ function vocabCheckI2W() {
   var fbEl   = document.getElementById(vp + '-fb');
   var nextEl = document.getElementById(vp + '-next');
   var checkEl = document.getElementById(vp + '-check');
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
 
   if (!inp.value.trim()) return;
   var isCorrect = inp.value.trim().toUpperCase() === word.word.toUpperCase();
