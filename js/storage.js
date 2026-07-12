@@ -5,7 +5,7 @@
    ============================================= */
 
 var API_URL = 'https://aprende-y-juega-api.israel-reyes.workers.dev';
-var cursoActual = 3;
+var cursoActual = CONFIG.curso.porDefecto;
 var perfilActivoId = null;
 /* =============================================
    NAMESPACES — Estado centralizado
