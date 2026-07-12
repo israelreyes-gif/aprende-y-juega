@@ -21,8 +21,6 @@ function _enBaseConfig(queue, idx, prefix, area, setIdx, onFinish, onAdvance) {
     prefix:       prefix,
     subjectKey:   'english',
     exerciseKey:  'english-' + area,
-    ptsFirst:     10,
-    ptsSecond:    5,
     badgeLabel:   'Question',
     renderQuestion: _enRenderQuestion,
     correctMsg:   function(pts, attempt) {
