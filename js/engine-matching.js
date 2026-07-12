@@ -9,8 +9,8 @@
      prefix:     prefijo de IDs en el HTML (ej. 'soc-ex')
      subjectKey: clave en ST (ej. 'sociales')
      exerciseKey: clave para errors (ej. 'sociales-relacionar')
-     ptsFirst:   puntos primer intento (def. 10)
-     ptsSecond:  puntos segundo intento (def. 5)
+     (los puntos por acierto se leen de CONFIG.puntos segun exerciseKey,
+     ya no se especifican en el config del motor)
      colors:     array de colores [ {border, bg, text}, ... ]
      onFinish:   función al terminar todos los ejercicios
      onCorrect:  fn(firstAttempt) — hook post-acierto (opcional)
@@ -182,8 +182,9 @@ function _mcMatchCheck(state, grid, colors, checkBtn) {
     }
   });
 
-  var ptsFirst  = config.ptsFirst  !== undefined ? config.ptsFirst  : 10;
-  var ptsSecond = config.ptsSecond !== undefined ? config.ptsSecond : 5;
+  var _p = configGetPts(config.exerciseKey);
+  var ptsFirst  = _p.primero;
+  var ptsSecond = _p.segundo;
 
   if (allCorrect) {
     state.done = true;
