@@ -2851,16 +2851,6 @@
       }
     },
     {
-      "p": "num_ro",
-      "l": "B",
-      "c": "número",
-      "definicion": {
-        "tipo": "Sustantivo masculino",
-        "texto": "Símbolo que representa una cantidad.",
-        "ejemplo": "\"El num_ro favorito de Alexandra es el siete.\""
-      }
-    },
-    {
       "p": "trom_a",
       "l": "B",
       "c": "tromba",
@@ -2881,18 +2871,18 @@
       }
     },
     {
-      "p": "des_ujar",
+      "p": "di_ujar",
       "l": "B",
       "c": "dibujar",
       "definicion": {
         "tipo": "Verbo",
         "texto": "Representar algo con líneas y formas.",
-        "ejemplo": "\"Le gusta des_ujar paisajes.\""
+        "ejemplo": "\"Le gusta di_ujar paisajes.\""
       }
     },
     {
       "p": "na_egar",
-      "l": "B",
+      "l": "V",
       "c": "navegar",
       "definicion": {
         "tipo": "Verbo",
@@ -5866,7 +5856,7 @@
     },
     {
       "p": "tro_o",
-      "l": "C",
+      "l": "Z",
       "c": "trozo",
       "definicion": {
         "tipo": "Sustantivo masculino",
