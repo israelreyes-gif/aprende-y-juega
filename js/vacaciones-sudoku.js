@@ -3,9 +3,10 @@
    al terminar una sesion de Vacaciones con
    CONFIG.vacaciones.umbralJuegos aciertos o mas.
 
-   Una unica partida por sesion: al empezar un
-   nivel no hay boton de volver atras (a proposito,
-   ver s-vac-sudoku en vacaciones.html).
+   Una unica partida por sesion: la pantalla del juego
+   tiene un boton de atras, pero va directo a la home
+   de Vacaciones (s-vacaciones) — nunca a elegir otro
+   juego o nivel, para no permitir repetir el intento.
    ============================================= */
 
 var VAC_SUDOKU_PUZZLES = {
@@ -176,7 +177,7 @@ function _vacSudokuCheckWin() {
         + '<div style="font-family:var(--f);color:#166534;font-size:16px;margin:6px 0 2px">¡Sudoku resuelto!</div>'
         + '<div style="font-size:12px;color:var(--green);font-weight:700">¡Enhorabuena, lo has conseguido!</div>'
         + '</div>'
-        + '<button class="next-btn" style="background:var(--purple);color:white;border:none;margin-top:14px" onclick="go(\'s-vac-fin\')">Volver a resultados</button>';
+        + '<button class="next-btn" style="background:var(--purple);color:white;border:none;margin-top:14px" onclick="go(\'s-vacaciones\')">Volver al inicio de Vacaciones</button>';
     }
   } else if (status) {
     status.textContent = '❌ Algo no cuadra todavía, sigue intentando';
