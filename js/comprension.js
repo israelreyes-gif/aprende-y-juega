@@ -162,7 +162,7 @@ function evaluateAnswers() {
 
     var penalty    = level >= 1 ? orthoMsgs.length : 0;
     var finalScore = Math.max(0, score - penalty);
-    var pts        = finalScore * 5;
+    var pts        = finalScore * CONFIG.puntos.comprension.porRespuesta;
     var orthoNote  = orthoMsgs.length > 0
       ? (level >= 1 ? ' (−' + penalty + ' pts ortografía)' : ' (la próxima vez penalizará)')
       : '';
