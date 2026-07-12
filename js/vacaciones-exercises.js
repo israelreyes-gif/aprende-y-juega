@@ -113,7 +113,7 @@ function _vacLoadSocRel(item) {
   var pairs = ex.pares.map(function(p){ return { left: p.izq, right: p.der }; });
   mcMatchInit({
     pairs: pairs, containerId: 'vac-rel-container', prefix: 'vac-ex',
-    subjectKey: item.subjectKey, exerciseKey: item.exerciseKey, ptsFirst: 10, ptsSecond: 5,
+    subjectKey: item.subjectKey, exerciseKey: item.exerciseKey,
     onCorrect: function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); },
     onWrong:   function(){ _vacTrackSession(item, false, false); }
   });
@@ -283,7 +283,7 @@ function _vacLoadMates(item) {
   matesStart({
     generate: function(){ return tipo === 'sum' ? generarSuma(getNivel()) : generarResta(getNivel()); },
     inputType: 'digits', prefix: 'vac-ex', screenId: 's-vac-ex',
-    subjectKey: item.subjectKey, exerciseKey: item.exerciseKey, ptsFirst:10, ptsSecond:5,
+    subjectKey: item.subjectKey, exerciseKey: item.exerciseKey,
     renderOp: function(ex, container) {
       var sign = tipo === 'sum' ? '+' : '−';
       var res = ex.resultado.toString();
@@ -365,7 +365,7 @@ function _vacLoadMatesProb(item) {
   ansBox.textContent = '?';
   area.appendChild(card);
   area.appendChild(ansBox);
-  _matesState = { config: { prefix:'vac-ex', subjectKey:item.subjectKey, exerciseKey:item.exerciseKey, ptsFirst:15, ptsSecond:7,
+  _matesState = { config: { prefix:'vac-ex', subjectKey:item.subjectKey, exerciseKey:item.exerciseKey,
     correctMsg:function(pts){ return '¡Correcto! +'+pts+' pts 🎉'; },
     onCorrect: function(firstAttempt){ _vacTrackSession(item, true, firstAttempt); },
     onWrong:   function(){ _vacTrackSession(item, false, false); }
