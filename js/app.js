@@ -88,7 +88,10 @@ function loadScreenLazy(screenId, callback) {
     's-crear-avatar': 'screens/avatar.html',
     's-vacaciones':   'screens/vacaciones.html',
     's-vac-ex':       'screens/vacaciones.html',
-    's-vac-fin':      'screens/vacaciones.html'
+    's-vac-fin':      'screens/vacaciones.html',
+    's-vac-juegos':   'screens/vacaciones.html',
+    's-vac-nivel':    'screens/vacaciones.html',
+    's-vac-sudoku':   'screens/vacaciones.html'
   };
 
   var file = fileMap[screenId];
