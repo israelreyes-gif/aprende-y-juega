@@ -62,6 +62,7 @@ function confirmarCrearAvatar() {
   if (typeof AV_TEMP !== 'undefined' && typeof saveAvatar === 'function') {
     AV = JSON.parse(JSON.stringify(AV_TEMP));
     saveAvatar(AV);
+    if (typeof syncAvatarToCloud === 'function') syncAvatarToCloud();
   }
   go('s-cursos');
 }
