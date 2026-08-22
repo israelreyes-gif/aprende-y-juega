@@ -375,3 +375,12 @@
 .mapa-instr-btn .icon { font-size: 22px; }
 .mapa-instr-btn.ahead { background: var(--purple-light); color: var(--purple-dark); }
 .mapa-instr-btn.back { background: var(--amber-light); color: #92400E; }
+
+.vac-simon-btn { aspect-ratio: 1; border-radius: 16px; border: none; cursor: pointer; opacity: .55; transition: opacity .15s; }
+.vac-simon-btn.lit { opacity: 1; box-shadow: 0 0 0 4px rgba(255,255,255,.6) inset; }
+
+.vac-arkanoid-ctrl {
+  padding: 18px; border-radius: 16px; border: none; background: white; font-size: 24px;
+  box-shadow: var(--sh-sm); cursor: pointer; user-select: none;
+}
+.vac-arkanoid-ctrl:active { transform: scale(.94); background: var(--purple-light); }
