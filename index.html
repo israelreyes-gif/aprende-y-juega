@@ -1,126 +1,730 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Aprende y Juega">
-  <meta name="theme-color" content="#7C3AED">
-  <meta name="description" content="App educativa para niños de primaria: Matemáticas, Lengua, Sciences y más. Aprende jugando con ejercicios adaptados a tu nivel.">
-  <link rel="manifest" href="manifest.json">
-  <title>Aprende y Juega 🎒</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css?v=1783890881">
-  <link rel="stylesheet" href="css/components.css?v=1783890881">
-  <link rel="stylesheet" href="css/screens.css?v=1783890881">
-</head>
-<body>
-<div id="app"></div>
-<div id="toast"></div>
-
-<!-- PANTALLA DE ERROR -->
-<div id="error-screen" style="display:none;position:fixed;inset:0;background:var(--color-background-primary);z-index:8888;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;text-align:center;gap:20px">
-  <svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="70" cy="80" rx="48" ry="28" fill="#EDE9FE"/>
-    <ellipse cx="50" cy="72" rx="24" ry="20" fill="#EDE9FE"/>
-    <ellipse cx="88" cy="70" rx="20" ry="17" fill="#EDE9FE"/>
-    <ellipse cx="70" cy="62" rx="26" ry="20" fill="#EDE9FE"/>
-    <path d="M56 72 Q59 69 62 72" stroke="#534AB7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <path d="M76 72 Q79 69 82 72" stroke="#534AB7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <path d="M61 80 Q70 76 79 80" stroke="#534AB7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <ellipse cx="58" cy="76" rx="2" ry="3" fill="#AFA9EC"/>
-    <path d="M58 79 Q56 82 58 84" stroke="#AFA9EC" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-    <text x="100" y="50" font-size="18" text-anchor="middle">⭐</text>
-    <text x="30" y="45" font-size="14" text-anchor="middle">✨</text>
-    <text x="112" y="75" font-size="12" text-anchor="middle">💫</text>
-  </svg>
-  <div>
-    <div style="font-size:18px;font-weight:700;font-family:var(--f);color:#1F2937;margin-bottom:8px">¡Uy, algo salió mal!</div>
-    <div id="error-msg" style="font-size:14px;color:#6B7280;line-height:1.6">No pudimos cargar los ejercicios.<br>¿Tienes conexión a internet?</div>
+<!-- =============================================
+     VACACIONES HOME
+     ============================================= -->
+<div class="screen" id="s-vacaciones">
+  <div class="screen-header" style="background:var(--vacaciones)">
+    <button class="back-btn" onclick="go('s-cursos')">←</button>
+    <h2 style="color:#78350F">🏖️ Vacaciones</h2>
+    <div class="pts-pill" id="vac-pts-pill" style="background:rgba(255,255,255,.25);color:#78350F">⭐ 0 pts</div>
   </div>
-  <button id="error-retry-btn" onclick="errorRetry()" style="background:white;border:1.5px solid var(--purple);border-radius:12px;padding:12px 28px;font-size:14px;font-weight:700;color:var(--purple);font-family:var(--f);cursor:pointer">🔄 Intentar de nuevo</button>
-  <button onclick="errorBack()" style="background:none;border:none;font-size:13px;color:#6B7280;font-family:var(--f);font-weight:700;cursor:pointer">← Volver</button>
-</div>
 
-<script src="js/config.js?v=1783890881"></script>
-<script src="js/storage.js?v=1783890881"></script>
-<script src="js/avatar.js?v=1783890881"></script>
-<script src="js/perfiles.js?v=1783890881"></script>
-<script src="js/engine-base.js?v=1783890881"></script>
-<script src="js/engine-multiple-choice.js?v=1783890881"></script>
-<script src="js/engine-matching.js?v=1783890881"></script>
-<script src="js/engine-word-order.js?v=1783890881"></script>
-<script src="js/engine-vocab.js?v=1783890881"></script>
-<script src="js/engine-mates.js?v=1783890881"></script>
-<script src="js/vacaciones-core.js?v=1783890881"></script>
-<script src="js/vacaciones-exercises.js?v=1783890881"></script>
-<script src="js/vacaciones-sudoku.js?v=1783890881"></script>
-<script src="js/vacaciones-sopa.js?v=1783890881"></script>
-<script src="js/vacaciones-mapa.js?v=1783890881"></script>
-<script src="js/sciences-study.js?v=1783890881"></script>
-<script src="js/sciences-exercises.js?v=1783890881"></script>
-<script src="js/english-study.js?v=1783890881"></script>
-<script src="js/english-exercises.js?v=1783890881"></script>
-<script src="js/english-vocab.js?v=1783890881"></script>
-<script src="js/padres.js?v=1783890881"></script>
-<script src="js/descripciones.js?v=1783890881"></script>
-<script src="js/medals.js?v=1783890881"></script>
-<script src="js/navigation.js?v=1783890881"></script>
-<script src="js/stats.js?v=1783890881"></script>
-<script src="js/ui.js?v=1783890881"></script>
-<script src="js/mates-exercises.js?v=1783890881"></script>
-<script src="js/lengua.js?v=1783890881"></script>
-<script src="js/comprension.js?v=1783890881"></script>
-<script src="js/sociales-study.js?v=1783890881"></script>
-<script src="js/sociales-exercises.js?v=1783890881"></script>
-<script src="js/dictado.js?v=1783890881"></script>
-<script src="js/calendario.js?v=1783890881"></script>
-<script src="js/app.js?v=1783890881"></script>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-      .then(function(reg) {
-        console.log('Service Worker registrado correctamente:', reg.scope);
-      })
-      .catch(function(err) {
-        console.warn('Service Worker no se pudo registrar — modo offline desactivado:', err);
-        // No mostramos toast al usuario: es transparente para él
-        // pero queda registrado en consola para el desarrollador
-      });
-  }
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-
-<!-- MODAL PIN PADRES -->
-<div id="pin-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;align-items:center;justify-content:center">
-  <div style="background:white;border-radius:20px;padding:28px 24px;width:calc(100% - 48px);max-width:320px;box-shadow:0 8px 32px rgba(0,0,0,.18)">
-    <div style="font-family:var(--f);font-weight:900;font-size:18px;color:#1F2937;text-align:center;margin-bottom:6px">🔒 Zona de padres</div>
-    <div style="font-size:13px;color:var(--gray-400);text-align:center;margin-bottom:20px">Introduce el PIN para acceder</div>
-    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:20px">
-      <div id="pin-dot-0" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
-      <div id="pin-dot-1" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
-      <div id="pin-dot-2" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
-      <div id="pin-dot-3" style="width:14px;height:14px;border-radius:50%;background:#E5E7EB;transition:background .2s"></div>
+  <div class="screen-body">
+    <!-- Hero -->
+    <div style="background:#FFFBEB;border:0.5px solid #FDE68A;border-radius:16px;padding:20px;text-align:center;margin-bottom:16px">
+      <div style="font-size:48px;margin-bottom:8px">🌞</div>
+      <div style="font-size:18px;font-weight:800;color:#92400E;margin-bottom:6px;font-family:var(--f)">¡Hora de repasar!</div>
+      <div style="font-size:13px;color:#B45309;line-height:1.5;font-family:var(--f)" id="vac-home-desc">20 ejercicios mezclando todas las asignaturas de 3º. ¿Cuántos aciertas?</div>
     </div>
-    <div id="pin-error" style="display:none;font-size:12px;color:#DC2626;text-align:center;margin-bottom:10px;font-weight:700">PIN incorrecto</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px">
-      <button class="pin-key" onclick="pinKey('1')">1</button>
-      <button class="pin-key" onclick="pinKey('2')">2</button>
-      <button class="pin-key" onclick="pinKey('3')">3</button>
-      <button class="pin-key" onclick="pinKey('4')">4</button>
-      <button class="pin-key" onclick="pinKey('5')">5</button>
-      <button class="pin-key" onclick="pinKey('6')">6</button>
-      <button class="pin-key" onclick="pinKey('7')">7</button>
-      <button class="pin-key" onclick="pinKey('8')">8</button>
-      <button class="pin-key" onclick="pinKey('9')">9</button>
-      <div></div>
-      <button class="pin-key" onclick="pinKey('0')">0</button>
-      <button class="pin-key pin-del" onclick="pinDel()">⌫</button>
+
+    <!-- Stats globales -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">
+      <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:12px 8px;text-align:center">
+        <div style="font-size:20px;font-weight:800;color:var(--gray-800);font-family:var(--f)" id="vac-stat-total">0</div>
+        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-top:2px">ejercicios</div>
+      </div>
+      <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:12px 8px;text-align:center">
+        <div style="font-size:20px;font-weight:800;font-family:var(--f);color:#D97706" id="vac-stat-pct">—</div>
+        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-top:2px">aciertos</div>
+      </div>
+      <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:12px 8px;text-align:center">
+        <div style="font-size:20px;font-weight:800;font-family:var(--f);color:#D97706" id="vac-stat-pts">0</div>
+        <div style="font-size:10px;color:var(--gray-400);font-weight:700;margin-top:2px">puntos</div>
+      </div>
     </div>
-    <button onclick="pinCancel()" style="width:100%;padding:10px;border:none;background:none;font-size:13px;color:var(--gray-400);font-family:var(--f);font-weight:700;cursor:pointer">Cancelar</button>
+
+    <!-- Progreso por asignatura -->
+    <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:14px;margin-bottom:16px">
+      <div style="font-size:11px;font-weight:800;color:var(--gray-400);letter-spacing:.5px;margin-bottom:10px">PROGRESO POR ASIGNATURA</div>
+      <div id="vac-breakdown-home"></div>
+    </div>
+
+    <!-- A reforzar -->
+    <div id="vac-refuerzo-home" style="margin-bottom:16px"></div>
+
+    <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;margin-bottom:8px" onclick="vacStart()">¡Empezar sesión! 🚀</button>
   </div>
 </div>
-</body>
-</html>
+
+<!-- =============================================
+     VACACIONES — EJERCICIO
+     ============================================= -->
+<div class="screen" id="s-vac-ex">
+  <div class="screen-header" style="background:var(--vacaciones)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:#78350F">←</button>
+    <h2 id="vac-ex-title" style="color:#78350F">🔬 Sciences</h2>
+    <div class="pts-pill" id="vac-ex-pts" style="background:rgba(255,255,255,.25);color:#78350F">1 / 20</div>
+  </div>
+  <div style="height:5px;background:#FDE68A">
+    <div id="vac-ex-prog" style="height:100%;background:#D97706;width:5%;transition:width .3s"></div>
+  </div>
+
+  <div class="screen-body">
+    <!-- Badge contador -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <span style="background:#FEF3C7;color:#B45309;font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;font-family:var(--f)" id="vac-ex-counter">Pregunta 1 de 20</span>
+      <span style="background:var(--card-bg);border:0.5px solid var(--gray-100);color:var(--gray-500);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;font-family:var(--f)" id="vac-ex-type">Ejercicio</span>
+    </div>
+
+    <!-- Pregunta (para motores que la usan) -->
+    <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:14px;padding:16px;text-align:center;margin-bottom:14px;display:none" id="vac-ex-qcard">
+      <div style="font-size:15px;font-weight:700;color:var(--gray-800);line-height:1.5;font-family:var(--f)" id="vac-ex-question"></div>
+    </div>
+
+    <!-- Opciones (para engine-multiple-choice) -->
+    <div id="vac-ex-opts" style="display:flex;flex-direction:column;gap:8px;margin-bottom:8px"></div>
+
+    <!-- Área dinámica (cada ejercicio inyecta aquí) -->
+    <div id="vac-ex-area"></div>
+
+    <!-- Slots Word Order -->
+    <div id="vac-ex-slots" style="display:none"></div>
+    <div id="vac-ex-bank" style="display:none"></div>
+
+    <!-- Teclado numérico Mates -->
+    <div id="vac-num-kbd" class="numpad" style="display:none;margin-bottom:14px">
+      <div class="nk" onclick="vacNumKey(1)">1</div>
+      <div class="nk" onclick="vacNumKey(2)">2</div>
+      <div class="nk" onclick="vacNumKey(3)">3</div>
+      <div class="nk" onclick="vacNumKey(4)">4</div>
+      <div class="nk" onclick="vacNumKey(5)">5</div>
+      <div class="nk" onclick="vacNumKey(6)">6</div>
+      <div class="nk" onclick="vacNumKey(7)">7</div>
+      <div class="nk" onclick="vacNumKey(8)">8</div>
+      <div class="nk" onclick="vacNumKey(9)">9</div>
+      <div class="nk nk-del" onclick="vacNumKey('del')">🗑️</div>
+      <div class="nk" onclick="vacNumKey(0)">0</div>
+      <div class="nk nk-ok" style="background:var(--vacaciones)" onclick="vacNumCheck()">✅</div>
+    </div>
+
+    <div class="feedback" id="vac-ex-fb" style="display:none"></div>
+    <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;display:none;margin-top:8px" id="vac-ex-next" onclick="vacNext()">Siguiente →</button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — RESULTADOS
+     ============================================= -->
+<div class="screen" id="s-vac-fin">
+  <div class="screen-header" style="background:var(--vacaciones)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:#78350F">←</button>
+    <h2 style="color:#78350F">Sesión completa</h2>
+  </div>
+  <div class="screen-body">
+    <div style="text-align:center;padding:8px 0 4px">
+      <div style="font-size:60px;margin-bottom:8px" id="vac-fin-emoji">🏆</div>
+      <div style="font-size:22px;font-weight:800;color:var(--gray-800);font-family:var(--f);margin-bottom:4px" id="vac-fin-title">¡Excelente!</div>
+      <div style="font-size:13px;color:var(--gray-500);line-height:1.5;font-family:var(--f)" id="vac-fin-desc">Has completado los 20 ejercicios de repaso</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0">
+      <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:14px;text-align:center">
+        <div style="font-size:28px;font-weight:800;color:#16A34A;font-family:var(--f)" id="vac-fin-ok">0</div>
+        <div style="font-size:11px;color:var(--gray-400);font-weight:700;margin-top:2px">correctas</div>
+      </div>
+      <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:14px;text-align:center">
+        <div style="font-size:28px;font-weight:800;color:#EF4444;font-family:var(--f)" id="vac-fin-fail">0</div>
+        <div style="font-size:11px;color:var(--gray-400);font-weight:700;margin-top:2px">a repasar</div>
+      </div>
+      <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:14px;text-align:center;grid-column:1/-1">
+        <div style="font-size:24px;font-weight:800;color:#D97706;font-family:var(--f)" id="vac-fin-pts">⭐ +0 pts</div>
+        <div style="font-size:11px;color:var(--gray-400);font-weight:700;margin-top:2px">puntos conseguidos</div>
+      </div>
+    </div>
+
+    <div style="background:var(--card-bg);border:0.5px solid var(--gray-100);border-radius:12px;padding:14px;margin-bottom:16px">
+      <div style="font-size:11px;font-weight:800;color:var(--gray-400);letter-spacing:.5px;margin-bottom:10px">POR ASIGNATURA</div>
+      <div id="vac-fin-breakdown"></div>
+    </div>
+
+    <div id="vac-juegos-banner" style="display:none;background:linear-gradient(180deg,#FDF4E3,#FFFBEB);border:2px solid var(--vacaciones);border-radius:20px;padding:18px;text-align:center;margin-bottom:16px">
+      <div style="font-size:42px">🎮</div>
+      <div style="font-family:var(--f);font-size:17px;font-weight:900;color:#92400E;margin:6px 0 4px">¡Desbloqueaste un juego!</div>
+      <div style="font-size:13px;color:#B45309;font-weight:600;line-height:1.4" id="vac-juegos-desc"></div>
+      <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;margin-top:14px" onclick="go('s-vac-juegos')">Elegir juego 🎲</button>
+    </div>
+
+    <button class="next-btn" style="background:var(--vacaciones);color:#78350F;border:none;margin-bottom:8px" onclick="vacStart()">Otra sesión 🔄</button>
+    <button class="next-btn" style="background:var(--card-bg);color:var(--gray-500);border:0.5px solid var(--gray-200)" onclick="go('s-vacaciones')">← Volver al inicio</button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR JUEGO
+     ============================================= -->
+<div class="screen" id="s-vac-juegos">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-fin')" style="color:white">←</button>
+    <h2 style="color:white">Elige un juego</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Disponible hoy</div>
+    <button class="vac-game-card" onclick="go('s-vac-nivel')">
+      <div class="vac-game-icon" style="background:var(--purple-light)">🧩</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Sudoku</div>
+        <div class="vac-game-desc">Rellena el tablero sin repetir números</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-sopa')">
+      <div class="vac-game-icon" style="background:#FDF2F8">🔤</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Sopa de letras</div>
+        <div class="vac-game-desc">Encuentra las palabras escondidas</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-mapa')">
+      <div class="vac-game-icon" style="background:#E8F5E9">🗺️</div>
+      <div style="flex:1">
+        <div class="vac-game-title">City Map</div>
+        <div class="vac-game-desc">Sigue las instrucciones en inglés para llegar al destino</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-memory')">
+      <div class="vac-game-icon" style="background:var(--purple-light)">🧠</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Memory</div>
+        <div class="vac-game-desc">Encuentra las parejas de cartas</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-snake')">
+      <div class="vac-game-icon" style="background:var(--green-light)">🐍</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Snake</div>
+        <div class="vac-game-desc">Come y no choques contigo mismo</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-puzzle')">
+      <div class="vac-game-icon" style="background:#DBEAFE">🔢</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Puzle deslizante</div>
+        <div class="vac-game-desc">Ordena los números moviendo piezas</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-laberinto')">
+      <div class="vac-game-icon" style="background:var(--amber-light)">🌀</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Laberinto</div>
+        <div class="vac-game-desc">Encuentra la salida</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-ahorcado')">
+      <div class="vac-game-icon" style="background:#FDF2F8">🔤</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Ahorcado</div>
+        <div class="vac-game-desc">Adivina la palabra letra a letra</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacArkanoidStart()">
+      <div class="vac-game-icon" style="background:#E0E7FF">🧱</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Arkanoid</div>
+        <div class="vac-game-desc">Rompe todos los ladrillos sin dejar caer la pelota</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vac2048Start()">
+      <div class="vac-game-icon" style="background:#FFE4E6">🔢</div>
+      <div style="flex:1">
+        <div class="vac-game-title">2048</div>
+        <div class="vac-game-desc">Une números iguales hasta llegar a 2048</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSimonStart()">
+      <div class="vac-game-icon" style="background:#E0F2FE">🎵</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Simón dice</div>
+        <div class="vac-game-desc">Repite la secuencia de colores</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-hanoi')">
+      <div class="vac-game-icon" style="background:#F3E8FF">🗼</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Torres de Hanoi</div>
+        <div class="vac-game-desc">Mueve los discos sin errores</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR DIFICULTAD (SUDOKU)
+     ============================================= -->
+<div class="screen" id="s-vac-nivel">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🧩 Sudoku</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+
+    <button class="vac-game-card" onclick="vacSudokuStart(4)">
+      <div class="vac-level-dot" style="background:var(--green)">4×4</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Tablero pequeño, ideal para empezar</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSudokuStart(6)">
+      <div class="vac-level-dot" style="background:var(--amber)">6×6</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Un reto un poco mayor</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSudokuStart(9)">
+      <div class="vac-level-dot" style="background:var(--red)">9×9</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">El sudoku clásico completo</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — SUDOKU (sin vuelta atrás)
+     ============================================= -->
+<div class="screen" id="s-vac-sudoku">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🧩 Sudoku</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-sudoku-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:14px;text-align:center;font-family:var(--f)"></div>
+    <div class="sudoku-board" id="vac-sudoku-board"></div>
+    <div class="sudoku-numpad" id="vac-sudoku-numpad"></div>
+    <div id="vac-sudoku-win" style="display:none;width:100%"></div>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR DIFICULTAD (SOPA DE LETRAS)
+     ============================================= -->
+<div class="screen" id="s-vac-nivel-sopa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Sopa de letras</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+
+    <button class="vac-game-card" onclick="vacSopaStart('facil')">
+      <div class="vac-level-dot" style="background:var(--green)">10²</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Tablero 10×10 · 10 palabras</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSopaStart('medio')">
+      <div class="vac-level-dot" style="background:var(--amber)">13²</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Tablero 13×13 · 13 palabras</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSopaStart('dificil')">
+      <div class="vac-level-dot" style="background:var(--red)">15²</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">Tablero 15×15 · 15 palabras</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — SOPA DE LETRAS (sin vuelta atrás)
+     ============================================= -->
+<div class="screen" id="s-vac-sopa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Sopa de letras</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-sopa-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div class="ws-scroll"><div class="ws-grid" id="vac-sopa-grid"></div></div>
+    <div class="ws-words" id="vac-sopa-words"></div>
+    <div id="vac-sopa-win" style="display:none;width:100%"></div>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — ELEGIR DIFICULTAD (CITY MAP)
+     ============================================= -->
+<div class="screen" id="s-vac-nivel-mapa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🗺️ City Map</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+
+    <button class="vac-game-card" onclick="vacMapaStart(6)">
+      <div class="vac-level-dot" style="background:var(--green)">6×6</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Ciudad pequeña</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMapaStart(10)">
+      <div class="vac-level-dot" style="background:var(--amber)">10×10</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Un poco más grande</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMapaStart(15)">
+      <div class="vac-level-dot" style="background:var(--red)">15×15</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">La ciudad entera</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- =============================================
+     VACACIONES — CITY MAP (sin vuelta atrás)
+     ============================================= -->
+<div class="screen" id="s-vac-mapa">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🗺️ City Map</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-mapa-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-mapa-blocked" style="display:none;background:var(--red-light);color:var(--red);font-family:var(--f);font-weight:700;font-size:12px;text-align:center;padding:8px;border-radius:10px;margin-bottom:10px">🚫 You can't go that way!</div>
+    <div class="mapa-wrap">
+      <div class="mapa-grid" id="vac-mapa-grid"></div>
+    </div>
+    <div class="mapa-btn-row">
+      <button class="mapa-instr-btn ahead" onclick="vacMapaMove('ahead')"><span class="icon">⬆️</span>Go ahead</button>
+      <button class="mapa-instr-btn back" onclick="vacMapaMove('back')"><span class="icon">⬇️</span>Go back</button>
+    </div>
+    <div class="mapa-btn-row">
+      <button class="mapa-instr-btn" onclick="vacMapaTurn('left')"><span class="icon">↩️</span>Turn left</button>
+      <button class="mapa-instr-btn" onclick="vacMapaTurn('right')"><span class="icon">↪️</span>Turn right</button>
+    </div>
+    <div id="vac-mapa-win" style="display:none;width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== MEMORY: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-memory">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🧠 Memory</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacMemoryStart(6)">
+      <div class="vac-level-dot" style="background:var(--green)">6</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">6 parejas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMemoryStart(10)">
+      <div class="vac-level-dot" style="background:var(--amber)">10</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">10 parejas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMemoryStart(15)">
+      <div class="vac-level-dot" style="background:var(--red)">15</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">15 parejas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== MEMORY: juego ========== -->
+<div class="screen" id="s-vac-memory">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🧠 Memory</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-memory-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-memory-grid" style="display:grid;gap:8px;margin-bottom:10px"></div>
+    <div id="vac-memory-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== SNAKE: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-snake">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🐍 Snake</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacSnakeStart('facil')">
+      <div class="vac-level-dot" style="background:var(--green)">🐢</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Velocidad lenta</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSnakeStart('medio')">
+      <div class="vac-level-dot" style="background:var(--amber)">🐇</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Velocidad normal</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSnakeStart('dificil')">
+      <div class="vac-level-dot" style="background:var(--red)">⚡</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">Velocidad rápida</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== SNAKE: juego ========== -->
+<div class="screen" id="s-vac-snake">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🐍 Snake</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-snake-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div style="background:#DCFCE7;border-radius:14px;padding:6px;margin-bottom:12px">
+      <canvas id="vac-snake-canvas" width="300" height="300" style="width:100%;display:block;border-radius:8px"></canvas>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:220px;margin:0 auto 10px">
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(0,-1)">⬆️</button><div></div>
+      <button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(-1,0)">⬅️</button><div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(1,0)">➡️</button>
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(0,1)">⬇️</button><div></div>
+    </div>
+    <div id="vac-snake-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== PUZLE DESLIZANTE: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-puzzle">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🔢 Puzle deslizante</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacPuzzleStart(3)">
+      <div class="vac-level-dot" style="background:var(--green)">3×3</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">8 piezas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacPuzzleStart(4)">
+      <div class="vac-level-dot" style="background:var(--amber)">4×4</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">15 piezas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacPuzzleStart(5)">
+      <div class="vac-level-dot" style="background:var(--red)">5×5</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">24 piezas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== PUZLE DESLIZANTE: juego ========== -->
+<div class="screen" id="s-vac-puzzle">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔢 Puzle deslizante</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-puzzle-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-puzzle-grid" style="display:grid;gap:6px;margin-bottom:10px"></div>
+    <div id="vac-puzzle-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== LABERINTO: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-laberinto">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🌀 Laberinto</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacLaberintoStart(8)">
+      <div class="vac-level-dot" style="background:var(--green)">8×8</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Laberinto pequeño</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacLaberintoStart(12)">
+      <div class="vac-level-dot" style="background:var(--amber)">12×12</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Un poco más grande</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacLaberintoStart(16)">
+      <div class="vac-level-dot" style="background:var(--red)">16×16</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">El laberinto entero</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== LABERINTO: juego ========== -->
+<div class="screen" id="s-vac-laberinto">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🌀 Laberinto</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-laberinto-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div class="mapa-wrap">
+      <div class="mapa-grid" id="vac-laberinto-grid"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:220px;margin:0 auto 10px">
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(-1,0)">⬆️</button><div></div>
+      <button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(0,-1)">⬅️</button><div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(0,1)">➡️</button>
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(1,0)">⬇️</button><div></div>
+    </div>
+    <div id="vac-laberinto-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== AHORCADO: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-ahorcado">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Ahorcado</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacAhorcadoStart('facil')">
+      <div class="vac-level-dot" style="background:var(--green)">8</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">8 fallos permitidos</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacAhorcadoStart('medio')">
+      <div class="vac-level-dot" style="background:var(--amber)">6</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">6 fallos permitidos</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacAhorcadoStart('dificil')">
+      <div class="vac-level-dot" style="background:var(--red)">4</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">4 fallos permitidos</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== AHORCADO: juego ========== -->
+<div class="screen" id="s-vac-ahorcado">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Ahorcado</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-ahorcado-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div style="text-align:center;font-size:40px;margin-bottom:10px" id="vac-ahorcado-figure">🙂</div>
+    <div style="text-align:center;font-family:var(--f);font-size:24px;font-weight:900;letter-spacing:5px;color:var(--gray-800);margin-bottom:16px" id="vac-ahorcado-word"></div>
+    <div id="vac-ahorcado-keys" style="display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:10px"></div>
+    <div id="vac-ahorcado-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== 2048: juego (sin dificultad) ========== -->
+<div class="screen" id="s-vac-2048">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔢 2048</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-2048-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-2048-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:#BBADA0;padding:6px;border-radius:10px;margin-bottom:12px"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:220px;margin:0 auto 10px">
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(0,-1)">⬆️</button><div></div>
+      <button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(-1,0)">⬅️</button><div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(1,0)">➡️</button>
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(0,1)">⬇️</button><div></div>
+    </div>
+    <div id="vac-2048-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== SIMÓN DICE: juego (sin dificultad) ========== -->
+<div class="screen" id="s-vac-simon">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🎵 Simón dice</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-simon-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:280px;margin:0 auto 16px">
+      <button class="vac-simon-btn" id="vac-simon-0" style="background:#EF4444" onclick="vacSimonPress(0)"></button>
+      <button class="vac-simon-btn" id="vac-simon-1" style="background:#3B82F6" onclick="vacSimonPress(1)"></button>
+      <button class="vac-simon-btn" id="vac-simon-2" style="background:#F59E0B" onclick="vacSimonPress(2)"></button>
+      <button class="vac-simon-btn" id="vac-simon-3" style="background:#10B981" onclick="vacSimonPress(3)"></button>
+    </div>
+    <button class="next-btn" id="vac-simon-start-btn" style="background:var(--purple);color:white;border:none" onclick="vacSimonNextRound()">Empezar ronda</button>
+    <div id="vac-simon-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== TORRES DE HANOI: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-hanoi">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🗼 Torres de Hanoi</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacHanoiStart(3)">
+      <div class="vac-level-dot" style="background:var(--green)">3</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">3 discos (mínimo 7 movimientos)</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacHanoiStart(4)">
+      <div class="vac-level-dot" style="background:var(--amber)">4</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">4 discos (mínimo 15 movimientos)</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacHanoiStart(5)">
+      <div class="vac-level-dot" style="background:var(--red)">5</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">5 discos (mínimo 31 movimientos)</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== TORRES DE HANOI: juego ========== -->
+<div class="screen" id="s-vac-hanoi">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🗼 Torres de Hanoi</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-hanoi-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-hanoi-towers" style="display:flex;justify-content:space-around;align-items:flex-end;height:180px;background:var(--gray-100);border-radius:14px;padding:10px 6px;margin-bottom:14px"></div>
+    <div id="vac-hanoi-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== ARKANOID: juego (sin dificultad) ========== -->
+<div class="screen" id="s-vac-arkanoid">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🧱 Arkanoid</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-arkanoid-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div style="background:#1E1B2E;border-radius:14px;padding:6px;margin-bottom:14px">
+      <canvas id="vac-arkanoid-canvas" width="320" height="420" style="width:100%;display:block;border-radius:8px"></canvas>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <button class="vac-arkanoid-ctrl" id="vac-arkanoid-left">◀️</button>
+      <button class="vac-arkanoid-ctrl" id="vac-arkanoid-right">▶️</button>
+    </div>
+    <div id="vac-arkanoid-win" style="width:100%"></div>
+  </div>
+</div>
