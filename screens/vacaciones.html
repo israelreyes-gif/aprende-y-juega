@@ -185,6 +185,87 @@
       </div>
       <div style="font-size:20px;color:var(--gray-400)">›</div>
     </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-memory')">
+      <div class="vac-game-icon" style="background:var(--purple-light)">🧠</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Memory</div>
+        <div class="vac-game-desc">Encuentra las parejas de cartas</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-snake')">
+      <div class="vac-game-icon" style="background:var(--green-light)">🐍</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Snake</div>
+        <div class="vac-game-desc">Come y no choques contigo mismo</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-puzzle')">
+      <div class="vac-game-icon" style="background:#DBEAFE">🔢</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Puzle deslizante</div>
+        <div class="vac-game-desc">Ordena los números moviendo piezas</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-laberinto')">
+      <div class="vac-game-icon" style="background:var(--amber-light)">🌀</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Laberinto</div>
+        <div class="vac-game-desc">Encuentra la salida</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-ahorcado')">
+      <div class="vac-game-icon" style="background:#FDF2F8">🔤</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Ahorcado</div>
+        <div class="vac-game-desc">Adivina la palabra letra a letra</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacArkanoidStart()">
+      <div class="vac-game-icon" style="background:#E0E7FF">🧱</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Arkanoid</div>
+        <div class="vac-game-desc">Rompe todos los ladrillos sin dejar caer la pelota</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vac2048Start()">
+      <div class="vac-game-icon" style="background:#FFE4E6">🔢</div>
+      <div style="flex:1">
+        <div class="vac-game-title">2048</div>
+        <div class="vac-game-desc">Une números iguales hasta llegar a 2048</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSimonStart()">
+      <div class="vac-game-icon" style="background:#E0F2FE">🎵</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Simón dice</div>
+        <div class="vac-game-desc">Repite la secuencia de colores</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="go('s-vac-nivel-hanoi')">
+      <div class="vac-game-icon" style="background:#F3E8FF">🗼</div>
+      <div style="flex:1">
+        <div class="vac-game-title">Torres de Hanoi</div>
+        <div class="vac-game-desc">Mueve los discos sin errores</div>
+        <span class="vac-game-chip">¡Nuevo!</span>
+      </div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
   </div>
 </div>
 
@@ -333,5 +414,317 @@
       <button class="mapa-instr-btn" onclick="vacMapaTurn('right')"><span class="icon">↪️</span>Turn right</button>
     </div>
     <div id="vac-mapa-win" style="display:none;width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== MEMORY: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-memory">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🧠 Memory</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacMemoryStart(6)">
+      <div class="vac-level-dot" style="background:var(--green)">6</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">6 parejas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMemoryStart(10)">
+      <div class="vac-level-dot" style="background:var(--amber)">10</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">10 parejas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacMemoryStart(15)">
+      <div class="vac-level-dot" style="background:var(--red)">15</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">15 parejas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== MEMORY: juego ========== -->
+<div class="screen" id="s-vac-memory">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🧠 Memory</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-memory-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-memory-grid" style="display:grid;gap:8px;margin-bottom:10px"></div>
+    <div id="vac-memory-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== SNAKE: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-snake">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🐍 Snake</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacSnakeStart('facil')">
+      <div class="vac-level-dot" style="background:var(--green)">🐢</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Velocidad lenta</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSnakeStart('medio')">
+      <div class="vac-level-dot" style="background:var(--amber)">🐇</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Velocidad normal</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacSnakeStart('dificil')">
+      <div class="vac-level-dot" style="background:var(--red)">⚡</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">Velocidad rápida</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== SNAKE: juego ========== -->
+<div class="screen" id="s-vac-snake">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🐍 Snake</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-snake-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div style="background:#DCFCE7;border-radius:14px;padding:6px;margin-bottom:12px">
+      <canvas id="vac-snake-canvas" width="300" height="300" style="width:100%;display:block;border-radius:8px"></canvas>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:220px;margin:0 auto 10px">
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(0,-1)">⬆️</button><div></div>
+      <button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(-1,0)">⬅️</button><div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(1,0)">➡️</button>
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacSnakeDir(0,1)">⬇️</button><div></div>
+    </div>
+    <div id="vac-snake-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== PUZLE DESLIZANTE: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-puzzle">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🔢 Puzle deslizante</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacPuzzleStart(3)">
+      <div class="vac-level-dot" style="background:var(--green)">3×3</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">8 piezas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacPuzzleStart(4)">
+      <div class="vac-level-dot" style="background:var(--amber)">4×4</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">15 piezas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacPuzzleStart(5)">
+      <div class="vac-level-dot" style="background:var(--red)">5×5</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">24 piezas</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== PUZLE DESLIZANTE: juego ========== -->
+<div class="screen" id="s-vac-puzzle">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔢 Puzle deslizante</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-puzzle-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-puzzle-grid" style="display:grid;gap:6px;margin-bottom:10px"></div>
+    <div id="vac-puzzle-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== LABERINTO: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-laberinto">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🌀 Laberinto</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacLaberintoStart(8)">
+      <div class="vac-level-dot" style="background:var(--green)">8×8</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">Laberinto pequeño</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacLaberintoStart(12)">
+      <div class="vac-level-dot" style="background:var(--amber)">12×12</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">Un poco más grande</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacLaberintoStart(16)">
+      <div class="vac-level-dot" style="background:var(--red)">16×16</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">El laberinto entero</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== LABERINTO: juego ========== -->
+<div class="screen" id="s-vac-laberinto">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🌀 Laberinto</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-laberinto-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div class="mapa-wrap">
+      <div class="mapa-grid" id="vac-laberinto-grid"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:220px;margin:0 auto 10px">
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(-1,0)">⬆️</button><div></div>
+      <button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(0,-1)">⬅️</button><div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(0,1)">➡️</button>
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vacLaberintoMove(1,0)">⬇️</button><div></div>
+    </div>
+    <div id="vac-laberinto-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== AHORCADO: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-ahorcado">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Ahorcado</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacAhorcadoStart('facil')">
+      <div class="vac-level-dot" style="background:var(--green)">8</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">8 fallos permitidos</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacAhorcadoStart('medio')">
+      <div class="vac-level-dot" style="background:var(--amber)">6</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">6 fallos permitidos</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacAhorcadoStart('dificil')">
+      <div class="vac-level-dot" style="background:var(--red)">4</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">4 fallos permitidos</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== AHORCADO: juego ========== -->
+<div class="screen" id="s-vac-ahorcado">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔤 Ahorcado</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-ahorcado-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div style="text-align:center;font-size:40px;margin-bottom:10px" id="vac-ahorcado-figure">🙂</div>
+    <div style="text-align:center;font-family:var(--f);font-size:24px;font-weight:900;letter-spacing:5px;color:var(--gray-800);margin-bottom:16px" id="vac-ahorcado-word"></div>
+    <div id="vac-ahorcado-keys" style="display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:10px"></div>
+    <div id="vac-ahorcado-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== 2048: juego (sin dificultad) ========== -->
+<div class="screen" id="s-vac-2048">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🔢 2048</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-2048-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-2048-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:#BBADA0;padding:6px;border-radius:10px;margin-bottom:12px"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:220px;margin:0 auto 10px">
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(0,-1)">⬆️</button><div></div>
+      <button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(-1,0)">⬅️</button><div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(1,0)">➡️</button>
+      <div></div><button class="mapa-instr-btn" style="padding:12px" onclick="vac2048Move(0,1)">⬇️</button><div></div>
+    </div>
+    <div id="vac-2048-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== SIMÓN DICE: juego (sin dificultad) ========== -->
+<div class="screen" id="s-vac-simon">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🎵 Simón dice</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-simon-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:280px;margin:0 auto 16px">
+      <button class="vac-simon-btn" id="vac-simon-0" style="background:#EF4444" onclick="vacSimonPress(0)"></button>
+      <button class="vac-simon-btn" id="vac-simon-1" style="background:#3B82F6" onclick="vacSimonPress(1)"></button>
+      <button class="vac-simon-btn" id="vac-simon-2" style="background:#F59E0B" onclick="vacSimonPress(2)"></button>
+      <button class="vac-simon-btn" id="vac-simon-3" style="background:#10B981" onclick="vacSimonPress(3)"></button>
+    </div>
+    <button class="next-btn" id="vac-simon-start-btn" style="background:var(--purple);color:white;border:none" onclick="vacSimonNextRound()">Empezar ronda</button>
+    <div id="vac-simon-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== TORRES DE HANOI: dificultad ========== -->
+<div class="screen" id="s-vac-nivel-hanoi">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vac-juegos')" style="color:white">←</button>
+    <h2 style="color:white">🗼 Torres de Hanoi</h2>
+  </div>
+  <div class="screen-body">
+    <div class="slbl">Elige la dificultad</div>
+    <div class="vac-warn-note">⚠️ Solo hay una partida — una vez que empieces no podrás elegir otro juego ni otro nivel (aunque sí puedes salir sin terminar).</div>
+    <button class="vac-game-card" onclick="vacHanoiStart(3)">
+      <div class="vac-level-dot" style="background:var(--green)">3</div>
+      <div style="flex:1"><div class="vac-game-title">Fácil</div><div class="vac-game-desc">3 discos (mínimo 7 movimientos)</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacHanoiStart(4)">
+      <div class="vac-level-dot" style="background:var(--amber)">4</div>
+      <div style="flex:1"><div class="vac-game-title">Medio</div><div class="vac-game-desc">4 discos (mínimo 15 movimientos)</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+    <button class="vac-game-card" onclick="vacHanoiStart(5)">
+      <div class="vac-level-dot" style="background:var(--red)">5</div>
+      <div style="flex:1"><div class="vac-game-title">Difícil</div><div class="vac-game-desc">5 discos (mínimo 31 movimientos)</div></div>
+      <div style="font-size:20px;color:var(--gray-400)">›</div>
+    </button>
+  </div>
+</div>
+
+<!-- ========== TORRES DE HANOI: juego ========== -->
+<div class="screen" id="s-vac-hanoi">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🗼 Torres de Hanoi</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-hanoi-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:12px;text-align:center;font-family:var(--f)"></div>
+    <div id="vac-hanoi-towers" style="display:flex;justify-content:space-around;align-items:flex-end;height:180px;background:var(--gray-100);border-radius:14px;padding:10px 6px;margin-bottom:14px"></div>
+    <div id="vac-hanoi-win" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- ========== ARKANOID: juego (sin dificultad) ========== -->
+<div class="screen" id="s-vac-arkanoid">
+  <div class="screen-header" style="background:var(--purple)">
+    <button class="back-btn" onclick="go('s-vacaciones')" style="color:white">←</button>
+    <h2 style="color:white">🧱 Arkanoid</h2>
+  </div>
+  <div class="screen-body">
+    <div id="vac-arkanoid-status" style="font-size:13px;font-weight:700;color:var(--gray-600);margin-bottom:10px;text-align:center;font-family:var(--f)"></div>
+    <div style="background:#1E1B2E;border-radius:14px;padding:6px;margin-bottom:14px">
+      <canvas id="vac-arkanoid-canvas" width="320" height="420" style="width:100%;display:block;border-radius:8px"></canvas>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <button class="vac-arkanoid-ctrl" id="vac-arkanoid-left">◀️</button>
+      <button class="vac-arkanoid-ctrl" id="vac-arkanoid-right">▶️</button>
+    </div>
+    <div id="vac-arkanoid-win" style="width:100%"></div>
   </div>
 </div>
