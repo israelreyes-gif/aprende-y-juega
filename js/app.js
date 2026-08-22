@@ -95,7 +95,22 @@ function loadScreenLazy(screenId, callback) {
     's-vac-nivel-sopa': 'screens/vacaciones.html',
     's-vac-sopa':       'screens/vacaciones.html',
     's-vac-nivel-mapa': 'screens/vacaciones.html',
-    's-vac-mapa':       'screens/vacaciones.html'
+    's-vac-mapa':       'screens/vacaciones.html',
+    's-vac-nivel-memory':    'screens/vacaciones.html',
+    's-vac-memory':          'screens/vacaciones.html',
+    's-vac-nivel-snake':     'screens/vacaciones.html',
+    's-vac-snake':           'screens/vacaciones.html',
+    's-vac-nivel-puzzle':    'screens/vacaciones.html',
+    's-vac-puzzle':          'screens/vacaciones.html',
+    's-vac-nivel-laberinto': 'screens/vacaciones.html',
+    's-vac-laberinto':       'screens/vacaciones.html',
+    's-vac-nivel-ahorcado':  'screens/vacaciones.html',
+    's-vac-ahorcado':        'screens/vacaciones.html',
+    's-vac-2048':            'screens/vacaciones.html',
+    's-vac-simon':           'screens/vacaciones.html',
+    's-vac-nivel-hanoi':     'screens/vacaciones.html',
+    's-vac-hanoi':           'screens/vacaciones.html',
+    's-vac-arkanoid':        'screens/vacaciones.html'
   };
 
   var file = fileMap[screenId];
