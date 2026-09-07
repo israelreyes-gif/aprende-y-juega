@@ -4,7 +4,7 @@
    Estructura limpia: cada asignatura tiene su JSON completo.
    ============================================= */
 
-var API_URL = 'https://aprende-y-juega-api.israel-reyes.workers.dev';
+var API_URL = 'https://api-proxy.israelreyes-gif.deno.net/aprende-y-juega';
 var cursoActual = CONFIG.curso.porDefecto;
 var perfilActivoId = null;
 /* =============================================
