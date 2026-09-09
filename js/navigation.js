@@ -149,8 +149,15 @@ function pinCancel() {
 /* ---- Selección de curso ---- */
 function seleccionarCurso(num) {
   if (num === 4) {
-    // 4º ya está abierto (aunque las asignaturas siguen en construcción)
-    go('s-home-curso4');
+    // 4º ya está abierto (aunque las asignaturas siguen en construcción).
+    // Los puntos/racha/calendario sí son reales: se cargan desde D1 igual
+    // que en 3º, solo que aun no hay asignaturas que jueguen con ellos.
+    setCurso(4);
+    loadStateFromCloud(function() {
+      checkDayReset();
+      updateCurso4UI();
+      go('s-home-curso4');
+    });
     return;
   }
   if (num !== CONFIG.curso.porDefecto) {
@@ -160,13 +167,84 @@ function seleccionarCurso(num) {
   }
   // Curso disponible → cargar su progreso y entrar
   setCurso(CONFIG.curso.porDefecto);
-  checkDayReset();
-  updateMedalUI();
-  updateStreakUI();
-  updateHomeUI();
-  updateSubjectUI('mates');
-  updateSubjectUI('lengua');
-  go('s-home');
+  loadStateFromCloud(function() {
+    checkDayReset();
+    updateMedalUI();
+    updateStreakUI();
+    updateHomeUI();
+    updateSubjectUI('mates');
+    updateSubjectUI('lengua');
+    go('s-home');
+  });
+}
+
+/* ---- Home de 4º: puntos, racha y calendario (reales, sin depender de
+   que existan asignaturas). Usa IDs propios (prefijo c4-) para no
+   pisarse con los de la home de 3º, que están cargados a la vez. ---- */
+function updateCurso4UI() {
+  setEl('c4-streak-pill', '🔥 ' + (ST.streak || 0) + ' días');
+  setEl('c4-pts-pill', '⭐ ' + (ST.totalPts || 0) + ' pts');
+  setEl('c4-streak-num', ST.streak || 0);
+
+  var dow = new Date().getDay();
+  var monday = new Date();
+  monday.setDate(monday.getDate() - (dow === 0 ? 6 : dow - 1));
+  monday.setHours(0, 0, 0, 0);
+
+  var days = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
+  var dots = document.getElementById('c4-streak-dots');
+  if (dots) {
+    dots.innerHTML = '';
+    for (var i = 0; i < 7; i++) {
+      var d = new Date(monday);
+      d.setDate(d.getDate() + i);
+      var ds = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      var done = (ST.weekDays || []).includes(ds);
+      var dot = document.createElement('div');
+      dot.className = 'streak-dot' + (done ? ' done' : '');
+      dot.textContent = done ? '✓' : days[i];
+      dots.appendChild(dot);
+    }
+  }
+
+  var today = new Date();
+  var year = today.getFullYear(), month = today.getMonth(), todayDay = today.getDate();
+  var daysInMonth = calDaysInMonth(year, month);
+  var firstDOW = calFirstDOW(year, month);
+  var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  setEl('c4-cal-mes-lbl', meses[month] + ' ' + year);
+
+  var activeDays = {};
+  var _source = (ST.monthDays && ST.monthDays.length > 0) ? ST.monthDays : (ST.weekDays || []);
+  _source.forEach(function(d) {
+    var dayNum = parseInt(d.split('-')[2]);
+    activeDays[dayNum] = 'done';
+  });
+
+  var grid = document.getElementById('c4-cal-mes-grid');
+  if (grid) {
+    grid.innerHTML = '';
+    for (var g = 0; g < firstDOW; g++) grid.appendChild(document.createElement('div'));
+    for (var d2 = 1; d2 <= daysInMonth; d2++) {
+      var cell = document.createElement('div');
+      var isToday  = d2 === todayDay;
+      var isDone   = !isToday && activeDays[d2] && d2 < todayDay;
+      var isFuture = d2 > todayDay;
+      cell.style.cssText = 'border-radius:5px;display:flex;align-items:center;justify-content:center;height:28px;font-size:11px;font-weight:500;';
+      if (isToday)       cell.style.cssText += 'background:#EEEDFE;color:#3C3489;outline:2px solid var(--calendario);font-weight:700';
+      else if (isDone)   cell.style.cssText += 'background:#EAF3DE;color:#27500A';
+      else if (isFuture) cell.style.cssText += 'color:var(--gray-300);opacity:.4';
+      else               cell.style.cssText += 'color:var(--gray-400)';
+      cell.textContent = d2;
+      grid.appendChild(cell);
+    }
+  }
+
+  var streak = ST.streak || 0;
+  var daysStudied = (ST.monthDays && ST.monthDays.length > 0) ? ST.monthDays.length : (ST.weekDays || []).length;
+  setEl('c4-cal-stat-dias', daysStudied);
+  setEl('c4-cal-stat-racha', '🔥 ' + streak);
+  setEl('c4-cal-stat-mejor', streak);
 }
 
 /* ---- Navegar a una pantalla ---- */
