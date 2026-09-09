@@ -148,6 +148,11 @@ function pinCancel() {
 
 /* ---- Selección de curso ---- */
 function seleccionarCurso(num) {
+  if (num === 4) {
+    // 4º ya está abierto (aunque las asignaturas siguen en construcción)
+    go('s-home-curso4');
+    return;
+  }
   if (num !== CONFIG.curso.porDefecto) {
     // Cursos no disponibles → pantalla WIP con mensaje divertido
     go('s-wip-curso-' + num);
