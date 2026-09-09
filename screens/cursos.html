@@ -108,15 +108,15 @@
       <div style="font-size:22px;font-weight:800;color:var(--vacaciones)">›</div>
     </div>
 
-    <!-- 4º PRIMARIA — próximamente -->
-    <div style="margin:0 16px 10px;border-radius:var(--r-lg);padding:18px 16px;cursor:pointer;border:2px solid var(--gray-200);background:var(--gray-100);display:flex;align-items:center;gap:14px;transition:transform .1s" onclick="seleccionarCurso(4)" ontouchstart="">
-      <div style="width:48px;height:48px;border-radius:12px;background:white;border:1.5px solid var(--gray-200);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-size:18px;font-weight:900;color:var(--gray-400);flex-shrink:0">4º</div>
+    <!-- 4º PRIMARIA — abierto, en construcción -->
+    <div style="margin:0 16px 10px;border-radius:var(--r-lg);padding:18px 16px;cursor:pointer;border:2.5px solid var(--amber);background:var(--amber-light);display:flex;align-items:center;gap:14px;transition:transform .1s" onclick="seleccionarCurso(4)" ontouchstart="" id="curso-4">
+      <div style="width:48px;height:48px;border-radius:12px;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-size:18px;font-weight:900;color:white;flex-shrink:0">4º</div>
       <div style="flex:1">
-        <div style="font-family:var(--f);font-size:15px;font-weight:800;color:var(--gray-400)">4º de Primaria</div>
-        <div style="font-size:12px;font-weight:600;color:var(--gray-400);margin-top:2px">Próximo curso escolar</div>
-        <span style="display:inline-block;font-size:10px;font-weight:800;padding:3px 9px;border-radius:20px;margin-top:6px;background:var(--amber-light);color:var(--amber);font-family:var(--f)">Próximamente</span>
+        <div style="font-family:var(--f);font-size:15px;font-weight:800;color:#92400E">4º de Primaria</div>
+        <div style="font-size:12px;font-weight:600;color:#B45309;margin-top:2px">Las asignaturas se están preparando</div>
+        <span style="display:inline-block;font-size:10px;font-weight:800;padding:3px 9px;border-radius:20px;margin-top:6px;background:#FEF3C7;color:#92400E;font-family:var(--f)">🚧 En construcción</span>
       </div>
-      <div style="font-size:22px;font-weight:800;color:var(--gray-200)">›</div>
+      <div style="font-size:22px;font-weight:800;color:var(--amber)">›</div>
     </div>
 
     <!-- 5º PRIMARIA — próximamente -->
@@ -146,6 +146,75 @@
     </div>
 
     <div style="height:16px"></div>
+  </div>
+</div>
+
+<!-- =============================================
+     HOME 4º DE PRIMARIA — de momento solo las
+     tarjetas de asignatura marcadas "en construcción".
+     Mismo orden e iconos que la home de 3º.
+     ============================================= -->
+<div class="screen" id="s-home-curso4">
+  <div class="topbar bg-purple" style="padding-bottom:18px">
+    <button class="back-btn" onclick="go('s-cursos')" style="flex-shrink:0" title="Cambiar curso">←</button>
+    <div style="flex:1">
+      <div style="font-family:var(--f);font-size:20px;font-weight:900;color:white;letter-spacing:-.5px">Aprende y Juega 🎒</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.7);font-weight:600;margin-top:2px">¡Esto va tomando forma!</div>
+      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+        <span style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;font-family:var(--f)">4º Primaria</span>
+        <span style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;font-family:var(--f)">🚧 En construcción</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sa">
+    <div class="slbl">Asignaturas</div>
+    <div class="subj-grid">
+      <div class="subj-card" onclick="showToast('🚧 Matemáticas de 4º, muy pronto')">
+        <span class="subj-icon">🔢</span>
+        <div class="subj-name">Matemáticas</div>
+        <div class="subj-desc">Muy pronto</div>
+        <span class="subj-pill pill-wip">En construcción</span>
+      </div>
+      <div class="subj-card" onclick="showToast('🚧 Lengua de 4º, muy pronto')">
+        <span class="subj-icon">📚</span>
+        <div class="subj-name">Lengua</div>
+        <div class="subj-desc">Muy pronto</div>
+        <span class="subj-pill pill-wip">En construcción</span>
+      </div>
+      <div class="subj-card" onclick="showToast('🚧 Sciences de 4º, muy pronto')">
+        <span class="subj-icon">🔬</span>
+        <div class="subj-name">Sciences</div>
+        <div class="subj-desc">Muy pronto</div>
+        <span class="subj-pill pill-wip">En construcción</span>
+      </div>
+      <div class="subj-card" onclick="showToast('🚧 Sociales de 4º, muy pronto')">
+        <span class="subj-icon">🌍</span>
+        <div class="subj-name">Sociales</div>
+        <div class="subj-desc">Muy pronto</div>
+        <span class="subj-pill pill-wip">En construcción</span>
+      </div>
+      <div class="subj-card subj-card-full" onclick="showToast('🚧 English de 4º, muy pronto')">
+        <svg width="36" height="24" viewBox="0 0 60 40" style="border-radius:4px;display:block;margin-bottom:8px">
+          <rect width="60" height="40" fill="#012169"/>
+          <path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/>
+          <path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/>
+          <path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/>
+          <path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/>
+        </svg>
+        <div class="subj-name">English</div>
+        <div class="subj-desc">Muy pronto</div>
+        <span class="subj-pill pill-wip">En construcción</span>
+      </div>
+    </div>
+
+    <div style="margin:18px 16px 0;background:var(--amber-light);border-radius:var(--r-md);padding:14px 16px;text-align:center">
+      <div style="font-size:24px;margin-bottom:6px">🛠️</div>
+      <div style="font-family:var(--f);font-size:13px;font-weight:800;color:#92400E">Estamos preparando el contenido de 4º</div>
+      <div style="font-size:12px;color:#B45309;font-weight:600;margin-top:4px;line-height:1.5">Las asignaturas se irán activando poco a poco. ¡Vuelve pronto!</div>
+    </div>
+
+    <div style="height:20px"></div>
   </div>
 </div>
 
