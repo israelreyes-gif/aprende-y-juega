@@ -162,7 +162,9 @@
       <div style="font-size:13px;color:rgba(255,255,255,.7);font-weight:600;margin-top:2px">¡Esto va tomando forma!</div>
       <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
         <span style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;font-family:var(--f)">4º Primaria</span>
-        <span style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;font-family:var(--f)">🚧 En construcción</span>
+        <span style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;font-family:var(--f)" id="c4-streak-pill">🔥 0 días</span>
+        <span style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;font-family:var(--f)" id="c4-pts-pill">⭐ 0 pts</span>
+        <span style="background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px;font-family:var(--f)">🚧 Asignaturas en construcción</span>
       </div>
     </div>
   </div>
@@ -212,6 +214,48 @@
       <div style="font-size:24px;margin-bottom:6px">🛠️</div>
       <div style="font-family:var(--f);font-size:13px;font-weight:800;color:#92400E">Estamos preparando el contenido de 4º</div>
       <div style="font-size:12px;color:#B45309;font-weight:600;margin-top:4px;line-height:1.5">Las asignaturas se irán activando poco a poco. ¡Vuelve pronto!</div>
+    </div>
+
+    <!-- RACHA SEMANAL (real, independiente de las asignaturas) -->
+    <div class="slbl" style="margin-top:18px">Racha semanal</div>
+    <div class="streak-card">
+      <div style="flex:1">
+        <div style="font-family:var(--f);font-size:13px;font-weight:800;color:var(--gray-800);margin-bottom:8px">Esta semana</div>
+        <div class="streak-days" id="c4-streak-dots"></div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:var(--f);font-size:28px;font-weight:900;color:var(--purple)" id="c4-streak-num">0</div>
+        <div style="font-size:11px;color:var(--gray-400);font-weight:700">días seguidos</div>
+      </div>
+    </div>
+
+    <!-- MI CALENDARIO (real, independiente de las asignaturas) -->
+    <div class="slbl">Mi calendario</div>
+    <div style="border:0.5px solid var(--gray-100);border-radius:16px;overflow:hidden;background:white;margin-bottom:4px">
+      <div style="padding:12px 14px 14px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+          <div style="font-family:var(--f);font-size:13px;font-weight:700;color:var(--gray-800)" id="c4-cal-mes-lbl">—</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:10px;color:var(--gray-400);font-family:var(--f)">
+            <div style="display:flex;align-items:center;gap:2px"><div style="width:8px;height:8px;border-radius:2px;background:#EAF3DE;border:0.5px solid #639922"></div>Completo</div>
+            <div style="display:flex;align-items:center;gap:2px"><div style="width:8px;height:8px;border-radius:2px;background:#EEEDFE;border:0.5px solid var(--calendario)"></div>Hoy</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:3px">
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">L</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">M</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">X</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">J</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">V</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">S</div>
+          <div style="text-align:center;font-size:9px;font-weight:700;color:var(--gray-400);font-family:var(--f)">D</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:10px" id="c4-cal-mes-grid"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+          <div class="stat-card"><div class="stat-num" style="color:#639922" id="c4-cal-stat-dias">—</div><div class="stat-lbl">días</div></div>
+          <div class="stat-card"><div class="stat-num" style="color:var(--calendario)" id="c4-cal-stat-racha">—</div><div class="stat-lbl">racha</div></div>
+          <div class="stat-card"><div class="stat-num" style="color:#BA7517" id="c4-cal-stat-mejor">—</div><div class="stat-lbl">mejor</div></div>
+        </div>
+      </div>
     </div>
 
     <div style="height:20px"></div>
