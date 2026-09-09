@@ -3,6 +3,11 @@
    Arranque: pantallas críticas → datos → init
    ============================================= */
 
+/* Version para cache-busting de las pantallas HTML (fetch no lleva
+   parametro de version salvo que se lo añadamos aqui). Subir este
+   numero cada vez que cambie cualquier screens/*.html. */
+var SCREENS_V = '1788979203';
+
 /* Pantallas que se cargan al arranque (críticas) */
 var SCREENS_CRITICAL = [
   'screens/perfiles.html',
@@ -32,7 +37,7 @@ function loadScreens(callback) {
   var loaded = 0;
   var container = document.getElementById('app');
   SCREENS_CRITICAL.forEach(function(file) {
-    fetch(file)
+    fetch(file + '?v=' + SCREENS_V)
       .then(function(r) { return r.text(); })
       .then(function(html) {
         container.insertAdjacentHTML('beforeend', html);
@@ -121,7 +126,7 @@ function loadScreenLazy(screenId, callback) {
   }
 
   var container = document.getElementById('app');
-  fetch(file)
+  fetch(file + '?v=' + SCREENS_V)
     .then(function(r) { return r.text(); })
     .then(function(html) {
       container.insertAdjacentHTML('beforeend', html);
