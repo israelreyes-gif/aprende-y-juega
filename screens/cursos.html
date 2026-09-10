@@ -109,14 +109,14 @@
     </div>
 
     <!-- 4º PRIMARIA — abierto, en construcción -->
-    <div style="margin:0 16px 10px;border-radius:var(--r-lg);padding:18px 16px;cursor:pointer;border:2.5px solid var(--amber);background:var(--amber-light);display:flex;align-items:center;gap:14px;transition:transform .1s" onclick="seleccionarCurso(4)" ontouchstart="" id="curso-4">
-      <div style="width:48px;height:48px;border-radius:12px;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-size:18px;font-weight:900;color:white;flex-shrink:0">4º</div>
+    <div style="margin:0 16px 10px;border-radius:var(--r-lg);padding:18px 16px;cursor:pointer;border:2.5px solid var(--purple);background:var(--purple-light);display:flex;align-items:center;gap:14px;transition:transform .1s" onclick="seleccionarCurso(4)" ontouchstart="" id="curso-4">
+      <div style="width:48px;height:48px;border-radius:12px;background:var(--purple);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-size:18px;font-weight:900;color:white;flex-shrink:0">4º</div>
       <div style="flex:1">
-        <div style="font-family:var(--f);font-size:15px;font-weight:800;color:#92400E">4º de Primaria</div>
-        <div style="font-size:12px;font-weight:600;color:#B45309;margin-top:2px">Las asignaturas se están preparando</div>
-        <span style="display:inline-block;font-size:10px;font-weight:800;padding:3px 9px;border-radius:20px;margin-top:6px;background:#FEF3C7;color:#92400E;font-family:var(--f)">🚧 En construcción</span>
+        <div style="font-family:var(--f);font-size:15px;font-weight:800;color:var(--purple-dark)">4º de Primaria</div>
+        <div style="font-size:12px;font-weight:600;color:var(--purple-mid);margin-top:2px">Las asignaturas se están preparando</div>
+        <span style="display:inline-block;font-size:10px;font-weight:800;padding:3px 9px;border-radius:20px;margin-top:6px;background:white;color:var(--purple-dark);font-family:var(--f)">🚧 En construcción</span>
       </div>
-      <div style="font-size:22px;font-weight:800;color:var(--amber)">›</div>
+      <div style="font-size:22px;font-weight:800;color:var(--purple)">›</div>
     </div>
 
     <!-- 5º PRIMARIA — próximamente -->
@@ -170,6 +170,19 @@
   </div>
 
   <div class="sa">
+    <!-- RACHA SEMANAL (real, independiente de las asignaturas) -->
+    <div class="slbl">Racha semanal</div>
+    <div class="streak-card">
+      <div style="flex:1">
+        <div style="font-family:var(--f);font-size:13px;font-weight:800;color:var(--gray-800);margin-bottom:8px">Esta semana</div>
+        <div class="streak-days" id="c4-streak-dots"></div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:var(--f);font-size:28px;font-weight:900;color:var(--purple)" id="c4-streak-num">0</div>
+        <div style="font-size:11px;color:var(--gray-400);font-weight:700">días seguidos</div>
+      </div>
+    </div>
+
     <div class="slbl">Asignaturas</div>
     <div class="subj-grid">
       <div class="subj-card" onclick="showToast('🚧 Matemáticas de 4º, muy pronto')">
@@ -210,27 +223,14 @@
       </div>
     </div>
 
-    <div style="margin:18px 16px 0;background:var(--amber-light);border-radius:var(--r-md);padding:14px 16px;text-align:center">
+    <div style="margin:18px 16px 0;background:var(--purple-light);border-radius:var(--r-md);padding:14px 16px;text-align:center">
       <div style="font-size:24px;margin-bottom:6px">🛠️</div>
-      <div style="font-family:var(--f);font-size:13px;font-weight:800;color:#92400E">Estamos preparando el contenido de 4º</div>
-      <div style="font-size:12px;color:#B45309;font-weight:600;margin-top:4px;line-height:1.5">Las asignaturas se irán activando poco a poco. ¡Vuelve pronto!</div>
-    </div>
-
-    <!-- RACHA SEMANAL (real, independiente de las asignaturas) -->
-    <div class="slbl" style="margin-top:18px">Racha semanal</div>
-    <div class="streak-card">
-      <div style="flex:1">
-        <div style="font-family:var(--f);font-size:13px;font-weight:800;color:var(--gray-800);margin-bottom:8px">Esta semana</div>
-        <div class="streak-days" id="c4-streak-dots"></div>
-      </div>
-      <div style="text-align:right">
-        <div style="font-family:var(--f);font-size:28px;font-weight:900;color:var(--purple)" id="c4-streak-num">0</div>
-        <div style="font-size:11px;color:var(--gray-400);font-weight:700">días seguidos</div>
-      </div>
+      <div style="font-family:var(--f);font-size:13px;font-weight:800;color:var(--purple-dark)">Estamos preparando el contenido de 4º</div>
+      <div style="font-size:12px;color:var(--purple-mid);font-weight:600;margin-top:4px;line-height:1.5">Las asignaturas se irán activando poco a poco. ¡Vuelve pronto!</div>
     </div>
 
     <!-- MI CALENDARIO (real, independiente de las asignaturas) -->
-    <div class="slbl">Mi calendario</div>
+    <div class="slbl" style="margin-top:18px">Mi calendario</div>
     <div style="border:0.5px solid var(--gray-100);border-radius:16px;overflow:hidden;background:white;margin-bottom:4px">
       <div style="padding:12px 14px 14px">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
