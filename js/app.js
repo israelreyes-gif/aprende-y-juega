@@ -6,7 +6,7 @@
 /* Version para cache-busting de las pantallas HTML (fetch no lleva
    parametro de version salvo que se lo añadamos aqui). Subir este
    numero cada vez que cambie cualquier screens/*.html. */
-var SCREENS_V = '1788980455';
+var SCREENS_V = '1789058328';
 
 /* Pantallas que se cargan al arranque (críticas) */
 var SCREENS_CRITICAL = [
