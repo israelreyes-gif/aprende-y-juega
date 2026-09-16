@@ -6,7 +6,7 @@
 /* Version para cache-busting de las pantallas HTML (fetch no lleva
    parametro de version salvo que se lo añadamos aqui). Subir este
    numero cada vez que cambie cualquier screens/*.html. */
-var SCREENS_V = '1789583248';
+var SCREENS_V = '1789586507';
 
 /* Pantallas que se cargan al arranque (críticas) */
 var SCREENS_CRITICAL = [
@@ -26,7 +26,8 @@ var SCREENS_LAZY = [
   'screens/padres.html',
   'screens/avatar.html',
   'screens/descripciones.html',
-  'screens/vacaciones.html'
+  'screens/vacaciones.html',
+  'screens/curso4.html'
 ];
 
 /* Registro de pantallas ya cargadas */
@@ -115,7 +116,18 @@ function loadScreenLazy(screenId, callback) {
     's-vac-simon':           'screens/vacaciones.html',
     's-vac-nivel-hanoi':     'screens/vacaciones.html',
     's-vac-hanoi':           'screens/vacaciones.html',
-    's-vac-arkanoid':        'screens/vacaciones.html'
+    's-vac-arkanoid':        'screens/vacaciones.html',
+    /* Curso 4 (ver PATRÓN PARA FUTUROS CURSOS en screens/curso4.html) */
+    's-home-curso4':               'screens/curso4.html',
+    's-english-c4':                'screens/curso4.html',
+    's-english-study-c4':          'screens/curso4.html',
+    's-english-exercises-c4':      'screens/curso4.html',
+    's-english-tobe-c4':           'screens/curso4.html',
+    's-english-tobe-present-c4':   'screens/curso4.html',
+    's-english-tobe-past-c4':      'screens/curso4.html',
+    's-english-have-c4':           'screens/curso4.html',
+    's-english-have-present-c4':   'screens/curso4.html',
+    's-english-have-past-c4':      'screens/curso4.html'
   };
 
   var file = fileMap[screenId];
