@@ -209,7 +209,7 @@
         <div class="subj-desc">Muy pronto</div>
         <span class="subj-pill pill-wip">En construcción</span>
       </div>
-      <div class="subj-card subj-card-full" onclick="showToast('🚧 English de 4º, muy pronto')">
+      <div class="subj-card subj-card-full" onclick="go('s-english-c4')">
         <svg width="36" height="24" viewBox="0 0 60 40" style="border-radius:4px;display:block;margin-bottom:8px">
           <rect width="60" height="40" fill="#012169"/>
           <path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/>
@@ -321,6 +321,91 @@
       <div class="wip-item">📚 Debate y argumentación</div>
       <div class="wip-item">🌍 España en Europa</div>
       <div class="wip-item">🔬 La materia y la energía</div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     ENGLISH 4º — Todo el apartado en inglés, igual
+     que en 3º. Estructura real de navegación; el
+     contenido de los ejercicios en sí sigue en
+     construcción (se avisa al entrar en cada tema).
+     ============================================= -->
+<div class="screen" id="s-english-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-home-curso4')">←</button>
+    <h1>
+      <svg width="24" height="16" viewBox="0 0 60 40" style="border-radius:3px;vertical-align:middle;margin-right:6px"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>
+      English
+    </h1>
+    <span class="top-badge">🚧 4th Grade</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a section</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-study-c4')">
+        <div class="mode-emoji">📖</div>
+        <div class="mode-name" style="color:var(--blue)">Study</div>
+        <div class="mode-sub">Learn grammar</div>
+      </div>
+      <div class="mode-card" onclick="go('s-english-exercises-c4')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name">Exercises</div>
+        <div class="mode-sub">Practice by topic</div>
+      </div>
+    </div>
+    <div style="margin:18px 16px 0;background:#EFF6FF;border-radius:var(--r-md);padding:14px 16px;text-align:center">
+      <div style="font-size:22px;margin-bottom:6px">🚧</div>
+      <div style="font-family:var(--f);font-size:13px;font-weight:800;color:var(--blue)">We're building this section!</div>
+      <div style="font-size:12px;color:#1E40AF;font-weight:600;margin-top:4px;line-height:1.5">The topics are ready — the exercises are coming very soon.</div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDY 4º -->
+<div class="screen" id="s-english-study-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-c4')">←</button>
+    <h1>Study</h1>
+    <span class="top-badge">📖 Read</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🔵</div>
+        <div class="mode-name" style="color:var(--blue)">To Be</div>
+        <div class="mode-sub">Affirmative, negative &amp; interrogative</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟢</div>
+        <div class="mode-name" style="color:var(--green)">Have</div>
+        <div class="mode-sub">Affirmative, negative &amp; interrogative</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXERCISES 4º -->
+<div class="screen" id="s-english-exercises-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-c4')">←</button>
+    <h1>Exercises</h1>
+    <span class="top-badge">✏️ Practice</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🔵</div>
+        <div class="mode-name" style="color:var(--blue)">To Be</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟢</div>
+        <div class="mode-name" style="color:var(--green)">Have</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
     </div>
   </div>
 </div>
