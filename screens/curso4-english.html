@@ -1,0 +1,159 @@
+<!-- =============================================
+     CURSO4-ENGLISH.HTML — Asignatura English de 4º.
+     Separado de curso4.html siguiendo el mismo patrón
+     que 3º (cada asignatura, su propio archivo).
+     Cuando 4º tenga más asignaturas, cada una a su
+     screens/curso4-<asignatura>.html igual que este.
+     ============================================= -->
+
+<!-- =============================================
+     ENGLISH 4º — Todo el apartado en inglés, igual
+     que en 3º. Estructura real de navegación; el
+     contenido de los ejercicios en sí sigue en
+     construcción (se avisa al entrar en cada tema).
+     ============================================= -->
+<div class="screen" id="s-english-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-home-curso4')">←</button>
+    <h1>
+      <svg width="24" height="16" viewBox="0 0 60 40" style="border-radius:3px;vertical-align:middle;margin-right:6px"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>
+      English
+    </h1>
+    <span class="top-badge">🚧 4th Grade</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a section</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-study-c4')">
+        <div class="mode-emoji">📖</div>
+        <div class="mode-name" style="color:var(--blue)">Study</div>
+        <div class="mode-sub">Learn grammar</div>
+      </div>
+      <div class="mode-card" onclick="go('s-english-exercises-c4')">
+        <div class="mode-emoji">✏️</div>
+        <div class="mode-name">Exercises</div>
+        <div class="mode-sub">Practice by topic</div>
+      </div>
+    </div>
+    <div style="margin:18px 16px 0;background:#EFF6FF;border-radius:var(--r-md);padding:14px 16px;text-align:center">
+      <div style="font-size:22px;margin-bottom:6px">🚧</div>
+      <div style="font-family:var(--f);font-size:13px;font-weight:800;color:var(--blue)">We're building this section!</div>
+      <div style="font-size:12px;color:#1E40AF;font-weight:600;margin-top:4px;line-height:1.5">The topics are ready — the exercises are coming very soon.</div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDY 4º -->
+<div class="screen" id="s-english-study-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-c4')">←</button>
+    <h1>Study</h1>
+    <span class="top-badge">📖 Read</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-tobe-c4')">
+        <div class="mode-emoji">🔵</div>
+        <div class="mode-name" style="color:var(--blue)">To Be</div>
+        <div class="mode-sub">Affirmative, negative &amp; interrogative</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="go('s-english-have-c4')">
+        <div class="mode-emoji">🟢</div>
+        <div class="mode-name" style="color:var(--green)">Have</div>
+        <div class="mode-sub">Affirmative, negative &amp; interrogative</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXERCISES 4º -->
+<div class="screen" id="s-english-exercises-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-c4')">←</button>
+    <h1>Exercises</h1>
+    <span class="top-badge">✏️ Practice</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🔵</div>
+        <div class="mode-name" style="color:var(--blue)">To Be</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟢</div>
+        <div class="mode-name" style="color:var(--green)">Have</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TO BE — contenido real (afirmativa / negativa / interrogativa) -->
+<div class="screen" id="s-english-tobe-present-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-tobe-c4')">←</button>
+    <h1>🔵 To Be</h1>
+    <span class="top-badge">Present</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:#EFF6FF;border-radius:14px;padding:14px 16px;font-size:13px;color:#1E40AF;font-weight:600;line-height:1.5">
+      <b>To be</b> means "ser" or "estar". We use it to talk about who or what something IS right now: names, feelings, ages, places...
+    </div>
+
+    <div class="slbl" style="color:var(--green)">✅ Affirmative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Subject</div><div>To Be</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>I</div><div><b>am</b></div><div>happy</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You</div><div><b>are</b></div><div>tall</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>He / She / It</div><div><b>is</b></div><div>a teacher</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>We</div><div><b>are</b></div><div>friends</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You (plural)</div><div><b>are</b></div><div>students</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>They</div><div><b>are</b></div><div>at school</div></div>
+    </div>
+
+    <div class="slbl" style="color:var(--red)">❌ Negative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--red-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:var(--red-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--red)"><div>Subject</div><div>To Be</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>I</div><div><b>am not</b></div><div>tired</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You</div><div><b>are not</b></div><div>late</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>He / She / It</div><div><b>is not</b></div><div>cold</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>We</div><div><b>are not</b></div><div>ready</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You (plural)</div><div><b>are not</b></div><div>wrong</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>They</div><div><b>are not</b></div><div>here</div></div>
+    </div>
+
+    <div class="slbl" style="color:var(--blue)">❓ Interrogative</div>
+    <div style="margin:0 16px 14px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>To Be</div><div>Subject</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Am</b></div><div>I</div><div>late?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Are</b></div><div>you</div><div>ok?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Is</b></div><div>he / she / it</div><div>ready?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Are</b></div><div>we</div><div>late?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Are</b></div><div>you (plural)</div><div>hungry?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Are</b></div><div>they</div><div>friends?</div></div>
+    </div>
+
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Contractions: I am → <b>I'm</b> · is not → <b>isn't</b> · are not → <b>aren't</b></div>
+  </div>
+</div>
+
+<!-- HAVE — contenido real (afirmativa / negativa / interrogativa) -->
+<div class="screen" id="s-english-have-present-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-have-c4')">←</button>
+    <h1>🟢 Have</h1>
+    <span class="top-badge">Present</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:var(--green-light);border-radius:14px;padding:14px 16px;font-size:13px;color:#15803D;font-weight:600;line-height:1.5">
+      <b>To have</b> means "tener". We use it to talk about what someone owns, or things like age, family, or feelings.
+    </div>
+
+    <div class="slbl" style="color:var(--green)">✅ Affirmative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Subject</div><div>Have</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>I</div><div><b>have</b></div><div>a dog</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You</div><div>
