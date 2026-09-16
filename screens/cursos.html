@@ -411,9 +411,9 @@
 </div>
 
 <!-- TO BE — contenido real (afirmativa / negativa / interrogativa) -->
-<div class="screen" id="s-english-tobe-c4">
+<div class="screen" id="s-english-tobe-present-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <button class="back-btn" onclick="go('s-english-tobe-c4')">←</button>
     <h1>🔵 To Be</h1>
     <span class="top-badge">Present</span>
   </div>
@@ -460,9 +460,9 @@
 </div>
 
 <!-- HAVE — contenido real (afirmativa / negativa / interrogativa) -->
-<div class="screen" id="s-english-have-c4">
+<div class="screen" id="s-english-have-present-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <button class="back-btn" onclick="go('s-english-have-c4')">←</button>
     <h1>🟢 Have</h1>
     <span class="top-badge">Present</span>
   </div>
@@ -505,5 +505,151 @@
     </div>
 
     <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 "He / She / It" is special: <b>has</b> (not have), <b>does</b> (not do) in questions and negatives.</div>
+  </div>
+</div>
+
+<!-- TO BE — elegir tiempo -->
+<div class="screen" id="s-english-tobe-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <h1>🔵 To Be</h1>
+    <span class="top-badge">📖 Read</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a tense</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-tobe-present-c4')">
+        <div class="mode-emoji">☀️</div>
+        <div class="mode-name" style="color:var(--blue)">Present</div>
+        <div class="mode-sub">am / is / are</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="go('s-english-tobe-past-c4')">
+        <div class="mode-emoji">🕰️</div>
+        <div class="mode-name" style="color:var(--purple)">Past</div>
+        <div class="mode-sub">was / were</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TO BE — PAST (afirmativa / negativa / interrogativa) -->
+<div class="screen" id="s-english-tobe-past-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-tobe-c4')">←</button>
+    <h1>🔵 To Be</h1>
+    <span class="top-badge">Past</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:var(--purple-light);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--purple-dark);font-weight:600;line-height:1.5">
+      In the past, <b>am</b> and <b>is</b> become <b>was</b>, and <b>are</b> becomes <b>were</b>. We use it to talk about things that already happened.
+    </div>
+
+    <div class="slbl" style="color:var(--green)">✅ Affirmative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Subject</div><div>To Be</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>I</div><div><b>was</b></div><div>happy</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You</div><div><b>were</b></div><div>tall</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>He / She / It</div><div><b>was</b></div><div>a teacher</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>We</div><div><b>were</b></div><div>friends</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You (plural)</div><div><b>were</b></div><div>students</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>They</div><div><b>were</b></div><div>at school</div></div>
+    </div>
+
+    <div class="slbl" style="color:var(--red)">❌ Negative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--red-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:var(--red-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--red)"><div>Subject</div><div>To Be</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>I</div><div><b>was not</b></div><div>tired</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You</div><div><b>were not</b></div><div>late</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>He / She / It</div><div><b>was not</b></div><div>cold</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>We</div><div><b>were not</b></div><div>ready</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You (plural)</div><div><b>were not</b></div><div>wrong</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>They</div><div><b>were not</b></div><div>here</div></div>
+    </div>
+
+    <div class="slbl" style="color:var(--blue)">❓ Interrogative</div>
+    <div style="margin:0 16px 14px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>To Be</div><div>Subject</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Was</b></div><div>I</div><div>late?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Were</b></div><div>you</div><div>ok?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Was</b></div><div>he / she / it</div><div>ready?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Were</b></div><div>we</div><div>late?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Were</b></div><div>you (plural)</div><div>hungry?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Were</b></div><div>they</div><div>friends?</div></div>
+    </div>
+
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Contractions: was not → <b>wasn't</b> · were not → <b>weren't</b></div>
+  </div>
+</div>
+
+<!-- HAVE — elegir tiempo -->
+<div class="screen" id="s-english-have-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <h1>🟢 Have</h1>
+    <span class="top-badge">📖 Read</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a tense</div>
+    <div class="mode-grid">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-have-present-c4')">
+        <div class="mode-emoji">☀️</div>
+        <div class="mode-name" style="color:var(--blue)">Present</div>
+        <div class="mode-sub">have / has</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="go('s-english-have-past-c4')">
+        <div class="mode-emoji">🕰️</div>
+        <div class="mode-name" style="color:var(--purple)">Past</div>
+        <div class="mode-sub">had</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HAVE — PAST (afirmativa / negativa / interrogativa) -->
+<div class="screen" id="s-english-have-past-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-have-c4')">←</button>
+    <h1>🟢 Have</h1>
+    <span class="top-badge">Past</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:var(--purple-light);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--purple-dark);font-weight:600;line-height:1.5">
+      In the past, <b>have</b> and <b>has</b> both become <b>had</b> — the same word for every subject! We use it to talk about things someone owned or had before.
+    </div>
+
+    <div class="slbl" style="color:var(--green)">✅ Affirmative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Subject</div><div>Have</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>I</div><div><b>had</b></div><div>a dog</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You</div><div><b>had</b></div><div>a bike</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>He / She / It</div><div><b>had</b></div><div>a cat</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>We</div><div><b>had</b></div><div>a garden</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You (plural)</div><div><b>had</b></div><div>books</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>They</div><div><b>had</b></div><div>a house</div></div>
+    </div>
+
+    <div class="slbl" style="color:var(--red)">❌ Negative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--red-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1.3fr 1.4fr;background:var(--red-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--red)"><div>Subject</div><div>Have</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1.3fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>I</div><div><b>did not have</b></div><div>a car</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1.3fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You</div><div><b>did not have</b></div><div>time</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1.3fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>He / She / It</div><div><b>did not have</b></div><div>a phone</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1.3fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>We</div><div><b>did not have</b></div><div>school</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1.3fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>You (plural)</div><div><b>did not have</b></div><div>homework</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1.3fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div>They</div><div><b>did not have</b></div><div>a pet</div></div>
+    </div>
+
+    <div class="slbl" style="color:var(--blue)">❓ Interrogative</div>
+    <div style="margin:0 16px 14px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>Did</div><div>Subject</div><div>Example</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Did</b></div><div>I</div><div>have time?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Did</b></div><div>you</div><div>have a pet?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Did</b></div><div>he / she / it</div><div>have a name?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Did</b></div><div>we</div><div>have homework?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Did</b></div><div>you (plural)</div><div>have books?</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100)"><div><b>Did</b></div><div>they</div><div>have a car?</div></div>
+    </div>
+
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 In the past, <b>had</b> is the same for everyone — no "has" or special forms!</div>
   </div>
 </div>
