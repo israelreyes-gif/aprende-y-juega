@@ -6,7 +6,7 @@
 /* Version para cache-busting de las pantallas HTML (fetch no lleva
    parametro de version salvo que se lo añadamos aqui). Subir este
    numero cada vez que cambie cualquier screens/*.html. */
-var SCREENS_V = '1789586507';
+var SCREENS_V = '1789587730';
 
 /* Pantallas que se cargan al arranque (críticas) */
 var SCREENS_CRITICAL = [
@@ -27,7 +27,8 @@ var SCREENS_LAZY = [
   'screens/avatar.html',
   'screens/descripciones.html',
   'screens/vacaciones.html',
-  'screens/curso4.html'
+  'screens/curso4.html',
+  'screens/curso4-english.html'
 ];
 
 /* Registro de pantallas ya cargadas */
@@ -119,15 +120,15 @@ function loadScreenLazy(screenId, callback) {
     's-vac-arkanoid':        'screens/vacaciones.html',
     /* Curso 4 (ver PATRÓN PARA FUTUROS CURSOS en screens/curso4.html) */
     's-home-curso4':               'screens/curso4.html',
-    's-english-c4':                'screens/curso4.html',
-    's-english-study-c4':          'screens/curso4.html',
-    's-english-exercises-c4':      'screens/curso4.html',
-    's-english-tobe-c4':           'screens/curso4.html',
-    's-english-tobe-present-c4':   'screens/curso4.html',
-    's-english-tobe-past-c4':      'screens/curso4.html',
-    's-english-have-c4':           'screens/curso4.html',
-    's-english-have-present-c4':   'screens/curso4.html',
-    's-english-have-past-c4':      'screens/curso4.html'
+    's-english-c4':                'screens/curso4-english.html',
+    's-english-study-c4':          'screens/curso4-english.html',
+    's-english-exercises-c4':      'screens/curso4-english.html',
+    's-english-tobe-c4':           'screens/curso4-english.html',
+    's-english-tobe-present-c4':   'screens/curso4-english.html',
+    's-english-tobe-past-c4':      'screens/curso4-english.html',
+    's-english-have-c4':           'screens/curso4-english.html',
+    's-english-have-present-c4':   'screens/curso4-english.html',
+    's-english-have-past-c4':      'screens/curso4-english.html'
   };
 
   var file = fileMap[screenId];
@@ -137,94 +138,4 @@ function loadScreenLazy(screenId, callback) {
     return;
   }
 
-  var container = document.getElementById('app');
-  fetch(file + '?v=' + SCREENS_V)
-    .then(function(r) { return r.text(); })
-    .then(function(html) {
-      container.insertAdjacentHTML('beforeend', html);
-      _loadedScreens[file] = true;
-      callback();
-    })
-    .catch(function(e) {
-      showError('carga lazy ' + file, e);
-      callback();
-    });
-}
-
-function loadData(callback) {
-  var pending = 2;
-  var errors  = [];
-
-  function done(errorMsg) {
-    if (errorMsg) errors.push(errorMsg);
-    pending--;
-    if (pending === 0) {
-      if (errors.length > 0) {
-        showToast('⚠️ Algunos ejercicios usan datos de respaldo');
-      }
-      callback();
-    }
-  }
-
-  fetch('data/curso' + cursoActual + '/ejercicios-mates.json')
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      SubjectData.problemas = data;
-      Object.keys(SubjectData.problemas).forEach(function(k) {
-        SubjectData.problemas[k] = shuffle(SubjectData.problemas[k]);
-      });
-      done();
-    })
-    .catch(function(e) {
-      showError('los ejercicios de Matemáticas', e, function(){ loadData(initApp); }, 's-mates');
-      done('mates');
-    });
-
-  fetch('data/curso' + cursoActual + '/historias.json')
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      SubjectData.historias = data;
-      Object.keys(SubjectData.historias).forEach(function(k) {
-        SubjectData.historias[k] = shuffleArr(SubjectData.historias[k]);
-      });
-      done();
-    })
-    .catch(function(e) {
-      showError('las historias de Comprensión', e, function(){ loadData(initApp); }, 's-comprension');
-      done('historias');
-    });
-}
-
-function initApp() {
-  updateMedalUI();
-  updateStreakUI();
-  updateHomeUI();
-
-  /* Override de go() para lazy loading */
-  var _goOriginal = go;
-  go = function(screenId) {
-    loadScreenLazy(screenId, function() {
-      _goOriginal(screenId);
-      /* Cargar datos de ejercicio cuando se entra */
-      if (screenId === 's-sumas')       cargarNuevaSuma();
-      if (screenId === 's-multi')       cargarNuevaMulti();
-      if (screenId === 's-prob')        cargarNuevoProblema();
-      if (screenId === 's-mix')         cargarNuevaMezcla();
-      if (screenId === 's-comprension') cargarNuevaHistoria();
-    });
-  };
-
-  /* Dibujar avatar en todas las pantallas cargadas */
-  refreshAllAvatars();
-  /* Comprobar desbloqueos nuevos */
-  checkNewUnlocks();
-
-  /* Primera pantalla: selección de perfiles */
-  renderPerfiles();
-  _goOriginal('s-perfiles');
-}
-
-/* Arranque: pantallas críticas → datos → init */
-loadScreens(function() {
-  loadData(initApp);
-});
+  var container = document.
