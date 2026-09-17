@@ -3,10 +3,12 @@
    Arranque: pantallas críticas → datos → init
    ============================================= */
 
-/* Version para cache-busting de las pantallas HTML (fetch no lleva
-   parametro de version salvo que se lo añadamos aqui). Subir este
-   numero cada vez que cambie cualquier screens/*.html. */
-var SCREENS_V = '1789655319';
+/* Version para cache-busting de las pantallas HTML. Se genera
+   sola en cada carga de la app (con la hora actual), así que
+   YA NO HACE FALTA subir este número a mano cuando cambias
+   contenido de screens/*.html — cada visita pide siempre la
+   versión más reciente. */
+var SCREENS_V = String(Date.now());
 
 /* Pantallas que se cargan al arranque (críticas) */
 var SCREENS_CRITICAL = [
