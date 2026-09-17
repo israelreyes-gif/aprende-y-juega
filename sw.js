@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v17';
+var CACHE = 'aprende-v18';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -62,9 +62,13 @@ self.addEventListener('fetch', function(e) {
     return;
   }
 
-  // Resto — network first con fallback a caché
+  // Resto — network first con fallback a caché.
+  // cache:'no-store' obliga al navegador a ignorar su propia
+  // caché HTTP y pedir siempre la versión más reciente al
+  // servidor — así no hace falta añadir ?v=... a mano nunca
+  // más en index.html para que un cambio se vea reflejado.
   e.respondWith(
-    fetch(e.request).then(function(response) {
+    fetch(new Request(e.request, { cache: 'no-store' })).then(function(response) {
       // Cachear respuestas válidas
       if (response && response.status === 200 && e.request.method === 'GET') {
         var clone = response.clone();
