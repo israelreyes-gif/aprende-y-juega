@@ -43,13 +43,6 @@
   <button onclick="errorBack()" style="background:none;border:none;font-size:13px;color:#6B7280;font-family:var(--f);font-weight:700;cursor:pointer">← Volver</button>
 </div>
 
-<script>
-  /* === DIAGNÓSTICO TEMPORAL — quitar después === */
-  window.onerror = function(msg, url, line, col, error) {
-    alert('❌ ERROR JS:\n' + msg + '\nArchivo: ' + url.split('/').pop() + '\nLínea: ' + line + ':' + col + '\n\nStack:\n' + (error && error.stack ? error.stack : '(sin stack)'));
-    return false;
-  };
-</script>
 <script src="js/config.js?v=1789588274"></script>
 <script src="js/storage.js?v=1789588274"></script>
 <script src="js/avatar.js?v=1789588274"></script>
