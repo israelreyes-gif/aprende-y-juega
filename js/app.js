@@ -126,14 +126,11 @@ function loadScreenLazy(screenId, callback) {
     's-english-study-c4':          'screens/curso4-english.html',
     's-english-exercises-c4':      'screens/curso4-english.html',
     's-english-tobe-c4':           'screens/curso4-english.html',
-    's-english-tobe-present-c4':   'screens/curso4-english.html',
-    's-english-tobe-past-c4':      'screens/curso4-english.html',
-    's-english-simple-c4':         'screens/curso4-english.html',
     's-english-simple-present-c4': 'screens/curso4-english.html',
     's-english-simple-past-c4':    'screens/curso4-english.html',
-    's-english-ing-c4':            'screens/curso4-english.html',
     's-english-ing-present-c4':    'screens/curso4-english.html',
-    's-english-ing-past-c4':       'screens/curso4-english.html'
+    's-english-ing-past-c4':       'screens/curso4-english.html',
+    's-english-future-c4':         'screens/curso4-english.html'
   };
 
   var file = fileMap[screenId];
