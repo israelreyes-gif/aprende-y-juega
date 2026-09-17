@@ -6,7 +6,7 @@
 /* Version para cache-busting de las pantallas HTML (fetch no lleva
    parametro de version salvo que se lo añadamos aqui). Subir este
    numero cada vez que cambie cualquier screens/*.html. */
-var SCREENS_V = '1789588274';
+var SCREENS_V = '1789655319';
 
 /* Pantallas que se cargan al arranque (críticas) */
 var SCREENS_CRITICAL = [
@@ -128,7 +128,10 @@ function loadScreenLazy(screenId, callback) {
     's-english-tobe-past-c4':      'screens/curso4-english.html',
     's-english-have-c4':           'screens/curso4-english.html',
     's-english-have-present-c4':   'screens/curso4-english.html',
-    's-english-have-past-c4':      'screens/curso4-english.html'
+    's-english-have-past-c4':      'screens/curso4-english.html',
+    's-english-ing-c4':            'screens/curso4-english.html',
+    's-english-ing-present-c4':    'screens/curso4-english.html',
+    's-english-ing-past-c4':       'screens/curso4-english.html'
   };
 
   var file = fileMap[screenId];
