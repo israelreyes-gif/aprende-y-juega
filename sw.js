@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v18';
+var CACHE = 'aprende-v19';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -62,9 +62,16 @@ self.addEventListener('fetch', function(e) {
     return;
   }
 
-  // Resto — network first con fallback a caché
+  // Resto — network first con fallback a caché.
+  // cache:'no-cache' hace una petición condicional: el navegador
+  // le pregunta al servidor "¿ha cambiado esto desde la última
+  // vez?" (usando Last-Modified/ETag). Si no ha cambiado, el
+  // servidor responde con un 304 minúsculo y se usa la copia
+  // local — rápido. Si SÍ ha cambiado, descarga el archivo
+  // completo. Así nunca sirve algo caducado sin tener que
+  // descargar todo de cero cada vez.
   e.respondWith(
-    fetch(e.request).then(function(response) {
+    fetch(new Request(e.request, { cache: 'no-cache' })).then(function(response) {
       // Cachear respuestas válidas
       if (response && response.status === 200 && e.request.method === 'GET') {
         var clone = response.clone();
