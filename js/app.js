@@ -133,7 +133,8 @@ function loadScreenLazy(screenId, callback) {
     's-english-simple-past-c4':    'screens/curso4-english.html',
     's-english-ing-present-c4':    'screens/curso4-english.html',
     's-english-ing-past-c4':       'screens/curso4-english.html',
-    's-english-future-c4':         'screens/curso4-english.html'
+    's-english-future-c4':         'screens/curso4-english.html',
+    's-english-verbs-c4':          'screens/curso4-english.html'
   };
 
   var file = fileMap[screenId];
@@ -228,6 +229,27 @@ function initApp() {
   /* Primera pantalla: selección de perfiles */
   renderPerfiles();
   _goOriginal('s-perfiles');
+}
+
+/* ---- Toggle de idioma en la lista de Verbs de 4º ----
+   No reordena la lista (sigue alfabética por el verbo en
+   inglés), solo cambia qué idioma se ve más grande arriba. */
+function toggleVerbsLangC4(showEsFirst) {
+  var list = document.getElementById('verbs-list-c4');
+  if (!list) return;
+  if (showEsFirst) {
+    list.classList.add('es-first-c4');
+  } else {
+    list.classList.remove('es-first-c4');
+  }
+  var btnEn = document.getElementById('verbs-btn-en-c4');
+  var btnEs = document.getElementById('verbs-btn-es-c4');
+  if (btnEn && btnEs) {
+    btnEn.style.background = showEsFirst ? 'white' : 'var(--blue)';
+    btnEn.style.color      = showEsFirst ? 'var(--blue)' : 'white';
+    btnEs.style.background = showEsFirst ? 'var(--blue)' : 'white';
+    btnEs.style.color      = showEsFirst ? 'white' : 'var(--blue)';
+  }
 }
 
 /* Arranque: pantallas críticas → datos → init */
