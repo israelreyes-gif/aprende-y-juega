@@ -5,17 +5,14 @@
      Cuando 4º tenga más asignaturas, cada una a su
      screens/curso4-<asignatura>.html igual que este.
 
-     ESTRUCTURA: cada tarjeta de Study lleva DIRECTO
-     al contenido (afirmativa/negativa/interrogativa).
-     No hay pantallas intermedias de "elegir tiempo".
+     ESTRUCTURA: English > Study > Verb Tenses > 7
+     tiempos verbales, cada uno directo a su contenido
+     (afirmativa/negativa/interrogativa). Sin pantallas
+     intermedias de "elegir presente o pasado" dentro
+     de cada tiempo verbal.
      ============================================= -->
 
-<!-- =============================================
-     ENGLISH 4º — Todo el apartado en inglés, igual
-     que en 3º. Estructura real de navegación; el
-     contenido de los ejercicios en sí sigue en
-     construcción (se avisa al entrar en cada tema).
-     ============================================= -->
+<!-- ENGLISH 4º — menú principal -->
 <div class="screen" id="s-english-c4">
   <div class="topbar bg-blue">
     <button class="back-btn" onclick="go('s-home-curso4')">←</button>
@@ -47,12 +44,31 @@
   </div>
 </div>
 
-<!-- STUDY 4º — "Verb tenses": 6 temas, cada uno directo a su contenido -->
+<!-- STUDY 4º — una sola tarjeta "Verb Tenses" (sitio para más categorías en el futuro) -->
 <div class="screen" id="s-english-study-c4">
   <div class="topbar bg-blue">
     <button class="back-btn" onclick="go('s-english-c4')">←</button>
     <h1>Study</h1>
-    <span class="top-badge">📖 Verb tenses</span>
+    <span class="top-badge">📖 Read</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-verbtenses-c4')">
+        <div class="mode-emoji">📘</div>
+        <div class="mode-name" style="color:var(--blue)">Verb Tenses</div>
+        <div class="mode-sub">To Be, Simple, Continuous, Future</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VERB TENSES (Study) — las 7 tarjetas, cada una directa a su contenido -->
+<div class="screen" id="s-english-verbtenses-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <h1>Verb Tenses</h1>
+    <span class="top-badge">📖 Read</span>
   </div>
   <div class="sa">
     <div class="slbl">Choose a tense</div>
@@ -63,35 +79,35 @@
         <div class="mode-name" style="color:var(--blue)">To Be</div>
         <div class="mode-sub">Present Simple</div>
       </div>
-      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="go('s-english-tobe-past-c4')">
-        <div class="mode-emoji">🟧</div>
-        <div class="mode-name" style="color:var(--orange)">To Be</div>
+      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="go('s-english-tobe-past-c4')">
+        <div class="mode-emoji">🟣</div>
+        <div class="mode-name" style="color:var(--purple)">To Be</div>
         <div class="mode-sub">Past Simple</div>
       </div>
     </div>
 
     <div class="mode-grid" style="margin-bottom:10px">
-      <div class="mode-card" style="border-color:var(--pink);background:var(--pink-light)" onclick="go('s-english-simple-present-c4')">
-        <div class="mode-emoji">🟣</div>
-        <div class="mode-name" style="color:var(--pink-mid)">Present Simple</div>
+      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="go('s-english-simple-present-c4')">
+        <div class="mode-emoji">🟠</div>
+        <div class="mode-name" style="color:var(--orange)">Present Simple</div>
         <div class="mode-sub">play / plays</div>
       </div>
-      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="go('s-english-simple-past-c4')">
-        <div class="mode-emoji">🟪</div>
-        <div class="mode-name" style="color:var(--purple)">Past Simple</div>
+      <div class="mode-card" style="border-color:var(--red);background:var(--red-light)" onclick="go('s-english-simple-past-c4')">
+        <div class="mode-emoji">🔴</div>
+        <div class="mode-name" style="color:var(--red)">Past Simple</div>
         <div class="mode-sub">played</div>
       </div>
     </div>
 
     <div class="mode-grid" style="margin-bottom:10px">
       <div class="mode-card" style="border-color:var(--amber);background:var(--amber-light)" onclick="go('s-english-ing-present-c4')">
-        <div class="mode-emoji">🟠</div>
+        <div class="mode-emoji">🟡</div>
         <div class="mode-name" style="color:var(--amber)">Present Continuous</div>
         <div class="mode-sub">am/is/are + -ing</div>
       </div>
-      <div class="mode-card" style="border-color:var(--teal);background:#CCFBF1" onclick="go('s-english-ing-past-c4')">
-        <div class="mode-emoji">🔷</div>
-        <div class="mode-name" style="color:var(--teal)">Past Continuous</div>
+      <div class="mode-card" style="border-color:#78350F;background:#FDF2E9" onclick="go('s-english-ing-past-c4')">
+        <div class="mode-emoji">🟤</div>
+        <div class="mode-name" style="color:#78350F">Past Continuous</div>
         <div class="mode-sub">was/were + -ing</div>
       </div>
     </div>
@@ -106,11 +122,30 @@
   </div>
 </div>
 
-<!-- EXERCISES 4º — mismos 6 temas, todos "coming soon" -->
+<!-- EXERCISES 4º — una sola tarjeta "Verb Tenses" -->
 <div class="screen" id="s-english-exercises-c4">
   <div class="topbar bg-blue">
     <button class="back-btn" onclick="go('s-english-c4')">←</button>
     <h1>Exercises</h1>
+    <span class="top-badge">✏️ Practice</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-exercises-tenses-c4')">
+        <div class="mode-emoji">📘</div>
+        <div class="mode-name" style="color:var(--blue)">Verb Tenses</div>
+        <div class="mode-sub">To Be, Simple, Continuous, Future</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VERB TENSES (Exercises) — mismas 7 tarjetas, todas "coming soon" -->
+<div class="screen" id="s-english-exercises-tenses-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-exercises-c4')">←</button>
+    <h1>Verb Tenses</h1>
     <span class="top-badge">✏️ Practice</span>
   </div>
   <div class="sa">
@@ -122,35 +157,35 @@
         <div class="mode-name" style="color:var(--blue)">To Be</div>
         <div class="mode-sub">Coming soon</div>
       </div>
-      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="showToast('🚧 Coming soon!')">
-        <div class="mode-emoji">🟧</div>
-        <div class="mode-name" style="color:var(--orange)">To Be</div>
+      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟣</div>
+        <div class="mode-name" style="color:var(--purple)">To Be</div>
         <div class="mode-sub">Coming soon</div>
       </div>
     </div>
 
     <div class="mode-grid" style="margin-bottom:10px">
-      <div class="mode-card" style="border-color:var(--pink);background:var(--pink-light)" onclick="showToast('🚧 Coming soon!')">
-        <div class="mode-emoji">🟣</div>
-        <div class="mode-name" style="color:var(--pink-mid)">Present Simple</div>
+      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟠</div>
+        <div class="mode-name" style="color:var(--orange)">Present Simple</div>
         <div class="mode-sub">Coming soon</div>
       </div>
-      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="showToast('🚧 Coming soon!')">
-        <div class="mode-emoji">🟪</div>
-        <div class="mode-name" style="color:var(--purple)">Past Simple</div>
+      <div class="mode-card" style="border-color:var(--red);background:var(--red-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🔴</div>
+        <div class="mode-name" style="color:var(--red)">Past Simple</div>
         <div class="mode-sub">Coming soon</div>
       </div>
     </div>
 
     <div class="mode-grid" style="margin-bottom:10px">
       <div class="mode-card" style="border-color:var(--amber);background:var(--amber-light)" onclick="showToast('🚧 Coming soon!')">
-        <div class="mode-emoji">🟠</div>
+        <div class="mode-emoji">🟡</div>
         <div class="mode-name" style="color:var(--amber)">Present Continuous</div>
         <div class="mode-sub">Coming soon</div>
       </div>
-      <div class="mode-card" style="border-color:var(--teal);background:#CCFBF1" onclick="showToast('🚧 Coming soon!')">
-        <div class="mode-emoji">🔷</div>
-        <div class="mode-name" style="color:var(--teal)">Past Continuous</div>
+      <div class="mode-card" style="border-color:#78350F;background:#FDF2E9" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟤</div>
+        <div class="mode-name" style="color:#78350F">Past Continuous</div>
         <div class="mode-sub">Coming soon</div>
       </div>
     </div>
@@ -168,7 +203,7 @@
 <!-- TO BE (solo presente) — contenido directo -->
 <div class="screen" id="s-english-tobe-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
     <h1>🔵 To Be</h1>
     <span class="top-badge">Present Simple</span>
   </div>
@@ -218,12 +253,12 @@
 <!-- TO BE PAST — contenido directo -->
 <div class="screen" id="s-english-tobe-past-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
-    <h1>🟧 To Be</h1>
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
+    <h1>🟣 To Be</h1>
     <span class="top-badge">Past Simple</span>
   </div>
   <div class="sa">
-    <div style="margin:0 16px 14px;background:#FFEDD5;border-radius:14px;padding:14px 16px;font-size:13px;color:#9A3412;font-weight:600;line-height:1.5">
+    <div style="margin:0 16px 14px;background:var(--purple-light);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--purple-dark);font-weight:600;line-height:1.5">
       In the past, <b>am</b> and <b>is</b> become <b>was</b>, and <b>are</b> becomes <b>were</b>. We use it to talk about things that already happened.
       <br><br>🇪🇸 En español: en pasado, <b>am</b> e <b>is</b> se convierten en <b>was</b>, y <b>are</b> se convierte en <b>were</b>. Lo usamos para hablar de cosas que ya pasaron.
     </div>
@@ -268,12 +303,12 @@
 <!-- PRESENT SIMPLE — contenido directo -->
 <div class="screen" id="s-english-simple-present-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
-    <h1>🟣 Present Simple</h1>
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
+    <h1>🟠 Present Simple</h1>
     <span class="top-badge">play / plays</span>
   </div>
   <div class="sa">
-    <div style="margin:0 16px 14px;background:var(--pink-light);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--pink-mid);font-weight:600;line-height:1.5">
+    <div style="margin:0 16px 14px;background:#FFEDD5;border-radius:14px;padding:14px 16px;font-size:13px;color:#9A3412;font-weight:600;line-height:1.5">
       We use the <b>Present Simple</b> for habits, routines and things that are generally true. He/She/It adds <b>-s</b> to the verb.
       <br><br>🇪🇸 En español: lo usamos para costumbres, rutinas y cosas que son ciertas en general — no para lo que está pasando ahora mismo (eso es Present Continuous). Con he/she/it, añadimos -s al verbo.
     </div>
@@ -318,12 +353,12 @@
 <!-- PAST SIMPLE (verbos regulares) — contenido directo -->
 <div class="screen" id="s-english-simple-past-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
-    <h1>🟪 Past Simple</h1>
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
+    <h1>🔴 Past Simple</h1>
     <span class="top-badge">played</span>
   </div>
   <div class="sa">
-    <div style="margin:0 16px 14px;background:var(--purple-light);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--purple-dark);font-weight:600;line-height:1.5">
+    <div style="margin:0 16px 14px;background:var(--red-light);border-radius:14px;padding:14px 16px;font-size:13px;color:#991B1B;font-weight:600;line-height:1.5">
       For regular verbs, we add <b>-ed</b> to talk about the past. The verb is the same for every subject.
       <br><br>🇪🇸 En español: en pasado, añadimos -ed a los verbos regulares, y es igual para todos los sujetos — no hay que preocuparse por he/she/it aquí.
     </div>
@@ -368,8 +403,8 @@
 <!-- PRESENT CONTINUOUS — contenido directo -->
 <div class="screen" id="s-english-ing-present-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
-    <h1>🟠 Present Continuous</h1>
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
+    <h1>🟡 Present Continuous</h1>
     <span class="top-badge">am/is/are + -ing</span>
   </div>
   <div class="sa">
@@ -418,12 +453,12 @@
 <!-- PAST CONTINUOUS — contenido directo -->
 <div class="screen" id="s-english-ing-past-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
-    <h1>🔷 Past Continuous</h1>
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
+    <h1>🟤 Past Continuous</h1>
     <span class="top-badge">was/were + -ing</span>
   </div>
   <div class="sa">
-    <div style="margin:0 16px 14px;background:#CCFBF1;border-radius:14px;padding:14px 16px;font-size:13px;color:#115E59;font-weight:600;line-height:1.5">
+    <div style="margin:0 16px 14px;background:#FDF2E9;border-radius:14px;padding:14px 16px;font-size:13px;color:#78350F;font-weight:600;line-height:1.5">
       We use <b>was / were + verb-ing</b> for something that was happening at one exact moment in the past.
       <br><br>🇪🇸 En español: lo usamos para algo que estaba pasando en un momento exacto del pasado (equivale a "estaba jugando").
     </div>
@@ -468,7 +503,7 @@
 <!-- FUTURE SIMPLE (will) — contenido directo -->
 <div class="screen" id="s-english-future-c4">
   <div class="topbar bg-blue">
-    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
     <h1>🟢 Future Simple</h1>
     <span class="top-badge">will + verb</span>
   </div>
