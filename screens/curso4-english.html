@@ -63,7 +63,7 @@
   </div>
 </div>
 
-<!-- VERB TENSES (Study) — las 7 tarjetas, cada una directa a su contenido -->
+<!-- VERB TENSES (Study) — las tarjetas, cada una directa a su contenido -->
 <div class="screen" id="s-english-verbtenses-c4">
   <div class="topbar bg-blue">
     <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
@@ -118,6 +118,11 @@
         <div class="mode-name" style="color:var(--green)">Future Simple</div>
         <div class="mode-sub">will + verb</div>
       </div>
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-verbs-c4')">
+        <div class="mode-emoji">📚</div>
+        <div class="mode-name" style="color:var(--blue)">Verbs</div>
+        <div class="mode-sub">A-Z list</div>
+      </div>
     </div>
   </div>
 </div>
@@ -141,7 +146,7 @@
   </div>
 </div>
 
-<!-- VERB TENSES (Exercises) — mismas 7 tarjetas, todas "coming soon" -->
+<!-- VERB TENSES (Exercises) — mismas tarjetas, todas "coming soon" -->
 <div class="screen" id="s-english-exercises-tenses-c4">
   <div class="topbar bg-blue">
     <button class="back-btn" onclick="go('s-english-exercises-c4')">←</button>
@@ -547,5 +552,63 @@
     </div>
 
     <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Contraction: will not → <b>won't</b>. Will never changes — no -s, no do/does, just <b>will + base verb</b> for everyone!</div>
+  </div>
+</div>
+
+<!-- VERBS — listado A-Z con traducción y formas verbales -->
+<div class="screen" id="s-english-verbs-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-verbtenses-c4')">←</button>
+    <h1>📚 Verbs</h1>
+    <span class="top-badge">A-Z</span>
+  </div>
+  <div class="sa">
+    <style>
+      #verbs-list-c4.es-first-c4 .verb-en-c4 { font-size:11px; color:var(--gray-400); font-weight:600; }
+      #verbs-list-c4.es-first-c4 .verb-es-c4 { font-size:14px; color:var(--gray-800); font-weight:800; }
+      #verbs-list-c4:not(.es-first-c4) .verb-en-c4 { font-size:14px; color:var(--gray-800); font-weight:800; }
+      #verbs-list-c4:not(.es-first-c4) .verb-es-c4 { font-size:11px; color:var(--gray-400); font-weight:600; }
+    </style>
+
+    <div style="margin:0 16px 14px;background:#EFF6FF;border-radius:14px;padding:12px 14px;font-size:12px;color:#1E40AF;font-weight:600;line-height:1.5">
+      💡 Pulsa un botón para elegir qué idioma ver primero. El orden de la lista no cambia — siempre alfabético por el verbo en inglés.
+    </div>
+
+    <div style="margin:0 16px 14px;display:flex;gap:8px">
+      <button id="verbs-btn-en-c4" onclick="toggleVerbsLangC4(false)" style="flex:1;padding:10px;border-radius:12px;border:2px solid var(--blue);background:var(--blue);color:white;font-family:var(--f);font-size:12px;font-weight:800;cursor:pointer">🇬🇧 English → 🇪🇸</button>
+      <button id="verbs-btn-es-c4" onclick="toggleVerbsLangC4(true)" style="flex:1;padding:10px;border-radius:12px;border:2px solid var(--blue);background:white;color:var(--blue);font-family:var(--f);font-size:12px;font-weight:800;cursor:pointer">🇪🇸 Español → 🇬🇧</button>
+    </div>
+
+    <div id="verbs-list-c4">
+      <div style="margin:0 16px 20px;background:white;border-radius:14px;border:1.5px solid var(--gray-100);overflow:hidden">
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:10px;font-weight:800;color:var(--blue)"><div>Verb</div><div>Present</div><div>Past</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);align-items:center"><div><span class="verb-en-c4">buy</span><br><span class="verb-es-c4">comprar</span></div><div>buys</div><div>bought</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">clean</span><br><span class="verb-es-c4">limpiar</span></div><div>cleans</div><div>cleaned</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">come</span><br><span class="verb-es-c4">venir</span></div><div>comes</div><div>came</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">do</span><br><span class="verb-es-c4">hacer</span></div><div>does</div><div>did</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">drink</span><br><span class="verb-es-c4">beber</span></div><div>drinks</div><div>drank</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">eat</span><br><span class="verb-es-c4">comer</span></div><div>eats</div><div>ate</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">go</span><br><span class="verb-es-c4">ir</span></div><div>goes</div><div>went</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">have</span><br><span class="verb-es-c4">tener</span></div><div>has</div><div>had</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">jump</span><br><span class="verb-es-c4">saltar</span></div><div>jumps</div><div>jumped</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">like</span><br><span class="verb-es-c4">gustar</span></div><div>likes</div><div>liked</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">live</span><br><span class="verb-es-c4">vivir</span></div><div>lives</div><div>lived</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">look</span><br><span class="verb-es-c4">mirar</span></div><div>looks</div><div>looked</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">love</span><br><span class="verb-es-c4">encantar / amar</span></div><div>loves</div><div>loved</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">make</span><br><span class="verb-es-c4">hacer / fabricar</span></div><div>makes</div><div>made</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">play</span><br><span class="verb-es-c4">jugar</span></div><div>plays</div><div>played</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">read</span><br><span class="verb-es-c4">leer</span></div><div>reads</div><div>read</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">run</span><br><span class="verb-es-c4">correr</span></div><div>runs</div><div>ran</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">see</span><br><span class="verb-es-c4">ver</span></div><div>sees</div><div>saw</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">sleep</span><br><span class="verb-es-c4">dormir</span></div><div>sleeps</div><div>slept</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">study</span><br><span class="verb-es-c4">estudiar</span></div><div>studies</div><div>studied</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">swim</span><br><span class="verb-es-c4">nadar</span></div><div>swims</div><div>swam</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">take</span><br><span class="verb-es-c4">coger / tomar</span></div><div>takes</div><div>took</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">walk</span><br><span class="verb-es-c4">andar / caminar</span></div><div>walks</div><div>walked</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">want</span><br><span class="verb-es-c4">querer</span></div><div>wants</div><div>wanted</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">watch</span><br><span class="verb-es-c4">ver / mirar</span></div><div>watches</div><div>watched</div></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><span class="verb-en-c4">write</span><br><span class="verb-es-c4">escribir</span></div><div>writes</div><div>wrote</div></div>
+      </div>
+    </div>
   </div>
 </div>
