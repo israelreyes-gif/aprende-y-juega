@@ -266,6 +266,7 @@ function go(screenId) {
   if (screenId === 's-english-study')         { renderEnglishStudyMenu(); }
   if (screenId === 's-english-exercises')     { renderEnglishExercisesMenu(); }
   if (screenId === 's-english-vocab')         { renderVocabMenu(); }
+  if (screenId === 's-english-vocab-c4')      { renderVocabMenu('-c4'); }
   if (screenId === 's-vocab-ex-w2i')          { loadW2IQuestion(); }
   if (screenId === 's-vocab-ex-i2w')          { loadI2WQuestion(); }
   if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); renderMiniCalendario('cal-sciences', 'sciences', '#0D9488'); }
