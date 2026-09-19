@@ -13,6 +13,11 @@
        - curso4-english-vocab.html   → menús de
          Vocabulary (las categorías en sí viven en
          data/curso4/english-vocab.json, no aquí)
+       - curso4-english-grammar.html → temas de
+         gramática sueltos que no son tiempos verbales
+         (wh- questions, could, must, have to,
+         comparativos, adverbios de frecuencia,
+         preposiciones, dar la hora...)
 
      Todos comparten el mismo fileMap en app.js —
      desde el punto de vista de go(), es como si
@@ -81,6 +86,13 @@
         <div class="mode-emoji">🔤</div>
         <div class="mode-name" style="color:var(--blue)">Vocabulary</div>
         <div class="mode-sub">Words with images</div>
+      </div>
+    </div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-grammar-c4')">
+        <div class="mode-emoji">📐</div>
+        <div class="mode-name" style="color:var(--blue)">Grammar</div>
+        <div class="mode-sub">Wh- questions, could, must...</div>
       </div>
     </div>
   </div>
