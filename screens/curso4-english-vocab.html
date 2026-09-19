@@ -1,0 +1,29 @@
+<!-- =============================================
+     CURSO4-ENGLISH-VOCAB.HTML — Menús de Vocabulary
+     de 4º (topics + unit). Las categorías y palabras
+     en sí viven en data/curso4/english-vocab.json,
+     no aquí — por eso este archivo casi no crece.
+     Hermano de curso4-english.html — ver la cabecera
+     de ese archivo para el reparto completo.
+     ============================================= -->
+
+<!-- VOCABULARY MENU (4º) -->
+<div class="screen" id="s-english-vocab-c4">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-study-c4')">←</button><h1>Vocabulary</h1><span class="top-badge">📖 Read</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div id="vocab-topics-grid-c4"></div>
+  </div>
+</div>
+
+<!-- VOCABULARY UNIT (4º) -->
+<div class="screen" id="s-english-vocab-unit-c4">
+  <div class="topbar bg-blue" id="vocab-unit-topbar-c4"><button class="back-btn" onclick="go('s-english-vocab-c4')">←</button><h1 id="vocab-unit-title-c4">Topic</h1><span class="top-badge">📖 Read</span></div>
+  <div class="sa">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:0 16px 12px">
+      <div style="font-size:12px;color:var(--gray-400);font-weight:600">Tap a card to see the definition</div>
+      <button id="vocab-flip-all-btn-c4" onclick="vocabToggleAll()" style="padding:5px 12px;border-radius:20px;border:1.5px solid #BFDBFE;background:#EFF6FF;color:var(--blue);font-family:var(--f);font-weight:700;font-size:12px;cursor:pointer">Show all hints</button>
+    </div>
+    <div id="vocab-cards-grid-c4" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:0 16px 24px"></div>
+  </div>
+</div>
