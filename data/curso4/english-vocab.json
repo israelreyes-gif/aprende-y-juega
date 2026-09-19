@@ -6,21 +6,96 @@
       "emoji": "👨‍👩‍👧‍👦",
       "color": "pink",
       "words": [
-        { "word": "MOTHER", "emoji": "👩", "hint": "A female parent", "es": "Madre" },
-        { "word": "FATHER", "emoji": "👨", "hint": "A male parent", "es": "Padre" },
-        { "word": "SISTER", "emoji": "👧", "hint": "A girl in your family", "es": "Hermana" },
-        { "word": "BROTHER", "emoji": "👦", "hint": "A boy in your family", "es": "Hermano" },
-        { "word": "GRANDMOTHER", "emoji": "👵", "hint": "Your mother's or father's mother", "es": "Abuela" },
-        { "word": "GRANDFATHER", "emoji": "👴", "hint": "Your mother's or father's father", "es": "Abuelo" },
-        { "word": "AUNT", "emoji": "👩‍🦰", "hint": "Your parent's sister", "es": "Tía" },
-        { "word": "UNCLE", "emoji": "👨‍🦰", "hint": "Your parent's brother", "es": "Tío" },
-        { "word": "COUSIN", "emoji": "🧑", "hint": "Your aunt's or uncle's child", "es": "Primo/a" },
-        { "word": "SON", "emoji": "👦", "hint": "A parent's male child", "es": "Hijo" },
-        { "word": "DAUGHTER", "emoji": "👧", "hint": "A parent's female child", "es": "Hija" },
-        { "word": "BABY", "emoji": "👶", "hint": "A very young child", "es": "Bebé" },
-        { "word": "PARENTS", "emoji": "👪", "hint": "Your mother and father", "es": "Padres" },
-        { "word": "HUSBAND", "emoji": "🤵", "hint": "A woman's married partner", "es": "Esposo" },
-        { "word": "WIFE", "emoji": "👰", "hint": "A man's married partner", "es": "Esposa" }
+        {
+          "word": "MOTHER",
+          "emoji": "👩",
+          "hint": "A female parent",
+          "es": "Madre"
+        },
+        {
+          "word": "FATHER",
+          "emoji": "👨",
+          "hint": "A male parent",
+          "es": "Padre"
+        },
+        {
+          "word": "SISTER",
+          "emoji": "👧",
+          "hint": "A girl in your family",
+          "es": "Hermana"
+        },
+        {
+          "word": "BROTHER",
+          "emoji": "👦",
+          "hint": "A boy in your family",
+          "es": "Hermano"
+        },
+        {
+          "word": "GRANDMOTHER",
+          "emoji": "👵",
+          "hint": "Your mother's or father's mother",
+          "es": "Abuela"
+        },
+        {
+          "word": "GRANDFATHER",
+          "emoji": "👴",
+          "hint": "Your mother's or father's father",
+          "es": "Abuelo"
+        },
+        {
+          "word": "AUNT",
+          "emoji": "👩‍🦰",
+          "hint": "Your parent's sister",
+          "es": "Tía"
+        },
+        {
+          "word": "UNCLE",
+          "emoji": "👨‍🦰",
+          "hint": "Your parent's brother",
+          "es": "Tío"
+        },
+        {
+          "word": "COUSIN",
+          "emoji": "🧑",
+          "hint": "Your aunt's or uncle's child",
+          "es": "Primo/a"
+        },
+        {
+          "word": "SON",
+          "emoji": "👦",
+          "hint": "A parent's male child",
+          "es": "Hijo"
+        },
+        {
+          "word": "DAUGHTER",
+          "emoji": "👧",
+          "hint": "A parent's female child",
+          "es": "Hija"
+        },
+        {
+          "word": "BABY",
+          "emoji": "👶",
+          "hint": "A very young child",
+          "es": "Bebé"
+        },
+        {
+          "word": "PARENTS",
+          "emoji": "👪",
+          "hint": "Your mother and father",
+          "es": "Padres"
+        },
+        {
+          "word": "HUSBAND",
+          "emoji": "🤵",
+          "hint": "A woman's married partner",
+          "es": "Esposo"
+        },
+        {
+          "word": "WIFE",
+          "emoji": "👰",
+          "hint": "A man's married partner",
+          "es": "Esposa"
+        }
       ]
     },
     {
@@ -29,21 +104,222 @@
       "emoji": "🏫",
       "color": "blue",
       "words": [
-        { "word": "TEACHER", "emoji": "👩‍🏫", "hint": "A person who teaches you", "es": "Profesor/a" },
-        { "word": "STUDENT", "emoji": "🧑‍🎓", "hint": "A person who studies", "es": "Estudiante" },
-        { "word": "CLASSROOM", "emoji": "🏫", "hint": "The room where you study", "es": "Aula" },
-        { "word": "BOOK", "emoji": "📖", "hint": "You read it", "es": "Libro" },
-        { "word": "PENCIL", "emoji": "✏️", "hint": "You write with it", "es": "Lápiz" },
-        { "word": "PEN", "emoji": "🖊️", "hint": "You write with it, has ink", "es": "Bolígrafo" },
-        { "word": "DESK", "emoji": "🗄️", "hint": "Your table for studying", "es": "Pupitre" },
-        { "word": "CHAIR", "emoji": "🪑", "hint": "You sit on it", "es": "Silla" },
-        { "word": "BACKPACK", "emoji": "🎒", "hint": "You carry your school things in it", "es": "Mochila" },
-        { "word": "BLACKBOARD", "emoji": "⬛", "hint": "The teacher writes on it", "es": "Pizarra" },
-        { "word": "RULER", "emoji": "📏", "hint": "You measure with it", "es": "Regla" },
-        { "word": "ERASER", "emoji": "🧼", "hint": "Removes pencil marks", "es": "Goma" },
-        { "word": "NOTEBOOK", "emoji": "📓", "hint": "You write notes in it", "es": "Cuaderno" },
-        { "word": "HOMEWORK", "emoji": "📝", "hint": "School work you do at home", "es": "Deberes" },
-        { "word": "PLAYGROUND", "emoji": "🛝", "hint": "Where you play at school", "es": "Patio" }
+        {
+          "word": "TEACHER",
+          "emoji": "👩‍🏫",
+          "hint": "A person who teaches you",
+          "es": "Profesor/a"
+        },
+        {
+          "word": "STUDENT",
+          "emoji": "🧑‍🎓",
+          "hint": "A person who studies",
+          "es": "Estudiante"
+        },
+        {
+          "word": "CLASSROOM",
+          "emoji": "🏫",
+          "hint": "The room where you study",
+          "es": "Aula"
+        },
+        {
+          "word": "BOOK",
+          "emoji": "📖",
+          "hint": "You read it",
+          "es": "Libro"
+        },
+        {
+          "word": "PENCIL",
+          "emoji": "✏️",
+          "hint": "You write with it",
+          "es": "Lápiz"
+        },
+        {
+          "word": "PEN",
+          "emoji": "🖊️",
+          "hint": "You write with it, has ink",
+          "es": "Bolígrafo"
+        },
+        {
+          "word": "DESK",
+          "emoji": "🗄️",
+          "hint": "Your table for studying",
+          "es": "Pupitre"
+        },
+        {
+          "word": "CHAIR",
+          "emoji": "🪑",
+          "hint": "You sit on it",
+          "es": "Silla"
+        },
+        {
+          "word": "BACKPACK",
+          "emoji": "🎒",
+          "hint": "You carry your school things in it",
+          "es": "Mochila"
+        },
+        {
+          "word": "BLACKBOARD",
+          "emoji": "⬛",
+          "hint": "The teacher writes on it",
+          "es": "Pizarra"
+        },
+        {
+          "word": "RULER",
+          "emoji": "📏",
+          "hint": "You measure with it",
+          "es": "Regla"
+        },
+        {
+          "word": "ERASER",
+          "emoji": "🧼",
+          "hint": "Removes pencil marks",
+          "es": "Goma"
+        },
+        {
+          "word": "NOTEBOOK",
+          "emoji": "📓",
+          "hint": "You write notes in it",
+          "es": "Cuaderno"
+        },
+        {
+          "word": "HOMEWORK",
+          "emoji": "📝",
+          "hint": "School work you do at home",
+          "es": "Deberes"
+        },
+        {
+          "word": "PLAYGROUND",
+          "emoji": "🛝",
+          "hint": "Where you play at school",
+          "es": "Patio"
+        },
+        {
+          "word": "ART",
+          "emoji": "🎨",
+          "hint": "The subject where you draw and paint",
+          "es": "Plástica / Arte"
+        },
+        {
+          "word": "BREAK",
+          "emoji": "⏰",
+          "hint": "A short rest between lessons",
+          "es": "Recreo"
+        },
+        {
+          "word": "GEOGRAPHY",
+          "emoji": "🗺️",
+          "hint": "The subject about countries and maps",
+          "es": "Geografía"
+        },
+        {
+          "word": "HISTORY",
+          "emoji": "📜",
+          "hint": "The subject about the past",
+          "es": "Historia"
+        },
+        {
+          "word": "IT",
+          "emoji": "💻",
+          "hint": "The subject about computers",
+          "es": "Informática"
+        },
+        {
+          "word": "LANGUAGE",
+          "emoji": "🗣️",
+          "hint": "The subject about words, like English",
+          "es": "Idioma"
+        },
+        {
+          "word": "MATHS",
+          "emoji": "🔢",
+          "hint": "The subject with numbers",
+          "es": "Matemáticas"
+        },
+        {
+          "word": "MUSIC",
+          "emoji": "🎵",
+          "hint": "The subject where you sing and play instruments",
+          "es": "Música"
+        },
+        {
+          "word": "SCIENCE",
+          "emoji": "🔬",
+          "hint": "The subject about how things work",
+          "es": "Ciencias"
+        },
+        {
+          "word": "SPORT",
+          "emoji": "⚽",
+          "hint": "The subject where you exercise",
+          "es": "Deporte"
+        },
+        {
+          "word": "TIMETABLE",
+          "emoji": "🗓️",
+          "hint": "Shows what lessons you have and when",
+          "es": "Horario"
+        },
+        {
+          "word": "APP",
+          "emoji": "📱",
+          "hint": "A program on your phone or tablet",
+          "es": "Aplicación"
+        },
+        {
+          "word": "BIN",
+          "emoji": "🗑️",
+          "hint": "You put rubbish in this",
+          "es": "Papelera"
+        },
+        {
+          "word": "DICTIONARY",
+          "emoji": "📚",
+          "hint": "A book that explains what words mean",
+          "es": "Diccionario"
+        },
+        {
+          "word": "E-BOOK",
+          "emoji": "📱",
+          "hint": "A book you read on a screen",
+          "es": "Libro electrónico"
+        },
+        {
+          "word": "GLUE",
+          "emoji": "🧴",
+          "hint": "Sticky liquid used to stick paper",
+          "es": "Pegamento"
+        },
+        {
+          "word": "INTERNET",
+          "emoji": "🌐",
+          "hint": "A network that connects computers",
+          "es": "Internet"
+        },
+        {
+          "word": "LAPTOP",
+          "emoji": "💻",
+          "hint": "A small portable computer",
+          "es": "Portátil"
+        },
+        {
+          "word": "RUCKSACK",
+          "emoji": "🎒",
+          "hint": "A bag you carry on your back",
+          "es": "Mochila"
+        },
+        {
+          "word": "SCISSORS",
+          "emoji": "✂️",
+          "hint": "You use this to cut paper",
+          "es": "Tijeras"
+        },
+        {
+          "word": "WEBSITE",
+          "emoji": "🌐",
+          "hint": "A page you visit on the internet",
+          "es": "Página web"
+        }
       ]
     },
     {
@@ -52,21 +328,132 @@
       "emoji": "👩‍⚕️",
       "color": "purple",
       "words": [
-        { "word": "DOCTOR", "emoji": "👩‍⚕️", "hint": "Helps sick people", "es": "Médico/a" },
-        { "word": "TEACHER", "emoji": "👩‍🏫", "hint": "Teaches children at school", "es": "Profesor/a" },
-        { "word": "FIREFIGHTER", "emoji": "👨‍🚒", "hint": "Puts out fires", "es": "Bombero/a" },
-        { "word": "POLICE OFFICER", "emoji": "👮", "hint": "Keeps people safe", "es": "Policía" },
-        { "word": "NURSE", "emoji": "👩‍⚕️", "hint": "Helps doctors care for patients", "es": "Enfermero/a" },
-        { "word": "CHEF", "emoji": "👨‍🍳", "hint": "Cooks food in a restaurant", "es": "Cocinero/a" },
-        { "word": "FARMER", "emoji": "👨‍🌾", "hint": "Grows food on a farm", "es": "Granjero/a" },
-        { "word": "BUILDER", "emoji": "👷", "hint": "Builds houses and buildings", "es": "Albañil" },
-        { "word": "DENTIST", "emoji": "🦷", "hint": "Takes care of your teeth", "es": "Dentista" },
-        { "word": "VET", "emoji": "🐾", "hint": "Takes care of sick animals", "es": "Veterinario/a" },
-        { "word": "PILOT", "emoji": "✈️", "hint": "Flies an aeroplane", "es": "Piloto" },
-        { "word": "ARTIST", "emoji": "🎨", "hint": "Creates paintings or art", "es": "Artista" },
-        { "word": "SINGER", "emoji": "🎤", "hint": "Sings songs", "es": "Cantante" },
-        { "word": "WAITER", "emoji": "🧑‍🍽️", "hint": "Serves food in a restaurant", "es": "Camarero/a" },
-        { "word": "MECHANIC", "emoji": "🔧", "hint": "Repairs cars and engines", "es": "Mecánico/a" }
+        {
+          "word": "DOCTOR",
+          "emoji": "👩‍⚕️",
+          "hint": "Helps sick people",
+          "es": "Médico/a"
+        },
+        {
+          "word": "TEACHER",
+          "emoji": "👩‍🏫",
+          "hint": "Teaches children at school",
+          "es": "Profesor/a"
+        },
+        {
+          "word": "FIREFIGHTER",
+          "emoji": "👨‍🚒",
+          "hint": "Puts out fires",
+          "es": "Bombero/a"
+        },
+        {
+          "word": "POLICE OFFICER",
+          "emoji": "👮",
+          "hint": "Keeps people safe",
+          "es": "Policía"
+        },
+        {
+          "word": "NURSE",
+          "emoji": "👩‍⚕️",
+          "hint": "Helps doctors care for patients",
+          "es": "Enfermero/a"
+        },
+        {
+          "word": "CHEF",
+          "emoji": "👨‍🍳",
+          "hint": "Cooks food in a restaurant",
+          "es": "Cocinero/a"
+        },
+        {
+          "word": "FARMER",
+          "emoji": "👨‍🌾",
+          "hint": "Grows food on a farm",
+          "es": "Granjero/a"
+        },
+        {
+          "word": "BUILDER",
+          "emoji": "👷",
+          "hint": "Builds houses and buildings",
+          "es": "Albañil"
+        },
+        {
+          "word": "DENTIST",
+          "emoji": "🦷",
+          "hint": "Takes care of your teeth",
+          "es": "Dentista"
+        },
+        {
+          "word": "VET",
+          "emoji": "🐾",
+          "hint": "Takes care of sick animals",
+          "es": "Veterinario/a"
+        },
+        {
+          "word": "PILOT",
+          "emoji": "✈️",
+          "hint": "Flies an aeroplane",
+          "es": "Piloto"
+        },
+        {
+          "word": "ARTIST",
+          "emoji": "🎨",
+          "hint": "Creates paintings or art",
+          "es": "Artista"
+        },
+        {
+          "word": "SINGER",
+          "emoji": "🎤",
+          "hint": "Sings songs",
+          "es": "Cantante"
+        },
+        {
+          "word": "WAITER",
+          "emoji": "🧑‍🍽️",
+          "hint": "Serves food in a restaurant",
+          "es": "Camarero/a"
+        },
+        {
+          "word": "MECHANIC",
+          "emoji": "🔧",
+          "hint": "Repairs cars and engines",
+          "es": "Mecánico/a"
+        },
+        {
+          "word": "ACTOR",
+          "emoji": "🎭",
+          "hint": "Performs in films or plays",
+          "es": "Actor"
+        },
+        {
+          "word": "COOK",
+          "emoji": "👨‍🍳",
+          "hint": "Prepares food",
+          "es": "Cocinero"
+        },
+        {
+          "word": "DESIGNER",
+          "emoji": "🎨",
+          "hint": "Creates the look of things",
+          "es": "Diseñador"
+        },
+        {
+          "word": "DRIVER",
+          "emoji": "🚗",
+          "hint": "Drives a car or bus",
+          "es": "Conductor"
+        },
+        {
+          "word": "PHOTOGRAPHER",
+          "emoji": "📷",
+          "hint": "Takes photos",
+          "es": "Fotógrafo"
+        },
+        {
+          "word": "JOURNALIST",
+          "emoji": "📰",
+          "hint": "Writes news stories",
+          "es": "Periodista"
+        }
       ]
     },
     {
@@ -75,21 +462,96 @@
       "emoji": "🏠",
       "color": "amber",
       "words": [
-        { "word": "KITCHEN", "emoji": "🍳", "hint": "Where you cook food", "es": "Cocina" },
-        { "word": "BEDROOM", "emoji": "🛏️", "hint": "Where you sleep", "es": "Dormitorio" },
-        { "word": "BATHROOM", "emoji": "🚿", "hint": "Where you wash", "es": "Baño" },
-        { "word": "LIVING ROOM", "emoji": "🛋️", "hint": "Where the family relaxes", "es": "Salón" },
-        { "word": "GARDEN", "emoji": "🌳", "hint": "Outside area with plants", "es": "Jardín" },
-        { "word": "DOOR", "emoji": "🚪", "hint": "You open it to go in", "es": "Puerta" },
-        { "word": "WINDOW", "emoji": "🪟", "hint": "Lets light into the house", "es": "Ventana" },
-        { "word": "ROOF", "emoji": "🏠", "hint": "The top of a house", "es": "Tejado" },
-        { "word": "STAIRS", "emoji": "🪜", "hint": "You climb them to go up", "es": "Escaleras" },
-        { "word": "GARAGE", "emoji": "🚗", "hint": "Where you keep the car", "es": "Garaje" },
-        { "word": "TABLE", "emoji": "🍽️", "hint": "You eat at it", "es": "Mesa" },
-        { "word": "SOFA", "emoji": "🛋️", "hint": "You sit on it to relax", "es": "Sofá" },
-        { "word": "BED", "emoji": "🛏️", "hint": "You sleep in it", "es": "Cama" },
-        { "word": "LAMP", "emoji": "💡", "hint": "Gives light", "es": "Lámpara" },
-        { "word": "WALL", "emoji": "🧱", "hint": "The side of a room", "es": "Pared" }
+        {
+          "word": "KITCHEN",
+          "emoji": "🍳",
+          "hint": "Where you cook food",
+          "es": "Cocina"
+        },
+        {
+          "word": "BEDROOM",
+          "emoji": "🛏️",
+          "hint": "Where you sleep",
+          "es": "Dormitorio"
+        },
+        {
+          "word": "BATHROOM",
+          "emoji": "🚿",
+          "hint": "Where you wash",
+          "es": "Baño"
+        },
+        {
+          "word": "LIVING ROOM",
+          "emoji": "🛋️",
+          "hint": "Where the family relaxes",
+          "es": "Salón"
+        },
+        {
+          "word": "GARDEN",
+          "emoji": "🌳",
+          "hint": "Outside area with plants",
+          "es": "Jardín"
+        },
+        {
+          "word": "DOOR",
+          "emoji": "🚪",
+          "hint": "You open it to go in",
+          "es": "Puerta"
+        },
+        {
+          "word": "WINDOW",
+          "emoji": "🪟",
+          "hint": "Lets light into the house",
+          "es": "Ventana"
+        },
+        {
+          "word": "ROOF",
+          "emoji": "🏠",
+          "hint": "The top of a house",
+          "es": "Tejado"
+        },
+        {
+          "word": "STAIRS",
+          "emoji": "🪜",
+          "hint": "You climb them to go up",
+          "es": "Escaleras"
+        },
+        {
+          "word": "GARAGE",
+          "emoji": "🚗",
+          "hint": "Where you keep the car",
+          "es": "Garaje"
+        },
+        {
+          "word": "TABLE",
+          "emoji": "🍽️",
+          "hint": "You eat at it",
+          "es": "Mesa"
+        },
+        {
+          "word": "SOFA",
+          "emoji": "🛋️",
+          "hint": "You sit on it to relax",
+          "es": "Sofá"
+        },
+        {
+          "word": "BED",
+          "emoji": "🛏️",
+          "hint": "You sleep in it",
+          "es": "Cama"
+        },
+        {
+          "word": "LAMP",
+          "emoji": "💡",
+          "hint": "Gives light",
+          "es": "Lámpara"
+        },
+        {
+          "word": "WALL",
+          "emoji": "🧱",
+          "hint": "The side of a room",
+          "es": "Pared"
+        }
       ]
     },
     {
@@ -98,21 +560,156 @@
       "emoji": "🍽️",
       "color": "orange",
       "words": [
-        { "word": "BREAD", "emoji": "🍞", "hint": "Made from baked flour", "es": "Pan" },
-        { "word": "RICE", "emoji": "🍚", "hint": "Small white grains", "es": "Arroz" },
-        { "word": "MILK", "emoji": "🥛", "hint": "A white drink from cows", "es": "Leche" },
-        { "word": "CHEESE", "emoji": "🧀", "hint": "Made from milk", "es": "Queso" },
-        { "word": "EGG", "emoji": "🥚", "hint": "Laid by chickens", "es": "Huevo" },
-        { "word": "MEAT", "emoji": "🥩", "hint": "Food from an animal", "es": "Carne" },
-        { "word": "FISH", "emoji": "🐟", "hint": "Food from the sea", "es": "Pescado" },
-        { "word": "SOUP", "emoji": "🍲", "hint": "A warm liquid food", "es": "Sopa" },
-        { "word": "PASTA", "emoji": "🍝", "hint": "Italian food, long and thin", "es": "Pasta" },
-        { "word": "SALAD", "emoji": "🥗", "hint": "Mixed vegetables", "es": "Ensalada" },
-        { "word": "WATER", "emoji": "💧", "hint": "You drink it every day", "es": "Agua" },
-        { "word": "JUICE", "emoji": "🧃", "hint": "A drink made from fruit", "es": "Zumo" },
-        { "word": "SANDWICH", "emoji": "🥪", "hint": "Bread with filling inside", "es": "Bocadillo" },
-        { "word": "CEREAL", "emoji": "🥣", "hint": "Eaten for breakfast with milk", "es": "Cereales" },
-        { "word": "PIZZA", "emoji": "🍕", "hint": "Italian food with cheese and tomato", "es": "Pizza" }
+        {
+          "word": "BREAD",
+          "emoji": "🍞",
+          "hint": "Made from baked flour",
+          "es": "Pan"
+        },
+        {
+          "word": "RICE",
+          "emoji": "🍚",
+          "hint": "Small white grains",
+          "es": "Arroz"
+        },
+        {
+          "word": "MILK",
+          "emoji": "🥛",
+          "hint": "A white drink from cows",
+          "es": "Leche"
+        },
+        {
+          "word": "CHEESE",
+          "emoji": "🧀",
+          "hint": "Made from milk",
+          "es": "Queso"
+        },
+        {
+          "word": "EGG",
+          "emoji": "🥚",
+          "hint": "Laid by chickens",
+          "es": "Huevo"
+        },
+        {
+          "word": "MEAT",
+          "emoji": "🥩",
+          "hint": "Food from an animal",
+          "es": "Carne"
+        },
+        {
+          "word": "FISH",
+          "emoji": "🐟",
+          "hint": "Food from the sea",
+          "es": "Pescado"
+        },
+        {
+          "word": "SOUP",
+          "emoji": "🍲",
+          "hint": "A warm liquid food",
+          "es": "Sopa"
+        },
+        {
+          "word": "PASTA",
+          "emoji": "🍝",
+          "hint": "Italian food, long and thin",
+          "es": "Pasta"
+        },
+        {
+          "word": "SALAD",
+          "emoji": "🥗",
+          "hint": "Mixed vegetables",
+          "es": "Ensalada"
+        },
+        {
+          "word": "WATER",
+          "emoji": "💧",
+          "hint": "You drink it every day",
+          "es": "Agua"
+        },
+        {
+          "word": "JUICE",
+          "emoji": "🧃",
+          "hint": "A drink made from fruit",
+          "es": "Zumo"
+        },
+        {
+          "word": "SANDWICH",
+          "emoji": "🥪",
+          "hint": "Bread with filling inside",
+          "es": "Bocadillo"
+        },
+        {
+          "word": "CEREAL",
+          "emoji": "🥣",
+          "hint": "Eaten for breakfast with milk",
+          "es": "Cereales"
+        },
+        {
+          "word": "PIZZA",
+          "emoji": "🍕",
+          "hint": "Italian food with cheese and tomato",
+          "es": "Pizza"
+        },
+        {
+          "word": "COFFEE",
+          "emoji": "☕",
+          "hint": "A hot brown drink",
+          "es": "Café"
+        },
+        {
+          "word": "TEA",
+          "emoji": "🍵",
+          "hint": "A hot drink, popular in the UK",
+          "es": "Té"
+        },
+        {
+          "word": "CUP",
+          "emoji": "🥤",
+          "hint": "You drink from this",
+          "es": "Taza"
+        },
+        {
+          "word": "GLASS",
+          "emoji": "🥛",
+          "hint": "You drink water from this",
+          "es": "Vaso"
+        },
+        {
+          "word": "MILKSHAKE",
+          "emoji": "🍹",
+          "hint": "A sweet drink made with milk",
+          "es": "Batido"
+        },
+        {
+          "word": "NOODLES",
+          "emoji": "🍜",
+          "hint": "Long thin food, eaten with a fork",
+          "es": "Fideos"
+        },
+        {
+          "word": "PANCAKE",
+          "emoji": "🥞",
+          "hint": "Flat and round, eaten for breakfast",
+          "es": "Tortita"
+        },
+        {
+          "word": "SAUCE",
+          "emoji": "🥫",
+          "hint": "A liquid you put on food",
+          "es": "Salsa"
+        },
+        {
+          "word": "STRAWBERRY",
+          "emoji": "🍓",
+          "hint": "A small red fruit",
+          "es": "Fresa"
+        },
+        {
+          "word": "YOGHURT",
+          "emoji": "🥣",
+          "hint": "A creamy dairy food",
+          "es": "Yogur"
+        }
       ]
     },
     {
@@ -121,21 +718,96 @@
       "emoji": "🐶",
       "color": "green",
       "words": [
-        { "word": "DOG", "emoji": "🐶", "hint": "A common pet that barks", "es": "Perro" },
-        { "word": "CAT", "emoji": "🐱", "hint": "A common pet that says meow", "es": "Gato" },
-        { "word": "HORSE", "emoji": "🐴", "hint": "You can ride it", "es": "Caballo" },
-        { "word": "COW", "emoji": "🐮", "hint": "Gives us milk", "es": "Vaca" },
-        { "word": "PIG", "emoji": "🐷", "hint": "Lives on a farm, says oink", "es": "Cerdo" },
-        { "word": "SHEEP", "emoji": "🐑", "hint": "Gives us wool", "es": "Oveja" },
-        { "word": "CHICKEN", "emoji": "🐔", "hint": "Gives us eggs", "es": "Gallina" },
-        { "word": "LION", "emoji": "🦁", "hint": "The king of the jungle", "es": "León" },
-        { "word": "ELEPHANT", "emoji": "🐘", "hint": "A very big animal with a trunk", "es": "Elefante" },
-        { "word": "TIGER", "emoji": "🐯", "hint": "A big cat with stripes", "es": "Tigre" },
-        { "word": "BEAR", "emoji": "🐻", "hint": "A big furry wild animal", "es": "Oso" },
-        { "word": "RABBIT", "emoji": "🐰", "hint": "A small animal with long ears", "es": "Conejo" },
-        { "word": "BIRD", "emoji": "🐦", "hint": "It can fly", "es": "Pájaro" },
-        { "word": "FISH", "emoji": "🐟", "hint": "Lives and swims in water", "es": "Pez" },
-        { "word": "MONKEY", "emoji": "🐵", "hint": "Likes to climb trees", "es": "Mono" }
+        {
+          "word": "DOG",
+          "emoji": "🐶",
+          "hint": "A common pet that barks",
+          "es": "Perro"
+        },
+        {
+          "word": "CAT",
+          "emoji": "🐱",
+          "hint": "A common pet that says meow",
+          "es": "Gato"
+        },
+        {
+          "word": "HORSE",
+          "emoji": "🐴",
+          "hint": "You can ride it",
+          "es": "Caballo"
+        },
+        {
+          "word": "COW",
+          "emoji": "🐮",
+          "hint": "Gives us milk",
+          "es": "Vaca"
+        },
+        {
+          "word": "PIG",
+          "emoji": "🐷",
+          "hint": "Lives on a farm, says oink",
+          "es": "Cerdo"
+        },
+        {
+          "word": "SHEEP",
+          "emoji": "🐑",
+          "hint": "Gives us wool",
+          "es": "Oveja"
+        },
+        {
+          "word": "CHICKEN",
+          "emoji": "🐔",
+          "hint": "Gives us eggs",
+          "es": "Gallina"
+        },
+        {
+          "word": "LION",
+          "emoji": "🦁",
+          "hint": "The king of the jungle",
+          "es": "León"
+        },
+        {
+          "word": "ELEPHANT",
+          "emoji": "🐘",
+          "hint": "A very big animal with a trunk",
+          "es": "Elefante"
+        },
+        {
+          "word": "TIGER",
+          "emoji": "🐯",
+          "hint": "A big cat with stripes",
+          "es": "Tigre"
+        },
+        {
+          "word": "BEAR",
+          "emoji": "🐻",
+          "hint": "A big furry wild animal",
+          "es": "Oso"
+        },
+        {
+          "word": "RABBIT",
+          "emoji": "🐰",
+          "hint": "A small animal with long ears",
+          "es": "Conejo"
+        },
+        {
+          "word": "BIRD",
+          "emoji": "🐦",
+          "hint": "It can fly",
+          "es": "Pájaro"
+        },
+        {
+          "word": "FISH",
+          "emoji": "🐟",
+          "hint": "Lives and swims in water",
+          "es": "Pez"
+        },
+        {
+          "word": "MONKEY",
+          "emoji": "🐵",
+          "hint": "Likes to climb trees",
+          "es": "Mono"
+        }
       ]
     },
     {
@@ -144,21 +816,120 @@
       "emoji": "🧍",
       "color": "red",
       "words": [
-        { "word": "HEAD", "emoji": "😀", "hint": "The top part of your body", "es": "Cabeza" },
-        { "word": "HAIR", "emoji": "💇", "hint": "Grows on your head", "es": "Pelo" },
-        { "word": "EYES", "emoji": "👀", "hint": "You see with them", "es": "Ojos" },
-        { "word": "NOSE", "emoji": "👃", "hint": "You smell with it", "es": "Nariz" },
-        { "word": "MOUTH", "emoji": "👄", "hint": "You eat and talk with it", "es": "Boca" },
-        { "word": "EARS", "emoji": "👂", "hint": "You hear with them", "es": "Orejas" },
-        { "word": "ARMS", "emoji": "💪", "hint": "Connect your hands to your body", "es": "Brazos" },
-        { "word": "HANDS", "emoji": "✋", "hint": "You use them to hold things", "es": "Manos" },
-        { "word": "LEGS", "emoji": "🦵", "hint": "You walk with them", "es": "Piernas" },
-        { "word": "FEET", "emoji": "🦶", "hint": "At the end of your legs", "es": "Pies" },
-        { "word": "FINGERS", "emoji": "🖐️", "hint": "On your hands", "es": "Dedos" },
-        { "word": "BACK", "emoji": "🧍", "hint": "Behind your body", "es": "Espalda" },
-        { "word": "STOMACH", "emoji": "🫃", "hint": "Where your food goes", "es": "Estómago" },
-        { "word": "NECK", "emoji": "🧣", "hint": "Connects your head to your body", "es": "Cuello" },
-        { "word": "SHOULDERS", "emoji": "🤷", "hint": "Top of your arms", "es": "Hombros" }
+        {
+          "word": "HEAD",
+          "emoji": "😀",
+          "hint": "The top part of your body",
+          "es": "Cabeza"
+        },
+        {
+          "word": "HAIR",
+          "emoji": "💇",
+          "hint": "Grows on your head",
+          "es": "Pelo"
+        },
+        {
+          "word": "EYES",
+          "emoji": "👀",
+          "hint": "You see with them",
+          "es": "Ojos"
+        },
+        {
+          "word": "NOSE",
+          "emoji": "👃",
+          "hint": "You smell with it",
+          "es": "Nariz"
+        },
+        {
+          "word": "MOUTH",
+          "emoji": "👄",
+          "hint": "You eat and talk with it",
+          "es": "Boca"
+        },
+        {
+          "word": "EARS",
+          "emoji": "👂",
+          "hint": "You hear with them",
+          "es": "Orejas"
+        },
+        {
+          "word": "ARMS",
+          "emoji": "💪",
+          "hint": "Connect your hands to your body",
+          "es": "Brazos"
+        },
+        {
+          "word": "HANDS",
+          "emoji": "✋",
+          "hint": "You use them to hold things",
+          "es": "Manos"
+        },
+        {
+          "word": "LEGS",
+          "emoji": "🦵",
+          "hint": "You walk with them",
+          "es": "Piernas"
+        },
+        {
+          "word": "FEET",
+          "emoji": "🦶",
+          "hint": "At the end of your legs",
+          "es": "Pies"
+        },
+        {
+          "word": "FINGERS",
+          "emoji": "🖐️",
+          "hint": "On your hands",
+          "es": "Dedos"
+        },
+        {
+          "word": "BACK",
+          "emoji": "🧍",
+          "hint": "Behind your body",
+          "es": "Espalda"
+        },
+        {
+          "word": "STOMACH",
+          "emoji": "🫃",
+          "hint": "Where your food goes",
+          "es": "Estómago"
+        },
+        {
+          "word": "NECK",
+          "emoji": "🧣",
+          "hint": "Connects your head to your body",
+          "es": "Cuello"
+        },
+        {
+          "word": "SHOULDERS",
+          "emoji": "🤷",
+          "hint": "Top of your arms",
+          "es": "Hombros"
+        },
+        {
+          "word": "BANDAGE",
+          "emoji": "🩹",
+          "hint": "You put this on a cut",
+          "es": "Tirita"
+        },
+        {
+          "word": "ELBOW",
+          "emoji": "💪",
+          "hint": "The joint in the middle of your arm",
+          "es": "Codo"
+        },
+        {
+          "word": "KNEE",
+          "emoji": "🦵",
+          "hint": "The joint in the middle of your leg",
+          "es": "Rodilla"
+        },
+        {
+          "word": "TOE",
+          "emoji": "🦶",
+          "hint": "You have five on each foot",
+          "es": "Dedo del pie"
+        }
       ]
     },
     {
@@ -167,21 +938,180 @@
       "emoji": "🏞️",
       "color": "teal",
       "words": [
-        { "word": "MOUNTAIN", "emoji": "⛰️", "hint": "A very tall hill", "es": "Montaña" },
-        { "word": "RIVER", "emoji": "🏞️", "hint": "Flowing water that reaches the sea", "es": "Río" },
-        { "word": "FOREST", "emoji": "🌲", "hint": "Lots of trees together", "es": "Bosque" },
-        { "word": "BEACH", "emoji": "🏖️", "hint": "Sandy area next to the sea", "es": "Playa" },
-        { "word": "SEA", "emoji": "🌊", "hint": "Big area of salt water", "es": "Mar" },
-        { "word": "LAKE", "emoji": "💧", "hint": "Water surrounded by land", "es": "Lago" },
-        { "word": "SKY", "emoji": "🌤️", "hint": "Above us, where clouds are", "es": "Cielo" },
-        { "word": "SUN", "emoji": "☀️", "hint": "Gives us light and heat", "es": "Sol" },
-        { "word": "CLOUD", "emoji": "☁️", "hint": "White, in the sky", "es": "Nube" },
-        { "word": "FIELD", "emoji": "🌾", "hint": "Open land, often with crops", "es": "Campo" },
-        { "word": "HILL", "emoji": "⛰️", "hint": "Raised land, smaller than a mountain", "es": "Colina" },
-        { "word": "ISLAND", "emoji": "🏝️", "hint": "Land surrounded by water", "es": "Isla" },
-        { "word": "DESERT", "emoji": "🏜️", "hint": "Hot, dry, sandy land", "es": "Desierto" },
-        { "word": "VALLEY", "emoji": "🏞️", "hint": "Low land between hills", "es": "Valle" },
-        { "word": "RAINBOW", "emoji": "🌈", "hint": "Colourful arc after rain", "es": "Arcoíris" }
+        {
+          "word": "MOUNTAIN",
+          "emoji": "⛰️",
+          "hint": "A very tall hill",
+          "es": "Montaña"
+        },
+        {
+          "word": "RIVER",
+          "emoji": "🏞️",
+          "hint": "Flowing water that reaches the sea",
+          "es": "Río"
+        },
+        {
+          "word": "FOREST",
+          "emoji": "🌲",
+          "hint": "Lots of trees together",
+          "es": "Bosque"
+        },
+        {
+          "word": "BEACH",
+          "emoji": "🏖️",
+          "hint": "Sandy area next to the sea",
+          "es": "Playa"
+        },
+        {
+          "word": "SEA",
+          "emoji": "🌊",
+          "hint": "Big area of salt water",
+          "es": "Mar"
+        },
+        {
+          "word": "LAKE",
+          "emoji": "💧",
+          "hint": "Water surrounded by land",
+          "es": "Lago"
+        },
+        {
+          "word": "SKY",
+          "emoji": "🌤️",
+          "hint": "Above us, where clouds are",
+          "es": "Cielo"
+        },
+        {
+          "word": "SUN",
+          "emoji": "☀️",
+          "hint": "Gives us light and heat",
+          "es": "Sol"
+        },
+        {
+          "word": "CLOUD",
+          "emoji": "☁️",
+          "hint": "White, in the sky",
+          "es": "Nube"
+        },
+        {
+          "word": "FIELD",
+          "emoji": "🌾",
+          "hint": "Open land, often with crops",
+          "es": "Campo"
+        },
+        {
+          "word": "HILL",
+          "emoji": "⛰️",
+          "hint": "Raised land, smaller than a mountain",
+          "es": "Colina"
+        },
+        {
+          "word": "ISLAND",
+          "emoji": "🏝️",
+          "hint": "Land surrounded by water",
+          "es": "Isla"
+        },
+        {
+          "word": "DESERT",
+          "emoji": "🏜️",
+          "hint": "Hot, dry, sandy land",
+          "es": "Desierto"
+        },
+        {
+          "word": "VALLEY",
+          "emoji": "🏞️",
+          "hint": "Low land between hills",
+          "es": "Valle"
+        },
+        {
+          "word": "RAINBOW",
+          "emoji": "🌈",
+          "hint": "Colourful arc after rain",
+          "es": "Arcoíris"
+        },
+        {
+          "word": "JUNGLE",
+          "emoji": "🌴",
+          "hint": "A hot forest with lots of trees",
+          "es": "Selva"
+        },
+        {
+          "word": "MOON",
+          "emoji": "🌙",
+          "hint": "You see this in the sky at night",
+          "es": "Luna"
+        },
+        {
+          "word": "PLANT",
+          "emoji": "🌱",
+          "hint": "It grows in the ground",
+          "es": "Planta"
+        },
+        {
+          "word": "STAR",
+          "emoji": "⭐",
+          "hint": "You see this in the sky at night",
+          "es": "Estrella"
+        },
+        {
+          "word": "WATERFALL",
+          "emoji": "💦",
+          "hint": "Water falling from a high place",
+          "es": "Cascada"
+        },
+        {
+          "word": "WAVE",
+          "emoji": "🌊",
+          "hint": "Moving water at the sea",
+          "es": "Ola"
+        },
+        {
+          "word": "WORLD",
+          "emoji": "🌍",
+          "hint": "Our planet",
+          "es": "Mundo"
+        },
+        {
+          "word": "EAST",
+          "emoji": "🧭",
+          "hint": "A direction, opposite of west",
+          "es": "Este"
+        },
+        {
+          "word": "LEFT",
+          "emoji": "⬅️",
+          "hint": "A direction, opposite of right",
+          "es": "Izquierda"
+        },
+        {
+          "word": "NORTH",
+          "emoji": "⬆️",
+          "hint": "A direction, opposite of south",
+          "es": "Norte"
+        },
+        {
+          "word": "RIGHT",
+          "emoji": "➡️",
+          "hint": "A direction, opposite of left",
+          "es": "Derecha"
+        },
+        {
+          "word": "STRAIGHT ON",
+          "emoji": "⬆️",
+          "hint": "Keep going forward",
+          "es": "Todo recto"
+        },
+        {
+          "word": "WEST",
+          "emoji": "🧭",
+          "hint": "A direction, opposite of east",
+          "es": "Oeste"
+        },
+        {
+          "word": "SOUTH",
+          "emoji": "⬇️",
+          "hint": "A direction, opposite of north",
+          "es": "Sur"
+        }
       ]
     },
     {
@@ -190,21 +1120,156 @@
       "emoji": "👕",
       "color": "indigo",
       "words": [
-        { "word": "SHIRT", "emoji": "👕", "hint": "You wear it on your top", "es": "Camisa" },
-        { "word": "TROUSERS", "emoji": "👖", "hint": "You wear them on your legs", "es": "Pantalones" },
-        { "word": "DRESS", "emoji": "👗", "hint": "A one-piece item girls wear", "es": "Vestido" },
-        { "word": "SKIRT", "emoji": "👗", "hint": "Worn from the waist down", "es": "Falda" },
-        { "word": "SHOES", "emoji": "👟", "hint": "You wear them on your feet", "es": "Zapatos" },
-        { "word": "SOCKS", "emoji": "🧦", "hint": "You wear them under your shoes", "es": "Calcetines" },
-        { "word": "JACKET", "emoji": "🧥", "hint": "A warm piece of clothing", "es": "Chaqueta" },
-        { "word": "COAT", "emoji": "🧥", "hint": "A long warm piece for winter", "es": "Abrigo" },
-        { "word": "HAT", "emoji": "🎩", "hint": "You wear it on your head", "es": "Sombrero" },
-        { "word": "GLOVES", "emoji": "🧤", "hint": "You wear them on your hands", "es": "Guantes" },
-        { "word": "SCARF", "emoji": "🧣", "hint": "You wear it around your neck", "es": "Bufanda" },
-        { "word": "JUMPER", "emoji": "🧶", "hint": "A warm knitted top", "es": "Jersey" },
-        { "word": "SHORTS", "emoji": "🩳", "hint": "Short trousers", "es": "Pantalones cortos" },
-        { "word": "PYJAMAS", "emoji": "🛌", "hint": "You wear them to sleep", "es": "Pijama" },
-        { "word": "BOOTS", "emoji": "👢", "hint": "Tall shoes, often for rain or cold", "es": "Botas" }
+        {
+          "word": "SHIRT",
+          "emoji": "👕",
+          "hint": "You wear it on your top",
+          "es": "Camisa"
+        },
+        {
+          "word": "TROUSERS",
+          "emoji": "👖",
+          "hint": "You wear them on your legs",
+          "es": "Pantalones"
+        },
+        {
+          "word": "DRESS",
+          "emoji": "👗",
+          "hint": "A one-piece item girls wear",
+          "es": "Vestido"
+        },
+        {
+          "word": "SKIRT",
+          "emoji": "👗",
+          "hint": "Worn from the waist down",
+          "es": "Falda"
+        },
+        {
+          "word": "SHOES",
+          "emoji": "👟",
+          "hint": "You wear them on your feet",
+          "es": "Zapatos"
+        },
+        {
+          "word": "SOCKS",
+          "emoji": "🧦",
+          "hint": "You wear them under your shoes",
+          "es": "Calcetines"
+        },
+        {
+          "word": "JACKET",
+          "emoji": "🧥",
+          "hint": "A warm piece of clothing",
+          "es": "Chaqueta"
+        },
+        {
+          "word": "COAT",
+          "emoji": "🧥",
+          "hint": "A long warm piece for winter",
+          "es": "Abrigo"
+        },
+        {
+          "word": "HAT",
+          "emoji": "🎩",
+          "hint": "You wear it on your head",
+          "es": "Sombrero"
+        },
+        {
+          "word": "GLOVES",
+          "emoji": "🧤",
+          "hint": "You wear them on your hands",
+          "es": "Guantes"
+        },
+        {
+          "word": "SCARF",
+          "emoji": "🧣",
+          "hint": "You wear it around your neck",
+          "es": "Bufanda"
+        },
+        {
+          "word": "JUMPER",
+          "emoji": "🧶",
+          "hint": "A warm knitted top",
+          "es": "Jersey"
+        },
+        {
+          "word": "SHORTS",
+          "emoji": "🩳",
+          "hint": "Short trousers",
+          "es": "Pantalones cortos"
+        },
+        {
+          "word": "PYJAMAS",
+          "emoji": "🛌",
+          "hint": "You wear them to sleep",
+          "es": "Pijama"
+        },
+        {
+          "word": "BOOTS",
+          "emoji": "👢",
+          "hint": "Tall shoes, often for rain or cold",
+          "es": "Botas"
+        },
+        {
+          "word": "BRIGHT",
+          "emoji": "🌟",
+          "hint": "Very colourful and light",
+          "es": "Vivo / brillante"
+        },
+        {
+          "word": "DARK",
+          "emoji": "🌑",
+          "hint": "Not light in colour",
+          "es": "Oscuro"
+        },
+        {
+          "word": "GOLD",
+          "emoji": "🥇",
+          "hint": "A shiny yellow colour",
+          "es": "Dorado"
+        },
+        {
+          "word": "LIGHT",
+          "emoji": "💡",
+          "hint": "Pale in colour",
+          "es": "Claro"
+        },
+        {
+          "word": "SILVER",
+          "emoji": "🥈",
+          "hint": "A shiny grey colour",
+          "es": "Plateado"
+        },
+        {
+          "word": "SPOT",
+          "emoji": "🔴",
+          "hint": "A small round mark",
+          "es": "Lunar / mancha"
+        },
+        {
+          "word": "SPOTTED",
+          "emoji": "🐆",
+          "hint": "Covered in spots, like a leopard",
+          "es": "Con lunares"
+        },
+        {
+          "word": "STRIPES",
+          "emoji": "🦓",
+          "hint": "Straight lines of colour",
+          "es": "Rayas"
+        },
+        {
+          "word": "STRIPED",
+          "emoji": "🐯",
+          "hint": "Covered in stripes, like a tiger",
+          "es": "A rayas"
+        },
+        {
+          "word": "WING",
+          "emoji": "🪽",
+          "hint": "Birds use this to fly",
+          "es": "Ala"
+        }
       ]
     },
     {
@@ -213,21 +1278,440 @@
       "emoji": "🍎",
       "color": "yellow",
       "words": [
-        { "word": "APPLE", "emoji": "🍎", "hint": "A round red or green fruit", "es": "Manzana" },
-        { "word": "BANANA", "emoji": "🍌", "hint": "A long yellow fruit", "es": "Plátano" },
-        { "word": "ORANGE", "emoji": "🍊", "hint": "A round orange fruit", "es": "Naranja" },
-        { "word": "STRAWBERRY", "emoji": "🍓", "hint": "A small red fruit", "es": "Fresa" },
-        { "word": "GRAPE", "emoji": "🍇", "hint": "Small fruit, grows in bunches", "es": "Uva" },
-        { "word": "PEAR", "emoji": "🍐", "hint": "A green fruit shaped like a bell", "es": "Pera" },
-        { "word": "WATERMELON", "emoji": "🍉", "hint": "A big fruit, green outside, red inside", "es": "Sandía" },
-        { "word": "PINEAPPLE", "emoji": "🍍", "hint": "A spiky tropical fruit", "es": "Piña" },
-        { "word": "CHERRY", "emoji": "🍒", "hint": "A small red fruit with a stone", "es": "Cereza" },
-        { "word": "LEMON", "emoji": "🍋", "hint": "A sour yellow fruit", "es": "Limón" },
-        { "word": "PEACH", "emoji": "🍑", "hint": "A soft, fuzzy fruit", "es": "Melocotón" },
-        { "word": "KIWI", "emoji": "🥝", "hint": "A green fruit with black seeds", "es": "Kiwi" },
-        { "word": "MANGO", "emoji": "🥭", "hint": "A sweet tropical fruit", "es": "Mango" },
-        { "word": "PLUM", "emoji": "🟣", "hint": "A small round purple fruit", "es": "Ciruela" },
-        { "word": "MELON", "emoji": "🍈", "hint": "A round green fruit", "es": "Melón" }
+        {
+          "word": "APPLE",
+          "emoji": "🍎",
+          "hint": "A round red or green fruit",
+          "es": "Manzana"
+        },
+        {
+          "word": "BANANA",
+          "emoji": "🍌",
+          "hint": "A long yellow fruit",
+          "es": "Plátano"
+        },
+        {
+          "word": "ORANGE",
+          "emoji": "🍊",
+          "hint": "A round orange fruit",
+          "es": "Naranja"
+        },
+        {
+          "word": "STRAWBERRY",
+          "emoji": "🍓",
+          "hint": "A small red fruit",
+          "es": "Fresa"
+        },
+        {
+          "word": "GRAPE",
+          "emoji": "🍇",
+          "hint": "Small fruit, grows in bunches",
+          "es": "Uva"
+        },
+        {
+          "word": "PEAR",
+          "emoji": "🍐",
+          "hint": "A green fruit shaped like a bell",
+          "es": "Pera"
+        },
+        {
+          "word": "WATERMELON",
+          "emoji": "🍉",
+          "hint": "A big fruit, green outside, red inside",
+          "es": "Sandía"
+        },
+        {
+          "word": "PINEAPPLE",
+          "emoji": "🍍",
+          "hint": "A spiky tropical fruit",
+          "es": "Piña"
+        },
+        {
+          "word": "CHERRY",
+          "emoji": "🍒",
+          "hint": "A small red fruit with a stone",
+          "es": "Cereza"
+        },
+        {
+          "word": "LEMON",
+          "emoji": "🍋",
+          "hint": "A sour yellow fruit",
+          "es": "Limón"
+        },
+        {
+          "word": "PEACH",
+          "emoji": "🍑",
+          "hint": "A soft, fuzzy fruit",
+          "es": "Melocotón"
+        },
+        {
+          "word": "KIWI",
+          "emoji": "🥝",
+          "hint": "A green fruit with black seeds",
+          "es": "Kiwi"
+        },
+        {
+          "word": "MANGO",
+          "emoji": "🥭",
+          "hint": "A sweet tropical fruit",
+          "es": "Mango"
+        },
+        {
+          "word": "PLUM",
+          "emoji": "🟣",
+          "hint": "A small round purple fruit",
+          "es": "Ciruela"
+        },
+        {
+          "word": "MELON",
+          "emoji": "🍈",
+          "hint": "A round green fruit",
+          "es": "Melón"
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Health",
+      "emoji": "🏥",
+      "color": "red",
+      "words": [
+        {
+          "word": "BACKACHE",
+          "emoji": "🤕",
+          "hint": "Pain in your back",
+          "es": "Dolor de espalda"
+        },
+        {
+          "word": "COLD",
+          "emoji": "🤧",
+          "hint": "You sneeze a lot",
+          "es": "Resfriado"
+        },
+        {
+          "word": "COUGH",
+          "emoji": "😷",
+          "hint": "You do this when your throat is irritated",
+          "es": "Tos"
+        },
+        {
+          "word": "HEADACHE",
+          "emoji": "🤕",
+          "hint": "Pain in your head",
+          "es": "Dolor de cabeza"
+        },
+        {
+          "word": "HURT",
+          "emoji": "😖",
+          "hint": "Feeling pain",
+          "es": "Doler / hacer daño"
+        },
+        {
+          "word": "ILL/SICK",
+          "emoji": "🤒",
+          "hint": "Not feeling well",
+          "es": "Enfermo"
+        },
+        {
+          "word": "SORE THROAT",
+          "emoji": "😣",
+          "hint": "Pain when you swallow",
+          "es": "Dolor de garganta"
+        },
+        {
+          "word": "STOMACH-ACHE",
+          "emoji": "🤢",
+          "hint": "Pain in your tummy",
+          "es": "Dolor de barriga"
+        },
+        {
+          "word": "TEMPERATURE",
+          "emoji": "🌡️",
+          "hint": "You measure this when you are ill",
+          "es": "Fiebre / temperatura"
+        },
+        {
+          "word": "TOOTHACHE",
+          "emoji": "🦷",
+          "hint": "Pain in your tooth",
+          "es": "Dolor de muelas"
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "title": "Materials",
+      "emoji": "🧱",
+      "color": "amber",
+      "words": [
+        {
+          "word": "CARD",
+          "emoji": "📇",
+          "hint": "Thick, stiff paper",
+          "es": "Cartulina"
+        },
+        {
+          "word": "GLASS",
+          "emoji": "🪟",
+          "hint": "A hard, see-through material",
+          "es": "Vidrio"
+        },
+        {
+          "word": "METAL",
+          "emoji": "🔩",
+          "hint": "A hard, shiny material like iron",
+          "es": "Metal"
+        },
+        {
+          "word": "PAPER",
+          "emoji": "📄",
+          "hint": "Thin material you write on",
+          "es": "Papel"
+        },
+        {
+          "word": "PLASTIC",
+          "emoji": "♻️",
+          "hint": "A light, man-made material",
+          "es": "Plástico"
+        },
+        {
+          "word": "RUBBER",
+          "emoji": "🎈",
+          "hint": "A soft, stretchy material",
+          "es": "Goma"
+        },
+        {
+          "word": "WOOD",
+          "emoji": "🪵",
+          "hint": "A material that comes from trees",
+          "es": "Madera"
+        },
+        {
+          "word": "WOOL",
+          "emoji": "🧶",
+          "hint": "A soft material from sheep",
+          "es": "Lana"
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "title": "Adjectives",
+      "emoji": "😊",
+      "color": "purple",
+      "words": [
+        {
+          "word": "BRAVE",
+          "emoji": "🦁",
+          "hint": "Not afraid",
+          "es": "Valiente"
+        },
+        {
+          "word": "CLEVER",
+          "emoji": "🧠",
+          "hint": "Very intelligent",
+          "es": "Listo"
+        },
+        {
+          "word": "FRIENDLY",
+          "emoji": "🤗",
+          "hint": "Kind and nice to others",
+          "es": "Amistoso"
+        },
+        {
+          "word": "INTERESTING",
+          "emoji": "🤔",
+          "hint": "Something that makes you curious",
+          "es": "Interesante"
+        },
+        {
+          "word": "KIND",
+          "emoji": "💛",
+          "hint": "Nice and caring",
+          "es": "Amable"
+        },
+        {
+          "word": "UNKIND",
+          "emoji": "💔",
+          "hint": "Not nice to others",
+          "es": "Poco amable"
+        },
+        {
+          "word": "UNFRIENDLY",
+          "emoji": "😠",
+          "hint": "Not nice or welcoming",
+          "es": "Antipático"
+        },
+        {
+          "word": "POPULAR",
+          "emoji": "⭐",
+          "hint": "Liked by many people",
+          "es": "Popular"
+        },
+        {
+          "word": "LOVELY",
+          "emoji": "😍",
+          "hint": "Very nice or beautiful",
+          "es": "Encantador"
+        },
+        {
+          "word": "LAZY",
+          "emoji": "🦥",
+          "hint": "Not wanting to work",
+          "es": "Vago"
+        },
+        {
+          "word": "ALONE",
+          "emoji": "🧍",
+          "hint": "By yourself",
+          "es": "Solo"
+        },
+        {
+          "word": "EXCELLENT",
+          "emoji": "🌟",
+          "hint": "Extremely good",
+          "es": "Excelente"
+        },
+        {
+          "word": "HORRIBLE",
+          "emoji": "😱",
+          "hint": "Very unpleasant",
+          "es": "Horrible"
+        },
+        {
+          "word": "HUGE",
+          "emoji": "🐘",
+          "hint": "Extremely big",
+          "es": "Enorme"
+        },
+        {
+          "word": "LITTLE",
+          "emoji": "🐭",
+          "hint": "Small in size",
+          "es": "Pequeño"
+        },
+        {
+          "word": "STRANGE",
+          "emoji": "👽",
+          "hint": "Unusual or odd",
+          "es": "Extraño"
+        },
+        {
+          "word": "SPECIAL",
+          "emoji": "🎁",
+          "hint": "Different and important",
+          "es": "Especial"
+        },
+        {
+          "word": "NOISY",
+          "emoji": "🔊",
+          "hint": "Making a lot of sound",
+          "es": "Ruidoso"
+        },
+        {
+          "word": "LUCKY",
+          "emoji": "🍀",
+          "hint": "Having good fortune",
+          "es": "Afortunado"
+        }
+      ]
+    },
+    {
+      "id": "city",
+      "title": "City",
+      "emoji": "🏙️",
+      "color": "blue",
+      "words": [
+        {
+          "word": "AIRPORT",
+          "emoji": "✈️",
+          "hint": "Where planes take off and land",
+          "es": "Aeropuerto"
+        },
+        {
+          "word": "BANK",
+          "emoji": "🏦",
+          "hint": "Where you keep your money",
+          "es": "Banco"
+        },
+        {
+          "word": "BUILDING",
+          "emoji": "🏢",
+          "hint": "A structure with walls and a roof",
+          "es": "Edificio"
+        },
+        {
+          "word": "CHEMIST'S",
+          "emoji": "💊",
+          "hint": "Where you buy medicine",
+          "es": "Farmacia"
+        },
+        {
+          "word": "HOTEL",
+          "emoji": "🏨",
+          "hint": "Where you stay on holiday",
+          "es": "Hotel"
+        },
+        {
+          "word": "MONEY",
+          "emoji": "💰",
+          "hint": "You use this to buy things",
+          "es": "Dinero"
+        },
+        {
+          "word": "MUSEUM",
+          "emoji": "🏛️",
+          "hint": "A building with old and interesting objects",
+          "es": "Museo"
+        },
+        {
+          "word": "POST OFFICE",
+          "emoji": "📮",
+          "hint": "Where you send letters",
+          "es": "Correos"
+        },
+        {
+          "word": "RESTAURANT",
+          "emoji": "🍽️",
+          "hint": "Where you eat a meal",
+          "es": "Restaurante"
+        },
+        {
+          "word": "STAMP",
+          "emoji": "📮",
+          "hint": "You stick this on a letter",
+          "es": "Sello"
+        },
+        {
+          "word": "THEATRE",
+          "emoji": "🎭",
+          "hint": "Where you watch a play",
+          "es": "Teatro"
+        },
+        {
+          "word": "UNIVERSITY",
+          "emoji": "🎓",
+          "hint": "Where you study after school",
+          "es": "Universidad"
+        },
+        {
+          "word": "SHOP",
+          "emoji": "🛍️",
+          "hint": "Where you buy things",
+          "es": "Tienda"
+        },
+        {
+          "word": "LIBRARY",
+          "emoji": "📚",
+          "hint": "Where you borrow books",
+          "es": "Biblioteca"
+        },
+        {
+          "word": "PARK",
+          "emoji": "🌳",
+          "hint": "A green place to play outside",
+          "es": "Parque"
+        }
       ]
     }
   ]
