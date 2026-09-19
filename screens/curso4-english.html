@@ -65,6 +65,13 @@
         <div class="mode-sub">A-Z list</div>
       </div>
     </div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-vocab-c4')">
+        <div class="mode-emoji">🔤</div>
+        <div class="mode-name" style="color:var(--blue)">Vocabulary</div>
+        <div class="mode-sub">Words with images</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -589,5 +596,26 @@
       <div style="display:grid;grid-template-columns:1.7fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div style="display:flex;align-items:center;gap:6px"><div><span style="font-size:14px;color:var(--gray-800);font-weight:800">watch</span><br><span style="font-size:11px;color:var(--gray-400);font-weight:600">ver / mirar</span></div><button onclick="speakWord('watch', event)" title="Listen" style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0">🔊</button></div><div>watch</div><div>watched</div></div>
       <div style="display:grid;grid-template-columns:1.7fr 1fr 1fr;padding:9px 12px;font-size:12px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div style="display:flex;align-items:center;gap:6px"><div><span style="font-size:14px;color:var(--gray-800);font-weight:800">write</span><br><span style="font-size:11px;color:var(--gray-400);font-weight:600">escribir</span></div><button onclick="speakWord('write', event)" title="Listen" style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0">🔊</button></div><div>write</div><div>wrote</div></div>
     </div>
+  </div>
+</div>
+
+<!-- VOCABULARY MENU (4º) -->
+<div class="screen" id="s-english-vocab-c4">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-study-c4')">←</button><h1>Vocabulary</h1><span class="top-badge">📖 Read</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div id="vocab-topics-grid-c4"></div>
+  </div>
+</div>
+
+<!-- VOCABULARY UNIT (4º) -->
+<div class="screen" id="s-english-vocab-unit-c4">
+  <div class="topbar bg-blue" id="vocab-unit-topbar-c4"><button class="back-btn" onclick="go('s-english-vocab-c4')">←</button><h1 id="vocab-unit-title-c4">Topic</h1><span class="top-badge">📖 Read</span></div>
+  <div class="sa">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:0 16px 12px">
+      <div style="font-size:12px;color:var(--gray-400);font-weight:600">Tap a card to see the definition</div>
+      <button id="vocab-flip-all-btn-c4" onclick="vocabToggleAll()" style="padding:5px 12px;border-radius:20px;border:1.5px solid #BFDBFE;background:#EFF6FF;color:var(--blue);font-family:var(--f);font-weight:700;font-size:12px;cursor:pointer">Show all hints</button>
+    </div>
+    <div id="vocab-cards-grid-c4" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:0 16px 24px"></div>
   </div>
 </div>
