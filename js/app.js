@@ -30,7 +30,10 @@ var SCREENS_LAZY = [
   'screens/curso3-descripciones.html',
   'screens/vacaciones.html',
   'screens/curso4.html',
-  'screens/curso4-english.html'
+  'screens/curso4-english.html',
+  'screens/curso4-english-tenses.html',
+  'screens/curso4-english-verbs.html',
+  'screens/curso4-english-vocab.html'
 ];
 
 /* Registro de pantallas ya cargadas */
@@ -124,19 +127,19 @@ function loadScreenLazy(screenId, callback) {
     's-home-curso4':               'screens/curso4.html',
     's-english-c4':                'screens/curso4-english.html',
     's-english-study-c4':          'screens/curso4-english.html',
-    's-english-verbtenses-c4':     'screens/curso4-english.html',
     's-english-exercises-c4':      'screens/curso4-english.html',
-    's-english-exercises-tenses-c4': 'screens/curso4-english.html',
-    's-english-tobe-c4':           'screens/curso4-english.html',
-    's-english-tobe-past-c4':      'screens/curso4-english.html',
-    's-english-simple-present-c4': 'screens/curso4-english.html',
-    's-english-simple-past-c4':    'screens/curso4-english.html',
-    's-english-ing-present-c4':    'screens/curso4-english.html',
-    's-english-ing-past-c4':       'screens/curso4-english.html',
-    's-english-future-c4':         'screens/curso4-english.html',
-    's-english-verbs-c4':          'screens/curso4-english.html',
-    's-english-vocab-c4':          'screens/curso4-english.html',
-    's-english-vocab-unit-c4':     'screens/curso4-english.html'
+    's-english-verbtenses-c4':     'screens/curso4-english-tenses.html',
+    's-english-exercises-tenses-c4': 'screens/curso4-english-tenses.html',
+    's-english-tobe-c4':           'screens/curso4-english-tenses.html',
+    's-english-tobe-past-c4':      'screens/curso4-english-tenses.html',
+    's-english-simple-present-c4': 'screens/curso4-english-tenses.html',
+    's-english-simple-past-c4':    'screens/curso4-english-tenses.html',
+    's-english-ing-present-c4':    'screens/curso4-english-tenses.html',
+    's-english-ing-past-c4':       'screens/curso4-english-tenses.html',
+    's-english-future-c4':         'screens/curso4-english-tenses.html',
+    's-english-verbs-c4':          'screens/curso4-english-verbs.html',
+    's-english-vocab-c4':          'screens/curso4-english-vocab.html',
+    's-english-vocab-unit-c4':     'screens/curso4-english-vocab.html'
   };
 
   var file = fileMap[screenId];
