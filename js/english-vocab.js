@@ -5,7 +5,15 @@
 
 var VOCAB_COLORS = {
   orange: { color: '#F97316', bg: '#FFF7ED', border: '#FED7AA' },
-  blue:   { color: '#3B82F6', bg: '#EFF6FF', border: '#BFDBFE' }
+  blue:   { color: '#3B82F6', bg: '#EFF6FF', border: '#BFDBFE' },
+  pink:   { color: '#EC4899', bg: '#FDF2F8', border: '#FBCFE8' },
+  purple: { color: '#8B5CF6', bg: '#F5F3FF', border: '#DDD6FE' },
+  amber:  { color: '#D97706', bg: '#FFFBEB', border: '#FDE68A' },
+  green:  { color: '#16A34A', bg: '#F0FDF4', border: '#BBF7D0' },
+  red:    { color: '#DC2626', bg: '#FEF2F2', border: '#FECACA' },
+  teal:   { color: '#0D9488', bg: '#F0FDFA', border: '#99F6E4' },
+  indigo: { color: '#4F46E5', bg: '#EEF2FF', border: '#C7D2FE' },
+  yellow: { color: '#CA8A04', bg: '#FEFCE8', border: '#FEF08A' }
 };
 
 function loadVocabData(callback) {
@@ -16,10 +24,15 @@ function loadVocabData(callback) {
     .catch(function(e) { showError('el Vocabulario', e, function(){ loadVocabData(function(){}); }, 's-english'); });
 }
 
-/* ---- Menú de temas ---- */
-function renderVocabMenu() {
+/* ---- Menú de temas ----
+   ns: sufijo opcional para reutilizar este mismo sistema en
+   otros cursos (ej. '-c4' para 4º) sin chocar con los IDs de
+   elementos/pantallas de 3º. Vacío ('') = comportamiento de
+   siempre para 3º. */
+function renderVocabMenu(ns) {
+  ns = ns || '';
   loadVocabData(function() {
-    var grid = document.getElementById('vocab-topics-grid');
+    var grid = document.getElementById('vocab-topics-grid' + ns);
     if (!grid) return;
     grid.innerHTML = '';
     SubjectData.vocab.units.forEach(function(unit) {
@@ -35,26 +48,28 @@ function renderVocabMenu() {
         '<div style="font-size:20px;color:'+c.border+'">›</div>';
       card.addEventListener('mouseenter', function() { card.style.boxShadow = '0 4px 16px rgba(0,0,0,.12)'; });
       card.addEventListener('mouseleave', function() { card.style.boxShadow = '0 2px 8px rgba(0,0,0,.06)'; });
-      card.addEventListener('click', function() { openVocabUnit(unit); });
+      card.addEventListener('click', function() { openVocabUnit(unit, ns); });
       grid.appendChild(card);
     });
   });
 }
 
 /* ---- Abrir unidad ---- */
-function openVocabUnit(unit) {
+function openVocabUnit(unit, ns) {
+  ns = ns || '';
   EN.vocabUnit    = unit;
   EN.vocabFlipped = unit.words.map(function() { return false; });
+  EN.vocabNs      = ns;
   var c = VOCAB_COLORS[unit.color] || VOCAB_COLORS.blue;
 
   // Actualizar topbar color
-  var topbar = document.getElementById('vocab-unit-topbar');
+  var topbar = document.getElementById('vocab-unit-topbar' + ns);
   if (topbar) topbar.style.background = c.color;
 
-  setEl('vocab-unit-title', unit.title);
+  setEl('vocab-unit-title' + ns, unit.title);
 
   // Botón flip all
-  var btn = document.getElementById('vocab-flip-all-btn');
+  var btn = document.getElementById('vocab-flip-all-btn' + ns);
   if (btn) {
     btn.style.background = c.bg;
     btn.style.color      = c.color;
@@ -62,7 +77,7 @@ function openVocabUnit(unit) {
     btn.textContent = 'Show all hints';
   }
 
-  go('s-english-vocab-unit');
+  go('s-english-vocab-unit' + ns);
   renderVocabCards();
 }
 
@@ -100,7 +115,8 @@ function speakWord(word, e) {
 }
 
 function renderVocabCards() {
-  var grid = document.getElementById('vocab-cards-grid');
+  var ns = EN.vocabNs || '';
+  var grid = document.getElementById('vocab-cards-grid' + ns);
   if (!grid || !EN.vocabUnit) return;
   grid.innerHTML = '';
   var c = VOCAB_COLORS[EN.vocabUnit.color] || VOCAB_COLORS.blue;
@@ -165,7 +181,8 @@ function vocabToggleAll() {
 }
 
 function updateVocabFlipBtn() {
-  var btn = document.getElementById('vocab-flip-all-btn');
+  var ns = EN.vocabNs || '';
+  var btn = document.getElementById('vocab-flip-all-btn' + ns);
   if (!btn) return;
   var allFlipped = EN.vocabFlipped.every(function(v) { return v; });
   btn.textContent = allFlipped ? 'Show words' : 'Show all hints';
