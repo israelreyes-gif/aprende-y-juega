@@ -33,7 +33,8 @@ var SCREENS_LAZY = [
   'screens/curso4-english.html',
   'screens/curso4-english-tenses.html',
   'screens/curso4-english-verbs.html',
-  'screens/curso4-english-vocab.html'
+  'screens/curso4-english-vocab.html',
+  'screens/curso4-english-grammar.html'
 ];
 
 /* Registro de pantallas ya cargadas */
@@ -139,7 +140,9 @@ function loadScreenLazy(screenId, callback) {
     's-english-future-c4':         'screens/curso4-english-tenses.html',
     's-english-verbs-c4':          'screens/curso4-english-verbs.html',
     's-english-vocab-c4':          'screens/curso4-english-vocab.html',
-    's-english-vocab-unit-c4':     'screens/curso4-english-vocab.html'
+    's-english-vocab-unit-c4':     'screens/curso4-english-vocab.html',
+    's-english-grammar-c4':        'screens/curso4-english-grammar.html',
+    's-english-clock-c4':          'screens/curso4-english-grammar.html'
   };
 
   var file = fileMap[screenId];
