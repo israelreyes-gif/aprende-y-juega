@@ -1,0 +1,126 @@
+<!-- =============================================
+     CURSO4-ENGLISH-GRAMMAR.HTML — Temas de gramática
+     de 4º que no son tiempos verbales (wh- questions,
+     could, must, have to, comparativos, adverbios de
+     frecuencia, preposiciones, dar la hora...).
+     Hermano de curso4-english.html — ver la cabecera
+     de ese archivo para el reparto completo.
+     Mismo patrón que curso4-english-tenses.html: un
+     menú con tarjetas + una pantalla de contenido por
+     tema. Los temas sin contenido todavía muestran
+     "Coming soon" — ir sustituyendo showToast(...) por
+     go('s-english-XXX-c4') a medida que se añaden.
+     ============================================= -->
+
+<!-- GRAMMAR MENU — las 8 tarjetas -->
+<div class="screen" id="s-english-grammar-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-study-c4')">←</button>
+    <h1>Grammar</h1>
+    <span class="top-badge">📖 Read</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-clock-c4')">
+        <div class="mode-emoji">🕐</div>
+        <div class="mode-name" style="color:var(--blue)">Telling Time</div>
+        <div class="mode-sub">o'clock, half past...</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">❓</div>
+        <div class="mode-name" style="color:var(--purple)">Wh- Questions</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+    </div>
+
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟠</div>
+        <div class="mode-name" style="color:var(--orange)">Could</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--red);background:var(--red-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🔴</div>
+        <div class="mode-name" style="color:var(--red)">Must</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+    </div>
+
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--amber);background:var(--amber-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟡</div>
+        <div class="mode-name" style="color:var(--amber)">Have To</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟢</div>
+        <div class="mode-name" style="color:var(--green)">-er / -est</div>
+        <div class="mode-sub">Coming soon</div>
+      </div>
+    </div>
+
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:#78350F;background:#FDF2E9" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🟤</div>
+        <div class="mode-name" style="color:#78350F">Adverbs</div>
+        <div class="mode-sub">sometimes, often...</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="showToast('🚧 Coming soon!')">
+        <div class="mode-emoji">🔵</div>
+        <div class="mode-name" style="color:var(--blue)">Prepositions</div>
+        <div class="mode-sub">over, into, out of...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TELLING TIME — contenido directo -->
+<div class="screen" id="s-english-clock-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>🕐 Telling Time</h1>
+    <span class="top-badge">o'clock, half past...</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:#EFF6FF;border-radius:14px;padding:14px 16px;font-size:13px;color:#1E40AF;font-weight:600;line-height:1.5">
+      We ask <b>What time is it?</b> and answer <b>It's...</b>. In English we usually say the minutes first, then the hour.<br><br>🇪🇸 En español: preguntamos la hora con <b>What time is it?</b> y respondemos con <b>It's...</b>. Normalmente decimos los minutos antes que la hora.
+    </div>
+
+    <div class="slbl" style="color:var(--blue)">🕐 O'Clock</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>Time</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>🕐 1:00</div><div>It's <b>one o'clock</b></div><button onclick="speakWord('It is one o clock', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕔 5:00</div><div>It's <b>five o'clock</b></div><button onclick="speakWord('It is five o clock', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕙 10:00</div><div>It's <b>ten o'clock</b></div><button onclick="speakWord('It is ten o clock', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+    </div>
+
+    <div class="slbl" style="color:var(--green)">🕜 Half Past</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Time</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>🕜 1:30</div><div>It's <b>half past one</b></div><button onclick="speakWord('It is half past one', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕢 6:30</div><div>It's <b>half past six</b></div><button onclick="speakWord('It is half past six', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕦 11:30</div><div>It's <b>half past eleven</b></div><button onclick="speakWord('It is half past eleven', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+    </div>
+
+    <div class="slbl" style="color:var(--orange)">🕒 Quarter Past / Quarter To</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #FFEDD5;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:#FFEDD5;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--orange)"><div>Time</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>🕓 4:15</div><div>It's <b>quarter past four</b></div><button onclick="speakWord('It is quarter past four', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕗 7:45</div><div>It's <b>quarter to eight</b></div><button onclick="speakWord('It is quarter to eight', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕘 8:45</div><div>It's <b>quarter to nine</b></div><button onclick="speakWord('It is quarter to nine', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+    </div>
+
+    <div class="slbl" style="color:var(--red)">🕔 Minutes Past / To</div>
+    <div style="margin:0 16px 14px;background:white;border-radius:14px;border:1.5px solid var(--red-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:var(--red-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--red)"><div>Time</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>🕐 1:05</div><div>It's <b>five past one</b></div><button onclick="speakWord('It is five past one', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕒 3:20</div><div>It's <b>twenty past three</b></div><button onclick="speakWord('It is twenty past three', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕓 3:40</div><div>It's <b>twenty to four</b></div><button onclick="speakWord('It is twenty to four', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>🕕 5:55</div><div>It's <b>five to six</b></div><button onclick="speakWord('It is five to six', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div>
+    </div>
+
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Truco: si los minutos son 1-30, usamos <b>past</b> (después de la hora). Si son 31-59, usamos <b>to</b> (contamos hacia la hora siguiente): 5:40 → <b>twenty to six</b>, no "forty past five".</div>
+  </div>
+</div>
