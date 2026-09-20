@@ -201,13 +201,27 @@ function setPerfilActivoId(id, callback, skipDayReset) {
   loadStateFromCloud(callback, skipDayReset);
 }
 
-/* ---- Cambiar de curso ---- */
+/* ---- Cambiar de curso ----
+   Aislamiento total entre cursos: se limpian TODOS los cachés de
+   contenido por asignatura (no solo algunos), para que cambiar de
+   curso dentro de la misma sesión nunca deje datos del curso anterior
+   cargados en memoria. Cada loader (ensureMatesData, loadEnglishData,
+   loadVocabData...) además recuerda por su cuenta para qué curso
+   cargó sus datos y los vuelve a pedir si cursoActual cambió — esto
+   es una segunda capa de seguridad, no la única. */
 function setCurso(num) {
   cursoActual = num;
   // No cargamos aquí — setPerfilActivoId lo hará con el perfil correcto
-  SubjectData.english  = null;
-  SubjectData.vocab    = null;
-  SubjectData.sciences = null;
+  SubjectData.problemas     = { facil: [], medio: [], avanzado: [] };
+  SubjectData.historias     = { facil: [], medio: [], avanzado: [] };
+  SubjectData.english       = null;
+  SubjectData.vocab         = null;
+  SubjectData.sciences      = null;
+  SubjectData.sociales      = null;
+  SubjectData.socialesEx    = null;
+  SubjectData.dict          = null;
+  SubjectData.descripciones = [];
+  SubjectData.gram          = { bv: [], gj: [], czq: [], lly: [], rr: [] };
 }
 
 /* ---- Reseteo diario ---- */
