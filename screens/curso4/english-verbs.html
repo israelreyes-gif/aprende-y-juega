@@ -1,8 +1,8 @@
 <!-- =============================================
-     CURSO4-ENGLISH-VERBS.HTML — Lista A-Z de verbos
+     CURSO4/ENGLISH-VERBS.HTML — Lista A-Z de verbos
      de 4º con traducción y pronunciación.
-     Hermano de curso4-english.html — ver la cabecera
-     de ese archivo para el reparto completo.
+     Hermano de english.html (misma carpeta) — ver su
+     cabecera para el reparto completo.
      ============================================= -->
 
 <!-- VERBS — listado A-Z con traducción, formas verbales y pronunciación -->
@@ -15,6 +15,20 @@
   <div class="sa">
     <div style="margin:0 16px 14px;background:#EFF6FF;border-radius:14px;padding:12px 14px;font-size:12px;color:#1E40AF;font-weight:600;line-height:1.5">
       💡 Verbos ordenados alfabéticamente. Present = forma con "I" (yo). Toca 🔊 para escuchar la pronunciación.
+    </div>
+
+    <div class="slbl" style="color:var(--blue)">🔍 Buscar otro verbo</div>
+    <div style="margin:0 16px 20px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;padding:12px 14px">
+      <div style="display:flex;gap:8px;margin-bottom:10px">
+        <button id="verb-search-dir-en" onclick="setVerbSearchDir('en')" style="flex:1;padding:8px 0;border-radius:20px;border:none;background:var(--blue);color:white;font-family:var(--f);font-weight:800;font-size:12px;cursor:pointer">Inglés → Español</button>
+        <button id="verb-search-dir-es" onclick="setVerbSearchDir('es')" style="flex:1;padding:8px 0;border-radius:20px;border:none;background:#EFF6FF;color:var(--blue);font-family:var(--f);font-weight:800;font-size:12px;cursor:pointer">Español → Inglés</button>
+      </div>
+      <div style="display:flex;gap:8px">
+        <input id="verb-search-input" type="text" placeholder="Escribe un verbo en inglés..." onkeydown="if(event.key==='Enter')searchVerb()" style="flex:1;padding:10px 12px;border-radius:10px;border:1.5px solid var(--gray-100);font-size:13px;font-family:var(--f);color:var(--gray-800)">
+        <button onclick="searchVerb()" style="padding:0 16px;border-radius:10px;border:none;background:var(--blue);color:white;font-family:var(--f);font-weight:800;font-size:13px;cursor:pointer">🔍</button>
+      </div>
+      <div id="verb-search-result" style="display:none;margin-top:12px;border-radius:12px;border:1.5px solid var(--gray-100);overflow:hidden"></div>
+      <div style="margin-top:8px;font-size:10px;color:var(--gray-400);font-weight:600;line-height:1.4">La traducción usa un servicio externo — necesita conexión a internet.</div>
     </div>
 
     <div style="margin:0 16px 20px;background:white;border-radius:14px;border:1.5px solid var(--gray-100);overflow:hidden">
