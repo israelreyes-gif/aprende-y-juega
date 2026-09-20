@@ -7,32 +7,40 @@ var L = ExerciseState.lengua; /* alias */
 var GDATA = SubjectData.gram;
 var GOPTS = { bv: ['B','V'], gj: ['G','J'], czq: ['C','Z','Q'], lly: ['LL','Y'], rr: ['R','RR'] };
 
-// Cargar palabras desde JSON
-fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
-    ['bv','gj','czq','lly','rr'].forEach(function(cat) {
-      if (data[cat]) {
-        SubjectData.gram[cat] = shuffle(data[cat].map(function(item) {
-          return { w: item.p || item.palabra, c: item.l || item.letra, f: item.c || item.completa, definicion: item.definicion || null };
-        }));
-      }
+/* ---- Carga perezosa de las palabras de Gramática ----
+   Antes esto era un fetch suelto a nivel de archivo, que se disparaba
+   nada más cargar el script (al arrancar la app entera), usando
+   cursoActual — el mismo fallo que tenía Mates/Historias en app.js.
+   Ahora sigue el mismo patrón que el resto de asignaturas: se carga
+   solo al entrar en Gramática (ver setGramTab más abajo). */
+var _gramDataCurso = null; // curso para el que SubjectData.gram está cargado
+
+function loadGramData(callback) {
+  if (_gramDataCurso === cursoActual) { callback(); return; }
+  fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      ['bv','gj','czq','lly','rr'].forEach(function(cat) {
+        if (data[cat]) {
+          SubjectData.gram[cat] = shuffle(data[cat].map(function(item) {
+            return { w: item.p || item.palabra, c: item.l || item.letra, f: item.c || item.completa, definicion: item.definicion || null };
+          }));
+        }
+      });
+      _gramDataCurso = cursoActual;
+      callback();
+    })
+    .catch(function(e) {
+      showError('la Gramática', e, function(){ loadGramData(callback); }, 's-lengua-exercises');
+      // Datos de respaldo: se escriben directamente en SubjectData.gram
+      // (lo que lee renderGramQ), no en una copia local.
+      SubjectData.gram.bv  = [{w:'a_eja',c:'V',f:'abeja'},{w:'_arco',c:'B',f:'barco'},{w:'_aca',c:'V',f:'vaca'}];
+      SubjectData.gram.gj  = [{w:'_irafa',c:'J',f:'jirafa'},{w:'_ato',c:'G',f:'gato'}];
+      SubjectData.gram.czq = [{w:'_ebra',c:'C',f:'cebra'},{w:'_apato',c:'Z',f:'zapato'}];
+      SubjectData.gram.lly = [{w:'ga_ina',c:'LL',f:'gallina'},{w:'re_',c:'Y',f:'rey'}];
+      SubjectData.gram.rr  = [{w:'pe_o',c:'RR',f:'perro'},{w:'_atón',c:'R',f:'ratón'}];
     });
-    if (document.getElementById('s-gramatica') &&
-        document.getElementById('s-gramatica').classList.contains('active')) {
-      renderGramQ();
-    }
-  })
-  .catch(function(e) {
-    showError('la Gramática', e, function(){ setGramTab('bv'); }, 's-lengua-exercises');
-    GDATA = {
-      bv:  [{w:'a_eja',c:'V',f:'abeja'},{w:'_arco',c:'B',f:'barco'},{w:'_aca',c:'V',f:'vaca'}],
-      gj:  [{w:'_irafa',c:'J',f:'jirafa'},{w:'_ato',c:'G',f:'gato'}],
-      czq: [{w:'_ebra',c:'C',f:'cebra'},{w:'_apato',c:'Z',f:'zapato'}],
-      lly: [{w:'ga_ina',c:'LL',f:'gallina'},{w:'re_',c:'Y',f:'rey'}],
-      rr:  [{w:'pe_o',c:'RR',f:'perro'},{w:'_atón',c:'R',f:'ratón'}]
-    };
-  });
+}
 
 function shuffle(arr) {
   var a = arr.slice();
@@ -62,7 +70,7 @@ function setGramTab(tab) {
   var order = ['bv','gj','czq','lly','rr'];
   var tabs  = document.querySelectorAll('.gram-tab');
   if (tabs[order.indexOf(tab)]) tabs[order.indexOf(tab)].className = 'gram-tab active bg-pink';
-  renderGramQ();
+  loadGramData(renderGramQ);
   ['gram-fb','gram-next','gram-ortho'].forEach(function(id) {
     var el = document.getElementById(id); if (el) el.style.display = 'none';
   });
