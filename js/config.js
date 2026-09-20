@@ -27,10 +27,14 @@ var CONFIG = {
 
   /* ---- Curso ---- */
   curso: {
-    // Curso que se carga por defecto al elegir un perfil.
-    // Cuando se prepare 4o de Primaria, aqui es donde se decidira
-    // cual es el curso activo de cada perfil (por ahora siempre 3).
-    porDefecto: 3
+    // Curso que se carga por defecto: al elegir un perfil (antes de
+    // ir a la pantalla de seleccion de curso) y, sobre todo, al abrir
+    // la Zona de padres directamente desde el selector de perfiles
+    // (esa pantalla se abre sin haber elegido curso todavia). 4o es
+    // ahora el curso "activo" del dia a dia, asi que Padres muestra
+    // sus estadisticas por defecto. 3o sigue intacto y accesible
+    // igual que siempre desde la pantalla de cursos.
+    porDefecto: 4
   },
 
   /* ---- Vacaciones ---- */
