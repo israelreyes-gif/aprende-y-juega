@@ -128,10 +128,46 @@ var STATS_BY_CURSO = {
         { key: 'english-future-c4',          name: 'Future' },
         { key: 'english-vocab-c4',           name: 'Vocabulary' }
       ]
+    },
+    /* Mates, Lengua, Sciences y Sociales de 4º: estructura reservada
+       igual que en 3º (mismo key/name/icon/color/pill), pero con
+       items vacío porque todavía no existen ejercicios propios de
+       4º para ellas. Esto hace que statsGetSubject() devuelva un
+       objeto válido (pts:0, pct:null) en vez de null, sin mostrar
+       nada todavía en ninguna pantalla — cuando se construyan sus
+       ejercicios, solo hay que rellenar el array items de cada una. */
+    {
+      key:   'mates',
+      name:  'Matemáticas',
+      icon:  '🔢',
+      color: '#534AB7',
+      pill:  'background:#EDE9FE;color:#4C1D95',
+      items: []
+    },
+    {
+      key:   'lengua',
+      name:  'Lengua',
+      icon:  '📚',
+      color: '#D4537E',
+      pill:  'background:#FDF2F8;color:#9D174D',
+      items: []
+    },
+    {
+      key:   'sciences',
+      name:  'Sciences',
+      icon:  '🔬',
+      color: '#0D9488',
+      pill:  'background:#F0FDFA;color:#0F766E',
+      items: []
+    },
+    {
+      key:   'sociales',
+      name:  'Sociales',
+      icon:  '🌍',
+      color: 'var(--sociales)',
+      pill:  'background:#E1F5EE;color:#085041',
+      items: []
     }
-    // Mates, Lengua, Sciences y Sociales de 4º se añaden aquí en
-    // cuanto tengan sus propios ejercicios — no antes, para no
-    // inventar categorías que todavía no existen.
   ]
 
 };
