@@ -7,8 +7,10 @@
 
 var D = ExerciseState.dict; /* alias */
 
+var _dictDataCurso = null; // curso para el que SubjectData.dict está cargado
+
 function loadDictData(callback) {
-  if (SubjectData.dict) { callback(); return; }
+  if (SubjectData.dict && _dictDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/ejercicios-gram.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
@@ -31,9 +33,10 @@ function loadDictData(callback) {
           }        });
       });
       SubjectData.dict = frases;
+      _dictDataCurso = cursoActual;
       callback();
     })
-    .catch(function(e) { showError('el Dictado', e, function(){ loadDictData(function(){}); }, 's-lengua-exercises'); });
+    .catch(function(e) { showError('el Dictado', e, function(){ loadDictData(callback); }, 's-lengua-exercises'); });
 }
 
 function reglaLabel(key) {
