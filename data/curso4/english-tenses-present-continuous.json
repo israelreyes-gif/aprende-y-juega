@@ -1,0 +1,4749 @@
+{
+  "units": [
+    {
+      "id": "present-continuous",
+      "title": "Present Continuous",
+      "emoji": "🟡",
+      "exercises": [
+        {
+          "id": "ingpres_a_1",
+          "type": "A",
+          "question": "The boys ___ walking.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_2",
+          "type": "A",
+          "question": "The dog ___ drinking water at the moment.",
+          "options": [
+            "am",
+            "are",
+            "were",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_3",
+          "type": "A",
+          "question": "The dog ___ helping their mum at this moment.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_4",
+          "type": "A",
+          "question": "She ___ laughing at this moment.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_5",
+          "type": "A",
+          "question": "They ___ dancing at the moment.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_6",
+          "type": "A",
+          "question": "Maria ___ walking.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_7",
+          "type": "A",
+          "question": "It ___ drawing a picture now.",
+          "options": [
+            "am",
+            "are",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_8",
+          "type": "A",
+          "question": "My sister ___ singing a song currently.",
+          "options": [
+            "is",
+            "were",
+            "am",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_9",
+          "type": "A",
+          "question": "The students ___ waiting for the bus at this moment.",
+          "options": [
+            "was",
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_10",
+          "type": "A",
+          "question": "They ___ painting a picture at the moment.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_11",
+          "type": "A",
+          "question": "The students ___ laughing at the moment.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_12",
+          "type": "A",
+          "question": "The children ___ walking right now.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_13",
+          "type": "A",
+          "question": "I ___ singing a song right now.",
+          "options": [
+            "am",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "ingpres_a_14",
+          "type": "A",
+          "question": "They ___ having lunch at this moment.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_15",
+          "type": "A",
+          "question": "The students ___ having lunch at the moment.",
+          "options": [
+            "am",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_16",
+          "type": "A",
+          "question": "They ___ helping their mum at this moment.",
+          "options": [
+            "are",
+            "am",
+            "is",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_17",
+          "type": "A",
+          "question": "He ___ singing a song currently.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_18",
+          "type": "A",
+          "question": "I ___ playing football right now.",
+          "options": [
+            "am",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "ingpres_a_19",
+          "type": "A",
+          "question": "Our cat ___ talking on the phone at this moment.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_20",
+          "type": "A",
+          "question": "The dog ___ laughing at the moment.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_21",
+          "type": "A",
+          "question": "You ___ washing the dishes right now.",
+          "options": [
+            "am",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_22",
+          "type": "A",
+          "question": "They ___ jumping now.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_23",
+          "type": "A",
+          "question": "My parents ___ working.",
+          "options": [
+            "am",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_24",
+          "type": "A",
+          "question": "My parents ___ running.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_25",
+          "type": "A",
+          "question": "Tom ___ cooking dinner now.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_26",
+          "type": "A",
+          "question": "It ___ talking on the phone now.",
+          "options": [
+            "was",
+            "is",
+            "am",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_27",
+          "type": "A",
+          "question": "You ___ working at this moment.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_28",
+          "type": "A",
+          "question": "The students ___ feeding the cat right now.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_29",
+          "type": "A",
+          "question": "My parents ___ talking on the phone currently.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_30",
+          "type": "A",
+          "question": "She ___ reading a book currently.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_31",
+          "type": "A",
+          "question": "My brother ___ sleeping now.",
+          "options": [
+            "am",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_32",
+          "type": "A",
+          "question": "The dog ___ talking on the phone at the moment.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_33",
+          "type": "A",
+          "question": "Our cat ___ climbing a tree right now.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_34",
+          "type": "A",
+          "question": "My sister ___ talking on the phone right now.",
+          "options": [
+            "am",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_35",
+          "type": "A",
+          "question": "The boys ___ painting a picture right now.",
+          "options": [
+            "am",
+            "are",
+            "were",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_36",
+          "type": "A",
+          "question": "It ___ singing a song right now.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_37",
+          "type": "A",
+          "question": "You ___ playing football now.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_38",
+          "type": "A",
+          "question": "She ___ studying English at the moment.",
+          "options": [
+            "was",
+            "is",
+            "were",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_39",
+          "type": "A",
+          "question": "My parents ___ feeding the cat at this moment.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_40",
+          "type": "A",
+          "question": "The boys ___ having lunch right now.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_41",
+          "type": "A",
+          "question": "The dog ___ playing football.",
+          "options": [
+            "was",
+            "are",
+            "am",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_42",
+          "type": "A",
+          "question": "My sister ___ cooking dinner at this moment.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_43",
+          "type": "A",
+          "question": "We ___ running.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_44",
+          "type": "A",
+          "question": "He ___ playing football.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_45",
+          "type": "A",
+          "question": "You ___ playing football at the moment.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_46",
+          "type": "A",
+          "question": "I ___ feeding the cat currently.",
+          "options": [
+            "were",
+            "are",
+            "am",
+            "was"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "ingpres_a_47",
+          "type": "A",
+          "question": "He ___ playing football currently.",
+          "options": [
+            "am",
+            "was",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_48",
+          "type": "A",
+          "question": "She ___ drawing a picture currently.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_49",
+          "type": "A",
+          "question": "They ___ laughing at the moment.",
+          "options": [
+            "is",
+            "am",
+            "were",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_50",
+          "type": "A",
+          "question": "He ___ painting a picture right now.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_51",
+          "type": "A",
+          "question": "My parents ___ sleeping.",
+          "options": [
+            "is",
+            "were",
+            "are",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_52",
+          "type": "A",
+          "question": "He ___ waiting for the bus currently.",
+          "options": [
+            "am",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_53",
+          "type": "A",
+          "question": "We ___ working now.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_54",
+          "type": "A",
+          "question": "Tom ___ playing football.",
+          "options": [
+            "were",
+            "are",
+            "am",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_55",
+          "type": "A",
+          "question": "My brother ___ having lunch at the moment.",
+          "options": [
+            "are",
+            "is",
+            "am",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_56",
+          "type": "A",
+          "question": "I ___ riding a bike now.",
+          "options": [
+            "are",
+            "am",
+            "is",
+            "was"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "ingpres_a_57",
+          "type": "A",
+          "question": "The dog ___ sleeping now.",
+          "options": [
+            "am",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_58",
+          "type": "A",
+          "question": "He ___ studying English.",
+          "options": [
+            "was",
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_59",
+          "type": "A",
+          "question": "It ___ washing the dishes at this moment.",
+          "options": [
+            "am",
+            "are",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_60",
+          "type": "A",
+          "question": "Our cat ___ having lunch at the moment.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_61",
+          "type": "A",
+          "question": "You ___ cleaning the house at the moment.",
+          "options": [
+            "was",
+            "are",
+            "am",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_62",
+          "type": "A",
+          "question": "Our cat ___ writing a letter at this moment.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_63",
+          "type": "A",
+          "question": "My brother ___ painting a picture right now.",
+          "options": [
+            "is",
+            "am",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_64",
+          "type": "A",
+          "question": "Our cat ___ riding a bike.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_65",
+          "type": "A",
+          "question": "The students ___ watching TV at this moment.",
+          "options": [
+            "is",
+            "was",
+            "are",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_66",
+          "type": "A",
+          "question": "Tom ___ having lunch currently.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_67",
+          "type": "A",
+          "question": "The children ___ walking.",
+          "options": [
+            "were",
+            "was",
+            "am",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_68",
+          "type": "A",
+          "question": "It ___ listening to music currently.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_69",
+          "type": "A",
+          "question": "My brother ___ jumping.",
+          "options": [
+            "was",
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_70",
+          "type": "A",
+          "question": "They ___ washing the dishes right now.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_71",
+          "type": "A",
+          "question": "We ___ having lunch.",
+          "options": [
+            "were",
+            "was",
+            "am",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_72",
+          "type": "A",
+          "question": "Our cat ___ helping their mum currently.",
+          "options": [
+            "was",
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_73",
+          "type": "A",
+          "question": "My sister ___ laughing at the moment.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_74",
+          "type": "A",
+          "question": "They ___ eating breakfast currently.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_75",
+          "type": "A",
+          "question": "The boys ___ listening to music now.",
+          "options": [
+            "are",
+            "were",
+            "am",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_76",
+          "type": "A",
+          "question": "I ___ eating breakfast right now.",
+          "options": [
+            "are",
+            "is",
+            "am",
+            "were"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "ingpres_a_77",
+          "type": "A",
+          "question": "The children ___ painting a picture at the moment.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_78",
+          "type": "A",
+          "question": "He ___ playing football at the moment.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_79",
+          "type": "A",
+          "question": "My sister ___ cleaning the house at this moment.",
+          "options": [
+            "was",
+            "are",
+            "is",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_80",
+          "type": "A",
+          "question": "He ___ dancing at the moment.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_81",
+          "type": "A",
+          "question": "My sister ___ drinking water currently.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_82",
+          "type": "A",
+          "question": "My sister ___ swimming now.",
+          "options": [
+            "was",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_83",
+          "type": "A",
+          "question": "Tom ___ eating breakfast now.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_84",
+          "type": "A",
+          "question": "The boys ___ working at this moment.",
+          "options": [
+            "was",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_85",
+          "type": "A",
+          "question": "You ___ eating breakfast now.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_86",
+          "type": "A",
+          "question": "She ___ waiting for the bus at this moment.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_87",
+          "type": "A",
+          "question": "My sister ___ eating breakfast at the moment.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_88",
+          "type": "A",
+          "question": "You ___ washing the dishes currently.",
+          "options": [
+            "was",
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_89",
+          "type": "A",
+          "question": "My brother ___ singing a song currently.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_90",
+          "type": "A",
+          "question": "The dog ___ playing football currently.",
+          "options": [
+            "were",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_91",
+          "type": "A",
+          "question": "He ___ climbing a tree right now.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_92",
+          "type": "A",
+          "question": "She ___ singing a song now.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_93",
+          "type": "A",
+          "question": "My parents ___ climbing a tree.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_94",
+          "type": "A",
+          "question": "The boys ___ reading a book currently.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_95",
+          "type": "A",
+          "question": "He ___ studying English currently.",
+          "options": [
+            "is",
+            "am",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_96",
+          "type": "A",
+          "question": "Tom ___ cleaning the house now.",
+          "options": [
+            "are",
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_97",
+          "type": "A",
+          "question": "My brother ___ climbing a tree right now.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_98",
+          "type": "A",
+          "question": "The children ___ talking on the phone at the moment.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "ingpres_a_99",
+          "type": "A",
+          "question": "He ___ drawing a picture at this moment.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_a_100",
+          "type": "A",
+          "question": "Our cat ___ running now.",
+          "options": [
+            "am",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "ingpres_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are reading a book at this moment.\"",
+          "options": [
+            "The boys is not reading a book at this moment.",
+            "The boys are not reading a book at this moment.",
+            "The boys was not reading a book at this moment.",
+            "The boys am not reading a book at this moment."
+          ],
+          "answer": "The boys are not reading a book at this moment."
+        },
+        {
+          "id": "ingpres_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are waiting for the bus currently.\"",
+          "options": [
+            "The boys was not waiting for the bus currently.",
+            "The boys are not waiting for the bus currently.",
+            "The boys is not waiting for the bus currently.",
+            "The boys were not waiting for the bus currently."
+          ],
+          "answer": "The boys are not waiting for the bus currently."
+        },
+        {
+          "id": "ingpres_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are talking on the phone currently.\"",
+          "options": [
+            "The boys were not talking on the phone currently.",
+            "The boys am not talking on the phone currently.",
+            "The boys is not talking on the phone currently.",
+            "The boys are not talking on the phone currently."
+          ],
+          "answer": "The boys are not talking on the phone currently."
+        },
+        {
+          "id": "ingpres_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are cooking dinner at this moment.\"",
+          "options": [
+            "The children am not cooking dinner at this moment.",
+            "The children is not cooking dinner at this moment.",
+            "The children are not cooking dinner at this moment.",
+            "The children were not cooking dinner at this moment."
+          ],
+          "answer": "The children are not cooking dinner at this moment."
+        },
+        {
+          "id": "ingpres_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are swimming at the moment.\"",
+          "options": [
+            "The children am not swimming at the moment.",
+            "The children is not swimming at the moment.",
+            "The children are not swimming at the moment.",
+            "The children were not swimming at the moment."
+          ],
+          "answer": "The children are not swimming at the moment."
+        },
+        {
+          "id": "ingpres_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is eating breakfast at this moment.\"",
+          "options": [
+            "She is not eating breakfast at this moment.",
+            "She am not eating breakfast at this moment.",
+            "She was not eating breakfast at this moment.",
+            "She are not eating breakfast at this moment."
+          ],
+          "answer": "She is not eating breakfast at this moment."
+        },
+        {
+          "id": "ingpres_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is watching TV at this moment.\"",
+          "options": [
+            "My brother were not watching TV at this moment.",
+            "My brother is not watching TV at this moment.",
+            "My brother was not watching TV at this moment.",
+            "My brother are not watching TV at this moment."
+          ],
+          "answer": "My brother is not watching TV at this moment."
+        },
+        {
+          "id": "ingpres_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am watching TV right now.\"",
+          "options": [
+            "I is not watching TV right now.",
+            "I was not watching TV right now.",
+            "I am not watching TV right now.",
+            "I were not watching TV right now."
+          ],
+          "answer": "I am not watching TV right now."
+        },
+        {
+          "id": "ingpres_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are swimming right now.\"",
+          "options": [
+            "You were not swimming right now.",
+            "You are not swimming right now.",
+            "You is not swimming right now.",
+            "You am not swimming right now."
+          ],
+          "answer": "You are not swimming right now."
+        },
+        {
+          "id": "ingpres_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is waiting for the bus at the moment.\"",
+          "options": [
+            "Maria is not waiting for the bus at the moment.",
+            "Maria are not waiting for the bus at the moment.",
+            "Maria am not waiting for the bus at the moment.",
+            "Maria was not waiting for the bus at the moment."
+          ],
+          "answer": "Maria is not waiting for the bus at the moment."
+        },
+        {
+          "id": "ingpres_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are climbing a tree now.\"",
+          "options": [
+            "The boys was not climbing a tree now.",
+            "The boys is not climbing a tree now.",
+            "The boys were not climbing a tree now.",
+            "The boys are not climbing a tree now."
+          ],
+          "answer": "The boys are not climbing a tree now."
+        },
+        {
+          "id": "ingpres_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are helping their mum.\"",
+          "options": [
+            "My parents are not helping their mum.",
+            "My parents is not helping their mum.",
+            "My parents were not helping their mum.",
+            "My parents am not helping their mum."
+          ],
+          "answer": "My parents are not helping their mum."
+        },
+        {
+          "id": "ingpres_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is dancing.\"",
+          "options": [
+            "She was not dancing.",
+            "She were not dancing.",
+            "She am not dancing.",
+            "She is not dancing."
+          ],
+          "answer": "She is not dancing."
+        },
+        {
+          "id": "ingpres_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is drinking water.\"",
+          "options": [
+            "It are not drinking water.",
+            "It is not drinking water.",
+            "It am not drinking water.",
+            "It was not drinking water."
+          ],
+          "answer": "It is not drinking water."
+        },
+        {
+          "id": "ingpres_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are dancing at this moment.\"",
+          "options": [
+            "The boys were not dancing at this moment.",
+            "The boys are not dancing at this moment.",
+            "The boys am not dancing at this moment.",
+            "The boys was not dancing at this moment."
+          ],
+          "answer": "The boys are not dancing at this moment."
+        },
+        {
+          "id": "ingpres_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is waiting for the bus now.\"",
+          "options": [
+            "My sister was not waiting for the bus now.",
+            "My sister is not waiting for the bus now.",
+            "My sister were not waiting for the bus now.",
+            "My sister are not waiting for the bus now."
+          ],
+          "answer": "My sister is not waiting for the bus now."
+        },
+        {
+          "id": "ingpres_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is running at the moment.\"",
+          "options": [
+            "The dog am not running at the moment.",
+            "The dog are not running at the moment.",
+            "The dog was not running at the moment.",
+            "The dog is not running at the moment."
+          ],
+          "answer": "The dog is not running at the moment."
+        },
+        {
+          "id": "ingpres_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is working now.\"",
+          "options": [
+            "Maria was not working now.",
+            "Maria were not working now.",
+            "Maria are not working now.",
+            "Maria is not working now."
+          ],
+          "answer": "Maria is not working now."
+        },
+        {
+          "id": "ingpres_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are washing the dishes currently.\"",
+          "options": [
+            "The children is not washing the dishes currently.",
+            "The children are not washing the dishes currently.",
+            "The children was not washing the dishes currently.",
+            "The children were not washing the dishes currently."
+          ],
+          "answer": "The children are not washing the dishes currently."
+        },
+        {
+          "id": "ingpres_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are talking on the phone.\"",
+          "options": [
+            "We were not talking on the phone.",
+            "We are not talking on the phone.",
+            "We am not talking on the phone.",
+            "We was not talking on the phone."
+          ],
+          "answer": "We are not talking on the phone."
+        },
+        {
+          "id": "ingpres_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are reading a book currently.\"",
+          "options": [
+            "You is not reading a book currently.",
+            "You am not reading a book currently.",
+            "You are not reading a book currently.",
+            "You were not reading a book currently."
+          ],
+          "answer": "You are not reading a book currently."
+        },
+        {
+          "id": "ingpres_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are laughing now.\"",
+          "options": [
+            "You were not laughing now.",
+            "You are not laughing now.",
+            "You was not laughing now.",
+            "You is not laughing now."
+          ],
+          "answer": "You are not laughing now."
+        },
+        {
+          "id": "ingpres_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are drinking water.\"",
+          "options": [
+            "We am not drinking water.",
+            "We were not drinking water.",
+            "We are not drinking water.",
+            "We is not drinking water."
+          ],
+          "answer": "We are not drinking water."
+        },
+        {
+          "id": "ingpres_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am washing the dishes currently.\"",
+          "options": [
+            "I is not washing the dishes currently.",
+            "I are not washing the dishes currently.",
+            "I were not washing the dishes currently.",
+            "I am not washing the dishes currently."
+          ],
+          "answer": "I am not washing the dishes currently."
+        },
+        {
+          "id": "ingpres_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are singing a song right now.\"",
+          "options": [
+            "They am not singing a song right now.",
+            "They was not singing a song right now.",
+            "They is not singing a song right now.",
+            "They are not singing a song right now."
+          ],
+          "answer": "They are not singing a song right now."
+        },
+        {
+          "id": "ingpres_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is doing homework at the moment.\"",
+          "options": [
+            "My brother is not doing homework at the moment.",
+            "My brother are not doing homework at the moment.",
+            "My brother was not doing homework at the moment.",
+            "My brother were not doing homework at the moment."
+          ],
+          "answer": "My brother is not doing homework at the moment."
+        },
+        {
+          "id": "ingpres_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are watching TV at this moment.\"",
+          "options": [
+            "We is not watching TV at this moment.",
+            "We are not watching TV at this moment.",
+            "We were not watching TV at this moment.",
+            "We am not watching TV at this moment."
+          ],
+          "answer": "We are not watching TV at this moment."
+        },
+        {
+          "id": "ingpres_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are dancing now.\"",
+          "options": [
+            "You was not dancing now.",
+            "You is not dancing now.",
+            "You am not dancing now.",
+            "You are not dancing now."
+          ],
+          "answer": "You are not dancing now."
+        },
+        {
+          "id": "ingpres_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are drawing a picture at this moment.\"",
+          "options": [
+            "We was not drawing a picture at this moment.",
+            "We are not drawing a picture at this moment.",
+            "We were not drawing a picture at this moment.",
+            "We is not drawing a picture at this moment."
+          ],
+          "answer": "We are not drawing a picture at this moment."
+        },
+        {
+          "id": "ingpres_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is drinking water currently.\"",
+          "options": [
+            "Maria am not drinking water currently.",
+            "Maria is not drinking water currently.",
+            "Maria was not drinking water currently.",
+            "Maria were not drinking water currently."
+          ],
+          "answer": "Maria is not drinking water currently."
+        },
+        {
+          "id": "ingpres_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is feeding the cat currently.\"",
+          "options": [
+            "Maria am not feeding the cat currently.",
+            "Maria were not feeding the cat currently.",
+            "Maria is not feeding the cat currently.",
+            "Maria are not feeding the cat currently."
+          ],
+          "answer": "Maria is not feeding the cat currently."
+        },
+        {
+          "id": "ingpres_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are watching TV at the moment.\"",
+          "options": [
+            "We is not watching TV at the moment.",
+            "We are not watching TV at the moment.",
+            "We was not watching TV at the moment.",
+            "We am not watching TV at the moment."
+          ],
+          "answer": "We are not watching TV at the moment."
+        },
+        {
+          "id": "ingpres_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is dancing at this moment.\"",
+          "options": [
+            "It am not dancing at this moment.",
+            "It are not dancing at this moment.",
+            "It were not dancing at this moment.",
+            "It is not dancing at this moment."
+          ],
+          "answer": "It is not dancing at this moment."
+        },
+        {
+          "id": "ingpres_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are writing a letter currently.\"",
+          "options": [
+            "You are not writing a letter currently.",
+            "You is not writing a letter currently.",
+            "You were not writing a letter currently.",
+            "You am not writing a letter currently."
+          ],
+          "answer": "You are not writing a letter currently."
+        },
+        {
+          "id": "ingpres_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is listening to music.\"",
+          "options": [
+            "My brother was not listening to music.",
+            "My brother is not listening to music.",
+            "My brother are not listening to music.",
+            "My brother am not listening to music."
+          ],
+          "answer": "My brother is not listening to music."
+        },
+        {
+          "id": "ingpres_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are painting a picture currently.\"",
+          "options": [
+            "We was not painting a picture currently.",
+            "We were not painting a picture currently.",
+            "We am not painting a picture currently.",
+            "We are not painting a picture currently."
+          ],
+          "answer": "We are not painting a picture currently."
+        },
+        {
+          "id": "ingpres_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is drawing a picture at this moment.\"",
+          "options": [
+            "My brother are not drawing a picture at this moment.",
+            "My brother was not drawing a picture at this moment.",
+            "My brother is not drawing a picture at this moment.",
+            "My brother am not drawing a picture at this moment."
+          ],
+          "answer": "My brother is not drawing a picture at this moment."
+        },
+        {
+          "id": "ingpres_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are drinking water currently.\"",
+          "options": [
+            "My parents was not drinking water currently.",
+            "My parents are not drinking water currently.",
+            "My parents am not drinking water currently.",
+            "My parents is not drinking water currently."
+          ],
+          "answer": "My parents are not drinking water currently."
+        },
+        {
+          "id": "ingpres_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is laughing at the moment.\"",
+          "options": [
+            "Maria was not laughing at the moment.",
+            "Maria are not laughing at the moment.",
+            "Maria is not laughing at the moment.",
+            "Maria am not laughing at the moment."
+          ],
+          "answer": "Maria is not laughing at the moment."
+        },
+        {
+          "id": "ingpres_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is cleaning the house.\"",
+          "options": [
+            "It am not cleaning the house.",
+            "It was not cleaning the house.",
+            "It are not cleaning the house.",
+            "It is not cleaning the house."
+          ],
+          "answer": "It is not cleaning the house."
+        },
+        {
+          "id": "ingpres_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are swimming.\"",
+          "options": [
+            "The boys was not swimming.",
+            "The boys are not swimming.",
+            "The boys am not swimming.",
+            "The boys were not swimming."
+          ],
+          "answer": "The boys are not swimming."
+        },
+        {
+          "id": "ingpres_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is cooking dinner currently.\"",
+          "options": [
+            "Maria is not cooking dinner currently.",
+            "Maria am not cooking dinner currently.",
+            "Maria are not cooking dinner currently.",
+            "Maria was not cooking dinner currently."
+          ],
+          "answer": "Maria is not cooking dinner currently."
+        },
+        {
+          "id": "ingpres_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are drawing a picture.\"",
+          "options": [
+            "The children are not drawing a picture.",
+            "The children was not drawing a picture.",
+            "The children am not drawing a picture.",
+            "The children were not drawing a picture."
+          ],
+          "answer": "The children are not drawing a picture."
+        },
+        {
+          "id": "ingpres_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are working.\"",
+          "options": [
+            "The students am not working.",
+            "The students was not working.",
+            "The students is not working.",
+            "The students are not working."
+          ],
+          "answer": "The students are not working."
+        },
+        {
+          "id": "ingpres_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are doing homework at this moment.\"",
+          "options": [
+            "We is not doing homework at this moment.",
+            "We am not doing homework at this moment.",
+            "We was not doing homework at this moment.",
+            "We are not doing homework at this moment."
+          ],
+          "answer": "We are not doing homework at this moment."
+        },
+        {
+          "id": "ingpres_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is eating breakfast.\"",
+          "options": [
+            "Tom are not eating breakfast.",
+            "Tom was not eating breakfast.",
+            "Tom were not eating breakfast.",
+            "Tom is not eating breakfast."
+          ],
+          "answer": "Tom is not eating breakfast."
+        },
+        {
+          "id": "ingpres_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is writing a letter at this moment.\"",
+          "options": [
+            "It is not writing a letter at this moment.",
+            "It am not writing a letter at this moment.",
+            "It were not writing a letter at this moment.",
+            "It was not writing a letter at this moment."
+          ],
+          "answer": "It is not writing a letter at this moment."
+        },
+        {
+          "id": "ingpres_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is helping their mum.\"",
+          "options": [
+            "She are not helping their mum.",
+            "She is not helping their mum.",
+            "She was not helping their mum.",
+            "She am not helping their mum."
+          ],
+          "answer": "She is not helping their mum."
+        },
+        {
+          "id": "ingpres_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is reading a book currently.\"",
+          "options": [
+            "My brother is not reading a book currently.",
+            "My brother was not reading a book currently.",
+            "My brother are not reading a book currently.",
+            "My brother am not reading a book currently."
+          ],
+          "answer": "My brother is not reading a book currently."
+        },
+        {
+          "id": "ingpres_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are walking at the moment.\"",
+          "options": [
+            "The students were not walking at the moment.",
+            "The students am not walking at the moment.",
+            "The students are not walking at the moment.",
+            "The students was not walking at the moment."
+          ],
+          "answer": "The students are not walking at the moment."
+        },
+        {
+          "id": "ingpres_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are laughing at the moment.\"",
+          "options": [
+            "The children was not laughing at the moment.",
+            "The children is not laughing at the moment.",
+            "The children are not laughing at the moment.",
+            "The children were not laughing at the moment."
+          ],
+          "answer": "The children are not laughing at the moment."
+        },
+        {
+          "id": "ingpres_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is studying English now.\"",
+          "options": [
+            "Tom is not studying English now.",
+            "Tom am not studying English now.",
+            "Tom were not studying English now.",
+            "Tom was not studying English now."
+          ],
+          "answer": "Tom is not studying English now."
+        },
+        {
+          "id": "ingpres_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are drawing a picture right now.\"",
+          "options": [
+            "The boys are not drawing a picture right now.",
+            "The boys was not drawing a picture right now.",
+            "The boys am not drawing a picture right now.",
+            "The boys were not drawing a picture right now."
+          ],
+          "answer": "The boys are not drawing a picture right now."
+        },
+        {
+          "id": "ingpres_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are talking on the phone at the moment.\"",
+          "options": [
+            "The children am not talking on the phone at the moment.",
+            "The children was not talking on the phone at the moment.",
+            "The children were not talking on the phone at the moment.",
+            "The children are not talking on the phone at the moment."
+          ],
+          "answer": "The children are not talking on the phone at the moment."
+        },
+        {
+          "id": "ingpres_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is talking on the phone at the moment.\"",
+          "options": [
+            "He is not talking on the phone at the moment.",
+            "He am not talking on the phone at the moment.",
+            "He were not talking on the phone at the moment.",
+            "He was not talking on the phone at the moment."
+          ],
+          "answer": "He is not talking on the phone at the moment."
+        },
+        {
+          "id": "ingpres_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is helping their mum now.\"",
+          "options": [
+            "She were not helping their mum now.",
+            "She was not helping their mum now.",
+            "She is not helping their mum now.",
+            "She are not helping their mum now."
+          ],
+          "answer": "She is not helping their mum now."
+        },
+        {
+          "id": "ingpres_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is writing a letter at the moment.\"",
+          "options": [
+            "He was not writing a letter at the moment.",
+            "He is not writing a letter at the moment.",
+            "He are not writing a letter at the moment.",
+            "He were not writing a letter at the moment."
+          ],
+          "answer": "He is not writing a letter at the moment."
+        },
+        {
+          "id": "ingpres_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is swimming.\"",
+          "options": [
+            "Tom were not swimming.",
+            "Tom was not swimming.",
+            "Tom are not swimming.",
+            "Tom is not swimming."
+          ],
+          "answer": "Tom is not swimming."
+        },
+        {
+          "id": "ingpres_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is writing a letter currently.\"",
+          "options": [
+            "The dog is not writing a letter currently.",
+            "The dog were not writing a letter currently.",
+            "The dog was not writing a letter currently.",
+            "The dog are not writing a letter currently."
+          ],
+          "answer": "The dog is not writing a letter currently."
+        },
+        {
+          "id": "ingpres_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is helping their mum now.\"",
+          "options": [
+            "Maria are not helping their mum now.",
+            "Maria is not helping their mum now.",
+            "Maria am not helping their mum now.",
+            "Maria were not helping their mum now."
+          ],
+          "answer": "Maria is not helping their mum now."
+        },
+        {
+          "id": "ingpres_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is waiting for the bus now.\"",
+          "options": [
+            "Maria was not waiting for the bus now.",
+            "Maria were not waiting for the bus now.",
+            "Maria is not waiting for the bus now.",
+            "Maria are not waiting for the bus now."
+          ],
+          "answer": "Maria is not waiting for the bus now."
+        },
+        {
+          "id": "ingpres_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is working currently.\"",
+          "options": [
+            "He were not working currently.",
+            "He is not working currently.",
+            "He was not working currently.",
+            "He am not working currently."
+          ],
+          "answer": "He is not working currently."
+        },
+        {
+          "id": "ingpres_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are laughing.\"",
+          "options": [
+            "We is not laughing.",
+            "We are not laughing.",
+            "We am not laughing.",
+            "We were not laughing."
+          ],
+          "answer": "We are not laughing."
+        },
+        {
+          "id": "ingpres_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are writing a letter now.\"",
+          "options": [
+            "The students are not writing a letter now.",
+            "The students is not writing a letter now.",
+            "The students were not writing a letter now.",
+            "The students am not writing a letter now."
+          ],
+          "answer": "The students are not writing a letter now."
+        },
+        {
+          "id": "ingpres_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are washing the dishes currently.\"",
+          "options": [
+            "My parents was not washing the dishes currently.",
+            "My parents are not washing the dishes currently.",
+            "My parents were not washing the dishes currently.",
+            "My parents is not washing the dishes currently."
+          ],
+          "answer": "My parents are not washing the dishes currently."
+        },
+        {
+          "id": "ingpres_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are studying English.\"",
+          "options": [
+            "You was not studying English.",
+            "You are not studying English.",
+            "You is not studying English.",
+            "You am not studying English."
+          ],
+          "answer": "You are not studying English."
+        },
+        {
+          "id": "ingpres_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are painting a picture.\"",
+          "options": [
+            "The children is not painting a picture.",
+            "The children am not painting a picture.",
+            "The children are not painting a picture.",
+            "The children was not painting a picture."
+          ],
+          "answer": "The children are not painting a picture."
+        },
+        {
+          "id": "ingpres_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are cooking dinner currently.\"",
+          "options": [
+            "They was not cooking dinner currently.",
+            "They am not cooking dinner currently.",
+            "They are not cooking dinner currently.",
+            "They were not cooking dinner currently."
+          ],
+          "answer": "They are not cooking dinner currently."
+        },
+        {
+          "id": "ingpres_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is studying English currently.\"",
+          "options": [
+            "My sister am not studying English currently.",
+            "My sister was not studying English currently.",
+            "My sister were not studying English currently.",
+            "My sister is not studying English currently."
+          ],
+          "answer": "My sister is not studying English currently."
+        },
+        {
+          "id": "ingpres_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is jumping at this moment.\"",
+          "options": [
+            "Tom is not jumping at this moment.",
+            "Tom was not jumping at this moment.",
+            "Tom are not jumping at this moment.",
+            "Tom were not jumping at this moment."
+          ],
+          "answer": "Tom is not jumping at this moment."
+        },
+        {
+          "id": "ingpres_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is swimming now.\"",
+          "options": [
+            "My brother is not swimming now.",
+            "My brother were not swimming now.",
+            "My brother am not swimming now.",
+            "My brother are not swimming now."
+          ],
+          "answer": "My brother is not swimming now."
+        },
+        {
+          "id": "ingpres_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is painting a picture now.\"",
+          "options": [
+            "The dog am not painting a picture now.",
+            "The dog was not painting a picture now.",
+            "The dog is not painting a picture now.",
+            "The dog are not painting a picture now."
+          ],
+          "answer": "The dog is not painting a picture now."
+        },
+        {
+          "id": "ingpres_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is swimming currently.\"",
+          "options": [
+            "She was not swimming currently.",
+            "She am not swimming currently.",
+            "She are not swimming currently.",
+            "She is not swimming currently."
+          ],
+          "answer": "She is not swimming currently."
+        },
+        {
+          "id": "ingpres_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am painting a picture.\"",
+          "options": [
+            "I am not painting a picture.",
+            "I was not painting a picture.",
+            "I is not painting a picture.",
+            "I are not painting a picture."
+          ],
+          "answer": "I am not painting a picture."
+        },
+        {
+          "id": "ingpres_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are reading a book right now.\"",
+          "options": [
+            "We were not reading a book right now.",
+            "We are not reading a book right now.",
+            "We was not reading a book right now.",
+            "We is not reading a book right now."
+          ],
+          "answer": "We are not reading a book right now."
+        },
+        {
+          "id": "ingpres_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is drawing a picture.\"",
+          "options": [
+            "My brother were not drawing a picture.",
+            "My brother is not drawing a picture.",
+            "My brother was not drawing a picture.",
+            "My brother am not drawing a picture."
+          ],
+          "answer": "My brother is not drawing a picture."
+        },
+        {
+          "id": "ingpres_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is jumping at this moment.\"",
+          "options": [
+            "Maria are not jumping at this moment.",
+            "Maria was not jumping at this moment.",
+            "Maria is not jumping at this moment.",
+            "Maria were not jumping at this moment."
+          ],
+          "answer": "Maria is not jumping at this moment."
+        },
+        {
+          "id": "ingpres_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is writing a letter.\"",
+          "options": [
+            "He are not writing a letter.",
+            "He is not writing a letter.",
+            "He was not writing a letter.",
+            "He am not writing a letter."
+          ],
+          "answer": "He is not writing a letter."
+        },
+        {
+          "id": "ingpres_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are sleeping right now.\"",
+          "options": [
+            "They is not sleeping right now.",
+            "They were not sleeping right now.",
+            "They was not sleeping right now.",
+            "They are not sleeping right now."
+          ],
+          "answer": "They are not sleeping right now."
+        },
+        {
+          "id": "ingpres_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is studying English currently.\"",
+          "options": [
+            "My brother are not studying English currently.",
+            "My brother was not studying English currently.",
+            "My brother were not studying English currently.",
+            "My brother is not studying English currently."
+          ],
+          "answer": "My brother is not studying English currently."
+        },
+        {
+          "id": "ingpres_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is cooking dinner at the moment.\"",
+          "options": [
+            "Our cat are not cooking dinner at the moment.",
+            "Our cat was not cooking dinner at the moment.",
+            "Our cat am not cooking dinner at the moment.",
+            "Our cat is not cooking dinner at the moment."
+          ],
+          "answer": "Our cat is not cooking dinner at the moment."
+        },
+        {
+          "id": "ingpres_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are waiting for the bus now.\"",
+          "options": [
+            "The students is not waiting for the bus now.",
+            "The students am not waiting for the bus now.",
+            "The students were not waiting for the bus now.",
+            "The students are not waiting for the bus now."
+          ],
+          "answer": "The students are not waiting for the bus now."
+        },
+        {
+          "id": "ingpres_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is jumping at the moment.\"",
+          "options": [
+            "The dog am not jumping at the moment.",
+            "The dog are not jumping at the moment.",
+            "The dog is not jumping at the moment.",
+            "The dog were not jumping at the moment."
+          ],
+          "answer": "The dog is not jumping at the moment."
+        },
+        {
+          "id": "ingpres_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is painting a picture at the moment.\"",
+          "options": [
+            "Tom are not painting a picture at the moment.",
+            "Tom is not painting a picture at the moment.",
+            "Tom were not painting a picture at the moment.",
+            "Tom am not painting a picture at the moment."
+          ],
+          "answer": "Tom is not painting a picture at the moment."
+        },
+        {
+          "id": "ingpres_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am studying English.\"",
+          "options": [
+            "I is not studying English.",
+            "I were not studying English.",
+            "I am not studying English.",
+            "I are not studying English."
+          ],
+          "answer": "I am not studying English."
+        },
+        {
+          "id": "ingpres_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is climbing a tree at the moment.\"",
+          "options": [
+            "Tom is not climbing a tree at the moment.",
+            "Tom was not climbing a tree at the moment.",
+            "Tom were not climbing a tree at the moment.",
+            "Tom am not climbing a tree at the moment."
+          ],
+          "answer": "Tom is not climbing a tree at the moment."
+        },
+        {
+          "id": "ingpres_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is painting a picture at this moment.\"",
+          "options": [
+            "My brother were not painting a picture at this moment.",
+            "My brother is not painting a picture at this moment.",
+            "My brother are not painting a picture at this moment.",
+            "My brother was not painting a picture at this moment."
+          ],
+          "answer": "My brother is not painting a picture at this moment."
+        },
+        {
+          "id": "ingpres_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is walking now.\"",
+          "options": [
+            "My sister am not walking now.",
+            "My sister are not walking now.",
+            "My sister was not walking now.",
+            "My sister is not walking now."
+          ],
+          "answer": "My sister is not walking now."
+        },
+        {
+          "id": "ingpres_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is watching TV at the moment.\"",
+          "options": [
+            "My sister are not watching TV at the moment.",
+            "My sister were not watching TV at the moment.",
+            "My sister is not watching TV at the moment.",
+            "My sister was not watching TV at the moment."
+          ],
+          "answer": "My sister is not watching TV at the moment."
+        },
+        {
+          "id": "ingpres_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is sleeping now.\"",
+          "options": [
+            "He was not sleeping now.",
+            "He were not sleeping now.",
+            "He am not sleeping now.",
+            "He is not sleeping now."
+          ],
+          "answer": "He is not sleeping now."
+        },
+        {
+          "id": "ingpres_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is painting a picture currently.\"",
+          "options": [
+            "It were not painting a picture currently.",
+            "It is not painting a picture currently.",
+            "It are not painting a picture currently.",
+            "It am not painting a picture currently."
+          ],
+          "answer": "It is not painting a picture currently."
+        },
+        {
+          "id": "ingpres_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is having lunch.\"",
+          "options": [
+            "My sister am not having lunch.",
+            "My sister is not having lunch.",
+            "My sister was not having lunch.",
+            "My sister are not having lunch."
+          ],
+          "answer": "My sister is not having lunch."
+        },
+        {
+          "id": "ingpres_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am sleeping currently.\"",
+          "options": [
+            "I were not sleeping currently.",
+            "I was not sleeping currently.",
+            "I am not sleeping currently.",
+            "I is not sleeping currently."
+          ],
+          "answer": "I am not sleeping currently."
+        },
+        {
+          "id": "ingpres_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is walking.\"",
+          "options": [
+            "Tom am not walking.",
+            "Tom are not walking.",
+            "Tom is not walking.",
+            "Tom were not walking."
+          ],
+          "answer": "Tom is not walking."
+        },
+        {
+          "id": "ingpres_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are doing homework now.\"",
+          "options": [
+            "The boys were not doing homework now.",
+            "The boys is not doing homework now.",
+            "The boys am not doing homework now.",
+            "The boys are not doing homework now."
+          ],
+          "answer": "The boys are not doing homework now."
+        },
+        {
+          "id": "ingpres_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are painting a picture right now.\"",
+          "options": [
+            "You were not painting a picture right now.",
+            "You are not painting a picture right now.",
+            "You was not painting a picture right now.",
+            "You am not painting a picture right now."
+          ],
+          "answer": "You are not painting a picture right now."
+        },
+        {
+          "id": "ingpres_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are painting a picture currently.\"",
+          "options": [
+            "The students were not painting a picture currently.",
+            "The students am not painting a picture currently.",
+            "The students is not painting a picture currently.",
+            "The students are not painting a picture currently."
+          ],
+          "answer": "The students are not painting a picture currently."
+        },
+        {
+          "id": "ingpres_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are doing homework.\"",
+          "options": [
+            "The boys am not doing homework.",
+            "The boys is not doing homework.",
+            "The boys are not doing homework.",
+            "The boys was not doing homework."
+          ],
+          "answer": "The boys are not doing homework."
+        },
+        {
+          "id": "ingpres_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am drawing a picture right now.\"",
+          "options": [
+            "I was not drawing a picture right now.",
+            "I am not drawing a picture right now.",
+            "I were not drawing a picture right now.",
+            "I is not drawing a picture right now."
+          ],
+          "answer": "I am not drawing a picture right now."
+        },
+        {
+          "id": "ingpres_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is singing a song now.\"",
+          "options": [
+            "She were not singing a song now.",
+            "She am not singing a song now.",
+            "She are not singing a song now.",
+            "She is not singing a song now."
+          ],
+          "answer": "She is not singing a song now."
+        },
+        {
+          "id": "ingpres_c_1",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are jumping at the moment.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_2",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was painting a picture last night.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_3",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are climbing a tree at the moment.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_4",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were laughing last Sunday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_5",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children always ride a bike.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_6",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was painting a picture last Sunday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_7",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It sings a song.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_8",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We cook dinner on Mondays.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_9",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is watching TV right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_10",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was doing homework last Sunday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_11",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is waiting for the bus.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_12",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You study English every day.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_13",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was having lunch at 5 o'clock yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_14",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was singing a song last night.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_15",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents were running yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_16",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You feed the cat every day.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_17",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were dancing last night.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_18",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister paints a picture every morning.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_19",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria is painting a picture now.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_20",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were sleeping last Sunday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_21",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents usually jump.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_22",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is washing the dishes at the moment.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_23",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother always climbs a tree.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_24",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We are painting a picture now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_25",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was playing football last Sunday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_26",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You always listen to music.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_27",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat does homework every morning.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_28",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria cooks dinner every day.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_29",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We are working.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_30",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were feeding the cat last Sunday.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_31",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You are doing homework.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_32",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are dancing now.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_33",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were painting a picture last night.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_34",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were working yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_35",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students are laughing right now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_36",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You play football every day.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_37",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is working at the moment.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_38",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She always has lunch.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_39",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was climbing a tree yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_40",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You are watching TV.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_41",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is feeding the cat now.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_42",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children are walking at this moment.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_43",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was walking yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_44",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was dancing yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_45",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were talking on the phone last night.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_46",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were climbing a tree at 5 o'clock yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_47",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was cleaning the house yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_48",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was painting a picture last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_49",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is playing football right now.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_50",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was running last night.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_51",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We sing a song.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_52",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat sings a song.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_53",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I clean the house every morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_54",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom is watching TV right now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_55",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was writing a letter yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_56",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is drawing a picture at the moment.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_57",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She walks every day.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_58",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I work.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_59",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria listens to music every morning.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_60",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom is eating breakfast currently.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_61",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was laughing last Sunday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_62",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am playing football now.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_63",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He dances.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_64",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is painting a picture currently.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_65",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are cooking dinner at the moment.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_66",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys sleep every day.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_67",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog was doing homework last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_68",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You talk on the phone.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_69",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We are singing a song currently.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_70",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children usually drink water.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_71",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students are riding a bike at this moment.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_72",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog was waiting for the bus at 5 o'clock yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_73",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is having lunch at the moment.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_74",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You are working now.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_75",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria is watching TV.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_76",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is cooking dinner at this moment.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_77",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is climbing a tree currently.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_78",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It draws a picture.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_79",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was singing a song last night.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_80",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog was cleaning the house yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_81",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was laughing yesterday afternoon.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_82",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is riding a bike at this moment.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_83",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was drinking water yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_84",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was running yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_85",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is drawing a picture right now.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_86",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is reading a book at the moment.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_87",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We were climbing a tree yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_88",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was waiting for the bus last night.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_89",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was cleaning the house yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_90",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys read a book every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_91",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was dancing last Sunday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_92",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was listening to music last night.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_93",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He washes the dishes every morning.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "ingpres_c_94",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents were riding a bike yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_95",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is watching TV currently.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_96",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were cooking dinner last night.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_97",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are dancing now.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_c_98",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were listening to music last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_99",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was washing the dishes yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "ingpres_c_100",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children are swimming now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "ingpres_d_1",
+          "type": "D",
+          "question": "Quieres decir que Tom está bailando ahora mismo.",
+          "options": [
+            "Tom was dancing at this moment.",
+            "Tom am dancing at this moment.",
+            "Tom is dancing at this moment.",
+            "Tom dances."
+          ],
+          "answer": "Tom is dancing at this moment."
+        },
+        {
+          "id": "ingpres_d_2",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están nadando ahora mismo.",
+          "options": [
+            "The students were swimming now.",
+            "The students am swimming now.",
+            "The students are swimming now.",
+            "The students swim."
+          ],
+          "answer": "The students are swimming now."
+        },
+        {
+          "id": "ingpres_d_3",
+          "type": "D",
+          "question": "Quieres decir que él está ayudando a su madre ahora mismo.",
+          "options": [
+            "He is helping their mum now.",
+            "He helps their mum.",
+            "He was helping their mum now.",
+            "He am helping their mum now."
+          ],
+          "answer": "He is helping their mum now."
+        },
+        {
+          "id": "ingpres_d_4",
+          "type": "D",
+          "question": "Quieres decir que los niños están comiendo ahora mismo.",
+          "options": [
+            "The children was having lunch right now.",
+            "The children have lunch.",
+            "The children were having lunch right now.",
+            "The children are having lunch right now."
+          ],
+          "answer": "The children are having lunch right now."
+        },
+        {
+          "id": "ingpres_d_5",
+          "type": "D",
+          "question": "Quieres decir que yo estoy saltando ahora mismo.",
+          "options": [
+            "I are jumping now.",
+            "I was jumping now.",
+            "I jump.",
+            "I am jumping now."
+          ],
+          "answer": "I am jumping now."
+        },
+        {
+          "id": "ingpres_d_6",
+          "type": "D",
+          "question": "Quieres decir que Tom está trepando a un árbol ahora mismo.",
+          "options": [
+            "Tom was climbing a tree now.",
+            "Tom is climbing a tree now.",
+            "Tom climbs a tree.",
+            "Tom am climbing a tree now."
+          ],
+          "answer": "Tom is climbing a tree now."
+        },
+        {
+          "id": "ingpres_d_7",
+          "type": "D",
+          "question": "Quieres decir que el perro está ayudando a su madre ahora mismo.",
+          "options": [
+            "The dog is helping their mum at this moment.",
+            "The dog was helping their mum at this moment.",
+            "The dog are helping their mum at this moment.",
+            "The dog helps their mum."
+          ],
+          "answer": "The dog is helping their mum at this moment."
+        },
+        {
+          "id": "ingpres_d_8",
+          "type": "D",
+          "question": "Quieres decir que el perro está leyendo un libro ahora mismo.",
+          "options": [
+            "The dog is reading a book right now.",
+            "The dog reads a book.",
+            "The dog are reading a book right now.",
+            "The dog was reading a book right now."
+          ],
+          "answer": "The dog is reading a book right now."
+        },
+        {
+          "id": "ingpres_d_9",
+          "type": "D",
+          "question": "Quieres decir que los niños están cantando una canción ahora mismo.",
+          "options": [
+            "The children were singing a song at this moment.",
+            "The children are singing a song at this moment.",
+            "The children was singing a song at this moment.",
+            "The children sing a song."
+          ],
+          "answer": "The children are singing a song at this moment."
+        },
+        {
+          "id": "ingpres_d_10",
+          "type": "D",
+          "question": "Quieres decir que los chicos están hablando por teléfono ahora mismo.",
+          "options": [
+            "The boys talk on the phone.",
+            "The boys are talking on the phone right now.",
+            "The boys is talking on the phone right now.",
+            "The boys were talking on the phone right now."
+          ],
+          "answer": "The boys are talking on the phone right now."
+        },
+        {
+          "id": "ingpres_d_11",
+          "type": "D",
+          "question": "Quieres decir que mis padres están escuchando música ahora mismo.",
+          "options": [
+            "My parents is listening to music right now.",
+            "My parents were listening to music right now.",
+            "My parents are listening to music right now.",
+            "My parents listen to music."
+          ],
+          "answer": "My parents are listening to music right now."
+        },
+        {
+          "id": "ingpres_d_12",
+          "type": "D",
+          "question": "Quieres decir que mis padres están escribiendo una carta ahora mismo.",
+          "options": [
+            "My parents is writing a letter at this moment.",
+            "My parents are writing a letter at this moment.",
+            "My parents write a letter.",
+            "My parents were writing a letter at this moment."
+          ],
+          "answer": "My parents are writing a letter at this moment."
+        },
+        {
+          "id": "ingpres_d_13",
+          "type": "D",
+          "question": "Quieres decir que eso está trepando a un árbol ahora mismo.",
+          "options": [
+            "It was climbing a tree right now.",
+            "It am climbing a tree right now.",
+            "It climbs a tree.",
+            "It is climbing a tree right now."
+          ],
+          "answer": "It is climbing a tree right now."
+        },
+        {
+          "id": "ingpres_d_14",
+          "type": "D",
+          "question": "Quieres decir que tú estás viendo la tele ahora mismo.",
+          "options": [
+            "You are watching TV right now.",
+            "You watch TV.",
+            "You were watching TV right now.",
+            "You was watching TV right now."
+          ],
+          "answer": "You are watching TV right now."
+        },
+        {
+          "id": "ingpres_d_15",
+          "type": "D",
+          "question": "Quieres decir que eso está cocinando la cena ahora mismo.",
+          "options": [
+            "It is cooking dinner now.",
+            "It were cooking dinner now.",
+            "It cooks dinner.",
+            "It was cooking dinner now."
+          ],
+          "answer": "It is cooking dinner now."
+        },
+        {
+          "id": "ingpres_d_16",
+          "type": "D",
+          "question": "Quieres decir que ella está fregando los platos ahora mismo.",
+          "options": [
+            "She washes the dishes.",
+            "She was washing the dishes now.",
+            "She is washing the dishes now.",
+            "She were washing the dishes now."
+          ],
+          "answer": "She is washing the dishes now."
+        },
+        {
+          "id": "ingpres_d_17",
+          "type": "D",
+          "question": "Quieres decir que mi hermano está haciendo los deberes ahora mismo.",
+          "options": [
+            "My brother was doing homework right now.",
+            "My brother am doing homework right now.",
+            "My brother is doing homework right now.",
+            "My brother does homework."
+          ],
+          "answer": "My brother is doing homework right now."
+        },
+        {
+          "id": "ingpres_d_18",
+          "type": "D",
+          "question": "Quieres decir que él está estudiando inglés ahora mismo.",
+          "options": [
+            "He studies English.",
+            "He were studying English right now.",
+            "He is studying English right now.",
+            "He was studying English right now."
+          ],
+          "answer": "He is studying English right now."
+        },
+        {
+          "id": "ingpres_d_19",
+          "type": "D",
+          "question": "Quieres decir que los niños están saltando ahora mismo.",
+          "options": [
+            "The children were jumping at this moment.",
+            "The children jump.",
+            "The children is jumping at this moment.",
+            "The children are jumping at this moment."
+          ],
+          "answer": "The children are jumping at this moment."
+        },
+        {
+          "id": "ingpres_d_20",
+          "type": "D",
+          "question": "Quieres decir que mis padres están dibujando un dibujo ahora mismo.",
+          "options": [
+            "My parents were drawing a picture at this moment.",
+            "My parents is drawing a picture at this moment.",
+            "My parents draw a picture.",
+            "My parents are drawing a picture at this moment."
+          ],
+          "answer": "My parents are drawing a picture at this moment."
+        },
+        {
+          "id": "ingpres_d_21",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están comiendo ahora mismo.",
+          "options": [
+            "The students were having lunch right now.",
+            "The students are having lunch right now.",
+            "The students have lunch.",
+            "The students is having lunch right now."
+          ],
+          "answer": "The students are having lunch right now."
+        },
+        {
+          "id": "ingpres_d_22",
+          "type": "D",
+          "question": "Quieres decir que yo estoy estudiando inglés ahora mismo.",
+          "options": [
+            "I study English.",
+            "I were studying English now.",
+            "I was studying English now.",
+            "I am studying English now."
+          ],
+          "answer": "I am studying English now."
+        },
+        {
+          "id": "ingpres_d_23",
+          "type": "D",
+          "question": "Quieres decir que nosotros estamos comiendo ahora mismo.",
+          "options": [
+            "We are having lunch at this moment.",
+            "We am having lunch at this moment.",
+            "We were having lunch at this moment.",
+            "We have lunch."
+          ],
+          "answer": "We are having lunch at this moment."
+        },
+        {
+          "id": "ingpres_d_24",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están limpiando la casa ahora mismo.",
+          "options": [
+            "The students clean the house.",
+            "The students am cleaning the house right now.",
+            "The students are cleaning the house right now.",
+            "The students were cleaning the house right now."
+          ],
+          "answer": "The students are cleaning the house right now."
+        },
+        {
+          "id": "ingpres_d_25",
+          "type": "D",
+          "question": "Quieres decir que mi hermano está estudiando inglés ahora mismo.",
+          "options": [
+            "My brother was studying English at this moment.",
+            "My brother studies English.",
+            "My brother is studying English at this moment.",
+            "My brother were studying English at this moment."
+          ],
+          "answer": "My brother is studying English at this moment."
+        },
+        {
+          "id": "ingpres_d_26",
+          "type": "D",
+          "question": "Quieres decir que yo estoy cocinando la cena ahora mismo.",
+          "options": [
+            "I cook dinner.",
+            "I is cooking dinner now.",
+            "I was cooking dinner now.",
+            "I am cooking dinner now."
+          ],
+          "answer": "I am cooking dinner now."
+        },
+        {
+          "id": "ingpres_d_27",
+          "type": "D",
+          "question": "Quieres decir que los niños están escuchando música ahora mismo.",
+          "options": [
+            "The children listen to music.",
+            "The children was listening to music now.",
+            "The children were listening to music now.",
+            "The children are listening to music now."
+          ],
+          "answer": "The children are listening to music now."
+        },
+        {
+          "id": "ingpres_d_28",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están cantando una canción ahora mismo.",
+          "options": [
+            "The students were singing a song right now.",
+            "The students is singing a song right now.",
+            "The students are singing a song right now.",
+            "The students sing a song."
+          ],
+          "answer": "The students are singing a song right now."
+        },
+        {
+          "id": "ingpres_d_29",
+          "type": "D",
+          "question": "Quieres decir que el perro está bebiendo agua ahora mismo.",
+          "options": [
+            "The dog were drinking water at this moment.",
+            "The dog is drinking water at this moment.",
+            "The dog drinks water.",
+            "The dog was drinking water at this moment."
+          ],
+          "answer": "The dog is drinking water at this moment."
+        },
+        {
+          "id": "ingpres_d_30",
+          "type": "D",
+          "question": "Quieres decir que Tom está limpiando la casa ahora mismo.",
+          "options": [
+            "Tom is cleaning the house at this moment.",
+            "Tom was cleaning the house at this moment.",
+            "Tom cleans the house.",
+            "Tom were cleaning the house at this moment."
+          ],
+          "answer": "Tom is cleaning the house at this moment."
+        },
+        {
+          "id": "ingpres_d_31",
+          "type": "D",
+          "question": "Quieres decir que mi hermano está escuchando música ahora mismo.",
+          "options": [
+            "My brother am listening to music at this moment.",
+            "My brother was listening to music at this moment.",
+            "My brother is listening to music at this moment.",
+            "My brother listens to music."
+          ],
+          "answer": "My brother is listening to music at this moment."
+        },
+        {
+          "id": "ingpres_d_32",
+          "type": "D",
+          "question": "Quieres decir que nosotros estamos hablando por teléfono ahora mismo.",
+          "options": [
+            "We are talking on the phone now.",
+            "We were talking on the phone now.",
+            "We was talking on the phone now.",
+            "We talk on the phone."
+          ],
+          "answer": "We are talking on the phone now."
+        },
+        {
+          "id": "ingpres_d_33",
+          "type": "D",
+          "question": "Quieres decir que él está dibujando un dibujo ahora mismo.",
+          "options": [
+            "He were drawing a picture right now.",
+            "He draws a picture.",
+            "He is drawing a picture right now.",
+            "He was drawing a picture right now."
+          ],
+          "answer": "He is drawing a picture right now."
+        },
+        {
+          "id": "ingpres_d_34",
+          "type": "D",
+          "question": "Quieres decir que nosotros estamos montando en bici ahora mismo.",
+          "options": [
+            "We ride a bike.",
+            "We were riding a bike at this moment.",
+            "We is riding a bike at this moment.",
+            "We are riding a bike at this moment."
+          ],
+          "answer": "We are riding a bike at this moment."
+        },
+        {
+          "id": "ingpres_d_35",
+          "type": "D",
+          "question": "Quieres decir que mi hermano está pintando un cuadro ahora mismo.",
+          "options": [
+            "My brother paints a picture.",
+            "My brother was painting a picture at this moment.",
+            "My brother am painting a picture at this moment.",
+            "My brother is painting a picture at this moment."
+          ],
+          "answer": "My brother is painting a picture at this moment."
+        },
+        {
+          "id": "ingpres_d_36",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están jugando al fútbol ahora mismo.",
+          "options": [
+            "The students were playing football right now.",
+            "The students was playing football right now.",
+            "The students play football.",
+            "The students are playing football right now."
+          ],
+          "answer": "The students are playing football right now."
+        },
+        {
+          "id": "ingpres_d_37",
+          "type": "D",
+          "question": "Quieres decir que nuestro gato está escuchando música ahora mismo.",
+          "options": [
+            "Our cat was listening to music at this moment.",
+            "Our cat is listening to music at this moment.",
+            "Our cat am listening to music at this moment.",
+            "Our cat listens to music."
+          ],
+          "answer": "Our cat is listening to music at this moment."
+        },
+        {
+          "id": "ingpres_d_38",
+          "type": "D",
+          "question": "Quieres decir que yo estoy jugando al fútbol ahora mismo.",
+          "options": [
+            "I are playing football right now.",
+            "I was playing football right now.",
+            "I play football.",
+            "I am playing football right now."
+          ],
+          "answer": "I am playing football right now."
+        },
+        {
+          "id": "ingpres_d_39",
+          "type": "D",
+          "question": "Quieres decir que ellos están jugando al fútbol ahora mismo.",
+          "options": [
+            "They are playing football at this moment.",
+            "They play football.",
+            "They is playing football at this moment.",
+            "They were playing football at this moment."
+          ],
+          "answer": "They are playing football at this moment."
+        },
+        {
+          "id": "ingpres_d_40",
+          "type": "D",
+          "question": "Quieres decir que los niños están dibujando un dibujo ahora mismo.",
+          "options": [
+            "The children were drawing a picture now.",
+            "The children are drawing a picture now.",
+            "The children draw a picture.",
+            "The children was drawing a picture now."
+          ],
+          "answer": "The children are drawing a picture now."
+        },
+        {
+          "id": "ingpres_d_41",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están viendo la tele ahora mismo.",
+          "options": [
+            "The students watch TV.",
+            "The students am watching TV at this moment.",
+            "The students are watching TV at this moment.",
+            "The students were watching TV at this moment."
+          ],
+          "answer": "The students are watching TV at this moment."
+        },
+        {
+          "id": "ingpres_d_42",
+          "type": "D",
+          "question": "Quieres decir que los chicos están esperando el autobús ahora mismo.",
+          "options": [
+            "The boys wait for the bus.",
+            "The boys are waiting for the bus at this moment.",
+            "The boys were waiting for the bus at this moment.",
+            "The boys is waiting for the bus at this moment."
+          ],
+          "answer": "The boys are waiting for the bus at this moment."
+        },
+        {
+          "id": "ingpres_d_43",
+          "type": "D",
+          "question": "Quieres decir que los niños están jugando al fútbol ahora mismo.",
+          "options": [
+            "The children play football.",
+            "The children is playing football right now.",
+            "The children are playing football right now.",
+            "The children were playing football right now."
+          ],
+          "answer": "The children are playing football right now."
+        },
+        {
+          "id": "ingpres_d_44",
+          "type": "D",
+          "question": "Quieres decir que Tom está caminando ahora mismo.",
+          "options": [
+            "Tom was walking now.",
+            "Tom am walking now.",
+            "Tom walks.",
+            "Tom is walking now."
+          ],
+          "answer": "Tom is walking now."
+        },
+        {
+          "id": "ingpres_d_45",
+          "type": "D",
+          "question": "Quieres decir que los chicos están viendo la tele ahora mismo.",
+          "options": [
+            "The boys were watching TV now.",
+            "The boys watch TV.",
+            "The boys is watching TV now.",
+            "The boys are watching TV now."
+          ],
+          "answer": "The boys are watching TV now."
+        },
+        {
+          "id": "ingpres_d_46",
+          "type": "D",
+          "question": "Quieres decir que eso está jugando al fútbol ahora mismo.",
+          "options": [
+            "It is playing football at this moment.",
+            "It plays football.",
+            "It was playing football at this moment.",
+            "It were playing football at this moment."
+          ],
+          "answer": "It is playing football at this moment."
+        },
+        {
+          "id": "ingpres_d_47",
+          "type": "D",
+          "question": "Quieres decir que Tom está dibujando un dibujo ahora mismo.",
+          "options": [
+            "Tom draws a picture.",
+            "Tom were drawing a picture at this moment.",
+            "Tom is drawing a picture at this moment.",
+            "Tom was drawing a picture at this moment."
+          ],
+          "answer": "Tom is drawing a picture at this moment."
+        },
+        {
+          "id": "ingpres_d_48",
+          "type": "D",
+          "question": "Quieres decir que ella está corriendo ahora mismo.",
+          "options": [
+            "She was running now.",
+            "She is running now.",
+            "She runs.",
+            "She am running now."
+          ],
+          "answer": "She is running now."
+        },
+        {
+          "id": "ingpres_d_49",
+          "type": "D",
+          "question": "Quieres decir que los niños están fregando los platos ahora mismo.",
+          "options": [
+            "The children wash the dishes.",
+            "The children are washing the dishes right now.",
+            "The children was washing the dishes right now.",
+            "The children were washing the dishes right now."
+          ],
+          "answer": "The children are washing the dishes right now."
+        },
+        {
+          "id": "ingpres_d_50",
+          "type": "D",
+          "question": "Quieres decir que Tom está montando en bici ahora mismo.",
+          "options": [
+            "Tom is riding a bike at this moment.",
+            "Tom rides a bike.",
+            "Tom am riding a bike at this moment.",
+            "Tom was riding a bike at this moment."
+          ],
+          "answer": "Tom is riding a bike at this moment."
+        },
+        {
+          "id": "ingpres_d_51",
+          "type": "D",
+          "question": "Quieres decir que nuestro gato está escribiendo una carta ahora mismo.",
+          "options": [
+            "Our cat is writing a letter now.",
+            "Our cat writes a letter.",
+            "Our cat were writing a letter now.",
+            "Our cat was writing a letter now."
+          ],
+          "answer": "Our cat is writing a letter now."
+        },
+        {
+          "id": "ingpres_d_52",
+          "type": "D",
+          "question": "Quieres decir que tú estás comiendo ahora mismo.",
+          "options": [
+            "You were having lunch now.",
+            "You is having lunch now.",
+            "You have lunch.",
+            "You are having lunch now."
+          ],
+          "answer": "You are having lunch now."
+        },
+        {
+          "id": "ingpres_d_53",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están escuchando música ahora mismo.",
+          "options": [
+            "The students are listening to music now.",
+            "The students were listening to music now.",
+            "The students listen to music.",
+            "The students is listening to music now."
+          ],
+          "answer": "The students are listening to music now."
+        },
+        {
+          "id": "ingpres_d_54",
+          "type": "D",
+          "question": "Quieres decir que ellos están limpiando la casa ahora mismo.",
+          "options": [
+            "They clean the house.",
+            "They are cleaning the house right now.",
+            "They were cleaning the house right now.",
+            "They am cleaning the house right now."
+          ],
+          "answer": "They are cleaning the house right now."
+        },
+        {
+          "id": "ingpres_d_55",
+          "type": "D",
+          "question": "Quieres decir que Tom está ayudando a su madre ahora mismo.",
+          "options": [
+            "Tom was helping their mum now.",
+            "Tom is helping their mum now.",
+            "Tom were helping their mum now.",
+            "Tom helps their mum."
+          ],
+          "answer": "Tom is helping their mum now."
+        },
+        {
+          "id": "ingpres_d_56",
+          "type": "D",
+          "question": "Quieres decir que eso está viendo la tele ahora mismo.",
+          "options": [
+            "It was watching TV at this moment.",
+            "It is watching TV at this moment.",
+            "It watches TV.",
+            "It were watching TV at this moment."
+          ],
+          "answer": "It is watching TV at this moment."
+        },
+        {
+          "id": "ingpres_d_57",
+          "type": "D",
+          "question": "Quieres decir que eso está montando en bici ahora mismo.",
+          "options": [
+            "It are riding a bike right now.",
+            "It was riding a bike right now.",
+            "It rides a bike.",
+            "It is riding a bike right now."
+          ],
+          "answer": "It is riding a bike right now."
+        },
+        {
+          "id": "ingpres_d_58",
+          "type": "D",
+          "question": "Quieres decir que María está corriendo ahora mismo.",
+          "options": [
+            "Maria are running at this moment.",
+            "Maria is running at this moment.",
+            "Maria runs.",
+            "Maria was running at this moment."
+          ],
+          "answer": "Maria is running at this moment."
+        },
+        {
+          "id": "ingpres_d_59",
+          "type": "D",
+          "question": "Quieres decir que ellos están durmiendo ahora mismo.",
+          "options": [
+            "They were sleeping at this moment.",
+            "They sleep.",
+            "They am sleeping at this moment.",
+            "They are sleeping at this moment."
+          ],
+          "answer": "They are sleeping at this moment."
+        },
+        {
+          "id": "ingpres_d_60",
+          "type": "D",
+          "question": "Quieres decir que María está trepando a un árbol ahora mismo.",
+          "options": [
+            "Maria climbs a tree.",
+            "Maria were climbing a tree right now.",
+            "Maria is climbing a tree right now.",
+            "Maria was climbing a tree right now."
+          ],
+          "answer": "Maria is climbing a tree right now."
+        },
+        {
+          "id": "ingpres_d_61",
+          "type": "D",
+          "question": "Quieres decir que tú estás caminando ahora mismo.",
+          "options": [
+            "You am walking at this moment.",
+            "You walk.",
+            "You were walking at this moment.",
+            "You are walking at this moment."
+          ],
+          "answer": "You are walking at this moment."
+        },
+        {
+          "id": "ingpres_d_62",
+          "type": "D",
+          "question": "Quieres decir que él está haciendo los deberes ahora mismo.",
+          "options": [
+            "He does homework.",
+            "He is doing homework right now.",
+            "He are doing homework right now.",
+            "He was doing homework right now."
+          ],
+          "answer": "He is doing homework right now."
+        },
+        {
+          "id": "ingpres_d_63",
+          "type": "D",
+          "question": "Quieres decir que mi hermano está trepando a un árbol ahora mismo.",
+          "options": [
+            "My brother were climbing a tree at this moment.",
+            "My brother is climbing a tree at this moment.",
+            "My brother climbs a tree.",
+            "My brother was climbing a tree at this moment."
+          ],
+          "answer": "My brother is climbing a tree at this moment."
+        },
+        {
+          "id": "ingpres_d_64",
+          "type": "D",
+          "question": "Quieres decir que Tom está estudiando inglés ahora mismo.",
+          "options": [
+            "Tom is studying English right now.",
+            "Tom studies English.",
+            "Tom are studying English right now.",
+            "Tom was studying English right now."
+          ],
+          "answer": "Tom is studying English right now."
+        },
+        {
+          "id": "ingpres_d_65",
+          "type": "D",
+          "question": "Quieres decir que Tom está jugando al fútbol ahora mismo.",
+          "options": [
+            "Tom are playing football right now.",
+            "Tom plays football.",
+            "Tom was playing football right now.",
+            "Tom is playing football right now."
+          ],
+          "answer": "Tom is playing football right now."
+        },
+        {
+          "id": "ingpres_d_66",
+          "type": "D",
+          "question": "Quieres decir que nuestro gato está fregando los platos ahora mismo.",
+          "options": [
+            "Our cat washes the dishes.",
+            "Our cat was washing the dishes now.",
+            "Our cat am washing the dishes now.",
+            "Our cat is washing the dishes now."
+          ],
+          "answer": "Our cat is washing the dishes now."
+        },
+        {
+          "id": "ingpres_d_67",
+          "type": "D",
+          "question": "Quieres decir que mis padres están viendo la tele ahora mismo.",
+          "options": [
+            "My parents watch TV.",
+            "My parents are watching TV at this moment.",
+            "My parents am watching TV at this moment.",
+            "My parents were watching TV at this moment."
+          ],
+          "answer": "My parents are watching TV at this moment."
+        },
+        {
+          "id": "ingpres_d_68",
+          "type": "D",
+          "question": "Quieres decir que nosotros estamos fregando los platos ahora mismo.",
+          "options": [
+            "We are washing the dishes now.",
+            "We wash the dishes.",
+            "We were washing the dishes now.",
+            "We was washing the dishes now."
+          ],
+          "answer": "We are washing the dishes now."
+        },
+        {
+          "id": "ingpres_d_69",
+          "type": "D",
+          "question": "Quieres decir que él está pintando un cuadro ahora mismo.",
+          "options": [
+            "He paints a picture.",
+            "He is painting a picture at this moment.",
+            "He were painting a picture at this moment.",
+            "He was painting a picture at this moment."
+          ],
+          "answer": "He is painting a picture at this moment."
+        },
+        {
+          "id": "ingpres_d_70",
+          "type": "D",
+          "question": "Quieres decir que los niños están bailando ahora mismo.",
+          "options": [
+            "The children am dancing at this moment.",
+            "The children were dancing at this moment.",
+            "The children are dancing at this moment.",
+            "The children dance."
+          ],
+          "answer": "The children are dancing at this moment."
+        },
+        {
+          "id": "ingpres_d_71",
+          "type": "D",
+          "question": "Quieres decir que el perro está haciendo los deberes ahora mismo.",
+          "options": [
+            "The dog was doing homework right now.",
+            "The dog does homework.",
+            "The dog are doing homework right now.",
+            "The dog is doing homework right now."
+          ],
+          "answer": "The dog is doing homework right now."
+        },
+        {
+          "id": "ingpres_d_72",
+          "type": "D",
+          "question": "Quieres decir que ella está jugando al fútbol ahora mismo.",
+          "options": [
+            "She am playing football right now.",
+            "She plays football.",
+            "She was playing football right now.",
+            "She is playing football right now."
+          ],
+          "answer": "She is playing football right now."
+        },
+        {
+          "id": "ingpres_d_73",
+          "type": "D",
+          "question": "Quieres decir que tú estás nadando ahora mismo.",
+          "options": [
+            "You swim.",
+            "You were swimming at this moment.",
+            "You are swimming at this moment.",
+            "You am swimming at this moment."
+          ],
+          "answer": "You are swimming at this moment."
+        },
+        {
+          "id": "ingpres_d_74",
+          "type": "D",
+          "question": "Quieres decir que el perro está hablando por teléfono ahora mismo.",
+          "options": [
+            "The dog are talking on the phone at this moment.",
+            "The dog talks on the phone.",
+            "The dog was talking on the phone at this moment.",
+            "The dog is talking on the phone at this moment."
+          ],
+          "answer": "The dog is talking on the phone at this moment."
+        },
+        {
+          "id": "ingpres_d_75",
+          "type": "D",
+          "question": "Quieres decir que María está bailando ahora mismo.",
+          "options": [
+            "Maria was dancing at this moment.",
+            "Maria is dancing at this moment.",
+            "Maria dances.",
+            "Maria were dancing at this moment."
+          ],
+          "answer": "Maria is dancing at this moment."
+        },
+        {
+          "id": "ingpres_d_76",
+          "type": "D",
+          "question": "Quieres decir que mi hermana está estudiando inglés ahora mismo.",
+          "options": [
+            "My sister studies English.",
+            "My sister are studying English now.",
+            "My sister was studying English now.",
+            "My sister is studying English now."
+          ],
+          "answer": "My sister is studying English now."
+        },
+        {
+          "id": "ingpres_d_77",
+          "type": "D",
+          "question": "Quieres decir que nosotros estamos esperando el autobús ahora mismo.",
+          "options": [
+            "We are waiting for the bus now.",
+            "We am waiting for the bus now.",
+            "We were waiting for the bus now.",
+            "We wait for the bus."
+          ],
+          "answer": "We are waiting for the bus now."
+        },
+        {
+          "id": "ingpres_d_78",
+          "type": "D",
+          "question": "Quieres decir que ellos están comiendo ahora mismo.",
+          "options": [
+            "They are having lunch right now.",
+            "They am having lunch right now.",
+            "They have lunch.",
+            "They were having lunch right now."
+          ],
+          "answer": "They are having lunch right now."
+        },
+        {
+          "id": "ingpres_d_79",
+          "type": "D",
+          "question": "Quieres decir que ella está bailando ahora mismo.",
+          "options": [
+            "She were dancing now.",
+            "She is dancing now.",
+            "She was dancing now.",
+            "She dances."
+          ],
+          "answer": "She is dancing now."
+        },
+        {
+          "id": "ingpres_d_80",
+          "type": "D",
+          "question": "Quieres decir que mi hermano está saltando ahora mismo.",
+          "options": [
+            "My brother were jumping right now.",
+            "My brother was jumping right now.",
+            "My brother jumps.",
+            "My brother is jumping right now."
+          ],
+          "answer": "My brother is jumping right now."
+        },
+        {
+          "id": "ingpres_d_81",
+          "type": "D",
+          "question": "Quieres decir que yo estoy limpiando la casa ahora mismo.",
+          "options": [
+            "I was cleaning the house at this moment.",
+            "I clean the house.",
+            "I am cleaning the house at this moment.",
+            "I are cleaning the house at this moment."
+          ],
+          "answer": "I am cleaning the house at this moment."
+        },
+        {
+          "id": "ingpres_d_82",
+          "type": "D",
+          "question": "Quieres decir que los chicos están montando en bici ahora mismo.",
+          "options": [
+            "The boys were riding a bike right now.",
+            "The boys are riding a bike right now.",
+            "The boys was riding a bike right now.",
+            "The boys ride a bike."
+          ],
+          "answer": "The boys are riding a bike right now."
+        },
+        {
+          "id": "ingpres_d_83",
+          "type": "D",
+          "question": "Quieres decir que los niños están trepando a un árbol ahora mismo.",
+          "options": [
+            "The children climb a tree.",
+            "The children was climbing a tree right now.",
+            "The children are climbing a tree right now.",
+            "The children were climbing a tree right now."
+          ],
+          "answer": "The children are climbing a tree right now."
+        },
+        {
+          "id": "ingpres_d_84",
+          "type": "D",
+          "question": "Quieres decir que mis padres están dando de comer al gato ahora mismo.",
+          "options": [
+            "My parents is feeding the cat now.",
+            "My parents are feeding the cat now.",
+            "My parents feed the cat.",
+            "My parents were feeding the cat now."
+          ],
+          "answer": "My parents are feeding the cat now."
+        },
+        {
+          "id": "ingpres_d_85",
+          "type": "D",
+          "question": "Quieres decir que eso está desayunando ahora mismo.",
+          "options": [
+            "It eats breakfast.",
+            "It are eating breakfast at this moment.",
+            "It is eating breakfast at this moment.",
+            "It was eating breakfast at this moment."
+          ],
+          "answer": "It is eating breakfast at this moment."
+        },
+        {
+          "id": "ingpres_d_86",
+          "type": "D",
+          "question": "Quieres decir que eso está trabajando ahora mismo.",
+          "options": [
+            "It were working at this moment.",
+            "It is working at this moment.",
+            "It works.",
+            "It was working at this moment."
+          ],
+          "answer": "It is working at this moment."
+        },
+        {
+          "id": "ingpres_d_87",
+          "type": "D",
+          "question": "Quieres decir que los estudiantes están corriendo ahora mismo.",
+          "options": [
+            "The students run.",
+            "The students were running now.",
+            "The students are running now.",
+            "The students was running now."
+          ],
+          "answer": "The students are running now."
+        },
+        {
+          "id": "ingpres_d_88",
+          "type": "D",
+          "question": "Quieres decir que ella está durmiendo ahora mismo.",
+          "options": [
+            "She is sleeping at this moment.",
+            "She was sleeping at this moment.",
+            "She sleeps.",
+            "She were sleeping at this moment."
+          ],
+          "answer": "She is sleeping at this moment."
+        },
+        {
+          "id": "ingpres_d_89",
+          "type": "D",
+          "question": "Quieres decir que ellos están caminando ahora mismo.",
+          "options": [
+            "They walk.",
+            "They are walking right now.",
+            "They were walking right now.",
+            "They was walking right now."
+          ],
+          "answer": "They are walking right now."
+        },
+        {
+          "id": "ingpres_d_90",
+          "type": "D",
+          "question": "Quieres decir que mis padres están bebiendo agua ahora mismo.",
+          "options": [
+            "My parents drink water.",
+            "My parents are drinking water now.",
+            "My parents is drinking water now.",
+            "My parents were drinking water now."
+          ],
+          "answer": "My parents are drinking water now."
+        },
+        {
+          "id": "ingpres_d_91",
+          "type": "D",
+          "question": "Quieres decir que eso está cantando una canción ahora mismo.",
+          "options": [
+            "It sings a song.",
+            "It was singing a song at this moment.",
+            "It is singing a song at this moment.",
+            "It were singing a song at this moment."
+          ],
+          "answer": "It is singing a song at this moment."
+        },
+        {
+          "id": "ingpres_d_92",
+          "type": "D",
+          "question": "Quieres decir que mi hermana está dando de comer al gato ahora mismo.",
+          "options": [
+            "My sister am feeding the cat now.",
+            "My sister is feeding the cat now.",
+            "My sister was feeding the cat now.",
+            "My sister feeds the cat."
+          ],
+          "answer": "My sister is feeding the cat now."
+        },
+        {
+          "id": "ingpres_d_93",
+          "type": "D",
+          "question": "Quieres decir que eso está esperando el autobús ahora mismo.",
+          "options": [
+            "It was waiting for the bus right now.",
+            "It is waiting for the bus right now.",
+            "It are waiting for the bus right now.",
+            "It waits for the bus."
+          ],
+          "answer": "It is waiting for the bus right now."
+        },
+        {
+          "id": "ingpres_d_94",
+          "type": "D",
+          "question": "Quieres decir que los niños están desayunando ahora mismo.",
+          "options": [
+            "The children am eating breakfast right now.",
+            "The children were eating breakfast right now.",
+            "The children are eating breakfast right now.",
+            "The children eat breakfast."
+          ],
+          "answer": "The children are eating breakfast right now."
+        },
+        {
+          "id": "ingpres_d_95",
+          "type": "D",
+          "question": "Quieres decir que ella está hablando por teléfono ahora mismo.",
+          "options": [
+            "She talks on the phone.",
+            "She is talking on the phone at this moment.",
+            "She was talking on the phone at this moment.",
+            "She are talking on the phone at this moment."
+          ],
+          "answer": "She is talking on the phone at this moment."
+        },
+        {
+          "id": "ingpres_d_96",
+          "type": "D",
+          "question": "Quieres decir que eso está leyendo un libro ahora mismo.",
+          "options": [
+            "It is reading a book right now.",
+            "It was reading a book right now.",
+            "It reads a book.",
+            "It am reading a book right now."
+          ],
+          "answer": "It is reading a book right now."
+        },
+        {
+          "id": "ingpres_d_97",
+          "type": "D",
+          "question": "Quieres decir que ella está haciendo los deberes ahora mismo.",
+          "options": [
+            "She does homework.",
+            "She were doing homework at this moment.",
+            "She is doing homework at this moment.",
+            "She was doing homework at this moment."
+          ],
+          "answer": "She is doing homework at this moment."
+        },
+        {
+          "id": "ingpres_d_98",
+          "type": "D",
+          "question": "Quieres decir que ella está leyendo un libro ahora mismo.",
+          "options": [
+            "She reads a book.",
+            "She are reading a book now.",
+            "She is reading a book now.",
+            "She was reading a book now."
+          ],
+          "answer": "She is reading a book now."
+        },
+        {
+          "id": "ingpres_d_99",
+          "type": "D",
+          "question": "Quieres decir que los chicos están escuchando música ahora mismo.",
+          "options": [
+            "The boys listen to music.",
+            "The boys are listening to music right now.",
+            "The boys was listening to music right now.",
+            "The boys were listening to music right now."
+          ],
+          "answer": "The boys are listening to music right now."
+        },
+        {
+          "id": "ingpres_d_100",
+          "type": "D",
+          "question": "Quieres decir que yo estoy escribiendo una carta ahora mismo.",
+          "options": [
+            "I write a letter.",
+            "I was writing a letter right now.",
+            "I am writing a letter right now.",
+            "I were writing a letter right now."
+          ],
+          "answer": "I am writing a letter right now."
+        }
+      ],
+      "timeMarkers": [
+        {
+          "left": "right now",
+          "right": "She is running right now."
+        },
+        {
+          "left": "at this moment",
+          "right": "He is reading at this moment."
+        },
+        {
+          "left": "at the moment",
+          "right": "They are cooking at the moment."
+        },
+        {
+          "left": "currently",
+          "right": "We are studying currently."
+        },
+        {
+          "left": "every day",
+          "right": "He plays football every day."
+        },
+        {
+          "left": "usually",
+          "right": "She usually walks to school."
+        },
+        {
+          "left": "always",
+          "right": "They always help their mum."
+        },
+        {
+          "left": "yesterday",
+          "right": "I was sleeping yesterday afternoon."
+        },
+        {
+          "left": "last night",
+          "right": "We were watching TV last night."
+        }
+      ]
+    }
+  ]
+}
