@@ -8,12 +8,17 @@ var padresBarChart      = null;
 var padresRadarChart    = null;
 var padresPinBuf        = '';
 var padresPerfilesCache = [];
+var padresCursoId       = null; // curso elegido en Zona de padres (independiente de cursoActual)
 
 var UK_FLAG = '<svg width="20" height="13" viewBox="0 0 60 40" style="border-radius:2px;vertical-align:middle"><rect width="60" height="40" fill="#012169"/><path d="M0,0L60,40M60,0L0,40" stroke="white" stroke-width="8"/><path d="M0,0L60,40M60,0L0,40" stroke="#C8102E" stroke-width="4"/><path d="M30,0V40M0,20H60" stroke="white" stroke-width="13"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>';
 
-/* ---- Entrada principal ---- */
+/* ---- Entrada principal ----
+   Padres siempre pide perfil + curso explícitamente aquí, sin asumir
+   cuál era el curso activo antes de entrar (venga de donde venga). */
 function renderPadres() {
   padresSubjectIdx = null;
+  padresCursoId    = null;
+  _renderCursoChips();
   fetch(API_URL + '/perfiles')
     .then(function(r) { return r.json(); })
     .then(function(perfiles) {
@@ -26,6 +31,36 @@ function renderPadres() {
         padresSelectPerfil(perfilActivoId);
       }
     });
+}
+
+/* ---- Selector de curso: chips a partir del registro CONFIG.curso ----
+   Un curso nuevo (5º...) aparece aquí solo con añadirlo a
+   CONFIG.curso.info — este código no cambia. */
+function _renderCursoChips() {
+  var el = document.getElementById('p-curso-chips');
+  if (!el) return;
+  el.innerHTML = '';
+  CONFIG.curso.disponibles.forEach(function(num) {
+    var info  = CONFIG.curso.info[num];
+    var isSel = num === padresCursoId;
+    var chip  = document.createElement('button');
+    chip.textContent = info.nombre;
+    chip.style.cssText = 'padding:8px 14px;border-radius:20px;border:1.5px solid;font-family:var(--f);font-weight:700;font-size:13px;cursor:pointer;'
+      + (isSel ? 'border-color:var(--purple);background:var(--purple);color:white' : 'border-color:var(--gray-200);background:white;color:var(--gray-800)');
+    chip.addEventListener('click', function(){ padresSelectCurso(num); });
+    el.appendChild(chip);
+  });
+}
+
+/* ---- Elegir curso (con perfil ya seleccionado) ---- */
+function padresSelectCurso(num) {
+  padresCursoId = num;
+  _renderCursoChips();
+  if (!perfilActivoId) return;
+  setCurso(num);
+  loadStateFromCloud(function() {
+    renderPadresData();
+  }, true);
 }
 
 /* ---- Renderizar chips (solo UI, sin side-effects) ---- */
@@ -51,10 +86,15 @@ function _renderChips(perfiles) {
   });
 }
 
-/* ---- Seleccionar perfil ---- */
+/* ---- Seleccionar perfil ----
+   Se carga el progreso del curso elegido con el selector (o el curso
+   por defecto, si todavía no se ha tocado el selector). */
 function padresSelectPerfil(id) {
+  if (!padresCursoId) padresCursoId = CONFIG.curso.porDefecto;
+  setCurso(padresCursoId);
   setPerfilActivoId(id, function() {
     _renderChips(padresPerfilesCache);
+    _renderCursoChips();
     renderPadresData();
     document.getElementById('p-main').style.display = 'block';
     document.getElementById('p-confirm-name').textContent = getNombre() || 'este perfil';
