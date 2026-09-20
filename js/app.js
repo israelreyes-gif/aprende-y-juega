@@ -40,11 +40,15 @@ var SCREENS_LAZY = [
 /* Registro de pantallas ya cargadas */
 var _loadedScreens = {};
 
-/* ---- Cargar pantallas críticas al arranque ---- */
+/* ---- Cargar pantallas críticas al arranque ----
+   Si falla una, se reintenta SOLO esa (no todas) al pulsar
+   "Intentar de nuevo" — antes el botón no hacía nada porque no
+   se le pasaba una función de reintento a showError(). */
 function loadScreens(callback) {
   var loaded = 0;
   var container = document.getElementById('app');
-  SCREENS_CRITICAL.forEach(function(file) {
+
+  function loadOne(file) {
     fetch(file + '?v=' + SCREENS_V)
       .then(function(r) { return r.text(); })
       .then(function(html) {
@@ -54,11 +58,11 @@ function loadScreens(callback) {
         if (loaded === SCREENS_CRITICAL.length) callback();
       })
       .catch(function(e) {
-        showError('carga de pantalla ' + file, e);
-        loaded++;
-        if (loaded === SCREENS_CRITICAL.length) callback();
+        showError('carga de pantalla ' + file, e, function(){ loadOne(file); });
       });
-  });
+  }
+
+  SCREENS_CRITICAL.forEach(loadOne);
 }
 
 /* ---- Cargar pantalla bajo demanda ---- */
@@ -172,8 +176,7 @@ function loadScreenLazy(screenId, callback) {
       callback();
     })
     .catch(function(e) {
-      showError('carga lazy ' + file, e);
-      callback();
+      showError('carga lazy ' + file, e, function(){ loadScreenLazy(screenId, callback); });
     });
 }
 
