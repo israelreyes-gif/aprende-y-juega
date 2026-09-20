@@ -8,12 +8,14 @@
 
 var SO = ExerciseState.sociales; /* alias */
 
+var _socialesDataCurso = null; // curso para el que SubjectData.sociales está cargado
+
 function loadSocialesData(callback) {
-  if (SubjectData.sociales) { callback(); return; }
+  if (SubjectData.sociales && _socialesDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/sociales.json')
     .then(function(r) { return r.json(); })
-    .then(function(data) { SubjectData.sociales = data; callback(); })
-    .catch(function(e) { showError('el estudio de Sociales', e, function(){ loadSocialesData(function(){}); }, 's-sociales'); });
+    .then(function(data) { SubjectData.sociales = data; _socialesDataCurso = cursoActual; callback(); })
+    .catch(function(e) { showError('el estudio de Sociales', e, function(){ loadSocialesData(callback); }, 's-sociales'); });
 }
 
 /* ---- Menú principal de sociales ---- */
@@ -163,4 +165,3 @@ function renderSocialesUnit() {
    EJERCICIOS DE SOCIALES
    Tipos: vf (verdadero/falso), relacionar, completar
    ============================================= */
-
