@@ -147,40 +147,40 @@ function pinCancel() {
 }
 
 /* ---- Selección de curso ----
-   Cursos disponibles: 3 y 4, cada uno con su propia rama explícita
-   (independiente de CONFIG.curso.porDefecto, que solo decide qué
-   curso se ve por defecto ANTES de elegir uno — ver comentario en
-   config.js). Así, aunque porDefecto cambie, 3º y 4º se comportan
-   siempre igual al seleccionarlos aquí. */
-function seleccionarCurso(num) {
-  if (num === 4) {
-    // English de 4º ya tiene contenido real; el resto de asignaturas
-    // siguen en construcción. Los puntos/racha/calendario sí son
-    // reales: se cargan desde D1 igual que en 3º, en su propia fila
-    // de progreso (separada de la de 3º).
-    setCurso(4);
-    loadStateFromCloud(function() {
-      checkDayReset();
-      updateCurso4UI();
-      go('s-home-curso4');
-    });
-    return;
-  }
-  if (num !== 3) {
-    // Cursos no disponibles → pantalla WIP con mensaje divertido
-    go('s-wip-curso-' + num);
-    return;
-  }
-  // 3º → cargar su progreso y entrar
-  setCurso(3);
-  loadStateFromCloud(function() {
-    checkDayReset();
+   Cursos disponibles y su pantalla de inicio viven en el registro
+   CONFIG.curso (config.js). Aquí solo se define QUÉ hay que
+   actualizar en pantalla al entrar en cada curso — un curso nuevo se
+   añade con una entrada en CURSO_ON_ENTER + su fila en
+   CONFIG.curso.info, sin tocar seleccionarCurso(). */
+var CURSO_ON_ENTER = {
+  3: function() {
     updateMedalUI();
     updateStreakUI();
     updateHomeUI();
     updateSubjectUI('mates');
     updateSubjectUI('lengua');
-    go('s-home');
+  },
+  4: function() {
+    // Puntos/racha/calendario son reales: se cargan desde D1 igual
+    // que en 3º, en su propia fila de progreso (separada de la de
+    // 3º). El resto de asignaturas de 4º siguen en construcción.
+    updateCurso4UI();
+  }
+};
+
+function seleccionarCurso(num) {
+  var info = CONFIG.curso.info[num];
+  if (CONFIG.curso.disponibles.indexOf(num) === -1 || !info) {
+    // Cursos no disponibles → pantalla WIP con mensaje divertido
+    go('s-wip-curso-' + num);
+    return;
+  }
+  setCurso(num);
+  loadStateFromCloud(function() {
+    checkDayReset();
+    var onEnter = CURSO_ON_ENTER[num];
+    if (onEnter) onEnter();
+    go(info.home);
   });
 }
 
