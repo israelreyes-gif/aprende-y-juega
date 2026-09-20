@@ -177,21 +177,18 @@ function loadScreenLazy(screenId, callback) {
     });
 }
 
-function loadData(callback) {
-  var pending = 2;
-  var errors  = [];
+/* ---- Carga perezosa de datos de ejercicios de Mates y Lengua ----
+   Mismo patrón que el resto de asignaturas (p.ej. loadVocabData()
+   para el vocabulario de English): nada se carga hasta que el
+   usuario entra en la pantalla que lo necesita. Antes esto se cargaba
+   entero al arrancar la app entera, usando cursoActual — lo que
+   rompía el arranque en cuanto cursoActual no era un curso con estos
+   archivos (p.ej. 4º, que todavía no tiene Mates/Lengua propios). */
+var _matesDataCurso    = null; // curso para el que SubjectData.problemas está cargado
+var _historiasDataCurso = null; // curso para el que SubjectData.historias está cargado
 
-  function done(errorMsg) {
-    if (errorMsg) errors.push(errorMsg);
-    pending--;
-    if (pending === 0) {
-      if (errors.length > 0) {
-        showToast('⚠️ Algunos ejercicios usan datos de respaldo');
-      }
-      callback();
-    }
-  }
-
+function ensureMatesData(callback) {
+  if (_matesDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/ejercicios-mates.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
@@ -199,13 +196,16 @@ function loadData(callback) {
       Object.keys(SubjectData.problemas).forEach(function(k) {
         SubjectData.problemas[k] = shuffle(SubjectData.problemas[k]);
       });
-      done();
+      _matesDataCurso = cursoActual;
+      callback();
     })
     .catch(function(e) {
-      showError('los ejercicios de Matemáticas', e, function(){ loadData(initApp); }, 's-mates');
-      done('mates');
+      showError('los ejercicios de Matemáticas', e, function(){ ensureMatesData(callback); }, 's-mates');
     });
+}
 
+function ensureHistoriasData(callback) {
+  if (_historiasDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/historias.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
@@ -213,11 +213,11 @@ function loadData(callback) {
       Object.keys(SubjectData.historias).forEach(function(k) {
         SubjectData.historias[k] = shuffleArr(SubjectData.historias[k]);
       });
-      done();
+      _historiasDataCurso = cursoActual;
+      callback();
     })
     .catch(function(e) {
-      showError('las historias de Comprensión', e, function(){ loadData(initApp); }, 's-comprension');
-      done('historias');
+      showError('las historias de Comprensión', e, function(){ ensureHistoriasData(callback); }, 's-comprension');
     });
 }
 
@@ -232,11 +232,11 @@ function initApp() {
     loadScreenLazy(screenId, function() {
       _goOriginal(screenId);
       /* Cargar datos de ejercicio cuando se entra */
-      if (screenId === 's-sumas')       cargarNuevaSuma();
-      if (screenId === 's-multi')       cargarNuevaMulti();
-      if (screenId === 's-prob')        cargarNuevoProblema();
-      if (screenId === 's-mix')         cargarNuevaMezcla();
-      if (screenId === 's-comprension') cargarNuevaHistoria();
+      if (screenId === 's-sumas')       ensureMatesData(cargarNuevaSuma);
+      if (screenId === 's-multi')       ensureMatesData(cargarNuevaMulti);
+      if (screenId === 's-prob')        ensureMatesData(cargarNuevoProblema);
+      if (screenId === 's-mix')         ensureMatesData(cargarNuevaMezcla);
+      if (screenId === 's-comprension') ensureHistoriasData(cargarNuevaHistoria);
     });
   };
 
@@ -250,7 +250,8 @@ function initApp() {
   _goOriginal('s-perfiles');
 }
 
-/* Arranque: pantallas críticas → datos → init */
-loadScreens(function() {
-  loadData(initApp);
-});
+/* Arranque: pantallas críticas → init (los datos de cada asignatura
+   se cargan perezosamente al entrar en su pantalla — ver
+   ensureMatesData/ensureHistoriasData arriba y el resto de
+   asignaturas, que ya seguían este patrón). */
+loadScreens(initApp);
