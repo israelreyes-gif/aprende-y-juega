@@ -12,12 +12,14 @@ if (window.speechSynthesis) {
   });
 }
 
+var _englishDataCurso = null; // curso para el que SubjectData.english está cargado
+
 function loadEnglishData(callback) {
-  if (SubjectData.english) { callback(); return; }
+  if (SubjectData.english && _englishDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/english.json')
     .then(function(r) { return r.json(); })
-    .then(function(d) { SubjectData.english = d; callback(); })
-    .catch(function(e) { showError('English', e, function(){ loadEnglishData(function(){}); }, 's-english'); });
+    .then(function(d) { SubjectData.english = d; _englishDataCurso = cursoActual; callback(); })
+    .catch(function(e) { showError('English', e, function(){ loadEnglishData(callback); }, 's-english'); });
 }
 
 /* ---- Renderizar menús dinámicos ---- */
