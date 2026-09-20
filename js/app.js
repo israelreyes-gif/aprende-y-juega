@@ -10,16 +10,19 @@
    versión más reciente. */
 var SCREENS_V = String(Date.now());
 
-/* Pantallas que se cargan al arranque (críticas) */
+/* Pantallas que se cargan al arranque (críticas).
+   Solo perfiles.html: es la única pantalla que se ve sí o sí nada
+   más abrir la app. Todo lo demás —incluida la pantalla de elegir
+   curso y la home de cada curso— se carga bajo demanda, igual para
+   3º que para 4º (ver SCREENS_LAZY y el fileMap de loadScreenLazy). */
 var SCREENS_CRITICAL = [
-  'screens/perfiles.html',
-  'screens/cursos.html',
-  'screens/curso3/home.html',
-  'screens/wip.html'
+  'screens/perfiles.html'
 ];
 
 /* Resto de pantallas — se cargan bajo demanda */
 var SCREENS_LAZY = [
+  'screens/cursos.html',
+  'screens/curso3/home.html',
   'screens/curso3/mates.html',
   'screens/curso3/lengua.html',
   'screens/curso3/english.html',
@@ -69,6 +72,10 @@ function loadScreens(callback) {
 function loadScreenLazy(screenId, callback) {
   /* Buscar qué archivo corresponde al screenId */
   var fileMap = {
+    's-cursos': 'screens/cursos.html',
+    's-wip-curso-5': 'screens/cursos.html',
+    's-wip-curso-6': 'screens/cursos.html',
+    's-home': 'screens/curso3/home.html',
     's-mates': 'screens/curso3/mates.html',
     's-mates-exercises': 'screens/curso3/mates.html',
     's-sumas': 'screens/curso3/mates.html',
