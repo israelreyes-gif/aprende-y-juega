@@ -8,12 +8,14 @@
 
 var SC = ExerciseState.sciences; /* alias */
 
+var _sciencesDataCurso = null; // curso para el que SubjectData.sciences está cargado
+
 function loadSciencesData(callback) {
-  if (SubjectData.sciences) { callback(); return; }
+  if (SubjectData.sciences && _sciencesDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/sciences.json')
     .then(function(r) { return r.json(); })
-    .then(function(d) { SubjectData.sciences = d; callback(); })
-    .catch(function(e) { showError('Sciences', e, function(){ loadSciencesData(function(){}); }, 's-sciences'); });
+    .then(function(d) { SubjectData.sciences = d; _sciencesDataCurso = cursoActual; callback(); })
+    .catch(function(e) { showError('Sciences', e, function(){ loadSciencesData(callback); }, 's-sciences'); });
 }
 
 /* ---- STUDY ---- */
@@ -76,4 +78,3 @@ function renderSciencesStudy() {
     });
   });
 }
-
