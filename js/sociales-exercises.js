@@ -3,12 +3,14 @@
    Usa engine-multiple-choice.js y engine-matching.js
    ============================================= */
 
+var _socialesExDataCurso = null; // curso para el que SubjectData.socialesEx está cargado
+
 function loadSocialesEjData(callback) {
-  if (SubjectData.socialesEx) { callback(); return; }
+  if (SubjectData.socialesEx && _socialesExDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/sociales-ejercicios.json')
     .then(function(r) { return r.json(); })
-    .then(function(data) { SubjectData.socialesEx = data; callback(); })
-    .catch(function(e) { showError('los ejercicios de Sociales', e, function(){ loadSocialesEjData(function(){}); }, 's-sociales'); });
+    .then(function(data) { SubjectData.socialesEx = data; _socialesExDataCurso = cursoActual; callback(); })
+    .catch(function(e) { showError('los ejercicios de Sociales', e, function(){ loadSocialesEjData(callback); }, 's-sociales'); });
 }
 
 function shuffleSoc(arr) {
