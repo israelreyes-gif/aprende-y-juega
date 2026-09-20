@@ -7,6 +7,7 @@
    ============================================= */
 
 var DE = ExerciseState.desc; /* alias */
+var _descripcionesDataCurso = null; // curso para el que SubjectData.descripciones está cargado
 
 // El JSON se carga al iniciar el ejercicio (ver initDescripciones)
 
@@ -23,11 +24,12 @@ function shuffleDescArr(arr) {
 function initDescripciones() {
   DE.idx = 0;
   // Cargar JSON del curso actual si no está cargado o cambió de curso
-  if (SubjectData.descripciones.length === 0) {
+  if (SubjectData.descripciones.length === 0 || _descripcionesDataCurso !== cursoActual) {
     fetch('data/curso' + cursoActual + '/descripciones.json')
       .then(function(r) { return r.json(); })
       .then(function(data) {
         SubjectData.descripciones = data.descripciones || [];
+        _descripcionesDataCurso = cursoActual;
         DE.orden = shuffleDescArr(SubjectData.descripciones.map(function(_,i){ return i; }));
         cargarDescripcion();
       })
