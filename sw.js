@@ -1,5 +1,5 @@
 // Service Worker con caché offline
-var CACHE = 'aprende-v19';
+var CACHE = 'aprende-v20';
 
 // Ficheros a cachear al instalar
 var PRECACHE = [
@@ -40,6 +40,15 @@ self.addEventListener('activate', function(e) {
 // Fetch — cache first para assets, network first para datos dinámicos
 self.addEventListener('fetch', function(e) {
   var url = e.request.url;
+
+  // APIs externas de terceros (traducción, etc.) — nunca interceptar ni
+  // cachear, dejar pasar tal cual. Envolver estas peticiones con
+  // cache:'no-cache' o meterlas en la Cache API puede romper la respuesta
+  // CORS de servicios externos.
+  if (url.indexOf('mymemory.translated.net') !== -1) {
+    e.respondWith(fetch(e.request));
+    return;
+  }
 
   // Imágenes de descripciones — cache first
   if (url.indexOf('/data/imagenes/') !== -1) {
