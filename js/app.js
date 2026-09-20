@@ -164,7 +164,13 @@ function loadScreenLazy(screenId, callback) {
     's-english-haveto-c4':         'screens/curso4/english-grammar.html',
     's-english-erest-c4':          'screens/curso4/english-grammar.html',
     's-english-adverbs-c4':        'screens/curso4/english-grammar.html',
-    's-english-prepositions-c4':   'screens/curso4/english-grammar.html'
+    's-english-prepositions-c4':   'screens/curso4/english-grammar.html',
+    /* Verb Tenses — pantallas genéricas de ejercicios, compartidas
+       por los 7 tiempos (ver js/english-tenses-c4.js) */
+    's-english-tenses-extype-c4':  'screens/curso4/english-tenses.html',
+    's-english-tenses-ex-c4':      'screens/curso4/english-tenses.html',
+    's-english-tenses-wo-c4':      'screens/curso4/english-tenses.html',
+    's-english-tenses-match-c4':   'screens/curso4/english-tenses.html'
   };
 
   var file = fileMap[screenId];
