@@ -7,9 +7,9 @@
      de ese archivo para el reparto completo.
      Mismo patrón que curso4-english-tenses.html: un
      menú con tarjetas + una pantalla de contenido por
-     tema. Los temas sin contenido todavía muestran
-     "Coming soon" — ir sustituyendo showToast(...) por
-     go('s-english-XXX-c4') a medida que se añaden.
+     tema. Los 8 temas de gramática ya tienen contenido
+     completo (Telling Time, Wh- Questions, Could, Must,
+     Have To, -er/-est, Adverbs, Prepositions).
      ============================================= -->
 
 <!-- GRAMMAR MENU — las 8 tarjetas -->
@@ -28,46 +28,46 @@
         <div class="mode-name" style="color:var(--blue)">Telling Time</div>
         <div class="mode-sub">o'clock, half past...</div>
       </div>
-      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="showToast('🚧 Coming soon!')">
+      <div class="mode-card" style="border-color:var(--purple);background:var(--purple-light)" onclick="go('s-english-whquestions-c4')">
         <div class="mode-emoji">❓</div>
         <div class="mode-name" style="color:var(--purple)">Wh- Questions</div>
-        <div class="mode-sub">Coming soon</div>
+        <div class="mode-sub">What, where, when...</div>
       </div>
     </div>
 
     <div class="mode-grid" style="margin-bottom:10px">
-      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="showToast('🚧 Coming soon!')">
+      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="go('s-english-could-c4')">
         <div class="mode-emoji">🟠</div>
         <div class="mode-name" style="color:var(--orange)">Could</div>
-        <div class="mode-sub">Coming soon</div>
+        <div class="mode-sub">Past ability, requests</div>
       </div>
-      <div class="mode-card" style="border-color:var(--red);background:var(--red-light)" onclick="showToast('🚧 Coming soon!')">
+      <div class="mode-card" style="border-color:var(--red);background:var(--red-light)" onclick="go('s-english-must-c4')">
         <div class="mode-emoji">🔴</div>
         <div class="mode-name" style="color:var(--red)">Must</div>
-        <div class="mode-sub">Coming soon</div>
+        <div class="mode-sub">Strong obligation</div>
       </div>
     </div>
 
     <div class="mode-grid" style="margin-bottom:10px">
-      <div class="mode-card" style="border-color:var(--amber);background:var(--amber-light)" onclick="showToast('🚧 Coming soon!')">
+      <div class="mode-card" style="border-color:var(--amber);background:var(--amber-light)" onclick="go('s-english-haveto-c4')">
         <div class="mode-emoji">🟡</div>
         <div class="mode-name" style="color:var(--amber)">Have To</div>
-        <div class="mode-sub">Coming soon</div>
+        <div class="mode-sub">Obligation from outside</div>
       </div>
-      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="showToast('🚧 Coming soon!')">
+      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="go('s-english-erest-c4')">
         <div class="mode-emoji">🟢</div>
         <div class="mode-name" style="color:var(--green)">-er / -est</div>
-        <div class="mode-sub">Coming soon</div>
+        <div class="mode-sub">Comparatives & superlatives</div>
       </div>
     </div>
 
     <div class="mode-grid" style="margin-bottom:10px">
-      <div class="mode-card" style="border-color:#78350F;background:#FDF2E9" onclick="showToast('🚧 Coming soon!')">
+      <div class="mode-card" style="border-color:#78350F;background:#FDF2E9" onclick="go('s-english-adverbs-c4')">
         <div class="mode-emoji">🟤</div>
         <div class="mode-name" style="color:#78350F">Adverbs</div>
         <div class="mode-sub">sometimes, often...</div>
       </div>
-      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="showToast('🚧 Coming soon!')">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="go('s-english-prepositions-c4')">
         <div class="mode-emoji">🔵</div>
         <div class="mode-name" style="color:var(--blue)">Prepositions</div>
         <div class="mode-sub">over, into, out of...</div>
@@ -122,5 +122,222 @@
     </div>
 
     <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Truco: si los minutos son 1-30, usamos <b>past</b> (después de la hora). Si son 31-59, usamos <b>to</b> (contamos hacia la hora siguiente): 5:40 → <b>twenty to six</b>, no "forty past five".</div>
+  </div>
+</div>
+
+<div class="screen" id="s-english-whquestions-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>❓ Wh- Questions</h1>
+    <span class="top-badge">What, where, when...</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:var(--purple-light);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--purple-dark);font-weight:600;line-height:1.5">
+      We use <b>wh- words</b> to ask for specific information: things, places, time, people, reasons and how. <br><br>🇪🇸 En español: usamos las <b>wh- words</b> para pedir información concreta: cosas, lugares, tiempo, personas, razones y modo.
+    </div>
+
+    <div class="slbl" style="color:var(--purple)">❓ The Six Wh- Words</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #DDD6FE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;background:#F5F3FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--purple)"><div>Word</div><div>Asks about</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div><b>What</b></div><div>things / actions</div><div style="display:flex;align-items:center;justify-content:space-between"><span>What is your name? My name is Ana.</span><button onclick="speakWord('What is your name?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>Where</b></div><div>places</div><div style="display:flex;align-items:center;justify-content:space-between"><span>Where do you live? I live in Madrid.</span><button onclick="speakWord('Where do you live?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>When</b></div><div>time</div><div style="display:flex;align-items:center;justify-content:space-between"><span>When is your birthday? It's in June.</span><button onclick="speakWord('When is your birthday?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>Who</b></div><div>people</div><div style="display:flex;align-items:center;justify-content:space-between"><span>Who is your teacher? Mr Smith.</span><button onclick="speakWord('Who is your teacher?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>Why</b></div><div>reasons</div><div style="display:flex;align-items:center;justify-content:space-between"><span>Why are you happy? Because it's Friday.</span><button onclick="speakWord('Why are you happy?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>How</b></div><div>manner / way</div><div style="display:flex;align-items:center;justify-content:space-between"><span>How do you go to school? By bus.</span><button onclick="speakWord('How do you go to school?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div class="slbl" style="color:var(--purple)">❓ More Wh- Words</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #DDD6FE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;background:#F5F3FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--purple)"><div>Word</div><div>Asks about</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div><b>How many</b></div><div>a number of things</div><div style="display:flex;align-items:center;justify-content:space-between"><span>How many pens have you got? Three.</span><button onclick="speakWord('How many pens have you got?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>How much</b></div><div>an amount</div><div style="display:flex;align-items:center;justify-content:space-between"><span>How much water do you drink? A lot.</span><button onclick="speakWord('How much water do you drink?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1.4fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>How old</b></div><div>age</div><div style="display:flex;align-items:center;justify-content:space-between"><span>How old are you? I'm nine.</span><button onclick="speakWord('How old are you?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Order: <b>wh- word + do/does/is/are + subject + verb...?</b> Example: <b>Where</b> <u>do</u> you <u>live</u>?</div>
+  </div>
+</div>
+
+<div class="screen" id="s-english-could-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>🟠 Could</h1>
+    <span class="top-badge">Past ability, polite requests</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:#FFEDD5;border-radius:14px;padding:14px 16px;font-size:13px;color:#9A3412;font-weight:600;line-height:1.5">
+      <b>Could</b> is the past of <b>can</b>. We use it to talk about ability in the past, and also to make polite requests. <b>Could</b> is the same for every subject.<br><br>🇪🇸 En español: <b>could</b> es el pasado de <b>can</b>. Lo usamos para hablar de habilidad en el pasado, y también para pedir cosas educadamente.
+    </div>
+
+    <div class="slbl" style="color:var(--green)">✅ Past Ability</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:#FFEDD5;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--orange)"><div>Subject</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>I</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>could</b> swim when I was five.</span><button onclick="speakWord('I could swim when I was five', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>She</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>could</b> read at the age of four.</span><button onclick="speakWord('She could read at the age of four', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>They</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>could not</b> come to the party.</span><button onclick="speakWord('They could not come to the party', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div class="slbl" style="color:var(--blue)">🙏 Polite Requests</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>Subject</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>You</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>Could</b> you help me, please?</span><button onclick="speakWord('Could you help me, please?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>You</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>Could</b> I have some water, please?</span><button onclick="speakWord('Could I have some water, please?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Contraction: could not → <b>couldn't</b>. <b>Could you...?</b> is more polite than <b>Can you...?</b></div>
+  </div>
+</div>
+
+<div class="screen" id="s-english-must-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>🔴 Must</h1>
+    <span class="top-badge">Strong obligation</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:var(--red-light);border-radius:14px;padding:14px 16px;font-size:13px;color:#991B1B;font-weight:600;line-height:1.5">
+      We use <b>must</b> for strong obligation and rules — things that are very important to do. <b>Must not (mustn't)</b> means something is <b>forbidden</b>. <b>Must</b> is the same for every subject and has no past form.<br><br>🇪🇸 En español: usamos <b>must</b> para obligación fuerte y normas. <b>Must not</b> significa que algo está prohibido.
+    </div>
+
+    <div class="slbl" style="color:var(--green)">✅ Obligation</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Subject</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>You</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>must</b> wear a seatbelt in the car.</span><button onclick="speakWord('You must wear a seatbelt in the car', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>Students</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>must</b> do their homework.</span><button onclick="speakWord('Students must do their homework', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div class="slbl" style="color:var(--red)">❌ Prohibition (mustn't)</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--red-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:var(--red-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--red)"><div>Subject</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>You</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>must not</b> talk during the exam.</span><button onclick="speakWord('You must not talk during the exam', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>You</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>must not</b> run in the corridor.</span><button onclick="speakWord('You must not run in the corridor', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Contraction: must not → <b>mustn't</b>. For the past, we use <b>had to</b> instead of must.</div>
+  </div>
+</div>
+
+<div class="screen" id="s-english-haveto-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>🟡 Have To</h1>
+    <span class="top-badge">Obligation from outside</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:var(--amber-light);border-radius:14px;padding:14px 16px;font-size:13px;color:#92400E;font-weight:600;line-height:1.5">
+      <b>Have to</b> also means obligation, but it comes from outside (rules, other people), not from the speaker. He/She/It uses <b>has to</b>.<br><br>🇪🇸 En español: <b>have to</b> también significa obligación, pero viene de fuera (normas, otras personas), no de quien habla. He/She/It usa <b>has to</b>.
+    </div>
+
+    <div class="slbl" style="color:var(--green)">✅ Affirmative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Subject</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>I</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>have to</b> wear a uniform at school.</span><button onclick="speakWord('I have to wear a uniform at school', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>He</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>has to</b> finish his homework tonight.</span><button onclick="speakWord('He has to finish his homework tonight', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div class="slbl" style="color:var(--red)">❌ Negative (don't/doesn't have to)</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--red-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:var(--red-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--red)"><div>Subject</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>I</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>don't have to</b> get up early on Sunday.</span><button onclick="speakWord('I do not have to get up early on Sunday', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>She</div><div style="display:flex;align-items:center;justify-content:space-between"><span><b>doesn't have to</b> cook today.</span><button onclick="speakWord('She does not have to cook today', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div class="slbl" style="color:var(--blue)">❓ Interrogative</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>Do/Does</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>Do</div><div style="display:flex;align-items:center;justify-content:space-between"><span>I <b>have to</b> bring my book?</span><button onclick="speakWord('Do I have to bring my book?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>Does</div><div style="display:flex;align-items:center;justify-content:space-between"><span>he <b>have to</b> wear a tie?</span><button onclick="speakWord('Does he have to wear a tie?', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Careful! <b>Don't have to</b> = it's not necessary (you can choose). <b>Mustn't</b> = it's forbidden (you can't).</div>
+  </div>
+</div>
+
+<div class="screen" id="s-english-erest-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>🟢 -er / -est</h1>
+    <span class="top-badge">Comparatives & superlatives</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:var(--green-light);border-radius:14px;padding:14px 16px;font-size:13px;color:#15803D;font-weight:600;line-height:1.5">
+      We use <b>-er</b> to compare two things (comparative), and <b>-est</b> to compare three or more (superlative, always with <b>the</b>).<br><br>🇪🇸 En español: usamos <b>-er</b> para comparar dos cosas, y <b>-est</b> para comparar tres o más (siempre con <b>the</b>).
+    </div>
+
+    <div class="slbl" style="color:var(--green)">📏 Short Adjectives</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:#F0FDF4;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Adjective</div><div>Comparative</div><div>Superlative</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>tall</div><div>taller</div><div>the tallest</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>small</div><div>smaller</div><div>the smallest</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>nice</div><div>nicer</div><div>the nicest</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>big</div><div>bigger</div><div>the biggest</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>happy</div><div>happier</div><div>the happiest</div></div>
+    </div>
+    <div class="slbl" style="color:var(--red)">⚠️ Irregular Adjectives</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--red-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--red-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--red)"><div>Adjective</div><div>Comparative</div><div>Superlative</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>good</div><div>better</div><div>the best</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>bad</div><div>worse</div><div>the worst</div></div>
+    </div>
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Spelling: nice → nic<b>er</b> (drop the e) · big → big<b>ger</b> (double the last letter) · happy → happi<b>er</b> (y → i)</div>
+  </div>
+</div>
+
+<div class="screen" id="s-english-adverbs-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>🟤 Adverbs</h1>
+    <span class="top-badge">sometimes, often...</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:#FDF2E9;border-radius:14px;padding:14px 16px;font-size:13px;color:#78350F;font-weight:600;line-height:1.5">
+      <b>Adverbs of frequency</b> tell us how often something happens. They usually go <b>before the main verb</b>, but <b>after the verb to be</b>.<br><br>🇪🇸 En español: los adverbios de frecuencia dicen con qué frecuencia pasa algo. Normalmente van <b>antes del verbo principal</b>, pero <b>después de to be</b>.
+    </div>
+
+    <div class="slbl" style="color:#78350F">📊 The Frequency Scale</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #FDF2E9;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 0.6fr 1.8fr auto;background:#FDF2E9;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:#78350F"><div>Adverb</div><div>%</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 0.6fr 1.8fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div><b>always</b></div><div>100%</div><div style="display:flex;align-items:center;justify-content:space-between"><span>I <b>always</b> brush my teeth.</span><button onclick="speakWord('I always brush my teeth', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 0.6fr 1.8fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>usually</b></div><div>90%</div><div style="display:flex;align-items:center;justify-content:space-between"><span>She <b>usually</b> walks to school.</span><button onclick="speakWord('She usually walks to school', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 0.6fr 1.8fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>often</b></div><div>70%</div><div style="display:flex;align-items:center;justify-content:space-between"><span>We <b>often</b> play football.</span><button onclick="speakWord('We often play football', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 0.6fr 1.8fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>sometimes</b></div><div>50%</div><div style="display:flex;align-items:center;justify-content:space-between"><span>They <b>sometimes</b> watch TV.</span><button onclick="speakWord('They sometimes watch TV', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 0.6fr 1.8fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>rarely</b></div><div>10%</div><div style="display:flex;align-items:center;justify-content:space-between"><span>He <b>rarely</b> eats sweets.</span><button onclick="speakWord('He rarely eats sweets', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 0.6fr 1.8fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>never</b></div><div>0%</div><div style="display:flex;align-items:center;justify-content:space-between"><span>I <b>never</b> go to bed late.</span><button onclick="speakWord('I never go to bed late', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div class="slbl" style="color:var(--blue)">📍 Where Does It Go?</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>Rule</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div>Before the verb</div><div style="display:flex;align-items:center;justify-content:space-between"><span>I <b>always</b> do my homework.</span><button onclick="speakWord('I always do my homework', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div>After to be</div><div style="display:flex;align-items:center;justify-content:space-between"><span>She <b>is</b> never late.</span><button onclick="speakWord('She is never late', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Never say "never" with a negative verb — <b>never</b> is already negative: I never go, not "I don't never go".</div>
+  </div>
+</div>
+
+<div class="screen" id="s-english-prepositions-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-grammar-c4')">←</button>
+    <h1>🔵 Prepositions</h1>
+    <span class="top-badge">over, into, out of...</span>
+  </div>
+  <div class="sa">
+    <div style="margin:0 16px 14px;background:#EFF6FF;border-radius:14px;padding:14px 16px;font-size:13px;color:#1E40AF;font-weight:600;line-height:1.5">
+      <b>Prepositions of place</b> tell us where something is. <b>Prepositions of movement</b> tell us how something moves from one place to another.<br><br>🇪🇸 En español: las de lugar dicen dónde está algo. Las de movimiento dicen cómo se mueve algo de un sitio a otro.
+    </div>
+
+    <div class="slbl" style="color:var(--blue)">📍 Place</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid #BFDBFE;overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:#EFF6FF;padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--blue)"><div>Preposition</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div><b>in</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>The cat is <b>in</b> the box.</span><button onclick="speakWord('The cat is in the box', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>on</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>The book is <b>on</b> the table.</span><button onclick="speakWord('The book is on the table', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>under</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>The dog is <b>under</b> the bed.</span><button onclick="speakWord('The dog is under the bed', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>next to</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>The lamp is <b>next to</b> the sofa.</span><button onclick="speakWord('The lamp is next to the sofa', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>between</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>The pen is <b>between</b> the books.</span><button onclick="speakWord('The pen is between the books', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>in front of</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>She is <b>in front of</b> the door.</span><button onclick="speakWord('She is in front of the door', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>behind</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>He is <b>behind</b> the tree.</span><button onclick="speakWord('He is behind the tree', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div class="slbl" style="color:var(--green)">➡️ Movement</div>
+    <div style="margin:0 16px 16px;background:white;border-radius:14px;border:1.5px solid var(--green-light);overflow:hidden">
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;background:var(--green-light);padding:8px 12px;font-family:var(--f);font-size:11px;font-weight:800;color:var(--green)"><div>Preposition</div><div>Example</div><div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);align-items:center"><div><b>into</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>The cat jumped <b>into</b> the box.</span><button onclick="speakWord('The cat jumped into the box', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>out of</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>She got <b>out of</b> the car.</span><button onclick="speakWord('She got out of the car', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>over</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>The ball flew <b>over</b> the wall.</span><button onclick="speakWord('The ball flew over the wall', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>through</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>We walked <b>through</b> the park.</span><button onclick="speakWord('We walked through the park', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>across</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>He ran <b>across</b> the road.</span><button onclick="speakWord('He ran across the road', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+      <div style="display:grid;grid-template-columns:1fr 2fr auto;padding:8px 12px;font-size:13px;color:var(--gray-800);border-top:0.5px solid var(--gray-100);align-items:center"><div><b>along</b></div><div style="display:flex;align-items:center;justify-content:space-between"><span>They walked <b>along</b> the beach.</span><button onclick="speakWord('They walked along the beach', event)" title="Listen" style="flex-shrink:0;width:20px;height:20px;border-radius:50%;border:none;background:var(--blue);color:white;font-size:9px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px">🔊</button></div></div>
+    </div>
+    <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Trick: <b>in/on/under</b> describe a fixed position, but <b>into/onto/out of</b> describe movement to a new position.</div>
   </div>
 </div>
