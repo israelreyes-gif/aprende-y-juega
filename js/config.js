@@ -25,16 +25,27 @@ var CONFIG = {
     rachaParaDificil: 10   // a partir de esta racha se muestra "Dificil"
   },
 
-  /* ---- Curso ---- */
+  /* ---- Curso ----
+     Registro central de los cursos que existen en la app. Anadir un
+     curso nuevo (5o, 6o...) es anadir su numero a "disponibles" y su
+     info aqui abajo — seleccionarCurso() (navigation.js) y Zona de
+     padres (padres.js) leen de este registro, no hace falta tocar su
+     logica ni anadir nuevos "if" por cada curso. */
   curso: {
-    // Curso que se carga por defecto: al elegir un perfil (antes de
-    // ir a la pantalla de seleccion de curso) y, sobre todo, al abrir
-    // la Zona de padres directamente desde el selector de perfiles
-    // (esa pantalla se abre sin haber elegido curso todavia). 4o es
-    // ahora el curso "activo" del dia a dia, asi que Padres muestra
-    // sus estadisticas por defecto. 3o sigue intacto y accesible
-    // igual que siempre desde la pantalla de cursos.
-    porDefecto: 4
+    // Cursos que existen y se pueden seleccionar. Un curso que no
+    // este aqui cae en la pantalla generica "en construccion".
+    disponibles: [3, 4],
+    // Curso que se propone por defecto: al elegir un perfil (antes de
+    // ir a la pantalla de seleccion de curso) y en Zona de padres, como
+    // punto de partida antes de que se elija otro con el selector de
+    // curso. 4o es el curso "activo" del dia a dia ahora mismo.
+    porDefecto: 4,
+    // Un objeto por curso: nombre para mostrar (chips de Padres) y el
+    // id de su pantalla de inicio (a donde va seleccionarCurso()).
+    info: {
+      3: { nombre: '3º Primaria', home: 's-home' },
+      4: { nombre: '4º Primaria', home: 's-home-curso4' }
+    }
   },
 
   /* ---- Vacaciones ---- */
