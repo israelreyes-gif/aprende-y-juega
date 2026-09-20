@@ -146,12 +146,18 @@ function pinCancel() {
   pinClose();
 }
 
-/* ---- Selección de curso ---- */
+/* ---- Selección de curso ----
+   Cursos disponibles: 3 y 4, cada uno con su propia rama explícita
+   (independiente de CONFIG.curso.porDefecto, que solo decide qué
+   curso se ve por defecto ANTES de elegir uno — ver comentario en
+   config.js). Así, aunque porDefecto cambie, 3º y 4º se comportan
+   siempre igual al seleccionarlos aquí. */
 function seleccionarCurso(num) {
   if (num === 4) {
-    // 4º ya está abierto (aunque las asignaturas siguen en construcción).
-    // Los puntos/racha/calendario sí son reales: se cargan desde D1 igual
-    // que en 3º, solo que aun no hay asignaturas que jueguen con ellos.
+    // English de 4º ya tiene contenido real; el resto de asignaturas
+    // siguen en construcción. Los puntos/racha/calendario sí son
+    // reales: se cargan desde D1 igual que en 3º, en su propia fila
+    // de progreso (separada de la de 3º).
     setCurso(4);
     loadStateFromCloud(function() {
       checkDayReset();
@@ -160,13 +166,13 @@ function seleccionarCurso(num) {
     });
     return;
   }
-  if (num !== CONFIG.curso.porDefecto) {
+  if (num !== 3) {
     // Cursos no disponibles → pantalla WIP con mensaje divertido
     go('s-wip-curso-' + num);
     return;
   }
-  // Curso disponible → cargar su progreso y entrar
-  setCurso(CONFIG.curso.porDefecto);
+  // 3º → cargar su progreso y entrar
+  setCurso(3);
   loadStateFromCloud(function() {
     checkDayReset();
     updateMedalUI();
@@ -269,6 +275,9 @@ function go(screenId) {
   if (screenId === 's-english-vocab-c4')      { renderVocabMenu('-c4'); }
   if (screenId === 's-vocab-ex-w2i')          { loadW2IQuestion(); }
   if (screenId === 's-vocab-ex-i2w')          { loadI2WQuestion(); }
+  if (screenId === 's-english-vocab-ex-c4')   { renderVocabExGridC4(); }
+  if (screenId === 's-vocab-ex-w2i-c4')       { loadW2IQuestionC4(); }
+  if (screenId === 's-vocab-ex-i2w-c4')       { loadI2WQuestionC4(); }
   if (screenId === 's-sciences')                    { updateSubjectUI('sciences'); renderMiniCalendario('cal-sciences', 'sciences', '#0D9488'); }
   if (screenId === 's-sciences-study-invertebrates') { renderSciencesStudy(); }
   if (screenId === 's-sociales')               { renderMiniCalendario('cal-sociales', 'sociales', 'var(--sociales)'); }
