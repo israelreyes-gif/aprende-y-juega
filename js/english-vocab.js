@@ -16,12 +16,14 @@ var VOCAB_COLORS = {
   yellow: { color: '#CA8A04', bg: '#FEFCE8', border: '#FEF08A' }
 };
 
+var _vocabDataCurso = null; // curso para el que SubjectData.vocab está cargado
+
 function loadVocabData(callback) {
-  if (SubjectData.vocab) { callback(); return; }
+  if (SubjectData.vocab && _vocabDataCurso === cursoActual) { callback(); return; }
   fetch('data/curso' + cursoActual + '/english-vocab.json')
     .then(function(r) { return r.json(); })
-    .then(function(d) { SubjectData.vocab = d; callback(); })
-    .catch(function(e) { showError('el Vocabulario', e, function(){ loadVocabData(function(){}); }, 's-english'); });
+    .then(function(d) { SubjectData.vocab = d; _vocabDataCurso = cursoActual; callback(); })
+    .catch(function(e) { showError('el Vocabulario', e, function(){ loadVocabData(callback); }, 's-english'); });
 }
 
 /* ---- Menú de temas ----
@@ -242,12 +244,7 @@ function nextVocabEx(mode) { vocabExNext(mode); }
    + Mix). Reutiliza engine-vocab.js con un prefijo
    propio (w2ic4/i2wc4) para no chocar con los ids de
    los ejercicios de 3º, que usan el prefijo por
-   defecto (w2i/i2w). La clave de ejercicio
-   ('english-vocab') se reutiliza tal cual: como cada
-   curso guarda su progreso en una fila distinta
-   (ST se recarga entero según cursoActual), no hay
-   riesgo de mezclar datos de 3º y 4º aunque compartan
-   la misma clave.
+   defecto (w2i/i2w).
    ============================================= */
 
 var _vocabPracticeUnitC4 = null; // null = Mix (todas las categorías)
@@ -309,7 +306,10 @@ function _vocabBaseConfigC4(prefix) {
     idx:         EN.vocabExIdx,
     prefix:      prefix,
     subjectKey:  'english',
-    exerciseKey: 'english-vocab',
+    // Clave propia de 4º, distinta de 'english-vocab' (3º) — ningún
+    // curso comparte clave de ejercicio con otro, ni aunque el
+    // ejercicio se llame igual.
+    exerciseKey: 'english-vocab-c4',
     // Los distractores siempre salen de TODO el vocabulario de 4º
     // (no solo de la categoría elegida), para que las 3 opciones no
     // se parezcan demasiado en categorías pequeñas.
