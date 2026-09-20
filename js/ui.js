@@ -41,41 +41,50 @@ function updateStreakUI() {
 }
 
 /* ---- Home: barras de progreso por asignatura ---- */
+/* Valor de respaldo cuando la asignatura no existe en el catálogo de
+   estadísticas del curso activo (statsGetSubject devuelve null) — p.ej.
+   'mates' en 4º, que todavía no tiene esa asignatura. Esta función
+   pinta la home de 3º (con ids como pm-pts, pl-pts, etc.), así que si
+   se llama estando en otro curso simplemente no debe reventar: los
+   campos que no apliquen se quedan a 0, y como esos ids tampoco están
+   en el DOM en ese caso, setEl/setBar no hacen nada (son null-safe). */
+var STATS_SUBJECT_FALLBACK = { pts: 0, hoy: 0, pct: null };
+
 function updateHomeUI() {
   var h = new Date().getHours();
   var nombre = getNombre() ? getNombre() + '!' : 'campeona!';
   var greet = h < 13 ? '¡Buenos días, ' + nombre : h < 20 ? '¡Buenas tardes, ' + nombre : '¡Buenas noches, ' + nombre;
   setEl('home-greeting', greet);
 
-  var m = statsGetSubject('mates');
+  var m = statsGetSubject('mates') || STATS_SUBJECT_FALLBACK;
   setEl('pm-pts', '⭐ ' + m.pts + ' pts');
   setBar('pm-hoy-bar', Math.min(100, Math.round(m.hoy / 20 * 100)));
   setEl('pm-hoy-val', m.hoy + ' ejerc.');
   setBar('pm-acc-bar', m.pct !== null ? m.pct : 0);
   setEl('pm-acc-val', statsPctStr(m.pct) + ' aciertos');
 
-  var l = statsGetSubject('lengua');
+  var l = statsGetSubject('lengua') || STATS_SUBJECT_FALLBACK;
   setEl('pl-pts', '⭐ ' + l.pts + ' pts');
   setBar('pl-hoy-bar', Math.min(100, Math.round(l.hoy / 10 * 100)));
   setEl('pl-hoy-val', l.hoy + ' ejerc.');
   setBar('pl-acc-bar', l.pct !== null ? l.pct : 0);
   setEl('pl-acc-val', statsPctStr(l.pct) + ' aciertos');
 
-  var sc = statsGetSubject('sciences');
+  var sc = statsGetSubject('sciences') || STATS_SUBJECT_FALLBACK;
   setEl('psc-pts', '⭐ ' + sc.pts + ' pts');
   setBar('psc-hoy-bar', Math.min(100, Math.round(sc.hoy / 10 * 100)));
   setEl('psc-hoy-val', sc.hoy + ' exerc.');
   setBar('psc-acc-bar', sc.pct !== null ? sc.pct : 0);
   setEl('psc-acc-val', statsPctStr(sc.pct) + ' correct');
 
-  var soc = statsGetSubject('sociales');
+  var soc = statsGetSubject('sociales') || STATS_SUBJECT_FALLBACK;
   setEl('psoc-pts', '⭐ ' + soc.pts + ' pts');
   setBar('psoc-hoy-bar', Math.min(100, Math.round(soc.hoy / 10 * 100)));
   setEl('psoc-hoy-val', soc.hoy + ' ejerc.');
   setBar('psoc-acc-bar', soc.pct !== null ? soc.pct : 0);
   setEl('psoc-acc-val', statsPctStr(soc.pct) + ' aciertos');
 
-  var en = statsGetSubject('english');
+  var en = statsGetSubject('english') || STATS_SUBJECT_FALLBACK;
   setEl('pen-pts', '⭐ ' + en.pts + ' pts');
   setBar('pen-hoy-bar', Math.min(100, Math.round(en.hoy / 10 * 100)));
   setEl('pen-hoy-val', en.hoy + ' exerc.');
