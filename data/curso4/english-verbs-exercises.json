@@ -1,0 +1,2460 @@
+{
+  "units": [
+    {
+      "id": "verbs",
+      "title": "Verbs",
+      "exercises": [
+        {
+          "id": "verb_a_1",
+          "type": "A",
+          "question": "What does \"jump\" mean?",
+          "options": [
+            "comer",
+            "saltar",
+            "construir",
+            "mirar"
+          ],
+          "answer": "saltar"
+        },
+        {
+          "id": "verb_a_2",
+          "type": "A",
+          "question": "What does \"drive\" mean?",
+          "options": [
+            "crecer",
+            "conducir",
+            "botar",
+            "mirar"
+          ],
+          "answer": "conducir"
+        },
+        {
+          "id": "verb_a_3",
+          "type": "A",
+          "question": "What does \"laugh\" mean?",
+          "options": [
+            "navegar",
+            "vestirse elegante",
+            "ver / mirar",
+            "reír"
+          ],
+          "answer": "reír"
+        },
+        {
+          "id": "verb_a_4",
+          "type": "A",
+          "question": "What does \"have\" mean?",
+          "options": [
+            "ir",
+            "venir",
+            "tener",
+            "querer"
+          ],
+          "answer": "tener"
+        },
+        {
+          "id": "verb_a_5",
+          "type": "A",
+          "question": "What does \"give\" mean?",
+          "options": [
+            "dar",
+            "comprar",
+            "estudiar",
+            "conducir"
+          ],
+          "answer": "dar"
+        },
+        {
+          "id": "verb_a_6",
+          "type": "A",
+          "question": "What does \"learn\" mean?",
+          "options": [
+            "ver",
+            "botar",
+            "dormir",
+            "aprender"
+          ],
+          "answer": "aprender"
+        },
+        {
+          "id": "verb_a_7",
+          "type": "A",
+          "question": "What does \"walk\" mean?",
+          "options": [
+            "andar / caminar",
+            "comprar",
+            "limpiar",
+            "pescar"
+          ],
+          "answer": "andar / caminar"
+        },
+        {
+          "id": "verb_a_8",
+          "type": "A",
+          "question": "What does \"build\" mean?",
+          "options": [
+            "construir",
+            "coger / atrapar",
+            "botar",
+            "vestirse elegante"
+          ],
+          "answer": "construir"
+        },
+        {
+          "id": "verb_a_9",
+          "type": "A",
+          "question": "What does \"look\" mean?",
+          "options": [
+            "vivir",
+            "dar una patada",
+            "beber",
+            "mirar"
+          ],
+          "answer": "mirar"
+        },
+        {
+          "id": "verb_a_10",
+          "type": "A",
+          "question": "What does \"write\" mean?",
+          "options": [
+            "pescar",
+            "construir",
+            "escribir",
+            "bailar"
+          ],
+          "answer": "escribir"
+        },
+        {
+          "id": "verb_a_11",
+          "type": "A",
+          "question": "What does \"drink\" mean?",
+          "options": [
+            "construir",
+            "encantar / amar",
+            "ver / mirar",
+            "beber"
+          ],
+          "answer": "beber"
+        },
+        {
+          "id": "verb_a_12",
+          "type": "A",
+          "question": "What does \"tell\" mean?",
+          "options": [
+            "tener",
+            "correr",
+            "pescar",
+            "contar / decir"
+          ],
+          "answer": "contar / decir"
+        },
+        {
+          "id": "verb_a_13",
+          "type": "A",
+          "question": "What does \"eat\" mean?",
+          "options": [
+            "vivir",
+            "comer",
+            "jugar",
+            "conducir"
+          ],
+          "answer": "comer"
+        },
+        {
+          "id": "verb_a_14",
+          "type": "A",
+          "question": "What does \"fly\" mean?",
+          "options": [
+            "contar / decir",
+            "nadar",
+            "volar",
+            "lanzar"
+          ],
+          "answer": "volar"
+        },
+        {
+          "id": "verb_a_15",
+          "type": "A",
+          "question": "What does \"teach\" mean?",
+          "options": [
+            "estudiar",
+            "correr",
+            "comprar",
+            "enseñar"
+          ],
+          "answer": "enseñar"
+        },
+        {
+          "id": "verb_a_16",
+          "type": "A",
+          "question": "What does \"fish\" mean?",
+          "options": [
+            "pescar",
+            "coger / tomar",
+            "gustar",
+            "gritar"
+          ],
+          "answer": "pescar"
+        },
+        {
+          "id": "verb_a_17",
+          "type": "A",
+          "question": "What does \"buy\" mean?",
+          "options": [
+            "saltar a la pata coja",
+            "navegar",
+            "comprar",
+            "enseñar"
+          ],
+          "answer": "comprar"
+        },
+        {
+          "id": "verb_a_18",
+          "type": "A",
+          "question": "What does \"like\" mean?",
+          "options": [
+            "gustar",
+            "dormir",
+            "comer",
+            "escalar / trepar"
+          ],
+          "answer": "gustar"
+        },
+        {
+          "id": "verb_a_19",
+          "type": "A",
+          "question": "What does \"get dressed up\" mean?",
+          "options": [
+            "ver",
+            "vestirse elegante",
+            "hacer",
+            "andar / caminar"
+          ],
+          "answer": "vestirse elegante"
+        },
+        {
+          "id": "verb_a_20",
+          "type": "A",
+          "question": "What does \"climb\" mean?",
+          "options": [
+            "botar",
+            "escalar / trepar",
+            "encantar / amar",
+            "ver / mirar"
+          ],
+          "answer": "escalar / trepar"
+        },
+        {
+          "id": "verb_a_21",
+          "type": "A",
+          "question": "What does \"sail\" mean?",
+          "options": [
+            "ver / mirar",
+            "navegar",
+            "disfrazarse",
+            "querer"
+          ],
+          "answer": "navegar"
+        },
+        {
+          "id": "verb_a_22",
+          "type": "A",
+          "question": "What does \"run\" mean?",
+          "options": [
+            "ir",
+            "venir",
+            "correr",
+            "jugar"
+          ],
+          "answer": "correr"
+        },
+        {
+          "id": "verb_a_23",
+          "type": "A",
+          "question": "What does \"make\" mean?",
+          "options": [
+            "crecer",
+            "dar",
+            "hacer / fabricar",
+            "construir"
+          ],
+          "answer": "hacer / fabricar"
+        },
+        {
+          "id": "verb_a_24",
+          "type": "A",
+          "question": "What does \"read\" mean?",
+          "options": [
+            "tener",
+            "leer",
+            "saltar",
+            "enseñar"
+          ],
+          "answer": "leer"
+        },
+        {
+          "id": "verb_a_25",
+          "type": "A",
+          "question": "What does \"dress up\" mean?",
+          "options": [
+            "disfrazarse",
+            "botar",
+            "pescar",
+            "navegar"
+          ],
+          "answer": "disfrazarse"
+        },
+        {
+          "id": "verb_a_26",
+          "type": "A",
+          "question": "What does \"throw\" mean?",
+          "options": [
+            "lanzar",
+            "querer",
+            "conducir",
+            "venir"
+          ],
+          "answer": "lanzar"
+        },
+        {
+          "id": "verb_a_27",
+          "type": "A",
+          "question": "What does \"sleep\" mean?",
+          "options": [
+            "dormir",
+            "saltar a la comba",
+            "reír",
+            "navegar"
+          ],
+          "answer": "dormir"
+        },
+        {
+          "id": "verb_a_28",
+          "type": "A",
+          "question": "What does \"kick\" mean?",
+          "options": [
+            "coger / atrapar",
+            "dar una patada",
+            "dormir",
+            "coger / tomar"
+          ],
+          "answer": "dar una patada"
+        },
+        {
+          "id": "verb_a_29",
+          "type": "A",
+          "question": "What does \"come\" mean?",
+          "options": [
+            "coger / atrapar",
+            "hacer / fabricar",
+            "dar una patada",
+            "venir"
+          ],
+          "answer": "venir"
+        },
+        {
+          "id": "verb_a_30",
+          "type": "A",
+          "question": "What does \"dance\" mean?",
+          "options": [
+            "navegar",
+            "gritar",
+            "bailar",
+            "saltar a la comba"
+          ],
+          "answer": "bailar"
+        },
+        {
+          "id": "verb_a_31",
+          "type": "A",
+          "question": "What does \"study\" mean?",
+          "options": [
+            "nadar",
+            "disfrazarse",
+            "estudiar",
+            "saltar a la comba"
+          ],
+          "answer": "estudiar"
+        },
+        {
+          "id": "verb_a_32",
+          "type": "A",
+          "question": "What does \"catch\" mean?",
+          "options": [
+            "estudiar",
+            "aprender",
+            "andar / caminar",
+            "coger / atrapar"
+          ],
+          "answer": "coger / atrapar"
+        },
+        {
+          "id": "verb_a_33",
+          "type": "A",
+          "question": "What does \"see\" mean?",
+          "options": [
+            "ver",
+            "vestirse elegante",
+            "escalar / trepar",
+            "botar"
+          ],
+          "answer": "ver"
+        },
+        {
+          "id": "verb_a_34",
+          "type": "A",
+          "question": "What does \"do\" mean?",
+          "options": [
+            "hacer",
+            "andar / caminar",
+            "dar",
+            "tener"
+          ],
+          "answer": "hacer"
+        },
+        {
+          "id": "verb_a_35",
+          "type": "A",
+          "question": "What does \"skip\" mean?",
+          "options": [
+            "saltar a la comba",
+            "querer",
+            "saltar a la pata coja",
+            "contar / decir"
+          ],
+          "answer": "saltar a la comba"
+        },
+        {
+          "id": "verb_a_36",
+          "type": "A",
+          "question": "What does \"shout\" mean?",
+          "options": [
+            "bailar",
+            "crecer",
+            "encantar / amar",
+            "gritar"
+          ],
+          "answer": "gritar"
+        },
+        {
+          "id": "verb_a_37",
+          "type": "A",
+          "question": "What does \"take\" mean?",
+          "options": [
+            "nadar",
+            "coger / tomar",
+            "disfrazarse",
+            "volar"
+          ],
+          "answer": "coger / tomar"
+        },
+        {
+          "id": "verb_a_38",
+          "type": "A",
+          "question": "What does \"love\" mean?",
+          "options": [
+            "tener",
+            "dar",
+            "andar / caminar",
+            "encantar / amar"
+          ],
+          "answer": "encantar / amar"
+        },
+        {
+          "id": "verb_a_39",
+          "type": "A",
+          "question": "What does \"go\" mean?",
+          "options": [
+            "hacer",
+            "escribir",
+            "ir",
+            "beber"
+          ],
+          "answer": "ir"
+        },
+        {
+          "id": "verb_a_40",
+          "type": "A",
+          "question": "What does \"swim\" mean?",
+          "options": [
+            "dormir",
+            "coger / tomar",
+            "nadar",
+            "beber"
+          ],
+          "answer": "nadar"
+        },
+        {
+          "id": "verb_a_41",
+          "type": "A",
+          "question": "What does \"play\" mean?",
+          "options": [
+            "nadar",
+            "beber",
+            "saltar a la comba",
+            "jugar"
+          ],
+          "answer": "jugar"
+        },
+        {
+          "id": "verb_a_42",
+          "type": "A",
+          "question": "What does \"watch\" mean?",
+          "options": [
+            "andar / caminar",
+            "disfrazarse",
+            "ver",
+            "ver / mirar"
+          ],
+          "answer": "ver / mirar"
+        },
+        {
+          "id": "verb_a_43",
+          "type": "A",
+          "question": "What does \"grow up\" mean?",
+          "options": [
+            "conducir",
+            "correr",
+            "crecer",
+            "coger / atrapar"
+          ],
+          "answer": "crecer"
+        },
+        {
+          "id": "verb_a_44",
+          "type": "A",
+          "question": "What does \"bounce\" mean?",
+          "options": [
+            "saltar",
+            "botar",
+            "vestirse elegante",
+            "coger / tomar"
+          ],
+          "answer": "botar"
+        },
+        {
+          "id": "verb_a_45",
+          "type": "A",
+          "question": "What does \"live\" mean?",
+          "options": [
+            "vivir",
+            "nadar",
+            "estudiar",
+            "gustar"
+          ],
+          "answer": "vivir"
+        },
+        {
+          "id": "verb_a_46",
+          "type": "A",
+          "question": "What does \"hop\" mean?",
+          "options": [
+            "ir",
+            "saltar a la pata coja",
+            "construir",
+            "comprar"
+          ],
+          "answer": "saltar a la pata coja"
+        },
+        {
+          "id": "verb_a_47",
+          "type": "A",
+          "question": "What does \"want\" mean?",
+          "options": [
+            "crecer",
+            "nadar",
+            "saltar a la pata coja",
+            "querer"
+          ],
+          "answer": "querer"
+        },
+        {
+          "id": "verb_a_48",
+          "type": "A",
+          "question": "What does \"clean\" mean?",
+          "options": [
+            "escalar / trepar",
+            "limpiar",
+            "construir",
+            "correr"
+          ],
+          "answer": "limpiar"
+        },
+        {
+          "id": "verb_b_1",
+          "type": "B",
+          "question": "What's the past tense of \"read\"?",
+          "options": [
+            "hopped",
+            "lived",
+            "read",
+            "wanted"
+          ],
+          "answer": "read"
+        },
+        {
+          "id": "verb_b_2",
+          "type": "B",
+          "question": "What's the past tense of \"shout\"?",
+          "options": [
+            "shouted",
+            "got dressed up",
+            "grew up",
+            "wanted"
+          ],
+          "answer": "shouted"
+        },
+        {
+          "id": "verb_b_3",
+          "type": "B",
+          "question": "What's the past tense of \"want\"?",
+          "options": [
+            "danced",
+            "saw",
+            "wanted",
+            "slept"
+          ],
+          "answer": "wanted"
+        },
+        {
+          "id": "verb_b_4",
+          "type": "B",
+          "question": "What's the past tense of \"study\"?",
+          "options": [
+            "sailed",
+            "went",
+            "studied",
+            "told"
+          ],
+          "answer": "studied"
+        },
+        {
+          "id": "verb_b_5",
+          "type": "B",
+          "question": "What's the past tense of \"learn\"?",
+          "options": [
+            "taught",
+            "came",
+            "learnt",
+            "flew"
+          ],
+          "answer": "learnt"
+        },
+        {
+          "id": "verb_b_6",
+          "type": "B",
+          "question": "What's the past tense of \"kick\"?",
+          "options": [
+            "taught",
+            "kicked",
+            "drove",
+            "wanted"
+          ],
+          "answer": "kicked"
+        },
+        {
+          "id": "verb_b_7",
+          "type": "B",
+          "question": "What's the past tense of \"climb\"?",
+          "options": [
+            "learnt",
+            "ran",
+            "flew",
+            "climbed"
+          ],
+          "answer": "climbed"
+        },
+        {
+          "id": "verb_b_8",
+          "type": "B",
+          "question": "What's the past tense of \"eat\"?",
+          "options": [
+            "ate",
+            "watched",
+            "looked",
+            "liked"
+          ],
+          "answer": "ate"
+        },
+        {
+          "id": "verb_b_9",
+          "type": "B",
+          "question": "What's the past tense of \"have\"?",
+          "options": [
+            "did",
+            "loved",
+            "dressed up",
+            "had"
+          ],
+          "answer": "had"
+        },
+        {
+          "id": "verb_b_10",
+          "type": "B",
+          "question": "What's the past tense of \"give\"?",
+          "options": [
+            "built",
+            "watched",
+            "gave",
+            "flew"
+          ],
+          "answer": "gave"
+        },
+        {
+          "id": "verb_b_11",
+          "type": "B",
+          "question": "What's the past tense of \"drink\"?",
+          "options": [
+            "got dressed up",
+            "drank",
+            "did",
+            "learnt"
+          ],
+          "answer": "drank"
+        },
+        {
+          "id": "verb_b_12",
+          "type": "B",
+          "question": "What's the past tense of \"do\"?",
+          "options": [
+            "gave",
+            "did",
+            "caught",
+            "wrote"
+          ],
+          "answer": "did"
+        },
+        {
+          "id": "verb_b_13",
+          "type": "B",
+          "question": "What's the past tense of \"drive\"?",
+          "options": [
+            "watched",
+            "drove",
+            "had",
+            "saw"
+          ],
+          "answer": "drove"
+        },
+        {
+          "id": "verb_b_14",
+          "type": "B",
+          "question": "What's the past tense of \"look\"?",
+          "options": [
+            "drove",
+            "looked",
+            "made",
+            "did"
+          ],
+          "answer": "looked"
+        },
+        {
+          "id": "verb_b_15",
+          "type": "B",
+          "question": "What's the past tense of \"buy\"?",
+          "options": [
+            "dressed up",
+            "bought",
+            "fished",
+            "drank"
+          ],
+          "answer": "bought"
+        },
+        {
+          "id": "verb_b_16",
+          "type": "B",
+          "question": "What's the past tense of \"walk\"?",
+          "options": [
+            "walked",
+            "hopped",
+            "jumped",
+            "read"
+          ],
+          "answer": "walked"
+        },
+        {
+          "id": "verb_b_17",
+          "type": "B",
+          "question": "What's the past tense of \"live\"?",
+          "options": [
+            "caught",
+            "lived",
+            "looked",
+            "swam"
+          ],
+          "answer": "lived"
+        },
+        {
+          "id": "verb_b_18",
+          "type": "B",
+          "question": "What's the past tense of \"grow up\"?",
+          "options": [
+            "grew up",
+            "fished",
+            "came",
+            "liked"
+          ],
+          "answer": "grew up"
+        },
+        {
+          "id": "verb_b_19",
+          "type": "B",
+          "question": "What's the past tense of \"tell\"?",
+          "options": [
+            "told",
+            "walked",
+            "played",
+            "wanted"
+          ],
+          "answer": "told"
+        },
+        {
+          "id": "verb_b_20",
+          "type": "B",
+          "question": "What's the past tense of \"play\"?",
+          "options": [
+            "grew up",
+            "laughed",
+            "played",
+            "had"
+          ],
+          "answer": "played"
+        },
+        {
+          "id": "verb_b_21",
+          "type": "B",
+          "question": "What's the past tense of \"go\"?",
+          "options": [
+            "jumped",
+            "went",
+            "learnt",
+            "built"
+          ],
+          "answer": "went"
+        },
+        {
+          "id": "verb_b_22",
+          "type": "B",
+          "question": "What's the past tense of \"take\"?",
+          "options": [
+            "took",
+            "shouted",
+            "cleaned",
+            "made"
+          ],
+          "answer": "took"
+        },
+        {
+          "id": "verb_b_23",
+          "type": "B",
+          "question": "What's the past tense of \"skip\"?",
+          "options": [
+            "got dressed up",
+            "drove",
+            "ran",
+            "skipped"
+          ],
+          "answer": "skipped"
+        },
+        {
+          "id": "verb_b_24",
+          "type": "B",
+          "question": "What's the past tense of \"catch\"?",
+          "options": [
+            "watched",
+            "caught",
+            "fished",
+            "bought"
+          ],
+          "answer": "caught"
+        },
+        {
+          "id": "verb_b_25",
+          "type": "B",
+          "question": "What's the past tense of \"fish\"?",
+          "options": [
+            "came",
+            "laughed",
+            "played",
+            "fished"
+          ],
+          "answer": "fished"
+        },
+        {
+          "id": "verb_b_26",
+          "type": "B",
+          "question": "What's the past tense of \"build\"?",
+          "options": [
+            "built",
+            "cleaned",
+            "liked",
+            "jumped"
+          ],
+          "answer": "built"
+        },
+        {
+          "id": "verb_b_27",
+          "type": "B",
+          "question": "What's the past tense of \"love\"?",
+          "options": [
+            "slept",
+            "looked",
+            "loved",
+            "caught"
+          ],
+          "answer": "loved"
+        },
+        {
+          "id": "verb_b_28",
+          "type": "B",
+          "question": "What's the past tense of \"teach\"?",
+          "options": [
+            "bounced",
+            "taught",
+            "took",
+            "played"
+          ],
+          "answer": "taught"
+        },
+        {
+          "id": "verb_b_29",
+          "type": "B",
+          "question": "What's the past tense of \"dress up\"?",
+          "options": [
+            "came",
+            "dressed up",
+            "bought",
+            "watched"
+          ],
+          "answer": "dressed up"
+        },
+        {
+          "id": "verb_b_30",
+          "type": "B",
+          "question": "What's the past tense of \"write\"?",
+          "options": [
+            "learnt",
+            "wrote",
+            "took",
+            "played"
+          ],
+          "answer": "wrote"
+        },
+        {
+          "id": "verb_b_31",
+          "type": "B",
+          "question": "What's the past tense of \"sleep\"?",
+          "options": [
+            "wrote",
+            "taught",
+            "slept",
+            "kicked"
+          ],
+          "answer": "slept"
+        },
+        {
+          "id": "verb_b_32",
+          "type": "B",
+          "question": "What's the past tense of \"like\"?",
+          "options": [
+            "liked",
+            "built",
+            "bought",
+            "caught"
+          ],
+          "answer": "liked"
+        },
+        {
+          "id": "verb_b_33",
+          "type": "B",
+          "question": "What's the past tense of \"watch\"?",
+          "options": [
+            "watched",
+            "took",
+            "danced",
+            "got dressed up"
+          ],
+          "answer": "watched"
+        },
+        {
+          "id": "verb_b_34",
+          "type": "B",
+          "question": "What's the past tense of \"see\"?",
+          "options": [
+            "told",
+            "walked",
+            "saw",
+            "gave"
+          ],
+          "answer": "saw"
+        },
+        {
+          "id": "verb_b_35",
+          "type": "B",
+          "question": "What's the past tense of \"clean\"?",
+          "options": [
+            "taught",
+            "wrote",
+            "threw",
+            "cleaned"
+          ],
+          "answer": "cleaned"
+        },
+        {
+          "id": "verb_b_36",
+          "type": "B",
+          "question": "What's the past tense of \"hop\"?",
+          "options": [
+            "hopped",
+            "swam",
+            "built",
+            "got dressed up"
+          ],
+          "answer": "hopped"
+        },
+        {
+          "id": "verb_b_37",
+          "type": "B",
+          "question": "What's the past tense of \"laugh\"?",
+          "options": [
+            "drove",
+            "saw",
+            "told",
+            "laughed"
+          ],
+          "answer": "laughed"
+        },
+        {
+          "id": "verb_b_38",
+          "type": "B",
+          "question": "What's the past tense of \"jump\"?",
+          "options": [
+            "jumped",
+            "threw",
+            "skipped",
+            "ate"
+          ],
+          "answer": "jumped"
+        },
+        {
+          "id": "verb_b_39",
+          "type": "B",
+          "question": "What's the past tense of \"fly\"?",
+          "options": [
+            "flew",
+            "ate",
+            "liked",
+            "caught"
+          ],
+          "answer": "flew"
+        },
+        {
+          "id": "verb_b_40",
+          "type": "B",
+          "question": "What's the past tense of \"dance\"?",
+          "options": [
+            "flew",
+            "walked",
+            "danced",
+            "loved"
+          ],
+          "answer": "danced"
+        },
+        {
+          "id": "verb_b_41",
+          "type": "B",
+          "question": "What's the past tense of \"bounce\"?",
+          "options": [
+            "climbed",
+            "bounced",
+            "gave",
+            "bought"
+          ],
+          "answer": "bounced"
+        },
+        {
+          "id": "verb_b_42",
+          "type": "B",
+          "question": "What's the past tense of \"get dressed up\"?",
+          "options": [
+            "watched",
+            "threw",
+            "got dressed up",
+            "built"
+          ],
+          "answer": "got dressed up"
+        },
+        {
+          "id": "verb_b_43",
+          "type": "B",
+          "question": "What's the past tense of \"come\"?",
+          "options": [
+            "came",
+            "skipped",
+            "drank",
+            "went"
+          ],
+          "answer": "came"
+        },
+        {
+          "id": "verb_b_44",
+          "type": "B",
+          "question": "What's the past tense of \"make\"?",
+          "options": [
+            "liked",
+            "taught",
+            "gave",
+            "made"
+          ],
+          "answer": "made"
+        },
+        {
+          "id": "verb_b_45",
+          "type": "B",
+          "question": "What's the past tense of \"run\"?",
+          "options": [
+            "laughed",
+            "ran",
+            "bounced",
+            "made"
+          ],
+          "answer": "ran"
+        },
+        {
+          "id": "verb_b_46",
+          "type": "B",
+          "question": "What's the past tense of \"sail\"?",
+          "options": [
+            "bounced",
+            "sailed",
+            "did",
+            "built"
+          ],
+          "answer": "sailed"
+        },
+        {
+          "id": "verb_b_47",
+          "type": "B",
+          "question": "What's the past tense of \"throw\"?",
+          "options": [
+            "grew up",
+            "sailed",
+            "threw",
+            "flew"
+          ],
+          "answer": "threw"
+        },
+        {
+          "id": "verb_b_48",
+          "type": "B",
+          "question": "What's the past tense of \"swim\"?",
+          "options": [
+            "swam",
+            "fished",
+            "wrote",
+            "took"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "verb_c_1",
+          "type": "C",
+          "question": "Is \"dress up\" regular or irregular?\n(Past: dressed up)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_2",
+          "type": "C",
+          "question": "Is \"throw\" regular or irregular?\n(Past: threw)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_3",
+          "type": "C",
+          "question": "Is \"live\" regular or irregular?\n(Past: lived)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_4",
+          "type": "C",
+          "question": "Is \"study\" regular or irregular?\n(Past: studied)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_5",
+          "type": "C",
+          "question": "Is \"dance\" regular or irregular?\n(Past: danced)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_6",
+          "type": "C",
+          "question": "Is \"hop\" regular or irregular?\n(Past: hopped)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_7",
+          "type": "C",
+          "question": "Is \"make\" regular or irregular?\n(Past: made)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_8",
+          "type": "C",
+          "question": "Is \"sail\" regular or irregular?\n(Past: sailed)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_9",
+          "type": "C",
+          "question": "Is \"get dressed up\" regular or irregular?\n(Past: got dressed up)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_10",
+          "type": "C",
+          "question": "Is \"teach\" regular or irregular?\n(Past: taught)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_11",
+          "type": "C",
+          "question": "Is \"tell\" regular or irregular?\n(Past: told)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_12",
+          "type": "C",
+          "question": "Is \"have\" regular or irregular?\n(Past: had)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_13",
+          "type": "C",
+          "question": "Is \"do\" regular or irregular?\n(Past: did)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_14",
+          "type": "C",
+          "question": "Is \"bounce\" regular or irregular?\n(Past: bounced)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_15",
+          "type": "C",
+          "question": "Is \"climb\" regular or irregular?\n(Past: climbed)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_16",
+          "type": "C",
+          "question": "Is \"give\" regular or irregular?\n(Past: gave)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_17",
+          "type": "C",
+          "question": "Is \"drive\" regular or irregular?\n(Past: drove)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_18",
+          "type": "C",
+          "question": "Is \"love\" regular or irregular?\n(Past: loved)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_19",
+          "type": "C",
+          "question": "Is \"sleep\" regular or irregular?\n(Past: slept)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_20",
+          "type": "C",
+          "question": "Is \"read\" regular or irregular?\n(Past: read)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_21",
+          "type": "C",
+          "question": "Is \"come\" regular or irregular?\n(Past: came)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_22",
+          "type": "C",
+          "question": "Is \"want\" regular or irregular?\n(Past: wanted)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_23",
+          "type": "C",
+          "question": "Is \"build\" regular or irregular?\n(Past: built)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_24",
+          "type": "C",
+          "question": "Is \"buy\" regular or irregular?\n(Past: bought)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_25",
+          "type": "C",
+          "question": "Is \"fly\" regular or irregular?\n(Past: flew)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_26",
+          "type": "C",
+          "question": "Is \"fish\" regular or irregular?\n(Past: fished)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_27",
+          "type": "C",
+          "question": "Is \"go\" regular or irregular?\n(Past: went)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_28",
+          "type": "C",
+          "question": "Is \"kick\" regular or irregular?\n(Past: kicked)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_29",
+          "type": "C",
+          "question": "Is \"play\" regular or irregular?\n(Past: played)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_30",
+          "type": "C",
+          "question": "Is \"run\" regular or irregular?\n(Past: ran)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_31",
+          "type": "C",
+          "question": "Is \"drink\" regular or irregular?\n(Past: drank)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_32",
+          "type": "C",
+          "question": "Is \"laugh\" regular or irregular?\n(Past: laughed)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_33",
+          "type": "C",
+          "question": "Is \"walk\" regular or irregular?\n(Past: walked)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_34",
+          "type": "C",
+          "question": "Is \"take\" regular or irregular?\n(Past: took)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_35",
+          "type": "C",
+          "question": "Is \"look\" regular or irregular?\n(Past: looked)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_36",
+          "type": "C",
+          "question": "Is \"clean\" regular or irregular?\n(Past: cleaned)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_37",
+          "type": "C",
+          "question": "Is \"swim\" regular or irregular?\n(Past: swam)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_38",
+          "type": "C",
+          "question": "Is \"grow up\" regular or irregular?\n(Past: grew up)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_39",
+          "type": "C",
+          "question": "Is \"shout\" regular or irregular?\n(Past: shouted)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_40",
+          "type": "C",
+          "question": "Is \"write\" regular or irregular?\n(Past: wrote)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_41",
+          "type": "C",
+          "question": "Is \"eat\" regular or irregular?\n(Past: ate)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_42",
+          "type": "C",
+          "question": "Is \"skip\" regular or irregular?\n(Past: skipped)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_43",
+          "type": "C",
+          "question": "Is \"learn\" regular or irregular?\n(Past: learnt)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_44",
+          "type": "C",
+          "question": "Is \"see\" regular or irregular?\n(Past: saw)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_c_45",
+          "type": "C",
+          "question": "Is \"like\" regular or irregular?\n(Past: liked)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_46",
+          "type": "C",
+          "question": "Is \"watch\" regular or irregular?\n(Past: watched)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_47",
+          "type": "C",
+          "question": "Is \"jump\" regular or irregular?\n(Past: jumped)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Regular (-ed)"
+        },
+        {
+          "id": "verb_c_48",
+          "type": "C",
+          "question": "Is \"catch\" regular or irregular?\n(Past: caught)",
+          "options": [
+            "Regular (-ed)",
+            "Irregular"
+          ],
+          "answer": "Irregular"
+        },
+        {
+          "id": "verb_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice \"andar / caminar\" en inglés?",
+          "options": [
+            "walk",
+            "learn",
+            "catch",
+            "fly"
+          ],
+          "answer": "walk"
+        },
+        {
+          "id": "verb_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice \"gustar\" en inglés?",
+          "options": [
+            "like",
+            "teach",
+            "go",
+            "write"
+          ],
+          "answer": "like"
+        },
+        {
+          "id": "verb_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice \"escalar / trepar\" en inglés?",
+          "options": [
+            "climb",
+            "fly",
+            "write",
+            "learn"
+          ],
+          "answer": "climb"
+        },
+        {
+          "id": "verb_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice \"reír\" en inglés?",
+          "options": [
+            "teach",
+            "tell",
+            "give",
+            "laugh"
+          ],
+          "answer": "laugh"
+        },
+        {
+          "id": "verb_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice \"conducir\" en inglés?",
+          "options": [
+            "see",
+            "drive",
+            "climb",
+            "fish"
+          ],
+          "answer": "drive"
+        },
+        {
+          "id": "verb_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice \"enseñar\" en inglés?",
+          "options": [
+            "want",
+            "come",
+            "teach",
+            "like"
+          ],
+          "answer": "teach"
+        },
+        {
+          "id": "verb_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice \"saltar a la comba\" en inglés?",
+          "options": [
+            "catch",
+            "love",
+            "skip",
+            "want"
+          ],
+          "answer": "skip"
+        },
+        {
+          "id": "verb_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice \"ver / mirar\" en inglés?",
+          "options": [
+            "watch",
+            "buy",
+            "climb",
+            "laugh"
+          ],
+          "answer": "watch"
+        },
+        {
+          "id": "verb_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice \"dar una patada\" en inglés?",
+          "options": [
+            "walk",
+            "read",
+            "live",
+            "kick"
+          ],
+          "answer": "kick"
+        },
+        {
+          "id": "verb_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice \"limpiar\" en inglés?",
+          "options": [
+            "study",
+            "hop",
+            "clean",
+            "walk"
+          ],
+          "answer": "clean"
+        },
+        {
+          "id": "verb_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice \"vestirse elegante\" en inglés?",
+          "options": [
+            "sail",
+            "get dressed up",
+            "go",
+            "catch"
+          ],
+          "answer": "get dressed up"
+        },
+        {
+          "id": "verb_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice \"aprender\" en inglés?",
+          "options": [
+            "give",
+            "climb",
+            "have",
+            "learn"
+          ],
+          "answer": "learn"
+        },
+        {
+          "id": "verb_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice \"contar / decir\" en inglés?",
+          "options": [
+            "take",
+            "clean",
+            "tell",
+            "sail"
+          ],
+          "answer": "tell"
+        },
+        {
+          "id": "verb_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice \"estudiar\" en inglés?",
+          "options": [
+            "dance",
+            "study",
+            "drink",
+            "write"
+          ],
+          "answer": "study"
+        },
+        {
+          "id": "verb_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice \"hacer / fabricar\" en inglés?",
+          "options": [
+            "give",
+            "make",
+            "throw",
+            "climb"
+          ],
+          "answer": "make"
+        },
+        {
+          "id": "verb_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice \"venir\" en inglés?",
+          "options": [
+            "fish",
+            "sail",
+            "come",
+            "kick"
+          ],
+          "answer": "come"
+        },
+        {
+          "id": "verb_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice \"nadar\" en inglés?",
+          "options": [
+            "go",
+            "do",
+            "swim",
+            "study"
+          ],
+          "answer": "swim"
+        },
+        {
+          "id": "verb_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice \"dar\" en inglés?",
+          "options": [
+            "give",
+            "drive",
+            "jump",
+            "make"
+          ],
+          "answer": "give"
+        },
+        {
+          "id": "verb_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice \"pescar\" en inglés?",
+          "options": [
+            "swim",
+            "dance",
+            "take",
+            "fish"
+          ],
+          "answer": "fish"
+        },
+        {
+          "id": "verb_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice \"construir\" en inglés?",
+          "options": [
+            "play",
+            "hop",
+            "build",
+            "look"
+          ],
+          "answer": "build"
+        },
+        {
+          "id": "verb_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice \"lanzar\" en inglés?",
+          "options": [
+            "get dressed up",
+            "catch",
+            "see",
+            "throw"
+          ],
+          "answer": "throw"
+        },
+        {
+          "id": "verb_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice \"ir\" en inglés?",
+          "options": [
+            "go",
+            "make",
+            "play",
+            "dance"
+          ],
+          "answer": "go"
+        },
+        {
+          "id": "verb_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice \"correr\" en inglés?",
+          "options": [
+            "drink",
+            "run",
+            "catch",
+            "do"
+          ],
+          "answer": "run"
+        },
+        {
+          "id": "verb_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice \"crecer\" en inglés?",
+          "options": [
+            "make",
+            "eat",
+            "grow up",
+            "fly"
+          ],
+          "answer": "grow up"
+        },
+        {
+          "id": "verb_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice \"comprar\" en inglés?",
+          "options": [
+            "sail",
+            "clean",
+            "buy",
+            "give"
+          ],
+          "answer": "buy"
+        },
+        {
+          "id": "verb_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice \"disfrazarse\" en inglés?",
+          "options": [
+            "study",
+            "go",
+            "dress up",
+            "read"
+          ],
+          "answer": "dress up"
+        },
+        {
+          "id": "verb_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice \"saltar\" en inglés?",
+          "options": [
+            "jump",
+            "get dressed up",
+            "read",
+            "play"
+          ],
+          "answer": "jump"
+        },
+        {
+          "id": "verb_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice \"escribir\" en inglés?",
+          "options": [
+            "grow up",
+            "swim",
+            "write",
+            "jump"
+          ],
+          "answer": "write"
+        },
+        {
+          "id": "verb_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice \"querer\" en inglés?",
+          "options": [
+            "live",
+            "kick",
+            "see",
+            "want"
+          ],
+          "answer": "want"
+        },
+        {
+          "id": "verb_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice \"saltar a la pata coja\" en inglés?",
+          "options": [
+            "eat",
+            "fly",
+            "skip",
+            "hop"
+          ],
+          "answer": "hop"
+        },
+        {
+          "id": "verb_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice \"leer\" en inglés?",
+          "options": [
+            "dance",
+            "tell",
+            "go",
+            "read"
+          ],
+          "answer": "read"
+        },
+        {
+          "id": "verb_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice \"coger / tomar\" en inglés?",
+          "options": [
+            "do",
+            "take",
+            "fish",
+            "live"
+          ],
+          "answer": "take"
+        },
+        {
+          "id": "verb_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice \"hacer\" en inglés?",
+          "options": [
+            "learn",
+            "grow up",
+            "tell",
+            "do"
+          ],
+          "answer": "do"
+        },
+        {
+          "id": "verb_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice \"encantar / amar\" en inglés?",
+          "options": [
+            "laugh",
+            "sleep",
+            "love",
+            "drink"
+          ],
+          "answer": "love"
+        },
+        {
+          "id": "verb_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice \"coger / atrapar\" en inglés?",
+          "options": [
+            "fly",
+            "learn",
+            "give",
+            "catch"
+          ],
+          "answer": "catch"
+        },
+        {
+          "id": "verb_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice \"dormir\" en inglés?",
+          "options": [
+            "make",
+            "go",
+            "love",
+            "sleep"
+          ],
+          "answer": "sleep"
+        },
+        {
+          "id": "verb_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice \"vivir\" en inglés?",
+          "options": [
+            "study",
+            "live",
+            "tell",
+            "get dressed up"
+          ],
+          "answer": "live"
+        },
+        {
+          "id": "verb_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice \"comer\" en inglés?",
+          "options": [
+            "build",
+            "get dressed up",
+            "eat",
+            "make"
+          ],
+          "answer": "eat"
+        },
+        {
+          "id": "verb_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice \"bailar\" en inglés?",
+          "options": [
+            "read",
+            "drink",
+            "dance",
+            "eat"
+          ],
+          "answer": "dance"
+        },
+        {
+          "id": "verb_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice \"jugar\" en inglés?",
+          "options": [
+            "watch",
+            "play",
+            "see",
+            "swim"
+          ],
+          "answer": "play"
+        },
+        {
+          "id": "verb_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice \"botar\" en inglés?",
+          "options": [
+            "clean",
+            "bounce",
+            "write",
+            "study"
+          ],
+          "answer": "bounce"
+        },
+        {
+          "id": "verb_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice \"gritar\" en inglés?",
+          "options": [
+            "shout",
+            "drink",
+            "skip",
+            "tell"
+          ],
+          "answer": "shout"
+        },
+        {
+          "id": "verb_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice \"volar\" en inglés?",
+          "options": [
+            "teach",
+            "read",
+            "tell",
+            "fly"
+          ],
+          "answer": "fly"
+        },
+        {
+          "id": "verb_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice \"mirar\" en inglés?",
+          "options": [
+            "look",
+            "play",
+            "dress up",
+            "write"
+          ],
+          "answer": "look"
+        },
+        {
+          "id": "verb_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice \"navegar\" en inglés?",
+          "options": [
+            "sail",
+            "swim",
+            "take",
+            "clean"
+          ],
+          "answer": "sail"
+        },
+        {
+          "id": "verb_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice \"ver\" en inglés?",
+          "options": [
+            "read",
+            "fish",
+            "see",
+            "grow up"
+          ],
+          "answer": "see"
+        },
+        {
+          "id": "verb_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice \"beber\" en inglés?",
+          "options": [
+            "look",
+            "sleep",
+            "read",
+            "drink"
+          ],
+          "answer": "drink"
+        },
+        {
+          "id": "verb_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice \"tener\" en inglés?",
+          "options": [
+            "fish",
+            "have",
+            "hop",
+            "want"
+          ],
+          "answer": "have"
+        }
+      ],
+      "verbList": [
+        {
+          "en": "bounce",
+          "es": "botar",
+          "past": "bounced"
+        },
+        {
+          "en": "build",
+          "es": "construir",
+          "past": "built"
+        },
+        {
+          "en": "buy",
+          "es": "comprar",
+          "past": "bought"
+        },
+        {
+          "en": "catch",
+          "es": "coger / atrapar",
+          "past": "caught"
+        },
+        {
+          "en": "clean",
+          "es": "limpiar",
+          "past": "cleaned"
+        },
+        {
+          "en": "climb",
+          "es": "escalar / trepar",
+          "past": "climbed"
+        },
+        {
+          "en": "come",
+          "es": "venir",
+          "past": "came"
+        },
+        {
+          "en": "dance",
+          "es": "bailar",
+          "past": "danced"
+        },
+        {
+          "en": "do",
+          "es": "hacer",
+          "past": "did"
+        },
+        {
+          "en": "dress up",
+          "es": "disfrazarse",
+          "past": "dressed up"
+        },
+        {
+          "en": "drink",
+          "es": "beber",
+          "past": "drank"
+        },
+        {
+          "en": "drive",
+          "es": "conducir",
+          "past": "drove"
+        },
+        {
+          "en": "eat",
+          "es": "comer",
+          "past": "ate"
+        },
+        {
+          "en": "fish",
+          "es": "pescar",
+          "past": "fished"
+        },
+        {
+          "en": "fly",
+          "es": "volar",
+          "past": "flew"
+        },
+        {
+          "en": "get dressed up",
+          "es": "vestirse elegante",
+          "past": "got dressed up"
+        },
+        {
+          "en": "give",
+          "es": "dar",
+          "past": "gave"
+        },
+        {
+          "en": "go",
+          "es": "ir",
+          "past": "went"
+        },
+        {
+          "en": "grow up",
+          "es": "crecer",
+          "past": "grew up"
+        },
+        {
+          "en": "have",
+          "es": "tener",
+          "past": "had"
+        },
+        {
+          "en": "hop",
+          "es": "saltar a la pata coja",
+          "past": "hopped"
+        },
+        {
+          "en": "jump",
+          "es": "saltar",
+          "past": "jumped"
+        },
+        {
+          "en": "kick",
+          "es": "dar una patada",
+          "past": "kicked"
+        },
+        {
+          "en": "laugh",
+          "es": "reír",
+          "past": "laughed"
+        },
+        {
+          "en": "learn",
+          "es": "aprender",
+          "past": "learnt"
+        },
+        {
+          "en": "like",
+          "es": "gustar",
+          "past": "liked"
+        },
+        {
+          "en": "live",
+          "es": "vivir",
+          "past": "lived"
+        },
+        {
+          "en": "look",
+          "es": "mirar",
+          "past": "looked"
+        },
+        {
+          "en": "love",
+          "es": "encantar / amar",
+          "past": "loved"
+        },
+        {
+          "en": "make",
+          "es": "hacer / fabricar",
+          "past": "made"
+        },
+        {
+          "en": "play",
+          "es": "jugar",
+          "past": "played"
+        },
+        {
+          "en": "read",
+          "es": "leer",
+          "past": "read"
+        },
+        {
+          "en": "run",
+          "es": "correr",
+          "past": "ran"
+        },
+        {
+          "en": "sail",
+          "es": "navegar",
+          "past": "sailed"
+        },
+        {
+          "en": "see",
+          "es": "ver",
+          "past": "saw"
+        },
+        {
+          "en": "shout",
+          "es": "gritar",
+          "past": "shouted"
+        },
+        {
+          "en": "skip",
+          "es": "saltar a la comba",
+          "past": "skipped"
+        },
+        {
+          "en": "sleep",
+          "es": "dormir",
+          "past": "slept"
+        },
+        {
+          "en": "study",
+          "es": "estudiar",
+          "past": "studied"
+        },
+        {
+          "en": "swim",
+          "es": "nadar",
+          "past": "swam"
+        },
+        {
+          "en": "take",
+          "es": "coger / tomar",
+          "past": "took"
+        },
+        {
+          "en": "teach",
+          "es": "enseñar",
+          "past": "taught"
+        },
+        {
+          "en": "tell",
+          "es": "contar / decir",
+          "past": "told"
+        },
+        {
+          "en": "throw",
+          "es": "lanzar",
+          "past": "threw"
+        },
+        {
+          "en": "walk",
+          "es": "andar / caminar",
+          "past": "walked"
+        },
+        {
+          "en": "want",
+          "es": "querer",
+          "past": "wanted"
+        },
+        {
+          "en": "watch",
+          "es": "ver / mirar",
+          "past": "watched"
+        },
+        {
+          "en": "write",
+          "es": "escribir",
+          "past": "wrote"
+        }
+      ]
+    }
+  ]
+}
