@@ -24,11 +24,47 @@
               misma clave, igual que "english-tobe" agrupa
               todo To Be en 3º. */
 var TENSES_C4 = {
+  'to-be': {
+    dataFile: 'data/curso4/english-tenses-to-be.json',
+    statsKey: 'english-tobe-c4',
+    title:    'To Be — Present',
+    color:    'var(--blue)'
+  },
+  'to-be-past': {
+    dataFile: 'data/curso4/english-tenses-to-be-past.json',
+    statsKey: 'english-tobe-past-c4',
+    title:    'To Be — Past',
+    color:    'var(--purple)'
+  },
+  'simple-present': {
+    dataFile: 'data/curso4/english-tenses-simple-present.json',
+    statsKey: 'english-simple-present-c4',
+    title:    'Present Simple',
+    color:    'var(--orange)'
+  },
+  'simple-past': {
+    dataFile: 'data/curso4/english-tenses-simple-past.json',
+    statsKey: 'english-simple-past-c4',
+    title:    'Past Simple',
+    color:    'var(--red)'
+  },
   'present-continuous': {
     dataFile: 'data/curso4/english-tenses-present-continuous.json',
     statsKey: 'english-ing-present-c4',
     title:    'Present Continuous',
     color:    'var(--amber)'
+  },
+  'past-continuous': {
+    dataFile: 'data/curso4/english-tenses-past-continuous.json',
+    statsKey: 'english-ing-past-c4',
+    title:    'Past Continuous',
+    color:    '#78350F'
+  },
+  'future-simple': {
+    dataFile: 'data/curso4/english-tenses-future-simple.json',
+    statsKey: 'english-future-c4',
+    title:    'Future Simple',
+    color:    'var(--green)'
   }
 };
 
