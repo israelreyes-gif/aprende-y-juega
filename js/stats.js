@@ -126,6 +126,7 @@ var STATS_BY_CURSO = {
         { key: 'english-ing-present-c4',     name: 'Present Continuous' },
         { key: 'english-ing-past-c4',        name: 'Past Continuous' },
         { key: 'english-future-c4',          name: 'Future' },
+        { key: 'english-verbs-c4',           name: 'Verbs' },
         { key: 'english-vocab-c4',           name: 'Vocabulary' }
       ]
     },
