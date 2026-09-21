@@ -115,5 +115,60 @@
         <div class="mode-sub">Practice by topic + Mix</div>
       </div>
     </div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="openVerbsExerciseMenu()">
+        <div class="mode-emoji">📚</div>
+        <div class="mode-name" style="color:var(--blue)">Verbs</div>
+        <div class="mode-sub">192 questions</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     VERBS — EJERCICIOS (Bloque 1). Reutiliza los motores
+     genéricos (engine-multiple-choice.js, engine-matching.js)
+     — ver js/english-verbs-ex-c4.js. Sin Word Order: son
+     verbos sueltos, no frases.
+     ============================================= -->
+
+<!-- MENÚ DE TIPOS -->
+<div class="screen" id="s-english-verbs-extype-c4">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-exercises-c4')">←</button><h1>Verbs</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a type</div>
+    <div class="mode-grid" id="verbsex-extype-grid"></div>
+  </div>
+</div>
+
+<!-- PREGUNTAS de opción múltiple (tipos A-D) -->
+<div class="screen" id="s-english-verbs-ex-c4">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-verbs-extype-c4')">←</button><h1 id="verbsex-ex-title">Verbs</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="verbsex-ex-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="verbsex-ex-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="verbsex-ex-prog"></div></div></div>
+  <div class="sa">
+    <div class="word-card">
+      <div class="word-qtxt" id="verbsex-ex-question">Question</div>
+    </div>
+    <div class="word-opts" id="verbsex-ex-opts"></div>
+    <div class="feedback" id="verbsex-ex-fb" style="display:none"></div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="verbsex-ex-next" onclick="nextVerbsQuestion()">Next question →</button>
+  </div>
+</div>
+
+<!-- MATCHING (relacionar — subconjunto al azar de 8 verbos) -->
+<div class="screen" id="s-english-verbs-match-c4">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-verbs-extype-c4')">←</button><h1>Verbs — Matching</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div style="padding:14px 16px 6px">
+      <div style="font-family:var(--f);font-size:14px;font-weight:800;color:var(--gray-800);margin-bottom:4px">Match each verb to its meaning</div>
+      <div style="font-size:12px;color:var(--gray-400)">Tap a verb, then tap its Spanish meaning</div>
+    </div>
+    <div id="verbsex-match-area" style="padding:0 16px"></div>
+    <div class="feedback" id="verbsex-match-fb" style="display:none;margin:0 16px"></div>
+    <button class="next-btn" style="background:var(--blue);display:none;margin:0 16px" id="verbsex-match-next" onclick="verbsMatchingNext()">Continue →</button>
   </div>
 </div>
