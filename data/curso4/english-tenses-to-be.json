@@ -1,0 +1,4749 @@
+{
+  "units": [
+    {
+      "id": "to-be",
+      "title": "To Be — Present",
+      "emoji": "🔵",
+      "exercises": [
+        {
+          "id": "tobepres_a_1",
+          "type": "A",
+          "question": "We ___ sad.",
+          "options": [
+            "are",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_2",
+          "type": "A",
+          "question": "Our cat ___ funny.",
+          "options": [
+            "am",
+            "are",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_3",
+          "type": "A",
+          "question": "He ___ proud.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_4",
+          "type": "A",
+          "question": "They ___ in the park.",
+          "options": [
+            "were",
+            "are",
+            "is",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_5",
+          "type": "A",
+          "question": "My parents ___ brave.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_6",
+          "type": "A",
+          "question": "The dog ___ in the kitchen.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_7",
+          "type": "A",
+          "question": "My sister ___ kind.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_8",
+          "type": "A",
+          "question": "The students ___ quiet.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_9",
+          "type": "A",
+          "question": "My brother ___ angry.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_10",
+          "type": "A",
+          "question": "Our cat ___ happy.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_11",
+          "type": "A",
+          "question": "I ___ a teacher.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "tobepres_a_12",
+          "type": "A",
+          "question": "My sister ___ tall.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_13",
+          "type": "A",
+          "question": "My sister ___ ready.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_14",
+          "type": "A",
+          "question": "You ___ strong.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_15",
+          "type": "A",
+          "question": "We ___ happy.",
+          "options": [
+            "were",
+            "am",
+            "was",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_16",
+          "type": "A",
+          "question": "The students ___ ready.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_17",
+          "type": "A",
+          "question": "You ___ brave.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_18",
+          "type": "A",
+          "question": "The students ___ here.",
+          "options": [
+            "are",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_19",
+          "type": "A",
+          "question": "The students ___ a teacher.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_20",
+          "type": "A",
+          "question": "The boys ___ quiet.",
+          "options": [
+            "is",
+            "were",
+            "are",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_21",
+          "type": "A",
+          "question": "The children ___ at school.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_22",
+          "type": "A",
+          "question": "The children ___ angry.",
+          "options": [
+            "is",
+            "was",
+            "am",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_23",
+          "type": "A",
+          "question": "Maria ___ happy.",
+          "options": [
+            "am",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_24",
+          "type": "A",
+          "question": "I ___ in the park.",
+          "options": [
+            "was",
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "tobepres_a_25",
+          "type": "A",
+          "question": "She ___ kind.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_26",
+          "type": "A",
+          "question": "Tom ___ ready.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_27",
+          "type": "A",
+          "question": "The dog ___ a teacher.",
+          "options": [
+            "were",
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_28",
+          "type": "A",
+          "question": "They ___ hungry.",
+          "options": [
+            "were",
+            "was",
+            "am",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_29",
+          "type": "A",
+          "question": "The students ___ cold.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_30",
+          "type": "A",
+          "question": "The students ___ in the park.",
+          "options": [
+            "is",
+            "was",
+            "am",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_31",
+          "type": "A",
+          "question": "My parents ___ in the park.",
+          "options": [
+            "am",
+            "are",
+            "were",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_32",
+          "type": "A",
+          "question": "She ___ a teacher.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_33",
+          "type": "A",
+          "question": "The boys ___ late.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_34",
+          "type": "A",
+          "question": "We ___ kind.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_35",
+          "type": "A",
+          "question": "My sister ___ a good friend.",
+          "options": [
+            "were",
+            "am",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_36",
+          "type": "A",
+          "question": "My parents ___ a good friend.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_37",
+          "type": "A",
+          "question": "Our cat ___ scared.",
+          "options": [
+            "were",
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_38",
+          "type": "A",
+          "question": "The boys ___ funny.",
+          "options": [
+            "was",
+            "are",
+            "were",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_39",
+          "type": "A",
+          "question": "The boys ___ at school.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_40",
+          "type": "A",
+          "question": "They ___ tired.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_41",
+          "type": "A",
+          "question": "The children ___ scared.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_42",
+          "type": "A",
+          "question": "They ___ nervous.",
+          "options": [
+            "am",
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_43",
+          "type": "A",
+          "question": "My sister ___ in the park.",
+          "options": [
+            "am",
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_44",
+          "type": "A",
+          "question": "It ___ quiet.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_45",
+          "type": "A",
+          "question": "My brother ___ here.",
+          "options": [
+            "were",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_46",
+          "type": "A",
+          "question": "He ___ at school.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_47",
+          "type": "A",
+          "question": "It ___ a doctor.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_48",
+          "type": "A",
+          "question": "He ___ thirsty.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_49",
+          "type": "A",
+          "question": "He ___ brave.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_50",
+          "type": "A",
+          "question": "My brother ___ in the kitchen.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_51",
+          "type": "A",
+          "question": "Tom ___ a doctor.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_52",
+          "type": "A",
+          "question": "It ___ proud.",
+          "options": [
+            "were",
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_53",
+          "type": "A",
+          "question": "He ___ tired.",
+          "options": [
+            "is",
+            "was",
+            "am",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_54",
+          "type": "A",
+          "question": "Tom ___ kind.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_55",
+          "type": "A",
+          "question": "My parents ___ cold.",
+          "options": [
+            "was",
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_56",
+          "type": "A",
+          "question": "It ___ late.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_57",
+          "type": "A",
+          "question": "The students ___ students.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_58",
+          "type": "A",
+          "question": "The students ___ tall.",
+          "options": [
+            "is",
+            "am",
+            "were",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_59",
+          "type": "A",
+          "question": "The boys ___ ready.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_60",
+          "type": "A",
+          "question": "We ___ in the kitchen.",
+          "options": [
+            "are",
+            "am",
+            "were",
+            "was"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_61",
+          "type": "A",
+          "question": "The students ___ a doctor.",
+          "options": [
+            "are",
+            "is",
+            "am",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_62",
+          "type": "A",
+          "question": "Tom ___ sad.",
+          "options": [
+            "were",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_63",
+          "type": "A",
+          "question": "The dog ___ quiet.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_64",
+          "type": "A",
+          "question": "The dog ___ here.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_65",
+          "type": "A",
+          "question": "Tom ___ in the kitchen.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_66",
+          "type": "A",
+          "question": "Maria ___ friends.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_67",
+          "type": "A",
+          "question": "The students ___ at home.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "am"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_68",
+          "type": "A",
+          "question": "He ___ late.",
+          "options": [
+            "is",
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_69",
+          "type": "A",
+          "question": "Our cat ___ sad.",
+          "options": [
+            "are",
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_70",
+          "type": "A",
+          "question": "Our cat ___ here.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_71",
+          "type": "A",
+          "question": "They ___ brave.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_72",
+          "type": "A",
+          "question": "They ___ strong.",
+          "options": [
+            "were",
+            "am",
+            "was",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_73",
+          "type": "A",
+          "question": "Maria ___ scared.",
+          "options": [
+            "are",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_74",
+          "type": "A",
+          "question": "The children ___ late.",
+          "options": [
+            "was",
+            "am",
+            "were",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_75",
+          "type": "A",
+          "question": "The dog ___ in the park.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_76",
+          "type": "A",
+          "question": "The dog ___ cold.",
+          "options": [
+            "am",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_77",
+          "type": "A",
+          "question": "The dog ___ nervous.",
+          "options": [
+            "was",
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_78",
+          "type": "A",
+          "question": "Tom ___ a good friend.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_79",
+          "type": "A",
+          "question": "He ___ strong.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_80",
+          "type": "A",
+          "question": "We ___ students.",
+          "options": [
+            "are",
+            "were",
+            "am",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_81",
+          "type": "A",
+          "question": "She ___ a good friend.",
+          "options": [
+            "is",
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_82",
+          "type": "A",
+          "question": "He ___ quiet.",
+          "options": [
+            "is",
+            "were",
+            "are",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_83",
+          "type": "A",
+          "question": "Maria ___ nervous.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_84",
+          "type": "A",
+          "question": "We ___ a doctor.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_85",
+          "type": "A",
+          "question": "Our cat ___ kind.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_86",
+          "type": "A",
+          "question": "My sister ___ a doctor.",
+          "options": [
+            "am",
+            "are",
+            "is",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_87",
+          "type": "A",
+          "question": "It ___ friends.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_88",
+          "type": "A",
+          "question": "My parents ___ ready.",
+          "options": [
+            "was",
+            "are",
+            "were",
+            "is"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_89",
+          "type": "A",
+          "question": "They ___ quiet.",
+          "options": [
+            "am",
+            "was",
+            "is",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_90",
+          "type": "A",
+          "question": "We ___ friends.",
+          "options": [
+            "was",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_91",
+          "type": "A",
+          "question": "Maria ___ angry.",
+          "options": [
+            "am",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_92",
+          "type": "A",
+          "question": "She ___ proud.",
+          "options": [
+            "are",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_93",
+          "type": "A",
+          "question": "My parents ___ scared.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_94",
+          "type": "A",
+          "question": "The dog ___ a good friend.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_95",
+          "type": "A",
+          "question": "My parents ___ nervous.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_96",
+          "type": "A",
+          "question": "Maria ___ sad.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_97",
+          "type": "A",
+          "question": "He ___ cold.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "am"
+          ],
+          "answer": "is"
+        },
+        {
+          "id": "tobepres_a_98",
+          "type": "A",
+          "question": "I ___ busy.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "am"
+        },
+        {
+          "id": "tobepres_a_99",
+          "type": "A",
+          "question": "The children ___ students.",
+          "options": [
+            "am",
+            "was",
+            "were",
+            "are"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_a_100",
+          "type": "A",
+          "question": "The children ___ here.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "are"
+        },
+        {
+          "id": "tobepres_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are tall.\"",
+          "options": [
+            "They was not tall.",
+            "They were not tall.",
+            "They are not tall.",
+            "They is not tall."
+          ],
+          "answer": "They are not tall."
+        },
+        {
+          "id": "tobepres_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am angry.\"",
+          "options": [
+            "I are not angry.",
+            "I is not angry.",
+            "I was not angry.",
+            "I am not angry."
+          ],
+          "answer": "I am not angry."
+        },
+        {
+          "id": "tobepres_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is scared.\"",
+          "options": [
+            "The dog are not scared.",
+            "The dog is not scared.",
+            "The dog am not scared.",
+            "The dog were not scared."
+          ],
+          "answer": "The dog is not scared."
+        },
+        {
+          "id": "tobepres_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is at home.\"",
+          "options": [
+            "My sister were not at home.",
+            "My sister was not at home.",
+            "My sister is not at home.",
+            "My sister are not at home."
+          ],
+          "answer": "My sister is not at home."
+        },
+        {
+          "id": "tobepres_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is brave.\"",
+          "options": [
+            "It was not brave.",
+            "It am not brave.",
+            "It is not brave.",
+            "It are not brave."
+          ],
+          "answer": "It is not brave."
+        },
+        {
+          "id": "tobepres_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is here.\"",
+          "options": [
+            "Our cat were not here.",
+            "Our cat is not here.",
+            "Our cat are not here.",
+            "Our cat am not here."
+          ],
+          "answer": "Our cat is not here."
+        },
+        {
+          "id": "tobepres_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is scared.\"",
+          "options": [
+            "Our cat was not scared.",
+            "Our cat is not scared.",
+            "Our cat were not scared.",
+            "Our cat am not scared."
+          ],
+          "answer": "Our cat is not scared."
+        },
+        {
+          "id": "tobepres_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are ready.\"",
+          "options": [
+            "The students was not ready.",
+            "The students are not ready.",
+            "The students am not ready.",
+            "The students were not ready."
+          ],
+          "answer": "The students are not ready."
+        },
+        {
+          "id": "tobepres_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is in the park.\"",
+          "options": [
+            "Our cat were not in the park.",
+            "Our cat is not in the park.",
+            "Our cat are not in the park.",
+            "Our cat am not in the park."
+          ],
+          "answer": "Our cat is not in the park."
+        },
+        {
+          "id": "tobepres_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is friends.\"",
+          "options": [
+            "It is not friends.",
+            "It am not friends.",
+            "It were not friends.",
+            "It are not friends."
+          ],
+          "answer": "It is not friends."
+        },
+        {
+          "id": "tobepres_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is at school.\"",
+          "options": [
+            "He are not at school.",
+            "He is not at school.",
+            "He am not at school.",
+            "He was not at school."
+          ],
+          "answer": "He is not at school."
+        },
+        {
+          "id": "tobepres_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are strong.\"",
+          "options": [
+            "You was not strong.",
+            "You are not strong.",
+            "You were not strong.",
+            "You is not strong."
+          ],
+          "answer": "You are not strong."
+        },
+        {
+          "id": "tobepres_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are happy.\"",
+          "options": [
+            "The boys is not happy.",
+            "The boys am not happy.",
+            "The boys was not happy.",
+            "The boys are not happy."
+          ],
+          "answer": "The boys are not happy."
+        },
+        {
+          "id": "tobepres_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are proud.\"",
+          "options": [
+            "The boys are not proud.",
+            "The boys am not proud.",
+            "The boys was not proud.",
+            "The boys is not proud."
+          ],
+          "answer": "The boys are not proud."
+        },
+        {
+          "id": "tobepres_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are here.\"",
+          "options": [
+            "They am not here.",
+            "They is not here.",
+            "They are not here.",
+            "They was not here."
+          ],
+          "answer": "They are not here."
+        },
+        {
+          "id": "tobepres_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are happy.\"",
+          "options": [
+            "They were not happy.",
+            "They was not happy.",
+            "They are not happy.",
+            "They am not happy."
+          ],
+          "answer": "They are not happy."
+        },
+        {
+          "id": "tobepres_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are busy.\"",
+          "options": [
+            "We is not busy.",
+            "We was not busy.",
+            "We are not busy.",
+            "We am not busy."
+          ],
+          "answer": "We are not busy."
+        },
+        {
+          "id": "tobepres_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is cold.\"",
+          "options": [
+            "It are not cold.",
+            "It was not cold.",
+            "It is not cold.",
+            "It were not cold."
+          ],
+          "answer": "It is not cold."
+        },
+        {
+          "id": "tobepres_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are a good friend.\"",
+          "options": [
+            "The boys are not a good friend.",
+            "The boys were not a good friend.",
+            "The boys was not a good friend.",
+            "The boys is not a good friend."
+          ],
+          "answer": "The boys are not a good friend."
+        },
+        {
+          "id": "tobepres_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is quiet.\"",
+          "options": [
+            "She is not quiet.",
+            "She are not quiet.",
+            "She was not quiet.",
+            "She am not quiet."
+          ],
+          "answer": "She is not quiet."
+        },
+        {
+          "id": "tobepres_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is proud.\"",
+          "options": [
+            "Our cat were not proud.",
+            "Our cat was not proud.",
+            "Our cat is not proud.",
+            "Our cat am not proud."
+          ],
+          "answer": "Our cat is not proud."
+        },
+        {
+          "id": "tobepres_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"It is thirsty.\"",
+          "options": [
+            "It is not thirsty.",
+            "It was not thirsty.",
+            "It am not thirsty.",
+            "It were not thirsty."
+          ],
+          "answer": "It is not thirsty."
+        },
+        {
+          "id": "tobepres_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are a teacher.\"",
+          "options": [
+            "The boys is not a teacher.",
+            "The boys are not a teacher.",
+            "The boys was not a teacher.",
+            "The boys were not a teacher."
+          ],
+          "answer": "The boys are not a teacher."
+        },
+        {
+          "id": "tobepres_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am busy.\"",
+          "options": [
+            "I are not busy.",
+            "I were not busy.",
+            "I am not busy.",
+            "I is not busy."
+          ],
+          "answer": "I am not busy."
+        },
+        {
+          "id": "tobepres_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am ready.\"",
+          "options": [
+            "I is not ready.",
+            "I was not ready.",
+            "I am not ready.",
+            "I are not ready."
+          ],
+          "answer": "I am not ready."
+        },
+        {
+          "id": "tobepres_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is friends.\"",
+          "options": [
+            "My sister am not friends.",
+            "My sister were not friends.",
+            "My sister is not friends.",
+            "My sister was not friends."
+          ],
+          "answer": "My sister is not friends."
+        },
+        {
+          "id": "tobepres_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is ready.\"",
+          "options": [
+            "My sister was not ready.",
+            "My sister were not ready.",
+            "My sister is not ready.",
+            "My sister am not ready."
+          ],
+          "answer": "My sister is not ready."
+        },
+        {
+          "id": "tobepres_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is hungry.\"",
+          "options": [
+            "My brother am not hungry.",
+            "My brother were not hungry.",
+            "My brother is not hungry.",
+            "My brother are not hungry."
+          ],
+          "answer": "My brother is not hungry."
+        },
+        {
+          "id": "tobepres_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are brave.\"",
+          "options": [
+            "My parents is not brave.",
+            "My parents were not brave.",
+            "My parents are not brave.",
+            "My parents am not brave."
+          ],
+          "answer": "My parents are not brave."
+        },
+        {
+          "id": "tobepres_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are sad.\"",
+          "options": [
+            "My parents are not sad.",
+            "My parents was not sad.",
+            "My parents am not sad.",
+            "My parents is not sad."
+          ],
+          "answer": "My parents are not sad."
+        },
+        {
+          "id": "tobepres_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are tall.\"",
+          "options": [
+            "My parents is not tall.",
+            "My parents am not tall.",
+            "My parents are not tall.",
+            "My parents were not tall."
+          ],
+          "answer": "My parents are not tall."
+        },
+        {
+          "id": "tobepres_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are in the kitchen.\"",
+          "options": [
+            "The boys was not in the kitchen.",
+            "The boys am not in the kitchen.",
+            "The boys were not in the kitchen.",
+            "The boys are not in the kitchen."
+          ],
+          "answer": "The boys are not in the kitchen."
+        },
+        {
+          "id": "tobepres_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is ready.\"",
+          "options": [
+            "The dog was not ready.",
+            "The dog is not ready.",
+            "The dog were not ready.",
+            "The dog am not ready."
+          ],
+          "answer": "The dog is not ready."
+        },
+        {
+          "id": "tobepres_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is scared.\"",
+          "options": [
+            "He is not scared.",
+            "He were not scared.",
+            "He am not scared.",
+            "He was not scared."
+          ],
+          "answer": "He is not scared."
+        },
+        {
+          "id": "tobepres_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is angry.\"",
+          "options": [
+            "Our cat was not angry.",
+            "Our cat is not angry.",
+            "Our cat are not angry.",
+            "Our cat am not angry."
+          ],
+          "answer": "Our cat is not angry."
+        },
+        {
+          "id": "tobepres_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is proud.\"",
+          "options": [
+            "Tom is not proud.",
+            "Tom was not proud.",
+            "Tom were not proud.",
+            "Tom are not proud."
+          ],
+          "answer": "Tom is not proud."
+        },
+        {
+          "id": "tobepres_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are late.\"",
+          "options": [
+            "We was not late.",
+            "We are not late.",
+            "We were not late.",
+            "We am not late."
+          ],
+          "answer": "We are not late."
+        },
+        {
+          "id": "tobepres_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are nervous.\"",
+          "options": [
+            "The children were not nervous.",
+            "The children is not nervous.",
+            "The children are not nervous.",
+            "The children am not nervous."
+          ],
+          "answer": "The children are not nervous."
+        },
+        {
+          "id": "tobepres_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is happy.\"",
+          "options": [
+            "Our cat were not happy.",
+            "Our cat is not happy.",
+            "Our cat am not happy.",
+            "Our cat are not happy."
+          ],
+          "answer": "Our cat is not happy."
+        },
+        {
+          "id": "tobepres_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is strong.\"",
+          "options": [
+            "Our cat is not strong.",
+            "Our cat am not strong.",
+            "Our cat were not strong.",
+            "Our cat was not strong."
+          ],
+          "answer": "Our cat is not strong."
+        },
+        {
+          "id": "tobepres_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are cold.\"",
+          "options": [
+            "The children was not cold.",
+            "The children are not cold.",
+            "The children were not cold.",
+            "The children am not cold."
+          ],
+          "answer": "The children are not cold."
+        },
+        {
+          "id": "tobepres_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is hungry.\"",
+          "options": [
+            "He is not hungry.",
+            "He are not hungry.",
+            "He were not hungry.",
+            "He am not hungry."
+          ],
+          "answer": "He is not hungry."
+        },
+        {
+          "id": "tobepres_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are angry.\"",
+          "options": [
+            "The boys is not angry.",
+            "The boys was not angry.",
+            "The boys were not angry.",
+            "The boys are not angry."
+          ],
+          "answer": "The boys are not angry."
+        },
+        {
+          "id": "tobepres_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister is happy.\"",
+          "options": [
+            "My sister is not happy.",
+            "My sister are not happy.",
+            "My sister were not happy.",
+            "My sister was not happy."
+          ],
+          "answer": "My sister is not happy."
+        },
+        {
+          "id": "tobepres_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is thirsty.\"",
+          "options": [
+            "Maria were not thirsty.",
+            "Maria am not thirsty.",
+            "Maria are not thirsty.",
+            "Maria is not thirsty."
+          ],
+          "answer": "Maria is not thirsty."
+        },
+        {
+          "id": "tobepres_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is funny.\"",
+          "options": [
+            "My brother were not funny.",
+            "My brother was not funny.",
+            "My brother am not funny.",
+            "My brother is not funny."
+          ],
+          "answer": "My brother is not funny."
+        },
+        {
+          "id": "tobepres_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are scared.\"",
+          "options": [
+            "The children was not scared.",
+            "The children am not scared.",
+            "The children are not scared.",
+            "The children is not scared."
+          ],
+          "answer": "The children are not scared."
+        },
+        {
+          "id": "tobepres_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is nervous.\"",
+          "options": [
+            "Maria was not nervous.",
+            "Maria am not nervous.",
+            "Maria is not nervous.",
+            "Maria are not nervous."
+          ],
+          "answer": "Maria is not nervous."
+        },
+        {
+          "id": "tobepres_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is ready.\"",
+          "options": [
+            "Tom was not ready.",
+            "Tom were not ready.",
+            "Tom is not ready.",
+            "Tom am not ready."
+          ],
+          "answer": "Tom is not ready."
+        },
+        {
+          "id": "tobepres_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is funny.\"",
+          "options": [
+            "The dog are not funny.",
+            "The dog am not funny.",
+            "The dog were not funny.",
+            "The dog is not funny."
+          ],
+          "answer": "The dog is not funny."
+        },
+        {
+          "id": "tobepres_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are in the kitchen.\"",
+          "options": [
+            "The children am not in the kitchen.",
+            "The children were not in the kitchen.",
+            "The children are not in the kitchen.",
+            "The children was not in the kitchen."
+          ],
+          "answer": "The children are not in the kitchen."
+        },
+        {
+          "id": "tobepres_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is thirsty.\"",
+          "options": [
+            "My brother were not thirsty.",
+            "My brother is not thirsty.",
+            "My brother was not thirsty.",
+            "My brother are not thirsty."
+          ],
+          "answer": "My brother is not thirsty."
+        },
+        {
+          "id": "tobepres_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is in the kitchen.\"",
+          "options": [
+            "My brother are not in the kitchen.",
+            "My brother was not in the kitchen.",
+            "My brother is not in the kitchen.",
+            "My brother am not in the kitchen."
+          ],
+          "answer": "My brother is not in the kitchen."
+        },
+        {
+          "id": "tobepres_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is at home.\"",
+          "options": [
+            "Tom were not at home.",
+            "Tom is not at home.",
+            "Tom am not at home.",
+            "Tom are not at home."
+          ],
+          "answer": "Tom is not at home."
+        },
+        {
+          "id": "tobepres_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is busy.\"",
+          "options": [
+            "Maria are not busy.",
+            "Maria am not busy.",
+            "Maria is not busy.",
+            "Maria were not busy."
+          ],
+          "answer": "Maria is not busy."
+        },
+        {
+          "id": "tobepres_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are busy.\"",
+          "options": [
+            "The boys is not busy.",
+            "The boys were not busy.",
+            "The boys was not busy.",
+            "The boys are not busy."
+          ],
+          "answer": "The boys are not busy."
+        },
+        {
+          "id": "tobepres_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are kind.\"",
+          "options": [
+            "The boys am not kind.",
+            "The boys is not kind.",
+            "The boys are not kind.",
+            "The boys was not kind."
+          ],
+          "answer": "The boys are not kind."
+        },
+        {
+          "id": "tobepres_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is brave.\"",
+          "options": [
+            "He am not brave.",
+            "He was not brave.",
+            "He is not brave.",
+            "He were not brave."
+          ],
+          "answer": "He is not brave."
+        },
+        {
+          "id": "tobepres_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is angry.\"",
+          "options": [
+            "The dog were not angry.",
+            "The dog was not angry.",
+            "The dog am not angry.",
+            "The dog is not angry."
+          ],
+          "answer": "The dog is not angry."
+        },
+        {
+          "id": "tobepres_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is quiet.\"",
+          "options": [
+            "He was not quiet.",
+            "He were not quiet.",
+            "He is not quiet.",
+            "He are not quiet."
+          ],
+          "answer": "He is not quiet."
+        },
+        {
+          "id": "tobepres_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are brave.\"",
+          "options": [
+            "The children is not brave.",
+            "The children am not brave.",
+            "The children are not brave.",
+            "The children was not brave."
+          ],
+          "answer": "The children are not brave."
+        },
+        {
+          "id": "tobepres_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are students.\"",
+          "options": [
+            "The students are not students.",
+            "The students am not students.",
+            "The students was not students.",
+            "The students were not students."
+          ],
+          "answer": "The students are not students."
+        },
+        {
+          "id": "tobepres_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is in the park.\"",
+          "options": [
+            "Maria was not in the park.",
+            "Maria were not in the park.",
+            "Maria is not in the park.",
+            "Maria are not in the park."
+          ],
+          "answer": "Maria is not in the park."
+        },
+        {
+          "id": "tobepres_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is cold.\"",
+          "options": [
+            "She are not cold.",
+            "She were not cold.",
+            "She was not cold.",
+            "She is not cold."
+          ],
+          "answer": "She is not cold."
+        },
+        {
+          "id": "tobepres_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is funny.\"",
+          "options": [
+            "She were not funny.",
+            "She is not funny.",
+            "She am not funny.",
+            "She are not funny."
+          ],
+          "answer": "She is not funny."
+        },
+        {
+          "id": "tobepres_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is tall.\"",
+          "options": [
+            "My brother are not tall.",
+            "My brother were not tall.",
+            "My brother am not tall.",
+            "My brother is not tall."
+          ],
+          "answer": "My brother is not tall."
+        },
+        {
+          "id": "tobepres_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"He is in the park.\"",
+          "options": [
+            "He is not in the park.",
+            "He was not in the park.",
+            "He were not in the park.",
+            "He am not in the park."
+          ],
+          "answer": "He is not in the park."
+        },
+        {
+          "id": "tobepres_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are proud.\"",
+          "options": [
+            "My parents was not proud.",
+            "My parents is not proud.",
+            "My parents were not proud.",
+            "My parents are not proud."
+          ],
+          "answer": "My parents are not proud."
+        },
+        {
+          "id": "tobepres_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"She is busy.\"",
+          "options": [
+            "She is not busy.",
+            "She was not busy.",
+            "She are not busy.",
+            "She were not busy."
+          ],
+          "answer": "She is not busy."
+        },
+        {
+          "id": "tobepres_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children are busy.\"",
+          "options": [
+            "The children are not busy.",
+            "The children is not busy.",
+            "The children am not busy.",
+            "The children were not busy."
+          ],
+          "answer": "The children are not busy."
+        },
+        {
+          "id": "tobepres_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am late.\"",
+          "options": [
+            "I is not late.",
+            "I am not late.",
+            "I was not late.",
+            "I were not late."
+          ],
+          "answer": "I am not late."
+        },
+        {
+          "id": "tobepres_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are strong.\"",
+          "options": [
+            "My parents is not strong.",
+            "My parents are not strong.",
+            "My parents was not strong.",
+            "My parents am not strong."
+          ],
+          "answer": "My parents are not strong."
+        },
+        {
+          "id": "tobepres_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am funny.\"",
+          "options": [
+            "I am not funny.",
+            "I are not funny.",
+            "I were not funny.",
+            "I is not funny."
+          ],
+          "answer": "I am not funny."
+        },
+        {
+          "id": "tobepres_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are tired.\"",
+          "options": [
+            "You are not tired.",
+            "You is not tired.",
+            "You were not tired.",
+            "You am not tired."
+          ],
+          "answer": "You are not tired."
+        },
+        {
+          "id": "tobepres_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are brave.\"",
+          "options": [
+            "You am not brave.",
+            "You is not brave.",
+            "You was not brave.",
+            "You are not brave."
+          ],
+          "answer": "You are not brave."
+        },
+        {
+          "id": "tobepres_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are friends.\"",
+          "options": [
+            "You is not friends.",
+            "You are not friends.",
+            "You am not friends.",
+            "You was not friends."
+          ],
+          "answer": "You are not friends."
+        },
+        {
+          "id": "tobepres_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are here.\"",
+          "options": [
+            "The students am not here.",
+            "The students was not here.",
+            "The students were not here.",
+            "The students are not here."
+          ],
+          "answer": "The students are not here."
+        },
+        {
+          "id": "tobepres_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are in the kitchen.\"",
+          "options": [
+            "You are not in the kitchen.",
+            "You were not in the kitchen.",
+            "You is not in the kitchen.",
+            "You was not in the kitchen."
+          ],
+          "answer": "You are not in the kitchen."
+        },
+        {
+          "id": "tobepres_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is cold.\"",
+          "options": [
+            "Tom was not cold.",
+            "Tom are not cold.",
+            "Tom were not cold.",
+            "Tom is not cold."
+          ],
+          "answer": "Tom is not cold."
+        },
+        {
+          "id": "tobepres_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"We are friends.\"",
+          "options": [
+            "We were not friends.",
+            "We is not friends.",
+            "We was not friends.",
+            "We are not friends."
+          ],
+          "answer": "We are not friends."
+        },
+        {
+          "id": "tobepres_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is hungry.\"",
+          "options": [
+            "Our cat was not hungry.",
+            "Our cat am not hungry.",
+            "Our cat were not hungry.",
+            "Our cat is not hungry."
+          ],
+          "answer": "Our cat is not hungry."
+        },
+        {
+          "id": "tobepres_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students are thirsty.\"",
+          "options": [
+            "The students are not thirsty.",
+            "The students were not thirsty.",
+            "The students is not thirsty.",
+            "The students was not thirsty."
+          ],
+          "answer": "The students are not thirsty."
+        },
+        {
+          "id": "tobepres_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am thirsty.\"",
+          "options": [
+            "I was not thirsty.",
+            "I am not thirsty.",
+            "I is not thirsty.",
+            "I are not thirsty."
+          ],
+          "answer": "I am not thirsty."
+        },
+        {
+          "id": "tobepres_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"You are quiet.\"",
+          "options": [
+            "You are not quiet.",
+            "You were not quiet.",
+            "You is not quiet.",
+            "You was not quiet."
+          ],
+          "answer": "You are not quiet."
+        },
+        {
+          "id": "tobepres_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom is tall.\"",
+          "options": [
+            "Tom is not tall.",
+            "Tom was not tall.",
+            "Tom am not tall.",
+            "Tom are not tall."
+          ],
+          "answer": "Tom is not tall."
+        },
+        {
+          "id": "tobepres_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat is sad.\"",
+          "options": [
+            "Our cat were not sad.",
+            "Our cat was not sad.",
+            "Our cat are not sad.",
+            "Our cat is not sad."
+          ],
+          "answer": "Our cat is not sad."
+        },
+        {
+          "id": "tobepres_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is sad.\"",
+          "options": [
+            "My brother are not sad.",
+            "My brother am not sad.",
+            "My brother were not sad.",
+            "My brother is not sad."
+          ],
+          "answer": "My brother is not sad."
+        },
+        {
+          "id": "tobepres_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is quiet.\"",
+          "options": [
+            "Maria is not quiet.",
+            "Maria were not quiet.",
+            "Maria am not quiet.",
+            "Maria was not quiet."
+          ],
+          "answer": "Maria is not quiet."
+        },
+        {
+          "id": "tobepres_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is funny.\"",
+          "options": [
+            "Maria was not funny.",
+            "Maria is not funny.",
+            "Maria am not funny.",
+            "Maria were not funny."
+          ],
+          "answer": "Maria is not funny."
+        },
+        {
+          "id": "tobepres_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are cold.\"",
+          "options": [
+            "The boys are not cold.",
+            "The boys is not cold.",
+            "The boys am not cold.",
+            "The boys was not cold."
+          ],
+          "answer": "The boys are not cold."
+        },
+        {
+          "id": "tobepres_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria is students.\"",
+          "options": [
+            "Maria are not students.",
+            "Maria is not students.",
+            "Maria am not students.",
+            "Maria were not students."
+          ],
+          "answer": "Maria is not students."
+        },
+        {
+          "id": "tobepres_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are a teacher.\"",
+          "options": [
+            "My parents was not a teacher.",
+            "My parents were not a teacher.",
+            "My parents is not a teacher.",
+            "My parents are not a teacher."
+          ],
+          "answer": "My parents are not a teacher."
+        },
+        {
+          "id": "tobepres_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are in the kitchen.\"",
+          "options": [
+            "My parents are not in the kitchen.",
+            "My parents was not in the kitchen.",
+            "My parents were not in the kitchen.",
+            "My parents is not in the kitchen."
+          ],
+          "answer": "My parents are not in the kitchen."
+        },
+        {
+          "id": "tobepres_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents are at home.\"",
+          "options": [
+            "My parents are not at home.",
+            "My parents is not at home.",
+            "My parents were not at home.",
+            "My parents am not at home."
+          ],
+          "answer": "My parents are not at home."
+        },
+        {
+          "id": "tobepres_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys are at home.\"",
+          "options": [
+            "The boys was not at home.",
+            "The boys are not at home.",
+            "The boys is not at home.",
+            "The boys were not at home."
+          ],
+          "answer": "The boys are not at home."
+        },
+        {
+          "id": "tobepres_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are a doctor.\"",
+          "options": [
+            "They am not a doctor.",
+            "They is not a doctor.",
+            "They are not a doctor.",
+            "They was not a doctor."
+          ],
+          "answer": "They are not a doctor."
+        },
+        {
+          "id": "tobepres_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"I am proud.\"",
+          "options": [
+            "I was not proud.",
+            "I are not proud.",
+            "I am not proud.",
+            "I is not proud."
+          ],
+          "answer": "I am not proud."
+        },
+        {
+          "id": "tobepres_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog is thirsty.\"",
+          "options": [
+            "The dog am not thirsty.",
+            "The dog were not thirsty.",
+            "The dog is not thirsty.",
+            "The dog are not thirsty."
+          ],
+          "answer": "The dog is not thirsty."
+        },
+        {
+          "id": "tobepres_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother is ready.\"",
+          "options": [
+            "My brother am not ready.",
+            "My brother are not ready.",
+            "My brother were not ready.",
+            "My brother is not ready."
+          ],
+          "answer": "My brother is not ready."
+        },
+        {
+          "id": "tobepres_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"They are proud.\"",
+          "options": [
+            "They am not proud.",
+            "They were not proud.",
+            "They is not proud.",
+            "They are not proud."
+          ],
+          "answer": "They are not proud."
+        },
+        {
+          "id": "tobepres_c_1",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is proud.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_2",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister dances every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_3",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is in the park.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_4",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother dances every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_5",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They walk to school every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_6",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys go to the party every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_7",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was thirsty.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_8",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is hungry.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_9",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was busy.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_10",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was quiet.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_11",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students draw a picture every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_12",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are late.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_13",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were angry.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_14",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was kind.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_15",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am brave.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_16",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We were at home.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_17",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children are proud.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_18",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are friends.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_19",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was thirsty.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_20",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is hungry.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_21",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It brushes their teeth every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_22",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was angry.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_23",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria is strong.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_24",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You have lunch every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_25",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was students.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_26",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is a good friend.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_27",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was at home.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_28",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was nervous.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_29",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was thirsty.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_30",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children are thirsty.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_31",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents were in the kitchen.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_32",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They listen to music every day.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_33",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister cleans the house every day.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_34",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother cooks dinner every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_35",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are friends.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_36",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was students.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_37",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents go to the party every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_38",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents sing a song every day.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_39",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She cooks dinner every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_40",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children sing a song every day.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_41",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was sad.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_42",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was at school.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_43",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog jumps every day.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_44",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was happy.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_45",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was nervous.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_46",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria is nervous.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_47",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students watch TV every day.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_48",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were a good friend.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_49",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom rides a bike every day.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_50",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is nervous.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_51",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was brave.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_52",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were a teacher.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_53",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were nervous.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_54",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were sad.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_55",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom is busy.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_56",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is ready.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_57",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria plays football every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_58",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were friends.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_59",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog was sad.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_60",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was in the park.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_61",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children run every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_62",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are busy.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_63",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She plays football every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_64",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is brave.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_65",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was strong.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_66",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is a teacher.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_67",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are tall.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_68",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was angry.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_69",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She runs every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_70",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents brush their teeth every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_71",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They clean the house every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_72",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom plays football every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_73",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is tall.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_74",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am proud.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_75",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was angry.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_76",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria is happy.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_77",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is proud.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_78",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog was ready.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_79",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom visits their grandma every day.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_80",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is in the kitchen.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_81",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom watches TV every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_82",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was tall.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_83",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She wins the game every day.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_84",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister watches TV every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_85",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is at school.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_86",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was in the kitchen.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_87",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was students.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_88",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I win the game every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_89",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He sings a song every day.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_90",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is a good friend.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_91",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat walks to school every day.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_92",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents run every day.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_93",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was cold.\"",
+          "options": [
+            "To Be — Present",
+            "Present Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_94",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was tall.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_95",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog dances every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_96",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children draw a picture every day.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_97",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children swim every day.\"",
+          "options": [
+            "To Be — Past",
+            "Present Simple",
+            "To Be — Present"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "tobepres_c_98",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are hungry.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepres_c_99",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents were scared.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Present Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_c_100",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were late.\"",
+          "options": [
+            "Present Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepres_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está un buen amigo\" en inglés?",
+          "options": [
+            "It was a good friend.",
+            "It is a good friend.",
+            "It are a good friend.",
+            "It a good friend."
+          ],
+          "answer": "It is a good friend."
+        },
+        {
+          "id": "tobepres_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está alto\" en inglés?",
+          "options": [
+            "Our cat is tall.",
+            "Our cat was tall.",
+            "Our cat am tall.",
+            "Our cat tall."
+          ],
+          "answer": "Our cat is tall."
+        },
+        {
+          "id": "tobepres_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está fuerte\" en inglés?",
+          "options": [
+            "Our cat is strong.",
+            "Our cat was strong.",
+            "Our cat are strong.",
+            "Our cat strong."
+          ],
+          "answer": "Our cat is strong."
+        },
+        {
+          "id": "tobepres_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está listo\" en inglés?",
+          "options": [
+            "Tom ready.",
+            "Tom is ready.",
+            "Tom am ready.",
+            "Tom was ready."
+          ],
+          "answer": "Tom is ready."
+        },
+        {
+          "id": "tobepres_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está fuerte\" en inglés?",
+          "options": [
+            "Tom were strong.",
+            "Tom strong.",
+            "Tom is strong.",
+            "Tom was strong."
+          ],
+          "answer": "Tom is strong."
+        },
+        {
+          "id": "tobepres_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros estamos un buen amigo\" en inglés?",
+          "options": [
+            "We a good friend.",
+            "We am a good friend.",
+            "We were a good friend.",
+            "We are a good friend."
+          ],
+          "answer": "We are a good friend."
+        },
+        {
+          "id": "tobepres_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú estás en el parque\" en inglés?",
+          "options": [
+            "You are in the park.",
+            "You am in the park.",
+            "You in the park.",
+            "You were in the park."
+          ],
+          "answer": "You are in the park."
+        },
+        {
+          "id": "tobepres_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está orgulloso\" en inglés?",
+          "options": [
+            "Tom proud.",
+            "Tom were proud.",
+            "Tom was proud.",
+            "Tom is proud."
+          ],
+          "answer": "Tom is proud."
+        },
+        {
+          "id": "tobepres_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está en el colegio\" en inglés?",
+          "options": [
+            "She am at school.",
+            "She at school.",
+            "She is at school.",
+            "She was at school."
+          ],
+          "answer": "She is at school."
+        },
+        {
+          "id": "tobepres_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes están con sed\" en inglés?",
+          "options": [
+            "The students am thirsty.",
+            "The students thirsty.",
+            "The students are thirsty.",
+            "The students were thirsty."
+          ],
+          "answer": "The students are thirsty."
+        },
+        {
+          "id": "tobepres_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están fuerte\" en inglés?",
+          "options": [
+            "They was strong.",
+            "They are strong.",
+            "They strong.",
+            "They were strong."
+          ],
+          "answer": "They are strong."
+        },
+        {
+          "id": "tobepres_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está amable\" en inglés?",
+          "options": [
+            "Our cat is kind.",
+            "Our cat kind.",
+            "Our cat was kind.",
+            "Our cat were kind."
+          ],
+          "answer": "Our cat is kind."
+        },
+        {
+          "id": "tobepres_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres están asustado\" en inglés?",
+          "options": [
+            "My parents were scared.",
+            "My parents scared.",
+            "My parents are scared.",
+            "My parents am scared."
+          ],
+          "answer": "My parents are scared."
+        },
+        {
+          "id": "tobepres_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están nervioso\" en inglés?",
+          "options": [
+            "They were nervous.",
+            "They was nervous.",
+            "They nervous.",
+            "They are nervous."
+          ],
+          "answer": "They are nervous."
+        },
+        {
+          "id": "tobepres_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María está feliz\" en inglés?",
+          "options": [
+            "Maria is happy.",
+            "Maria was happy.",
+            "Maria happy.",
+            "Maria am happy."
+          ],
+          "answer": "Maria is happy."
+        },
+        {
+          "id": "tobepres_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está con frío\" en inglés?",
+          "options": [
+            "Tom were cold.",
+            "Tom cold.",
+            "Tom was cold.",
+            "Tom is cold."
+          ],
+          "answer": "Tom is cold."
+        },
+        {
+          "id": "tobepres_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo estoy amigos\" en inglés?",
+          "options": [
+            "I is friends.",
+            "I friends.",
+            "I was friends.",
+            "I am friends."
+          ],
+          "answer": "I am friends."
+        },
+        {
+          "id": "tobepres_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está con sed\" en inglés?",
+          "options": [
+            "Tom am thirsty.",
+            "Tom thirsty.",
+            "Tom was thirsty.",
+            "Tom is thirsty."
+          ],
+          "answer": "Tom is thirsty."
+        },
+        {
+          "id": "tobepres_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están hambriento\" en inglés?",
+          "options": [
+            "They were hungry.",
+            "They are hungry.",
+            "They hungry.",
+            "They is hungry."
+          ],
+          "answer": "They are hungry."
+        },
+        {
+          "id": "tobepres_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú estás cansado\" en inglés?",
+          "options": [
+            "You are tired.",
+            "You tired.",
+            "You is tired.",
+            "You were tired."
+          ],
+          "answer": "You are tired."
+        },
+        {
+          "id": "tobepres_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María está con frío\" en inglés?",
+          "options": [
+            "Maria are cold.",
+            "Maria was cold.",
+            "Maria is cold.",
+            "Maria cold."
+          ],
+          "answer": "Maria is cold."
+        },
+        {
+          "id": "tobepres_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María está callado\" en inglés?",
+          "options": [
+            "Maria is quiet.",
+            "Maria are quiet.",
+            "Maria was quiet.",
+            "Maria quiet."
+          ],
+          "answer": "Maria is quiet."
+        },
+        {
+          "id": "tobepres_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú estás amigos\" en inglés?",
+          "options": [
+            "You are friends.",
+            "You am friends.",
+            "You friends.",
+            "You were friends."
+          ],
+          "answer": "You are friends."
+        },
+        {
+          "id": "tobepres_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están listo\" en inglés?",
+          "options": [
+            "They were ready.",
+            "They ready.",
+            "They is ready.",
+            "They are ready."
+          ],
+          "answer": "They are ready."
+        },
+        {
+          "id": "tobepres_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está amable\" en inglés?",
+          "options": [
+            "It was kind.",
+            "It is kind.",
+            "It kind.",
+            "It are kind."
+          ],
+          "answer": "It is kind."
+        },
+        {
+          "id": "tobepres_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María está asustado\" en inglés?",
+          "options": [
+            "Maria is scared.",
+            "Maria was scared.",
+            "Maria scared.",
+            "Maria were scared."
+          ],
+          "answer": "Maria is scared."
+        },
+        {
+          "id": "tobepres_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños están con frío\" en inglés?",
+          "options": [
+            "The children are cold.",
+            "The children cold.",
+            "The children am cold.",
+            "The children were cold."
+          ],
+          "answer": "The children are cold."
+        },
+        {
+          "id": "tobepres_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana está triste\" en inglés?",
+          "options": [
+            "My sister was sad.",
+            "My sister were sad.",
+            "My sister is sad.",
+            "My sister sad."
+          ],
+          "answer": "My sister is sad."
+        },
+        {
+          "id": "tobepres_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros estamos profesor\" en inglés?",
+          "options": [
+            "We is a teacher.",
+            "We a teacher.",
+            "We are a teacher.",
+            "We were a teacher."
+          ],
+          "answer": "We are a teacher."
+        },
+        {
+          "id": "tobepres_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano está hambriento\" en inglés?",
+          "options": [
+            "My brother are hungry.",
+            "My brother is hungry.",
+            "My brother hungry.",
+            "My brother was hungry."
+          ],
+          "answer": "My brother is hungry."
+        },
+        {
+          "id": "tobepres_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está aquí\" en inglés?",
+          "options": [
+            "Tom was here.",
+            "Tom is here.",
+            "Tom here.",
+            "Tom were here."
+          ],
+          "answer": "Tom is here."
+        },
+        {
+          "id": "tobepres_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro está en la cocina\" en inglés?",
+          "options": [
+            "The dog is in the kitchen.",
+            "The dog was in the kitchen.",
+            "The dog am in the kitchen.",
+            "The dog in the kitchen."
+          ],
+          "answer": "The dog is in the kitchen."
+        },
+        {
+          "id": "tobepres_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él está aquí\" en inglés?",
+          "options": [
+            "He was here.",
+            "He here.",
+            "He were here.",
+            "He is here."
+          ],
+          "answer": "He is here."
+        },
+        {
+          "id": "tobepres_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están estudiantes\" en inglés?",
+          "options": [
+            "They students.",
+            "They were students.",
+            "They is students.",
+            "They are students."
+          ],
+          "answer": "They are students."
+        },
+        {
+          "id": "tobepres_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos están triste\" en inglés?",
+          "options": [
+            "The boys are sad.",
+            "The boys were sad.",
+            "The boys is sad.",
+            "The boys sad."
+          ],
+          "answer": "The boys are sad."
+        },
+        {
+          "id": "tobepres_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está fuerte\" en inglés?",
+          "options": [
+            "It are strong.",
+            "It strong.",
+            "It was strong.",
+            "It is strong."
+          ],
+          "answer": "It is strong."
+        },
+        {
+          "id": "tobepres_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes están un buen amigo\" en inglés?",
+          "options": [
+            "The students a good friend.",
+            "The students were a good friend.",
+            "The students are a good friend.",
+            "The students is a good friend."
+          ],
+          "answer": "The students are a good friend."
+        },
+        {
+          "id": "tobepres_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú estás alto\" en inglés?",
+          "options": [
+            "You tall.",
+            "You was tall.",
+            "You are tall.",
+            "You were tall."
+          ],
+          "answer": "You are tall."
+        },
+        {
+          "id": "tobepres_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano está un buen amigo\" en inglés?",
+          "options": [
+            "My brother is a good friend.",
+            "My brother a good friend.",
+            "My brother was a good friend.",
+            "My brother are a good friend."
+          ],
+          "answer": "My brother is a good friend."
+        },
+        {
+          "id": "tobepres_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él está listo\" en inglés?",
+          "options": [
+            "He ready.",
+            "He is ready.",
+            "He are ready.",
+            "He was ready."
+          ],
+          "answer": "He is ready."
+        },
+        {
+          "id": "tobepres_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres están valiente\" en inglés?",
+          "options": [
+            "My parents am brave.",
+            "My parents were brave.",
+            "My parents brave.",
+            "My parents are brave."
+          ],
+          "answer": "My parents are brave."
+        },
+        {
+          "id": "tobepres_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana está tarde\" en inglés?",
+          "options": [
+            "My sister was late.",
+            "My sister late.",
+            "My sister is late.",
+            "My sister were late."
+          ],
+          "answer": "My sister is late."
+        },
+        {
+          "id": "tobepres_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están tarde\" en inglés?",
+          "options": [
+            "They are late.",
+            "They late.",
+            "They am late.",
+            "They were late."
+          ],
+          "answer": "They are late."
+        },
+        {
+          "id": "tobepres_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana está listo\" en inglés?",
+          "options": [
+            "My sister was ready.",
+            "My sister ready.",
+            "My sister is ready.",
+            "My sister were ready."
+          ],
+          "answer": "My sister is ready."
+        },
+        {
+          "id": "tobepres_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está en casa\" en inglés?",
+          "options": [
+            "It was at home.",
+            "It am at home.",
+            "It is at home.",
+            "It at home."
+          ],
+          "answer": "It is at home."
+        },
+        {
+          "id": "tobepres_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está feliz\" en inglés?",
+          "options": [
+            "She is happy.",
+            "She happy.",
+            "She am happy.",
+            "She was happy."
+          ],
+          "answer": "She is happy."
+        },
+        {
+          "id": "tobepres_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres están listo\" en inglés?",
+          "options": [
+            "My parents were ready.",
+            "My parents ready.",
+            "My parents are ready.",
+            "My parents am ready."
+          ],
+          "answer": "My parents are ready."
+        },
+        {
+          "id": "tobepres_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está profesor\" en inglés?",
+          "options": [
+            "Tom a teacher.",
+            "Tom is a teacher.",
+            "Tom was a teacher.",
+            "Tom am a teacher."
+          ],
+          "answer": "Tom is a teacher."
+        },
+        {
+          "id": "tobepres_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana está con sed\" en inglés?",
+          "options": [
+            "My sister are thirsty.",
+            "My sister was thirsty.",
+            "My sister is thirsty.",
+            "My sister thirsty."
+          ],
+          "answer": "My sister is thirsty."
+        },
+        {
+          "id": "tobepres_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están triste\" en inglés?",
+          "options": [
+            "They were sad.",
+            "They are sad.",
+            "They was sad.",
+            "They sad."
+          ],
+          "answer": "They are sad."
+        },
+        {
+          "id": "tobepres_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú estás callado\" en inglés?",
+          "options": [
+            "You are quiet.",
+            "You quiet.",
+            "You was quiet.",
+            "You were quiet."
+          ],
+          "answer": "You are quiet."
+        },
+        {
+          "id": "tobepres_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú estás profesor\" en inglés?",
+          "options": [
+            "You is a teacher.",
+            "You were a teacher.",
+            "You a teacher.",
+            "You are a teacher."
+          ],
+          "answer": "You are a teacher."
+        },
+        {
+          "id": "tobepres_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está aquí\" en inglés?",
+          "options": [
+            "Our cat is here.",
+            "Our cat were here.",
+            "Our cat here.",
+            "Our cat was here."
+          ],
+          "answer": "Our cat is here."
+        },
+        {
+          "id": "tobepres_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está cansado\" en inglés?",
+          "options": [
+            "Our cat are tired.",
+            "Our cat tired.",
+            "Our cat was tired.",
+            "Our cat is tired."
+          ],
+          "answer": "Our cat is tired."
+        },
+        {
+          "id": "tobepres_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está en el parque\" en inglés?",
+          "options": [
+            "It is in the park.",
+            "It were in the park.",
+            "It was in the park.",
+            "It in the park."
+          ],
+          "answer": "It is in the park."
+        },
+        {
+          "id": "tobepres_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos están valiente\" en inglés?",
+          "options": [
+            "The boys brave.",
+            "The boys were brave.",
+            "The boys are brave.",
+            "The boys was brave."
+          ],
+          "answer": "The boys are brave."
+        },
+        {
+          "id": "tobepres_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está triste\" en inglés?",
+          "options": [
+            "Our cat is sad.",
+            "Our cat am sad.",
+            "Our cat sad.",
+            "Our cat was sad."
+          ],
+          "answer": "Our cat is sad."
+        },
+        {
+          "id": "tobepres_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro está callado\" en inglés?",
+          "options": [
+            "The dog quiet.",
+            "The dog were quiet.",
+            "The dog is quiet.",
+            "The dog was quiet."
+          ],
+          "answer": "The dog is quiet."
+        },
+        {
+          "id": "tobepres_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está hambriento\" en inglés?",
+          "options": [
+            "It was hungry.",
+            "It are hungry.",
+            "It hungry.",
+            "It is hungry."
+          ],
+          "answer": "It is hungry."
+        },
+        {
+          "id": "tobepres_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo estoy enfadado\" en inglés?",
+          "options": [
+            "I angry.",
+            "I were angry.",
+            "I was angry.",
+            "I am angry."
+          ],
+          "answer": "I am angry."
+        },
+        {
+          "id": "tobepres_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está triste\" en inglés?",
+          "options": [
+            "It was sad.",
+            "It is sad.",
+            "It sad.",
+            "It were sad."
+          ],
+          "answer": "It is sad."
+        },
+        {
+          "id": "tobepres_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom está feliz\" en inglés?",
+          "options": [
+            "Tom happy.",
+            "Tom is happy.",
+            "Tom was happy.",
+            "Tom are happy."
+          ],
+          "answer": "Tom is happy."
+        },
+        {
+          "id": "tobepres_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano está gracioso\" en inglés?",
+          "options": [
+            "My brother funny.",
+            "My brother are funny.",
+            "My brother was funny.",
+            "My brother is funny."
+          ],
+          "answer": "My brother is funny."
+        },
+        {
+          "id": "tobepres_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está un buen amigo\" en inglés?",
+          "options": [
+            "She am a good friend.",
+            "She was a good friend.",
+            "She is a good friend.",
+            "She a good friend."
+          ],
+          "answer": "She is a good friend."
+        },
+        {
+          "id": "tobepres_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está gracioso\" en inglés?",
+          "options": [
+            "She am funny.",
+            "She was funny.",
+            "She is funny.",
+            "She funny."
+          ],
+          "answer": "She is funny."
+        },
+        {
+          "id": "tobepres_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros estamos con sed\" en inglés?",
+          "options": [
+            "We thirsty.",
+            "We was thirsty.",
+            "We are thirsty.",
+            "We were thirsty."
+          ],
+          "answer": "We are thirsty."
+        },
+        {
+          "id": "tobepres_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana está valiente\" en inglés?",
+          "options": [
+            "My sister was brave.",
+            "My sister is brave.",
+            "My sister brave.",
+            "My sister are brave."
+          ],
+          "answer": "My sister is brave."
+        },
+        {
+          "id": "tobepres_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él está hambriento\" en inglés?",
+          "options": [
+            "He were hungry.",
+            "He was hungry.",
+            "He hungry.",
+            "He is hungry."
+          ],
+          "answer": "He is hungry."
+        },
+        {
+          "id": "tobepres_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está callado\" en inglés?",
+          "options": [
+            "She were quiet.",
+            "She was quiet.",
+            "She quiet.",
+            "She is quiet."
+          ],
+          "answer": "She is quiet."
+        },
+        {
+          "id": "tobepres_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro está listo\" en inglés?",
+          "options": [
+            "The dog ready.",
+            "The dog is ready.",
+            "The dog am ready.",
+            "The dog was ready."
+          ],
+          "answer": "The dog is ready."
+        },
+        {
+          "id": "tobepres_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres están fuerte\" en inglés?",
+          "options": [
+            "My parents are strong.",
+            "My parents were strong.",
+            "My parents am strong.",
+            "My parents strong."
+          ],
+          "answer": "My parents are strong."
+        },
+        {
+          "id": "tobepres_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María está con sed\" en inglés?",
+          "options": [
+            "Maria was thirsty.",
+            "Maria thirsty.",
+            "Maria is thirsty.",
+            "Maria were thirsty."
+          ],
+          "answer": "Maria is thirsty."
+        },
+        {
+          "id": "tobepres_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está en el colegio\" en inglés?",
+          "options": [
+            "It is at school.",
+            "It at school.",
+            "It was at school.",
+            "It am at school."
+          ],
+          "answer": "It is at school."
+        },
+        {
+          "id": "tobepres_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro está en casa\" en inglés?",
+          "options": [
+            "The dog are at home.",
+            "The dog was at home.",
+            "The dog is at home.",
+            "The dog at home."
+          ],
+          "answer": "The dog is at home."
+        },
+        {
+          "id": "tobepres_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos están amigos\" en inglés?",
+          "options": [
+            "The boys am friends.",
+            "The boys are friends.",
+            "The boys were friends.",
+            "The boys friends."
+          ],
+          "answer": "The boys are friends."
+        },
+        {
+          "id": "tobepres_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo estoy nervioso\" en inglés?",
+          "options": [
+            "I was nervous.",
+            "I am nervous.",
+            "I nervous.",
+            "I are nervous."
+          ],
+          "answer": "I am nervous."
+        },
+        {
+          "id": "tobepres_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están callado\" en inglés?",
+          "options": [
+            "They are quiet.",
+            "They quiet.",
+            "They is quiet.",
+            "They were quiet."
+          ],
+          "answer": "They are quiet."
+        },
+        {
+          "id": "tobepres_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está asustado\" en inglés?",
+          "options": [
+            "She is scared.",
+            "She was scared.",
+            "She are scared.",
+            "She scared."
+          ],
+          "answer": "She is scared."
+        },
+        {
+          "id": "tobepres_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo estoy en casa\" en inglés?",
+          "options": [
+            "I at home.",
+            "I am at home.",
+            "I was at home.",
+            "I were at home."
+          ],
+          "answer": "I am at home."
+        },
+        {
+          "id": "tobepres_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está hambriento\" en inglés?",
+          "options": [
+            "She is hungry.",
+            "She hungry.",
+            "She was hungry.",
+            "She are hungry."
+          ],
+          "answer": "She is hungry."
+        },
+        {
+          "id": "tobepres_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están ocupado\" en inglés?",
+          "options": [
+            "They is busy.",
+            "They are busy.",
+            "They busy.",
+            "They were busy."
+          ],
+          "answer": "They are busy."
+        },
+        {
+          "id": "tobepres_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él está en la cocina\" en inglés?",
+          "options": [
+            "He in the kitchen.",
+            "He is in the kitchen.",
+            "He was in the kitchen.",
+            "He are in the kitchen."
+          ],
+          "answer": "He is in the kitchen."
+        },
+        {
+          "id": "tobepres_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están cansado\" en inglés?",
+          "options": [
+            "They was tired.",
+            "They were tired.",
+            "They tired.",
+            "They are tired."
+          ],
+          "answer": "They are tired."
+        },
+        {
+          "id": "tobepres_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros estamos amable\" en inglés?",
+          "options": [
+            "We is kind.",
+            "We kind.",
+            "We are kind.",
+            "We were kind."
+          ],
+          "answer": "We are kind."
+        },
+        {
+          "id": "tobepres_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso está feliz\" en inglés?",
+          "options": [
+            "It are happy.",
+            "It happy.",
+            "It is happy.",
+            "It was happy."
+          ],
+          "answer": "It is happy."
+        },
+        {
+          "id": "tobepres_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes están orgulloso\" en inglés?",
+          "options": [
+            "The students proud.",
+            "The students were proud.",
+            "The students am proud.",
+            "The students are proud."
+          ],
+          "answer": "The students are proud."
+        },
+        {
+          "id": "tobepres_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María está hambriento\" en inglés?",
+          "options": [
+            "Maria is hungry.",
+            "Maria are hungry.",
+            "Maria hungry.",
+            "Maria was hungry."
+          ],
+          "answer": "Maria is hungry."
+        },
+        {
+          "id": "tobepres_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú estás con frío\" en inglés?",
+          "options": [
+            "You are cold.",
+            "You were cold.",
+            "You am cold.",
+            "You cold."
+          ],
+          "answer": "You are cold."
+        },
+        {
+          "id": "tobepres_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está enfadado\" en inglés?",
+          "options": [
+            "She was angry.",
+            "She is angry.",
+            "She angry.",
+            "She were angry."
+          ],
+          "answer": "She is angry."
+        },
+        {
+          "id": "tobepres_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está en el parque\" en inglés?",
+          "options": [
+            "Our cat in the park.",
+            "Our cat is in the park.",
+            "Our cat are in the park.",
+            "Our cat was in the park."
+          ],
+          "answer": "Our cat is in the park."
+        },
+        {
+          "id": "tobepres_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros estamos listo\" en inglés?",
+          "options": [
+            "We is ready.",
+            "We were ready.",
+            "We ready.",
+            "We are ready."
+          ],
+          "answer": "We are ready."
+        },
+        {
+          "id": "tobepres_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato está estudiantes\" en inglés?",
+          "options": [
+            "Our cat students.",
+            "Our cat am students.",
+            "Our cat is students.",
+            "Our cat was students."
+          ],
+          "answer": "Our cat is students."
+        },
+        {
+          "id": "tobepres_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo estoy profesor\" en inglés?",
+          "options": [
+            "I were a teacher.",
+            "I am a teacher.",
+            "I a teacher.",
+            "I was a teacher."
+          ],
+          "answer": "I am a teacher."
+        },
+        {
+          "id": "tobepres_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro está fuerte\" en inglés?",
+          "options": [
+            "The dog strong.",
+            "The dog am strong.",
+            "The dog was strong.",
+            "The dog is strong."
+          ],
+          "answer": "The dog is strong."
+        },
+        {
+          "id": "tobepres_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres están ocupado\" en inglés?",
+          "options": [
+            "My parents were busy.",
+            "My parents are busy.",
+            "My parents was busy.",
+            "My parents busy."
+          ],
+          "answer": "My parents are busy."
+        },
+        {
+          "id": "tobepres_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres están con sed\" en inglés?",
+          "options": [
+            "My parents is thirsty.",
+            "My parents are thirsty.",
+            "My parents thirsty.",
+            "My parents were thirsty."
+          ],
+          "answer": "My parents are thirsty."
+        },
+        {
+          "id": "tobepres_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes están hambriento\" en inglés?",
+          "options": [
+            "The students were hungry.",
+            "The students hungry.",
+            "The students am hungry.",
+            "The students are hungry."
+          ],
+          "answer": "The students are hungry."
+        },
+        {
+          "id": "tobepres_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él está orgulloso\" en inglés?",
+          "options": [
+            "He is proud.",
+            "He proud.",
+            "He am proud.",
+            "He was proud."
+          ],
+          "answer": "He is proud."
+        },
+        {
+          "id": "tobepres_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos están un buen amigo\" en inglés?",
+          "options": [
+            "They was a good friend.",
+            "They are a good friend.",
+            "They a good friend.",
+            "They were a good friend."
+          ],
+          "answer": "They are a good friend."
+        },
+        {
+          "id": "tobepres_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella está orgulloso\" en inglés?",
+          "options": [
+            "She is proud.",
+            "She was proud.",
+            "She proud.",
+            "She are proud."
+          ],
+          "answer": "She is proud."
+        }
+      ],
+      "timeMarkers": [
+        {
+          "left": "now",
+          "right": "I am hungry now."
+        },
+        {
+          "left": "today",
+          "right": "We are at school today."
+        },
+        {
+          "left": "this year",
+          "right": "He is ten years old this year."
+        },
+        {
+          "left": "always",
+          "right": "They are always kind."
+        },
+        {
+          "left": "usually",
+          "right": "She is usually happy."
+        },
+        {
+          "left": "every day",
+          "right": "The students are busy every day."
+        },
+        {
+          "left": "currently",
+          "right": "My brother is currently at home."
+        },
+        {
+          "left": "this morning",
+          "right": "You are tired this morning."
+        },
+        {
+          "left": "right now",
+          "right": "It is cold right now."
+        }
+      ]
+    }
+  ]
+}

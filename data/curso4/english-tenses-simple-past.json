@@ -1,0 +1,4749 @@
+{
+  "units": [
+    {
+      "id": "simple-past",
+      "title": "Past Simple",
+      "emoji": "🔴",
+      "exercises": [
+        {
+          "id": "simppast_a_1",
+          "type": "A",
+          "question": "They ___ yesterday morning.",
+          "options": [
+            "writes a letter",
+            "writing a letter",
+            "write a letter",
+            "wrote a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_2",
+          "type": "A",
+          "question": "You ___ yesterday.",
+          "options": [
+            "sings a song",
+            "sing a song",
+            "sang a song",
+            "singing a song"
+          ],
+          "answer": "sang a song"
+        },
+        {
+          "id": "simppast_a_3",
+          "type": "A",
+          "question": "My parents ___ yesterday morning.",
+          "options": [
+            "wash the dishes",
+            "washing the dishes",
+            "washed the dishes",
+            "washes the dishes"
+          ],
+          "answer": "washed the dishes"
+        },
+        {
+          "id": "simppast_a_4",
+          "type": "A",
+          "question": "You ___ last night.",
+          "options": [
+            "listens to music",
+            "listen to music",
+            "listening to music",
+            "listened to music"
+          ],
+          "answer": "listened to music"
+        },
+        {
+          "id": "simppast_a_5",
+          "type": "A",
+          "question": "My parents ___ last week.",
+          "options": [
+            "climbing a tree",
+            "climb a tree",
+            "climbs a tree",
+            "climbed a tree"
+          ],
+          "answer": "climbed a tree"
+        },
+        {
+          "id": "simppast_a_6",
+          "type": "A",
+          "question": "He ___ last Sunday.",
+          "options": [
+            "listening to music",
+            "listens to music",
+            "listened to music",
+            "listen to music"
+          ],
+          "answer": "listened to music"
+        },
+        {
+          "id": "simppast_a_7",
+          "type": "A",
+          "question": "My sister ___ last Sunday.",
+          "options": [
+            "listen to music",
+            "listened to music",
+            "listening to music",
+            "listens to music"
+          ],
+          "answer": "listened to music"
+        },
+        {
+          "id": "simppast_a_8",
+          "type": "A",
+          "question": "Our cat ___ yesterday.",
+          "options": [
+            "win the game",
+            "won the game",
+            "wins the game",
+            "winning the game"
+          ],
+          "answer": "won the game"
+        },
+        {
+          "id": "simppast_a_9",
+          "type": "A",
+          "question": "The boys ___ yesterday.",
+          "options": [
+            "washed the dishes",
+            "washing the dishes",
+            "wash the dishes",
+            "washes the dishes"
+          ],
+          "answer": "washed the dishes"
+        },
+        {
+          "id": "simppast_a_10",
+          "type": "A",
+          "question": "I ___ yesterday.",
+          "options": [
+            "ride a bike",
+            "rides a bike",
+            "riding a bike",
+            "rode a bike"
+          ],
+          "answer": "rode a bike"
+        },
+        {
+          "id": "simppast_a_11",
+          "type": "A",
+          "question": "Tom ___ last night.",
+          "options": [
+            "rode a bike",
+            "ride a bike",
+            "riding a bike",
+            "rides a bike"
+          ],
+          "answer": "rode a bike"
+        },
+        {
+          "id": "simppast_a_12",
+          "type": "A",
+          "question": "It ___ last night.",
+          "options": [
+            "doing homework",
+            "did homework",
+            "do homework",
+            "does homework"
+          ],
+          "answer": "did homework"
+        },
+        {
+          "id": "simppast_a_13",
+          "type": "A",
+          "question": "Maria ___ yesterday.",
+          "options": [
+            "write a letter",
+            "writes a letter",
+            "writing a letter",
+            "wrote a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_14",
+          "type": "A",
+          "question": "Tom ___ yesterday.",
+          "options": [
+            "wrote a letter",
+            "writes a letter",
+            "writing a letter",
+            "write a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_15",
+          "type": "A",
+          "question": "He ___ last night.",
+          "options": [
+            "helps their mum",
+            "helped their mum",
+            "help their mum",
+            "helping their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_16",
+          "type": "A",
+          "question": "The children ___ two days ago.",
+          "options": [
+            "study English",
+            "studying English",
+            "studied English",
+            "studies English"
+          ],
+          "answer": "studied English"
+        },
+        {
+          "id": "simppast_a_17",
+          "type": "A",
+          "question": "Our cat ___ last week.",
+          "options": [
+            "help their mum",
+            "helping their mum",
+            "helps their mum",
+            "helped their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_18",
+          "type": "A",
+          "question": "He ___ yesterday morning.",
+          "options": [
+            "jump",
+            "jumped",
+            "jumping",
+            "jumps"
+          ],
+          "answer": "jumped"
+        },
+        {
+          "id": "simppast_a_19",
+          "type": "A",
+          "question": "Our cat ___ last night.",
+          "options": [
+            "visit their grandma",
+            "visits their grandma",
+            "visiting their grandma",
+            "visited their grandma"
+          ],
+          "answer": "visited their grandma"
+        },
+        {
+          "id": "simppast_a_20",
+          "type": "A",
+          "question": "He ___ yesterday.",
+          "options": [
+            "listens to music",
+            "listened to music",
+            "listen to music",
+            "listening to music"
+          ],
+          "answer": "listened to music"
+        },
+        {
+          "id": "simppast_a_21",
+          "type": "A",
+          "question": "My brother ___ last Sunday.",
+          "options": [
+            "dances",
+            "danced",
+            "dancing",
+            "dance"
+          ],
+          "answer": "danced"
+        },
+        {
+          "id": "simppast_a_22",
+          "type": "A",
+          "question": "The boys ___ last Sunday.",
+          "options": [
+            "jumped",
+            "jump",
+            "jumping",
+            "jumps"
+          ],
+          "answer": "jumped"
+        },
+        {
+          "id": "simppast_a_23",
+          "type": "A",
+          "question": "It ___ last Sunday.",
+          "options": [
+            "has lunch",
+            "having lunch",
+            "have lunch",
+            "had lunch"
+          ],
+          "answer": "had lunch"
+        },
+        {
+          "id": "simppast_a_24",
+          "type": "A",
+          "question": "I ___ last Sunday.",
+          "options": [
+            "rides a bike",
+            "rode a bike",
+            "riding a bike",
+            "ride a bike"
+          ],
+          "answer": "rode a bike"
+        },
+        {
+          "id": "simppast_a_25",
+          "type": "A",
+          "question": "She ___ yesterday.",
+          "options": [
+            "walking to school",
+            "walk to school",
+            "walked to school",
+            "walks to school"
+          ],
+          "answer": "walked to school"
+        },
+        {
+          "id": "simppast_a_26",
+          "type": "A",
+          "question": "The students ___ yesterday.",
+          "options": [
+            "helped their mum",
+            "helping their mum",
+            "help their mum",
+            "helps their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_27",
+          "type": "A",
+          "question": "Maria ___ two days ago.",
+          "options": [
+            "visiting their grandma",
+            "visited their grandma",
+            "visit their grandma",
+            "visits their grandma"
+          ],
+          "answer": "visited their grandma"
+        },
+        {
+          "id": "simppast_a_28",
+          "type": "A",
+          "question": "The dog ___ two days ago.",
+          "options": [
+            "visits their grandma",
+            "visit their grandma",
+            "visiting their grandma",
+            "visited their grandma"
+          ],
+          "answer": "visited their grandma"
+        },
+        {
+          "id": "simppast_a_29",
+          "type": "A",
+          "question": "My sister ___ last night.",
+          "options": [
+            "study English",
+            "studies English",
+            "studied English",
+            "studying English"
+          ],
+          "answer": "studied English"
+        },
+        {
+          "id": "simppast_a_30",
+          "type": "A",
+          "question": "I ___ yesterday morning.",
+          "options": [
+            "writes a letter",
+            "wrote a letter",
+            "write a letter",
+            "writing a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_31",
+          "type": "A",
+          "question": "Our cat ___ yesterday morning.",
+          "options": [
+            "cook dinner",
+            "cooking dinner",
+            "cooks dinner",
+            "cooked dinner"
+          ],
+          "answer": "cooked dinner"
+        },
+        {
+          "id": "simppast_a_32",
+          "type": "A",
+          "question": "The children ___ last week.",
+          "options": [
+            "running",
+            "runs",
+            "ran",
+            "run"
+          ],
+          "answer": "ran"
+        },
+        {
+          "id": "simppast_a_33",
+          "type": "A",
+          "question": "You ___ yesterday morning.",
+          "options": [
+            "ran",
+            "running",
+            "run",
+            "runs"
+          ],
+          "answer": "ran"
+        },
+        {
+          "id": "simppast_a_34",
+          "type": "A",
+          "question": "The students ___ last week.",
+          "options": [
+            "listens to music",
+            "listen to music",
+            "listening to music",
+            "listened to music"
+          ],
+          "answer": "listened to music"
+        },
+        {
+          "id": "simppast_a_35",
+          "type": "A",
+          "question": "Tom ___ last week.",
+          "options": [
+            "wash the dishes",
+            "washes the dishes",
+            "washed the dishes",
+            "washing the dishes"
+          ],
+          "answer": "washed the dishes"
+        },
+        {
+          "id": "simppast_a_36",
+          "type": "A",
+          "question": "I ___ last week.",
+          "options": [
+            "climbed a tree",
+            "climbing a tree",
+            "climbs a tree",
+            "climb a tree"
+          ],
+          "answer": "climbed a tree"
+        },
+        {
+          "id": "simppast_a_37",
+          "type": "A",
+          "question": "The dog ___ last night.",
+          "options": [
+            "wins the game",
+            "won the game",
+            "winning the game",
+            "win the game"
+          ],
+          "answer": "won the game"
+        },
+        {
+          "id": "simppast_a_38",
+          "type": "A",
+          "question": "We ___ yesterday.",
+          "options": [
+            "writing a letter",
+            "write a letter",
+            "writes a letter",
+            "wrote a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_39",
+          "type": "A",
+          "question": "The children ___ last night.",
+          "options": [
+            "did homework",
+            "do homework",
+            "does homework",
+            "doing homework"
+          ],
+          "answer": "did homework"
+        },
+        {
+          "id": "simppast_a_40",
+          "type": "A",
+          "question": "The dog ___ yesterday morning.",
+          "options": [
+            "swims",
+            "swim",
+            "swimming",
+            "swam"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "simppast_a_41",
+          "type": "A",
+          "question": "My parents ___ last Sunday.",
+          "options": [
+            "wins the game",
+            "winning the game",
+            "won the game",
+            "win the game"
+          ],
+          "answer": "won the game"
+        },
+        {
+          "id": "simppast_a_42",
+          "type": "A",
+          "question": "My sister ___ yesterday morning.",
+          "options": [
+            "swimming",
+            "swims",
+            "swim",
+            "swam"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "simppast_a_43",
+          "type": "A",
+          "question": "My brother ___ last night.",
+          "options": [
+            "singing a song",
+            "sings a song",
+            "sang a song",
+            "sing a song"
+          ],
+          "answer": "sang a song"
+        },
+        {
+          "id": "simppast_a_44",
+          "type": "A",
+          "question": "We ___ last Sunday.",
+          "options": [
+            "cleaned the house",
+            "cleaning the house",
+            "cleans the house",
+            "clean the house"
+          ],
+          "answer": "cleaned the house"
+        },
+        {
+          "id": "simppast_a_45",
+          "type": "A",
+          "question": "The students ___ two days ago.",
+          "options": [
+            "feed the cat",
+            "fed the cat",
+            "feeding the cat",
+            "feeds the cat"
+          ],
+          "answer": "fed the cat"
+        },
+        {
+          "id": "simppast_a_46",
+          "type": "A",
+          "question": "The boys ___ two days ago.",
+          "options": [
+            "swam",
+            "swims",
+            "swim",
+            "swimming"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "simppast_a_47",
+          "type": "A",
+          "question": "The students ___ last night.",
+          "options": [
+            "listen to music",
+            "listening to music",
+            "listened to music",
+            "listens to music"
+          ],
+          "answer": "listened to music"
+        },
+        {
+          "id": "simppast_a_48",
+          "type": "A",
+          "question": "The children ___ yesterday.",
+          "options": [
+            "swam",
+            "swims",
+            "swimming",
+            "swim"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "simppast_a_49",
+          "type": "A",
+          "question": "They ___ yesterday.",
+          "options": [
+            "helping their mum",
+            "helps their mum",
+            "helped their mum",
+            "help their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_50",
+          "type": "A",
+          "question": "My brother ___ last week.",
+          "options": [
+            "swim",
+            "swimming",
+            "swam",
+            "swims"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "simppast_a_51",
+          "type": "A",
+          "question": "I ___ last night.",
+          "options": [
+            "dancing",
+            "danced",
+            "dances",
+            "dance"
+          ],
+          "answer": "danced"
+        },
+        {
+          "id": "simppast_a_52",
+          "type": "A",
+          "question": "The students ___ last Sunday.",
+          "options": [
+            "played football",
+            "plays football",
+            "play football",
+            "playing football"
+          ],
+          "answer": "played football"
+        },
+        {
+          "id": "simppast_a_53",
+          "type": "A",
+          "question": "Maria ___ last night.",
+          "options": [
+            "brushed their teeth",
+            "brushes their teeth",
+            "brush their teeth",
+            "brushing their teeth"
+          ],
+          "answer": "brushed their teeth"
+        },
+        {
+          "id": "simppast_a_54",
+          "type": "A",
+          "question": "Maria ___ yesterday morning.",
+          "options": [
+            "went to the party",
+            "go to the party",
+            "going to the party",
+            "goes to the party"
+          ],
+          "answer": "went to the party"
+        },
+        {
+          "id": "simppast_a_55",
+          "type": "A",
+          "question": "We ___ last week.",
+          "options": [
+            "writes a letter",
+            "writing a letter",
+            "wrote a letter",
+            "write a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_56",
+          "type": "A",
+          "question": "My parents ___ two days ago.",
+          "options": [
+            "visited their grandma",
+            "visiting their grandma",
+            "visits their grandma",
+            "visit their grandma"
+          ],
+          "answer": "visited their grandma"
+        },
+        {
+          "id": "simppast_a_57",
+          "type": "A",
+          "question": "Maria ___ last Sunday.",
+          "options": [
+            "had lunch",
+            "has lunch",
+            "having lunch",
+            "have lunch"
+          ],
+          "answer": "had lunch"
+        },
+        {
+          "id": "simppast_a_58",
+          "type": "A",
+          "question": "We ___ last night.",
+          "options": [
+            "walk to school",
+            "walks to school",
+            "walked to school",
+            "walking to school"
+          ],
+          "answer": "walked to school"
+        },
+        {
+          "id": "simppast_a_59",
+          "type": "A",
+          "question": "Our cat ___ last Sunday.",
+          "options": [
+            "writes a letter",
+            "wrote a letter",
+            "write a letter",
+            "writing a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_60",
+          "type": "A",
+          "question": "The students ___ yesterday morning.",
+          "options": [
+            "going to the party",
+            "go to the party",
+            "goes to the party",
+            "went to the party"
+          ],
+          "answer": "went to the party"
+        },
+        {
+          "id": "simppast_a_61",
+          "type": "A",
+          "question": "Tom ___ yesterday morning.",
+          "options": [
+            "watched TV",
+            "watch TV",
+            "watches TV",
+            "watching TV"
+          ],
+          "answer": "watched TV"
+        },
+        {
+          "id": "simppast_a_62",
+          "type": "A",
+          "question": "My brother ___ yesterday.",
+          "options": [
+            "does homework",
+            "doing homework",
+            "did homework",
+            "do homework"
+          ],
+          "answer": "did homework"
+        },
+        {
+          "id": "simppast_a_63",
+          "type": "A",
+          "question": "It ___ last week.",
+          "options": [
+            "helped their mum",
+            "helping their mum",
+            "helps their mum",
+            "help their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_64",
+          "type": "A",
+          "question": "The dog ___ yesterday.",
+          "options": [
+            "help their mum",
+            "helping their mum",
+            "helped their mum",
+            "helps their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_65",
+          "type": "A",
+          "question": "The boys ___ last night.",
+          "options": [
+            "play football",
+            "plays football",
+            "played football",
+            "playing football"
+          ],
+          "answer": "played football"
+        },
+        {
+          "id": "simppast_a_66",
+          "type": "A",
+          "question": "My sister ___ yesterday.",
+          "options": [
+            "brushed their teeth",
+            "brushing their teeth",
+            "brushes their teeth",
+            "brush their teeth"
+          ],
+          "answer": "brushed their teeth"
+        },
+        {
+          "id": "simppast_a_67",
+          "type": "A",
+          "question": "I ___ two days ago.",
+          "options": [
+            "dances",
+            "dance",
+            "dancing",
+            "danced"
+          ],
+          "answer": "danced"
+        },
+        {
+          "id": "simppast_a_68",
+          "type": "A",
+          "question": "They ___ last Sunday.",
+          "options": [
+            "help their mum",
+            "helped their mum",
+            "helping their mum",
+            "helps their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_69",
+          "type": "A",
+          "question": "The children ___ yesterday morning.",
+          "options": [
+            "swim",
+            "swam",
+            "swims",
+            "swimming"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "simppast_a_70",
+          "type": "A",
+          "question": "She ___ last week.",
+          "options": [
+            "swims",
+            "swimming",
+            "swam",
+            "swim"
+          ],
+          "answer": "swam"
+        },
+        {
+          "id": "simppast_a_71",
+          "type": "A",
+          "question": "He ___ last week.",
+          "options": [
+            "going to the party",
+            "go to the party",
+            "went to the party",
+            "goes to the party"
+          ],
+          "answer": "went to the party"
+        },
+        {
+          "id": "simppast_a_72",
+          "type": "A",
+          "question": "The boys ___ yesterday morning.",
+          "options": [
+            "visits their grandma",
+            "visit their grandma",
+            "visiting their grandma",
+            "visited their grandma"
+          ],
+          "answer": "visited their grandma"
+        },
+        {
+          "id": "simppast_a_73",
+          "type": "A",
+          "question": "The dog ___ last week.",
+          "options": [
+            "running",
+            "run",
+            "ran",
+            "runs"
+          ],
+          "answer": "ran"
+        },
+        {
+          "id": "simppast_a_74",
+          "type": "A",
+          "question": "You ___ two days ago.",
+          "options": [
+            "cleaning the house",
+            "cleans the house",
+            "cleaned the house",
+            "clean the house"
+          ],
+          "answer": "cleaned the house"
+        },
+        {
+          "id": "simppast_a_75",
+          "type": "A",
+          "question": "She ___ last night.",
+          "options": [
+            "rides a bike",
+            "rode a bike",
+            "riding a bike",
+            "ride a bike"
+          ],
+          "answer": "rode a bike"
+        },
+        {
+          "id": "simppast_a_76",
+          "type": "A",
+          "question": "Maria ___ last week.",
+          "options": [
+            "jumped",
+            "jumps",
+            "jump",
+            "jumping"
+          ],
+          "answer": "jumped"
+        },
+        {
+          "id": "simppast_a_77",
+          "type": "A",
+          "question": "My brother ___ two days ago.",
+          "options": [
+            "studies English",
+            "studying English",
+            "study English",
+            "studied English"
+          ],
+          "answer": "studied English"
+        },
+        {
+          "id": "simppast_a_78",
+          "type": "A",
+          "question": "My sister ___ two days ago.",
+          "options": [
+            "listen to music",
+            "listening to music",
+            "listened to music",
+            "listens to music"
+          ],
+          "answer": "listened to music"
+        },
+        {
+          "id": "simppast_a_79",
+          "type": "A",
+          "question": "Tom ___ two days ago.",
+          "options": [
+            "watched TV",
+            "watches TV",
+            "watching TV",
+            "watch TV"
+          ],
+          "answer": "watched TV"
+        },
+        {
+          "id": "simppast_a_80",
+          "type": "A",
+          "question": "She ___ yesterday morning.",
+          "options": [
+            "cooked dinner",
+            "cooking dinner",
+            "cook dinner",
+            "cooks dinner"
+          ],
+          "answer": "cooked dinner"
+        },
+        {
+          "id": "simppast_a_81",
+          "type": "A",
+          "question": "You ___ last week.",
+          "options": [
+            "helped their mum",
+            "helping their mum",
+            "helps their mum",
+            "help their mum"
+          ],
+          "answer": "helped their mum"
+        },
+        {
+          "id": "simppast_a_82",
+          "type": "A",
+          "question": "My sister ___ last week.",
+          "options": [
+            "did homework",
+            "does homework",
+            "do homework",
+            "doing homework"
+          ],
+          "answer": "did homework"
+        },
+        {
+          "id": "simppast_a_83",
+          "type": "A",
+          "question": "The dog ___ last Sunday.",
+          "options": [
+            "studied English",
+            "studying English",
+            "studies English",
+            "study English"
+          ],
+          "answer": "studied English"
+        },
+        {
+          "id": "simppast_a_84",
+          "type": "A",
+          "question": "She ___ last Sunday.",
+          "options": [
+            "visiting their grandma",
+            "visits their grandma",
+            "visit their grandma",
+            "visited their grandma"
+          ],
+          "answer": "visited their grandma"
+        },
+        {
+          "id": "simppast_a_85",
+          "type": "A",
+          "question": "They ___ two days ago.",
+          "options": [
+            "brushing their teeth",
+            "brushes their teeth",
+            "brush their teeth",
+            "brushed their teeth"
+          ],
+          "answer": "brushed their teeth"
+        },
+        {
+          "id": "simppast_a_86",
+          "type": "A",
+          "question": "They ___ last week.",
+          "options": [
+            "won the game",
+            "wins the game",
+            "win the game",
+            "winning the game"
+          ],
+          "answer": "won the game"
+        },
+        {
+          "id": "simppast_a_87",
+          "type": "A",
+          "question": "You ___ last Sunday.",
+          "options": [
+            "wins the game",
+            "winning the game",
+            "win the game",
+            "won the game"
+          ],
+          "answer": "won the game"
+        },
+        {
+          "id": "simppast_a_88",
+          "type": "A",
+          "question": "The boys ___ last week.",
+          "options": [
+            "write a letter",
+            "writing a letter",
+            "writes a letter",
+            "wrote a letter"
+          ],
+          "answer": "wrote a letter"
+        },
+        {
+          "id": "simppast_a_89",
+          "type": "A",
+          "question": "We ___ two days ago.",
+          "options": [
+            "runs",
+            "running",
+            "run",
+            "ran"
+          ],
+          "answer": "ran"
+        },
+        {
+          "id": "simppast_a_90",
+          "type": "A",
+          "question": "My parents ___ yesterday.",
+          "options": [
+            "rode a bike",
+            "ride a bike",
+            "riding a bike",
+            "rides a bike"
+          ],
+          "answer": "rode a bike"
+        },
+        {
+          "id": "simppast_a_91",
+          "type": "A",
+          "question": "She ___ two days ago.",
+          "options": [
+            "cleaning the house",
+            "cleaned the house",
+            "clean the house",
+            "cleans the house"
+          ],
+          "answer": "cleaned the house"
+        },
+        {
+          "id": "simppast_a_92",
+          "type": "A",
+          "question": "They ___ last night.",
+          "options": [
+            "goes to the party",
+            "going to the party",
+            "went to the party",
+            "go to the party"
+          ],
+          "answer": "went to the party"
+        },
+        {
+          "id": "simppast_a_93",
+          "type": "A",
+          "question": "The children ___ last Sunday.",
+          "options": [
+            "brushes their teeth",
+            "brush their teeth",
+            "brushed their teeth",
+            "brushing their teeth"
+          ],
+          "answer": "brushed their teeth"
+        },
+        {
+          "id": "simppast_a_94",
+          "type": "A",
+          "question": "He ___ two days ago.",
+          "options": [
+            "walked to school",
+            "walks to school",
+            "walking to school",
+            "walk to school"
+          ],
+          "answer": "walked to school"
+        },
+        {
+          "id": "simppast_a_95",
+          "type": "A",
+          "question": "Tom ___ last Sunday.",
+          "options": [
+            "brush their teeth",
+            "brushes their teeth",
+            "brushing their teeth",
+            "brushed their teeth"
+          ],
+          "answer": "brushed their teeth"
+        },
+        {
+          "id": "simppast_a_96",
+          "type": "A",
+          "question": "My parents ___ last night.",
+          "options": [
+            "studies English",
+            "study English",
+            "studying English",
+            "studied English"
+          ],
+          "answer": "studied English"
+        },
+        {
+          "id": "simppast_a_97",
+          "type": "A",
+          "question": "My brother ___ yesterday morning.",
+          "options": [
+            "brush their teeth",
+            "brushing their teeth",
+            "brushes their teeth",
+            "brushed their teeth"
+          ],
+          "answer": "brushed their teeth"
+        },
+        {
+          "id": "simppast_a_98",
+          "type": "A",
+          "question": "Our cat ___ two days ago.",
+          "options": [
+            "visiting their grandma",
+            "visits their grandma",
+            "visited their grandma",
+            "visit their grandma"
+          ],
+          "answer": "visited their grandma"
+        },
+        {
+          "id": "simppast_a_99",
+          "type": "A",
+          "question": "It ___ yesterday.",
+          "options": [
+            "studies English",
+            "studying English",
+            "study English",
+            "studied English"
+          ],
+          "answer": "studied English"
+        },
+        {
+          "id": "simppast_a_100",
+          "type": "A",
+          "question": "We ___ yesterday morning.",
+          "options": [
+            "dance",
+            "dancing",
+            "danced",
+            "dances"
+          ],
+          "answer": "danced"
+        },
+        {
+          "id": "simppast_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria climbed a tree last week.\"",
+          "options": [
+            "Maria did not climbed a tree last week.",
+            "Maria did not climb a tree last week.",
+            "Maria not climb a tree last week.",
+            "Maria does not climb a tree last week."
+          ],
+          "answer": "Maria did not climb a tree last week."
+        },
+        {
+          "id": "simppast_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"We visited their grandma last night.\"",
+          "options": [
+            "We do not visit their grandma last night.",
+            "We did not visit their grandma last night.",
+            "We not visit their grandma last night.",
+            "We did not visited their grandma last night."
+          ],
+          "answer": "We did not visit their grandma last night."
+        },
+        {
+          "id": "simppast_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students washed the dishes yesterday.\"",
+          "options": [
+            "The students did not wash the dishes yesterday.",
+            "The students did not washed the dishes yesterday.",
+            "The students do not wash the dishes yesterday.",
+            "The students not wash the dishes yesterday."
+          ],
+          "answer": "The students did not wash the dishes yesterday."
+        },
+        {
+          "id": "simppast_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"We rode a bike last night.\"",
+          "options": [
+            "We did not rode a bike last night.",
+            "We did not ride a bike last night.",
+            "We do not ride a bike last night.",
+            "We not ride a bike last night."
+          ],
+          "answer": "We did not ride a bike last night."
+        },
+        {
+          "id": "simppast_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"He washed the dishes last night.\"",
+          "options": [
+            "He does not wash the dishes last night.",
+            "He not wash the dishes last night.",
+            "He did not washed the dishes last night.",
+            "He did not wash the dishes last night."
+          ],
+          "answer": "He did not wash the dishes last night."
+        },
+        {
+          "id": "simppast_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"He had lunch last week.\"",
+          "options": [
+            "He not have lunch last week.",
+            "He did not had lunch last week.",
+            "He does not have lunch last week.",
+            "He did not have lunch last week."
+          ],
+          "answer": "He did not have lunch last week."
+        },
+        {
+          "id": "simppast_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"I fed the cat last week.\"",
+          "options": [
+            "I did not fed the cat last week.",
+            "I did not feed the cat last week.",
+            "I do not feed the cat last week.",
+            "I not feed the cat last week."
+          ],
+          "answer": "I did not feed the cat last week."
+        },
+        {
+          "id": "simppast_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother visited their grandma last night.\"",
+          "options": [
+            "My brother not visit their grandma last night.",
+            "My brother did not visit their grandma last night.",
+            "My brother does not visit their grandma last night.",
+            "My brother did not visited their grandma last night."
+          ],
+          "answer": "My brother did not visit their grandma last night."
+        },
+        {
+          "id": "simppast_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"She watched TV yesterday.\"",
+          "options": [
+            "She did not watch TV yesterday.",
+            "She does not watch TV yesterday.",
+            "She not watch TV yesterday.",
+            "She did not watched TV yesterday."
+          ],
+          "answer": "She did not watch TV yesterday."
+        },
+        {
+          "id": "simppast_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents rode a bike last week.\"",
+          "options": [
+            "My parents did not ride a bike last week.",
+            "My parents not ride a bike last week.",
+            "My parents do not ride a bike last week.",
+            "My parents did not rode a bike last week."
+          ],
+          "answer": "My parents did not ride a bike last week."
+        },
+        {
+          "id": "simppast_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"We danced last Sunday.\"",
+          "options": [
+            "We did not dance last Sunday.",
+            "We not dance last Sunday.",
+            "We do not dance last Sunday.",
+            "We did not danced last Sunday."
+          ],
+          "answer": "We did not dance last Sunday."
+        },
+        {
+          "id": "simppast_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother jumped last night.\"",
+          "options": [
+            "My brother not jump last night.",
+            "My brother did not jump last night.",
+            "My brother did not jumped last night.",
+            "My brother does not jump last night."
+          ],
+          "answer": "My brother did not jump last night."
+        },
+        {
+          "id": "simppast_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat rode a bike yesterday.\"",
+          "options": [
+            "Our cat did not rode a bike yesterday.",
+            "Our cat not ride a bike yesterday.",
+            "Our cat did not ride a bike yesterday.",
+            "Our cat does not ride a bike yesterday."
+          ],
+          "answer": "Our cat did not ride a bike yesterday."
+        },
+        {
+          "id": "simppast_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"He drew a picture yesterday.\"",
+          "options": [
+            "He does not draw a picture yesterday.",
+            "He did not draw a picture yesterday.",
+            "He did not drew a picture yesterday.",
+            "He not draw a picture yesterday."
+          ],
+          "answer": "He did not draw a picture yesterday."
+        },
+        {
+          "id": "simppast_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"You won the game last week.\"",
+          "options": [
+            "You did not win the game last week.",
+            "You not win the game last week.",
+            "You do not win the game last week.",
+            "You did not won the game last week."
+          ],
+          "answer": "You did not win the game last week."
+        },
+        {
+          "id": "simppast_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students studied English last Sunday.\"",
+          "options": [
+            "The students did not study English last Sunday.",
+            "The students not study English last Sunday.",
+            "The students did not studied English last Sunday.",
+            "The students do not study English last Sunday."
+          ],
+          "answer": "The students did not study English last Sunday."
+        },
+        {
+          "id": "simppast_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria swam last week.\"",
+          "options": [
+            "Maria not swim last week.",
+            "Maria did not swim last week.",
+            "Maria did not swam last week.",
+            "Maria does not swim last week."
+          ],
+          "answer": "Maria did not swim last week."
+        },
+        {
+          "id": "simppast_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother danced last Sunday.\"",
+          "options": [
+            "My brother did not dance last Sunday.",
+            "My brother does not dance last Sunday.",
+            "My brother not dance last Sunday.",
+            "My brother did not danced last Sunday."
+          ],
+          "answer": "My brother did not dance last Sunday."
+        },
+        {
+          "id": "simppast_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children listened to music last week.\"",
+          "options": [
+            "The children did not listened to music last week.",
+            "The children did not listen to music last week.",
+            "The children not listen to music last week.",
+            "The children do not listen to music last week."
+          ],
+          "answer": "The children did not listen to music last week."
+        },
+        {
+          "id": "simppast_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"I swam last Sunday.\"",
+          "options": [
+            "I did not swam last Sunday.",
+            "I did not swim last Sunday.",
+            "I not swim last Sunday.",
+            "I do not swim last Sunday."
+          ],
+          "answer": "I did not swim last Sunday."
+        },
+        {
+          "id": "simppast_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students swam yesterday.\"",
+          "options": [
+            "The students do not swim yesterday.",
+            "The students not swim yesterday.",
+            "The students did not swim yesterday.",
+            "The students did not swam yesterday."
+          ],
+          "answer": "The students did not swim yesterday."
+        },
+        {
+          "id": "simppast_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students sang a song two days ago.\"",
+          "options": [
+            "The students do not sing a song two days ago.",
+            "The students did not sang a song two days ago.",
+            "The students did not sing a song two days ago.",
+            "The students not sing a song two days ago."
+          ],
+          "answer": "The students did not sing a song two days ago."
+        },
+        {
+          "id": "simppast_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"She jumped last week.\"",
+          "options": [
+            "She not jump last week.",
+            "She did not jump last week.",
+            "She does not jump last week.",
+            "She did not jumped last week."
+          ],
+          "answer": "She did not jump last week."
+        },
+        {
+          "id": "simppast_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students brushed their teeth yesterday morning.\"",
+          "options": [
+            "The students did not brushed their teeth yesterday morning.",
+            "The students did not brush their teeth yesterday morning.",
+            "The students not brush their teeth yesterday morning.",
+            "The students do not brush their teeth yesterday morning."
+          ],
+          "answer": "The students did not brush their teeth yesterday morning."
+        },
+        {
+          "id": "simppast_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"I walked to school two days ago.\"",
+          "options": [
+            "I do not walk to school two days ago.",
+            "I not walk to school two days ago.",
+            "I did not walk to school two days ago.",
+            "I did not walked to school two days ago."
+          ],
+          "answer": "I did not walk to school two days ago."
+        },
+        {
+          "id": "simppast_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"It helped their mum last week.\"",
+          "options": [
+            "It did not help their mum last week.",
+            "It did not helped their mum last week.",
+            "It not help their mum last week.",
+            "It does not help their mum last week."
+          ],
+          "answer": "It did not help their mum last week."
+        },
+        {
+          "id": "simppast_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students went to the party yesterday.\"",
+          "options": [
+            "The students not go to the party yesterday.",
+            "The students did not went to the party yesterday.",
+            "The students do not go to the party yesterday.",
+            "The students did not go to the party yesterday."
+          ],
+          "answer": "The students did not go to the party yesterday."
+        },
+        {
+          "id": "simppast_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents walked to school last week.\"",
+          "options": [
+            "My parents did not walked to school last week.",
+            "My parents did not walk to school last week.",
+            "My parents not walk to school last week.",
+            "My parents do not walk to school last week."
+          ],
+          "answer": "My parents did not walk to school last week."
+        },
+        {
+          "id": "simppast_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"You fed the cat yesterday.\"",
+          "options": [
+            "You do not feed the cat yesterday.",
+            "You not feed the cat yesterday.",
+            "You did not fed the cat yesterday.",
+            "You did not feed the cat yesterday."
+          ],
+          "answer": "You did not feed the cat yesterday."
+        },
+        {
+          "id": "simppast_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"We ran two days ago.\"",
+          "options": [
+            "We not run two days ago.",
+            "We did not run two days ago.",
+            "We do not run two days ago.",
+            "We did not ran two days ago."
+          ],
+          "answer": "We did not run two days ago."
+        },
+        {
+          "id": "simppast_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"It drew a picture yesterday morning.\"",
+          "options": [
+            "It not draw a picture yesterday morning.",
+            "It did not draw a picture yesterday morning.",
+            "It did not drew a picture yesterday morning.",
+            "It does not draw a picture yesterday morning."
+          ],
+          "answer": "It did not draw a picture yesterday morning."
+        },
+        {
+          "id": "simppast_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"It helped their mum two days ago.\"",
+          "options": [
+            "It does not help their mum two days ago.",
+            "It did not help their mum two days ago.",
+            "It not help their mum two days ago.",
+            "It did not helped their mum two days ago."
+          ],
+          "answer": "It did not help their mum two days ago."
+        },
+        {
+          "id": "simppast_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother ran yesterday.\"",
+          "options": [
+            "My brother does not run yesterday.",
+            "My brother did not ran yesterday.",
+            "My brother did not run yesterday.",
+            "My brother not run yesterday."
+          ],
+          "answer": "My brother did not run yesterday."
+        },
+        {
+          "id": "simppast_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"They cleaned the house yesterday morning.\"",
+          "options": [
+            "They did not clean the house yesterday morning.",
+            "They do not clean the house yesterday morning.",
+            "They did not cleaned the house yesterday morning.",
+            "They not clean the house yesterday morning."
+          ],
+          "answer": "They did not clean the house yesterday morning."
+        },
+        {
+          "id": "simppast_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"It swam yesterday morning.\"",
+          "options": [
+            "It not swim yesterday morning.",
+            "It does not swim yesterday morning.",
+            "It did not swam yesterday morning.",
+            "It did not swim yesterday morning."
+          ],
+          "answer": "It did not swim yesterday morning."
+        },
+        {
+          "id": "simppast_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents watched TV last Sunday.\"",
+          "options": [
+            "My parents not watch TV last Sunday.",
+            "My parents did not watched TV last Sunday.",
+            "My parents do not watch TV last Sunday.",
+            "My parents did not watch TV last Sunday."
+          ],
+          "answer": "My parents did not watch TV last Sunday."
+        },
+        {
+          "id": "simppast_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"It watched TV yesterday.\"",
+          "options": [
+            "It did not watched TV yesterday.",
+            "It does not watch TV yesterday.",
+            "It did not watch TV yesterday.",
+            "It not watch TV yesterday."
+          ],
+          "answer": "It did not watch TV yesterday."
+        },
+        {
+          "id": "simppast_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys did homework yesterday.\"",
+          "options": [
+            "The boys did not did homework yesterday.",
+            "The boys not do homework yesterday.",
+            "The boys did not do homework yesterday.",
+            "The boys do not do homework yesterday."
+          ],
+          "answer": "The boys did not do homework yesterday."
+        },
+        {
+          "id": "simppast_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat cleaned the house last night.\"",
+          "options": [
+            "Our cat not clean the house last night.",
+            "Our cat did not cleaned the house last night.",
+            "Our cat did not clean the house last night.",
+            "Our cat does not clean the house last night."
+          ],
+          "answer": "Our cat did not clean the house last night."
+        },
+        {
+          "id": "simppast_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"She studied English two days ago.\"",
+          "options": [
+            "She did not study English two days ago.",
+            "She does not study English two days ago.",
+            "She did not studied English two days ago.",
+            "She not study English two days ago."
+          ],
+          "answer": "She did not study English two days ago."
+        },
+        {
+          "id": "simppast_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom listened to music last night.\"",
+          "options": [
+            "Tom did not listened to music last night.",
+            "Tom did not listen to music last night.",
+            "Tom not listen to music last night.",
+            "Tom does not listen to music last night."
+          ],
+          "answer": "Tom did not listen to music last night."
+        },
+        {
+          "id": "simppast_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"He fed the cat last Sunday.\"",
+          "options": [
+            "He did not feed the cat last Sunday.",
+            "He not feed the cat last Sunday.",
+            "He did not fed the cat last Sunday.",
+            "He does not feed the cat last Sunday."
+          ],
+          "answer": "He did not feed the cat last Sunday."
+        },
+        {
+          "id": "simppast_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister fed the cat last week.\"",
+          "options": [
+            "My sister not feed the cat last week.",
+            "My sister does not feed the cat last week.",
+            "My sister did not feed the cat last week.",
+            "My sister did not fed the cat last week."
+          ],
+          "answer": "My sister did not feed the cat last week."
+        },
+        {
+          "id": "simppast_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents wrote a letter last week.\"",
+          "options": [
+            "My parents not write a letter last week.",
+            "My parents do not write a letter last week.",
+            "My parents did not write a letter last week.",
+            "My parents did not wrote a letter last week."
+          ],
+          "answer": "My parents did not write a letter last week."
+        },
+        {
+          "id": "simppast_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"She rode a bike two days ago.\"",
+          "options": [
+            "She did not rode a bike two days ago.",
+            "She not ride a bike two days ago.",
+            "She did not ride a bike two days ago.",
+            "She does not ride a bike two days ago."
+          ],
+          "answer": "She did not ride a bike two days ago."
+        },
+        {
+          "id": "simppast_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria played football two days ago.\"",
+          "options": [
+            "Maria does not play football two days ago.",
+            "Maria did not played football two days ago.",
+            "Maria not play football two days ago.",
+            "Maria did not play football two days ago."
+          ],
+          "answer": "Maria did not play football two days ago."
+        },
+        {
+          "id": "simppast_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"She visited their grandma yesterday morning.\"",
+          "options": [
+            "She did not visit their grandma yesterday morning.",
+            "She not visit their grandma yesterday morning.",
+            "She does not visit their grandma yesterday morning.",
+            "She did not visited their grandma yesterday morning."
+          ],
+          "answer": "She did not visit their grandma yesterday morning."
+        },
+        {
+          "id": "simppast_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"They washed the dishes two days ago.\"",
+          "options": [
+            "They did not washed the dishes two days ago.",
+            "They did not wash the dishes two days ago.",
+            "They do not wash the dishes two days ago.",
+            "They not wash the dishes two days ago."
+          ],
+          "answer": "They did not wash the dishes two days ago."
+        },
+        {
+          "id": "simppast_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister walked to school last week.\"",
+          "options": [
+            "My sister did not walked to school last week.",
+            "My sister not walk to school last week.",
+            "My sister did not walk to school last week.",
+            "My sister does not walk to school last week."
+          ],
+          "answer": "My sister did not walk to school last week."
+        },
+        {
+          "id": "simppast_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"You drew a picture yesterday.\"",
+          "options": [
+            "You did not drew a picture yesterday.",
+            "You did not draw a picture yesterday.",
+            "You not draw a picture yesterday.",
+            "You do not draw a picture yesterday."
+          ],
+          "answer": "You did not draw a picture yesterday."
+        },
+        {
+          "id": "simppast_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children danced yesterday morning.\"",
+          "options": [
+            "The children not dance yesterday morning.",
+            "The children did not danced yesterday morning.",
+            "The children did not dance yesterday morning.",
+            "The children do not dance yesterday morning."
+          ],
+          "answer": "The children did not dance yesterday morning."
+        },
+        {
+          "id": "simppast_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom watched TV two days ago.\"",
+          "options": [
+            "Tom did not watch TV two days ago.",
+            "Tom not watch TV two days ago.",
+            "Tom did not watched TV two days ago.",
+            "Tom does not watch TV two days ago."
+          ],
+          "answer": "Tom did not watch TV two days ago."
+        },
+        {
+          "id": "simppast_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"He played football last night.\"",
+          "options": [
+            "He did not play football last night.",
+            "He does not play football last night.",
+            "He not play football last night.",
+            "He did not played football last night."
+          ],
+          "answer": "He did not play football last night."
+        },
+        {
+          "id": "simppast_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"She washed the dishes two days ago.\"",
+          "options": [
+            "She not wash the dishes two days ago.",
+            "She did not washed the dishes two days ago.",
+            "She did not wash the dishes two days ago.",
+            "She does not wash the dishes two days ago."
+          ],
+          "answer": "She did not wash the dishes two days ago."
+        },
+        {
+          "id": "simppast_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children cooked dinner yesterday.\"",
+          "options": [
+            "The children did not cooked dinner yesterday.",
+            "The children did not cook dinner yesterday.",
+            "The children not cook dinner yesterday.",
+            "The children do not cook dinner yesterday."
+          ],
+          "answer": "The children did not cook dinner yesterday."
+        },
+        {
+          "id": "simppast_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children washed the dishes yesterday morning.\"",
+          "options": [
+            "The children did not washed the dishes yesterday morning.",
+            "The children do not wash the dishes yesterday morning.",
+            "The children did not wash the dishes yesterday morning.",
+            "The children not wash the dishes yesterday morning."
+          ],
+          "answer": "The children did not wash the dishes yesterday morning."
+        },
+        {
+          "id": "simppast_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"It danced two days ago.\"",
+          "options": [
+            "It does not dance two days ago.",
+            "It not dance two days ago.",
+            "It did not dance two days ago.",
+            "It did not danced two days ago."
+          ],
+          "answer": "It did not dance two days ago."
+        },
+        {
+          "id": "simppast_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents did homework last week.\"",
+          "options": [
+            "My parents did not did homework last week.",
+            "My parents not do homework last week.",
+            "My parents did not do homework last week.",
+            "My parents do not do homework last week."
+          ],
+          "answer": "My parents did not do homework last week."
+        },
+        {
+          "id": "simppast_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"She swam last week.\"",
+          "options": [
+            "She not swim last week.",
+            "She does not swim last week.",
+            "She did not swam last week.",
+            "She did not swim last week."
+          ],
+          "answer": "She did not swim last week."
+        },
+        {
+          "id": "simppast_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister had lunch yesterday morning.\"",
+          "options": [
+            "My sister did not have lunch yesterday morning.",
+            "My sister did not had lunch yesterday morning.",
+            "My sister not have lunch yesterday morning.",
+            "My sister does not have lunch yesterday morning."
+          ],
+          "answer": "My sister did not have lunch yesterday morning."
+        },
+        {
+          "id": "simppast_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"We jumped two days ago.\"",
+          "options": [
+            "We did not jumped two days ago.",
+            "We did not jump two days ago.",
+            "We do not jump two days ago.",
+            "We not jump two days ago."
+          ],
+          "answer": "We did not jump two days ago."
+        },
+        {
+          "id": "simppast_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children watched TV last Sunday.\"",
+          "options": [
+            "The children do not watch TV last Sunday.",
+            "The children not watch TV last Sunday.",
+            "The children did not watch TV last Sunday.",
+            "The children did not watched TV last Sunday."
+          ],
+          "answer": "The children did not watch TV last Sunday."
+        },
+        {
+          "id": "simppast_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom cooked dinner yesterday.\"",
+          "options": [
+            "Tom did not cook dinner yesterday.",
+            "Tom not cook dinner yesterday.",
+            "Tom did not cooked dinner yesterday.",
+            "Tom does not cook dinner yesterday."
+          ],
+          "answer": "Tom did not cook dinner yesterday."
+        },
+        {
+          "id": "simppast_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children swam yesterday morning.\"",
+          "options": [
+            "The children not swim yesterday morning.",
+            "The children did not swam yesterday morning.",
+            "The children did not swim yesterday morning.",
+            "The children do not swim yesterday morning."
+          ],
+          "answer": "The children did not swim yesterday morning."
+        },
+        {
+          "id": "simppast_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister listened to music yesterday.\"",
+          "options": [
+            "My sister did not listened to music yesterday.",
+            "My sister did not listen to music yesterday.",
+            "My sister does not listen to music yesterday.",
+            "My sister not listen to music yesterday."
+          ],
+          "answer": "My sister did not listen to music yesterday."
+        },
+        {
+          "id": "simppast_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"They fed the cat last night.\"",
+          "options": [
+            "They did not fed the cat last night.",
+            "They do not feed the cat last night.",
+            "They not feed the cat last night.",
+            "They did not feed the cat last night."
+          ],
+          "answer": "They did not feed the cat last night."
+        },
+        {
+          "id": "simppast_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents did homework two days ago.\"",
+          "options": [
+            "My parents did not do homework two days ago.",
+            "My parents not do homework two days ago.",
+            "My parents did not did homework two days ago.",
+            "My parents do not do homework two days ago."
+          ],
+          "answer": "My parents did not do homework two days ago."
+        },
+        {
+          "id": "simppast_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother did homework last week.\"",
+          "options": [
+            "My brother did not do homework last week.",
+            "My brother not do homework last week.",
+            "My brother does not do homework last week.",
+            "My brother did not did homework last week."
+          ],
+          "answer": "My brother did not do homework last week."
+        },
+        {
+          "id": "simppast_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents listened to music last Sunday.\"",
+          "options": [
+            "My parents do not listen to music last Sunday.",
+            "My parents not listen to music last Sunday.",
+            "My parents did not listened to music last Sunday.",
+            "My parents did not listen to music last Sunday."
+          ],
+          "answer": "My parents did not listen to music last Sunday."
+        },
+        {
+          "id": "simppast_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria visited their grandma last night.\"",
+          "options": [
+            "Maria does not visit their grandma last night.",
+            "Maria not visit their grandma last night.",
+            "Maria did not visit their grandma last night.",
+            "Maria did not visited their grandma last night."
+          ],
+          "answer": "Maria did not visit their grandma last night."
+        },
+        {
+          "id": "simppast_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"We walked to school two days ago.\"",
+          "options": [
+            "We do not walk to school two days ago.",
+            "We did not walked to school two days ago.",
+            "We not walk to school two days ago.",
+            "We did not walk to school two days ago."
+          ],
+          "answer": "We did not walk to school two days ago."
+        },
+        {
+          "id": "simppast_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"It sang a song last week.\"",
+          "options": [
+            "It not sing a song last week.",
+            "It did not sang a song last week.",
+            "It did not sing a song last week.",
+            "It does not sing a song last week."
+          ],
+          "answer": "It did not sing a song last week."
+        },
+        {
+          "id": "simppast_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom swam last Sunday.\"",
+          "options": [
+            "Tom did not swim last Sunday.",
+            "Tom does not swim last Sunday.",
+            "Tom did not swam last Sunday.",
+            "Tom not swim last Sunday."
+          ],
+          "answer": "Tom did not swim last Sunday."
+        },
+        {
+          "id": "simppast_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister brushed their teeth last night.\"",
+          "options": [
+            "My sister did not brushed their teeth last night.",
+            "My sister not brush their teeth last night.",
+            "My sister does not brush their teeth last night.",
+            "My sister did not brush their teeth last night."
+          ],
+          "answer": "My sister did not brush their teeth last night."
+        },
+        {
+          "id": "simppast_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"He climbed a tree last week.\"",
+          "options": [
+            "He did not climb a tree last week.",
+            "He not climb a tree last week.",
+            "He does not climb a tree last week.",
+            "He did not climbed a tree last week."
+          ],
+          "answer": "He did not climb a tree last week."
+        },
+        {
+          "id": "simppast_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother had lunch yesterday.\"",
+          "options": [
+            "My brother did not had lunch yesterday.",
+            "My brother does not have lunch yesterday.",
+            "My brother not have lunch yesterday.",
+            "My brother did not have lunch yesterday."
+          ],
+          "answer": "My brother did not have lunch yesterday."
+        },
+        {
+          "id": "simppast_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys listened to music last Sunday.\"",
+          "options": [
+            "The boys did not listen to music last Sunday.",
+            "The boys did not listened to music last Sunday.",
+            "The boys do not listen to music last Sunday.",
+            "The boys not listen to music last Sunday."
+          ],
+          "answer": "The boys did not listen to music last Sunday."
+        },
+        {
+          "id": "simppast_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"We played football yesterday.\"",
+          "options": [
+            "We did not play football yesterday.",
+            "We not play football yesterday.",
+            "We do not play football yesterday.",
+            "We did not played football yesterday."
+          ],
+          "answer": "We did not play football yesterday."
+        },
+        {
+          "id": "simppast_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat cleaned the house two days ago.\"",
+          "options": [
+            "Our cat does not clean the house two days ago.",
+            "Our cat did not cleaned the house two days ago.",
+            "Our cat not clean the house two days ago.",
+            "Our cat did not clean the house two days ago."
+          ],
+          "answer": "Our cat did not clean the house two days ago."
+        },
+        {
+          "id": "simppast_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria sang a song yesterday.\"",
+          "options": [
+            "Maria not sing a song yesterday.",
+            "Maria did not sing a song yesterday.",
+            "Maria does not sing a song yesterday.",
+            "Maria did not sang a song yesterday."
+          ],
+          "answer": "Maria did not sing a song yesterday."
+        },
+        {
+          "id": "simppast_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents visited their grandma yesterday morning.\"",
+          "options": [
+            "My parents do not visit their grandma yesterday morning.",
+            "My parents did not visit their grandma yesterday morning.",
+            "My parents did not visited their grandma yesterday morning.",
+            "My parents not visit their grandma yesterday morning."
+          ],
+          "answer": "My parents did not visit their grandma yesterday morning."
+        },
+        {
+          "id": "simppast_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys cleaned the house last night.\"",
+          "options": [
+            "The boys did not cleaned the house last night.",
+            "The boys not clean the house last night.",
+            "The boys do not clean the house last night.",
+            "The boys did not clean the house last night."
+          ],
+          "answer": "The boys did not clean the house last night."
+        },
+        {
+          "id": "simppast_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"He brushed their teeth last night.\"",
+          "options": [
+            "He not brush their teeth last night.",
+            "He did not brush their teeth last night.",
+            "He does not brush their teeth last night.",
+            "He did not brushed their teeth last night."
+          ],
+          "answer": "He did not brush their teeth last night."
+        },
+        {
+          "id": "simppast_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"He cooked dinner two days ago.\"",
+          "options": [
+            "He did not cooked dinner two days ago.",
+            "He did not cook dinner two days ago.",
+            "He does not cook dinner two days ago.",
+            "He not cook dinner two days ago."
+          ],
+          "answer": "He did not cook dinner two days ago."
+        },
+        {
+          "id": "simppast_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister climbed a tree last Sunday.\"",
+          "options": [
+            "My sister not climb a tree last Sunday.",
+            "My sister does not climb a tree last Sunday.",
+            "My sister did not climb a tree last Sunday.",
+            "My sister did not climbed a tree last Sunday."
+          ],
+          "answer": "My sister did not climb a tree last Sunday."
+        },
+        {
+          "id": "simppast_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"I studied English last night.\"",
+          "options": [
+            "I not study English last night.",
+            "I did not studied English last night.",
+            "I did not study English last night.",
+            "I do not study English last night."
+          ],
+          "answer": "I did not study English last night."
+        },
+        {
+          "id": "simppast_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"She washed the dishes yesterday.\"",
+          "options": [
+            "She not wash the dishes yesterday.",
+            "She did not washed the dishes yesterday.",
+            "She does not wash the dishes yesterday.",
+            "She did not wash the dishes yesterday."
+          ],
+          "answer": "She did not wash the dishes yesterday."
+        },
+        {
+          "id": "simppast_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"They jumped last week.\"",
+          "options": [
+            "They did not jump last week.",
+            "They did not jumped last week.",
+            "They not jump last week.",
+            "They do not jump last week."
+          ],
+          "answer": "They did not jump last week."
+        },
+        {
+          "id": "simppast_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"They visited their grandma yesterday.\"",
+          "options": [
+            "They did not visit their grandma yesterday.",
+            "They do not visit their grandma yesterday.",
+            "They did not visited their grandma yesterday.",
+            "They not visit their grandma yesterday."
+          ],
+          "answer": "They did not visit their grandma yesterday."
+        },
+        {
+          "id": "simppast_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"You visited their grandma last Sunday.\"",
+          "options": [
+            "You did not visit their grandma last Sunday.",
+            "You do not visit their grandma last Sunday.",
+            "You not visit their grandma last Sunday.",
+            "You did not visited their grandma last Sunday."
+          ],
+          "answer": "You did not visit their grandma last Sunday."
+        },
+        {
+          "id": "simppast_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria studied English last week.\"",
+          "options": [
+            "Maria did not study English last week.",
+            "Maria does not study English last week.",
+            "Maria did not studied English last week.",
+            "Maria not study English last week."
+          ],
+          "answer": "Maria did not study English last week."
+        },
+        {
+          "id": "simppast_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students climbed a tree last night.\"",
+          "options": [
+            "The students not climb a tree last night.",
+            "The students did not climbed a tree last night.",
+            "The students do not climb a tree last night.",
+            "The students did not climb a tree last night."
+          ],
+          "answer": "The students did not climb a tree last night."
+        },
+        {
+          "id": "simppast_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys went to the party yesterday morning.\"",
+          "options": [
+            "The boys do not go to the party yesterday morning.",
+            "The boys not go to the party yesterday morning.",
+            "The boys did not go to the party yesterday morning.",
+            "The boys did not went to the party yesterday morning."
+          ],
+          "answer": "The boys did not go to the party yesterday morning."
+        },
+        {
+          "id": "simppast_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat watched TV two days ago.\"",
+          "options": [
+            "Our cat did not watched TV two days ago.",
+            "Our cat not watch TV two days ago.",
+            "Our cat does not watch TV two days ago.",
+            "Our cat did not watch TV two days ago."
+          ],
+          "answer": "Our cat did not watch TV two days ago."
+        },
+        {
+          "id": "simppast_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys went to the party last week.\"",
+          "options": [
+            "The boys did not go to the party last week.",
+            "The boys not go to the party last week.",
+            "The boys do not go to the party last week.",
+            "The boys did not went to the party last week."
+          ],
+          "answer": "The boys did not go to the party last week."
+        },
+        {
+          "id": "simppast_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"It watched TV last Sunday.\"",
+          "options": [
+            "It did not watch TV last Sunday.",
+            "It did not watched TV last Sunday.",
+            "It does not watch TV last Sunday.",
+            "It not watch TV last Sunday."
+          ],
+          "answer": "It did not watch TV last Sunday."
+        },
+        {
+          "id": "simppast_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"They studied English last night.\"",
+          "options": [
+            "They did not studied English last night.",
+            "They not study English last night.",
+            "They do not study English last night.",
+            "They did not study English last night."
+          ],
+          "answer": "They did not study English last night."
+        },
+        {
+          "id": "simppast_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"She climbed a tree yesterday.\"",
+          "options": [
+            "She did not climbed a tree yesterday.",
+            "She does not climb a tree yesterday.",
+            "She not climb a tree yesterday.",
+            "She did not climb a tree yesterday."
+          ],
+          "answer": "She did not climb a tree yesterday."
+        },
+        {
+          "id": "simppast_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children visited their grandma last night.\"",
+          "options": [
+            "The children did not visit their grandma last night.",
+            "The children not visit their grandma last night.",
+            "The children do not visit their grandma last night.",
+            "The children did not visited their grandma last night."
+          ],
+          "answer": "The children did not visit their grandma last night."
+        },
+        {
+          "id": "simppast_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"He won the game last Sunday.\"",
+          "options": [
+            "He does not win the game last Sunday.",
+            "He did not won the game last Sunday.",
+            "He did not win the game last Sunday.",
+            "He not win the game last Sunday."
+          ],
+          "answer": "He did not win the game last Sunday."
+        },
+        {
+          "id": "simppast_c_1",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister brushes their teeth every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_2",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You walked to school last night.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_3",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom won the game yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_4",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children always draw a picture.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_5",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria watched TV two days ago.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_6",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria always studies English.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_7",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog visited their grandma last Sunday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_8",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We were cleaning the house last night.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_9",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents were riding a bike last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_10",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We always listen to music.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_11",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I ran two days ago.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_12",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She always studies English.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_13",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat drew a picture last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_14",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They always do homework.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_15",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I climbed a tree two days ago.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_16",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children swam yesterday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_17",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I always draw a picture.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_18",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was jumping yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_19",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys usually brush their teeth.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_20",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He cooks dinner every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_21",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister cooked dinner yesterday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_22",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You swam last week.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_23",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was swimming yesterday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_24",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It studied English two days ago.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_25",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was studying English yesterday morning.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_26",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was winning the game two days ago.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_27",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog rode a bike last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_28",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat always visits their grandma.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_29",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria usually has lunch.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_30",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It swam two days ago.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_31",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It helped their mum yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_32",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister sang a song yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_33",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog was climbing a tree yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_34",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat usually goes to the party.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_35",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was cleaning the house last Sunday.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_36",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They won the game last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_37",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria always dances.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_38",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister brushed their teeth last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_39",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom always jumps.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_40",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys visited their grandma yesterday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_41",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were feeding the cat two days ago.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_42",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It always rides a bike.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_43",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I sang a song yesterday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_44",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was running yesterday morning.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_45",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys went to the party yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_46",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were jumping yesterday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_47",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were having lunch last Sunday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_48",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You helped their mum last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_49",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were climbing a tree yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_50",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It usually plays football.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_51",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister usually rides a bike.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_52",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother usually studies English.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_53",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was dancing two days ago.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_54",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were doing homework last Sunday.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_55",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was helping their mum last Sunday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_56",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom listened to music yesterday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_57",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children always wash the dishes.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_58",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents do homework every day.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_59",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria brushes their teeth every day.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_60",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister won the game yesterday morning.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_61",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was swimming last week.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_62",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was winning the game two days ago.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_63",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother always washes the dishes.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_64",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was listening to music last week.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_65",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She brushed their teeth last Sunday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_66",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat brushed their teeth yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_67",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was washing the dishes last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_68",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog draws a picture every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_69",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He always studies English.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_70",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She rode a bike yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_71",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were walking to school last night.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_72",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children listened to music two days ago.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_73",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It cleaned the house last night.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_74",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We studied English last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_75",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog walked to school yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_76",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It ran yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_77",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was climbing a tree yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_78",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They write a letter every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_79",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were drawing a picture two days ago.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_80",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It brushed their teeth two days ago.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_81",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were climbing a tree last Sunday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_82",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog runs every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_83",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was listening to music last week.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_84",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys won the game yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_85",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They usually study English.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_86",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister walked to school last Sunday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_87",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She had lunch two days ago.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_88",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was cooking dinner two days ago.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_89",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students brushed their teeth yesterday morning.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_90",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She fed the cat yesterday morning.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_91",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were winning the game two days ago.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_92",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They were running last week.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_93",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were running yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_94",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was running yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_95",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They brush their teeth every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_96",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister climbed a tree last week.\"",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_c_97",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We walk to school every day.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_98",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom always has lunch.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simppast_c_99",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was having lunch last week.\"",
+          "options": [
+            "Past Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "simppast_c_100",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister did homework yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simppast_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, ellos escribir una carta\" en inglés?",
+          "options": [
+            "They write a letter yesterday morning.",
+            "They writing a letter yesterday morning.",
+            "They writes a letter yesterday morning.",
+            "They wrote a letter yesterday morning."
+          ],
+          "answer": "They wrote a letter yesterday morning."
+        },
+        {
+          "id": "simppast_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, yo trepar a un árbol\" en inglés?",
+          "options": [
+            "I climbs a tree two days ago.",
+            "I climbed a tree two days ago.",
+            "I climb a tree two days ago.",
+            "I climbing a tree two days ago."
+          ],
+          "answer": "I climbed a tree two days ago."
+        },
+        {
+          "id": "simppast_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, yo visitar a su abuela\" en inglés?",
+          "options": [
+            "I visiting their grandma last night.",
+            "I visit their grandma last night.",
+            "I visits their grandma last night.",
+            "I visited their grandma last night."
+          ],
+          "answer": "I visited their grandma last night."
+        },
+        {
+          "id": "simppast_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, el perro limpiar la casa\" en inglés?",
+          "options": [
+            "The dog cleaned the house two days ago.",
+            "The dog cleaning the house two days ago.",
+            "The dog clean the house two days ago.",
+            "The dog cleans the house two days ago."
+          ],
+          "answer": "The dog cleaned the house two days ago."
+        },
+        {
+          "id": "simppast_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, los chicos saltar\" en inglés?",
+          "options": [
+            "The boys jump two days ago.",
+            "The boys jumped two days ago.",
+            "The boys jumps two days ago.",
+            "The boys jumping two days ago."
+          ],
+          "answer": "The boys jumped two days ago."
+        },
+        {
+          "id": "simppast_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, María correr\" en inglés?",
+          "options": [
+            "Maria runs last night.",
+            "Maria run last night.",
+            "Maria running last night.",
+            "Maria ran last night."
+          ],
+          "answer": "Maria ran last night."
+        },
+        {
+          "id": "simppast_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, tú hacer los deberes\" en inglés?",
+          "options": [
+            "You doing homework two days ago.",
+            "You do homework two days ago.",
+            "You does homework two days ago.",
+            "You did homework two days ago."
+          ],
+          "answer": "You did homework two days ago."
+        },
+        {
+          "id": "simppast_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, los chicos limpiar la casa\" en inglés?",
+          "options": [
+            "The boys clean the house last Sunday.",
+            "The boys cleans the house last Sunday.",
+            "The boys cleaning the house last Sunday.",
+            "The boys cleaned the house last Sunday."
+          ],
+          "answer": "The boys cleaned the house last Sunday."
+        },
+        {
+          "id": "simppast_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, nosotros visitar a su abuela\" en inglés?",
+          "options": [
+            "We visits their grandma last Sunday.",
+            "We visit their grandma last Sunday.",
+            "We visiting their grandma last Sunday.",
+            "We visited their grandma last Sunday."
+          ],
+          "answer": "We visited their grandma last Sunday."
+        },
+        {
+          "id": "simppast_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, María bailar\" en inglés?",
+          "options": [
+            "Maria dances yesterday.",
+            "Maria dancing yesterday.",
+            "Maria danced yesterday.",
+            "Maria dance yesterday."
+          ],
+          "answer": "Maria danced yesterday."
+        },
+        {
+          "id": "simppast_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, ella cepillarse los dientes\" en inglés?",
+          "options": [
+            "She brushed their teeth last Sunday.",
+            "She brush their teeth last Sunday.",
+            "She brushes their teeth last Sunday.",
+            "She brushing their teeth last Sunday."
+          ],
+          "answer": "She brushed their teeth last Sunday."
+        },
+        {
+          "id": "simppast_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nosotros escribir una carta\" en inglés?",
+          "options": [
+            "We writes a letter two days ago.",
+            "We write a letter two days ago.",
+            "We wrote a letter two days ago.",
+            "We writing a letter two days ago."
+          ],
+          "answer": "We wrote a letter two days ago."
+        },
+        {
+          "id": "simppast_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, tú limpiar la casa\" en inglés?",
+          "options": [
+            "You cleaning the house two days ago.",
+            "You cleans the house two days ago.",
+            "You clean the house two days ago.",
+            "You cleaned the house two days ago."
+          ],
+          "answer": "You cleaned the house two days ago."
+        },
+        {
+          "id": "simppast_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, el perro ver la tele\" en inglés?",
+          "options": [
+            "The dog watched TV last week.",
+            "The dog watches TV last week.",
+            "The dog watching TV last week.",
+            "The dog watch TV last week."
+          ],
+          "answer": "The dog watched TV last week."
+        },
+        {
+          "id": "simppast_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, ella caminar al colegio\" en inglés?",
+          "options": [
+            "She walks to school yesterday.",
+            "She walked to school yesterday.",
+            "She walk to school yesterday.",
+            "She walking to school yesterday."
+          ],
+          "answer": "She walked to school yesterday."
+        },
+        {
+          "id": "simppast_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, mis padres cepillarse los dientes\" en inglés?",
+          "options": [
+            "My parents brush their teeth last Sunday.",
+            "My parents brushes their teeth last Sunday.",
+            "My parents brushed their teeth last Sunday.",
+            "My parents brushing their teeth last Sunday."
+          ],
+          "answer": "My parents brushed their teeth last Sunday."
+        },
+        {
+          "id": "simppast_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermana ayudar a su madre\" en inglés?",
+          "options": [
+            "My sister helping their mum last night.",
+            "My sister helped their mum last night.",
+            "My sister help their mum last night.",
+            "My sister helps their mum last night."
+          ],
+          "answer": "My sister helped their mum last night."
+        },
+        {
+          "id": "simppast_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros fregar los platos\" en inglés?",
+          "options": [
+            "We washes the dishes last night.",
+            "We washing the dishes last night.",
+            "We wash the dishes last night.",
+            "We washed the dishes last night."
+          ],
+          "answer": "We washed the dishes last night."
+        },
+        {
+          "id": "simppast_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, yo dibujar un dibujo\" en inglés?",
+          "options": [
+            "I draws a picture last Sunday.",
+            "I drew a picture last Sunday.",
+            "I draw a picture last Sunday.",
+            "I drawing a picture last Sunday."
+          ],
+          "answer": "I drew a picture last Sunday."
+        },
+        {
+          "id": "simppast_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, el perro escuchar música\" en inglés?",
+          "options": [
+            "The dog listened to music last week.",
+            "The dog listens to music last week.",
+            "The dog listening to music last week.",
+            "The dog listen to music last week."
+          ],
+          "answer": "The dog listened to music last week."
+        },
+        {
+          "id": "simppast_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, yo jugar al fútbol\" en inglés?",
+          "options": [
+            "I plays football last night.",
+            "I play football last night.",
+            "I playing football last night.",
+            "I played football last night."
+          ],
+          "answer": "I played football last night."
+        },
+        {
+          "id": "simppast_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, mi hermana nadar\" en inglés?",
+          "options": [
+            "My sister swam yesterday morning.",
+            "My sister swims yesterday morning.",
+            "My sister swimming yesterday morning.",
+            "My sister swim yesterday morning."
+          ],
+          "answer": "My sister swam yesterday morning."
+        },
+        {
+          "id": "simppast_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, eso estudiar inglés\" en inglés?",
+          "options": [
+            "It studies English yesterday morning.",
+            "It studied English yesterday morning.",
+            "It studying English yesterday morning.",
+            "It study English yesterday morning."
+          ],
+          "answer": "It studied English yesterday morning."
+        },
+        {
+          "id": "simppast_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, ella dar de comer al gato\" en inglés?",
+          "options": [
+            "She fed the cat yesterday.",
+            "She feeding the cat yesterday.",
+            "She feed the cat yesterday.",
+            "She feeds the cat yesterday."
+          ],
+          "answer": "She fed the cat yesterday."
+        },
+        {
+          "id": "simppast_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los estudiantes dibujar un dibujo\" en inglés?",
+          "options": [
+            "The students drawing a picture last night.",
+            "The students draw a picture last night.",
+            "The students draws a picture last night.",
+            "The students drew a picture last night."
+          ],
+          "answer": "The students drew a picture last night."
+        },
+        {
+          "id": "simppast_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, nosotros dibujar un dibujo\" en inglés?",
+          "options": [
+            "We draw a picture yesterday.",
+            "We draws a picture yesterday.",
+            "We drawing a picture yesterday.",
+            "We drew a picture yesterday."
+          ],
+          "answer": "We drew a picture yesterday."
+        },
+        {
+          "id": "simppast_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, María saltar\" en inglés?",
+          "options": [
+            "Maria jumping yesterday morning.",
+            "Maria jump yesterday morning.",
+            "Maria jumps yesterday morning.",
+            "Maria jumped yesterday morning."
+          ],
+          "answer": "Maria jumped yesterday morning."
+        },
+        {
+          "id": "simppast_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, mi hermana comer\" en inglés?",
+          "options": [
+            "My sister have lunch yesterday morning.",
+            "My sister had lunch yesterday morning.",
+            "My sister having lunch yesterday morning.",
+            "My sister has lunch yesterday morning."
+          ],
+          "answer": "My sister had lunch yesterday morning."
+        },
+        {
+          "id": "simppast_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nosotros montar en bici\" en inglés?",
+          "options": [
+            "We rides a bike two days ago.",
+            "We riding a bike two days ago.",
+            "We ride a bike two days ago.",
+            "We rode a bike two days ago."
+          ],
+          "answer": "We rode a bike two days ago."
+        },
+        {
+          "id": "simppast_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, yo limpiar la casa\" en inglés?",
+          "options": [
+            "I clean the house last night.",
+            "I cleaning the house last night.",
+            "I cleans the house last night.",
+            "I cleaned the house last night."
+          ],
+          "answer": "I cleaned the house last night."
+        },
+        {
+          "id": "simppast_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, nuestro gato ver la tele\" en inglés?",
+          "options": [
+            "Our cat watched TV last week.",
+            "Our cat watch TV last week.",
+            "Our cat watches TV last week.",
+            "Our cat watching TV last week."
+          ],
+          "answer": "Our cat watched TV last week."
+        },
+        {
+          "id": "simppast_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los niños nadar\" en inglés?",
+          "options": [
+            "The children swim last night.",
+            "The children swam last night.",
+            "The children swimming last night.",
+            "The children swims last night."
+          ],
+          "answer": "The children swam last night."
+        },
+        {
+          "id": "simppast_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, tú ir a la fiesta\" en inglés?",
+          "options": [
+            "You goes to the party yesterday.",
+            "You go to the party yesterday.",
+            "You going to the party yesterday.",
+            "You went to the party yesterday."
+          ],
+          "answer": "You went to the party yesterday."
+        },
+        {
+          "id": "simppast_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros dibujar un dibujo\" en inglés?",
+          "options": [
+            "We drawing a picture last night.",
+            "We drew a picture last night.",
+            "We draw a picture last night.",
+            "We draws a picture last night."
+          ],
+          "answer": "We drew a picture last night."
+        },
+        {
+          "id": "simppast_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mis padres visitar a su abuela\" en inglés?",
+          "options": [
+            "My parents visit their grandma two days ago.",
+            "My parents visiting their grandma two days ago.",
+            "My parents visited their grandma two days ago.",
+            "My parents visits their grandma two days ago."
+          ],
+          "answer": "My parents visited their grandma two days ago."
+        },
+        {
+          "id": "simppast_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, nosotros montar en bici\" en inglés?",
+          "options": [
+            "We rode a bike last week.",
+            "We ride a bike last week.",
+            "We riding a bike last week.",
+            "We rides a bike last week."
+          ],
+          "answer": "We rode a bike last week."
+        },
+        {
+          "id": "simppast_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, él fregar los platos\" en inglés?",
+          "options": [
+            "He washed the dishes last night.",
+            "He washing the dishes last night.",
+            "He washes the dishes last night.",
+            "He wash the dishes last night."
+          ],
+          "answer": "He washed the dishes last night."
+        },
+        {
+          "id": "simppast_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, los niños ganar el partido\" en inglés?",
+          "options": [
+            "The children wins the game yesterday morning.",
+            "The children winning the game yesterday morning.",
+            "The children win the game yesterday morning.",
+            "The children won the game yesterday morning."
+          ],
+          "answer": "The children won the game yesterday morning."
+        },
+        {
+          "id": "simppast_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, mi hermana ayudar a su madre\" en inglés?",
+          "options": [
+            "My sister helps their mum last week.",
+            "My sister help their mum last week.",
+            "My sister helped their mum last week.",
+            "My sister helping their mum last week."
+          ],
+          "answer": "My sister helped their mum last week."
+        },
+        {
+          "id": "simppast_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nuestro gato ver la tele\" en inglés?",
+          "options": [
+            "Our cat watches TV last night.",
+            "Our cat watch TV last night.",
+            "Our cat watched TV last night.",
+            "Our cat watching TV last night."
+          ],
+          "answer": "Our cat watched TV last night."
+        },
+        {
+          "id": "simppast_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, eso comer\" en inglés?",
+          "options": [
+            "It had lunch yesterday morning.",
+            "It have lunch yesterday morning.",
+            "It having lunch yesterday morning.",
+            "It has lunch yesterday morning."
+          ],
+          "answer": "It had lunch yesterday morning."
+        },
+        {
+          "id": "simppast_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, el perro hacer los deberes\" en inglés?",
+          "options": [
+            "The dog does homework yesterday.",
+            "The dog did homework yesterday.",
+            "The dog doing homework yesterday.",
+            "The dog do homework yesterday."
+          ],
+          "answer": "The dog did homework yesterday."
+        },
+        {
+          "id": "simppast_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, los chicos cepillarse los dientes\" en inglés?",
+          "options": [
+            "The boys brushes their teeth two days ago.",
+            "The boys brush their teeth two days ago.",
+            "The boys brushed their teeth two days ago.",
+            "The boys brushing their teeth two days ago."
+          ],
+          "answer": "The boys brushed their teeth two days ago."
+        },
+        {
+          "id": "simppast_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, mis padres ver la tele\" en inglés?",
+          "options": [
+            "My parents watches TV yesterday morning.",
+            "My parents watch TV yesterday morning.",
+            "My parents watched TV yesterday morning.",
+            "My parents watching TV yesterday morning."
+          ],
+          "answer": "My parents watched TV yesterday morning."
+        },
+        {
+          "id": "simppast_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, los chicos limpiar la casa\" en inglés?",
+          "options": [
+            "The boys cleaning the house last week.",
+            "The boys clean the house last week.",
+            "The boys cleans the house last week.",
+            "The boys cleaned the house last week."
+          ],
+          "answer": "The boys cleaned the house last week."
+        },
+        {
+          "id": "simppast_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, los estudiantes nadar\" en inglés?",
+          "options": [
+            "The students swimming yesterday morning.",
+            "The students swim yesterday morning.",
+            "The students swam yesterday morning.",
+            "The students swims yesterday morning."
+          ],
+          "answer": "The students swam yesterday morning."
+        },
+        {
+          "id": "simppast_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, nosotros jugar al fútbol\" en inglés?",
+          "options": [
+            "We playing football last week.",
+            "We plays football last week.",
+            "We play football last week.",
+            "We played football last week."
+          ],
+          "answer": "We played football last week."
+        },
+        {
+          "id": "simppast_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, los estudiantes visitar a su abuela\" en inglés?",
+          "options": [
+            "The students visit their grandma yesterday morning.",
+            "The students visited their grandma yesterday morning.",
+            "The students visits their grandma yesterday morning.",
+            "The students visiting their grandma yesterday morning."
+          ],
+          "answer": "The students visited their grandma yesterday morning."
+        },
+        {
+          "id": "simppast_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nosotros visitar a su abuela\" en inglés?",
+          "options": [
+            "We visiting their grandma two days ago.",
+            "We visit their grandma two days ago.",
+            "We visited their grandma two days ago.",
+            "We visits their grandma two days ago."
+          ],
+          "answer": "We visited their grandma two days ago."
+        },
+        {
+          "id": "simppast_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, tú ganar el partido\" en inglés?",
+          "options": [
+            "You won the game last night.",
+            "You wins the game last night.",
+            "You win the game last night.",
+            "You winning the game last night."
+          ],
+          "answer": "You won the game last night."
+        },
+        {
+          "id": "simppast_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, María montar en bici\" en inglés?",
+          "options": [
+            "Maria rode a bike last night.",
+            "Maria ride a bike last night.",
+            "Maria riding a bike last night.",
+            "Maria rides a bike last night."
+          ],
+          "answer": "Maria rode a bike last night."
+        },
+        {
+          "id": "simppast_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, tú saltar\" en inglés?",
+          "options": [
+            "You jumped yesterday.",
+            "You jumping yesterday.",
+            "You jump yesterday.",
+            "You jumps yesterday."
+          ],
+          "answer": "You jumped yesterday."
+        },
+        {
+          "id": "simppast_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, Tom visitar a su abuela\" en inglés?",
+          "options": [
+            "Tom visits their grandma last night.",
+            "Tom visit their grandma last night.",
+            "Tom visiting their grandma last night.",
+            "Tom visited their grandma last night."
+          ],
+          "answer": "Tom visited their grandma last night."
+        },
+        {
+          "id": "simppast_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, tú estudiar inglés\" en inglés?",
+          "options": [
+            "You study English two days ago.",
+            "You studying English two days ago.",
+            "You studies English two days ago.",
+            "You studied English two days ago."
+          ],
+          "answer": "You studied English two days ago."
+        },
+        {
+          "id": "simppast_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, mi hermano jugar al fútbol\" en inglés?",
+          "options": [
+            "My brother play football last Sunday.",
+            "My brother plays football last Sunday.",
+            "My brother played football last Sunday.",
+            "My brother playing football last Sunday."
+          ],
+          "answer": "My brother played football last Sunday."
+        },
+        {
+          "id": "simppast_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, Tom dibujar un dibujo\" en inglés?",
+          "options": [
+            "Tom draws a picture two days ago.",
+            "Tom draw a picture two days ago.",
+            "Tom drew a picture two days ago.",
+            "Tom drawing a picture two days ago."
+          ],
+          "answer": "Tom drew a picture two days ago."
+        },
+        {
+          "id": "simppast_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, ellos escuchar música\" en inglés?",
+          "options": [
+            "They listens to music two days ago.",
+            "They listen to music two days ago.",
+            "They listening to music two days ago.",
+            "They listened to music two days ago."
+          ],
+          "answer": "They listened to music two days ago."
+        },
+        {
+          "id": "simppast_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, los estudiantes limpiar la casa\" en inglés?",
+          "options": [
+            "The students cleaning the house yesterday.",
+            "The students clean the house yesterday.",
+            "The students cleans the house yesterday.",
+            "The students cleaned the house yesterday."
+          ],
+          "answer": "The students cleaned the house yesterday."
+        },
+        {
+          "id": "simppast_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los estudiantes comer\" en inglés?",
+          "options": [
+            "The students having lunch last night.",
+            "The students had lunch last night.",
+            "The students have lunch last night.",
+            "The students has lunch last night."
+          ],
+          "answer": "The students had lunch last night."
+        },
+        {
+          "id": "simppast_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, el perro cocinar la cena\" en inglés?",
+          "options": [
+            "The dog cook dinner last week.",
+            "The dog cooking dinner last week.",
+            "The dog cooked dinner last week.",
+            "The dog cooks dinner last week."
+          ],
+          "answer": "The dog cooked dinner last week."
+        },
+        {
+          "id": "simppast_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros trepar a un árbol\" en inglés?",
+          "options": [
+            "We climb a tree last night.",
+            "We climbed a tree last night.",
+            "We climbing a tree last night.",
+            "We climbs a tree last night."
+          ],
+          "answer": "We climbed a tree last night."
+        },
+        {
+          "id": "simppast_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, yo ganar el partido\" en inglés?",
+          "options": [
+            "I win the game last Sunday.",
+            "I won the game last Sunday.",
+            "I winning the game last Sunday.",
+            "I wins the game last Sunday."
+          ],
+          "answer": "I won the game last Sunday."
+        },
+        {
+          "id": "simppast_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, yo hacer los deberes\" en inglés?",
+          "options": [
+            "I did homework two days ago.",
+            "I does homework two days ago.",
+            "I doing homework two days ago.",
+            "I do homework two days ago."
+          ],
+          "answer": "I did homework two days ago."
+        },
+        {
+          "id": "simppast_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, él jugar al fútbol\" en inglés?",
+          "options": [
+            "He plays football two days ago.",
+            "He play football two days ago.",
+            "He playing football two days ago.",
+            "He played football two days ago."
+          ],
+          "answer": "He played football two days ago."
+        },
+        {
+          "id": "simppast_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, mi hermano escuchar música\" en inglés?",
+          "options": [
+            "My brother listen to music yesterday.",
+            "My brother listened to music yesterday.",
+            "My brother listens to music yesterday.",
+            "My brother listening to music yesterday."
+          ],
+          "answer": "My brother listened to music yesterday."
+        },
+        {
+          "id": "simppast_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, Tom bailar\" en inglés?",
+          "options": [
+            "Tom dances last Sunday.",
+            "Tom dance last Sunday.",
+            "Tom dancing last Sunday.",
+            "Tom danced last Sunday."
+          ],
+          "answer": "Tom danced last Sunday."
+        },
+        {
+          "id": "simppast_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, eso caminar al colegio\" en inglés?",
+          "options": [
+            "It walked to school last week.",
+            "It walk to school last week.",
+            "It walks to school last week.",
+            "It walking to school last week."
+          ],
+          "answer": "It walked to school last week."
+        },
+        {
+          "id": "simppast_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, María trepar a un árbol\" en inglés?",
+          "options": [
+            "Maria climb a tree yesterday.",
+            "Maria climbs a tree yesterday.",
+            "Maria climbing a tree yesterday.",
+            "Maria climbed a tree yesterday."
+          ],
+          "answer": "Maria climbed a tree yesterday."
+        },
+        {
+          "id": "simppast_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los estudiantes caminar al colegio\" en inglés?",
+          "options": [
+            "The students walked to school last night.",
+            "The students walking to school last night.",
+            "The students walks to school last night.",
+            "The students walk to school last night."
+          ],
+          "answer": "The students walked to school last night."
+        },
+        {
+          "id": "simppast_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, María dibujar un dibujo\" en inglés?",
+          "options": [
+            "Maria draw a picture two days ago.",
+            "Maria drew a picture two days ago.",
+            "Maria draws a picture two days ago.",
+            "Maria drawing a picture two days ago."
+          ],
+          "answer": "Maria drew a picture two days ago."
+        },
+        {
+          "id": "simppast_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, Tom cepillarse los dientes\" en inglés?",
+          "options": [
+            "Tom brushes their teeth last week.",
+            "Tom brushing their teeth last week.",
+            "Tom brush their teeth last week.",
+            "Tom brushed their teeth last week."
+          ],
+          "answer": "Tom brushed their teeth last week."
+        },
+        {
+          "id": "simppast_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, ellos nadar\" en inglés?",
+          "options": [
+            "They swam last Sunday.",
+            "They swim last Sunday.",
+            "They swimming last Sunday.",
+            "They swims last Sunday."
+          ],
+          "answer": "They swam last Sunday."
+        },
+        {
+          "id": "simppast_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, él visitar a su abuela\" en inglés?",
+          "options": [
+            "He visit their grandma last night.",
+            "He visited their grandma last night.",
+            "He visiting their grandma last night.",
+            "He visits their grandma last night."
+          ],
+          "answer": "He visited their grandma last night."
+        },
+        {
+          "id": "simppast_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, él caminar al colegio\" en inglés?",
+          "options": [
+            "He walking to school yesterday.",
+            "He walk to school yesterday.",
+            "He walks to school yesterday.",
+            "He walked to school yesterday."
+          ],
+          "answer": "He walked to school yesterday."
+        },
+        {
+          "id": "simppast_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, ella ver la tele\" en inglés?",
+          "options": [
+            "She watched TV last Sunday.",
+            "She watching TV last Sunday.",
+            "She watch TV last Sunday.",
+            "She watches TV last Sunday."
+          ],
+          "answer": "She watched TV last Sunday."
+        },
+        {
+          "id": "simppast_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nosotros nadar\" en inglés?",
+          "options": [
+            "We swim two days ago.",
+            "We swam two days ago.",
+            "We swims two days ago.",
+            "We swimming two days ago."
+          ],
+          "answer": "We swam two days ago."
+        },
+        {
+          "id": "simppast_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, nosotros cepillarse los dientes\" en inglés?",
+          "options": [
+            "We brush their teeth last Sunday.",
+            "We brushed their teeth last Sunday.",
+            "We brushing their teeth last Sunday.",
+            "We brushes their teeth last Sunday."
+          ],
+          "answer": "We brushed their teeth last Sunday."
+        },
+        {
+          "id": "simppast_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros jugar al fútbol\" en inglés?",
+          "options": [
+            "We play football last night.",
+            "We plays football last night.",
+            "We playing football last night.",
+            "We played football last night."
+          ],
+          "answer": "We played football last night."
+        },
+        {
+          "id": "simppast_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, mi hermana bailar\" en inglés?",
+          "options": [
+            "My sister dance last Sunday.",
+            "My sister dancing last Sunday.",
+            "My sister dances last Sunday.",
+            "My sister danced last Sunday."
+          ],
+          "answer": "My sister danced last Sunday."
+        },
+        {
+          "id": "simppast_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, él limpiar la casa\" en inglés?",
+          "options": [
+            "He clean the house last night.",
+            "He cleaned the house last night.",
+            "He cleaning the house last night.",
+            "He cleans the house last night."
+          ],
+          "answer": "He cleaned the house last night."
+        },
+        {
+          "id": "simppast_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermana escuchar música\" en inglés?",
+          "options": [
+            "My sister listening to music last night.",
+            "My sister listens to music last night.",
+            "My sister listen to music last night.",
+            "My sister listened to music last night."
+          ],
+          "answer": "My sister listened to music last night."
+        },
+        {
+          "id": "simppast_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, María fregar los platos\" en inglés?",
+          "options": [
+            "Maria washed the dishes last night.",
+            "Maria wash the dishes last night.",
+            "Maria washing the dishes last night.",
+            "Maria washes the dishes last night."
+          ],
+          "answer": "Maria washed the dishes last night."
+        },
+        {
+          "id": "simppast_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, eso cocinar la cena\" en inglés?",
+          "options": [
+            "It cooking dinner last Sunday.",
+            "It cook dinner last Sunday.",
+            "It cooked dinner last Sunday.",
+            "It cooks dinner last Sunday."
+          ],
+          "answer": "It cooked dinner last Sunday."
+        },
+        {
+          "id": "simppast_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, María ganar el partido\" en inglés?",
+          "options": [
+            "Maria winning the game last Sunday.",
+            "Maria wins the game last Sunday.",
+            "Maria won the game last Sunday.",
+            "Maria win the game last Sunday."
+          ],
+          "answer": "Maria won the game last Sunday."
+        },
+        {
+          "id": "simppast_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, él correr\" en inglés?",
+          "options": [
+            "He ran yesterday.",
+            "He run yesterday.",
+            "He runs yesterday.",
+            "He running yesterday."
+          ],
+          "answer": "He ran yesterday."
+        },
+        {
+          "id": "simppast_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermano escribir una carta\" en inglés?",
+          "options": [
+            "My brother writes a letter last night.",
+            "My brother write a letter last night.",
+            "My brother wrote a letter last night.",
+            "My brother writing a letter last night."
+          ],
+          "answer": "My brother wrote a letter last night."
+        },
+        {
+          "id": "simppast_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, el perro ver la tele\" en inglés?",
+          "options": [
+            "The dog watched TV yesterday.",
+            "The dog watch TV yesterday.",
+            "The dog watches TV yesterday.",
+            "The dog watching TV yesterday."
+          ],
+          "answer": "The dog watched TV yesterday."
+        },
+        {
+          "id": "simppast_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, mis padres hacer los deberes\" en inglés?",
+          "options": [
+            "My parents did homework yesterday.",
+            "My parents doing homework yesterday.",
+            "My parents do homework yesterday.",
+            "My parents does homework yesterday."
+          ],
+          "answer": "My parents did homework yesterday."
+        },
+        {
+          "id": "simppast_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nuestro gato cantar una canción\" en inglés?",
+          "options": [
+            "Our cat singing a song two days ago.",
+            "Our cat sings a song two days ago.",
+            "Our cat sing a song two days ago.",
+            "Our cat sang a song two days ago."
+          ],
+          "answer": "Our cat sang a song two days ago."
+        },
+        {
+          "id": "simppast_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, los niños hacer los deberes\" en inglés?",
+          "options": [
+            "The children doing homework yesterday.",
+            "The children do homework yesterday.",
+            "The children does homework yesterday.",
+            "The children did homework yesterday."
+          ],
+          "answer": "The children did homework yesterday."
+        },
+        {
+          "id": "simppast_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, nosotros cocinar la cena\" en inglés?",
+          "options": [
+            "We cooked dinner yesterday morning.",
+            "We cooking dinner yesterday morning.",
+            "We cooks dinner yesterday morning.",
+            "We cook dinner yesterday morning."
+          ],
+          "answer": "We cooked dinner yesterday morning."
+        },
+        {
+          "id": "simppast_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, mi hermano cantar una canción\" en inglés?",
+          "options": [
+            "My brother sang a song last Sunday.",
+            "My brother singing a song last Sunday.",
+            "My brother sing a song last Sunday.",
+            "My brother sings a song last Sunday."
+          ],
+          "answer": "My brother sang a song last Sunday."
+        },
+        {
+          "id": "simppast_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, yo limpiar la casa\" en inglés?",
+          "options": [
+            "I cleaned the house yesterday morning.",
+            "I cleaning the house yesterday morning.",
+            "I clean the house yesterday morning.",
+            "I cleans the house yesterday morning."
+          ],
+          "answer": "I cleaned the house yesterday morning."
+        },
+        {
+          "id": "simppast_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, María estudiar inglés\" en inglés?",
+          "options": [
+            "Maria studied English two days ago.",
+            "Maria study English two days ago.",
+            "Maria studies English two days ago.",
+            "Maria studying English two days ago."
+          ],
+          "answer": "Maria studied English two days ago."
+        },
+        {
+          "id": "simppast_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los chicos escuchar música\" en inglés?",
+          "options": [
+            "The boys listens to music last night.",
+            "The boys listening to music last night.",
+            "The boys listened to music last night.",
+            "The boys listen to music last night."
+          ],
+          "answer": "The boys listened to music last night."
+        },
+        {
+          "id": "simppast_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, nosotros dibujar un dibujo\" en inglés?",
+          "options": [
+            "We drew a picture yesterday morning.",
+            "We draw a picture yesterday morning.",
+            "We draws a picture yesterday morning.",
+            "We drawing a picture yesterday morning."
+          ],
+          "answer": "We drew a picture yesterday morning."
+        },
+        {
+          "id": "simppast_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, yo caminar al colegio\" en inglés?",
+          "options": [
+            "I walking to school two days ago.",
+            "I walk to school two days ago.",
+            "I walks to school two days ago.",
+            "I walked to school two days ago."
+          ],
+          "answer": "I walked to school two days ago."
+        },
+        {
+          "id": "simppast_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, tú ver la tele\" en inglés?",
+          "options": [
+            "You watching TV last Sunday.",
+            "You watches TV last Sunday.",
+            "You watch TV last Sunday.",
+            "You watched TV last Sunday."
+          ],
+          "answer": "You watched TV last Sunday."
+        },
+        {
+          "id": "simppast_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la mañana, ella ayudar a su madre\" en inglés?",
+          "options": [
+            "She helped their mum yesterday morning.",
+            "She helping their mum yesterday morning.",
+            "She help their mum yesterday morning.",
+            "She helps their mum yesterday morning."
+          ],
+          "answer": "She helped their mum yesterday morning."
+        },
+        {
+          "id": "simppast_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, tú saltar\" en inglés?",
+          "options": [
+            "You jumps two days ago.",
+            "You jump two days ago.",
+            "You jumped two days ago.",
+            "You jumping two days ago."
+          ],
+          "answer": "You jumped two days ago."
+        }
+      ],
+      "timeMarkers": [
+        {
+          "left": "yesterday",
+          "right": "I played football yesterday."
+        },
+        {
+          "left": "last night",
+          "right": "We watched TV last night."
+        },
+        {
+          "left": "last week",
+          "right": "She studied English last week."
+        },
+        {
+          "left": "yesterday morning",
+          "right": "He walked to school yesterday morning."
+        },
+        {
+          "left": "two days ago",
+          "right": "They visited their grandma two days ago."
+        },
+        {
+          "left": "last Sunday",
+          "right": "We cooked dinner last Sunday."
+        },
+        {
+          "left": "last month",
+          "right": "I wrote a letter last month."
+        },
+        {
+          "left": "an hour ago",
+          "right": "She washed the dishes an hour ago."
+        },
+        {
+          "left": "last summer",
+          "right": "They swam in the sea last summer."
+        }
+      ]
+    }
+  ]
+}

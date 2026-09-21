@@ -1,0 +1,4749 @@
+{
+  "units": [
+    {
+      "id": "simple-present",
+      "title": "Present Simple",
+      "emoji": "🟠",
+      "exercises": [
+        {
+          "id": "simpres_a_1",
+          "type": "A",
+          "question": "You often ___.",
+          "options": [
+            "climb a tree",
+            "climbed a tree",
+            "climbs a tree",
+            "climbing a tree"
+          ],
+          "answer": "climb a tree"
+        },
+        {
+          "id": "simpres_a_2",
+          "type": "A",
+          "question": "My brother ___ every morning.",
+          "options": [
+            "played football",
+            "plays football",
+            "play football",
+            "playing football"
+          ],
+          "answer": "plays football"
+        },
+        {
+          "id": "simpres_a_3",
+          "type": "A",
+          "question": "My brother ___ every day.",
+          "options": [
+            "play football",
+            "plays football",
+            "playing football",
+            "played football"
+          ],
+          "answer": "plays football"
+        },
+        {
+          "id": "simpres_a_4",
+          "type": "A",
+          "question": "Maria usually ___.",
+          "options": [
+            "cleans the house",
+            "clean the house",
+            "cleaned the house",
+            "cleaning the house"
+          ],
+          "answer": "cleans the house"
+        },
+        {
+          "id": "simpres_a_5",
+          "type": "A",
+          "question": "You always ___.",
+          "options": [
+            "cooks dinner",
+            "cook dinner",
+            "cooking dinner",
+            "cooked dinner"
+          ],
+          "answer": "cook dinner"
+        },
+        {
+          "id": "simpres_a_6",
+          "type": "A",
+          "question": "My parents ___ on Mondays.",
+          "options": [
+            "singing a song",
+            "sings a song",
+            "sang a song",
+            "sing a song"
+          ],
+          "answer": "sing a song"
+        },
+        {
+          "id": "simpres_a_7",
+          "type": "A",
+          "question": "The dog usually ___.",
+          "options": [
+            "plays football",
+            "playing football",
+            "play football",
+            "played football"
+          ],
+          "answer": "plays football"
+        },
+        {
+          "id": "simpres_a_8",
+          "type": "A",
+          "question": "The children often ___.",
+          "options": [
+            "ride a bike",
+            "rides a bike",
+            "rode a bike",
+            "riding a bike"
+          ],
+          "answer": "ride a bike"
+        },
+        {
+          "id": "simpres_a_9",
+          "type": "A",
+          "question": "She ___ every day.",
+          "options": [
+            "cooked dinner",
+            "cooking dinner",
+            "cooks dinner",
+            "cook dinner"
+          ],
+          "answer": "cooks dinner"
+        },
+        {
+          "id": "simpres_a_10",
+          "type": "A",
+          "question": "My sister always ___.",
+          "options": [
+            "running",
+            "ran",
+            "runs",
+            "run"
+          ],
+          "answer": "runs"
+        },
+        {
+          "id": "simpres_a_11",
+          "type": "A",
+          "question": "The dog ___ every day.",
+          "options": [
+            "jumping",
+            "jumps",
+            "jump",
+            "jumped"
+          ],
+          "answer": "jumps"
+        },
+        {
+          "id": "simpres_a_12",
+          "type": "A",
+          "question": "My parents ___.",
+          "options": [
+            "brushing their teeth",
+            "brushes their teeth",
+            "brushed their teeth",
+            "brush their teeth"
+          ],
+          "answer": "brush their teeth"
+        },
+        {
+          "id": "simpres_a_13",
+          "type": "A",
+          "question": "The boys usually ___.",
+          "options": [
+            "ran",
+            "runs",
+            "running",
+            "run"
+          ],
+          "answer": "run"
+        },
+        {
+          "id": "simpres_a_14",
+          "type": "A",
+          "question": "The students ___ every week.",
+          "options": [
+            "cooks dinner",
+            "cooking dinner",
+            "cooked dinner",
+            "cook dinner"
+          ],
+          "answer": "cook dinner"
+        },
+        {
+          "id": "simpres_a_15",
+          "type": "A",
+          "question": "He usually ___.",
+          "options": [
+            "won the game",
+            "win the game",
+            "wins the game",
+            "winning the game"
+          ],
+          "answer": "wins the game"
+        },
+        {
+          "id": "simpres_a_16",
+          "type": "A",
+          "question": "I always ___.",
+          "options": [
+            "cook dinner",
+            "cooked dinner",
+            "cooks dinner",
+            "cooking dinner"
+          ],
+          "answer": "cook dinner"
+        },
+        {
+          "id": "simpres_a_17",
+          "type": "A",
+          "question": "He often ___.",
+          "options": [
+            "wins the game",
+            "win the game",
+            "winning the game",
+            "won the game"
+          ],
+          "answer": "wins the game"
+        },
+        {
+          "id": "simpres_a_18",
+          "type": "A",
+          "question": "You ___ on Mondays.",
+          "options": [
+            "wash the dishes",
+            "washing the dishes",
+            "washed the dishes",
+            "washes the dishes"
+          ],
+          "answer": "wash the dishes"
+        },
+        {
+          "id": "simpres_a_19",
+          "type": "A",
+          "question": "Tom ___ every week.",
+          "options": [
+            "does homework",
+            "do homework",
+            "doing homework",
+            "did homework"
+          ],
+          "answer": "does homework"
+        },
+        {
+          "id": "simpres_a_20",
+          "type": "A",
+          "question": "Maria ___ every day.",
+          "options": [
+            "writes a letter",
+            "write a letter",
+            "writing a letter",
+            "wrote a letter"
+          ],
+          "answer": "writes a letter"
+        },
+        {
+          "id": "simpres_a_21",
+          "type": "A",
+          "question": "The students often ___.",
+          "options": [
+            "jumping",
+            "jump",
+            "jumped",
+            "jumps"
+          ],
+          "answer": "jump"
+        },
+        {
+          "id": "simpres_a_22",
+          "type": "A",
+          "question": "My parents always ___.",
+          "options": [
+            "writes a letter",
+            "write a letter",
+            "wrote a letter",
+            "writing a letter"
+          ],
+          "answer": "write a letter"
+        },
+        {
+          "id": "simpres_a_23",
+          "type": "A",
+          "question": "Our cat ___ on Mondays.",
+          "options": [
+            "listen to music",
+            "listened to music",
+            "listening to music",
+            "listens to music"
+          ],
+          "answer": "listens to music"
+        },
+        {
+          "id": "simpres_a_24",
+          "type": "A",
+          "question": "The dog ___.",
+          "options": [
+            "does homework",
+            "do homework",
+            "did homework",
+            "doing homework"
+          ],
+          "answer": "does homework"
+        },
+        {
+          "id": "simpres_a_25",
+          "type": "A",
+          "question": "She ___ on Mondays.",
+          "options": [
+            "going to the party",
+            "went to the party",
+            "goes to the party",
+            "go to the party"
+          ],
+          "answer": "goes to the party"
+        },
+        {
+          "id": "simpres_a_26",
+          "type": "A",
+          "question": "My parents ___ every morning.",
+          "options": [
+            "study English",
+            "studying English",
+            "studies English",
+            "studied English"
+          ],
+          "answer": "study English"
+        },
+        {
+          "id": "simpres_a_27",
+          "type": "A",
+          "question": "We always ___.",
+          "options": [
+            "win the game",
+            "won the game",
+            "winning the game",
+            "wins the game"
+          ],
+          "answer": "win the game"
+        },
+        {
+          "id": "simpres_a_28",
+          "type": "A",
+          "question": "Maria always ___.",
+          "options": [
+            "walking to school",
+            "walks to school",
+            "walk to school",
+            "walked to school"
+          ],
+          "answer": "walks to school"
+        },
+        {
+          "id": "simpres_a_29",
+          "type": "A",
+          "question": "She ___ every week.",
+          "options": [
+            "brushing their teeth",
+            "brushes their teeth",
+            "brushed their teeth",
+            "brush their teeth"
+          ],
+          "answer": "brushes their teeth"
+        },
+        {
+          "id": "simpres_a_30",
+          "type": "A",
+          "question": "He ___.",
+          "options": [
+            "listened to music",
+            "listening to music",
+            "listen to music",
+            "listens to music"
+          ],
+          "answer": "listens to music"
+        },
+        {
+          "id": "simpres_a_31",
+          "type": "A",
+          "question": "It ___ every day.",
+          "options": [
+            "playing football",
+            "play football",
+            "plays football",
+            "played football"
+          ],
+          "answer": "plays football"
+        },
+        {
+          "id": "simpres_a_32",
+          "type": "A",
+          "question": "My sister ___ every morning.",
+          "options": [
+            "help their mum",
+            "helped their mum",
+            "helps their mum",
+            "helping their mum"
+          ],
+          "answer": "helps their mum"
+        },
+        {
+          "id": "simpres_a_33",
+          "type": "A",
+          "question": "The students ___.",
+          "options": [
+            "cleaning the house",
+            "clean the house",
+            "cleans the house",
+            "cleaned the house"
+          ],
+          "answer": "clean the house"
+        },
+        {
+          "id": "simpres_a_34",
+          "type": "A",
+          "question": "The dog ___ every week.",
+          "options": [
+            "rode a bike",
+            "riding a bike",
+            "rides a bike",
+            "ride a bike"
+          ],
+          "answer": "rides a bike"
+        },
+        {
+          "id": "simpres_a_35",
+          "type": "A",
+          "question": "You ___ every week.",
+          "options": [
+            "winning the game",
+            "wins the game",
+            "won the game",
+            "win the game"
+          ],
+          "answer": "win the game"
+        },
+        {
+          "id": "simpres_a_36",
+          "type": "A",
+          "question": "He ___ every morning.",
+          "options": [
+            "play football",
+            "playing football",
+            "played football",
+            "plays football"
+          ],
+          "answer": "plays football"
+        },
+        {
+          "id": "simpres_a_37",
+          "type": "A",
+          "question": "My brother ___ every week.",
+          "options": [
+            "visit their grandma",
+            "visits their grandma",
+            "visiting their grandma",
+            "visited their grandma"
+          ],
+          "answer": "visits their grandma"
+        },
+        {
+          "id": "simpres_a_38",
+          "type": "A",
+          "question": "The children ___ every week.",
+          "options": [
+            "listen to music",
+            "listened to music",
+            "listening to music",
+            "listens to music"
+          ],
+          "answer": "listen to music"
+        },
+        {
+          "id": "simpres_a_39",
+          "type": "A",
+          "question": "We ___ every morning.",
+          "options": [
+            "win the game",
+            "winning the game",
+            "wins the game",
+            "won the game"
+          ],
+          "answer": "win the game"
+        },
+        {
+          "id": "simpres_a_40",
+          "type": "A",
+          "question": "My brother ___.",
+          "options": [
+            "running",
+            "ran",
+            "run",
+            "runs"
+          ],
+          "answer": "runs"
+        },
+        {
+          "id": "simpres_a_41",
+          "type": "A",
+          "question": "She ___ every morning.",
+          "options": [
+            "win the game",
+            "wins the game",
+            "won the game",
+            "winning the game"
+          ],
+          "answer": "wins the game"
+        },
+        {
+          "id": "simpres_a_42",
+          "type": "A",
+          "question": "The students ___ every morning.",
+          "options": [
+            "listened to music",
+            "listens to music",
+            "listen to music",
+            "listening to music"
+          ],
+          "answer": "listen to music"
+        },
+        {
+          "id": "simpres_a_43",
+          "type": "A",
+          "question": "The boys often ___.",
+          "options": [
+            "cleaned the house",
+            "cleaning the house",
+            "cleans the house",
+            "clean the house"
+          ],
+          "answer": "clean the house"
+        },
+        {
+          "id": "simpres_a_44",
+          "type": "A",
+          "question": "My sister ___ on Mondays.",
+          "options": [
+            "watch TV",
+            "watched TV",
+            "watching TV",
+            "watches TV"
+          ],
+          "answer": "watches TV"
+        },
+        {
+          "id": "simpres_a_45",
+          "type": "A",
+          "question": "Tom ___ every day.",
+          "options": [
+            "doing homework",
+            "does homework",
+            "did homework",
+            "do homework"
+          ],
+          "answer": "does homework"
+        },
+        {
+          "id": "simpres_a_46",
+          "type": "A",
+          "question": "The boys ___ on Mondays.",
+          "options": [
+            "drew a picture",
+            "draw a picture",
+            "drawing a picture",
+            "draws a picture"
+          ],
+          "answer": "draw a picture"
+        },
+        {
+          "id": "simpres_a_47",
+          "type": "A",
+          "question": "Our cat usually ___.",
+          "options": [
+            "watch TV",
+            "watches TV",
+            "watched TV",
+            "watching TV"
+          ],
+          "answer": "watches TV"
+        },
+        {
+          "id": "simpres_a_48",
+          "type": "A",
+          "question": "My brother usually ___.",
+          "options": [
+            "climbs a tree",
+            "climbed a tree",
+            "climbing a tree",
+            "climb a tree"
+          ],
+          "answer": "climbs a tree"
+        },
+        {
+          "id": "simpres_a_49",
+          "type": "A",
+          "question": "We usually ___.",
+          "options": [
+            "walks to school",
+            "walk to school",
+            "walked to school",
+            "walking to school"
+          ],
+          "answer": "walk to school"
+        },
+        {
+          "id": "simpres_a_50",
+          "type": "A",
+          "question": "She ___.",
+          "options": [
+            "jumping",
+            "jumped",
+            "jumps",
+            "jump"
+          ],
+          "answer": "jumps"
+        },
+        {
+          "id": "simpres_a_51",
+          "type": "A",
+          "question": "I usually ___.",
+          "options": [
+            "wrote a letter",
+            "writes a letter",
+            "writing a letter",
+            "write a letter"
+          ],
+          "answer": "write a letter"
+        },
+        {
+          "id": "simpres_a_52",
+          "type": "A",
+          "question": "She always ___.",
+          "options": [
+            "writes a letter",
+            "writing a letter",
+            "write a letter",
+            "wrote a letter"
+          ],
+          "answer": "writes a letter"
+        },
+        {
+          "id": "simpres_a_53",
+          "type": "A",
+          "question": "We ___ every week.",
+          "options": [
+            "listens to music",
+            "listening to music",
+            "listened to music",
+            "listen to music"
+          ],
+          "answer": "listen to music"
+        },
+        {
+          "id": "simpres_a_54",
+          "type": "A",
+          "question": "You ___.",
+          "options": [
+            "helps their mum",
+            "helping their mum",
+            "helped their mum",
+            "help their mum"
+          ],
+          "answer": "help their mum"
+        },
+        {
+          "id": "simpres_a_55",
+          "type": "A",
+          "question": "My parents usually ___.",
+          "options": [
+            "running",
+            "ran",
+            "run",
+            "runs"
+          ],
+          "answer": "run"
+        },
+        {
+          "id": "simpres_a_56",
+          "type": "A",
+          "question": "My parents often ___.",
+          "options": [
+            "running",
+            "runs",
+            "ran",
+            "run"
+          ],
+          "answer": "run"
+        },
+        {
+          "id": "simpres_a_57",
+          "type": "A",
+          "question": "I ___ every week.",
+          "options": [
+            "win the game",
+            "wins the game",
+            "won the game",
+            "winning the game"
+          ],
+          "answer": "win the game"
+        },
+        {
+          "id": "simpres_a_58",
+          "type": "A",
+          "question": "Our cat ___.",
+          "options": [
+            "climbed a tree",
+            "climb a tree",
+            "climbs a tree",
+            "climbing a tree"
+          ],
+          "answer": "climbs a tree"
+        },
+        {
+          "id": "simpres_a_59",
+          "type": "A",
+          "question": "It usually ___.",
+          "options": [
+            "watches TV",
+            "watching TV",
+            "watch TV",
+            "watched TV"
+          ],
+          "answer": "watches TV"
+        },
+        {
+          "id": "simpres_a_60",
+          "type": "A",
+          "question": "We often ___.",
+          "options": [
+            "draw a picture",
+            "draws a picture",
+            "drawing a picture",
+            "drew a picture"
+          ],
+          "answer": "draw a picture"
+        },
+        {
+          "id": "simpres_a_61",
+          "type": "A",
+          "question": "The children always ___.",
+          "options": [
+            "help their mum",
+            "helping their mum",
+            "helped their mum",
+            "helps their mum"
+          ],
+          "answer": "help their mum"
+        },
+        {
+          "id": "simpres_a_62",
+          "type": "A",
+          "question": "Tom often ___.",
+          "options": [
+            "climbs a tree",
+            "climbing a tree",
+            "climbed a tree",
+            "climb a tree"
+          ],
+          "answer": "climbs a tree"
+        },
+        {
+          "id": "simpres_a_63",
+          "type": "A",
+          "question": "He always ___.",
+          "options": [
+            "playing football",
+            "played football",
+            "play football",
+            "plays football"
+          ],
+          "answer": "plays football"
+        },
+        {
+          "id": "simpres_a_64",
+          "type": "A",
+          "question": "Tom usually ___.",
+          "options": [
+            "jump",
+            "jumped",
+            "jumps",
+            "jumping"
+          ],
+          "answer": "jumps"
+        },
+        {
+          "id": "simpres_a_65",
+          "type": "A",
+          "question": "My sister ___ every week.",
+          "options": [
+            "danced",
+            "dance",
+            "dancing",
+            "dances"
+          ],
+          "answer": "dances"
+        },
+        {
+          "id": "simpres_a_66",
+          "type": "A",
+          "question": "The dog often ___.",
+          "options": [
+            "study English",
+            "studying English",
+            "studies English",
+            "studied English"
+          ],
+          "answer": "studies English"
+        },
+        {
+          "id": "simpres_a_67",
+          "type": "A",
+          "question": "He ___ on Mondays.",
+          "options": [
+            "runs",
+            "run",
+            "running",
+            "ran"
+          ],
+          "answer": "runs"
+        },
+        {
+          "id": "simpres_a_68",
+          "type": "A",
+          "question": "I ___ on Mondays.",
+          "options": [
+            "feed the cat",
+            "feeds the cat",
+            "fed the cat",
+            "feeding the cat"
+          ],
+          "answer": "feed the cat"
+        },
+        {
+          "id": "simpres_a_69",
+          "type": "A",
+          "question": "You ___ every morning.",
+          "options": [
+            "visited their grandma",
+            "visit their grandma",
+            "visits their grandma",
+            "visiting their grandma"
+          ],
+          "answer": "visit their grandma"
+        },
+        {
+          "id": "simpres_a_70",
+          "type": "A",
+          "question": "We ___.",
+          "options": [
+            "watching TV",
+            "watched TV",
+            "watches TV",
+            "watch TV"
+          ],
+          "answer": "watch TV"
+        },
+        {
+          "id": "simpres_a_71",
+          "type": "A",
+          "question": "It often ___.",
+          "options": [
+            "ride a bike",
+            "rode a bike",
+            "rides a bike",
+            "riding a bike"
+          ],
+          "answer": "rides a bike"
+        },
+        {
+          "id": "simpres_a_72",
+          "type": "A",
+          "question": "They ___ on Mondays.",
+          "options": [
+            "win the game",
+            "wins the game",
+            "won the game",
+            "winning the game"
+          ],
+          "answer": "win the game"
+        },
+        {
+          "id": "simpres_a_73",
+          "type": "A",
+          "question": "Maria ___.",
+          "options": [
+            "helps their mum",
+            "help their mum",
+            "helping their mum",
+            "helped their mum"
+          ],
+          "answer": "helps their mum"
+        },
+        {
+          "id": "simpres_a_74",
+          "type": "A",
+          "question": "They always ___.",
+          "options": [
+            "helping their mum",
+            "helped their mum",
+            "help their mum",
+            "helps their mum"
+          ],
+          "answer": "help their mum"
+        },
+        {
+          "id": "simpres_a_75",
+          "type": "A",
+          "question": "The boys ___ every morning.",
+          "options": [
+            "have lunch",
+            "had lunch",
+            "having lunch",
+            "has lunch"
+          ],
+          "answer": "have lunch"
+        },
+        {
+          "id": "simpres_a_76",
+          "type": "A",
+          "question": "My sister ___ every day.",
+          "options": [
+            "cook dinner",
+            "cooked dinner",
+            "cooking dinner",
+            "cooks dinner"
+          ],
+          "answer": "cooks dinner"
+        },
+        {
+          "id": "simpres_a_77",
+          "type": "A",
+          "question": "Tom ___ on Mondays.",
+          "options": [
+            "climbs a tree",
+            "climbed a tree",
+            "climb a tree",
+            "climbing a tree"
+          ],
+          "answer": "climbs a tree"
+        },
+        {
+          "id": "simpres_a_78",
+          "type": "A",
+          "question": "The students always ___.",
+          "options": [
+            "playing football",
+            "played football",
+            "plays football",
+            "play football"
+          ],
+          "answer": "play football"
+        },
+        {
+          "id": "simpres_a_79",
+          "type": "A",
+          "question": "The students ___ on Mondays.",
+          "options": [
+            "won the game",
+            "wins the game",
+            "win the game",
+            "winning the game"
+          ],
+          "answer": "win the game"
+        },
+        {
+          "id": "simpres_a_80",
+          "type": "A",
+          "question": "They ___ every week.",
+          "options": [
+            "wash the dishes",
+            "washed the dishes",
+            "washing the dishes",
+            "washes the dishes"
+          ],
+          "answer": "wash the dishes"
+        },
+        {
+          "id": "simpres_a_81",
+          "type": "A",
+          "question": "The boys always ___.",
+          "options": [
+            "dancing",
+            "dances",
+            "danced",
+            "dance"
+          ],
+          "answer": "dance"
+        },
+        {
+          "id": "simpres_a_82",
+          "type": "A",
+          "question": "Our cat often ___.",
+          "options": [
+            "having lunch",
+            "have lunch",
+            "had lunch",
+            "has lunch"
+          ],
+          "answer": "has lunch"
+        },
+        {
+          "id": "simpres_a_83",
+          "type": "A",
+          "question": "The boys ___ every week.",
+          "options": [
+            "visited their grandma",
+            "visit their grandma",
+            "visits their grandma",
+            "visiting their grandma"
+          ],
+          "answer": "visit their grandma"
+        },
+        {
+          "id": "simpres_a_84",
+          "type": "A",
+          "question": "They usually ___.",
+          "options": [
+            "study English",
+            "studying English",
+            "studies English",
+            "studied English"
+          ],
+          "answer": "study English"
+        },
+        {
+          "id": "simpres_a_85",
+          "type": "A",
+          "question": "My brother always ___.",
+          "options": [
+            "climbs a tree",
+            "climbed a tree",
+            "climb a tree",
+            "climbing a tree"
+          ],
+          "answer": "climbs a tree"
+        },
+        {
+          "id": "simpres_a_86",
+          "type": "A",
+          "question": "The children usually ___.",
+          "options": [
+            "brush their teeth",
+            "brushing their teeth",
+            "brushes their teeth",
+            "brushed their teeth"
+          ],
+          "answer": "brush their teeth"
+        },
+        {
+          "id": "simpres_a_87",
+          "type": "A",
+          "question": "You ___ every day.",
+          "options": [
+            "drew a picture",
+            "draw a picture",
+            "drawing a picture",
+            "draws a picture"
+          ],
+          "answer": "draw a picture"
+        },
+        {
+          "id": "simpres_a_88",
+          "type": "A",
+          "question": "My brother ___ on Mondays.",
+          "options": [
+            "studies English",
+            "studying English",
+            "studied English",
+            "study English"
+          ],
+          "answer": "studies English"
+        },
+        {
+          "id": "simpres_a_89",
+          "type": "A",
+          "question": "The students usually ___.",
+          "options": [
+            "cooked dinner",
+            "cook dinner",
+            "cooks dinner",
+            "cooking dinner"
+          ],
+          "answer": "cook dinner"
+        },
+        {
+          "id": "simpres_a_90",
+          "type": "A",
+          "question": "My parents ___ every day.",
+          "options": [
+            "walking to school",
+            "walk to school",
+            "walks to school",
+            "walked to school"
+          ],
+          "answer": "walk to school"
+        },
+        {
+          "id": "simpres_a_91",
+          "type": "A",
+          "question": "We ___ every day.",
+          "options": [
+            "have lunch",
+            "has lunch",
+            "had lunch",
+            "having lunch"
+          ],
+          "answer": "have lunch"
+        },
+        {
+          "id": "simpres_a_92",
+          "type": "A",
+          "question": "He ___ every day.",
+          "options": [
+            "studies English",
+            "study English",
+            "studied English",
+            "studying English"
+          ],
+          "answer": "studies English"
+        },
+        {
+          "id": "simpres_a_93",
+          "type": "A",
+          "question": "My sister usually ___.",
+          "options": [
+            "washes the dishes",
+            "washed the dishes",
+            "wash the dishes",
+            "washing the dishes"
+          ],
+          "answer": "washes the dishes"
+        },
+        {
+          "id": "simpres_a_94",
+          "type": "A",
+          "question": "Tom always ___.",
+          "options": [
+            "helps their mum",
+            "helped their mum",
+            "help their mum",
+            "helping their mum"
+          ],
+          "answer": "helps their mum"
+        },
+        {
+          "id": "simpres_a_95",
+          "type": "A",
+          "question": "The children ___.",
+          "options": [
+            "run",
+            "runs",
+            "running",
+            "ran"
+          ],
+          "answer": "run"
+        },
+        {
+          "id": "simpres_a_96",
+          "type": "A",
+          "question": "It always ___.",
+          "options": [
+            "drawing a picture",
+            "drew a picture",
+            "draw a picture",
+            "draws a picture"
+          ],
+          "answer": "draws a picture"
+        },
+        {
+          "id": "simpres_a_97",
+          "type": "A",
+          "question": "I ___.",
+          "options": [
+            "win the game",
+            "won the game",
+            "wins the game",
+            "winning the game"
+          ],
+          "answer": "win the game"
+        },
+        {
+          "id": "simpres_a_98",
+          "type": "A",
+          "question": "I ___ every day.",
+          "options": [
+            "draws a picture",
+            "draw a picture",
+            "drawing a picture",
+            "drew a picture"
+          ],
+          "answer": "draw a picture"
+        },
+        {
+          "id": "simpres_a_99",
+          "type": "A",
+          "question": "The children ___ every day.",
+          "options": [
+            "jump",
+            "jumps",
+            "jumping",
+            "jumped"
+          ],
+          "answer": "jump"
+        },
+        {
+          "id": "simpres_a_100",
+          "type": "A",
+          "question": "It ___ on Mondays.",
+          "options": [
+            "walk to school",
+            "walks to school",
+            "walking to school",
+            "walked to school"
+          ],
+          "answer": "walks to school"
+        },
+        {
+          "id": "simpres_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"It writes a letter on Mondays.\"",
+          "options": [
+            "It do not write a letter on Mondays.",
+            "It does not writes a letter on Mondays.",
+            "It not write a letter on Mondays.",
+            "It does not write a letter on Mondays."
+          ],
+          "answer": "It does not write a letter on Mondays."
+        },
+        {
+          "id": "simpres_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother draws a picture every day.\"",
+          "options": [
+            "My brother does not draw a picture every day.",
+            "My brother not draw a picture every day.",
+            "My brother does not draws a picture every day.",
+            "My brother do not draw a picture every day."
+          ],
+          "answer": "My brother does not draw a picture every day."
+        },
+        {
+          "id": "simpres_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents run every day.\"",
+          "options": [
+            "My parents not run every day.",
+            "My parents does not run every day.",
+            "My parents do not runs every day.",
+            "My parents do not run every day."
+          ],
+          "answer": "My parents do not run every day."
+        },
+        {
+          "id": "simpres_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"You run every week.\"",
+          "options": [
+            "You do not run every week.",
+            "You does not run every week.",
+            "You not run every week.",
+            "You do not runs every week."
+          ],
+          "answer": "You do not run every week."
+        },
+        {
+          "id": "simpres_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students always sing a song.\"",
+          "options": [
+            "The students do not sing a song always.",
+            "The students not sing a song always.",
+            "The students do not sings a song always.",
+            "The students does not sing a song always."
+          ],
+          "answer": "The students do not sing a song always."
+        },
+        {
+          "id": "simpres_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat dances every morning.\"",
+          "options": [
+            "Our cat does not dances every morning.",
+            "Our cat do not dance every morning.",
+            "Our cat does not dance every morning.",
+            "Our cat not dance every morning."
+          ],
+          "answer": "Our cat does not dance every morning."
+        },
+        {
+          "id": "simpres_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children usually ride a bike.\"",
+          "options": [
+            "The children do not rides a bike usually.",
+            "The children does not ride a bike usually.",
+            "The children not ride a bike usually.",
+            "The children do not ride a bike usually."
+          ],
+          "answer": "The children do not ride a bike usually."
+        },
+        {
+          "id": "simpres_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students help their mum every day.\"",
+          "options": [
+            "The students do not help their mum every day.",
+            "The students not help their mum every day.",
+            "The students do not helps their mum every day.",
+            "The students does not help their mum every day."
+          ],
+          "answer": "The students do not help their mum every day."
+        },
+        {
+          "id": "simpres_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"He often jumps.\"",
+          "options": [
+            "He not jump often.",
+            "He does not jumps often.",
+            "He does not jump often.",
+            "He do not jump often."
+          ],
+          "answer": "He does not jump often."
+        },
+        {
+          "id": "simpres_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria helps their mum every morning.\"",
+          "options": [
+            "Maria does not help their mum every morning.",
+            "Maria do not help their mum every morning.",
+            "Maria not help their mum every morning.",
+            "Maria does not helps their mum every morning."
+          ],
+          "answer": "Maria does not help their mum every morning."
+        },
+        {
+          "id": "simpres_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria draws a picture every week.\"",
+          "options": [
+            "Maria do not draw a picture every week.",
+            "Maria does not draws a picture every week.",
+            "Maria does not draw a picture every week.",
+            "Maria not draw a picture every week."
+          ],
+          "answer": "Maria does not draw a picture every week."
+        },
+        {
+          "id": "simpres_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat often jumps.\"",
+          "options": [
+            "Our cat does not jump often.",
+            "Our cat not jump often.",
+            "Our cat does not jumps often.",
+            "Our cat do not jump often."
+          ],
+          "answer": "Our cat does not jump often."
+        },
+        {
+          "id": "simpres_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog always climbs a tree.\"",
+          "options": [
+            "The dog do not climb a tree always.",
+            "The dog does not climbs a tree always.",
+            "The dog does not climb a tree always.",
+            "The dog not climb a tree always."
+          ],
+          "answer": "The dog does not climb a tree always."
+        },
+        {
+          "id": "simpres_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"She always brushes their teeth.\"",
+          "options": [
+            "She does not brushes their teeth always.",
+            "She does not brush their teeth always.",
+            "She do not brush their teeth always.",
+            "She not brush their teeth always."
+          ],
+          "answer": "She does not brush their teeth always."
+        },
+        {
+          "id": "simpres_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys often brush their teeth.\"",
+          "options": [
+            "The boys do not brushes their teeth often.",
+            "The boys not brush their teeth often.",
+            "The boys does not brush their teeth often.",
+            "The boys do not brush their teeth often."
+          ],
+          "answer": "The boys do not brush their teeth often."
+        },
+        {
+          "id": "simpres_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"He runs every morning.\"",
+          "options": [
+            "He do not run every morning.",
+            "He not run every morning.",
+            "He does not runs every morning.",
+            "He does not run every morning."
+          ],
+          "answer": "He does not run every morning."
+        },
+        {
+          "id": "simpres_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom does homework every day.\"",
+          "options": [
+            "Tom does not do homework every day.",
+            "Tom do not do homework every day.",
+            "Tom not do homework every day.",
+            "Tom does not does homework every day."
+          ],
+          "answer": "Tom does not do homework every day."
+        },
+        {
+          "id": "simpres_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"I study English every morning.\"",
+          "options": [
+            "I do not studies English every morning.",
+            "I not study English every morning.",
+            "I does not study English every morning.",
+            "I do not study English every morning."
+          ],
+          "answer": "I do not study English every morning."
+        },
+        {
+          "id": "simpres_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys swim on Mondays.\"",
+          "options": [
+            "The boys do not swim on Mondays.",
+            "The boys not swim on Mondays.",
+            "The boys does not swim on Mondays.",
+            "The boys do not swims on Mondays."
+          ],
+          "answer": "The boys do not swim on Mondays."
+        },
+        {
+          "id": "simpres_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children draw a picture every morning.\"",
+          "options": [
+            "The children do not draws a picture every morning.",
+            "The children does not draw a picture every morning.",
+            "The children not draw a picture every morning.",
+            "The children do not draw a picture every morning."
+          ],
+          "answer": "The children do not draw a picture every morning."
+        },
+        {
+          "id": "simpres_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom usually watches TV.\"",
+          "options": [
+            "Tom do not watch TV usually.",
+            "Tom not watch TV usually.",
+            "Tom does not watches TV usually.",
+            "Tom does not watch TV usually."
+          ],
+          "answer": "Tom does not watch TV usually."
+        },
+        {
+          "id": "simpres_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom wins the game.\"",
+          "options": [
+            "Tom do not win the game.",
+            "Tom does not win the game.",
+            "Tom not win the game.",
+            "Tom does not wins the game."
+          ],
+          "answer": "Tom does not win the game."
+        },
+        {
+          "id": "simpres_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog cleans the house every morning.\"",
+          "options": [
+            "The dog does not cleans the house every morning.",
+            "The dog does not clean the house every morning.",
+            "The dog do not clean the house every morning.",
+            "The dog not clean the house every morning."
+          ],
+          "answer": "The dog does not clean the house every morning."
+        },
+        {
+          "id": "simpres_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys usually swim.\"",
+          "options": [
+            "The boys do not swim usually.",
+            "The boys not swim usually.",
+            "The boys does not swim usually.",
+            "The boys do not swims usually."
+          ],
+          "answer": "The boys do not swim usually."
+        },
+        {
+          "id": "simpres_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"It cooks dinner on Mondays.\"",
+          "options": [
+            "It does not cooks dinner on Mondays.",
+            "It do not cook dinner on Mondays.",
+            "It not cook dinner on Mondays.",
+            "It does not cook dinner on Mondays."
+          ],
+          "answer": "It does not cook dinner on Mondays."
+        },
+        {
+          "id": "simpres_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"You usually play football.\"",
+          "options": [
+            "You does not play football usually.",
+            "You not play football usually.",
+            "You do not plays football usually.",
+            "You do not play football usually."
+          ],
+          "answer": "You do not play football usually."
+        },
+        {
+          "id": "simpres_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat often feeds the cat.\"",
+          "options": [
+            "Our cat do not feed the cat often.",
+            "Our cat does not feed the cat often.",
+            "Our cat not feed the cat often.",
+            "Our cat does not feeds the cat often."
+          ],
+          "answer": "Our cat does not feed the cat often."
+        },
+        {
+          "id": "simpres_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students usually cook dinner.\"",
+          "options": [
+            "The students do not cook dinner usually.",
+            "The students do not cooks dinner usually.",
+            "The students does not cook dinner usually.",
+            "The students not cook dinner usually."
+          ],
+          "answer": "The students do not cook dinner usually."
+        },
+        {
+          "id": "simpres_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"I usually brush their teeth.\"",
+          "options": [
+            "I does not brush their teeth usually.",
+            "I do not brush their teeth usually.",
+            "I not brush their teeth usually.",
+            "I do not brushes their teeth usually."
+          ],
+          "answer": "I do not brush their teeth usually."
+        },
+        {
+          "id": "simpres_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"I win the game.\"",
+          "options": [
+            "I not win the game.",
+            "I does not win the game.",
+            "I do not wins the game.",
+            "I do not win the game."
+          ],
+          "answer": "I do not win the game."
+        },
+        {
+          "id": "simpres_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"She always helps their mum.\"",
+          "options": [
+            "She not help their mum always.",
+            "She does not helps their mum always.",
+            "She do not help their mum always.",
+            "She does not help their mum always."
+          ],
+          "answer": "She does not help their mum always."
+        },
+        {
+          "id": "simpres_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"They usually clean the house.\"",
+          "options": [
+            "They do not cleans the house usually.",
+            "They not clean the house usually.",
+            "They do not clean the house usually.",
+            "They does not clean the house usually."
+          ],
+          "answer": "They do not clean the house usually."
+        },
+        {
+          "id": "simpres_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys clean the house every week.\"",
+          "options": [
+            "The boys do not cleans the house every week.",
+            "The boys does not clean the house every week.",
+            "The boys do not clean the house every week.",
+            "The boys not clean the house every week."
+          ],
+          "answer": "The boys do not clean the house every week."
+        },
+        {
+          "id": "simpres_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"It dances every morning.\"",
+          "options": [
+            "It does not dances every morning.",
+            "It do not dance every morning.",
+            "It not dance every morning.",
+            "It does not dance every morning."
+          ],
+          "answer": "It does not dance every morning."
+        },
+        {
+          "id": "simpres_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children feed the cat.\"",
+          "options": [
+            "The children do not feeds the cat.",
+            "The children do not feed the cat.",
+            "The children does not feed the cat.",
+            "The children not feed the cat."
+          ],
+          "answer": "The children do not feed the cat."
+        },
+        {
+          "id": "simpres_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"We walk to school every day.\"",
+          "options": [
+            "We do not walks to school every day.",
+            "We not walk to school every day.",
+            "We do not walk to school every day.",
+            "We does not walk to school every day."
+          ],
+          "answer": "We do not walk to school every day."
+        },
+        {
+          "id": "simpres_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"She goes to the party on Mondays.\"",
+          "options": [
+            "She not go to the party on Mondays.",
+            "She does not go to the party on Mondays.",
+            "She do not go to the party on Mondays.",
+            "She does not goes to the party on Mondays."
+          ],
+          "answer": "She does not go to the party on Mondays."
+        },
+        {
+          "id": "simpres_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"He sings a song.\"",
+          "options": [
+            "He not sing a song.",
+            "He does not sing a song.",
+            "He do not sing a song.",
+            "He does not sings a song."
+          ],
+          "answer": "He does not sing a song."
+        },
+        {
+          "id": "simpres_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"I run every day.\"",
+          "options": [
+            "I do not run every day.",
+            "I do not runs every day.",
+            "I not run every day.",
+            "I does not run every day."
+          ],
+          "answer": "I do not run every day."
+        },
+        {
+          "id": "simpres_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents have lunch.\"",
+          "options": [
+            "My parents does not have lunch.",
+            "My parents do not have lunch.",
+            "My parents do not has lunch.",
+            "My parents not have lunch."
+          ],
+          "answer": "My parents do not have lunch."
+        },
+        {
+          "id": "simpres_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"It climbs a tree every morning.\"",
+          "options": [
+            "It does not climbs a tree every morning.",
+            "It do not climb a tree every morning.",
+            "It not climb a tree every morning.",
+            "It does not climb a tree every morning."
+          ],
+          "answer": "It does not climb a tree every morning."
+        },
+        {
+          "id": "simpres_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys walk to school every week.\"",
+          "options": [
+            "The boys does not walk to school every week.",
+            "The boys not walk to school every week.",
+            "The boys do not walks to school every week.",
+            "The boys do not walk to school every week."
+          ],
+          "answer": "The boys do not walk to school every week."
+        },
+        {
+          "id": "simpres_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"We study English on Mondays.\"",
+          "options": [
+            "We do not studies English on Mondays.",
+            "We does not study English on Mondays.",
+            "We not study English on Mondays.",
+            "We do not study English on Mondays."
+          ],
+          "answer": "We do not study English on Mondays."
+        },
+        {
+          "id": "simpres_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"They watch TV every week.\"",
+          "options": [
+            "They does not watch TV every week.",
+            "They do not watch TV every week.",
+            "They not watch TV every week.",
+            "They do not watches TV every week."
+          ],
+          "answer": "They do not watch TV every week."
+        },
+        {
+          "id": "simpres_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students sing a song on Mondays.\"",
+          "options": [
+            "The students do not sing a song on Mondays.",
+            "The students does not sing a song on Mondays.",
+            "The students not sing a song on Mondays.",
+            "The students do not sings a song on Mondays."
+          ],
+          "answer": "The students do not sing a song on Mondays."
+        },
+        {
+          "id": "simpres_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students usually ride a bike.\"",
+          "options": [
+            "The students do not rides a bike usually.",
+            "The students do not ride a bike usually.",
+            "The students does not ride a bike usually.",
+            "The students not ride a bike usually."
+          ],
+          "answer": "The students do not ride a bike usually."
+        },
+        {
+          "id": "simpres_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom washes the dishes.\"",
+          "options": [
+            "Tom do not wash the dishes.",
+            "Tom does not wash the dishes.",
+            "Tom not wash the dishes.",
+            "Tom does not washes the dishes."
+          ],
+          "answer": "Tom does not wash the dishes."
+        },
+        {
+          "id": "simpres_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents dance every morning.\"",
+          "options": [
+            "My parents not dance every morning.",
+            "My parents do not dance every morning.",
+            "My parents do not dances every morning.",
+            "My parents does not dance every morning."
+          ],
+          "answer": "My parents do not dance every morning."
+        },
+        {
+          "id": "simpres_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"He runs every week.\"",
+          "options": [
+            "He do not run every week.",
+            "He not run every week.",
+            "He does not runs every week.",
+            "He does not run every week."
+          ],
+          "answer": "He does not run every week."
+        },
+        {
+          "id": "simpres_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom often brushes their teeth.\"",
+          "options": [
+            "Tom not brush their teeth often.",
+            "Tom does not brushes their teeth often.",
+            "Tom does not brush their teeth often.",
+            "Tom do not brush their teeth often."
+          ],
+          "answer": "Tom does not brush their teeth often."
+        },
+        {
+          "id": "simpres_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"She brushes their teeth on Mondays.\"",
+          "options": [
+            "She does not brush their teeth on Mondays.",
+            "She does not brushes their teeth on Mondays.",
+            "She not brush their teeth on Mondays.",
+            "She do not brush their teeth on Mondays."
+          ],
+          "answer": "She does not brush their teeth on Mondays."
+        },
+        {
+          "id": "simpres_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog often studies English.\"",
+          "options": [
+            "The dog does not studies English often.",
+            "The dog do not study English often.",
+            "The dog does not study English often.",
+            "The dog not study English often."
+          ],
+          "answer": "The dog does not study English often."
+        },
+        {
+          "id": "simpres_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria washes the dishes every morning.\"",
+          "options": [
+            "Maria not wash the dishes every morning.",
+            "Maria does not washes the dishes every morning.",
+            "Maria does not wash the dishes every morning.",
+            "Maria do not wash the dishes every morning."
+          ],
+          "answer": "Maria does not wash the dishes every morning."
+        },
+        {
+          "id": "simpres_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"He swims every morning.\"",
+          "options": [
+            "He do not swim every morning.",
+            "He does not swims every morning.",
+            "He not swim every morning.",
+            "He does not swim every morning."
+          ],
+          "answer": "He does not swim every morning."
+        },
+        {
+          "id": "simpres_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog visits their grandma every day.\"",
+          "options": [
+            "The dog does not visits their grandma every day.",
+            "The dog does not visit their grandma every day.",
+            "The dog not visit their grandma every day.",
+            "The dog do not visit their grandma every day."
+          ],
+          "answer": "The dog does not visit their grandma every day."
+        },
+        {
+          "id": "simpres_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat draws a picture on Mondays.\"",
+          "options": [
+            "Our cat do not draw a picture on Mondays.",
+            "Our cat does not draw a picture on Mondays.",
+            "Our cat does not draws a picture on Mondays.",
+            "Our cat not draw a picture on Mondays."
+          ],
+          "answer": "Our cat does not draw a picture on Mondays."
+        },
+        {
+          "id": "simpres_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students cook dinner.\"",
+          "options": [
+            "The students does not cook dinner.",
+            "The students do not cook dinner.",
+            "The students do not cooks dinner.",
+            "The students not cook dinner."
+          ],
+          "answer": "The students do not cook dinner."
+        },
+        {
+          "id": "simpres_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children go to the party every morning.\"",
+          "options": [
+            "The children do not go to the party every morning.",
+            "The children not go to the party every morning.",
+            "The children do not goes to the party every morning.",
+            "The children does not go to the party every morning."
+          ],
+          "answer": "The children do not go to the party every morning."
+        },
+        {
+          "id": "simpres_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat walks to school on Mondays.\"",
+          "options": [
+            "Our cat not walk to school on Mondays.",
+            "Our cat does not walks to school on Mondays.",
+            "Our cat does not walk to school on Mondays.",
+            "Our cat do not walk to school on Mondays."
+          ],
+          "answer": "Our cat does not walk to school on Mondays."
+        },
+        {
+          "id": "simpres_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"You play football every week.\"",
+          "options": [
+            "You do not plays football every week.",
+            "You not play football every week.",
+            "You do not play football every week.",
+            "You does not play football every week."
+          ],
+          "answer": "You do not play football every week."
+        },
+        {
+          "id": "simpres_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"You feed the cat every week.\"",
+          "options": [
+            "You do not feed the cat every week.",
+            "You do not feeds the cat every week.",
+            "You not feed the cat every week.",
+            "You does not feed the cat every week."
+          ],
+          "answer": "You do not feed the cat every week."
+        },
+        {
+          "id": "simpres_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom usually goes to the party.\"",
+          "options": [
+            "Tom does not goes to the party usually.",
+            "Tom not go to the party usually.",
+            "Tom does not go to the party usually.",
+            "Tom do not go to the party usually."
+          ],
+          "answer": "Tom does not go to the party usually."
+        },
+        {
+          "id": "simpres_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"It usually has lunch.\"",
+          "options": [
+            "It does not has lunch usually.",
+            "It not have lunch usually.",
+            "It do not have lunch usually.",
+            "It does not have lunch usually."
+          ],
+          "answer": "It does not have lunch usually."
+        },
+        {
+          "id": "simpres_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister listens to music every day.\"",
+          "options": [
+            "My sister does not listens to music every day.",
+            "My sister not listen to music every day.",
+            "My sister does not listen to music every day.",
+            "My sister do not listen to music every day."
+          ],
+          "answer": "My sister does not listen to music every day."
+        },
+        {
+          "id": "simpres_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog walks to school every morning.\"",
+          "options": [
+            "The dog does not walks to school every morning.",
+            "The dog does not walk to school every morning.",
+            "The dog not walk to school every morning.",
+            "The dog do not walk to school every morning."
+          ],
+          "answer": "The dog does not walk to school every morning."
+        },
+        {
+          "id": "simpres_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister usually does homework.\"",
+          "options": [
+            "My sister do not do homework usually.",
+            "My sister does not does homework usually.",
+            "My sister does not do homework usually.",
+            "My sister not do homework usually."
+          ],
+          "answer": "My sister does not do homework usually."
+        },
+        {
+          "id": "simpres_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"We play football every week.\"",
+          "options": [
+            "We do not play football every week.",
+            "We does not play football every week.",
+            "We not play football every week.",
+            "We do not plays football every week."
+          ],
+          "answer": "We do not play football every week."
+        },
+        {
+          "id": "simpres_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria swims every week.\"",
+          "options": [
+            "Maria does not swims every week.",
+            "Maria does not swim every week.",
+            "Maria do not swim every week.",
+            "Maria not swim every week."
+          ],
+          "answer": "Maria does not swim every week."
+        },
+        {
+          "id": "simpres_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat always goes to the party.\"",
+          "options": [
+            "Our cat does not go to the party always.",
+            "Our cat do not go to the party always.",
+            "Our cat does not goes to the party always.",
+            "Our cat not go to the party always."
+          ],
+          "answer": "Our cat does not go to the party always."
+        },
+        {
+          "id": "simpres_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"We usually sing a song.\"",
+          "options": [
+            "We does not sing a song usually.",
+            "We do not sings a song usually.",
+            "We not sing a song usually.",
+            "We do not sing a song usually."
+          ],
+          "answer": "We do not sing a song usually."
+        },
+        {
+          "id": "simpres_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"You cook dinner every morning.\"",
+          "options": [
+            "You do not cooks dinner every morning.",
+            "You does not cook dinner every morning.",
+            "You not cook dinner every morning.",
+            "You do not cook dinner every morning."
+          ],
+          "answer": "You do not cook dinner every morning."
+        },
+        {
+          "id": "simpres_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"He always sings a song.\"",
+          "options": [
+            "He does not sings a song always.",
+            "He do not sing a song always.",
+            "He does not sing a song always.",
+            "He not sing a song always."
+          ],
+          "answer": "He does not sing a song always."
+        },
+        {
+          "id": "simpres_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents do homework on Mondays.\"",
+          "options": [
+            "My parents not do homework on Mondays.",
+            "My parents do not do homework on Mondays.",
+            "My parents does not do homework on Mondays.",
+            "My parents do not does homework on Mondays."
+          ],
+          "answer": "My parents do not do homework on Mondays."
+        },
+        {
+          "id": "simpres_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys go to the party.\"",
+          "options": [
+            "The boys does not go to the party.",
+            "The boys not go to the party.",
+            "The boys do not go to the party.",
+            "The boys do not goes to the party."
+          ],
+          "answer": "The boys do not go to the party."
+        },
+        {
+          "id": "simpres_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother sings a song every morning.\"",
+          "options": [
+            "My brother does not sing a song every morning.",
+            "My brother not sing a song every morning.",
+            "My brother does not sings a song every morning.",
+            "My brother do not sing a song every morning."
+          ],
+          "answer": "My brother does not sing a song every morning."
+        },
+        {
+          "id": "simpres_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"It runs every week.\"",
+          "options": [
+            "It does not run every week.",
+            "It do not run every week.",
+            "It not run every week.",
+            "It does not runs every week."
+          ],
+          "answer": "It does not run every week."
+        },
+        {
+          "id": "simpres_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children often go to the party.\"",
+          "options": [
+            "The children do not goes to the party often.",
+            "The children do not go to the party often.",
+            "The children not go to the party often.",
+            "The children does not go to the party often."
+          ],
+          "answer": "The children do not go to the party often."
+        },
+        {
+          "id": "simpres_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children cook dinner.\"",
+          "options": [
+            "The children do not cooks dinner.",
+            "The children does not cook dinner.",
+            "The children not cook dinner.",
+            "The children do not cook dinner."
+          ],
+          "answer": "The children do not cook dinner."
+        },
+        {
+          "id": "simpres_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys study English every morning.\"",
+          "options": [
+            "The boys does not study English every morning.",
+            "The boys not study English every morning.",
+            "The boys do not study English every morning.",
+            "The boys do not studies English every morning."
+          ],
+          "answer": "The boys do not study English every morning."
+        },
+        {
+          "id": "simpres_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister cleans the house every morning.\"",
+          "options": [
+            "My sister does not cleans the house every morning.",
+            "My sister does not clean the house every morning.",
+            "My sister not clean the house every morning.",
+            "My sister do not clean the house every morning."
+          ],
+          "answer": "My sister does not clean the house every morning."
+        },
+        {
+          "id": "simpres_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents walk to school on Mondays.\"",
+          "options": [
+            "My parents not walk to school on Mondays.",
+            "My parents does not walk to school on Mondays.",
+            "My parents do not walks to school on Mondays.",
+            "My parents do not walk to school on Mondays."
+          ],
+          "answer": "My parents do not walk to school on Mondays."
+        },
+        {
+          "id": "simpres_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog usually does homework.\"",
+          "options": [
+            "The dog does not does homework usually.",
+            "The dog do not do homework usually.",
+            "The dog does not do homework usually.",
+            "The dog not do homework usually."
+          ],
+          "answer": "The dog does not do homework usually."
+        },
+        {
+          "id": "simpres_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom climbs a tree.\"",
+          "options": [
+            "Tom not climb a tree.",
+            "Tom does not climbs a tree.",
+            "Tom does not climb a tree.",
+            "Tom do not climb a tree."
+          ],
+          "answer": "Tom does not climb a tree."
+        },
+        {
+          "id": "simpres_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"We often climb a tree.\"",
+          "options": [
+            "We does not climb a tree often.",
+            "We do not climb a tree often.",
+            "We not climb a tree often.",
+            "We do not climbs a tree often."
+          ],
+          "answer": "We do not climb a tree often."
+        },
+        {
+          "id": "simpres_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat has lunch every morning.\"",
+          "options": [
+            "Our cat not have lunch every morning.",
+            "Our cat does not has lunch every morning.",
+            "Our cat does not have lunch every morning.",
+            "Our cat do not have lunch every morning."
+          ],
+          "answer": "Our cat does not have lunch every morning."
+        },
+        {
+          "id": "simpres_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"They watch TV.\"",
+          "options": [
+            "They does not watch TV.",
+            "They not watch TV.",
+            "They do not watch TV.",
+            "They do not watches TV."
+          ],
+          "answer": "They do not watch TV."
+        },
+        {
+          "id": "simpres_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister often feeds the cat.\"",
+          "options": [
+            "My sister does not feeds the cat often.",
+            "My sister does not feed the cat often.",
+            "My sister do not feed the cat often.",
+            "My sister not feed the cat often."
+          ],
+          "answer": "My sister does not feed the cat often."
+        },
+        {
+          "id": "simpres_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"She sings a song on Mondays.\"",
+          "options": [
+            "She does not sing a song on Mondays.",
+            "She do not sing a song on Mondays.",
+            "She not sing a song on Mondays.",
+            "She does not sings a song on Mondays."
+          ],
+          "answer": "She does not sing a song on Mondays."
+        },
+        {
+          "id": "simpres_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog always helps their mum.\"",
+          "options": [
+            "The dog does not help their mum always.",
+            "The dog not help their mum always.",
+            "The dog does not helps their mum always.",
+            "The dog do not help their mum always."
+          ],
+          "answer": "The dog does not help their mum always."
+        },
+        {
+          "id": "simpres_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"They climb a tree on Mondays.\"",
+          "options": [
+            "They do not climbs a tree on Mondays.",
+            "They not climb a tree on Mondays.",
+            "They do not climb a tree on Mondays.",
+            "They does not climb a tree on Mondays."
+          ],
+          "answer": "They do not climb a tree on Mondays."
+        },
+        {
+          "id": "simpres_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys wash the dishes every morning.\"",
+          "options": [
+            "The boys does not wash the dishes every morning.",
+            "The boys not wash the dishes every morning.",
+            "The boys do not washes the dishes every morning.",
+            "The boys do not wash the dishes every morning."
+          ],
+          "answer": "The boys do not wash the dishes every morning."
+        },
+        {
+          "id": "simpres_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother swims every week.\"",
+          "options": [
+            "My brother not swim every week.",
+            "My brother do not swim every week.",
+            "My brother does not swims every week.",
+            "My brother does not swim every week."
+          ],
+          "answer": "My brother does not swim every week."
+        },
+        {
+          "id": "simpres_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children always walk to school.\"",
+          "options": [
+            "The children not walk to school always.",
+            "The children do not walks to school always.",
+            "The children does not walk to school always.",
+            "The children do not walk to school always."
+          ],
+          "answer": "The children do not walk to school always."
+        },
+        {
+          "id": "simpres_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog always visits their grandma.\"",
+          "options": [
+            "The dog not visit their grandma always.",
+            "The dog does not visits their grandma always.",
+            "The dog does not visit their grandma always.",
+            "The dog do not visit their grandma always."
+          ],
+          "answer": "The dog does not visit their grandma always."
+        },
+        {
+          "id": "simpres_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog runs every day.\"",
+          "options": [
+            "The dog do not run every day.",
+            "The dog does not runs every day.",
+            "The dog not run every day.",
+            "The dog does not run every day."
+          ],
+          "answer": "The dog does not run every day."
+        },
+        {
+          "id": "simpres_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"He usually washes the dishes.\"",
+          "options": [
+            "He not wash the dishes usually.",
+            "He do not wash the dishes usually.",
+            "He does not washes the dishes usually.",
+            "He does not wash the dishes usually."
+          ],
+          "answer": "He does not wash the dishes usually."
+        },
+        {
+          "id": "simpres_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"He runs.\"",
+          "options": [
+            "He not run.",
+            "He do not run.",
+            "He does not runs.",
+            "He does not run."
+          ],
+          "answer": "He does not run."
+        },
+        {
+          "id": "simpres_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"You clean the house.\"",
+          "options": [
+            "You do not clean the house.",
+            "You do not cleans the house.",
+            "You not clean the house.",
+            "You does not clean the house."
+          ],
+          "answer": "You do not clean the house."
+        },
+        {
+          "id": "simpres_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister usually writes a letter.\"",
+          "options": [
+            "My sister does not writes a letter usually.",
+            "My sister not write a letter usually.",
+            "My sister does not write a letter usually.",
+            "My sister do not write a letter usually."
+          ],
+          "answer": "My sister does not write a letter usually."
+        },
+        {
+          "id": "simpres_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents always dance.\"",
+          "options": [
+            "My parents do not dances always.",
+            "My parents not dance always.",
+            "My parents do not dance always.",
+            "My parents does not dance always."
+          ],
+          "answer": "My parents do not dance always."
+        },
+        {
+          "id": "simpres_c_1",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents walk to school every week.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_2",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am doing homework.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_3",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am watching TV.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_4",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You ran last week.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_5",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is climbing a tree.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_6",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students had lunch last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_7",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister goes to the party.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_8",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You visited their grandma last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_9",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is helping their mum.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_10",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It went to the party last week.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_11",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat swims every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_12",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria usually does homework.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_13",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I listened to music last week.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_14",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They swim on Mondays.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_15",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is playing football.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_16",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria always runs.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_17",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We washed the dishes yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_18",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is playing football.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_19",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He visits their grandma every morning.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_20",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog washed the dishes last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_21",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is drawing a picture.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_22",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We jumped last night.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_23",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She brushed their teeth yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_24",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are riding a bike.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_25",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister brushed their teeth yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_26",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria is studying English.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_27",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She watches TV.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_28",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog does homework every day.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_29",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They often brush their teeth.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_30",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students watched TV yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_31",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am drawing a picture.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_32",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He jumped last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_33",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is helping their mum.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_34",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is cooking dinner.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_35",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents do homework.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_36",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria went to the party last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_37",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys drew a picture last night.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_38",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is riding a bike.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_39",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is visiting their grandma.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_40",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is jumping.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_41",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is brushing their teeth.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_42",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You played football last night.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_43",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom brushed their teeth last week.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_44",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We sang a song last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_45",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister helps their mum every morning.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_46",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is playing football.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_47",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria rode a bike last week.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_48",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students have lunch.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_49",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys often clean the house.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_50",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She swam yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_51",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He drew a picture last night.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_52",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students did homework last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_53",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister watched TV last night.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_54",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It sings a song every morning.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_55",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat usually feeds the cat.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_56",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents often help their mum.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_57",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother visited their grandma yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_58",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I sang a song last week.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_59",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog drew a picture last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_60",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are visiting their grandma.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_61",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys often run.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_62",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We always do homework.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_63",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria usually watches TV.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_64",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She watched TV yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_65",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am running.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_66",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students helped their mum last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_67",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We helped their mum last week.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_68",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children cook dinner.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_69",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I walked to school yesterday.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_70",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is studying English.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_71",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You are helping their mum.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_72",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He often feeds the cat.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_73",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys sang a song last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_74",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is having lunch.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_75",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She jumps on Mondays.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_76",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children wrote a letter yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Present Simple",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_77",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is running.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_78",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am walking to school.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_79",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister always studies English.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_80",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria climbed a tree last week.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_81",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am singing a song.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_82",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students win the game.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_83",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents climbed a tree last night.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_84",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother often runs.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_85",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria listened to music last week.\"",
+          "options": [
+            "Present Simple",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_86",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You study English every day.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_87",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She washes the dishes.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_88",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is swimming.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_89",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom usually climbs a tree.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_90",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys sing a song every day.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_91",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We run every day.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_92",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They did homework yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_93",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I wash the dishes on Mondays.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_94",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is watching TV.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_95",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are dancing.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "simpres_c_96",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys jumped last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_97",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys won the game last week.\"",
+          "options": [
+            "Present Simple",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_c_98",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We always visit their grandma.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_99",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother visits their grandma every morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Present Simple"
+          ],
+          "answer": "Present Simple"
+        },
+        {
+          "id": "simpres_c_100",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students cooked dinner last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Present Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "simpres_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana trepar a un árbol a menudo\" en inglés?",
+          "options": [
+            "My sister climbed a tree often.",
+            "My sister often climbs a tree.",
+            "My sister climbing a tree often.",
+            "My sister often climb a tree."
+          ],
+          "answer": "My sister often climbs a tree."
+        },
+        {
+          "id": "simpres_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos cocinar la cena los lunes\" en inglés?",
+          "options": [
+            "The boys cooks dinner on Mondays.",
+            "The boys cooking dinner on Mondays.",
+            "The boys cooked dinner on Mondays.",
+            "The boys cook dinner on Mondays."
+          ],
+          "answer": "The boys cook dinner on Mondays."
+        },
+        {
+          "id": "simpres_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro ver la tele siempre\" en inglés?",
+          "options": [
+            "The dog always watches TV.",
+            "The dog watched TV always.",
+            "The dog always watch TV.",
+            "The dog watching TV always."
+          ],
+          "answer": "The dog always watches TV."
+        },
+        {
+          "id": "simpres_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano ganar el partido los lunes\" en inglés?",
+          "options": [
+            "My brother wins the game on Mondays.",
+            "My brother winning the game on Mondays.",
+            "My brother won the game on Mondays.",
+            "My brother win the game on Mondays."
+          ],
+          "answer": "My brother wins the game on Mondays."
+        },
+        {
+          "id": "simpres_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano jugar al fútbol todas las semanas\" en inglés?",
+          "options": [
+            "My brother play football every week.",
+            "My brother playing football every week.",
+            "My brother plays football every week.",
+            "My brother played football every week."
+          ],
+          "answer": "My brother plays football every week."
+        },
+        {
+          "id": "simpres_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso ir a la fiesta todas las mañanas\" en inglés?",
+          "options": [
+            "It goes to the party every morning.",
+            "It go to the party every morning.",
+            "It went to the party every morning.",
+            "It going to the party every morning."
+          ],
+          "answer": "It goes to the party every morning."
+        },
+        {
+          "id": "simpres_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos bailar todas las mañanas\" en inglés?",
+          "options": [
+            "The boys danced every morning.",
+            "The boys dancing every morning.",
+            "The boys dances every morning.",
+            "The boys dance every morning."
+          ],
+          "answer": "The boys dance every morning."
+        },
+        {
+          "id": "simpres_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes montar en bici todas las mañanas\" en inglés?",
+          "options": [
+            "The students riding a bike every morning.",
+            "The students rides a bike every morning.",
+            "The students ride a bike every morning.",
+            "The students rode a bike every morning."
+          ],
+          "answer": "The students ride a bike every morning."
+        },
+        {
+          "id": "simpres_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos estudiar inglés los lunes\" en inglés?",
+          "options": [
+            "They studied English on Mondays.",
+            "They study English on Mondays.",
+            "They studies English on Mondays.",
+            "They studying English on Mondays."
+          ],
+          "answer": "They study English on Mondays."
+        },
+        {
+          "id": "simpres_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños ver la tele todas las mañanas\" en inglés?",
+          "options": [
+            "The children watch TV every morning.",
+            "The children watches TV every morning.",
+            "The children watched TV every morning.",
+            "The children watching TV every morning."
+          ],
+          "answer": "The children watch TV every morning."
+        },
+        {
+          "id": "simpres_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños comer a menudo\" en inglés?",
+          "options": [
+            "The children having lunch often.",
+            "The children had lunch often.",
+            "The children often has lunch.",
+            "The children often have lunch."
+          ],
+          "answer": "The children often have lunch."
+        },
+        {
+          "id": "simpres_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes ir a la fiesta todas las semanas\" en inglés?",
+          "options": [
+            "The students go to the party every week.",
+            "The students going to the party every week.",
+            "The students went to the party every week.",
+            "The students goes to the party every week."
+          ],
+          "answer": "The students go to the party every week."
+        },
+        {
+          "id": "simpres_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom correr todos los días\" en inglés?",
+          "options": [
+            "Tom run every day.",
+            "Tom ran every day.",
+            "Tom runs every day.",
+            "Tom running every day."
+          ],
+          "answer": "Tom runs every day."
+        },
+        {
+          "id": "simpres_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato escribir una carta todos los días\" en inglés?",
+          "options": [
+            "Our cat write a letter every day.",
+            "Our cat writes a letter every day.",
+            "Our cat writing a letter every day.",
+            "Our cat wrote a letter every day."
+          ],
+          "answer": "Our cat writes a letter every day."
+        },
+        {
+          "id": "simpres_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos caminar al colegio todas las mañanas\" en inglés?",
+          "options": [
+            "They walking to school every morning.",
+            "They walk to school every morning.",
+            "They walks to school every morning.",
+            "They walked to school every morning."
+          ],
+          "answer": "They walk to school every morning."
+        },
+        {
+          "id": "simpres_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro ganar el partido \" en inglés?",
+          "options": [
+            "The dog wins the game.",
+            "The dog won the game.",
+            "The dog winning the game.",
+            "The dog win the game."
+          ],
+          "answer": "The dog wins the game."
+        },
+        {
+          "id": "simpres_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso limpiar la casa todas las semanas\" en inglés?",
+          "options": [
+            "It cleaning the house every week.",
+            "It cleans the house every week.",
+            "It cleaned the house every week.",
+            "It clean the house every week."
+          ],
+          "answer": "It cleans the house every week."
+        },
+        {
+          "id": "simpres_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso dibujar un dibujo \" en inglés?",
+          "options": [
+            "It draw a picture.",
+            "It drawing a picture.",
+            "It draws a picture.",
+            "It drew a picture."
+          ],
+          "answer": "It draws a picture."
+        },
+        {
+          "id": "simpres_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres trepar a un árbol todas las mañanas\" en inglés?",
+          "options": [
+            "My parents climbing a tree every morning.",
+            "My parents climbed a tree every morning.",
+            "My parents climb a tree every morning.",
+            "My parents climbs a tree every morning."
+          ],
+          "answer": "My parents climb a tree every morning."
+        },
+        {
+          "id": "simpres_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso ir a la fiesta todas las semanas\" en inglés?",
+          "options": [
+            "It went to the party every week.",
+            "It going to the party every week.",
+            "It go to the party every week.",
+            "It goes to the party every week."
+          ],
+          "answer": "It goes to the party every week."
+        },
+        {
+          "id": "simpres_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro ganar el partido los lunes\" en inglés?",
+          "options": [
+            "The dog wins the game on Mondays.",
+            "The dog won the game on Mondays.",
+            "The dog win the game on Mondays.",
+            "The dog winning the game on Mondays."
+          ],
+          "answer": "The dog wins the game on Mondays."
+        },
+        {
+          "id": "simpres_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes ir a la fiesta todas las mañanas\" en inglés?",
+          "options": [
+            "The students going to the party every morning.",
+            "The students went to the party every morning.",
+            "The students goes to the party every morning.",
+            "The students go to the party every morning."
+          ],
+          "answer": "The students go to the party every morning."
+        },
+        {
+          "id": "simpres_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres cocinar la cena todas las semanas\" en inglés?",
+          "options": [
+            "My parents cooking dinner every week.",
+            "My parents cooked dinner every week.",
+            "My parents cook dinner every week.",
+            "My parents cooks dinner every week."
+          ],
+          "answer": "My parents cook dinner every week."
+        },
+        {
+          "id": "simpres_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso ganar el partido siempre\" en inglés?",
+          "options": [
+            "It always wins the game.",
+            "It winning the game always.",
+            "It won the game always.",
+            "It always win the game."
+          ],
+          "answer": "It always wins the game."
+        },
+        {
+          "id": "simpres_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes correr \" en inglés?",
+          "options": [
+            "The students ran.",
+            "The students running.",
+            "The students runs.",
+            "The students run."
+          ],
+          "answer": "The students run."
+        },
+        {
+          "id": "simpres_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos ganar el partido todas las semanas\" en inglés?",
+          "options": [
+            "They wins the game every week.",
+            "They won the game every week.",
+            "They winning the game every week.",
+            "They win the game every week."
+          ],
+          "answer": "They win the game every week."
+        },
+        {
+          "id": "simpres_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato escuchar música a menudo\" en inglés?",
+          "options": [
+            "Our cat listened to music often.",
+            "Our cat listening to music often.",
+            "Our cat often listen to music.",
+            "Our cat often listens to music."
+          ],
+          "answer": "Our cat often listens to music."
+        },
+        {
+          "id": "simpres_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom cocinar la cena normalmente\" en inglés?",
+          "options": [
+            "Tom usually cooks dinner.",
+            "Tom cooking dinner usually.",
+            "Tom cooked dinner usually.",
+            "Tom usually cook dinner."
+          ],
+          "answer": "Tom usually cooks dinner."
+        },
+        {
+          "id": "simpres_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso trepar a un árbol a menudo\" en inglés?",
+          "options": [
+            "It climbing a tree often.",
+            "It climbed a tree often.",
+            "It often climb a tree.",
+            "It often climbs a tree."
+          ],
+          "answer": "It often climbs a tree."
+        },
+        {
+          "id": "simpres_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro bailar siempre\" en inglés?",
+          "options": [
+            "The dog danced always.",
+            "The dog always dance.",
+            "The dog always dances.",
+            "The dog dancing always."
+          ],
+          "answer": "The dog always dances."
+        },
+        {
+          "id": "simpres_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños visitar a su abuela todas las semanas\" en inglés?",
+          "options": [
+            "The children visiting their grandma every week.",
+            "The children visit their grandma every week.",
+            "The children visits their grandma every week.",
+            "The children visited their grandma every week."
+          ],
+          "answer": "The children visit their grandma every week."
+        },
+        {
+          "id": "simpres_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana escribir una carta normalmente\" en inglés?",
+          "options": [
+            "My sister wrote a letter usually.",
+            "My sister usually write a letter.",
+            "My sister writing a letter usually.",
+            "My sister usually writes a letter."
+          ],
+          "answer": "My sister usually writes a letter."
+        },
+        {
+          "id": "simpres_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú dar de comer al gato todos los días\" en inglés?",
+          "options": [
+            "You feeding the cat every day.",
+            "You feeds the cat every day.",
+            "You feed the cat every day.",
+            "You fed the cat every day."
+          ],
+          "answer": "You feed the cat every day."
+        },
+        {
+          "id": "simpres_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes visitar a su abuela los lunes\" en inglés?",
+          "options": [
+            "The students visit their grandma on Mondays.",
+            "The students visited their grandma on Mondays.",
+            "The students visits their grandma on Mondays.",
+            "The students visiting their grandma on Mondays."
+          ],
+          "answer": "The students visit their grandma on Mondays."
+        },
+        {
+          "id": "simpres_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él jugar al fútbol los lunes\" en inglés?",
+          "options": [
+            "He play football on Mondays.",
+            "He played football on Mondays.",
+            "He plays football on Mondays.",
+            "He playing football on Mondays."
+          ],
+          "answer": "He plays football on Mondays."
+        },
+        {
+          "id": "simpres_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú comer todos los días\" en inglés?",
+          "options": [
+            "You had lunch every day.",
+            "You have lunch every day.",
+            "You has lunch every day.",
+            "You having lunch every day."
+          ],
+          "answer": "You have lunch every day."
+        },
+        {
+          "id": "simpres_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes caminar al colegio todas las mañanas\" en inglés?",
+          "options": [
+            "The students walks to school every morning.",
+            "The students walking to school every morning.",
+            "The students walked to school every morning.",
+            "The students walk to school every morning."
+          ],
+          "answer": "The students walk to school every morning."
+        },
+        {
+          "id": "simpres_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana montar en bici \" en inglés?",
+          "options": [
+            "My sister rides a bike.",
+            "My sister ride a bike.",
+            "My sister rode a bike.",
+            "My sister riding a bike."
+          ],
+          "answer": "My sister rides a bike."
+        },
+        {
+          "id": "simpres_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella caminar al colegio todos los días\" en inglés?",
+          "options": [
+            "She walk to school every day.",
+            "She walks to school every day.",
+            "She walking to school every day.",
+            "She walked to school every day."
+          ],
+          "answer": "She walks to school every day."
+        },
+        {
+          "id": "simpres_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres ir a la fiesta todas las mañanas\" en inglés?",
+          "options": [
+            "My parents went to the party every morning.",
+            "My parents going to the party every morning.",
+            "My parents go to the party every morning.",
+            "My parents goes to the party every morning."
+          ],
+          "answer": "My parents go to the party every morning."
+        },
+        {
+          "id": "simpres_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres hacer los deberes siempre\" en inglés?",
+          "options": [
+            "My parents doing homework always.",
+            "My parents did homework always.",
+            "My parents always does homework.",
+            "My parents always do homework."
+          ],
+          "answer": "My parents always do homework."
+        },
+        {
+          "id": "simpres_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú cocinar la cena a menudo\" en inglés?",
+          "options": [
+            "You cooking dinner often.",
+            "You cooked dinner often.",
+            "You often cooks dinner.",
+            "You often cook dinner."
+          ],
+          "answer": "You often cook dinner."
+        },
+        {
+          "id": "simpres_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano ver la tele \" en inglés?",
+          "options": [
+            "My brother watched TV.",
+            "My brother watches TV.",
+            "My brother watching TV.",
+            "My brother watch TV."
+          ],
+          "answer": "My brother watches TV."
+        },
+        {
+          "id": "simpres_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él dibujar un dibujo todas las semanas\" en inglés?",
+          "options": [
+            "He draw a picture every week.",
+            "He drawing a picture every week.",
+            "He drew a picture every week.",
+            "He draws a picture every week."
+          ],
+          "answer": "He draws a picture every week."
+        },
+        {
+          "id": "simpres_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro ver la tele los lunes\" en inglés?",
+          "options": [
+            "The dog watch TV on Mondays.",
+            "The dog watching TV on Mondays.",
+            "The dog watched TV on Mondays.",
+            "The dog watches TV on Mondays."
+          ],
+          "answer": "The dog watches TV on Mondays."
+        },
+        {
+          "id": "simpres_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom dar de comer al gato todas las semanas\" en inglés?",
+          "options": [
+            "Tom feeds the cat every week.",
+            "Tom feeding the cat every week.",
+            "Tom fed the cat every week.",
+            "Tom feed the cat every week."
+          ],
+          "answer": "Tom feeds the cat every week."
+        },
+        {
+          "id": "simpres_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano montar en bici todas las mañanas\" en inglés?",
+          "options": [
+            "My brother riding a bike every morning.",
+            "My brother rode a bike every morning.",
+            "My brother rides a bike every morning.",
+            "My brother ride a bike every morning."
+          ],
+          "answer": "My brother rides a bike every morning."
+        },
+        {
+          "id": "simpres_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso bailar a menudo\" en inglés?",
+          "options": [
+            "It dancing often.",
+            "It often dance.",
+            "It often dances.",
+            "It danced often."
+          ],
+          "answer": "It often dances."
+        },
+        {
+          "id": "simpres_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom hacer los deberes siempre\" en inglés?",
+          "options": [
+            "Tom always do homework.",
+            "Tom did homework always.",
+            "Tom always does homework.",
+            "Tom doing homework always."
+          ],
+          "answer": "Tom always does homework."
+        },
+        {
+          "id": "simpres_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro cocinar la cena siempre\" en inglés?",
+          "options": [
+            "The dog always cook dinner.",
+            "The dog always cooks dinner.",
+            "The dog cooked dinner always.",
+            "The dog cooking dinner always."
+          ],
+          "answer": "The dog always cooks dinner."
+        },
+        {
+          "id": "simpres_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú ir a la fiesta siempre\" en inglés?",
+          "options": [
+            "You always goes to the party.",
+            "You going to the party always.",
+            "You always go to the party.",
+            "You went to the party always."
+          ],
+          "answer": "You always go to the party."
+        },
+        {
+          "id": "simpres_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo montar en bici todos los días\" en inglés?",
+          "options": [
+            "I riding a bike every day.",
+            "I rode a bike every day.",
+            "I rides a bike every day.",
+            "I ride a bike every day."
+          ],
+          "answer": "I ride a bike every day."
+        },
+        {
+          "id": "simpres_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella correr todos los días\" en inglés?",
+          "options": [
+            "She ran every day.",
+            "She running every day.",
+            "She run every day.",
+            "She runs every day."
+          ],
+          "answer": "She runs every day."
+        },
+        {
+          "id": "simpres_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano comer \" en inglés?",
+          "options": [
+            "My brother having lunch.",
+            "My brother has lunch.",
+            "My brother have lunch.",
+            "My brother had lunch."
+          ],
+          "answer": "My brother has lunch."
+        },
+        {
+          "id": "simpres_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana visitar a su abuela a menudo\" en inglés?",
+          "options": [
+            "My sister visiting their grandma often.",
+            "My sister often visits their grandma.",
+            "My sister visited their grandma often.",
+            "My sister often visit their grandma."
+          ],
+          "answer": "My sister often visits their grandma."
+        },
+        {
+          "id": "simpres_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos fregar los platos siempre\" en inglés?",
+          "options": [
+            "They washed the dishes always.",
+            "They washing the dishes always.",
+            "They always wash the dishes.",
+            "They always washes the dishes."
+          ],
+          "answer": "They always wash the dishes."
+        },
+        {
+          "id": "simpres_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo montar en bici los lunes\" en inglés?",
+          "options": [
+            "I rode a bike on Mondays.",
+            "I riding a bike on Mondays.",
+            "I ride a bike on Mondays.",
+            "I rides a bike on Mondays."
+          ],
+          "answer": "I ride a bike on Mondays."
+        },
+        {
+          "id": "simpres_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú hacer los deberes \" en inglés?",
+          "options": [
+            "You do homework.",
+            "You did homework.",
+            "You doing homework.",
+            "You does homework."
+          ],
+          "answer": "You do homework."
+        },
+        {
+          "id": "simpres_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana cantar una canción siempre\" en inglés?",
+          "options": [
+            "My sister sang a song always.",
+            "My sister always sings a song.",
+            "My sister singing a song always.",
+            "My sister always sing a song."
+          ],
+          "answer": "My sister always sings a song."
+        },
+        {
+          "id": "simpres_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes cantar una canción todas las mañanas\" en inglés?",
+          "options": [
+            "The students sings a song every morning.",
+            "The students singing a song every morning.",
+            "The students sang a song every morning.",
+            "The students sing a song every morning."
+          ],
+          "answer": "The students sing a song every morning."
+        },
+        {
+          "id": "simpres_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos dar de comer al gato siempre\" en inglés?",
+          "options": [
+            "The boys fed the cat always.",
+            "The boys feeding the cat always.",
+            "The boys always feeds the cat.",
+            "The boys always feed the cat."
+          ],
+          "answer": "The boys always feed the cat."
+        },
+        {
+          "id": "simpres_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes cepillarse los dientes normalmente\" en inglés?",
+          "options": [
+            "The students usually brushes their teeth.",
+            "The students brushed their teeth usually.",
+            "The students brushing their teeth usually.",
+            "The students usually brush their teeth."
+          ],
+          "answer": "The students usually brush their teeth."
+        },
+        {
+          "id": "simpres_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú montar en bici todas las mañanas\" en inglés?",
+          "options": [
+            "You rode a bike every morning.",
+            "You riding a bike every morning.",
+            "You rides a bike every morning.",
+            "You ride a bike every morning."
+          ],
+          "answer": "You ride a bike every morning."
+        },
+        {
+          "id": "simpres_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato jugar al fútbol a menudo\" en inglés?",
+          "options": [
+            "Our cat often play football.",
+            "Our cat played football often.",
+            "Our cat often plays football.",
+            "Our cat playing football often."
+          ],
+          "answer": "Our cat often plays football."
+        },
+        {
+          "id": "simpres_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom cepillarse los dientes todos los días\" en inglés?",
+          "options": [
+            "Tom brushing their teeth every day.",
+            "Tom brush their teeth every day.",
+            "Tom brushes their teeth every day.",
+            "Tom brushed their teeth every day."
+          ],
+          "answer": "Tom brushes their teeth every day."
+        },
+        {
+          "id": "simpres_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom dar de comer al gato todas las mañanas\" en inglés?",
+          "options": [
+            "Tom feeds the cat every morning.",
+            "Tom feed the cat every morning.",
+            "Tom feeding the cat every morning.",
+            "Tom fed the cat every morning."
+          ],
+          "answer": "Tom feeds the cat every morning."
+        },
+        {
+          "id": "simpres_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños correr todas las mañanas\" en inglés?",
+          "options": [
+            "The children ran every morning.",
+            "The children run every morning.",
+            "The children running every morning.",
+            "The children runs every morning."
+          ],
+          "answer": "The children run every morning."
+        },
+        {
+          "id": "simpres_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María escribir una carta todos los días\" en inglés?",
+          "options": [
+            "Maria writing a letter every day.",
+            "Maria write a letter every day.",
+            "Maria writes a letter every day.",
+            "Maria wrote a letter every day."
+          ],
+          "answer": "Maria writes a letter every day."
+        },
+        {
+          "id": "simpres_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños ver la tele a menudo\" en inglés?",
+          "options": [
+            "The children watching TV often.",
+            "The children often watches TV.",
+            "The children often watch TV.",
+            "The children watched TV often."
+          ],
+          "answer": "The children often watch TV."
+        },
+        {
+          "id": "simpres_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos montar en bici todas las semanas\" en inglés?",
+          "options": [
+            "They ride a bike every week.",
+            "They riding a bike every week.",
+            "They rides a bike every week.",
+            "They rode a bike every week."
+          ],
+          "answer": "They ride a bike every week."
+        },
+        {
+          "id": "simpres_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú escuchar música todas las semanas\" en inglés?",
+          "options": [
+            "You listen to music every week.",
+            "You listening to music every week.",
+            "You listens to music every week.",
+            "You listened to music every week."
+          ],
+          "answer": "You listen to music every week."
+        },
+        {
+          "id": "simpres_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos ir a la fiesta todas las semanas\" en inglés?",
+          "options": [
+            "The boys going to the party every week.",
+            "The boys went to the party every week.",
+            "The boys goes to the party every week.",
+            "The boys go to the party every week."
+          ],
+          "answer": "The boys go to the party every week."
+        },
+        {
+          "id": "simpres_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo bailar normalmente\" en inglés?",
+          "options": [
+            "I dancing usually.",
+            "I usually dances.",
+            "I danced usually.",
+            "I usually dance."
+          ],
+          "answer": "I usually dance."
+        },
+        {
+          "id": "simpres_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él escribir una carta normalmente\" en inglés?",
+          "options": [
+            "He writing a letter usually.",
+            "He wrote a letter usually.",
+            "He usually write a letter.",
+            "He usually writes a letter."
+          ],
+          "answer": "He usually writes a letter."
+        },
+        {
+          "id": "simpres_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano estudiar inglés los lunes\" en inglés?",
+          "options": [
+            "My brother study English on Mondays.",
+            "My brother studying English on Mondays.",
+            "My brother studied English on Mondays.",
+            "My brother studies English on Mondays."
+          ],
+          "answer": "My brother studies English on Mondays."
+        },
+        {
+          "id": "simpres_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros escribir una carta todas las mañanas\" en inglés?",
+          "options": [
+            "We writing a letter every morning.",
+            "We wrote a letter every morning.",
+            "We writes a letter every morning.",
+            "We write a letter every morning."
+          ],
+          "answer": "We write a letter every morning."
+        },
+        {
+          "id": "simpres_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú ir a la fiesta normalmente\" en inglés?",
+          "options": [
+            "You usually go to the party.",
+            "You going to the party usually.",
+            "You usually goes to the party.",
+            "You went to the party usually."
+          ],
+          "answer": "You usually go to the party."
+        },
+        {
+          "id": "simpres_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso estudiar inglés los lunes\" en inglés?",
+          "options": [
+            "It study English on Mondays.",
+            "It studied English on Mondays.",
+            "It studies English on Mondays.",
+            "It studying English on Mondays."
+          ],
+          "answer": "It studies English on Mondays."
+        },
+        {
+          "id": "simpres_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María correr todas las semanas\" en inglés?",
+          "options": [
+            "Maria running every week.",
+            "Maria run every week.",
+            "Maria runs every week.",
+            "Maria ran every week."
+          ],
+          "answer": "Maria runs every week."
+        },
+        {
+          "id": "simpres_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú dar de comer al gato siempre\" en inglés?",
+          "options": [
+            "You feeding the cat always.",
+            "You always feeds the cat.",
+            "You always feed the cat.",
+            "You fed the cat always."
+          ],
+          "answer": "You always feed the cat."
+        },
+        {
+          "id": "simpres_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana ver la tele todas las semanas\" en inglés?",
+          "options": [
+            "My sister watch TV every week.",
+            "My sister watches TV every week.",
+            "My sister watched TV every week.",
+            "My sister watching TV every week."
+          ],
+          "answer": "My sister watches TV every week."
+        },
+        {
+          "id": "simpres_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres saltar a menudo\" en inglés?",
+          "options": [
+            "My parents often jumps.",
+            "My parents often jump.",
+            "My parents jumping often.",
+            "My parents jumped often."
+          ],
+          "answer": "My parents often jump."
+        },
+        {
+          "id": "simpres_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros ir a la fiesta siempre\" en inglés?",
+          "options": [
+            "We always goes to the party.",
+            "We went to the party always.",
+            "We going to the party always.",
+            "We always go to the party."
+          ],
+          "answer": "We always go to the party."
+        },
+        {
+          "id": "simpres_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros nadar los lunes\" en inglés?",
+          "options": [
+            "We swims on Mondays.",
+            "We swam on Mondays.",
+            "We swim on Mondays.",
+            "We swimming on Mondays."
+          ],
+          "answer": "We swim on Mondays."
+        },
+        {
+          "id": "simpres_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso escuchar música todas las semanas\" en inglés?",
+          "options": [
+            "It listen to music every week.",
+            "It listening to music every week.",
+            "It listens to music every week.",
+            "It listened to music every week."
+          ],
+          "answer": "It listens to music every week."
+        },
+        {
+          "id": "simpres_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom ganar el partido todas las mañanas\" en inglés?",
+          "options": [
+            "Tom winning the game every morning.",
+            "Tom win the game every morning.",
+            "Tom wins the game every morning.",
+            "Tom won the game every morning."
+          ],
+          "answer": "Tom wins the game every morning."
+        },
+        {
+          "id": "simpres_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro trepar a un árbol siempre\" en inglés?",
+          "options": [
+            "The dog always climbs a tree.",
+            "The dog always climb a tree.",
+            "The dog climbed a tree always.",
+            "The dog climbing a tree always."
+          ],
+          "answer": "The dog always climbs a tree."
+        },
+        {
+          "id": "simpres_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres limpiar la casa \" en inglés?",
+          "options": [
+            "My parents cleaning the house.",
+            "My parents clean the house.",
+            "My parents cleans the house.",
+            "My parents cleaned the house."
+          ],
+          "answer": "My parents clean the house."
+        },
+        {
+          "id": "simpres_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato comer a menudo\" en inglés?",
+          "options": [
+            "Our cat had lunch often.",
+            "Our cat often has lunch.",
+            "Our cat often have lunch.",
+            "Our cat having lunch often."
+          ],
+          "answer": "Our cat often has lunch."
+        },
+        {
+          "id": "simpres_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes escuchar música a menudo\" en inglés?",
+          "options": [
+            "The students listened to music often.",
+            "The students often listens to music.",
+            "The students listening to music often.",
+            "The students often listen to music."
+          ],
+          "answer": "The students often listen to music."
+        },
+        {
+          "id": "simpres_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo ayudar a su madre a menudo\" en inglés?",
+          "options": [
+            "I helping their mum often.",
+            "I often helps their mum.",
+            "I often help their mum.",
+            "I helped their mum often."
+          ],
+          "answer": "I often help their mum."
+        },
+        {
+          "id": "simpres_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro caminar al colegio todos los días\" en inglés?",
+          "options": [
+            "The dog walking to school every day.",
+            "The dog walked to school every day.",
+            "The dog walks to school every day.",
+            "The dog walk to school every day."
+          ],
+          "answer": "The dog walks to school every day."
+        },
+        {
+          "id": "simpres_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana ganar el partido normalmente\" en inglés?",
+          "options": [
+            "My sister usually win the game.",
+            "My sister winning the game usually.",
+            "My sister usually wins the game.",
+            "My sister won the game usually."
+          ],
+          "answer": "My sister usually wins the game."
+        },
+        {
+          "id": "simpres_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él ayudar a su madre \" en inglés?",
+          "options": [
+            "He help their mum.",
+            "He helps their mum.",
+            "He helped their mum.",
+            "He helping their mum."
+          ],
+          "answer": "He helps their mum."
+        },
+        {
+          "id": "simpres_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano correr todos los días\" en inglés?",
+          "options": [
+            "My brother runs every day.",
+            "My brother run every day.",
+            "My brother running every day.",
+            "My brother ran every day."
+          ],
+          "answer": "My brother runs every day."
+        },
+        {
+          "id": "simpres_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él cocinar la cena todas las mañanas\" en inglés?",
+          "options": [
+            "He cooking dinner every morning.",
+            "He cooked dinner every morning.",
+            "He cooks dinner every morning.",
+            "He cook dinner every morning."
+          ],
+          "answer": "He cooks dinner every morning."
+        },
+        {
+          "id": "simpres_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato trepar a un árbol todas las mañanas\" en inglés?",
+          "options": [
+            "Our cat climbing a tree every morning.",
+            "Our cat climb a tree every morning.",
+            "Our cat climbed a tree every morning.",
+            "Our cat climbs a tree every morning."
+          ],
+          "answer": "Our cat climbs a tree every morning."
+        },
+        {
+          "id": "simpres_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato dibujar un dibujo a menudo\" en inglés?",
+          "options": [
+            "Our cat often draw a picture.",
+            "Our cat often draws a picture.",
+            "Our cat drawing a picture often.",
+            "Our cat drew a picture often."
+          ],
+          "answer": "Our cat often draws a picture."
+        },
+        {
+          "id": "simpres_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes estudiar inglés todas las mañanas\" en inglés?",
+          "options": [
+            "The students studying English every morning.",
+            "The students studied English every morning.",
+            "The students study English every morning.",
+            "The students studies English every morning."
+          ],
+          "answer": "The students study English every morning."
+        },
+        {
+          "id": "simpres_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo nadar todas las mañanas\" en inglés?",
+          "options": [
+            "I swimming every morning.",
+            "I swam every morning.",
+            "I swims every morning.",
+            "I swim every morning."
+          ],
+          "answer": "I swim every morning."
+        }
+      ],
+      "timeMarkers": [
+        {
+          "left": "every day",
+          "right": "He plays football every day."
+        },
+        {
+          "left": "always",
+          "right": "She always studies English."
+        },
+        {
+          "left": "usually",
+          "right": "We usually watch TV."
+        },
+        {
+          "left": "on Mondays",
+          "right": "They clean the house on Mondays."
+        },
+        {
+          "left": "every morning",
+          "right": "I read a book every morning."
+        },
+        {
+          "left": "often",
+          "right": "My sister often sings a song."
+        },
+        {
+          "left": "every week",
+          "right": "The students do homework every week."
+        },
+        {
+          "left": "sometimes",
+          "right": "You sometimes cook dinner."
+        },
+        {
+          "left": "every Sunday",
+          "right": "We have lunch every Sunday."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4749 @@
+{
+  "units": [
+    {
+      "id": "past-continuous",
+      "title": "Past Continuous",
+      "emoji": "🟤",
+      "exercises": [
+        {
+          "id": "pastcont_a_1",
+          "type": "A",
+          "question": "We ___ swimming at 5 o'clock yesterday.",
+          "options": [
+            "were",
+            "are",
+            "am",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_2",
+          "type": "A",
+          "question": "It ___ visiting their grandma at 5 o'clock yesterday.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_3",
+          "type": "A",
+          "question": "He ___ studying English this time yesterday.",
+          "options": [
+            "are",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_4",
+          "type": "A",
+          "question": "The dog ___ studying English last night.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_5",
+          "type": "A",
+          "question": "Our cat ___ jumping at 5 o'clock yesterday.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_6",
+          "type": "A",
+          "question": "My sister ___ doing homework at 5 o'clock yesterday.",
+          "options": [
+            "is",
+            "was",
+            "am",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_7",
+          "type": "A",
+          "question": "He ___ riding a bike last night.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_8",
+          "type": "A",
+          "question": "My brother ___ going to the party yesterday afternoon.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_9",
+          "type": "A",
+          "question": "The boys ___ riding a bike last Sunday morning.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_10",
+          "type": "A",
+          "question": "It ___ visiting their grandma this time yesterday.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_11",
+          "type": "A",
+          "question": "They ___ riding a bike this time yesterday.",
+          "options": [
+            "were",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_12",
+          "type": "A",
+          "question": "You ___ going to the party at 5 o'clock yesterday.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_13",
+          "type": "A",
+          "question": "He ___ going to the party this time yesterday.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_14",
+          "type": "A",
+          "question": "My sister ___ dancing this time yesterday.",
+          "options": [
+            "were",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_15",
+          "type": "A",
+          "question": "He ___ having lunch this time yesterday.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_16",
+          "type": "A",
+          "question": "My parents ___ playing football at 5 o'clock yesterday.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_17",
+          "type": "A",
+          "question": "The students ___ singing a song last night.",
+          "options": [
+            "is",
+            "was",
+            "am",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_18",
+          "type": "A",
+          "question": "Maria ___ visiting their grandma last Sunday morning.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_19",
+          "type": "A",
+          "question": "The dog ___ cooking dinner last Sunday morning.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_20",
+          "type": "A",
+          "question": "You ___ riding a bike last Sunday morning.",
+          "options": [
+            "am",
+            "are",
+            "is",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_21",
+          "type": "A",
+          "question": "My brother ___ having lunch yesterday afternoon.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_22",
+          "type": "A",
+          "question": "We ___ playing football last Sunday morning.",
+          "options": [
+            "were",
+            "are",
+            "am",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_23",
+          "type": "A",
+          "question": "She ___ having lunch yesterday afternoon.",
+          "options": [
+            "am",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_24",
+          "type": "A",
+          "question": "The boys ___ swimming last night.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_25",
+          "type": "A",
+          "question": "My brother ___ watching TV last Sunday morning.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_26",
+          "type": "A",
+          "question": "I ___ brushing their teeth last Sunday morning.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_27",
+          "type": "A",
+          "question": "Our cat ___ helping their mum last Sunday morning.",
+          "options": [
+            "am",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_28",
+          "type": "A",
+          "question": "My parents ___ brushing their teeth last Sunday morning.",
+          "options": [
+            "am",
+            "are",
+            "were",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_29",
+          "type": "A",
+          "question": "Maria ___ watching TV yesterday afternoon.",
+          "options": [
+            "am",
+            "was",
+            "were",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_30",
+          "type": "A",
+          "question": "We ___ cooking dinner last Sunday morning.",
+          "options": [
+            "am",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_31",
+          "type": "A",
+          "question": "He ___ watching TV last Sunday morning.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_32",
+          "type": "A",
+          "question": "The boys ___ running last night.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_33",
+          "type": "A",
+          "question": "They ___ playing football this time yesterday.",
+          "options": [
+            "were",
+            "are",
+            "is",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_34",
+          "type": "A",
+          "question": "We ___ brushing their teeth yesterday afternoon.",
+          "options": [
+            "am",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_35",
+          "type": "A",
+          "question": "My parents ___ playing football yesterday afternoon.",
+          "options": [
+            "were",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_36",
+          "type": "A",
+          "question": "The boys ___ helping their mum last Sunday morning.",
+          "options": [
+            "am",
+            "were",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_37",
+          "type": "A",
+          "question": "The children ___ cooking dinner last night.",
+          "options": [
+            "am",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_38",
+          "type": "A",
+          "question": "Tom ___ washing the dishes this time yesterday.",
+          "options": [
+            "am",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_39",
+          "type": "A",
+          "question": "We ___ cooking dinner yesterday afternoon.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_40",
+          "type": "A",
+          "question": "Our cat ___ running last night.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_41",
+          "type": "A",
+          "question": "The students ___ brushing their teeth last Sunday morning.",
+          "options": [
+            "is",
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_42",
+          "type": "A",
+          "question": "Our cat ___ swimming last night.",
+          "options": [
+            "were",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_43",
+          "type": "A",
+          "question": "They ___ going to the party yesterday afternoon.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_44",
+          "type": "A",
+          "question": "My parents ___ cleaning the house at 5 o'clock yesterday.",
+          "options": [
+            "is",
+            "am",
+            "were",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_45",
+          "type": "A",
+          "question": "My brother ___ studying English yesterday afternoon.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_46",
+          "type": "A",
+          "question": "My brother ___ walking to school at 5 o'clock yesterday.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_47",
+          "type": "A",
+          "question": "Maria ___ feeding the cat this time yesterday.",
+          "options": [
+            "am",
+            "was",
+            "is",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_48",
+          "type": "A",
+          "question": "The boys ___ drawing a picture last Sunday morning.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_49",
+          "type": "A",
+          "question": "Maria ___ dancing yesterday afternoon.",
+          "options": [
+            "am",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_50",
+          "type": "A",
+          "question": "She ___ swimming last Sunday morning.",
+          "options": [
+            "is",
+            "am",
+            "were",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_51",
+          "type": "A",
+          "question": "You ___ singing a song yesterday afternoon.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_52",
+          "type": "A",
+          "question": "My brother ___ walking to school last Sunday morning.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_53",
+          "type": "A",
+          "question": "It ___ brushing their teeth last night.",
+          "options": [
+            "was",
+            "is",
+            "am",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_54",
+          "type": "A",
+          "question": "My brother ___ helping their mum yesterday afternoon.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_55",
+          "type": "A",
+          "question": "He ___ running last Sunday morning.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_56",
+          "type": "A",
+          "question": "We ___ having lunch yesterday afternoon.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_57",
+          "type": "A",
+          "question": "The children ___ washing the dishes this time yesterday.",
+          "options": [
+            "are",
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_58",
+          "type": "A",
+          "question": "Maria ___ feeding the cat last night.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_59",
+          "type": "A",
+          "question": "Our cat ___ feeding the cat this time yesterday.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_60",
+          "type": "A",
+          "question": "We ___ writing a letter yesterday afternoon.",
+          "options": [
+            "were",
+            "are",
+            "am",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_61",
+          "type": "A",
+          "question": "My brother ___ studying English last Sunday morning.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_62",
+          "type": "A",
+          "question": "My sister ___ swimming last night.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_63",
+          "type": "A",
+          "question": "The boys ___ jumping last Sunday morning.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_64",
+          "type": "A",
+          "question": "Our cat ___ singing a song at 5 o'clock yesterday.",
+          "options": [
+            "am",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_65",
+          "type": "A",
+          "question": "My brother ___ helping their mum this time yesterday.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_66",
+          "type": "A",
+          "question": "My brother ___ visiting their grandma at 5 o'clock yesterday.",
+          "options": [
+            "am",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_67",
+          "type": "A",
+          "question": "The children ___ helping their mum this time yesterday.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_68",
+          "type": "A",
+          "question": "They ___ riding a bike at 5 o'clock yesterday.",
+          "options": [
+            "is",
+            "were",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_69",
+          "type": "A",
+          "question": "Maria ___ brushing their teeth yesterday afternoon.",
+          "options": [
+            "am",
+            "was",
+            "is",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_70",
+          "type": "A",
+          "question": "My parents ___ doing homework at 5 o'clock yesterday.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_71",
+          "type": "A",
+          "question": "You ___ going to the party yesterday afternoon.",
+          "options": [
+            "are",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_72",
+          "type": "A",
+          "question": "They ___ washing the dishes yesterday afternoon.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_73",
+          "type": "A",
+          "question": "Maria ___ writing a letter yesterday afternoon.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_74",
+          "type": "A",
+          "question": "The dog ___ climbing a tree yesterday afternoon.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_75",
+          "type": "A",
+          "question": "My parents ___ studying English at 5 o'clock yesterday.",
+          "options": [
+            "are",
+            "was",
+            "were",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_76",
+          "type": "A",
+          "question": "The children ___ walking to school at 5 o'clock yesterday.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_77",
+          "type": "A",
+          "question": "My brother ___ playing football last Sunday morning.",
+          "options": [
+            "is",
+            "am",
+            "were",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_78",
+          "type": "A",
+          "question": "I ___ studying English last Sunday morning.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_79",
+          "type": "A",
+          "question": "I ___ playing football yesterday afternoon.",
+          "options": [
+            "were",
+            "am",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_80",
+          "type": "A",
+          "question": "We ___ helping their mum last night.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_81",
+          "type": "A",
+          "question": "The boys ___ cooking dinner at 5 o'clock yesterday.",
+          "options": [
+            "am",
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_82",
+          "type": "A",
+          "question": "We ___ washing the dishes last Sunday morning.",
+          "options": [
+            "are",
+            "were",
+            "am",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_83",
+          "type": "A",
+          "question": "The boys ___ winning the game last night.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_84",
+          "type": "A",
+          "question": "They ___ cooking dinner this time yesterday.",
+          "options": [
+            "were",
+            "are",
+            "was",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_85",
+          "type": "A",
+          "question": "The children ___ watching TV this time yesterday.",
+          "options": [
+            "were",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_86",
+          "type": "A",
+          "question": "The boys ___ drawing a picture yesterday afternoon.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_87",
+          "type": "A",
+          "question": "We ___ studying English last night.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_88",
+          "type": "A",
+          "question": "They ___ writing a letter yesterday afternoon.",
+          "options": [
+            "is",
+            "am",
+            "were",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_89",
+          "type": "A",
+          "question": "It ___ doing homework last Sunday morning.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_90",
+          "type": "A",
+          "question": "The dog ___ writing a letter yesterday afternoon.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_91",
+          "type": "A",
+          "question": "We ___ cooking dinner at 5 o'clock yesterday.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_92",
+          "type": "A",
+          "question": "You ___ climbing a tree last Sunday morning.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_93",
+          "type": "A",
+          "question": "It ___ running last Sunday morning.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_94",
+          "type": "A",
+          "question": "My sister ___ brushing their teeth at 5 o'clock yesterday.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_95",
+          "type": "A",
+          "question": "Our cat ___ cleaning the house yesterday afternoon.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_96",
+          "type": "A",
+          "question": "He ___ doing homework last Sunday morning.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_97",
+          "type": "A",
+          "question": "My brother ___ studying English last night.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_98",
+          "type": "A",
+          "question": "The dog ___ dancing yesterday afternoon.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "pastcont_a_99",
+          "type": "A",
+          "question": "The boys ___ doing homework last night.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_a_100",
+          "type": "A",
+          "question": "You ___ cooking dinner at 5 o'clock yesterday.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "pastcont_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were running this time yesterday.\"",
+          "options": [
+            "My parents were not running this time yesterday.",
+            "My parents are not running this time yesterday.",
+            "My parents is not running this time yesterday.",
+            "My parents was not running this time yesterday."
+          ],
+          "answer": "My parents were not running this time yesterday."
+        },
+        {
+          "id": "pastcont_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"She was listening to music last night.\"",
+          "options": [
+            "She was not listening to music last night.",
+            "She were not listening to music last night.",
+            "She am not listening to music last night.",
+            "She are not listening to music last night."
+          ],
+          "answer": "She was not listening to music last night."
+        },
+        {
+          "id": "pastcont_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were washing the dishes this time yesterday.\"",
+          "options": [
+            "They was not washing the dishes this time yesterday.",
+            "They were not washing the dishes this time yesterday.",
+            "They is not washing the dishes this time yesterday.",
+            "They am not washing the dishes this time yesterday."
+          ],
+          "answer": "They were not washing the dishes this time yesterday."
+        },
+        {
+          "id": "pastcont_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was listening to music last night.\"",
+          "options": [
+            "Our cat are not listening to music last night.",
+            "Our cat were not listening to music last night.",
+            "Our cat is not listening to music last night.",
+            "Our cat was not listening to music last night."
+          ],
+          "answer": "Our cat was not listening to music last night."
+        },
+        {
+          "id": "pastcont_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were walking to school at 5 o'clock yesterday.\"",
+          "options": [
+            "They were not walking to school at 5 o'clock yesterday.",
+            "They are not walking to school at 5 o'clock yesterday.",
+            "They am not walking to school at 5 o'clock yesterday.",
+            "They is not walking to school at 5 o'clock yesterday."
+          ],
+          "answer": "They were not walking to school at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was climbing a tree at 5 o'clock yesterday.\"",
+          "options": [
+            "I are not climbing a tree at 5 o'clock yesterday.",
+            "I were not climbing a tree at 5 o'clock yesterday.",
+            "I was not climbing a tree at 5 o'clock yesterday.",
+            "I is not climbing a tree at 5 o'clock yesterday."
+          ],
+          "answer": "I was not climbing a tree at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was listening to music at 5 o'clock yesterday.\"",
+          "options": [
+            "I were not listening to music at 5 o'clock yesterday.",
+            "I am not listening to music at 5 o'clock yesterday.",
+            "I was not listening to music at 5 o'clock yesterday.",
+            "I is not listening to music at 5 o'clock yesterday."
+          ],
+          "answer": "I was not listening to music at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were writing a letter this time yesterday.\"",
+          "options": [
+            "They are not writing a letter this time yesterday.",
+            "They am not writing a letter this time yesterday.",
+            "They were not writing a letter this time yesterday.",
+            "They was not writing a letter this time yesterday."
+          ],
+          "answer": "They were not writing a letter this time yesterday."
+        },
+        {
+          "id": "pastcont_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was winning the game at 5 o'clock yesterday.\"",
+          "options": [
+            "It are not winning the game at 5 o'clock yesterday.",
+            "It was not winning the game at 5 o'clock yesterday.",
+            "It were not winning the game at 5 o'clock yesterday.",
+            "It is not winning the game at 5 o'clock yesterday."
+          ],
+          "answer": "It was not winning the game at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was feeding the cat last night.\"",
+          "options": [
+            "Tom are not feeding the cat last night.",
+            "Tom am not feeding the cat last night.",
+            "Tom is not feeding the cat last night.",
+            "Tom was not feeding the cat last night."
+          ],
+          "answer": "Tom was not feeding the cat last night."
+        },
+        {
+          "id": "pastcont_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were writing a letter last Sunday morning.\"",
+          "options": [
+            "They is not writing a letter last Sunday morning.",
+            "They were not writing a letter last Sunday morning.",
+            "They was not writing a letter last Sunday morning.",
+            "They are not writing a letter last Sunday morning."
+          ],
+          "answer": "They were not writing a letter last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were studying English last night.\"",
+          "options": [
+            "The children are not studying English last night.",
+            "The children was not studying English last night.",
+            "The children were not studying English last night.",
+            "The children is not studying English last night."
+          ],
+          "answer": "The children were not studying English last night."
+        },
+        {
+          "id": "pastcont_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was listening to music last Sunday morning.\"",
+          "options": [
+            "My sister were not listening to music last Sunday morning.",
+            "My sister am not listening to music last Sunday morning.",
+            "My sister was not listening to music last Sunday morning.",
+            "My sister is not listening to music last Sunday morning."
+          ],
+          "answer": "My sister was not listening to music last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was listening to music yesterday afternoon.\"",
+          "options": [
+            "It is not listening to music yesterday afternoon.",
+            "It was not listening to music yesterday afternoon.",
+            "It are not listening to music yesterday afternoon.",
+            "It am not listening to music yesterday afternoon."
+          ],
+          "answer": "It was not listening to music yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were visiting their grandma at 5 o'clock yesterday.\"",
+          "options": [
+            "The boys was not visiting their grandma at 5 o'clock yesterday.",
+            "The boys were not visiting their grandma at 5 o'clock yesterday.",
+            "The boys are not visiting their grandma at 5 o'clock yesterday.",
+            "The boys is not visiting their grandma at 5 o'clock yesterday."
+          ],
+          "answer": "The boys were not visiting their grandma at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was jumping this time yesterday.\"",
+          "options": [
+            "He are not jumping this time yesterday.",
+            "He am not jumping this time yesterday.",
+            "He is not jumping this time yesterday.",
+            "He was not jumping this time yesterday."
+          ],
+          "answer": "He was not jumping this time yesterday."
+        },
+        {
+          "id": "pastcont_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was singing a song at 5 o'clock yesterday.\"",
+          "options": [
+            "The dog is not singing a song at 5 o'clock yesterday.",
+            "The dog am not singing a song at 5 o'clock yesterday.",
+            "The dog was not singing a song at 5 o'clock yesterday.",
+            "The dog are not singing a song at 5 o'clock yesterday."
+          ],
+          "answer": "The dog was not singing a song at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was swimming yesterday afternoon.\"",
+          "options": [
+            "My brother were not swimming yesterday afternoon.",
+            "My brother was not swimming yesterday afternoon.",
+            "My brother am not swimming yesterday afternoon.",
+            "My brother are not swimming yesterday afternoon."
+          ],
+          "answer": "My brother was not swimming yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was doing homework at 5 o'clock yesterday.\"",
+          "options": [
+            "The dog are not doing homework at 5 o'clock yesterday.",
+            "The dog was not doing homework at 5 o'clock yesterday.",
+            "The dog were not doing homework at 5 o'clock yesterday.",
+            "The dog is not doing homework at 5 o'clock yesterday."
+          ],
+          "answer": "The dog was not doing homework at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was listening to music last Sunday morning.\"",
+          "options": [
+            "It was not listening to music last Sunday morning.",
+            "It were not listening to music last Sunday morning.",
+            "It am not listening to music last Sunday morning.",
+            "It is not listening to music last Sunday morning."
+          ],
+          "answer": "It was not listening to music last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were doing homework yesterday afternoon.\"",
+          "options": [
+            "The boys are not doing homework yesterday afternoon.",
+            "The boys were not doing homework yesterday afternoon.",
+            "The boys am not doing homework yesterday afternoon.",
+            "The boys is not doing homework yesterday afternoon."
+          ],
+          "answer": "The boys were not doing homework yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was dancing yesterday afternoon.\"",
+          "options": [
+            "Tom is not dancing yesterday afternoon.",
+            "Tom was not dancing yesterday afternoon.",
+            "Tom are not dancing yesterday afternoon.",
+            "Tom were not dancing yesterday afternoon."
+          ],
+          "answer": "Tom was not dancing yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were going to the party last night.\"",
+          "options": [
+            "They was not going to the party last night.",
+            "They am not going to the party last night.",
+            "They is not going to the party last night.",
+            "They were not going to the party last night."
+          ],
+          "answer": "They were not going to the party last night."
+        },
+        {
+          "id": "pastcont_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were helping their mum at 5 o'clock yesterday.\"",
+          "options": [
+            "They am not helping their mum at 5 o'clock yesterday.",
+            "They is not helping their mum at 5 o'clock yesterday.",
+            "They were not helping their mum at 5 o'clock yesterday.",
+            "They are not helping their mum at 5 o'clock yesterday."
+          ],
+          "answer": "They were not helping their mum at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was playing football last Sunday morning.\"",
+          "options": [
+            "It was not playing football last Sunday morning.",
+            "It were not playing football last Sunday morning.",
+            "It are not playing football last Sunday morning.",
+            "It am not playing football last Sunday morning."
+          ],
+          "answer": "It was not playing football last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were brushing their teeth last Sunday morning.\"",
+          "options": [
+            "The students is not brushing their teeth last Sunday morning.",
+            "The students were not brushing their teeth last Sunday morning.",
+            "The students am not brushing their teeth last Sunday morning.",
+            "The students was not brushing their teeth last Sunday morning."
+          ],
+          "answer": "The students were not brushing their teeth last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were winning the game yesterday afternoon.\"",
+          "options": [
+            "They is not winning the game yesterday afternoon.",
+            "They are not winning the game yesterday afternoon.",
+            "They am not winning the game yesterday afternoon.",
+            "They were not winning the game yesterday afternoon."
+          ],
+          "answer": "They were not winning the game yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were drawing a picture at 5 o'clock yesterday.\"",
+          "options": [
+            "The students is not drawing a picture at 5 o'clock yesterday.",
+            "The students were not drawing a picture at 5 o'clock yesterday.",
+            "The students are not drawing a picture at 5 o'clock yesterday.",
+            "The students am not drawing a picture at 5 o'clock yesterday."
+          ],
+          "answer": "The students were not drawing a picture at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were winning the game at 5 o'clock yesterday.\"",
+          "options": [
+            "The students is not winning the game at 5 o'clock yesterday.",
+            "The students am not winning the game at 5 o'clock yesterday.",
+            "The students were not winning the game at 5 o'clock yesterday.",
+            "The students was not winning the game at 5 o'clock yesterday."
+          ],
+          "answer": "The students were not winning the game at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was going to the party last Sunday morning.\"",
+          "options": [
+            "It am not going to the party last Sunday morning.",
+            "It was not going to the party last Sunday morning.",
+            "It are not going to the party last Sunday morning.",
+            "It were not going to the party last Sunday morning."
+          ],
+          "answer": "It was not going to the party last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was visiting their grandma last night.\"",
+          "options": [
+            "My sister are not visiting their grandma last night.",
+            "My sister was not visiting their grandma last night.",
+            "My sister is not visiting their grandma last night.",
+            "My sister am not visiting their grandma last night."
+          ],
+          "answer": "My sister was not visiting their grandma last night."
+        },
+        {
+          "id": "pastcont_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were dancing this time yesterday.\"",
+          "options": [
+            "The children is not dancing this time yesterday.",
+            "The children am not dancing this time yesterday.",
+            "The children were not dancing this time yesterday.",
+            "The children are not dancing this time yesterday."
+          ],
+          "answer": "The children were not dancing this time yesterday."
+        },
+        {
+          "id": "pastcont_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was swimming this time yesterday.\"",
+          "options": [
+            "The dog is not swimming this time yesterday.",
+            "The dog am not swimming this time yesterday.",
+            "The dog were not swimming this time yesterday.",
+            "The dog was not swimming this time yesterday."
+          ],
+          "answer": "The dog was not swimming this time yesterday."
+        },
+        {
+          "id": "pastcont_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was dancing last night.\"",
+          "options": [
+            "Tom am not dancing last night.",
+            "Tom were not dancing last night.",
+            "Tom are not dancing last night.",
+            "Tom was not dancing last night."
+          ],
+          "answer": "Tom was not dancing last night."
+        },
+        {
+          "id": "pastcont_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were writing a letter at 5 o'clock yesterday.\"",
+          "options": [
+            "My parents was not writing a letter at 5 o'clock yesterday.",
+            "My parents is not writing a letter at 5 o'clock yesterday.",
+            "My parents are not writing a letter at 5 o'clock yesterday.",
+            "My parents were not writing a letter at 5 o'clock yesterday."
+          ],
+          "answer": "My parents were not writing a letter at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was studying English yesterday afternoon.\"",
+          "options": [
+            "Tom are not studying English yesterday afternoon.",
+            "Tom were not studying English yesterday afternoon.",
+            "Tom was not studying English yesterday afternoon.",
+            "Tom am not studying English yesterday afternoon."
+          ],
+          "answer": "Tom was not studying English yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were climbing a tree last Sunday morning.\"",
+          "options": [
+            "The students were not climbing a tree last Sunday morning.",
+            "The students am not climbing a tree last Sunday morning.",
+            "The students was not climbing a tree last Sunday morning.",
+            "The students are not climbing a tree last Sunday morning."
+          ],
+          "answer": "The students were not climbing a tree last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were jumping yesterday afternoon.\"",
+          "options": [
+            "We is not jumping yesterday afternoon.",
+            "We am not jumping yesterday afternoon.",
+            "We are not jumping yesterday afternoon.",
+            "We were not jumping yesterday afternoon."
+          ],
+          "answer": "We were not jumping yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were running last Sunday morning.\"",
+          "options": [
+            "We were not running last Sunday morning.",
+            "We am not running last Sunday morning.",
+            "We are not running last Sunday morning.",
+            "We was not running last Sunday morning."
+          ],
+          "answer": "We were not running last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were cooking dinner last night.\"",
+          "options": [
+            "You were not cooking dinner last night.",
+            "You am not cooking dinner last night.",
+            "You was not cooking dinner last night.",
+            "You is not cooking dinner last night."
+          ],
+          "answer": "You were not cooking dinner last night."
+        },
+        {
+          "id": "pastcont_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was having lunch last night.\"",
+          "options": [
+            "I is not having lunch last night.",
+            "I was not having lunch last night.",
+            "I are not having lunch last night.",
+            "I am not having lunch last night."
+          ],
+          "answer": "I was not having lunch last night."
+        },
+        {
+          "id": "pastcont_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were doing homework this time yesterday.\"",
+          "options": [
+            "The children were not doing homework this time yesterday.",
+            "The children are not doing homework this time yesterday.",
+            "The children is not doing homework this time yesterday.",
+            "The children was not doing homework this time yesterday."
+          ],
+          "answer": "The children were not doing homework this time yesterday."
+        },
+        {
+          "id": "pastcont_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was playing football last night.\"",
+          "options": [
+            "He am not playing football last night.",
+            "He are not playing football last night.",
+            "He is not playing football last night.",
+            "He was not playing football last night."
+          ],
+          "answer": "He was not playing football last night."
+        },
+        {
+          "id": "pastcont_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was feeding the cat yesterday afternoon.\"",
+          "options": [
+            "I were not feeding the cat yesterday afternoon.",
+            "I are not feeding the cat yesterday afternoon.",
+            "I was not feeding the cat yesterday afternoon.",
+            "I is not feeding the cat yesterday afternoon."
+          ],
+          "answer": "I was not feeding the cat yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was walking to school last Sunday morning.\"",
+          "options": [
+            "Tom were not walking to school last Sunday morning.",
+            "Tom was not walking to school last Sunday morning.",
+            "Tom are not walking to school last Sunday morning.",
+            "Tom am not walking to school last Sunday morning."
+          ],
+          "answer": "Tom was not walking to school last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were singing a song at 5 o'clock yesterday.\"",
+          "options": [
+            "The boys are not singing a song at 5 o'clock yesterday.",
+            "The boys am not singing a song at 5 o'clock yesterday.",
+            "The boys is not singing a song at 5 o'clock yesterday.",
+            "The boys were not singing a song at 5 o'clock yesterday."
+          ],
+          "answer": "The boys were not singing a song at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was cooking dinner last Sunday morning.\"",
+          "options": [
+            "It are not cooking dinner last Sunday morning.",
+            "It was not cooking dinner last Sunday morning.",
+            "It am not cooking dinner last Sunday morning.",
+            "It were not cooking dinner last Sunday morning."
+          ],
+          "answer": "It was not cooking dinner last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was visiting their grandma at 5 o'clock yesterday.\"",
+          "options": [
+            "I are not visiting their grandma at 5 o'clock yesterday.",
+            "I am not visiting their grandma at 5 o'clock yesterday.",
+            "I was not visiting their grandma at 5 o'clock yesterday.",
+            "I were not visiting their grandma at 5 o'clock yesterday."
+          ],
+          "answer": "I was not visiting their grandma at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was feeding the cat last night.\"",
+          "options": [
+            "He was not feeding the cat last night.",
+            "He is not feeding the cat last night.",
+            "He were not feeding the cat last night.",
+            "He am not feeding the cat last night."
+          ],
+          "answer": "He was not feeding the cat last night."
+        },
+        {
+          "id": "pastcont_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"She was visiting their grandma this time yesterday.\"",
+          "options": [
+            "She was not visiting their grandma this time yesterday.",
+            "She am not visiting their grandma this time yesterday.",
+            "She is not visiting their grandma this time yesterday.",
+            "She were not visiting their grandma this time yesterday."
+          ],
+          "answer": "She was not visiting their grandma this time yesterday."
+        },
+        {
+          "id": "pastcont_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was writing a letter at 5 o'clock yesterday.\"",
+          "options": [
+            "I was not writing a letter at 5 o'clock yesterday.",
+            "I am not writing a letter at 5 o'clock yesterday.",
+            "I is not writing a letter at 5 o'clock yesterday.",
+            "I are not writing a letter at 5 o'clock yesterday."
+          ],
+          "answer": "I was not writing a letter at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was winning the game this time yesterday.\"",
+          "options": [
+            "Our cat is not winning the game this time yesterday.",
+            "Our cat am not winning the game this time yesterday.",
+            "Our cat are not winning the game this time yesterday.",
+            "Our cat was not winning the game this time yesterday."
+          ],
+          "answer": "Our cat was not winning the game this time yesterday."
+        },
+        {
+          "id": "pastcont_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was studying English last Sunday morning.\"",
+          "options": [
+            "It are not studying English last Sunday morning.",
+            "It is not studying English last Sunday morning.",
+            "It was not studying English last Sunday morning.",
+            "It am not studying English last Sunday morning."
+          ],
+          "answer": "It was not studying English last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was running yesterday afternoon.\"",
+          "options": [
+            "Our cat is not running yesterday afternoon.",
+            "Our cat am not running yesterday afternoon.",
+            "Our cat are not running yesterday afternoon.",
+            "Our cat was not running yesterday afternoon."
+          ],
+          "answer": "Our cat was not running yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was singing a song yesterday afternoon.\"",
+          "options": [
+            "My sister are not singing a song yesterday afternoon.",
+            "My sister am not singing a song yesterday afternoon.",
+            "My sister is not singing a song yesterday afternoon.",
+            "My sister was not singing a song yesterday afternoon."
+          ],
+          "answer": "My sister was not singing a song yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was dancing this time yesterday.\"",
+          "options": [
+            "Maria are not dancing this time yesterday.",
+            "Maria is not dancing this time yesterday.",
+            "Maria was not dancing this time yesterday.",
+            "Maria am not dancing this time yesterday."
+          ],
+          "answer": "Maria was not dancing this time yesterday."
+        },
+        {
+          "id": "pastcont_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was dancing at 5 o'clock yesterday.\"",
+          "options": [
+            "Our cat are not dancing at 5 o'clock yesterday.",
+            "Our cat were not dancing at 5 o'clock yesterday.",
+            "Our cat is not dancing at 5 o'clock yesterday.",
+            "Our cat was not dancing at 5 o'clock yesterday."
+          ],
+          "answer": "Our cat was not dancing at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was writing a letter this time yesterday.\"",
+          "options": [
+            "My brother was not writing a letter this time yesterday.",
+            "My brother are not writing a letter this time yesterday.",
+            "My brother am not writing a letter this time yesterday.",
+            "My brother were not writing a letter this time yesterday."
+          ],
+          "answer": "My brother was not writing a letter this time yesterday."
+        },
+        {
+          "id": "pastcont_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were drawing a picture yesterday afternoon.\"",
+          "options": [
+            "We am not drawing a picture yesterday afternoon.",
+            "We were not drawing a picture yesterday afternoon.",
+            "We are not drawing a picture yesterday afternoon.",
+            "We is not drawing a picture yesterday afternoon."
+          ],
+          "answer": "We were not drawing a picture yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was doing homework at 5 o'clock yesterday.\"",
+          "options": [
+            "I is not doing homework at 5 o'clock yesterday.",
+            "I was not doing homework at 5 o'clock yesterday.",
+            "I are not doing homework at 5 o'clock yesterday.",
+            "I were not doing homework at 5 o'clock yesterday."
+          ],
+          "answer": "I was not doing homework at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were going to the party this time yesterday.\"",
+          "options": [
+            "We were not going to the party this time yesterday.",
+            "We is not going to the party this time yesterday.",
+            "We am not going to the party this time yesterday.",
+            "We was not going to the party this time yesterday."
+          ],
+          "answer": "We were not going to the party this time yesterday."
+        },
+        {
+          "id": "pastcont_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was going to the party at 5 o'clock yesterday.\"",
+          "options": [
+            "It was not going to the party at 5 o'clock yesterday.",
+            "It were not going to the party at 5 o'clock yesterday.",
+            "It am not going to the party at 5 o'clock yesterday.",
+            "It are not going to the party at 5 o'clock yesterday."
+          ],
+          "answer": "It was not going to the party at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was dancing this time yesterday.\"",
+          "options": [
+            "Our cat am not dancing this time yesterday.",
+            "Our cat are not dancing this time yesterday.",
+            "Our cat was not dancing this time yesterday.",
+            "Our cat is not dancing this time yesterday."
+          ],
+          "answer": "Our cat was not dancing this time yesterday."
+        },
+        {
+          "id": "pastcont_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was drawing a picture this time yesterday.\"",
+          "options": [
+            "My sister is not drawing a picture this time yesterday.",
+            "My sister are not drawing a picture this time yesterday.",
+            "My sister were not drawing a picture this time yesterday.",
+            "My sister was not drawing a picture this time yesterday."
+          ],
+          "answer": "My sister was not drawing a picture this time yesterday."
+        },
+        {
+          "id": "pastcont_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was helping their mum last Sunday morning.\"",
+          "options": [
+            "My brother was not helping their mum last Sunday morning.",
+            "My brother were not helping their mum last Sunday morning.",
+            "My brother are not helping their mum last Sunday morning.",
+            "My brother is not helping their mum last Sunday morning."
+          ],
+          "answer": "My brother was not helping their mum last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was washing the dishes yesterday afternoon.\"",
+          "options": [
+            "My sister am not washing the dishes yesterday afternoon.",
+            "My sister are not washing the dishes yesterday afternoon.",
+            "My sister were not washing the dishes yesterday afternoon.",
+            "My sister was not washing the dishes yesterday afternoon."
+          ],
+          "answer": "My sister was not washing the dishes yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was going to the party yesterday afternoon.\"",
+          "options": [
+            "He am not going to the party yesterday afternoon.",
+            "He are not going to the party yesterday afternoon.",
+            "He is not going to the party yesterday afternoon.",
+            "He was not going to the party yesterday afternoon."
+          ],
+          "answer": "He was not going to the party yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was going to the party last Sunday morning.\"",
+          "options": [
+            "Maria was not going to the party last Sunday morning.",
+            "Maria is not going to the party last Sunday morning.",
+            "Maria were not going to the party last Sunday morning.",
+            "Maria are not going to the party last Sunday morning."
+          ],
+          "answer": "Maria was not going to the party last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was swimming this time yesterday.\"",
+          "options": [
+            "Our cat is not swimming this time yesterday.",
+            "Our cat was not swimming this time yesterday.",
+            "Our cat were not swimming this time yesterday.",
+            "Our cat am not swimming this time yesterday."
+          ],
+          "answer": "Our cat was not swimming this time yesterday."
+        },
+        {
+          "id": "pastcont_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were writing a letter this time yesterday.\"",
+          "options": [
+            "The boys am not writing a letter this time yesterday.",
+            "The boys was not writing a letter this time yesterday.",
+            "The boys were not writing a letter this time yesterday.",
+            "The boys are not writing a letter this time yesterday."
+          ],
+          "answer": "The boys were not writing a letter this time yesterday."
+        },
+        {
+          "id": "pastcont_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were cleaning the house last night.\"",
+          "options": [
+            "The children were not cleaning the house last night.",
+            "The children was not cleaning the house last night.",
+            "The children are not cleaning the house last night.",
+            "The children am not cleaning the house last night."
+          ],
+          "answer": "The children were not cleaning the house last night."
+        },
+        {
+          "id": "pastcont_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was riding a bike this time yesterday.\"",
+          "options": [
+            "Tom are not riding a bike this time yesterday.",
+            "Tom is not riding a bike this time yesterday.",
+            "Tom was not riding a bike this time yesterday.",
+            "Tom am not riding a bike this time yesterday."
+          ],
+          "answer": "Tom was not riding a bike this time yesterday."
+        },
+        {
+          "id": "pastcont_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were helping their mum this time yesterday.\"",
+          "options": [
+            "My parents were not helping their mum this time yesterday.",
+            "My parents are not helping their mum this time yesterday.",
+            "My parents is not helping their mum this time yesterday.",
+            "My parents am not helping their mum this time yesterday."
+          ],
+          "answer": "My parents were not helping their mum this time yesterday."
+        },
+        {
+          "id": "pastcont_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were studying English yesterday afternoon.\"",
+          "options": [
+            "You was not studying English yesterday afternoon.",
+            "You were not studying English yesterday afternoon.",
+            "You is not studying English yesterday afternoon.",
+            "You are not studying English yesterday afternoon."
+          ],
+          "answer": "You were not studying English yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was writing a letter this time yesterday.\"",
+          "options": [
+            "Tom were not writing a letter this time yesterday.",
+            "Tom is not writing a letter this time yesterday.",
+            "Tom are not writing a letter this time yesterday.",
+            "Tom was not writing a letter this time yesterday."
+          ],
+          "answer": "Tom was not writing a letter this time yesterday."
+        },
+        {
+          "id": "pastcont_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were playing football yesterday afternoon.\"",
+          "options": [
+            "My parents were not playing football yesterday afternoon.",
+            "My parents is not playing football yesterday afternoon.",
+            "My parents are not playing football yesterday afternoon.",
+            "My parents am not playing football yesterday afternoon."
+          ],
+          "answer": "My parents were not playing football yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were playing football yesterday afternoon.\"",
+          "options": [
+            "The children are not playing football yesterday afternoon.",
+            "The children is not playing football yesterday afternoon.",
+            "The children was not playing football yesterday afternoon.",
+            "The children were not playing football yesterday afternoon."
+          ],
+          "answer": "The children were not playing football yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was having lunch this time yesterday.\"",
+          "options": [
+            "Our cat were not having lunch this time yesterday.",
+            "Our cat was not having lunch this time yesterday.",
+            "Our cat am not having lunch this time yesterday.",
+            "Our cat are not having lunch this time yesterday."
+          ],
+          "answer": "Our cat was not having lunch this time yesterday."
+        },
+        {
+          "id": "pastcont_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were feeding the cat last night.\"",
+          "options": [
+            "We was not feeding the cat last night.",
+            "We were not feeding the cat last night.",
+            "We is not feeding the cat last night.",
+            "We are not feeding the cat last night."
+          ],
+          "answer": "We were not feeding the cat last night."
+        },
+        {
+          "id": "pastcont_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were brushing their teeth yesterday afternoon.\"",
+          "options": [
+            "The children were not brushing their teeth yesterday afternoon.",
+            "The children am not brushing their teeth yesterday afternoon.",
+            "The children is not brushing their teeth yesterday afternoon.",
+            "The children was not brushing their teeth yesterday afternoon."
+          ],
+          "answer": "The children were not brushing their teeth yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was dancing last night.\"",
+          "options": [
+            "It is not dancing last night.",
+            "It was not dancing last night.",
+            "It am not dancing last night.",
+            "It were not dancing last night."
+          ],
+          "answer": "It was not dancing last night."
+        },
+        {
+          "id": "pastcont_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were helping their mum this time yesterday.\"",
+          "options": [
+            "They were not helping their mum this time yesterday.",
+            "They are not helping their mum this time yesterday.",
+            "They is not helping their mum this time yesterday.",
+            "They am not helping their mum this time yesterday."
+          ],
+          "answer": "They were not helping their mum this time yesterday."
+        },
+        {
+          "id": "pastcont_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"She was winning the game last Sunday morning.\"",
+          "options": [
+            "She were not winning the game last Sunday morning.",
+            "She am not winning the game last Sunday morning.",
+            "She are not winning the game last Sunday morning.",
+            "She was not winning the game last Sunday morning."
+          ],
+          "answer": "She was not winning the game last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was visiting their grandma yesterday afternoon.\"",
+          "options": [
+            "Tom was not visiting their grandma yesterday afternoon.",
+            "Tom is not visiting their grandma yesterday afternoon.",
+            "Tom are not visiting their grandma yesterday afternoon.",
+            "Tom am not visiting their grandma yesterday afternoon."
+          ],
+          "answer": "Tom was not visiting their grandma yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was riding a bike at 5 o'clock yesterday.\"",
+          "options": [
+            "My brother is not riding a bike at 5 o'clock yesterday.",
+            "My brother was not riding a bike at 5 o'clock yesterday.",
+            "My brother are not riding a bike at 5 o'clock yesterday.",
+            "My brother were not riding a bike at 5 o'clock yesterday."
+          ],
+          "answer": "My brother was not riding a bike at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were listening to music last night.\"",
+          "options": [
+            "The boys is not listening to music last night.",
+            "The boys are not listening to music last night.",
+            "The boys was not listening to music last night.",
+            "The boys were not listening to music last night."
+          ],
+          "answer": "The boys were not listening to music last night."
+        },
+        {
+          "id": "pastcont_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were playing football this time yesterday.\"",
+          "options": [
+            "You were not playing football this time yesterday.",
+            "You is not playing football this time yesterday.",
+            "You are not playing football this time yesterday.",
+            "You am not playing football this time yesterday."
+          ],
+          "answer": "You were not playing football this time yesterday."
+        },
+        {
+          "id": "pastcont_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was listening to music at 5 o'clock yesterday.\"",
+          "options": [
+            "Maria am not listening to music at 5 o'clock yesterday.",
+            "Maria were not listening to music at 5 o'clock yesterday.",
+            "Maria was not listening to music at 5 o'clock yesterday.",
+            "Maria is not listening to music at 5 o'clock yesterday."
+          ],
+          "answer": "Maria was not listening to music at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was cooking dinner at 5 o'clock yesterday.\"",
+          "options": [
+            "Tom was not cooking dinner at 5 o'clock yesterday.",
+            "Tom are not cooking dinner at 5 o'clock yesterday.",
+            "Tom is not cooking dinner at 5 o'clock yesterday.",
+            "Tom were not cooking dinner at 5 o'clock yesterday."
+          ],
+          "answer": "Tom was not cooking dinner at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were watching TV at 5 o'clock yesterday.\"",
+          "options": [
+            "The boys was not watching TV at 5 o'clock yesterday.",
+            "The boys were not watching TV at 5 o'clock yesterday.",
+            "The boys are not watching TV at 5 o'clock yesterday.",
+            "The boys am not watching TV at 5 o'clock yesterday."
+          ],
+          "answer": "The boys were not watching TV at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were climbing a tree this time yesterday.\"",
+          "options": [
+            "We are not climbing a tree this time yesterday.",
+            "We am not climbing a tree this time yesterday.",
+            "We is not climbing a tree this time yesterday.",
+            "We were not climbing a tree this time yesterday."
+          ],
+          "answer": "We were not climbing a tree this time yesterday."
+        },
+        {
+          "id": "pastcont_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were studying English last Sunday morning.\"",
+          "options": [
+            "My parents was not studying English last Sunday morning.",
+            "My parents am not studying English last Sunday morning.",
+            "My parents were not studying English last Sunday morning.",
+            "My parents is not studying English last Sunday morning."
+          ],
+          "answer": "My parents were not studying English last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was having lunch this time yesterday.\"",
+          "options": [
+            "He was not having lunch this time yesterday.",
+            "He am not having lunch this time yesterday.",
+            "He is not having lunch this time yesterday.",
+            "He are not having lunch this time yesterday."
+          ],
+          "answer": "He was not having lunch this time yesterday."
+        },
+        {
+          "id": "pastcont_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were jumping last night.\"",
+          "options": [
+            "They were not jumping last night.",
+            "They is not jumping last night.",
+            "They was not jumping last night.",
+            "They am not jumping last night."
+          ],
+          "answer": "They were not jumping last night."
+        },
+        {
+          "id": "pastcont_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was visiting their grandma at 5 o'clock yesterday.\"",
+          "options": [
+            "My brother am not visiting their grandma at 5 o'clock yesterday.",
+            "My brother were not visiting their grandma at 5 o'clock yesterday.",
+            "My brother are not visiting their grandma at 5 o'clock yesterday.",
+            "My brother was not visiting their grandma at 5 o'clock yesterday."
+          ],
+          "answer": "My brother was not visiting their grandma at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were climbing a tree last Sunday morning.\"",
+          "options": [
+            "The boys are not climbing a tree last Sunday morning.",
+            "The boys was not climbing a tree last Sunday morning.",
+            "The boys am not climbing a tree last Sunday morning.",
+            "The boys were not climbing a tree last Sunday morning."
+          ],
+          "answer": "The boys were not climbing a tree last Sunday morning."
+        },
+        {
+          "id": "pastcont_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was cleaning the house yesterday afternoon.\"",
+          "options": [
+            "He were not cleaning the house yesterday afternoon.",
+            "He are not cleaning the house yesterday afternoon.",
+            "He is not cleaning the house yesterday afternoon.",
+            "He was not cleaning the house yesterday afternoon."
+          ],
+          "answer": "He was not cleaning the house yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was winning the game this time yesterday.\"",
+          "options": [
+            "It were not winning the game this time yesterday.",
+            "It was not winning the game this time yesterday.",
+            "It are not winning the game this time yesterday.",
+            "It am not winning the game this time yesterday."
+          ],
+          "answer": "It was not winning the game this time yesterday."
+        },
+        {
+          "id": "pastcont_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were cooking dinner yesterday afternoon.\"",
+          "options": [
+            "The boys was not cooking dinner yesterday afternoon.",
+            "The boys am not cooking dinner yesterday afternoon.",
+            "The boys were not cooking dinner yesterday afternoon.",
+            "The boys is not cooking dinner yesterday afternoon."
+          ],
+          "answer": "The boys were not cooking dinner yesterday afternoon."
+        },
+        {
+          "id": "pastcont_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were helping their mum at 5 o'clock yesterday.\"",
+          "options": [
+            "The students was not helping their mum at 5 o'clock yesterday.",
+            "The students were not helping their mum at 5 o'clock yesterday.",
+            "The students are not helping their mum at 5 o'clock yesterday.",
+            "The students is not helping their mum at 5 o'clock yesterday."
+          ],
+          "answer": "The students were not helping their mum at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_c_1",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is singing a song right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_2",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was jumping at 5 o'clock yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_3",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We watched TV last Sunday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_4",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We studied English yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_5",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria studied English last Sunday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_6",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are riding a bike right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_7",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students are riding a bike right now.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_8",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was having lunch yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_9",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were singing a song last night.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_10",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students won the game last night.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_11",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was playing football last night.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_12",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was riding a bike at 5 o'clock yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_13",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You visited their grandma last Sunday morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_14",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is jumping right now.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_15",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog was swimming last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_16",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents had lunch yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_17",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He ran last Sunday morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_18",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was swimming this time yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_19",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children drew a picture this time yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_20",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were studying English last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_21",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We sang a song yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_22",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He fed the cat last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_23",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother watched TV this time yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_24",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was playing football yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_25",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents cleaned the house this time yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_26",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are walking to school right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_27",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You did homework yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_28",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students are jumping right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_29",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children are washing the dishes right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_30",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is playing football right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_31",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was walking to school this time yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_32",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were brushing their teeth last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_33",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is helping their mum right now.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_34",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were dancing yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_35",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was feeding the cat yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_36",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were watching TV yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_37",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children helped their mum this time yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_38",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was washing the dishes this time yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_39",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She ran this time yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_40",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students are studying English right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_41",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are listening to music right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_42",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom helped their mum last Sunday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_43",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I walked to school last Sunday morning.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_44",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother brushed their teeth last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_45",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students rode a bike yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_46",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am swimming right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_47",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was brushing their teeth last Sunday morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_48",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria was going to the party last Sunday morning.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_49",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is writing a letter right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_50",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was visiting their grandma this time yesterday.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_51",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is running right now.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_52",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is studying English right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_53",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents swam at 5 o'clock yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_54",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was brushing their teeth last Sunday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_55",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is brushing their teeth right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_56",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She jumped last night.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_57",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was winning the game yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_58",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother ran yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_59",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They watched TV last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_60",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I watched TV last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_61",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom played football this time yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_62",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is singing a song right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_63",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother cooked dinner last Sunday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_64",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog studied English last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_65",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I was studying English yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_66",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students cooked dinner last night.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_67",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat cleaned the house last Sunday morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_68",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister wrote a letter this time yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_69",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are helping their mum right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_70",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were visiting their grandma at 5 o'clock yesterday.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_71",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was writing a letter last Sunday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_72",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister studied English last Sunday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_73",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is dancing right now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_74",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am cleaning the house right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_75",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was helping their mum last Sunday morning.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_76",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is running right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_77",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is doing homework right now.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_78",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are swimming right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_79",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She listened to music last Sunday morning.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_80",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys did homework last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_81",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is visiting their grandma right now.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_82",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria drew a picture last night.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_83",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister is playing football right now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_84",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother played football yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_85",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents played football last Sunday morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_86",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are dancing right now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_87",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is listening to music right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_88",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He visited their grandma last Sunday morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_89",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were visiting their grandma last Sunday morning.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Continuous"
+        },
+        {
+          "id": "pastcont_c_90",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom is going to the party right now.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_91",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am dancing right now.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_92",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You studied English last night.\"",
+          "options": [
+            "Past Simple",
+            "Present Continuous",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_93",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students sang a song yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Simple",
+            "Past Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_94",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys are winning the game right now.\"",
+          "options": [
+            "Past Continuous",
+            "Past Simple",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_95",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys danced last Sunday morning.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_96",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She won the game at 5 o'clock yesterday.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_97",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria is playing football right now.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Present Continuous"
+        },
+        {
+          "id": "pastcont_c_98",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat washed the dishes yesterday afternoon.\"",
+          "options": [
+            "Present Continuous",
+            "Past Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_99",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I danced yesterday afternoon.\"",
+          "options": [
+            "Past Continuous",
+            "Present Continuous",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_c_100",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents cooked dinner yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "Past Continuous",
+            "Present Continuous"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "pastcont_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, el perro estaba yendo a la fiesta\" en inglés?",
+          "options": [
+            "The dog going to the party last night.",
+            "The dog was going to the party last night.",
+            "The dog went to the party last night.",
+            "The dog is going to the party last night."
+          ],
+          "answer": "The dog was going to the party last night."
+        },
+        {
+          "id": "pastcont_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, tú estaba visitando a su abuela\" en inglés?",
+          "options": [
+            "You were visiting their grandma last Sunday morning.",
+            "You visited their grandma last Sunday morning.",
+            "You are visiting their grandma last Sunday morning.",
+            "You visiting their grandma last Sunday morning."
+          ],
+          "answer": "You were visiting their grandma last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, mi hermano estaba limpiando la casa\" en inglés?",
+          "options": [
+            "My brother cleaned the house yesterday afternoon.",
+            "My brother is cleaning the house yesterday afternoon.",
+            "My brother was cleaning the house yesterday afternoon.",
+            "My brother cleaning the house yesterday afternoon."
+          ],
+          "answer": "My brother was cleaning the house yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mis padres estaba escribiendo una carta\" en inglés?",
+          "options": [
+            "My parents wrote a letter last night.",
+            "My parents are writing a letter last night.",
+            "My parents were writing a letter last night.",
+            "My parents writing a letter last night."
+          ],
+          "answer": "My parents were writing a letter last night."
+        },
+        {
+          "id": "pastcont_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, eso estaba cepillándose los dientes\" en inglés?",
+          "options": [
+            "It brushing their teeth last Sunday morning.",
+            "It brushed their teeth last Sunday morning.",
+            "It was brushing their teeth last Sunday morning.",
+            "It is brushing their teeth last Sunday morning."
+          ],
+          "answer": "It was brushing their teeth last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, yo estaba dibujando un dibujo\" en inglés?",
+          "options": [
+            "I am drawing a picture last night.",
+            "I drawing a picture last night.",
+            "I was drawing a picture last night.",
+            "I drew a picture last night."
+          ],
+          "answer": "I was drawing a picture last night."
+        },
+        {
+          "id": "pastcont_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, nosotros estaba limpiando la casa\" en inglés?",
+          "options": [
+            "We cleaning the house this time yesterday.",
+            "We cleaned the house this time yesterday.",
+            "We are cleaning the house this time yesterday.",
+            "We were cleaning the house this time yesterday."
+          ],
+          "answer": "We were cleaning the house this time yesterday."
+        },
+        {
+          "id": "pastcont_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, ellos estaba cantando una canción\" en inglés?",
+          "options": [
+            "They are singing a song at 5 o'clock yesterday.",
+            "They sang a song at 5 o'clock yesterday.",
+            "They singing a song at 5 o'clock yesterday.",
+            "They were singing a song at 5 o'clock yesterday."
+          ],
+          "answer": "They were singing a song at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, tú estaba saltando\" en inglés?",
+          "options": [
+            "You were jumping last night.",
+            "You jumping last night.",
+            "You are jumping last night.",
+            "You jumped last night."
+          ],
+          "answer": "You were jumping last night."
+        },
+        {
+          "id": "pastcont_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, yo estaba ganando el partido\" en inglés?",
+          "options": [
+            "I winning the game this time yesterday.",
+            "I was winning the game this time yesterday.",
+            "I won the game this time yesterday.",
+            "I am winning the game this time yesterday."
+          ],
+          "answer": "I was winning the game this time yesterday."
+        },
+        {
+          "id": "pastcont_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, mi hermano estaba dibujando un dibujo\" en inglés?",
+          "options": [
+            "My brother drawing a picture last Sunday morning.",
+            "My brother was drawing a picture last Sunday morning.",
+            "My brother drew a picture last Sunday morning.",
+            "My brother is drawing a picture last Sunday morning."
+          ],
+          "answer": "My brother was drawing a picture last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermano estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "My brother did homework last night.",
+            "My brother doing homework last night.",
+            "My brother is doing homework last night.",
+            "My brother was doing homework last night."
+          ],
+          "answer": "My brother was doing homework last night."
+        },
+        {
+          "id": "pastcont_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, nosotros estaba trepando a un árbol\" en inglés?",
+          "options": [
+            "We climbed a tree at 5 o'clock yesterday.",
+            "We were climbing a tree at 5 o'clock yesterday.",
+            "We climbing a tree at 5 o'clock yesterday.",
+            "We are climbing a tree at 5 o'clock yesterday."
+          ],
+          "answer": "We were climbing a tree at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, nuestro gato estaba yendo a la fiesta\" en inglés?",
+          "options": [
+            "Our cat is going to the party yesterday afternoon.",
+            "Our cat went to the party yesterday afternoon.",
+            "Our cat going to the party yesterday afternoon.",
+            "Our cat was going to the party yesterday afternoon."
+          ],
+          "answer": "Our cat was going to the party yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, mis padres estaba cepillándose los dientes\" en inglés?",
+          "options": [
+            "My parents are brushing their teeth last Sunday morning.",
+            "My parents brushing their teeth last Sunday morning.",
+            "My parents were brushing their teeth last Sunday morning.",
+            "My parents brushed their teeth last Sunday morning."
+          ],
+          "answer": "My parents were brushing their teeth last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los estudiantes estaba montando en bici\" en inglés?",
+          "options": [
+            "The students rode a bike last night.",
+            "The students riding a bike last night.",
+            "The students are riding a bike last night.",
+            "The students were riding a bike last night."
+          ],
+          "answer": "The students were riding a bike last night."
+        },
+        {
+          "id": "pastcont_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, eso estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "It was doing homework this time yesterday.",
+            "It did homework this time yesterday.",
+            "It doing homework this time yesterday.",
+            "It is doing homework this time yesterday."
+          ],
+          "answer": "It was doing homework this time yesterday."
+        },
+        {
+          "id": "pastcont_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, mis padres estaba trepando a un árbol\" en inglés?",
+          "options": [
+            "My parents climbed a tree yesterday afternoon.",
+            "My parents are climbing a tree yesterday afternoon.",
+            "My parents were climbing a tree yesterday afternoon.",
+            "My parents climbing a tree yesterday afternoon."
+          ],
+          "answer": "My parents were climbing a tree yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, eso estaba cocinando la cena\" en inglés?",
+          "options": [
+            "It cooked dinner last Sunday morning.",
+            "It was cooking dinner last Sunday morning.",
+            "It is cooking dinner last Sunday morning.",
+            "It cooking dinner last Sunday morning."
+          ],
+          "answer": "It was cooking dinner last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros estaba ayudando a su madre\" en inglés?",
+          "options": [
+            "We are helping their mum last night.",
+            "We were helping their mum last night.",
+            "We helped their mum last night.",
+            "We helping their mum last night."
+          ],
+          "answer": "We were helping their mum last night."
+        },
+        {
+          "id": "pastcont_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, Tom estaba escribiendo una carta\" en inglés?",
+          "options": [
+            "Tom is writing a letter yesterday afternoon.",
+            "Tom wrote a letter yesterday afternoon.",
+            "Tom was writing a letter yesterday afternoon.",
+            "Tom writing a letter yesterday afternoon."
+          ],
+          "answer": "Tom was writing a letter yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los chicos estaba caminando al colegio\" en inglés?",
+          "options": [
+            "The boys walked to school last night.",
+            "The boys are walking to school last night.",
+            "The boys were walking to school last night.",
+            "The boys walking to school last night."
+          ],
+          "answer": "The boys were walking to school last night."
+        },
+        {
+          "id": "pastcont_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, él estaba viendo la tele\" en inglés?",
+          "options": [
+            "He watched TV last night.",
+            "He is watching TV last night.",
+            "He was watching TV last night.",
+            "He watching TV last night."
+          ],
+          "answer": "He was watching TV last night."
+        },
+        {
+          "id": "pastcont_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, mi hermano estaba trepando a un árbol\" en inglés?",
+          "options": [
+            "My brother climbed a tree yesterday afternoon.",
+            "My brother was climbing a tree yesterday afternoon.",
+            "My brother is climbing a tree yesterday afternoon.",
+            "My brother climbing a tree yesterday afternoon."
+          ],
+          "answer": "My brother was climbing a tree yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, los estudiantes estaba corriendo\" en inglés?",
+          "options": [
+            "The students ran at 5 o'clock yesterday.",
+            "The students running at 5 o'clock yesterday.",
+            "The students were running at 5 o'clock yesterday.",
+            "The students are running at 5 o'clock yesterday."
+          ],
+          "answer": "The students were running at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los niños estaba comiendo\" en inglés?",
+          "options": [
+            "The children were having lunch last night.",
+            "The children are having lunch last night.",
+            "The children had lunch last night.",
+            "The children having lunch last night."
+          ],
+          "answer": "The children were having lunch last night."
+        },
+        {
+          "id": "pastcont_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, yo estaba bailando\" en inglés?",
+          "options": [
+            "I dancing this time yesterday.",
+            "I am dancing this time yesterday.",
+            "I was dancing this time yesterday.",
+            "I danced this time yesterday."
+          ],
+          "answer": "I was dancing this time yesterday."
+        },
+        {
+          "id": "pastcont_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, los niños estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "The children were doing homework last Sunday morning.",
+            "The children are doing homework last Sunday morning.",
+            "The children did homework last Sunday morning.",
+            "The children doing homework last Sunday morning."
+          ],
+          "answer": "The children were doing homework last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, ellos estaba bailando\" en inglés?",
+          "options": [
+            "They are dancing last night.",
+            "They danced last night.",
+            "They were dancing last night.",
+            "They dancing last night."
+          ],
+          "answer": "They were dancing last night."
+        },
+        {
+          "id": "pastcont_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, él estaba viendo la tele\" en inglés?",
+          "options": [
+            "He is watching TV at 5 o'clock yesterday.",
+            "He watching TV at 5 o'clock yesterday.",
+            "He was watching TV at 5 o'clock yesterday.",
+            "He watched TV at 5 o'clock yesterday."
+          ],
+          "answer": "He was watching TV at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mis padres estaba caminando al colegio\" en inglés?",
+          "options": [
+            "My parents are walking to school last night.",
+            "My parents walking to school last night.",
+            "My parents walked to school last night.",
+            "My parents were walking to school last night."
+          ],
+          "answer": "My parents were walking to school last night."
+        },
+        {
+          "id": "pastcont_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, María estaba ganando el partido\" en inglés?",
+          "options": [
+            "Maria was winning the game last Sunday morning.",
+            "Maria winning the game last Sunday morning.",
+            "Maria is winning the game last Sunday morning.",
+            "Maria won the game last Sunday morning."
+          ],
+          "answer": "Maria was winning the game last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, yo estaba escuchando música\" en inglés?",
+          "options": [
+            "I listened to music at 5 o'clock yesterday.",
+            "I am listening to music at 5 o'clock yesterday.",
+            "I listening to music at 5 o'clock yesterday.",
+            "I was listening to music at 5 o'clock yesterday."
+          ],
+          "answer": "I was listening to music at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, él estaba saltando\" en inglés?",
+          "options": [
+            "He jumped this time yesterday.",
+            "He jumping this time yesterday.",
+            "He was jumping this time yesterday.",
+            "He is jumping this time yesterday."
+          ],
+          "answer": "He was jumping this time yesterday."
+        },
+        {
+          "id": "pastcont_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, el perro estaba viendo la tele\" en inglés?",
+          "options": [
+            "The dog is watching TV yesterday afternoon.",
+            "The dog was watching TV yesterday afternoon.",
+            "The dog watched TV yesterday afternoon.",
+            "The dog watching TV yesterday afternoon."
+          ],
+          "answer": "The dog was watching TV yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, mi hermana estaba saltando\" en inglés?",
+          "options": [
+            "My sister is jumping last Sunday morning.",
+            "My sister jumping last Sunday morning.",
+            "My sister jumped last Sunday morning.",
+            "My sister was jumping last Sunday morning."
+          ],
+          "answer": "My sister was jumping last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, nosotros estaba nadando\" en inglés?",
+          "options": [
+            "We swimming this time yesterday.",
+            "We were swimming this time yesterday.",
+            "We are swimming this time yesterday.",
+            "We swam this time yesterday."
+          ],
+          "answer": "We were swimming this time yesterday."
+        },
+        {
+          "id": "pastcont_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, mis padres estaba fregando los platos\" en inglés?",
+          "options": [
+            "My parents were washing the dishes yesterday afternoon.",
+            "My parents washed the dishes yesterday afternoon.",
+            "My parents washing the dishes yesterday afternoon.",
+            "My parents are washing the dishes yesterday afternoon."
+          ],
+          "answer": "My parents were washing the dishes yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, yo estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "I was doing homework yesterday afternoon.",
+            "I am doing homework yesterday afternoon.",
+            "I did homework yesterday afternoon.",
+            "I doing homework yesterday afternoon."
+          ],
+          "answer": "I was doing homework yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, nuestro gato estaba trepando a un árbol\" en inglés?",
+          "options": [
+            "Our cat was climbing a tree at 5 o'clock yesterday.",
+            "Our cat is climbing a tree at 5 o'clock yesterday.",
+            "Our cat climbed a tree at 5 o'clock yesterday.",
+            "Our cat climbing a tree at 5 o'clock yesterday."
+          ],
+          "answer": "Our cat was climbing a tree at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, Tom estaba fregando los platos\" en inglés?",
+          "options": [
+            "Tom washing the dishes last night.",
+            "Tom washed the dishes last night.",
+            "Tom was washing the dishes last night.",
+            "Tom is washing the dishes last night."
+          ],
+          "answer": "Tom was washing the dishes last night."
+        },
+        {
+          "id": "pastcont_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los niños estaba dando de comer al gato\" en inglés?",
+          "options": [
+            "The children were feeding the cat last night.",
+            "The children fed the cat last night.",
+            "The children are feeding the cat last night.",
+            "The children feeding the cat last night."
+          ],
+          "answer": "The children were feeding the cat last night."
+        },
+        {
+          "id": "pastcont_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, los chicos estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "The boys doing homework this time yesterday.",
+            "The boys did homework this time yesterday.",
+            "The boys were doing homework this time yesterday.",
+            "The boys are doing homework this time yesterday."
+          ],
+          "answer": "The boys were doing homework this time yesterday."
+        },
+        {
+          "id": "pastcont_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, él estaba cantando una canción\" en inglés?",
+          "options": [
+            "He is singing a song last night.",
+            "He was singing a song last night.",
+            "He singing a song last night.",
+            "He sang a song last night."
+          ],
+          "answer": "He was singing a song last night."
+        },
+        {
+          "id": "pastcont_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, el perro estaba ganando el partido\" en inglés?",
+          "options": [
+            "The dog was winning the game last Sunday morning.",
+            "The dog winning the game last Sunday morning.",
+            "The dog won the game last Sunday morning.",
+            "The dog is winning the game last Sunday morning."
+          ],
+          "answer": "The dog was winning the game last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, María estaba yendo a la fiesta\" en inglés?",
+          "options": [
+            "Maria is going to the party this time yesterday.",
+            "Maria was going to the party this time yesterday.",
+            "Maria going to the party this time yesterday.",
+            "Maria went to the party this time yesterday."
+          ],
+          "answer": "Maria was going to the party this time yesterday."
+        },
+        {
+          "id": "pastcont_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, tú estaba montando en bici\" en inglés?",
+          "options": [
+            "You riding a bike this time yesterday.",
+            "You rode a bike this time yesterday.",
+            "You are riding a bike this time yesterday.",
+            "You were riding a bike this time yesterday."
+          ],
+          "answer": "You were riding a bike this time yesterday."
+        },
+        {
+          "id": "pastcont_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, mi hermano estaba montando en bici\" en inglés?",
+          "options": [
+            "My brother is riding a bike last Sunday morning.",
+            "My brother rode a bike last Sunday morning.",
+            "My brother was riding a bike last Sunday morning.",
+            "My brother riding a bike last Sunday morning."
+          ],
+          "answer": "My brother was riding a bike last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, el perro estaba saltando\" en inglés?",
+          "options": [
+            "The dog was jumping last night.",
+            "The dog jumping last night.",
+            "The dog is jumping last night.",
+            "The dog jumped last night."
+          ],
+          "answer": "The dog was jumping last night."
+        },
+        {
+          "id": "pastcont_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, eso estaba ayudando a su madre\" en inglés?",
+          "options": [
+            "It helped their mum at 5 o'clock yesterday.",
+            "It was helping their mum at 5 o'clock yesterday.",
+            "It is helping their mum at 5 o'clock yesterday.",
+            "It helping their mum at 5 o'clock yesterday."
+          ],
+          "answer": "It was helping their mum at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, Tom estaba montando en bici\" en inglés?",
+          "options": [
+            "Tom rode a bike last Sunday morning.",
+            "Tom riding a bike last Sunday morning.",
+            "Tom is riding a bike last Sunday morning.",
+            "Tom was riding a bike last Sunday morning."
+          ],
+          "answer": "Tom was riding a bike last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermana estaba saltando\" en inglés?",
+          "options": [
+            "My sister is jumping last night.",
+            "My sister was jumping last night.",
+            "My sister jumping last night.",
+            "My sister jumped last night."
+          ],
+          "answer": "My sister was jumping last night."
+        },
+        {
+          "id": "pastcont_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, los chicos estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "The boys did homework last Sunday morning.",
+            "The boys were doing homework last Sunday morning.",
+            "The boys doing homework last Sunday morning.",
+            "The boys are doing homework last Sunday morning."
+          ],
+          "answer": "The boys were doing homework last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermano estaba visitando a su abuela\" en inglés?",
+          "options": [
+            "My brother was visiting their grandma last night.",
+            "My brother visiting their grandma last night.",
+            "My brother visited their grandma last night.",
+            "My brother is visiting their grandma last night."
+          ],
+          "answer": "My brother was visiting their grandma last night."
+        },
+        {
+          "id": "pastcont_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, mi hermano estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "My brother did homework last Sunday morning.",
+            "My brother was doing homework last Sunday morning.",
+            "My brother is doing homework last Sunday morning.",
+            "My brother doing homework last Sunday morning."
+          ],
+          "answer": "My brother was doing homework last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mis padres estaba trepando a un árbol\" en inglés?",
+          "options": [
+            "My parents climbing a tree last night.",
+            "My parents are climbing a tree last night.",
+            "My parents were climbing a tree last night.",
+            "My parents climbed a tree last night."
+          ],
+          "answer": "My parents were climbing a tree last night."
+        },
+        {
+          "id": "pastcont_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, mis padres estaba ganando el partido\" en inglés?",
+          "options": [
+            "My parents winning the game this time yesterday.",
+            "My parents are winning the game this time yesterday.",
+            "My parents won the game this time yesterday.",
+            "My parents were winning the game this time yesterday."
+          ],
+          "answer": "My parents were winning the game this time yesterday."
+        },
+        {
+          "id": "pastcont_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, nosotros estaba saltando\" en inglés?",
+          "options": [
+            "We jumped yesterday afternoon.",
+            "We jumping yesterday afternoon.",
+            "We are jumping yesterday afternoon.",
+            "We were jumping yesterday afternoon."
+          ],
+          "answer": "We were jumping yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, eso estaba yendo a la fiesta\" en inglés?",
+          "options": [
+            "It was going to the party at 5 o'clock yesterday.",
+            "It going to the party at 5 o'clock yesterday.",
+            "It is going to the party at 5 o'clock yesterday.",
+            "It went to the party at 5 o'clock yesterday."
+          ],
+          "answer": "It was going to the party at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, ellos estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "They were doing homework last night.",
+            "They are doing homework last night.",
+            "They did homework last night.",
+            "They doing homework last night."
+          ],
+          "answer": "They were doing homework last night."
+        },
+        {
+          "id": "pastcont_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, eso estaba fregando los platos\" en inglés?",
+          "options": [
+            "It was washing the dishes last night.",
+            "It washing the dishes last night.",
+            "It is washing the dishes last night.",
+            "It washed the dishes last night."
+          ],
+          "answer": "It was washing the dishes last night."
+        },
+        {
+          "id": "pastcont_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los estudiantes estaba ayudando a su madre\" en inglés?",
+          "options": [
+            "The students helping their mum last night.",
+            "The students helped their mum last night.",
+            "The students are helping their mum last night.",
+            "The students were helping their mum last night."
+          ],
+          "answer": "The students were helping their mum last night."
+        },
+        {
+          "id": "pastcont_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, yo estaba nadando\" en inglés?",
+          "options": [
+            "I swimming last Sunday morning.",
+            "I am swimming last Sunday morning.",
+            "I swam last Sunday morning.",
+            "I was swimming last Sunday morning."
+          ],
+          "answer": "I was swimming last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, los estudiantes estaba bailando\" en inglés?",
+          "options": [
+            "The students dancing this time yesterday.",
+            "The students were dancing this time yesterday.",
+            "The students are dancing this time yesterday.",
+            "The students danced this time yesterday."
+          ],
+          "answer": "The students were dancing this time yesterday."
+        },
+        {
+          "id": "pastcont_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, el perro estaba cantando una canción\" en inglés?",
+          "options": [
+            "The dog sang a song last Sunday morning.",
+            "The dog is singing a song last Sunday morning.",
+            "The dog was singing a song last Sunday morning.",
+            "The dog singing a song last Sunday morning."
+          ],
+          "answer": "The dog was singing a song last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nuestro gato estaba escuchando música\" en inglés?",
+          "options": [
+            "Our cat is listening to music last night.",
+            "Our cat listened to music last night.",
+            "Our cat was listening to music last night.",
+            "Our cat listening to music last night."
+          ],
+          "answer": "Our cat was listening to music last night."
+        },
+        {
+          "id": "pastcont_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, nosotros estaba nadando\" en inglés?",
+          "options": [
+            "We swam last Sunday morning.",
+            "We were swimming last Sunday morning.",
+            "We are swimming last Sunday morning.",
+            "We swimming last Sunday morning."
+          ],
+          "answer": "We were swimming last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros estaba ganando el partido\" en inglés?",
+          "options": [
+            "We won the game last night.",
+            "We were winning the game last night.",
+            "We are winning the game last night.",
+            "We winning the game last night."
+          ],
+          "answer": "We were winning the game last night."
+        },
+        {
+          "id": "pastcont_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, los chicos estaba trepando a un árbol\" en inglés?",
+          "options": [
+            "The boys climbing a tree last Sunday morning.",
+            "The boys were climbing a tree last Sunday morning.",
+            "The boys are climbing a tree last Sunday morning.",
+            "The boys climbed a tree last Sunday morning."
+          ],
+          "answer": "The boys were climbing a tree last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, María estaba cepillándose los dientes\" en inglés?",
+          "options": [
+            "Maria is brushing their teeth last Sunday morning.",
+            "Maria brushing their teeth last Sunday morning.",
+            "Maria brushed their teeth last Sunday morning.",
+            "Maria was brushing their teeth last Sunday morning."
+          ],
+          "answer": "Maria was brushing their teeth last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mis padres estaba fregando los platos\" en inglés?",
+          "options": [
+            "My parents were washing the dishes last night.",
+            "My parents washing the dishes last night.",
+            "My parents washed the dishes last night.",
+            "My parents are washing the dishes last night."
+          ],
+          "answer": "My parents were washing the dishes last night."
+        },
+        {
+          "id": "pastcont_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, mis padres estaba caminando al colegio\" en inglés?",
+          "options": [
+            "My parents walked to school last Sunday morning.",
+            "My parents were walking to school last Sunday morning.",
+            "My parents are walking to school last Sunday morning.",
+            "My parents walking to school last Sunday morning."
+          ],
+          "answer": "My parents were walking to school last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, ellos estaba haciendo los deberes\" en inglés?",
+          "options": [
+            "They were doing homework last Sunday morning.",
+            "They doing homework last Sunday morning.",
+            "They did homework last Sunday morning.",
+            "They are doing homework last Sunday morning."
+          ],
+          "answer": "They were doing homework last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, yo estaba dibujando un dibujo\" en inglés?",
+          "options": [
+            "I drew a picture this time yesterday.",
+            "I drawing a picture this time yesterday.",
+            "I was drawing a picture this time yesterday.",
+            "I am drawing a picture this time yesterday."
+          ],
+          "answer": "I was drawing a picture this time yesterday."
+        },
+        {
+          "id": "pastcont_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, nosotros estaba dibujando un dibujo\" en inglés?",
+          "options": [
+            "We are drawing a picture at 5 o'clock yesterday.",
+            "We drew a picture at 5 o'clock yesterday.",
+            "We were drawing a picture at 5 o'clock yesterday.",
+            "We drawing a picture at 5 o'clock yesterday."
+          ],
+          "answer": "We were drawing a picture at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, mis padres estaba limpiando la casa\" en inglés?",
+          "options": [
+            "My parents cleaning the house this time yesterday.",
+            "My parents cleaned the house this time yesterday.",
+            "My parents were cleaning the house this time yesterday.",
+            "My parents are cleaning the house this time yesterday."
+          ],
+          "answer": "My parents were cleaning the house this time yesterday."
+        },
+        {
+          "id": "pastcont_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, ellos estaba viendo la tele\" en inglés?",
+          "options": [
+            "They are watching TV last night.",
+            "They were watching TV last night.",
+            "They watched TV last night.",
+            "They watching TV last night."
+          ],
+          "answer": "They were watching TV last night."
+        },
+        {
+          "id": "pastcont_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, yo estaba saltando\" en inglés?",
+          "options": [
+            "I jumped last Sunday morning.",
+            "I am jumping last Sunday morning.",
+            "I jumping last Sunday morning.",
+            "I was jumping last Sunday morning."
+          ],
+          "answer": "I was jumping last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, ellos estaba visitando a su abuela\" en inglés?",
+          "options": [
+            "They were visiting their grandma this time yesterday.",
+            "They visiting their grandma this time yesterday.",
+            "They visited their grandma this time yesterday.",
+            "They are visiting their grandma this time yesterday."
+          ],
+          "answer": "They were visiting their grandma this time yesterday."
+        },
+        {
+          "id": "pastcont_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, los niños estaba montando en bici\" en inglés?",
+          "options": [
+            "The children were riding a bike last Sunday morning.",
+            "The children riding a bike last Sunday morning.",
+            "The children are riding a bike last Sunday morning.",
+            "The children rode a bike last Sunday morning."
+          ],
+          "answer": "The children were riding a bike last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, nosotros estaba limpiando la casa\" en inglés?",
+          "options": [
+            "We cleaning the house yesterday afternoon.",
+            "We are cleaning the house yesterday afternoon.",
+            "We were cleaning the house yesterday afternoon.",
+            "We cleaned the house yesterday afternoon."
+          ],
+          "answer": "We were cleaning the house yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, mi hermana estaba comiendo\" en inglés?",
+          "options": [
+            "My sister having lunch last Sunday morning.",
+            "My sister had lunch last Sunday morning.",
+            "My sister is having lunch last Sunday morning.",
+            "My sister was having lunch last Sunday morning."
+          ],
+          "answer": "My sister was having lunch last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, los niños estaba dando de comer al gato\" en inglés?",
+          "options": [
+            "The children are feeding the cat this time yesterday.",
+            "The children fed the cat this time yesterday.",
+            "The children were feeding the cat this time yesterday.",
+            "The children feeding the cat this time yesterday."
+          ],
+          "answer": "The children were feeding the cat this time yesterday."
+        },
+        {
+          "id": "pastcont_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros estaba montando en bici\" en inglés?",
+          "options": [
+            "We are riding a bike last night.",
+            "We were riding a bike last night.",
+            "We riding a bike last night.",
+            "We rode a bike last night."
+          ],
+          "answer": "We were riding a bike last night."
+        },
+        {
+          "id": "pastcont_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, nosotros estaba viendo la tele\" en inglés?",
+          "options": [
+            "We are watching TV this time yesterday.",
+            "We were watching TV this time yesterday.",
+            "We watched TV this time yesterday.",
+            "We watching TV this time yesterday."
+          ],
+          "answer": "We were watching TV this time yesterday."
+        },
+        {
+          "id": "pastcont_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nuestro gato estaba ganando el partido\" en inglés?",
+          "options": [
+            "Our cat winning the game last night.",
+            "Our cat won the game last night.",
+            "Our cat is winning the game last night.",
+            "Our cat was winning the game last night."
+          ],
+          "answer": "Our cat was winning the game last night."
+        },
+        {
+          "id": "pastcont_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, mi hermana estaba escribiendo una carta\" en inglés?",
+          "options": [
+            "My sister wrote a letter this time yesterday.",
+            "My sister writing a letter this time yesterday.",
+            "My sister is writing a letter this time yesterday.",
+            "My sister was writing a letter this time yesterday."
+          ],
+          "answer": "My sister was writing a letter this time yesterday."
+        },
+        {
+          "id": "pastcont_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, eso estaba ayudando a su madre\" en inglés?",
+          "options": [
+            "It is helping their mum last Sunday morning.",
+            "It helping their mum last Sunday morning.",
+            "It helped their mum last Sunday morning.",
+            "It was helping their mum last Sunday morning."
+          ],
+          "answer": "It was helping their mum last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a las 5, los niños estaba nadando\" en inglés?",
+          "options": [
+            "The children swam at 5 o'clock yesterday.",
+            "The children were swimming at 5 o'clock yesterday.",
+            "The children are swimming at 5 o'clock yesterday.",
+            "The children swimming at 5 o'clock yesterday."
+          ],
+          "answer": "The children were swimming at 5 o'clock yesterday."
+        },
+        {
+          "id": "pastcont_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, él estaba cepillándose los dientes\" en inglés?",
+          "options": [
+            "He brushed their teeth last night.",
+            "He was brushing their teeth last night.",
+            "He is brushing their teeth last night.",
+            "He brushing their teeth last night."
+          ],
+          "answer": "He was brushing their teeth last night."
+        },
+        {
+          "id": "pastcont_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado por la mañana, tú estaba nadando\" en inglés?",
+          "options": [
+            "You are swimming last Sunday morning.",
+            "You swam last Sunday morning.",
+            "You were swimming last Sunday morning.",
+            "You swimming last Sunday morning."
+          ],
+          "answer": "You were swimming last Sunday morning."
+        },
+        {
+          "id": "pastcont_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, mi hermano estaba ganando el partido\" en inglés?",
+          "options": [
+            "My brother was winning the game this time yesterday.",
+            "My brother is winning the game this time yesterday.",
+            "My brother won the game this time yesterday.",
+            "My brother winning the game this time yesterday."
+          ],
+          "answer": "My brother was winning the game this time yesterday."
+        },
+        {
+          "id": "pastcont_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, él estaba dibujando un dibujo\" en inglés?",
+          "options": [
+            "He drew a picture yesterday afternoon.",
+            "He was drawing a picture yesterday afternoon.",
+            "He drawing a picture yesterday afternoon.",
+            "He is drawing a picture yesterday afternoon."
+          ],
+          "answer": "He was drawing a picture yesterday afternoon."
+        },
+        {
+          "id": "pastcont_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, yo estaba limpiando la casa\" en inglés?",
+          "options": [
+            "I cleaned the house last night.",
+            "I was cleaning the house last night.",
+            "I am cleaning the house last night.",
+            "I cleaning the house last night."
+          ],
+          "answer": "I was cleaning the house last night."
+        },
+        {
+          "id": "pastcont_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, nuestro gato estaba yendo a la fiesta\" en inglés?",
+          "options": [
+            "Our cat was going to the party this time yesterday.",
+            "Our cat went to the party this time yesterday.",
+            "Our cat going to the party this time yesterday.",
+            "Our cat is going to the party this time yesterday."
+          ],
+          "answer": "Our cat was going to the party this time yesterday."
+        },
+        {
+          "id": "pastcont_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, el perro estaba visitando a su abuela\" en inglés?",
+          "options": [
+            "The dog was visiting their grandma this time yesterday.",
+            "The dog visited their grandma this time yesterday.",
+            "The dog is visiting their grandma this time yesterday.",
+            "The dog visiting their grandma this time yesterday."
+          ],
+          "answer": "The dog was visiting their grandma this time yesterday."
+        },
+        {
+          "id": "pastcont_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, yo estaba ganando el partido\" en inglés?",
+          "options": [
+            "I was winning the game last night.",
+            "I winning the game last night.",
+            "I am winning the game last night.",
+            "I won the game last night."
+          ],
+          "answer": "I was winning the game last night."
+        },
+        {
+          "id": "pastcont_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermano estaba trepando a un árbol\" en inglés?",
+          "options": [
+            "My brother climbed a tree last night.",
+            "My brother was climbing a tree last night.",
+            "My brother is climbing a tree last night.",
+            "My brother climbing a tree last night."
+          ],
+          "answer": "My brother was climbing a tree last night."
+        },
+        {
+          "id": "pastcont_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, el perro estaba escribiendo una carta\" en inglés?",
+          "options": [
+            "The dog is writing a letter last night.",
+            "The dog wrote a letter last night.",
+            "The dog was writing a letter last night.",
+            "The dog writing a letter last night."
+          ],
+          "answer": "The dog was writing a letter last night."
+        },
+        {
+          "id": "pastcont_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer a esta hora, él estaba comiendo\" en inglés?",
+          "options": [
+            "He is having lunch this time yesterday.",
+            "He having lunch this time yesterday.",
+            "He had lunch this time yesterday.",
+            "He was having lunch this time yesterday."
+          ],
+          "answer": "He was having lunch this time yesterday."
+        }
+      ],
+      "timeMarkers": [
+        {
+          "left": "yesterday afternoon",
+          "right": "I was reading a book yesterday afternoon."
+        },
+        {
+          "left": "at 5 o'clock",
+          "right": "She was cooking dinner at 5 o'clock."
+        },
+        {
+          "left": "this time yesterday",
+          "right": "We were watching TV this time yesterday."
+        },
+        {
+          "left": "last night",
+          "right": "They were sleeping last night."
+        },
+        {
+          "left": "at that moment",
+          "right": "He was writing a letter at that moment."
+        },
+        {
+          "left": "all morning",
+          "right": "The children were playing all morning."
+        },
+        {
+          "left": "last Sunday morning",
+          "right": "We were cleaning the house last Sunday morning."
+        },
+        {
+          "left": "at midnight",
+          "right": "I was still working at midnight."
+        },
+        {
+          "left": "while it was raining",
+          "right": "She was singing a song while it was raining."
+        }
+      ]
+    }
+  ]
+}

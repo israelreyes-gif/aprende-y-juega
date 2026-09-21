@@ -1,0 +1,4749 @@
+{
+  "units": [
+    {
+      "id": "to-be-past",
+      "title": "To Be — Past",
+      "emoji": "🟣",
+      "exercises": [
+        {
+          "id": "tobepast_a_1",
+          "type": "A",
+          "question": "Tom ___ a teacher two days ago.",
+          "options": [
+            "is",
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_2",
+          "type": "A",
+          "question": "The students ___ scared last night.",
+          "options": [
+            "were",
+            "are",
+            "was",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_3",
+          "type": "A",
+          "question": "The boys ___ hungry last Sunday.",
+          "options": [
+            "am",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_4",
+          "type": "A",
+          "question": "My sister ___ cold last Sunday.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_5",
+          "type": "A",
+          "question": "They ___ kind two days ago.",
+          "options": [
+            "are",
+            "is",
+            "am",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_6",
+          "type": "A",
+          "question": "My parents ___ a doctor last Sunday.",
+          "options": [
+            "is",
+            "were",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_7",
+          "type": "A",
+          "question": "Tom ___ funny two days ago.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_8",
+          "type": "A",
+          "question": "My sister ___ angry last Sunday.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_9",
+          "type": "A",
+          "question": "You ___ brave yesterday.",
+          "options": [
+            "is",
+            "were",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_10",
+          "type": "A",
+          "question": "It ___ angry last week.",
+          "options": [
+            "are",
+            "am",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_11",
+          "type": "A",
+          "question": "The dog ___ students last Sunday.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_12",
+          "type": "A",
+          "question": "It ___ tall last night.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_13",
+          "type": "A",
+          "question": "They ___ cold last week.",
+          "options": [
+            "were",
+            "are",
+            "was",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_14",
+          "type": "A",
+          "question": "My sister ___ a doctor last Sunday.",
+          "options": [
+            "is",
+            "were",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_15",
+          "type": "A",
+          "question": "You ___ brave yesterday afternoon.",
+          "options": [
+            "are",
+            "am",
+            "were",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_16",
+          "type": "A",
+          "question": "He ___ kind yesterday afternoon.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_17",
+          "type": "A",
+          "question": "The boys ___ cold last week.",
+          "options": [
+            "is",
+            "am",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_18",
+          "type": "A",
+          "question": "We ___ angry last Sunday.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_19",
+          "type": "A",
+          "question": "Maria ___ in the kitchen last Sunday.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_20",
+          "type": "A",
+          "question": "They ___ tired yesterday.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_21",
+          "type": "A",
+          "question": "The boys ___ a doctor last week.",
+          "options": [
+            "were",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_22",
+          "type": "A",
+          "question": "They ___ proud last week.",
+          "options": [
+            "are",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_23",
+          "type": "A",
+          "question": "She ___ nervous yesterday afternoon.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_24",
+          "type": "A",
+          "question": "My sister ___ tired last week.",
+          "options": [
+            "am",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_25",
+          "type": "A",
+          "question": "We ___ proud yesterday.",
+          "options": [
+            "are",
+            "am",
+            "were",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_26",
+          "type": "A",
+          "question": "The boys ___ a good friend last night.",
+          "options": [
+            "was",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_27",
+          "type": "A",
+          "question": "The children ___ scared last week.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_28",
+          "type": "A",
+          "question": "Our cat ___ busy yesterday afternoon.",
+          "options": [
+            "was",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_29",
+          "type": "A",
+          "question": "They ___ at school last Sunday.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_30",
+          "type": "A",
+          "question": "The boys ___ hungry yesterday afternoon.",
+          "options": [
+            "am",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_31",
+          "type": "A",
+          "question": "We ___ happy yesterday.",
+          "options": [
+            "are",
+            "am",
+            "were",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_32",
+          "type": "A",
+          "question": "It ___ funny last night.",
+          "options": [
+            "am",
+            "was",
+            "were",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_33",
+          "type": "A",
+          "question": "They ___ tired last night.",
+          "options": [
+            "were",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_34",
+          "type": "A",
+          "question": "Maria ___ busy yesterday afternoon.",
+          "options": [
+            "was",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_35",
+          "type": "A",
+          "question": "I ___ happy last Sunday.",
+          "options": [
+            "are",
+            "were",
+            "am",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_36",
+          "type": "A",
+          "question": "My brother ___ funny last week.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_37",
+          "type": "A",
+          "question": "Maria ___ thirsty last night.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_38",
+          "type": "A",
+          "question": "We ___ a doctor yesterday.",
+          "options": [
+            "is",
+            "were",
+            "was",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_39",
+          "type": "A",
+          "question": "We ___ friends two days ago.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_40",
+          "type": "A",
+          "question": "You ___ brave last Sunday.",
+          "options": [
+            "was",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_41",
+          "type": "A",
+          "question": "I ___ angry yesterday afternoon.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_42",
+          "type": "A",
+          "question": "My parents ___ in the park yesterday.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_43",
+          "type": "A",
+          "question": "My parents ___ nervous last night.",
+          "options": [
+            "were",
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_44",
+          "type": "A",
+          "question": "The boys ___ tired yesterday afternoon.",
+          "options": [
+            "were",
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_45",
+          "type": "A",
+          "question": "You ___ in the park two days ago.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_46",
+          "type": "A",
+          "question": "It ___ friends last Sunday.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_47",
+          "type": "A",
+          "question": "They ___ late last Sunday.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_48",
+          "type": "A",
+          "question": "My parents ___ cold last Sunday.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_49",
+          "type": "A",
+          "question": "My brother ___ students last Sunday.",
+          "options": [
+            "was",
+            "am",
+            "is",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_50",
+          "type": "A",
+          "question": "She ___ tall last Sunday.",
+          "options": [
+            "was",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_51",
+          "type": "A",
+          "question": "Maria ___ funny last week.",
+          "options": [
+            "am",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_52",
+          "type": "A",
+          "question": "The boys ___ funny last Sunday.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_53",
+          "type": "A",
+          "question": "We ___ hungry yesterday.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_54",
+          "type": "A",
+          "question": "My parents ___ funny two days ago.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_55",
+          "type": "A",
+          "question": "They ___ strong yesterday afternoon.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_56",
+          "type": "A",
+          "question": "We ___ tall two days ago.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_57",
+          "type": "A",
+          "question": "Maria ___ quiet last week.",
+          "options": [
+            "is",
+            "were",
+            "am",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_58",
+          "type": "A",
+          "question": "The boys ___ late two days ago.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_59",
+          "type": "A",
+          "question": "Tom ___ angry last Sunday.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_60",
+          "type": "A",
+          "question": "Maria ___ cold last week.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_61",
+          "type": "A",
+          "question": "Our cat ___ at school yesterday.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_62",
+          "type": "A",
+          "question": "Maria ___ happy yesterday afternoon.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_63",
+          "type": "A",
+          "question": "I ___ at home last week.",
+          "options": [
+            "was",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_64",
+          "type": "A",
+          "question": "We ___ in the kitchen last night.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_65",
+          "type": "A",
+          "question": "I ___ sad last Sunday.",
+          "options": [
+            "am",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_66",
+          "type": "A",
+          "question": "The students ___ late last Sunday.",
+          "options": [
+            "was",
+            "am",
+            "were",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_67",
+          "type": "A",
+          "question": "It ___ busy two days ago.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_68",
+          "type": "A",
+          "question": "It ___ in the park two days ago.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_69",
+          "type": "A",
+          "question": "The children ___ tall last night.",
+          "options": [
+            "am",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_70",
+          "type": "A",
+          "question": "We ___ happy last night.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_71",
+          "type": "A",
+          "question": "She ___ sad yesterday.",
+          "options": [
+            "is",
+            "am",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_72",
+          "type": "A",
+          "question": "We ___ a teacher yesterday.",
+          "options": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_73",
+          "type": "A",
+          "question": "I ___ cold yesterday afternoon.",
+          "options": [
+            "are",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_74",
+          "type": "A",
+          "question": "The children ___ quiet two days ago.",
+          "options": [
+            "am",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_75",
+          "type": "A",
+          "question": "The children ___ funny two days ago.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_76",
+          "type": "A",
+          "question": "It ___ busy last Sunday.",
+          "options": [
+            "are",
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_77",
+          "type": "A",
+          "question": "My parents ___ late two days ago.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_78",
+          "type": "A",
+          "question": "He ___ hungry yesterday.",
+          "options": [
+            "were",
+            "are",
+            "is",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_79",
+          "type": "A",
+          "question": "They ___ at home last Sunday.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_80",
+          "type": "A",
+          "question": "Our cat ___ late last night.",
+          "options": [
+            "are",
+            "was",
+            "am",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_81",
+          "type": "A",
+          "question": "My sister ___ tall last Sunday.",
+          "options": [
+            "was",
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_82",
+          "type": "A",
+          "question": "Our cat ___ hungry last week.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_83",
+          "type": "A",
+          "question": "Tom ___ in the park yesterday afternoon.",
+          "options": [
+            "was",
+            "is",
+            "are",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_84",
+          "type": "A",
+          "question": "My parents ___ scared last Sunday.",
+          "options": [
+            "are",
+            "was",
+            "were",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_85",
+          "type": "A",
+          "question": "My parents ___ a teacher yesterday.",
+          "options": [
+            "am",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_86",
+          "type": "A",
+          "question": "My brother ___ cold last Sunday.",
+          "options": [
+            "are",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_87",
+          "type": "A",
+          "question": "My sister ___ at home last week.",
+          "options": [
+            "were",
+            "was",
+            "am",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_88",
+          "type": "A",
+          "question": "My parents ___ at school two days ago.",
+          "options": [
+            "were",
+            "am",
+            "are",
+            "is"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_89",
+          "type": "A",
+          "question": "I ___ strong last week.",
+          "options": [
+            "were",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_90",
+          "type": "A",
+          "question": "The children ___ in the park yesterday.",
+          "options": [
+            "are",
+            "were",
+            "is",
+            "was"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_91",
+          "type": "A",
+          "question": "Our cat ___ scared last Sunday.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_92",
+          "type": "A",
+          "question": "She ___ a doctor two days ago.",
+          "options": [
+            "were",
+            "am",
+            "was",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_93",
+          "type": "A",
+          "question": "My sister ___ happy yesterday afternoon.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "is"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_94",
+          "type": "A",
+          "question": "It ___ ready last night.",
+          "options": [
+            "are",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_95",
+          "type": "A",
+          "question": "It ___ at school yesterday afternoon.",
+          "options": [
+            "were",
+            "is",
+            "was",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_96",
+          "type": "A",
+          "question": "They ___ at school last week.",
+          "options": [
+            "is",
+            "am",
+            "were",
+            "are"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_a_97",
+          "type": "A",
+          "question": "My brother ___ thirsty last week.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "was"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_98",
+          "type": "A",
+          "question": "It ___ a good friend yesterday afternoon.",
+          "options": [
+            "am",
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_99",
+          "type": "A",
+          "question": "My sister ___ students last week.",
+          "options": [
+            "was",
+            "are",
+            "were",
+            "am"
+          ],
+          "answer": "was"
+        },
+        {
+          "id": "tobepast_a_100",
+          "type": "A",
+          "question": "My parents ___ kind yesterday.",
+          "options": [
+            "were",
+            "was",
+            "is",
+            "am"
+          ],
+          "answer": "were"
+        },
+        {
+          "id": "tobepast_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was angry last week.\"",
+          "options": [
+            "My sister are not angry last week.",
+            "My sister is not angry last week.",
+            "My sister am not angry last week.",
+            "My sister was not angry last week."
+          ],
+          "answer": "My sister was not angry last week."
+        },
+        {
+          "id": "tobepast_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were here yesterday.\"",
+          "options": [
+            "The students is not here yesterday.",
+            "The students was not here yesterday.",
+            "The students were not here yesterday.",
+            "The students are not here yesterday."
+          ],
+          "answer": "The students were not here yesterday."
+        },
+        {
+          "id": "tobepast_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was nervous two days ago.\"",
+          "options": [
+            "Maria was not nervous two days ago.",
+            "Maria is not nervous two days ago.",
+            "Maria were not nervous two days ago.",
+            "Maria am not nervous two days ago."
+          ],
+          "answer": "Maria was not nervous two days ago."
+        },
+        {
+          "id": "tobepast_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were in the kitchen yesterday afternoon.\"",
+          "options": [
+            "We were not in the kitchen yesterday afternoon.",
+            "We are not in the kitchen yesterday afternoon.",
+            "We was not in the kitchen yesterday afternoon.",
+            "We am not in the kitchen yesterday afternoon."
+          ],
+          "answer": "We were not in the kitchen yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was friends last Sunday.\"",
+          "options": [
+            "My sister was not friends last Sunday.",
+            "My sister am not friends last Sunday.",
+            "My sister is not friends last Sunday.",
+            "My sister are not friends last Sunday."
+          ],
+          "answer": "My sister was not friends last Sunday."
+        },
+        {
+          "id": "tobepast_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were sad yesterday afternoon.\"",
+          "options": [
+            "They were not sad yesterday afternoon.",
+            "They are not sad yesterday afternoon.",
+            "They is not sad yesterday afternoon.",
+            "They am not sad yesterday afternoon."
+          ],
+          "answer": "They were not sad yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were busy yesterday.\"",
+          "options": [
+            "We is not busy yesterday.",
+            "We was not busy yesterday.",
+            "We am not busy yesterday.",
+            "We were not busy yesterday."
+          ],
+          "answer": "We were not busy yesterday."
+        },
+        {
+          "id": "tobepast_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were late yesterday afternoon.\"",
+          "options": [
+            "The boys am not late yesterday afternoon.",
+            "The boys was not late yesterday afternoon.",
+            "The boys were not late yesterday afternoon.",
+            "The boys are not late yesterday afternoon."
+          ],
+          "answer": "The boys were not late yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was at school yesterday.\"",
+          "options": [
+            "Maria are not at school yesterday.",
+            "Maria was not at school yesterday.",
+            "Maria were not at school yesterday.",
+            "Maria am not at school yesterday."
+          ],
+          "answer": "Maria was not at school yesterday."
+        },
+        {
+          "id": "tobepast_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were here last Sunday.\"",
+          "options": [
+            "My parents am not here last Sunday.",
+            "My parents are not here last Sunday.",
+            "My parents is not here last Sunday.",
+            "My parents were not here last Sunday."
+          ],
+          "answer": "My parents were not here last Sunday."
+        },
+        {
+          "id": "tobepast_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was students last week.\"",
+          "options": [
+            "It am not students last week.",
+            "It was not students last week.",
+            "It were not students last week.",
+            "It are not students last week."
+          ],
+          "answer": "It was not students last week."
+        },
+        {
+          "id": "tobepast_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was in the park last week.\"",
+          "options": [
+            "He was not in the park last week.",
+            "He is not in the park last week.",
+            "He am not in the park last week.",
+            "He are not in the park last week."
+          ],
+          "answer": "He was not in the park last week."
+        },
+        {
+          "id": "tobepast_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were students two days ago.\"",
+          "options": [
+            "You are not students two days ago.",
+            "You were not students two days ago.",
+            "You was not students two days ago.",
+            "You am not students two days ago."
+          ],
+          "answer": "You were not students two days ago."
+        },
+        {
+          "id": "tobepast_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were friends two days ago.\"",
+          "options": [
+            "The boys was not friends two days ago.",
+            "The boys were not friends two days ago.",
+            "The boys are not friends two days ago.",
+            "The boys am not friends two days ago."
+          ],
+          "answer": "The boys were not friends two days ago."
+        },
+        {
+          "id": "tobepast_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was strong last Sunday.\"",
+          "options": [
+            "The dog are not strong last Sunday.",
+            "The dog were not strong last Sunday.",
+            "The dog is not strong last Sunday.",
+            "The dog was not strong last Sunday."
+          ],
+          "answer": "The dog was not strong last Sunday."
+        },
+        {
+          "id": "tobepast_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was angry two days ago.\"",
+          "options": [
+            "He is not angry two days ago.",
+            "He am not angry two days ago.",
+            "He was not angry two days ago.",
+            "He were not angry two days ago."
+          ],
+          "answer": "He was not angry two days ago."
+        },
+        {
+          "id": "tobepast_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was a doctor yesterday.\"",
+          "options": [
+            "My sister were not a doctor yesterday.",
+            "My sister was not a doctor yesterday.",
+            "My sister am not a doctor yesterday.",
+            "My sister are not a doctor yesterday."
+          ],
+          "answer": "My sister was not a doctor yesterday."
+        },
+        {
+          "id": "tobepast_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was cold last Sunday.\"",
+          "options": [
+            "The dog was not cold last Sunday.",
+            "The dog is not cold last Sunday.",
+            "The dog am not cold last Sunday.",
+            "The dog are not cold last Sunday."
+          ],
+          "answer": "The dog was not cold last Sunday."
+        },
+        {
+          "id": "tobepast_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were sad last night.\"",
+          "options": [
+            "My parents are not sad last night.",
+            "My parents were not sad last night.",
+            "My parents was not sad last night.",
+            "My parents am not sad last night."
+          ],
+          "answer": "My parents were not sad last night."
+        },
+        {
+          "id": "tobepast_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was quiet last night.\"",
+          "options": [
+            "The dog was not quiet last night.",
+            "The dog are not quiet last night.",
+            "The dog were not quiet last night.",
+            "The dog am not quiet last night."
+          ],
+          "answer": "The dog was not quiet last night."
+        },
+        {
+          "id": "tobepast_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was hungry yesterday afternoon.\"",
+          "options": [
+            "Maria was not hungry yesterday afternoon.",
+            "Maria are not hungry yesterday afternoon.",
+            "Maria were not hungry yesterday afternoon.",
+            "Maria am not hungry yesterday afternoon."
+          ],
+          "answer": "Maria was not hungry yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was students last week.\"",
+          "options": [
+            "The dog were not students last week.",
+            "The dog was not students last week.",
+            "The dog are not students last week.",
+            "The dog am not students last week."
+          ],
+          "answer": "The dog was not students last week."
+        },
+        {
+          "id": "tobepast_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were a good friend yesterday.\"",
+          "options": [
+            "You was not a good friend yesterday.",
+            "You were not a good friend yesterday.",
+            "You am not a good friend yesterday.",
+            "You are not a good friend yesterday."
+          ],
+          "answer": "You were not a good friend yesterday."
+        },
+        {
+          "id": "tobepast_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was late yesterday.\"",
+          "options": [
+            "Our cat is not late yesterday.",
+            "Our cat are not late yesterday.",
+            "Our cat was not late yesterday.",
+            "Our cat were not late yesterday."
+          ],
+          "answer": "Our cat was not late yesterday."
+        },
+        {
+          "id": "tobepast_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were late last night.\"",
+          "options": [
+            "My parents am not late last night.",
+            "My parents was not late last night.",
+            "My parents is not late last night.",
+            "My parents were not late last night."
+          ],
+          "answer": "My parents were not late last night."
+        },
+        {
+          "id": "tobepast_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was brave yesterday afternoon.\"",
+          "options": [
+            "My brother were not brave yesterday afternoon.",
+            "My brother is not brave yesterday afternoon.",
+            "My brother am not brave yesterday afternoon.",
+            "My brother was not brave yesterday afternoon."
+          ],
+          "answer": "My brother was not brave yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were brave yesterday.\"",
+          "options": [
+            "You are not brave yesterday.",
+            "You were not brave yesterday.",
+            "You am not brave yesterday.",
+            "You was not brave yesterday."
+          ],
+          "answer": "You were not brave yesterday."
+        },
+        {
+          "id": "tobepast_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was late last night.\"",
+          "options": [
+            "Our cat are not late last night.",
+            "Our cat is not late last night.",
+            "Our cat were not late last night.",
+            "Our cat was not late last night."
+          ],
+          "answer": "Our cat was not late last night."
+        },
+        {
+          "id": "tobepast_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were ready last Sunday.\"",
+          "options": [
+            "They were not ready last Sunday.",
+            "They am not ready last Sunday.",
+            "They are not ready last Sunday.",
+            "They was not ready last Sunday."
+          ],
+          "answer": "They were not ready last Sunday."
+        },
+        {
+          "id": "tobepast_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were brave yesterday.\"",
+          "options": [
+            "We are not brave yesterday.",
+            "We was not brave yesterday.",
+            "We is not brave yesterday.",
+            "We were not brave yesterday."
+          ],
+          "answer": "We were not brave yesterday."
+        },
+        {
+          "id": "tobepast_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was angry yesterday afternoon.\"",
+          "options": [
+            "I am not angry yesterday afternoon.",
+            "I were not angry yesterday afternoon.",
+            "I is not angry yesterday afternoon.",
+            "I was not angry yesterday afternoon."
+          ],
+          "answer": "I was not angry yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were a good friend last Sunday.\"",
+          "options": [
+            "We were not a good friend last Sunday.",
+            "We are not a good friend last Sunday.",
+            "We was not a good friend last Sunday.",
+            "We am not a good friend last Sunday."
+          ],
+          "answer": "We were not a good friend last Sunday."
+        },
+        {
+          "id": "tobepast_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was quiet yesterday afternoon.\"",
+          "options": [
+            "Our cat was not quiet yesterday afternoon.",
+            "Our cat is not quiet yesterday afternoon.",
+            "Our cat were not quiet yesterday afternoon.",
+            "Our cat are not quiet yesterday afternoon."
+          ],
+          "answer": "Our cat was not quiet yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were a doctor two days ago.\"",
+          "options": [
+            "The students were not a doctor two days ago.",
+            "The students am not a doctor two days ago.",
+            "The students was not a doctor two days ago.",
+            "The students are not a doctor two days ago."
+          ],
+          "answer": "The students were not a doctor two days ago."
+        },
+        {
+          "id": "tobepast_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were at school yesterday afternoon.\"",
+          "options": [
+            "My parents was not at school yesterday afternoon.",
+            "My parents were not at school yesterday afternoon.",
+            "My parents is not at school yesterday afternoon.",
+            "My parents am not at school yesterday afternoon."
+          ],
+          "answer": "My parents were not at school yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were a teacher last week.\"",
+          "options": [
+            "My parents was not a teacher last week.",
+            "My parents is not a teacher last week.",
+            "My parents are not a teacher last week.",
+            "My parents were not a teacher last week."
+          ],
+          "answer": "My parents were not a teacher last week."
+        },
+        {
+          "id": "tobepast_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"She was students yesterday.\"",
+          "options": [
+            "She am not students yesterday.",
+            "She is not students yesterday.",
+            "She was not students yesterday.",
+            "She were not students yesterday."
+          ],
+          "answer": "She was not students yesterday."
+        },
+        {
+          "id": "tobepast_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was hungry last week.\"",
+          "options": [
+            "My sister was not hungry last week.",
+            "My sister were not hungry last week.",
+            "My sister am not hungry last week.",
+            "My sister are not hungry last week."
+          ],
+          "answer": "My sister was not hungry last week."
+        },
+        {
+          "id": "tobepast_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were late last night.\"",
+          "options": [
+            "The children were not late last night.",
+            "The children am not late last night.",
+            "The children is not late last night.",
+            "The children was not late last night."
+          ],
+          "answer": "The children were not late last night."
+        },
+        {
+          "id": "tobepast_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were funny yesterday afternoon.\"",
+          "options": [
+            "The children were not funny yesterday afternoon.",
+            "The children are not funny yesterday afternoon.",
+            "The children am not funny yesterday afternoon.",
+            "The children was not funny yesterday afternoon."
+          ],
+          "answer": "The children were not funny yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were sad yesterday afternoon.\"",
+          "options": [
+            "The children were not sad yesterday afternoon.",
+            "The children was not sad yesterday afternoon.",
+            "The children am not sad yesterday afternoon.",
+            "The children are not sad yesterday afternoon."
+          ],
+          "answer": "The children were not sad yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were scared last week.\"",
+          "options": [
+            "The boys was not scared last week.",
+            "The boys are not scared last week.",
+            "The boys were not scared last week.",
+            "The boys is not scared last week."
+          ],
+          "answer": "The boys were not scared last week."
+        },
+        {
+          "id": "tobepast_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was scared last night.\"",
+          "options": [
+            "It am not scared last night.",
+            "It is not scared last night.",
+            "It was not scared last night.",
+            "It are not scared last night."
+          ],
+          "answer": "It was not scared last night."
+        },
+        {
+          "id": "tobepast_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was a doctor last Sunday.\"",
+          "options": [
+            "My brother is not a doctor last Sunday.",
+            "My brother are not a doctor last Sunday.",
+            "My brother was not a doctor last Sunday.",
+            "My brother am not a doctor last Sunday."
+          ],
+          "answer": "My brother was not a doctor last Sunday."
+        },
+        {
+          "id": "tobepast_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was thirsty last night.\"",
+          "options": [
+            "It was not thirsty last night.",
+            "It are not thirsty last night.",
+            "It were not thirsty last night.",
+            "It is not thirsty last night."
+          ],
+          "answer": "It was not thirsty last night."
+        },
+        {
+          "id": "tobepast_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were a good friend last week.\"",
+          "options": [
+            "We are not a good friend last week.",
+            "We is not a good friend last week.",
+            "We am not a good friend last week.",
+            "We were not a good friend last week."
+          ],
+          "answer": "We were not a good friend last week."
+        },
+        {
+          "id": "tobepast_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were happy yesterday.\"",
+          "options": [
+            "My parents were not happy yesterday.",
+            "My parents was not happy yesterday.",
+            "My parents is not happy yesterday.",
+            "My parents am not happy yesterday."
+          ],
+          "answer": "My parents were not happy yesterday."
+        },
+        {
+          "id": "tobepast_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was in the park two days ago.\"",
+          "options": [
+            "Tom am not in the park two days ago.",
+            "Tom is not in the park two days ago.",
+            "Tom are not in the park two days ago.",
+            "Tom was not in the park two days ago."
+          ],
+          "answer": "Tom was not in the park two days ago."
+        },
+        {
+          "id": "tobepast_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were a doctor yesterday afternoon.\"",
+          "options": [
+            "The boys is not a doctor yesterday afternoon.",
+            "The boys were not a doctor yesterday afternoon.",
+            "The boys was not a doctor yesterday afternoon.",
+            "The boys are not a doctor yesterday afternoon."
+          ],
+          "answer": "The boys were not a doctor yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were quiet last night.\"",
+          "options": [
+            "They was not quiet last night.",
+            "They are not quiet last night.",
+            "They were not quiet last night.",
+            "They is not quiet last night."
+          ],
+          "answer": "They were not quiet last night."
+        },
+        {
+          "id": "tobepast_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were students last week.\"",
+          "options": [
+            "You were not students last week.",
+            "You am not students last week.",
+            "You are not students last week.",
+            "You was not students last week."
+          ],
+          "answer": "You were not students last week."
+        },
+        {
+          "id": "tobepast_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was funny yesterday.\"",
+          "options": [
+            "Tom is not funny yesterday.",
+            "Tom were not funny yesterday.",
+            "Tom was not funny yesterday.",
+            "Tom am not funny yesterday."
+          ],
+          "answer": "Tom was not funny yesterday."
+        },
+        {
+          "id": "tobepast_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was ready yesterday.\"",
+          "options": [
+            "Our cat are not ready yesterday.",
+            "Our cat was not ready yesterday.",
+            "Our cat were not ready yesterday.",
+            "Our cat am not ready yesterday."
+          ],
+          "answer": "Our cat was not ready yesterday."
+        },
+        {
+          "id": "tobepast_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was friends last week.\"",
+          "options": [
+            "Tom are not friends last week.",
+            "Tom is not friends last week.",
+            "Tom was not friends last week.",
+            "Tom am not friends last week."
+          ],
+          "answer": "Tom was not friends last week."
+        },
+        {
+          "id": "tobepast_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were scared last week.\"",
+          "options": [
+            "They were not scared last week.",
+            "They is not scared last week.",
+            "They am not scared last week.",
+            "They are not scared last week."
+          ],
+          "answer": "They were not scared last week."
+        },
+        {
+          "id": "tobepast_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were strong last week.\"",
+          "options": [
+            "The students are not strong last week.",
+            "The students is not strong last week.",
+            "The students was not strong last week.",
+            "The students were not strong last week."
+          ],
+          "answer": "The students were not strong last week."
+        },
+        {
+          "id": "tobepast_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was brave last night.\"",
+          "options": [
+            "The dog are not brave last night.",
+            "The dog was not brave last night.",
+            "The dog is not brave last night.",
+            "The dog am not brave last night."
+          ],
+          "answer": "The dog was not brave last night."
+        },
+        {
+          "id": "tobepast_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were tall last week.\"",
+          "options": [
+            "You was not tall last week.",
+            "You is not tall last week.",
+            "You were not tall last week.",
+            "You are not tall last week."
+          ],
+          "answer": "You were not tall last week."
+        },
+        {
+          "id": "tobepast_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were sad last Sunday.\"",
+          "options": [
+            "The children were not sad last Sunday.",
+            "The children are not sad last Sunday.",
+            "The children am not sad last Sunday.",
+            "The children is not sad last Sunday."
+          ],
+          "answer": "The children were not sad last Sunday."
+        },
+        {
+          "id": "tobepast_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was ready yesterday afternoon.\"",
+          "options": [
+            "My brother was not ready yesterday afternoon.",
+            "My brother were not ready yesterday afternoon.",
+            "My brother am not ready yesterday afternoon.",
+            "My brother are not ready yesterday afternoon."
+          ],
+          "answer": "My brother was not ready yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was strong yesterday.\"",
+          "options": [
+            "Tom is not strong yesterday.",
+            "Tom was not strong yesterday.",
+            "Tom were not strong yesterday.",
+            "Tom am not strong yesterday."
+          ],
+          "answer": "Tom was not strong yesterday."
+        },
+        {
+          "id": "tobepast_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"She was students last Sunday.\"",
+          "options": [
+            "She are not students last Sunday.",
+            "She was not students last Sunday.",
+            "She is not students last Sunday.",
+            "She am not students last Sunday."
+          ],
+          "answer": "She was not students last Sunday."
+        },
+        {
+          "id": "tobepast_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was cold yesterday.\"",
+          "options": [
+            "My sister is not cold yesterday.",
+            "My sister am not cold yesterday.",
+            "My sister was not cold yesterday.",
+            "My sister were not cold yesterday."
+          ],
+          "answer": "My sister was not cold yesterday."
+        },
+        {
+          "id": "tobepast_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was at home yesterday.\"",
+          "options": [
+            "My sister was not at home yesterday.",
+            "My sister are not at home yesterday.",
+            "My sister were not at home yesterday.",
+            "My sister am not at home yesterday."
+          ],
+          "answer": "My sister was not at home yesterday."
+        },
+        {
+          "id": "tobepast_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"I was quiet yesterday afternoon.\"",
+          "options": [
+            "I was not quiet yesterday afternoon.",
+            "I is not quiet yesterday afternoon.",
+            "I am not quiet yesterday afternoon.",
+            "I are not quiet yesterday afternoon."
+          ],
+          "answer": "I was not quiet yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were friends last Sunday.\"",
+          "options": [
+            "My parents was not friends last Sunday.",
+            "My parents am not friends last Sunday.",
+            "My parents is not friends last Sunday.",
+            "My parents were not friends last Sunday."
+          ],
+          "answer": "My parents were not friends last Sunday."
+        },
+        {
+          "id": "tobepast_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was proud yesterday.\"",
+          "options": [
+            "Maria were not proud yesterday.",
+            "Maria was not proud yesterday.",
+            "Maria is not proud yesterday.",
+            "Maria are not proud yesterday."
+          ],
+          "answer": "Maria was not proud yesterday."
+        },
+        {
+          "id": "tobepast_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were kind last week.\"",
+          "options": [
+            "My parents is not kind last week.",
+            "My parents are not kind last week.",
+            "My parents were not kind last week.",
+            "My parents was not kind last week."
+          ],
+          "answer": "My parents were not kind last week."
+        },
+        {
+          "id": "tobepast_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were kind last Sunday.\"",
+          "options": [
+            "We were not kind last Sunday.",
+            "We was not kind last Sunday.",
+            "We is not kind last Sunday.",
+            "We am not kind last Sunday."
+          ],
+          "answer": "We were not kind last Sunday."
+        },
+        {
+          "id": "tobepast_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were sad two days ago.\"",
+          "options": [
+            "The students am not sad two days ago.",
+            "The students were not sad two days ago.",
+            "The students are not sad two days ago.",
+            "The students was not sad two days ago."
+          ],
+          "answer": "The students were not sad two days ago."
+        },
+        {
+          "id": "tobepast_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was strong two days ago.\"",
+          "options": [
+            "My sister are not strong two days ago.",
+            "My sister is not strong two days ago.",
+            "My sister were not strong two days ago.",
+            "My sister was not strong two days ago."
+          ],
+          "answer": "My sister was not strong two days ago."
+        },
+        {
+          "id": "tobepast_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"It was at school last week.\"",
+          "options": [
+            "It were not at school last week.",
+            "It was not at school last week.",
+            "It is not at school last week.",
+            "It are not at school last week."
+          ],
+          "answer": "It was not at school last week."
+        },
+        {
+          "id": "tobepast_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was sad last Sunday.\"",
+          "options": [
+            "My brother are not sad last Sunday.",
+            "My brother is not sad last Sunday.",
+            "My brother am not sad last Sunday.",
+            "My brother was not sad last Sunday."
+          ],
+          "answer": "My brother was not sad last Sunday."
+        },
+        {
+          "id": "tobepast_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents were proud yesterday.\"",
+          "options": [
+            "My parents is not proud yesterday.",
+            "My parents was not proud yesterday.",
+            "My parents were not proud yesterday.",
+            "My parents am not proud yesterday."
+          ],
+          "answer": "My parents were not proud yesterday."
+        },
+        {
+          "id": "tobepast_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was kind two days ago.\"",
+          "options": [
+            "My sister were not kind two days ago.",
+            "My sister are not kind two days ago.",
+            "My sister was not kind two days ago.",
+            "My sister am not kind two days ago."
+          ],
+          "answer": "My sister was not kind two days ago."
+        },
+        {
+          "id": "tobepast_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys were nervous last night.\"",
+          "options": [
+            "The boys am not nervous last night.",
+            "The boys were not nervous last night.",
+            "The boys are not nervous last night.",
+            "The boys was not nervous last night."
+          ],
+          "answer": "The boys were not nervous last night."
+        },
+        {
+          "id": "tobepast_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were thirsty yesterday afternoon.\"",
+          "options": [
+            "You was not thirsty yesterday afternoon.",
+            "You were not thirsty yesterday afternoon.",
+            "You is not thirsty yesterday afternoon.",
+            "You are not thirsty yesterday afternoon."
+          ],
+          "answer": "You were not thirsty yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were late last week.\"",
+          "options": [
+            "You were not late last week.",
+            "You are not late last week.",
+            "You am not late last week.",
+            "You was not late last week."
+          ],
+          "answer": "You were not late last week."
+        },
+        {
+          "id": "tobepast_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was thirsty yesterday afternoon.\"",
+          "options": [
+            "The dog were not thirsty yesterday afternoon.",
+            "The dog was not thirsty yesterday afternoon.",
+            "The dog am not thirsty yesterday afternoon.",
+            "The dog is not thirsty yesterday afternoon."
+          ],
+          "answer": "The dog was not thirsty yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was students last Sunday.\"",
+          "options": [
+            "He is not students last Sunday.",
+            "He am not students last Sunday.",
+            "He were not students last Sunday.",
+            "He was not students last Sunday."
+          ],
+          "answer": "He was not students last Sunday."
+        },
+        {
+          "id": "tobepast_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"He was friends two days ago.\"",
+          "options": [
+            "He was not friends two days ago.",
+            "He were not friends two days ago.",
+            "He am not friends two days ago.",
+            "He is not friends two days ago."
+          ],
+          "answer": "He was not friends two days ago."
+        },
+        {
+          "id": "tobepast_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"We were students yesterday afternoon.\"",
+          "options": [
+            "We is not students yesterday afternoon.",
+            "We were not students yesterday afternoon.",
+            "We was not students yesterday afternoon.",
+            "We am not students yesterday afternoon."
+          ],
+          "answer": "We were not students yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were students yesterday.\"",
+          "options": [
+            "The students were not students yesterday.",
+            "The students am not students yesterday.",
+            "The students are not students yesterday.",
+            "The students is not students yesterday."
+          ],
+          "answer": "The students were not students yesterday."
+        },
+        {
+          "id": "tobepast_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was here yesterday.\"",
+          "options": [
+            "My sister is not here yesterday.",
+            "My sister were not here yesterday.",
+            "My sister was not here yesterday.",
+            "My sister am not here yesterday."
+          ],
+          "answer": "My sister was not here yesterday."
+        },
+        {
+          "id": "tobepast_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were ready two days ago.\"",
+          "options": [
+            "The students were not ready two days ago.",
+            "The students is not ready two days ago.",
+            "The students are not ready two days ago.",
+            "The students was not ready two days ago."
+          ],
+          "answer": "The students were not ready two days ago."
+        },
+        {
+          "id": "tobepast_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students were late yesterday afternoon.\"",
+          "options": [
+            "The students were not late yesterday afternoon.",
+            "The students are not late yesterday afternoon.",
+            "The students was not late yesterday afternoon.",
+            "The students is not late yesterday afternoon."
+          ],
+          "answer": "The students were not late yesterday afternoon."
+        },
+        {
+          "id": "tobepast_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were students last night.\"",
+          "options": [
+            "You are not students last night.",
+            "You were not students last night.",
+            "You was not students last night.",
+            "You is not students last night."
+          ],
+          "answer": "You were not students last night."
+        },
+        {
+          "id": "tobepast_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was quiet last night.\"",
+          "options": [
+            "Tom were not quiet last night.",
+            "Tom am not quiet last night.",
+            "Tom was not quiet last night.",
+            "Tom are not quiet last night."
+          ],
+          "answer": "Tom was not quiet last night."
+        },
+        {
+          "id": "tobepast_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was at school yesterday.\"",
+          "options": [
+            "My sister were not at school yesterday.",
+            "My sister was not at school yesterday.",
+            "My sister am not at school yesterday.",
+            "My sister are not at school yesterday."
+          ],
+          "answer": "My sister was not at school yesterday."
+        },
+        {
+          "id": "tobepast_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was cold two days ago.\"",
+          "options": [
+            "My sister is not cold two days ago.",
+            "My sister were not cold two days ago.",
+            "My sister was not cold two days ago.",
+            "My sister am not cold two days ago."
+          ],
+          "answer": "My sister was not cold two days ago."
+        },
+        {
+          "id": "tobepast_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was scared two days ago.\"",
+          "options": [
+            "Our cat am not scared two days ago.",
+            "Our cat were not scared two days ago.",
+            "Our cat was not scared two days ago.",
+            "Our cat is not scared two days ago."
+          ],
+          "answer": "Our cat was not scared two days ago."
+        },
+        {
+          "id": "tobepast_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom was late yesterday.\"",
+          "options": [
+            "Tom is not late yesterday.",
+            "Tom were not late yesterday.",
+            "Tom are not late yesterday.",
+            "Tom was not late yesterday."
+          ],
+          "answer": "Tom was not late yesterday."
+        },
+        {
+          "id": "tobepast_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"They were friends last Sunday.\"",
+          "options": [
+            "They is not friends last Sunday.",
+            "They are not friends last Sunday.",
+            "They were not friends last Sunday.",
+            "They am not friends last Sunday."
+          ],
+          "answer": "They were not friends last Sunday."
+        },
+        {
+          "id": "tobepast_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"You were a doctor yesterday.\"",
+          "options": [
+            "You were not a doctor yesterday.",
+            "You are not a doctor yesterday.",
+            "You was not a doctor yesterday.",
+            "You is not a doctor yesterday."
+          ],
+          "answer": "You were not a doctor yesterday."
+        },
+        {
+          "id": "tobepast_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother was angry two days ago.\"",
+          "options": [
+            "My brother are not angry two days ago.",
+            "My brother was not angry two days ago.",
+            "My brother were not angry two days ago.",
+            "My brother am not angry two days ago."
+          ],
+          "answer": "My brother was not angry two days ago."
+        },
+        {
+          "id": "tobepast_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister was in the park last Sunday.\"",
+          "options": [
+            "My sister was not in the park last Sunday.",
+            "My sister is not in the park last Sunday.",
+            "My sister were not in the park last Sunday.",
+            "My sister am not in the park last Sunday."
+          ],
+          "answer": "My sister was not in the park last Sunday."
+        },
+        {
+          "id": "tobepast_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children were in the kitchen two days ago.\"",
+          "options": [
+            "The children was not in the kitchen two days ago.",
+            "The children am not in the kitchen two days ago.",
+            "The children is not in the kitchen two days ago.",
+            "The children were not in the kitchen two days ago."
+          ],
+          "answer": "The children were not in the kitchen two days ago."
+        },
+        {
+          "id": "tobepast_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria was quiet yesterday.\"",
+          "options": [
+            "Maria am not quiet yesterday.",
+            "Maria is not quiet yesterday.",
+            "Maria were not quiet yesterday.",
+            "Maria was not quiet yesterday."
+          ],
+          "answer": "Maria was not quiet yesterday."
+        },
+        {
+          "id": "tobepast_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog was quiet last week.\"",
+          "options": [
+            "The dog were not quiet last week.",
+            "The dog are not quiet last week.",
+            "The dog was not quiet last week.",
+            "The dog am not quiet last week."
+          ],
+          "answer": "The dog was not quiet last week."
+        },
+        {
+          "id": "tobepast_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat was thirsty yesterday afternoon.\"",
+          "options": [
+            "Our cat were not thirsty yesterday afternoon.",
+            "Our cat was not thirsty yesterday afternoon.",
+            "Our cat are not thirsty yesterday afternoon.",
+            "Our cat am not thirsty yesterday afternoon."
+          ],
+          "answer": "Our cat was not thirsty yesterday afternoon."
+        },
+        {
+          "id": "tobepast_c_1",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were cold two days ago.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_2",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother watched TV yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_3",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys ran last week.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_4",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is thirsty.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_5",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were brave yesterday.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_6",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was friends yesterday afternoon.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_7",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is in the kitchen.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_8",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children rode a bike yesterday.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_9",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children helped their mum yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_10",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He climbed a tree last week.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_11",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is a doctor.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_12",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is funny.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_13",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents drew a picture last night.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_14",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria walked to school yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_15",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children walked to school yesterday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_16",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We brushed their teeth yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_17",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom is in the kitchen.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_18",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was quiet yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_19",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children are here.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_20",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children ran last week.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_21",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is tall.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_22",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was kind last Sunday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_23",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was late yesterday.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_24",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were tired last night.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_25",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You are sad.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_26",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They went to the party yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_27",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are sad.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_28",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat rode a bike last Sunday.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_29",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were kind two days ago.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_30",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It drew a picture yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_31",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister played football yesterday.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_32",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother watched TV yesterday.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_33",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is at school.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_34",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He is students.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_35",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was in the park two days ago.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_36",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are at school.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_37",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was busy last week.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_38",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is quiet.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_39",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was hungry last night.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_40",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is ready.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_41",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They washed the dishes last night.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_42",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are ready.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_43",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents were a doctor yesterday.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_44",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They danced last week.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_45",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents were kind yesterday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_46",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister went to the party yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_47",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are sad.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_48",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is sad.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_49",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She was ready yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_50",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were friends two days ago.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_51",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You won the game yesterday.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_52",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother is angry.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_53",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She is students.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_54",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister listened to music last night.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_55",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was busy last Sunday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_56",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was funny last week.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_57",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were angry last week.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_58",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was a teacher last week.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_59",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat had lunch yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_60",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You are tired.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_61",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students are funny.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_62",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I am strong.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_63",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"They are friends.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_64",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children were tall yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_65",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys drew a picture last week.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_66",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You are at home.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_67",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We listened to music yesterday.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_68",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children swam yesterday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_69",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You were scared last Sunday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_70",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We were kind last week.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_71",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was busy last Sunday.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_72",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom won the game yesterday.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_73",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It was sad last week.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_74",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"I swam two days ago.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_75",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It sang a song yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_76",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He was sad yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_77",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is thirsty.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_78",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The boys were students last Sunday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_79",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria had lunch yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_80",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat was ready last Sunday.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_81",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We are scared.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_82",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was scared last Sunday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_83",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children are sad.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_84",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Maria listened to music two days ago.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_85",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The students were brave last week.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_86",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog danced last week.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_87",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was brave two days ago.\"",
+          "options": [
+            "To Be — Past",
+            "To Be — Present",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_88",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My brother was nervous last Sunday.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_89",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog is quiet.\"",
+          "options": [
+            "To Be — Present",
+            "Past Simple",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_90",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"We were kind last night.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Past",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_91",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Our cat is angry.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_92",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My parents are tired.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_93",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"It is scared.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "To Be — Present"
+        },
+        {
+          "id": "tobepast_c_94",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The dog rode a bike yesterday afternoon.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_95",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"My sister was busy yesterday afternoon.\"",
+          "options": [
+            "To Be — Past",
+            "Past Simple",
+            "To Be — Present"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_96",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"Tom was kind yesterday afternoon.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "To Be — Past"
+        },
+        {
+          "id": "tobepast_c_97",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"You climbed a tree two days ago.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_98",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"He cooked dinner last week.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_99",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"She did homework yesterday.\"",
+          "options": [
+            "Past Simple",
+            "To Be — Present",
+            "To Be — Past"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_c_100",
+          "type": "C",
+          "question": "What tense is this sentence?\n\"The children ran yesterday afternoon.\"",
+          "options": [
+            "To Be — Present",
+            "To Be — Past",
+            "Past Simple"
+          ],
+          "answer": "Past Simple"
+        },
+        {
+          "id": "tobepast_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mis padres estaba nervioso\" en inglés?",
+          "options": [
+            "My parents am nervous two days ago.",
+            "My parents were nervous two days ago.",
+            "My parents are nervous two days ago.",
+            "My parents nervous two days ago."
+          ],
+          "answer": "My parents were nervous two days ago."
+        },
+        {
+          "id": "tobepast_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, eso estaba estudiantes\" en inglés?",
+          "options": [
+            "It was students last night.",
+            "It students last night.",
+            "It is students last night.",
+            "It are students last night."
+          ],
+          "answer": "It was students last night."
+        },
+        {
+          "id": "tobepast_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, Tom estaba en el parque\" en inglés?",
+          "options": [
+            "Tom was in the park last week.",
+            "Tom am in the park last week.",
+            "Tom is in the park last week.",
+            "Tom in the park last week."
+          ],
+          "answer": "Tom was in the park last week."
+        },
+        {
+          "id": "tobepast_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mi hermano estaba triste\" en inglés?",
+          "options": [
+            "My brother sad two days ago.",
+            "My brother are sad two days ago.",
+            "My brother is sad two days ago.",
+            "My brother was sad two days ago."
+          ],
+          "answer": "My brother was sad two days ago."
+        },
+        {
+          "id": "tobepast_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, mi hermano estaba hambriento\" en inglés?",
+          "options": [
+            "My brother hungry last week.",
+            "My brother is hungry last week.",
+            "My brother was hungry last week.",
+            "My brother were hungry last week."
+          ],
+          "answer": "My brother was hungry last week."
+        },
+        {
+          "id": "tobepast_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, mi hermano estaba hambriento\" en inglés?",
+          "options": [
+            "My brother hungry yesterday.",
+            "My brother was hungry yesterday.",
+            "My brother is hungry yesterday.",
+            "My brother were hungry yesterday."
+          ],
+          "answer": "My brother was hungry yesterday."
+        },
+        {
+          "id": "tobepast_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, nosotros estaba profesor\" en inglés?",
+          "options": [
+            "We are a teacher last week.",
+            "We is a teacher last week.",
+            "We were a teacher last week.",
+            "We a teacher last week."
+          ],
+          "answer": "We were a teacher last week."
+        },
+        {
+          "id": "tobepast_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, mi hermana estaba con frío\" en inglés?",
+          "options": [
+            "My sister is cold yesterday afternoon.",
+            "My sister cold yesterday afternoon.",
+            "My sister was cold yesterday afternoon.",
+            "My sister were cold yesterday afternoon."
+          ],
+          "answer": "My sister was cold yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, los estudiantes estaba con sed\" en inglés?",
+          "options": [
+            "The students thirsty last night.",
+            "The students are thirsty last night.",
+            "The students were thirsty last night.",
+            "The students am thirsty last night."
+          ],
+          "answer": "The students were thirsty last night."
+        },
+        {
+          "id": "tobepast_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, los chicos estaba ocupado\" en inglés?",
+          "options": [
+            "The boys were busy last Sunday.",
+            "The boys are busy last Sunday.",
+            "The boys busy last Sunday.",
+            "The boys was busy last Sunday."
+          ],
+          "answer": "The boys were busy last Sunday."
+        },
+        {
+          "id": "tobepast_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, ellos estaba aquí\" en inglés?",
+          "options": [
+            "They was here yesterday.",
+            "They were here yesterday.",
+            "They are here yesterday.",
+            "They here yesterday."
+          ],
+          "answer": "They were here yesterday."
+        },
+        {
+          "id": "tobepast_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mis padres estaba profesor\" en inglés?",
+          "options": [
+            "My parents a teacher two days ago.",
+            "My parents is a teacher two days ago.",
+            "My parents are a teacher two days ago.",
+            "My parents were a teacher two days ago."
+          ],
+          "answer": "My parents were a teacher two days ago."
+        },
+        {
+          "id": "tobepast_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, mi hermana estaba con sed\" en inglés?",
+          "options": [
+            "My sister was thirsty yesterday afternoon.",
+            "My sister am thirsty yesterday afternoon.",
+            "My sister is thirsty yesterday afternoon.",
+            "My sister thirsty yesterday afternoon."
+          ],
+          "answer": "My sister was thirsty yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, el perro estaba listo\" en inglés?",
+          "options": [
+            "The dog was ready last night.",
+            "The dog are ready last night.",
+            "The dog is ready last night.",
+            "The dog ready last night."
+          ],
+          "answer": "The dog was ready last night."
+        },
+        {
+          "id": "tobepast_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, el perro estaba orgulloso\" en inglés?",
+          "options": [
+            "The dog is proud two days ago.",
+            "The dog was proud two days ago.",
+            "The dog proud two days ago.",
+            "The dog am proud two days ago."
+          ],
+          "answer": "The dog was proud two days ago."
+        },
+        {
+          "id": "tobepast_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, nosotros estaba valiente\" en inglés?",
+          "options": [
+            "We are brave last night.",
+            "We brave last night.",
+            "We is brave last night.",
+            "We were brave last night."
+          ],
+          "answer": "We were brave last night."
+        },
+        {
+          "id": "tobepast_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, mi hermano estaba con frío\" en inglés?",
+          "options": [
+            "My brother are cold yesterday.",
+            "My brother was cold yesterday.",
+            "My brother is cold yesterday.",
+            "My brother cold yesterday."
+          ],
+          "answer": "My brother was cold yesterday."
+        },
+        {
+          "id": "tobepast_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, ella estaba triste\" en inglés?",
+          "options": [
+            "She was sad yesterday.",
+            "She is sad yesterday.",
+            "She am sad yesterday.",
+            "She sad yesterday."
+          ],
+          "answer": "She was sad yesterday."
+        },
+        {
+          "id": "tobepast_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, los estudiantes estaba fuerte\" en inglés?",
+          "options": [
+            "The students were strong last week.",
+            "The students are strong last week.",
+            "The students is strong last week.",
+            "The students strong last week."
+          ],
+          "answer": "The students were strong last week."
+        },
+        {
+          "id": "tobepast_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, él estaba fuerte\" en inglés?",
+          "options": [
+            "He were strong yesterday.",
+            "He was strong yesterday.",
+            "He is strong yesterday.",
+            "He strong yesterday."
+          ],
+          "answer": "He was strong yesterday."
+        },
+        {
+          "id": "tobepast_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, ella estaba amigos\" en inglés?",
+          "options": [
+            "She is friends yesterday afternoon.",
+            "She was friends yesterday afternoon.",
+            "She friends yesterday afternoon.",
+            "She were friends yesterday afternoon."
+          ],
+          "answer": "She was friends yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, los niños estaba fuerte\" en inglés?",
+          "options": [
+            "The children strong yesterday afternoon.",
+            "The children am strong yesterday afternoon.",
+            "The children were strong yesterday afternoon.",
+            "The children are strong yesterday afternoon."
+          ],
+          "answer": "The children were strong yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, María estaba callado\" en inglés?",
+          "options": [
+            "Maria quiet last Sunday.",
+            "Maria is quiet last Sunday.",
+            "Maria was quiet last Sunday.",
+            "Maria am quiet last Sunday."
+          ],
+          "answer": "Maria was quiet last Sunday."
+        },
+        {
+          "id": "tobepast_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, nosotros estaba hambriento\" en inglés?",
+          "options": [
+            "We hungry last week.",
+            "We are hungry last week.",
+            "We were hungry last week.",
+            "We am hungry last week."
+          ],
+          "answer": "We were hungry last week."
+        },
+        {
+          "id": "tobepast_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mis padres estaba un buen amigo\" en inglés?",
+          "options": [
+            "My parents was a good friend two days ago.",
+            "My parents were a good friend two days ago.",
+            "My parents are a good friend two days ago.",
+            "My parents a good friend two days ago."
+          ],
+          "answer": "My parents were a good friend two days ago."
+        },
+        {
+          "id": "tobepast_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mi hermano estaba estudiantes\" en inglés?",
+          "options": [
+            "My brother is students two days ago.",
+            "My brother were students two days ago.",
+            "My brother students two days ago.",
+            "My brother was students two days ago."
+          ],
+          "answer": "My brother was students two days ago."
+        },
+        {
+          "id": "tobepast_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, él estaba orgulloso\" en inglés?",
+          "options": [
+            "He proud last night.",
+            "He is proud last night.",
+            "He are proud last night.",
+            "He was proud last night."
+          ],
+          "answer": "He was proud last night."
+        },
+        {
+          "id": "tobepast_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, eso estaba con sed\" en inglés?",
+          "options": [
+            "It was thirsty two days ago.",
+            "It is thirsty two days ago.",
+            "It am thirsty two days ago.",
+            "It thirsty two days ago."
+          ],
+          "answer": "It was thirsty two days ago."
+        },
+        {
+          "id": "tobepast_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, ellos estaba profesor\" en inglés?",
+          "options": [
+            "They is a teacher yesterday.",
+            "They are a teacher yesterday.",
+            "They a teacher yesterday.",
+            "They were a teacher yesterday."
+          ],
+          "answer": "They were a teacher yesterday."
+        },
+        {
+          "id": "tobepast_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, yo estaba enfadado\" en inglés?",
+          "options": [
+            "I are angry yesterday.",
+            "I angry yesterday.",
+            "I was angry yesterday.",
+            "I am angry yesterday."
+          ],
+          "answer": "I was angry yesterday."
+        },
+        {
+          "id": "tobepast_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, mi hermano estaba alto\" en inglés?",
+          "options": [
+            "My brother was tall last week.",
+            "My brother tall last week.",
+            "My brother is tall last week.",
+            "My brother am tall last week."
+          ],
+          "answer": "My brother was tall last week."
+        },
+        {
+          "id": "tobepast_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, María estaba triste\" en inglés?",
+          "options": [
+            "Maria sad last Sunday.",
+            "Maria were sad last Sunday.",
+            "Maria is sad last Sunday.",
+            "Maria was sad last Sunday."
+          ],
+          "answer": "Maria was sad last Sunday."
+        },
+        {
+          "id": "tobepast_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, yo estaba cansado\" en inglés?",
+          "options": [
+            "I tired two days ago.",
+            "I am tired two days ago.",
+            "I were tired two days ago.",
+            "I was tired two days ago."
+          ],
+          "answer": "I was tired two days ago."
+        },
+        {
+          "id": "tobepast_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, ellos estaba profesor\" en inglés?",
+          "options": [
+            "They was a teacher yesterday afternoon.",
+            "They were a teacher yesterday afternoon.",
+            "They a teacher yesterday afternoon.",
+            "They are a teacher yesterday afternoon."
+          ],
+          "answer": "They were a teacher yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, ella estaba con frío\" en inglés?",
+          "options": [
+            "She is cold two days ago.",
+            "She were cold two days ago.",
+            "She cold two days ago.",
+            "She was cold two days ago."
+          ],
+          "answer": "She was cold two days ago."
+        },
+        {
+          "id": "tobepast_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, nuestro gato estaba con frío\" en inglés?",
+          "options": [
+            "Our cat was cold yesterday afternoon.",
+            "Our cat is cold yesterday afternoon.",
+            "Our cat cold yesterday afternoon.",
+            "Our cat were cold yesterday afternoon."
+          ],
+          "answer": "Our cat was cold yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, Tom estaba callado\" en inglés?",
+          "options": [
+            "Tom is quiet last night.",
+            "Tom quiet last night.",
+            "Tom was quiet last night.",
+            "Tom were quiet last night."
+          ],
+          "answer": "Tom was quiet last night."
+        },
+        {
+          "id": "tobepast_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, el perro estaba en el colegio\" en inglés?",
+          "options": [
+            "The dog at school yesterday afternoon.",
+            "The dog am at school yesterday afternoon.",
+            "The dog was at school yesterday afternoon.",
+            "The dog is at school yesterday afternoon."
+          ],
+          "answer": "The dog was at school yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, tú estaba amigos\" en inglés?",
+          "options": [
+            "You were friends yesterday.",
+            "You friends yesterday.",
+            "You is friends yesterday.",
+            "You are friends yesterday."
+          ],
+          "answer": "You were friends yesterday."
+        },
+        {
+          "id": "tobepast_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, mis padres estaba nervioso\" en inglés?",
+          "options": [
+            "My parents were nervous yesterday afternoon.",
+            "My parents are nervous yesterday afternoon.",
+            "My parents was nervous yesterday afternoon.",
+            "My parents nervous yesterday afternoon."
+          ],
+          "answer": "My parents were nervous yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, tú estaba orgulloso\" en inglés?",
+          "options": [
+            "You are proud two days ago.",
+            "You proud two days ago.",
+            "You were proud two days ago.",
+            "You is proud two days ago."
+          ],
+          "answer": "You were proud two days ago."
+        },
+        {
+          "id": "tobepast_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, mi hermana estaba listo\" en inglés?",
+          "options": [
+            "My sister were ready yesterday.",
+            "My sister ready yesterday.",
+            "My sister was ready yesterday.",
+            "My sister is ready yesterday."
+          ],
+          "answer": "My sister was ready yesterday."
+        },
+        {
+          "id": "tobepast_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, el perro estaba en casa\" en inglés?",
+          "options": [
+            "The dog is at home last night.",
+            "The dog at home last night.",
+            "The dog was at home last night.",
+            "The dog are at home last night."
+          ],
+          "answer": "The dog was at home last night."
+        },
+        {
+          "id": "tobepast_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, eso estaba ocupado\" en inglés?",
+          "options": [
+            "It are busy last Sunday.",
+            "It busy last Sunday.",
+            "It was busy last Sunday.",
+            "It is busy last Sunday."
+          ],
+          "answer": "It was busy last Sunday."
+        },
+        {
+          "id": "tobepast_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, tú estaba triste\" en inglés?",
+          "options": [
+            "You were sad last night.",
+            "You is sad last night.",
+            "You are sad last night.",
+            "You sad last night."
+          ],
+          "answer": "You were sad last night."
+        },
+        {
+          "id": "tobepast_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, él estaba hambriento\" en inglés?",
+          "options": [
+            "He hungry two days ago.",
+            "He was hungry two days ago.",
+            "He is hungry two days ago.",
+            "He were hungry two days ago."
+          ],
+          "answer": "He was hungry two days ago."
+        },
+        {
+          "id": "tobepast_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermana estaba en casa\" en inglés?",
+          "options": [
+            "My sister at home last night.",
+            "My sister was at home last night.",
+            "My sister were at home last night.",
+            "My sister is at home last night."
+          ],
+          "answer": "My sister was at home last night."
+        },
+        {
+          "id": "tobepast_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, ella estaba valiente\" en inglés?",
+          "options": [
+            "She is brave yesterday.",
+            "She were brave yesterday.",
+            "She was brave yesterday.",
+            "She brave yesterday."
+          ],
+          "answer": "She was brave yesterday."
+        },
+        {
+          "id": "tobepast_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, nosotros estaba feliz\" en inglés?",
+          "options": [
+            "We am happy last week.",
+            "We are happy last week.",
+            "We happy last week.",
+            "We were happy last week."
+          ],
+          "answer": "We were happy last week."
+        },
+        {
+          "id": "tobepast_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, yo estaba en el parque\" en inglés?",
+          "options": [
+            "I am in the park two days ago.",
+            "I in the park two days ago.",
+            "I was in the park two days ago.",
+            "I is in the park two days ago."
+          ],
+          "answer": "I was in the park two days ago."
+        },
+        {
+          "id": "tobepast_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nuestro gato estaba amigos\" en inglés?",
+          "options": [
+            "Our cat was friends two days ago.",
+            "Our cat am friends two days ago.",
+            "Our cat friends two days ago.",
+            "Our cat is friends two days ago."
+          ],
+          "answer": "Our cat was friends two days ago."
+        },
+        {
+          "id": "tobepast_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, los niños estaba aquí\" en inglés?",
+          "options": [
+            "The children are here last Sunday.",
+            "The children were here last Sunday.",
+            "The children here last Sunday.",
+            "The children is here last Sunday."
+          ],
+          "answer": "The children were here last Sunday."
+        },
+        {
+          "id": "tobepast_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, los estudiantes estaba amigos\" en inglés?",
+          "options": [
+            "The students are friends yesterday afternoon.",
+            "The students am friends yesterday afternoon.",
+            "The students were friends yesterday afternoon.",
+            "The students friends yesterday afternoon."
+          ],
+          "answer": "The students were friends yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, mi hermana estaba asustado\" en inglés?",
+          "options": [
+            "My sister is scared last Sunday.",
+            "My sister scared last Sunday.",
+            "My sister were scared last Sunday.",
+            "My sister was scared last Sunday."
+          ],
+          "answer": "My sister was scared last Sunday."
+        },
+        {
+          "id": "tobepast_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, el perro estaba enfadado\" en inglés?",
+          "options": [
+            "The dog was angry last Sunday.",
+            "The dog is angry last Sunday.",
+            "The dog are angry last Sunday.",
+            "The dog angry last Sunday."
+          ],
+          "answer": "The dog was angry last Sunday."
+        },
+        {
+          "id": "tobepast_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nuestro gato estaba nervioso\" en inglés?",
+          "options": [
+            "Our cat was nervous two days ago.",
+            "Our cat were nervous two days ago.",
+            "Our cat nervous two days ago.",
+            "Our cat is nervous two days ago."
+          ],
+          "answer": "Our cat was nervous two days ago."
+        },
+        {
+          "id": "tobepast_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, eso estaba en la cocina\" en inglés?",
+          "options": [
+            "It am in the kitchen yesterday afternoon.",
+            "It is in the kitchen yesterday afternoon.",
+            "It was in the kitchen yesterday afternoon.",
+            "It in the kitchen yesterday afternoon."
+          ],
+          "answer": "It was in the kitchen yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, tú estaba callado\" en inglés?",
+          "options": [
+            "You were quiet last Sunday.",
+            "You are quiet last Sunday.",
+            "You quiet last Sunday.",
+            "You is quiet last Sunday."
+          ],
+          "answer": "You were quiet last Sunday."
+        },
+        {
+          "id": "tobepast_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, María estaba médico\" en inglés?",
+          "options": [
+            "Maria was a doctor yesterday.",
+            "Maria a doctor yesterday.",
+            "Maria is a doctor yesterday.",
+            "Maria were a doctor yesterday."
+          ],
+          "answer": "Maria was a doctor yesterday."
+        },
+        {
+          "id": "tobepast_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, eso estaba orgulloso\" en inglés?",
+          "options": [
+            "It was proud two days ago.",
+            "It is proud two days ago.",
+            "It are proud two days ago.",
+            "It proud two days ago."
+          ],
+          "answer": "It was proud two days ago."
+        },
+        {
+          "id": "tobepast_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, ellos estaba aquí\" en inglés?",
+          "options": [
+            "They was here last Sunday.",
+            "They are here last Sunday.",
+            "They were here last Sunday.",
+            "They here last Sunday."
+          ],
+          "answer": "They were here last Sunday."
+        },
+        {
+          "id": "tobepast_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, eso estaba amable\" en inglés?",
+          "options": [
+            "It kind yesterday.",
+            "It is kind yesterday.",
+            "It were kind yesterday.",
+            "It was kind yesterday."
+          ],
+          "answer": "It was kind yesterday."
+        },
+        {
+          "id": "tobepast_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, nuestro gato estaba orgulloso\" en inglés?",
+          "options": [
+            "Our cat were proud last Sunday.",
+            "Our cat was proud last Sunday.",
+            "Our cat is proud last Sunday.",
+            "Our cat proud last Sunday."
+          ],
+          "answer": "Our cat was proud last Sunday."
+        },
+        {
+          "id": "tobepast_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, mis padres estaba orgulloso\" en inglés?",
+          "options": [
+            "My parents were proud last week.",
+            "My parents is proud last week.",
+            "My parents are proud last week.",
+            "My parents proud last week."
+          ],
+          "answer": "My parents were proud last week."
+        },
+        {
+          "id": "tobepast_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, yo estaba fuerte\" en inglés?",
+          "options": [
+            "I was strong yesterday afternoon.",
+            "I is strong yesterday afternoon.",
+            "I strong yesterday afternoon.",
+            "I am strong yesterday afternoon."
+          ],
+          "answer": "I was strong yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, el perro estaba tarde\" en inglés?",
+          "options": [
+            "The dog are late yesterday afternoon.",
+            "The dog late yesterday afternoon.",
+            "The dog was late yesterday afternoon.",
+            "The dog is late yesterday afternoon."
+          ],
+          "answer": "The dog was late yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, mi hermana estaba profesor\" en inglés?",
+          "options": [
+            "My sister a teacher last night.",
+            "My sister was a teacher last night.",
+            "My sister is a teacher last night.",
+            "My sister are a teacher last night."
+          ],
+          "answer": "My sister was a teacher last night."
+        },
+        {
+          "id": "tobepast_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, ella estaba valiente\" en inglés?",
+          "options": [
+            "She is brave last night.",
+            "She brave last night.",
+            "She was brave last night.",
+            "She am brave last night."
+          ],
+          "answer": "She was brave last night."
+        },
+        {
+          "id": "tobepast_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, mi hermano estaba gracioso\" en inglés?",
+          "options": [
+            "My brother is funny last week.",
+            "My brother funny last week.",
+            "My brother was funny last week.",
+            "My brother are funny last week."
+          ],
+          "answer": "My brother was funny last week."
+        },
+        {
+          "id": "tobepast_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, ellos estaba ocupado\" en inglés?",
+          "options": [
+            "They was busy two days ago.",
+            "They were busy two days ago.",
+            "They busy two days ago.",
+            "They are busy two days ago."
+          ],
+          "answer": "They were busy two days ago."
+        },
+        {
+          "id": "tobepast_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, tú estaba médico\" en inglés?",
+          "options": [
+            "You am a doctor last night.",
+            "You are a doctor last night.",
+            "You a doctor last night.",
+            "You were a doctor last night."
+          ],
+          "answer": "You were a doctor last night."
+        },
+        {
+          "id": "tobepast_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, ellos estaba listo\" en inglés?",
+          "options": [
+            "They are ready yesterday afternoon.",
+            "They were ready yesterday afternoon.",
+            "They am ready yesterday afternoon.",
+            "They ready yesterday afternoon."
+          ],
+          "answer": "They were ready yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, nosotros estaba un buen amigo\" en inglés?",
+          "options": [
+            "We were a good friend yesterday.",
+            "We are a good friend yesterday.",
+            "We a good friend yesterday.",
+            "We was a good friend yesterday."
+          ],
+          "answer": "We were a good friend yesterday."
+        },
+        {
+          "id": "tobepast_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, Tom estaba valiente\" en inglés?",
+          "options": [
+            "Tom was brave yesterday.",
+            "Tom is brave yesterday.",
+            "Tom brave yesterday.",
+            "Tom were brave yesterday."
+          ],
+          "answer": "Tom was brave yesterday."
+        },
+        {
+          "id": "tobepast_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, los chicos estaba aquí\" en inglés?",
+          "options": [
+            "The boys were here last week.",
+            "The boys here last week.",
+            "The boys was here last week.",
+            "The boys are here last week."
+          ],
+          "answer": "The boys were here last week."
+        },
+        {
+          "id": "tobepast_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, tú estaba feliz\" en inglés?",
+          "options": [
+            "You were happy last week.",
+            "You happy last week.",
+            "You are happy last week.",
+            "You is happy last week."
+          ],
+          "answer": "You were happy last week."
+        },
+        {
+          "id": "tobepast_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, mi hermana estaba en el parque\" en inglés?",
+          "options": [
+            "My sister was in the park last week.",
+            "My sister in the park last week.",
+            "My sister is in the park last week.",
+            "My sister am in the park last week."
+          ],
+          "answer": "My sister was in the park last week."
+        },
+        {
+          "id": "tobepast_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, yo estaba con frío\" en inglés?",
+          "options": [
+            "I cold last Sunday.",
+            "I was cold last Sunday.",
+            "I am cold last Sunday.",
+            "I is cold last Sunday."
+          ],
+          "answer": "I was cold last Sunday."
+        },
+        {
+          "id": "tobepast_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mis padres estaba amable\" en inglés?",
+          "options": [
+            "My parents kind two days ago.",
+            "My parents was kind two days ago.",
+            "My parents are kind two days ago.",
+            "My parents were kind two days ago."
+          ],
+          "answer": "My parents were kind two days ago."
+        },
+        {
+          "id": "tobepast_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, ella estaba asustado\" en inglés?",
+          "options": [
+            "She scared last week.",
+            "She was scared last week.",
+            "She were scared last week.",
+            "She is scared last week."
+          ],
+          "answer": "She was scared last week."
+        },
+        {
+          "id": "tobepast_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, eso estaba cansado\" en inglés?",
+          "options": [
+            "It is tired yesterday.",
+            "It am tired yesterday.",
+            "It tired yesterday.",
+            "It was tired yesterday."
+          ],
+          "answer": "It was tired yesterday."
+        },
+        {
+          "id": "tobepast_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, eso estaba profesor\" en inglés?",
+          "options": [
+            "It a teacher two days ago.",
+            "It was a teacher two days ago.",
+            "It is a teacher two days ago.",
+            "It were a teacher two days ago."
+          ],
+          "answer": "It was a teacher two days ago."
+        },
+        {
+          "id": "tobepast_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, yo estaba fuerte\" en inglés?",
+          "options": [
+            "I am strong yesterday.",
+            "I strong yesterday.",
+            "I is strong yesterday.",
+            "I was strong yesterday."
+          ],
+          "answer": "I was strong yesterday."
+        },
+        {
+          "id": "tobepast_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, el perro estaba con sed\" en inglés?",
+          "options": [
+            "The dog are thirsty last night.",
+            "The dog is thirsty last night.",
+            "The dog thirsty last night.",
+            "The dog was thirsty last night."
+          ],
+          "answer": "The dog was thirsty last night."
+        },
+        {
+          "id": "tobepast_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, eso estaba alto\" en inglés?",
+          "options": [
+            "It were tall last week.",
+            "It is tall last week.",
+            "It tall last week.",
+            "It was tall last week."
+          ],
+          "answer": "It was tall last week."
+        },
+        {
+          "id": "tobepast_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, los niños estaba amable\" en inglés?",
+          "options": [
+            "The children were kind last Sunday.",
+            "The children kind last Sunday.",
+            "The children am kind last Sunday.",
+            "The children are kind last Sunday."
+          ],
+          "answer": "The children were kind last Sunday."
+        },
+        {
+          "id": "tobepast_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, mis padres estaba estudiantes\" en inglés?",
+          "options": [
+            "My parents am students yesterday.",
+            "My parents are students yesterday.",
+            "My parents students yesterday.",
+            "My parents were students yesterday."
+          ],
+          "answer": "My parents were students yesterday."
+        },
+        {
+          "id": "tobepast_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, Tom estaba listo\" en inglés?",
+          "options": [
+            "Tom is ready yesterday afternoon.",
+            "Tom were ready yesterday afternoon.",
+            "Tom was ready yesterday afternoon.",
+            "Tom ready yesterday afternoon."
+          ],
+          "answer": "Tom was ready yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, los estudiantes estaba alto\" en inglés?",
+          "options": [
+            "The students were tall two days ago.",
+            "The students are tall two days ago.",
+            "The students am tall two days ago.",
+            "The students tall two days ago."
+          ],
+          "answer": "The students were tall two days ago."
+        },
+        {
+          "id": "tobepast_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, Tom estaba orgulloso\" en inglés?",
+          "options": [
+            "Tom am proud last night.",
+            "Tom is proud last night.",
+            "Tom proud last night.",
+            "Tom was proud last night."
+          ],
+          "answer": "Tom was proud last night."
+        },
+        {
+          "id": "tobepast_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer, ella estaba callado\" en inglés?",
+          "options": [
+            "She am quiet yesterday.",
+            "She was quiet yesterday.",
+            "She is quiet yesterday.",
+            "She quiet yesterday."
+          ],
+          "answer": "She was quiet yesterday."
+        },
+        {
+          "id": "tobepast_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Ayer por la tarde, nuestro gato estaba asustado\" en inglés?",
+          "options": [
+            "Our cat was scared yesterday afternoon.",
+            "Our cat am scared yesterday afternoon.",
+            "Our cat scared yesterday afternoon.",
+            "Our cat is scared yesterday afternoon."
+          ],
+          "answer": "Our cat was scared yesterday afternoon."
+        },
+        {
+          "id": "tobepast_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, los estudiantes estaba estudiantes\" en inglés?",
+          "options": [
+            "The students were students last week.",
+            "The students are students last week.",
+            "The students is students last week.",
+            "The students students last week."
+          ],
+          "answer": "The students were students last week."
+        },
+        {
+          "id": "tobepast_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"El domingo pasado, los estudiantes estaba nervioso\" en inglés?",
+          "options": [
+            "The students are nervous last Sunday.",
+            "The students was nervous last Sunday.",
+            "The students nervous last Sunday.",
+            "The students were nervous last Sunday."
+          ],
+          "answer": "The students were nervous last Sunday."
+        },
+        {
+          "id": "tobepast_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, mi hermano estaba cansado\" en inglés?",
+          "options": [
+            "My brother was tired two days ago.",
+            "My brother is tired two days ago.",
+            "My brother tired two days ago.",
+            "My brother are tired two days ago."
+          ],
+          "answer": "My brother was tired two days ago."
+        },
+        {
+          "id": "tobepast_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, nosotros estaba callado\" en inglés?",
+          "options": [
+            "We were quiet last week.",
+            "We are quiet last week.",
+            "We was quiet last week.",
+            "We quiet last week."
+          ],
+          "answer": "We were quiet last week."
+        },
+        {
+          "id": "tobepast_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Anoche, eso estaba feliz\" en inglés?",
+          "options": [
+            "It happy last night.",
+            "It was happy last night.",
+            "It is happy last night.",
+            "It were happy last night."
+          ],
+          "answer": "It was happy last night."
+        },
+        {
+          "id": "tobepast_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"La semana pasada, los niños estaba con frío\" en inglés?",
+          "options": [
+            "The children are cold last week.",
+            "The children were cold last week.",
+            "The children was cold last week.",
+            "The children cold last week."
+          ],
+          "answer": "The children were cold last week."
+        },
+        {
+          "id": "tobepast_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, nosotros estaba con sed\" en inglés?",
+          "options": [
+            "We are thirsty two days ago.",
+            "We were thirsty two days ago.",
+            "We was thirsty two days ago.",
+            "We thirsty two days ago."
+          ],
+          "answer": "We were thirsty two days ago."
+        },
+        {
+          "id": "tobepast_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Hace dos días, los estudiantes estaba triste\" en inglés?",
+          "options": [
+            "The students sad two days ago.",
+            "The students are sad two days ago.",
+            "The students were sad two days ago.",
+            "The students was sad two days ago."
+          ],
+          "answer": "The students were sad two days ago."
+        }
+      ],
+      "timeMarkers": [
+        {
+          "left": "yesterday",
+          "right": "I was sick yesterday."
+        },
+        {
+          "left": "last night",
+          "right": "We were at the party last night."
+        },
+        {
+          "left": "last week",
+          "right": "They were busy last week."
+        },
+        {
+          "left": "last year",
+          "right": "She was seven last year."
+        },
+        {
+          "left": "yesterday afternoon",
+          "right": "He was at home yesterday afternoon."
+        },
+        {
+          "left": "last Sunday",
+          "right": "The children were happy last Sunday."
+        },
+        {
+          "left": "two days ago",
+          "right": "You were here two days ago."
+        },
+        {
+          "left": "last summer",
+          "right": "My parents were in Spain last summer."
+        },
+        {
+          "left": "this morning",
+          "right": "I was tired this morning."
+        }
+      ]
+    }
+  ]
+}
