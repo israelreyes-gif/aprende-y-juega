@@ -127,6 +127,10 @@ var STATS_BY_CURSO = {
         { key: 'english-ing-past-c4',        name: 'Past Continuous' },
         { key: 'english-future-c4',          name: 'Future' },
         { key: 'english-verbs-c4',           name: 'Verbs' },
+        { key: 'english-could-c4',           name: 'Could' },
+        { key: 'english-must-c4',            name: 'Must' },
+        { key: 'english-haveto-c4',          name: 'Have To' },
+        { key: 'english-modals-match-c4',    name: 'Which one?' },
         { key: 'english-vocab-c4',           name: 'Vocabulary' }
       ]
     },
