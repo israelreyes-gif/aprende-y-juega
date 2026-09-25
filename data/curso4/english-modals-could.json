@@ -1,0 +1,4811 @@
+{
+  "units": [
+    {
+      "id": "could-c4",
+      "title": "Could",
+      "emoji": "🟠",
+      "exercises": [
+        {
+          "id": "could_a_1",
+          "type": "A",
+          "question": "I ___ ride a bike last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_2",
+          "type": "A",
+          "question": "It ___ win the game last year.",
+          "options": [
+            "can",
+            "must",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_3",
+          "type": "A",
+          "question": "My parents ___ sing a song last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_4",
+          "type": "A",
+          "question": "The dog ___ listen to music last year.",
+          "options": [
+            "could",
+            "must",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_5",
+          "type": "A",
+          "question": "My brother ___ cook dinner last year.",
+          "options": [
+            "can",
+            "must",
+            "will",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_6",
+          "type": "A",
+          "question": "My sister ___ sing a song last year.",
+          "options": [
+            "will",
+            "could",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_7",
+          "type": "A",
+          "question": "Tom ___ wash the dishes last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_8",
+          "type": "A",
+          "question": "He ___ go to the party last year.",
+          "options": [
+            "could",
+            "can",
+            "will",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_9",
+          "type": "A",
+          "question": "We ___ win the game last year.",
+          "options": [
+            "could",
+            "must",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_10",
+          "type": "A",
+          "question": "My sister ___ ride a bike last year.",
+          "options": [
+            "must",
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_11",
+          "type": "A",
+          "question": "My brother ___ win the game last year.",
+          "options": [
+            "could",
+            "must",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_12",
+          "type": "A",
+          "question": "You ___ run last year.",
+          "options": [
+            "could",
+            "can",
+            "will",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_13",
+          "type": "A",
+          "question": "My brother ___ have lunch last year.",
+          "options": [
+            "will",
+            "must",
+            "could",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_14",
+          "type": "A",
+          "question": "He ___ do homework last year.",
+          "options": [
+            "will",
+            "could",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_15",
+          "type": "A",
+          "question": "She ___ help their mum last year.",
+          "options": [
+            "could",
+            "can",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_16",
+          "type": "A",
+          "question": "They ___ clean the house last year.",
+          "options": [
+            "can",
+            "must",
+            "will",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_17",
+          "type": "A",
+          "question": "We ___ go to the party last year.",
+          "options": [
+            "must",
+            "will",
+            "can",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_18",
+          "type": "A",
+          "question": "They ___ feed the cat last year.",
+          "options": [
+            "can",
+            "must",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_19",
+          "type": "A",
+          "question": "Our cat ___ win the game last year.",
+          "options": [
+            "can",
+            "must",
+            "will",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_20",
+          "type": "A",
+          "question": "The children ___ go to the party last year.",
+          "options": [
+            "can",
+            "could",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_21",
+          "type": "A",
+          "question": "It ___ climb a tree last year.",
+          "options": [
+            "will",
+            "could",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_22",
+          "type": "A",
+          "question": "The dog ___ jump last year.",
+          "options": [
+            "can",
+            "will",
+            "must",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_23",
+          "type": "A",
+          "question": "The boys ___ ride a bike last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_24",
+          "type": "A",
+          "question": "The students ___ watch TV last year.",
+          "options": [
+            "can",
+            "must",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_25",
+          "type": "A",
+          "question": "Maria ___ jump last year.",
+          "options": [
+            "could",
+            "will",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_26",
+          "type": "A",
+          "question": "Maria ___ play football last year.",
+          "options": [
+            "must",
+            "could",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_27",
+          "type": "A",
+          "question": "Our cat ___ feed the cat last year.",
+          "options": [
+            "can",
+            "will",
+            "could",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_28",
+          "type": "A",
+          "question": "I ___ dance last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_29",
+          "type": "A",
+          "question": "You ___ cook dinner last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_30",
+          "type": "A",
+          "question": "He ___ write a letter last year.",
+          "options": [
+            "will",
+            "could",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_31",
+          "type": "A",
+          "question": "Our cat ___ study English last year.",
+          "options": [
+            "must",
+            "will",
+            "could",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_32",
+          "type": "A",
+          "question": "The dog ___ walk to school last year.",
+          "options": [
+            "will",
+            "must",
+            "can",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_33",
+          "type": "A",
+          "question": "They ___ listen to music last year.",
+          "options": [
+            "must",
+            "could",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_34",
+          "type": "A",
+          "question": "My sister ___ dance last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_35",
+          "type": "A",
+          "question": "Maria ___ feed the cat last year.",
+          "options": [
+            "will",
+            "must",
+            "could",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_36",
+          "type": "A",
+          "question": "The boys ___ write a letter last year.",
+          "options": [
+            "can",
+            "will",
+            "could",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_37",
+          "type": "A",
+          "question": "I ___ swim last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_38",
+          "type": "A",
+          "question": "Our cat ___ ride a bike last year.",
+          "options": [
+            "must",
+            "will",
+            "can",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_39",
+          "type": "A",
+          "question": "We ___ help their mum last year.",
+          "options": [
+            "can",
+            "will",
+            "could",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_40",
+          "type": "A",
+          "question": "The dog ___ study English last year.",
+          "options": [
+            "could",
+            "can",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_41",
+          "type": "A",
+          "question": "They ___ have lunch last year.",
+          "options": [
+            "can",
+            "must",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_42",
+          "type": "A",
+          "question": "My parents ___ brush their teeth last year.",
+          "options": [
+            "must",
+            "will",
+            "can",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_43",
+          "type": "A",
+          "question": "Maria ___ swim last year.",
+          "options": [
+            "can",
+            "could",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_44",
+          "type": "A",
+          "question": "My parents ___ cook dinner last year.",
+          "options": [
+            "could",
+            "will",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_45",
+          "type": "A",
+          "question": "He ___ draw a picture last year.",
+          "options": [
+            "could",
+            "must",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_46",
+          "type": "A",
+          "question": "She ___ win the game last year.",
+          "options": [
+            "will",
+            "could",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_47",
+          "type": "A",
+          "question": "You ___ watch TV last year.",
+          "options": [
+            "will",
+            "could",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_48",
+          "type": "A",
+          "question": "I ___ help their mum last year.",
+          "options": [
+            "could",
+            "must",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_49",
+          "type": "A",
+          "question": "My sister ___ watch TV last year.",
+          "options": [
+            "can",
+            "will",
+            "could",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_50",
+          "type": "A",
+          "question": "The dog ___ draw a picture last year.",
+          "options": [
+            "can",
+            "could",
+            "will",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_51",
+          "type": "A",
+          "question": "My brother ___ watch TV last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_52",
+          "type": "A",
+          "question": "They ___ go to the party last year.",
+          "options": [
+            "must",
+            "will",
+            "can",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_53",
+          "type": "A",
+          "question": "Our cat ___ sing a song last year.",
+          "options": [
+            "will",
+            "could",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_54",
+          "type": "A",
+          "question": "The students ___ visit their grandma last year.",
+          "options": [
+            "must",
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_55",
+          "type": "A",
+          "question": "Tom ___ play football last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_56",
+          "type": "A",
+          "question": "It ___ jump last year.",
+          "options": [
+            "could",
+            "must",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_57",
+          "type": "A",
+          "question": "The students ___ ride a bike last year.",
+          "options": [
+            "will",
+            "could",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_58",
+          "type": "A",
+          "question": "It ___ dance last year.",
+          "options": [
+            "could",
+            "can",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_59",
+          "type": "A",
+          "question": "The students ___ study English last year.",
+          "options": [
+            "must",
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_60",
+          "type": "A",
+          "question": "Tom ___ cook dinner last year.",
+          "options": [
+            "could",
+            "will",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_61",
+          "type": "A",
+          "question": "Our cat ___ have lunch last year.",
+          "options": [
+            "must",
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_62",
+          "type": "A",
+          "question": "We ___ brush their teeth last year.",
+          "options": [
+            "will",
+            "must",
+            "could",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_63",
+          "type": "A",
+          "question": "Maria ___ climb a tree last year.",
+          "options": [
+            "must",
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_64",
+          "type": "A",
+          "question": "It ___ swim last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_65",
+          "type": "A",
+          "question": "My parents ___ climb a tree last year.",
+          "options": [
+            "can",
+            "must",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_66",
+          "type": "A",
+          "question": "She ___ ride a bike last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_67",
+          "type": "A",
+          "question": "Tom ___ ride a bike last year.",
+          "options": [
+            "must",
+            "could",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_68",
+          "type": "A",
+          "question": "They ___ run last year.",
+          "options": [
+            "could",
+            "will",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_69",
+          "type": "A",
+          "question": "She ___ brush their teeth last year.",
+          "options": [
+            "can",
+            "must",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_70",
+          "type": "A",
+          "question": "They ___ brush their teeth last year.",
+          "options": [
+            "can",
+            "will",
+            "must",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_71",
+          "type": "A",
+          "question": "We ___ have lunch last year.",
+          "options": [
+            "must",
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_72",
+          "type": "A",
+          "question": "Tom ___ sing a song last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_73",
+          "type": "A",
+          "question": "My parents ___ dance last year.",
+          "options": [
+            "must",
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_74",
+          "type": "A",
+          "question": "He ___ watch TV last year.",
+          "options": [
+            "must",
+            "will",
+            "could",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_75",
+          "type": "A",
+          "question": "My parents ___ run last year.",
+          "options": [
+            "must",
+            "could",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_76",
+          "type": "A",
+          "question": "He ___ sing a song last year.",
+          "options": [
+            "must",
+            "could",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_77",
+          "type": "A",
+          "question": "The children ___ swim last year.",
+          "options": [
+            "could",
+            "can",
+            "will",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_78",
+          "type": "A",
+          "question": "My sister ___ study English last year.",
+          "options": [
+            "could",
+            "must",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_79",
+          "type": "A",
+          "question": "They ___ cook dinner last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_80",
+          "type": "A",
+          "question": "My sister ___ win the game last year.",
+          "options": [
+            "must",
+            "could",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_81",
+          "type": "A",
+          "question": "Maria ___ study English last year.",
+          "options": [
+            "can",
+            "will",
+            "could",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_82",
+          "type": "A",
+          "question": "I ___ do homework last year.",
+          "options": [
+            "could",
+            "will",
+            "can",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_83",
+          "type": "A",
+          "question": "My sister ___ write a letter last year.",
+          "options": [
+            "will",
+            "can",
+            "could",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_84",
+          "type": "A",
+          "question": "The dog ___ go to the party last year.",
+          "options": [
+            "could",
+            "can",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_85",
+          "type": "A",
+          "question": "The boys ___ wash the dishes last year.",
+          "options": [
+            "can",
+            "must",
+            "could",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_86",
+          "type": "A",
+          "question": "We ___ draw a picture last year.",
+          "options": [
+            "will",
+            "can",
+            "could",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_87",
+          "type": "A",
+          "question": "The dog ___ climb a tree last year.",
+          "options": [
+            "can",
+            "could",
+            "will",
+            "must"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_88",
+          "type": "A",
+          "question": "She ___ have lunch last year.",
+          "options": [
+            "could",
+            "must",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_89",
+          "type": "A",
+          "question": "He ___ walk to school last year.",
+          "options": [
+            "must",
+            "could",
+            "can",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_90",
+          "type": "A",
+          "question": "My parents ___ feed the cat last year.",
+          "options": [
+            "can",
+            "must",
+            "will",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_91",
+          "type": "A",
+          "question": "The boys ___ sing a song last year.",
+          "options": [
+            "could",
+            "can",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_92",
+          "type": "A",
+          "question": "My brother ___ help their mum last year.",
+          "options": [
+            "can",
+            "must",
+            "will",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_93",
+          "type": "A",
+          "question": "Maria ___ wash the dishes last year.",
+          "options": [
+            "will",
+            "must",
+            "can",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_94",
+          "type": "A",
+          "question": "The boys ___ brush their teeth last year.",
+          "options": [
+            "will",
+            "could",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_95",
+          "type": "A",
+          "question": "The children ___ feed the cat last year.",
+          "options": [
+            "could",
+            "will",
+            "must",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_96",
+          "type": "A",
+          "question": "My brother ___ sing a song last year.",
+          "options": [
+            "could",
+            "must",
+            "will",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_97",
+          "type": "A",
+          "question": "Our cat ___ help their mum last year.",
+          "options": [
+            "could",
+            "can",
+            "must",
+            "will"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_98",
+          "type": "A",
+          "question": "We ___ play football last year.",
+          "options": [
+            "must",
+            "will",
+            "could",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_99",
+          "type": "A",
+          "question": "Maria ___ brush their teeth last year.",
+          "options": [
+            "must",
+            "will",
+            "could",
+            "can"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_a_100",
+          "type": "A",
+          "question": "She ___ play football last year.",
+          "options": [
+            "must",
+            "will",
+            "can",
+            "could"
+          ],
+          "answer": "could"
+        },
+        {
+          "id": "could_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could clean the house last year.\"",
+          "options": [
+            "My brother don't could clean the house last year.",
+            "My brother didn't could clean the house last year.",
+            "My brother couldn't clean the house last year.",
+            "My brother not could clean the house last year."
+          ],
+          "answer": "My brother couldn't clean the house last year."
+        },
+        {
+          "id": "could_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria could do homework last year.\"",
+          "options": [
+            "Maria didn't could do homework last year.",
+            "Maria not could do homework last year.",
+            "Maria couldn't do homework last year.",
+            "Maria don't could do homework last year."
+          ],
+          "answer": "Maria couldn't do homework last year."
+        },
+        {
+          "id": "could_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"He could ride a bike last year.\"",
+          "options": [
+            "He didn't could ride a bike last year.",
+            "He don't could ride a bike last year.",
+            "He couldn't ride a bike last year.",
+            "He not could ride a bike last year."
+          ],
+          "answer": "He couldn't ride a bike last year."
+        },
+        {
+          "id": "could_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students could brush their teeth last year.\"",
+          "options": [
+            "The students didn't could brush their teeth last year.",
+            "The students couldn't brush their teeth last year.",
+            "The students don't could brush their teeth last year.",
+            "The students not could brush their teeth last year."
+          ],
+          "answer": "The students couldn't brush their teeth last year."
+        },
+        {
+          "id": "could_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could clean the house last year.\"",
+          "options": [
+            "She couldn't clean the house last year.",
+            "She not could clean the house last year.",
+            "She don't could clean the house last year.",
+            "She didn't could clean the house last year."
+          ],
+          "answer": "She couldn't clean the house last year."
+        },
+        {
+          "id": "could_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could write a letter last year.\"",
+          "options": [
+            "She don't could write a letter last year.",
+            "She didn't could write a letter last year.",
+            "She not could write a letter last year.",
+            "She couldn't write a letter last year."
+          ],
+          "answer": "She couldn't write a letter last year."
+        },
+        {
+          "id": "could_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys could jump last year.\"",
+          "options": [
+            "The boys not could jump last year.",
+            "The boys couldn't jump last year.",
+            "The boys didn't could jump last year.",
+            "The boys don't could jump last year."
+          ],
+          "answer": "The boys couldn't jump last year."
+        },
+        {
+          "id": "could_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could go to the party last year.\"",
+          "options": [
+            "My brother couldn't go to the party last year.",
+            "My brother not could go to the party last year.",
+            "My brother don't could go to the party last year.",
+            "My brother didn't could go to the party last year."
+          ],
+          "answer": "My brother couldn't go to the party last year."
+        },
+        {
+          "id": "could_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could listen to music last year.\"",
+          "options": [
+            "She don't could listen to music last year.",
+            "She couldn't listen to music last year.",
+            "She didn't could listen to music last year.",
+            "She not could listen to music last year."
+          ],
+          "answer": "She couldn't listen to music last year."
+        },
+        {
+          "id": "could_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"They could study English last year.\"",
+          "options": [
+            "They don't could study English last year.",
+            "They didn't could study English last year.",
+            "They not could study English last year.",
+            "They couldn't study English last year."
+          ],
+          "answer": "They couldn't study English last year."
+        },
+        {
+          "id": "could_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could feed the cat last year.\"",
+          "options": [
+            "She don't could feed the cat last year.",
+            "She not could feed the cat last year.",
+            "She didn't could feed the cat last year.",
+            "She couldn't feed the cat last year."
+          ],
+          "answer": "She couldn't feed the cat last year."
+        },
+        {
+          "id": "could_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat could climb a tree last year.\"",
+          "options": [
+            "Our cat didn't could climb a tree last year.",
+            "Our cat couldn't climb a tree last year.",
+            "Our cat not could climb a tree last year.",
+            "Our cat don't could climb a tree last year."
+          ],
+          "answer": "Our cat couldn't climb a tree last year."
+        },
+        {
+          "id": "could_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could jump last year.\"",
+          "options": [
+            "She didn't could jump last year.",
+            "She couldn't jump last year.",
+            "She don't could jump last year.",
+            "She not could jump last year."
+          ],
+          "answer": "She couldn't jump last year."
+        },
+        {
+          "id": "could_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children could cook dinner last year.\"",
+          "options": [
+            "The children didn't could cook dinner last year.",
+            "The children don't could cook dinner last year.",
+            "The children not could cook dinner last year.",
+            "The children couldn't cook dinner last year."
+          ],
+          "answer": "The children couldn't cook dinner last year."
+        },
+        {
+          "id": "could_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students could wash the dishes last year.\"",
+          "options": [
+            "The students didn't could wash the dishes last year.",
+            "The students don't could wash the dishes last year.",
+            "The students couldn't wash the dishes last year.",
+            "The students not could wash the dishes last year."
+          ],
+          "answer": "The students couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents could do homework last year.\"",
+          "options": [
+            "My parents couldn't do homework last year.",
+            "My parents didn't could do homework last year.",
+            "My parents don't could do homework last year.",
+            "My parents not could do homework last year."
+          ],
+          "answer": "My parents couldn't do homework last year."
+        },
+        {
+          "id": "could_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could climb a tree last year.\"",
+          "options": [
+            "My brother don't could climb a tree last year.",
+            "My brother couldn't climb a tree last year.",
+            "My brother didn't could climb a tree last year.",
+            "My brother not could climb a tree last year."
+          ],
+          "answer": "My brother couldn't climb a tree last year."
+        },
+        {
+          "id": "could_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom could run last year.\"",
+          "options": [
+            "Tom couldn't run last year.",
+            "Tom not could run last year.",
+            "Tom don't could run last year.",
+            "Tom didn't could run last year."
+          ],
+          "answer": "Tom couldn't run last year."
+        },
+        {
+          "id": "could_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"It could play football last year.\"",
+          "options": [
+            "It don't could play football last year.",
+            "It couldn't play football last year.",
+            "It not could play football last year.",
+            "It didn't could play football last year."
+          ],
+          "answer": "It couldn't play football last year."
+        },
+        {
+          "id": "could_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could swim last year.\"",
+          "options": [
+            "My brother couldn't swim last year.",
+            "My brother not could swim last year.",
+            "My brother didn't could swim last year.",
+            "My brother don't could swim last year."
+          ],
+          "answer": "My brother couldn't swim last year."
+        },
+        {
+          "id": "could_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents could swim last year.\"",
+          "options": [
+            "My parents not could swim last year.",
+            "My parents don't could swim last year.",
+            "My parents couldn't swim last year.",
+            "My parents didn't could swim last year."
+          ],
+          "answer": "My parents couldn't swim last year."
+        },
+        {
+          "id": "could_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents could wash the dishes last year.\"",
+          "options": [
+            "My parents didn't could wash the dishes last year.",
+            "My parents don't could wash the dishes last year.",
+            "My parents couldn't wash the dishes last year.",
+            "My parents not could wash the dishes last year."
+          ],
+          "answer": "My parents couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could swim last year.\"",
+          "options": [
+            "She not could swim last year.",
+            "She couldn't swim last year.",
+            "She didn't could swim last year.",
+            "She don't could swim last year."
+          ],
+          "answer": "She couldn't swim last year."
+        },
+        {
+          "id": "could_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children could climb a tree last year.\"",
+          "options": [
+            "The children not could climb a tree last year.",
+            "The children don't could climb a tree last year.",
+            "The children didn't could climb a tree last year.",
+            "The children couldn't climb a tree last year."
+          ],
+          "answer": "The children couldn't climb a tree last year."
+        },
+        {
+          "id": "could_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog could wash the dishes last year.\"",
+          "options": [
+            "The dog don't could wash the dishes last year.",
+            "The dog not could wash the dishes last year.",
+            "The dog couldn't wash the dishes last year.",
+            "The dog didn't could wash the dishes last year."
+          ],
+          "answer": "The dog couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"You could jump last year.\"",
+          "options": [
+            "You not could jump last year.",
+            "You didn't could jump last year.",
+            "You don't could jump last year.",
+            "You couldn't jump last year."
+          ],
+          "answer": "You couldn't jump last year."
+        },
+        {
+          "id": "could_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria could win the game last year.\"",
+          "options": [
+            "Maria couldn't win the game last year.",
+            "Maria didn't could win the game last year.",
+            "Maria not could win the game last year.",
+            "Maria don't could win the game last year."
+          ],
+          "answer": "Maria couldn't win the game last year."
+        },
+        {
+          "id": "could_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"We could listen to music last year.\"",
+          "options": [
+            "We don't could listen to music last year.",
+            "We not could listen to music last year.",
+            "We couldn't listen to music last year.",
+            "We didn't could listen to music last year."
+          ],
+          "answer": "We couldn't listen to music last year."
+        },
+        {
+          "id": "could_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"He could visit their grandma last year.\"",
+          "options": [
+            "He couldn't visit their grandma last year.",
+            "He don't could visit their grandma last year.",
+            "He not could visit their grandma last year.",
+            "He didn't could visit their grandma last year."
+          ],
+          "answer": "He couldn't visit their grandma last year."
+        },
+        {
+          "id": "could_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"You could walk to school last year.\"",
+          "options": [
+            "You not could walk to school last year.",
+            "You don't could walk to school last year.",
+            "You couldn't walk to school last year.",
+            "You didn't could walk to school last year."
+          ],
+          "answer": "You couldn't walk to school last year."
+        },
+        {
+          "id": "could_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could play football last year.\"",
+          "options": [
+            "My brother didn't could play football last year.",
+            "My brother couldn't play football last year.",
+            "My brother don't could play football last year.",
+            "My brother not could play football last year."
+          ],
+          "answer": "My brother couldn't play football last year."
+        },
+        {
+          "id": "could_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents could have lunch last year.\"",
+          "options": [
+            "My parents couldn't have lunch last year.",
+            "My parents didn't could have lunch last year.",
+            "My parents not could have lunch last year.",
+            "My parents don't could have lunch last year."
+          ],
+          "answer": "My parents couldn't have lunch last year."
+        },
+        {
+          "id": "could_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat could swim last year.\"",
+          "options": [
+            "Our cat didn't could swim last year.",
+            "Our cat not could swim last year.",
+            "Our cat don't could swim last year.",
+            "Our cat couldn't swim last year."
+          ],
+          "answer": "Our cat couldn't swim last year."
+        },
+        {
+          "id": "could_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria could walk to school last year.\"",
+          "options": [
+            "Maria not could walk to school last year.",
+            "Maria couldn't walk to school last year.",
+            "Maria didn't could walk to school last year.",
+            "Maria don't could walk to school last year."
+          ],
+          "answer": "Maria couldn't walk to school last year."
+        },
+        {
+          "id": "could_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students could feed the cat last year.\"",
+          "options": [
+            "The students couldn't feed the cat last year.",
+            "The students don't could feed the cat last year.",
+            "The students not could feed the cat last year.",
+            "The students didn't could feed the cat last year."
+          ],
+          "answer": "The students couldn't feed the cat last year."
+        },
+        {
+          "id": "could_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys could dance last year.\"",
+          "options": [
+            "The boys didn't could dance last year.",
+            "The boys don't could dance last year.",
+            "The boys not could dance last year.",
+            "The boys couldn't dance last year."
+          ],
+          "answer": "The boys couldn't dance last year."
+        },
+        {
+          "id": "could_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"It could cook dinner last year.\"",
+          "options": [
+            "It not could cook dinner last year.",
+            "It don't could cook dinner last year.",
+            "It didn't could cook dinner last year.",
+            "It couldn't cook dinner last year."
+          ],
+          "answer": "It couldn't cook dinner last year."
+        },
+        {
+          "id": "could_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could dance last year.\"",
+          "options": [
+            "She didn't could dance last year.",
+            "She not could dance last year.",
+            "She don't could dance last year.",
+            "She couldn't dance last year."
+          ],
+          "answer": "She couldn't dance last year."
+        },
+        {
+          "id": "could_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"It could have lunch last year.\"",
+          "options": [
+            "It didn't could have lunch last year.",
+            "It don't could have lunch last year.",
+            "It not could have lunch last year.",
+            "It couldn't have lunch last year."
+          ],
+          "answer": "It couldn't have lunch last year."
+        },
+        {
+          "id": "could_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"I could wash the dishes last year.\"",
+          "options": [
+            "I not could wash the dishes last year.",
+            "I couldn't wash the dishes last year.",
+            "I don't could wash the dishes last year.",
+            "I didn't could wash the dishes last year."
+          ],
+          "answer": "I couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria could draw a picture last year.\"",
+          "options": [
+            "Maria don't could draw a picture last year.",
+            "Maria couldn't draw a picture last year.",
+            "Maria didn't could draw a picture last year.",
+            "Maria not could draw a picture last year."
+          ],
+          "answer": "Maria couldn't draw a picture last year."
+        },
+        {
+          "id": "could_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could wash the dishes last year.\"",
+          "options": [
+            "My brother don't could wash the dishes last year.",
+            "My brother not could wash the dishes last year.",
+            "My brother didn't could wash the dishes last year.",
+            "My brother couldn't wash the dishes last year."
+          ],
+          "answer": "My brother couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"He could cook dinner last year.\"",
+          "options": [
+            "He don't could cook dinner last year.",
+            "He not could cook dinner last year.",
+            "He didn't could cook dinner last year.",
+            "He couldn't cook dinner last year."
+          ],
+          "answer": "He couldn't cook dinner last year."
+        },
+        {
+          "id": "could_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"I could climb a tree last year.\"",
+          "options": [
+            "I not could climb a tree last year.",
+            "I don't could climb a tree last year.",
+            "I didn't could climb a tree last year.",
+            "I couldn't climb a tree last year."
+          ],
+          "answer": "I couldn't climb a tree last year."
+        },
+        {
+          "id": "could_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"He could win the game last year.\"",
+          "options": [
+            "He didn't could win the game last year.",
+            "He not could win the game last year.",
+            "He don't could win the game last year.",
+            "He couldn't win the game last year."
+          ],
+          "answer": "He couldn't win the game last year."
+        },
+        {
+          "id": "could_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister could run last year.\"",
+          "options": [
+            "My sister couldn't run last year.",
+            "My sister don't could run last year.",
+            "My sister didn't could run last year.",
+            "My sister not could run last year."
+          ],
+          "answer": "My sister couldn't run last year."
+        },
+        {
+          "id": "could_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"We could dance last year.\"",
+          "options": [
+            "We couldn't dance last year.",
+            "We don't could dance last year.",
+            "We didn't could dance last year.",
+            "We not could dance last year."
+          ],
+          "answer": "We couldn't dance last year."
+        },
+        {
+          "id": "could_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"You could clean the house last year.\"",
+          "options": [
+            "You don't could clean the house last year.",
+            "You couldn't clean the house last year.",
+            "You didn't could clean the house last year.",
+            "You not could clean the house last year."
+          ],
+          "answer": "You couldn't clean the house last year."
+        },
+        {
+          "id": "could_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"It could draw a picture last year.\"",
+          "options": [
+            "It didn't could draw a picture last year.",
+            "It couldn't draw a picture last year.",
+            "It not could draw a picture last year.",
+            "It don't could draw a picture last year."
+          ],
+          "answer": "It couldn't draw a picture last year."
+        },
+        {
+          "id": "could_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could visit their grandma last year.\"",
+          "options": [
+            "My brother not could visit their grandma last year.",
+            "My brother don't could visit their grandma last year.",
+            "My brother couldn't visit their grandma last year.",
+            "My brother didn't could visit their grandma last year."
+          ],
+          "answer": "My brother couldn't visit their grandma last year."
+        },
+        {
+          "id": "could_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister could go to the party last year.\"",
+          "options": [
+            "My sister not could go to the party last year.",
+            "My sister don't could go to the party last year.",
+            "My sister couldn't go to the party last year.",
+            "My sister didn't could go to the party last year."
+          ],
+          "answer": "My sister couldn't go to the party last year."
+        },
+        {
+          "id": "could_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog could visit their grandma last year.\"",
+          "options": [
+            "The dog couldn't visit their grandma last year.",
+            "The dog not could visit their grandma last year.",
+            "The dog don't could visit their grandma last year.",
+            "The dog didn't could visit their grandma last year."
+          ],
+          "answer": "The dog couldn't visit their grandma last year."
+        },
+        {
+          "id": "could_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom could study English last year.\"",
+          "options": [
+            "Tom not could study English last year.",
+            "Tom couldn't study English last year.",
+            "Tom don't could study English last year.",
+            "Tom didn't could study English last year."
+          ],
+          "answer": "Tom couldn't study English last year."
+        },
+        {
+          "id": "could_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister could jump last year.\"",
+          "options": [
+            "My sister don't could jump last year.",
+            "My sister not could jump last year.",
+            "My sister couldn't jump last year.",
+            "My sister didn't could jump last year."
+          ],
+          "answer": "My sister couldn't jump last year."
+        },
+        {
+          "id": "could_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"He could wash the dishes last year.\"",
+          "options": [
+            "He didn't could wash the dishes last year.",
+            "He not could wash the dishes last year.",
+            "He don't could wash the dishes last year.",
+            "He couldn't wash the dishes last year."
+          ],
+          "answer": "He couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could study English last year.\"",
+          "options": [
+            "My brother don't could study English last year.",
+            "My brother couldn't study English last year.",
+            "My brother didn't could study English last year.",
+            "My brother not could study English last year."
+          ],
+          "answer": "My brother couldn't study English last year."
+        },
+        {
+          "id": "could_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children could walk to school last year.\"",
+          "options": [
+            "The children couldn't walk to school last year.",
+            "The children didn't could walk to school last year.",
+            "The children not could walk to school last year.",
+            "The children don't could walk to school last year."
+          ],
+          "answer": "The children couldn't walk to school last year."
+        },
+        {
+          "id": "could_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"It could go to the party last year.\"",
+          "options": [
+            "It don't could go to the party last year.",
+            "It didn't could go to the party last year.",
+            "It not could go to the party last year.",
+            "It couldn't go to the party last year."
+          ],
+          "answer": "It couldn't go to the party last year."
+        },
+        {
+          "id": "could_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog could dance last year.\"",
+          "options": [
+            "The dog didn't could dance last year.",
+            "The dog not could dance last year.",
+            "The dog don't could dance last year.",
+            "The dog couldn't dance last year."
+          ],
+          "answer": "The dog couldn't dance last year."
+        },
+        {
+          "id": "could_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents could help their mum last year.\"",
+          "options": [
+            "My parents didn't could help their mum last year.",
+            "My parents couldn't help their mum last year.",
+            "My parents don't could help their mum last year.",
+            "My parents not could help their mum last year."
+          ],
+          "answer": "My parents couldn't help their mum last year."
+        },
+        {
+          "id": "could_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat could visit their grandma last year.\"",
+          "options": [
+            "Our cat couldn't visit their grandma last year.",
+            "Our cat don't could visit their grandma last year.",
+            "Our cat didn't could visit their grandma last year.",
+            "Our cat not could visit their grandma last year."
+          ],
+          "answer": "Our cat couldn't visit their grandma last year."
+        },
+        {
+          "id": "could_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"They could win the game last year.\"",
+          "options": [
+            "They don't could win the game last year.",
+            "They not could win the game last year.",
+            "They didn't could win the game last year.",
+            "They couldn't win the game last year."
+          ],
+          "answer": "They couldn't win the game last year."
+        },
+        {
+          "id": "could_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children could help their mum last year.\"",
+          "options": [
+            "The children not could help their mum last year.",
+            "The children don't could help their mum last year.",
+            "The children couldn't help their mum last year.",
+            "The children didn't could help their mum last year."
+          ],
+          "answer": "The children couldn't help their mum last year."
+        },
+        {
+          "id": "could_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"She could wash the dishes last year.\"",
+          "options": [
+            "She don't could wash the dishes last year.",
+            "She didn't could wash the dishes last year.",
+            "She couldn't wash the dishes last year.",
+            "She not could wash the dishes last year."
+          ],
+          "answer": "She couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"I could win the game last year.\"",
+          "options": [
+            "I couldn't win the game last year.",
+            "I didn't could win the game last year.",
+            "I don't could win the game last year.",
+            "I not could win the game last year."
+          ],
+          "answer": "I couldn't win the game last year."
+        },
+        {
+          "id": "could_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat could walk to school last year.\"",
+          "options": [
+            "Our cat didn't could walk to school last year.",
+            "Our cat not could walk to school last year.",
+            "Our cat couldn't walk to school last year.",
+            "Our cat don't could walk to school last year."
+          ],
+          "answer": "Our cat couldn't walk to school last year."
+        },
+        {
+          "id": "could_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students could write a letter last year.\"",
+          "options": [
+            "The students didn't could write a letter last year.",
+            "The students don't could write a letter last year.",
+            "The students couldn't write a letter last year.",
+            "The students not could write a letter last year."
+          ],
+          "answer": "The students couldn't write a letter last year."
+        },
+        {
+          "id": "could_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"It could sing a song last year.\"",
+          "options": [
+            "It don't could sing a song last year.",
+            "It didn't could sing a song last year.",
+            "It not could sing a song last year.",
+            "It couldn't sing a song last year."
+          ],
+          "answer": "It couldn't sing a song last year."
+        },
+        {
+          "id": "could_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys could study English last year.\"",
+          "options": [
+            "The boys couldn't study English last year.",
+            "The boys not could study English last year.",
+            "The boys didn't could study English last year.",
+            "The boys don't could study English last year."
+          ],
+          "answer": "The boys couldn't study English last year."
+        },
+        {
+          "id": "could_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children could write a letter last year.\"",
+          "options": [
+            "The children don't could write a letter last year.",
+            "The children not could write a letter last year.",
+            "The children didn't could write a letter last year.",
+            "The children couldn't write a letter last year."
+          ],
+          "answer": "The children couldn't write a letter last year."
+        },
+        {
+          "id": "could_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat could wash the dishes last year.\"",
+          "options": [
+            "Our cat don't could wash the dishes last year.",
+            "Our cat didn't could wash the dishes last year.",
+            "Our cat not could wash the dishes last year.",
+            "Our cat couldn't wash the dishes last year."
+          ],
+          "answer": "Our cat couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"They could help their mum last year.\"",
+          "options": [
+            "They didn't could help their mum last year.",
+            "They couldn't help their mum last year.",
+            "They don't could help their mum last year.",
+            "They not could help their mum last year."
+          ],
+          "answer": "They couldn't help their mum last year."
+        },
+        {
+          "id": "could_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom could climb a tree last year.\"",
+          "options": [
+            "Tom not could climb a tree last year.",
+            "Tom didn't could climb a tree last year.",
+            "Tom couldn't climb a tree last year.",
+            "Tom don't could climb a tree last year."
+          ],
+          "answer": "Tom couldn't climb a tree last year."
+        },
+        {
+          "id": "could_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"You could swim last year.\"",
+          "options": [
+            "You not could swim last year.",
+            "You couldn't swim last year.",
+            "You didn't could swim last year.",
+            "You don't could swim last year."
+          ],
+          "answer": "You couldn't swim last year."
+        },
+        {
+          "id": "could_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog could win the game last year.\"",
+          "options": [
+            "The dog don't could win the game last year.",
+            "The dog couldn't win the game last year.",
+            "The dog not could win the game last year.",
+            "The dog didn't could win the game last year."
+          ],
+          "answer": "The dog couldn't win the game last year."
+        },
+        {
+          "id": "could_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"He could clean the house last year.\"",
+          "options": [
+            "He didn't could clean the house last year.",
+            "He couldn't clean the house last year.",
+            "He don't could clean the house last year.",
+            "He not could clean the house last year."
+          ],
+          "answer": "He couldn't clean the house last year."
+        },
+        {
+          "id": "could_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"We could swim last year.\"",
+          "options": [
+            "We don't could swim last year.",
+            "We not could swim last year.",
+            "We couldn't swim last year.",
+            "We didn't could swim last year."
+          ],
+          "answer": "We couldn't swim last year."
+        },
+        {
+          "id": "could_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could jump last year.\"",
+          "options": [
+            "My brother couldn't jump last year.",
+            "My brother didn't could jump last year.",
+            "My brother don't could jump last year.",
+            "My brother not could jump last year."
+          ],
+          "answer": "My brother couldn't jump last year."
+        },
+        {
+          "id": "could_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"You could sing a song last year.\"",
+          "options": [
+            "You not could sing a song last year.",
+            "You don't could sing a song last year.",
+            "You couldn't sing a song last year.",
+            "You didn't could sing a song last year."
+          ],
+          "answer": "You couldn't sing a song last year."
+        },
+        {
+          "id": "could_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom could help their mum last year.\"",
+          "options": [
+            "Tom don't could help their mum last year.",
+            "Tom not could help their mum last year.",
+            "Tom didn't could help their mum last year.",
+            "Tom couldn't help their mum last year."
+          ],
+          "answer": "Tom couldn't help their mum last year."
+        },
+        {
+          "id": "could_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students could do homework last year.\"",
+          "options": [
+            "The students not could do homework last year.",
+            "The students couldn't do homework last year.",
+            "The students don't could do homework last year.",
+            "The students didn't could do homework last year."
+          ],
+          "answer": "The students couldn't do homework last year."
+        },
+        {
+          "id": "could_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"It could wash the dishes last year.\"",
+          "options": [
+            "It not could wash the dishes last year.",
+            "It couldn't wash the dishes last year.",
+            "It don't could wash the dishes last year.",
+            "It didn't could wash the dishes last year."
+          ],
+          "answer": "It couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"You could wash the dishes last year.\"",
+          "options": [
+            "You didn't could wash the dishes last year.",
+            "You don't could wash the dishes last year.",
+            "You couldn't wash the dishes last year.",
+            "You not could wash the dishes last year."
+          ],
+          "answer": "You couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"They could ride a bike last year.\"",
+          "options": [
+            "They couldn't ride a bike last year.",
+            "They didn't could ride a bike last year.",
+            "They don't could ride a bike last year.",
+            "They not could ride a bike last year."
+          ],
+          "answer": "They couldn't ride a bike last year."
+        },
+        {
+          "id": "could_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys could help their mum last year.\"",
+          "options": [
+            "The boys don't could help their mum last year.",
+            "The boys couldn't help their mum last year.",
+            "The boys not could help their mum last year.",
+            "The boys didn't could help their mum last year."
+          ],
+          "answer": "The boys couldn't help their mum last year."
+        },
+        {
+          "id": "could_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog could have lunch last year.\"",
+          "options": [
+            "The dog not could have lunch last year.",
+            "The dog don't could have lunch last year.",
+            "The dog couldn't have lunch last year.",
+            "The dog didn't could have lunch last year."
+          ],
+          "answer": "The dog couldn't have lunch last year."
+        },
+        {
+          "id": "could_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"We could ride a bike last year.\"",
+          "options": [
+            "We not could ride a bike last year.",
+            "We didn't could ride a bike last year.",
+            "We couldn't ride a bike last year.",
+            "We don't could ride a bike last year."
+          ],
+          "answer": "We couldn't ride a bike last year."
+        },
+        {
+          "id": "could_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could do homework last year.\"",
+          "options": [
+            "My brother don't could do homework last year.",
+            "My brother couldn't do homework last year.",
+            "My brother didn't could do homework last year.",
+            "My brother not could do homework last year."
+          ],
+          "answer": "My brother couldn't do homework last year."
+        },
+        {
+          "id": "could_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"I could run last year.\"",
+          "options": [
+            "I didn't could run last year.",
+            "I not could run last year.",
+            "I couldn't run last year.",
+            "I don't could run last year."
+          ],
+          "answer": "I couldn't run last year."
+        },
+        {
+          "id": "could_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"You could help their mum last year.\"",
+          "options": [
+            "You not could help their mum last year.",
+            "You don't could help their mum last year.",
+            "You didn't could help their mum last year.",
+            "You couldn't help their mum last year."
+          ],
+          "answer": "You couldn't help their mum last year."
+        },
+        {
+          "id": "could_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children could watch TV last year.\"",
+          "options": [
+            "The children don't could watch TV last year.",
+            "The children not could watch TV last year.",
+            "The children couldn't watch TV last year.",
+            "The children didn't could watch TV last year."
+          ],
+          "answer": "The children couldn't watch TV last year."
+        },
+        {
+          "id": "could_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys could run last year.\"",
+          "options": [
+            "The boys couldn't run last year.",
+            "The boys not could run last year.",
+            "The boys don't could run last year.",
+            "The boys didn't could run last year."
+          ],
+          "answer": "The boys couldn't run last year."
+        },
+        {
+          "id": "could_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"I could sing a song last year.\"",
+          "options": [
+            "I not could sing a song last year.",
+            "I didn't could sing a song last year.",
+            "I couldn't sing a song last year.",
+            "I don't could sing a song last year."
+          ],
+          "answer": "I couldn't sing a song last year."
+        },
+        {
+          "id": "could_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents could walk to school last year.\"",
+          "options": [
+            "My parents not could walk to school last year.",
+            "My parents didn't could walk to school last year.",
+            "My parents couldn't walk to school last year.",
+            "My parents don't could walk to school last year."
+          ],
+          "answer": "My parents couldn't walk to school last year."
+        },
+        {
+          "id": "could_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"We could do homework last year.\"",
+          "options": [
+            "We don't could do homework last year.",
+            "We not could do homework last year.",
+            "We couldn't do homework last year.",
+            "We didn't could do homework last year."
+          ],
+          "answer": "We couldn't do homework last year."
+        },
+        {
+          "id": "could_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys could listen to music last year.\"",
+          "options": [
+            "The boys don't could listen to music last year.",
+            "The boys couldn't listen to music last year.",
+            "The boys didn't could listen to music last year.",
+            "The boys not could listen to music last year."
+          ],
+          "answer": "The boys couldn't listen to music last year."
+        },
+        {
+          "id": "could_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother could brush their teeth last year.\"",
+          "options": [
+            "My brother don't could brush their teeth last year.",
+            "My brother didn't could brush their teeth last year.",
+            "My brother not could brush their teeth last year.",
+            "My brother couldn't brush their teeth last year."
+          ],
+          "answer": "My brother couldn't brush their teeth last year."
+        },
+        {
+          "id": "could_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"They could wash the dishes last year.\"",
+          "options": [
+            "They not could wash the dishes last year.",
+            "They couldn't wash the dishes last year.",
+            "They don't could wash the dishes last year.",
+            "They didn't could wash the dishes last year."
+          ],
+          "answer": "They couldn't wash the dishes last year."
+        },
+        {
+          "id": "could_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys could cook dinner last year.\"",
+          "options": [
+            "The boys couldn't cook dinner last year.",
+            "The boys didn't could cook dinner last year.",
+            "The boys don't could cook dinner last year.",
+            "The boys not could cook dinner last year."
+          ],
+          "answer": "The boys couldn't cook dinner last year."
+        },
+        {
+          "id": "could_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"They could walk to school last year.\"",
+          "options": [
+            "They couldn't walk to school last year.",
+            "They didn't could walk to school last year.",
+            "They don't could walk to school last year.",
+            "They not could walk to school last year."
+          ],
+          "answer": "They couldn't walk to school last year."
+        },
+        {
+          "id": "could_c_1",
+          "type": "C",
+          "question": "Ask a question: \"They could win the game.\"",
+          "options": [
+            "They could win the game?",
+            "Could they win the game?",
+            "Could win the game they?",
+            "Does they could win the game?"
+          ],
+          "answer": "Could they win the game?"
+        },
+        {
+          "id": "could_c_2",
+          "type": "C",
+          "question": "Ask a question: \"We could play football.\"",
+          "options": [
+            "Could we play football?",
+            "Does we could play football?",
+            "We could play football?",
+            "Could play football we?"
+          ],
+          "answer": "Could we play football?"
+        },
+        {
+          "id": "could_c_3",
+          "type": "C",
+          "question": "Ask a question: \"I could win the game.\"",
+          "options": [
+            "I could win the game?",
+            "Could win the game I?",
+            "Does I could win the game?",
+            "Could I win the game?"
+          ],
+          "answer": "Could I win the game?"
+        },
+        {
+          "id": "could_c_4",
+          "type": "C",
+          "question": "Ask a question: \"I could do homework.\"",
+          "options": [
+            "Could do homework I?",
+            "Could I do homework?",
+            "Does I could do homework?",
+            "I could do homework?"
+          ],
+          "answer": "Could I do homework?"
+        },
+        {
+          "id": "could_c_5",
+          "type": "C",
+          "question": "Ask a question: \"He could listen to music.\"",
+          "options": [
+            "He could listen to music?",
+            "Does he could listen to music?",
+            "Could listen to music he?",
+            "Could he listen to music?"
+          ],
+          "answer": "Could he listen to music?"
+        },
+        {
+          "id": "could_c_6",
+          "type": "C",
+          "question": "Ask a question: \"We could watch TV.\"",
+          "options": [
+            "Could we watch TV?",
+            "We could watch TV?",
+            "Could watch TV we?",
+            "Does we could watch TV?"
+          ],
+          "answer": "Could we watch TV?"
+        },
+        {
+          "id": "could_c_7",
+          "type": "C",
+          "question": "Ask a question: \"I could swim.\"",
+          "options": [
+            "Does I could swim?",
+            "Could swim I?",
+            "I could swim?",
+            "Could I swim?"
+          ],
+          "answer": "Could I swim?"
+        },
+        {
+          "id": "could_c_8",
+          "type": "C",
+          "question": "Ask a question: \"You could run.\"",
+          "options": [
+            "Could you run?",
+            "Could run you?",
+            "You could run?",
+            "Does you could run?"
+          ],
+          "answer": "Could you run?"
+        },
+        {
+          "id": "could_c_9",
+          "type": "C",
+          "question": "Ask a question: \"We could jump.\"",
+          "options": [
+            "Does we could jump?",
+            "Could we jump?",
+            "Could jump we?",
+            "We could jump?"
+          ],
+          "answer": "Could we jump?"
+        },
+        {
+          "id": "could_c_10",
+          "type": "C",
+          "question": "Ask a question: \"She could visit their grandma.\"",
+          "options": [
+            "She could visit their grandma?",
+            "Does she could visit their grandma?",
+            "Could visit their grandma she?",
+            "Could she visit their grandma?"
+          ],
+          "answer": "Could she visit their grandma?"
+        },
+        {
+          "id": "could_c_11",
+          "type": "C",
+          "question": "Ask a question: \"She could dance.\"",
+          "options": [
+            "She could dance?",
+            "Could dance she?",
+            "Could she dance?",
+            "Does she could dance?"
+          ],
+          "answer": "Could she dance?"
+        },
+        {
+          "id": "could_c_12",
+          "type": "C",
+          "question": "Ask a question: \"She could listen to music.\"",
+          "options": [
+            "She could listen to music?",
+            "Does she could listen to music?",
+            "Could she listen to music?",
+            "Could listen to music she?"
+          ],
+          "answer": "Could she listen to music?"
+        },
+        {
+          "id": "could_c_13",
+          "type": "C",
+          "question": "Ask a question: \"You could clean the house.\"",
+          "options": [
+            "Could clean the house you?",
+            "You could clean the house?",
+            "Could you clean the house?",
+            "Does you could clean the house?"
+          ],
+          "answer": "Could you clean the house?"
+        },
+        {
+          "id": "could_c_14",
+          "type": "C",
+          "question": "Ask a question: \"I could dance.\"",
+          "options": [
+            "I could dance?",
+            "Could I dance?",
+            "Does I could dance?",
+            "Could dance I?"
+          ],
+          "answer": "Could I dance?"
+        },
+        {
+          "id": "could_c_15",
+          "type": "C",
+          "question": "Ask a question: \"I could wash the dishes.\"",
+          "options": [
+            "I could wash the dishes?",
+            "Could I wash the dishes?",
+            "Does I could wash the dishes?",
+            "Could wash the dishes I?"
+          ],
+          "answer": "Could I wash the dishes?"
+        },
+        {
+          "id": "could_c_16",
+          "type": "C",
+          "question": "Ask a question: \"They could do homework.\"",
+          "options": [
+            "Could they do homework?",
+            "They could do homework?",
+            "Does they could do homework?",
+            "Could do homework they?"
+          ],
+          "answer": "Could they do homework?"
+        },
+        {
+          "id": "could_c_17",
+          "type": "C",
+          "question": "Ask a question: \"I could brush their teeth.\"",
+          "options": [
+            "I could brush their teeth?",
+            "Does I could brush their teeth?",
+            "Could brush their teeth I?",
+            "Could I brush their teeth?"
+          ],
+          "answer": "Could I brush their teeth?"
+        },
+        {
+          "id": "could_c_18",
+          "type": "C",
+          "question": "Ask a question: \"You could visit their grandma.\"",
+          "options": [
+            "You could visit their grandma?",
+            "Could you visit their grandma?",
+            "Could visit their grandma you?",
+            "Does you could visit their grandma?"
+          ],
+          "answer": "Could you visit their grandma?"
+        },
+        {
+          "id": "could_c_19",
+          "type": "C",
+          "question": "Ask a question: \"He could cook dinner.\"",
+          "options": [
+            "Does he could cook dinner?",
+            "Could he cook dinner?",
+            "Could cook dinner he?",
+            "He could cook dinner?"
+          ],
+          "answer": "Could he cook dinner?"
+        },
+        {
+          "id": "could_c_20",
+          "type": "C",
+          "question": "Ask a question: \"We could do homework.\"",
+          "options": [
+            "We could do homework?",
+            "Does we could do homework?",
+            "Could we do homework?",
+            "Could do homework we?"
+          ],
+          "answer": "Could we do homework?"
+        },
+        {
+          "id": "could_c_21",
+          "type": "C",
+          "question": "Ask a question: \"They could watch TV.\"",
+          "options": [
+            "Could watch TV they?",
+            "They could watch TV?",
+            "Could they watch TV?",
+            "Does they could watch TV?"
+          ],
+          "answer": "Could they watch TV?"
+        },
+        {
+          "id": "could_c_22",
+          "type": "C",
+          "question": "Ask a question: \"He could dance.\"",
+          "options": [
+            "Could he dance?",
+            "Could dance he?",
+            "Does he could dance?",
+            "He could dance?"
+          ],
+          "answer": "Could he dance?"
+        },
+        {
+          "id": "could_c_23",
+          "type": "C",
+          "question": "Ask a question: \"He could walk to school.\"",
+          "options": [
+            "Does he could walk to school?",
+            "Could walk to school he?",
+            "He could walk to school?",
+            "Could he walk to school?"
+          ],
+          "answer": "Could he walk to school?"
+        },
+        {
+          "id": "could_c_24",
+          "type": "C",
+          "question": "Ask a question: \"They could walk to school.\"",
+          "options": [
+            "Could walk to school they?",
+            "Does they could walk to school?",
+            "Could they walk to school?",
+            "They could walk to school?"
+          ],
+          "answer": "Could they walk to school?"
+        },
+        {
+          "id": "could_c_25",
+          "type": "C",
+          "question": "Ask a question: \"I could write a letter.\"",
+          "options": [
+            "Could write a letter I?",
+            "Does I could write a letter?",
+            "I could write a letter?",
+            "Could I write a letter?"
+          ],
+          "answer": "Could I write a letter?"
+        },
+        {
+          "id": "could_c_26",
+          "type": "C",
+          "question": "Ask a question: \"He could have lunch.\"",
+          "options": [
+            "Could he have lunch?",
+            "Could have lunch he?",
+            "Does he could have lunch?",
+            "He could have lunch?"
+          ],
+          "answer": "Could he have lunch?"
+        },
+        {
+          "id": "could_c_27",
+          "type": "C",
+          "question": "Ask a question: \"I could run.\"",
+          "options": [
+            "Could run I?",
+            "Could I run?",
+            "I could run?",
+            "Does I could run?"
+          ],
+          "answer": "Could I run?"
+        },
+        {
+          "id": "could_c_28",
+          "type": "C",
+          "question": "Ask a question: \"You could win the game.\"",
+          "options": [
+            "You could win the game?",
+            "Could you win the game?",
+            "Does you could win the game?",
+            "Could win the game you?"
+          ],
+          "answer": "Could you win the game?"
+        },
+        {
+          "id": "could_c_29",
+          "type": "C",
+          "question": "Ask a question: \"She could do homework.\"",
+          "options": [
+            "Could she do homework?",
+            "Does she could do homework?",
+            "Could do homework she?",
+            "She could do homework?"
+          ],
+          "answer": "Could she do homework?"
+        },
+        {
+          "id": "could_c_30",
+          "type": "C",
+          "question": "Ask a question: \"We could help their mum.\"",
+          "options": [
+            "Could we help their mum?",
+            "Could help their mum we?",
+            "Does we could help their mum?",
+            "We could help their mum?"
+          ],
+          "answer": "Could we help their mum?"
+        },
+        {
+          "id": "could_c_31",
+          "type": "C",
+          "question": "Ask a question: \"She could jump.\"",
+          "options": [
+            "Could she jump?",
+            "Could jump she?",
+            "She could jump?",
+            "Does she could jump?"
+          ],
+          "answer": "Could she jump?"
+        },
+        {
+          "id": "could_c_32",
+          "type": "C",
+          "question": "Ask a question: \"He could wash the dishes.\"",
+          "options": [
+            "Could he wash the dishes?",
+            "He could wash the dishes?",
+            "Could wash the dishes he?",
+            "Does he could wash the dishes?"
+          ],
+          "answer": "Could he wash the dishes?"
+        },
+        {
+          "id": "could_c_33",
+          "type": "C",
+          "question": "Ask a question: \"I could play football.\"",
+          "options": [
+            "Could play football I?",
+            "Could I play football?",
+            "Does I could play football?",
+            "I could play football?"
+          ],
+          "answer": "Could I play football?"
+        },
+        {
+          "id": "could_c_34",
+          "type": "C",
+          "question": "Ask a question: \"He could draw a picture.\"",
+          "options": [
+            "Could draw a picture he?",
+            "He could draw a picture?",
+            "Could he draw a picture?",
+            "Does he could draw a picture?"
+          ],
+          "answer": "Could he draw a picture?"
+        },
+        {
+          "id": "could_c_35",
+          "type": "C",
+          "question": "Ask a question: \"He could climb a tree.\"",
+          "options": [
+            "Could he climb a tree?",
+            "Does he could climb a tree?",
+            "Could climb a tree he?",
+            "He could climb a tree?"
+          ],
+          "answer": "Could he climb a tree?"
+        },
+        {
+          "id": "could_c_36",
+          "type": "C",
+          "question": "Ask a question: \"They could brush their teeth.\"",
+          "options": [
+            "Could brush their teeth they?",
+            "Does they could brush their teeth?",
+            "They could brush their teeth?",
+            "Could they brush their teeth?"
+          ],
+          "answer": "Could they brush their teeth?"
+        },
+        {
+          "id": "could_c_37",
+          "type": "C",
+          "question": "Ask a question: \"He could run.\"",
+          "options": [
+            "Could he run?",
+            "Does he could run?",
+            "He could run?",
+            "Could run he?"
+          ],
+          "answer": "Could he run?"
+        },
+        {
+          "id": "could_c_38",
+          "type": "C",
+          "question": "Ask a question: \"We could ride a bike.\"",
+          "options": [
+            "Could we ride a bike?",
+            "Does we could ride a bike?",
+            "We could ride a bike?",
+            "Could ride a bike we?"
+          ],
+          "answer": "Could we ride a bike?"
+        },
+        {
+          "id": "could_c_39",
+          "type": "C",
+          "question": "Ask a question: \"He could jump.\"",
+          "options": [
+            "Could jump he?",
+            "He could jump?",
+            "Does he could jump?",
+            "Could he jump?"
+          ],
+          "answer": "Could he jump?"
+        },
+        {
+          "id": "could_c_40",
+          "type": "C",
+          "question": "Ask a question: \"I could go to the party.\"",
+          "options": [
+            "Could I go to the party?",
+            "Does I could go to the party?",
+            "I could go to the party?",
+            "Could go to the party I?"
+          ],
+          "answer": "Could I go to the party?"
+        },
+        {
+          "id": "could_c_41",
+          "type": "C",
+          "question": "Ask a question: \"They could draw a picture.\"",
+          "options": [
+            "They could draw a picture?",
+            "Could they draw a picture?",
+            "Does they could draw a picture?",
+            "Could draw a picture they?"
+          ],
+          "answer": "Could they draw a picture?"
+        },
+        {
+          "id": "could_c_42",
+          "type": "C",
+          "question": "Ask a question: \"You could dance.\"",
+          "options": [
+            "Could you dance?",
+            "Could dance you?",
+            "Does you could dance?",
+            "You could dance?"
+          ],
+          "answer": "Could you dance?"
+        },
+        {
+          "id": "could_c_43",
+          "type": "C",
+          "question": "Ask a question: \"He could feed the cat.\"",
+          "options": [
+            "Could feed the cat he?",
+            "Could he feed the cat?",
+            "Does he could feed the cat?",
+            "He could feed the cat?"
+          ],
+          "answer": "Could he feed the cat?"
+        },
+        {
+          "id": "could_c_44",
+          "type": "C",
+          "question": "Ask a question: \"I could ride a bike.\"",
+          "options": [
+            "Could I ride a bike?",
+            "Could ride a bike I?",
+            "Does I could ride a bike?",
+            "I could ride a bike?"
+          ],
+          "answer": "Could I ride a bike?"
+        },
+        {
+          "id": "could_c_45",
+          "type": "C",
+          "question": "Ask a question: \"She could brush their teeth.\"",
+          "options": [
+            "Does she could brush their teeth?",
+            "Could brush their teeth she?",
+            "She could brush their teeth?",
+            "Could she brush their teeth?"
+          ],
+          "answer": "Could she brush their teeth?"
+        },
+        {
+          "id": "could_c_46",
+          "type": "C",
+          "question": "Ask a question: \"They could cook dinner.\"",
+          "options": [
+            "Does they could cook dinner?",
+            "Could they cook dinner?",
+            "Could cook dinner they?",
+            "They could cook dinner?"
+          ],
+          "answer": "Could they cook dinner?"
+        },
+        {
+          "id": "could_c_47",
+          "type": "C",
+          "question": "Ask a question: \"They could play football.\"",
+          "options": [
+            "Could play football they?",
+            "They could play football?",
+            "Does they could play football?",
+            "Could they play football?"
+          ],
+          "answer": "Could they play football?"
+        },
+        {
+          "id": "could_c_48",
+          "type": "C",
+          "question": "Ask a question: \"They could have lunch.\"",
+          "options": [
+            "Could they have lunch?",
+            "Could have lunch they?",
+            "Does they could have lunch?",
+            "They could have lunch?"
+          ],
+          "answer": "Could they have lunch?"
+        },
+        {
+          "id": "could_c_49",
+          "type": "C",
+          "question": "Ask a question: \"We could listen to music.\"",
+          "options": [
+            "Does we could listen to music?",
+            "Could listen to music we?",
+            "Could we listen to music?",
+            "We could listen to music?"
+          ],
+          "answer": "Could we listen to music?"
+        },
+        {
+          "id": "could_c_50",
+          "type": "C",
+          "question": "Ask a question: \"She could study English.\"",
+          "options": [
+            "Could study English she?",
+            "She could study English?",
+            "Could she study English?",
+            "Does she could study English?"
+          ],
+          "answer": "Could she study English?"
+        },
+        {
+          "id": "could_c_51",
+          "type": "C",
+          "question": "Ask a question: \"I could study English.\"",
+          "options": [
+            "Could study English I?",
+            "I could study English?",
+            "Could I study English?",
+            "Does I could study English?"
+          ],
+          "answer": "Could I study English?"
+        },
+        {
+          "id": "could_c_52",
+          "type": "C",
+          "question": "Ask a question: \"You could feed the cat.\"",
+          "options": [
+            "Could you feed the cat?",
+            "Does you could feed the cat?",
+            "Could feed the cat you?",
+            "You could feed the cat?"
+          ],
+          "answer": "Could you feed the cat?"
+        },
+        {
+          "id": "could_c_53",
+          "type": "C",
+          "question": "Ask a question: \"I could help their mum.\"",
+          "options": [
+            "Does I could help their mum?",
+            "Could help their mum I?",
+            "I could help their mum?",
+            "Could I help their mum?"
+          ],
+          "answer": "Could I help their mum?"
+        },
+        {
+          "id": "could_c_54",
+          "type": "C",
+          "question": "Ask a question: \"You could ride a bike.\"",
+          "options": [
+            "Does you could ride a bike?",
+            "Could ride a bike you?",
+            "Could you ride a bike?",
+            "You could ride a bike?"
+          ],
+          "answer": "Could you ride a bike?"
+        },
+        {
+          "id": "could_c_55",
+          "type": "C",
+          "question": "Ask a question: \"We could walk to school.\"",
+          "options": [
+            "Does we could walk to school?",
+            "We could walk to school?",
+            "Could we walk to school?",
+            "Could walk to school we?"
+          ],
+          "answer": "Could we walk to school?"
+        },
+        {
+          "id": "could_c_56",
+          "type": "C",
+          "question": "Ask a question: \"You could go to the party.\"",
+          "options": [
+            "Does you could go to the party?",
+            "You could go to the party?",
+            "Could go to the party you?",
+            "Could you go to the party?"
+          ],
+          "answer": "Could you go to the party?"
+        },
+        {
+          "id": "could_c_57",
+          "type": "C",
+          "question": "Ask a question: \"He could visit their grandma.\"",
+          "options": [
+            "Does he could visit their grandma?",
+            "He could visit their grandma?",
+            "Could he visit their grandma?",
+            "Could visit their grandma he?"
+          ],
+          "answer": "Could he visit their grandma?"
+        },
+        {
+          "id": "could_c_58",
+          "type": "C",
+          "question": "Ask a question: \"We could dance.\"",
+          "options": [
+            "Does we could dance?",
+            "Could we dance?",
+            "We could dance?",
+            "Could dance we?"
+          ],
+          "answer": "Could we dance?"
+        },
+        {
+          "id": "could_c_59",
+          "type": "C",
+          "question": "Ask a question: \"They could write a letter.\"",
+          "options": [
+            "Could they write a letter?",
+            "Could write a letter they?",
+            "Does they could write a letter?",
+            "They could write a letter?"
+          ],
+          "answer": "Could they write a letter?"
+        },
+        {
+          "id": "could_c_60",
+          "type": "C",
+          "question": "Ask a question: \"She could win the game.\"",
+          "options": [
+            "Does she could win the game?",
+            "She could win the game?",
+            "Could she win the game?",
+            "Could win the game she?"
+          ],
+          "answer": "Could she win the game?"
+        },
+        {
+          "id": "could_c_61",
+          "type": "C",
+          "question": "Ask a question: \"I could sing a song.\"",
+          "options": [
+            "I could sing a song?",
+            "Could I sing a song?",
+            "Does I could sing a song?",
+            "Could sing a song I?"
+          ],
+          "answer": "Could I sing a song?"
+        },
+        {
+          "id": "could_c_62",
+          "type": "C",
+          "question": "Ask a question: \"She could climb a tree.\"",
+          "options": [
+            "Does she could climb a tree?",
+            "Could she climb a tree?",
+            "Could climb a tree she?",
+            "She could climb a tree?"
+          ],
+          "answer": "Could she climb a tree?"
+        },
+        {
+          "id": "could_c_63",
+          "type": "C",
+          "question": "Ask a question: \"We could visit their grandma.\"",
+          "options": [
+            "Does we could visit their grandma?",
+            "Could we visit their grandma?",
+            "We could visit their grandma?",
+            "Could visit their grandma we?"
+          ],
+          "answer": "Could we visit their grandma?"
+        },
+        {
+          "id": "could_c_64",
+          "type": "C",
+          "question": "Ask a question: \"He could clean the house.\"",
+          "options": [
+            "Could clean the house he?",
+            "He could clean the house?",
+            "Does he could clean the house?",
+            "Could he clean the house?"
+          ],
+          "answer": "Could he clean the house?"
+        },
+        {
+          "id": "could_c_65",
+          "type": "C",
+          "question": "Ask a question: \"We could wash the dishes.\"",
+          "options": [
+            "We could wash the dishes?",
+            "Could we wash the dishes?",
+            "Does we could wash the dishes?",
+            "Could wash the dishes we?"
+          ],
+          "answer": "Could we wash the dishes?"
+        },
+        {
+          "id": "could_c_66",
+          "type": "C",
+          "question": "Ask a question: \"She could run.\"",
+          "options": [
+            "She could run?",
+            "Could run she?",
+            "Does she could run?",
+            "Could she run?"
+          ],
+          "answer": "Could she run?"
+        },
+        {
+          "id": "could_c_67",
+          "type": "C",
+          "question": "Ask a question: \"You could play football.\"",
+          "options": [
+            "You could play football?",
+            "Could you play football?",
+            "Could play football you?",
+            "Does you could play football?"
+          ],
+          "answer": "Could you play football?"
+        },
+        {
+          "id": "could_c_68",
+          "type": "C",
+          "question": "Ask a question: \"I could cook dinner.\"",
+          "options": [
+            "Could I cook dinner?",
+            "Does I could cook dinner?",
+            "Could cook dinner I?",
+            "I could cook dinner?"
+          ],
+          "answer": "Could I cook dinner?"
+        },
+        {
+          "id": "could_c_69",
+          "type": "C",
+          "question": "Ask a question: \"She could clean the house.\"",
+          "options": [
+            "She could clean the house?",
+            "Could clean the house she?",
+            "Could she clean the house?",
+            "Does she could clean the house?"
+          ],
+          "answer": "Could she clean the house?"
+        },
+        {
+          "id": "could_c_70",
+          "type": "C",
+          "question": "Ask a question: \"He could do homework.\"",
+          "options": [
+            "Could he do homework?",
+            "Could do homework he?",
+            "He could do homework?",
+            "Does he could do homework?"
+          ],
+          "answer": "Could he do homework?"
+        },
+        {
+          "id": "could_c_71",
+          "type": "C",
+          "question": "Ask a question: \"I could feed the cat.\"",
+          "options": [
+            "Does I could feed the cat?",
+            "I could feed the cat?",
+            "Could feed the cat I?",
+            "Could I feed the cat?"
+          ],
+          "answer": "Could I feed the cat?"
+        },
+        {
+          "id": "could_c_72",
+          "type": "C",
+          "question": "Ask a question: \"They could sing a song.\"",
+          "options": [
+            "They could sing a song?",
+            "Could they sing a song?",
+            "Does they could sing a song?",
+            "Could sing a song they?"
+          ],
+          "answer": "Could they sing a song?"
+        },
+        {
+          "id": "could_c_73",
+          "type": "C",
+          "question": "Ask a question: \"We could have lunch.\"",
+          "options": [
+            "Could have lunch we?",
+            "Could we have lunch?",
+            "Does we could have lunch?",
+            "We could have lunch?"
+          ],
+          "answer": "Could we have lunch?"
+        },
+        {
+          "id": "could_c_74",
+          "type": "C",
+          "question": "Ask a question: \"You could help their mum.\"",
+          "options": [
+            "You could help their mum?",
+            "Could help their mum you?",
+            "Does you could help their mum?",
+            "Could you help their mum?"
+          ],
+          "answer": "Could you help their mum?"
+        },
+        {
+          "id": "could_c_75",
+          "type": "C",
+          "question": "Ask a question: \"You could sing a song.\"",
+          "options": [
+            "Does you could sing a song?",
+            "Could you sing a song?",
+            "Could sing a song you?",
+            "You could sing a song?"
+          ],
+          "answer": "Could you sing a song?"
+        },
+        {
+          "id": "could_c_76",
+          "type": "C",
+          "question": "Ask a question: \"You could wash the dishes.\"",
+          "options": [
+            "Could you wash the dishes?",
+            "You could wash the dishes?",
+            "Could wash the dishes you?",
+            "Does you could wash the dishes?"
+          ],
+          "answer": "Could you wash the dishes?"
+        },
+        {
+          "id": "could_c_77",
+          "type": "C",
+          "question": "Ask a question: \"They could clean the house.\"",
+          "options": [
+            "They could clean the house?",
+            "Could clean the house they?",
+            "Does they could clean the house?",
+            "Could they clean the house?"
+          ],
+          "answer": "Could they clean the house?"
+        },
+        {
+          "id": "could_c_78",
+          "type": "C",
+          "question": "Ask a question: \"He could help their mum.\"",
+          "options": [
+            "Does he could help their mum?",
+            "Could help their mum he?",
+            "He could help their mum?",
+            "Could he help their mum?"
+          ],
+          "answer": "Could he help their mum?"
+        },
+        {
+          "id": "could_c_79",
+          "type": "C",
+          "question": "Ask a question: \"We could go to the party.\"",
+          "options": [
+            "Could we go to the party?",
+            "Does we could go to the party?",
+            "We could go to the party?",
+            "Could go to the party we?"
+          ],
+          "answer": "Could we go to the party?"
+        },
+        {
+          "id": "could_c_80",
+          "type": "C",
+          "question": "Ask a question: \"We could sing a song.\"",
+          "options": [
+            "Could sing a song we?",
+            "We could sing a song?",
+            "Could we sing a song?",
+            "Does we could sing a song?"
+          ],
+          "answer": "Could we sing a song?"
+        },
+        {
+          "id": "could_c_81",
+          "type": "C",
+          "question": "Ask a question: \"We could clean the house.\"",
+          "options": [
+            "Could we clean the house?",
+            "Could clean the house we?",
+            "We could clean the house?",
+            "Does we could clean the house?"
+          ],
+          "answer": "Could we clean the house?"
+        },
+        {
+          "id": "could_c_82",
+          "type": "C",
+          "question": "Ask a question: \"We could study English.\"",
+          "options": [
+            "Could study English we?",
+            "We could study English?",
+            "Does we could study English?",
+            "Could we study English?"
+          ],
+          "answer": "Could we study English?"
+        },
+        {
+          "id": "could_c_83",
+          "type": "C",
+          "question": "Ask a question: \"He could play football.\"",
+          "options": [
+            "He could play football?",
+            "Could he play football?",
+            "Does he could play football?",
+            "Could play football he?"
+          ],
+          "answer": "Could he play football?"
+        },
+        {
+          "id": "could_c_84",
+          "type": "C",
+          "question": "Ask a question: \"He could go to the party.\"",
+          "options": [
+            "He could go to the party?",
+            "Could go to the party he?",
+            "Could he go to the party?",
+            "Does he could go to the party?"
+          ],
+          "answer": "Could he go to the party?"
+        },
+        {
+          "id": "could_c_85",
+          "type": "C",
+          "question": "Ask a question: \"She could write a letter.\"",
+          "options": [
+            "Does she could write a letter?",
+            "She could write a letter?",
+            "Could she write a letter?",
+            "Could write a letter she?"
+          ],
+          "answer": "Could she write a letter?"
+        },
+        {
+          "id": "could_c_86",
+          "type": "C",
+          "question": "Ask a question: \"You could listen to music.\"",
+          "options": [
+            "Does you could listen to music?",
+            "Could you listen to music?",
+            "Could listen to music you?",
+            "You could listen to music?"
+          ],
+          "answer": "Could you listen to music?"
+        },
+        {
+          "id": "could_c_87",
+          "type": "C",
+          "question": "Ask a question: \"She could watch TV.\"",
+          "options": [
+            "Could watch TV she?",
+            "Does she could watch TV?",
+            "Could she watch TV?",
+            "She could watch TV?"
+          ],
+          "answer": "Could she watch TV?"
+        },
+        {
+          "id": "could_c_88",
+          "type": "C",
+          "question": "Ask a question: \"I could have lunch.\"",
+          "options": [
+            "Does I could have lunch?",
+            "Could I have lunch?",
+            "I could have lunch?",
+            "Could have lunch I?"
+          ],
+          "answer": "Could I have lunch?"
+        },
+        {
+          "id": "could_c_89",
+          "type": "C",
+          "question": "Ask a question: \"You could climb a tree.\"",
+          "options": [
+            "Could climb a tree you?",
+            "Does you could climb a tree?",
+            "Could you climb a tree?",
+            "You could climb a tree?"
+          ],
+          "answer": "Could you climb a tree?"
+        },
+        {
+          "id": "could_c_90",
+          "type": "C",
+          "question": "Ask a question: \"You could cook dinner.\"",
+          "options": [
+            "You could cook dinner?",
+            "Could you cook dinner?",
+            "Does you could cook dinner?",
+            "Could cook dinner you?"
+          ],
+          "answer": "Could you cook dinner?"
+        },
+        {
+          "id": "could_c_91",
+          "type": "C",
+          "question": "Ask a question: \"I could jump.\"",
+          "options": [
+            "I could jump?",
+            "Could I jump?",
+            "Could jump I?",
+            "Does I could jump?"
+          ],
+          "answer": "Could I jump?"
+        },
+        {
+          "id": "could_c_92",
+          "type": "C",
+          "question": "Ask a question: \"We could write a letter.\"",
+          "options": [
+            "Could we write a letter?",
+            "Does we could write a letter?",
+            "Could write a letter we?",
+            "We could write a letter?"
+          ],
+          "answer": "Could we write a letter?"
+        },
+        {
+          "id": "could_c_93",
+          "type": "C",
+          "question": "Ask a question: \"You could have lunch.\"",
+          "options": [
+            "Could have lunch you?",
+            "You could have lunch?",
+            "Does you could have lunch?",
+            "Could you have lunch?"
+          ],
+          "answer": "Could you have lunch?"
+        },
+        {
+          "id": "could_c_94",
+          "type": "C",
+          "question": "Ask a question: \"She could swim.\"",
+          "options": [
+            "Could swim she?",
+            "Could she swim?",
+            "Does she could swim?",
+            "She could swim?"
+          ],
+          "answer": "Could she swim?"
+        },
+        {
+          "id": "could_c_95",
+          "type": "C",
+          "question": "Ask a question: \"She could draw a picture.\"",
+          "options": [
+            "She could draw a picture?",
+            "Does she could draw a picture?",
+            "Could draw a picture she?",
+            "Could she draw a picture?"
+          ],
+          "answer": "Could she draw a picture?"
+        },
+        {
+          "id": "could_c_96",
+          "type": "C",
+          "question": "Ask a question: \"They could climb a tree.\"",
+          "options": [
+            "Does they could climb a tree?",
+            "They could climb a tree?",
+            "Could they climb a tree?",
+            "Could climb a tree they?"
+          ],
+          "answer": "Could they climb a tree?"
+        },
+        {
+          "id": "could_c_97",
+          "type": "C",
+          "question": "Ask a question: \"He could watch TV.\"",
+          "options": [
+            "Could watch TV he?",
+            "Could he watch TV?",
+            "He could watch TV?",
+            "Does he could watch TV?"
+          ],
+          "answer": "Could he watch TV?"
+        },
+        {
+          "id": "could_c_98",
+          "type": "C",
+          "question": "Ask a question: \"They could run.\"",
+          "options": [
+            "They could run?",
+            "Could run they?",
+            "Does they could run?",
+            "Could they run?"
+          ],
+          "answer": "Could they run?"
+        },
+        {
+          "id": "could_c_99",
+          "type": "C",
+          "question": "Ask a question: \"She could have lunch.\"",
+          "options": [
+            "Could have lunch she?",
+            "Does she could have lunch?",
+            "She could have lunch?",
+            "Could she have lunch?"
+          ],
+          "answer": "Could she have lunch?"
+        },
+        {
+          "id": "could_c_100",
+          "type": "C",
+          "question": "Ask a question: \"We could run.\"",
+          "options": [
+            "Could run we?",
+            "We could run?",
+            "Does we could run?",
+            "Could we run?"
+          ],
+          "answer": "Could we run?"
+        },
+        {
+          "id": "could_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro podía cocinar la cena\" en inglés?",
+          "options": [
+            "The dog could cook dinner.",
+            "The dog can cook dinner.",
+            "The dog couldn't cook dinner.",
+            "The dog must cook dinner."
+          ],
+          "answer": "The dog could cook dinner."
+        },
+        {
+          "id": "could_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no podía correr\" en inglés?",
+          "options": [
+            "She can't run.",
+            "She mustn't run.",
+            "She couldn't run.",
+            "She could run."
+          ],
+          "answer": "She couldn't run."
+        },
+        {
+          "id": "could_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos podía bailar\" en inglés?",
+          "options": [
+            "They could dance.",
+            "They can dance.",
+            "They couldn't dance.",
+            "They must dance."
+          ],
+          "answer": "They could dance."
+        },
+        {
+          "id": "could_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no podía correr\" en inglés?",
+          "options": [
+            "It can't run.",
+            "It could run.",
+            "It couldn't run.",
+            "It mustn't run."
+          ],
+          "answer": "It couldn't run."
+        },
+        {
+          "id": "could_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro podía nadar\" en inglés?",
+          "options": [
+            "The dog must swim.",
+            "The dog can swim.",
+            "The dog could swim.",
+            "The dog couldn't swim."
+          ],
+          "answer": "The dog could swim."
+        },
+        {
+          "id": "could_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no podía cocinar la cena\" en inglés?",
+          "options": [
+            "Maria mustn't cook dinner.",
+            "Maria couldn't cook dinner.",
+            "Maria could cook dinner.",
+            "Maria can't cook dinner."
+          ],
+          "answer": "Maria couldn't cook dinner."
+        },
+        {
+          "id": "could_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos podía ver la tele\" en inglés?",
+          "options": [
+            "They must watch TV.",
+            "They couldn't watch TV.",
+            "They can watch TV.",
+            "They could watch TV."
+          ],
+          "answer": "They could watch TV."
+        },
+        {
+          "id": "could_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no podía limpiar la casa\" en inglés?",
+          "options": [
+            "Tom could clean the house.",
+            "Tom mustn't clean the house.",
+            "Tom can't clean the house.",
+            "Tom couldn't clean the house."
+          ],
+          "answer": "Tom couldn't clean the house."
+        },
+        {
+          "id": "could_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú podía ir a la fiesta\" en inglés?",
+          "options": [
+            "You couldn't go to the party.",
+            "You can go to the party.",
+            "You could go to the party.",
+            "You must go to the party."
+          ],
+          "answer": "You could go to the party."
+        },
+        {
+          "id": "could_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños no podía saltar\" en inglés?",
+          "options": [
+            "The children can't jump.",
+            "The children could jump.",
+            "The children couldn't jump.",
+            "The children mustn't jump."
+          ],
+          "answer": "The children couldn't jump."
+        },
+        {
+          "id": "could_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos podía ir a la fiesta\" en inglés?",
+          "options": [
+            "The boys couldn't go to the party.",
+            "The boys must go to the party.",
+            "The boys can go to the party.",
+            "The boys could go to the party."
+          ],
+          "answer": "The boys could go to the party."
+        },
+        {
+          "id": "could_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no podía visitar a su abuela\" en inglés?",
+          "options": [
+            "We can't visit their grandma.",
+            "We couldn't visit their grandma.",
+            "We mustn't visit their grandma.",
+            "We could visit their grandma."
+          ],
+          "answer": "We couldn't visit their grandma."
+        },
+        {
+          "id": "could_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso podía ayudar a su madre\" en inglés?",
+          "options": [
+            "It couldn't help their mum.",
+            "It could help their mum.",
+            "It must help their mum.",
+            "It can help their mum."
+          ],
+          "answer": "It could help their mum."
+        },
+        {
+          "id": "could_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no podía estudiar inglés\" en inglés?",
+          "options": [
+            "We could study English.",
+            "We couldn't study English.",
+            "We can't study English.",
+            "We mustn't study English."
+          ],
+          "answer": "We couldn't study English."
+        },
+        {
+          "id": "could_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú podía cepillarse los dientes\" en inglés?",
+          "options": [
+            "You couldn't brush their teeth.",
+            "You can brush their teeth.",
+            "You must brush their teeth.",
+            "You could brush their teeth."
+          ],
+          "answer": "You could brush their teeth."
+        },
+        {
+          "id": "could_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro no podía cantar una canción\" en inglés?",
+          "options": [
+            "The dog mustn't sing a song.",
+            "The dog could sing a song.",
+            "The dog couldn't sing a song.",
+            "The dog can't sing a song."
+          ],
+          "answer": "The dog couldn't sing a song."
+        },
+        {
+          "id": "could_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso podía hacer los deberes\" en inglés?",
+          "options": [
+            "It couldn't do homework.",
+            "It must do homework.",
+            "It could do homework.",
+            "It can do homework."
+          ],
+          "answer": "It could do homework."
+        },
+        {
+          "id": "could_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no podía estudiar inglés\" en inglés?",
+          "options": [
+            "She couldn't study English.",
+            "She can't study English.",
+            "She mustn't study English.",
+            "She could study English."
+          ],
+          "answer": "She couldn't study English."
+        },
+        {
+          "id": "could_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom podía caminar al colegio\" en inglés?",
+          "options": [
+            "Tom could walk to school.",
+            "Tom must walk to school.",
+            "Tom can walk to school.",
+            "Tom couldn't walk to school."
+          ],
+          "answer": "Tom could walk to school."
+        },
+        {
+          "id": "could_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no podía cantar una canción\" en inglés?",
+          "options": [
+            "She could sing a song.",
+            "She can't sing a song.",
+            "She couldn't sing a song.",
+            "She mustn't sing a song."
+          ],
+          "answer": "She couldn't sing a song."
+        },
+        {
+          "id": "could_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso podía visitar a su abuela\" en inglés?",
+          "options": [
+            "It could visit their grandma.",
+            "It couldn't visit their grandma.",
+            "It can visit their grandma.",
+            "It must visit their grandma."
+          ],
+          "answer": "It could visit their grandma."
+        },
+        {
+          "id": "could_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no podía limpiar la casa\" en inglés?",
+          "options": [
+            "We couldn't clean the house.",
+            "We mustn't clean the house.",
+            "We can't clean the house.",
+            "We could clean the house."
+          ],
+          "answer": "We couldn't clean the house."
+        },
+        {
+          "id": "could_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana podía fregar los platos\" en inglés?",
+          "options": [
+            "My sister must wash the dishes.",
+            "My sister could wash the dishes.",
+            "My sister can wash the dishes.",
+            "My sister couldn't wash the dishes."
+          ],
+          "answer": "My sister could wash the dishes."
+        },
+        {
+          "id": "could_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no podía cepillarse los dientes\" en inglés?",
+          "options": [
+            "I could brush their teeth.",
+            "I couldn't brush their teeth.",
+            "I mustn't brush their teeth.",
+            "I can't brush their teeth."
+          ],
+          "answer": "I couldn't brush their teeth."
+        },
+        {
+          "id": "could_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano podía dar de comer al gato\" en inglés?",
+          "options": [
+            "My brother could feed the cat.",
+            "My brother must feed the cat.",
+            "My brother couldn't feed the cat.",
+            "My brother can feed the cat."
+          ],
+          "answer": "My brother could feed the cat."
+        },
+        {
+          "id": "could_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no podía hacer los deberes\" en inglés?",
+          "options": [
+            "She can't do homework.",
+            "She mustn't do homework.",
+            "She couldn't do homework.",
+            "She could do homework."
+          ],
+          "answer": "She couldn't do homework."
+        },
+        {
+          "id": "could_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos podía hacer los deberes\" en inglés?",
+          "options": [
+            "They must do homework.",
+            "They couldn't do homework.",
+            "They could do homework.",
+            "They can do homework."
+          ],
+          "answer": "They could do homework."
+        },
+        {
+          "id": "could_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no podía dibujar un dibujo\" en inglés?",
+          "options": [
+            "She couldn't draw a picture.",
+            "She could draw a picture.",
+            "She mustn't draw a picture.",
+            "She can't draw a picture."
+          ],
+          "answer": "She couldn't draw a picture."
+        },
+        {
+          "id": "could_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana podía dibujar un dibujo\" en inglés?",
+          "options": [
+            "My sister couldn't draw a picture.",
+            "My sister could draw a picture.",
+            "My sister can draw a picture.",
+            "My sister must draw a picture."
+          ],
+          "answer": "My sister could draw a picture."
+        },
+        {
+          "id": "could_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no podía dibujar un dibujo\" en inglés?",
+          "options": [
+            "I couldn't draw a picture.",
+            "I could draw a picture.",
+            "I mustn't draw a picture.",
+            "I can't draw a picture."
+          ],
+          "answer": "I couldn't draw a picture."
+        },
+        {
+          "id": "could_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo podía ir a la fiesta\" en inglés?",
+          "options": [
+            "I can go to the party.",
+            "I must go to the party.",
+            "I couldn't go to the party.",
+            "I could go to the party."
+          ],
+          "answer": "I could go to the party."
+        },
+        {
+          "id": "could_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños no podía estudiar inglés\" en inglés?",
+          "options": [
+            "The children couldn't study English.",
+            "The children mustn't study English.",
+            "The children could study English.",
+            "The children can't study English."
+          ],
+          "answer": "The children couldn't study English."
+        },
+        {
+          "id": "could_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños podía comer\" en inglés?",
+          "options": [
+            "The children must have lunch.",
+            "The children couldn't have lunch.",
+            "The children can have lunch.",
+            "The children could have lunch."
+          ],
+          "answer": "The children could have lunch."
+        },
+        {
+          "id": "could_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no podía estudiar inglés\" en inglés?",
+          "options": [
+            "You mustn't study English.",
+            "You couldn't study English.",
+            "You could study English.",
+            "You can't study English."
+          ],
+          "answer": "You couldn't study English."
+        },
+        {
+          "id": "could_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo podía caminar al colegio\" en inglés?",
+          "options": [
+            "I must walk to school.",
+            "I can walk to school.",
+            "I couldn't walk to school.",
+            "I could walk to school."
+          ],
+          "answer": "I could walk to school."
+        },
+        {
+          "id": "could_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no podía visitar a su abuela\" en inglés?",
+          "options": [
+            "She could visit their grandma.",
+            "She mustn't visit their grandma.",
+            "She can't visit their grandma.",
+            "She couldn't visit their grandma."
+          ],
+          "answer": "She couldn't visit their grandma."
+        },
+        {
+          "id": "could_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes podía comer\" en inglés?",
+          "options": [
+            "The students couldn't have lunch.",
+            "The students must have lunch.",
+            "The students could have lunch.",
+            "The students can have lunch."
+          ],
+          "answer": "The students could have lunch."
+        },
+        {
+          "id": "could_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro no podía jugar al fútbol\" en inglés?",
+          "options": [
+            "The dog mustn't play football.",
+            "The dog could play football.",
+            "The dog couldn't play football.",
+            "The dog can't play football."
+          ],
+          "answer": "The dog couldn't play football."
+        },
+        {
+          "id": "could_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres podía estudiar inglés\" en inglés?",
+          "options": [
+            "My parents must study English.",
+            "My parents can study English.",
+            "My parents could study English.",
+            "My parents couldn't study English."
+          ],
+          "answer": "My parents could study English."
+        },
+        {
+          "id": "could_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no podía dibujar un dibujo\" en inglés?",
+          "options": [
+            "You couldn't draw a picture.",
+            "You mustn't draw a picture.",
+            "You can't draw a picture.",
+            "You could draw a picture."
+          ],
+          "answer": "You couldn't draw a picture."
+        },
+        {
+          "id": "could_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana podía cepillarse los dientes\" en inglés?",
+          "options": [
+            "My sister could brush their teeth.",
+            "My sister couldn't brush their teeth.",
+            "My sister can brush their teeth.",
+            "My sister must brush their teeth."
+          ],
+          "answer": "My sister could brush their teeth."
+        },
+        {
+          "id": "could_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no podía caminar al colegio\" en inglés?",
+          "options": [
+            "The students could walk to school.",
+            "The students mustn't walk to school.",
+            "The students can't walk to school.",
+            "The students couldn't walk to school."
+          ],
+          "answer": "The students couldn't walk to school."
+        },
+        {
+          "id": "could_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso podía limpiar la casa\" en inglés?",
+          "options": [
+            "It could clean the house.",
+            "It must clean the house.",
+            "It can clean the house.",
+            "It couldn't clean the house."
+          ],
+          "answer": "It could clean the house."
+        },
+        {
+          "id": "could_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no podía cocinar la cena\" en inglés?",
+          "options": [
+            "We can't cook dinner.",
+            "We could cook dinner.",
+            "We mustn't cook dinner.",
+            "We couldn't cook dinner."
+          ],
+          "answer": "We couldn't cook dinner."
+        },
+        {
+          "id": "could_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella podía caminar al colegio\" en inglés?",
+          "options": [
+            "She must walk to school.",
+            "She can walk to school.",
+            "She couldn't walk to school.",
+            "She could walk to school."
+          ],
+          "answer": "She could walk to school."
+        },
+        {
+          "id": "could_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no podía dibujar un dibujo\" en inglés?",
+          "options": [
+            "My parents could draw a picture.",
+            "My parents couldn't draw a picture.",
+            "My parents can't draw a picture.",
+            "My parents mustn't draw a picture."
+          ],
+          "answer": "My parents couldn't draw a picture."
+        },
+        {
+          "id": "could_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes podía escuchar música\" en inglés?",
+          "options": [
+            "The students can listen to music.",
+            "The students couldn't listen to music.",
+            "The students must listen to music.",
+            "The students could listen to music."
+          ],
+          "answer": "The students could listen to music."
+        },
+        {
+          "id": "could_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no podía ver la tele\" en inglés?",
+          "options": [
+            "My parents could watch TV.",
+            "My parents mustn't watch TV.",
+            "My parents can't watch TV.",
+            "My parents couldn't watch TV."
+          ],
+          "answer": "My parents couldn't watch TV."
+        },
+        {
+          "id": "could_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana podía jugar al fútbol\" en inglés?",
+          "options": [
+            "My sister can play football.",
+            "My sister could play football.",
+            "My sister must play football.",
+            "My sister couldn't play football."
+          ],
+          "answer": "My sister could play football."
+        },
+        {
+          "id": "could_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no podía bailar\" en inglés?",
+          "options": [
+            "You can't dance.",
+            "You could dance.",
+            "You mustn't dance.",
+            "You couldn't dance."
+          ],
+          "answer": "You couldn't dance."
+        },
+        {
+          "id": "could_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños podía montar en bici\" en inglés?",
+          "options": [
+            "The children can ride a bike.",
+            "The children couldn't ride a bike.",
+            "The children must ride a bike.",
+            "The children could ride a bike."
+          ],
+          "answer": "The children could ride a bike."
+        },
+        {
+          "id": "could_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no podía hacer los deberes\" en inglés?",
+          "options": [
+            "You could do homework.",
+            "You can't do homework.",
+            "You couldn't do homework.",
+            "You mustn't do homework."
+          ],
+          "answer": "You couldn't do homework."
+        },
+        {
+          "id": "could_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos podía visitar a su abuela\" en inglés?",
+          "options": [
+            "They couldn't visit their grandma.",
+            "They could visit their grandma.",
+            "They must visit their grandma.",
+            "They can visit their grandma."
+          ],
+          "answer": "They could visit their grandma."
+        },
+        {
+          "id": "could_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no podía cepillarse los dientes\" en inglés?",
+          "options": [
+            "It can't brush their teeth.",
+            "It mustn't brush their teeth.",
+            "It couldn't brush their teeth.",
+            "It could brush their teeth."
+          ],
+          "answer": "It couldn't brush their teeth."
+        },
+        {
+          "id": "could_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo podía visitar a su abuela\" en inglés?",
+          "options": [
+            "I can visit their grandma.",
+            "I couldn't visit their grandma.",
+            "I could visit their grandma.",
+            "I must visit their grandma."
+          ],
+          "answer": "I could visit their grandma."
+        },
+        {
+          "id": "could_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro no podía hacer los deberes\" en inglés?",
+          "options": [
+            "The dog mustn't do homework.",
+            "The dog can't do homework.",
+            "The dog could do homework.",
+            "The dog couldn't do homework."
+          ],
+          "answer": "The dog couldn't do homework."
+        },
+        {
+          "id": "could_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él podía escuchar música\" en inglés?",
+          "options": [
+            "He can listen to music.",
+            "He could listen to music.",
+            "He couldn't listen to music.",
+            "He must listen to music."
+          ],
+          "answer": "He could listen to music."
+        },
+        {
+          "id": "could_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños no podía escuchar música\" en inglés?",
+          "options": [
+            "The children couldn't listen to music.",
+            "The children could listen to music.",
+            "The children can't listen to music.",
+            "The children mustn't listen to music."
+          ],
+          "answer": "The children couldn't listen to music."
+        },
+        {
+          "id": "could_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro podía montar en bici\" en inglés?",
+          "options": [
+            "The dog couldn't ride a bike.",
+            "The dog can ride a bike.",
+            "The dog must ride a bike.",
+            "The dog could ride a bike."
+          ],
+          "answer": "The dog could ride a bike."
+        },
+        {
+          "id": "could_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no podía ayudar a su madre\" en inglés?",
+          "options": [
+            "He can't help their mum.",
+            "He could help their mum.",
+            "He couldn't help their mum.",
+            "He mustn't help their mum."
+          ],
+          "answer": "He couldn't help their mum."
+        },
+        {
+          "id": "could_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María podía cantar una canción\" en inglés?",
+          "options": [
+            "Maria can sing a song.",
+            "Maria couldn't sing a song.",
+            "Maria must sing a song.",
+            "Maria could sing a song."
+          ],
+          "answer": "Maria could sing a song."
+        },
+        {
+          "id": "could_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no podía hacer los deberes\" en inglés?",
+          "options": [
+            "Tom mustn't do homework.",
+            "Tom can't do homework.",
+            "Tom couldn't do homework.",
+            "Tom could do homework."
+          ],
+          "answer": "Tom couldn't do homework."
+        },
+        {
+          "id": "could_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo podía estudiar inglés\" en inglés?",
+          "options": [
+            "I must study English.",
+            "I couldn't study English.",
+            "I could study English.",
+            "I can study English."
+          ],
+          "answer": "I could study English."
+        },
+        {
+          "id": "could_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no podía cocinar la cena\" en inglés?",
+          "options": [
+            "She could cook dinner.",
+            "She mustn't cook dinner.",
+            "She couldn't cook dinner.",
+            "She can't cook dinner."
+          ],
+          "answer": "She couldn't cook dinner."
+        },
+        {
+          "id": "could_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom podía nadar\" en inglés?",
+          "options": [
+            "Tom couldn't swim.",
+            "Tom can swim.",
+            "Tom must swim.",
+            "Tom could swim."
+          ],
+          "answer": "Tom could swim."
+        },
+        {
+          "id": "could_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no podía saltar\" en inglés?",
+          "options": [
+            "My parents can't jump.",
+            "My parents couldn't jump.",
+            "My parents mustn't jump.",
+            "My parents could jump."
+          ],
+          "answer": "My parents couldn't jump."
+        },
+        {
+          "id": "could_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo podía dar de comer al gato\" en inglés?",
+          "options": [
+            "I couldn't feed the cat.",
+            "I can feed the cat.",
+            "I could feed the cat.",
+            "I must feed the cat."
+          ],
+          "answer": "I could feed the cat."
+        },
+        {
+          "id": "could_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no podía correr\" en inglés?",
+          "options": [
+            "He can't run.",
+            "He could run.",
+            "He couldn't run.",
+            "He mustn't run."
+          ],
+          "answer": "He couldn't run."
+        },
+        {
+          "id": "could_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros podía ver la tele\" en inglés?",
+          "options": [
+            "We can watch TV.",
+            "We must watch TV.",
+            "We could watch TV.",
+            "We couldn't watch TV."
+          ],
+          "answer": "We could watch TV."
+        },
+        {
+          "id": "could_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no podía ver la tele\" en inglés?",
+          "options": [
+            "It could watch TV.",
+            "It can't watch TV.",
+            "It mustn't watch TV.",
+            "It couldn't watch TV."
+          ],
+          "answer": "It couldn't watch TV."
+        },
+        {
+          "id": "could_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú podía escuchar música\" en inglés?",
+          "options": [
+            "You couldn't listen to music.",
+            "You could listen to music.",
+            "You can listen to music.",
+            "You must listen to music."
+          ],
+          "answer": "You could listen to music."
+        },
+        {
+          "id": "could_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no podía saltar\" en inglés?",
+          "options": [
+            "The students can't jump.",
+            "The students could jump.",
+            "The students mustn't jump.",
+            "The students couldn't jump."
+          ],
+          "answer": "The students couldn't jump."
+        },
+        {
+          "id": "could_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo podía jugar al fútbol\" en inglés?",
+          "options": [
+            "I couldn't play football.",
+            "I can play football.",
+            "I could play football.",
+            "I must play football."
+          ],
+          "answer": "I could play football."
+        },
+        {
+          "id": "could_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no podía dar de comer al gato\" en inglés?",
+          "options": [
+            "You could feed the cat.",
+            "You couldn't feed the cat.",
+            "You can't feed the cat.",
+            "You mustn't feed the cat."
+          ],
+          "answer": "You couldn't feed the cat."
+        },
+        {
+          "id": "could_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo podía escribir una carta\" en inglés?",
+          "options": [
+            "I must write a letter.",
+            "I couldn't write a letter.",
+            "I could write a letter.",
+            "I can write a letter."
+          ],
+          "answer": "I could write a letter."
+        },
+        {
+          "id": "could_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no podía limpiar la casa\" en inglés?",
+          "options": [
+            "Maria can't clean the house.",
+            "Maria mustn't clean the house.",
+            "Maria couldn't clean the house.",
+            "Maria could clean the house."
+          ],
+          "answer": "Maria couldn't clean the house."
+        },
+        {
+          "id": "could_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él podía trepar a un árbol\" en inglés?",
+          "options": [
+            "He couldn't climb a tree.",
+            "He can climb a tree.",
+            "He must climb a tree.",
+            "He could climb a tree."
+          ],
+          "answer": "He could climb a tree."
+        },
+        {
+          "id": "could_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana no podía nadar\" en inglés?",
+          "options": [
+            "My sister mustn't swim.",
+            "My sister could swim.",
+            "My sister can't swim.",
+            "My sister couldn't swim."
+          ],
+          "answer": "My sister couldn't swim."
+        },
+        {
+          "id": "could_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella podía trepar a un árbol\" en inglés?",
+          "options": [
+            "She couldn't climb a tree.",
+            "She must climb a tree.",
+            "She can climb a tree.",
+            "She could climb a tree."
+          ],
+          "answer": "She could climb a tree."
+        },
+        {
+          "id": "could_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no podía trepar a un árbol\" en inglés?",
+          "options": [
+            "You mustn't climb a tree.",
+            "You couldn't climb a tree.",
+            "You can't climb a tree.",
+            "You could climb a tree."
+          ],
+          "answer": "You couldn't climb a tree."
+        },
+        {
+          "id": "could_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano podía montar en bici\" en inglés?",
+          "options": [
+            "My brother must ride a bike.",
+            "My brother could ride a bike.",
+            "My brother can ride a bike.",
+            "My brother couldn't ride a bike."
+          ],
+          "answer": "My brother could ride a bike."
+        },
+        {
+          "id": "could_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no podía limpiar la casa\" en inglés?",
+          "options": [
+            "The boys couldn't clean the house.",
+            "The boys can't clean the house.",
+            "The boys could clean the house.",
+            "The boys mustn't clean the house."
+          ],
+          "answer": "The boys couldn't clean the house."
+        },
+        {
+          "id": "could_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros podía correr\" en inglés?",
+          "options": [
+            "We could run.",
+            "We must run.",
+            "We can run.",
+            "We couldn't run."
+          ],
+          "answer": "We could run."
+        },
+        {
+          "id": "could_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no podía escribir una carta\" en inglés?",
+          "options": [
+            "You mustn't write a letter.",
+            "You can't write a letter.",
+            "You could write a letter.",
+            "You couldn't write a letter."
+          ],
+          "answer": "You couldn't write a letter."
+        },
+        {
+          "id": "could_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres podía escuchar música\" en inglés?",
+          "options": [
+            "My parents couldn't listen to music.",
+            "My parents could listen to music.",
+            "My parents must listen to music.",
+            "My parents can listen to music."
+          ],
+          "answer": "My parents could listen to music."
+        },
+        {
+          "id": "could_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no podía caminar al colegio\" en inglés?",
+          "options": [
+            "The boys couldn't walk to school.",
+            "The boys can't walk to school.",
+            "The boys could walk to school.",
+            "The boys mustn't walk to school."
+          ],
+          "answer": "The boys couldn't walk to school."
+        },
+        {
+          "id": "could_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella podía ir a la fiesta\" en inglés?",
+          "options": [
+            "She could go to the party.",
+            "She couldn't go to the party.",
+            "She must go to the party.",
+            "She can go to the party."
+          ],
+          "answer": "She could go to the party."
+        },
+        {
+          "id": "could_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños no podía cepillarse los dientes\" en inglés?",
+          "options": [
+            "The children can't brush their teeth.",
+            "The children couldn't brush their teeth.",
+            "The children mustn't brush their teeth.",
+            "The children could brush their teeth."
+          ],
+          "answer": "The children couldn't brush their teeth."
+        },
+        {
+          "id": "could_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom podía comer\" en inglés?",
+          "options": [
+            "Tom couldn't have lunch.",
+            "Tom could have lunch.",
+            "Tom must have lunch.",
+            "Tom can have lunch."
+          ],
+          "answer": "Tom could have lunch."
+        },
+        {
+          "id": "could_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no podía dibujar un dibujo\" en inglés?",
+          "options": [
+            "Our cat could draw a picture.",
+            "Our cat couldn't draw a picture.",
+            "Our cat can't draw a picture.",
+            "Our cat mustn't draw a picture."
+          ],
+          "answer": "Our cat couldn't draw a picture."
+        },
+        {
+          "id": "could_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana podía trepar a un árbol\" en inglés?",
+          "options": [
+            "My sister couldn't climb a tree.",
+            "My sister could climb a tree.",
+            "My sister can climb a tree.",
+            "My sister must climb a tree."
+          ],
+          "answer": "My sister could climb a tree."
+        },
+        {
+          "id": "could_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no podía visitar a su abuela\" en inglés?",
+          "options": [
+            "Tom can't visit their grandma.",
+            "Tom couldn't visit their grandma.",
+            "Tom could visit their grandma.",
+            "Tom mustn't visit their grandma."
+          ],
+          "answer": "Tom couldn't visit their grandma."
+        },
+        {
+          "id": "could_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos podía ver la tele\" en inglés?",
+          "options": [
+            "The boys must watch TV.",
+            "The boys could watch TV.",
+            "The boys couldn't watch TV.",
+            "The boys can watch TV."
+          ],
+          "answer": "The boys could watch TV."
+        },
+        {
+          "id": "could_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos no podía saltar\" en inglés?",
+          "options": [
+            "They mustn't jump.",
+            "They can't jump.",
+            "They couldn't jump.",
+            "They could jump."
+          ],
+          "answer": "They couldn't jump."
+        },
+        {
+          "id": "could_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros podía fregar los platos\" en inglés?",
+          "options": [
+            "We can wash the dishes.",
+            "We must wash the dishes.",
+            "We could wash the dishes.",
+            "We couldn't wash the dishes."
+          ],
+          "answer": "We could wash the dishes."
+        },
+        {
+          "id": "could_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no podía escuchar música\" en inglés?",
+          "options": [
+            "I mustn't listen to music.",
+            "I could listen to music.",
+            "I can't listen to music.",
+            "I couldn't listen to music."
+          ],
+          "answer": "I couldn't listen to music."
+        },
+        {
+          "id": "could_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom podía ver la tele\" en inglés?",
+          "options": [
+            "Tom couldn't watch TV.",
+            "Tom could watch TV.",
+            "Tom must watch TV.",
+            "Tom can watch TV."
+          ],
+          "answer": "Tom could watch TV."
+        },
+        {
+          "id": "could_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana no podía dar de comer al gato\" en inglés?",
+          "options": [
+            "My sister can't feed the cat.",
+            "My sister couldn't feed the cat.",
+            "My sister mustn't feed the cat.",
+            "My sister could feed the cat."
+          ],
+          "answer": "My sister couldn't feed the cat."
+        },
+        {
+          "id": "could_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato podía cocinar la cena\" en inglés?",
+          "options": [
+            "Our cat must cook dinner.",
+            "Our cat can cook dinner.",
+            "Our cat could cook dinner.",
+            "Our cat couldn't cook dinner."
+          ],
+          "answer": "Our cat could cook dinner."
+        },
+        {
+          "id": "could_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no podía correr\" en inglés?",
+          "options": [
+            "Our cat could run.",
+            "Our cat mustn't run.",
+            "Our cat can't run.",
+            "Our cat couldn't run."
+          ],
+          "answer": "Our cat couldn't run."
+        }
+      ]
+    }
+  ]
+}

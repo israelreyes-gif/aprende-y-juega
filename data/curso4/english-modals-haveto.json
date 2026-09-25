@@ -1,0 +1,4811 @@
+{
+  "units": [
+    {
+      "id": "haveto-c4",
+      "title": "Have To",
+      "emoji": "🟡",
+      "exercises": [
+        {
+          "id": "haveto_a_1",
+          "type": "A",
+          "question": "The children ___ run.",
+          "options": [
+            "must",
+            "have to",
+            "could",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_2",
+          "type": "A",
+          "question": "My sister ___ play football.",
+          "options": [
+            "could",
+            "has to",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_3",
+          "type": "A",
+          "question": "The boys ___ have lunch.",
+          "options": [
+            "has to",
+            "must",
+            "could",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_4",
+          "type": "A",
+          "question": "The dog ___ study English.",
+          "options": [
+            "has to",
+            "must",
+            "could",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_5",
+          "type": "A",
+          "question": "My sister ___ visit their grandma.",
+          "options": [
+            "must",
+            "has to",
+            "could",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_6",
+          "type": "A",
+          "question": "You ___ jump.",
+          "options": [
+            "has to",
+            "must",
+            "have to",
+            "could"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_7",
+          "type": "A",
+          "question": "She ___ climb a tree.",
+          "options": [
+            "could",
+            "must",
+            "have to",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_8",
+          "type": "A",
+          "question": "Our cat ___ help their mum.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_9",
+          "type": "A",
+          "question": "My brother ___ visit their grandma.",
+          "options": [
+            "have to",
+            "could",
+            "has to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_10",
+          "type": "A",
+          "question": "She ___ ride a bike.",
+          "options": [
+            "could",
+            "has to",
+            "must",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_11",
+          "type": "A",
+          "question": "The boys ___ do homework.",
+          "options": [
+            "have to",
+            "has to",
+            "could",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_12",
+          "type": "A",
+          "question": "Maria ___ draw a picture.",
+          "options": [
+            "have to",
+            "could",
+            "must",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_13",
+          "type": "A",
+          "question": "The boys ___ draw a picture.",
+          "options": [
+            "must",
+            "has to",
+            "have to",
+            "could"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_14",
+          "type": "A",
+          "question": "You ___ have lunch.",
+          "options": [
+            "must",
+            "could",
+            "have to",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_15",
+          "type": "A",
+          "question": "The children ___ visit their grandma.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_16",
+          "type": "A",
+          "question": "You ___ go to the party.",
+          "options": [
+            "have to",
+            "has to",
+            "could",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_17",
+          "type": "A",
+          "question": "The dog ___ swim.",
+          "options": [
+            "have to",
+            "could",
+            "must",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_18",
+          "type": "A",
+          "question": "The children ___ go to the party.",
+          "options": [
+            "could",
+            "have to",
+            "must",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_19",
+          "type": "A",
+          "question": "Maria ___ clean the house.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_20",
+          "type": "A",
+          "question": "He ___ write a letter.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_21",
+          "type": "A",
+          "question": "My parents ___ run.",
+          "options": [
+            "could",
+            "has to",
+            "have to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_22",
+          "type": "A",
+          "question": "You ___ wash the dishes.",
+          "options": [
+            "could",
+            "has to",
+            "have to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_23",
+          "type": "A",
+          "question": "My brother ___ do homework.",
+          "options": [
+            "could",
+            "have to",
+            "has to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_24",
+          "type": "A",
+          "question": "My brother ___ brush their teeth.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_25",
+          "type": "A",
+          "question": "You ___ write a letter.",
+          "options": [
+            "must",
+            "has to",
+            "could",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_26",
+          "type": "A",
+          "question": "Tom ___ wash the dishes.",
+          "options": [
+            "must",
+            "have to",
+            "could",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_27",
+          "type": "A",
+          "question": "Our cat ___ jump.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_28",
+          "type": "A",
+          "question": "Maria ___ go to the party.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_29",
+          "type": "A",
+          "question": "My brother ___ ride a bike.",
+          "options": [
+            "must",
+            "has to",
+            "have to",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_30",
+          "type": "A",
+          "question": "It ___ ride a bike.",
+          "options": [
+            "could",
+            "has to",
+            "must",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_31",
+          "type": "A",
+          "question": "Our cat ___ do homework.",
+          "options": [
+            "could",
+            "has to",
+            "must",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_32",
+          "type": "A",
+          "question": "Maria ___ watch TV.",
+          "options": [
+            "has to",
+            "must",
+            "could",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_33",
+          "type": "A",
+          "question": "My sister ___ go to the party.",
+          "options": [
+            "has to",
+            "have to",
+            "could",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_34",
+          "type": "A",
+          "question": "He ___ go to the party.",
+          "options": [
+            "have to",
+            "must",
+            "could",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_35",
+          "type": "A",
+          "question": "The students ___ do homework.",
+          "options": [
+            "could",
+            "have to",
+            "must",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_36",
+          "type": "A",
+          "question": "The children ___ swim.",
+          "options": [
+            "must",
+            "could",
+            "have to",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_37",
+          "type": "A",
+          "question": "Tom ___ swim.",
+          "options": [
+            "must",
+            "could",
+            "have to",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_38",
+          "type": "A",
+          "question": "My parents ___ cook dinner.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_39",
+          "type": "A",
+          "question": "She ___ listen to music.",
+          "options": [
+            "have to",
+            "could",
+            "has to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_40",
+          "type": "A",
+          "question": "My sister ___ sing a song.",
+          "options": [
+            "must",
+            "have to",
+            "could",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_41",
+          "type": "A",
+          "question": "The dog ___ wash the dishes.",
+          "options": [
+            "could",
+            "have to",
+            "must",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_42",
+          "type": "A",
+          "question": "Our cat ___ wash the dishes.",
+          "options": [
+            "has to",
+            "have to",
+            "could",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_43",
+          "type": "A",
+          "question": "My sister ___ have lunch.",
+          "options": [
+            "have to",
+            "has to",
+            "must",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_44",
+          "type": "A",
+          "question": "My brother ___ watch TV.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_45",
+          "type": "A",
+          "question": "My parents ___ brush their teeth.",
+          "options": [
+            "could",
+            "must",
+            "have to",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_46",
+          "type": "A",
+          "question": "We ___ clean the house.",
+          "options": [
+            "could",
+            "has to",
+            "must",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_47",
+          "type": "A",
+          "question": "My brother ___ study English.",
+          "options": [
+            "could",
+            "must",
+            "have to",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_48",
+          "type": "A",
+          "question": "I ___ play football.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_49",
+          "type": "A",
+          "question": "The boys ___ jump.",
+          "options": [
+            "must",
+            "could",
+            "have to",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_50",
+          "type": "A",
+          "question": "The boys ___ go to the party.",
+          "options": [
+            "must",
+            "have to",
+            "has to",
+            "could"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_51",
+          "type": "A",
+          "question": "The children ___ brush their teeth.",
+          "options": [
+            "have to",
+            "must",
+            "has to",
+            "could"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_52",
+          "type": "A",
+          "question": "We ___ cook dinner.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_53",
+          "type": "A",
+          "question": "The boys ___ swim.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_54",
+          "type": "A",
+          "question": "Our cat ___ walk to school.",
+          "options": [
+            "must",
+            "could",
+            "have to",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_55",
+          "type": "A",
+          "question": "I ___ listen to music.",
+          "options": [
+            "could",
+            "have to",
+            "has to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_56",
+          "type": "A",
+          "question": "He ___ brush their teeth.",
+          "options": [
+            "has to",
+            "must",
+            "have to",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_57",
+          "type": "A",
+          "question": "The children ___ climb a tree.",
+          "options": [
+            "must",
+            "have to",
+            "could",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_58",
+          "type": "A",
+          "question": "He ___ cook dinner.",
+          "options": [
+            "must",
+            "have to",
+            "has to",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_59",
+          "type": "A",
+          "question": "It ___ watch TV.",
+          "options": [
+            "must",
+            "could",
+            "has to",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_60",
+          "type": "A",
+          "question": "My parents ___ wash the dishes.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_61",
+          "type": "A",
+          "question": "The children ___ cook dinner.",
+          "options": [
+            "must",
+            "has to",
+            "could",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_62",
+          "type": "A",
+          "question": "The children ___ walk to school.",
+          "options": [
+            "could",
+            "has to",
+            "must",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_63",
+          "type": "A",
+          "question": "Our cat ___ ride a bike.",
+          "options": [
+            "have to",
+            "must",
+            "could",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_64",
+          "type": "A",
+          "question": "The boys ___ wash the dishes.",
+          "options": [
+            "could",
+            "must",
+            "have to",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_65",
+          "type": "A",
+          "question": "The children ___ do homework.",
+          "options": [
+            "must",
+            "has to",
+            "could",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_66",
+          "type": "A",
+          "question": "Our cat ___ sing a song.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_67",
+          "type": "A",
+          "question": "They ___ go to the party.",
+          "options": [
+            "have to",
+            "has to",
+            "could",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_68",
+          "type": "A",
+          "question": "She ___ dance.",
+          "options": [
+            "have to",
+            "could",
+            "must",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_69",
+          "type": "A",
+          "question": "The students ___ study English.",
+          "options": [
+            "have to",
+            "must",
+            "has to",
+            "could"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_70",
+          "type": "A",
+          "question": "My parents ___ watch TV.",
+          "options": [
+            "could",
+            "must",
+            "have to",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_71",
+          "type": "A",
+          "question": "Tom ___ brush their teeth.",
+          "options": [
+            "has to",
+            "have to",
+            "must",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_72",
+          "type": "A",
+          "question": "Tom ___ feed the cat.",
+          "options": [
+            "must",
+            "could",
+            "has to",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_73",
+          "type": "A",
+          "question": "Maria ___ feed the cat.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_74",
+          "type": "A",
+          "question": "The students ___ play football.",
+          "options": [
+            "has to",
+            "have to",
+            "could",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_75",
+          "type": "A",
+          "question": "Maria ___ run.",
+          "options": [
+            "must",
+            "have to",
+            "has to",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_76",
+          "type": "A",
+          "question": "The boys ___ clean the house.",
+          "options": [
+            "must",
+            "has to",
+            "could",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_77",
+          "type": "A",
+          "question": "My parents ___ draw a picture.",
+          "options": [
+            "could",
+            "must",
+            "have to",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_78",
+          "type": "A",
+          "question": "The boys ___ dance.",
+          "options": [
+            "could",
+            "have to",
+            "must",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_79",
+          "type": "A",
+          "question": "I ___ go to the party.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_80",
+          "type": "A",
+          "question": "He ___ climb a tree.",
+          "options": [
+            "must",
+            "could",
+            "has to",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_81",
+          "type": "A",
+          "question": "It ___ draw a picture.",
+          "options": [
+            "must",
+            "have to",
+            "could",
+            "has to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_82",
+          "type": "A",
+          "question": "The boys ___ walk to school.",
+          "options": [
+            "could",
+            "have to",
+            "must",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_83",
+          "type": "A",
+          "question": "My brother ___ run.",
+          "options": [
+            "have to",
+            "has to",
+            "must",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_84",
+          "type": "A",
+          "question": "You ___ clean the house.",
+          "options": [
+            "have to",
+            "could",
+            "must",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_85",
+          "type": "A",
+          "question": "My sister ___ wash the dishes.",
+          "options": [
+            "has to",
+            "have to",
+            "must",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_86",
+          "type": "A",
+          "question": "The students ___ clean the house.",
+          "options": [
+            "has to",
+            "have to",
+            "could",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_87",
+          "type": "A",
+          "question": "My sister ___ dance.",
+          "options": [
+            "must",
+            "has to",
+            "have to",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_88",
+          "type": "A",
+          "question": "The dog ___ climb a tree.",
+          "options": [
+            "must",
+            "has to",
+            "could",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_89",
+          "type": "A",
+          "question": "My parents ___ clean the house.",
+          "options": [
+            "could",
+            "must",
+            "has to",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_90",
+          "type": "A",
+          "question": "We ___ visit their grandma.",
+          "options": [
+            "could",
+            "has to",
+            "have to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_91",
+          "type": "A",
+          "question": "The dog ___ jump.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_92",
+          "type": "A",
+          "question": "They ___ visit their grandma.",
+          "options": [
+            "have to",
+            "could",
+            "must",
+            "has to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_93",
+          "type": "A",
+          "question": "I ___ write a letter.",
+          "options": [
+            "have to",
+            "could",
+            "has to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_94",
+          "type": "A",
+          "question": "He ___ draw a picture.",
+          "options": [
+            "has to",
+            "have to",
+            "must",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_95",
+          "type": "A",
+          "question": "Tom ___ listen to music.",
+          "options": [
+            "must",
+            "has to",
+            "have to",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_96",
+          "type": "A",
+          "question": "They ___ play football.",
+          "options": [
+            "could",
+            "have to",
+            "has to",
+            "must"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_97",
+          "type": "A",
+          "question": "I ___ cook dinner.",
+          "options": [
+            "has to",
+            "must",
+            "could",
+            "have to"
+          ],
+          "answer": "have to"
+        },
+        {
+          "id": "haveto_a_98",
+          "type": "A",
+          "question": "Tom ___ run.",
+          "options": [
+            "must",
+            "has to",
+            "could",
+            "have to"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_99",
+          "type": "A",
+          "question": "Maria ___ study English.",
+          "options": [
+            "must",
+            "have to",
+            "has to",
+            "could"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_a_100",
+          "type": "A",
+          "question": "She ___ do homework.",
+          "options": [
+            "has to",
+            "could",
+            "have to",
+            "must"
+          ],
+          "answer": "has to"
+        },
+        {
+          "id": "haveto_b_1",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother has to jump.\"",
+          "options": [
+            "My brother not have to jump.",
+            "My brother doesn't have to jump.",
+            "My brother don't have to jump.",
+            "My brother mustn't jump."
+          ],
+          "answer": "My brother doesn't have to jump."
+        },
+        {
+          "id": "haveto_b_2",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom has to visit their grandma.\"",
+          "options": [
+            "Tom mustn't visit their grandma.",
+            "Tom not have to visit their grandma.",
+            "Tom doesn't have to visit their grandma.",
+            "Tom don't have to visit their grandma."
+          ],
+          "answer": "Tom doesn't have to visit their grandma."
+        },
+        {
+          "id": "haveto_b_3",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to swim.\"",
+          "options": [
+            "It not have to swim.",
+            "It doesn't have to swim.",
+            "It mustn't swim.",
+            "It don't have to swim."
+          ],
+          "answer": "It doesn't have to swim."
+        },
+        {
+          "id": "haveto_b_4",
+          "type": "B",
+          "question": "Make this sentence negative: \"He has to dance.\"",
+          "options": [
+            "He mustn't dance.",
+            "He not have to dance.",
+            "He doesn't have to dance.",
+            "He don't have to dance."
+          ],
+          "answer": "He doesn't have to dance."
+        },
+        {
+          "id": "haveto_b_5",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents have to visit their grandma.\"",
+          "options": [
+            "My parents not have to visit their grandma.",
+            "My parents doesn't have to visit their grandma.",
+            "My parents don't have to visit their grandma.",
+            "My parents mustn't visit their grandma."
+          ],
+          "answer": "My parents don't have to visit their grandma."
+        },
+        {
+          "id": "haveto_b_6",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria has to play football.\"",
+          "options": [
+            "Maria doesn't have to play football.",
+            "Maria mustn't play football.",
+            "Maria not have to play football.",
+            "Maria don't have to play football."
+          ],
+          "answer": "Maria doesn't have to play football."
+        },
+        {
+          "id": "haveto_b_7",
+          "type": "B",
+          "question": "Make this sentence negative: \"I have to sing a song.\"",
+          "options": [
+            "I mustn't sing a song.",
+            "I not have to sing a song.",
+            "I don't have to sing a song.",
+            "I doesn't have to sing a song."
+          ],
+          "answer": "I don't have to sing a song."
+        },
+        {
+          "id": "haveto_b_8",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom has to draw a picture.\"",
+          "options": [
+            "Tom don't have to draw a picture.",
+            "Tom mustn't draw a picture.",
+            "Tom not have to draw a picture.",
+            "Tom doesn't have to draw a picture."
+          ],
+          "answer": "Tom doesn't have to draw a picture."
+        },
+        {
+          "id": "haveto_b_9",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children have to feed the cat.\"",
+          "options": [
+            "The children mustn't feed the cat.",
+            "The children don't have to feed the cat.",
+            "The children not have to feed the cat.",
+            "The children doesn't have to feed the cat."
+          ],
+          "answer": "The children don't have to feed the cat."
+        },
+        {
+          "id": "haveto_b_10",
+          "type": "B",
+          "question": "Make this sentence negative: \"She has to feed the cat.\"",
+          "options": [
+            "She don't have to feed the cat.",
+            "She mustn't feed the cat.",
+            "She doesn't have to feed the cat.",
+            "She not have to feed the cat."
+          ],
+          "answer": "She doesn't have to feed the cat."
+        },
+        {
+          "id": "haveto_b_11",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom has to play football.\"",
+          "options": [
+            "Tom not have to play football.",
+            "Tom don't have to play football.",
+            "Tom mustn't play football.",
+            "Tom doesn't have to play football."
+          ],
+          "answer": "Tom doesn't have to play football."
+        },
+        {
+          "id": "haveto_b_12",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria has to dance.\"",
+          "options": [
+            "Maria mustn't dance.",
+            "Maria don't have to dance.",
+            "Maria doesn't have to dance.",
+            "Maria not have to dance."
+          ],
+          "answer": "Maria doesn't have to dance."
+        },
+        {
+          "id": "haveto_b_13",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to cook dinner.\"",
+          "options": [
+            "The dog doesn't have to cook dinner.",
+            "The dog don't have to cook dinner.",
+            "The dog mustn't cook dinner.",
+            "The dog not have to cook dinner."
+          ],
+          "answer": "The dog doesn't have to cook dinner."
+        },
+        {
+          "id": "haveto_b_14",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat has to brush their teeth.\"",
+          "options": [
+            "Our cat not have to brush their teeth.",
+            "Our cat mustn't brush their teeth.",
+            "Our cat don't have to brush their teeth.",
+            "Our cat doesn't have to brush their teeth."
+          ],
+          "answer": "Our cat doesn't have to brush their teeth."
+        },
+        {
+          "id": "haveto_b_15",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother has to write a letter.\"",
+          "options": [
+            "My brother doesn't have to write a letter.",
+            "My brother not have to write a letter.",
+            "My brother mustn't write a letter.",
+            "My brother don't have to write a letter."
+          ],
+          "answer": "My brother doesn't have to write a letter."
+        },
+        {
+          "id": "haveto_b_16",
+          "type": "B",
+          "question": "Make this sentence negative: \"He has to study English.\"",
+          "options": [
+            "He doesn't have to study English.",
+            "He mustn't study English.",
+            "He not have to study English.",
+            "He don't have to study English."
+          ],
+          "answer": "He doesn't have to study English."
+        },
+        {
+          "id": "haveto_b_17",
+          "type": "B",
+          "question": "Make this sentence negative: \"He has to do homework.\"",
+          "options": [
+            "He doesn't have to do homework.",
+            "He mustn't do homework.",
+            "He not have to do homework.",
+            "He don't have to do homework."
+          ],
+          "answer": "He doesn't have to do homework."
+        },
+        {
+          "id": "haveto_b_18",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to listen to music.\"",
+          "options": [
+            "It not have to listen to music.",
+            "It don't have to listen to music.",
+            "It mustn't listen to music.",
+            "It doesn't have to listen to music."
+          ],
+          "answer": "It doesn't have to listen to music."
+        },
+        {
+          "id": "haveto_b_19",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat has to draw a picture.\"",
+          "options": [
+            "Our cat mustn't draw a picture.",
+            "Our cat not have to draw a picture.",
+            "Our cat doesn't have to draw a picture.",
+            "Our cat don't have to draw a picture."
+          ],
+          "answer": "Our cat doesn't have to draw a picture."
+        },
+        {
+          "id": "haveto_b_20",
+          "type": "B",
+          "question": "Make this sentence negative: \"You have to sing a song.\"",
+          "options": [
+            "You don't have to sing a song.",
+            "You not have to sing a song.",
+            "You doesn't have to sing a song.",
+            "You mustn't sing a song."
+          ],
+          "answer": "You don't have to sing a song."
+        },
+        {
+          "id": "haveto_b_21",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister has to study English.\"",
+          "options": [
+            "My sister mustn't study English.",
+            "My sister don't have to study English.",
+            "My sister not have to study English.",
+            "My sister doesn't have to study English."
+          ],
+          "answer": "My sister doesn't have to study English."
+        },
+        {
+          "id": "haveto_b_22",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to ride a bike.\"",
+          "options": [
+            "The dog not have to ride a bike.",
+            "The dog doesn't have to ride a bike.",
+            "The dog don't have to ride a bike.",
+            "The dog mustn't ride a bike."
+          ],
+          "answer": "The dog doesn't have to ride a bike."
+        },
+        {
+          "id": "haveto_b_23",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students have to run.\"",
+          "options": [
+            "The students not have to run.",
+            "The students mustn't run.",
+            "The students don't have to run.",
+            "The students doesn't have to run."
+          ],
+          "answer": "The students don't have to run."
+        },
+        {
+          "id": "haveto_b_24",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to have lunch.\"",
+          "options": [
+            "The dog mustn't have lunch.",
+            "The dog not have to have lunch.",
+            "The dog doesn't have to have lunch.",
+            "The dog don't have to have lunch."
+          ],
+          "answer": "The dog doesn't have to have lunch."
+        },
+        {
+          "id": "haveto_b_25",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children have to listen to music.\"",
+          "options": [
+            "The children doesn't have to listen to music.",
+            "The children not have to listen to music.",
+            "The children don't have to listen to music.",
+            "The children mustn't listen to music."
+          ],
+          "answer": "The children don't have to listen to music."
+        },
+        {
+          "id": "haveto_b_26",
+          "type": "B",
+          "question": "Make this sentence negative: \"They have to cook dinner.\"",
+          "options": [
+            "They not have to cook dinner.",
+            "They don't have to cook dinner.",
+            "They mustn't cook dinner.",
+            "They doesn't have to cook dinner."
+          ],
+          "answer": "They don't have to cook dinner."
+        },
+        {
+          "id": "haveto_b_27",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children have to have lunch.\"",
+          "options": [
+            "The children don't have to have lunch.",
+            "The children mustn't have lunch.",
+            "The children not have to have lunch.",
+            "The children doesn't have to have lunch."
+          ],
+          "answer": "The children don't have to have lunch."
+        },
+        {
+          "id": "haveto_b_28",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents have to write a letter.\"",
+          "options": [
+            "My parents don't have to write a letter.",
+            "My parents not have to write a letter.",
+            "My parents mustn't write a letter.",
+            "My parents doesn't have to write a letter."
+          ],
+          "answer": "My parents don't have to write a letter."
+        },
+        {
+          "id": "haveto_b_29",
+          "type": "B",
+          "question": "Make this sentence negative: \"We have to do homework.\"",
+          "options": [
+            "We doesn't have to do homework.",
+            "We don't have to do homework.",
+            "We not have to do homework.",
+            "We mustn't do homework."
+          ],
+          "answer": "We don't have to do homework."
+        },
+        {
+          "id": "haveto_b_30",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother has to swim.\"",
+          "options": [
+            "My brother doesn't have to swim.",
+            "My brother not have to swim.",
+            "My brother don't have to swim.",
+            "My brother mustn't swim."
+          ],
+          "answer": "My brother doesn't have to swim."
+        },
+        {
+          "id": "haveto_b_31",
+          "type": "B",
+          "question": "Make this sentence negative: \"She has to wash the dishes.\"",
+          "options": [
+            "She mustn't wash the dishes.",
+            "She doesn't have to wash the dishes.",
+            "She not have to wash the dishes.",
+            "She don't have to wash the dishes."
+          ],
+          "answer": "She doesn't have to wash the dishes."
+        },
+        {
+          "id": "haveto_b_32",
+          "type": "B",
+          "question": "Make this sentence negative: \"We have to swim.\"",
+          "options": [
+            "We mustn't swim.",
+            "We don't have to swim.",
+            "We not have to swim.",
+            "We doesn't have to swim."
+          ],
+          "answer": "We don't have to swim."
+        },
+        {
+          "id": "haveto_b_33",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat has to clean the house.\"",
+          "options": [
+            "Our cat don't have to clean the house.",
+            "Our cat mustn't clean the house.",
+            "Our cat doesn't have to clean the house.",
+            "Our cat not have to clean the house."
+          ],
+          "answer": "Our cat doesn't have to clean the house."
+        },
+        {
+          "id": "haveto_b_34",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister has to climb a tree.\"",
+          "options": [
+            "My sister doesn't have to climb a tree.",
+            "My sister don't have to climb a tree.",
+            "My sister not have to climb a tree.",
+            "My sister mustn't climb a tree."
+          ],
+          "answer": "My sister doesn't have to climb a tree."
+        },
+        {
+          "id": "haveto_b_35",
+          "type": "B",
+          "question": "Make this sentence negative: \"He has to run.\"",
+          "options": [
+            "He doesn't have to run.",
+            "He don't have to run.",
+            "He mustn't run.",
+            "He not have to run."
+          ],
+          "answer": "He doesn't have to run."
+        },
+        {
+          "id": "haveto_b_36",
+          "type": "B",
+          "question": "Make this sentence negative: \"They have to brush their teeth.\"",
+          "options": [
+            "They mustn't brush their teeth.",
+            "They don't have to brush their teeth.",
+            "They not have to brush their teeth.",
+            "They doesn't have to brush their teeth."
+          ],
+          "answer": "They don't have to brush their teeth."
+        },
+        {
+          "id": "haveto_b_37",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria has to jump.\"",
+          "options": [
+            "Maria don't have to jump.",
+            "Maria doesn't have to jump.",
+            "Maria not have to jump.",
+            "Maria mustn't jump."
+          ],
+          "answer": "Maria doesn't have to jump."
+        },
+        {
+          "id": "haveto_b_38",
+          "type": "B",
+          "question": "Make this sentence negative: \"You have to cook dinner.\"",
+          "options": [
+            "You doesn't have to cook dinner.",
+            "You not have to cook dinner.",
+            "You mustn't cook dinner.",
+            "You don't have to cook dinner."
+          ],
+          "answer": "You don't have to cook dinner."
+        },
+        {
+          "id": "haveto_b_39",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom has to have lunch.\"",
+          "options": [
+            "Tom mustn't have lunch.",
+            "Tom don't have to have lunch.",
+            "Tom doesn't have to have lunch.",
+            "Tom not have to have lunch."
+          ],
+          "answer": "Tom doesn't have to have lunch."
+        },
+        {
+          "id": "haveto_b_40",
+          "type": "B",
+          "question": "Make this sentence negative: \"They have to feed the cat.\"",
+          "options": [
+            "They doesn't have to feed the cat.",
+            "They mustn't feed the cat.",
+            "They don't have to feed the cat.",
+            "They not have to feed the cat."
+          ],
+          "answer": "They don't have to feed the cat."
+        },
+        {
+          "id": "haveto_b_41",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat has to climb a tree.\"",
+          "options": [
+            "Our cat mustn't climb a tree.",
+            "Our cat don't have to climb a tree.",
+            "Our cat doesn't have to climb a tree.",
+            "Our cat not have to climb a tree."
+          ],
+          "answer": "Our cat doesn't have to climb a tree."
+        },
+        {
+          "id": "haveto_b_42",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children have to clean the house.\"",
+          "options": [
+            "The children don't have to clean the house.",
+            "The children mustn't clean the house.",
+            "The children not have to clean the house.",
+            "The children doesn't have to clean the house."
+          ],
+          "answer": "The children don't have to clean the house."
+        },
+        {
+          "id": "haveto_b_43",
+          "type": "B",
+          "question": "Make this sentence negative: \"You have to run.\"",
+          "options": [
+            "You doesn't have to run.",
+            "You don't have to run.",
+            "You not have to run.",
+            "You mustn't run."
+          ],
+          "answer": "You don't have to run."
+        },
+        {
+          "id": "haveto_b_44",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to visit their grandma.\"",
+          "options": [
+            "The dog doesn't have to visit their grandma.",
+            "The dog mustn't visit their grandma.",
+            "The dog not have to visit their grandma.",
+            "The dog don't have to visit their grandma."
+          ],
+          "answer": "The dog doesn't have to visit their grandma."
+        },
+        {
+          "id": "haveto_b_45",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister has to jump.\"",
+          "options": [
+            "My sister doesn't have to jump.",
+            "My sister not have to jump.",
+            "My sister don't have to jump.",
+            "My sister mustn't jump."
+          ],
+          "answer": "My sister doesn't have to jump."
+        },
+        {
+          "id": "haveto_b_46",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents have to win the game.\"",
+          "options": [
+            "My parents mustn't win the game.",
+            "My parents not have to win the game.",
+            "My parents don't have to win the game.",
+            "My parents doesn't have to win the game."
+          ],
+          "answer": "My parents don't have to win the game."
+        },
+        {
+          "id": "haveto_b_47",
+          "type": "B",
+          "question": "Make this sentence negative: \"He has to ride a bike.\"",
+          "options": [
+            "He mustn't ride a bike.",
+            "He not have to ride a bike.",
+            "He doesn't have to ride a bike.",
+            "He don't have to ride a bike."
+          ],
+          "answer": "He doesn't have to ride a bike."
+        },
+        {
+          "id": "haveto_b_48",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom has to win the game.\"",
+          "options": [
+            "Tom not have to win the game.",
+            "Tom doesn't have to win the game.",
+            "Tom don't have to win the game.",
+            "Tom mustn't win the game."
+          ],
+          "answer": "Tom doesn't have to win the game."
+        },
+        {
+          "id": "haveto_b_49",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to run.\"",
+          "options": [
+            "The dog don't have to run.",
+            "The dog mustn't run.",
+            "The dog doesn't have to run.",
+            "The dog not have to run."
+          ],
+          "answer": "The dog doesn't have to run."
+        },
+        {
+          "id": "haveto_b_50",
+          "type": "B",
+          "question": "Make this sentence negative: \"She has to draw a picture.\"",
+          "options": [
+            "She mustn't draw a picture.",
+            "She not have to draw a picture.",
+            "She doesn't have to draw a picture.",
+            "She don't have to draw a picture."
+          ],
+          "answer": "She doesn't have to draw a picture."
+        },
+        {
+          "id": "haveto_b_51",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students have to watch TV.\"",
+          "options": [
+            "The students don't have to watch TV.",
+            "The students not have to watch TV.",
+            "The students mustn't watch TV.",
+            "The students doesn't have to watch TV."
+          ],
+          "answer": "The students don't have to watch TV."
+        },
+        {
+          "id": "haveto_b_52",
+          "type": "B",
+          "question": "Make this sentence negative: \"They have to win the game.\"",
+          "options": [
+            "They mustn't win the game.",
+            "They not have to win the game.",
+            "They doesn't have to win the game.",
+            "They don't have to win the game."
+          ],
+          "answer": "They don't have to win the game."
+        },
+        {
+          "id": "haveto_b_53",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to play football.\"",
+          "options": [
+            "It don't have to play football.",
+            "It doesn't have to play football.",
+            "It not have to play football.",
+            "It mustn't play football."
+          ],
+          "answer": "It doesn't have to play football."
+        },
+        {
+          "id": "haveto_b_54",
+          "type": "B",
+          "question": "Make this sentence negative: \"She has to walk to school.\"",
+          "options": [
+            "She doesn't have to walk to school.",
+            "She mustn't walk to school.",
+            "She don't have to walk to school.",
+            "She not have to walk to school."
+          ],
+          "answer": "She doesn't have to walk to school."
+        },
+        {
+          "id": "haveto_b_55",
+          "type": "B",
+          "question": "Make this sentence negative: \"We have to ride a bike.\"",
+          "options": [
+            "We not have to ride a bike.",
+            "We doesn't have to ride a bike.",
+            "We don't have to ride a bike.",
+            "We mustn't ride a bike."
+          ],
+          "answer": "We don't have to ride a bike."
+        },
+        {
+          "id": "haveto_b_56",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children have to dance.\"",
+          "options": [
+            "The children don't have to dance.",
+            "The children not have to dance.",
+            "The children mustn't dance.",
+            "The children doesn't have to dance."
+          ],
+          "answer": "The children don't have to dance."
+        },
+        {
+          "id": "haveto_b_57",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to walk to school.\"",
+          "options": [
+            "It not have to walk to school.",
+            "It mustn't walk to school.",
+            "It doesn't have to walk to school.",
+            "It don't have to walk to school."
+          ],
+          "answer": "It doesn't have to walk to school."
+        },
+        {
+          "id": "haveto_b_58",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother has to draw a picture.\"",
+          "options": [
+            "My brother mustn't draw a picture.",
+            "My brother doesn't have to draw a picture.",
+            "My brother don't have to draw a picture.",
+            "My brother not have to draw a picture."
+          ],
+          "answer": "My brother doesn't have to draw a picture."
+        },
+        {
+          "id": "haveto_b_59",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys have to study English.\"",
+          "options": [
+            "The boys doesn't have to study English.",
+            "The boys mustn't study English.",
+            "The boys not have to study English.",
+            "The boys don't have to study English."
+          ],
+          "answer": "The boys don't have to study English."
+        },
+        {
+          "id": "haveto_b_60",
+          "type": "B",
+          "question": "Make this sentence negative: \"She has to sing a song.\"",
+          "options": [
+            "She not have to sing a song.",
+            "She doesn't have to sing a song.",
+            "She mustn't sing a song.",
+            "She don't have to sing a song."
+          ],
+          "answer": "She doesn't have to sing a song."
+        },
+        {
+          "id": "haveto_b_61",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to clean the house.\"",
+          "options": [
+            "It don't have to clean the house.",
+            "It not have to clean the house.",
+            "It mustn't clean the house.",
+            "It doesn't have to clean the house."
+          ],
+          "answer": "It doesn't have to clean the house."
+        },
+        {
+          "id": "haveto_b_62",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister has to cook dinner.\"",
+          "options": [
+            "My sister don't have to cook dinner.",
+            "My sister doesn't have to cook dinner.",
+            "My sister mustn't cook dinner.",
+            "My sister not have to cook dinner."
+          ],
+          "answer": "My sister doesn't have to cook dinner."
+        },
+        {
+          "id": "haveto_b_63",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys have to sing a song.\"",
+          "options": [
+            "The boys don't have to sing a song.",
+            "The boys not have to sing a song.",
+            "The boys doesn't have to sing a song.",
+            "The boys mustn't sing a song."
+          ],
+          "answer": "The boys don't have to sing a song."
+        },
+        {
+          "id": "haveto_b_64",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents have to swim.\"",
+          "options": [
+            "My parents not have to swim.",
+            "My parents doesn't have to swim.",
+            "My parents don't have to swim.",
+            "My parents mustn't swim."
+          ],
+          "answer": "My parents don't have to swim."
+        },
+        {
+          "id": "haveto_b_65",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children have to play football.\"",
+          "options": [
+            "The children not have to play football.",
+            "The children mustn't play football.",
+            "The children don't have to play football.",
+            "The children doesn't have to play football."
+          ],
+          "answer": "The children don't have to play football."
+        },
+        {
+          "id": "haveto_b_66",
+          "type": "B",
+          "question": "Make this sentence negative: \"I have to wash the dishes.\"",
+          "options": [
+            "I don't have to wash the dishes.",
+            "I mustn't wash the dishes.",
+            "I not have to wash the dishes.",
+            "I doesn't have to wash the dishes."
+          ],
+          "answer": "I don't have to wash the dishes."
+        },
+        {
+          "id": "haveto_b_67",
+          "type": "B",
+          "question": "Make this sentence negative: \"Our cat has to watch TV.\"",
+          "options": [
+            "Our cat doesn't have to watch TV.",
+            "Our cat don't have to watch TV.",
+            "Our cat not have to watch TV.",
+            "Our cat mustn't watch TV."
+          ],
+          "answer": "Our cat doesn't have to watch TV."
+        },
+        {
+          "id": "haveto_b_68",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother has to cook dinner.\"",
+          "options": [
+            "My brother not have to cook dinner.",
+            "My brother doesn't have to cook dinner.",
+            "My brother mustn't cook dinner.",
+            "My brother don't have to cook dinner."
+          ],
+          "answer": "My brother doesn't have to cook dinner."
+        },
+        {
+          "id": "haveto_b_69",
+          "type": "B",
+          "question": "Make this sentence negative: \"We have to play football.\"",
+          "options": [
+            "We doesn't have to play football.",
+            "We mustn't play football.",
+            "We don't have to play football.",
+            "We not have to play football."
+          ],
+          "answer": "We don't have to play football."
+        },
+        {
+          "id": "haveto_b_70",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to feed the cat.\"",
+          "options": [
+            "The dog don't have to feed the cat.",
+            "The dog not have to feed the cat.",
+            "The dog mustn't feed the cat.",
+            "The dog doesn't have to feed the cat."
+          ],
+          "answer": "The dog doesn't have to feed the cat."
+        },
+        {
+          "id": "haveto_b_71",
+          "type": "B",
+          "question": "Make this sentence negative: \"The children have to win the game.\"",
+          "options": [
+            "The children mustn't win the game.",
+            "The children doesn't have to win the game.",
+            "The children don't have to win the game.",
+            "The children not have to win the game."
+          ],
+          "answer": "The children don't have to win the game."
+        },
+        {
+          "id": "haveto_b_72",
+          "type": "B",
+          "question": "Make this sentence negative: \"They have to write a letter.\"",
+          "options": [
+            "They don't have to write a letter.",
+            "They doesn't have to write a letter.",
+            "They not have to write a letter.",
+            "They mustn't write a letter."
+          ],
+          "answer": "They don't have to write a letter."
+        },
+        {
+          "id": "haveto_b_73",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to sing a song.\"",
+          "options": [
+            "The dog mustn't sing a song.",
+            "The dog doesn't have to sing a song.",
+            "The dog not have to sing a song.",
+            "The dog don't have to sing a song."
+          ],
+          "answer": "The dog doesn't have to sing a song."
+        },
+        {
+          "id": "haveto_b_74",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom has to study English.\"",
+          "options": [
+            "Tom not have to study English.",
+            "Tom don't have to study English.",
+            "Tom doesn't have to study English.",
+            "Tom mustn't study English."
+          ],
+          "answer": "Tom doesn't have to study English."
+        },
+        {
+          "id": "haveto_b_75",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria has to sing a song.\"",
+          "options": [
+            "Maria not have to sing a song.",
+            "Maria don't have to sing a song.",
+            "Maria mustn't sing a song.",
+            "Maria doesn't have to sing a song."
+          ],
+          "answer": "Maria doesn't have to sing a song."
+        },
+        {
+          "id": "haveto_b_76",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to write a letter.\"",
+          "options": [
+            "The dog mustn't write a letter.",
+            "The dog doesn't have to write a letter.",
+            "The dog not have to write a letter.",
+            "The dog don't have to write a letter."
+          ],
+          "answer": "The dog doesn't have to write a letter."
+        },
+        {
+          "id": "haveto_b_77",
+          "type": "B",
+          "question": "Make this sentence negative: \"I have to run.\"",
+          "options": [
+            "I not have to run.",
+            "I doesn't have to run.",
+            "I don't have to run.",
+            "I mustn't run."
+          ],
+          "answer": "I don't have to run."
+        },
+        {
+          "id": "haveto_b_78",
+          "type": "B",
+          "question": "Make this sentence negative: \"He has to sing a song.\"",
+          "options": [
+            "He don't have to sing a song.",
+            "He mustn't sing a song.",
+            "He doesn't have to sing a song.",
+            "He not have to sing a song."
+          ],
+          "answer": "He doesn't have to sing a song."
+        },
+        {
+          "id": "haveto_b_79",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys have to help their mum.\"",
+          "options": [
+            "The boys don't have to help their mum.",
+            "The boys mustn't help their mum.",
+            "The boys not have to help their mum.",
+            "The boys doesn't have to help their mum."
+          ],
+          "answer": "The boys don't have to help their mum."
+        },
+        {
+          "id": "haveto_b_80",
+          "type": "B",
+          "question": "Make this sentence negative: \"We have to climb a tree.\"",
+          "options": [
+            "We not have to climb a tree.",
+            "We don't have to climb a tree.",
+            "We doesn't have to climb a tree.",
+            "We mustn't climb a tree."
+          ],
+          "answer": "We don't have to climb a tree."
+        },
+        {
+          "id": "haveto_b_81",
+          "type": "B",
+          "question": "Make this sentence negative: \"Maria has to win the game.\"",
+          "options": [
+            "Maria mustn't win the game.",
+            "Maria don't have to win the game.",
+            "Maria not have to win the game.",
+            "Maria doesn't have to win the game."
+          ],
+          "answer": "Maria doesn't have to win the game."
+        },
+        {
+          "id": "haveto_b_82",
+          "type": "B",
+          "question": "Make this sentence negative: \"They have to clean the house.\"",
+          "options": [
+            "They mustn't clean the house.",
+            "They doesn't have to clean the house.",
+            "They not have to clean the house.",
+            "They don't have to clean the house."
+          ],
+          "answer": "They don't have to clean the house."
+        },
+        {
+          "id": "haveto_b_83",
+          "type": "B",
+          "question": "Make this sentence negative: \"She has to win the game.\"",
+          "options": [
+            "She mustn't win the game.",
+            "She not have to win the game.",
+            "She don't have to win the game.",
+            "She doesn't have to win the game."
+          ],
+          "answer": "She doesn't have to win the game."
+        },
+        {
+          "id": "haveto_b_84",
+          "type": "B",
+          "question": "Make this sentence negative: \"We have to write a letter.\"",
+          "options": [
+            "We not have to write a letter.",
+            "We mustn't write a letter.",
+            "We don't have to write a letter.",
+            "We doesn't have to write a letter."
+          ],
+          "answer": "We don't have to write a letter."
+        },
+        {
+          "id": "haveto_b_85",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to sing a song.\"",
+          "options": [
+            "It mustn't sing a song.",
+            "It don't have to sing a song.",
+            "It doesn't have to sing a song.",
+            "It not have to sing a song."
+          ],
+          "answer": "It doesn't have to sing a song."
+        },
+        {
+          "id": "haveto_b_86",
+          "type": "B",
+          "question": "Make this sentence negative: \"The dog has to brush their teeth.\"",
+          "options": [
+            "The dog mustn't brush their teeth.",
+            "The dog not have to brush their teeth.",
+            "The dog doesn't have to brush their teeth.",
+            "The dog don't have to brush their teeth."
+          ],
+          "answer": "The dog doesn't have to brush their teeth."
+        },
+        {
+          "id": "haveto_b_87",
+          "type": "B",
+          "question": "Make this sentence negative: \"Tom has to ride a bike.\"",
+          "options": [
+            "Tom don't have to ride a bike.",
+            "Tom mustn't ride a bike.",
+            "Tom doesn't have to ride a bike.",
+            "Tom not have to ride a bike."
+          ],
+          "answer": "Tom doesn't have to ride a bike."
+        },
+        {
+          "id": "haveto_b_88",
+          "type": "B",
+          "question": "Make this sentence negative: \"The boys have to watch TV.\"",
+          "options": [
+            "The boys not have to watch TV.",
+            "The boys doesn't have to watch TV.",
+            "The boys mustn't watch TV.",
+            "The boys don't have to watch TV."
+          ],
+          "answer": "The boys don't have to watch TV."
+        },
+        {
+          "id": "haveto_b_89",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents have to listen to music.\"",
+          "options": [
+            "My parents mustn't listen to music.",
+            "My parents don't have to listen to music.",
+            "My parents doesn't have to listen to music.",
+            "My parents not have to listen to music."
+          ],
+          "answer": "My parents don't have to listen to music."
+        },
+        {
+          "id": "haveto_b_90",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to brush their teeth.\"",
+          "options": [
+            "It doesn't have to brush their teeth.",
+            "It mustn't brush their teeth.",
+            "It not have to brush their teeth.",
+            "It don't have to brush their teeth."
+          ],
+          "answer": "It doesn't have to brush their teeth."
+        },
+        {
+          "id": "haveto_b_91",
+          "type": "B",
+          "question": "Make this sentence negative: \"My parents have to have lunch.\"",
+          "options": [
+            "My parents don't have to have lunch.",
+            "My parents not have to have lunch.",
+            "My parents doesn't have to have lunch.",
+            "My parents mustn't have lunch."
+          ],
+          "answer": "My parents don't have to have lunch."
+        },
+        {
+          "id": "haveto_b_92",
+          "type": "B",
+          "question": "Make this sentence negative: \"We have to listen to music.\"",
+          "options": [
+            "We mustn't listen to music.",
+            "We doesn't have to listen to music.",
+            "We not have to listen to music.",
+            "We don't have to listen to music."
+          ],
+          "answer": "We don't have to listen to music."
+        },
+        {
+          "id": "haveto_b_93",
+          "type": "B",
+          "question": "Make this sentence negative: \"You have to walk to school.\"",
+          "options": [
+            "You mustn't walk to school.",
+            "You don't have to walk to school.",
+            "You not have to walk to school.",
+            "You doesn't have to walk to school."
+          ],
+          "answer": "You don't have to walk to school."
+        },
+        {
+          "id": "haveto_b_94",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to visit their grandma.\"",
+          "options": [
+            "It mustn't visit their grandma.",
+            "It not have to visit their grandma.",
+            "It doesn't have to visit their grandma.",
+            "It don't have to visit their grandma."
+          ],
+          "answer": "It doesn't have to visit their grandma."
+        },
+        {
+          "id": "haveto_b_95",
+          "type": "B",
+          "question": "Make this sentence negative: \"It has to study English.\"",
+          "options": [
+            "It mustn't study English.",
+            "It doesn't have to study English.",
+            "It not have to study English.",
+            "It don't have to study English."
+          ],
+          "answer": "It doesn't have to study English."
+        },
+        {
+          "id": "haveto_b_96",
+          "type": "B",
+          "question": "Make this sentence negative: \"The students have to sing a song.\"",
+          "options": [
+            "The students doesn't have to sing a song.",
+            "The students don't have to sing a song.",
+            "The students mustn't sing a song.",
+            "The students not have to sing a song."
+          ],
+          "answer": "The students don't have to sing a song."
+        },
+        {
+          "id": "haveto_b_97",
+          "type": "B",
+          "question": "Make this sentence negative: \"I have to jump.\"",
+          "options": [
+            "I not have to jump.",
+            "I doesn't have to jump.",
+            "I don't have to jump.",
+            "I mustn't jump."
+          ],
+          "answer": "I don't have to jump."
+        },
+        {
+          "id": "haveto_b_98",
+          "type": "B",
+          "question": "Make this sentence negative: \"My sister has to watch TV.\"",
+          "options": [
+            "My sister not have to watch TV.",
+            "My sister mustn't watch TV.",
+            "My sister don't have to watch TV.",
+            "My sister doesn't have to watch TV."
+          ],
+          "answer": "My sister doesn't have to watch TV."
+        },
+        {
+          "id": "haveto_b_99",
+          "type": "B",
+          "question": "Make this sentence negative: \"My brother has to listen to music.\"",
+          "options": [
+            "My brother don't have to listen to music.",
+            "My brother doesn't have to listen to music.",
+            "My brother mustn't listen to music.",
+            "My brother not have to listen to music."
+          ],
+          "answer": "My brother doesn't have to listen to music."
+        },
+        {
+          "id": "haveto_b_100",
+          "type": "B",
+          "question": "Make this sentence negative: \"She has to visit their grandma.\"",
+          "options": [
+            "She don't have to visit their grandma.",
+            "She doesn't have to visit their grandma.",
+            "She mustn't visit their grandma.",
+            "She not have to visit their grandma."
+          ],
+          "answer": "She doesn't have to visit their grandma."
+        },
+        {
+          "id": "haveto_c_1",
+          "type": "C",
+          "question": "Ask a question: \"We have to run.\"",
+          "options": [
+            "Does we have to run?",
+            "Have we to run?",
+            "Do we have to run?",
+            "We have to run?"
+          ],
+          "answer": "Do we have to run?"
+        },
+        {
+          "id": "haveto_c_2",
+          "type": "C",
+          "question": "Ask a question: \"We have to write a letter.\"",
+          "options": [
+            "Do we have to write a letter?",
+            "Have we to write a letter?",
+            "We have to write a letter?",
+            "Does we have to write a letter?"
+          ],
+          "answer": "Do we have to write a letter?"
+        },
+        {
+          "id": "haveto_c_3",
+          "type": "C",
+          "question": "Ask a question: \"We have to dance.\"",
+          "options": [
+            "Does we have to dance?",
+            "Do we have to dance?",
+            "Have we to dance?",
+            "We have to dance?"
+          ],
+          "answer": "Do we have to dance?"
+        },
+        {
+          "id": "haveto_c_4",
+          "type": "C",
+          "question": "Ask a question: \"He has to run.\"",
+          "options": [
+            "Have he to run?",
+            "He have to run?",
+            "Does he have to run?",
+            "Do he have to run?"
+          ],
+          "answer": "Does he have to run?"
+        },
+        {
+          "id": "haveto_c_5",
+          "type": "C",
+          "question": "Ask a question: \"They have to play football.\"",
+          "options": [
+            "Do they have to play football?",
+            "They have to play football?",
+            "Does they have to play football?",
+            "Have they to play football?"
+          ],
+          "answer": "Do they have to play football?"
+        },
+        {
+          "id": "haveto_c_6",
+          "type": "C",
+          "question": "Ask a question: \"You have to cook dinner.\"",
+          "options": [
+            "Do you have to cook dinner?",
+            "You have to cook dinner?",
+            "Does you have to cook dinner?",
+            "Have you to cook dinner?"
+          ],
+          "answer": "Do you have to cook dinner?"
+        },
+        {
+          "id": "haveto_c_7",
+          "type": "C",
+          "question": "Ask a question: \"We have to do homework.\"",
+          "options": [
+            "Do we have to do homework?",
+            "We have to do homework?",
+            "Does we have to do homework?",
+            "Have we to do homework?"
+          ],
+          "answer": "Do we have to do homework?"
+        },
+        {
+          "id": "haveto_c_8",
+          "type": "C",
+          "question": "Ask a question: \"He has to do homework.\"",
+          "options": [
+            "Have he to do homework?",
+            "Does he have to do homework?",
+            "Do he have to do homework?",
+            "He have to do homework?"
+          ],
+          "answer": "Does he have to do homework?"
+        },
+        {
+          "id": "haveto_c_9",
+          "type": "C",
+          "question": "Ask a question: \"She has to run.\"",
+          "options": [
+            "Does she have to run?",
+            "Have she to run?",
+            "She have to run?",
+            "Do she have to run?"
+          ],
+          "answer": "Does she have to run?"
+        },
+        {
+          "id": "haveto_c_10",
+          "type": "C",
+          "question": "Ask a question: \"We have to clean the house.\"",
+          "options": [
+            "Do we have to clean the house?",
+            "Does we have to clean the house?",
+            "We have to clean the house?",
+            "Have we to clean the house?"
+          ],
+          "answer": "Do we have to clean the house?"
+        },
+        {
+          "id": "haveto_c_11",
+          "type": "C",
+          "question": "Ask a question: \"I have to study English.\"",
+          "options": [
+            "I have to study English?",
+            "Have I to study English?",
+            "Do I have to study English?",
+            "Does I have to study English?"
+          ],
+          "answer": "Do I have to study English?"
+        },
+        {
+          "id": "haveto_c_12",
+          "type": "C",
+          "question": "Ask a question: \"You have to watch TV.\"",
+          "options": [
+            "Does you have to watch TV?",
+            "You have to watch TV?",
+            "Do you have to watch TV?",
+            "Have you to watch TV?"
+          ],
+          "answer": "Do you have to watch TV?"
+        },
+        {
+          "id": "haveto_c_13",
+          "type": "C",
+          "question": "Ask a question: \"I have to win the game.\"",
+          "options": [
+            "I have to win the game?",
+            "Do I have to win the game?",
+            "Have I to win the game?",
+            "Does I have to win the game?"
+          ],
+          "answer": "Do I have to win the game?"
+        },
+        {
+          "id": "haveto_c_14",
+          "type": "C",
+          "question": "Ask a question: \"She has to sing a song.\"",
+          "options": [
+            "Have she to sing a song?",
+            "Does she have to sing a song?",
+            "She have to sing a song?",
+            "Do she have to sing a song?"
+          ],
+          "answer": "Does she have to sing a song?"
+        },
+        {
+          "id": "haveto_c_15",
+          "type": "C",
+          "question": "Ask a question: \"They have to draw a picture.\"",
+          "options": [
+            "They have to draw a picture?",
+            "Do they have to draw a picture?",
+            "Have they to draw a picture?",
+            "Does they have to draw a picture?"
+          ],
+          "answer": "Do they have to draw a picture?"
+        },
+        {
+          "id": "haveto_c_16",
+          "type": "C",
+          "question": "Ask a question: \"He has to cook dinner.\"",
+          "options": [
+            "Does he have to cook dinner?",
+            "He have to cook dinner?",
+            "Do he have to cook dinner?",
+            "Have he to cook dinner?"
+          ],
+          "answer": "Does he have to cook dinner?"
+        },
+        {
+          "id": "haveto_c_17",
+          "type": "C",
+          "question": "Ask a question: \"You have to dance.\"",
+          "options": [
+            "Do you have to dance?",
+            "You have to dance?",
+            "Does you have to dance?",
+            "Have you to dance?"
+          ],
+          "answer": "Do you have to dance?"
+        },
+        {
+          "id": "haveto_c_18",
+          "type": "C",
+          "question": "Ask a question: \"He has to have lunch.\"",
+          "options": [
+            "He have to have lunch?",
+            "Does he have to have lunch?",
+            "Do he have to have lunch?",
+            "Have he to have lunch?"
+          ],
+          "answer": "Does he have to have lunch?"
+        },
+        {
+          "id": "haveto_c_19",
+          "type": "C",
+          "question": "Ask a question: \"You have to play football.\"",
+          "options": [
+            "You have to play football?",
+            "Does you have to play football?",
+            "Have you to play football?",
+            "Do you have to play football?"
+          ],
+          "answer": "Do you have to play football?"
+        },
+        {
+          "id": "haveto_c_20",
+          "type": "C",
+          "question": "Ask a question: \"I have to draw a picture.\"",
+          "options": [
+            "Do I have to draw a picture?",
+            "Have I to draw a picture?",
+            "I have to draw a picture?",
+            "Does I have to draw a picture?"
+          ],
+          "answer": "Do I have to draw a picture?"
+        },
+        {
+          "id": "haveto_c_21",
+          "type": "C",
+          "question": "Ask a question: \"We have to have lunch.\"",
+          "options": [
+            "Does we have to have lunch?",
+            "Do we have to have lunch?",
+            "We have to have lunch?",
+            "Have we to have lunch?"
+          ],
+          "answer": "Do we have to have lunch?"
+        },
+        {
+          "id": "haveto_c_22",
+          "type": "C",
+          "question": "Ask a question: \"We have to walk to school.\"",
+          "options": [
+            "Does we have to walk to school?",
+            "Have we to walk to school?",
+            "We have to walk to school?",
+            "Do we have to walk to school?"
+          ],
+          "answer": "Do we have to walk to school?"
+        },
+        {
+          "id": "haveto_c_23",
+          "type": "C",
+          "question": "Ask a question: \"They have to jump.\"",
+          "options": [
+            "Does they have to jump?",
+            "Have they to jump?",
+            "They have to jump?",
+            "Do they have to jump?"
+          ],
+          "answer": "Do they have to jump?"
+        },
+        {
+          "id": "haveto_c_24",
+          "type": "C",
+          "question": "Ask a question: \"They have to clean the house.\"",
+          "options": [
+            "Does they have to clean the house?",
+            "Do they have to clean the house?",
+            "They have to clean the house?",
+            "Have they to clean the house?"
+          ],
+          "answer": "Do they have to clean the house?"
+        },
+        {
+          "id": "haveto_c_25",
+          "type": "C",
+          "question": "Ask a question: \"He has to watch TV.\"",
+          "options": [
+            "Have he to watch TV?",
+            "Do he have to watch TV?",
+            "He have to watch TV?",
+            "Does he have to watch TV?"
+          ],
+          "answer": "Does he have to watch TV?"
+        },
+        {
+          "id": "haveto_c_26",
+          "type": "C",
+          "question": "Ask a question: \"We have to swim.\"",
+          "options": [
+            "Have we to swim?",
+            "We have to swim?",
+            "Do we have to swim?",
+            "Does we have to swim?"
+          ],
+          "answer": "Do we have to swim?"
+        },
+        {
+          "id": "haveto_c_27",
+          "type": "C",
+          "question": "Ask a question: \"We have to listen to music.\"",
+          "options": [
+            "We have to listen to music?",
+            "Have we to listen to music?",
+            "Do we have to listen to music?",
+            "Does we have to listen to music?"
+          ],
+          "answer": "Do we have to listen to music?"
+        },
+        {
+          "id": "haveto_c_28",
+          "type": "C",
+          "question": "Ask a question: \"They have to write a letter.\"",
+          "options": [
+            "They have to write a letter?",
+            "Does they have to write a letter?",
+            "Do they have to write a letter?",
+            "Have they to write a letter?"
+          ],
+          "answer": "Do they have to write a letter?"
+        },
+        {
+          "id": "haveto_c_29",
+          "type": "C",
+          "question": "Ask a question: \"You have to write a letter.\"",
+          "options": [
+            "Do you have to write a letter?",
+            "You have to write a letter?",
+            "Does you have to write a letter?",
+            "Have you to write a letter?"
+          ],
+          "answer": "Do you have to write a letter?"
+        },
+        {
+          "id": "haveto_c_30",
+          "type": "C",
+          "question": "Ask a question: \"They have to ride a bike.\"",
+          "options": [
+            "Does they have to ride a bike?",
+            "They have to ride a bike?",
+            "Have they to ride a bike?",
+            "Do they have to ride a bike?"
+          ],
+          "answer": "Do they have to ride a bike?"
+        },
+        {
+          "id": "haveto_c_31",
+          "type": "C",
+          "question": "Ask a question: \"She has to play football.\"",
+          "options": [
+            "She have to play football?",
+            "Does she have to play football?",
+            "Do she have to play football?",
+            "Have she to play football?"
+          ],
+          "answer": "Does she have to play football?"
+        },
+        {
+          "id": "haveto_c_32",
+          "type": "C",
+          "question": "Ask a question: \"We have to sing a song.\"",
+          "options": [
+            "We have to sing a song?",
+            "Have we to sing a song?",
+            "Do we have to sing a song?",
+            "Does we have to sing a song?"
+          ],
+          "answer": "Do we have to sing a song?"
+        },
+        {
+          "id": "haveto_c_33",
+          "type": "C",
+          "question": "Ask a question: \"You have to clean the house.\"",
+          "options": [
+            "Have you to clean the house?",
+            "Do you have to clean the house?",
+            "Does you have to clean the house?",
+            "You have to clean the house?"
+          ],
+          "answer": "Do you have to clean the house?"
+        },
+        {
+          "id": "haveto_c_34",
+          "type": "C",
+          "question": "Ask a question: \"We have to climb a tree.\"",
+          "options": [
+            "Do we have to climb a tree?",
+            "Have we to climb a tree?",
+            "We have to climb a tree?",
+            "Does we have to climb a tree?"
+          ],
+          "answer": "Do we have to climb a tree?"
+        },
+        {
+          "id": "haveto_c_35",
+          "type": "C",
+          "question": "Ask a question: \"They have to have lunch.\"",
+          "options": [
+            "Have they to have lunch?",
+            "They have to have lunch?",
+            "Do they have to have lunch?",
+            "Does they have to have lunch?"
+          ],
+          "answer": "Do they have to have lunch?"
+        },
+        {
+          "id": "haveto_c_36",
+          "type": "C",
+          "question": "Ask a question: \"He has to ride a bike.\"",
+          "options": [
+            "Do he have to ride a bike?",
+            "He have to ride a bike?",
+            "Have he to ride a bike?",
+            "Does he have to ride a bike?"
+          ],
+          "answer": "Does he have to ride a bike?"
+        },
+        {
+          "id": "haveto_c_37",
+          "type": "C",
+          "question": "Ask a question: \"I have to feed the cat.\"",
+          "options": [
+            "Do I have to feed the cat?",
+            "I have to feed the cat?",
+            "Have I to feed the cat?",
+            "Does I have to feed the cat?"
+          ],
+          "answer": "Do I have to feed the cat?"
+        },
+        {
+          "id": "haveto_c_38",
+          "type": "C",
+          "question": "Ask a question: \"You have to walk to school.\"",
+          "options": [
+            "Have you to walk to school?",
+            "Does you have to walk to school?",
+            "You have to walk to school?",
+            "Do you have to walk to school?"
+          ],
+          "answer": "Do you have to walk to school?"
+        },
+        {
+          "id": "haveto_c_39",
+          "type": "C",
+          "question": "Ask a question: \"You have to visit their grandma.\"",
+          "options": [
+            "Have you to visit their grandma?",
+            "Does you have to visit their grandma?",
+            "Do you have to visit their grandma?",
+            "You have to visit their grandma?"
+          ],
+          "answer": "Do you have to visit their grandma?"
+        },
+        {
+          "id": "haveto_c_40",
+          "type": "C",
+          "question": "Ask a question: \"She has to wash the dishes.\"",
+          "options": [
+            "Have she to wash the dishes?",
+            "Do she have to wash the dishes?",
+            "Does she have to wash the dishes?",
+            "She have to wash the dishes?"
+          ],
+          "answer": "Does she have to wash the dishes?"
+        },
+        {
+          "id": "haveto_c_41",
+          "type": "C",
+          "question": "Ask a question: \"She has to jump.\"",
+          "options": [
+            "Do she have to jump?",
+            "She have to jump?",
+            "Does she have to jump?",
+            "Have she to jump?"
+          ],
+          "answer": "Does she have to jump?"
+        },
+        {
+          "id": "haveto_c_42",
+          "type": "C",
+          "question": "Ask a question: \"They have to wash the dishes.\"",
+          "options": [
+            "Have they to wash the dishes?",
+            "Do they have to wash the dishes?",
+            "Does they have to wash the dishes?",
+            "They have to wash the dishes?"
+          ],
+          "answer": "Do they have to wash the dishes?"
+        },
+        {
+          "id": "haveto_c_43",
+          "type": "C",
+          "question": "Ask a question: \"She has to watch TV.\"",
+          "options": [
+            "Does she have to watch TV?",
+            "Have she to watch TV?",
+            "She have to watch TV?",
+            "Do she have to watch TV?"
+          ],
+          "answer": "Does she have to watch TV?"
+        },
+        {
+          "id": "haveto_c_44",
+          "type": "C",
+          "question": "Ask a question: \"I have to listen to music.\"",
+          "options": [
+            "Have I to listen to music?",
+            "I have to listen to music?",
+            "Do I have to listen to music?",
+            "Does I have to listen to music?"
+          ],
+          "answer": "Do I have to listen to music?"
+        },
+        {
+          "id": "haveto_c_45",
+          "type": "C",
+          "question": "Ask a question: \"We have to help their mum.\"",
+          "options": [
+            "We have to help their mum?",
+            "Have we to help their mum?",
+            "Do we have to help their mum?",
+            "Does we have to help their mum?"
+          ],
+          "answer": "Do we have to help their mum?"
+        },
+        {
+          "id": "haveto_c_46",
+          "type": "C",
+          "question": "Ask a question: \"They have to cook dinner.\"",
+          "options": [
+            "Does they have to cook dinner?",
+            "They have to cook dinner?",
+            "Have they to cook dinner?",
+            "Do they have to cook dinner?"
+          ],
+          "answer": "Do they have to cook dinner?"
+        },
+        {
+          "id": "haveto_c_47",
+          "type": "C",
+          "question": "Ask a question: \"They have to run.\"",
+          "options": [
+            "Have they to run?",
+            "Does they have to run?",
+            "Do they have to run?",
+            "They have to run?"
+          ],
+          "answer": "Do they have to run?"
+        },
+        {
+          "id": "haveto_c_48",
+          "type": "C",
+          "question": "Ask a question: \"You have to wash the dishes.\"",
+          "options": [
+            "Do you have to wash the dishes?",
+            "Have you to wash the dishes?",
+            "Does you have to wash the dishes?",
+            "You have to wash the dishes?"
+          ],
+          "answer": "Do you have to wash the dishes?"
+        },
+        {
+          "id": "haveto_c_49",
+          "type": "C",
+          "question": "Ask a question: \"They have to do homework.\"",
+          "options": [
+            "Do they have to do homework?",
+            "Have they to do homework?",
+            "Does they have to do homework?",
+            "They have to do homework?"
+          ],
+          "answer": "Do they have to do homework?"
+        },
+        {
+          "id": "haveto_c_50",
+          "type": "C",
+          "question": "Ask a question: \"I have to brush their teeth.\"",
+          "options": [
+            "Do I have to brush their teeth?",
+            "Does I have to brush their teeth?",
+            "Have I to brush their teeth?",
+            "I have to brush their teeth?"
+          ],
+          "answer": "Do I have to brush their teeth?"
+        },
+        {
+          "id": "haveto_c_51",
+          "type": "C",
+          "question": "Ask a question: \"They have to win the game.\"",
+          "options": [
+            "Have they to win the game?",
+            "Does they have to win the game?",
+            "They have to win the game?",
+            "Do they have to win the game?"
+          ],
+          "answer": "Do they have to win the game?"
+        },
+        {
+          "id": "haveto_c_52",
+          "type": "C",
+          "question": "Ask a question: \"He has to write a letter.\"",
+          "options": [
+            "He have to write a letter?",
+            "Does he have to write a letter?",
+            "Do he have to write a letter?",
+            "Have he to write a letter?"
+          ],
+          "answer": "Does he have to write a letter?"
+        },
+        {
+          "id": "haveto_c_53",
+          "type": "C",
+          "question": "Ask a question: \"I have to have lunch.\"",
+          "options": [
+            "Do I have to have lunch?",
+            "Have I to have lunch?",
+            "Does I have to have lunch?",
+            "I have to have lunch?"
+          ],
+          "answer": "Do I have to have lunch?"
+        },
+        {
+          "id": "haveto_c_54",
+          "type": "C",
+          "question": "Ask a question: \"We have to feed the cat.\"",
+          "options": [
+            "Does we have to feed the cat?",
+            "Have we to feed the cat?",
+            "Do we have to feed the cat?",
+            "We have to feed the cat?"
+          ],
+          "answer": "Do we have to feed the cat?"
+        },
+        {
+          "id": "haveto_c_55",
+          "type": "C",
+          "question": "Ask a question: \"You have to feed the cat.\"",
+          "options": [
+            "You have to feed the cat?",
+            "Does you have to feed the cat?",
+            "Have you to feed the cat?",
+            "Do you have to feed the cat?"
+          ],
+          "answer": "Do you have to feed the cat?"
+        },
+        {
+          "id": "haveto_c_56",
+          "type": "C",
+          "question": "Ask a question: \"She has to draw a picture.\"",
+          "options": [
+            "She have to draw a picture?",
+            "Does she have to draw a picture?",
+            "Do she have to draw a picture?",
+            "Have she to draw a picture?"
+          ],
+          "answer": "Does she have to draw a picture?"
+        },
+        {
+          "id": "haveto_c_57",
+          "type": "C",
+          "question": "Ask a question: \"I have to help their mum.\"",
+          "options": [
+            "Have I to help their mum?",
+            "Do I have to help their mum?",
+            "Does I have to help their mum?",
+            "I have to help their mum?"
+          ],
+          "answer": "Do I have to help their mum?"
+        },
+        {
+          "id": "haveto_c_58",
+          "type": "C",
+          "question": "Ask a question: \"We have to play football.\"",
+          "options": [
+            "Have we to play football?",
+            "Does we have to play football?",
+            "Do we have to play football?",
+            "We have to play football?"
+          ],
+          "answer": "Do we have to play football?"
+        },
+        {
+          "id": "haveto_c_59",
+          "type": "C",
+          "question": "Ask a question: \"We have to go to the party.\"",
+          "options": [
+            "Have we to go to the party?",
+            "Does we have to go to the party?",
+            "Do we have to go to the party?",
+            "We have to go to the party?"
+          ],
+          "answer": "Do we have to go to the party?"
+        },
+        {
+          "id": "haveto_c_60",
+          "type": "C",
+          "question": "Ask a question: \"They have to brush their teeth.\"",
+          "options": [
+            "Have they to brush their teeth?",
+            "Do they have to brush their teeth?",
+            "Does they have to brush their teeth?",
+            "They have to brush their teeth?"
+          ],
+          "answer": "Do they have to brush their teeth?"
+        },
+        {
+          "id": "haveto_c_61",
+          "type": "C",
+          "question": "Ask a question: \"He has to swim.\"",
+          "options": [
+            "He have to swim?",
+            "Have he to swim?",
+            "Do he have to swim?",
+            "Does he have to swim?"
+          ],
+          "answer": "Does he have to swim?"
+        },
+        {
+          "id": "haveto_c_62",
+          "type": "C",
+          "question": "Ask a question: \"I have to swim.\"",
+          "options": [
+            "Have I to swim?",
+            "Does I have to swim?",
+            "Do I have to swim?",
+            "I have to swim?"
+          ],
+          "answer": "Do I have to swim?"
+        },
+        {
+          "id": "haveto_c_63",
+          "type": "C",
+          "question": "Ask a question: \"You have to climb a tree.\"",
+          "options": [
+            "Do you have to climb a tree?",
+            "You have to climb a tree?",
+            "Does you have to climb a tree?",
+            "Have you to climb a tree?"
+          ],
+          "answer": "Do you have to climb a tree?"
+        },
+        {
+          "id": "haveto_c_64",
+          "type": "C",
+          "question": "Ask a question: \"She has to cook dinner.\"",
+          "options": [
+            "Have she to cook dinner?",
+            "Do she have to cook dinner?",
+            "Does she have to cook dinner?",
+            "She have to cook dinner?"
+          ],
+          "answer": "Does she have to cook dinner?"
+        },
+        {
+          "id": "haveto_c_65",
+          "type": "C",
+          "question": "Ask a question: \"They have to go to the party.\"",
+          "options": [
+            "Have they to go to the party?",
+            "Does they have to go to the party?",
+            "They have to go to the party?",
+            "Do they have to go to the party?"
+          ],
+          "answer": "Do they have to go to the party?"
+        },
+        {
+          "id": "haveto_c_66",
+          "type": "C",
+          "question": "Ask a question: \"You have to jump.\"",
+          "options": [
+            "Does you have to jump?",
+            "You have to jump?",
+            "Do you have to jump?",
+            "Have you to jump?"
+          ],
+          "answer": "Do you have to jump?"
+        },
+        {
+          "id": "haveto_c_67",
+          "type": "C",
+          "question": "Ask a question: \"You have to help their mum.\"",
+          "options": [
+            "Have you to help their mum?",
+            "You have to help their mum?",
+            "Does you have to help their mum?",
+            "Do you have to help their mum?"
+          ],
+          "answer": "Do you have to help their mum?"
+        },
+        {
+          "id": "haveto_c_68",
+          "type": "C",
+          "question": "Ask a question: \"They have to walk to school.\"",
+          "options": [
+            "Have they to walk to school?",
+            "Do they have to walk to school?",
+            "They have to walk to school?",
+            "Does they have to walk to school?"
+          ],
+          "answer": "Do they have to walk to school?"
+        },
+        {
+          "id": "haveto_c_69",
+          "type": "C",
+          "question": "Ask a question: \"He has to brush their teeth.\"",
+          "options": [
+            "Does he have to brush their teeth?",
+            "He have to brush their teeth?",
+            "Do he have to brush their teeth?",
+            "Have he to brush their teeth?"
+          ],
+          "answer": "Does he have to brush their teeth?"
+        },
+        {
+          "id": "haveto_c_70",
+          "type": "C",
+          "question": "Ask a question: \"You have to have lunch.\"",
+          "options": [
+            "You have to have lunch?",
+            "Does you have to have lunch?",
+            "Have you to have lunch?",
+            "Do you have to have lunch?"
+          ],
+          "answer": "Do you have to have lunch?"
+        },
+        {
+          "id": "haveto_c_71",
+          "type": "C",
+          "question": "Ask a question: \"We have to study English.\"",
+          "options": [
+            "Do we have to study English?",
+            "We have to study English?",
+            "Have we to study English?",
+            "Does we have to study English?"
+          ],
+          "answer": "Do we have to study English?"
+        },
+        {
+          "id": "haveto_c_72",
+          "type": "C",
+          "question": "Ask a question: \"We have to cook dinner.\"",
+          "options": [
+            "Do we have to cook dinner?",
+            "We have to cook dinner?",
+            "Have we to cook dinner?",
+            "Does we have to cook dinner?"
+          ],
+          "answer": "Do we have to cook dinner?"
+        },
+        {
+          "id": "haveto_c_73",
+          "type": "C",
+          "question": "Ask a question: \"She has to write a letter.\"",
+          "options": [
+            "She have to write a letter?",
+            "Do she have to write a letter?",
+            "Does she have to write a letter?",
+            "Have she to write a letter?"
+          ],
+          "answer": "Does she have to write a letter?"
+        },
+        {
+          "id": "haveto_c_74",
+          "type": "C",
+          "question": "Ask a question: \"He has to win the game.\"",
+          "options": [
+            "Do he have to win the game?",
+            "Have he to win the game?",
+            "Does he have to win the game?",
+            "He have to win the game?"
+          ],
+          "answer": "Does he have to win the game?"
+        },
+        {
+          "id": "haveto_c_75",
+          "type": "C",
+          "question": "Ask a question: \"They have to climb a tree.\"",
+          "options": [
+            "Have they to climb a tree?",
+            "Does they have to climb a tree?",
+            "Do they have to climb a tree?",
+            "They have to climb a tree?"
+          ],
+          "answer": "Do they have to climb a tree?"
+        },
+        {
+          "id": "haveto_c_76",
+          "type": "C",
+          "question": "Ask a question: \"He has to clean the house.\"",
+          "options": [
+            "Do he have to clean the house?",
+            "He have to clean the house?",
+            "Does he have to clean the house?",
+            "Have he to clean the house?"
+          ],
+          "answer": "Does he have to clean the house?"
+        },
+        {
+          "id": "haveto_c_77",
+          "type": "C",
+          "question": "Ask a question: \"They have to watch TV.\"",
+          "options": [
+            "They have to watch TV?",
+            "Have they to watch TV?",
+            "Do they have to watch TV?",
+            "Does they have to watch TV?"
+          ],
+          "answer": "Do they have to watch TV?"
+        },
+        {
+          "id": "haveto_c_78",
+          "type": "C",
+          "question": "Ask a question: \"You have to brush their teeth.\"",
+          "options": [
+            "Does you have to brush their teeth?",
+            "Have you to brush their teeth?",
+            "Do you have to brush their teeth?",
+            "You have to brush their teeth?"
+          ],
+          "answer": "Do you have to brush their teeth?"
+        },
+        {
+          "id": "haveto_c_79",
+          "type": "C",
+          "question": "Ask a question: \"He has to go to the party.\"",
+          "options": [
+            "Does he have to go to the party?",
+            "Have he to go to the party?",
+            "He have to go to the party?",
+            "Do he have to go to the party?"
+          ],
+          "answer": "Does he have to go to the party?"
+        },
+        {
+          "id": "haveto_c_80",
+          "type": "C",
+          "question": "Ask a question: \"I have to write a letter.\"",
+          "options": [
+            "I have to write a letter?",
+            "Have I to write a letter?",
+            "Does I have to write a letter?",
+            "Do I have to write a letter?"
+          ],
+          "answer": "Do I have to write a letter?"
+        },
+        {
+          "id": "haveto_c_81",
+          "type": "C",
+          "question": "Ask a question: \"They have to help their mum.\"",
+          "options": [
+            "Have they to help their mum?",
+            "Does they have to help their mum?",
+            "Do they have to help their mum?",
+            "They have to help their mum?"
+          ],
+          "answer": "Do they have to help their mum?"
+        },
+        {
+          "id": "haveto_c_82",
+          "type": "C",
+          "question": "Ask a question: \"You have to study English.\"",
+          "options": [
+            "Have you to study English?",
+            "Do you have to study English?",
+            "Does you have to study English?",
+            "You have to study English?"
+          ],
+          "answer": "Do you have to study English?"
+        },
+        {
+          "id": "haveto_c_83",
+          "type": "C",
+          "question": "Ask a question: \"He has to help their mum.\"",
+          "options": [
+            "Have he to help their mum?",
+            "He have to help their mum?",
+            "Does he have to help their mum?",
+            "Do he have to help their mum?"
+          ],
+          "answer": "Does he have to help their mum?"
+        },
+        {
+          "id": "haveto_c_84",
+          "type": "C",
+          "question": "Ask a question: \"He has to walk to school.\"",
+          "options": [
+            "Do he have to walk to school?",
+            "Have he to walk to school?",
+            "He have to walk to school?",
+            "Does he have to walk to school?"
+          ],
+          "answer": "Does he have to walk to school?"
+        },
+        {
+          "id": "haveto_c_85",
+          "type": "C",
+          "question": "Ask a question: \"We have to ride a bike.\"",
+          "options": [
+            "We have to ride a bike?",
+            "Do we have to ride a bike?",
+            "Have we to ride a bike?",
+            "Does we have to ride a bike?"
+          ],
+          "answer": "Do we have to ride a bike?"
+        },
+        {
+          "id": "haveto_c_86",
+          "type": "C",
+          "question": "Ask a question: \"She has to visit their grandma.\"",
+          "options": [
+            "Have she to visit their grandma?",
+            "She have to visit their grandma?",
+            "Do she have to visit their grandma?",
+            "Does she have to visit their grandma?"
+          ],
+          "answer": "Does she have to visit their grandma?"
+        },
+        {
+          "id": "haveto_c_87",
+          "type": "C",
+          "question": "Ask a question: \"She has to walk to school.\"",
+          "options": [
+            "Have she to walk to school?",
+            "Does she have to walk to school?",
+            "She have to walk to school?",
+            "Do she have to walk to school?"
+          ],
+          "answer": "Does she have to walk to school?"
+        },
+        {
+          "id": "haveto_c_88",
+          "type": "C",
+          "question": "Ask a question: \"We have to brush their teeth.\"",
+          "options": [
+            "Have we to brush their teeth?",
+            "Do we have to brush their teeth?",
+            "We have to brush their teeth?",
+            "Does we have to brush their teeth?"
+          ],
+          "answer": "Do we have to brush their teeth?"
+        },
+        {
+          "id": "haveto_c_89",
+          "type": "C",
+          "question": "Ask a question: \"She has to ride a bike.\"",
+          "options": [
+            "She have to ride a bike?",
+            "Does she have to ride a bike?",
+            "Do she have to ride a bike?",
+            "Have she to ride a bike?"
+          ],
+          "answer": "Does she have to ride a bike?"
+        },
+        {
+          "id": "haveto_c_90",
+          "type": "C",
+          "question": "Ask a question: \"She has to dance.\"",
+          "options": [
+            "She have to dance?",
+            "Do she have to dance?",
+            "Have she to dance?",
+            "Does she have to dance?"
+          ],
+          "answer": "Does she have to dance?"
+        },
+        {
+          "id": "haveto_c_91",
+          "type": "C",
+          "question": "Ask a question: \"I have to go to the party.\"",
+          "options": [
+            "I have to go to the party?",
+            "Do I have to go to the party?",
+            "Have I to go to the party?",
+            "Does I have to go to the party?"
+          ],
+          "answer": "Do I have to go to the party?"
+        },
+        {
+          "id": "haveto_c_92",
+          "type": "C",
+          "question": "Ask a question: \"You have to win the game.\"",
+          "options": [
+            "Does you have to win the game?",
+            "Have you to win the game?",
+            "Do you have to win the game?",
+            "You have to win the game?"
+          ],
+          "answer": "Do you have to win the game?"
+        },
+        {
+          "id": "haveto_c_93",
+          "type": "C",
+          "question": "Ask a question: \"You have to go to the party.\"",
+          "options": [
+            "Does you have to go to the party?",
+            "Have you to go to the party?",
+            "You have to go to the party?",
+            "Do you have to go to the party?"
+          ],
+          "answer": "Do you have to go to the party?"
+        },
+        {
+          "id": "haveto_c_94",
+          "type": "C",
+          "question": "Ask a question: \"I have to visit their grandma.\"",
+          "options": [
+            "Do I have to visit their grandma?",
+            "Does I have to visit their grandma?",
+            "I have to visit their grandma?",
+            "Have I to visit their grandma?"
+          ],
+          "answer": "Do I have to visit their grandma?"
+        },
+        {
+          "id": "haveto_c_95",
+          "type": "C",
+          "question": "Ask a question: \"You have to draw a picture.\"",
+          "options": [
+            "You have to draw a picture?",
+            "Have you to draw a picture?",
+            "Does you have to draw a picture?",
+            "Do you have to draw a picture?"
+          ],
+          "answer": "Do you have to draw a picture?"
+        },
+        {
+          "id": "haveto_c_96",
+          "type": "C",
+          "question": "Ask a question: \"They have to sing a song.\"",
+          "options": [
+            "They have to sing a song?",
+            "Do they have to sing a song?",
+            "Does they have to sing a song?",
+            "Have they to sing a song?"
+          ],
+          "answer": "Do they have to sing a song?"
+        },
+        {
+          "id": "haveto_c_97",
+          "type": "C",
+          "question": "Ask a question: \"She has to feed the cat.\"",
+          "options": [
+            "She have to feed the cat?",
+            "Have she to feed the cat?",
+            "Do she have to feed the cat?",
+            "Does she have to feed the cat?"
+          ],
+          "answer": "Does she have to feed the cat?"
+        },
+        {
+          "id": "haveto_c_98",
+          "type": "C",
+          "question": "Ask a question: \"You have to sing a song.\"",
+          "options": [
+            "Do you have to sing a song?",
+            "You have to sing a song?",
+            "Does you have to sing a song?",
+            "Have you to sing a song?"
+          ],
+          "answer": "Do you have to sing a song?"
+        },
+        {
+          "id": "haveto_c_99",
+          "type": "C",
+          "question": "Ask a question: \"I have to run.\"",
+          "options": [
+            "Do I have to run?",
+            "Does I have to run?",
+            "I have to run?",
+            "Have I to run?"
+          ],
+          "answer": "Do I have to run?"
+        },
+        {
+          "id": "haveto_c_100",
+          "type": "C",
+          "question": "Ask a question: \"I have to cook dinner.\"",
+          "options": [
+            "Do I have to cook dinner?",
+            "Have I to cook dinner?",
+            "I have to cook dinner?",
+            "Does I have to cook dinner?"
+          ],
+          "answer": "Do I have to cook dinner?"
+        },
+        {
+          "id": "haveto_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros tenemos que caminar al colegio\" en inglés?",
+          "options": [
+            "We can walk to school.",
+            "We could walk to school.",
+            "We don't have to walk to school.",
+            "We have to walk to school."
+          ],
+          "answer": "We have to walk to school."
+        },
+        {
+          "id": "haveto_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no tiene que comer\" en inglés?",
+          "options": [
+            "He doesn't have to have lunch.",
+            "He has to have lunch.",
+            "He mustn't have lunch.",
+            "He can have lunch."
+          ],
+          "answer": "He doesn't have to have lunch."
+        },
+        {
+          "id": "haveto_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom tiene que caminar al colegio\" en inglés?",
+          "options": [
+            "Tom doesn't have to walk to school.",
+            "Tom has to walk to school.",
+            "Tom could walk to school.",
+            "Tom can walk to school."
+          ],
+          "answer": "Tom has to walk to school."
+        },
+        {
+          "id": "haveto_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no tenemos que dar de comer al gato\" en inglés?",
+          "options": [
+            "We can feed the cat.",
+            "We mustn't feed the cat.",
+            "We have to feed the cat.",
+            "We don't have to feed the cat."
+          ],
+          "answer": "We don't have to feed the cat."
+        },
+        {
+          "id": "haveto_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños tienen que ver la tele\" en inglés?",
+          "options": [
+            "The children can watch TV.",
+            "The children have to watch TV.",
+            "The children don't have to watch TV.",
+            "The children could watch TV."
+          ],
+          "answer": "The children have to watch TV."
+        },
+        {
+          "id": "haveto_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos no tienen que dibujar un dibujo\" en inglés?",
+          "options": [
+            "They mustn't draw a picture.",
+            "They have to draw a picture.",
+            "They can draw a picture.",
+            "They don't have to draw a picture."
+          ],
+          "answer": "They don't have to draw a picture."
+        },
+        {
+          "id": "haveto_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso tiene que ir a la fiesta\" en inglés?",
+          "options": [
+            "It doesn't have to go to the party.",
+            "It has to go to the party.",
+            "It could go to the party.",
+            "It can go to the party."
+          ],
+          "answer": "It has to go to the party."
+        },
+        {
+          "id": "haveto_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no tiene que cantar una canción\" en inglés?",
+          "options": [
+            "Tom doesn't have to sing a song.",
+            "Tom can sing a song.",
+            "Tom mustn't sing a song.",
+            "Tom has to sing a song."
+          ],
+          "answer": "Tom doesn't have to sing a song."
+        },
+        {
+          "id": "haveto_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana tiene que dar de comer al gato\" en inglés?",
+          "options": [
+            "My sister has to feed the cat.",
+            "My sister could feed the cat.",
+            "My sister can feed the cat.",
+            "My sister doesn't have to feed the cat."
+          ],
+          "answer": "My sister has to feed the cat."
+        },
+        {
+          "id": "haveto_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no tienen que dar de comer al gato\" en inglés?",
+          "options": [
+            "My parents mustn't feed the cat.",
+            "My parents don't have to feed the cat.",
+            "My parents have to feed the cat.",
+            "My parents can feed the cat."
+          ],
+          "answer": "My parents don't have to feed the cat."
+        },
+        {
+          "id": "haveto_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella tiene que correr\" en inglés?",
+          "options": [
+            "She has to run.",
+            "She could run.",
+            "She can run.",
+            "She doesn't have to run."
+          ],
+          "answer": "She has to run."
+        },
+        {
+          "id": "haveto_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano no tiene que jugar al fútbol\" en inglés?",
+          "options": [
+            "My brother has to play football.",
+            "My brother can play football.",
+            "My brother doesn't have to play football.",
+            "My brother mustn't play football."
+          ],
+          "answer": "My brother doesn't have to play football."
+        },
+        {
+          "id": "haveto_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú tienes que estudiar inglés\" en inglés?",
+          "options": [
+            "You could study English.",
+            "You can study English.",
+            "You don't have to study English.",
+            "You have to study English."
+          ],
+          "answer": "You have to study English."
+        },
+        {
+          "id": "haveto_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no tiene que limpiar la casa\" en inglés?",
+          "options": [
+            "She doesn't have to clean the house.",
+            "She has to clean the house.",
+            "She mustn't clean the house.",
+            "She can clean the house."
+          ],
+          "answer": "She doesn't have to clean the house."
+        },
+        {
+          "id": "haveto_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú tienes que bailar\" en inglés?",
+          "options": [
+            "You have to dance.",
+            "You could dance.",
+            "You can dance.",
+            "You don't have to dance."
+          ],
+          "answer": "You have to dance."
+        },
+        {
+          "id": "haveto_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no tienes que cepillarse los dientes\" en inglés?",
+          "options": [
+            "You mustn't brush their teeth.",
+            "You can brush their teeth.",
+            "You don't have to brush their teeth.",
+            "You have to brush their teeth."
+          ],
+          "answer": "You don't have to brush their teeth."
+        },
+        {
+          "id": "haveto_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano tiene que comer\" en inglés?",
+          "options": [
+            "My brother can have lunch.",
+            "My brother could have lunch.",
+            "My brother has to have lunch.",
+            "My brother doesn't have to have lunch."
+          ],
+          "answer": "My brother has to have lunch."
+        },
+        {
+          "id": "haveto_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que ayudar a su madre\" en inglés?",
+          "options": [
+            "I don't have to help their mum.",
+            "I mustn't help their mum.",
+            "I can help their mum.",
+            "I have to help their mum."
+          ],
+          "answer": "I don't have to help their mum."
+        },
+        {
+          "id": "haveto_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños tienen que dibujar un dibujo\" en inglés?",
+          "options": [
+            "The children could draw a picture.",
+            "The children have to draw a picture.",
+            "The children don't have to draw a picture.",
+            "The children can draw a picture."
+          ],
+          "answer": "The children have to draw a picture."
+        },
+        {
+          "id": "haveto_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no tiene que visitar a su abuela\" en inglés?",
+          "options": [
+            "Maria has to visit their grandma.",
+            "Maria mustn't visit their grandma.",
+            "Maria can visit their grandma.",
+            "Maria doesn't have to visit their grandma."
+          ],
+          "answer": "Maria doesn't have to visit their grandma."
+        },
+        {
+          "id": "haveto_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos tienen que estudiar inglés\" en inglés?",
+          "options": [
+            "They have to study English.",
+            "They can study English.",
+            "They could study English.",
+            "They don't have to study English."
+          ],
+          "answer": "They have to study English."
+        },
+        {
+          "id": "haveto_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no tienen que saltar\" en inglés?",
+          "options": [
+            "The students mustn't jump.",
+            "The students don't have to jump.",
+            "The students can jump.",
+            "The students have to jump."
+          ],
+          "answer": "The students don't have to jump."
+        },
+        {
+          "id": "haveto_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro tiene que limpiar la casa\" en inglés?",
+          "options": [
+            "The dog doesn't have to clean the house.",
+            "The dog has to clean the house.",
+            "The dog can clean the house.",
+            "The dog could clean the house."
+          ],
+          "answer": "The dog has to clean the house."
+        },
+        {
+          "id": "haveto_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no tiene que escribir una carta\" en inglés?",
+          "options": [
+            "It can write a letter.",
+            "It doesn't have to write a letter.",
+            "It has to write a letter.",
+            "It mustn't write a letter."
+          ],
+          "answer": "It doesn't have to write a letter."
+        },
+        {
+          "id": "haveto_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él tiene que ayudar a su madre\" en inglés?",
+          "options": [
+            "He doesn't have to help their mum.",
+            "He can help their mum.",
+            "He could help their mum.",
+            "He has to help their mum."
+          ],
+          "answer": "He has to help their mum."
+        },
+        {
+          "id": "haveto_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que nadar\" en inglés?",
+          "options": [
+            "I have to swim.",
+            "I can swim.",
+            "I mustn't swim.",
+            "I don't have to swim."
+          ],
+          "answer": "I don't have to swim."
+        },
+        {
+          "id": "haveto_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María tiene que comer\" en inglés?",
+          "options": [
+            "Maria could have lunch.",
+            "Maria can have lunch.",
+            "Maria has to have lunch.",
+            "Maria doesn't have to have lunch."
+          ],
+          "answer": "Maria has to have lunch."
+        },
+        {
+          "id": "haveto_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no tienen que bailar\" en inglés?",
+          "options": [
+            "My parents mustn't dance.",
+            "My parents can dance.",
+            "My parents don't have to dance.",
+            "My parents have to dance."
+          ],
+          "answer": "My parents don't have to dance."
+        },
+        {
+          "id": "haveto_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato tiene que cocinar la cena\" en inglés?",
+          "options": [
+            "Our cat can cook dinner.",
+            "Our cat doesn't have to cook dinner.",
+            "Our cat has to cook dinner.",
+            "Our cat could cook dinner."
+          ],
+          "answer": "Our cat has to cook dinner."
+        },
+        {
+          "id": "haveto_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que estudiar inglés\" en inglés?",
+          "options": [
+            "I can study English.",
+            "I don't have to study English.",
+            "I have to study English.",
+            "I mustn't study English."
+          ],
+          "answer": "I don't have to study English."
+        },
+        {
+          "id": "haveto_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana tiene que cepillarse los dientes\" en inglés?",
+          "options": [
+            "My sister could brush their teeth.",
+            "My sister doesn't have to brush their teeth.",
+            "My sister can brush their teeth.",
+            "My sister has to brush their teeth."
+          ],
+          "answer": "My sister has to brush their teeth."
+        },
+        {
+          "id": "haveto_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no tiene que estudiar inglés\" en inglés?",
+          "options": [
+            "Our cat doesn't have to study English.",
+            "Our cat has to study English.",
+            "Our cat can study English.",
+            "Our cat mustn't study English."
+          ],
+          "answer": "Our cat doesn't have to study English."
+        },
+        {
+          "id": "haveto_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros tenemos que fregar los platos\" en inglés?",
+          "options": [
+            "We can wash the dishes.",
+            "We don't have to wash the dishes.",
+            "We could wash the dishes.",
+            "We have to wash the dishes."
+          ],
+          "answer": "We have to wash the dishes."
+        },
+        {
+          "id": "haveto_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no tienen que montar en bici\" en inglés?",
+          "options": [
+            "The boys mustn't ride a bike.",
+            "The boys have to ride a bike.",
+            "The boys can ride a bike.",
+            "The boys don't have to ride a bike."
+          ],
+          "answer": "The boys don't have to ride a bike."
+        },
+        {
+          "id": "haveto_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella tiene que nadar\" en inglés?",
+          "options": [
+            "She could swim.",
+            "She has to swim.",
+            "She can swim.",
+            "She doesn't have to swim."
+          ],
+          "answer": "She has to swim."
+        },
+        {
+          "id": "haveto_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no tienen que cantar una canción\" en inglés?",
+          "options": [
+            "My parents don't have to sing a song.",
+            "My parents mustn't sing a song.",
+            "My parents have to sing a song.",
+            "My parents can sing a song."
+          ],
+          "answer": "My parents don't have to sing a song."
+        },
+        {
+          "id": "haveto_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella tiene que cepillarse los dientes\" en inglés?",
+          "options": [
+            "She can brush their teeth.",
+            "She doesn't have to brush their teeth.",
+            "She has to brush their teeth.",
+            "She could brush their teeth."
+          ],
+          "answer": "She has to brush their teeth."
+        },
+        {
+          "id": "haveto_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no tiene que ayudar a su madre\" en inglés?",
+          "options": [
+            "She mustn't help their mum.",
+            "She can help their mum.",
+            "She has to help their mum.",
+            "She doesn't have to help their mum."
+          ],
+          "answer": "She doesn't have to help their mum."
+        },
+        {
+          "id": "haveto_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo tengo que caminar al colegio\" en inglés?",
+          "options": [
+            "I could walk to school.",
+            "I can walk to school.",
+            "I don't have to walk to school.",
+            "I have to walk to school."
+          ],
+          "answer": "I have to walk to school."
+        },
+        {
+          "id": "haveto_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no tiene que cocinar la cena\" en inglés?",
+          "options": [
+            "Maria has to cook dinner.",
+            "Maria doesn't have to cook dinner.",
+            "Maria mustn't cook dinner.",
+            "Maria can cook dinner."
+          ],
+          "answer": "Maria doesn't have to cook dinner."
+        },
+        {
+          "id": "haveto_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María tiene que fregar los platos\" en inglés?",
+          "options": [
+            "Maria doesn't have to wash the dishes.",
+            "Maria has to wash the dishes.",
+            "Maria can wash the dishes.",
+            "Maria could wash the dishes."
+          ],
+          "answer": "Maria has to wash the dishes."
+        },
+        {
+          "id": "haveto_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no tiene que escribir una carta\" en inglés?",
+          "options": [
+            "Tom mustn't write a letter.",
+            "Tom can write a letter.",
+            "Tom has to write a letter.",
+            "Tom doesn't have to write a letter."
+          ],
+          "answer": "Tom doesn't have to write a letter."
+        },
+        {
+          "id": "haveto_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso tiene que ganar el partido\" en inglés?",
+          "options": [
+            "It has to win the game.",
+            "It could win the game.",
+            "It doesn't have to win the game.",
+            "It can win the game."
+          ],
+          "answer": "It has to win the game."
+        },
+        {
+          "id": "haveto_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro no tiene que bailar\" en inglés?",
+          "options": [
+            "The dog mustn't dance.",
+            "The dog has to dance.",
+            "The dog doesn't have to dance.",
+            "The dog can dance."
+          ],
+          "answer": "The dog doesn't have to dance."
+        },
+        {
+          "id": "haveto_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato tiene que comer\" en inglés?",
+          "options": [
+            "Our cat has to have lunch.",
+            "Our cat could have lunch.",
+            "Our cat can have lunch.",
+            "Our cat doesn't have to have lunch."
+          ],
+          "answer": "Our cat has to have lunch."
+        },
+        {
+          "id": "haveto_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que visitar a su abuela\" en inglés?",
+          "options": [
+            "I have to visit their grandma.",
+            "I don't have to visit their grandma.",
+            "I can visit their grandma.",
+            "I mustn't visit their grandma."
+          ],
+          "answer": "I don't have to visit their grandma."
+        },
+        {
+          "id": "haveto_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú tienes que dar de comer al gato\" en inglés?",
+          "options": [
+            "You could feed the cat.",
+            "You don't have to feed the cat.",
+            "You have to feed the cat.",
+            "You can feed the cat."
+          ],
+          "answer": "You have to feed the cat."
+        },
+        {
+          "id": "haveto_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos no tienen que nadar\" en inglés?",
+          "options": [
+            "They have to swim.",
+            "They can swim.",
+            "They don't have to swim.",
+            "They mustn't swim."
+          ],
+          "answer": "They don't have to swim."
+        },
+        {
+          "id": "haveto_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo tengo que ganar el partido\" en inglés?",
+          "options": [
+            "I don't have to win the game.",
+            "I can win the game.",
+            "I have to win the game.",
+            "I could win the game."
+          ],
+          "answer": "I have to win the game."
+        },
+        {
+          "id": "haveto_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no tiene que ver la tele\" en inglés?",
+          "options": [
+            "She can watch TV.",
+            "She mustn't watch TV.",
+            "She doesn't have to watch TV.",
+            "She has to watch TV."
+          ],
+          "answer": "She doesn't have to watch TV."
+        },
+        {
+          "id": "haveto_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom tiene que saltar\" en inglés?",
+          "options": [
+            "Tom can jump.",
+            "Tom could jump.",
+            "Tom has to jump.",
+            "Tom doesn't have to jump."
+          ],
+          "answer": "Tom has to jump."
+        },
+        {
+          "id": "haveto_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no tiene que saltar\" en inglés?",
+          "options": [
+            "She mustn't jump.",
+            "She has to jump.",
+            "She can jump.",
+            "She doesn't have to jump."
+          ],
+          "answer": "She doesn't have to jump."
+        },
+        {
+          "id": "haveto_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro tiene que escuchar música\" en inglés?",
+          "options": [
+            "The dog has to listen to music.",
+            "The dog can listen to music.",
+            "The dog doesn't have to listen to music.",
+            "The dog could listen to music."
+          ],
+          "answer": "The dog has to listen to music."
+        },
+        {
+          "id": "haveto_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que ver la tele\" en inglés?",
+          "options": [
+            "I mustn't watch TV.",
+            "I have to watch TV.",
+            "I don't have to watch TV.",
+            "I can watch TV."
+          ],
+          "answer": "I don't have to watch TV."
+        },
+        {
+          "id": "haveto_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom tiene que limpiar la casa\" en inglés?",
+          "options": [
+            "Tom doesn't have to clean the house.",
+            "Tom can clean the house.",
+            "Tom has to clean the house.",
+            "Tom could clean the house."
+          ],
+          "answer": "Tom has to clean the house."
+        },
+        {
+          "id": "haveto_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no tiene que comer\" en inglés?",
+          "options": [
+            "It has to have lunch.",
+            "It doesn't have to have lunch.",
+            "It can have lunch.",
+            "It mustn't have lunch."
+          ],
+          "answer": "It doesn't have to have lunch."
+        },
+        {
+          "id": "haveto_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos tienen que montar en bici\" en inglés?",
+          "options": [
+            "They don't have to ride a bike.",
+            "They can ride a bike.",
+            "They have to ride a bike.",
+            "They could ride a bike."
+          ],
+          "answer": "They have to ride a bike."
+        },
+        {
+          "id": "haveto_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no tiene que escuchar música\" en inglés?",
+          "options": [
+            "Our cat has to listen to music.",
+            "Our cat doesn't have to listen to music.",
+            "Our cat can listen to music.",
+            "Our cat mustn't listen to music."
+          ],
+          "answer": "Our cat doesn't have to listen to music."
+        },
+        {
+          "id": "haveto_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú tienes que trepar a un árbol\" en inglés?",
+          "options": [
+            "You can climb a tree.",
+            "You could climb a tree.",
+            "You have to climb a tree.",
+            "You don't have to climb a tree."
+          ],
+          "answer": "You have to climb a tree."
+        },
+        {
+          "id": "haveto_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no tenemos que ver la tele\" en inglés?",
+          "options": [
+            "We don't have to watch TV.",
+            "We mustn't watch TV.",
+            "We can watch TV.",
+            "We have to watch TV."
+          ],
+          "answer": "We don't have to watch TV."
+        },
+        {
+          "id": "haveto_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro tiene que hacer los deberes\" en inglés?",
+          "options": [
+            "The dog could do homework.",
+            "The dog can do homework.",
+            "The dog doesn't have to do homework.",
+            "The dog has to do homework."
+          ],
+          "answer": "The dog has to do homework."
+        },
+        {
+          "id": "haveto_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no tenemos que comer\" en inglés?",
+          "options": [
+            "We don't have to have lunch.",
+            "We can have lunch.",
+            "We mustn't have lunch.",
+            "We have to have lunch."
+          ],
+          "answer": "We don't have to have lunch."
+        },
+        {
+          "id": "haveto_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él tiene que limpiar la casa\" en inglés?",
+          "options": [
+            "He has to clean the house.",
+            "He can clean the house.",
+            "He could clean the house.",
+            "He doesn't have to clean the house."
+          ],
+          "answer": "He has to clean the house."
+        },
+        {
+          "id": "haveto_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no tiene que hacer los deberes\" en inglés?",
+          "options": [
+            "It doesn't have to do homework.",
+            "It mustn't do homework.",
+            "It has to do homework.",
+            "It can do homework."
+          ],
+          "answer": "It doesn't have to do homework."
+        },
+        {
+          "id": "haveto_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato tiene que nadar\" en inglés?",
+          "options": [
+            "Our cat doesn't have to swim.",
+            "Our cat has to swim.",
+            "Our cat could swim.",
+            "Our cat can swim."
+          ],
+          "answer": "Our cat has to swim."
+        },
+        {
+          "id": "haveto_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no tiene que escribir una carta\" en inglés?",
+          "options": [
+            "Maria has to write a letter.",
+            "Maria can write a letter.",
+            "Maria doesn't have to write a letter.",
+            "Maria mustn't write a letter."
+          ],
+          "answer": "Maria doesn't have to write a letter."
+        },
+        {
+          "id": "haveto_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana tiene que caminar al colegio\" en inglés?",
+          "options": [
+            "My sister doesn't have to walk to school.",
+            "My sister has to walk to school.",
+            "My sister could walk to school.",
+            "My sister can walk to school."
+          ],
+          "answer": "My sister has to walk to school."
+        },
+        {
+          "id": "haveto_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no tienen que visitar a su abuela\" en inglés?",
+          "options": [
+            "The students have to visit their grandma.",
+            "The students don't have to visit their grandma.",
+            "The students mustn't visit their grandma.",
+            "The students can visit their grandma."
+          ],
+          "answer": "The students don't have to visit their grandma."
+        },
+        {
+          "id": "haveto_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato tiene que dar de comer al gato\" en inglés?",
+          "options": [
+            "Our cat could feed the cat.",
+            "Our cat doesn't have to feed the cat.",
+            "Our cat can feed the cat.",
+            "Our cat has to feed the cat."
+          ],
+          "answer": "Our cat has to feed the cat."
+        },
+        {
+          "id": "haveto_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no tienes que hacer los deberes\" en inglés?",
+          "options": [
+            "You have to do homework.",
+            "You don't have to do homework.",
+            "You mustn't do homework.",
+            "You can do homework."
+          ],
+          "answer": "You don't have to do homework."
+        },
+        {
+          "id": "haveto_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María tiene que cepillarse los dientes\" en inglés?",
+          "options": [
+            "Maria could brush their teeth.",
+            "Maria can brush their teeth.",
+            "Maria doesn't have to brush their teeth.",
+            "Maria has to brush their teeth."
+          ],
+          "answer": "Maria has to brush their teeth."
+        },
+        {
+          "id": "haveto_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que bailar\" en inglés?",
+          "options": [
+            "I mustn't dance.",
+            "I have to dance.",
+            "I don't have to dance.",
+            "I can dance."
+          ],
+          "answer": "I don't have to dance."
+        },
+        {
+          "id": "haveto_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano tiene que dar de comer al gato\" en inglés?",
+          "options": [
+            "My brother can feed the cat.",
+            "My brother could feed the cat.",
+            "My brother has to feed the cat.",
+            "My brother doesn't have to feed the cat."
+          ],
+          "answer": "My brother has to feed the cat."
+        },
+        {
+          "id": "haveto_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no tiene que visitar a su abuela\" en inglés?",
+          "options": [
+            "Our cat mustn't visit their grandma.",
+            "Our cat doesn't have to visit their grandma.",
+            "Our cat can visit their grandma.",
+            "Our cat has to visit their grandma."
+          ],
+          "answer": "Our cat doesn't have to visit their grandma."
+        },
+        {
+          "id": "haveto_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes tienen que bailar\" en inglés?",
+          "options": [
+            "The students don't have to dance.",
+            "The students could dance.",
+            "The students have to dance.",
+            "The students can dance."
+          ],
+          "answer": "The students have to dance."
+        },
+        {
+          "id": "haveto_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos no tienen que ver la tele\" en inglés?",
+          "options": [
+            "They don't have to watch TV.",
+            "They have to watch TV.",
+            "They mustn't watch TV.",
+            "They can watch TV."
+          ],
+          "answer": "They don't have to watch TV."
+        },
+        {
+          "id": "haveto_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros tenemos que ayudar a su madre\" en inglés?",
+          "options": [
+            "We have to help their mum.",
+            "We don't have to help their mum.",
+            "We could help their mum.",
+            "We can help their mum."
+          ],
+          "answer": "We have to help their mum."
+        },
+        {
+          "id": "haveto_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no tiene que jugar al fútbol\" en inglés?",
+          "options": [
+            "Our cat can play football.",
+            "Our cat has to play football.",
+            "Our cat doesn't have to play football.",
+            "Our cat mustn't play football."
+          ],
+          "answer": "Our cat doesn't have to play football."
+        },
+        {
+          "id": "haveto_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes tienen que ganar el partido\" en inglés?",
+          "options": [
+            "The students could win the game.",
+            "The students don't have to win the game.",
+            "The students have to win the game.",
+            "The students can win the game."
+          ],
+          "answer": "The students have to win the game."
+        },
+        {
+          "id": "haveto_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no tiene que ver la tele\" en inglés?",
+          "options": [
+            "Tom has to watch TV.",
+            "Tom doesn't have to watch TV.",
+            "Tom can watch TV.",
+            "Tom mustn't watch TV."
+          ],
+          "answer": "Tom doesn't have to watch TV."
+        },
+        {
+          "id": "haveto_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María tiene que montar en bici\" en inglés?",
+          "options": [
+            "Maria doesn't have to ride a bike.",
+            "Maria can ride a bike.",
+            "Maria could ride a bike.",
+            "Maria has to ride a bike."
+          ],
+          "answer": "Maria has to ride a bike."
+        },
+        {
+          "id": "haveto_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no tienen que trepar a un árbol\" en inglés?",
+          "options": [
+            "The students have to climb a tree.",
+            "The students can climb a tree.",
+            "The students mustn't climb a tree.",
+            "The students don't have to climb a tree."
+          ],
+          "answer": "The students don't have to climb a tree."
+        },
+        {
+          "id": "haveto_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos tienen que cocinar la cena\" en inglés?",
+          "options": [
+            "The boys could cook dinner.",
+            "The boys have to cook dinner.",
+            "The boys can cook dinner.",
+            "The boys don't have to cook dinner."
+          ],
+          "answer": "The boys have to cook dinner."
+        },
+        {
+          "id": "haveto_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no tienes que ganar el partido\" en inglés?",
+          "options": [
+            "You don't have to win the game.",
+            "You mustn't win the game.",
+            "You can win the game.",
+            "You have to win the game."
+          ],
+          "answer": "You don't have to win the game."
+        },
+        {
+          "id": "haveto_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros tenemos que ganar el partido\" en inglés?",
+          "options": [
+            "We have to win the game.",
+            "We can win the game.",
+            "We don't have to win the game.",
+            "We could win the game."
+          ],
+          "answer": "We have to win the game."
+        },
+        {
+          "id": "haveto_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no tiene que comer\" en inglés?",
+          "options": [
+            "She has to have lunch.",
+            "She doesn't have to have lunch.",
+            "She mustn't have lunch.",
+            "She can have lunch."
+          ],
+          "answer": "She doesn't have to have lunch."
+        },
+        {
+          "id": "haveto_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo tengo que montar en bici\" en inglés?",
+          "options": [
+            "I don't have to ride a bike.",
+            "I have to ride a bike.",
+            "I can ride a bike.",
+            "I could ride a bike."
+          ],
+          "answer": "I have to ride a bike."
+        },
+        {
+          "id": "haveto_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no tiene que trepar a un árbol\" en inglés?",
+          "options": [
+            "It has to climb a tree.",
+            "It mustn't climb a tree.",
+            "It can climb a tree.",
+            "It doesn't have to climb a tree."
+          ],
+          "answer": "It doesn't have to climb a tree."
+        },
+        {
+          "id": "haveto_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella tiene que cocinar la cena\" en inglés?",
+          "options": [
+            "She doesn't have to cook dinner.",
+            "She could cook dinner.",
+            "She has to cook dinner.",
+            "She can cook dinner."
+          ],
+          "answer": "She has to cook dinner."
+        },
+        {
+          "id": "haveto_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no tenemos que cantar una canción\" en inglés?",
+          "options": [
+            "We mustn't sing a song.",
+            "We have to sing a song.",
+            "We don't have to sing a song.",
+            "We can sing a song."
+          ],
+          "answer": "We don't have to sing a song."
+        },
+        {
+          "id": "haveto_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres tienen que saltar\" en inglés?",
+          "options": [
+            "My parents have to jump.",
+            "My parents could jump.",
+            "My parents don't have to jump.",
+            "My parents can jump."
+          ],
+          "answer": "My parents have to jump."
+        },
+        {
+          "id": "haveto_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no tienen que visitar a su abuela\" en inglés?",
+          "options": [
+            "The boys don't have to visit their grandma.",
+            "The boys have to visit their grandma.",
+            "The boys can visit their grandma.",
+            "The boys mustn't visit their grandma."
+          ],
+          "answer": "The boys don't have to visit their grandma."
+        },
+        {
+          "id": "haveto_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños tienen que montar en bici\" en inglés?",
+          "options": [
+            "The children could ride a bike.",
+            "The children can ride a bike.",
+            "The children don't have to ride a bike.",
+            "The children have to ride a bike."
+          ],
+          "answer": "The children have to ride a bike."
+        },
+        {
+          "id": "haveto_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que dar de comer al gato\" en inglés?",
+          "options": [
+            "I mustn't feed the cat.",
+            "I can feed the cat.",
+            "I have to feed the cat.",
+            "I don't have to feed the cat."
+          ],
+          "answer": "I don't have to feed the cat."
+        },
+        {
+          "id": "haveto_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres tienen que jugar al fútbol\" en inglés?",
+          "options": [
+            "My parents have to play football.",
+            "My parents can play football.",
+            "My parents don't have to play football.",
+            "My parents could play football."
+          ],
+          "answer": "My parents have to play football."
+        },
+        {
+          "id": "haveto_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no tienen que comer\" en inglés?",
+          "options": [
+            "The students have to have lunch.",
+            "The students don't have to have lunch.",
+            "The students mustn't have lunch.",
+            "The students can have lunch."
+          ],
+          "answer": "The students don't have to have lunch."
+        },
+        {
+          "id": "haveto_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom tiene que trepar a un árbol\" en inglés?",
+          "options": [
+            "Tom has to climb a tree.",
+            "Tom can climb a tree.",
+            "Tom could climb a tree.",
+            "Tom doesn't have to climb a tree."
+          ],
+          "answer": "Tom has to climb a tree."
+        },
+        {
+          "id": "haveto_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no tienen que hacer los deberes\" en inglés?",
+          "options": [
+            "My parents can do homework.",
+            "My parents have to do homework.",
+            "My parents don't have to do homework.",
+            "My parents mustn't do homework."
+          ],
+          "answer": "My parents don't have to do homework."
+        },
+        {
+          "id": "haveto_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos tienen que escuchar música\" en inglés?",
+          "options": [
+            "They don't have to listen to music.",
+            "They could listen to music.",
+            "They can listen to music.",
+            "They have to listen to music."
+          ],
+          "answer": "They have to listen to music."
+        },
+        {
+          "id": "haveto_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no tengo que cepillarse los dientes\" en inglés?",
+          "options": [
+            "I have to brush their teeth.",
+            "I mustn't brush their teeth.",
+            "I can brush their teeth.",
+            "I don't have to brush their teeth."
+          ],
+          "answer": "I don't have to brush their teeth."
+        }
+      ]
+    }
+  ]
+}

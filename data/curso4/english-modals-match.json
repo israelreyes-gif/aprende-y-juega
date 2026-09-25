@@ -1,0 +1,40 @@
+{
+  "pairs": [
+    {
+      "left": "Pedir permiso o algo educadamente",
+      "right": "Could I open the window, please?"
+    },
+    {
+      "left": "Hablar de algo que sabías hacer de pequeño",
+      "right": "I could ride a bike when I was four."
+    },
+    {
+      "left": "Decir que no fuiste capaz de hacer algo en el pasado",
+      "right": "She couldn't find her keys."
+    },
+    {
+      "left": "Una norma muy importante que hay que cumplir",
+      "right": "You must wear a seatbelt in the car."
+    },
+    {
+      "left": "Algo que está prohibido hacer",
+      "right": "You mustn't touch the paintings."
+    },
+    {
+      "left": "Preguntar si es obligatorio hacer algo hoy",
+      "right": "Must I finish this today?"
+    },
+    {
+      "left": "Una obligación que viene de fuera (normas del colegio)",
+      "right": "I have to wear a uniform at school."
+    },
+    {
+      "left": "Decir que algo NO es necesario, puedes elegir",
+      "right": "You don't have to bring a pencil."
+    },
+    {
+      "left": "Preguntar si alguien está obligado a hacer algo",
+      "right": "Do you have to work today?"
+    }
+  ]
+}

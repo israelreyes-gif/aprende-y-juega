@@ -1,0 +1,4811 @@
+{
+  "units": [
+    {
+      "id": "must-c4",
+      "title": "Must",
+      "emoji": "🔴",
+      "exercises": [
+        {
+          "id": "must_a_1",
+          "type": "A",
+          "question": "At school, My brother ___ do homework.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_2",
+          "type": "A",
+          "question": "At school, The children ___ win the game.",
+          "options": [
+            "would",
+            "mustn't",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_3",
+          "type": "A",
+          "question": "At school, We ___ listen to music.",
+          "options": [
+            "would",
+            "must",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_4",
+          "type": "A",
+          "question": "At school, I ___ climb a tree.",
+          "options": [
+            "could",
+            "mustn't",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_5",
+          "type": "A",
+          "question": "At school, She ___ win the game.",
+          "options": [
+            "must",
+            "mustn't",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_6",
+          "type": "A",
+          "question": "At school, Tom ___ listen to music.",
+          "options": [
+            "could",
+            "mustn't",
+            "must",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_7",
+          "type": "A",
+          "question": "At school, The children ___ have lunch.",
+          "options": [
+            "must",
+            "mustn't",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_8",
+          "type": "A",
+          "question": "At school, We ___ watch TV.",
+          "options": [
+            "mustn't",
+            "must",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_9",
+          "type": "A",
+          "question": "At school, My sister ___ climb a tree.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_10",
+          "type": "A",
+          "question": "At school, It ___ visit their grandma.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_11",
+          "type": "A",
+          "question": "At school, Maria ___ walk to school.",
+          "options": [
+            "mustn't",
+            "could",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_12",
+          "type": "A",
+          "question": "At school, My brother ___ win the game.",
+          "options": [
+            "would",
+            "could",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_13",
+          "type": "A",
+          "question": "At school, Maria ___ brush their teeth.",
+          "options": [
+            "would",
+            "must",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_14",
+          "type": "A",
+          "question": "At school, It ___ watch TV.",
+          "options": [
+            "mustn't",
+            "must",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_15",
+          "type": "A",
+          "question": "At school, You ___ clean the house.",
+          "options": [
+            "could",
+            "must",
+            "would",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_16",
+          "type": "A",
+          "question": "At school, The students ___ run.",
+          "options": [
+            "must",
+            "mustn't",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_17",
+          "type": "A",
+          "question": "At school, I ___ do homework.",
+          "options": [
+            "mustn't",
+            "could",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_18",
+          "type": "A",
+          "question": "At school, Maria ___ play football.",
+          "options": [
+            "could",
+            "mustn't",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_19",
+          "type": "A",
+          "question": "At school, The children ___ feed the cat.",
+          "options": [
+            "must",
+            "would",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_20",
+          "type": "A",
+          "question": "At school, The children ___ dance.",
+          "options": [
+            "could",
+            "mustn't",
+            "must",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_21",
+          "type": "A",
+          "question": "At school, She ___ wash the dishes.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_22",
+          "type": "A",
+          "question": "At school, My sister ___ walk to school.",
+          "options": [
+            "mustn't",
+            "must",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_23",
+          "type": "A",
+          "question": "At school, It ___ climb a tree.",
+          "options": [
+            "would",
+            "could",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_24",
+          "type": "A",
+          "question": "At school, They ___ sing a song.",
+          "options": [
+            "must",
+            "could",
+            "would",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_25",
+          "type": "A",
+          "question": "At school, She ___ play football.",
+          "options": [
+            "mustn't",
+            "would",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_26",
+          "type": "A",
+          "question": "At school, It ___ jump.",
+          "options": [
+            "mustn't",
+            "would",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_27",
+          "type": "A",
+          "question": "At school, We ___ write a letter.",
+          "options": [
+            "must",
+            "mustn't",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_28",
+          "type": "A",
+          "question": "At school, The students ___ climb a tree.",
+          "options": [
+            "could",
+            "would",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_29",
+          "type": "A",
+          "question": "At school, She ___ dance.",
+          "options": [
+            "could",
+            "would",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_30",
+          "type": "A",
+          "question": "At school, The children ___ brush their teeth.",
+          "options": [
+            "could",
+            "would",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_31",
+          "type": "A",
+          "question": "At school, Our cat ___ brush their teeth.",
+          "options": [
+            "must",
+            "mustn't",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_32",
+          "type": "A",
+          "question": "At school, The boys ___ feed the cat.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_33",
+          "type": "A",
+          "question": "At school, Tom ___ ride a bike.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_34",
+          "type": "A",
+          "question": "At school, The dog ___ win the game.",
+          "options": [
+            "must",
+            "could",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_35",
+          "type": "A",
+          "question": "At school, I ___ write a letter.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_36",
+          "type": "A",
+          "question": "At school, Our cat ___ do homework.",
+          "options": [
+            "would",
+            "mustn't",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_37",
+          "type": "A",
+          "question": "At school, They ___ go to the party.",
+          "options": [
+            "must",
+            "would",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_38",
+          "type": "A",
+          "question": "At school, My parents ___ play football.",
+          "options": [
+            "mustn't",
+            "must",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_39",
+          "type": "A",
+          "question": "At school, My parents ___ do homework.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_40",
+          "type": "A",
+          "question": "At school, You ___ cook dinner.",
+          "options": [
+            "would",
+            "must",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_41",
+          "type": "A",
+          "question": "At school, You ___ have lunch.",
+          "options": [
+            "mustn't",
+            "must",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_42",
+          "type": "A",
+          "question": "At school, She ___ draw a picture.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_43",
+          "type": "A",
+          "question": "At school, Maria ___ listen to music.",
+          "options": [
+            "mustn't",
+            "could",
+            "must",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_44",
+          "type": "A",
+          "question": "At school, She ___ write a letter.",
+          "options": [
+            "must",
+            "would",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_45",
+          "type": "A",
+          "question": "At school, They ___ do homework.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_46",
+          "type": "A",
+          "question": "At school, You ___ play football.",
+          "options": [
+            "must",
+            "could",
+            "would",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_47",
+          "type": "A",
+          "question": "At school, The boys ___ dance.",
+          "options": [
+            "would",
+            "mustn't",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_48",
+          "type": "A",
+          "question": "At school, The children ___ play football.",
+          "options": [
+            "would",
+            "could",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_49",
+          "type": "A",
+          "question": "At school, We ___ have lunch.",
+          "options": [
+            "mustn't",
+            "must",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_50",
+          "type": "A",
+          "question": "At school, The children ___ visit their grandma.",
+          "options": [
+            "mustn't",
+            "would",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_51",
+          "type": "A",
+          "question": "At school, The students ___ ride a bike.",
+          "options": [
+            "must",
+            "could",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_52",
+          "type": "A",
+          "question": "At school, The boys ___ swim.",
+          "options": [
+            "must",
+            "could",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_53",
+          "type": "A",
+          "question": "At school, My parents ___ listen to music.",
+          "options": [
+            "must",
+            "would",
+            "could",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_54",
+          "type": "A",
+          "question": "At school, My sister ___ do homework.",
+          "options": [
+            "mustn't",
+            "would",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_55",
+          "type": "A",
+          "question": "At school, He ___ watch TV.",
+          "options": [
+            "must",
+            "mustn't",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_56",
+          "type": "A",
+          "question": "At school, The dog ___ write a letter.",
+          "options": [
+            "would",
+            "mustn't",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_57",
+          "type": "A",
+          "question": "At school, Our cat ___ write a letter.",
+          "options": [
+            "could",
+            "mustn't",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_58",
+          "type": "A",
+          "question": "At school, He ___ help their mum.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_59",
+          "type": "A",
+          "question": "At school, Maria ___ study English.",
+          "options": [
+            "mustn't",
+            "could",
+            "must",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_60",
+          "type": "A",
+          "question": "At school, Maria ___ draw a picture.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_61",
+          "type": "A",
+          "question": "At school, I ___ cook dinner.",
+          "options": [
+            "must",
+            "mustn't",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_62",
+          "type": "A",
+          "question": "At school, The dog ___ draw a picture.",
+          "options": [
+            "mustn't",
+            "would",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_63",
+          "type": "A",
+          "question": "At school, She ___ sing a song.",
+          "options": [
+            "must",
+            "could",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_64",
+          "type": "A",
+          "question": "At school, My sister ___ cook dinner.",
+          "options": [
+            "mustn't",
+            "must",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_65",
+          "type": "A",
+          "question": "At school, The dog ___ climb a tree.",
+          "options": [
+            "could",
+            "mustn't",
+            "must",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_66",
+          "type": "A",
+          "question": "At school, My brother ___ climb a tree.",
+          "options": [
+            "must",
+            "could",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_67",
+          "type": "A",
+          "question": "At school, He ___ play football.",
+          "options": [
+            "mustn't",
+            "could",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_68",
+          "type": "A",
+          "question": "At school, Our cat ___ draw a picture.",
+          "options": [
+            "could",
+            "mustn't",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_69",
+          "type": "A",
+          "question": "At school, Our cat ___ walk to school.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_70",
+          "type": "A",
+          "question": "At school, The dog ___ walk to school.",
+          "options": [
+            "could",
+            "mustn't",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_71",
+          "type": "A",
+          "question": "At school, My sister ___ help their mum.",
+          "options": [
+            "must",
+            "mustn't",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_72",
+          "type": "A",
+          "question": "At school, You ___ feed the cat.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_73",
+          "type": "A",
+          "question": "At school, The children ___ climb a tree.",
+          "options": [
+            "must",
+            "mustn't",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_74",
+          "type": "A",
+          "question": "At school, The dog ___ ride a bike.",
+          "options": [
+            "mustn't",
+            "must",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_75",
+          "type": "A",
+          "question": "At school, The children ___ swim.",
+          "options": [
+            "must",
+            "mustn't",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_76",
+          "type": "A",
+          "question": "At school, The dog ___ listen to music.",
+          "options": [
+            "must",
+            "would",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_77",
+          "type": "A",
+          "question": "At school, She ___ watch TV.",
+          "options": [
+            "must",
+            "would",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_78",
+          "type": "A",
+          "question": "At school, My sister ___ win the game.",
+          "options": [
+            "would",
+            "mustn't",
+            "could",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_79",
+          "type": "A",
+          "question": "At school, They ___ clean the house.",
+          "options": [
+            "would",
+            "must",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_80",
+          "type": "A",
+          "question": "At school, The students ___ feed the cat.",
+          "options": [
+            "could",
+            "must",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_81",
+          "type": "A",
+          "question": "At school, Maria ___ watch TV.",
+          "options": [
+            "must",
+            "mustn't",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_82",
+          "type": "A",
+          "question": "At school, They ___ play football.",
+          "options": [
+            "could",
+            "would",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_83",
+          "type": "A",
+          "question": "At school, Tom ___ help their mum.",
+          "options": [
+            "must",
+            "could",
+            "would",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_84",
+          "type": "A",
+          "question": "At school, They ___ listen to music.",
+          "options": [
+            "could",
+            "mustn't",
+            "must",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_85",
+          "type": "A",
+          "question": "At school, The dog ___ brush their teeth.",
+          "options": [
+            "could",
+            "must",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_86",
+          "type": "A",
+          "question": "At school, The dog ___ help their mum.",
+          "options": [
+            "must",
+            "mustn't",
+            "could",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_87",
+          "type": "A",
+          "question": "At school, My brother ___ sing a song.",
+          "options": [
+            "mustn't",
+            "could",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_88",
+          "type": "A",
+          "question": "At school, You ___ climb a tree.",
+          "options": [
+            "mustn't",
+            "could",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_89",
+          "type": "A",
+          "question": "At school, My parents ___ ride a bike.",
+          "options": [
+            "mustn't",
+            "could",
+            "must",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_90",
+          "type": "A",
+          "question": "At school, Maria ___ jump.",
+          "options": [
+            "could",
+            "mustn't",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_91",
+          "type": "A",
+          "question": "At school, My brother ___ feed the cat.",
+          "options": [
+            "could",
+            "must",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_92",
+          "type": "A",
+          "question": "At school, The students ___ jump.",
+          "options": [
+            "mustn't",
+            "must",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_93",
+          "type": "A",
+          "question": "At school, We ___ do homework.",
+          "options": [
+            "must",
+            "could",
+            "mustn't",
+            "would"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_94",
+          "type": "A",
+          "question": "At school, My sister ___ have lunch.",
+          "options": [
+            "must",
+            "mustn't",
+            "would",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_95",
+          "type": "A",
+          "question": "At school, You ___ dance.",
+          "options": [
+            "would",
+            "must",
+            "mustn't",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_96",
+          "type": "A",
+          "question": "At school, The boys ___ cook dinner.",
+          "options": [
+            "could",
+            "mustn't",
+            "would",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_97",
+          "type": "A",
+          "question": "At school, I ___ help their mum.",
+          "options": [
+            "would",
+            "must",
+            "could",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_98",
+          "type": "A",
+          "question": "At school, Tom ___ have lunch.",
+          "options": [
+            "could",
+            "would",
+            "must",
+            "mustn't"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_99",
+          "type": "A",
+          "question": "At school, Tom ___ study English.",
+          "options": [
+            "would",
+            "could",
+            "mustn't",
+            "must"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_a_100",
+          "type": "A",
+          "question": "At school, Our cat ___ wash the dishes.",
+          "options": [
+            "would",
+            "mustn't",
+            "must",
+            "could"
+          ],
+          "answer": "must"
+        },
+        {
+          "id": "must_b_1",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My brother must help their mum.\"",
+          "options": [
+            "My brother don't must help their mum.",
+            "My brother mustn't help their mum.",
+            "My brother doesn't must help their mum.",
+            "My brother not must help their mum."
+          ],
+          "answer": "My brother mustn't help their mum."
+        },
+        {
+          "id": "must_b_2",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My brother must listen to music.\"",
+          "options": [
+            "My brother don't must listen to music.",
+            "My brother doesn't must listen to music.",
+            "My brother not must listen to music.",
+            "My brother mustn't listen to music."
+          ],
+          "answer": "My brother mustn't listen to music."
+        },
+        {
+          "id": "must_b_3",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must play football.\"",
+          "options": [
+            "The boys mustn't play football.",
+            "The boys not must play football.",
+            "The boys don't must play football.",
+            "The boys doesn't must play football."
+          ],
+          "answer": "The boys mustn't play football."
+        },
+        {
+          "id": "must_b_4",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The students must brush their teeth.\"",
+          "options": [
+            "The students mustn't brush their teeth.",
+            "The students don't must brush their teeth.",
+            "The students doesn't must brush their teeth.",
+            "The students not must brush their teeth."
+          ],
+          "answer": "The students mustn't brush their teeth."
+        },
+        {
+          "id": "must_b_5",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Our cat must ride a bike.\"",
+          "options": [
+            "Our cat mustn't ride a bike.",
+            "Our cat not must ride a bike.",
+            "Our cat don't must ride a bike.",
+            "Our cat doesn't must ride a bike."
+          ],
+          "answer": "Our cat mustn't ride a bike."
+        },
+        {
+          "id": "must_b_6",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My parents must run.\"",
+          "options": [
+            "My parents don't must run.",
+            "My parents not must run.",
+            "My parents mustn't run.",
+            "My parents doesn't must run."
+          ],
+          "answer": "My parents mustn't run."
+        },
+        {
+          "id": "must_b_7",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The students must clean the house.\"",
+          "options": [
+            "The students not must clean the house.",
+            "The students don't must clean the house.",
+            "The students mustn't clean the house.",
+            "The students doesn't must clean the house."
+          ],
+          "answer": "The students mustn't clean the house."
+        },
+        {
+          "id": "must_b_8",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The students must play football.\"",
+          "options": [
+            "The students doesn't must play football.",
+            "The students don't must play football.",
+            "The students mustn't play football.",
+            "The students not must play football."
+          ],
+          "answer": "The students mustn't play football."
+        },
+        {
+          "id": "must_b_9",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must visit their grandma.\"",
+          "options": [
+            "The boys doesn't must visit their grandma.",
+            "The boys mustn't visit their grandma.",
+            "The boys not must visit their grandma.",
+            "The boys don't must visit their grandma."
+          ],
+          "answer": "The boys mustn't visit their grandma."
+        },
+        {
+          "id": "must_b_10",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The children must help their mum.\"",
+          "options": [
+            "The children don't must help their mum.",
+            "The children mustn't help their mum.",
+            "The children not must help their mum.",
+            "The children doesn't must help their mum."
+          ],
+          "answer": "The children mustn't help their mum."
+        },
+        {
+          "id": "must_b_11",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Maria must cook dinner.\"",
+          "options": [
+            "Maria don't must cook dinner.",
+            "Maria doesn't must cook dinner.",
+            "Maria mustn't cook dinner.",
+            "Maria not must cook dinner."
+          ],
+          "answer": "Maria mustn't cook dinner."
+        },
+        {
+          "id": "must_b_12",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"He must cook dinner.\"",
+          "options": [
+            "He doesn't must cook dinner.",
+            "He mustn't cook dinner.",
+            "He not must cook dinner.",
+            "He don't must cook dinner."
+          ],
+          "answer": "He mustn't cook dinner."
+        },
+        {
+          "id": "must_b_13",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My brother must study English.\"",
+          "options": [
+            "My brother not must study English.",
+            "My brother doesn't must study English.",
+            "My brother mustn't study English.",
+            "My brother don't must study English."
+          ],
+          "answer": "My brother mustn't study English."
+        },
+        {
+          "id": "must_b_14",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must ride a bike.\"",
+          "options": [
+            "My sister don't must ride a bike.",
+            "My sister mustn't ride a bike.",
+            "My sister not must ride a bike.",
+            "My sister doesn't must ride a bike."
+          ],
+          "answer": "My sister mustn't ride a bike."
+        },
+        {
+          "id": "must_b_15",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must win the game.\"",
+          "options": [
+            "We don't must win the game.",
+            "We mustn't win the game.",
+            "We doesn't must win the game.",
+            "We not must win the game."
+          ],
+          "answer": "We mustn't win the game."
+        },
+        {
+          "id": "must_b_16",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The students must do homework.\"",
+          "options": [
+            "The students don't must do homework.",
+            "The students doesn't must do homework.",
+            "The students not must do homework.",
+            "The students mustn't do homework."
+          ],
+          "answer": "The students mustn't do homework."
+        },
+        {
+          "id": "must_b_17",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must swim.\"",
+          "options": [
+            "We don't must swim.",
+            "We mustn't swim.",
+            "We doesn't must swim.",
+            "We not must swim."
+          ],
+          "answer": "We mustn't swim."
+        },
+        {
+          "id": "must_b_18",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Our cat must go to the party.\"",
+          "options": [
+            "Our cat doesn't must go to the party.",
+            "Our cat mustn't go to the party.",
+            "Our cat don't must go to the party.",
+            "Our cat not must go to the party."
+          ],
+          "answer": "Our cat mustn't go to the party."
+        },
+        {
+          "id": "must_b_19",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must brush their teeth.\"",
+          "options": [
+            "We mustn't brush their teeth.",
+            "We not must brush their teeth.",
+            "We doesn't must brush their teeth.",
+            "We don't must brush their teeth."
+          ],
+          "answer": "We mustn't brush their teeth."
+        },
+        {
+          "id": "must_b_20",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must play football.\"",
+          "options": [
+            "My sister mustn't play football.",
+            "My sister don't must play football.",
+            "My sister not must play football.",
+            "My sister doesn't must play football."
+          ],
+          "answer": "My sister mustn't play football."
+        },
+        {
+          "id": "must_b_21",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My parents must swim.\"",
+          "options": [
+            "My parents doesn't must swim.",
+            "My parents don't must swim.",
+            "My parents not must swim.",
+            "My parents mustn't swim."
+          ],
+          "answer": "My parents mustn't swim."
+        },
+        {
+          "id": "must_b_22",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Tom must draw a picture.\"",
+          "options": [
+            "Tom don't must draw a picture.",
+            "Tom not must draw a picture.",
+            "Tom mustn't draw a picture.",
+            "Tom doesn't must draw a picture."
+          ],
+          "answer": "Tom mustn't draw a picture."
+        },
+        {
+          "id": "must_b_23",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The children must walk to school.\"",
+          "options": [
+            "The children don't must walk to school.",
+            "The children not must walk to school.",
+            "The children doesn't must walk to school.",
+            "The children mustn't walk to school."
+          ],
+          "answer": "The children mustn't walk to school."
+        },
+        {
+          "id": "must_b_24",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My parents must clean the house.\"",
+          "options": [
+            "My parents don't must clean the house.",
+            "My parents doesn't must clean the house.",
+            "My parents mustn't clean the house.",
+            "My parents not must clean the house."
+          ],
+          "answer": "My parents mustn't clean the house."
+        },
+        {
+          "id": "must_b_25",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"She must visit their grandma.\"",
+          "options": [
+            "She mustn't visit their grandma.",
+            "She don't must visit their grandma.",
+            "She doesn't must visit their grandma.",
+            "She not must visit their grandma."
+          ],
+          "answer": "She mustn't visit their grandma."
+        },
+        {
+          "id": "must_b_26",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must write a letter.\"",
+          "options": [
+            "The boys don't must write a letter.",
+            "The boys not must write a letter.",
+            "The boys doesn't must write a letter.",
+            "The boys mustn't write a letter."
+          ],
+          "answer": "The boys mustn't write a letter."
+        },
+        {
+          "id": "must_b_27",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"I must walk to school.\"",
+          "options": [
+            "I mustn't walk to school.",
+            "I don't must walk to school.",
+            "I doesn't must walk to school.",
+            "I not must walk to school."
+          ],
+          "answer": "I mustn't walk to school."
+        },
+        {
+          "id": "must_b_28",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must run.\"",
+          "options": [
+            "My sister don't must run.",
+            "My sister mustn't run.",
+            "My sister doesn't must run.",
+            "My sister not must run."
+          ],
+          "answer": "My sister mustn't run."
+        },
+        {
+          "id": "must_b_29",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must jump.\"",
+          "options": [
+            "We don't must jump.",
+            "We mustn't jump.",
+            "We doesn't must jump.",
+            "We not must jump."
+          ],
+          "answer": "We mustn't jump."
+        },
+        {
+          "id": "must_b_30",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must dance.\"",
+          "options": [
+            "My sister doesn't must dance.",
+            "My sister not must dance.",
+            "My sister don't must dance.",
+            "My sister mustn't dance."
+          ],
+          "answer": "My sister mustn't dance."
+        },
+        {
+          "id": "must_b_31",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"They must win the game.\"",
+          "options": [
+            "They mustn't win the game.",
+            "They doesn't must win the game.",
+            "They don't must win the game.",
+            "They not must win the game."
+          ],
+          "answer": "They mustn't win the game."
+        },
+        {
+          "id": "must_b_32",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The children must go to the party.\"",
+          "options": [
+            "The children mustn't go to the party.",
+            "The children not must go to the party.",
+            "The children doesn't must go to the party.",
+            "The children don't must go to the party."
+          ],
+          "answer": "The children mustn't go to the party."
+        },
+        {
+          "id": "must_b_33",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"You must walk to school.\"",
+          "options": [
+            "You don't must walk to school.",
+            "You not must walk to school.",
+            "You mustn't walk to school.",
+            "You doesn't must walk to school."
+          ],
+          "answer": "You mustn't walk to school."
+        },
+        {
+          "id": "must_b_34",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must visit their grandma.\"",
+          "options": [
+            "My sister not must visit their grandma.",
+            "My sister doesn't must visit their grandma.",
+            "My sister mustn't visit their grandma.",
+            "My sister don't must visit their grandma."
+          ],
+          "answer": "My sister mustn't visit their grandma."
+        },
+        {
+          "id": "must_b_35",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must climb a tree.\"",
+          "options": [
+            "We not must climb a tree.",
+            "We don't must climb a tree.",
+            "We doesn't must climb a tree.",
+            "We mustn't climb a tree."
+          ],
+          "answer": "We mustn't climb a tree."
+        },
+        {
+          "id": "must_b_36",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must help their mum.\"",
+          "options": [
+            "We don't must help their mum.",
+            "We not must help their mum.",
+            "We mustn't help their mum.",
+            "We doesn't must help their mum."
+          ],
+          "answer": "We mustn't help their mum."
+        },
+        {
+          "id": "must_b_37",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must go to the party.\"",
+          "options": [
+            "The boys mustn't go to the party.",
+            "The boys don't must go to the party.",
+            "The boys not must go to the party.",
+            "The boys doesn't must go to the party."
+          ],
+          "answer": "The boys mustn't go to the party."
+        },
+        {
+          "id": "must_b_38",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must climb a tree.\"",
+          "options": [
+            "The boys doesn't must climb a tree.",
+            "The boys mustn't climb a tree.",
+            "The boys not must climb a tree.",
+            "The boys don't must climb a tree."
+          ],
+          "answer": "The boys mustn't climb a tree."
+        },
+        {
+          "id": "must_b_39",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The children must draw a picture.\"",
+          "options": [
+            "The children don't must draw a picture.",
+            "The children doesn't must draw a picture.",
+            "The children mustn't draw a picture.",
+            "The children not must draw a picture."
+          ],
+          "answer": "The children mustn't draw a picture."
+        },
+        {
+          "id": "must_b_40",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must run.\"",
+          "options": [
+            "We doesn't must run.",
+            "We don't must run.",
+            "We mustn't run.",
+            "We not must run."
+          ],
+          "answer": "We mustn't run."
+        },
+        {
+          "id": "must_b_41",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My parents must go to the party.\"",
+          "options": [
+            "My parents mustn't go to the party.",
+            "My parents don't must go to the party.",
+            "My parents doesn't must go to the party.",
+            "My parents not must go to the party."
+          ],
+          "answer": "My parents mustn't go to the party."
+        },
+        {
+          "id": "must_b_42",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"You must visit their grandma.\"",
+          "options": [
+            "You not must visit their grandma.",
+            "You mustn't visit their grandma.",
+            "You doesn't must visit their grandma.",
+            "You don't must visit their grandma."
+          ],
+          "answer": "You mustn't visit their grandma."
+        },
+        {
+          "id": "must_b_43",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must jump.\"",
+          "options": [
+            "The boys doesn't must jump.",
+            "The boys don't must jump.",
+            "The boys mustn't jump.",
+            "The boys not must jump."
+          ],
+          "answer": "The boys mustn't jump."
+        },
+        {
+          "id": "must_b_44",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Maria must wash the dishes.\"",
+          "options": [
+            "Maria not must wash the dishes.",
+            "Maria doesn't must wash the dishes.",
+            "Maria mustn't wash the dishes.",
+            "Maria don't must wash the dishes."
+          ],
+          "answer": "Maria mustn't wash the dishes."
+        },
+        {
+          "id": "must_b_45",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The dog must swim.\"",
+          "options": [
+            "The dog not must swim.",
+            "The dog mustn't swim.",
+            "The dog doesn't must swim.",
+            "The dog don't must swim."
+          ],
+          "answer": "The dog mustn't swim."
+        },
+        {
+          "id": "must_b_46",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"They must climb a tree.\"",
+          "options": [
+            "They not must climb a tree.",
+            "They don't must climb a tree.",
+            "They mustn't climb a tree.",
+            "They doesn't must climb a tree."
+          ],
+          "answer": "They mustn't climb a tree."
+        },
+        {
+          "id": "must_b_47",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"You must help their mum.\"",
+          "options": [
+            "You mustn't help their mum.",
+            "You don't must help their mum.",
+            "You doesn't must help their mum.",
+            "You not must help their mum."
+          ],
+          "answer": "You mustn't help their mum."
+        },
+        {
+          "id": "must_b_48",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must dance.\"",
+          "options": [
+            "We doesn't must dance.",
+            "We not must dance.",
+            "We mustn't dance.",
+            "We don't must dance."
+          ],
+          "answer": "We mustn't dance."
+        },
+        {
+          "id": "must_b_49",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must go to the party.\"",
+          "options": [
+            "We not must go to the party.",
+            "We mustn't go to the party.",
+            "We doesn't must go to the party.",
+            "We don't must go to the party."
+          ],
+          "answer": "We mustn't go to the party."
+        },
+        {
+          "id": "must_b_50",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must study English.\"",
+          "options": [
+            "We mustn't study English.",
+            "We doesn't must study English.",
+            "We not must study English.",
+            "We don't must study English."
+          ],
+          "answer": "We mustn't study English."
+        },
+        {
+          "id": "must_b_51",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"I must ride a bike.\"",
+          "options": [
+            "I mustn't ride a bike.",
+            "I doesn't must ride a bike.",
+            "I not must ride a bike.",
+            "I don't must ride a bike."
+          ],
+          "answer": "I mustn't ride a bike."
+        },
+        {
+          "id": "must_b_52",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The students must wash the dishes.\"",
+          "options": [
+            "The students doesn't must wash the dishes.",
+            "The students not must wash the dishes.",
+            "The students don't must wash the dishes.",
+            "The students mustn't wash the dishes."
+          ],
+          "answer": "The students mustn't wash the dishes."
+        },
+        {
+          "id": "must_b_53",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"She must study English.\"",
+          "options": [
+            "She not must study English.",
+            "She mustn't study English.",
+            "She doesn't must study English.",
+            "She don't must study English."
+          ],
+          "answer": "She mustn't study English."
+        },
+        {
+          "id": "must_b_54",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Tom must go to the party.\"",
+          "options": [
+            "Tom doesn't must go to the party.",
+            "Tom mustn't go to the party.",
+            "Tom don't must go to the party.",
+            "Tom not must go to the party."
+          ],
+          "answer": "Tom mustn't go to the party."
+        },
+        {
+          "id": "must_b_55",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"I must win the game.\"",
+          "options": [
+            "I not must win the game.",
+            "I don't must win the game.",
+            "I mustn't win the game.",
+            "I doesn't must win the game."
+          ],
+          "answer": "I mustn't win the game."
+        },
+        {
+          "id": "must_b_56",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My parents must brush their teeth.\"",
+          "options": [
+            "My parents not must brush their teeth.",
+            "My parents don't must brush their teeth.",
+            "My parents mustn't brush their teeth.",
+            "My parents doesn't must brush their teeth."
+          ],
+          "answer": "My parents mustn't brush their teeth."
+        },
+        {
+          "id": "must_b_57",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Tom must watch TV.\"",
+          "options": [
+            "Tom not must watch TV.",
+            "Tom don't must watch TV.",
+            "Tom mustn't watch TV.",
+            "Tom doesn't must watch TV."
+          ],
+          "answer": "Tom mustn't watch TV."
+        },
+        {
+          "id": "must_b_58",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must draw a picture.\"",
+          "options": [
+            "The boys mustn't draw a picture.",
+            "The boys don't must draw a picture.",
+            "The boys doesn't must draw a picture.",
+            "The boys not must draw a picture."
+          ],
+          "answer": "The boys mustn't draw a picture."
+        },
+        {
+          "id": "must_b_59",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The students must listen to music.\"",
+          "options": [
+            "The students don't must listen to music.",
+            "The students mustn't listen to music.",
+            "The students doesn't must listen to music.",
+            "The students not must listen to music."
+          ],
+          "answer": "The students mustn't listen to music."
+        },
+        {
+          "id": "must_b_60",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must watch TV.\"",
+          "options": [
+            "The boys mustn't watch TV.",
+            "The boys doesn't must watch TV.",
+            "The boys not must watch TV.",
+            "The boys don't must watch TV."
+          ],
+          "answer": "The boys mustn't watch TV."
+        },
+        {
+          "id": "must_b_61",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The boys must run.\"",
+          "options": [
+            "The boys don't must run.",
+            "The boys doesn't must run.",
+            "The boys not must run.",
+            "The boys mustn't run."
+          ],
+          "answer": "The boys mustn't run."
+        },
+        {
+          "id": "must_b_62",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"It must feed the cat.\"",
+          "options": [
+            "It mustn't feed the cat.",
+            "It doesn't must feed the cat.",
+            "It don't must feed the cat.",
+            "It not must feed the cat."
+          ],
+          "answer": "It mustn't feed the cat."
+        },
+        {
+          "id": "must_b_63",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"I must watch TV.\"",
+          "options": [
+            "I not must watch TV.",
+            "I don't must watch TV.",
+            "I mustn't watch TV.",
+            "I doesn't must watch TV."
+          ],
+          "answer": "I mustn't watch TV."
+        },
+        {
+          "id": "must_b_64",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My brother must ride a bike.\"",
+          "options": [
+            "My brother not must ride a bike.",
+            "My brother doesn't must ride a bike.",
+            "My brother mustn't ride a bike.",
+            "My brother don't must ride a bike."
+          ],
+          "answer": "My brother mustn't ride a bike."
+        },
+        {
+          "id": "must_b_65",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"It must write a letter.\"",
+          "options": [
+            "It mustn't write a letter.",
+            "It doesn't must write a letter.",
+            "It not must write a letter.",
+            "It don't must write a letter."
+          ],
+          "answer": "It mustn't write a letter."
+        },
+        {
+          "id": "must_b_66",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"You must write a letter.\"",
+          "options": [
+            "You don't must write a letter.",
+            "You mustn't write a letter.",
+            "You doesn't must write a letter.",
+            "You not must write a letter."
+          ],
+          "answer": "You mustn't write a letter."
+        },
+        {
+          "id": "must_b_67",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Our cat must cook dinner.\"",
+          "options": [
+            "Our cat not must cook dinner.",
+            "Our cat don't must cook dinner.",
+            "Our cat mustn't cook dinner.",
+            "Our cat doesn't must cook dinner."
+          ],
+          "answer": "Our cat mustn't cook dinner."
+        },
+        {
+          "id": "must_b_68",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The dog must sing a song.\"",
+          "options": [
+            "The dog not must sing a song.",
+            "The dog doesn't must sing a song.",
+            "The dog don't must sing a song.",
+            "The dog mustn't sing a song."
+          ],
+          "answer": "The dog mustn't sing a song."
+        },
+        {
+          "id": "must_b_69",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"It must brush their teeth.\"",
+          "options": [
+            "It don't must brush their teeth.",
+            "It not must brush their teeth.",
+            "It mustn't brush their teeth.",
+            "It doesn't must brush their teeth."
+          ],
+          "answer": "It mustn't brush their teeth."
+        },
+        {
+          "id": "must_b_70",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My parents must walk to school.\"",
+          "options": [
+            "My parents not must walk to school.",
+            "My parents don't must walk to school.",
+            "My parents mustn't walk to school.",
+            "My parents doesn't must walk to school."
+          ],
+          "answer": "My parents mustn't walk to school."
+        },
+        {
+          "id": "must_b_71",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Our cat must jump.\"",
+          "options": [
+            "Our cat mustn't jump.",
+            "Our cat don't must jump.",
+            "Our cat not must jump.",
+            "Our cat doesn't must jump."
+          ],
+          "answer": "Our cat mustn't jump."
+        },
+        {
+          "id": "must_b_72",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"You must win the game.\"",
+          "options": [
+            "You doesn't must win the game.",
+            "You not must win the game.",
+            "You mustn't win the game.",
+            "You don't must win the game."
+          ],
+          "answer": "You mustn't win the game."
+        },
+        {
+          "id": "must_b_73",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"It must listen to music.\"",
+          "options": [
+            "It doesn't must listen to music.",
+            "It not must listen to music.",
+            "It mustn't listen to music.",
+            "It don't must listen to music."
+          ],
+          "answer": "It mustn't listen to music."
+        },
+        {
+          "id": "must_b_74",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Maria must have lunch.\"",
+          "options": [
+            "Maria don't must have lunch.",
+            "Maria doesn't must have lunch.",
+            "Maria not must have lunch.",
+            "Maria mustn't have lunch."
+          ],
+          "answer": "Maria mustn't have lunch."
+        },
+        {
+          "id": "must_b_75",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"I must run.\"",
+          "options": [
+            "I don't must run.",
+            "I not must run.",
+            "I doesn't must run.",
+            "I mustn't run."
+          ],
+          "answer": "I mustn't run."
+        },
+        {
+          "id": "must_b_76",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"She must walk to school.\"",
+          "options": [
+            "She don't must walk to school.",
+            "She doesn't must walk to school.",
+            "She not must walk to school.",
+            "She mustn't walk to school."
+          ],
+          "answer": "She mustn't walk to school."
+        },
+        {
+          "id": "must_b_77",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My brother must write a letter.\"",
+          "options": [
+            "My brother don't must write a letter.",
+            "My brother not must write a letter.",
+            "My brother mustn't write a letter.",
+            "My brother doesn't must write a letter."
+          ],
+          "answer": "My brother mustn't write a letter."
+        },
+        {
+          "id": "must_b_78",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Tom must write a letter.\"",
+          "options": [
+            "Tom don't must write a letter.",
+            "Tom doesn't must write a letter.",
+            "Tom mustn't write a letter.",
+            "Tom not must write a letter."
+          ],
+          "answer": "Tom mustn't write a letter."
+        },
+        {
+          "id": "must_b_79",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Maria must clean the house.\"",
+          "options": [
+            "Maria don't must clean the house.",
+            "Maria doesn't must clean the house.",
+            "Maria not must clean the house.",
+            "Maria mustn't clean the house."
+          ],
+          "answer": "Maria mustn't clean the house."
+        },
+        {
+          "id": "must_b_80",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The children must write a letter.\"",
+          "options": [
+            "The children doesn't must write a letter.",
+            "The children don't must write a letter.",
+            "The children not must write a letter.",
+            "The children mustn't write a letter."
+          ],
+          "answer": "The children mustn't write a letter."
+        },
+        {
+          "id": "must_b_81",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must swim.\"",
+          "options": [
+            "My sister mustn't swim.",
+            "My sister don't must swim.",
+            "My sister not must swim.",
+            "My sister doesn't must swim."
+          ],
+          "answer": "My sister mustn't swim."
+        },
+        {
+          "id": "must_b_82",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The children must study English.\"",
+          "options": [
+            "The children not must study English.",
+            "The children mustn't study English.",
+            "The children doesn't must study English.",
+            "The children don't must study English."
+          ],
+          "answer": "The children mustn't study English."
+        },
+        {
+          "id": "must_b_83",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"They must walk to school.\"",
+          "options": [
+            "They don't must walk to school.",
+            "They not must walk to school.",
+            "They mustn't walk to school.",
+            "They doesn't must walk to school."
+          ],
+          "answer": "They mustn't walk to school."
+        },
+        {
+          "id": "must_b_84",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"They must dance.\"",
+          "options": [
+            "They doesn't must dance.",
+            "They not must dance.",
+            "They don't must dance.",
+            "They mustn't dance."
+          ],
+          "answer": "They mustn't dance."
+        },
+        {
+          "id": "must_b_85",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Tom must feed the cat.\"",
+          "options": [
+            "Tom doesn't must feed the cat.",
+            "Tom mustn't feed the cat.",
+            "Tom don't must feed the cat.",
+            "Tom not must feed the cat."
+          ],
+          "answer": "Tom mustn't feed the cat."
+        },
+        {
+          "id": "must_b_86",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Maria must visit their grandma.\"",
+          "options": [
+            "Maria doesn't must visit their grandma.",
+            "Maria mustn't visit their grandma.",
+            "Maria don't must visit their grandma.",
+            "Maria not must visit their grandma."
+          ],
+          "answer": "Maria mustn't visit their grandma."
+        },
+        {
+          "id": "must_b_87",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Maria must sing a song.\"",
+          "options": [
+            "Maria don't must sing a song.",
+            "Maria mustn't sing a song.",
+            "Maria not must sing a song.",
+            "Maria doesn't must sing a song."
+          ],
+          "answer": "Maria mustn't sing a song."
+        },
+        {
+          "id": "must_b_88",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"It must wash the dishes.\"",
+          "options": [
+            "It not must wash the dishes.",
+            "It don't must wash the dishes.",
+            "It doesn't must wash the dishes.",
+            "It mustn't wash the dishes."
+          ],
+          "answer": "It mustn't wash the dishes."
+        },
+        {
+          "id": "must_b_89",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"The students must win the game.\"",
+          "options": [
+            "The students mustn't win the game.",
+            "The students don't must win the game.",
+            "The students not must win the game.",
+            "The students doesn't must win the game."
+          ],
+          "answer": "The students mustn't win the game."
+        },
+        {
+          "id": "must_b_90",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My parents must dance.\"",
+          "options": [
+            "My parents don't must dance.",
+            "My parents doesn't must dance.",
+            "My parents not must dance.",
+            "My parents mustn't dance."
+          ],
+          "answer": "My parents mustn't dance."
+        },
+        {
+          "id": "must_b_91",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"You must listen to music.\"",
+          "options": [
+            "You doesn't must listen to music.",
+            "You don't must listen to music.",
+            "You not must listen to music.",
+            "You mustn't listen to music."
+          ],
+          "answer": "You mustn't listen to music."
+        },
+        {
+          "id": "must_b_92",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"They must cook dinner.\"",
+          "options": [
+            "They mustn't cook dinner.",
+            "They don't must cook dinner.",
+            "They not must cook dinner.",
+            "They doesn't must cook dinner."
+          ],
+          "answer": "They mustn't cook dinner."
+        },
+        {
+          "id": "must_b_93",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"They must feed the cat.\"",
+          "options": [
+            "They mustn't feed the cat.",
+            "They doesn't must feed the cat.",
+            "They not must feed the cat.",
+            "They don't must feed the cat."
+          ],
+          "answer": "They mustn't feed the cat."
+        },
+        {
+          "id": "must_b_94",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must feed the cat.\"",
+          "options": [
+            "My sister mustn't feed the cat.",
+            "My sister don't must feed the cat.",
+            "My sister doesn't must feed the cat.",
+            "My sister not must feed the cat."
+          ],
+          "answer": "My sister mustn't feed the cat."
+        },
+        {
+          "id": "must_b_95",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"We must clean the house.\"",
+          "options": [
+            "We doesn't must clean the house.",
+            "We don't must clean the house.",
+            "We not must clean the house.",
+            "We mustn't clean the house."
+          ],
+          "answer": "We mustn't clean the house."
+        },
+        {
+          "id": "must_b_96",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"He must study English.\"",
+          "options": [
+            "He not must study English.",
+            "He mustn't study English.",
+            "He don't must study English.",
+            "He doesn't must study English."
+          ],
+          "answer": "He mustn't study English."
+        },
+        {
+          "id": "must_b_97",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My sister must go to the party.\"",
+          "options": [
+            "My sister don't must go to the party.",
+            "My sister mustn't go to the party.",
+            "My sister doesn't must go to the party.",
+            "My sister not must go to the party."
+          ],
+          "answer": "My sister mustn't go to the party."
+        },
+        {
+          "id": "must_b_98",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"He must brush their teeth.\"",
+          "options": [
+            "He mustn't brush their teeth.",
+            "He don't must brush their teeth.",
+            "He doesn't must brush their teeth.",
+            "He not must brush their teeth."
+          ],
+          "answer": "He mustn't brush their teeth."
+        },
+        {
+          "id": "must_b_99",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"My brother must walk to school.\"",
+          "options": [
+            "My brother mustn't walk to school.",
+            "My brother not must walk to school.",
+            "My brother don't must walk to school.",
+            "My brother doesn't must walk to school."
+          ],
+          "answer": "My brother mustn't walk to school."
+        },
+        {
+          "id": "must_b_100",
+          "type": "B",
+          "question": "Make this sentence a prohibition: \"Maria must climb a tree.\"",
+          "options": [
+            "Maria don't must climb a tree.",
+            "Maria not must climb a tree.",
+            "Maria doesn't must climb a tree.",
+            "Maria mustn't climb a tree."
+          ],
+          "answer": "Maria mustn't climb a tree."
+        },
+        {
+          "id": "must_c_1",
+          "type": "C",
+          "question": "Ask a question: \"He must climb a tree.\"",
+          "options": [
+            "Must he climb a tree?",
+            "Does he must climb a tree?",
+            "He must climb a tree?",
+            "Must climb a tree he?"
+          ],
+          "answer": "Must he climb a tree?"
+        },
+        {
+          "id": "must_c_2",
+          "type": "C",
+          "question": "Ask a question: \"He must write a letter.\"",
+          "options": [
+            "Must write a letter he?",
+            "Does he must write a letter?",
+            "Must he write a letter?",
+            "He must write a letter?"
+          ],
+          "answer": "Must he write a letter?"
+        },
+        {
+          "id": "must_c_3",
+          "type": "C",
+          "question": "Ask a question: \"I must watch TV.\"",
+          "options": [
+            "Must I watch TV?",
+            "Must watch TV I?",
+            "I must watch TV?",
+            "Does I must watch TV?"
+          ],
+          "answer": "Must I watch TV?"
+        },
+        {
+          "id": "must_c_4",
+          "type": "C",
+          "question": "Ask a question: \"She must watch TV.\"",
+          "options": [
+            "Must watch TV she?",
+            "Must she watch TV?",
+            "Does she must watch TV?",
+            "She must watch TV?"
+          ],
+          "answer": "Must she watch TV?"
+        },
+        {
+          "id": "must_c_5",
+          "type": "C",
+          "question": "Ask a question: \"She must cook dinner.\"",
+          "options": [
+            "She must cook dinner?",
+            "Must she cook dinner?",
+            "Must cook dinner she?",
+            "Does she must cook dinner?"
+          ],
+          "answer": "Must she cook dinner?"
+        },
+        {
+          "id": "must_c_6",
+          "type": "C",
+          "question": "Ask a question: \"She must jump.\"",
+          "options": [
+            "Must jump she?",
+            "Does she must jump?",
+            "She must jump?",
+            "Must she jump?"
+          ],
+          "answer": "Must she jump?"
+        },
+        {
+          "id": "must_c_7",
+          "type": "C",
+          "question": "Ask a question: \"We must watch TV.\"",
+          "options": [
+            "Must watch TV we?",
+            "We must watch TV?",
+            "Does we must watch TV?",
+            "Must we watch TV?"
+          ],
+          "answer": "Must we watch TV?"
+        },
+        {
+          "id": "must_c_8",
+          "type": "C",
+          "question": "Ask a question: \"I must write a letter.\"",
+          "options": [
+            "Must I write a letter?",
+            "Must write a letter I?",
+            "I must write a letter?",
+            "Does I must write a letter?"
+          ],
+          "answer": "Must I write a letter?"
+        },
+        {
+          "id": "must_c_9",
+          "type": "C",
+          "question": "Ask a question: \"They must cook dinner.\"",
+          "options": [
+            "Must cook dinner they?",
+            "Does they must cook dinner?",
+            "Must they cook dinner?",
+            "They must cook dinner?"
+          ],
+          "answer": "Must they cook dinner?"
+        },
+        {
+          "id": "must_c_10",
+          "type": "C",
+          "question": "Ask a question: \"You must win the game.\"",
+          "options": [
+            "Does you must win the game?",
+            "Must win the game you?",
+            "You must win the game?",
+            "Must you win the game?"
+          ],
+          "answer": "Must you win the game?"
+        },
+        {
+          "id": "must_c_11",
+          "type": "C",
+          "question": "Ask a question: \"You must visit their grandma.\"",
+          "options": [
+            "Must visit their grandma you?",
+            "Must you visit their grandma?",
+            "Does you must visit their grandma?",
+            "You must visit their grandma?"
+          ],
+          "answer": "Must you visit their grandma?"
+        },
+        {
+          "id": "must_c_12",
+          "type": "C",
+          "question": "Ask a question: \"I must feed the cat.\"",
+          "options": [
+            "I must feed the cat?",
+            "Must I feed the cat?",
+            "Does I must feed the cat?",
+            "Must feed the cat I?"
+          ],
+          "answer": "Must I feed the cat?"
+        },
+        {
+          "id": "must_c_13",
+          "type": "C",
+          "question": "Ask a question: \"She must sing a song.\"",
+          "options": [
+            "Must she sing a song?",
+            "She must sing a song?",
+            "Must sing a song she?",
+            "Does she must sing a song?"
+          ],
+          "answer": "Must she sing a song?"
+        },
+        {
+          "id": "must_c_14",
+          "type": "C",
+          "question": "Ask a question: \"He must watch TV.\"",
+          "options": [
+            "Must watch TV he?",
+            "He must watch TV?",
+            "Does he must watch TV?",
+            "Must he watch TV?"
+          ],
+          "answer": "Must he watch TV?"
+        },
+        {
+          "id": "must_c_15",
+          "type": "C",
+          "question": "Ask a question: \"They must ride a bike.\"",
+          "options": [
+            "They must ride a bike?",
+            "Must ride a bike they?",
+            "Does they must ride a bike?",
+            "Must they ride a bike?"
+          ],
+          "answer": "Must they ride a bike?"
+        },
+        {
+          "id": "must_c_16",
+          "type": "C",
+          "question": "Ask a question: \"You must jump.\"",
+          "options": [
+            "You must jump?",
+            "Must you jump?",
+            "Must jump you?",
+            "Does you must jump?"
+          ],
+          "answer": "Must you jump?"
+        },
+        {
+          "id": "must_c_17",
+          "type": "C",
+          "question": "Ask a question: \"You must dance.\"",
+          "options": [
+            "Does you must dance?",
+            "Must you dance?",
+            "Must dance you?",
+            "You must dance?"
+          ],
+          "answer": "Must you dance?"
+        },
+        {
+          "id": "must_c_18",
+          "type": "C",
+          "question": "Ask a question: \"She must do homework.\"",
+          "options": [
+            "Must do homework she?",
+            "Does she must do homework?",
+            "She must do homework?",
+            "Must she do homework?"
+          ],
+          "answer": "Must she do homework?"
+        },
+        {
+          "id": "must_c_19",
+          "type": "C",
+          "question": "Ask a question: \"You must swim.\"",
+          "options": [
+            "Must swim you?",
+            "You must swim?",
+            "Does you must swim?",
+            "Must you swim?"
+          ],
+          "answer": "Must you swim?"
+        },
+        {
+          "id": "must_c_20",
+          "type": "C",
+          "question": "Ask a question: \"I must dance.\"",
+          "options": [
+            "Must I dance?",
+            "Must dance I?",
+            "Does I must dance?",
+            "I must dance?"
+          ],
+          "answer": "Must I dance?"
+        },
+        {
+          "id": "must_c_21",
+          "type": "C",
+          "question": "Ask a question: \"We must run.\"",
+          "options": [
+            "Must we run?",
+            "Must run we?",
+            "We must run?",
+            "Does we must run?"
+          ],
+          "answer": "Must we run?"
+        },
+        {
+          "id": "must_c_22",
+          "type": "C",
+          "question": "Ask a question: \"She must draw a picture.\"",
+          "options": [
+            "Does she must draw a picture?",
+            "Must draw a picture she?",
+            "Must she draw a picture?",
+            "She must draw a picture?"
+          ],
+          "answer": "Must she draw a picture?"
+        },
+        {
+          "id": "must_c_23",
+          "type": "C",
+          "question": "Ask a question: \"We must win the game.\"",
+          "options": [
+            "Must we win the game?",
+            "Must win the game we?",
+            "We must win the game?",
+            "Does we must win the game?"
+          ],
+          "answer": "Must we win the game?"
+        },
+        {
+          "id": "must_c_24",
+          "type": "C",
+          "question": "Ask a question: \"You must brush their teeth.\"",
+          "options": [
+            "Must brush their teeth you?",
+            "Does you must brush their teeth?",
+            "You must brush their teeth?",
+            "Must you brush their teeth?"
+          ],
+          "answer": "Must you brush their teeth?"
+        },
+        {
+          "id": "must_c_25",
+          "type": "C",
+          "question": "Ask a question: \"They must sing a song.\"",
+          "options": [
+            "They must sing a song?",
+            "Must they sing a song?",
+            "Must sing a song they?",
+            "Does they must sing a song?"
+          ],
+          "answer": "Must they sing a song?"
+        },
+        {
+          "id": "must_c_26",
+          "type": "C",
+          "question": "Ask a question: \"I must help their mum.\"",
+          "options": [
+            "I must help their mum?",
+            "Must I help their mum?",
+            "Does I must help their mum?",
+            "Must help their mum I?"
+          ],
+          "answer": "Must I help their mum?"
+        },
+        {
+          "id": "must_c_27",
+          "type": "C",
+          "question": "Ask a question: \"We must help their mum.\"",
+          "options": [
+            "Must help their mum we?",
+            "Does we must help their mum?",
+            "Must we help their mum?",
+            "We must help their mum?"
+          ],
+          "answer": "Must we help their mum?"
+        },
+        {
+          "id": "must_c_28",
+          "type": "C",
+          "question": "Ask a question: \"She must run.\"",
+          "options": [
+            "Must run she?",
+            "Must she run?",
+            "She must run?",
+            "Does she must run?"
+          ],
+          "answer": "Must she run?"
+        },
+        {
+          "id": "must_c_29",
+          "type": "C",
+          "question": "Ask a question: \"I must visit their grandma.\"",
+          "options": [
+            "Does I must visit their grandma?",
+            "I must visit their grandma?",
+            "Must I visit their grandma?",
+            "Must visit their grandma I?"
+          ],
+          "answer": "Must I visit their grandma?"
+        },
+        {
+          "id": "must_c_30",
+          "type": "C",
+          "question": "Ask a question: \"She must ride a bike.\"",
+          "options": [
+            "Does she must ride a bike?",
+            "Must she ride a bike?",
+            "She must ride a bike?",
+            "Must ride a bike she?"
+          ],
+          "answer": "Must she ride a bike?"
+        },
+        {
+          "id": "must_c_31",
+          "type": "C",
+          "question": "Ask a question: \"I must go to the party.\"",
+          "options": [
+            "Must go to the party I?",
+            "Must I go to the party?",
+            "Does I must go to the party?",
+            "I must go to the party?"
+          ],
+          "answer": "Must I go to the party?"
+        },
+        {
+          "id": "must_c_32",
+          "type": "C",
+          "question": "Ask a question: \"We must dance.\"",
+          "options": [
+            "Does we must dance?",
+            "We must dance?",
+            "Must we dance?",
+            "Must dance we?"
+          ],
+          "answer": "Must we dance?"
+        },
+        {
+          "id": "must_c_33",
+          "type": "C",
+          "question": "Ask a question: \"I must listen to music.\"",
+          "options": [
+            "I must listen to music?",
+            "Must listen to music I?",
+            "Does I must listen to music?",
+            "Must I listen to music?"
+          ],
+          "answer": "Must I listen to music?"
+        },
+        {
+          "id": "must_c_34",
+          "type": "C",
+          "question": "Ask a question: \"He must help their mum.\"",
+          "options": [
+            "He must help their mum?",
+            "Does he must help their mum?",
+            "Must help their mum he?",
+            "Must he help their mum?"
+          ],
+          "answer": "Must he help their mum?"
+        },
+        {
+          "id": "must_c_35",
+          "type": "C",
+          "question": "Ask a question: \"You must climb a tree.\"",
+          "options": [
+            "Must you climb a tree?",
+            "You must climb a tree?",
+            "Must climb a tree you?",
+            "Does you must climb a tree?"
+          ],
+          "answer": "Must you climb a tree?"
+        },
+        {
+          "id": "must_c_36",
+          "type": "C",
+          "question": "Ask a question: \"We must draw a picture.\"",
+          "options": [
+            "We must draw a picture?",
+            "Must we draw a picture?",
+            "Does we must draw a picture?",
+            "Must draw a picture we?"
+          ],
+          "answer": "Must we draw a picture?"
+        },
+        {
+          "id": "must_c_37",
+          "type": "C",
+          "question": "Ask a question: \"They must brush their teeth.\"",
+          "options": [
+            "They must brush their teeth?",
+            "Does they must brush their teeth?",
+            "Must brush their teeth they?",
+            "Must they brush their teeth?"
+          ],
+          "answer": "Must they brush their teeth?"
+        },
+        {
+          "id": "must_c_38",
+          "type": "C",
+          "question": "Ask a question: \"They must run.\"",
+          "options": [
+            "They must run?",
+            "Does they must run?",
+            "Must run they?",
+            "Must they run?"
+          ],
+          "answer": "Must they run?"
+        },
+        {
+          "id": "must_c_39",
+          "type": "C",
+          "question": "Ask a question: \"I must cook dinner.\"",
+          "options": [
+            "Must I cook dinner?",
+            "I must cook dinner?",
+            "Does I must cook dinner?",
+            "Must cook dinner I?"
+          ],
+          "answer": "Must I cook dinner?"
+        },
+        {
+          "id": "must_c_40",
+          "type": "C",
+          "question": "Ask a question: \"We must do homework.\"",
+          "options": [
+            "Must we do homework?",
+            "Does we must do homework?",
+            "Must do homework we?",
+            "We must do homework?"
+          ],
+          "answer": "Must we do homework?"
+        },
+        {
+          "id": "must_c_41",
+          "type": "C",
+          "question": "Ask a question: \"He must have lunch.\"",
+          "options": [
+            "Does he must have lunch?",
+            "He must have lunch?",
+            "Must have lunch he?",
+            "Must he have lunch?"
+          ],
+          "answer": "Must he have lunch?"
+        },
+        {
+          "id": "must_c_42",
+          "type": "C",
+          "question": "Ask a question: \"You must go to the party.\"",
+          "options": [
+            "Does you must go to the party?",
+            "Must go to the party you?",
+            "You must go to the party?",
+            "Must you go to the party?"
+          ],
+          "answer": "Must you go to the party?"
+        },
+        {
+          "id": "must_c_43",
+          "type": "C",
+          "question": "Ask a question: \"She must help their mum.\"",
+          "options": [
+            "Does she must help their mum?",
+            "She must help their mum?",
+            "Must help their mum she?",
+            "Must she help their mum?"
+          ],
+          "answer": "Must she help their mum?"
+        },
+        {
+          "id": "must_c_44",
+          "type": "C",
+          "question": "Ask a question: \"She must wash the dishes.\"",
+          "options": [
+            "Must wash the dishes she?",
+            "She must wash the dishes?",
+            "Must she wash the dishes?",
+            "Does she must wash the dishes?"
+          ],
+          "answer": "Must she wash the dishes?"
+        },
+        {
+          "id": "must_c_45",
+          "type": "C",
+          "question": "Ask a question: \"He must listen to music.\"",
+          "options": [
+            "Must listen to music he?",
+            "He must listen to music?",
+            "Does he must listen to music?",
+            "Must he listen to music?"
+          ],
+          "answer": "Must he listen to music?"
+        },
+        {
+          "id": "must_c_46",
+          "type": "C",
+          "question": "Ask a question: \"They must play football.\"",
+          "options": [
+            "Must they play football?",
+            "Must play football they?",
+            "Does they must play football?",
+            "They must play football?"
+          ],
+          "answer": "Must they play football?"
+        },
+        {
+          "id": "must_c_47",
+          "type": "C",
+          "question": "Ask a question: \"You must watch TV.\"",
+          "options": [
+            "Does you must watch TV?",
+            "You must watch TV?",
+            "Must watch TV you?",
+            "Must you watch TV?"
+          ],
+          "answer": "Must you watch TV?"
+        },
+        {
+          "id": "must_c_48",
+          "type": "C",
+          "question": "Ask a question: \"She must visit their grandma.\"",
+          "options": [
+            "She must visit their grandma?",
+            "Must she visit their grandma?",
+            "Does she must visit their grandma?",
+            "Must visit their grandma she?"
+          ],
+          "answer": "Must she visit their grandma?"
+        },
+        {
+          "id": "must_c_49",
+          "type": "C",
+          "question": "Ask a question: \"We must walk to school.\"",
+          "options": [
+            "Does we must walk to school?",
+            "Must we walk to school?",
+            "We must walk to school?",
+            "Must walk to school we?"
+          ],
+          "answer": "Must we walk to school?"
+        },
+        {
+          "id": "must_c_50",
+          "type": "C",
+          "question": "Ask a question: \"You must draw a picture.\"",
+          "options": [
+            "Must draw a picture you?",
+            "Does you must draw a picture?",
+            "You must draw a picture?",
+            "Must you draw a picture?"
+          ],
+          "answer": "Must you draw a picture?"
+        },
+        {
+          "id": "must_c_51",
+          "type": "C",
+          "question": "Ask a question: \"You must walk to school.\"",
+          "options": [
+            "Does you must walk to school?",
+            "Must walk to school you?",
+            "Must you walk to school?",
+            "You must walk to school?"
+          ],
+          "answer": "Must you walk to school?"
+        },
+        {
+          "id": "must_c_52",
+          "type": "C",
+          "question": "Ask a question: \"He must win the game.\"",
+          "options": [
+            "He must win the game?",
+            "Must win the game he?",
+            "Does he must win the game?",
+            "Must he win the game?"
+          ],
+          "answer": "Must he win the game?"
+        },
+        {
+          "id": "must_c_53",
+          "type": "C",
+          "question": "Ask a question: \"He must jump.\"",
+          "options": [
+            "Must jump he?",
+            "He must jump?",
+            "Does he must jump?",
+            "Must he jump?"
+          ],
+          "answer": "Must he jump?"
+        },
+        {
+          "id": "must_c_54",
+          "type": "C",
+          "question": "Ask a question: \"I must climb a tree.\"",
+          "options": [
+            "I must climb a tree?",
+            "Must climb a tree I?",
+            "Must I climb a tree?",
+            "Does I must climb a tree?"
+          ],
+          "answer": "Must I climb a tree?"
+        },
+        {
+          "id": "must_c_55",
+          "type": "C",
+          "question": "Ask a question: \"She must study English.\"",
+          "options": [
+            "Does she must study English?",
+            "She must study English?",
+            "Must she study English?",
+            "Must study English she?"
+          ],
+          "answer": "Must she study English?"
+        },
+        {
+          "id": "must_c_56",
+          "type": "C",
+          "question": "Ask a question: \"He must study English.\"",
+          "options": [
+            "Does he must study English?",
+            "He must study English?",
+            "Must study English he?",
+            "Must he study English?"
+          ],
+          "answer": "Must he study English?"
+        },
+        {
+          "id": "must_c_57",
+          "type": "C",
+          "question": "Ask a question: \"You must listen to music.\"",
+          "options": [
+            "Must listen to music you?",
+            "Must you listen to music?",
+            "You must listen to music?",
+            "Does you must listen to music?"
+          ],
+          "answer": "Must you listen to music?"
+        },
+        {
+          "id": "must_c_58",
+          "type": "C",
+          "question": "Ask a question: \"They must feed the cat.\"",
+          "options": [
+            "Must they feed the cat?",
+            "They must feed the cat?",
+            "Does they must feed the cat?",
+            "Must feed the cat they?"
+          ],
+          "answer": "Must they feed the cat?"
+        },
+        {
+          "id": "must_c_59",
+          "type": "C",
+          "question": "Ask a question: \"I must sing a song.\"",
+          "options": [
+            "Does I must sing a song?",
+            "I must sing a song?",
+            "Must sing a song I?",
+            "Must I sing a song?"
+          ],
+          "answer": "Must I sing a song?"
+        },
+        {
+          "id": "must_c_60",
+          "type": "C",
+          "question": "Ask a question: \"I must clean the house.\"",
+          "options": [
+            "Must clean the house I?",
+            "Must I clean the house?",
+            "Does I must clean the house?",
+            "I must clean the house?"
+          ],
+          "answer": "Must I clean the house?"
+        },
+        {
+          "id": "must_c_61",
+          "type": "C",
+          "question": "Ask a question: \"They must walk to school.\"",
+          "options": [
+            "Must walk to school they?",
+            "Must they walk to school?",
+            "They must walk to school?",
+            "Does they must walk to school?"
+          ],
+          "answer": "Must they walk to school?"
+        },
+        {
+          "id": "must_c_62",
+          "type": "C",
+          "question": "Ask a question: \"She must have lunch.\"",
+          "options": [
+            "Must have lunch she?",
+            "Does she must have lunch?",
+            "Must she have lunch?",
+            "She must have lunch?"
+          ],
+          "answer": "Must she have lunch?"
+        },
+        {
+          "id": "must_c_63",
+          "type": "C",
+          "question": "Ask a question: \"He must do homework.\"",
+          "options": [
+            "He must do homework?",
+            "Does he must do homework?",
+            "Must do homework he?",
+            "Must he do homework?"
+          ],
+          "answer": "Must he do homework?"
+        },
+        {
+          "id": "must_c_64",
+          "type": "C",
+          "question": "Ask a question: \"She must clean the house.\"",
+          "options": [
+            "Must she clean the house?",
+            "She must clean the house?",
+            "Does she must clean the house?",
+            "Must clean the house she?"
+          ],
+          "answer": "Must she clean the house?"
+        },
+        {
+          "id": "must_c_65",
+          "type": "C",
+          "question": "Ask a question: \"I must have lunch.\"",
+          "options": [
+            "Does I must have lunch?",
+            "I must have lunch?",
+            "Must I have lunch?",
+            "Must have lunch I?"
+          ],
+          "answer": "Must I have lunch?"
+        },
+        {
+          "id": "must_c_66",
+          "type": "C",
+          "question": "Ask a question: \"She must play football.\"",
+          "options": [
+            "She must play football?",
+            "Must she play football?",
+            "Does she must play football?",
+            "Must play football she?"
+          ],
+          "answer": "Must she play football?"
+        },
+        {
+          "id": "must_c_67",
+          "type": "C",
+          "question": "Ask a question: \"We must study English.\"",
+          "options": [
+            "Does we must study English?",
+            "Must we study English?",
+            "Must study English we?",
+            "We must study English?"
+          ],
+          "answer": "Must we study English?"
+        },
+        {
+          "id": "must_c_68",
+          "type": "C",
+          "question": "Ask a question: \"He must brush their teeth.\"",
+          "options": [
+            "Must brush their teeth he?",
+            "Must he brush their teeth?",
+            "He must brush their teeth?",
+            "Does he must brush their teeth?"
+          ],
+          "answer": "Must he brush their teeth?"
+        },
+        {
+          "id": "must_c_69",
+          "type": "C",
+          "question": "Ask a question: \"We must play football.\"",
+          "options": [
+            "Must play football we?",
+            "We must play football?",
+            "Does we must play football?",
+            "Must we play football?"
+          ],
+          "answer": "Must we play football?"
+        },
+        {
+          "id": "must_c_70",
+          "type": "C",
+          "question": "Ask a question: \"We must wash the dishes.\"",
+          "options": [
+            "Must wash the dishes we?",
+            "We must wash the dishes?",
+            "Must we wash the dishes?",
+            "Does we must wash the dishes?"
+          ],
+          "answer": "Must we wash the dishes?"
+        },
+        {
+          "id": "must_c_71",
+          "type": "C",
+          "question": "Ask a question: \"He must cook dinner.\"",
+          "options": [
+            "He must cook dinner?",
+            "Must he cook dinner?",
+            "Must cook dinner he?",
+            "Does he must cook dinner?"
+          ],
+          "answer": "Must he cook dinner?"
+        },
+        {
+          "id": "must_c_72",
+          "type": "C",
+          "question": "Ask a question: \"You must have lunch.\"",
+          "options": [
+            "You must have lunch?",
+            "Must you have lunch?",
+            "Must have lunch you?",
+            "Does you must have lunch?"
+          ],
+          "answer": "Must you have lunch?"
+        },
+        {
+          "id": "must_c_73",
+          "type": "C",
+          "question": "Ask a question: \"They must study English.\"",
+          "options": [
+            "Does they must study English?",
+            "Must they study English?",
+            "They must study English?",
+            "Must study English they?"
+          ],
+          "answer": "Must they study English?"
+        },
+        {
+          "id": "must_c_74",
+          "type": "C",
+          "question": "Ask a question: \"They must clean the house.\"",
+          "options": [
+            "Must clean the house they?",
+            "Must they clean the house?",
+            "They must clean the house?",
+            "Does they must clean the house?"
+          ],
+          "answer": "Must they clean the house?"
+        },
+        {
+          "id": "must_c_75",
+          "type": "C",
+          "question": "Ask a question: \"I must win the game.\"",
+          "options": [
+            "Does I must win the game?",
+            "Must win the game I?",
+            "Must I win the game?",
+            "I must win the game?"
+          ],
+          "answer": "Must I win the game?"
+        },
+        {
+          "id": "must_c_76",
+          "type": "C",
+          "question": "Ask a question: \"They must wash the dishes.\"",
+          "options": [
+            "They must wash the dishes?",
+            "Does they must wash the dishes?",
+            "Must wash the dishes they?",
+            "Must they wash the dishes?"
+          ],
+          "answer": "Must they wash the dishes?"
+        },
+        {
+          "id": "must_c_77",
+          "type": "C",
+          "question": "Ask a question: \"She must feed the cat.\"",
+          "options": [
+            "Must she feed the cat?",
+            "She must feed the cat?",
+            "Must feed the cat she?",
+            "Does she must feed the cat?"
+          ],
+          "answer": "Must she feed the cat?"
+        },
+        {
+          "id": "must_c_78",
+          "type": "C",
+          "question": "Ask a question: \"They must draw a picture.\"",
+          "options": [
+            "They must draw a picture?",
+            "Must draw a picture they?",
+            "Must they draw a picture?",
+            "Does they must draw a picture?"
+          ],
+          "answer": "Must they draw a picture?"
+        },
+        {
+          "id": "must_c_79",
+          "type": "C",
+          "question": "Ask a question: \"You must help their mum.\"",
+          "options": [
+            "Must help their mum you?",
+            "You must help their mum?",
+            "Must you help their mum?",
+            "Does you must help their mum?"
+          ],
+          "answer": "Must you help their mum?"
+        },
+        {
+          "id": "must_c_80",
+          "type": "C",
+          "question": "Ask a question: \"She must listen to music.\"",
+          "options": [
+            "Must she listen to music?",
+            "Must listen to music she?",
+            "Does she must listen to music?",
+            "She must listen to music?"
+          ],
+          "answer": "Must she listen to music?"
+        },
+        {
+          "id": "must_c_81",
+          "type": "C",
+          "question": "Ask a question: \"They must dance.\"",
+          "options": [
+            "Must dance they?",
+            "They must dance?",
+            "Must they dance?",
+            "Does they must dance?"
+          ],
+          "answer": "Must they dance?"
+        },
+        {
+          "id": "must_c_82",
+          "type": "C",
+          "question": "Ask a question: \"You must cook dinner.\"",
+          "options": [
+            "Must you cook dinner?",
+            "Must cook dinner you?",
+            "You must cook dinner?",
+            "Does you must cook dinner?"
+          ],
+          "answer": "Must you cook dinner?"
+        },
+        {
+          "id": "must_c_83",
+          "type": "C",
+          "question": "Ask a question: \"He must sing a song.\"",
+          "options": [
+            "Must he sing a song?",
+            "Does he must sing a song?",
+            "He must sing a song?",
+            "Must sing a song he?"
+          ],
+          "answer": "Must he sing a song?"
+        },
+        {
+          "id": "must_c_84",
+          "type": "C",
+          "question": "Ask a question: \"I must swim.\"",
+          "options": [
+            "Must swim I?",
+            "Does I must swim?",
+            "I must swim?",
+            "Must I swim?"
+          ],
+          "answer": "Must I swim?"
+        },
+        {
+          "id": "must_c_85",
+          "type": "C",
+          "question": "Ask a question: \"She must write a letter.\"",
+          "options": [
+            "She must write a letter?",
+            "Must write a letter she?",
+            "Must she write a letter?",
+            "Does she must write a letter?"
+          ],
+          "answer": "Must she write a letter?"
+        },
+        {
+          "id": "must_c_86",
+          "type": "C",
+          "question": "Ask a question: \"They must listen to music.\"",
+          "options": [
+            "Does they must listen to music?",
+            "Must listen to music they?",
+            "Must they listen to music?",
+            "They must listen to music?"
+          ],
+          "answer": "Must they listen to music?"
+        },
+        {
+          "id": "must_c_87",
+          "type": "C",
+          "question": "Ask a question: \"They must have lunch.\"",
+          "options": [
+            "Does they must have lunch?",
+            "They must have lunch?",
+            "Must have lunch they?",
+            "Must they have lunch?"
+          ],
+          "answer": "Must they have lunch?"
+        },
+        {
+          "id": "must_c_88",
+          "type": "C",
+          "question": "Ask a question: \"You must sing a song.\"",
+          "options": [
+            "Must you sing a song?",
+            "Does you must sing a song?",
+            "You must sing a song?",
+            "Must sing a song you?"
+          ],
+          "answer": "Must you sing a song?"
+        },
+        {
+          "id": "must_c_89",
+          "type": "C",
+          "question": "Ask a question: \"You must run.\"",
+          "options": [
+            "Must you run?",
+            "Must run you?",
+            "You must run?",
+            "Does you must run?"
+          ],
+          "answer": "Must you run?"
+        },
+        {
+          "id": "must_c_90",
+          "type": "C",
+          "question": "Ask a question: \"She must go to the party.\"",
+          "options": [
+            "Does she must go to the party?",
+            "Must go to the party she?",
+            "Must she go to the party?",
+            "She must go to the party?"
+          ],
+          "answer": "Must she go to the party?"
+        },
+        {
+          "id": "must_c_91",
+          "type": "C",
+          "question": "Ask a question: \"They must write a letter.\"",
+          "options": [
+            "Must they write a letter?",
+            "Must write a letter they?",
+            "Does they must write a letter?",
+            "They must write a letter?"
+          ],
+          "answer": "Must they write a letter?"
+        },
+        {
+          "id": "must_c_92",
+          "type": "C",
+          "question": "Ask a question: \"I must study English.\"",
+          "options": [
+            "I must study English?",
+            "Must study English I?",
+            "Must I study English?",
+            "Does I must study English?"
+          ],
+          "answer": "Must I study English?"
+        },
+        {
+          "id": "must_c_93",
+          "type": "C",
+          "question": "Ask a question: \"He must run.\"",
+          "options": [
+            "Does he must run?",
+            "He must run?",
+            "Must run he?",
+            "Must he run?"
+          ],
+          "answer": "Must he run?"
+        },
+        {
+          "id": "must_c_94",
+          "type": "C",
+          "question": "Ask a question: \"We must feed the cat.\"",
+          "options": [
+            "Does we must feed the cat?",
+            "Must feed the cat we?",
+            "We must feed the cat?",
+            "Must we feed the cat?"
+          ],
+          "answer": "Must we feed the cat?"
+        },
+        {
+          "id": "must_c_95",
+          "type": "C",
+          "question": "Ask a question: \"We must have lunch.\"",
+          "options": [
+            "Must we have lunch?",
+            "Does we must have lunch?",
+            "We must have lunch?",
+            "Must have lunch we?"
+          ],
+          "answer": "Must we have lunch?"
+        },
+        {
+          "id": "must_c_96",
+          "type": "C",
+          "question": "Ask a question: \"He must walk to school.\"",
+          "options": [
+            "Must he walk to school?",
+            "Must walk to school he?",
+            "Does he must walk to school?",
+            "He must walk to school?"
+          ],
+          "answer": "Must he walk to school?"
+        },
+        {
+          "id": "must_c_97",
+          "type": "C",
+          "question": "Ask a question: \"I must draw a picture.\"",
+          "options": [
+            "Does I must draw a picture?",
+            "Must I draw a picture?",
+            "Must draw a picture I?",
+            "I must draw a picture?"
+          ],
+          "answer": "Must I draw a picture?"
+        },
+        {
+          "id": "must_c_98",
+          "type": "C",
+          "question": "Ask a question: \"We must swim.\"",
+          "options": [
+            "Must swim we?",
+            "Must we swim?",
+            "Does we must swim?",
+            "We must swim?"
+          ],
+          "answer": "Must we swim?"
+        },
+        {
+          "id": "must_c_99",
+          "type": "C",
+          "question": "Ask a question: \"We must ride a bike.\"",
+          "options": [
+            "We must ride a bike?",
+            "Must we ride a bike?",
+            "Must ride a bike we?",
+            "Does we must ride a bike?"
+          ],
+          "answer": "Must we ride a bike?"
+        },
+        {
+          "id": "must_c_100",
+          "type": "C",
+          "question": "Ask a question: \"You must feed the cat.\"",
+          "options": [
+            "Must you feed the cat?",
+            "Must feed the cat you?",
+            "You must feed the cat?",
+            "Does you must feed the cat?"
+          ],
+          "answer": "Must you feed the cat?"
+        },
+        {
+          "id": "must_d_1",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro debe jugar al fútbol\" en inglés?",
+          "options": [
+            "The dog must play football.",
+            "The dog could play football.",
+            "The dog can play football.",
+            "The dog mustn't play football."
+          ],
+          "answer": "The dog must play football."
+        },
+        {
+          "id": "must_d_2",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro no debe bailar\" en inglés?",
+          "options": [
+            "The dog must dance.",
+            "The dog doesn't have to dance.",
+            "The dog can't dance.",
+            "The dog mustn't dance."
+          ],
+          "answer": "The dog mustn't dance."
+        },
+        {
+          "id": "must_d_3",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres deben cantar una canción\" en inglés?",
+          "options": [
+            "My parents can sing a song.",
+            "My parents could sing a song.",
+            "My parents mustn't sing a song.",
+            "My parents must sing a song."
+          ],
+          "answer": "My parents must sing a song."
+        },
+        {
+          "id": "must_d_4",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no debe limpiar la casa\" en inglés?",
+          "options": [
+            "It doesn't have to clean the house.",
+            "It can't clean the house.",
+            "It must clean the house.",
+            "It mustn't clean the house."
+          ],
+          "answer": "It mustn't clean the house."
+        },
+        {
+          "id": "must_d_5",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato debe limpiar la casa\" en inglés?",
+          "options": [
+            "Our cat mustn't clean the house.",
+            "Our cat must clean the house.",
+            "Our cat could clean the house.",
+            "Our cat can clean the house."
+          ],
+          "answer": "Our cat must clean the house."
+        },
+        {
+          "id": "must_d_6",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no debo estudiar inglés\" en inglés?",
+          "options": [
+            "I can't study English.",
+            "I doesn't have to study English.",
+            "I must study English.",
+            "I mustn't study English."
+          ],
+          "answer": "I mustn't study English."
+        },
+        {
+          "id": "must_d_7",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres deben ayudar a su madre\" en inglés?",
+          "options": [
+            "My parents mustn't help their mum.",
+            "My parents must help their mum.",
+            "My parents could help their mum.",
+            "My parents can help their mum."
+          ],
+          "answer": "My parents must help their mum."
+        },
+        {
+          "id": "must_d_8",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no debe ir a la fiesta\" en inglés?",
+          "options": [
+            "She can't go to the party.",
+            "She doesn't have to go to the party.",
+            "She must go to the party.",
+            "She mustn't go to the party."
+          ],
+          "answer": "She mustn't go to the party."
+        },
+        {
+          "id": "must_d_9",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato debe visitar a su abuela\" en inglés?",
+          "options": [
+            "Our cat mustn't visit their grandma.",
+            "Our cat must visit their grandma.",
+            "Our cat could visit their grandma.",
+            "Our cat can visit their grandma."
+          ],
+          "answer": "Our cat must visit their grandma."
+        },
+        {
+          "id": "must_d_10",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no deben dibujar un dibujo\" en inglés?",
+          "options": [
+            "The students must draw a picture.",
+            "The students doesn't have to draw a picture.",
+            "The students can't draw a picture.",
+            "The students mustn't draw a picture."
+          ],
+          "answer": "The students mustn't draw a picture."
+        },
+        {
+          "id": "must_d_11",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él debe dar de comer al gato\" en inglés?",
+          "options": [
+            "He can feed the cat.",
+            "He must feed the cat.",
+            "He mustn't feed the cat.",
+            "He could feed the cat."
+          ],
+          "answer": "He must feed the cat."
+        },
+        {
+          "id": "must_d_12",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no debe ir a la fiesta\" en inglés?",
+          "options": [
+            "Maria must go to the party.",
+            "Maria can't go to the party.",
+            "Maria doesn't have to go to the party.",
+            "Maria mustn't go to the party."
+          ],
+          "answer": "Maria mustn't go to the party."
+        },
+        {
+          "id": "must_d_13",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato debe bailar\" en inglés?",
+          "options": [
+            "Our cat must dance.",
+            "Our cat could dance.",
+            "Our cat mustn't dance.",
+            "Our cat can dance."
+          ],
+          "answer": "Our cat must dance."
+        },
+        {
+          "id": "must_d_14",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no debe escuchar música\" en inglés?",
+          "options": [
+            "She doesn't have to listen to music.",
+            "She can't listen to music.",
+            "She mustn't listen to music.",
+            "She must listen to music."
+          ],
+          "answer": "She mustn't listen to music."
+        },
+        {
+          "id": "must_d_15",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos deben ayudar a su madre\" en inglés?",
+          "options": [
+            "They could help their mum.",
+            "They mustn't help their mum.",
+            "They must help their mum.",
+            "They can help their mum."
+          ],
+          "answer": "They must help their mum."
+        },
+        {
+          "id": "must_d_16",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no debo dibujar un dibujo\" en inglés?",
+          "options": [
+            "I can't draw a picture.",
+            "I mustn't draw a picture.",
+            "I must draw a picture.",
+            "I doesn't have to draw a picture."
+          ],
+          "answer": "I mustn't draw a picture."
+        },
+        {
+          "id": "must_d_17",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro debe visitar a su abuela\" en inglés?",
+          "options": [
+            "The dog could visit their grandma.",
+            "The dog mustn't visit their grandma.",
+            "The dog must visit their grandma.",
+            "The dog can visit their grandma."
+          ],
+          "answer": "The dog must visit their grandma."
+        },
+        {
+          "id": "must_d_18",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no debe jugar al fútbol\" en inglés?",
+          "options": [
+            "It can't play football.",
+            "It mustn't play football.",
+            "It must play football.",
+            "It doesn't have to play football."
+          ],
+          "answer": "It mustn't play football."
+        },
+        {
+          "id": "must_d_19",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes deben ver la tele\" en inglés?",
+          "options": [
+            "The students mustn't watch TV.",
+            "The students could watch TV.",
+            "The students must watch TV.",
+            "The students can watch TV."
+          ],
+          "answer": "The students must watch TV."
+        },
+        {
+          "id": "must_d_20",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no deben escribir una carta\" en inglés?",
+          "options": [
+            "The students mustn't write a letter.",
+            "The students can't write a letter.",
+            "The students must write a letter.",
+            "The students doesn't have to write a letter."
+          ],
+          "answer": "The students mustn't write a letter."
+        },
+        {
+          "id": "must_d_21",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él debe escribir una carta\" en inglés?",
+          "options": [
+            "He could write a letter.",
+            "He must write a letter.",
+            "He can write a letter.",
+            "He mustn't write a letter."
+          ],
+          "answer": "He must write a letter."
+        },
+        {
+          "id": "must_d_22",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo no debo dar de comer al gato\" en inglés?",
+          "options": [
+            "I must feed the cat.",
+            "I can't feed the cat.",
+            "I doesn't have to feed the cat.",
+            "I mustn't feed the cat."
+          ],
+          "answer": "I mustn't feed the cat."
+        },
+        {
+          "id": "must_d_23",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María debe bailar\" en inglés?",
+          "options": [
+            "Maria could dance.",
+            "Maria mustn't dance.",
+            "Maria can dance.",
+            "Maria must dance."
+          ],
+          "answer": "Maria must dance."
+        },
+        {
+          "id": "must_d_24",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no deben hacer los deberes\" en inglés?",
+          "options": [
+            "The boys must do homework.",
+            "The boys doesn't have to do homework.",
+            "The boys mustn't do homework.",
+            "The boys can't do homework."
+          ],
+          "answer": "The boys mustn't do homework."
+        },
+        {
+          "id": "must_d_25",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana debe saltar\" en inglés?",
+          "options": [
+            "My sister mustn't jump.",
+            "My sister can jump.",
+            "My sister must jump.",
+            "My sister could jump."
+          ],
+          "answer": "My sister must jump."
+        },
+        {
+          "id": "must_d_26",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no deben ir a la fiesta\" en inglés?",
+          "options": [
+            "The students can't go to the party.",
+            "The students doesn't have to go to the party.",
+            "The students must go to the party.",
+            "The students mustn't go to the party."
+          ],
+          "answer": "The students mustn't go to the party."
+        },
+        {
+          "id": "must_d_27",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos deben ayudar a su madre\" en inglés?",
+          "options": [
+            "The boys mustn't help their mum.",
+            "The boys must help their mum.",
+            "The boys can help their mum.",
+            "The boys could help their mum."
+          ],
+          "answer": "The boys must help their mum."
+        },
+        {
+          "id": "must_d_28",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no debe estudiar inglés\" en inglés?",
+          "options": [
+            "It can't study English.",
+            "It must study English.",
+            "It doesn't have to study English.",
+            "It mustn't study English."
+          ],
+          "answer": "It mustn't study English."
+        },
+        {
+          "id": "must_d_29",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro debe dar de comer al gato\" en inglés?",
+          "options": [
+            "The dog can feed the cat.",
+            "The dog must feed the cat.",
+            "The dog could feed the cat.",
+            "The dog mustn't feed the cat."
+          ],
+          "answer": "The dog must feed the cat."
+        },
+        {
+          "id": "must_d_30",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no deben cepillarse los dientes\" en inglés?",
+          "options": [
+            "The boys must brush their teeth.",
+            "The boys can't brush their teeth.",
+            "The boys mustn't brush their teeth.",
+            "The boys doesn't have to brush their teeth."
+          ],
+          "answer": "The boys mustn't brush their teeth."
+        },
+        {
+          "id": "must_d_31",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos deben correr\" en inglés?",
+          "options": [
+            "They must run.",
+            "They mustn't run.",
+            "They could run.",
+            "They can run."
+          ],
+          "answer": "They must run."
+        },
+        {
+          "id": "must_d_32",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no deben trepar a un árbol\" en inglés?",
+          "options": [
+            "My parents must climb a tree.",
+            "My parents mustn't climb a tree.",
+            "My parents doesn't have to climb a tree.",
+            "My parents can't climb a tree."
+          ],
+          "answer": "My parents mustn't climb a tree."
+        },
+        {
+          "id": "must_d_33",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato debe estudiar inglés\" en inglés?",
+          "options": [
+            "Our cat could study English.",
+            "Our cat must study English.",
+            "Our cat mustn't study English.",
+            "Our cat can study English."
+          ],
+          "answer": "Our cat must study English."
+        },
+        {
+          "id": "must_d_34",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no debe cocinar la cena\" en inglés?",
+          "options": [
+            "She doesn't have to cook dinner.",
+            "She mustn't cook dinner.",
+            "She can't cook dinner.",
+            "She must cook dinner."
+          ],
+          "answer": "She mustn't cook dinner."
+        },
+        {
+          "id": "must_d_35",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros debemos jugar al fútbol\" en inglés?",
+          "options": [
+            "We could play football.",
+            "We can play football.",
+            "We must play football.",
+            "We mustn't play football."
+          ],
+          "answer": "We must play football."
+        },
+        {
+          "id": "must_d_36",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños no deben ver la tele\" en inglés?",
+          "options": [
+            "The children must watch TV.",
+            "The children can't watch TV.",
+            "The children doesn't have to watch TV.",
+            "The children mustn't watch TV."
+          ],
+          "answer": "The children mustn't watch TV."
+        },
+        {
+          "id": "must_d_37",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María debe hacer los deberes\" en inglés?",
+          "options": [
+            "Maria must do homework.",
+            "Maria can do homework.",
+            "Maria mustn't do homework.",
+            "Maria could do homework."
+          ],
+          "answer": "Maria must do homework."
+        },
+        {
+          "id": "must_d_38",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermana no debe escuchar música\" en inglés?",
+          "options": [
+            "My sister must listen to music.",
+            "My sister doesn't have to listen to music.",
+            "My sister can't listen to music.",
+            "My sister mustn't listen to music."
+          ],
+          "answer": "My sister mustn't listen to music."
+        },
+        {
+          "id": "must_d_39",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños deben cocinar la cena\" en inglés?",
+          "options": [
+            "The children must cook dinner.",
+            "The children mustn't cook dinner.",
+            "The children can cook dinner.",
+            "The children could cook dinner."
+          ],
+          "answer": "The children must cook dinner."
+        },
+        {
+          "id": "must_d_40",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no deben montar en bici\" en inglés?",
+          "options": [
+            "The boys can't ride a bike.",
+            "The boys mustn't ride a bike.",
+            "The boys doesn't have to ride a bike.",
+            "The boys must ride a bike."
+          ],
+          "answer": "The boys mustn't ride a bike."
+        },
+        {
+          "id": "must_d_41",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos deben escribir una carta\" en inglés?",
+          "options": [
+            "They can write a letter.",
+            "They must write a letter.",
+            "They mustn't write a letter.",
+            "They could write a letter."
+          ],
+          "answer": "They must write a letter."
+        },
+        {
+          "id": "must_d_42",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no debes hacer los deberes\" en inglés?",
+          "options": [
+            "You can't do homework.",
+            "You doesn't have to do homework.",
+            "You mustn't do homework.",
+            "You must do homework."
+          ],
+          "answer": "You mustn't do homework."
+        },
+        {
+          "id": "must_d_43",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano debe limpiar la casa\" en inglés?",
+          "options": [
+            "My brother must clean the house.",
+            "My brother mustn't clean the house.",
+            "My brother can clean the house.",
+            "My brother could clean the house."
+          ],
+          "answer": "My brother must clean the house."
+        },
+        {
+          "id": "must_d_44",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos no deben saltar\" en inglés?",
+          "options": [
+            "They mustn't jump.",
+            "They must jump.",
+            "They can't jump.",
+            "They doesn't have to jump."
+          ],
+          "answer": "They mustn't jump."
+        },
+        {
+          "id": "must_d_45",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres deben fregar los platos\" en inglés?",
+          "options": [
+            "My parents mustn't wash the dishes.",
+            "My parents must wash the dishes.",
+            "My parents could wash the dishes.",
+            "My parents can wash the dishes."
+          ],
+          "answer": "My parents must wash the dishes."
+        },
+        {
+          "id": "must_d_46",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no debe ayudar a su madre\" en inglés?",
+          "options": [
+            "Maria mustn't help their mum.",
+            "Maria must help their mum.",
+            "Maria can't help their mum.",
+            "Maria doesn't have to help their mum."
+          ],
+          "answer": "Maria mustn't help their mum."
+        },
+        {
+          "id": "must_d_47",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro debe estudiar inglés\" en inglés?",
+          "options": [
+            "The dog can study English.",
+            "The dog must study English.",
+            "The dog mustn't study English.",
+            "The dog could study English."
+          ],
+          "answer": "The dog must study English."
+        },
+        {
+          "id": "must_d_48",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no debe limpiar la casa\" en inglés?",
+          "options": [
+            "Tom doesn't have to clean the house.",
+            "Tom can't clean the house.",
+            "Tom mustn't clean the house.",
+            "Tom must clean the house."
+          ],
+          "answer": "Tom mustn't clean the house."
+        },
+        {
+          "id": "must_d_49",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes deben ayudar a su madre\" en inglés?",
+          "options": [
+            "The students can help their mum.",
+            "The students must help their mum.",
+            "The students mustn't help their mum.",
+            "The students could help their mum."
+          ],
+          "answer": "The students must help their mum."
+        },
+        {
+          "id": "must_d_50",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no debe montar en bici\" en inglés?",
+          "options": [
+            "It mustn't ride a bike.",
+            "It doesn't have to ride a bike.",
+            "It must ride a bike.",
+            "It can't ride a bike."
+          ],
+          "answer": "It mustn't ride a bike."
+        },
+        {
+          "id": "must_d_51",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes deben nadar\" en inglés?",
+          "options": [
+            "The students mustn't swim.",
+            "The students must swim.",
+            "The students could swim.",
+            "The students can swim."
+          ],
+          "answer": "The students must swim."
+        },
+        {
+          "id": "must_d_52",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no debes nadar\" en inglés?",
+          "options": [
+            "You must swim.",
+            "You can't swim.",
+            "You doesn't have to swim.",
+            "You mustn't swim."
+          ],
+          "answer": "You mustn't swim."
+        },
+        {
+          "id": "must_d_53",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos deben escuchar música\" en inglés?",
+          "options": [
+            "The boys can listen to music.",
+            "The boys mustn't listen to music.",
+            "The boys could listen to music.",
+            "The boys must listen to music."
+          ],
+          "answer": "The boys must listen to music."
+        },
+        {
+          "id": "must_d_54",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú no debes dibujar un dibujo\" en inglés?",
+          "options": [
+            "You doesn't have to draw a picture.",
+            "You mustn't draw a picture.",
+            "You must draw a picture.",
+            "You can't draw a picture."
+          ],
+          "answer": "You mustn't draw a picture."
+        },
+        {
+          "id": "must_d_55",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro debe ver la tele\" en inglés?",
+          "options": [
+            "The dog could watch TV.",
+            "The dog mustn't watch TV.",
+            "The dog must watch TV.",
+            "The dog can watch TV."
+          ],
+          "answer": "The dog must watch TV."
+        },
+        {
+          "id": "must_d_56",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no debe cantar una canción\" en inglés?",
+          "options": [
+            "Our cat doesn't have to sing a song.",
+            "Our cat must sing a song.",
+            "Our cat mustn't sing a song.",
+            "Our cat can't sing a song."
+          ],
+          "answer": "Our cat mustn't sing a song."
+        },
+        {
+          "id": "must_d_57",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres deben comer\" en inglés?",
+          "options": [
+            "My parents can have lunch.",
+            "My parents must have lunch.",
+            "My parents mustn't have lunch.",
+            "My parents could have lunch."
+          ],
+          "answer": "My parents must have lunch."
+        },
+        {
+          "id": "must_d_58",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mis padres no deben saltar\" en inglés?",
+          "options": [
+            "My parents doesn't have to jump.",
+            "My parents mustn't jump.",
+            "My parents must jump.",
+            "My parents can't jump."
+          ],
+          "answer": "My parents mustn't jump."
+        },
+        {
+          "id": "must_d_59",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros debemos visitar a su abuela\" en inglés?",
+          "options": [
+            "We could visit their grandma.",
+            "We mustn't visit their grandma.",
+            "We must visit their grandma.",
+            "We can visit their grandma."
+          ],
+          "answer": "We must visit their grandma."
+        },
+        {
+          "id": "must_d_60",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella no debe saltar\" en inglés?",
+          "options": [
+            "She doesn't have to jump.",
+            "She mustn't jump.",
+            "She can't jump.",
+            "She must jump."
+          ],
+          "answer": "She mustn't jump."
+        },
+        {
+          "id": "must_d_61",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ellos deben cepillarse los dientes\" en inglés?",
+          "options": [
+            "They must brush their teeth.",
+            "They mustn't brush their teeth.",
+            "They could brush their teeth.",
+            "They can brush their teeth."
+          ],
+          "answer": "They must brush their teeth."
+        },
+        {
+          "id": "must_d_62",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano no debe bailar\" en inglés?",
+          "options": [
+            "My brother must dance.",
+            "My brother mustn't dance.",
+            "My brother doesn't have to dance.",
+            "My brother can't dance."
+          ],
+          "answer": "My brother mustn't dance."
+        },
+        {
+          "id": "must_d_63",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo debo cepillarse los dientes\" en inglés?",
+          "options": [
+            "I can brush their teeth.",
+            "I mustn't brush their teeth.",
+            "I could brush their teeth.",
+            "I must brush their teeth."
+          ],
+          "answer": "I must brush their teeth."
+        },
+        {
+          "id": "must_d_64",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no debemos fregar los platos\" en inglés?",
+          "options": [
+            "We doesn't have to wash the dishes.",
+            "We can't wash the dishes.",
+            "We must wash the dishes.",
+            "We mustn't wash the dishes."
+          ],
+          "answer": "We mustn't wash the dishes."
+        },
+        {
+          "id": "must_d_65",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo debo fregar los platos\" en inglés?",
+          "options": [
+            "I mustn't wash the dishes.",
+            "I can wash the dishes.",
+            "I could wash the dishes.",
+            "I must wash the dishes."
+          ],
+          "answer": "I must wash the dishes."
+        },
+        {
+          "id": "must_d_66",
+          "type": "D",
+          "question": "¿Cómo se dice: \"María no debe escribir una carta\" en inglés?",
+          "options": [
+            "Maria doesn't have to write a letter.",
+            "Maria must write a letter.",
+            "Maria can't write a letter.",
+            "Maria mustn't write a letter."
+          ],
+          "answer": "Maria mustn't write a letter."
+        },
+        {
+          "id": "must_d_67",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro debe hacer los deberes\" en inglés?",
+          "options": [
+            "The dog mustn't do homework.",
+            "The dog must do homework.",
+            "The dog can do homework.",
+            "The dog could do homework."
+          ],
+          "answer": "The dog must do homework."
+        },
+        {
+          "id": "must_d_68",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los niños no deben saltar\" en inglés?",
+          "options": [
+            "The children can't jump.",
+            "The children mustn't jump.",
+            "The children doesn't have to jump.",
+            "The children must jump."
+          ],
+          "answer": "The children mustn't jump."
+        },
+        {
+          "id": "must_d_69",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato debe jugar al fútbol\" en inglés?",
+          "options": [
+            "Our cat must play football.",
+            "Our cat could play football.",
+            "Our cat mustn't play football.",
+            "Our cat can play football."
+          ],
+          "answer": "Our cat must play football."
+        },
+        {
+          "id": "must_d_70",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no deben cantar una canción\" en inglés?",
+          "options": [
+            "The boys can't sing a song.",
+            "The boys must sing a song.",
+            "The boys mustn't sing a song.",
+            "The boys doesn't have to sing a song."
+          ],
+          "answer": "The boys mustn't sing a song."
+        },
+        {
+          "id": "must_d_71",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano debe ir a la fiesta\" en inglés?",
+          "options": [
+            "My brother must go to the party.",
+            "My brother mustn't go to the party.",
+            "My brother could go to the party.",
+            "My brother can go to the party."
+          ],
+          "answer": "My brother must go to the party."
+        },
+        {
+          "id": "must_d_72",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato no debe escuchar música\" en inglés?",
+          "options": [
+            "Our cat doesn't have to listen to music.",
+            "Our cat can't listen to music.",
+            "Our cat mustn't listen to music.",
+            "Our cat must listen to music."
+          ],
+          "answer": "Our cat mustn't listen to music."
+        },
+        {
+          "id": "must_d_73",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso debe nadar\" en inglés?",
+          "options": [
+            "It can swim.",
+            "It could swim.",
+            "It mustn't swim.",
+            "It must swim."
+          ],
+          "answer": "It must swim."
+        },
+        {
+          "id": "must_d_74",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no debe caminar al colegio\" en inglés?",
+          "options": [
+            "Tom must walk to school.",
+            "Tom mustn't walk to school.",
+            "Tom can't walk to school.",
+            "Tom doesn't have to walk to school."
+          ],
+          "answer": "Tom mustn't walk to school."
+        },
+        {
+          "id": "must_d_75",
+          "type": "D",
+          "question": "¿Cómo se dice: \"ella debe ayudar a su madre\" en inglés?",
+          "options": [
+            "She must help their mum.",
+            "She can help their mum.",
+            "She mustn't help their mum.",
+            "She could help their mum."
+          ],
+          "answer": "She must help their mum."
+        },
+        {
+          "id": "must_d_76",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no debe comer\" en inglés?",
+          "options": [
+            "He doesn't have to have lunch.",
+            "He must have lunch.",
+            "He mustn't have lunch.",
+            "He can't have lunch."
+          ],
+          "answer": "He mustn't have lunch."
+        },
+        {
+          "id": "must_d_77",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él debe cantar una canción\" en inglés?",
+          "options": [
+            "He must sing a song.",
+            "He can sing a song.",
+            "He could sing a song.",
+            "He mustn't sing a song."
+          ],
+          "answer": "He must sing a song."
+        },
+        {
+          "id": "must_d_78",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no debe escuchar música\" en inglés?",
+          "options": [
+            "He doesn't have to listen to music.",
+            "He must listen to music.",
+            "He can't listen to music.",
+            "He mustn't listen to music."
+          ],
+          "answer": "He mustn't listen to music."
+        },
+        {
+          "id": "must_d_79",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano debe comer\" en inglés?",
+          "options": [
+            "My brother mustn't have lunch.",
+            "My brother can have lunch.",
+            "My brother could have lunch.",
+            "My brother must have lunch."
+          ],
+          "answer": "My brother must have lunch."
+        },
+        {
+          "id": "must_d_80",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no debe comer\" en inglés?",
+          "options": [
+            "It mustn't have lunch.",
+            "It must have lunch.",
+            "It can't have lunch.",
+            "It doesn't have to have lunch."
+          ],
+          "answer": "It mustn't have lunch."
+        },
+        {
+          "id": "must_d_81",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro debe fregar los platos\" en inglés?",
+          "options": [
+            "The dog could wash the dishes.",
+            "The dog mustn't wash the dishes.",
+            "The dog must wash the dishes.",
+            "The dog can wash the dishes."
+          ],
+          "answer": "The dog must wash the dishes."
+        },
+        {
+          "id": "must_d_82",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no debe trepar a un árbol\" en inglés?",
+          "options": [
+            "Tom must climb a tree.",
+            "Tom mustn't climb a tree.",
+            "Tom doesn't have to climb a tree.",
+            "Tom can't climb a tree."
+          ],
+          "answer": "Tom mustn't climb a tree."
+        },
+        {
+          "id": "must_d_83",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato debe nadar\" en inglés?",
+          "options": [
+            "Our cat must swim.",
+            "Our cat can swim.",
+            "Our cat could swim.",
+            "Our cat mustn't swim."
+          ],
+          "answer": "Our cat must swim."
+        },
+        {
+          "id": "must_d_84",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los chicos no deben comer\" en inglés?",
+          "options": [
+            "The boys must have lunch.",
+            "The boys mustn't have lunch.",
+            "The boys doesn't have to have lunch.",
+            "The boys can't have lunch."
+          ],
+          "answer": "The boys mustn't have lunch."
+        },
+        {
+          "id": "must_d_85",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom debe nadar\" en inglés?",
+          "options": [
+            "Tom could swim.",
+            "Tom mustn't swim.",
+            "Tom must swim.",
+            "Tom can swim."
+          ],
+          "answer": "Tom must swim."
+        },
+        {
+          "id": "must_d_86",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom no debe jugar al fútbol\" en inglés?",
+          "options": [
+            "Tom mustn't play football.",
+            "Tom doesn't have to play football.",
+            "Tom must play football.",
+            "Tom can't play football."
+          ],
+          "answer": "Tom mustn't play football."
+        },
+        {
+          "id": "must_d_87",
+          "type": "D",
+          "question": "¿Cómo se dice: \"yo debo bailar\" en inglés?",
+          "options": [
+            "I mustn't dance.",
+            "I could dance.",
+            "I can dance.",
+            "I must dance."
+          ],
+          "answer": "I must dance."
+        },
+        {
+          "id": "must_d_88",
+          "type": "D",
+          "question": "¿Cómo se dice: \"los estudiantes no deben comer\" en inglés?",
+          "options": [
+            "The students mustn't have lunch.",
+            "The students must have lunch.",
+            "The students doesn't have to have lunch.",
+            "The students can't have lunch."
+          ],
+          "answer": "The students mustn't have lunch."
+        },
+        {
+          "id": "must_d_89",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros debemos dar de comer al gato\" en inglés?",
+          "options": [
+            "We mustn't feed the cat.",
+            "We can feed the cat.",
+            "We could feed the cat.",
+            "We must feed the cat."
+          ],
+          "answer": "We must feed the cat."
+        },
+        {
+          "id": "must_d_90",
+          "type": "D",
+          "question": "¿Cómo se dice: \"eso no debe cantar una canción\" en inglés?",
+          "options": [
+            "It can't sing a song.",
+            "It must sing a song.",
+            "It mustn't sing a song.",
+            "It doesn't have to sing a song."
+          ],
+          "answer": "It mustn't sing a song."
+        },
+        {
+          "id": "must_d_91",
+          "type": "D",
+          "question": "¿Cómo se dice: \"Tom debe correr\" en inglés?",
+          "options": [
+            "Tom mustn't run.",
+            "Tom can run.",
+            "Tom could run.",
+            "Tom must run."
+          ],
+          "answer": "Tom must run."
+        },
+        {
+          "id": "must_d_92",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no debe bailar\" en inglés?",
+          "options": [
+            "He mustn't dance.",
+            "He must dance.",
+            "He can't dance.",
+            "He doesn't have to dance."
+          ],
+          "answer": "He mustn't dance."
+        },
+        {
+          "id": "must_d_93",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros debemos caminar al colegio\" en inglés?",
+          "options": [
+            "We mustn't walk to school.",
+            "We can walk to school.",
+            "We must walk to school.",
+            "We could walk to school."
+          ],
+          "answer": "We must walk to school."
+        },
+        {
+          "id": "must_d_94",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no debe ganar el partido\" en inglés?",
+          "options": [
+            "He doesn't have to win the game.",
+            "He must win the game.",
+            "He mustn't win the game.",
+            "He can't win the game."
+          ],
+          "answer": "He mustn't win the game."
+        },
+        {
+          "id": "must_d_95",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nuestro gato debe dar de comer al gato\" en inglés?",
+          "options": [
+            "Our cat could feed the cat.",
+            "Our cat mustn't feed the cat.",
+            "Our cat can feed the cat.",
+            "Our cat must feed the cat."
+          ],
+          "answer": "Our cat must feed the cat."
+        },
+        {
+          "id": "must_d_96",
+          "type": "D",
+          "question": "¿Cómo se dice: \"nosotros no debemos montar en bici\" en inglés?",
+          "options": [
+            "We mustn't ride a bike.",
+            "We must ride a bike.",
+            "We can't ride a bike.",
+            "We doesn't have to ride a bike."
+          ],
+          "answer": "We mustn't ride a bike."
+        },
+        {
+          "id": "must_d_97",
+          "type": "D",
+          "question": "¿Cómo se dice: \"tú debes ir a la fiesta\" en inglés?",
+          "options": [
+            "You mustn't go to the party.",
+            "You must go to the party.",
+            "You could go to the party.",
+            "You can go to the party."
+          ],
+          "answer": "You must go to the party."
+        },
+        {
+          "id": "must_d_98",
+          "type": "D",
+          "question": "¿Cómo se dice: \"él no debe nadar\" en inglés?",
+          "options": [
+            "He mustn't swim.",
+            "He doesn't have to swim.",
+            "He can't swim.",
+            "He must swim."
+          ],
+          "answer": "He mustn't swim."
+        },
+        {
+          "id": "must_d_99",
+          "type": "D",
+          "question": "¿Cómo se dice: \"mi hermano debe dibujar un dibujo\" en inglés?",
+          "options": [
+            "My brother must draw a picture.",
+            "My brother could draw a picture.",
+            "My brother can draw a picture.",
+            "My brother mustn't draw a picture."
+          ],
+          "answer": "My brother must draw a picture."
+        },
+        {
+          "id": "must_d_100",
+          "type": "D",
+          "question": "¿Cómo se dice: \"el perro no debe correr\" en inglés?",
+          "options": [
+            "The dog doesn't have to run.",
+            "The dog mustn't run.",
+            "The dog can't run.",
+            "The dog must run."
+          ],
+          "answer": "The dog mustn't run."
+        }
+      ]
+    }
+  ]
+}
