@@ -414,3 +414,112 @@
     <div style="margin:0 16px 20px;font-size:11px;color:var(--gray-400);font-weight:600;line-height:1.5">💡 Trick: <b>in/on/under</b> describe a fixed position, but <b>into/onto/out of</b> describe movement to a new position.</div>
   </div>
 </div>
+
+<!-- =============================================
+     GRAMMAR — EJERCICIOS (Bloque 2: Could / Must / Have To).
+     Reutiliza los motores genéricos — ver
+     js/english-modals-c4.js. Las pantallas de tipo/
+     pregunta/word order son GENÉRICAS y compartidas por
+     los 3 modales, igual que en Verb Tenses.
+     ============================================= -->
+
+<!-- MENÚ DE GRAMMAR EXERCISES -->
+<div class="screen" id="s-english-grammar-ex-c4">
+  <div class="topbar bg-blue">
+    <button class="back-btn" onclick="go('s-english-exercises-c4')">←</button>
+    <h1>Grammar</h1>
+    <span class="top-badge">✏️ Practice</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Choose a topic</div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--orange);background:#FFEDD5" onclick="openModalsExerciseMenu('could')">
+        <div class="mode-emoji">🟠</div>
+        <div class="mode-name" style="color:var(--orange)">Could</div>
+        <div class="mode-sub">400 questions</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--red);background:var(--red-light)" onclick="openModalsExerciseMenu('must')">
+        <div class="mode-emoji">🔴</div>
+        <div class="mode-name" style="color:var(--red)">Must</div>
+        <div class="mode-sub">400 questions</div>
+      </div>
+    </div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--amber);background:var(--amber-light)" onclick="openModalsExerciseMenu('haveto')">
+        <div class="mode-emoji">🟡</div>
+        <div class="mode-name" style="color:var(--amber)">Have To</div>
+        <div class="mode-sub">400 questions</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--purple);background:#EDE9FE" onclick="startModalsMatching()">
+        <div class="mode-emoji">🔗</div>
+        <div class="mode-name" style="color:var(--purple)">Which one?</div>
+        <div class="mode-sub">Could, Must or Have To</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MENÚ DE TIPOS (compartido por Could / Must / Have To) -->
+<div class="screen" id="s-english-modals-extype-c4">
+  <div class="topbar bg-blue" id="mdc4-extype-topbar"><button class="back-btn" onclick="go('s-english-grammar-ex-c4')">←</button><h1 id="mdc4-extype-title">Modal</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a type</div>
+    <div class="mode-grid" id="mdc4-extype-grid"></div>
+  </div>
+</div>
+
+<!-- PREGUNTAS de opción múltiple (tipos A-D) -->
+<div class="screen" id="s-english-modals-ex-c4">
+  <div class="topbar bg-blue" id="mdc4-ex-topbar"><button class="back-btn" onclick="go('s-english-modals-extype-c4')">←</button><h1 id="mdc4-ex-title">Modal</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="mdc4-ex-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="mdc4-ex-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="mdc4-ex-prog"></div></div></div>
+  <div class="sa">
+    <div class="word-card">
+      <div class="word-qtxt" id="mdc4-ex-question">Question</div>
+    </div>
+    <div class="word-opts" id="mdc4-ex-opts"></div>
+    <div class="feedback" id="mdc4-ex-fb" style="display:none"></div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="mdc4-ex-next" onclick="nextModalsQuestion()">Next question →</button>
+  </div>
+</div>
+
+<!-- WORD ORDER -->
+<div class="screen" id="s-english-modals-wo-c4">
+  <div class="topbar bg-blue" id="mdc4-wo-topbar"><button class="back-btn" onclick="go('s-english-modals-extype-c4')">←</button><h1 id="mdc4-wo-title">Word Order</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="mdc4-wo-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="mdc4-wo-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="mdc4-wo-prog"></div></div></div>
+  <div class="sa">
+    <div style="padding:14px 16px 6px">
+      <div style="font-family:var(--f);font-size:14px;font-weight:800;color:var(--gray-800);margin-bottom:4px">Put the words in the correct order</div>
+      <div style="font-size:12px;color:var(--gray-400)">Tap a word to place it · Tap a placed word to remove it</div>
+    </div>
+    <div id="mdc4-wo-slots" style="display:flex;flex-wrap:wrap;gap:8px;min-height:52px;padding:12px 16px;background:#F8FAFF;border:2px dashed #BFDBFE;border-radius:14px;margin:0 16px 14px;transition:border-color .2s"></div>
+    <div id="mdc4-wo-bank" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 16px 16px;min-height:44px"></div>
+    <div class="feedback" id="mdc4-wo-fb" style="display:none"></div>
+    <div style="display:flex;flex-direction:column;gap:8px;padding:0 16px 20px">
+      <button id="mdc4-wo-check" onclick="checkWordOrder()" style="width:100%;padding:13px 16px;border-radius:12px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default;transition:all .2s">Check ✓</button>
+      <button id="mdc4-wo-reset" onclick="resetWordOrder()" style="width:100%;padding:10px 16px;border-radius:12px;border:1.5px solid var(--gray-200);background:white;color:var(--gray-400);font-family:var(--f);font-weight:700;font-size:13px;cursor:pointer">🔄 Reset</button>
+    </div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="mdc4-wo-next" onclick="nextWordOrder()">Next question →</button>
+  </div>
+</div>
+
+<!-- "WHICH ONE?" — Matching compartido entre los 3 modales -->
+<div class="screen" id="s-english-modals-match-c4">
+  <div class="topbar bg-blue"><button class="back-btn" onclick="go('s-english-grammar-ex-c4')">←</button><h1>Which one?</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div style="padding:14px 16px 6px">
+      <div style="font-family:var(--f);font-size:14px;font-weight:800;color:var(--gray-800);margin-bottom:4px">Match each situation to the right sentence</div>
+      <div style="font-size:12px;color:var(--gray-400)">Tap a situation, then tap the sentence that fits</div>
+    </div>
+    <div id="mdc4-match-area" style="padding:0 16px"></div>
+    <div class="feedback" id="mdc4-match-fb" style="display:none;margin:0 16px"></div>
+    <button class="next-btn" style="background:var(--blue);display:none;margin:0 16px" id="mdc4-match-next" onclick="modalsMatchingNext()">Continue →</button>
+  </div>
+</div>
