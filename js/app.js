@@ -168,6 +168,13 @@ function loadScreenLazy(screenId, callback) {
     's-english-erest-c4':          'screens/curso4/english-grammar.html',
     's-english-adverbs-c4':        'screens/curso4/english-grammar.html',
     's-english-prepositions-c4':   'screens/curso4/english-grammar.html',
+    /* Grammar Exercises — Bloque 2 (Could/Must/Have To), pantallas
+       genéricas compartidas por los 3 modales (ver js/english-modals-c4.js) */
+    's-english-grammar-ex-c4':     'screens/curso4/english-grammar.html',
+    's-english-modals-extype-c4':  'screens/curso4/english-grammar.html',
+    's-english-modals-ex-c4':      'screens/curso4/english-grammar.html',
+    's-english-modals-wo-c4':      'screens/curso4/english-grammar.html',
+    's-english-modals-match-c4':   'screens/curso4/english-grammar.html',
     /* Verb Tenses — pantallas genéricas de ejercicios, compartidas
        por los 7 tiempos (ver js/english-tenses-c4.js) */
     's-english-tenses-extype-c4':  'screens/curso4/english-tenses.html',
