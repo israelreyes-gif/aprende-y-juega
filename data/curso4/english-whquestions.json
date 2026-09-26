@@ -1,0 +1,3611 @@
+{
+  "units": [
+    {
+      "id": "whquestions-c4",
+      "title": "Wh- Questions",
+      "emoji": "❓",
+      "exercises": [
+        {
+          "id": "wh_a_1",
+          "type": "A",
+          "question": "___ do they sit next to? — The best friend.",
+          "options": [
+            "Why",
+            "Where",
+            "Who",
+            "How much"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_2",
+          "type": "A",
+          "question": "___ pets do we have? — One dog.",
+          "options": [
+            "Where",
+            "How much",
+            "How many",
+            "Who"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_3",
+          "type": "A",
+          "question": "___ pencils does Tom have? — Three.",
+          "options": [
+            "Why",
+            "How old",
+            "When",
+            "How many"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_4",
+          "type": "A",
+          "question": "___ do I do at the weekend? — Play football.",
+          "options": [
+            "Where",
+            "How many",
+            "What",
+            "Why"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_5",
+          "type": "A",
+          "question": "___ does your brother go on holiday? — To the beach.",
+          "options": [
+            "How many",
+            "Why",
+            "Where",
+            "How"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_6",
+          "type": "A",
+          "question": "___ does she help with homework? — Mum.",
+          "options": [
+            "When",
+            "How many",
+            "How old",
+            "Who"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_7",
+          "type": "A",
+          "question": "___ do you wear a coat? — Because it's cold.",
+          "options": [
+            "How many",
+            "Why",
+            "When",
+            "How much"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_8",
+          "type": "A",
+          "question": "___ does your brother feel today? — Very happy.",
+          "options": [
+            "Who",
+            "How",
+            "What",
+            "Where"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_9",
+          "type": "A",
+          "question": "___ does your brother do at the weekend? — Play football.",
+          "options": [
+            "When",
+            "Where",
+            "What",
+            "How old"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_10",
+          "type": "A",
+          "question": "___ pets does Ana have? — One dog.",
+          "options": [
+            "Who",
+            "How many",
+            "When",
+            "How old"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_11",
+          "type": "A",
+          "question": "___ does she keep the books? — In a bag.",
+          "options": [
+            "Where",
+            "What",
+            "How much",
+            "How old"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_12",
+          "type": "A",
+          "question": "___ pencils do they have? — Three.",
+          "options": [
+            "How",
+            "How many",
+            "How old",
+            "When"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_13",
+          "type": "A",
+          "question": "___ do I learn new words? — By reading books.",
+          "options": [
+            "What",
+            "How",
+            "How old",
+            "When"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_14",
+          "type": "A",
+          "question": "___ are you? — Nine.",
+          "options": [
+            "What",
+            "How old",
+            "When",
+            "How much"
+          ],
+          "answer": "How old"
+        },
+        {
+          "id": "wh_a_15",
+          "type": "A",
+          "question": "___ homework does he have? — A lot.",
+          "options": [
+            "How old",
+            "Why",
+            "How much",
+            "What"
+          ],
+          "answer": "How much"
+        },
+        {
+          "id": "wh_a_16",
+          "type": "A",
+          "question": "___ do they like maths? — Because it's fun.",
+          "options": [
+            "What",
+            "When",
+            "Why",
+            "Who"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_17",
+          "type": "A",
+          "question": "___ does Tom live? — In Madrid.",
+          "options": [
+            "Who",
+            "How",
+            "How much",
+            "Where"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_18",
+          "type": "A",
+          "question": "___ does your brother wear a coat? — Because it's cold.",
+          "options": [
+            "How much",
+            "How many",
+            "Why",
+            "Where"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_19",
+          "type": "A",
+          "question": "___ homework does she have? — A lot.",
+          "options": [
+            "How many",
+            "Why",
+            "How old",
+            "How much"
+          ],
+          "answer": "How much"
+        },
+        {
+          "id": "wh_a_20",
+          "type": "A",
+          "question": "___ does he live? — In Madrid.",
+          "options": [
+            "Where",
+            "Who",
+            "How old",
+            "When"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_21",
+          "type": "A",
+          "question": "___ do you study on Fridays? — Science.",
+          "options": [
+            "How many",
+            "What",
+            "Where",
+            "How much"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_22",
+          "type": "A",
+          "question": "___ pencils do you have? — Three.",
+          "options": [
+            "When",
+            "How much",
+            "Where",
+            "How many"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_23",
+          "type": "A",
+          "question": "___ does he go on holiday? — To the beach.",
+          "options": [
+            "How many",
+            "Why",
+            "Who",
+            "Where"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_24",
+          "type": "A",
+          "question": "___ does Tom go on holiday? — To the beach.",
+          "options": [
+            "What",
+            "How",
+            "How much",
+            "Where"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_25",
+          "type": "A",
+          "question": "___ does your brother like maths? — Because it's fun.",
+          "options": [
+            "How many",
+            "How much",
+            "Why",
+            "How"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_26",
+          "type": "A",
+          "question": "___ do you study English? — Because it's useful.",
+          "options": [
+            "How",
+            "Why",
+            "How many",
+            "Where"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_27",
+          "type": "A",
+          "question": "___ do the children buy lunch? — At the school canteen.",
+          "options": [
+            "When",
+            "Where",
+            "How much",
+            "How old"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_28",
+          "type": "A",
+          "question": "___ do I study English? — Because it's useful.",
+          "options": [
+            "When",
+            "Why",
+            "How many",
+            "How"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_29",
+          "type": "A",
+          "question": "___ do we study on Fridays? — Science.",
+          "options": [
+            "Why",
+            "Who",
+            "What",
+            "When"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_30",
+          "type": "A",
+          "question": "___ pets do you have? — One dog.",
+          "options": [
+            "When",
+            "How many",
+            "Where",
+            "Who"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_31",
+          "type": "A",
+          "question": "___ brothers and sisters does your brother have? — Two.",
+          "options": [
+            "Who",
+            "How much",
+            "How many",
+            "What"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_32",
+          "type": "A",
+          "question": "___ do you go to bed? — At nine o'clock.",
+          "options": [
+            "Why",
+            "When",
+            "How",
+            "How much"
+          ],
+          "answer": "When"
+        },
+        {
+          "id": "wh_a_33",
+          "type": "A",
+          "question": "___ do the children do the homework? — After dinner.",
+          "options": [
+            "How many",
+            "Where",
+            "When",
+            "How"
+          ],
+          "answer": "When"
+        },
+        {
+          "id": "wh_a_34",
+          "type": "A",
+          "question": "___ does he want for breakfast? — Some toast.",
+          "options": [
+            "What",
+            "Who",
+            "Where",
+            "Why"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_35",
+          "type": "A",
+          "question": "___ does Ana study on Fridays? — Science.",
+          "options": [
+            "How old",
+            "Why",
+            "How much",
+            "What"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_36",
+          "type": "A",
+          "question": "___ homework does your brother have? — A lot.",
+          "options": [
+            "When",
+            "Who",
+            "How much",
+            "How many"
+          ],
+          "answer": "How much"
+        },
+        {
+          "id": "wh_a_37",
+          "type": "A",
+          "question": "___ does he do the homework? — After dinner.",
+          "options": [
+            "How",
+            "What",
+            "When",
+            "How old"
+          ],
+          "answer": "When"
+        },
+        {
+          "id": "wh_a_38",
+          "type": "A",
+          "question": "___ does Tom want for breakfast? — Some toast.",
+          "options": [
+            "How many",
+            "What",
+            "How",
+            "Why"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_39",
+          "type": "A",
+          "question": "___ brothers and sisters do the children have? — Two.",
+          "options": [
+            "Where",
+            "How much",
+            "What",
+            "How many"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_40",
+          "type": "A",
+          "question": "___ does he like maths? — Because it's fun.",
+          "options": [
+            "Who",
+            "Why",
+            "What",
+            "How much"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_41",
+          "type": "A",
+          "question": "___ do they wear a coat? — Because it's cold.",
+          "options": [
+            "How many",
+            "Why",
+            "How much",
+            "What"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_42",
+          "type": "A",
+          "question": "___ does Tom feel today? — Very happy.",
+          "options": [
+            "Who",
+            "How many",
+            "How",
+            "How much"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_43",
+          "type": "A",
+          "question": "___ do they keep the books? — In a bag.",
+          "options": [
+            "Where",
+            "How",
+            "How many",
+            "How much"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_44",
+          "type": "A",
+          "question": "___ water do we drink? — A lot.",
+          "options": [
+            "What",
+            "Where",
+            "How much",
+            "How"
+          ],
+          "answer": "How much"
+        },
+        {
+          "id": "wh_a_45",
+          "type": "A",
+          "question": "___ does he go to school? — By bus.",
+          "options": [
+            "Why",
+            "How",
+            "What",
+            "How many"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_46",
+          "type": "A",
+          "question": "___ homework does Ana have? — A lot.",
+          "options": [
+            "How much",
+            "Why",
+            "What",
+            "Where"
+          ],
+          "answer": "How much"
+        },
+        {
+          "id": "wh_a_47",
+          "type": "A",
+          "question": "___ does your brother go to school? — By bus.",
+          "options": [
+            "How many",
+            "Where",
+            "Why",
+            "How"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_48",
+          "type": "A",
+          "question": "___ do I go to bed? — At nine o'clock.",
+          "options": [
+            "How many",
+            "When",
+            "Who",
+            "Where"
+          ],
+          "answer": "When"
+        },
+        {
+          "id": "wh_a_49",
+          "type": "A",
+          "question": "___ brothers and sisters do I have? — Two.",
+          "options": [
+            "Where",
+            "Why",
+            "How many",
+            "How much"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_50",
+          "type": "A",
+          "question": "___ does he do at the weekend? — Play football.",
+          "options": [
+            "How",
+            "How much",
+            "When",
+            "What"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_51",
+          "type": "A",
+          "question": "___ do you do at the weekend? — Play football.",
+          "options": [
+            "When",
+            "What",
+            "How many",
+            "Who"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_52",
+          "type": "A",
+          "question": "___ does Tom help with homework? — Mum.",
+          "options": [
+            "Why",
+            "Who",
+            "Where",
+            "How many"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_53",
+          "type": "A",
+          "question": "___ pets do the children have? — One dog.",
+          "options": [
+            "How many",
+            "How old",
+            "Why",
+            "How"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_54",
+          "type": "A",
+          "question": "___ does she like maths? — Because it's fun.",
+          "options": [
+            "When",
+            "How old",
+            "Who",
+            "Why"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_55",
+          "type": "A",
+          "question": "___ does he learn new words? — By reading books.",
+          "options": [
+            "Why",
+            "How old",
+            "How",
+            "How many"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_56",
+          "type": "A",
+          "question": "___ do you keep the books? — In a bag.",
+          "options": [
+            "When",
+            "How many",
+            "Why",
+            "Where"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_57",
+          "type": "A",
+          "question": "___ does he study on Fridays? — Science.",
+          "options": [
+            "What",
+            "How much",
+            "How old",
+            "Why"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_58",
+          "type": "A",
+          "question": "___ does he wear a coat? — Because it's cold.",
+          "options": [
+            "How many",
+            "When",
+            "What",
+            "Why"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_59",
+          "type": "A",
+          "question": "___ pets does she have? — One dog.",
+          "options": [
+            "Where",
+            "Who",
+            "How many",
+            "How"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_60",
+          "type": "A",
+          "question": "___ water do they drink? — A lot.",
+          "options": [
+            "When",
+            "How much",
+            "How many",
+            "Where"
+          ],
+          "answer": "How much"
+        },
+        {
+          "id": "wh_a_61",
+          "type": "A",
+          "question": "___ brothers and sisters do they have? — Two.",
+          "options": [
+            "What",
+            "How many",
+            "Why",
+            "How"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_62",
+          "type": "A",
+          "question": "___ do I want for breakfast? — Some toast.",
+          "options": [
+            "When",
+            "What",
+            "How old",
+            "Why"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_63",
+          "type": "A",
+          "question": "___ does he help with homework? — Mum.",
+          "options": [
+            "Who",
+            "How much",
+            "Where",
+            "How"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_64",
+          "type": "A",
+          "question": "___ do the children feel today? — Very happy.",
+          "options": [
+            "Where",
+            "What",
+            "How old",
+            "How"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_65",
+          "type": "A",
+          "question": "___ brothers and sisters do we have? — Two.",
+          "options": [
+            "Who",
+            "What",
+            "How many",
+            "Why"
+          ],
+          "answer": "How many"
+        },
+        {
+          "id": "wh_a_66",
+          "type": "A",
+          "question": "___ does your brother do the homework? — After dinner.",
+          "options": [
+            "When",
+            "Where",
+            "How old",
+            "How"
+          ],
+          "answer": "When"
+        },
+        {
+          "id": "wh_a_67",
+          "type": "A",
+          "question": "___ does your brother learn new words? — By reading books.",
+          "options": [
+            "What",
+            "When",
+            "How",
+            "How much"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_68",
+          "type": "A",
+          "question": "___ do they go on holiday? — To the beach.",
+          "options": [
+            "How many",
+            "When",
+            "Where",
+            "How old"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_69",
+          "type": "A",
+          "question": "___ do they live? — In Madrid.",
+          "options": [
+            "Who",
+            "Where",
+            "When",
+            "How"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_70",
+          "type": "A",
+          "question": "___ does your brother study English? — Because it's useful.",
+          "options": [
+            "Where",
+            "Why",
+            "When",
+            "How old"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_71",
+          "type": "A",
+          "question": "___ do I wear a coat? — Because it's cold.",
+          "options": [
+            "What",
+            "Why",
+            "When",
+            "How"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_72",
+          "type": "A",
+          "question": "___ do we buy lunch? — At the school canteen.",
+          "options": [
+            "When",
+            "How old",
+            "Why",
+            "Where"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_73",
+          "type": "A",
+          "question": "___ does Ana learn new words? — By reading books.",
+          "options": [
+            "Why",
+            "When",
+            "How",
+            "Where"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_74",
+          "type": "A",
+          "question": "___ does your brother sit next to? — The best friend.",
+          "options": [
+            "How much",
+            "Who",
+            "What",
+            "How"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_75",
+          "type": "A",
+          "question": "___ does your brother study on Fridays? — Science.",
+          "options": [
+            "How",
+            "What",
+            "Why",
+            "When"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_76",
+          "type": "A",
+          "question": "___ does she feel today? — Very happy.",
+          "options": [
+            "Who",
+            "How many",
+            "How much",
+            "How"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_77",
+          "type": "A",
+          "question": "___ does Tom do at the weekend? — Play football.",
+          "options": [
+            "When",
+            "How many",
+            "What",
+            "How old"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_78",
+          "type": "A",
+          "question": "___ does Ana want for breakfast? — Some toast.",
+          "options": [
+            "What",
+            "How much",
+            "When",
+            "How"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_79",
+          "type": "A",
+          "question": "___ does your brother buy lunch? — At the school canteen.",
+          "options": [
+            "Where",
+            "How much",
+            "How",
+            "What"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_80",
+          "type": "A",
+          "question": "___ does she live? — In Madrid.",
+          "options": [
+            "Why",
+            "How much",
+            "How many",
+            "Where"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_81",
+          "type": "A",
+          "question": "___ does he sit next to? — The best friend.",
+          "options": [
+            "Who",
+            "When",
+            "How much",
+            "How"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_82",
+          "type": "A",
+          "question": "___ homework do they have? — A lot.",
+          "options": [
+            "How much",
+            "How",
+            "How many",
+            "Who"
+          ],
+          "answer": "How much"
+        },
+        {
+          "id": "wh_a_83",
+          "type": "A",
+          "question": "___ does he buy lunch? — At the school canteen.",
+          "options": [
+            "When",
+            "How many",
+            "How much",
+            "Where"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_84",
+          "type": "A",
+          "question": "___ do they do at the weekend? — Play football.",
+          "options": [
+            "When",
+            "How old",
+            "What",
+            "How many"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_85",
+          "type": "A",
+          "question": "___ do the children keep the books? — In a bag.",
+          "options": [
+            "How",
+            "Where",
+            "What",
+            "How old"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_86",
+          "type": "A",
+          "question": "___ does Ana study English? — Because it's useful.",
+          "options": [
+            "Why",
+            "How old",
+            "What",
+            "How"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_87",
+          "type": "A",
+          "question": "___ do you learn new words? — By reading books.",
+          "options": [
+            "How",
+            "Where",
+            "Who",
+            "When"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_88",
+          "type": "A",
+          "question": "___ does Tom have English class? — On Mondays.",
+          "options": [
+            "When",
+            "How old",
+            "Who",
+            "Why"
+          ],
+          "answer": "When"
+        },
+        {
+          "id": "wh_a_89",
+          "type": "A",
+          "question": "___ is your teacher? — Mr Smith.",
+          "options": [
+            "Who",
+            "How much",
+            "How many",
+            "When"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_90",
+          "type": "A",
+          "question": "___ do we help with homework? — Mum.",
+          "options": [
+            "When",
+            "How old",
+            "Who",
+            "How"
+          ],
+          "answer": "Who"
+        },
+        {
+          "id": "wh_a_91",
+          "type": "A",
+          "question": "___ does she go to school? — By bus.",
+          "options": [
+            "How much",
+            "How",
+            "What",
+            "Who"
+          ],
+          "answer": "How"
+        },
+        {
+          "id": "wh_a_92",
+          "type": "A",
+          "question": "___ do I go on holiday? — To the beach.",
+          "options": [
+            "When",
+            "Where",
+            "How many",
+            "Who"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_93",
+          "type": "A",
+          "question": "___ do we wear a coat? — Because it's cold.",
+          "options": [
+            "What",
+            "How",
+            "Who",
+            "Why"
+          ],
+          "answer": "Why"
+        },
+        {
+          "id": "wh_a_94",
+          "type": "A",
+          "question": "___ does he keep the books? — In a bag.",
+          "options": [
+            "How old",
+            "What",
+            "Where",
+            "How much"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_95",
+          "type": "A",
+          "question": "___ is your name? — Ana.",
+          "options": [
+            "How old",
+            "How many",
+            "Why",
+            "What"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_96",
+          "type": "A",
+          "question": "___ do the children go on holiday? — To the beach.",
+          "options": [
+            "How",
+            "Who",
+            "Where",
+            "Why"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_97",
+          "type": "A",
+          "question": "___ does Ana do at the weekend? — Play football.",
+          "options": [
+            "How many",
+            "How",
+            "What",
+            "How old"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_98",
+          "type": "A",
+          "question": "___ are you from? — Spain.",
+          "options": [
+            "What",
+            "Where",
+            "How much",
+            "Why"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_a_99",
+          "type": "A",
+          "question": "___ does she want for breakfast? — Some toast.",
+          "options": [
+            "When",
+            "What",
+            "How old",
+            "How much"
+          ],
+          "answer": "What"
+        },
+        {
+          "id": "wh_a_100",
+          "type": "A",
+          "question": "___ do you go on holiday? — To the beach.",
+          "options": [
+            "How",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "answer": "Where"
+        },
+        {
+          "id": "wh_b_1",
+          "type": "B",
+          "question": "About Ana — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets Ana have?",
+            "How many pets do Ana have?",
+            "How many pets Ana does have?",
+            "How many pets does Ana have?"
+          ],
+          "answer": "How many pets does Ana have?"
+        },
+        {
+          "id": "wh_b_2",
+          "type": "B",
+          "question": "About Us — the answer is: \"Because it's useful.\" What is the question?",
+          "options": [
+            "Why does we study English?",
+            "Why we do study English?",
+            "Why do we study English?",
+            "Why we study English?"
+          ],
+          "answer": "Why do we study English?"
+        },
+        {
+          "id": "wh_b_3",
+          "type": "B",
+          "question": "About Us — the answer is: \"On Mondays.\" What is the question?",
+          "options": [
+            "When does we have English class?",
+            "When we have English class?",
+            "When we do have English class?",
+            "When do we have English class?"
+          ],
+          "answer": "When do we have English class?"
+        },
+        {
+          "id": "wh_b_4",
+          "type": "B",
+          "question": "About Us — the answer is: \"Some toast.\" What is the question?",
+          "options": [
+            "What does we want for breakfast?",
+            "What we do want for breakfast?",
+            "What we want for breakfast?",
+            "What do we want for breakfast?"
+          ],
+          "answer": "What do we want for breakfast?"
+        },
+        {
+          "id": "wh_b_5",
+          "type": "B",
+          "question": "About Him — the answer is: \"At the school canteen.\" What is the question?",
+          "options": [
+            "Where he buy lunch?",
+            "Where do he buy lunch?",
+            "Where does he buy lunch?",
+            "Where he does buy lunch?"
+          ],
+          "answer": "Where does he buy lunch?"
+        },
+        {
+          "id": "wh_b_6",
+          "type": "B",
+          "question": "About Tom — the answer is: \"In Madrid.\" What is the question?",
+          "options": [
+            "Where do Tom live?",
+            "Where does Tom live?",
+            "Where Tom live?",
+            "Where Tom does live?"
+          ],
+          "answer": "Where does Tom live?"
+        },
+        {
+          "id": "wh_b_7",
+          "type": "B",
+          "question": "About Them — the answer is: \"On Mondays.\" What is the question?",
+          "options": [
+            "When they do have English class?",
+            "When they have English class?",
+            "When does they have English class?",
+            "When do they have English class?"
+          ],
+          "answer": "When do they have English class?"
+        },
+        {
+          "id": "wh_b_8",
+          "type": "B",
+          "question": "About Her — the answer is: \"Because it's cold.\" What is the question?",
+          "options": [
+            "Why do she wear a coat?",
+            "Why does she wear a coat?",
+            "Why she wear a coat?",
+            "Why she does wear a coat?"
+          ],
+          "answer": "Why does she wear a coat?"
+        },
+        {
+          "id": "wh_b_9",
+          "type": "B",
+          "question": "About Him — the answer is: \"Because it's useful.\" What is the question?",
+          "options": [
+            "Why he does study English?",
+            "Why he study English?",
+            "Why does he study English?",
+            "Why do he study English?"
+          ],
+          "answer": "Why does he study English?"
+        },
+        {
+          "id": "wh_b_10",
+          "type": "B",
+          "question": "About Them — the answer is: \"Science.\" What is the question?",
+          "options": [
+            "What they study on Fridays?",
+            "What does they study on Fridays?",
+            "What do they study on Fridays?",
+            "What they do study on Fridays?"
+          ],
+          "answer": "What do they study on Fridays?"
+        },
+        {
+          "id": "wh_b_11",
+          "type": "B",
+          "question": "About Ana — the answer is: \"Very happy.\" What is the question?",
+          "options": [
+            "How does Ana feel today?",
+            "How Ana feel today?",
+            "How do Ana feel today?",
+            "How Ana does feel today?"
+          ],
+          "answer": "How does Ana feel today?"
+        },
+        {
+          "id": "wh_b_12",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"Two.\" What is the question?",
+          "options": [
+            "How many brothers and sisters your brother does have?",
+            "How many brothers and sisters does your brother have?",
+            "How many brothers and sisters your brother have?",
+            "How many brothers and sisters do your brother have?"
+          ],
+          "answer": "How many brothers and sisters does your brother have?"
+        },
+        {
+          "id": "wh_b_13",
+          "type": "B",
+          "question": "About Him — the answer is: \"By reading books.\" What is the question?",
+          "options": [
+            "How do he learn new words?",
+            "How does he learn new words?",
+            "How he does learn new words?",
+            "How he learn new words?"
+          ],
+          "answer": "How does he learn new words?"
+        },
+        {
+          "id": "wh_b_14",
+          "type": "B",
+          "question": "About Ana — the answer is: \"On Mondays.\" What is the question?",
+          "options": [
+            "When does Ana have English class?",
+            "When do Ana have English class?",
+            "When Ana does have English class?",
+            "When Ana have English class?"
+          ],
+          "answer": "When does Ana have English class?"
+        },
+        {
+          "id": "wh_b_15",
+          "type": "B",
+          "question": "About Me — the answer is: \"Because it's useful.\" What is the question?",
+          "options": [
+            "Why does I study English?",
+            "Why I study English?",
+            "Why I do study English?",
+            "Why do I study English?"
+          ],
+          "answer": "Why do I study English?"
+        },
+        {
+          "id": "wh_b_16",
+          "type": "B",
+          "question": "About You — the answer is: \"After dinner.\" What is the question?",
+          "options": [
+            "When do you do the homework?",
+            "When you do do the homework?",
+            "When you do the homework?",
+            "When does you do the homework?"
+          ],
+          "answer": "When do you do the homework?"
+        },
+        {
+          "id": "wh_b_17",
+          "type": "B",
+          "question": "About Me — the answer is: \"After dinner.\" What is the question?",
+          "options": [
+            "When I do the homework?",
+            "When does I do the homework?",
+            "When I do do the homework?",
+            "When do I do the homework?"
+          ],
+          "answer": "When do I do the homework?"
+        },
+        {
+          "id": "wh_b_18",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"Three.\" What is the question?",
+          "options": [
+            "How many pencils do your brother have?",
+            "How many pencils your brother does have?",
+            "How many pencils your brother have?",
+            "How many pencils does your brother have?"
+          ],
+          "answer": "How many pencils does your brother have?"
+        },
+        {
+          "id": "wh_b_19",
+          "type": "B",
+          "question": "About The children — the answer is: \"By bus.\" What is the question?",
+          "options": [
+            "How the children go to school?",
+            "How do the children go to school?",
+            "How the children do go to school?",
+            "How does the children go to school?"
+          ],
+          "answer": "How do the children go to school?"
+        },
+        {
+          "id": "wh_b_20",
+          "type": "B",
+          "question": "About Us — the answer is: \"A lot.\" What is the question?",
+          "options": [
+            "How much homework we have?",
+            "How much homework do we have?",
+            "How much homework does we have?",
+            "How much homework we do have?"
+          ],
+          "answer": "How much homework do we have?"
+        },
+        {
+          "id": "wh_b_21",
+          "type": "B",
+          "question": "About Them — the answer is: \"By bus.\" What is the question?",
+          "options": [
+            "How do they go to school?",
+            "How does they go to school?",
+            "How they go to school?",
+            "How they do go to school?"
+          ],
+          "answer": "How do they go to school?"
+        },
+        {
+          "id": "wh_b_22",
+          "type": "B",
+          "question": "About Them — the answer is: \"At nine o'clock.\" What is the question?",
+          "options": [
+            "When they go to bed?",
+            "When they do go to bed?",
+            "When do they go to bed?",
+            "When does they go to bed?"
+          ],
+          "answer": "When do they go to bed?"
+        },
+        {
+          "id": "wh_b_23",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"In Madrid.\" What is the question?",
+          "options": [
+            "Where your brother live?",
+            "Where do your brother live?",
+            "Where does your brother live?",
+            "Where your brother does live?"
+          ],
+          "answer": "Where does your brother live?"
+        },
+        {
+          "id": "wh_b_24",
+          "type": "B",
+          "question": "About Her — the answer is: \"To the beach.\" What is the question?",
+          "options": [
+            "Where she does go on holiday?",
+            "Where she go on holiday?",
+            "Where does she go on holiday?",
+            "Where do she go on holiday?"
+          ],
+          "answer": "Where does she go on holiday?"
+        },
+        {
+          "id": "wh_b_25",
+          "type": "B",
+          "question": "About The children — the answer is: \"Very happy.\" What is the question?",
+          "options": [
+            "How does the children feel today?",
+            "How do the children feel today?",
+            "How the children do feel today?",
+            "How the children feel today?"
+          ],
+          "answer": "How do the children feel today?"
+        },
+        {
+          "id": "wh_b_26",
+          "type": "B",
+          "question": "About Him — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets he does have?",
+            "How many pets he have?",
+            "How many pets do he have?",
+            "How many pets does he have?"
+          ],
+          "answer": "How many pets does he have?"
+        },
+        {
+          "id": "wh_b_27",
+          "type": "B",
+          "question": "About The children — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets does the children have?",
+            "How many pets the children do have?",
+            "How many pets the children have?",
+            "How many pets do the children have?"
+          ],
+          "answer": "How many pets do the children have?"
+        },
+        {
+          "id": "wh_b_28",
+          "type": "B",
+          "question": "About Us — the answer is: \"In a bag.\" What is the question?",
+          "options": [
+            "Where do we keep the books?",
+            "Where we do keep the books?",
+            "Where we keep the books?",
+            "Where does we keep the books?"
+          ],
+          "answer": "Where do we keep the books?"
+        },
+        {
+          "id": "wh_b_29",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"Very happy.\" What is the question?",
+          "options": [
+            "How does your brother feel today?",
+            "How your brother does feel today?",
+            "How your brother feel today?",
+            "How do your brother feel today?"
+          ],
+          "answer": "How does your brother feel today?"
+        },
+        {
+          "id": "wh_b_30",
+          "type": "B",
+          "question": "About Me — the answer is: \"In Madrid.\" What is the question?",
+          "options": [
+            "Where does I live?",
+            "Where do I live?",
+            "Where I live?",
+            "Where I do live?"
+          ],
+          "answer": "Where do I live?"
+        },
+        {
+          "id": "wh_b_31",
+          "type": "B",
+          "question": "About Tom — the answer is: \"By bus.\" What is the question?",
+          "options": [
+            "How Tom does go to school?",
+            "How Tom go to school?",
+            "How do Tom go to school?",
+            "How does Tom go to school?"
+          ],
+          "answer": "How does Tom go to school?"
+        },
+        {
+          "id": "wh_b_32",
+          "type": "B",
+          "question": "About Us — the answer is: \"By reading books.\" What is the question?",
+          "options": [
+            "How we do learn new words?",
+            "How does we learn new words?",
+            "How we learn new words?",
+            "How do we learn new words?"
+          ],
+          "answer": "How do we learn new words?"
+        },
+        {
+          "id": "wh_b_33",
+          "type": "B",
+          "question": "About Me — the answer is: \"On Mondays.\" What is the question?",
+          "options": [
+            "When I have English class?",
+            "When does I have English class?",
+            "When I do have English class?",
+            "When do I have English class?"
+          ],
+          "answer": "When do I have English class?"
+        },
+        {
+          "id": "wh_b_34",
+          "type": "B",
+          "question": "About Her — the answer is: \"Three.\" What is the question?",
+          "options": [
+            "How many pencils do she have?",
+            "How many pencils does she have?",
+            "How many pencils she does have?",
+            "How many pencils she have?"
+          ],
+          "answer": "How many pencils does she have?"
+        },
+        {
+          "id": "wh_b_35",
+          "type": "B",
+          "question": "About Her — the answer is: \"In Madrid.\" What is the question?",
+          "options": [
+            "Where she live?",
+            "Where she does live?",
+            "Where do she live?",
+            "Where does she live?"
+          ],
+          "answer": "Where does she live?"
+        },
+        {
+          "id": "wh_b_36",
+          "type": "B",
+          "question": "About The children — the answer is: \"In a bag.\" What is the question?",
+          "options": [
+            "Where the children keep the books?",
+            "Where do the children keep the books?",
+            "Where the children do keep the books?",
+            "Where does the children keep the books?"
+          ],
+          "answer": "Where do the children keep the books?"
+        },
+        {
+          "id": "wh_b_37",
+          "type": "B",
+          "question": "About The children — the answer is: \"To the beach.\" What is the question?",
+          "options": [
+            "Where the children go on holiday?",
+            "Where do the children go on holiday?",
+            "Where the children do go on holiday?",
+            "Where does the children go on holiday?"
+          ],
+          "answer": "Where do the children go on holiday?"
+        },
+        {
+          "id": "wh_b_38",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"Mum.\" What is the question?",
+          "options": [
+            "Who your brother does help with homework?",
+            "Who your brother help with homework?",
+            "Who does your brother help with homework?",
+            "Who do your brother help with homework?"
+          ],
+          "answer": "Who does your brother help with homework?"
+        },
+        {
+          "id": "wh_b_39",
+          "type": "B",
+          "question": "About Ana — the answer is: \"A lot.\" What is the question?",
+          "options": [
+            "How much water Ana drink?",
+            "How much water does Ana drink?",
+            "How much water Ana does drink?",
+            "How much water do Ana drink?"
+          ],
+          "answer": "How much water does Ana drink?"
+        },
+        {
+          "id": "wh_b_40",
+          "type": "B",
+          "question": "About Him — the answer is: \"Play football.\" What is the question?",
+          "options": [
+            "What does he do at the weekend?",
+            "What do he do at the weekend?",
+            "What he does do at the weekend?",
+            "What he do at the weekend?"
+          ],
+          "answer": "What does he do at the weekend?"
+        },
+        {
+          "id": "wh_b_41",
+          "type": "B",
+          "question": "About Her — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets do she have?",
+            "How many pets she does have?",
+            "How many pets does she have?",
+            "How many pets she have?"
+          ],
+          "answer": "How many pets does she have?"
+        },
+        {
+          "id": "wh_b_42",
+          "type": "B",
+          "question": "About Ana — the answer is: \"At the school canteen.\" What is the question?",
+          "options": [
+            "Where Ana does buy lunch?",
+            "Where Ana buy lunch?",
+            "Where does Ana buy lunch?",
+            "Where do Ana buy lunch?"
+          ],
+          "answer": "Where does Ana buy lunch?"
+        },
+        {
+          "id": "wh_b_43",
+          "type": "B",
+          "question": "About Us — the answer is: \"The best friend.\" What is the question?",
+          "options": [
+            "Who we sit next to?",
+            "Who does we sit next to?",
+            "Who we do sit next to?",
+            "Who do we sit next to?"
+          ],
+          "answer": "Who do we sit next to?"
+        },
+        {
+          "id": "wh_b_44",
+          "type": "B",
+          "question": "About You — the answer is: \"At the school canteen.\" What is the question?",
+          "options": [
+            "Where do you buy lunch?",
+            "Where you do buy lunch?",
+            "Where you buy lunch?",
+            "Where does you buy lunch?"
+          ],
+          "answer": "Where do you buy lunch?"
+        },
+        {
+          "id": "wh_b_45",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets your brother does have?",
+            "How many pets your brother have?",
+            "How many pets do your brother have?",
+            "How many pets does your brother have?"
+          ],
+          "answer": "How many pets does your brother have?"
+        },
+        {
+          "id": "wh_b_46",
+          "type": "B",
+          "question": "About Us — the answer is: \"Very happy.\" What is the question?",
+          "options": [
+            "How we do feel today?",
+            "How do we feel today?",
+            "How we feel today?",
+            "How does we feel today?"
+          ],
+          "answer": "How do we feel today?"
+        },
+        {
+          "id": "wh_b_47",
+          "type": "B",
+          "question": "About Ana — the answer is: \"In a bag.\" What is the question?",
+          "options": [
+            "Where Ana does keep the books?",
+            "Where Ana keep the books?",
+            "Where does Ana keep the books?",
+            "Where do Ana keep the books?"
+          ],
+          "answer": "Where does Ana keep the books?"
+        },
+        {
+          "id": "wh_b_48",
+          "type": "B",
+          "question": "About Ana — the answer is: \"Some toast.\" What is the question?",
+          "options": [
+            "What Ana want for breakfast?",
+            "What do Ana want for breakfast?",
+            "What does Ana want for breakfast?",
+            "What Ana does want for breakfast?"
+          ],
+          "answer": "What does Ana want for breakfast?"
+        },
+        {
+          "id": "wh_b_49",
+          "type": "B",
+          "question": "About Tom — the answer is: \"On Mondays.\" What is the question?",
+          "options": [
+            "When Tom does have English class?",
+            "When Tom have English class?",
+            "When do Tom have English class?",
+            "When does Tom have English class?"
+          ],
+          "answer": "When does Tom have English class?"
+        },
+        {
+          "id": "wh_b_50",
+          "type": "B",
+          "question": "About Her — the answer is: \"Two.\" What is the question?",
+          "options": [
+            "How many brothers and sisters do she have?",
+            "How many brothers and sisters she does have?",
+            "How many brothers and sisters does she have?",
+            "How many brothers and sisters she have?"
+          ],
+          "answer": "How many brothers and sisters does she have?"
+        },
+        {
+          "id": "wh_b_51",
+          "type": "B",
+          "question": "About Ana — the answer is: \"Mum.\" What is the question?",
+          "options": [
+            "Who Ana does help with homework?",
+            "Who do Ana help with homework?",
+            "Who does Ana help with homework?",
+            "Who Ana help with homework?"
+          ],
+          "answer": "Who does Ana help with homework?"
+        },
+        {
+          "id": "wh_b_52",
+          "type": "B",
+          "question": "About Her — the answer is: \"Play football.\" What is the question?",
+          "options": [
+            "What she do at the weekend?",
+            "What she does do at the weekend?",
+            "What does she do at the weekend?",
+            "What do she do at the weekend?"
+          ],
+          "answer": "What does she do at the weekend?"
+        },
+        {
+          "id": "wh_b_53",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"In a bag.\" What is the question?",
+          "options": [
+            "Where do your brother keep the books?",
+            "Where your brother does keep the books?",
+            "Where does your brother keep the books?",
+            "Where your brother keep the books?"
+          ],
+          "answer": "Where does your brother keep the books?"
+        },
+        {
+          "id": "wh_b_54",
+          "type": "B",
+          "question": "About Him — the answer is: \"To the beach.\" What is the question?",
+          "options": [
+            "Where do he go on holiday?",
+            "Where he go on holiday?",
+            "Where he does go on holiday?",
+            "Where does he go on holiday?"
+          ],
+          "answer": "Where does he go on holiday?"
+        },
+        {
+          "id": "wh_b_55",
+          "type": "B",
+          "question": "About Me — the answer is: \"Science.\" What is the question?",
+          "options": [
+            "What does I study on Fridays?",
+            "What I study on Fridays?",
+            "What I do study on Fridays?",
+            "What do I study on Fridays?"
+          ],
+          "answer": "What do I study on Fridays?"
+        },
+        {
+          "id": "wh_b_56",
+          "type": "B",
+          "question": "About Ana — the answer is: \"Because it's fun.\" What is the question?",
+          "options": [
+            "Why Ana like maths?",
+            "Why Ana does like maths?",
+            "Why do Ana like maths?",
+            "Why does Ana like maths?"
+          ],
+          "answer": "Why does Ana like maths?"
+        },
+        {
+          "id": "wh_b_57",
+          "type": "B",
+          "question": "About The children — the answer is: \"The best friend.\" What is the question?",
+          "options": [
+            "Who does the children sit next to?",
+            "Who the children sit next to?",
+            "Who the children do sit next to?",
+            "Who do the children sit next to?"
+          ],
+          "answer": "Who do the children sit next to?"
+        },
+        {
+          "id": "wh_b_58",
+          "type": "B",
+          "question": "About The children — the answer is: \"At the school canteen.\" What is the question?",
+          "options": [
+            "Where do the children buy lunch?",
+            "Where does the children buy lunch?",
+            "Where the children buy lunch?",
+            "Where the children do buy lunch?"
+          ],
+          "answer": "Where do the children buy lunch?"
+        },
+        {
+          "id": "wh_b_59",
+          "type": "B",
+          "question": "About Tom — the answer is: \"Some toast.\" What is the question?",
+          "options": [
+            "What Tom does want for breakfast?",
+            "What do Tom want for breakfast?",
+            "What Tom want for breakfast?",
+            "What does Tom want for breakfast?"
+          ],
+          "answer": "What does Tom want for breakfast?"
+        },
+        {
+          "id": "wh_b_60",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"By reading books.\" What is the question?",
+          "options": [
+            "How does your brother learn new words?",
+            "How your brother learn new words?",
+            "How do your brother learn new words?",
+            "How your brother does learn new words?"
+          ],
+          "answer": "How does your brother learn new words?"
+        },
+        {
+          "id": "wh_b_61",
+          "type": "B",
+          "question": "About Them — the answer is: \"Mum.\" What is the question?",
+          "options": [
+            "Who they help with homework?",
+            "Who they do help with homework?",
+            "Who do they help with homework?",
+            "Who does they help with homework?"
+          ],
+          "answer": "Who do they help with homework?"
+        },
+        {
+          "id": "wh_b_62",
+          "type": "B",
+          "question": "About Ana — the answer is: \"Science.\" What is the question?",
+          "options": [
+            "What does Ana study on Fridays?",
+            "What Ana does study on Fridays?",
+            "What Ana study on Fridays?",
+            "What do Ana study on Fridays?"
+          ],
+          "answer": "What does Ana study on Fridays?"
+        },
+        {
+          "id": "wh_b_63",
+          "type": "B",
+          "question": "About Him — the answer is: \"Very happy.\" What is the question?",
+          "options": [
+            "How he does feel today?",
+            "How he feel today?",
+            "How do he feel today?",
+            "How does he feel today?"
+          ],
+          "answer": "How does he feel today?"
+        },
+        {
+          "id": "wh_b_64",
+          "type": "B",
+          "question": "About You — the answer is: \"By reading books.\" What is the question?",
+          "options": [
+            "How you learn new words?",
+            "How does you learn new words?",
+            "How do you learn new words?",
+            "How you do learn new words?"
+          ],
+          "answer": "How do you learn new words?"
+        },
+        {
+          "id": "wh_b_65",
+          "type": "B",
+          "question": "About Them — the answer is: \"Some toast.\" What is the question?",
+          "options": [
+            "What does they want for breakfast?",
+            "What do they want for breakfast?",
+            "What they do want for breakfast?",
+            "What they want for breakfast?"
+          ],
+          "answer": "What do they want for breakfast?"
+        },
+        {
+          "id": "wh_b_66",
+          "type": "B",
+          "question": "About The children — the answer is: \"By reading books.\" What is the question?",
+          "options": [
+            "How the children learn new words?",
+            "How does the children learn new words?",
+            "How do the children learn new words?",
+            "How the children do learn new words?"
+          ],
+          "answer": "How do the children learn new words?"
+        },
+        {
+          "id": "wh_b_67",
+          "type": "B",
+          "question": "About You — the answer is: \"In a bag.\" What is the question?",
+          "options": [
+            "Where do you keep the books?",
+            "Where you keep the books?",
+            "Where does you keep the books?",
+            "Where you do keep the books?"
+          ],
+          "answer": "Where do you keep the books?"
+        },
+        {
+          "id": "wh_b_68",
+          "type": "B",
+          "question": "About Him — the answer is: \"Because it's cold.\" What is the question?",
+          "options": [
+            "Why do he wear a coat?",
+            "Why he wear a coat?",
+            "Why he does wear a coat?",
+            "Why does he wear a coat?"
+          ],
+          "answer": "Why does he wear a coat?"
+        },
+        {
+          "id": "wh_b_69",
+          "type": "B",
+          "question": "About Her — the answer is: \"After dinner.\" What is the question?",
+          "options": [
+            "When does she do the homework?",
+            "When do she do the homework?",
+            "When she do the homework?",
+            "When she does do the homework?"
+          ],
+          "answer": "When does she do the homework?"
+        },
+        {
+          "id": "wh_b_70",
+          "type": "B",
+          "question": "About Her — the answer is: \"A lot.\" What is the question?",
+          "options": [
+            "How much homework do she have?",
+            "How much homework does she have?",
+            "How much homework she have?",
+            "How much homework she does have?"
+          ],
+          "answer": "How much homework does she have?"
+        },
+        {
+          "id": "wh_b_71",
+          "type": "B",
+          "question": "About Them — the answer is: \"Because it's fun.\" What is the question?",
+          "options": [
+            "Why does they like maths?",
+            "Why do they like maths?",
+            "Why they like maths?",
+            "Why they do like maths?"
+          ],
+          "answer": "Why do they like maths?"
+        },
+        {
+          "id": "wh_b_72",
+          "type": "B",
+          "question": "About Them — the answer is: \"A lot.\" What is the question?",
+          "options": [
+            "How much water do they drink?",
+            "How much water they drink?",
+            "How much water does they drink?",
+            "How much water they do drink?"
+          ],
+          "answer": "How much water do they drink?"
+        },
+        {
+          "id": "wh_b_73",
+          "type": "B",
+          "question": "About You — the answer is: \"Some toast.\" What is the question?",
+          "options": [
+            "What does you want for breakfast?",
+            "What do you want for breakfast?",
+            "What you do want for breakfast?",
+            "What you want for breakfast?"
+          ],
+          "answer": "What do you want for breakfast?"
+        },
+        {
+          "id": "wh_b_74",
+          "type": "B",
+          "question": "About Ana — the answer is: \"Because it's useful.\" What is the question?",
+          "options": [
+            "Why Ana does study English?",
+            "Why Ana study English?",
+            "Why does Ana study English?",
+            "Why do Ana study English?"
+          ],
+          "answer": "Why does Ana study English?"
+        },
+        {
+          "id": "wh_b_75",
+          "type": "B",
+          "question": "About You — the answer is: \"A lot.\" What is the question?",
+          "options": [
+            "How much homework you have?",
+            "How much homework you do have?",
+            "How much homework do you have?",
+            "How much homework does you have?"
+          ],
+          "answer": "How much homework do you have?"
+        },
+        {
+          "id": "wh_b_76",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"After dinner.\" What is the question?",
+          "options": [
+            "When does your brother do the homework?",
+            "When your brother does do the homework?",
+            "When your brother do the homework?",
+            "When do your brother do the homework?"
+          ],
+          "answer": "When does your brother do the homework?"
+        },
+        {
+          "id": "wh_b_77",
+          "type": "B",
+          "question": "About Tom — the answer is: \"Very happy.\" What is the question?",
+          "options": [
+            "How Tom does feel today?",
+            "How does Tom feel today?",
+            "How Tom feel today?",
+            "How do Tom feel today?"
+          ],
+          "answer": "How does Tom feel today?"
+        },
+        {
+          "id": "wh_b_78",
+          "type": "B",
+          "question": "About The children — the answer is: \"Science.\" What is the question?",
+          "options": [
+            "What the children study on Fridays?",
+            "What does the children study on Fridays?",
+            "What the children do study on Fridays?",
+            "What do the children study on Fridays?"
+          ],
+          "answer": "What do the children study on Fridays?"
+        },
+        {
+          "id": "wh_b_79",
+          "type": "B",
+          "question": "About Tom — the answer is: \"Three.\" What is the question?",
+          "options": [
+            "How many pencils Tom have?",
+            "How many pencils does Tom have?",
+            "How many pencils do Tom have?",
+            "How many pencils Tom does have?"
+          ],
+          "answer": "How many pencils does Tom have?"
+        },
+        {
+          "id": "wh_b_80",
+          "type": "B",
+          "question": "About Them — the answer is: \"At the school canteen.\" What is the question?",
+          "options": [
+            "Where they do buy lunch?",
+            "Where does they buy lunch?",
+            "Where they buy lunch?",
+            "Where do they buy lunch?"
+          ],
+          "answer": "Where do they buy lunch?"
+        },
+        {
+          "id": "wh_b_81",
+          "type": "B",
+          "question": "About Tom — the answer is: \"After dinner.\" What is the question?",
+          "options": [
+            "When Tom do the homework?",
+            "When does Tom do the homework?",
+            "When Tom does do the homework?",
+            "When do Tom do the homework?"
+          ],
+          "answer": "When does Tom do the homework?"
+        },
+        {
+          "id": "wh_b_82",
+          "type": "B",
+          "question": "About Him — the answer is: \"Science.\" What is the question?",
+          "options": [
+            "What does he study on Fridays?",
+            "What he does study on Fridays?",
+            "What do he study on Fridays?",
+            "What he study on Fridays?"
+          ],
+          "answer": "What does he study on Fridays?"
+        },
+        {
+          "id": "wh_b_83",
+          "type": "B",
+          "question": "About Me — the answer is: \"Two.\" What is the question?",
+          "options": [
+            "How many brothers and sisters does I have?",
+            "How many brothers and sisters I have?",
+            "How many brothers and sisters do I have?",
+            "How many brothers and sisters I do have?"
+          ],
+          "answer": "How many brothers and sisters do I have?"
+        },
+        {
+          "id": "wh_b_84",
+          "type": "B",
+          "question": "About You — the answer is: \"Three.\" What is the question?",
+          "options": [
+            "How many pencils you have?",
+            "How many pencils does you have?",
+            "How many pencils do you have?",
+            "How many pencils you do have?"
+          ],
+          "answer": "How many pencils do you have?"
+        },
+        {
+          "id": "wh_b_85",
+          "type": "B",
+          "question": "About You — the answer is: \"Play football.\" What is the question?",
+          "options": [
+            "What does you do at the weekend?",
+            "What you do do at the weekend?",
+            "What do you do at the weekend?",
+            "What you do at the weekend?"
+          ],
+          "answer": "What do you do at the weekend?"
+        },
+        {
+          "id": "wh_b_86",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"A lot.\" What is the question?",
+          "options": [
+            "How much water your brother does drink?",
+            "How much water do your brother drink?",
+            "How much water your brother drink?",
+            "How much water does your brother drink?"
+          ],
+          "answer": "How much water does your brother drink?"
+        },
+        {
+          "id": "wh_b_87",
+          "type": "B",
+          "question": "About Them — the answer is: \"In a bag.\" What is the question?",
+          "options": [
+            "Where they keep the books?",
+            "Where do they keep the books?",
+            "Where they do keep the books?",
+            "Where does they keep the books?"
+          ],
+          "answer": "Where do they keep the books?"
+        },
+        {
+          "id": "wh_b_88",
+          "type": "B",
+          "question": "About Your brother — the answer is: \"Because it's useful.\" What is the question?",
+          "options": [
+            "Why your brother does study English?",
+            "Why does your brother study English?",
+            "Why your brother study English?",
+            "Why do your brother study English?"
+          ],
+          "answer": "Why does your brother study English?"
+        },
+        {
+          "id": "wh_b_89",
+          "type": "B",
+          "question": "About Tom — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets Tom have?",
+            "How many pets does Tom have?",
+            "How many pets do Tom have?",
+            "How many pets Tom does have?"
+          ],
+          "answer": "How many pets does Tom have?"
+        },
+        {
+          "id": "wh_b_90",
+          "type": "B",
+          "question": "About Ana — the answer is: \"The best friend.\" What is the question?",
+          "options": [
+            "Who Ana sit next to?",
+            "Who do Ana sit next to?",
+            "Who Ana does sit next to?",
+            "Who does Ana sit next to?"
+          ],
+          "answer": "Who does Ana sit next to?"
+        },
+        {
+          "id": "wh_b_91",
+          "type": "B",
+          "question": "About Me — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets do I have?",
+            "How many pets does I have?",
+            "How many pets I have?",
+            "How many pets I do have?"
+          ],
+          "answer": "How many pets do I have?"
+        },
+        {
+          "id": "wh_b_92",
+          "type": "B",
+          "question": "About You — the answer is: \"To the beach.\" What is the question?",
+          "options": [
+            "Where you do go on holiday?",
+            "Where you go on holiday?",
+            "Where does you go on holiday?",
+            "Where do you go on holiday?"
+          ],
+          "answer": "Where do you go on holiday?"
+        },
+        {
+          "id": "wh_b_93",
+          "type": "B",
+          "question": "About You — the answer is: \"One dog.\" What is the question?",
+          "options": [
+            "How many pets does you have?",
+            "How many pets do you have?",
+            "How many pets you do have?",
+            "How many pets you have?"
+          ],
+          "answer": "How many pets do you have?"
+        },
+        {
+          "id": "wh_b_94",
+          "type": "B",
+          "question": "About Us — the answer is: \"Play football.\" What is the question?",
+          "options": [
+            "What we do do at the weekend?",
+            "What we do at the weekend?",
+            "What do we do at the weekend?",
+            "What does we do at the weekend?"
+          ],
+          "answer": "What do we do at the weekend?"
+        },
+        {
+          "id": "wh_b_95",
+          "type": "B",
+          "question": "About Them — the answer is: \"Play football.\" What is the question?",
+          "options": [
+            "What do they do at the weekend?",
+            "What does they do at the weekend?",
+            "What they do do at the weekend?",
+            "What they do at the weekend?"
+          ],
+          "answer": "What do they do at the weekend?"
+        },
+        {
+          "id": "wh_b_96",
+          "type": "B",
+          "question": "About Her — the answer is: \"By bus.\" What is the question?",
+          "options": [
+            "How she go to school?",
+            "How she does go to school?",
+            "How do she go to school?",
+            "How does she go to school?"
+          ],
+          "answer": "How does she go to school?"
+        },
+        {
+          "id": "wh_b_97",
+          "type": "B",
+          "question": "About Me — the answer is: \"At nine o'clock.\" What is the question?",
+          "options": [
+            "When do I go to bed?",
+            "When I do go to bed?",
+            "When does I go to bed?",
+            "When I go to bed?"
+          ],
+          "answer": "When do I go to bed?"
+        },
+        {
+          "id": "wh_b_98",
+          "type": "B",
+          "question": "About Tom — the answer is: \"Because it's fun.\" What is the question?",
+          "options": [
+            "Why Tom like maths?",
+            "Why Tom does like maths?",
+            "Why do Tom like maths?",
+            "Why does Tom like maths?"
+          ],
+          "answer": "Why does Tom like maths?"
+        },
+        {
+          "id": "wh_b_99",
+          "type": "B",
+          "question": "About Tom — the answer is: \"Two.\" What is the question?",
+          "options": [
+            "How many brothers and sisters Tom have?",
+            "How many brothers and sisters does Tom have?",
+            "How many brothers and sisters do Tom have?",
+            "How many brothers and sisters Tom does have?"
+          ],
+          "answer": "How many brothers and sisters does Tom have?"
+        },
+        {
+          "id": "wh_b_100",
+          "type": "B",
+          "question": "About Them — the answer is: \"Three.\" What is the question?",
+          "options": [
+            "How many pencils they have?",
+            "How many pencils does they have?",
+            "How many pencils do they have?",
+            "How many pencils they do have?"
+          ],
+          "answer": "How many pencils do they have?"
+        },
+        {
+          "id": "wh_c_1",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué hace el fin de semana?\"?",
+          "options": [
+            "What does he do at the weekend?",
+            "What he does do at the weekend?",
+            "What do he do at the weekend?",
+            "What he do at the weekend?"
+          ],
+          "answer": "What does he do at the weekend?"
+        },
+        {
+          "id": "wh_c_2",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos hermanos tienen?\"?",
+          "options": [
+            "How many brothers and sisters does they have?",
+            "How many brothers and sisters they have?",
+            "How many brothers and sisters do they have?",
+            "How many brothers and sisters they do have?"
+          ],
+          "answer": "How many brothers and sisters do they have?"
+        },
+        {
+          "id": "wh_c_3",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué quiero para desayunar?\"?",
+          "options": [
+            "What do I want for breakfast?",
+            "What I want for breakfast?",
+            "What I do want for breakfast?",
+            "What does I want for breakfast?"
+          ],
+          "answer": "What do I want for breakfast?"
+        },
+        {
+          "id": "wh_c_4",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué llevo un abrigo?\"?",
+          "options": [
+            "Why do I wear a coat?",
+            "Why I do wear a coat?",
+            "Why does I wear a coat?",
+            "Why I wear a coat?"
+          ],
+          "answer": "Why do I wear a coat?"
+        },
+        {
+          "id": "wh_c_5",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién ayudas con los deberes?\"?",
+          "options": [
+            "Who does you help with homework?",
+            "Who do you help with homework?",
+            "Who you help with homework?",
+            "Who you do help with homework?"
+          ],
+          "answer": "Who do you help with homework?"
+        },
+        {
+          "id": "wh_c_6",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde compro la comida?\"?",
+          "options": [
+            "Where do I buy lunch?",
+            "Where I do buy lunch?",
+            "Where I buy lunch?",
+            "Where does I buy lunch?"
+          ],
+          "answer": "Where do I buy lunch?"
+        },
+        {
+          "id": "wh_c_7",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde vive?\"?",
+          "options": [
+            "Where does he live?",
+            "Where do he live?",
+            "Where he live?",
+            "Where he does live?"
+          ],
+          "answer": "Where does he live?"
+        },
+        {
+          "id": "wh_c_8",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde guardo los libros?\"?",
+          "options": [
+            "Where do I keep the books?",
+            "Where does I keep the books?",
+            "Where I do keep the books?",
+            "Where I keep the books?"
+          ],
+          "answer": "Where do I keep the books?"
+        },
+        {
+          "id": "wh_c_9",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde va de vacaciones?\"?",
+          "options": [
+            "Where he go on holiday?",
+            "Where does he go on holiday?",
+            "Where he does go on holiday?",
+            "Where do he go on holiday?"
+          ],
+          "answer": "Where does he go on holiday?"
+        },
+        {
+          "id": "wh_c_10",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuánta agua beben?\"?",
+          "options": [
+            "How much water they drink?",
+            "How much water they do drink?",
+            "How much water does they drink?",
+            "How much water do they drink?"
+          ],
+          "answer": "How much water do they drink?"
+        },
+        {
+          "id": "wh_c_11",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién te sientas al lado de?\"?",
+          "options": [
+            "Who does you sit next to?",
+            "Who you sit next to?",
+            "Who do you sit next to?",
+            "Who you do sit next to?"
+          ],
+          "answer": "Who do you sit next to?"
+        },
+        {
+          "id": "wh_c_12",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos lápices tienen?\"?",
+          "options": [
+            "How many pencils they do have?",
+            "How many pencils does they have?",
+            "How many pencils do they have?",
+            "How many pencils they have?"
+          ],
+          "answer": "How many pencils do they have?"
+        },
+        {
+          "id": "wh_c_13",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo tengo clase de inglés?\"?",
+          "options": [
+            "When do I have English class?",
+            "When does I have English class?",
+            "When I do have English class?",
+            "When I have English class?"
+          ],
+          "answer": "When do I have English class?"
+        },
+        {
+          "id": "wh_c_14",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿De dónde eres?\"?",
+          "options": [
+            "Where you from?",
+            "Where you from are?",
+            "Where is you from?",
+            "Where are you from?"
+          ],
+          "answer": "Where are you from?"
+        },
+        {
+          "id": "wh_c_15",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué estudio los viernes?\"?",
+          "options": [
+            "What do I study on Fridays?",
+            "What does I study on Fridays?",
+            "What I do study on Fridays?",
+            "What I study on Fridays?"
+          ],
+          "answer": "What do I study on Fridays?"
+        },
+        {
+          "id": "wh_c_16",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuál es tu color favorito?\"?",
+          "options": [
+            "What is your favourite colour?",
+            "What your favourite colour is?",
+            "What are your favourite colour?",
+            "What your favourite colour?"
+          ],
+          "answer": "What is your favourite colour?"
+        },
+        {
+          "id": "wh_c_17",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué me gustan las matemáticas?\"?",
+          "options": [
+            "Why I do like maths?",
+            "Why do I like maths?",
+            "Why I like maths?",
+            "Why does I like maths?"
+          ],
+          "answer": "Why do I like maths?"
+        },
+        {
+          "id": "wh_c_18",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué le gustan las matemáticas?\"?",
+          "options": [
+            "Why do he like maths?",
+            "Why does he like maths?",
+            "Why he like maths?",
+            "Why he does like maths?"
+          ],
+          "answer": "Why does he like maths?"
+        },
+        {
+          "id": "wh_c_19",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién ayudan con los deberes?\"?",
+          "options": [
+            "Who they do help with homework?",
+            "Who does they help with homework?",
+            "Who they help with homework?",
+            "Who do they help with homework?"
+          ],
+          "answer": "Who do they help with homework?"
+        },
+        {
+          "id": "wh_c_20",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué estudian los viernes?\"?",
+          "options": [
+            "What does they study on Fridays?",
+            "What they do study on Fridays?",
+            "What do they study on Fridays?",
+            "What they study on Fridays?"
+          ],
+          "answer": "What do they study on Fridays?"
+        },
+        {
+          "id": "wh_c_21",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué quieren para desayunar?\"?",
+          "options": [
+            "What they want for breakfast?",
+            "What do they want for breakfast?",
+            "What does they want for breakfast?",
+            "What they do want for breakfast?"
+          ],
+          "answer": "What do they want for breakfast?"
+        },
+        {
+          "id": "wh_c_22",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo vas al colegio?\"?",
+          "options": [
+            "How you go to school?",
+            "How does you go to school?",
+            "How do you go to school?",
+            "How you do go to school?"
+          ],
+          "answer": "How do you go to school?"
+        },
+        {
+          "id": "wh_c_23",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué estudias inglés?\"?",
+          "options": [
+            "Why you do study English?",
+            "Why do you study English?",
+            "Why does you study English?",
+            "Why you study English?"
+          ],
+          "answer": "Why do you study English?"
+        },
+        {
+          "id": "wh_c_24",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos lápices tengo?\"?",
+          "options": [
+            "How many pencils does I have?",
+            "How many pencils I have?",
+            "How many pencils I do have?",
+            "How many pencils do I have?"
+          ],
+          "answer": "How many pencils do I have?"
+        },
+        {
+          "id": "wh_c_25",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde vas de vacaciones?\"?",
+          "options": [
+            "Where does you go on holiday?",
+            "Where you go on holiday?",
+            "Where do you go on holiday?",
+            "Where you do go on holiday?"
+          ],
+          "answer": "Where do you go on holiday?"
+        },
+        {
+          "id": "wh_c_26",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién ayudo con los deberes?\"?",
+          "options": [
+            "Who I help with homework?",
+            "Who I do help with homework?",
+            "Who does I help with homework?",
+            "Who do I help with homework?"
+          ],
+          "answer": "Who do I help with homework?"
+        },
+        {
+          "id": "wh_c_27",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo tiene clase de inglés?\"?",
+          "options": [
+            "When does he have English class?",
+            "When he does have English class?",
+            "When he have English class?",
+            "When do he have English class?"
+          ],
+          "answer": "When does he have English class?"
+        },
+        {
+          "id": "wh_c_28",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde está la clase?\"?",
+          "options": [
+            "Where the classroom?",
+            "Where is the classroom?",
+            "Where are the classroom?",
+            "Where the classroom is?"
+          ],
+          "answer": "Where is the classroom?"
+        },
+        {
+          "id": "wh_c_29",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos años tienes?\"?",
+          "options": [
+            "How old you are?",
+            "How old you?",
+            "How old is you?",
+            "How old are you?"
+          ],
+          "answer": "How old are you?"
+        },
+        {
+          "id": "wh_c_30",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo me siento hoy?\"?",
+          "options": [
+            "How I feel today?",
+            "How I do feel today?",
+            "How do I feel today?",
+            "How does I feel today?"
+          ],
+          "answer": "How do I feel today?"
+        },
+        {
+          "id": "wh_c_31",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuánta agua bebo?\"?",
+          "options": [
+            "How much water do I drink?",
+            "How much water does I drink?",
+            "How much water I drink?",
+            "How much water I do drink?"
+          ],
+          "answer": "How much water do I drink?"
+        },
+        {
+          "id": "wh_c_32",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántas mascotas tengo?\"?",
+          "options": [
+            "How many pets I do have?",
+            "How many pets I have?",
+            "How many pets does I have?",
+            "How many pets do I have?"
+          ],
+          "answer": "How many pets do I have?"
+        },
+        {
+          "id": "wh_c_33",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántas mascotas tienes?\"?",
+          "options": [
+            "How many pets does you have?",
+            "How many pets you have?",
+            "How many pets do you have?",
+            "How many pets you do have?"
+          ],
+          "answer": "How many pets do you have?"
+        },
+        {
+          "id": "wh_c_34",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo voy al colegio?\"?",
+          "options": [
+            "How I do go to school?",
+            "How does I go to school?",
+            "How I go to school?",
+            "How do I go to school?"
+          ],
+          "answer": "How do I go to school?"
+        },
+        {
+          "id": "wh_c_35",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo haces los deberes?\"?",
+          "options": [
+            "When you do do the homework?",
+            "When do you do the homework?",
+            "When you do the homework?",
+            "When does you do the homework?"
+          ],
+          "answer": "When do you do the homework?"
+        },
+        {
+          "id": "wh_c_36",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde compran la comida?\"?",
+          "options": [
+            "Where do they buy lunch?",
+            "Where they buy lunch?",
+            "Where they do buy lunch?",
+            "Where does they buy lunch?"
+          ],
+          "answer": "Where do they buy lunch?"
+        },
+        {
+          "id": "wh_c_37",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué estudian inglés?\"?",
+          "options": [
+            "Why they do study English?",
+            "Why they study English?",
+            "Why does they study English?",
+            "Why do they study English?"
+          ],
+          "answer": "Why do they study English?"
+        },
+        {
+          "id": "wh_c_38",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuánta agua bebes?\"?",
+          "options": [
+            "How much water you drink?",
+            "How much water does you drink?",
+            "How much water you do drink?",
+            "How much water do you drink?"
+          ],
+          "answer": "How much water do you drink?"
+        },
+        {
+          "id": "wh_c_39",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos hermanos tienes?\"?",
+          "options": [
+            "How many brothers and sisters you have?",
+            "How many brothers and sisters do you have?",
+            "How many brothers and sisters does you have?",
+            "How many brothers and sisters you do have?"
+          ],
+          "answer": "How many brothers and sisters do you have?"
+        },
+        {
+          "id": "wh_c_40",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo va al colegio?\"?",
+          "options": [
+            "How do he go to school?",
+            "How does he go to school?",
+            "How he does go to school?",
+            "How he go to school?"
+          ],
+          "answer": "How does he go to school?"
+        },
+        {
+          "id": "wh_c_41",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo tienes clase de inglés?\"?",
+          "options": [
+            "When you do have English class?",
+            "When does you have English class?",
+            "When do you have English class?",
+            "When you have English class?"
+          ],
+          "answer": "When do you have English class?"
+        },
+        {
+          "id": "wh_c_42",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo van al colegio?\"?",
+          "options": [
+            "How they go to school?",
+            "How does they go to school?",
+            "How they do go to school?",
+            "How do they go to school?"
+          ],
+          "answer": "How do they go to school?"
+        },
+        {
+          "id": "wh_c_43",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos deberes tiene?\"?",
+          "options": [
+            "How much homework does he have?",
+            "How much homework he does have?",
+            "How much homework he have?",
+            "How much homework do he have?"
+          ],
+          "answer": "How much homework does he have?"
+        },
+        {
+          "id": "wh_c_44",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién es tu mejor amigo?\"?",
+          "options": [
+            "Who your best friend is?",
+            "Who are your best friend?",
+            "Who your best friend?",
+            "Who is your best friend?"
+          ],
+          "answer": "Who is your best friend?"
+        },
+        {
+          "id": "wh_c_45",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué estudia los viernes?\"?",
+          "options": [
+            "What does he study on Fridays?",
+            "What do he study on Fridays?",
+            "What he study on Fridays?",
+            "What he does study on Fridays?"
+          ],
+          "answer": "What does he study on Fridays?"
+        },
+        {
+          "id": "wh_c_46",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién me siento al lado de?\"?",
+          "options": [
+            "Who do I sit next to?",
+            "Who does I sit next to?",
+            "Who I do sit next to?",
+            "Who I sit next to?"
+          ],
+          "answer": "Who do I sit next to?"
+        },
+        {
+          "id": "wh_c_47",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántas mascotas tiene?\"?",
+          "options": [
+            "How many pets does he have?",
+            "How many pets he have?",
+            "How many pets do he have?",
+            "How many pets he does have?"
+          ],
+          "answer": "How many pets does he have?"
+        },
+        {
+          "id": "wh_c_48",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos deberes tienen?\"?",
+          "options": [
+            "How much homework do they have?",
+            "How much homework does they have?",
+            "How much homework they have?",
+            "How much homework they do have?"
+          ],
+          "answer": "How much homework do they have?"
+        },
+        {
+          "id": "wh_c_49",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo hace los deberes?\"?",
+          "options": [
+            "When do he do the homework?",
+            "When he do the homework?",
+            "When he does do the homework?",
+            "When does he do the homework?"
+          ],
+          "answer": "When does he do the homework?"
+        },
+        {
+          "id": "wh_c_50",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde compras la comida?\"?",
+          "options": [
+            "Where you do buy lunch?",
+            "Where does you buy lunch?",
+            "Where you buy lunch?",
+            "Where do you buy lunch?"
+          ],
+          "answer": "Where do you buy lunch?"
+        },
+        {
+          "id": "wh_c_51",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo se siente hoy?\"?",
+          "options": [
+            "How he feel today?",
+            "How do he feel today?",
+            "How he does feel today?",
+            "How does he feel today?"
+          ],
+          "answer": "How does he feel today?"
+        },
+        {
+          "id": "wh_c_52",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos lápices tienes?\"?",
+          "options": [
+            "How many pencils you have?",
+            "How many pencils does you have?",
+            "How many pencils do you have?",
+            "How many pencils you do have?"
+          ],
+          "answer": "How many pencils do you have?"
+        },
+        {
+          "id": "wh_c_53",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuál es tu asignatura favorita?\"?",
+          "options": [
+            "What your favourite subject is?",
+            "What your favourite subject?",
+            "What is your favourite subject?",
+            "What are your favourite subject?"
+          ],
+          "answer": "What is your favourite subject?"
+        },
+        {
+          "id": "wh_c_54",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde compra la comida?\"?",
+          "options": [
+            "Where does he buy lunch?",
+            "Where do he buy lunch?",
+            "Where he buy lunch?",
+            "Where he does buy lunch?"
+          ],
+          "answer": "Where does he buy lunch?"
+        },
+        {
+          "id": "wh_c_55",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde guardas los libros?\"?",
+          "options": [
+            "Where you keep the books?",
+            "Where does you keep the books?",
+            "Where do you keep the books?",
+            "Where you do keep the books?"
+          ],
+          "answer": "Where do you keep the books?"
+        },
+        {
+          "id": "wh_c_56",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde voy de vacaciones?\"?",
+          "options": [
+            "Where does I go on holiday?",
+            "Where I do go on holiday?",
+            "Where do I go on holiday?",
+            "Where I go on holiday?"
+          ],
+          "answer": "Where do I go on holiday?"
+        },
+        {
+          "id": "wh_c_57",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué les gustan las matemáticas?\"?",
+          "options": [
+            "Why do they like maths?",
+            "Why they like maths?",
+            "Why they do like maths?",
+            "Why does they like maths?"
+          ],
+          "answer": "Why do they like maths?"
+        },
+        {
+          "id": "wh_c_58",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde van de vacaciones?\"?",
+          "options": [
+            "Where do they go on holiday?",
+            "Where they go on holiday?",
+            "Where does they go on holiday?",
+            "Where they do go on holiday?"
+          ],
+          "answer": "Where do they go on holiday?"
+        },
+        {
+          "id": "wh_c_59",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo estás hoy?\"?",
+          "options": [
+            "How you today?",
+            "How are you today?",
+            "How is you today?",
+            "How you today are?"
+          ],
+          "answer": "How are you today?"
+        },
+        {
+          "id": "wh_c_60",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo se van a la cama?\"?",
+          "options": [
+            "When does they go to bed?",
+            "When they do go to bed?",
+            "When they go to bed?",
+            "When do they go to bed?"
+          ],
+          "answer": "When do they go to bed?"
+        },
+        {
+          "id": "wh_c_61",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién es tu profesor?\"?",
+          "options": [
+            "Who are your teacher?",
+            "Who your teacher is?",
+            "Who your teacher?",
+            "Who is your teacher?"
+          ],
+          "answer": "Who is your teacher?"
+        },
+        {
+          "id": "wh_c_62",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo aprendes palabras nuevas?\"?",
+          "options": [
+            "How does you learn new words?",
+            "How you learn new words?",
+            "How do you learn new words?",
+            "How you do learn new words?"
+          ],
+          "answer": "How do you learn new words?"
+        },
+        {
+          "id": "wh_c_63",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo se va a la cama?\"?",
+          "options": [
+            "When do he go to bed?",
+            "When does he go to bed?",
+            "When he go to bed?",
+            "When he does go to bed?"
+          ],
+          "answer": "When does he go to bed?"
+        },
+        {
+          "id": "wh_c_64",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo te sientes hoy?\"?",
+          "options": [
+            "How does you feel today?",
+            "How you do feel today?",
+            "How do you feel today?",
+            "How you feel today?"
+          ],
+          "answer": "How do you feel today?"
+        },
+        {
+          "id": "wh_c_65",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo se sienten hoy?\"?",
+          "options": [
+            "How they do feel today?",
+            "How do they feel today?",
+            "How they feel today?",
+            "How does they feel today?"
+          ],
+          "answer": "How do they feel today?"
+        },
+        {
+          "id": "wh_c_66",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué tiempo hace hoy?\"?",
+          "options": [
+            "How the weather today?",
+            "How is the weather today?",
+            "How the weather today is?",
+            "How are the weather today?"
+          ],
+          "answer": "How is the weather today?"
+        },
+        {
+          "id": "wh_c_67",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo hago los deberes?\"?",
+          "options": [
+            "When I do the homework?",
+            "When do I do the homework?",
+            "When I do do the homework?",
+            "When does I do the homework?"
+          ],
+          "answer": "When do I do the homework?"
+        },
+        {
+          "id": "wh_c_68",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos deberes tengo?\"?",
+          "options": [
+            "How much homework I have?",
+            "How much homework I do have?",
+            "How much homework do I have?",
+            "How much homework does I have?"
+          ],
+          "answer": "How much homework do I have?"
+        },
+        {
+          "id": "wh_c_69",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué llevas un abrigo?\"?",
+          "options": [
+            "Why you do wear a coat?",
+            "Why you wear a coat?",
+            "Why does you wear a coat?",
+            "Why do you wear a coat?"
+          ],
+          "answer": "Why do you wear a coat?"
+        },
+        {
+          "id": "wh_c_70",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué llevan un abrigo?\"?",
+          "options": [
+            "Why do they wear a coat?",
+            "Why they do wear a coat?",
+            "Why does they wear a coat?",
+            "Why they wear a coat?"
+          ],
+          "answer": "Why do they wear a coat?"
+        },
+        {
+          "id": "wh_c_71",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde viven?\"?",
+          "options": [
+            "Where does they live?",
+            "Where they live?",
+            "Where do they live?",
+            "Where they do live?"
+          ],
+          "answer": "Where do they live?"
+        },
+        {
+          "id": "wh_c_72",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién se sientan al lado de?\"?",
+          "options": [
+            "Who they do sit next to?",
+            "Who do they sit next to?",
+            "Who they sit next to?",
+            "Who does they sit next to?"
+          ],
+          "answer": "Who do they sit next to?"
+        },
+        {
+          "id": "wh_c_73",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo te llamas?\"?",
+          "options": [
+            "What are your name?",
+            "What is your name?",
+            "What your name?",
+            "What your name is?"
+          ],
+          "answer": "What is your name?"
+        },
+        {
+          "id": "wh_c_74",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo aprenden palabras nuevas?\"?",
+          "options": [
+            "How do they learn new words?",
+            "How does they learn new words?",
+            "How they learn new words?",
+            "How they do learn new words?"
+          ],
+          "answer": "How do they learn new words?"
+        },
+        {
+          "id": "wh_c_75",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo aprende palabras nuevas?\"?",
+          "options": [
+            "How he does learn new words?",
+            "How does he learn new words?",
+            "How he learn new words?",
+            "How do he learn new words?"
+          ],
+          "answer": "How does he learn new words?"
+        },
+        {
+          "id": "wh_c_76",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué lleva un abrigo?\"?",
+          "options": [
+            "Why do he wear a coat?",
+            "Why does he wear a coat?",
+            "Why he wear a coat?",
+            "Why he does wear a coat?"
+          ],
+          "answer": "Why does he wear a coat?"
+        },
+        {
+          "id": "wh_c_77",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué hago el fin de semana?\"?",
+          "options": [
+            "What I do at the weekend?",
+            "What I do do at the weekend?",
+            "What does I do at the weekend?",
+            "What do I do at the weekend?"
+          ],
+          "answer": "What do I do at the weekend?"
+        },
+        {
+          "id": "wh_c_78",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos lápices tiene?\"?",
+          "options": [
+            "How many pencils does he have?",
+            "How many pencils he have?",
+            "How many pencils do he have?",
+            "How many pencils he does have?"
+          ],
+          "answer": "How many pencils does he have?"
+        },
+        {
+          "id": "wh_c_79",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo me voy a la cama?\"?",
+          "options": [
+            "When I do go to bed?",
+            "When I go to bed?",
+            "When does I go to bed?",
+            "When do I go to bed?"
+          ],
+          "answer": "When do I go to bed?"
+        },
+        {
+          "id": "wh_c_80",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué estudias los viernes?\"?",
+          "options": [
+            "What do you study on Fridays?",
+            "What you study on Fridays?",
+            "What you do study on Fridays?",
+            "What does you study on Fridays?"
+          ],
+          "answer": "What do you study on Fridays?"
+        },
+        {
+          "id": "wh_c_81",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué estudia inglés?\"?",
+          "options": [
+            "Why does he study English?",
+            "Why he does study English?",
+            "Why he study English?",
+            "Why do he study English?"
+          ],
+          "answer": "Why does he study English?"
+        },
+        {
+          "id": "wh_c_82",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuánta agua bebe?\"?",
+          "options": [
+            "How much water do he drink?",
+            "How much water does he drink?",
+            "How much water he does drink?",
+            "How much water he drink?"
+          ],
+          "answer": "How much water does he drink?"
+        },
+        {
+          "id": "wh_c_83",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué hacen el fin de semana?\"?",
+          "options": [
+            "What does they do at the weekend?",
+            "What they do at the weekend?",
+            "What do they do at the weekend?",
+            "What they do do at the weekend?"
+          ],
+          "answer": "What do they do at the weekend?"
+        },
+        {
+          "id": "wh_c_84",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos deberes tienes?\"?",
+          "options": [
+            "How much homework do you have?",
+            "How much homework you have?",
+            "How much homework does you have?",
+            "How much homework you do have?"
+          ],
+          "answer": "How much homework do you have?"
+        },
+        {
+          "id": "wh_c_85",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos hermanos tengo?\"?",
+          "options": [
+            "How many brothers and sisters I do have?",
+            "How many brothers and sisters do I have?",
+            "How many brothers and sisters does I have?",
+            "How many brothers and sisters I have?"
+          ],
+          "answer": "How many brothers and sisters do I have?"
+        },
+        {
+          "id": "wh_c_86",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué haces el fin de semana?\"?",
+          "options": [
+            "What do you do at the weekend?",
+            "What does you do at the weekend?",
+            "What you do do at the weekend?",
+            "What you do at the weekend?"
+          ],
+          "answer": "What do you do at the weekend?"
+        },
+        {
+          "id": "wh_c_87",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cómo aprendo palabras nuevas?\"?",
+          "options": [
+            "How do I learn new words?",
+            "How I do learn new words?",
+            "How does I learn new words?",
+            "How I learn new words?"
+          ],
+          "answer": "How do I learn new words?"
+        },
+        {
+          "id": "wh_c_88",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde guardan los libros?\"?",
+          "options": [
+            "Where they keep the books?",
+            "Where do they keep the books?",
+            "Where does they keep the books?",
+            "Where they do keep the books?"
+          ],
+          "answer": "Where do they keep the books?"
+        },
+        {
+          "id": "wh_c_89",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántas mascotas tienen?\"?",
+          "options": [
+            "How many pets do they have?",
+            "How many pets they have?",
+            "How many pets does they have?",
+            "How many pets they do have?"
+          ],
+          "answer": "How many pets do they have?"
+        },
+        {
+          "id": "wh_c_90",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué quieres para desayunar?\"?",
+          "options": [
+            "What you want for breakfast?",
+            "What do you want for breakfast?",
+            "What you do want for breakfast?",
+            "What does you want for breakfast?"
+          ],
+          "answer": "What do you want for breakfast?"
+        },
+        {
+          "id": "wh_c_91",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué estudio inglés?\"?",
+          "options": [
+            "Why I study English?",
+            "Why does I study English?",
+            "Why do I study English?",
+            "Why I do study English?"
+          ],
+          "answer": "Why do I study English?"
+        },
+        {
+          "id": "wh_c_92",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuántos hermanos tiene?\"?",
+          "options": [
+            "How many brothers and sisters does he have?",
+            "How many brothers and sisters do he have?",
+            "How many brothers and sisters he have?",
+            "How many brothers and sisters he does have?"
+          ],
+          "answer": "How many brothers and sisters does he have?"
+        },
+        {
+          "id": "wh_c_93",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde vives?\"?",
+          "options": [
+            "Where do you live?",
+            "Where does you live?",
+            "Where you live?",
+            "Where you do live?"
+          ],
+          "answer": "Where do you live?"
+        },
+        {
+          "id": "wh_c_94",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién ayuda con los deberes?\"?",
+          "options": [
+            "Who does he help with homework?",
+            "Who do he help with homework?",
+            "Who he help with homework?",
+            "Who he does help with homework?"
+          ],
+          "answer": "Who does he help with homework?"
+        },
+        {
+          "id": "wh_c_95",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Dónde guarda los libros?\"?",
+          "options": [
+            "Where does he keep the books?",
+            "Where he keep the books?",
+            "Where he does keep the books?",
+            "Where do he keep the books?"
+          ],
+          "answer": "Where does he keep the books?"
+        },
+        {
+          "id": "wh_c_96",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo te vas a la cama?\"?",
+          "options": [
+            "When does you go to bed?",
+            "When you do go to bed?",
+            "When do you go to bed?",
+            "When you go to bed?"
+          ],
+          "answer": "When do you go to bed?"
+        },
+        {
+          "id": "wh_c_97",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Qué quiere para desayunar?\"?",
+          "options": [
+            "What do he want for breakfast?",
+            "What he want for breakfast?",
+            "What does he want for breakfast?",
+            "What he does want for breakfast?"
+          ],
+          "answer": "What does he want for breakfast?"
+        },
+        {
+          "id": "wh_c_98",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Por qué te gustan las matemáticas?\"?",
+          "options": [
+            "Why you do like maths?",
+            "Why does you like maths?",
+            "Why do you like maths?",
+            "Why you like maths?"
+          ],
+          "answer": "Why do you like maths?"
+        },
+        {
+          "id": "wh_c_99",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Quién se sienta al lado de?\"?",
+          "options": [
+            "Who does he sit next to?",
+            "Who do he sit next to?",
+            "Who he does sit next to?",
+            "Who he sit next to?"
+          ],
+          "answer": "Who does he sit next to?"
+        },
+        {
+          "id": "wh_c_100",
+          "type": "C",
+          "question": "¿Cómo se dice: \"¿Cuándo hacen los deberes?\"?",
+          "options": [
+            "When they do the homework?",
+            "When does they do the homework?",
+            "When they do do the homework?",
+            "When do they do the homework?"
+          ],
+          "answer": "When do they do the homework?"
+        }
+      ]
+    }
+  ]
+}

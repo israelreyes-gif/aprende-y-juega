@@ -1,0 +1,2411 @@
+{
+  "units": [
+    {
+      "id": "adverbs-c4",
+      "title": "Adverbs",
+      "emoji": "🟤",
+      "exercises": [
+        {
+          "id": "adv_a_1",
+          "type": "A",
+          "question": "My brother ___ watches TV. (It happens every single time, with no exceptions.)",
+          "options": [
+            "usually",
+            "always",
+            "rarely",
+            "sometimes"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_2",
+          "type": "A",
+          "question": "You ___ help at home. (It happens very rarely, hardly ever.)",
+          "options": [
+            "rarely",
+            "always",
+            "often",
+            "usually"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_3",
+          "type": "A",
+          "question": "My brother ___ goes to bed early. (It happens frequently, several times a week.)",
+          "options": [
+            "never",
+            "rarely",
+            "sometimes",
+            "often"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_4",
+          "type": "A",
+          "question": "You ___ eat vegetables. (This does not happen at all (0%).)",
+          "options": [
+            "never",
+            "always",
+            "often",
+            "sometimes"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_5",
+          "type": "A",
+          "question": "Tom ___ does their homework. (This almost never happens (about 10%).)",
+          "options": [
+            "sometimes",
+            "often",
+            "rarely",
+            "always"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_6",
+          "type": "A",
+          "question": "You ___ walk to school. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "rarely",
+            "sometimes",
+            "always",
+            "often"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_7",
+          "type": "A",
+          "question": "Ana ___ reads books. (This happens almost every time (about 90%).)",
+          "options": [
+            "never",
+            "rarely",
+            "usually",
+            "sometimes"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_8",
+          "type": "A",
+          "question": "I ___ read books. (It happens most of the time, with a few exceptions.)",
+          "options": [
+            "often",
+            "usually",
+            "sometimes",
+            "always"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_9",
+          "type": "A",
+          "question": "I ___ tidy their room. (This happens almost every time (about 90%).)",
+          "options": [
+            "always",
+            "usually",
+            "often",
+            "rarely"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_10",
+          "type": "A",
+          "question": "Ana ___ goes to bed early. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "rarely",
+            "never",
+            "often",
+            "always"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_11",
+          "type": "A",
+          "question": "My brother ___ eats vegetables. (It happens every single time, with no exceptions.)",
+          "options": [
+            "often",
+            "always",
+            "rarely",
+            "usually"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_12",
+          "type": "A",
+          "question": "Tom ___ drinks water. (It happens very rarely, hardly ever.)",
+          "options": [
+            "usually",
+            "never",
+            "sometimes",
+            "rarely"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_13",
+          "type": "A",
+          "question": "My brother ___ tidies their room. (This almost never happens (about 10%).)",
+          "options": [
+            "rarely",
+            "always",
+            "often",
+            "sometimes"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_14",
+          "type": "A",
+          "question": "We ___ brush their teeth. (This happens 100% of the time.)",
+          "options": [
+            "sometimes",
+            "always",
+            "usually",
+            "often"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_15",
+          "type": "A",
+          "question": "He ___ walks to school. (This does not happen at all (0%).)",
+          "options": [
+            "rarely",
+            "never",
+            "sometimes",
+            "always"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_16",
+          "type": "A",
+          "question": "My brother ___ brushes their teeth. (It never happens, not even once.)",
+          "options": [
+            "never",
+            "rarely",
+            "often",
+            "sometimes"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_17",
+          "type": "A",
+          "question": "She ___ walks to school. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "often",
+            "sometimes",
+            "usually",
+            "never"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_18",
+          "type": "A",
+          "question": "My brother ___ helps at home. (It happens every single time, with no exceptions.)",
+          "options": [
+            "often",
+            "usually",
+            "sometimes",
+            "always"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_19",
+          "type": "A",
+          "question": "Ana ___ helps at home. (It happens very rarely, hardly ever.)",
+          "options": [
+            "never",
+            "always",
+            "rarely",
+            "often"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_20",
+          "type": "A",
+          "question": "She ___ helps at home. (It happens most of the time, with a few exceptions.)",
+          "options": [
+            "sometimes",
+            "usually",
+            "never",
+            "always"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_21",
+          "type": "A",
+          "question": "They ___ tidy their room. (It never happens, not even once.)",
+          "options": [
+            "often",
+            "sometimes",
+            "rarely",
+            "never"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_22",
+          "type": "A",
+          "question": "My brother ___ arrives on time. (This does not happen at all (0%).)",
+          "options": [
+            "sometimes",
+            "never",
+            "usually",
+            "always"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_23",
+          "type": "A",
+          "question": "They ___ eat vegetables. (It happens frequently, several times a week.)",
+          "options": [
+            "often",
+            "never",
+            "sometimes",
+            "always"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_24",
+          "type": "A",
+          "question": "My brother ___ goes to bed early. (It happens now and then, but not always.)",
+          "options": [
+            "never",
+            "often",
+            "sometimes",
+            "always"
+          ],
+          "answer": "sometimes"
+        },
+        {
+          "id": "adv_a_25",
+          "type": "A",
+          "question": "They ___ go to bed early. (It happens now and then, but not always.)",
+          "options": [
+            "sometimes",
+            "always",
+            "often",
+            "never"
+          ],
+          "answer": "sometimes"
+        },
+        {
+          "id": "adv_a_26",
+          "type": "A",
+          "question": "Ana ___ eats vegetables. (It happens frequently, several times a week.)",
+          "options": [
+            "never",
+            "often",
+            "rarely",
+            "sometimes"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_27",
+          "type": "A",
+          "question": "We ___ help at home. (It happens frequently, several times a week.)",
+          "options": [
+            "often",
+            "always",
+            "usually",
+            "rarely"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_28",
+          "type": "A",
+          "question": "I ___ watch TV. (This happens almost every time (about 90%).)",
+          "options": [
+            "never",
+            "usually",
+            "sometimes",
+            "often"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_29",
+          "type": "A",
+          "question": "My brother ___ drinks water. (This happens 100% of the time.)",
+          "options": [
+            "sometimes",
+            "always",
+            "usually",
+            "never"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_30",
+          "type": "A",
+          "question": "Tom ___ walks to school. (This happens 100% of the time.)",
+          "options": [
+            "always",
+            "sometimes",
+            "never",
+            "rarely"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_31",
+          "type": "A",
+          "question": "The children ___ help at home. (This happens almost every time (about 90%).)",
+          "options": [
+            "often",
+            "rarely",
+            "usually",
+            "always"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_32",
+          "type": "A",
+          "question": "She ___ arrives on time. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "sometimes",
+            "never",
+            "always",
+            "often"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_33",
+          "type": "A",
+          "question": "I ___ tidy their room. (This does not happen at all (0%).)",
+          "options": [
+            "always",
+            "sometimes",
+            "often",
+            "never"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_34",
+          "type": "A",
+          "question": "We ___ watch TV. (It happens now and then, but not always.)",
+          "options": [
+            "usually",
+            "sometimes",
+            "always",
+            "rarely"
+          ],
+          "answer": "sometimes"
+        },
+        {
+          "id": "adv_a_35",
+          "type": "A",
+          "question": "She ___ plays football. (This almost never happens (about 10%).)",
+          "options": [
+            "sometimes",
+            "never",
+            "always",
+            "rarely"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_36",
+          "type": "A",
+          "question": "Ana ___ does their homework. (It happens every single time, with no exceptions.)",
+          "options": [
+            "often",
+            "sometimes",
+            "usually",
+            "always"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_37",
+          "type": "A",
+          "question": "My brother ___ reads books. (This almost never happens (about 10%).)",
+          "options": [
+            "always",
+            "rarely",
+            "usually",
+            "sometimes"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_38",
+          "type": "A",
+          "question": "I ___ eat vegetables. (It happens every single time, with no exceptions.)",
+          "options": [
+            "always",
+            "sometimes",
+            "often",
+            "rarely"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_39",
+          "type": "A",
+          "question": "I ___ read books. (It never happens, not even once.)",
+          "options": [
+            "sometimes",
+            "always",
+            "often",
+            "never"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_40",
+          "type": "A",
+          "question": "He ___ tidies their room. (This happens 100% of the time.)",
+          "options": [
+            "sometimes",
+            "always",
+            "never",
+            "often"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_41",
+          "type": "A",
+          "question": "She ___ tidies their room. (It happens most of the time, with a few exceptions.)",
+          "options": [
+            "often",
+            "rarely",
+            "usually",
+            "always"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_42",
+          "type": "A",
+          "question": "You ___ watch TV. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "always",
+            "often",
+            "sometimes",
+            "rarely"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_43",
+          "type": "A",
+          "question": "The children ___ play football. (This does not happen at all (0%).)",
+          "options": [
+            "always",
+            "sometimes",
+            "never",
+            "usually"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_44",
+          "type": "A",
+          "question": "The children ___ walk to school. (This happens about half the time (50%).)",
+          "options": [
+            "sometimes",
+            "never",
+            "often",
+            "rarely"
+          ],
+          "answer": "sometimes"
+        },
+        {
+          "id": "adv_a_45",
+          "type": "A",
+          "question": "He ___ helps at home. (This happens almost every time (about 90%).)",
+          "options": [
+            "never",
+            "often",
+            "sometimes",
+            "usually"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_46",
+          "type": "A",
+          "question": "I ___ do their homework. (It happens every single time, with no exceptions.)",
+          "options": [
+            "never",
+            "always",
+            "sometimes",
+            "usually"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_47",
+          "type": "A",
+          "question": "We ___ go to bed early. (This almost never happens (about 10%).)",
+          "options": [
+            "often",
+            "sometimes",
+            "usually",
+            "rarely"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_48",
+          "type": "A",
+          "question": "They ___ arrive on time. (It happens every single time, with no exceptions.)",
+          "options": [
+            "rarely",
+            "often",
+            "always",
+            "sometimes"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_49",
+          "type": "A",
+          "question": "The children ___ drink water. (It happens frequently, several times a week.)",
+          "options": [
+            "usually",
+            "sometimes",
+            "often",
+            "always"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_50",
+          "type": "A",
+          "question": "The children ___ do their homework. (It never happens, not even once.)",
+          "options": [
+            "never",
+            "sometimes",
+            "always",
+            "rarely"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_51",
+          "type": "A",
+          "question": "He ___ drinks water. (This does not happen at all (0%).)",
+          "options": [
+            "rarely",
+            "often",
+            "always",
+            "never"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_52",
+          "type": "A",
+          "question": "She ___ goes to bed early. (It never happens, not even once.)",
+          "options": [
+            "often",
+            "never",
+            "always",
+            "rarely"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_53",
+          "type": "A",
+          "question": "My brother ___ eats vegetables. (This happens almost every time (about 90%).)",
+          "options": [
+            "usually",
+            "sometimes",
+            "always",
+            "rarely"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_54",
+          "type": "A",
+          "question": "They ___ drink water. (It happens every single time, with no exceptions.)",
+          "options": [
+            "sometimes",
+            "often",
+            "always",
+            "usually"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_55",
+          "type": "A",
+          "question": "You ___ drink water. (It happens most of the time, with a few exceptions.)",
+          "options": [
+            "rarely",
+            "usually",
+            "sometimes",
+            "always"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_56",
+          "type": "A",
+          "question": "My brother ___ arrives on time. (It happens every single time, with no exceptions.)",
+          "options": [
+            "often",
+            "always",
+            "rarely",
+            "usually"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_57",
+          "type": "A",
+          "question": "Ana ___ drinks water. (This happens about half the time (50%).)",
+          "options": [
+            "usually",
+            "sometimes",
+            "often",
+            "never"
+          ],
+          "answer": "sometimes"
+        },
+        {
+          "id": "adv_a_58",
+          "type": "A",
+          "question": "We ___ walk to school. (This happens almost every time (about 90%).)",
+          "options": [
+            "usually",
+            "often",
+            "sometimes",
+            "never"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_59",
+          "type": "A",
+          "question": "She ___ drinks water. (This happens almost every time (about 90%).)",
+          "options": [
+            "always",
+            "often",
+            "usually",
+            "rarely"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_60",
+          "type": "A",
+          "question": "The children ___ drink water. (It happens very rarely, hardly ever.)",
+          "options": [
+            "never",
+            "always",
+            "rarely",
+            "sometimes"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_61",
+          "type": "A",
+          "question": "Tom ___ plays football. (This does not happen at all (0%).)",
+          "options": [
+            "sometimes",
+            "rarely",
+            "never",
+            "often"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_62",
+          "type": "A",
+          "question": "The children ___ help at home. (It happens frequently, several times a week.)",
+          "options": [
+            "sometimes",
+            "never",
+            "often",
+            "always"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_63",
+          "type": "A",
+          "question": "She ___ does their homework. (It happens frequently, several times a week.)",
+          "options": [
+            "often",
+            "usually",
+            "never",
+            "always"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_64",
+          "type": "A",
+          "question": "Tom ___ walks to school. (It happens very rarely, hardly ever.)",
+          "options": [
+            "usually",
+            "sometimes",
+            "rarely",
+            "often"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_65",
+          "type": "A",
+          "question": "Tom ___ arrives on time. (This does not happen at all (0%).)",
+          "options": [
+            "usually",
+            "never",
+            "always",
+            "rarely"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_66",
+          "type": "A",
+          "question": "Ana ___ goes to bed early. (This happens almost every time (about 90%).)",
+          "options": [
+            "usually",
+            "often",
+            "always",
+            "rarely"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_67",
+          "type": "A",
+          "question": "He ___ helps at home. (This almost never happens (about 10%).)",
+          "options": [
+            "never",
+            "rarely",
+            "usually",
+            "sometimes"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_68",
+          "type": "A",
+          "question": "Tom ___ watches TV. (It happens most of the time, with a few exceptions.)",
+          "options": [
+            "usually",
+            "always",
+            "never",
+            "often"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_69",
+          "type": "A",
+          "question": "They ___ read books. (This happens almost every time (about 90%).)",
+          "options": [
+            "sometimes",
+            "often",
+            "never",
+            "usually"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_70",
+          "type": "A",
+          "question": "He ___ plays football. (This happens almost every time (about 90%).)",
+          "options": [
+            "never",
+            "sometimes",
+            "often",
+            "usually"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_71",
+          "type": "A",
+          "question": "I ___ brush their teeth. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "sometimes",
+            "always",
+            "often",
+            "usually"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_72",
+          "type": "A",
+          "question": "She ___ helps at home. (It happens very rarely, hardly ever.)",
+          "options": [
+            "usually",
+            "often",
+            "rarely",
+            "never"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_73",
+          "type": "A",
+          "question": "We ___ tidy their room. (It happens most of the time, with a few exceptions.)",
+          "options": [
+            "usually",
+            "sometimes",
+            "never",
+            "rarely"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_74",
+          "type": "A",
+          "question": "My brother ___ walks to school. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "rarely",
+            "often",
+            "sometimes",
+            "always"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_75",
+          "type": "A",
+          "question": "I ___ tidy their room. (It happens very rarely, hardly ever.)",
+          "options": [
+            "rarely",
+            "often",
+            "usually",
+            "never"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_76",
+          "type": "A",
+          "question": "The children ___ play football. (It happens very rarely, hardly ever.)",
+          "options": [
+            "often",
+            "never",
+            "rarely",
+            "usually"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_77",
+          "type": "A",
+          "question": "Tom ___ drinks water. (This almost never happens (about 10%).)",
+          "options": [
+            "often",
+            "never",
+            "always",
+            "rarely"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_78",
+          "type": "A",
+          "question": "My brother ___ brushes their teeth. (This does not happen at all (0%).)",
+          "options": [
+            "often",
+            "never",
+            "sometimes",
+            "rarely"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_79",
+          "type": "A",
+          "question": "We ___ walk to school. (It never happens, not even once.)",
+          "options": [
+            "sometimes",
+            "often",
+            "never",
+            "usually"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_80",
+          "type": "A",
+          "question": "She ___ drinks water. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "sometimes",
+            "never",
+            "often",
+            "usually"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_81",
+          "type": "A",
+          "question": "They ___ tidy their room. (This almost never happens (about 10%).)",
+          "options": [
+            "never",
+            "often",
+            "always",
+            "rarely"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_82",
+          "type": "A",
+          "question": "They ___ brush their teeth. (It never happens, not even once.)",
+          "options": [
+            "often",
+            "usually",
+            "sometimes",
+            "never"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_83",
+          "type": "A",
+          "question": "Ana ___ eats vegetables. (This happens almost every time (about 90%).)",
+          "options": [
+            "always",
+            "sometimes",
+            "often",
+            "usually"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_84",
+          "type": "A",
+          "question": "We ___ help at home. (It happens most of the time, with a few exceptions.)",
+          "options": [
+            "always",
+            "usually",
+            "often",
+            "sometimes"
+          ],
+          "answer": "usually"
+        },
+        {
+          "id": "adv_a_85",
+          "type": "A",
+          "question": "My brother ___ does their homework. (This happens 100% of the time.)",
+          "options": [
+            "always",
+            "rarely",
+            "sometimes",
+            "usually"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_86",
+          "type": "A",
+          "question": "I ___ do their homework. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "usually",
+            "always",
+            "rarely",
+            "often"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_87",
+          "type": "A",
+          "question": "He ___ plays football. (It happens frequently, several times a week.)",
+          "options": [
+            "often",
+            "always",
+            "sometimes",
+            "never"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_88",
+          "type": "A",
+          "question": "He ___ reads books. (It never happens, not even once.)",
+          "options": [
+            "sometimes",
+            "rarely",
+            "never",
+            "usually"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_89",
+          "type": "A",
+          "question": "They ___ walk to school. (It happens very rarely, hardly ever.)",
+          "options": [
+            "never",
+            "sometimes",
+            "rarely",
+            "always"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_90",
+          "type": "A",
+          "question": "The children ___ watch TV. (This happens a lot (about 70% of the time).)",
+          "options": [
+            "often",
+            "usually",
+            "rarely",
+            "always"
+          ],
+          "answer": "often"
+        },
+        {
+          "id": "adv_a_91",
+          "type": "A",
+          "question": "We ___ tidy their room. (It happens every single time, with no exceptions.)",
+          "options": [
+            "rarely",
+            "always",
+            "often",
+            "never"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_92",
+          "type": "A",
+          "question": "Ana ___ walks to school. (It never happens, not even once.)",
+          "options": [
+            "sometimes",
+            "usually",
+            "never",
+            "rarely"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_93",
+          "type": "A",
+          "question": "You ___ help at home. (This almost never happens (about 10%).)",
+          "options": [
+            "often",
+            "rarely",
+            "sometimes",
+            "usually"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_94",
+          "type": "A",
+          "question": "Tom ___ helps at home. (It happens every single time, with no exceptions.)",
+          "options": [
+            "often",
+            "usually",
+            "always",
+            "rarely"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_95",
+          "type": "A",
+          "question": "My brother ___ goes to bed early. (It happens every single time, with no exceptions.)",
+          "options": [
+            "usually",
+            "often",
+            "never",
+            "always"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_96",
+          "type": "A",
+          "question": "Tom ___ watches TV. (It happens every single time, with no exceptions.)",
+          "options": [
+            "rarely",
+            "often",
+            "sometimes",
+            "always"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_97",
+          "type": "A",
+          "question": "The children ___ arrive on time. (This almost never happens (about 10%).)",
+          "options": [
+            "rarely",
+            "often",
+            "never",
+            "usually"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_a_98",
+          "type": "A",
+          "question": "They ___ eat vegetables. (This happens 100% of the time.)",
+          "options": [
+            "never",
+            "rarely",
+            "always",
+            "often"
+          ],
+          "answer": "always"
+        },
+        {
+          "id": "adv_a_99",
+          "type": "A",
+          "question": "I ___ brush their teeth. (It never happens, not even once.)",
+          "options": [
+            "sometimes",
+            "often",
+            "never",
+            "always"
+          ],
+          "answer": "never"
+        },
+        {
+          "id": "adv_a_100",
+          "type": "A",
+          "question": "Tom ___ brushes their teeth. (This almost never happens (about 10%).)",
+          "options": [
+            "sometimes",
+            "usually",
+            "rarely",
+            "never"
+          ],
+          "answer": "rarely"
+        },
+        {
+          "id": "adv_b_1",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (She — tidy her room)",
+          "options": [
+            "She tidies her room always.",
+            "Always she tidies her room.",
+            "She always tidies her room.",
+            "She usually tidies her room."
+          ],
+          "answer": "She always tidies her room."
+        },
+        {
+          "id": "adv_b_2",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (I — arrive on time)",
+          "options": [
+            "Never I arrive on time.",
+            "I never arrive on time.",
+            "I often arrive on time.",
+            "I arrive on time never."
+          ],
+          "answer": "I never arrive on time."
+        },
+        {
+          "id": "adv_b_3",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (They — brush their teeth)",
+          "options": [
+            "They always brush their teeth.",
+            "They sometimes brush their teeth.",
+            "They brush their teeth always.",
+            "Always they brush their teeth."
+          ],
+          "answer": "They always brush their teeth."
+        },
+        {
+          "id": "adv_b_4",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (My brother — at home)",
+          "options": [
+            "My brother never is at home.",
+            "My brother is always at home.",
+            "My brother is never at home.",
+            "My brother is at home never."
+          ],
+          "answer": "My brother is never at home."
+        },
+        {
+          "id": "adv_b_5",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (You — arrive on time)",
+          "options": [
+            "You arrive on time sometimes.",
+            "Sometimes you arrive on time.",
+            "You sometimes arrive on time.",
+            "You never arrive on time."
+          ],
+          "answer": "You sometimes arrive on time."
+        },
+        {
+          "id": "adv_b_6",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (My brother — on time)",
+          "options": [
+            "My brother is sometimes on time.",
+            "My brother is on time sometimes.",
+            "My brother sometimes is on time.",
+            "My brother is often on time."
+          ],
+          "answer": "My brother is sometimes on time."
+        },
+        {
+          "id": "adv_b_7",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Ana — hungry)",
+          "options": [
+            "Ana often is hungry.",
+            "Ana is often hungry.",
+            "Ana is rarely hungry.",
+            "Ana is hungry often."
+          ],
+          "answer": "Ana is often hungry."
+        },
+        {
+          "id": "adv_b_8",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Tom — watch TV)",
+          "options": [
+            "Tom often watches TV.",
+            "Sometimes Tom watches TV.",
+            "Tom sometimes watches TV.",
+            "Tom watches TV sometimes."
+          ],
+          "answer": "Tom sometimes watches TV."
+        },
+        {
+          "id": "adv_b_9",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (You — quiet)",
+          "options": [
+            "You are always quiet.",
+            "You always are quiet.",
+            "You are usually quiet.",
+            "You are quiet always."
+          ],
+          "answer": "You are always quiet."
+        },
+        {
+          "id": "adv_b_10",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (You — drink water)",
+          "options": [
+            "Usually you drink water.",
+            "You usually drink water.",
+            "You often drink water.",
+            "You drink water usually."
+          ],
+          "answer": "You usually drink water."
+        },
+        {
+          "id": "adv_b_11",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (He — tired)",
+          "options": [
+            "He is tired usually.",
+            "He is rarely tired.",
+            "He usually is tired.",
+            "He is usually tired."
+          ],
+          "answer": "He is usually tired."
+        },
+        {
+          "id": "adv_b_12",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (The children — watch TV)",
+          "options": [
+            "The children often watch TV.",
+            "The children watch TV often.",
+            "Often the children watch TV.",
+            "The children rarely watch TV."
+          ],
+          "answer": "The children often watch TV."
+        },
+        {
+          "id": "adv_b_13",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — busy)",
+          "options": [
+            "We are rarely busy.",
+            "We are always busy.",
+            "We are busy always.",
+            "We always are busy."
+          ],
+          "answer": "We are always busy."
+        },
+        {
+          "id": "adv_b_14",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Ana — read books)",
+          "options": [
+            "Ana reads books sometimes.",
+            "Ana rarely reads books.",
+            "Ana sometimes reads books.",
+            "Sometimes Ana reads books."
+          ],
+          "answer": "Ana sometimes reads books."
+        },
+        {
+          "id": "adv_b_15",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (She — ready)",
+          "options": [
+            "She is usually ready.",
+            "She is always ready.",
+            "She is ready usually.",
+            "She usually is ready."
+          ],
+          "answer": "She is usually ready."
+        },
+        {
+          "id": "adv_b_16",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (The children — busy)",
+          "options": [
+            "The children are sometimes busy.",
+            "The children are busy sometimes.",
+            "The children sometimes are busy.",
+            "The children are usually busy."
+          ],
+          "answer": "The children are sometimes busy."
+        },
+        {
+          "id": "adv_b_17",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (They — on time)",
+          "options": [
+            "They are on time often.",
+            "They are always on time.",
+            "They are often on time.",
+            "They often are on time."
+          ],
+          "answer": "They are often on time."
+        },
+        {
+          "id": "adv_b_18",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (My brother — help at home)",
+          "options": [
+            "My brother never helps at home.",
+            "Never my brother helps at home.",
+            "My brother helps at home never.",
+            "My brother always helps at home."
+          ],
+          "answer": "My brother never helps at home."
+        },
+        {
+          "id": "adv_b_19",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Tom — on time)",
+          "options": [
+            "Tom is rarely on time.",
+            "Tom is often on time.",
+            "Tom is on time often.",
+            "Tom often is on time."
+          ],
+          "answer": "Tom is often on time."
+        },
+        {
+          "id": "adv_b_20",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (We — drink water)",
+          "options": [
+            "We drink water always.",
+            "We always drink water.",
+            "Always we drink water.",
+            "We rarely drink water."
+          ],
+          "answer": "We always drink water."
+        },
+        {
+          "id": "adv_b_21",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (The children — tidy their room)",
+          "options": [
+            "The children never tidy their room.",
+            "The children tidy their room sometimes.",
+            "Sometimes the children tidy their room.",
+            "The children sometimes tidy their room."
+          ],
+          "answer": "The children sometimes tidy their room."
+        },
+        {
+          "id": "adv_b_22",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (She — nervous)",
+          "options": [
+            "She is often nervous.",
+            "She often is nervous.",
+            "She is nervous often.",
+            "She is always nervous."
+          ],
+          "answer": "She is often nervous."
+        },
+        {
+          "id": "adv_b_23",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — quiet)",
+          "options": [
+            "We rarely are quiet.",
+            "We are quiet rarely.",
+            "We are rarely quiet.",
+            "We are sometimes quiet."
+          ],
+          "answer": "We are rarely quiet."
+        },
+        {
+          "id": "adv_b_24",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (I — drink water)",
+          "options": [
+            "I sometimes drink water.",
+            "I drink water usually.",
+            "Usually I drink water.",
+            "I usually drink water."
+          ],
+          "answer": "I usually drink water."
+        },
+        {
+          "id": "adv_b_25",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (They — hungry)",
+          "options": [
+            "They are often hungry.",
+            "They are never hungry.",
+            "They are hungry often.",
+            "They often are hungry."
+          ],
+          "answer": "They are often hungry."
+        },
+        {
+          "id": "adv_b_26",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Tom — read books)",
+          "options": [
+            "Tom reads books always.",
+            "Tom always reads books.",
+            "Always Tom reads books.",
+            "Tom often reads books."
+          ],
+          "answer": "Tom always reads books."
+        },
+        {
+          "id": "adv_b_27",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (They — walk to school)",
+          "options": [
+            "Rarely they walk to school.",
+            "They often walk to school.",
+            "They walk to school rarely.",
+            "They rarely walk to school."
+          ],
+          "answer": "They rarely walk to school."
+        },
+        {
+          "id": "adv_b_28",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (They — read books)",
+          "options": [
+            "They read books usually.",
+            "They usually read books.",
+            "They often read books.",
+            "Usually they read books."
+          ],
+          "answer": "They usually read books."
+        },
+        {
+          "id": "adv_b_29",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Ana — watch TV)",
+          "options": [
+            "Ana often watches TV.",
+            "Ana watches TV often.",
+            "Often Ana watches TV.",
+            "Ana usually watches TV."
+          ],
+          "answer": "Ana often watches TV."
+        },
+        {
+          "id": "adv_b_30",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — kind)",
+          "options": [
+            "We are usually kind.",
+            "We are kind usually.",
+            "We usually are kind.",
+            "We are never kind."
+          ],
+          "answer": "We are usually kind."
+        },
+        {
+          "id": "adv_b_31",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (He — at home)",
+          "options": [
+            "He is never at home.",
+            "He is at home never.",
+            "He is rarely at home.",
+            "He never is at home."
+          ],
+          "answer": "He is never at home."
+        },
+        {
+          "id": "adv_b_32",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (The children — at home)",
+          "options": [
+            "The children are at home often.",
+            "The children often are at home.",
+            "The children are often at home.",
+            "The children are always at home."
+          ],
+          "answer": "The children are often at home."
+        },
+        {
+          "id": "adv_b_33",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Ana — kind)",
+          "options": [
+            "Ana is kind often.",
+            "Ana often is kind.",
+            "Ana is often kind.",
+            "Ana is usually kind."
+          ],
+          "answer": "Ana is often kind."
+        },
+        {
+          "id": "adv_b_34",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (My brother — drink water)",
+          "options": [
+            "My brother drinks water always.",
+            "Always my brother drinks water.",
+            "My brother sometimes drinks water.",
+            "My brother always drinks water."
+          ],
+          "answer": "My brother always drinks water."
+        },
+        {
+          "id": "adv_b_35",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Ana — walk to school)",
+          "options": [
+            "Ana walks to school often.",
+            "Ana often walks to school.",
+            "Often Ana walks to school.",
+            "Ana rarely walks to school."
+          ],
+          "answer": "Ana often walks to school."
+        },
+        {
+          "id": "adv_b_36",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (My brother — quiet)",
+          "options": [
+            "My brother usually is quiet.",
+            "My brother is quiet usually.",
+            "My brother is never quiet.",
+            "My brother is usually quiet."
+          ],
+          "answer": "My brother is usually quiet."
+        },
+        {
+          "id": "adv_b_37",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (My brother — hungry)",
+          "options": [
+            "My brother is hungry always.",
+            "My brother is always hungry.",
+            "My brother always is hungry.",
+            "My brother is sometimes hungry."
+          ],
+          "answer": "My brother is always hungry."
+        },
+        {
+          "id": "adv_b_38",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Ana — brush her teeth)",
+          "options": [
+            "Ana brushes her teeth rarely.",
+            "Rarely Ana brushes her teeth.",
+            "Ana rarely brushes her teeth.",
+            "Ana sometimes brushes her teeth."
+          ],
+          "answer": "Ana rarely brushes her teeth."
+        },
+        {
+          "id": "adv_b_39",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Ana — go to bed early)",
+          "options": [
+            "Ana goes to bed early sometimes.",
+            "Sometimes Ana goes to bed early.",
+            "Ana often goes to bed early.",
+            "Ana sometimes goes to bed early."
+          ],
+          "answer": "Ana sometimes goes to bed early."
+        },
+        {
+          "id": "adv_b_40",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Tom — happy)",
+          "options": [
+            "Tom is always happy.",
+            "Tom is never happy.",
+            "Tom never is happy.",
+            "Tom is happy never."
+          ],
+          "answer": "Tom is never happy."
+        },
+        {
+          "id": "adv_b_41",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (My brother — busy)",
+          "options": [
+            "My brother is busy often.",
+            "My brother is never busy.",
+            "My brother is often busy.",
+            "My brother often is busy."
+          ],
+          "answer": "My brother is often busy."
+        },
+        {
+          "id": "adv_b_42",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (She — busy)",
+          "options": [
+            "She is busy rarely.",
+            "She is usually busy.",
+            "She is rarely busy.",
+            "She rarely is busy."
+          ],
+          "answer": "She is rarely busy."
+        },
+        {
+          "id": "adv_b_43",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Ana — drink water)",
+          "options": [
+            "Never Ana drinks water.",
+            "Ana drinks water never.",
+            "Ana never drinks water.",
+            "Ana rarely drinks water."
+          ],
+          "answer": "Ana never drinks water."
+        },
+        {
+          "id": "adv_b_44",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (He — brush his teeth)",
+          "options": [
+            "Often he brushes his teeth.",
+            "He often brushes his teeth.",
+            "He brushes his teeth often.",
+            "He rarely brushes his teeth."
+          ],
+          "answer": "He often brushes his teeth."
+        },
+        {
+          "id": "adv_b_45",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (He — quiet)",
+          "options": [
+            "He is always quiet.",
+            "He always is quiet.",
+            "He is rarely quiet.",
+            "He is quiet always."
+          ],
+          "answer": "He is always quiet."
+        },
+        {
+          "id": "adv_b_46",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (My brother — go to bed early)",
+          "options": [
+            "My brother goes to bed early usually.",
+            "My brother usually goes to bed early.",
+            "Usually my brother goes to bed early.",
+            "My brother rarely goes to bed early."
+          ],
+          "answer": "My brother usually goes to bed early."
+        },
+        {
+          "id": "adv_b_47",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Ana — ready)",
+          "options": [
+            "Ana often is ready.",
+            "Ana is sometimes ready.",
+            "Ana is often ready.",
+            "Ana is ready often."
+          ],
+          "answer": "Ana is often ready."
+        },
+        {
+          "id": "adv_b_48",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (We — arrive on time)",
+          "options": [
+            "We rarely arrive on time.",
+            "We usually arrive on time.",
+            "We arrive on time rarely.",
+            "Rarely we arrive on time."
+          ],
+          "answer": "We rarely arrive on time."
+        },
+        {
+          "id": "adv_b_49",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Tom — do his homework)",
+          "options": [
+            "Tom does his homework always.",
+            "Always Tom does his homework.",
+            "Tom usually does his homework.",
+            "Tom always does his homework."
+          ],
+          "answer": "Tom always does his homework."
+        },
+        {
+          "id": "adv_b_50",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (She — eat vegetables)",
+          "options": [
+            "Often she eats vegetables.",
+            "She eats vegetables often.",
+            "She often eats vegetables.",
+            "She always eats vegetables."
+          ],
+          "answer": "She often eats vegetables."
+        },
+        {
+          "id": "adv_b_51",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (He — arrive on time)",
+          "options": [
+            "He arrives on time rarely.",
+            "He never arrives on time.",
+            "He rarely arrives on time.",
+            "Rarely he arrives on time."
+          ],
+          "answer": "He rarely arrives on time."
+        },
+        {
+          "id": "adv_b_52",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Tom — late)",
+          "options": [
+            "Tom sometimes is late.",
+            "Tom is never late.",
+            "Tom is sometimes late.",
+            "Tom is late sometimes."
+          ],
+          "answer": "Tom is sometimes late."
+        },
+        {
+          "id": "adv_b_53",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (You — walk to school)",
+          "options": [
+            "You often walk to school.",
+            "You walk to school often.",
+            "Often you walk to school.",
+            "You never walk to school."
+          ],
+          "answer": "You often walk to school."
+        },
+        {
+          "id": "adv_b_54",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (He — read books)",
+          "options": [
+            "He often reads books.",
+            "He usually reads books.",
+            "Usually he reads books.",
+            "He reads books usually."
+          ],
+          "answer": "He usually reads books."
+        },
+        {
+          "id": "adv_b_55",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (They — watch TV)",
+          "options": [
+            "Sometimes they watch TV.",
+            "They always watch TV.",
+            "They sometimes watch TV.",
+            "They watch TV sometimes."
+          ],
+          "answer": "They sometimes watch TV."
+        },
+        {
+          "id": "adv_b_56",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Ana — happy)",
+          "options": [
+            "Ana is usually happy.",
+            "Ana often is happy.",
+            "Ana is often happy.",
+            "Ana is happy often."
+          ],
+          "answer": "Ana is often happy."
+        },
+        {
+          "id": "adv_b_57",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (They — busy)",
+          "options": [
+            "They are busy rarely.",
+            "They are never busy.",
+            "They are rarely busy.",
+            "They rarely are busy."
+          ],
+          "answer": "They are rarely busy."
+        },
+        {
+          "id": "adv_b_58",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (The children — tired)",
+          "options": [
+            "The children are rarely tired.",
+            "The children often are tired.",
+            "The children are often tired.",
+            "The children are tired often."
+          ],
+          "answer": "The children are often tired."
+        },
+        {
+          "id": "adv_b_59",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — at home)",
+          "options": [
+            "We are usually at home.",
+            "We are never at home.",
+            "We never are at home.",
+            "We are at home never."
+          ],
+          "answer": "We are never at home."
+        },
+        {
+          "id": "adv_b_60",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (She — at home)",
+          "options": [
+            "She often is at home.",
+            "She is often at home.",
+            "She is at home often.",
+            "She is sometimes at home."
+          ],
+          "answer": "She is often at home."
+        },
+        {
+          "id": "adv_b_61",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — ready)",
+          "options": [
+            "We are ready never.",
+            "We never are ready.",
+            "We are always ready.",
+            "We are never ready."
+          ],
+          "answer": "We are never ready."
+        },
+        {
+          "id": "adv_b_62",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (I — ready)",
+          "options": [
+            "I am ready never.",
+            "I am rarely ready.",
+            "I am never ready.",
+            "I never am ready."
+          ],
+          "answer": "I am never ready."
+        },
+        {
+          "id": "adv_b_63",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Ana — busy)",
+          "options": [
+            "Ana is often busy.",
+            "Ana is busy often.",
+            "Ana often is busy.",
+            "Ana is rarely busy."
+          ],
+          "answer": "Ana is often busy."
+        },
+        {
+          "id": "adv_b_64",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (He — help at home)",
+          "options": [
+            "Always he helps at home.",
+            "He helps at home always.",
+            "He always helps at home.",
+            "He sometimes helps at home."
+          ],
+          "answer": "He always helps at home."
+        },
+        {
+          "id": "adv_b_65",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (They — late)",
+          "options": [
+            "They are late always.",
+            "They are always late.",
+            "They are rarely late.",
+            "They always are late."
+          ],
+          "answer": "They are always late."
+        },
+        {
+          "id": "adv_b_66",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (I — friendly)",
+          "options": [
+            "I am rarely friendly.",
+            "I never am friendly.",
+            "I am never friendly.",
+            "I am friendly never."
+          ],
+          "answer": "I am never friendly."
+        },
+        {
+          "id": "adv_b_67",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (Ana — friendly)",
+          "options": [
+            "Ana is always friendly.",
+            "Ana is never friendly.",
+            "Ana never is friendly.",
+            "Ana is friendly never."
+          ],
+          "answer": "Ana is never friendly."
+        },
+        {
+          "id": "adv_b_68",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (My brother — nervous)",
+          "options": [
+            "My brother is never nervous.",
+            "My brother is nervous never.",
+            "My brother never is nervous.",
+            "My brother is rarely nervous."
+          ],
+          "answer": "My brother is never nervous."
+        },
+        {
+          "id": "adv_b_69",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (They — tidy their room)",
+          "options": [
+            "They often tidy their room.",
+            "Often they tidy their room.",
+            "They sometimes tidy their room.",
+            "They tidy their room often."
+          ],
+          "answer": "They often tidy their room."
+        },
+        {
+          "id": "adv_b_70",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (We — read books)",
+          "options": [
+            "We never read books.",
+            "We read books never.",
+            "We usually read books.",
+            "Never we read books."
+          ],
+          "answer": "We never read books."
+        },
+        {
+          "id": "adv_b_71",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (My brother — watch TV)",
+          "options": [
+            "My brother watches TV sometimes.",
+            "My brother never watches TV.",
+            "Sometimes my brother watches TV.",
+            "My brother sometimes watches TV."
+          ],
+          "answer": "My brother sometimes watches TV."
+        },
+        {
+          "id": "adv_b_72",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (She — drink water)",
+          "options": [
+            "She usually drinks water.",
+            "She drinks water usually.",
+            "Usually she drinks water.",
+            "She always drinks water."
+          ],
+          "answer": "She usually drinks water."
+        },
+        {
+          "id": "adv_b_73",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (You — friendly)",
+          "options": [
+            "You are always friendly.",
+            "You are rarely friendly.",
+            "You always are friendly.",
+            "You are friendly always."
+          ],
+          "answer": "You are always friendly."
+        },
+        {
+          "id": "adv_b_74",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (She — play football)",
+          "options": [
+            "She sometimes plays football.",
+            "Sometimes she plays football.",
+            "She plays football sometimes.",
+            "She often plays football."
+          ],
+          "answer": "She sometimes plays football."
+        },
+        {
+          "id": "adv_b_75",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (You — late)",
+          "options": [
+            "You are late never.",
+            "You are usually late.",
+            "You are never late.",
+            "You never are late."
+          ],
+          "answer": "You are never late."
+        },
+        {
+          "id": "adv_b_76",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (The children — ready)",
+          "options": [
+            "The children never are ready.",
+            "The children are ready never.",
+            "The children are often ready.",
+            "The children are never ready."
+          ],
+          "answer": "The children are never ready."
+        },
+        {
+          "id": "adv_b_77",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (We — play football)",
+          "options": [
+            "We play football usually.",
+            "Usually we play football.",
+            "We usually play football.",
+            "We rarely play football."
+          ],
+          "answer": "We usually play football."
+        },
+        {
+          "id": "adv_b_78",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (She — late)",
+          "options": [
+            "She is late rarely.",
+            "She rarely is late.",
+            "She is rarely late.",
+            "She is sometimes late."
+          ],
+          "answer": "She is rarely late."
+        },
+        {
+          "id": "adv_b_79",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (You — kind)",
+          "options": [
+            "You are kind usually.",
+            "You are always kind.",
+            "You usually are kind.",
+            "You are usually kind."
+          ],
+          "answer": "You are usually kind."
+        },
+        {
+          "id": "adv_b_80",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (You — help at home)",
+          "options": [
+            "You help at home rarely.",
+            "You often help at home.",
+            "You rarely help at home.",
+            "Rarely you help at home."
+          ],
+          "answer": "You rarely help at home."
+        },
+        {
+          "id": "adv_b_81",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — happy)",
+          "options": [
+            "We usually are happy.",
+            "We are happy usually.",
+            "We are never happy.",
+            "We are usually happy."
+          ],
+          "answer": "We are usually happy."
+        },
+        {
+          "id": "adv_b_82",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (He — walk to school)",
+          "options": [
+            "He sometimes walks to school.",
+            "He always walks to school.",
+            "He walks to school sometimes.",
+            "Sometimes he walks to school."
+          ],
+          "answer": "He sometimes walks to school."
+        },
+        {
+          "id": "adv_b_83",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (They — ready)",
+          "options": [
+            "They are rarely ready.",
+            "They are ready rarely.",
+            "They are never ready.",
+            "They rarely are ready."
+          ],
+          "answer": "They are rarely ready."
+        },
+        {
+          "id": "adv_b_84",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (He — watch TV)",
+          "options": [
+            "Rarely he watches TV.",
+            "He rarely watches TV.",
+            "He always watches TV.",
+            "He watches TV rarely."
+          ],
+          "answer": "He rarely watches TV."
+        },
+        {
+          "id": "adv_b_85",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (Ana — arrive on time)",
+          "options": [
+            "Ana rarely arrives on time.",
+            "Ana arrives on time usually.",
+            "Ana usually arrives on time.",
+            "Usually Ana arrives on time."
+          ],
+          "answer": "Ana usually arrives on time."
+        },
+        {
+          "id": "adv_b_86",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (She — read books)",
+          "options": [
+            "She sometimes reads books.",
+            "She often reads books.",
+            "She reads books often.",
+            "Often she reads books."
+          ],
+          "answer": "She often reads books."
+        },
+        {
+          "id": "adv_b_87",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (I — at home)",
+          "options": [
+            "I am at home usually.",
+            "I usually am at home.",
+            "I am often at home.",
+            "I am usually at home."
+          ],
+          "answer": "I am usually at home."
+        },
+        {
+          "id": "adv_b_88",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (She — watch TV)",
+          "options": [
+            "She rarely watches TV.",
+            "She watches TV rarely.",
+            "Rarely she watches TV.",
+            "She usually watches TV."
+          ],
+          "answer": "She rarely watches TV."
+        },
+        {
+          "id": "adv_b_89",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — friendly)",
+          "options": [
+            "We are often friendly.",
+            "We are friendly often.",
+            "We are always friendly.",
+            "We often are friendly."
+          ],
+          "answer": "We are often friendly."
+        },
+        {
+          "id": "adv_b_90",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (They — play football)",
+          "options": [
+            "They play football often.",
+            "They often play football.",
+            "Often they play football.",
+            "They never play football."
+          ],
+          "answer": "They often play football."
+        },
+        {
+          "id": "adv_b_91",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (My brother — read books)",
+          "options": [
+            "My brother never reads books.",
+            "My brother reads books never.",
+            "My brother always reads books.",
+            "Never my brother reads books."
+          ],
+          "answer": "My brother never reads books."
+        },
+        {
+          "id": "adv_b_92",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (My brother — walk to school)",
+          "options": [
+            "Rarely my brother walks to school.",
+            "My brother rarely walks to school.",
+            "My brother walks to school rarely.",
+            "My brother often walks to school."
+          ],
+          "answer": "My brother rarely walks to school."
+        },
+        {
+          "id": "adv_b_93",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (We — late)",
+          "options": [
+            "We often are late.",
+            "We are usually late.",
+            "We are often late.",
+            "We are late often."
+          ],
+          "answer": "We are often late."
+        },
+        {
+          "id": "adv_b_94",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (The children — on time)",
+          "options": [
+            "The children are rarely on time.",
+            "The children are usually on time.",
+            "The children rarely are on time.",
+            "The children are on time rarely."
+          ],
+          "answer": "The children are rarely on time."
+        },
+        {
+          "id": "adv_b_95",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (I — on time)",
+          "options": [
+            "I am usually on time.",
+            "I am on time usually.",
+            "I usually am on time.",
+            "I am sometimes on time."
+          ],
+          "answer": "I am usually on time."
+        },
+        {
+          "id": "adv_b_96",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (My brother — friendly)",
+          "options": [
+            "My brother is rarely friendly.",
+            "My brother is sometimes friendly.",
+            "My brother rarely is friendly.",
+            "My brother is friendly rarely."
+          ],
+          "answer": "My brother is rarely friendly."
+        },
+        {
+          "id": "adv_b_97",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (She — brush her teeth)",
+          "options": [
+            "She rarely brushes her teeth.",
+            "She brushes her teeth rarely.",
+            "Rarely she brushes her teeth.",
+            "She always brushes her teeth."
+          ],
+          "answer": "She rarely brushes her teeth."
+        },
+        {
+          "id": "adv_b_98",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (after \"to be\")? (The children — quiet)",
+          "options": [
+            "The children are rarely quiet.",
+            "The children are never quiet.",
+            "The children rarely are quiet.",
+            "The children are quiet rarely."
+          ],
+          "answer": "The children are rarely quiet."
+        },
+        {
+          "id": "adv_b_99",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (I — read books)",
+          "options": [
+            "I rarely read books.",
+            "I sometimes read books.",
+            "Rarely I read books.",
+            "I read books rarely."
+          ],
+          "answer": "I rarely read books."
+        },
+        {
+          "id": "adv_b_100",
+          "type": "B",
+          "question": "Which sentence has the adverb in the correct position (before the main verb)? (The children — eat vegetables)",
+          "options": [
+            "The children never eat vegetables.",
+            "Always the children eat vegetables.",
+            "The children always eat vegetables.",
+            "The children eat vegetables always."
+          ],
+          "answer": "The children always eat vegetables."
+        }
+      ]
+    }
+  ]
+}

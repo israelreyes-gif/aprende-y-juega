@@ -1,0 +1,3611 @@
+{
+  "units": [
+    {
+      "id": "erest-c4",
+      "title": "-er / -est",
+      "emoji": "🟢",
+      "exercises": [
+        {
+          "id": "erest_a_1",
+          "type": "A",
+          "question": "Complete: close (comparative form)",
+          "options": [
+            "safer",
+            "longer",
+            "worse",
+            "closer"
+          ],
+          "answer": "closer"
+        },
+        {
+          "id": "erest_a_2",
+          "type": "A",
+          "question": "Complete: funny (superlative form)",
+          "options": [
+            "the most funny",
+            "the funniest",
+            "the closest",
+            "the worst"
+          ],
+          "answer": "the funniest"
+        },
+        {
+          "id": "erest_a_3",
+          "type": "A",
+          "question": "Heavy — what is the comparative?",
+          "options": [
+            "heavyer",
+            "busier",
+            "more heavy",
+            "heavier"
+          ],
+          "answer": "heavier"
+        },
+        {
+          "id": "erest_a_4",
+          "type": "A",
+          "question": "Cold — what is the superlative?",
+          "options": [
+            "the worst",
+            "the safest",
+            "the most cold",
+            "the coldest"
+          ],
+          "answer": "the coldest"
+        },
+        {
+          "id": "erest_a_5",
+          "type": "A",
+          "question": "Complete: good (superlative form)",
+          "options": [
+            "the safest",
+            "the easiest",
+            "the best",
+            "the thinnest"
+          ],
+          "answer": "the best"
+        },
+        {
+          "id": "erest_a_6",
+          "type": "A",
+          "question": "Nice — what is the superlative?",
+          "options": [
+            "the longest",
+            "the nicest",
+            "the youngest",
+            "the smallest"
+          ],
+          "answer": "the nicest"
+        },
+        {
+          "id": "erest_a_7",
+          "type": "A",
+          "question": "Loud — what is the comparative?",
+          "options": [
+            "louder",
+            "better",
+            "slower",
+            "thinner"
+          ],
+          "answer": "louder"
+        },
+        {
+          "id": "erest_a_8",
+          "type": "A",
+          "question": "Complete: small (superlative form)",
+          "options": [
+            "the lightest",
+            "the thinnest",
+            "the smallest",
+            "the most small"
+          ],
+          "answer": "the smallest"
+        },
+        {
+          "id": "erest_a_9",
+          "type": "A",
+          "question": "Complete: fast (superlative form)",
+          "options": [
+            "the fastest",
+            "the biggest",
+            "the heaviest",
+            "the happiest"
+          ],
+          "answer": "the fastest"
+        },
+        {
+          "id": "erest_a_10",
+          "type": "A",
+          "question": "Complete: wide (superlative form)",
+          "options": [
+            "the widest",
+            "the easiest",
+            "the biggest",
+            "the fastest"
+          ],
+          "answer": "the widest"
+        },
+        {
+          "id": "erest_a_11",
+          "type": "A",
+          "question": "Complete: light (comparative form)",
+          "options": [
+            "more light",
+            "lighter",
+            "heavier",
+            "lightier"
+          ],
+          "answer": "lighter"
+        },
+        {
+          "id": "erest_a_12",
+          "type": "A",
+          "question": "Complete: close (superlative form)",
+          "options": [
+            "the strongest",
+            "the youngest",
+            "the closest",
+            "the most close"
+          ],
+          "answer": "the closest"
+        },
+        {
+          "id": "erest_a_13",
+          "type": "A",
+          "question": "Complete: nice (comparative form)",
+          "options": [
+            "niceier",
+            "nicer",
+            "closer",
+            "hotter"
+          ],
+          "answer": "nicer"
+        },
+        {
+          "id": "erest_a_14",
+          "type": "A",
+          "question": "Small — what is the comparative?",
+          "options": [
+            "safer",
+            "easier",
+            "hotter",
+            "smaller"
+          ],
+          "answer": "smaller"
+        },
+        {
+          "id": "erest_a_15",
+          "type": "A",
+          "question": "Tall — what is the comparative?",
+          "options": [
+            "busier",
+            "darker",
+            "taller",
+            "nicer"
+          ],
+          "answer": "taller"
+        },
+        {
+          "id": "erest_a_16",
+          "type": "A",
+          "question": "Complete: easy (superlative form)",
+          "options": [
+            "the safest",
+            "the most easy",
+            "the brightest",
+            "the easiest"
+          ],
+          "answer": "the easiest"
+        },
+        {
+          "id": "erest_a_17",
+          "type": "A",
+          "question": "Cheap — what is the superlative?",
+          "options": [
+            "the smallest",
+            "the cheapest",
+            "the strongest",
+            "the weakest"
+          ],
+          "answer": "the cheapest"
+        },
+        {
+          "id": "erest_a_18",
+          "type": "A",
+          "question": "Short — what is the superlative?",
+          "options": [
+            "the thinnest",
+            "the longest",
+            "the shortest",
+            "the easiest"
+          ],
+          "answer": "the shortest"
+        },
+        {
+          "id": "erest_a_19",
+          "type": "A",
+          "question": "Young — what is the superlative?",
+          "options": [
+            "the nicest",
+            "the smallest",
+            "the strongest",
+            "the youngest"
+          ],
+          "answer": "the youngest"
+        },
+        {
+          "id": "erest_a_20",
+          "type": "A",
+          "question": "Bad — what is the comparative?",
+          "options": [
+            "worse",
+            "bader",
+            "darker",
+            "younger"
+          ],
+          "answer": "worse"
+        },
+        {
+          "id": "erest_a_21",
+          "type": "A",
+          "question": "Complete: hot (comparative form)",
+          "options": [
+            "worse",
+            "nicer",
+            "quieter",
+            "hotter"
+          ],
+          "answer": "hotter"
+        },
+        {
+          "id": "erest_a_22",
+          "type": "A",
+          "question": "Short — what is the comparative?",
+          "options": [
+            "shorter",
+            "happier",
+            "shortier",
+            "louder"
+          ],
+          "answer": "shorter"
+        },
+        {
+          "id": "erest_a_23",
+          "type": "A",
+          "question": "Thin — what is the superlative?",
+          "options": [
+            "the thinnest",
+            "the brightest",
+            "the quietest",
+            "the best"
+          ],
+          "answer": "the thinnest"
+        },
+        {
+          "id": "erest_a_24",
+          "type": "A",
+          "question": "Complete: cold (comparative form)",
+          "options": [
+            "coldier",
+            "nicer",
+            "more cold",
+            "colder"
+          ],
+          "answer": "colder"
+        },
+        {
+          "id": "erest_a_25",
+          "type": "A",
+          "question": "Weak — what is the comparative?",
+          "options": [
+            "weaker",
+            "busier",
+            "longer",
+            "weakier"
+          ],
+          "answer": "weaker"
+        },
+        {
+          "id": "erest_a_26",
+          "type": "A",
+          "question": "Complete: light (superlative form)",
+          "options": [
+            "the most light",
+            "the lightest",
+            "the weakest",
+            "the tallest"
+          ],
+          "answer": "the lightest"
+        },
+        {
+          "id": "erest_a_27",
+          "type": "A",
+          "question": "Complete: big (comparative form)",
+          "options": [
+            "darker",
+            "more big",
+            "shorter",
+            "bigger"
+          ],
+          "answer": "bigger"
+        },
+        {
+          "id": "erest_a_28",
+          "type": "A",
+          "question": "Funny — what is the superlative?",
+          "options": [
+            "the smallest",
+            "the funniest",
+            "the cleanest",
+            "the oldest"
+          ],
+          "answer": "the funniest"
+        },
+        {
+          "id": "erest_a_29",
+          "type": "A",
+          "question": "Complete: tall (comparative form)",
+          "options": [
+            "taller",
+            "tallier",
+            "funnier",
+            "closer"
+          ],
+          "answer": "taller"
+        },
+        {
+          "id": "erest_a_30",
+          "type": "A",
+          "question": "Complete: bright (comparative form)",
+          "options": [
+            "faster",
+            "more bright",
+            "louder",
+            "brighter"
+          ],
+          "answer": "brighter"
+        },
+        {
+          "id": "erest_a_31",
+          "type": "A",
+          "question": "Complete: funny (comparative form)",
+          "options": [
+            "younger",
+            "cleaner",
+            "funnier",
+            "happier"
+          ],
+          "answer": "funnier"
+        },
+        {
+          "id": "erest_a_32",
+          "type": "A",
+          "question": "Long — what is the superlative?",
+          "options": [
+            "the easiest",
+            "the youngest",
+            "the most long",
+            "the longest"
+          ],
+          "answer": "the longest"
+        },
+        {
+          "id": "erest_a_33",
+          "type": "A",
+          "question": "Complete: long (comparative form)",
+          "options": [
+            "easier",
+            "weaker",
+            "longer",
+            "longier"
+          ],
+          "answer": "longer"
+        },
+        {
+          "id": "erest_a_34",
+          "type": "A",
+          "question": "Complete: weak (superlative form)",
+          "options": [
+            "the weakest",
+            "the loudest",
+            "the shortest",
+            "the worst"
+          ],
+          "answer": "the weakest"
+        },
+        {
+          "id": "erest_a_35",
+          "type": "A",
+          "question": "Heavy — what is the superlative?",
+          "options": [
+            "the heaviest",
+            "the longest",
+            "the cleanest",
+            "the worst"
+          ],
+          "answer": "the heaviest"
+        },
+        {
+          "id": "erest_a_36",
+          "type": "A",
+          "question": "Happy — what is the comparative?",
+          "options": [
+            "lighter",
+            "more happy",
+            "safer",
+            "happier"
+          ],
+          "answer": "happier"
+        },
+        {
+          "id": "erest_a_37",
+          "type": "A",
+          "question": "Complete: young (superlative form)",
+          "options": [
+            "the youngest",
+            "the safest",
+            "the happiest",
+            "the weakest"
+          ],
+          "answer": "the youngest"
+        },
+        {
+          "id": "erest_a_38",
+          "type": "A",
+          "question": "Cold — what is the comparative?",
+          "options": [
+            "colder",
+            "taller",
+            "darker",
+            "coldier"
+          ],
+          "answer": "colder"
+        },
+        {
+          "id": "erest_a_39",
+          "type": "A",
+          "question": "Complete: dark (superlative form)",
+          "options": [
+            "the darkest",
+            "the worst",
+            "the most dark",
+            "the happiest"
+          ],
+          "answer": "the darkest"
+        },
+        {
+          "id": "erest_a_40",
+          "type": "A",
+          "question": "Slow — what is the superlative?",
+          "options": [
+            "the darkest",
+            "the most slow",
+            "the brightest",
+            "the slowest"
+          ],
+          "answer": "the slowest"
+        },
+        {
+          "id": "erest_a_41",
+          "type": "A",
+          "question": "Complete: quiet (comparative form)",
+          "options": [
+            "more quiet",
+            "louder",
+            "quieter",
+            "quietier"
+          ],
+          "answer": "quieter"
+        },
+        {
+          "id": "erest_a_42",
+          "type": "A",
+          "question": "Slow — what is the comparative?",
+          "options": [
+            "more slow",
+            "slower",
+            "bigger",
+            "shorter"
+          ],
+          "answer": "slower"
+        },
+        {
+          "id": "erest_a_43",
+          "type": "A",
+          "question": "Complete: quiet (superlative form)",
+          "options": [
+            "the most quiet",
+            "the quietest",
+            "the thinnest",
+            "the closest"
+          ],
+          "answer": "the quietest"
+        },
+        {
+          "id": "erest_a_44",
+          "type": "A",
+          "question": "Complete: strong (superlative form)",
+          "options": [
+            "the strongest",
+            "the easiest",
+            "the most strong",
+            "the heaviest"
+          ],
+          "answer": "the strongest"
+        },
+        {
+          "id": "erest_a_45",
+          "type": "A",
+          "question": "Complete: long (superlative form)",
+          "options": [
+            "the longest",
+            "the most long",
+            "the shortest",
+            "the happiest"
+          ],
+          "answer": "the longest"
+        },
+        {
+          "id": "erest_a_46",
+          "type": "A",
+          "question": "Complete: busy (superlative form)",
+          "options": [
+            "the busiest",
+            "the widest",
+            "the cleanest",
+            "the oldest"
+          ],
+          "answer": "the busiest"
+        },
+        {
+          "id": "erest_a_47",
+          "type": "A",
+          "question": "Light — what is the superlative?",
+          "options": [
+            "the lightest",
+            "the thinnest",
+            "the happiest",
+            "the coldest"
+          ],
+          "answer": "the lightest"
+        },
+        {
+          "id": "erest_a_48",
+          "type": "A",
+          "question": "Complete: safe (comparative form)",
+          "options": [
+            "safeier",
+            "safer",
+            "lighter",
+            "weaker"
+          ],
+          "answer": "safer"
+        },
+        {
+          "id": "erest_a_49",
+          "type": "A",
+          "question": "Complete: busy (comparative form)",
+          "options": [
+            "busier",
+            "cheaper",
+            "slower",
+            "colder"
+          ],
+          "answer": "busier"
+        },
+        {
+          "id": "erest_a_50",
+          "type": "A",
+          "question": "Complete: strong (comparative form)",
+          "options": [
+            "hotter",
+            "stronger",
+            "more strong",
+            "strongier"
+          ],
+          "answer": "stronger"
+        },
+        {
+          "id": "erest_a_51",
+          "type": "A",
+          "question": "Young — what is the comparative?",
+          "options": [
+            "worse",
+            "youngier",
+            "younger",
+            "hotter"
+          ],
+          "answer": "younger"
+        },
+        {
+          "id": "erest_a_52",
+          "type": "A",
+          "question": "Tall — what is the superlative?",
+          "options": [
+            "the cheapest",
+            "the quietest",
+            "the tallest",
+            "the funniest"
+          ],
+          "answer": "the tallest"
+        },
+        {
+          "id": "erest_a_53",
+          "type": "A",
+          "question": "Light — what is the comparative?",
+          "options": [
+            "cleaner",
+            "nicer",
+            "lighter",
+            "stronger"
+          ],
+          "answer": "lighter"
+        },
+        {
+          "id": "erest_a_54",
+          "type": "A",
+          "question": "Complete: bad (comparative form)",
+          "options": [
+            "worse",
+            "cheaper",
+            "weaker",
+            "slower"
+          ],
+          "answer": "worse"
+        },
+        {
+          "id": "erest_a_55",
+          "type": "A",
+          "question": "Complete: happy (comparative form)",
+          "options": [
+            "more happy",
+            "happier",
+            "older",
+            "safer"
+          ],
+          "answer": "happier"
+        },
+        {
+          "id": "erest_a_56",
+          "type": "A",
+          "question": "Complete: happy (superlative form)",
+          "options": [
+            "the strongest",
+            "the loudest",
+            "the happiest",
+            "the tallest"
+          ],
+          "answer": "the happiest"
+        },
+        {
+          "id": "erest_a_57",
+          "type": "A",
+          "question": "Complete: bright (superlative form)",
+          "options": [
+            "the most bright",
+            "the slowest",
+            "the brightest",
+            "the busiest"
+          ],
+          "answer": "the brightest"
+        },
+        {
+          "id": "erest_a_58",
+          "type": "A",
+          "question": "Clean — what is the superlative?",
+          "options": [
+            "the cleanest",
+            "the slowest",
+            "the nicest",
+            "the cheapest"
+          ],
+          "answer": "the cleanest"
+        },
+        {
+          "id": "erest_a_59",
+          "type": "A",
+          "question": "Funny — what is the comparative?",
+          "options": [
+            "more funny",
+            "darker",
+            "funnier",
+            "better"
+          ],
+          "answer": "funnier"
+        },
+        {
+          "id": "erest_a_60",
+          "type": "A",
+          "question": "Complete: young (comparative form)",
+          "options": [
+            "nicer",
+            "hotter",
+            "better",
+            "younger"
+          ],
+          "answer": "younger"
+        },
+        {
+          "id": "erest_a_61",
+          "type": "A",
+          "question": "Complete: fast (comparative form)",
+          "options": [
+            "fastier",
+            "longer",
+            "younger",
+            "faster"
+          ],
+          "answer": "faster"
+        },
+        {
+          "id": "erest_a_62",
+          "type": "A",
+          "question": "Easy — what is the superlative?",
+          "options": [
+            "the easiest",
+            "the brightest",
+            "the most easy",
+            "the weakest"
+          ],
+          "answer": "the easiest"
+        },
+        {
+          "id": "erest_a_63",
+          "type": "A",
+          "question": "Hot — what is the superlative?",
+          "options": [
+            "the hottest",
+            "the cleanest",
+            "the heaviest",
+            "the most hot"
+          ],
+          "answer": "the hottest"
+        },
+        {
+          "id": "erest_a_64",
+          "type": "A",
+          "question": "Strong — what is the comparative?",
+          "options": [
+            "strongier",
+            "older",
+            "stronger",
+            "more strong"
+          ],
+          "answer": "stronger"
+        },
+        {
+          "id": "erest_a_65",
+          "type": "A",
+          "question": "Close — what is the comparative?",
+          "options": [
+            "nicer",
+            "more close",
+            "older",
+            "closer"
+          ],
+          "answer": "closer"
+        },
+        {
+          "id": "erest_a_66",
+          "type": "A",
+          "question": "Complete: nice (superlative form)",
+          "options": [
+            "the most nice",
+            "the smallest",
+            "the nicest",
+            "the heaviest"
+          ],
+          "answer": "the nicest"
+        },
+        {
+          "id": "erest_a_67",
+          "type": "A",
+          "question": "Happy — what is the superlative?",
+          "options": [
+            "the happiest",
+            "the heaviest",
+            "the strongest",
+            "the closest"
+          ],
+          "answer": "the happiest"
+        },
+        {
+          "id": "erest_a_68",
+          "type": "A",
+          "question": "Complete: weak (comparative form)",
+          "options": [
+            "weakier",
+            "wider",
+            "weaker",
+            "hotter"
+          ],
+          "answer": "weaker"
+        },
+        {
+          "id": "erest_a_69",
+          "type": "A",
+          "question": "Nice — what is the comparative?",
+          "options": [
+            "easier",
+            "hotter",
+            "nicer",
+            "cheaper"
+          ],
+          "answer": "nicer"
+        },
+        {
+          "id": "erest_a_70",
+          "type": "A",
+          "question": "Dark — what is the comparative?",
+          "options": [
+            "worse",
+            "darkier",
+            "darker",
+            "stronger"
+          ],
+          "answer": "darker"
+        },
+        {
+          "id": "erest_a_71",
+          "type": "A",
+          "question": "Safe — what is the comparative?",
+          "options": [
+            "safer",
+            "safeier",
+            "brighter",
+            "more safe"
+          ],
+          "answer": "safer"
+        },
+        {
+          "id": "erest_a_72",
+          "type": "A",
+          "question": "Complete: thin (comparative form)",
+          "options": [
+            "happier",
+            "safer",
+            "more thin",
+            "thinner"
+          ],
+          "answer": "thinner"
+        },
+        {
+          "id": "erest_a_73",
+          "type": "A",
+          "question": "Complete: dark (comparative form)",
+          "options": [
+            "darker",
+            "darkier",
+            "louder",
+            "younger"
+          ],
+          "answer": "darker"
+        },
+        {
+          "id": "erest_a_74",
+          "type": "A",
+          "question": "Good — what is the comparative?",
+          "options": [
+            "closer",
+            "faster",
+            "taller",
+            "better"
+          ],
+          "answer": "better"
+        },
+        {
+          "id": "erest_a_75",
+          "type": "A",
+          "question": "Big — what is the comparative?",
+          "options": [
+            "bigier",
+            "weaker",
+            "wider",
+            "bigger"
+          ],
+          "answer": "bigger"
+        },
+        {
+          "id": "erest_a_76",
+          "type": "A",
+          "question": "Complete: safe (superlative form)",
+          "options": [
+            "the coldest",
+            "the safest",
+            "the most safe",
+            "the cheapest"
+          ],
+          "answer": "the safest"
+        },
+        {
+          "id": "erest_a_77",
+          "type": "A",
+          "question": "Complete: thin (superlative form)",
+          "options": [
+            "the youngest",
+            "the thinnest",
+            "the slowest",
+            "the loudest"
+          ],
+          "answer": "the thinnest"
+        },
+        {
+          "id": "erest_a_78",
+          "type": "A",
+          "question": "Old — what is the comparative?",
+          "options": [
+            "older",
+            "nicer",
+            "oldier",
+            "brighter"
+          ],
+          "answer": "older"
+        },
+        {
+          "id": "erest_a_79",
+          "type": "A",
+          "question": "Weak — what is the superlative?",
+          "options": [
+            "the most weak",
+            "the fastest",
+            "the weakest",
+            "the oldest"
+          ],
+          "answer": "the weakest"
+        },
+        {
+          "id": "erest_a_80",
+          "type": "A",
+          "question": "Dark — what is the superlative?",
+          "options": [
+            "the darkest",
+            "the loudest",
+            "the hottest",
+            "the most dark"
+          ],
+          "answer": "the darkest"
+        },
+        {
+          "id": "erest_a_81",
+          "type": "A",
+          "question": "Complete: clean (superlative form)",
+          "options": [
+            "the safest",
+            "the biggest",
+            "the brightest",
+            "the cleanest"
+          ],
+          "answer": "the cleanest"
+        },
+        {
+          "id": "erest_a_82",
+          "type": "A",
+          "question": "Close — what is the superlative?",
+          "options": [
+            "the smallest",
+            "the darkest",
+            "the most close",
+            "the closest"
+          ],
+          "answer": "the closest"
+        },
+        {
+          "id": "erest_a_83",
+          "type": "A",
+          "question": "Safe — what is the superlative?",
+          "options": [
+            "the most safe",
+            "the safest",
+            "the cheapest",
+            "the strongest"
+          ],
+          "answer": "the safest"
+        },
+        {
+          "id": "erest_a_84",
+          "type": "A",
+          "question": "Complete: heavy (superlative form)",
+          "options": [
+            "the heaviest",
+            "the coldest",
+            "the busiest",
+            "the best"
+          ],
+          "answer": "the heaviest"
+        },
+        {
+          "id": "erest_a_85",
+          "type": "A",
+          "question": "Loud — what is the superlative?",
+          "options": [
+            "the hottest",
+            "the brightest",
+            "the loudest",
+            "the fastest"
+          ],
+          "answer": "the loudest"
+        },
+        {
+          "id": "erest_a_86",
+          "type": "A",
+          "question": "Complete: good (comparative form)",
+          "options": [
+            "better",
+            "more good",
+            "lighter",
+            "safer"
+          ],
+          "answer": "better"
+        },
+        {
+          "id": "erest_a_87",
+          "type": "A",
+          "question": "Complete: easy (comparative form)",
+          "options": [
+            "easyer",
+            "cleaner",
+            "happier",
+            "easier"
+          ],
+          "answer": "easier"
+        },
+        {
+          "id": "erest_a_88",
+          "type": "A",
+          "question": "Complete: tall (superlative form)",
+          "options": [
+            "the most tall",
+            "the tallest",
+            "the weakest",
+            "the easiest"
+          ],
+          "answer": "the tallest"
+        },
+        {
+          "id": "erest_a_89",
+          "type": "A",
+          "question": "Complete: big (superlative form)",
+          "options": [
+            "the busiest",
+            "the biggest",
+            "the most big",
+            "the hottest"
+          ],
+          "answer": "the biggest"
+        },
+        {
+          "id": "erest_a_90",
+          "type": "A",
+          "question": "Small — what is the superlative?",
+          "options": [
+            "the smallest",
+            "the lightest",
+            "the easiest",
+            "the strongest"
+          ],
+          "answer": "the smallest"
+        },
+        {
+          "id": "erest_a_91",
+          "type": "A",
+          "question": "Complete: short (comparative form)",
+          "options": [
+            "shortier",
+            "taller",
+            "slower",
+            "shorter"
+          ],
+          "answer": "shorter"
+        },
+        {
+          "id": "erest_a_92",
+          "type": "A",
+          "question": "Bad — what is the superlative?",
+          "options": [
+            "the most bad",
+            "the lightest",
+            "the safest",
+            "the worst"
+          ],
+          "answer": "the worst"
+        },
+        {
+          "id": "erest_a_93",
+          "type": "A",
+          "question": "Complete: cheap (comparative form)",
+          "options": [
+            "stronger",
+            "cheaper",
+            "cheapier",
+            "lighter"
+          ],
+          "answer": "cheaper"
+        },
+        {
+          "id": "erest_a_94",
+          "type": "A",
+          "question": "Fast — what is the superlative?",
+          "options": [
+            "the slowest",
+            "the busiest",
+            "the fastest",
+            "the most fast"
+          ],
+          "answer": "the fastest"
+        },
+        {
+          "id": "erest_a_95",
+          "type": "A",
+          "question": "Complete: wide (comparative form)",
+          "options": [
+            "shorter",
+            "wider",
+            "easier",
+            "stronger"
+          ],
+          "answer": "wider"
+        },
+        {
+          "id": "erest_a_96",
+          "type": "A",
+          "question": "Old — what is the superlative?",
+          "options": [
+            "the lightest",
+            "the most old",
+            "the oldest",
+            "the closest"
+          ],
+          "answer": "the oldest"
+        },
+        {
+          "id": "erest_a_97",
+          "type": "A",
+          "question": "Long — what is the comparative?",
+          "options": [
+            "longier",
+            "safer",
+            "longer",
+            "thinner"
+          ],
+          "answer": "longer"
+        },
+        {
+          "id": "erest_a_98",
+          "type": "A",
+          "question": "Quiet — what is the superlative?",
+          "options": [
+            "the biggest",
+            "the cheapest",
+            "the most quiet",
+            "the quietest"
+          ],
+          "answer": "the quietest"
+        },
+        {
+          "id": "erest_a_99",
+          "type": "A",
+          "question": "Big — what is the superlative?",
+          "options": [
+            "the widest",
+            "the busiest",
+            "the easiest",
+            "the biggest"
+          ],
+          "answer": "the biggest"
+        },
+        {
+          "id": "erest_a_100",
+          "type": "A",
+          "question": "Complete: slow (superlative form)",
+          "options": [
+            "the cheapest",
+            "the brightest",
+            "the slowest",
+            "the widest"
+          ],
+          "answer": "the slowest"
+        },
+        {
+          "id": "erest_b_1",
+          "type": "B",
+          "question": "Situation: comparing three or more animals. (slow) — which sentence is correct?",
+          "options": [
+            "The whale is the slowest in the world.",
+            "The elephant is the slowest in the world.",
+            "The elephant is slower than the others.",
+            "The elephant is the closest in the world."
+          ],
+          "answer": "The elephant is the slowest in the world."
+        },
+        {
+          "id": "erest_b_2",
+          "type": "B",
+          "question": "Situation: There are two people, Jack and Sara. Jack (slow) — which sentence is correct?",
+          "options": [
+            "Jack is slowest than Sara.",
+            "Jack is slower than Sara.",
+            "Jack is quieter than Sara.",
+            "Sara is slower than Jack."
+          ],
+          "answer": "Jack is slower than Sara."
+        },
+        {
+          "id": "erest_b_3",
+          "type": "B",
+          "question": "Situation: comparing three or more mountains. (dark) — which sentence is correct?",
+          "options": [
+            "Everest is darker than the others.",
+            "Everest is the cleanest in the world.",
+            "K2 is the darkest in the world.",
+            "Everest is the darkest in the world."
+          ],
+          "answer": "Everest is the darkest in the world."
+        },
+        {
+          "id": "erest_b_4",
+          "type": "B",
+          "question": "Situation: There are two people, Jack and Sara. Jack (easy) — which sentence is correct?",
+          "options": [
+            "Jack is easier than Sara.",
+            "Jack is easiest than Sara.",
+            "Jack is safer than Sara.",
+            "Sara is easier than Jack."
+          ],
+          "answer": "Jack is easier than Sara."
+        },
+        {
+          "id": "erest_b_5",
+          "type": "B",
+          "question": "Situation: comparing three or more houses. (heavy) — which sentence is correct?",
+          "options": [
+            "The blue house is the heaviest in the world.",
+            "The red house is the brightest in the world.",
+            "The red house is heavier than the others.",
+            "The red house is the heaviest in the world."
+          ],
+          "answer": "The red house is the heaviest in the world."
+        },
+        {
+          "id": "erest_b_6",
+          "type": "B",
+          "question": "Situation: comparing three or more cars. (easy) — which sentence is correct?",
+          "options": [
+            "The blue car is the easiest in the world.",
+            "The red car is the best in the world.",
+            "The red car is easier than the others.",
+            "The red car is the easiest in the world."
+          ],
+          "answer": "The red car is the easiest in the world."
+        },
+        {
+          "id": "erest_b_7",
+          "type": "B",
+          "question": "Situation: There are two people, Ana and Leo. Ana (good) — which sentence is correct?",
+          "options": [
+            "Ana is better than Leo.",
+            "Ana is lighter than Leo.",
+            "Leo is better than Ana.",
+            "Ana is best than Leo."
+          ],
+          "answer": "Ana is better than Leo."
+        },
+        {
+          "id": "erest_b_8",
+          "type": "B",
+          "question": "Situation: comparing three or more bridges. (cheap) — which sentence is correct?",
+          "options": [
+            "The old bridge is cheaper than the others.",
+            "The old bridge is the smallest in the world.",
+            "The old bridge is the cheapest in the world.",
+            "The new bridge is the cheapest in the world."
+          ],
+          "answer": "The old bridge is the cheapest in the world."
+        },
+        {
+          "id": "erest_b_9",
+          "type": "B",
+          "question": "Situation: comparing three or more books. (hot) — which sentence is correct?",
+          "options": [
+            "That book is the hottest in the world.",
+            "This book is the busiest in the world.",
+            "This book is hotter than the others.",
+            "This book is the hottest in the world."
+          ],
+          "answer": "This book is the hottest in the world."
+        },
+        {
+          "id": "erest_b_10",
+          "type": "B",
+          "question": "Situation: There are two people, Max and Lucy. Max (busy) — which sentence is correct?",
+          "options": [
+            "Max is busiest than Lucy.",
+            "Max is busier than Lucy.",
+            "Max is colder than Lucy.",
+            "Lucy is busier than Max."
+          ],
+          "answer": "Max is busier than Lucy."
+        },
+        {
+          "id": "erest_b_11",
+          "type": "B",
+          "question": "Situation: comparing three or more books. (quiet) — which sentence is correct?",
+          "options": [
+            "This book is the quietest in the world.",
+            "This book is quieter than the others.",
+            "That book is the quietest in the world.",
+            "This book is the longest in the world."
+          ],
+          "answer": "This book is the quietest in the world."
+        },
+        {
+          "id": "erest_b_12",
+          "type": "B",
+          "question": "Situation: There are two people, Leo and Mia. Leo (heavy) — which sentence is correct?",
+          "options": [
+            "Leo is lighter than Mia.",
+            "Leo is heavier than Mia.",
+            "Leo is heaviest than Mia.",
+            "Mia is heavier than Leo."
+          ],
+          "answer": "Leo is heavier than Mia."
+        },
+        {
+          "id": "erest_b_13",
+          "type": "B",
+          "question": "Situation: There are two people, Ben and Ella. Ben (big) — which sentence is correct?",
+          "options": [
+            "Ben is biggest than Ella.",
+            "Ella is bigger than Ben.",
+            "Ben is bigger than Ella.",
+            "Ben is wider than Ella."
+          ],
+          "answer": "Ben is bigger than Ella."
+        },
+        {
+          "id": "erest_b_14",
+          "type": "B",
+          "question": "Situation: comparing three or more trees. (young) — which sentence is correct?",
+          "options": [
+            "The oak is younger than the others.",
+            "The oak is the heaviest in the world.",
+            "The pine is the youngest in the world.",
+            "The oak is the youngest in the world."
+          ],
+          "answer": "The oak is the youngest in the world."
+        },
+        {
+          "id": "erest_b_15",
+          "type": "B",
+          "question": "Situation: There are two people, Ana and Leo. Ana (fast) — which sentence is correct?",
+          "options": [
+            "Ana is fastest than Leo.",
+            "Leo is faster than Ana.",
+            "Ana is faster than Leo.",
+            "Ana is lighter than Leo."
+          ],
+          "answer": "Ana is faster than Leo."
+        },
+        {
+          "id": "erest_b_16",
+          "type": "B",
+          "question": "Situation: There are two people, Tom and Ana. Tom (funny) — which sentence is correct?",
+          "options": [
+            "Tom is funniest than Ana.",
+            "Ana is funnier than Tom.",
+            "Tom is colder than Ana.",
+            "Tom is funnier than Ana."
+          ],
+          "answer": "Tom is funnier than Ana."
+        },
+        {
+          "id": "erest_b_17",
+          "type": "B",
+          "question": "Situation: comparing three or more animals. (easy) — which sentence is correct?",
+          "options": [
+            "The elephant is easier than the others.",
+            "The whale is the easiest in the world.",
+            "The elephant is the tallest in the world.",
+            "The elephant is the easiest in the world."
+          ],
+          "answer": "The elephant is the easiest in the world."
+        },
+        {
+          "id": "erest_b_18",
+          "type": "B",
+          "question": "Situation: There are two people, Ben and Ella. Ben (nice) — which sentence is correct?",
+          "options": [
+            "Ben is nicer than Ella.",
+            "Ben is nicest than Ella.",
+            "Ella is nicer than Ben.",
+            "Ben is busier than Ella."
+          ],
+          "answer": "Ben is nicer than Ella."
+        },
+        {
+          "id": "erest_b_19",
+          "type": "B",
+          "question": "Situation: comparing three or more houses. (big) — which sentence is correct?",
+          "options": [
+            "The red house is bigger than the others.",
+            "The blue house is the biggest in the world.",
+            "The red house is the biggest in the world.",
+            "The red house is the oldest in the world."
+          ],
+          "answer": "The red house is the biggest in the world."
+        },
+        {
+          "id": "erest_b_20",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (funny) — which sentence is correct?",
+          "options": [
+            "Emma is funnier than Sam.",
+            "Sam is weaker than Emma.",
+            "Sam is funniest than Emma.",
+            "Sam is funnier than Emma."
+          ],
+          "answer": "Sam is funnier than Emma."
+        },
+        {
+          "id": "erest_b_21",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (young) — which sentence is correct?",
+          "options": [
+            "Sam is faster than Emma.",
+            "Sam is youngest than Emma.",
+            "Emma is younger than Sam.",
+            "Sam is younger than Emma."
+          ],
+          "answer": "Sam is younger than Emma."
+        },
+        {
+          "id": "erest_b_22",
+          "type": "B",
+          "question": "Situation: There are two people, Leo and Mia. Leo (big) — which sentence is correct?",
+          "options": [
+            "Leo is biggest than Mia.",
+            "Leo is bigger than Mia.",
+            "Leo is worse than Mia.",
+            "Mia is bigger than Leo."
+          ],
+          "answer": "Leo is bigger than Mia."
+        },
+        {
+          "id": "erest_b_23",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (happy) — which sentence is correct?",
+          "options": [
+            "Sam is cheaper than Emma.",
+            "Emma is happier than Sam.",
+            "Sam is happier than Emma.",
+            "Sam is happiest than Emma."
+          ],
+          "answer": "Sam is happier than Emma."
+        },
+        {
+          "id": "erest_b_24",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (slow) — which sentence is correct?",
+          "options": [
+            "Alex is bigger than Zoe.",
+            "Alex is slowest than Zoe.",
+            "Alex is slower than Zoe.",
+            "Zoe is slower than Alex."
+          ],
+          "answer": "Alex is slower than Zoe."
+        },
+        {
+          "id": "erest_b_25",
+          "type": "B",
+          "question": "Situation: comparing three or more trees. (cold) — which sentence is correct?",
+          "options": [
+            "The oak is the youngest in the world.",
+            "The oak is colder than the others.",
+            "The oak is the coldest in the world.",
+            "The pine is the coldest in the world."
+          ],
+          "answer": "The oak is the coldest in the world."
+        },
+        {
+          "id": "erest_b_26",
+          "type": "B",
+          "question": "Situation: comparing three or more cities. (quiet) — which sentence is correct?",
+          "options": [
+            "Madrid is quieter than the others.",
+            "Madrid is the quietest in the world.",
+            "Paris is the quietest in the world.",
+            "Madrid is the coldest in the world."
+          ],
+          "answer": "Madrid is the quietest in the world."
+        },
+        {
+          "id": "erest_b_27",
+          "type": "B",
+          "question": "Situation: comparing three or more mountains. (long) — which sentence is correct?",
+          "options": [
+            "Everest is the longest in the world.",
+            "K2 is the longest in the world.",
+            "Everest is longer than the others.",
+            "Everest is the closest in the world."
+          ],
+          "answer": "Everest is the longest in the world."
+        },
+        {
+          "id": "erest_b_28",
+          "type": "B",
+          "question": "Situation: comparing three or more beaches. (short) — which sentence is correct?",
+          "options": [
+            "The north beach is shorter than the others.",
+            "The north beach is the shortest in the world.",
+            "The north beach is the best in the world.",
+            "The south beach is the shortest in the world."
+          ],
+          "answer": "The north beach is the shortest in the world."
+        },
+        {
+          "id": "erest_b_29",
+          "type": "B",
+          "question": "Situation: comparing three or more buildings. (bad) — which sentence is correct?",
+          "options": [
+            "Tower A is the youngest in the world.",
+            "Tower A is worse than the others.",
+            "Tower B is the worst in the world.",
+            "Tower A is the worst in the world."
+          ],
+          "answer": "Tower A is the worst in the world."
+        },
+        {
+          "id": "erest_b_30",
+          "type": "B",
+          "question": "Situation: comparing three or more mountains. (clean) — which sentence is correct?",
+          "options": [
+            "Everest is cleaner than the others.",
+            "K2 is the cleanest in the world.",
+            "Everest is the tallest in the world.",
+            "Everest is the cleanest in the world."
+          ],
+          "answer": "Everest is the cleanest in the world."
+        },
+        {
+          "id": "erest_b_31",
+          "type": "B",
+          "question": "Situation: comparing three or more cities. (slow) — which sentence is correct?",
+          "options": [
+            "Paris is the slowest in the world.",
+            "Madrid is the darkest in the world.",
+            "Madrid is the slowest in the world.",
+            "Madrid is slower than the others."
+          ],
+          "answer": "Madrid is the slowest in the world."
+        },
+        {
+          "id": "erest_b_32",
+          "type": "B",
+          "question": "Situation: comparing three or more buildings. (old) — which sentence is correct?",
+          "options": [
+            "Tower A is older than the others.",
+            "Tower B is the oldest in the world.",
+            "Tower A is the biggest in the world.",
+            "Tower A is the oldest in the world."
+          ],
+          "answer": "Tower A is the oldest in the world."
+        },
+        {
+          "id": "erest_b_33",
+          "type": "B",
+          "question": "Situation: comparing three or more houses. (tall) — which sentence is correct?",
+          "options": [
+            "The red house is taller than the others.",
+            "The blue house is the tallest in the world.",
+            "The red house is the shortest in the world.",
+            "The red house is the tallest in the world."
+          ],
+          "answer": "The red house is the tallest in the world."
+        },
+        {
+          "id": "erest_b_34",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (tall) — which sentence is correct?",
+          "options": [
+            "Alex is taller than Zoe.",
+            "Alex is tallest than Zoe.",
+            "Zoe is taller than Alex.",
+            "Alex is smaller than Zoe."
+          ],
+          "answer": "Alex is taller than Zoe."
+        },
+        {
+          "id": "erest_b_35",
+          "type": "B",
+          "question": "Situation: There are two people, Leo and Mia. Leo (long) — which sentence is correct?",
+          "options": [
+            "Leo is longer than Mia.",
+            "Leo is longest than Mia.",
+            "Leo is easier than Mia.",
+            "Mia is longer than Leo."
+          ],
+          "answer": "Leo is longer than Mia."
+        },
+        {
+          "id": "erest_b_36",
+          "type": "B",
+          "question": "Situation: comparing three or more bridges. (safe) — which sentence is correct?",
+          "options": [
+            "The old bridge is the hottest in the world.",
+            "The old bridge is the safest in the world.",
+            "The old bridge is safer than the others.",
+            "The new bridge is the safest in the world."
+          ],
+          "answer": "The old bridge is the safest in the world."
+        },
+        {
+          "id": "erest_b_37",
+          "type": "B",
+          "question": "Situation: comparing three or more rivers. (heavy) — which sentence is correct?",
+          "options": [
+            "The Nile is heavier than the others.",
+            "The Nile is the heaviest in the world.",
+            "The Nile is the widest in the world.",
+            "The Amazon is the heaviest in the world."
+          ],
+          "answer": "The Nile is the heaviest in the world."
+        },
+        {
+          "id": "erest_b_38",
+          "type": "B",
+          "question": "Situation: comparing three or more cities. (thin) — which sentence is correct?",
+          "options": [
+            "Madrid is the loudest in the world.",
+            "Madrid is thinner than the others.",
+            "Paris is the thinnest in the world.",
+            "Madrid is the thinnest in the world."
+          ],
+          "answer": "Madrid is the thinnest in the world."
+        },
+        {
+          "id": "erest_b_39",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (hot) — which sentence is correct?",
+          "options": [
+            "Sam is hotter than Emma.",
+            "Emma is hotter than Sam.",
+            "Sam is cleaner than Emma.",
+            "Sam is hottest than Emma."
+          ],
+          "answer": "Sam is hotter than Emma."
+        },
+        {
+          "id": "erest_b_40",
+          "type": "B",
+          "question": "Situation: comparing three or more buildings. (nice) — which sentence is correct?",
+          "options": [
+            "Tower A is the nicest in the world.",
+            "Tower A is nicer than the others.",
+            "Tower A is the cheapest in the world.",
+            "Tower B is the nicest in the world."
+          ],
+          "answer": "Tower A is the nicest in the world."
+        },
+        {
+          "id": "erest_b_41",
+          "type": "B",
+          "question": "Situation: There are two people, Leo and Mia. Leo (nice) — which sentence is correct?",
+          "options": [
+            "Leo is better than Mia.",
+            "Mia is nicer than Leo.",
+            "Leo is nicest than Mia.",
+            "Leo is nicer than Mia."
+          ],
+          "answer": "Leo is nicer than Mia."
+        },
+        {
+          "id": "erest_b_42",
+          "type": "B",
+          "question": "Situation: comparing three or more houses. (bad) — which sentence is correct?",
+          "options": [
+            "The blue house is the worst in the world.",
+            "The red house is the youngest in the world.",
+            "The red house is worse than the others.",
+            "The red house is the worst in the world."
+          ],
+          "answer": "The red house is the worst in the world."
+        },
+        {
+          "id": "erest_b_43",
+          "type": "B",
+          "question": "Situation: comparing three or more planets. (slow) — which sentence is correct?",
+          "options": [
+            "Mars is the slowest in the world.",
+            "Earth is the slowest in the world.",
+            "Earth is slower than the others.",
+            "Earth is the oldest in the world."
+          ],
+          "answer": "Earth is the slowest in the world."
+        },
+        {
+          "id": "erest_b_44",
+          "type": "B",
+          "question": "Situation: comparing three or more planets. (nice) — which sentence is correct?",
+          "options": [
+            "Earth is nicer than the others.",
+            "Earth is the nicest in the world.",
+            "Mars is the nicest in the world.",
+            "Earth is the brightest in the world."
+          ],
+          "answer": "Earth is the nicest in the world."
+        },
+        {
+          "id": "erest_b_45",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (safe) — which sentence is correct?",
+          "options": [
+            "Sam is safest than Emma.",
+            "Sam is safer than Emma.",
+            "Sam is better than Emma.",
+            "Emma is safer than Sam."
+          ],
+          "answer": "Sam is safer than Emma."
+        },
+        {
+          "id": "erest_b_46",
+          "type": "B",
+          "question": "Situation: comparing three or more planets. (cold) — which sentence is correct?",
+          "options": [
+            "Mars is the coldest in the world.",
+            "Earth is the biggest in the world.",
+            "Earth is the coldest in the world.",
+            "Earth is colder than the others."
+          ],
+          "answer": "Earth is the coldest in the world."
+        },
+        {
+          "id": "erest_b_47",
+          "type": "B",
+          "question": "Situation: There are two people, Max and Lucy. Max (strong) — which sentence is correct?",
+          "options": [
+            "Max is cleaner than Lucy.",
+            "Max is strongest than Lucy.",
+            "Lucy is stronger than Max.",
+            "Max is stronger than Lucy."
+          ],
+          "answer": "Max is stronger than Lucy."
+        },
+        {
+          "id": "erest_b_48",
+          "type": "B",
+          "question": "Situation: There are two people, Tom and Ana. Tom (weak) — which sentence is correct?",
+          "options": [
+            "Tom is weakest than Ana.",
+            "Tom is safer than Ana.",
+            "Tom is weaker than Ana.",
+            "Ana is weaker than Tom."
+          ],
+          "answer": "Tom is weaker than Ana."
+        },
+        {
+          "id": "erest_b_49",
+          "type": "B",
+          "question": "Situation: comparing three or more buildings. (dark) — which sentence is correct?",
+          "options": [
+            "Tower B is the darkest in the world.",
+            "Tower A is the darkest in the world.",
+            "Tower A is darker than the others.",
+            "Tower A is the closest in the world."
+          ],
+          "answer": "Tower A is the darkest in the world."
+        },
+        {
+          "id": "erest_b_50",
+          "type": "B",
+          "question": "Situation: comparing three or more rivers. (big) — which sentence is correct?",
+          "options": [
+            "The Nile is the safest in the world.",
+            "The Nile is bigger than the others.",
+            "The Nile is the biggest in the world.",
+            "The Amazon is the biggest in the world."
+          ],
+          "answer": "The Nile is the biggest in the world."
+        },
+        {
+          "id": "erest_b_51",
+          "type": "B",
+          "question": "Situation: comparing three or more bridges. (close) — which sentence is correct?",
+          "options": [
+            "The old bridge is the nicest in the world.",
+            "The new bridge is the closest in the world.",
+            "The old bridge is closer than the others.",
+            "The old bridge is the closest in the world."
+          ],
+          "answer": "The old bridge is the closest in the world."
+        },
+        {
+          "id": "erest_b_52",
+          "type": "B",
+          "question": "Situation: comparing three or more cars. (bad) — which sentence is correct?",
+          "options": [
+            "The blue car is the worst in the world.",
+            "The red car is the worst in the world.",
+            "The red car is worse than the others.",
+            "The red car is the lightest in the world."
+          ],
+          "answer": "The red car is the worst in the world."
+        },
+        {
+          "id": "erest_b_53",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (thin) — which sentence is correct?",
+          "options": [
+            "Sam is thinnest than Emma.",
+            "Sam is thinner than Emma.",
+            "Emma is thinner than Sam.",
+            "Sam is louder than Emma."
+          ],
+          "answer": "Sam is thinner than Emma."
+        },
+        {
+          "id": "erest_b_54",
+          "type": "B",
+          "question": "Situation: comparing three or more planets. (tall) — which sentence is correct?",
+          "options": [
+            "Mars is the tallest in the world.",
+            "Earth is taller than the others.",
+            "Earth is the tallest in the world.",
+            "Earth is the shortest in the world."
+          ],
+          "answer": "Earth is the tallest in the world."
+        },
+        {
+          "id": "erest_b_55",
+          "type": "B",
+          "question": "Situation: comparing three or more beaches. (heavy) — which sentence is correct?",
+          "options": [
+            "The south beach is the heaviest in the world.",
+            "The north beach is the heaviest in the world.",
+            "The north beach is the weakest in the world.",
+            "The north beach is heavier than the others."
+          ],
+          "answer": "The north beach is the heaviest in the world."
+        },
+        {
+          "id": "erest_b_56",
+          "type": "B",
+          "question": "Situation: comparing three or more animals. (busy) — which sentence is correct?",
+          "options": [
+            "The elephant is the worst in the world.",
+            "The elephant is busier than the others.",
+            "The whale is the busiest in the world.",
+            "The elephant is the busiest in the world."
+          ],
+          "answer": "The elephant is the busiest in the world."
+        },
+        {
+          "id": "erest_b_57",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (dark) — which sentence is correct?",
+          "options": [
+            "Zoe is darker than Alex.",
+            "Alex is darkest than Zoe.",
+            "Alex is darker than Zoe.",
+            "Alex is shorter than Zoe."
+          ],
+          "answer": "Alex is darker than Zoe."
+        },
+        {
+          "id": "erest_b_58",
+          "type": "B",
+          "question": "Situation: comparing three or more trees. (bright) — which sentence is correct?",
+          "options": [
+            "The oak is the quietest in the world.",
+            "The pine is the brightest in the world.",
+            "The oak is the brightest in the world.",
+            "The oak is brighter than the others."
+          ],
+          "answer": "The oak is the brightest in the world."
+        },
+        {
+          "id": "erest_b_59",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (cheap) — which sentence is correct?",
+          "options": [
+            "Zoe is cheaper than Alex.",
+            "Alex is cheaper than Zoe.",
+            "Alex is cheapest than Zoe.",
+            "Alex is worse than Zoe."
+          ],
+          "answer": "Alex is cheaper than Zoe."
+        },
+        {
+          "id": "erest_b_60",
+          "type": "B",
+          "question": "Situation: comparing three or more cars. (cheap) — which sentence is correct?",
+          "options": [
+            "The red car is the nicest in the world.",
+            "The red car is cheaper than the others.",
+            "The blue car is the cheapest in the world.",
+            "The red car is the cheapest in the world."
+          ],
+          "answer": "The red car is the cheapest in the world."
+        },
+        {
+          "id": "erest_b_61",
+          "type": "B",
+          "question": "Situation: comparing three or more mountains. (cheap) — which sentence is correct?",
+          "options": [
+            "Everest is cheaper than the others.",
+            "Everest is the cheapest in the world.",
+            "K2 is the cheapest in the world.",
+            "Everest is the shortest in the world."
+          ],
+          "answer": "Everest is the cheapest in the world."
+        },
+        {
+          "id": "erest_b_62",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (small) — which sentence is correct?",
+          "options": [
+            "Alex is smallest than Zoe.",
+            "Alex is longer than Zoe.",
+            "Alex is smaller than Zoe.",
+            "Zoe is smaller than Alex."
+          ],
+          "answer": "Alex is smaller than Zoe."
+        },
+        {
+          "id": "erest_b_63",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (hot) — which sentence is correct?",
+          "options": [
+            "Alex is hotter than Zoe.",
+            "Alex is hottest than Zoe.",
+            "Zoe is hotter than Alex.",
+            "Alex is shorter than Zoe."
+          ],
+          "answer": "Alex is hotter than Zoe."
+        },
+        {
+          "id": "erest_b_64",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (cheap) — which sentence is correct?",
+          "options": [
+            "Emma is cheaper than Sam.",
+            "Sam is cheapest than Emma.",
+            "Sam is slower than Emma.",
+            "Sam is cheaper than Emma."
+          ],
+          "answer": "Sam is cheaper than Emma."
+        },
+        {
+          "id": "erest_b_65",
+          "type": "B",
+          "question": "Situation: There are two people, Ben and Ella. Ben (slow) — which sentence is correct?",
+          "options": [
+            "Ben is taller than Ella.",
+            "Ben is slower than Ella.",
+            "Ella is slower than Ben.",
+            "Ben is slowest than Ella."
+          ],
+          "answer": "Ben is slower than Ella."
+        },
+        {
+          "id": "erest_b_66",
+          "type": "B",
+          "question": "Situation: comparing three or more beaches. (tall) — which sentence is correct?",
+          "options": [
+            "The north beach is the tallest in the world.",
+            "The north beach is taller than the others.",
+            "The south beach is the tallest in the world.",
+            "The north beach is the biggest in the world."
+          ],
+          "answer": "The north beach is the tallest in the world."
+        },
+        {
+          "id": "erest_b_67",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (funny) — which sentence is correct?",
+          "options": [
+            "Alex is funnier than Zoe.",
+            "Alex is funniest than Zoe.",
+            "Alex is wider than Zoe.",
+            "Zoe is funnier than Alex."
+          ],
+          "answer": "Alex is funnier than Zoe."
+        },
+        {
+          "id": "erest_b_68",
+          "type": "B",
+          "question": "Situation: There are two people, Max and Lucy. Max (light) — which sentence is correct?",
+          "options": [
+            "Max is safer than Lucy.",
+            "Max is lighter than Lucy.",
+            "Max is lightest than Lucy.",
+            "Lucy is lighter than Max."
+          ],
+          "answer": "Max is lighter than Lucy."
+        },
+        {
+          "id": "erest_b_69",
+          "type": "B",
+          "question": "Situation: There are two people, Leo and Mia. Leo (busy) — which sentence is correct?",
+          "options": [
+            "Mia is busier than Leo.",
+            "Leo is wider than Mia.",
+            "Leo is busier than Mia.",
+            "Leo is busiest than Mia."
+          ],
+          "answer": "Leo is busier than Mia."
+        },
+        {
+          "id": "erest_b_70",
+          "type": "B",
+          "question": "Situation: comparing three or more planets. (clean) — which sentence is correct?",
+          "options": [
+            "Earth is cleaner than the others.",
+            "Mars is the cleanest in the world.",
+            "Earth is the cleanest in the world.",
+            "Earth is the funniest in the world."
+          ],
+          "answer": "Earth is the cleanest in the world."
+        },
+        {
+          "id": "erest_b_71",
+          "type": "B",
+          "question": "Situation: comparing three or more books. (safe) — which sentence is correct?",
+          "options": [
+            "This book is safer than the others.",
+            "This book is the thinnest in the world.",
+            "That book is the safest in the world.",
+            "This book is the safest in the world."
+          ],
+          "answer": "This book is the safest in the world."
+        },
+        {
+          "id": "erest_b_72",
+          "type": "B",
+          "question": "Situation: There are two people, Tom and Ana. Tom (easy) — which sentence is correct?",
+          "options": [
+            "Tom is easier than Ana.",
+            "Ana is easier than Tom.",
+            "Tom is weaker than Ana.",
+            "Tom is easiest than Ana."
+          ],
+          "answer": "Tom is easier than Ana."
+        },
+        {
+          "id": "erest_b_73",
+          "type": "B",
+          "question": "Situation: There are two people, Ben and Ella. Ben (busy) — which sentence is correct?",
+          "options": [
+            "Ben is busier than Ella.",
+            "Ben is busiest than Ella.",
+            "Ella is busier than Ben.",
+            "Ben is closer than Ella."
+          ],
+          "answer": "Ben is busier than Ella."
+        },
+        {
+          "id": "erest_b_74",
+          "type": "B",
+          "question": "Situation: comparing three or more cities. (close) — which sentence is correct?",
+          "options": [
+            "Madrid is the closest in the world.",
+            "Paris is the closest in the world.",
+            "Madrid is closer than the others.",
+            "Madrid is the lightest in the world."
+          ],
+          "answer": "Madrid is the closest in the world."
+        },
+        {
+          "id": "erest_b_75",
+          "type": "B",
+          "question": "Situation: comparing three or more planets. (funny) — which sentence is correct?",
+          "options": [
+            "Earth is funnier than the others.",
+            "Earth is the funniest in the world.",
+            "Mars is the funniest in the world.",
+            "Earth is the youngest in the world."
+          ],
+          "answer": "Earth is the funniest in the world."
+        },
+        {
+          "id": "erest_b_76",
+          "type": "B",
+          "question": "Situation: There are two people, Ben and Ella. Ben (hot) — which sentence is correct?",
+          "options": [
+            "Ben is hotter than Ella.",
+            "Ben is hottest than Ella.",
+            "Ella is hotter than Ben.",
+            "Ben is darker than Ella."
+          ],
+          "answer": "Ben is hotter than Ella."
+        },
+        {
+          "id": "erest_b_77",
+          "type": "B",
+          "question": "Situation: comparing three or more buildings. (heavy) — which sentence is correct?",
+          "options": [
+            "Tower A is heavier than the others.",
+            "Tower A is the heaviest in the world.",
+            "Tower B is the heaviest in the world.",
+            "Tower A is the widest in the world."
+          ],
+          "answer": "Tower A is the heaviest in the world."
+        },
+        {
+          "id": "erest_b_78",
+          "type": "B",
+          "question": "Situation: comparing three or more buildings. (bright) — which sentence is correct?",
+          "options": [
+            "Tower A is the brightest in the world.",
+            "Tower A is brighter than the others.",
+            "Tower A is the youngest in the world.",
+            "Tower B is the brightest in the world."
+          ],
+          "answer": "Tower A is the brightest in the world."
+        },
+        {
+          "id": "erest_b_79",
+          "type": "B",
+          "question": "Situation: comparing three or more rivers. (bright) — which sentence is correct?",
+          "options": [
+            "The Amazon is the brightest in the world.",
+            "The Nile is the brightest in the world.",
+            "The Nile is brighter than the others.",
+            "The Nile is the shortest in the world."
+          ],
+          "answer": "The Nile is the brightest in the world."
+        },
+        {
+          "id": "erest_b_80",
+          "type": "B",
+          "question": "Situation: comparing three or more rivers. (nice) — which sentence is correct?",
+          "options": [
+            "The Nile is the nicest in the world.",
+            "The Amazon is the nicest in the world.",
+            "The Nile is the closest in the world.",
+            "The Nile is nicer than the others."
+          ],
+          "answer": "The Nile is the nicest in the world."
+        },
+        {
+          "id": "erest_b_81",
+          "type": "B",
+          "question": "Situation: comparing three or more animals. (small) — which sentence is correct?",
+          "options": [
+            "The elephant is the quietest in the world.",
+            "The whale is the smallest in the world.",
+            "The elephant is the smallest in the world.",
+            "The elephant is smaller than the others."
+          ],
+          "answer": "The elephant is the smallest in the world."
+        },
+        {
+          "id": "erest_b_82",
+          "type": "B",
+          "question": "Situation: comparing three or more houses. (quiet) — which sentence is correct?",
+          "options": [
+            "The red house is quieter than the others.",
+            "The red house is the cheapest in the world.",
+            "The blue house is the quietest in the world.",
+            "The red house is the quietest in the world."
+          ],
+          "answer": "The red house is the quietest in the world."
+        },
+        {
+          "id": "erest_b_83",
+          "type": "B",
+          "question": "Situation: comparing three or more beaches. (bright) — which sentence is correct?",
+          "options": [
+            "The north beach is the thinnest in the world.",
+            "The north beach is the brightest in the world.",
+            "The north beach is brighter than the others.",
+            "The south beach is the brightest in the world."
+          ],
+          "answer": "The north beach is the brightest in the world."
+        },
+        {
+          "id": "erest_b_84",
+          "type": "B",
+          "question": "Situation: comparing three or more books. (easy) — which sentence is correct?",
+          "options": [
+            "That book is the easiest in the world.",
+            "This book is the darkest in the world.",
+            "This book is the easiest in the world.",
+            "This book is easier than the others."
+          ],
+          "answer": "This book is the easiest in the world."
+        },
+        {
+          "id": "erest_b_85",
+          "type": "B",
+          "question": "Situation: comparing three or more houses. (light) — which sentence is correct?",
+          "options": [
+            "The red house is the lightest in the world.",
+            "The blue house is the lightest in the world.",
+            "The red house is the happiest in the world.",
+            "The red house is lighter than the others."
+          ],
+          "answer": "The red house is the lightest in the world."
+        },
+        {
+          "id": "erest_b_86",
+          "type": "B",
+          "question": "Situation: comparing three or more buildings. (tall) — which sentence is correct?",
+          "options": [
+            "Tower B is the tallest in the world.",
+            "Tower A is taller than the others.",
+            "Tower A is the worst in the world.",
+            "Tower A is the tallest in the world."
+          ],
+          "answer": "Tower A is the tallest in the world."
+        },
+        {
+          "id": "erest_b_87",
+          "type": "B",
+          "question": "Situation: comparing three or more bridges. (old) — which sentence is correct?",
+          "options": [
+            "The old bridge is the oldest in the world.",
+            "The new bridge is the oldest in the world.",
+            "The old bridge is the strongest in the world.",
+            "The old bridge is older than the others."
+          ],
+          "answer": "The old bridge is the oldest in the world."
+        },
+        {
+          "id": "erest_b_88",
+          "type": "B",
+          "question": "Situation: comparing three or more rivers. (busy) — which sentence is correct?",
+          "options": [
+            "The Amazon is the busiest in the world.",
+            "The Nile is the busiest in the world.",
+            "The Nile is the slowest in the world.",
+            "The Nile is busier than the others."
+          ],
+          "answer": "The Nile is the busiest in the world."
+        },
+        {
+          "id": "erest_b_89",
+          "type": "B",
+          "question": "Situation: comparing three or more houses. (dark) — which sentence is correct?",
+          "options": [
+            "The red house is darker than the others.",
+            "The blue house is the darkest in the world.",
+            "The red house is the darkest in the world.",
+            "The red house is the best in the world."
+          ],
+          "answer": "The red house is the darkest in the world."
+        },
+        {
+          "id": "erest_b_90",
+          "type": "B",
+          "question": "Situation: There are two people, Tom and Ana. Tom (old) — which sentence is correct?",
+          "options": [
+            "Ana is older than Tom.",
+            "Tom is oldest than Ana.",
+            "Tom is older than Ana.",
+            "Tom is smaller than Ana."
+          ],
+          "answer": "Tom is older than Ana."
+        },
+        {
+          "id": "erest_b_91",
+          "type": "B",
+          "question": "Situation: There are two people, Tom and Ana. Tom (close) — which sentence is correct?",
+          "options": [
+            "Tom is closest than Ana.",
+            "Tom is closer than Ana.",
+            "Ana is closer than Tom.",
+            "Tom is funnier than Ana."
+          ],
+          "answer": "Tom is closer than Ana."
+        },
+        {
+          "id": "erest_b_92",
+          "type": "B",
+          "question": "Situation: There are two people, Tom and Ana. Tom (young) — which sentence is correct?",
+          "options": [
+            "Tom is cheaper than Ana.",
+            "Tom is younger than Ana.",
+            "Ana is younger than Tom.",
+            "Tom is youngest than Ana."
+          ],
+          "answer": "Tom is younger than Ana."
+        },
+        {
+          "id": "erest_b_93",
+          "type": "B",
+          "question": "Situation: comparing three or more animals. (nice) — which sentence is correct?",
+          "options": [
+            "The elephant is the nicest in the world.",
+            "The elephant is the cheapest in the world.",
+            "The whale is the nicest in the world.",
+            "The elephant is nicer than the others."
+          ],
+          "answer": "The elephant is the nicest in the world."
+        },
+        {
+          "id": "erest_b_94",
+          "type": "B",
+          "question": "Situation: There are two people, Sam and Emma. Sam (easy) — which sentence is correct?",
+          "options": [
+            "Sam is easier than Emma.",
+            "Emma is easier than Sam.",
+            "Sam is quieter than Emma.",
+            "Sam is easiest than Emma."
+          ],
+          "answer": "Sam is easier than Emma."
+        },
+        {
+          "id": "erest_b_95",
+          "type": "B",
+          "question": "Situation: There are two people, Alex and Zoe. Alex (quiet) — which sentence is correct?",
+          "options": [
+            "Alex is worse than Zoe.",
+            "Alex is quieter than Zoe.",
+            "Alex is quietest than Zoe.",
+            "Zoe is quieter than Alex."
+          ],
+          "answer": "Alex is quieter than Zoe."
+        },
+        {
+          "id": "erest_b_96",
+          "type": "B",
+          "question": "Situation: comparing three or more trees. (weak) — which sentence is correct?",
+          "options": [
+            "The pine is the weakest in the world.",
+            "The oak is the weakest in the world.",
+            "The oak is weaker than the others.",
+            "The oak is the worst in the world."
+          ],
+          "answer": "The oak is the weakest in the world."
+        },
+        {
+          "id": "erest_b_97",
+          "type": "B",
+          "question": "Situation: comparing three or more mountains. (thin) — which sentence is correct?",
+          "options": [
+            "Everest is the best in the world.",
+            "Everest is thinner than the others.",
+            "Everest is the thinnest in the world.",
+            "K2 is the thinnest in the world."
+          ],
+          "answer": "Everest is the thinnest in the world."
+        },
+        {
+          "id": "erest_b_98",
+          "type": "B",
+          "question": "Situation: There are two people, Max and Lucy. Max (long) — which sentence is correct?",
+          "options": [
+            "Max is slower than Lucy.",
+            "Lucy is longer than Max.",
+            "Max is longer than Lucy.",
+            "Max is longest than Lucy."
+          ],
+          "answer": "Max is longer than Lucy."
+        },
+        {
+          "id": "erest_b_99",
+          "type": "B",
+          "question": "Situation: comparing three or more cars. (wide) — which sentence is correct?",
+          "options": [
+            "The red car is wider than the others.",
+            "The red car is the widest in the world.",
+            "The red car is the cheapest in the world.",
+            "The blue car is the widest in the world."
+          ],
+          "answer": "The red car is the widest in the world."
+        },
+        {
+          "id": "erest_b_100",
+          "type": "B",
+          "question": "Situation: There are two people, Max and Lucy. Max (old) — which sentence is correct?",
+          "options": [
+            "Max is older than Lucy.",
+            "Max is hotter than Lucy.",
+            "Lucy is older than Max.",
+            "Max is oldest than Lucy."
+          ],
+          "answer": "Max is older than Lucy."
+        },
+        {
+          "id": "erest_c_1",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Alex es más grande que Zoe.\"?",
+          "options": [
+            "Zoe is bigger than Alex.",
+            "Alex is biggest than Zoe.",
+            "Alex is bigger than Zoe.",
+            "Alex is smaller than Zoe."
+          ],
+          "answer": "Alex is bigger than Zoe."
+        },
+        {
+          "id": "erest_c_2",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Jack es más limpio que Sara.\"?",
+          "options": [
+            "Jack is cleanest than Sara.",
+            "Sara is cleaner than Jack.",
+            "Jack is cleaner than Sara.",
+            "Jack is hotter than Sara."
+          ],
+          "answer": "Jack is cleaner than Sara."
+        },
+        {
+          "id": "erest_c_3",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más brillante que Ella.\"?",
+          "options": [
+            "Ben is busier than Ella.",
+            "Ella is brighter than Ben.",
+            "Ben is brighter than Ella.",
+            "Ben is brightest than Ella."
+          ],
+          "answer": "Ben is brighter than Ella."
+        },
+        {
+          "id": "erest_c_4",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Earth es el/la más cercano de todos/as.\"?",
+          "options": [
+            "Mars is the closest in the world.",
+            "Earth is the closest in the world.",
+            "Earth is closer than the others.",
+            "Earth is the biggest in the world."
+          ],
+          "answer": "Earth is the closest in the world."
+        },
+        {
+          "id": "erest_c_5",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the Nile es el/la más pesado de todos/as.\"?",
+          "options": [
+            "The Nile is the heaviest in the world.",
+            "The Nile is the darkest in the world.",
+            "The Amazon is the heaviest in the world.",
+            "The Nile is heavier than the others."
+          ],
+          "answer": "The Nile is the heaviest in the world."
+        },
+        {
+          "id": "erest_c_6",
+          "type": "C",
+          "question": "¿Cómo se dice: \"this book es el/la peor de todos/as.\"?",
+          "options": [
+            "This book is worse than the others.",
+            "This book is the worst in the world.",
+            "That book is the worst in the world.",
+            "This book is the longest in the world."
+          ],
+          "answer": "This book is the worst in the world."
+        },
+        {
+          "id": "erest_c_7",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Madrid es el/la mejor de todos/as.\"?",
+          "options": [
+            "Madrid is the safest in the world.",
+            "Madrid is the best in the world.",
+            "Madrid is better than the others.",
+            "Paris is the best in the world."
+          ],
+          "answer": "Madrid is the best in the world."
+        },
+        {
+          "id": "erest_c_8",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the north beach es el/la más ocupado de todos/as.\"?",
+          "options": [
+            "The south beach is the busiest in the world.",
+            "The north beach is the busiest in the world.",
+            "The north beach is the cleanest in the world.",
+            "The north beach is busier than the others."
+          ],
+          "answer": "The north beach is the busiest in the world."
+        },
+        {
+          "id": "erest_c_9",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más rápido que Mia.\"?",
+          "options": [
+            "Mia is faster than Leo.",
+            "Leo is faster than Mia.",
+            "Leo is fastest than Mia.",
+            "Leo is stronger than Mia."
+          ],
+          "answer": "Leo is faster than Mia."
+        },
+        {
+          "id": "erest_c_10",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más seguro que Ella.\"?",
+          "options": [
+            "Ben is safer than Ella.",
+            "Ben is taller than Ella.",
+            "Ben is safest than Ella.",
+            "Ella is safer than Ben."
+          ],
+          "answer": "Ben is safer than Ella."
+        },
+        {
+          "id": "erest_c_11",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Sam es más ancho que Emma.\"?",
+          "options": [
+            "Emma is wider than Sam.",
+            "Sam is widest than Emma.",
+            "Sam is wider than Emma.",
+            "Sam is smaller than Emma."
+          ],
+          "answer": "Sam is wider than Emma."
+        },
+        {
+          "id": "erest_c_12",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the oak es el/la más seguro de todos/as.\"?",
+          "options": [
+            "The oak is safer than the others.",
+            "The oak is the safest in the world.",
+            "The pine is the safest in the world.",
+            "The oak is the busiest in the world."
+          ],
+          "answer": "The oak is the safest in the world."
+        },
+        {
+          "id": "erest_c_13",
+          "type": "C",
+          "question": "¿Cómo se dice: \"this book es el/la más rápido de todos/as.\"?",
+          "options": [
+            "This book is the youngest in the world.",
+            "That book is the fastest in the world.",
+            "This book is the fastest in the world.",
+            "This book is faster than the others."
+          ],
+          "answer": "This book is the fastest in the world."
+        },
+        {
+          "id": "erest_c_14",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más grande que Mia.\"?",
+          "options": [
+            "Leo is biggest than Mia.",
+            "Mia is bigger than Leo.",
+            "Leo is better than Mia.",
+            "Leo is bigger than Mia."
+          ],
+          "answer": "Leo is bigger than Mia."
+        },
+        {
+          "id": "erest_c_15",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the north beach es el/la más ruidoso de todos/as.\"?",
+          "options": [
+            "The south beach is the loudest in the world.",
+            "The north beach is the smallest in the world.",
+            "The north beach is louder than the others.",
+            "The north beach is the loudest in the world."
+          ],
+          "answer": "The north beach is the loudest in the world."
+        },
+        {
+          "id": "erest_c_16",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the old bridge es el/la más frío de todos/as.\"?",
+          "options": [
+            "The new bridge is the coldest in the world.",
+            "The old bridge is the coldest in the world.",
+            "The old bridge is colder than the others.",
+            "The old bridge is the brightest in the world."
+          ],
+          "answer": "The old bridge is the coldest in the world."
+        },
+        {
+          "id": "erest_c_17",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Earth es el/la más frío de todos/as.\"?",
+          "options": [
+            "Earth is the oldest in the world.",
+            "Mars is the coldest in the world.",
+            "Earth is the coldest in the world.",
+            "Earth is colder than the others."
+          ],
+          "answer": "Earth is the coldest in the world."
+        },
+        {
+          "id": "erest_c_18",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Earth es el/la más joven de todos/as.\"?",
+          "options": [
+            "Earth is younger than the others.",
+            "Earth is the nicest in the world.",
+            "Earth is the youngest in the world.",
+            "Mars is the youngest in the world."
+          ],
+          "answer": "Earth is the youngest in the world."
+        },
+        {
+          "id": "erest_c_19",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Madrid es el/la más brillante de todos/as.\"?",
+          "options": [
+            "Madrid is the brightest in the world.",
+            "Madrid is brighter than the others.",
+            "Madrid is the biggest in the world.",
+            "Paris is the brightest in the world."
+          ],
+          "answer": "Madrid is the brightest in the world."
+        },
+        {
+          "id": "erest_c_20",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the oak es el/la más limpio de todos/as.\"?",
+          "options": [
+            "The pine is the cleanest in the world.",
+            "The oak is the cleanest in the world.",
+            "The oak is the widest in the world.",
+            "The oak is cleaner than the others."
+          ],
+          "answer": "The oak is the cleanest in the world."
+        },
+        {
+          "id": "erest_c_21",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Sam es más alto que Emma.\"?",
+          "options": [
+            "Sam is tallest than Emma.",
+            "Sam is quieter than Emma.",
+            "Emma is taller than Sam.",
+            "Sam is taller than Emma."
+          ],
+          "answer": "Sam is taller than Emma."
+        },
+        {
+          "id": "erest_c_22",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Earth es el/la más brillante de todos/as.\"?",
+          "options": [
+            "Earth is the biggest in the world.",
+            "Earth is brighter than the others.",
+            "Earth is the brightest in the world.",
+            "Mars is the brightest in the world."
+          ],
+          "answer": "Earth is the brightest in the world."
+        },
+        {
+          "id": "erest_c_23",
+          "type": "C",
+          "question": "¿Cómo se dice: \"this book es el/la más frío de todos/as.\"?",
+          "options": [
+            "This book is the longest in the world.",
+            "That book is the coldest in the world.",
+            "This book is the coldest in the world.",
+            "This book is colder than the others."
+          ],
+          "answer": "This book is the coldest in the world."
+        },
+        {
+          "id": "erest_c_24",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más cercano que Mia.\"?",
+          "options": [
+            "Mia is closer than Leo.",
+            "Leo is busier than Mia.",
+            "Leo is closest than Mia.",
+            "Leo is closer than Mia."
+          ],
+          "answer": "Leo is closer than Mia."
+        },
+        {
+          "id": "erest_c_25",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más ocupado que Ella.\"?",
+          "options": [
+            "Ella is busier than Ben.",
+            "Ben is better than Ella.",
+            "Ben is busiest than Ella.",
+            "Ben is busier than Ella."
+          ],
+          "answer": "Ben is busier than Ella."
+        },
+        {
+          "id": "erest_c_26",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Sam es más brillante que Emma.\"?",
+          "options": [
+            "Sam is brighter than Emma.",
+            "Emma is brighter than Sam.",
+            "Sam is brightest than Emma.",
+            "Sam is worse than Emma."
+          ],
+          "answer": "Sam is brighter than Emma."
+        },
+        {
+          "id": "erest_c_27",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the old bridge es el/la peor de todos/as.\"?",
+          "options": [
+            "The new bridge is the worst in the world.",
+            "The old bridge is the worst in the world.",
+            "The old bridge is the happiest in the world.",
+            "The old bridge is worse than the others."
+          ],
+          "answer": "The old bridge is the worst in the world."
+        },
+        {
+          "id": "erest_c_28",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Earth es el/la más seguro de todos/as.\"?",
+          "options": [
+            "Earth is safer than the others.",
+            "Earth is the safest in the world.",
+            "Mars is the safest in the world.",
+            "Earth is the youngest in the world."
+          ],
+          "answer": "Earth is the safest in the world."
+        },
+        {
+          "id": "erest_c_29",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Madrid es el/la más joven de todos/as.\"?",
+          "options": [
+            "Madrid is the youngest in the world.",
+            "Paris is the youngest in the world.",
+            "Madrid is younger than the others.",
+            "Madrid is the cleanest in the world."
+          ],
+          "answer": "Madrid is the youngest in the world."
+        },
+        {
+          "id": "erest_c_30",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the red car es el/la más joven de todos/as.\"?",
+          "options": [
+            "The red car is the youngest in the world.",
+            "The red car is younger than the others.",
+            "The red car is the closest in the world.",
+            "The blue car is the youngest in the world."
+          ],
+          "answer": "The red car is the youngest in the world."
+        },
+        {
+          "id": "erest_c_31",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Max es más frío que Lucy.\"?",
+          "options": [
+            "Max is colder than Lucy.",
+            "Lucy is colder than Max.",
+            "Max is coldest than Lucy.",
+            "Max is brighter than Lucy."
+          ],
+          "answer": "Max is colder than Lucy."
+        },
+        {
+          "id": "erest_c_32",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the old bridge es el/la más cercano de todos/as.\"?",
+          "options": [
+            "The old bridge is the closest in the world.",
+            "The new bridge is the closest in the world.",
+            "The old bridge is closer than the others.",
+            "The old bridge is the weakest in the world."
+          ],
+          "answer": "The old bridge is the closest in the world."
+        },
+        {
+          "id": "erest_c_33",
+          "type": "C",
+          "question": "¿Cómo se dice: \"this book es el/la más simpático de todos/as.\"?",
+          "options": [
+            "That book is the nicest in the world.",
+            "This book is nicer than the others.",
+            "This book is the hottest in the world.",
+            "This book is the nicest in the world."
+          ],
+          "answer": "This book is the nicest in the world."
+        },
+        {
+          "id": "erest_c_34",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the oak es el/la más fácil de todos/as.\"?",
+          "options": [
+            "The oak is easier than the others.",
+            "The oak is the cleanest in the world.",
+            "The pine is the easiest in the world.",
+            "The oak is the easiest in the world."
+          ],
+          "answer": "The oak is the easiest in the world."
+        },
+        {
+          "id": "erest_c_35",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom es más seguro que Ana.\"?",
+          "options": [
+            "Tom is safer than Ana.",
+            "Tom is safest than Ana.",
+            "Ana is safer than Tom.",
+            "Tom is cleaner than Ana."
+          ],
+          "answer": "Tom is safer than Ana."
+        },
+        {
+          "id": "erest_c_36",
+          "type": "C",
+          "question": "¿Cómo se dice: \"this book es el/la más ocupado de todos/as.\"?",
+          "options": [
+            "This book is busier than the others.",
+            "That book is the busiest in the world.",
+            "This book is the thinnest in the world.",
+            "This book is the busiest in the world."
+          ],
+          "answer": "This book is the busiest in the world."
+        },
+        {
+          "id": "erest_c_37",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Earth es el/la más delgado de todos/as.\"?",
+          "options": [
+            "Earth is the thinnest in the world.",
+            "Earth is the shortest in the world.",
+            "Mars is the thinnest in the world.",
+            "Earth is thinner than the others."
+          ],
+          "answer": "Earth is the thinnest in the world."
+        },
+        {
+          "id": "erest_c_38",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom es más largo que Ana.\"?",
+          "options": [
+            "Ana is longer than Tom.",
+            "Tom is smaller than Ana.",
+            "Tom is longer than Ana.",
+            "Tom is longest than Ana."
+          ],
+          "answer": "Tom is longer than Ana."
+        },
+        {
+          "id": "erest_c_39",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the Nile es el/la más brillante de todos/as.\"?",
+          "options": [
+            "The Amazon is the brightest in the world.",
+            "The Nile is brighter than the others.",
+            "The Nile is the lightest in the world.",
+            "The Nile is the brightest in the world."
+          ],
+          "answer": "The Nile is the brightest in the world."
+        },
+        {
+          "id": "erest_c_40",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más alto que Ella.\"?",
+          "options": [
+            "Ben is hotter than Ella.",
+            "Ben is tallest than Ella.",
+            "Ben is taller than Ella.",
+            "Ella is taller than Ben."
+          ],
+          "answer": "Ben is taller than Ella."
+        },
+        {
+          "id": "erest_c_41",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom es más barato que Ana.\"?",
+          "options": [
+            "Tom is cheaper than Ana.",
+            "Ana is cheaper than Tom.",
+            "Tom is cheapest than Ana.",
+            "Tom is cleaner than Ana."
+          ],
+          "answer": "Tom is cheaper than Ana."
+        },
+        {
+          "id": "erest_c_42",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más simpático que Ella.\"?",
+          "options": [
+            "Ella is nicer than Ben.",
+            "Ben is nicer than Ella.",
+            "Ben is nicest than Ella.",
+            "Ben is better than Ella."
+          ],
+          "answer": "Ben is nicer than Ella."
+        },
+        {
+          "id": "erest_c_43",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Everest es el/la más largo de todos/as.\"?",
+          "options": [
+            "Everest is the longest in the world.",
+            "Everest is the lightest in the world.",
+            "Everest is longer than the others.",
+            "K2 is the longest in the world."
+          ],
+          "answer": "Everest is the longest in the world."
+        },
+        {
+          "id": "erest_c_44",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the red car es el/la peor de todos/as.\"?",
+          "options": [
+            "The red car is worse than the others.",
+            "The blue car is the worst in the world.",
+            "The red car is the loudest in the world.",
+            "The red car is the worst in the world."
+          ],
+          "answer": "The red car is the worst in the world."
+        },
+        {
+          "id": "erest_c_45",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la más ruidoso de todos/as.\"?",
+          "options": [
+            "Tower A is louder than the others.",
+            "Tower A is the loudest in the world.",
+            "Tower A is the hottest in the world.",
+            "Tower B is the loudest in the world."
+          ],
+          "answer": "Tower A is the loudest in the world."
+        },
+        {
+          "id": "erest_c_46",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la más caliente de todos/as.\"?",
+          "options": [
+            "Tower A is the hottest in the world.",
+            "Tower A is the tallest in the world.",
+            "Tower A is hotter than the others.",
+            "Tower B is the hottest in the world."
+          ],
+          "answer": "Tower A is the hottest in the world."
+        },
+        {
+          "id": "erest_c_47",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the elephant es el/la más pequeño de todos/as.\"?",
+          "options": [
+            "The elephant is the easiest in the world.",
+            "The elephant is the smallest in the world.",
+            "The whale is the smallest in the world.",
+            "The elephant is smaller than the others."
+          ],
+          "answer": "The elephant is the smallest in the world."
+        },
+        {
+          "id": "erest_c_48",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Max es más rápido que Lucy.\"?",
+          "options": [
+            "Lucy is faster than Max.",
+            "Max is faster than Lucy.",
+            "Max is fastest than Lucy.",
+            "Max is longer than Lucy."
+          ],
+          "answer": "Max is faster than Lucy."
+        },
+        {
+          "id": "erest_c_49",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the elephant es el/la más fácil de todos/as.\"?",
+          "options": [
+            "The elephant is easier than the others.",
+            "The elephant is the easiest in the world.",
+            "The whale is the easiest in the world.",
+            "The elephant is the fastest in the world."
+          ],
+          "answer": "The elephant is the easiest in the world."
+        },
+        {
+          "id": "erest_c_50",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más feliz que Mia.\"?",
+          "options": [
+            "Mia is happier than Leo.",
+            "Leo is safer than Mia.",
+            "Leo is happier than Mia.",
+            "Leo is happiest than Mia."
+          ],
+          "answer": "Leo is happier than Mia."
+        },
+        {
+          "id": "erest_c_51",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the old bridge es el/la más pequeño de todos/as.\"?",
+          "options": [
+            "The new bridge is the smallest in the world.",
+            "The old bridge is the oldest in the world.",
+            "The old bridge is the smallest in the world.",
+            "The old bridge is smaller than the others."
+          ],
+          "answer": "The old bridge is the smallest in the world."
+        },
+        {
+          "id": "erest_c_52",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Max es mejor que Lucy.\"?",
+          "options": [
+            "Max is best than Lucy.",
+            "Max is better than Lucy.",
+            "Max is happier than Lucy.",
+            "Lucy is better than Max."
+          ],
+          "answer": "Max is better than Lucy."
+        },
+        {
+          "id": "erest_c_53",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the north beach es el/la más callado de todos/as.\"?",
+          "options": [
+            "The north beach is quieter than the others.",
+            "The north beach is the quietest in the world.",
+            "The north beach is the nicest in the world.",
+            "The south beach is the quietest in the world."
+          ],
+          "answer": "The north beach is the quietest in the world."
+        },
+        {
+          "id": "erest_c_54",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Jack es más frío que Sara.\"?",
+          "options": [
+            "Jack is colder than Sara.",
+            "Sara is colder than Jack.",
+            "Jack is shorter than Sara.",
+            "Jack is coldest than Sara."
+          ],
+          "answer": "Jack is colder than Sara."
+        },
+        {
+          "id": "erest_c_55",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Sam es más barato que Emma.\"?",
+          "options": [
+            "Sam is cheapest than Emma.",
+            "Sam is taller than Emma.",
+            "Sam is cheaper than Emma.",
+            "Emma is cheaper than Sam."
+          ],
+          "answer": "Sam is cheaper than Emma."
+        },
+        {
+          "id": "erest_c_56",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Madrid es el/la peor de todos/as.\"?",
+          "options": [
+            "Madrid is the worst in the world.",
+            "Madrid is worse than the others.",
+            "Paris is the worst in the world.",
+            "Madrid is the weakest in the world."
+          ],
+          "answer": "Madrid is the worst in the world."
+        },
+        {
+          "id": "erest_c_57",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la más fácil de todos/as.\"?",
+          "options": [
+            "Tower A is the easiest in the world.",
+            "Tower B is the easiest in the world.",
+            "Tower A is the nicest in the world.",
+            "Tower A is easier than the others."
+          ],
+          "answer": "Tower A is the easiest in the world."
+        },
+        {
+          "id": "erest_c_58",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom es más alto que Ana.\"?",
+          "options": [
+            "Ana is taller than Tom.",
+            "Tom is tallest than Ana.",
+            "Tom is taller than Ana.",
+            "Tom is closer than Ana."
+          ],
+          "answer": "Tom is taller than Ana."
+        },
+        {
+          "id": "erest_c_59",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la mejor de todos/as.\"?",
+          "options": [
+            "Tower A is the best in the world.",
+            "Tower B is the best in the world.",
+            "Tower A is better than the others.",
+            "Tower A is the oldest in the world."
+          ],
+          "answer": "Tower A is the best in the world."
+        },
+        {
+          "id": "erest_c_60",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the red house es el/la más mayor de todos/as.\"?",
+          "options": [
+            "The red house is older than the others.",
+            "The blue house is the oldest in the world.",
+            "The red house is the oldest in the world.",
+            "The red house is the biggest in the world."
+          ],
+          "answer": "The red house is the oldest in the world."
+        },
+        {
+          "id": "erest_c_61",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más joven que Ella.\"?",
+          "options": [
+            "Ben is youngest than Ella.",
+            "Ella is younger than Ben.",
+            "Ben is funnier than Ella.",
+            "Ben is younger than Ella."
+          ],
+          "answer": "Ben is younger than Ella."
+        },
+        {
+          "id": "erest_c_62",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom es más ruidoso que Ana.\"?",
+          "options": [
+            "Tom is louder than Ana.",
+            "Ana is louder than Tom.",
+            "Tom is loudest than Ana.",
+            "Tom is older than Ana."
+          ],
+          "answer": "Tom is louder than Ana."
+        },
+        {
+          "id": "erest_c_63",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más ocupado que Mia.\"?",
+          "options": [
+            "Leo is busier than Mia.",
+            "Leo is busiest than Mia.",
+            "Mia is busier than Leo.",
+            "Leo is weaker than Mia."
+          ],
+          "answer": "Leo is busier than Mia."
+        },
+        {
+          "id": "erest_c_64",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es peor que Mia.\"?",
+          "options": [
+            "Leo is closer than Mia.",
+            "Leo is worse than Mia.",
+            "Mia is worse than Leo.",
+            "Leo is worst than Mia."
+          ],
+          "answer": "Leo is worse than Mia."
+        },
+        {
+          "id": "erest_c_65",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the oak es el/la más joven de todos/as.\"?",
+          "options": [
+            "The oak is the youngest in the world.",
+            "The pine is the youngest in the world.",
+            "The oak is the weakest in the world.",
+            "The oak is younger than the others."
+          ],
+          "answer": "The oak is the youngest in the world."
+        },
+        {
+          "id": "erest_c_66",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the elephant es el/la más joven de todos/as.\"?",
+          "options": [
+            "The elephant is the youngest in the world.",
+            "The elephant is the brightest in the world.",
+            "The elephant is younger than the others.",
+            "The whale is the youngest in the world."
+          ],
+          "answer": "The elephant is the youngest in the world."
+        },
+        {
+          "id": "erest_c_67",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Alex es peor que Zoe.\"?",
+          "options": [
+            "Zoe is worse than Alex.",
+            "Alex is worst than Zoe.",
+            "Alex is worse than Zoe.",
+            "Alex is lighter than Zoe."
+          ],
+          "answer": "Alex is worse than Zoe."
+        },
+        {
+          "id": "erest_c_68",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom es peor que Ana.\"?",
+          "options": [
+            "Tom is cheaper than Ana.",
+            "Tom is worse than Ana.",
+            "Tom is worst than Ana.",
+            "Ana is worse than Tom."
+          ],
+          "answer": "Tom is worse than Ana."
+        },
+        {
+          "id": "erest_c_69",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana es más barato que Leo.\"?",
+          "options": [
+            "Ana is louder than Leo.",
+            "Ana is cheapest than Leo.",
+            "Ana is cheaper than Leo.",
+            "Leo is cheaper than Ana."
+          ],
+          "answer": "Ana is cheaper than Leo."
+        },
+        {
+          "id": "erest_c_70",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Jack es más ruidoso que Sara.\"?",
+          "options": [
+            "Jack is louder than Sara.",
+            "Sara is louder than Jack.",
+            "Jack is loudest than Sara.",
+            "Jack is heavier than Sara."
+          ],
+          "answer": "Jack is louder than Sara."
+        },
+        {
+          "id": "erest_c_71",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Max es más fácil que Lucy.\"?",
+          "options": [
+            "Lucy is easier than Max.",
+            "Max is easier than Lucy.",
+            "Max is easiest than Lucy.",
+            "Max is stronger than Lucy."
+          ],
+          "answer": "Max is easier than Lucy."
+        },
+        {
+          "id": "erest_c_72",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the elephant es el/la más bajo de todos/as.\"?",
+          "options": [
+            "The elephant is the strongest in the world.",
+            "The elephant is the shortest in the world.",
+            "The elephant is shorter than the others.",
+            "The whale is the shortest in the world."
+          ],
+          "answer": "The elephant is the shortest in the world."
+        },
+        {
+          "id": "erest_c_73",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más caliente que Ella.\"?",
+          "options": [
+            "Ella is hotter than Ben.",
+            "Ben is hotter than Ella.",
+            "Ben is hottest than Ella.",
+            "Ben is taller than Ella."
+          ],
+          "answer": "Ben is hotter than Ella."
+        },
+        {
+          "id": "erest_c_74",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the red house es el/la más débil de todos/as.\"?",
+          "options": [
+            "The blue house is the weakest in the world.",
+            "The red house is weaker than the others.",
+            "The red house is the quietest in the world.",
+            "The red house is the weakest in the world."
+          ],
+          "answer": "The red house is the weakest in the world."
+        },
+        {
+          "id": "erest_c_75",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es más largo que Ella.\"?",
+          "options": [
+            "Ben is longer than Ella.",
+            "Ella is longer than Ben.",
+            "Ben is worse than Ella.",
+            "Ben is longest than Ella."
+          ],
+          "answer": "Ben is longer than Ella."
+        },
+        {
+          "id": "erest_c_76",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la más bajo de todos/as.\"?",
+          "options": [
+            "Tower A is the easiest in the world.",
+            "Tower B is the shortest in the world.",
+            "Tower A is the shortest in the world.",
+            "Tower A is shorter than the others."
+          ],
+          "answer": "Tower A is the shortest in the world."
+        },
+        {
+          "id": "erest_c_77",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Sam es más pesado que Emma.\"?",
+          "options": [
+            "Sam is lighter than Emma.",
+            "Sam is heavier than Emma.",
+            "Emma is heavier than Sam.",
+            "Sam is heaviest than Emma."
+          ],
+          "answer": "Sam is heavier than Emma."
+        },
+        {
+          "id": "erest_c_78",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Alex es más lento que Zoe.\"?",
+          "options": [
+            "Alex is safer than Zoe.",
+            "Zoe is slower than Alex.",
+            "Alex is slowest than Zoe.",
+            "Alex is slower than Zoe."
+          ],
+          "answer": "Alex is slower than Zoe."
+        },
+        {
+          "id": "erest_c_79",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la más cercano de todos/as.\"?",
+          "options": [
+            "Tower A is the closest in the world.",
+            "Tower A is the funniest in the world.",
+            "Tower A is closer than the others.",
+            "Tower B is the closest in the world."
+          ],
+          "answer": "Tower A is the closest in the world."
+        },
+        {
+          "id": "erest_c_80",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Madrid es el/la más débil de todos/as.\"?",
+          "options": [
+            "Madrid is the weakest in the world.",
+            "Madrid is weaker than the others.",
+            "Madrid is the busiest in the world.",
+            "Paris is the weakest in the world."
+          ],
+          "answer": "Madrid is the weakest in the world."
+        },
+        {
+          "id": "erest_c_81",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más ancho que Mia.\"?",
+          "options": [
+            "Leo is easier than Mia.",
+            "Leo is wider than Mia.",
+            "Leo is widest than Mia.",
+            "Mia is wider than Leo."
+          ],
+          "answer": "Leo is wider than Mia."
+        },
+        {
+          "id": "erest_c_82",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the north beach es el/la más rápido de todos/as.\"?",
+          "options": [
+            "The north beach is faster than the others.",
+            "The north beach is the fastest in the world.",
+            "The south beach is the fastest in the world.",
+            "The north beach is the widest in the world."
+          ],
+          "answer": "The north beach is the fastest in the world."
+        },
+        {
+          "id": "erest_c_83",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Jack es mejor que Sara.\"?",
+          "options": [
+            "Sara is better than Jack.",
+            "Jack is better than Sara.",
+            "Jack is darker than Sara.",
+            "Jack is best than Sara."
+          ],
+          "answer": "Jack is better than Sara."
+        },
+        {
+          "id": "erest_c_84",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Everest es el/la más seguro de todos/as.\"?",
+          "options": [
+            "Everest is the safest in the world.",
+            "Everest is the cleanest in the world.",
+            "K2 is the safest in the world.",
+            "Everest is safer than the others."
+          ],
+          "answer": "Everest is the safest in the world."
+        },
+        {
+          "id": "erest_c_85",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Sam es más pequeño que Emma.\"?",
+          "options": [
+            "Sam is older than Emma.",
+            "Sam is smaller than Emma.",
+            "Sam is smallest than Emma.",
+            "Emma is smaller than Sam."
+          ],
+          "answer": "Sam is smaller than Emma."
+        },
+        {
+          "id": "erest_c_86",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más gracioso que Mia.\"?",
+          "options": [
+            "Leo is funniest than Mia.",
+            "Leo is younger than Mia.",
+            "Leo is funnier than Mia.",
+            "Mia is funnier than Leo."
+          ],
+          "answer": "Leo is funnier than Mia."
+        },
+        {
+          "id": "erest_c_87",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the north beach es el/la más limpio de todos/as.\"?",
+          "options": [
+            "The north beach is the cleanest in the world.",
+            "The south beach is the cleanest in the world.",
+            "The north beach is cleaner than the others.",
+            "The north beach is the strongest in the world."
+          ],
+          "answer": "The north beach is the cleanest in the world."
+        },
+        {
+          "id": "erest_c_88",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the red car es el/la más brillante de todos/as.\"?",
+          "options": [
+            "The red car is the brightest in the world.",
+            "The red car is the funniest in the world.",
+            "The red car is brighter than the others.",
+            "The blue car is the brightest in the world."
+          ],
+          "answer": "The red car is the brightest in the world."
+        },
+        {
+          "id": "erest_c_89",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the north beach es el/la más débil de todos/as.\"?",
+          "options": [
+            "The south beach is the weakest in the world.",
+            "The north beach is weaker than the others.",
+            "The north beach is the coldest in the world.",
+            "The north beach is the weakest in the world."
+          ],
+          "answer": "The north beach is the weakest in the world."
+        },
+        {
+          "id": "erest_c_90",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ben es mejor que Ella.\"?",
+          "options": [
+            "Ben is younger than Ella.",
+            "Ella is better than Ben.",
+            "Ben is better than Ella.",
+            "Ben is best than Ella."
+          ],
+          "answer": "Ben is better than Ella."
+        },
+        {
+          "id": "erest_c_91",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Everest es el/la más joven de todos/as.\"?",
+          "options": [
+            "Everest is the quietest in the world.",
+            "Everest is younger than the others.",
+            "K2 is the youngest in the world.",
+            "Everest is the youngest in the world."
+          ],
+          "answer": "Everest is the youngest in the world."
+        },
+        {
+          "id": "erest_c_92",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana es más grande que Leo.\"?",
+          "options": [
+            "Ana is bigger than Leo.",
+            "Ana is happier than Leo.",
+            "Leo is bigger than Ana.",
+            "Ana is biggest than Leo."
+          ],
+          "answer": "Ana is bigger than Leo."
+        },
+        {
+          "id": "erest_c_93",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la más feliz de todos/as.\"?",
+          "options": [
+            "Tower A is the nicest in the world.",
+            "Tower B is the happiest in the world.",
+            "Tower A is happier than the others.",
+            "Tower A is the happiest in the world."
+          ],
+          "answer": "Tower A is the happiest in the world."
+        },
+        {
+          "id": "erest_c_94",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the north beach es el/la más oscuro de todos/as.\"?",
+          "options": [
+            "The south beach is the darkest in the world.",
+            "The north beach is the darkest in the world.",
+            "The north beach is darker than the others.",
+            "The north beach is the weakest in the world."
+          ],
+          "answer": "The north beach is the darkest in the world."
+        },
+        {
+          "id": "erest_c_95",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the elephant es el/la más grande de todos/as.\"?",
+          "options": [
+            "The elephant is bigger than the others.",
+            "The whale is the biggest in the world.",
+            "The elephant is the happiest in the world.",
+            "The elephant is the biggest in the world."
+          ],
+          "answer": "The elephant is the biggest in the world."
+        },
+        {
+          "id": "erest_c_96",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tower A es el/la más ligero de todos/as.\"?",
+          "options": [
+            "Tower A is lighter than the others.",
+            "Tower A is the lightest in the world.",
+            "Tower A is the oldest in the world.",
+            "Tower B is the lightest in the world."
+          ],
+          "answer": "Tower A is the lightest in the world."
+        },
+        {
+          "id": "erest_c_97",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Leo es más mayor que Mia.\"?",
+          "options": [
+            "Mia is older than Leo.",
+            "Leo is older than Mia.",
+            "Leo is busier than Mia.",
+            "Leo is oldest than Mia."
+          ],
+          "answer": "Leo is older than Mia."
+        },
+        {
+          "id": "erest_c_98",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Alex es mejor que Zoe.\"?",
+          "options": [
+            "Zoe is better than Alex.",
+            "Alex is stronger than Zoe.",
+            "Alex is better than Zoe.",
+            "Alex is best than Zoe."
+          ],
+          "answer": "Alex is better than Zoe."
+        },
+        {
+          "id": "erest_c_99",
+          "type": "C",
+          "question": "¿Cómo se dice: \"the elephant es el/la mejor de todos/as.\"?",
+          "options": [
+            "The elephant is better than the others.",
+            "The whale is the best in the world.",
+            "The elephant is the best in the world.",
+            "The elephant is the safest in the world."
+          ],
+          "answer": "The elephant is the best in the world."
+        },
+        {
+          "id": "erest_c_100",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Everest es el/la peor de todos/as.\"?",
+          "options": [
+            "Everest is the weakest in the world.",
+            "Everest is worse than the others.",
+            "Everest is the worst in the world.",
+            "K2 is the worst in the world."
+          ],
+          "answer": "Everest is the worst in the world."
+        }
+      ]
+    }
+  ]
+}

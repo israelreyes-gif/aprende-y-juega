@@ -1,0 +1,2411 @@
+{
+  "units": [
+    {
+      "id": "prepositions-c4",
+      "title": "Prepositions",
+      "emoji": "🔵",
+      "exercises": [
+        {
+          "id": "prep_a_1",
+          "type": "A",
+          "question": "The book drove ___ the road.",
+          "options": [
+            "out of",
+            "along",
+            "through",
+            "into"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_2",
+          "type": "A",
+          "question": "The dog is ___ the sofa.",
+          "options": [
+            "behind",
+            "on",
+            "in",
+            "next to"
+          ],
+          "answer": "on"
+        },
+        {
+          "id": "prep_a_3",
+          "type": "A",
+          "question": "Tom walked ___ the road.",
+          "options": [
+            "over",
+            "across",
+            "into",
+            "out of"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_4",
+          "type": "A",
+          "question": "The girl is ___ the door.",
+          "options": [
+            "in front of",
+            "in",
+            "between",
+            "next to"
+          ],
+          "answer": "next to"
+        },
+        {
+          "id": "prep_a_5",
+          "type": "A",
+          "question": "The pen is ___ the two houses.",
+          "options": [
+            "in front of",
+            "under",
+            "between",
+            "on"
+          ],
+          "answer": "between"
+        },
+        {
+          "id": "prep_a_6",
+          "type": "A",
+          "question": "The car climbed ___ the river.",
+          "options": [
+            "over",
+            "out of",
+            "along",
+            "through"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_7",
+          "type": "A",
+          "question": "The boy ran ___ the tunnel.",
+          "options": [
+            "over",
+            "along",
+            "across",
+            "through"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_8",
+          "type": "A",
+          "question": "The bird swam ___ the river.",
+          "options": [
+            "over",
+            "into",
+            "through",
+            "across"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_9",
+          "type": "A",
+          "question": "The dog walked ___ the park.",
+          "options": [
+            "into",
+            "through",
+            "along",
+            "out of"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_10",
+          "type": "A",
+          "question": "The book ran ___ the field.",
+          "options": [
+            "across",
+            "along",
+            "into",
+            "out of"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_11",
+          "type": "A",
+          "question": "The ball is ___ the trees.",
+          "options": [
+            "on",
+            "in front of",
+            "behind",
+            "between"
+          ],
+          "answer": "between"
+        },
+        {
+          "id": "prep_a_12",
+          "type": "A",
+          "question": "The book got ___ the room.",
+          "options": [
+            "across",
+            "into",
+            "along",
+            "out of"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_13",
+          "type": "A",
+          "question": "The book is ___ the school.",
+          "options": [
+            "behind",
+            "in",
+            "between",
+            "in front of"
+          ],
+          "answer": "behind"
+        },
+        {
+          "id": "prep_a_14",
+          "type": "A",
+          "question": "Ana walked ___ the box.",
+          "options": [
+            "through",
+            "out of",
+            "along",
+            "into"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_15",
+          "type": "A",
+          "question": "The ball swam ___ the street.",
+          "options": [
+            "into",
+            "across",
+            "along",
+            "over"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_16",
+          "type": "A",
+          "question": "The car climbed ___ the room.",
+          "options": [
+            "into",
+            "out of",
+            "over",
+            "through"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_17",
+          "type": "A",
+          "question": "Ana walked ___ the tunnel.",
+          "options": [
+            "into",
+            "through",
+            "over",
+            "across"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_18",
+          "type": "A",
+          "question": "The boy ran ___ the room.",
+          "options": [
+            "over",
+            "out of",
+            "across",
+            "along"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_19",
+          "type": "A",
+          "question": "The pen ran ___ the box.",
+          "options": [
+            "along",
+            "into",
+            "across",
+            "out of"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_20",
+          "type": "A",
+          "question": "The pen ran ___ the river.",
+          "options": [
+            "across",
+            "along",
+            "over",
+            "through"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_21",
+          "type": "A",
+          "question": "The girl got ___ the box.",
+          "options": [
+            "over",
+            "through",
+            "out of",
+            "into"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_22",
+          "type": "A",
+          "question": "Tom walked ___ the house.",
+          "options": [
+            "through",
+            "out of",
+            "over",
+            "across"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_23",
+          "type": "A",
+          "question": "The bird swam ___ the street.",
+          "options": [
+            "along",
+            "across",
+            "into",
+            "over"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_24",
+          "type": "A",
+          "question": "The cat walked ___ the pool.",
+          "options": [
+            "out of",
+            "across",
+            "along",
+            "through"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_25",
+          "type": "A",
+          "question": "The bag jumped ___ the box.",
+          "options": [
+            "out of",
+            "through",
+            "into",
+            "across"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_26",
+          "type": "A",
+          "question": "Ana walked ___ the street.",
+          "options": [
+            "across",
+            "over",
+            "through",
+            "out of"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_27",
+          "type": "A",
+          "question": "Ana walked ___ the garden.",
+          "options": [
+            "into",
+            "over",
+            "out of",
+            "through"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_28",
+          "type": "A",
+          "question": "The bag got ___ the room.",
+          "options": [
+            "into",
+            "over",
+            "out of",
+            "through"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_29",
+          "type": "A",
+          "question": "The book ran ___ the water.",
+          "options": [
+            "into",
+            "over",
+            "through",
+            "across"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_30",
+          "type": "A",
+          "question": "Ana is ___ the bed.",
+          "options": [
+            "on",
+            "behind",
+            "between",
+            "next to"
+          ],
+          "answer": "on"
+        },
+        {
+          "id": "prep_a_31",
+          "type": "A",
+          "question": "The bird walked ___ the door.",
+          "options": [
+            "into",
+            "along",
+            "through",
+            "across"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_32",
+          "type": "A",
+          "question": "The cat jumped ___ the bridge.",
+          "options": [
+            "through",
+            "over",
+            "along",
+            "across"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_33",
+          "type": "A",
+          "question": "The cat cycled ___ the beach.",
+          "options": [
+            "over",
+            "into",
+            "along",
+            "through"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_34",
+          "type": "A",
+          "question": "The boy jumped ___ the room.",
+          "options": [
+            "along",
+            "across",
+            "into",
+            "over"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_35",
+          "type": "A",
+          "question": "Ana ran ___ the road.",
+          "options": [
+            "out of",
+            "into",
+            "across",
+            "through"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_36",
+          "type": "A",
+          "question": "Ana ran ___ the water.",
+          "options": [
+            "through",
+            "out of",
+            "into",
+            "across"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_37",
+          "type": "A",
+          "question": "The cat is ___ the sofa.",
+          "options": [
+            "in",
+            "on",
+            "next to",
+            "behind"
+          ],
+          "answer": "in"
+        },
+        {
+          "id": "prep_a_38",
+          "type": "A",
+          "question": "The book climbed ___ the bridge.",
+          "options": [
+            "through",
+            "along",
+            "over",
+            "across"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_39",
+          "type": "A",
+          "question": "The cat flew ___ the bridge.",
+          "options": [
+            "into",
+            "over",
+            "through",
+            "across"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_40",
+          "type": "A",
+          "question": "The car walked ___ the door.",
+          "options": [
+            "along",
+            "out of",
+            "into",
+            "through"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_41",
+          "type": "A",
+          "question": "The boy drove ___ the road.",
+          "options": [
+            "over",
+            "into",
+            "across",
+            "along"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_42",
+          "type": "A",
+          "question": "The bag got ___ the garden.",
+          "options": [
+            "across",
+            "over",
+            "through",
+            "into"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_43",
+          "type": "A",
+          "question": "The bird got ___ the garden.",
+          "options": [
+            "through",
+            "into",
+            "out of",
+            "along"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_44",
+          "type": "A",
+          "question": "The bird ran ___ the road.",
+          "options": [
+            "over",
+            "out of",
+            "into",
+            "along"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_45",
+          "type": "A",
+          "question": "Tom got ___ the pool.",
+          "options": [
+            "over",
+            "out of",
+            "through",
+            "into"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_46",
+          "type": "A",
+          "question": "The cat drove ___ the river.",
+          "options": [
+            "along",
+            "into",
+            "through",
+            "over"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_47",
+          "type": "A",
+          "question": "The ball jumped ___ the water.",
+          "options": [
+            "into",
+            "over",
+            "along",
+            "across"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_48",
+          "type": "A",
+          "question": "The bird is ___ the school.",
+          "options": [
+            "in",
+            "between",
+            "behind",
+            "on"
+          ],
+          "answer": "in"
+        },
+        {
+          "id": "prep_a_49",
+          "type": "A",
+          "question": "The girl drove ___ the beach.",
+          "options": [
+            "out of",
+            "across",
+            "over",
+            "along"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_50",
+          "type": "A",
+          "question": "The dog walked ___ the garden.",
+          "options": [
+            "along",
+            "through",
+            "into",
+            "out of"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_51",
+          "type": "A",
+          "question": "Tom climbed ___ the fence.",
+          "options": [
+            "out of",
+            "along",
+            "over",
+            "through"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_52",
+          "type": "A",
+          "question": "The dog swam ___ the field.",
+          "options": [
+            "into",
+            "out of",
+            "along",
+            "across"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_53",
+          "type": "A",
+          "question": "The boy ran ___ the car.",
+          "options": [
+            "out of",
+            "into",
+            "across",
+            "over"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_54",
+          "type": "A",
+          "question": "The car ran ___ the tunnel.",
+          "options": [
+            "into",
+            "along",
+            "through",
+            "across"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_55",
+          "type": "A",
+          "question": "The ball climbed ___ the bridge.",
+          "options": [
+            "along",
+            "over",
+            "out of",
+            "through"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_56",
+          "type": "A",
+          "question": "The bird is ___ the sofa.",
+          "options": [
+            "in front of",
+            "in",
+            "between",
+            "under"
+          ],
+          "answer": "under"
+        },
+        {
+          "id": "prep_a_57",
+          "type": "A",
+          "question": "The car got ___ the house.",
+          "options": [
+            "along",
+            "out of",
+            "across",
+            "over"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_58",
+          "type": "A",
+          "question": "Tom is ___ the bed.",
+          "options": [
+            "on",
+            "behind",
+            "in front of",
+            "in"
+          ],
+          "answer": "in"
+        },
+        {
+          "id": "prep_a_59",
+          "type": "A",
+          "question": "The ball ran ___ the forest.",
+          "options": [
+            "through",
+            "over",
+            "out of",
+            "along"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_60",
+          "type": "A",
+          "question": "The dog walked ___ the tunnel.",
+          "options": [
+            "through",
+            "along",
+            "across",
+            "over"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_61",
+          "type": "A",
+          "question": "The cat jumped ___ the water.",
+          "options": [
+            "across",
+            "over",
+            "into",
+            "along"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_62",
+          "type": "A",
+          "question": "Tom walked ___ the garden.",
+          "options": [
+            "over",
+            "across",
+            "along",
+            "into"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_63",
+          "type": "A",
+          "question": "The cat is ___ the garden.",
+          "options": [
+            "in",
+            "next to",
+            "in front of",
+            "behind"
+          ],
+          "answer": "in"
+        },
+        {
+          "id": "prep_a_64",
+          "type": "A",
+          "question": "The girl walked ___ the forest.",
+          "options": [
+            "out of",
+            "through",
+            "across",
+            "along"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_65",
+          "type": "A",
+          "question": "The dog jumped ___ the garden.",
+          "options": [
+            "over",
+            "out of",
+            "along",
+            "into"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_66",
+          "type": "A",
+          "question": "The ball jumped ___ the box.",
+          "options": [
+            "through",
+            "out of",
+            "across",
+            "into"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_67",
+          "type": "A",
+          "question": "The girl cycled ___ the beach.",
+          "options": [
+            "along",
+            "through",
+            "into",
+            "over"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_68",
+          "type": "A",
+          "question": "The boy is ___ the door.",
+          "options": [
+            "behind",
+            "in",
+            "in front of",
+            "under"
+          ],
+          "answer": "under"
+        },
+        {
+          "id": "prep_a_69",
+          "type": "A",
+          "question": "Tom ran ___ the road.",
+          "options": [
+            "out of",
+            "across",
+            "over",
+            "into"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_70",
+          "type": "A",
+          "question": "The ball walked ___ the water.",
+          "options": [
+            "over",
+            "through",
+            "into",
+            "out of"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_71",
+          "type": "A",
+          "question": "The bird walked ___ the box.",
+          "options": [
+            "along",
+            "over",
+            "into",
+            "out of"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_72",
+          "type": "A",
+          "question": "The bag is ___ the bed.",
+          "options": [
+            "behind",
+            "between",
+            "next to",
+            "in"
+          ],
+          "answer": "in"
+        },
+        {
+          "id": "prep_a_73",
+          "type": "A",
+          "question": "Tom drove ___ the road.",
+          "options": [
+            "through",
+            "along",
+            "over",
+            "out of"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_74",
+          "type": "A",
+          "question": "Tom jumped ___ the water.",
+          "options": [
+            "across",
+            "into",
+            "over",
+            "through"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_75",
+          "type": "A",
+          "question": "The car is ___ the books.",
+          "options": [
+            "under",
+            "in",
+            "on",
+            "between"
+          ],
+          "answer": "between"
+        },
+        {
+          "id": "prep_a_76",
+          "type": "A",
+          "question": "The dog ran ___ the corridor.",
+          "options": [
+            "across",
+            "along",
+            "over",
+            "into"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_77",
+          "type": "A",
+          "question": "The girl walked ___ the field.",
+          "options": [
+            "along",
+            "over",
+            "across",
+            "out of"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_78",
+          "type": "A",
+          "question": "The pen drove ___ the river.",
+          "options": [
+            "out of",
+            "through",
+            "across",
+            "along"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_79",
+          "type": "A",
+          "question": "Ana drove ___ the tunnel.",
+          "options": [
+            "across",
+            "through",
+            "over",
+            "into"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_80",
+          "type": "A",
+          "question": "The ball is ___ the table.",
+          "options": [
+            "in",
+            "next to",
+            "on",
+            "under"
+          ],
+          "answer": "under"
+        },
+        {
+          "id": "prep_a_81",
+          "type": "A",
+          "question": "The car walked ___ the corridor.",
+          "options": [
+            "along",
+            "out of",
+            "through",
+            "across"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_82",
+          "type": "A",
+          "question": "The ball ran ___ the street.",
+          "options": [
+            "across",
+            "along",
+            "over",
+            "into"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_83",
+          "type": "A",
+          "question": "The boy ran ___ the door.",
+          "options": [
+            "along",
+            "through",
+            "into",
+            "out of"
+          ],
+          "answer": "through"
+        },
+        {
+          "id": "prep_a_84",
+          "type": "A",
+          "question": "Tom got ___ the garden.",
+          "options": [
+            "into",
+            "through",
+            "over",
+            "along"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_85",
+          "type": "A",
+          "question": "The book jumped ___ the box.",
+          "options": [
+            "out of",
+            "over",
+            "through",
+            "into"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_86",
+          "type": "A",
+          "question": "The bird is ___ the box.",
+          "options": [
+            "next to",
+            "on",
+            "behind",
+            "in"
+          ],
+          "answer": "in"
+        },
+        {
+          "id": "prep_a_87",
+          "type": "A",
+          "question": "Tom is ___ the table.",
+          "options": [
+            "on",
+            "in",
+            "in front of",
+            "under"
+          ],
+          "answer": "in"
+        },
+        {
+          "id": "prep_a_88",
+          "type": "A",
+          "question": "The cat ran ___ the beach.",
+          "options": [
+            "out of",
+            "through",
+            "across",
+            "along"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_89",
+          "type": "A",
+          "question": "The book jumped ___ the bridge.",
+          "options": [
+            "out of",
+            "over",
+            "across",
+            "into"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_90",
+          "type": "A",
+          "question": "The boy flew ___ the bridge.",
+          "options": [
+            "over",
+            "across",
+            "into",
+            "along"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_91",
+          "type": "A",
+          "question": "The boy got ___ the box.",
+          "options": [
+            "into",
+            "along",
+            "out of",
+            "through"
+          ],
+          "answer": "into"
+        },
+        {
+          "id": "prep_a_92",
+          "type": "A",
+          "question": "The ball climbed ___ the fence.",
+          "options": [
+            "over",
+            "out of",
+            "into",
+            "through"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_93",
+          "type": "A",
+          "question": "The bag ran ___ the box.",
+          "options": [
+            "across",
+            "out of",
+            "through",
+            "into"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_a_94",
+          "type": "A",
+          "question": "Tom jumped ___ the wall.",
+          "options": [
+            "across",
+            "into",
+            "over",
+            "along"
+          ],
+          "answer": "over"
+        },
+        {
+          "id": "prep_a_95",
+          "type": "A",
+          "question": "The bag cycled ___ the beach.",
+          "options": [
+            "through",
+            "into",
+            "along",
+            "out of"
+          ],
+          "answer": "along"
+        },
+        {
+          "id": "prep_a_96",
+          "type": "A",
+          "question": "Ana is ___ the school.",
+          "options": [
+            "behind",
+            "next to",
+            "in",
+            "under"
+          ],
+          "answer": "next to"
+        },
+        {
+          "id": "prep_a_97",
+          "type": "A",
+          "question": "The ball swam ___ the field.",
+          "options": [
+            "along",
+            "across",
+            "over",
+            "through"
+          ],
+          "answer": "across"
+        },
+        {
+          "id": "prep_a_98",
+          "type": "A",
+          "question": "The bird is ___ the table.",
+          "options": [
+            "between",
+            "under",
+            "in",
+            "in front of"
+          ],
+          "answer": "under"
+        },
+        {
+          "id": "prep_a_99",
+          "type": "A",
+          "question": "The bag is ___ the house.",
+          "options": [
+            "behind",
+            "in",
+            "in front of",
+            "next to"
+          ],
+          "answer": "in front of"
+        },
+        {
+          "id": "prep_a_100",
+          "type": "A",
+          "question": "The ball walked ___ the house.",
+          "options": [
+            "across",
+            "out of",
+            "into",
+            "over"
+          ],
+          "answer": "out of"
+        },
+        {
+          "id": "prep_c_1",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro está delante de la casa.\"?",
+          "options": [
+            "The dog is on the house.",
+            "The dog is behind the house.",
+            "The dog is in the house.",
+            "The dog is in front of the house."
+          ],
+          "answer": "The dog is in front of the house."
+        },
+        {
+          "id": "prep_c_2",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está en la cama.\"?",
+          "options": [
+            "The ball is under the bed.",
+            "The ball is between the bed.",
+            "The ball is in the bed.",
+            "The ball is behind the bed."
+          ],
+          "answer": "The ball is in the bed."
+        },
+        {
+          "id": "prep_c_3",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está delante de la tienda.\"?",
+          "options": [
+            "The car is between the shop.",
+            "The car is next to the shop.",
+            "The car is in the shop.",
+            "The car is in front of the shop."
+          ],
+          "answer": "The car is in front of the shop."
+        },
+        {
+          "id": "prep_c_4",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El libro está en la puerta.\"?",
+          "options": [
+            "The book is in the door.",
+            "The book is under the door.",
+            "The book is on the door.",
+            "The book is behind the door."
+          ],
+          "answer": "The book is in the door."
+        },
+        {
+          "id": "prep_c_5",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo voló por encima de la pared.\"?",
+          "options": [
+            "The pen flew through the wall.",
+            "The pen flew over the wall.",
+            "The pen flew across the wall.",
+            "The pen flew out of the wall."
+          ],
+          "answer": "The pen flew over the wall."
+        },
+        {
+          "id": "prep_c_6",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana está detrás del coche.\"?",
+          "options": [
+            "Ana is on the car.",
+            "Ana is next to the car.",
+            "Ana is behind the car.",
+            "Ana is in front of the car."
+          ],
+          "answer": "Ana is behind the car."
+        },
+        {
+          "id": "prep_c_7",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está en el árbol.\"?",
+          "options": [
+            "The car is behind the tree.",
+            "The car is next to the tree.",
+            "The car is in the tree.",
+            "The car is between the tree."
+          ],
+          "answer": "The car is in the tree."
+        },
+        {
+          "id": "prep_c_8",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está en la mesa.\"?",
+          "options": [
+            "The girl is in the table.",
+            "The girl is in front of the table.",
+            "The girl is next to the table.",
+            "The girl is behind the table."
+          ],
+          "answer": "The girl is in the table."
+        },
+        {
+          "id": "prep_c_9",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está encima del sofá.\"?",
+          "options": [
+            "The ball is under the sofa.",
+            "The ball is on the sofa.",
+            "The ball is between the sofa.",
+            "The ball is next to the sofa."
+          ],
+          "answer": "The ball is on the sofa."
+        },
+        {
+          "id": "prep_c_10",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está detrás de la puerta.\"?",
+          "options": [
+            "The girl is in front of the door.",
+            "The girl is behind the door.",
+            "The girl is between the door.",
+            "The girl is on the door."
+          ],
+          "answer": "The girl is behind the door."
+        },
+        {
+          "id": "prep_c_11",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño está en el colegio.\"?",
+          "options": [
+            "The boy is between the school.",
+            "The boy is in the school.",
+            "The boy is next to the school.",
+            "The boy is on the school."
+          ],
+          "answer": "The boy is in the school."
+        },
+        {
+          "id": "prep_c_12",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está debajo de la puerta.\"?",
+          "options": [
+            "The ball is on the door.",
+            "The ball is under the door.",
+            "The ball is in the door.",
+            "The ball is between the door."
+          ],
+          "answer": "The ball is under the door."
+        },
+        {
+          "id": "prep_c_13",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom caminó a través del parque.\"?",
+          "options": [
+            "Tom walked through the park.",
+            "Tom walked across the park.",
+            "Tom walked over the park.",
+            "Tom walked out of the park."
+          ],
+          "answer": "Tom walked through the park."
+        },
+        {
+          "id": "prep_c_14",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño está detrás de la puerta.\"?",
+          "options": [
+            "The boy is in front of the door.",
+            "The boy is next to the door.",
+            "The boy is on the door.",
+            "The boy is behind the door."
+          ],
+          "answer": "The boy is behind the door."
+        },
+        {
+          "id": "prep_c_15",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo está encima de la estantería.\"?",
+          "options": [
+            "The pen is behind the shelf.",
+            "The pen is between the shelf.",
+            "The pen is on the shelf.",
+            "The pen is in the shelf."
+          ],
+          "answer": "The pen is on the shelf."
+        },
+        {
+          "id": "prep_c_16",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana saltó dentro del coche.\"?",
+          "options": [
+            "Ana jumped into the car.",
+            "Ana jumped along the car.",
+            "Ana jumped across the car.",
+            "Ana jumped out of the car."
+          ],
+          "answer": "Ana jumped into the car."
+        },
+        {
+          "id": "prep_c_17",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El libro está al lado del colegio.\"?",
+          "options": [
+            "The book is in front of the school.",
+            "The book is next to the school.",
+            "The book is behind the school.",
+            "The book is under the school."
+          ],
+          "answer": "The book is next to the school."
+        },
+        {
+          "id": "prep_c_18",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La mochila está debajo del coche.\"?",
+          "options": [
+            "The bag is behind the car.",
+            "The bag is next to the car.",
+            "The bag is between the car.",
+            "The bag is under the car."
+          ],
+          "answer": "The bag is under the car."
+        },
+        {
+          "id": "prep_c_19",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana corrió al otro lado del río.\"?",
+          "options": [
+            "Ana ran across the river.",
+            "Ana ran along the river.",
+            "Ana ran over the river.",
+            "Ana ran into the river."
+          ],
+          "answer": "Ana ran across the river."
+        },
+        {
+          "id": "prep_c_20",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana saltó dentro de la caja.\"?",
+          "options": [
+            "Ana jumped into the box.",
+            "Ana jumped over the box.",
+            "Ana jumped across the box.",
+            "Ana jumped out of the box."
+          ],
+          "answer": "Ana jumped into the box."
+        },
+        {
+          "id": "prep_c_21",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro está al lado de la casa.\"?",
+          "options": [
+            "The bird is under the house.",
+            "The bird is on the house.",
+            "The bird is between the house.",
+            "The bird is next to the house."
+          ],
+          "answer": "The bird is next to the house."
+        },
+        {
+          "id": "prep_c_22",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro salió fuera de la caja.\"?",
+          "options": [
+            "The bird got out of the box.",
+            "The bird got through the box.",
+            "The bird got across the box.",
+            "The bird got into the box."
+          ],
+          "answer": "The bird got out of the box."
+        },
+        {
+          "id": "prep_c_23",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está encima de la cama.\"?",
+          "options": [
+            "The car is behind the bed.",
+            "The car is in the bed.",
+            "The car is under the bed.",
+            "The car is on the bed."
+          ],
+          "answer": "The car is on the bed."
+        },
+        {
+          "id": "prep_c_24",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El libro está debajo del colegio.\"?",
+          "options": [
+            "The book is on the school.",
+            "The book is under the school.",
+            "The book is next to the school.",
+            "The book is behind the school."
+          ],
+          "answer": "The book is under the school."
+        },
+        {
+          "id": "prep_c_25",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro está encima del coche.\"?",
+          "options": [
+            "The bird is on the car.",
+            "The bird is under the car.",
+            "The bird is in the car.",
+            "The bird is behind the car."
+          ],
+          "answer": "The bird is on the car."
+        },
+        {
+          "id": "prep_c_26",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está encima de la caja.\"?",
+          "options": [
+            "The girl is in the box.",
+            "The girl is under the box.",
+            "The girl is on the box.",
+            "The girl is behind the box."
+          ],
+          "answer": "The girl is on the box."
+        },
+        {
+          "id": "prep_c_27",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está encima del jardín.\"?",
+          "options": [
+            "The car is under the garden.",
+            "The car is on the garden.",
+            "The car is between the garden.",
+            "The car is behind the garden."
+          ],
+          "answer": "The car is on the garden."
+        },
+        {
+          "id": "prep_c_28",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está encima del coche.\"?",
+          "options": [
+            "The ball is next to the car.",
+            "The ball is on the car.",
+            "The ball is in the car.",
+            "The ball is between the car."
+          ],
+          "answer": "The ball is on the car."
+        },
+        {
+          "id": "prep_c_29",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El gato está en la cama.\"?",
+          "options": [
+            "The cat is on the bed.",
+            "The cat is in the bed.",
+            "The cat is under the bed.",
+            "The cat is in front of the bed."
+          ],
+          "answer": "The cat is in the bed."
+        },
+        {
+          "id": "prep_c_30",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo está delante de la tienda.\"?",
+          "options": [
+            "The pen is behind the shop.",
+            "The pen is in the shop.",
+            "The pen is in front of the shop.",
+            "The pen is on the shop."
+          ],
+          "answer": "The pen is in front of the shop."
+        },
+        {
+          "id": "prep_c_31",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro está en la estantería.\"?",
+          "options": [
+            "The bird is on the shelf.",
+            "The bird is in the shelf.",
+            "The bird is between the shelf.",
+            "The bird is under the shelf."
+          ],
+          "answer": "The bird is in the shelf."
+        },
+        {
+          "id": "prep_c_32",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro está delante del coche.\"?",
+          "options": [
+            "The bird is between the car.",
+            "The bird is behind the car.",
+            "The bird is next to the car.",
+            "The bird is in front of the car."
+          ],
+          "answer": "The bird is in front of the car."
+        },
+        {
+          "id": "prep_c_33",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche corrió al otro lado de la calle.\"?",
+          "options": [
+            "The car ran across the street.",
+            "The car ran through the street.",
+            "The car ran into the street.",
+            "The car ran over the street."
+          ],
+          "answer": "The car ran across the street."
+        },
+        {
+          "id": "prep_c_34",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño caminó a través del bosque.\"?",
+          "options": [
+            "The boy walked over the forest.",
+            "The boy walked into the forest.",
+            "The boy walked through the forest.",
+            "The boy walked across the forest."
+          ],
+          "answer": "The boy walked through the forest."
+        },
+        {
+          "id": "prep_c_35",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño está debajo de la pared.\"?",
+          "options": [
+            "The boy is on the wall.",
+            "The boy is between the wall.",
+            "The boy is under the wall.",
+            "The boy is in front of the wall."
+          ],
+          "answer": "The boy is under the wall."
+        },
+        {
+          "id": "prep_c_36",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche corrió al otro lado de la carretera.\"?",
+          "options": [
+            "The car ran out of the road.",
+            "The car ran through the road.",
+            "The car ran across the road.",
+            "The car ran over the road."
+          ],
+          "answer": "The car ran across the road."
+        },
+        {
+          "id": "prep_c_37",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está debajo de la caja.\"?",
+          "options": [
+            "The girl is under the box.",
+            "The girl is between the box.",
+            "The girl is in the box.",
+            "The girl is on the box."
+          ],
+          "answer": "The girl is under the box."
+        },
+        {
+          "id": "prep_c_38",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está encima de la mesa.\"?",
+          "options": [
+            "The car is next to the table.",
+            "The car is on the table.",
+            "The car is between the table.",
+            "The car is behind the table."
+          ],
+          "answer": "The car is on the table."
+        },
+        {
+          "id": "prep_c_39",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota voló por encima del puente.\"?",
+          "options": [
+            "The ball flew over the bridge.",
+            "The ball flew into the bridge.",
+            "The ball flew out of the bridge.",
+            "The ball flew through the bridge."
+          ],
+          "answer": "The ball flew over the bridge."
+        },
+        {
+          "id": "prep_c_40",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El gato está en el coche.\"?",
+          "options": [
+            "The cat is on the car.",
+            "The cat is next to the car.",
+            "The cat is in the car.",
+            "The cat is in front of the car."
+          ],
+          "answer": "The cat is in the car."
+        },
+        {
+          "id": "prep_c_41",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom voló por encima del río.\"?",
+          "options": [
+            "Tom flew out of the river.",
+            "Tom flew along the river.",
+            "Tom flew across the river.",
+            "Tom flew over the river."
+          ],
+          "answer": "Tom flew over the river."
+        },
+        {
+          "id": "prep_c_42",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño salió fuera del coche.\"?",
+          "options": [
+            "The boy got along the car.",
+            "The boy got across the car.",
+            "The boy got through the car.",
+            "The boy got out of the car."
+          ],
+          "answer": "The boy got out of the car."
+        },
+        {
+          "id": "prep_c_43",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro está al lado de la casa.\"?",
+          "options": [
+            "The dog is under the house.",
+            "The dog is in the house.",
+            "The dog is next to the house.",
+            "The dog is between the house."
+          ],
+          "answer": "The dog is next to the house."
+        },
+        {
+          "id": "prep_c_44",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está debajo del sofá.\"?",
+          "options": [
+            "The girl is under the sofa.",
+            "The girl is between the sofa.",
+            "The girl is in front of the sofa.",
+            "The girl is on the sofa."
+          ],
+          "answer": "The girl is under the sofa."
+        },
+        {
+          "id": "prep_c_45",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está debajo del colegio.\"?",
+          "options": [
+            "The girl is between the school.",
+            "The girl is on the school.",
+            "The girl is in front of the school.",
+            "The girl is under the school."
+          ],
+          "answer": "The girl is under the school."
+        },
+        {
+          "id": "prep_c_46",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está detrás de la puerta.\"?",
+          "options": [
+            "The ball is in the door.",
+            "The ball is on the door.",
+            "The ball is between the door.",
+            "The ball is behind the door."
+          ],
+          "answer": "The ball is behind the door."
+        },
+        {
+          "id": "prep_c_47",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño caminó a lo largo de la playa.\"?",
+          "options": [
+            "The boy walked over the beach.",
+            "The boy walked across the beach.",
+            "The boy walked out of the beach.",
+            "The boy walked along the beach."
+          ],
+          "answer": "The boy walked along the beach."
+        },
+        {
+          "id": "prep_c_48",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está en el árbol.\"?",
+          "options": [
+            "The girl is in the tree.",
+            "The girl is on the tree.",
+            "The girl is next to the tree.",
+            "The girl is behind the tree."
+          ],
+          "answer": "The girl is in the tree."
+        },
+        {
+          "id": "prep_c_49",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo caminó a lo largo del pasillo.\"?",
+          "options": [
+            "The pen walked along the corridor.",
+            "The pen walked across the corridor.",
+            "The pen walked into the corridor.",
+            "The pen walked over the corridor."
+          ],
+          "answer": "The pen walked along the corridor."
+        },
+        {
+          "id": "prep_c_50",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña caminó a través del parque.\"?",
+          "options": [
+            "The girl walked along the park.",
+            "The girl walked into the park.",
+            "The girl walked through the park.",
+            "The girl walked across the park."
+          ],
+          "answer": "The girl walked through the park."
+        },
+        {
+          "id": "prep_c_51",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La mochila está al lado del árbol.\"?",
+          "options": [
+            "The bag is in front of the tree.",
+            "The bag is on the tree.",
+            "The bag is next to the tree.",
+            "The bag is between the tree."
+          ],
+          "answer": "The bag is next to the tree."
+        },
+        {
+          "id": "prep_c_52",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El libro está encima de la caja.\"?",
+          "options": [
+            "The book is on the box.",
+            "The book is under the box.",
+            "The book is between the box.",
+            "The book is in the box."
+          ],
+          "answer": "The book is on the box."
+        },
+        {
+          "id": "prep_c_53",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro corrió al otro lado del campo.\"?",
+          "options": [
+            "The dog ran out of the field.",
+            "The dog ran along the field.",
+            "The dog ran across the field.",
+            "The dog ran over the field."
+          ],
+          "answer": "The dog ran across the field."
+        },
+        {
+          "id": "prep_c_54",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana caminó a través del bosque.\"?",
+          "options": [
+            "Ana walked along the forest.",
+            "Ana walked out of the forest.",
+            "Ana walked over the forest.",
+            "Ana walked through the forest."
+          ],
+          "answer": "Ana walked through the forest."
+        },
+        {
+          "id": "prep_c_55",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El gato está encima del coche.\"?",
+          "options": [
+            "The cat is under the car.",
+            "The cat is next to the car.",
+            "The cat is on the car.",
+            "The cat is between the car."
+          ],
+          "answer": "The cat is on the car."
+        },
+        {
+          "id": "prep_c_56",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está debajo del árbol.\"?",
+          "options": [
+            "The car is under the tree.",
+            "The car is between the tree.",
+            "The car is on the tree.",
+            "The car is in the tree."
+          ],
+          "answer": "The car is under the tree."
+        },
+        {
+          "id": "prep_c_57",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El gato está encima de la pared.\"?",
+          "options": [
+            "The cat is on the wall.",
+            "The cat is between the wall.",
+            "The cat is next to the wall.",
+            "The cat is in front of the wall."
+          ],
+          "answer": "The cat is on the wall."
+        },
+        {
+          "id": "prep_c_58",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro está detrás del coche.\"?",
+          "options": [
+            "The bird is between the car.",
+            "The bird is on the car.",
+            "The bird is under the car.",
+            "The bird is behind the car."
+          ],
+          "answer": "The bird is behind the car."
+        },
+        {
+          "id": "prep_c_59",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño está al lado del coche.\"?",
+          "options": [
+            "The boy is in the car.",
+            "The boy is in front of the car.",
+            "The boy is between the car.",
+            "The boy is next to the car."
+          ],
+          "answer": "The boy is next to the car."
+        },
+        {
+          "id": "prep_c_60",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La mochila salió fuera de la casa.\"?",
+          "options": [
+            "The bag got across the house.",
+            "The bag got out of the house.",
+            "The bag got along the house.",
+            "The bag got over the house."
+          ],
+          "answer": "The bag got out of the house."
+        },
+        {
+          "id": "prep_c_61",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro está en el árbol.\"?",
+          "options": [
+            "The dog is next to the tree.",
+            "The dog is in the tree.",
+            "The dog is on the tree.",
+            "The dog is behind the tree."
+          ],
+          "answer": "The dog is in the tree."
+        },
+        {
+          "id": "prep_c_62",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota corrió al otro lado del río.\"?",
+          "options": [
+            "The ball ran out of the river.",
+            "The ball ran across the river.",
+            "The ball ran along the river.",
+            "The ball ran over the river."
+          ],
+          "answer": "The ball ran across the river."
+        },
+        {
+          "id": "prep_c_63",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro corrió al otro lado del campo.\"?",
+          "options": [
+            "The bird ran into the field.",
+            "The bird ran along the field.",
+            "The bird ran across the field.",
+            "The bird ran out of the field."
+          ],
+          "answer": "The bird ran across the field."
+        },
+        {
+          "id": "prep_c_64",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está encima de la caja.\"?",
+          "options": [
+            "The ball is in the box.",
+            "The ball is on the box.",
+            "The ball is between the box.",
+            "The ball is under the box."
+          ],
+          "answer": "The ball is on the box."
+        },
+        {
+          "id": "prep_c_65",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está debajo del colegio.\"?",
+          "options": [
+            "The car is on the school.",
+            "The car is next to the school.",
+            "The car is under the school.",
+            "The car is between the school."
+          ],
+          "answer": "The car is under the school."
+        },
+        {
+          "id": "prep_c_66",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño está encima de la caja.\"?",
+          "options": [
+            "The boy is behind the box.",
+            "The boy is next to the box.",
+            "The boy is on the box.",
+            "The boy is under the box."
+          ],
+          "answer": "The boy is on the box."
+        },
+        {
+          "id": "prep_c_67",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo saltó dentro del coche.\"?",
+          "options": [
+            "The pen jumped into the car.",
+            "The pen jumped over the car.",
+            "The pen jumped along the car.",
+            "The pen jumped through the car."
+          ],
+          "answer": "The pen jumped into the car."
+        },
+        {
+          "id": "prep_c_68",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La mochila caminó a través del parque.\"?",
+          "options": [
+            "The bag walked over the park.",
+            "The bag walked into the park.",
+            "The bag walked through the park.",
+            "The bag walked across the park."
+          ],
+          "answer": "The bag walked through the park."
+        },
+        {
+          "id": "prep_c_69",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom está detrás de la puerta.\"?",
+          "options": [
+            "Tom is behind the door.",
+            "Tom is between the door.",
+            "Tom is in the door.",
+            "Tom is on the door."
+          ],
+          "answer": "Tom is behind the door."
+        },
+        {
+          "id": "prep_c_70",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro está debajo del sofá.\"?",
+          "options": [
+            "The dog is next to the sofa.",
+            "The dog is under the sofa.",
+            "The dog is in the sofa.",
+            "The dog is in front of the sofa."
+          ],
+          "answer": "The dog is under the sofa."
+        },
+        {
+          "id": "prep_c_71",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El gato está delante de la casa.\"?",
+          "options": [
+            "The cat is between the house.",
+            "The cat is in front of the house.",
+            "The cat is in the house.",
+            "The cat is on the house."
+          ],
+          "answer": "The cat is in front of the house."
+        },
+        {
+          "id": "prep_c_72",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo está detrás de la tienda.\"?",
+          "options": [
+            "The pen is on the shop.",
+            "The pen is behind the shop.",
+            "The pen is next to the shop.",
+            "The pen is in the shop."
+          ],
+          "answer": "The pen is behind the shop."
+        },
+        {
+          "id": "prep_c_73",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro está al lado de la puerta.\"?",
+          "options": [
+            "The dog is between the door.",
+            "The dog is on the door.",
+            "The dog is next to the door.",
+            "The dog is under the door."
+          ],
+          "answer": "The dog is next to the door."
+        },
+        {
+          "id": "prep_c_74",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El libro está en el coche.\"?",
+          "options": [
+            "The book is on the car.",
+            "The book is in the car.",
+            "The book is under the car.",
+            "The book is between the car."
+          ],
+          "answer": "The book is in the car."
+        },
+        {
+          "id": "prep_c_75",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota corrió al otro lado del campo.\"?",
+          "options": [
+            "The ball ran through the field.",
+            "The ball ran across the field.",
+            "The ball ran over the field.",
+            "The ball ran out of the field."
+          ],
+          "answer": "The ball ran across the field."
+        },
+        {
+          "id": "prep_c_76",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom está al lado de la puerta.\"?",
+          "options": [
+            "Tom is next to the door.",
+            "Tom is in front of the door.",
+            "Tom is behind the door.",
+            "Tom is in the door."
+          ],
+          "answer": "Tom is next to the door."
+        },
+        {
+          "id": "prep_c_77",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña voló por encima de la pared.\"?",
+          "options": [
+            "The girl flew out of the wall.",
+            "The girl flew over the wall.",
+            "The girl flew along the wall.",
+            "The girl flew through the wall."
+          ],
+          "answer": "The girl flew over the wall."
+        },
+        {
+          "id": "prep_c_78",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana está en la pared.\"?",
+          "options": [
+            "Ana is in the wall.",
+            "Ana is between the wall.",
+            "Ana is under the wall.",
+            "Ana is in front of the wall."
+          ],
+          "answer": "Ana is in the wall."
+        },
+        {
+          "id": "prep_c_79",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está en la mesa.\"?",
+          "options": [
+            "The car is in the table.",
+            "The car is in front of the table.",
+            "The car is between the table.",
+            "The car is on the table."
+          ],
+          "answer": "The car is in the table."
+        },
+        {
+          "id": "prep_c_80",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña está al lado del árbol.\"?",
+          "options": [
+            "The girl is under the tree.",
+            "The girl is next to the tree.",
+            "The girl is behind the tree.",
+            "The girl is between the tree."
+          ],
+          "answer": "The girl is next to the tree."
+        },
+        {
+          "id": "prep_c_81",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El gato está detrás de la casa.\"?",
+          "options": [
+            "The cat is behind the house.",
+            "The cat is between the house.",
+            "The cat is next to the house.",
+            "The cat is under the house."
+          ],
+          "answer": "The cat is behind the house."
+        },
+        {
+          "id": "prep_c_82",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro está en la mesa.\"?",
+          "options": [
+            "The bird is next to the table.",
+            "The bird is on the table.",
+            "The bird is between the table.",
+            "The bird is in the table."
+          ],
+          "answer": "The bird is in the table."
+        },
+        {
+          "id": "prep_c_83",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está encima de la silla.\"?",
+          "options": [
+            "The ball is on the chair.",
+            "The ball is between the chair.",
+            "The ball is in front of the chair.",
+            "The ball is next to the chair."
+          ],
+          "answer": "The ball is on the chair."
+        },
+        {
+          "id": "prep_c_84",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota está al lado de la casa.\"?",
+          "options": [
+            "The ball is on the house.",
+            "The ball is next to the house.",
+            "The ball is under the house.",
+            "The ball is in the house."
+          ],
+          "answer": "The ball is next to the house."
+        },
+        {
+          "id": "prep_c_85",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El pájaro corrió al otro lado de la carretera.\"?",
+          "options": [
+            "The bird ran through the road.",
+            "The bird ran over the road.",
+            "The bird ran along the road.",
+            "The bird ran across the road."
+          ],
+          "answer": "The bird ran across the road."
+        },
+        {
+          "id": "prep_c_86",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El niño está detrás del coche.\"?",
+          "options": [
+            "The boy is in front of the car.",
+            "The boy is between the car.",
+            "The boy is in the car.",
+            "The boy is behind the car."
+          ],
+          "answer": "The boy is behind the car."
+        },
+        {
+          "id": "prep_c_87",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro está debajo de la cama.\"?",
+          "options": [
+            "The dog is next to the bed.",
+            "The dog is under the bed.",
+            "The dog is behind the bed.",
+            "The dog is in front of the bed."
+          ],
+          "answer": "The dog is under the bed."
+        },
+        {
+          "id": "prep_c_88",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Tom está encima de la estantería.\"?",
+          "options": [
+            "Tom is in the shelf.",
+            "Tom is between the shelf.",
+            "Tom is on the shelf.",
+            "Tom is under the shelf."
+          ],
+          "answer": "Tom is on the shelf."
+        },
+        {
+          "id": "prep_c_89",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana salió fuera de la caja.\"?",
+          "options": [
+            "Ana got through the box.",
+            "Ana got along the box.",
+            "Ana got over the box.",
+            "Ana got out of the box."
+          ],
+          "answer": "Ana got out of the box."
+        },
+        {
+          "id": "prep_c_90",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El perro está debajo de la estantería.\"?",
+          "options": [
+            "The dog is next to the shelf.",
+            "The dog is under the shelf.",
+            "The dog is behind the shelf.",
+            "The dog is between the shelf."
+          ],
+          "answer": "The dog is under the shelf."
+        },
+        {
+          "id": "prep_c_91",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana está delante de la puerta.\"?",
+          "options": [
+            "Ana is next to the door.",
+            "Ana is in front of the door.",
+            "Ana is in the door.",
+            "Ana is under the door."
+          ],
+          "answer": "Ana is in front of the door."
+        },
+        {
+          "id": "prep_c_92",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La pelota caminó a través del bosque.\"?",
+          "options": [
+            "The ball walked across the forest.",
+            "The ball walked through the forest.",
+            "The ball walked along the forest.",
+            "The ball walked into the forest."
+          ],
+          "answer": "The ball walked through the forest."
+        },
+        {
+          "id": "prep_c_93",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana voló por encima del puente.\"?",
+          "options": [
+            "Ana flew out of the bridge.",
+            "Ana flew over the bridge.",
+            "Ana flew through the bridge.",
+            "Ana flew along the bridge."
+          ],
+          "answer": "Ana flew over the bridge."
+        },
+        {
+          "id": "prep_c_94",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La niña corrió al otro lado del río.\"?",
+          "options": [
+            "The girl ran along the river.",
+            "The girl ran across the river.",
+            "The girl ran over the river.",
+            "The girl ran through the river."
+          ],
+          "answer": "The girl ran across the river."
+        },
+        {
+          "id": "prep_c_95",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo corrió al otro lado de la carretera.\"?",
+          "options": [
+            "The pen ran into the road.",
+            "The pen ran along the road.",
+            "The pen ran out of the road.",
+            "The pen ran across the road."
+          ],
+          "answer": "The pen ran across the road."
+        },
+        {
+          "id": "prep_c_96",
+          "type": "C",
+          "question": "¿Cómo se dice: \"La mochila caminó a lo largo de la playa.\"?",
+          "options": [
+            "The bag walked along the beach.",
+            "The bag walked across the beach.",
+            "The bag walked into the beach.",
+            "The bag walked over the beach."
+          ],
+          "answer": "The bag walked along the beach."
+        },
+        {
+          "id": "prep_c_97",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El coche está encima de la silla.\"?",
+          "options": [
+            "The car is in the chair.",
+            "The car is under the chair.",
+            "The car is in front of the chair.",
+            "The car is on the chair."
+          ],
+          "answer": "The car is on the chair."
+        },
+        {
+          "id": "prep_c_98",
+          "type": "C",
+          "question": "¿Cómo se dice: \"El bolígrafo está al lado del árbol.\"?",
+          "options": [
+            "The pen is under the tree.",
+            "The pen is behind the tree.",
+            "The pen is next to the tree.",
+            "The pen is in front of the tree."
+          ],
+          "answer": "The pen is next to the tree."
+        },
+        {
+          "id": "prep_c_99",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana saltó dentro del jardín.\"?",
+          "options": [
+            "Ana jumped over the garden.",
+            "Ana jumped into the garden.",
+            "Ana jumped through the garden.",
+            "Ana jumped along the garden."
+          ],
+          "answer": "Ana jumped into the garden."
+        },
+        {
+          "id": "prep_c_100",
+          "type": "C",
+          "question": "¿Cómo se dice: \"Ana salió fuera del coche.\"?",
+          "options": [
+            "Ana got along the car.",
+            "Ana got into the car.",
+            "Ana got out of the car.",
+            "Ana got through the car."
+          ],
+          "answer": "Ana got out of the car."
+        }
+      ]
+    }
+  ]
+}
