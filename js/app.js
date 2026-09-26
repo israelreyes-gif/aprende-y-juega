@@ -175,6 +175,12 @@ function loadScreenLazy(screenId, callback) {
     's-english-modals-ex-c4':      'screens/curso4/english-grammar.html',
     's-english-modals-wo-c4':      'screens/curso4/english-grammar.html',
     's-english-modals-match-c4':   'screens/curso4/english-grammar.html',
+    /* Grammar Exercises — Bloque 3 (Telling Time / Wh- Questions /
+       -er-/-est / Adverbs / Prepositions), pantallas genéricas
+       compartidas por los 5 temas (ver js/english-block3-c4.js) */
+    's-english-b3-extype-c4':      'screens/curso4/english-grammar.html',
+    's-english-b3-ex-c4':          'screens/curso4/english-grammar.html',
+    's-english-b3-wo-c4':          'screens/curso4/english-grammar.html',
     /* Verb Tenses — pantallas genéricas de ejercicios, compartidas
        por los 7 tiempos (ver js/english-tenses-c4.js) */
     's-english-tenses-extype-c4':  'screens/curso4/english-tenses.html',
