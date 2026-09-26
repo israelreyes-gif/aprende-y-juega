@@ -464,29 +464,33 @@
         <div class="mode-name" style="color:var(--amber)">Have To</div>
         <div class="mode-sub">400 questions</div>
       </div>
-      <div class="mode-card" style="border-color:var(--purple);background:#EDE9FE" onclick="startModalsMatching()">
-        <div class="mode-emoji">🔗</div>
-        <div class="mode-name" style="color:var(--purple)">Which one?</div>
-        <div class="mode-sub">Could, Must or Have To</div>
-      </div>
-    </div>
-    <div class="mode-grid" style="margin-bottom:10px">
       <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="openBlock3ExerciseMenu('erest')">
         <div class="mode-emoji">🟢</div>
         <div class="mode-name" style="color:var(--green)">-er / -est</div>
         <div class="mode-sub">300 questions</div>
       </div>
+    </div>
+    <div class="mode-grid" style="margin-bottom:10px">
       <div class="mode-card" style="border-color:#78350F;background:#FDF2E9" onclick="openBlock3ExerciseMenu('adverbs')">
         <div class="mode-emoji">🟤</div>
         <div class="mode-name" style="color:#78350F">Adverbs</div>
         <div class="mode-sub">200 questions</div>
       </div>
-    </div>
-    <div class="mode-grid" style="margin-bottom:10px">
       <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="openBlock3ExerciseMenu('prepositions')">
         <div class="mode-emoji">🔵</div>
         <div class="mode-name" style="color:var(--blue)">Prepositions</div>
         <div class="mode-sub">200 questions</div>
+      </div>
+    </div>
+
+    <!-- "Which one?" no existe como tema de Study (es un repaso mezclando
+         Could/Must/Have To) — va aparte, al final, sin romper el orden
+         de las 8 tarjetas que sí coinciden con Study. -->
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--purple);background:#EDE9FE" onclick="startModalsMatching()">
+        <div class="mode-emoji">🔗</div>
+        <div class="mode-name" style="color:var(--purple)">Which one?</div>
+        <div class="mode-sub">Could, Must or Have To</div>
       </div>
     </div>
   </div>
