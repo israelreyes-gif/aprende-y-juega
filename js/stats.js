@@ -131,6 +131,11 @@ var STATS_BY_CURSO = {
         { key: 'english-must-c4',            name: 'Must' },
         { key: 'english-haveto-c4',          name: 'Have To' },
         { key: 'english-modals-match-c4',    name: 'Which one?' },
+        { key: 'english-time-c4',            name: 'Telling Time' },
+        { key: 'english-whquestions-c4',     name: 'Wh- Questions' },
+        { key: 'english-erest-c4',           name: '-er / -est' },
+        { key: 'english-adverbs-c4',         name: 'Adverbs' },
+        { key: 'english-prepositions-c4',    name: 'Prepositions' },
         { key: 'english-vocab-c4',           name: 'Vocabulary' }
       ]
     },
