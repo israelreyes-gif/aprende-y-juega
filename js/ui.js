@@ -141,6 +141,33 @@ function updateSubjectUI(subject) {
   }
 }
 
+/* ---- Hub de English (s-english-c4): puntos + lo más urgente a
+   reforzar, solo de English — nunca mezcla con otras asignaturas.
+   Se limita a EH_REFUERZO_MAX para que la pantalla no se llene si hay
+   muchas áreas por debajo del 75%: se muestran solo las más urgentes
+   (más fallos primero, mismo orden que statsGetToReforzarSubject()). */
+var EH_REFUERZO_MAX = 3;
+
+function renderEnglishHubStats() {
+  var pts = document.getElementById('eh-pts');
+  if (!pts) return; // pantalla no cargada (curso 3, por ejemplo)
+
+  var en = statsGetSubject('english') || STATS_SUBJECT_FALLBACK;
+  setEl('eh-pts', '⭐ ' + en.pts + ' pts');
+
+  var weakAll = statsGetToReforzarSubject('english');
+  var weak    = weakAll.slice(0, EH_REFUERZO_MAX);
+  var lbl     = document.getElementById('eh-refuerzo-lbl');
+  if (lbl) {
+    lbl.textContent = weakAll.length > EH_REFUERZO_MAX
+      ? 'Lo más urgente (' + weakAll.length + ' áreas por debajo del ' + CONFIG.progreso.umbralRefuerzo + '%)'
+      : 'A reforzar — menos del ' + CONFIG.progreso.umbralRefuerzo + '%';
+  }
+
+  var panel = document.getElementById('eh-reforzar');
+  if (panel) panel.innerHTML = statsRefuerzoHtml(weak, 'Está dominando todo el contenido de English.');
+}
+
 /* ---- Panel de ejercicios a reforzar ---- */
 function updateErrorsPanel() {
   var panel = document.getElementById('errors-panel');
