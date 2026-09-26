@@ -1,0 +1,214 @@
+<!-- =============================================
+     CURSO4-MATES-MULTIPLICACION.HTML — Contenido del tema
+     Multiplicación (asignatura Matemáticas de 4º).
+
+     Hermano de screens/curso4/mates.html, que se queda solo
+     con el hub y los submenús Estudiar/Ejercicios — igual
+     que English separa english.html (hub) de
+     english-tenses.html / english-verbs.html / etc.
+
+     Cuando se añada un tema nuevo (sumas, restas, problemas...)
+     va en su propio archivo hermano (mates-sumas.html...), sin
+     tocar este ni mates.html más que para añadir su tarjeta en
+     s-mates-study-c4 / s-mates-exercises-c4.
+
+     Contiene:
+       - Selector de tipo de ejercicio (con ayudas / sin ayudas)
+       - Study: pantalla interactiva (rejilla filas×columnas +
+         derivador de tablas difíciles) — ver js/mates-multiplicacion-c4.js
+       - Exercises:
+           · Con ayudas: la misma rejilla/derivador, pero el
+             niño tiene que escribir la respuesta y comprobarla
+           · Sin ayudas: opción múltiple normal, usa el motor
+             genérico de Mates (engine-mates.js), igual que
+             sumas/restas/multiplicaciones de 3º
+     ============================================= -->
+
+<!-- Tipo de ejercicio: con ayudas / sin ayudas -->
+<div class="screen" id="s-mates-mult-extype-c4">
+  <div class="topbar bg-purple">
+    <button class="back-btn" onclick="go('s-mates-exercises-c4')">←</button>
+    <h1>Multiplicación</h1>
+    <span class="top-badge">⭐ +10</span>
+  </div>
+  <div class="sa">
+    <div class="slbl">Elige cómo practicar</div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--purple);background:#EDE9FE" onclick="go('s-mates-mult-ayudas-c4')">
+        <div class="mode-emoji">🧰</div>
+        <div class="mode-name" style="color:var(--purple)">Con ayudas</div>
+        <div class="mode-sub">Rejilla y trucos</div>
+      </div>
+      <div class="mode-card" onclick="go('s-mates-mult-c4')">
+        <div class="mode-emoji">⚡</div>
+        <div class="mode-name">Sin ayudas</div>
+        <div class="mode-sub">Solo tú</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     STUDY — Multiplicación: rejilla interactiva + derivador.
+     Toda la lógica en js/mates-multiplicacion-c4.js
+     (renderMultStudy y funciones studyXxx).
+     ============================================= -->
+<div class="screen" id="s-mates-mult-study-c4">
+  <div class="topbar bg-purple">
+    <button class="back-btn" onclick="go('s-mates-study-c4')">←</button>
+    <h1>Multiplicación</h1>
+    <span class="top-badge">📖 Aprende</span>
+  </div>
+  <div class="sa" style="padding-bottom:24px">
+
+    <div style="margin:14px 16px 0;background:#EDE9FE;border-radius:16px;padding:14px 16px;display:flex;gap:10px;align-items:flex-start">
+      <span style="font-size:18px;line-height:1.3">💡</span>
+      <p style="font-size:12.5px;font-weight:600;color:#4C1D95;line-height:1.5;margin:0;font-family:var(--f)">Toca los botones para cambiar filas, columnas y tablas — todo se recalcula al momento.</p>
+    </div>
+
+    <!-- Tarjeta 1: rejilla filas × columnas -->
+    <div style="margin:14px 16px 0;background:white;border:0.5px solid var(--gray-100);border-radius:20px;padding:16px">
+      <div style="font-family:var(--f);font-weight:800;font-size:15px;color:var(--gray-800);margin-bottom:4px">1️⃣ Que tenga sentido: filas × columnas</div>
+      <div style="font-size:12.5px;color:var(--gray-400);line-height:1.5;margin-bottom:14px">Cambia las filas y las columnas y observa cómo cambia el resultado.</div>
+
+      <div style="display:flex;gap:22px;margin-bottom:14px">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:7px">
+          <span style="font-size:10.5px;font-weight:800;color:var(--gray-400);letter-spacing:.4px">FILAS</span>
+          <div style="display:flex;align-items:center;gap:9px">
+            <button aria-label="Menos filas" onclick="studyDecRows()" style="width:30px;height:30px;border-radius:9px;border:none;font-size:16px;font-weight:800;background:#EDE9FE;color:var(--purple)">−</button>
+            <span id="mstudy-rows-val" style="min-width:24px;text-align:center;font-family:var(--f);font-size:19px;font-weight:800;color:var(--gray-800)">4</span>
+            <button aria-label="Más filas" onclick="studyIncRows()" style="width:30px;height:30px;border-radius:9px;border:none;font-size:16px;font-weight:800;background:var(--purple);color:white">+</button>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:7px">
+          <span style="font-size:10.5px;font-weight:800;color:var(--gray-400);letter-spacing:.4px">COLUMNAS</span>
+          <div style="display:flex;align-items:center;gap:9px">
+            <button aria-label="Menos columnas" onclick="studyDecCols()" style="width:30px;height:30px;border-radius:9px;border:none;font-size:16px;font-weight:800;background:#EDE9FE;color:var(--purple)">−</button>
+            <span id="mstudy-cols-val" style="min-width:24px;text-align:center;font-family:var(--f);font-size:19px;font-weight:800;color:var(--gray-800)">3</span>
+            <button aria-label="Más columnas" onclick="studyIncCols()" style="width:30px;height:30px;border-radius:9px;border:none;font-size:16px;font-weight:800;background:var(--purple);color:white">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:#F7F5FC;border-radius:14px;padding:16px;display:flex;align-items:center;justify-content:center;min-height:110px;margin-bottom:12px">
+        <div id="mstudy-grid" style="display:grid;gap:6px"></div>
+      </div>
+
+      <div id="mstudy-eq" style="text-align:center;font-family:var(--f);font-size:22px;font-weight:800;color:var(--gray-800)">4 × 3 = <span style="color:var(--purple)">12</span></div>
+    </div>
+
+    <!-- Tarjeta 2: tablas gratis -->
+    <div style="margin:14px 16px 0;background:white;border:0.5px solid var(--gray-100);border-radius:20px;padding:16px">
+      <div style="font-family:var(--f);font-weight:800;font-size:15px;color:var(--gray-800);margin-bottom:4px">2️⃣ Empieza por las que casi ya sabe</div>
+      <div style="font-size:12.5px;color:var(--gray-400);line-height:1.5;margin-bottom:12px">×1, ×10, ×2, ×5 y ×4 apenas hay que enseñarlas — son patrones que ya reconoce.</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#DCFCE7;color:#166534">×1</span>
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#DCFCE7;color:#166534">×10</span>
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#DCFCE7;color:#166534">×2</span>
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#DCFCE7;color:#166534">×5</span>
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#DCFCE7;color:#166534">×4</span>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3: derivador interactivo -->
+    <div style="margin:14px 16px 0;background:white;border:0.5px solid var(--gray-100);border-radius:20px;padding:16px">
+      <div style="font-family:var(--f);font-weight:800;font-size:15px;color:var(--gray-800);margin-bottom:4px">3️⃣ Deriva las difíciles de las fáciles</div>
+      <div style="font-size:12.5px;color:var(--gray-400);line-height:1.5;margin-bottom:12px">Elige una tabla y mira cómo sale de una que ya domina.</div>
+
+      <div id="mstudy-facts" style="display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:12px"></div>
+
+      <div style="background:#EFF6FF;border-radius:14px;padding:14px">
+        <div id="mstudy-fact-eq" style="font-family:var(--f);font-size:18px;font-weight:800;color:#1E3A8A;margin-bottom:10px">6 × 9 = 54</div>
+        <div id="mstudy-strategies" style="display:flex;gap:6px;margin-bottom:10px"></div>
+        <div id="mstudy-steps" style="display:flex;flex-direction:column;gap:5px"></div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4: deja 7 y 8 para el final -->
+    <div style="margin:14px 16px 0;background:white;border:0.5px solid var(--gray-100);border-radius:20px;padding:16px">
+      <div style="font-family:var(--f);font-weight:800;font-size:15px;color:var(--gray-800);margin-bottom:4px">4️⃣ Deja ×7 y ×8 para el final</div>
+      <div style="font-size:12.5px;color:var(--gray-400);line-height:1.5;margin-bottom:12px">Son las únicas que no tienen atajo claro — y para entonces solo quedan unas pocas combinaciones sueltas.</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#FEF3C7;color:#92400E">7×8</span>
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#FEF3C7;color:#92400E">7×6</span>
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#FEF3C7;color:#92400E">8×6</span>
+        <span style="font-family:var(--f);font-weight:800;font-size:14px;border-radius:10px;padding:6px 12px;background:#FEF3C7;color:#92400E">7×3</span>
+      </div>
+    </div>
+
+    <div style="margin:14px 16px 0;text-align:center">
+      <button onclick="go('s-mates-mult-extype-c4')" style="background:var(--purple);border:none;color:white;font-weight:800;font-size:13.5px;font-family:var(--f);border-radius:12px;padding:13px 20px;width:100%">Practicar ahora →</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- =============================================
+     EJERCICIOS "CON AYUDAS" — el niño construye la
+     respuesta con la rejilla o el truco y la escribe.
+     ============================================= -->
+<div class="screen" id="s-mates-mult-ayudas-c4">
+  <div class="topbar bg-purple">
+    <button class="back-btn" onclick="go('s-mates-mult-extype-c4')">←</button>
+    <h1>Multiplicación</h1>
+    <span class="top-badge">🧰 Con ayudas</span>
+  </div>
+  <div class="sa">
+    <div id="mayu-question" style="text-align:center;font-family:var(--f);font-size:24px;font-weight:800;color:var(--gray-800);margin:18px 16px 14px">6 × 8 = ?</div>
+
+    <div style="display:flex;gap:8px;margin:0 16px 14px">
+      <button id="mayu-tab-grid" onclick="ayudasUseGrid()" style="flex:1;border:none;border-radius:10px;padding:9px;font-weight:800;font-size:12.5px;font-family:var(--f)">🔲 Rejilla</button>
+      <button id="mayu-tab-trick" onclick="ayudasUseTrick()" style="flex:1;border:none;border-radius:10px;padding:9px;font-weight:800;font-size:12.5px;font-family:var(--f)">🔗 Truco</button>
+    </div>
+
+    <!-- Modo rejilla: construir fila a fila -->
+    <div id="mayu-grid-panel" style="margin:0 16px 14px;background:#F7F5FC;border-radius:14px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:10px">
+      <div id="mayu-grid" style="display:grid;gap:6px;min-height:13px"></div>
+      <div id="mayu-row-text" style="font-size:12.5px;font-weight:800;color:var(--purple);text-align:center;font-family:var(--f)">Toca "+ fila" para ir sumando</div>
+      <div style="display:flex;gap:8px">
+        <button aria-label="Quitar fila" onclick="ayudasRemoveRow()" style="width:30px;height:30px;border-radius:9px;border:1.5px solid #DDD6FE;background:white;color:var(--purple);font-size:16px;font-weight:800">−</button>
+        <button id="mayu-add-row-btn" onclick="ayudasAddRow()" style="border:none;border-radius:9px;padding:0 14px;height:30px;font-weight:800;font-size:13px;font-family:var(--f);background:var(--purple);color:white">+ fila</button>
+      </div>
+    </div>
+
+    <!-- Modo truco: derivación de esta pregunta -->
+    <div id="mayu-trick-panel" style="display:none;margin:0 16px 14px;background:#EFF6FF;border-radius:14px;padding:14px">
+      <div id="mayu-trick-strategies" style="display:flex;gap:6px;margin-bottom:10px"></div>
+      <div id="mayu-trick-steps" style="display:flex;flex-direction:column;gap:5px"></div>
+    </div>
+
+    <!-- Respuesta -->
+    <div style="margin:0 16px 8px">
+      <label for="mayu-input" style="display:block;font-size:10.5px;font-weight:800;color:var(--gray-400);letter-spacing:.4px;margin-bottom:6px">TU RESPUESTA</label>
+      <div style="display:flex;gap:8px">
+        <input id="mayu-input" type="number" inputmode="numeric" placeholder="?" oninput="ayudasSetAnswer(this.value)" style="flex:1;min-width:0;border:1.5px solid var(--gray-200);border-radius:10px;padding:10px 12px;font-family:var(--f);font-size:16px;font-weight:800;color:var(--gray-800);box-sizing:border-box">
+        <button onclick="ayudasCheckAnswer()" style="background:var(--purple);border:none;color:white;font-weight:800;font-size:13px;font-family:var(--f);border-radius:10px;padding:0 16px;flex-shrink:0">Comprobar</button>
+      </div>
+    </div>
+
+    <div id="mayu-feedback" style="margin:0 16px 14px"></div>
+
+    <button onclick="ayudasNewQuiz()" style="background:var(--gray-800);border:none;color:white;font-weight:800;font-size:12.5px;font-family:var(--f);border-radius:10px;padding:11px;margin:0 16px 24px;width:calc(100% - 32px)">🎲 Otra pregunta</button>
+  </div>
+</div>
+
+<!-- =============================================
+     EJERCICIOS "SIN AYUDAS" — opción múltiple normal,
+     usa el motor genérico de Mates (engine-mates.js),
+     igual que sumas/restas/multiplicaciones de 3º.
+     ============================================= -->
+<div class="screen" id="s-mates-mult-c4">
+  <div class="topbar bg-purple">
+    <button class="back-btn" onclick="go('s-mates-mult-extype-c4')">←</button>
+    <h1>Multiplicación</h1>
+    <span class="top-badge">⚡ Sin ayudas</span>
+  </div>
+  <div class="sa">
+    <div style="background:white;border-radius:20px;margin:14px 16px;padding:28px 16px;text-align:center;border:0.5px solid var(--gray-100)">
+      <div id="multc4-eq" style="font-family:var(--f);font-size:28px;font-weight:900;color:var(--gray-800)">? × ? = ?</div>
+    </div>
+    <div id="multc4-opts" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 16px"></div>
+    <div class="feedback" id="multc4-fb" style="display:none;margin:14px 16px"></div>
+    <button class="next-btn" style="background:var(--purple);display:none;margin:0 16px 24px" id="multc4-next" onclick="cargarNuevaMultC4()">Siguiente pregunta →</button>
+  </div>
+</div>
