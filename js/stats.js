@@ -273,6 +273,29 @@ function statsGetToReforzar(excludeKeys) {
   return weak.sort(function(a, b){ return b.fail - a.fail; });
 }
 
+/* ---- Ejercicios a reforzar de UNA sola asignatura (no de todo el curso) ----
+   Misma regla del 75% que statsGetToReforzar(), pero filtrado a un único
+   subjectKey — para paneles que viven dentro de esa asignatura (p.ej. el
+   hub de English) y no deben mezclar áreas de otras asignaturas. */
+function statsGetToReforzarSubject(subjectKey) {
+  var subj = statsGetSubject(subjectKey);
+  if (!subj) return [];
+  var weak = subj.items
+    .filter(function(item) { return item.total > 0 && item.pct < CONFIG.progreso.umbralRefuerzo; })
+    .map(function(item) {
+      return {
+        key:         item.key,
+        name:        item.name,
+        subjectName: subj.name,
+        subjectPill: subj.pill,
+        pct:         item.pct,
+        fail:        item.fail
+      };
+    });
+  // Ordenar por más fallos primero — mismo criterio que statsGetToReforzar()
+  return weak.sort(function(a, b){ return b.fail - a.fail; });
+}
+
 /* ---- Urgencia visual según el % (círculo de color + badge) ---- */
 function statsRefuerzoUrgencia(pct) {
   if (pct < 50) return { bg:'#FCA5A5', tc:'#991B1B', bb:'#FEE2E2', bc:'#DC2626', badge:'Prioritario' };
