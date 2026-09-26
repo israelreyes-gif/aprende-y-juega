@@ -34,6 +34,7 @@ var SCREENS_LAZY = [
   'screens/vacaciones.html',
   'screens/curso4/home.html',
   'screens/curso4/mates.html',
+  'screens/curso4/mates-multiplicacion.html',
   'screens/curso4/english.html',
   'screens/curso4/english-tenses.html',
   'screens/curso4/english-verbs.html',
@@ -138,14 +139,15 @@ function loadScreenLazy(screenId, callback) {
     's-vac-arkanoid':        'screens/vacaciones.html',
     /* Curso 4 (ver PATRÓN PARA FUTUROS CURSOS en screens/curso4/home.html) */
     's-home-curso4':               'screens/curso4/home.html',
-    /* Mates 4º — primer tema: Multiplicación (ver js/mates-multiplicacion-c4.js) */
+    /* Mates 4º — hub y submenús (Estudiar/Ejercicios) */
     's-mates-c4':                  'screens/curso4/mates.html',
     's-mates-study-c4':            'screens/curso4/mates.html',
     's-mates-exercises-c4':        'screens/curso4/mates.html',
-    's-mates-mult-extype-c4':      'screens/curso4/mates.html',
-    's-mates-mult-study-c4':       'screens/curso4/mates.html',
-    's-mates-mult-ayudas-c4':      'screens/curso4/mates.html',
-    's-mates-mult-c4':             'screens/curso4/mates.html',
+    /* Mates 4º — primer tema: Multiplicación (ver js/mates-multiplicacion-c4.js) */
+    's-mates-mult-extype-c4':      'screens/curso4/mates-multiplicacion.html',
+    's-mates-mult-study-c4':       'screens/curso4/mates-multiplicacion.html',
+    's-mates-mult-ayudas-c4':      'screens/curso4/mates-multiplicacion.html',
+    's-mates-mult-c4':             'screens/curso4/mates-multiplicacion.html',
     's-english-c4':                'screens/curso4/english.html',
     's-english-study-c4':          'screens/curso4/english.html',
     's-english-exercises-c4':      'screens/curso4/english.html',
