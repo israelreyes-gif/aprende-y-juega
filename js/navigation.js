@@ -1,139 +1,56 @@
 /* =============================================
-   NAVIGATION.JS — Cambio de pantallas, cursos y toast
+   NAVIGATION.JS — Navegación entre pantallas, selección
+   de curso, teclado numérico (PIN), y limpieza de estado
+   visual de ejercicios al cambiar de pantalla.
    ============================================= */
 
-/* ---- Toast ---- */
-function showToast(msg) {
-  var t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(function() { t.classList.remove('show'); }, 2800);
-}
+/* ---- Teclado numérico (PIN) ---- */
+var _pinBuffer = '';
+var _pinTarget = null;
+var _pinOnSuccess = null;
 
-var _errorRetryFn  = null;
-var _errorBackScreen = null;
-
-function showError(context, e, retryFn, backScreen) {
-  console.error('[' + context + ']', e);
-  var msg = document.getElementById('error-msg');
-  if (msg) msg.innerHTML = 'No pudimos cargar ' + context + '.<br>¿Tienes conexión a internet?';
-  _errorRetryFn    = retryFn   || null;
-  _errorBackScreen = backScreen || 's-perfiles';
-  var el = document.getElementById('error-screen');
-  if (el) el.style.display = 'flex';
-  var btn = document.getElementById('error-retry-btn');
-  if (btn) btn.textContent = '🔄 Intentar de nuevo';
-}
-
-function errorRetry() {
-  var el = document.getElementById('error-screen');
-  if (el) el.style.display = 'none';
-  var btn = document.getElementById('error-retry-btn');
-  if (btn) btn.textContent = '⏳ Cargando...';
-  if (_errorRetryFn) _errorRetryFn();
-}
-
-function errorBack() {
-  var el = document.getElementById('error-screen');
-  if (el) el.style.display = 'none';
-  go(_errorBackScreen || 's-perfiles');
-}
-
-/* ---- Guardar nombre y empezar ---- */
-function guardarNombreYEmpezar() {
-  var input = document.getElementById('input-nombre');
-  if (!input || input.value.trim().length < 2) return;
-  setNombre(input.value.trim());
-  // Ir a crear avatar antes de los cursos
-  initCrearAvatar();
-  go('s-crear-avatar');
-}
-
-function initCrearAvatar() {
-  // Inicializar editor de avatar de bienvenida
-  if (typeof AV_TEMP !== 'undefined') {
-    AV_TEMP = JSON.parse(JSON.stringify(AV));
-  }
-  if (typeof renderCrearAvatar === 'function') renderCrearAvatar();
-}
-
-function confirmarCrearAvatar() {
-  // Guardar avatar temporal si existe
-  if (typeof AV_TEMP !== 'undefined' && typeof saveAvatar === 'function') {
-    AV = JSON.parse(JSON.stringify(AV_TEMP));
-    saveAvatar(AV);
-    if (typeof syncAvatarToCloud === 'function') syncAvatarToCloud();
-  }
-  go('s-cursos');
-}
-
-/* ---- Descripciones ---- */
-function irADescripciones() {
-  go('s-descripciones');
-}
-
-/* ---- Área para padres (con PIN) ---- */
-var _pinBuffer   = '';
-var _pinCallback = null;
-
-function irAPadres() {
-  _pinBuffer   = '';
-  _pinCallback = function() {
-    go('s-padres');
-  };
-
-  var modal    = document.getElementById('pin-modal');
-  var err      = document.getElementById('pin-error');
-  if (!modal) return;
-  if (err) err.style.display = 'none';
-  pinUpdateDots();
-  modal.style.display = 'flex';
-}
-
-function pinKey(digit) {
-  if (_pinBuffer.length >= 4) return;
-  _pinBuffer += digit;
-  pinUpdateDots();
-  if (_pinBuffer.length === 4) setTimeout(pinSubmit, 150);
-}
-
-function pinDel() {
-  _pinBuffer = _pinBuffer.slice(0, -1);
-  pinUpdateDots();
-  var err = document.getElementById('pin-error');
-  if (err) err.style.display = 'none';
-}
-
-function pinUpdateDots() {
-  for (var i = 0; i < 4; i++) {
-    var dot = document.getElementById('pin-dot-' + i);
-    if (dot) dot.style.background = i < _pinBuffer.length ? '#7C3AED' : '#E5E7EB';
-  }
-}
-
-function pinSubmit() {
-  fetch(API_URL + '/config/pin_padres')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      var pinGuardado = d && d.valor ? d.valor : '';
-      if (_pinBuffer === pinGuardado) {
-        pinClose();
-        if (_pinCallback) _pinCallback();
-      } else {
-        pinError('PIN incorrecto');
-      }
-    })
-    .catch(function() {
-      pinError('Error de conexión');
-    });
-}
-
-function pinError(msg) {
+function pinOpen(target, onSuccess) {
+  _pinTarget = target;
+  _pinOnSuccess = onSuccess;
   _pinBuffer = '';
-  pinUpdateDots();
+  updatePinDots();
+  var modal = document.getElementById('pin-modal');
+  if (modal) modal.style.display = 'flex';
+}
+
+function pinDigit(d) {
+  if (_pinBuffer.length >= 4) return;
+  _pinBuffer += d;
+  updatePinDots();
+  if (_pinBuffer.length === 4) {
+    setTimeout(checkPin, 200);
+  }
+}
+
+function pinBackspace() {
+  _pinBuffer = _pinBuffer.slice(0, -1);
+  updatePinDots();
+}
+
+function updatePinDots() {
+  var dots = document.querySelectorAll('.pin-dot');
+  dots.forEach(function(dot, i) {
+    dot.classList.toggle('filled', i < _pinBuffer.length);
+  });
   var err = document.getElementById('pin-error');
-  if (err) { err.textContent = msg; err.style.display = 'block'; }
-  if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+  if (err) err.style.display = 'none';
+}
+
+function checkPin() {
+  if (_pinBuffer === CONFIG.pinPadres) {
+    pinClose();
+    if (_pinOnSuccess) _pinOnSuccess();
+  } else {
+    var err = document.getElementById('pin-error');
+    if (err) err.style.display = 'block';
+    _pinBuffer = '';
+    setTimeout(updatePinDots, 300);
+  }
 }
 
 function pinClose() {
@@ -264,6 +181,7 @@ function go(screenId) {
   clearExerciseState();
 
   if (screenId === 's-home')             { updateHomeUI(); updateStreakUI(); updateMedalUI(); }
+  if (screenId === 's-home-curso4')      { updateCurso4UI(); }
   if (screenId === 's-mates')                    { updateSubjectUI('mates'); renderMiniCalendario('cal-mates', 'mates', '#7C3AED'); }
   if (screenId === 's-mates-exercises')          { updateSubjectUI('mates'); }
   if (screenId === 's-lengua')                   { updateSubjectUI('lengua'); renderMiniCalendario('cal-lengua', 'lengua', '#EC4899'); }
