@@ -152,7 +152,10 @@ var STATS_BY_CURSO = {
       icon:  '🔢',
       color: '#534AB7',
       pill:  'background:#EDE9FE;color:#4C1D95',
-      items: []
+      items: [
+        { key: 'mates-mult-ayudas-c4', name: 'Multiplicación (con ayudas)' },
+        { key: 'mates-mult-c4',        name: 'Multiplicación (sin ayudas)' }
+      ]
     },
     {
       key:   'lengua',
