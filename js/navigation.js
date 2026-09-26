@@ -183,6 +183,9 @@ function go(screenId) {
 
   if (screenId === 's-home')             { updateHomeUI(); updateStreakUI(); updateMedalUI(); }
   if (screenId === 's-home-curso4')      { updateCurso4UI(); }
+  if (screenId === 's-mates-mult-study-c4')  { renderMultStudy(); }
+  if (screenId === 's-mates-mult-ayudas-c4') { startMultAyudas(); }
+  if (screenId === 's-mates-mult-c4')        { cargarNuevaMultC4(); }
   if (screenId === 's-mates')                    { updateSubjectUI('mates'); renderMiniCalendario('cal-mates', 'mates', '#7C3AED'); }
   if (screenId === 's-mates-exercises')          { updateSubjectUI('mates'); }
   if (screenId === 's-lengua')                   { updateSubjectUI('lengua'); renderMiniCalendario('cal-lengua', 'lengua', '#EC4899'); }
