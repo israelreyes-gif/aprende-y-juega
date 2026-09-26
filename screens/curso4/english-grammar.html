@@ -456,6 +456,39 @@
         <div class="mode-sub">Could, Must or Have To</div>
       </div>
     </div>
+
+    <!-- Bloque 3: Telling Time / Wh- Questions / -er-/-est / Adverbs / Prepositions -->
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="openBlock3ExerciseMenu('time')">
+        <div class="mode-emoji">🕐</div>
+        <div class="mode-name" style="color:var(--blue)">Telling Time</div>
+        <div class="mode-sub">200 questions</div>
+      </div>
+      <div class="mode-card" style="border-color:var(--purple);background:#EDE9FE" onclick="openBlock3ExerciseMenu('whquestions')">
+        <div class="mode-emoji">❓</div>
+        <div class="mode-name" style="color:var(--purple)">Wh- Questions</div>
+        <div class="mode-sub">300 questions</div>
+      </div>
+    </div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--green);background:var(--green-light)" onclick="openBlock3ExerciseMenu('erest')">
+        <div class="mode-emoji">🟢</div>
+        <div class="mode-name" style="color:var(--green)">-er / -est</div>
+        <div class="mode-sub">300 questions</div>
+      </div>
+      <div class="mode-card" style="border-color:#78350F;background:#FDF2E9" onclick="openBlock3ExerciseMenu('adverbs')">
+        <div class="mode-emoji">🟤</div>
+        <div class="mode-name" style="color:#78350F">Adverbs</div>
+        <div class="mode-sub">200 questions</div>
+      </div>
+    </div>
+    <div class="mode-grid" style="margin-bottom:10px">
+      <div class="mode-card" style="border-color:var(--blue);background:#EFF6FF" onclick="openBlock3ExerciseMenu('prepositions')">
+        <div class="mode-emoji">🔵</div>
+        <div class="mode-name" style="color:var(--blue)">Prepositions</div>
+        <div class="mode-sub">200 questions</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -521,5 +554,68 @@
     <div id="mdc4-match-area" style="padding:0 16px"></div>
     <div class="feedback" id="mdc4-match-fb" style="display:none;margin:0 16px"></div>
     <button class="next-btn" style="background:var(--blue);display:none;margin:0 16px" id="mdc4-match-next" onclick="modalsMatchingNext()">Continue →</button>
+  </div>
+</div>
+
+<!-- =============================================
+     GRAMMAR — EJERCICIOS (Bloque 3: Telling Time /
+     Wh- Questions / -er-/-est / Adverbs / Prepositions).
+     Reutiliza los motores genéricos — ver
+     js/english-block3-c4.js. Las pantallas de tipo/
+     pregunta/word order son GENÉRICAS y compartidas por
+     los 5 temas, igual que en Modals (prefijo "b3c4"
+     para no chocar con "mdc4"). Sin Matching en este
+     bloque. Las tarjetas de estos 5 temas se añaden
+     debajo de las de Modals en el menú de
+     s-english-grammar-ex-c4. -->
+
+<!-- MENÚ DE TIPOS (compartido por los 5 temas del Bloque 3) -->
+<div class="screen" id="s-english-b3-extype-c4">
+  <div class="topbar bg-blue" id="b3c4-extype-topbar"><button class="back-btn" onclick="go('s-english-grammar-ex-c4')">←</button><h1 id="b3c4-extype-title">Topic</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="sa">
+    <div class="slbl">Choose a type</div>
+    <div class="mode-grid" id="b3c4-extype-grid"></div>
+  </div>
+</div>
+
+<!-- PREGUNTAS de opción múltiple (tipos A/B/C) -->
+<div class="screen" id="s-english-b3-ex-c4">
+  <div class="topbar bg-blue" id="b3c4-ex-topbar"><button class="back-btn" onclick="go('s-english-b3-extype-c4')">←</button><h1 id="b3c4-ex-title">Topic</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="b3c4-ex-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="b3c4-ex-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="b3c4-ex-prog"></div></div></div>
+  <div class="sa">
+    <div class="word-card">
+      <div class="word-qtxt" id="b3c4-ex-question">Question</div>
+    </div>
+    <div class="word-opts" id="b3c4-ex-opts"></div>
+    <div class="feedback" id="b3c4-ex-fb" style="display:none"></div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="b3c4-ex-next" onclick="nextBlock3Question()">Next question →</button>
+  </div>
+</div>
+
+<!-- WORD ORDER -->
+<div class="screen" id="s-english-b3-wo-c4">
+  <div class="topbar bg-blue" id="b3c4-wo-topbar"><button class="back-btn" onclick="go('s-english-b3-extype-c4')">←</button><h1 id="b3c4-wo-title">Word Order</h1><span class="top-badge">⭐ +10</span></div>
+  <div class="ex-top">
+    <span class="ex-badge" style="background:#EFF6FF;color:var(--blue)" id="b3c4-wo-badge">Question 1</span>
+    <span class="ex-badge diff-easy" id="b3c4-wo-diff">Easy</span>
+  </div>
+  <div class="ex-pw"><div class="ex-pt"><div class="ex-pf" style="background:var(--blue);width:0%" id="b3c4-wo-prog"></div></div></div>
+  <div class="sa">
+    <div style="padding:14px 16px 6px">
+      <div style="font-family:var(--f);font-size:14px;font-weight:800;color:var(--gray-800);margin-bottom:4px">Put the words in the correct order</div>
+      <div style="font-size:12px;color:var(--gray-400)">Tap a word to place it · Tap a placed word to remove it</div>
+    </div>
+    <div id="b3c4-wo-slots" style="display:flex;flex-wrap:wrap;gap:8px;min-height:52px;padding:12px 16px;background:#F8FAFF;border:2px dashed #BFDBFE;border-radius:14px;margin:0 16px 14px;transition:border-color .2s"></div>
+    <div id="b3c4-wo-bank" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 16px 16px;min-height:44px"></div>
+    <div class="feedback" id="b3c4-wo-fb" style="display:none"></div>
+    <div style="display:flex;flex-direction:column;gap:8px;padding:0 16px 20px">
+      <button id="b3c4-wo-check" onclick="checkWordOrder()" style="width:100%;padding:13px 16px;border-radius:12px;border:none;background:var(--gray-200);color:var(--gray-400);font-family:var(--f);font-weight:800;font-size:15px;cursor:default;transition:all .2s">Check ✓</button>
+      <button id="b3c4-wo-reset" onclick="resetWordOrder()" style="width:100%;padding:10px 16px;border-radius:12px;border:1.5px solid var(--gray-200);background:white;color:var(--gray-400);font-family:var(--f);font-weight:700;font-size:13px;cursor:pointer">🔄 Reset</button>
+    </div>
+    <button class="next-btn" style="background:var(--blue);display:none" id="b3c4-wo-next" onclick="nextWordOrder()">Next question →</button>
   </div>
 </div>
