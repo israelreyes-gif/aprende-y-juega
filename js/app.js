@@ -279,6 +279,7 @@ function initApp() {
       if (screenId === 's-mix')         ensureMatesData(cargarNuevaMezcla);
       if (screenId === 's-comprension') ensureHistoriasData(cargarNuevaHistoria);
       if (screenId === 's-english-c4')  renderEnglishHubStats();
+      if (screenId === 's-mates-c4')    renderMatesHubStats();
     });
   };
 
