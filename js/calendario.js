@@ -18,6 +18,26 @@ function calFirstDOW(year, month) {
   return d === 0 ? 6 : d - 1; // lunes=0
 }
 
+/* ---- Racha más larga histórica (para "mejor" en el calendario) ----
+   ST.streak es la racha ACTUAL (días seguidos hasta hoy), pero "mejor"
+   debe ser la racha más larga que haya existido nunca — se calcula
+   buscando la secuencia de días consecutivos más larga dentro de la
+   lista de fechas con actividad (monthDays/weekDays, formato
+   YYYY-MM-DD). Duplicados no rompen la racha; un hueco sí. */
+function calLongestStreak(dateStrings) {
+  if (!dateStrings || !dateStrings.length) return 0;
+  var days = dateStrings.slice().sort();
+  var longest = 1, current = 1;
+  for (var i = 1; i < days.length; i++) {
+    var diffDays = Math.round((new Date(days[i]) - new Date(days[i - 1])) / 86400000);
+    if (diffDays === 1) current++;
+    else if (diffDays > 1) current = 1;
+    // diffDays === 0 (fecha duplicada): no cuenta ni rompe la racha
+    if (current > longest) longest = current;
+  }
+  return longest;
+}
+
 function calGetDayData(subject) {
   // Retorna un objeto {YYYY-MM-DD: 'done'|'partial'} con los días que tiene datos el sujeto
   var errors = ST[subject] && ST[subject].errors ? ST[subject].errors : {};
@@ -167,9 +187,10 @@ function renderCalMes() {
 
   var streak = ST.streak || 0;
   var daysStudied = (ST.monthDays && ST.monthDays.length > 0) ? ST.monthDays.length : (ST.weekDays || []).length;
+  var mejor = Math.max(streak, calLongestStreak(_source));
   ['cal-stat-dias','cal-stat-dias2'].forEach(function(id){ setEl(id, daysStudied); });
   ['cal-stat-racha','cal-stat-racha2'].forEach(function(id){ setEl(id, '🔥 ' + streak); });
-  ['cal-stat-mejor','cal-stat-mejor2'].forEach(function(id){ setEl(id, streak); });
+  ['cal-stat-mejor','cal-stat-mejor2'].forEach(function(id){ setEl(id, mejor); });
 }
 
 function renderCalObjetivos() {
