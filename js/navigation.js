@@ -165,9 +165,10 @@ function updateCurso4UI() {
 
   var streak = ST.streak || 0;
   var daysStudied = (ST.monthDays && ST.monthDays.length > 0) ? ST.monthDays.length : (ST.weekDays || []).length;
+  var mejor = Math.max(streak, calLongestStreak(_source));
   setEl('c4-cal-stat-dias', daysStudied);
   setEl('c4-cal-stat-racha', '🔥 ' + streak);
-  setEl('c4-cal-stat-mejor', streak);
+  setEl('c4-cal-stat-mejor', mejor);
 }
 
 /* ---- Navegar a una pantalla ---- */
