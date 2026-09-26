@@ -26,6 +26,18 @@
     <span class="top-badge">4º Primaria</span>
   </div>
   <div class="sa">
+    <!-- Puntos + lo más urgente a reforzar, SOLO de Matemáticas (ver
+         renderMatesHubStats() en js/ui.js, llamada al entrar a esta
+         pantalla desde js/app.js). Limitado a MH_REFUERZO_MAX áreas
+         para no llenar la pantalla si hay muchas por debajo del 75%. -->
+    <div style="margin:14px 16px 16px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div class="slbl" id="mh-refuerzo-lbl" style="margin:0">A reforzar</div>
+        <div id="mh-pts" style="font-family:var(--f);font-weight:900;font-size:14px;color:var(--purple)">⭐ 0 pts</div>
+      </div>
+      <div id="mh-reforzar"></div>
+    </div>
+
     <div class="slbl">Elige una sección</div>
     <div class="mode-grid" style="margin-bottom:10px">
       <div class="mode-card" style="border-color:var(--purple);background:#EDE9FE" onclick="go('s-mates-study-c4')">
