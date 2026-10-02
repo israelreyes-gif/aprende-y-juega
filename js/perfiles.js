@@ -224,9 +224,36 @@ function guardarPerfil() {
   }
 }
 
-/* ---- Zona de padres ---- */
+/* ---- Zona de padres ----
+   Pide el PIN (CONFIG.pinPadres) en el modal #modal-padres-pin de
+   perfiles.html antes de entrar en s-padres. */
 function abrirZonaPadresDesdePerfiles() {
-  irAPadres();
+  var input = document.getElementById('padres-pin-input');
+  var err   = document.getElementById('padres-pin-error');
+  if (input) input.value = '';
+  if (err) err.style.display = 'none';
+  var modal = document.getElementById('modal-padres-pin');
+  if (modal) modal.style.display = 'flex';
+  if (input) input.focus();
+}
+
+function cerrarModalPin() {
+  var modal = document.getElementById('modal-padres-pin');
+  if (modal) modal.style.display = 'none';
+}
+
+function verificarPinPadres() {
+  var input = document.getElementById('padres-pin-input');
+  var err   = document.getElementById('padres-pin-error');
+  var valor = input ? input.value.trim() : '';
+
+  if (valor === CONFIG.pinPadres) {
+    cerrarModalPin();
+    go('s-padres');
+  } else {
+    if (err) err.style.display = 'block';
+    if (input) { input.value = ''; input.focus(); }
+  }
 }
 
 function escapeHtml(str) {
