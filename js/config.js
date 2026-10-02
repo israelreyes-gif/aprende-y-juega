@@ -11,6 +11,11 @@
 
 var CONFIG = {
 
+  /* ---- Zona de padres ----
+     PIN que se pide al entrar en la Zona de padres desde la pantalla
+     de seleccion de perfiles (perfiles.js: verificarPinPadres()). */
+  pinPadres: '1709',
+
   /* ---- Progreso / estadisticas ---- */
   progreso: {
     // Porcentaje de acierto por debajo del cual un ejercicio se
